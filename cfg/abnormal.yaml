@@ -1,0 +1,10 @@
+path: D:\Shreyan\Development\Train\Data\abnormal\yolo11\abnormal_shreyan  # Dataset root directory
+
+train: images/train  # Train dataset directory (relative to 'path')
+val: images/val  # Validation dataset directory (relative to 'path')
+test: images/test  # Test dataset directory (relative to 'path')
+
+nc: 1  # Number of classes
+
+names:
+    0: abnormal

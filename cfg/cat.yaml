@@ -1,0 +1,15 @@
+
+path: D:\Shreyan\Development\Train\Data\cat\yolo11\cat_base_v11  # Dataset root directory
+
+train: images/train  # Train dataset directory (relative to 'path')
+val: images/val  # Validation dataset directory (relative to 'path')
+test: images/test  # Test dataset directory (relative to 'path')
+
+nc: 5  # Number of classes
+
+names:
+    0: lsil
+    1: hsil
+    2: asch
+    3: ascus
+    4: agus nos

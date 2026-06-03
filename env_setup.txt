@@ -1,0 +1,8 @@
+conda create --name yolo11 python=3.10 -y
+conda activate yolo11
+
+pip3 install torch torchvision --index-url https://download.pytorch.org/whl/cu124
+
+pip install ultralytics opencv-python numpy tqdm matplotlib pandas seaborn scipy pyyaml
+
+pip install openslide-python openslide-bin

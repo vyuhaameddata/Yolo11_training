@@ -1,0 +1,9 @@
+path: D:\Shreyan\Development\Train\Data\cell\yolo11_cell  # Root directory for dataset
+
+train: images\train  # Train dataset directory (relative to 'path' or absolute path)
+val: images\val  # Validation dataset directory (relative to 'path' or absolute path)
+
+nc: 1  # Number of classes
+
+names:
+    0: cell  # Class name

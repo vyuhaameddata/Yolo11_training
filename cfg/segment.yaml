@@ -1,0 +1,11 @@
+path: D:\Shreyan\Development\Train\Data\segmentation\segment  # Root directory for dataset
+
+train: images\train  
+val: images\val  
+test: images/test
+
+nc: 2  # Number of classes
+
+names:
+    0: nucleus  # Class name
+    1: cytoplasm
