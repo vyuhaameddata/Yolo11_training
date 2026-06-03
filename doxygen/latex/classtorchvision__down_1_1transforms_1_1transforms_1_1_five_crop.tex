@@ -1,0 +1,95 @@
+\doxysection{torchvision\+\_\+down.\+transforms.\+transforms.\+Five\+Crop Class Reference}
+\hypertarget{classtorchvision__down_1_1transforms_1_1transforms_1_1_five_crop}{}\label{classtorchvision__down_1_1transforms_1_1transforms_1_1_five_crop}\index{torchvision\_down.transforms.transforms.FiveCrop@{torchvision\_down.transforms.transforms.FiveCrop}}
+Inheritance diagram for torchvision\+\_\+down.\+transforms.\+transforms.\+Five\+Crop\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classtorchvision__down_1_1transforms_1_1transforms_1_1_five_crop}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1transforms_1_1transforms_1_1_five_crop_a70e7999937b90d070204ef2ac51b84c7}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, \mbox{\hyperlink{classtorchvision__down_1_1transforms_1_1transforms_1_1_five_crop_a403053db255b1d566458f2aa4b47c103}{size}})
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1transforms_1_1transforms_1_1_five_crop_a97cb63196d8e4b4836c4d048dab19d00}{forward}} (self, img)
+\item 
+str \mbox{\hyperlink{classtorchvision__down_1_1transforms_1_1transforms_1_1_five_crop_a0091964093e138b47eb15c9cd22b96c7}{\+\_\+\+\_\+repr\+\_\+\+\_\+}} (self)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1transforms_1_1transforms_1_1_five_crop_a403053db255b1d566458f2aa4b47c103}{size}} = \mbox{\hyperlink{namespacetorchvision__down_1_1transforms_1_1transforms_a846a850c6e655e35dfd8dbfbc09e212c}{\+\_\+setup\+\_\+size}}(size, error\+\_\+msg="{}Please provide only two dimensions (h, w) for size."{})
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}Crop the given image into four corners and the central crop.
+If the image is torch Tensor, it is expected
+to have [..., H, W] shape, where ... means an arbitrary number of leading
+dimensions
+
+.. Note::
+     This transform returns a tuple of images and there may be a mismatch in the number of
+     inputs and targets your Dataset returns. See below for an example of how to deal with
+     this.
+
+Args:
+     size (sequence or int): Desired output size of the crop. If size is an ``int``
+        instead of sequence like (h, w), a square crop of size (size, size) is made.
+        If provided a sequence of length 1, it will be interpreted as (size[0], size[0]).
+
+Example:
+     >>> transform = Compose([
+     >>>    FiveCrop(size), # this is a list of PIL Images
+     >>>    Lambda(lambda crops: torch.stack([ToTensor()(crop) for crop in crops])) # returns a 4D tensor
+     >>> ])
+     >>> #In your test loop you can do the following:
+     >>> input, target = batch # input is a 5d tensor, target is 2d
+     >>> bs, ncrops, c, h, w = input.size()
+     >>> result = model(input.view(-1, c, h, w)) # fuse batch size and ncrops
+     >>> result_avg = result.view(bs, ncrops, -1).mean(1) # avg over crops
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classtorchvision__down_1_1transforms_1_1transforms_1_1_five_crop_a70e7999937b90d070204ef2ac51b84c7}\index{torchvision\_down.transforms.transforms.FiveCrop@{torchvision\_down.transforms.transforms.FiveCrop}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!torchvision\_down.transforms.transforms.FiveCrop@{torchvision\_down.transforms.transforms.FiveCrop}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1transforms_1_1transforms_1_1_five_crop_a70e7999937b90d070204ef2ac51b84c7} 
+torchvision\+\_\+down.\+transforms.\+transforms.\+Five\+Crop.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{size}{}\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classtorchvision__down_1_1transforms_1_1transforms_1_1_five_crop_a0091964093e138b47eb15c9cd22b96c7}\index{torchvision\_down.transforms.transforms.FiveCrop@{torchvision\_down.transforms.transforms.FiveCrop}!\_\_repr\_\_@{\_\_repr\_\_}}
+\index{\_\_repr\_\_@{\_\_repr\_\_}!torchvision\_down.transforms.transforms.FiveCrop@{torchvision\_down.transforms.transforms.FiveCrop}}
+\doxysubsubsection{\texorpdfstring{\_\_repr\_\_()}{\_\_repr\_\_()}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1transforms_1_1transforms_1_1_five_crop_a0091964093e138b47eb15c9cd22b96c7} 
+ str torchvision\+\_\+down.\+transforms.\+transforms.\+Five\+Crop.\+\_\+\+\_\+repr\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classtorchvision__down_1_1transforms_1_1transforms_1_1_five_crop_a97cb63196d8e4b4836c4d048dab19d00}\index{torchvision\_down.transforms.transforms.FiveCrop@{torchvision\_down.transforms.transforms.FiveCrop}!forward@{forward}}
+\index{forward@{forward}!torchvision\_down.transforms.transforms.FiveCrop@{torchvision\_down.transforms.transforms.FiveCrop}}
+\doxysubsubsection{\texorpdfstring{forward()}{forward()}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1transforms_1_1transforms_1_1_five_crop_a97cb63196d8e4b4836c4d048dab19d00} 
+torchvision\+\_\+down.\+transforms.\+transforms.\+Five\+Crop.\+forward (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{img}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Args:
+    img (PIL Image or Tensor): Image to be cropped.
+
+Returns:
+    tuple of 5 images. Image can be PIL Image or Tensor
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classtorchvision__down_1_1transforms_1_1transforms_1_1_five_crop_a403053db255b1d566458f2aa4b47c103}\index{torchvision\_down.transforms.transforms.FiveCrop@{torchvision\_down.transforms.transforms.FiveCrop}!size@{size}}
+\index{size@{size}!torchvision\_down.transforms.transforms.FiveCrop@{torchvision\_down.transforms.transforms.FiveCrop}}
+\doxysubsubsection{\texorpdfstring{size}{size}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1transforms_1_1transforms_1_1_five_crop_a403053db255b1d566458f2aa4b47c103} 
+torchvision\+\_\+down.\+transforms.\+transforms.\+Five\+Crop.\+size = \mbox{\hyperlink{namespacetorchvision__down_1_1transforms_1_1transforms_a846a850c6e655e35dfd8dbfbc09e212c}{\+\_\+setup\+\_\+size}}(size, error\+\_\+msg="{}Please provide only two dimensions (h, w) for size."{})}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Cervi\+AI/torchvision\+\_\+down/transforms/\mbox{\hyperlink{transforms_8py}{transforms.\+py}}\end{DoxyCompactItemize}

@@ -1,0 +1,77 @@
+\doxysection{torchvision\+\_\+down.\+transforms.\+transforms.\+Random\+Autocontrast Class Reference}
+\hypertarget{classtorchvision__down_1_1transforms_1_1transforms_1_1_random_autocontrast}{}\label{classtorchvision__down_1_1transforms_1_1transforms_1_1_random_autocontrast}\index{torchvision\_down.transforms.transforms.RandomAutocontrast@{torchvision\_down.transforms.transforms.RandomAutocontrast}}
+Inheritance diagram for torchvision\+\_\+down.\+transforms.\+transforms.\+Random\+Autocontrast\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classtorchvision__down_1_1transforms_1_1transforms_1_1_random_autocontrast}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1transforms_1_1transforms_1_1_random_autocontrast_a38103611a6c3cf773d9a169212d9a134}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, \mbox{\hyperlink{classtorchvision__down_1_1transforms_1_1transforms_1_1_random_autocontrast_adc361f522538bf47d920f5b27f5d4c42}{p}}=0.\+5)
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1transforms_1_1transforms_1_1_random_autocontrast_a227b1f11d560623693a608be83db4bcf}{forward}} (self, img)
+\item 
+str \mbox{\hyperlink{classtorchvision__down_1_1transforms_1_1transforms_1_1_random_autocontrast_a96244ab423a0d658d119a4b93c3be832}{\+\_\+\+\_\+repr\+\_\+\+\_\+}} (self)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1transforms_1_1transforms_1_1_random_autocontrast_adc361f522538bf47d920f5b27f5d4c42}{p}} = p
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}Autocontrast the pixels of the given image randomly with a given probability.
+If the image is torch Tensor, it is expected
+to have [..., 1 or 3, H, W] shape, where ... means an arbitrary number of leading dimensions.
+If img is PIL Image, it is expected to be in mode "L" or "RGB".
+
+Args:
+    p (float): probability of the image being autocontrasted. Default value is 0.5
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classtorchvision__down_1_1transforms_1_1transforms_1_1_random_autocontrast_a38103611a6c3cf773d9a169212d9a134}\index{torchvision\_down.transforms.transforms.RandomAutocontrast@{torchvision\_down.transforms.transforms.RandomAutocontrast}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!torchvision\_down.transforms.transforms.RandomAutocontrast@{torchvision\_down.transforms.transforms.RandomAutocontrast}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1transforms_1_1transforms_1_1_random_autocontrast_a38103611a6c3cf773d9a169212d9a134} 
+torchvision\+\_\+down.\+transforms.\+transforms.\+Random\+Autocontrast.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{p}{ = {\ttfamily 0.5}}\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classtorchvision__down_1_1transforms_1_1transforms_1_1_random_autocontrast_a96244ab423a0d658d119a4b93c3be832}\index{torchvision\_down.transforms.transforms.RandomAutocontrast@{torchvision\_down.transforms.transforms.RandomAutocontrast}!\_\_repr\_\_@{\_\_repr\_\_}}
+\index{\_\_repr\_\_@{\_\_repr\_\_}!torchvision\_down.transforms.transforms.RandomAutocontrast@{torchvision\_down.transforms.transforms.RandomAutocontrast}}
+\doxysubsubsection{\texorpdfstring{\_\_repr\_\_()}{\_\_repr\_\_()}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1transforms_1_1transforms_1_1_random_autocontrast_a96244ab423a0d658d119a4b93c3be832} 
+ str torchvision\+\_\+down.\+transforms.\+transforms.\+Random\+Autocontrast.\+\_\+\+\_\+repr\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classtorchvision__down_1_1transforms_1_1transforms_1_1_random_autocontrast_a227b1f11d560623693a608be83db4bcf}\index{torchvision\_down.transforms.transforms.RandomAutocontrast@{torchvision\_down.transforms.transforms.RandomAutocontrast}!forward@{forward}}
+\index{forward@{forward}!torchvision\_down.transforms.transforms.RandomAutocontrast@{torchvision\_down.transforms.transforms.RandomAutocontrast}}
+\doxysubsubsection{\texorpdfstring{forward()}{forward()}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1transforms_1_1transforms_1_1_random_autocontrast_a227b1f11d560623693a608be83db4bcf} 
+torchvision\+\_\+down.\+transforms.\+transforms.\+Random\+Autocontrast.\+forward (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{img}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Args:
+    img (PIL Image or Tensor): Image to be autocontrasted.
+
+Returns:
+    PIL Image or Tensor: Randomly autocontrasted image.
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classtorchvision__down_1_1transforms_1_1transforms_1_1_random_autocontrast_adc361f522538bf47d920f5b27f5d4c42}\index{torchvision\_down.transforms.transforms.RandomAutocontrast@{torchvision\_down.transforms.transforms.RandomAutocontrast}!p@{p}}
+\index{p@{p}!torchvision\_down.transforms.transforms.RandomAutocontrast@{torchvision\_down.transforms.transforms.RandomAutocontrast}}
+\doxysubsubsection{\texorpdfstring{p}{p}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1transforms_1_1transforms_1_1_random_autocontrast_adc361f522538bf47d920f5b27f5d4c42} 
+torchvision\+\_\+down.\+transforms.\+transforms.\+Random\+Autocontrast.\+p = p}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Cervi\+AI/torchvision\+\_\+down/transforms/\mbox{\hyperlink{transforms_8py}{transforms.\+py}}\end{DoxyCompactItemize}

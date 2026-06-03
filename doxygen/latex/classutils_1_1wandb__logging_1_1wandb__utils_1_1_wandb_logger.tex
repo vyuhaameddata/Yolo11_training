@@ -1,0 +1,258 @@
+\doxysection{utils.\+wandb\+\_\+logging.\+wandb\+\_\+utils.\+Wandb\+Logger Class Reference}
+\hypertarget{classutils_1_1wandb__logging_1_1wandb__utils_1_1_wandb_logger}{}\label{classutils_1_1wandb__logging_1_1wandb__utils_1_1_wandb_logger}\index{utils.wandb\_logging.wandb\_utils.WandbLogger@{utils.wandb\_logging.wandb\_utils.WandbLogger}}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classutils_1_1wandb__logging_1_1wandb__utils_1_1_wandb_logger_af8c95e0c59cd03b5cc21be031164f1f0}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, opt, name, run\+\_\+id, \mbox{\hyperlink{classutils_1_1wandb__logging_1_1wandb__utils_1_1_wandb_logger_a9e3730570b7e3c222d636bf442f7c424}{data\+\_\+dict}}, \mbox{\hyperlink{classutils_1_1wandb__logging_1_1wandb__utils_1_1_wandb_logger_aa469aff4f7ab1ec3bb89c32614a4a27e}{job\+\_\+type}}=\textquotesingle{}Training\textquotesingle{})
+\item 
+\mbox{\hyperlink{classutils_1_1wandb__logging_1_1wandb__utils_1_1_wandb_logger_af9cd53748a19734b2999db0767e0e8d5}{check\+\_\+and\+\_\+upload\+\_\+dataset}} (self, opt)
+\item 
+\mbox{\hyperlink{classutils_1_1wandb__logging_1_1wandb__utils_1_1_wandb_logger_a1b0c12c0742d772ebbbbc83605f67bc5}{setup\+\_\+training}} (self, opt, \mbox{\hyperlink{classutils_1_1wandb__logging_1_1wandb__utils_1_1_wandb_logger_a9e3730570b7e3c222d636bf442f7c424}{data\+\_\+dict}})
+\item 
+\mbox{\hyperlink{classutils_1_1wandb__logging_1_1wandb__utils_1_1_wandb_logger_a3c5a2779d0bb5293e455c365d65b48b3}{download\+\_\+dataset\+\_\+artifact}} (self, path, alias)
+\item 
+\mbox{\hyperlink{classutils_1_1wandb__logging_1_1wandb__utils_1_1_wandb_logger_ad2727ea4be50dafd2e457dd3ff90497b}{download\+\_\+model\+\_\+artifact}} (self, opt)
+\item 
+\mbox{\hyperlink{classutils_1_1wandb__logging_1_1wandb__utils_1_1_wandb_logger_a0c49c2161ef3c11a29d39a3e4bb0f90d}{log\+\_\+model}} (self, path, opt, epoch, fitness\+\_\+score, best\+\_\+model=False)
+\item 
+\mbox{\hyperlink{classutils_1_1wandb__logging_1_1wandb__utils_1_1_wandb_logger_a661e8722e57593eb025ac3a54759edbd}{log\+\_\+dataset\+\_\+artifact}} (self, data\+\_\+file, single\+\_\+cls, project, overwrite\+\_\+config=False)
+\item 
+\mbox{\hyperlink{classutils_1_1wandb__logging_1_1wandb__utils_1_1_wandb_logger_a3c4c5f639d197c43c2e2314620b01d92}{map\+\_\+val\+\_\+table\+\_\+path}} (self)
+\item 
+\mbox{\hyperlink{classutils_1_1wandb__logging_1_1wandb__utils_1_1_wandb_logger_ab775e8dcfc884e939f2a936008d38e03}{create\+\_\+dataset\+\_\+table}} (self, dataset, class\+\_\+to\+\_\+id, name=\textquotesingle{}dataset\textquotesingle{})
+\item 
+\mbox{\hyperlink{classutils_1_1wandb__logging_1_1wandb__utils_1_1_wandb_logger_a59aa015e00323f7bf3663e5b3f54b349}{log\+\_\+training\+\_\+progress}} (self, predn, path, names)
+\item 
+\mbox{\hyperlink{classutils_1_1wandb__logging_1_1wandb__utils_1_1_wandb_logger_ae1666516655eb371e1d23b625adeee3d}{log}} (self, \mbox{\hyperlink{classutils_1_1wandb__logging_1_1wandb__utils_1_1_wandb_logger_a6e8f8d8f135cf01ef7ca95460ceb3e18}{log\+\_\+dict}})
+\item 
+\mbox{\hyperlink{classutils_1_1wandb__logging_1_1wandb__utils_1_1_wandb_logger_ae418b579212311a22112dd52a2ec2fae}{end\+\_\+epoch}} (self, best\+\_\+result=False)
+\item 
+\mbox{\hyperlink{classutils_1_1wandb__logging_1_1wandb__utils_1_1_wandb_logger_a95823e6f667984076391c7ff3dc7ac3a}{finish\+\_\+run}} (self)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+str \mbox{\hyperlink{classutils_1_1wandb__logging_1_1wandb__utils_1_1_wandb_logger_aa469aff4f7ab1ec3bb89c32614a4a27e}{job\+\_\+type}} = job\+\_\+type
+\item 
+\mbox{\hyperlink{classutils_1_1wandb__logging_1_1wandb__utils_1_1_wandb_logger_a1ef656d3d2f2490a0c6c78dc1ba4f75a}{wandb}}
+\item 
+\mbox{\hyperlink{classutils_1_1wandb__logging_1_1wandb__utils_1_1_wandb_logger_a5ef2f589d37fbb992f59a6ac676f125e}{wandb\+\_\+run}}
+\item 
+\mbox{\hyperlink{classutils_1_1wandb__logging_1_1wandb__utils_1_1_wandb_logger_a9e3730570b7e3c222d636bf442f7c424}{data\+\_\+dict}} = \mbox{\hyperlink{classutils_1_1wandb__logging_1_1wandb__utils_1_1_wandb_logger_a1ef656d3d2f2490a0c6c78dc1ba4f75a}{wandb}}, None if not \mbox{\hyperlink{classutils_1_1wandb__logging_1_1wandb__utils_1_1_wandb_logger_a1ef656d3d2f2490a0c6c78dc1ba4f75a}{wandb}} else wandb.\+run, data\+\_\+dict
+\item 
+dict \mbox{\hyperlink{classutils_1_1wandb__logging_1_1wandb__utils_1_1_wandb_logger_a6e8f8d8f135cf01ef7ca95460ceb3e18}{log\+\_\+dict}}
+\item 
+\mbox{\hyperlink{classutils_1_1wandb__logging_1_1wandb__utils_1_1_wandb_logger_acdd3a8a89bfcf7425a4646f1526d1a1d}{current\+\_\+epoch}} = self.\+val\+\_\+table\+\_\+map\mbox{[}Path(path).name\mbox{]}
+\item 
+dict \mbox{\hyperlink{classutils_1_1wandb__logging_1_1wandb__utils_1_1_wandb_logger_afedb4b3b98ac71d0bafdec89431d5f74}{log\+\_\+imgs}} = \{\}, 0, 16
+\item 
+\mbox{\hyperlink{classutils_1_1wandb__logging_1_1wandb__utils_1_1_wandb_logger_a5f19416bd19213a8ac742f06d268b395}{bbox\+\_\+interval}} = opt.\+bbox\+\_\+interval
+\item 
+str \mbox{\hyperlink{classutils_1_1wandb__logging_1_1wandb__utils_1_1_wandb_logger_ac8ff5ca844e655f50fb7442912a654dc}{weights}} = Path(modeldir) / "{}last.\+pt"{}
+\item 
+\mbox{\hyperlink{classutils_1_1wandb__logging_1_1wandb__utils_1_1_wandb_logger_aacf7cdd6868fcd2207f079be792f60cc}{train\+\_\+artifact}}
+\item 
+\mbox{\hyperlink{classutils_1_1wandb__logging_1_1wandb__utils_1_1_wandb_logger_a81b841f1b8c65c040a14da142cb915e9}{val\+\_\+artifact}}
+\item 
+\mbox{\hyperlink{classutils_1_1wandb__logging_1_1wandb__utils_1_1_wandb_logger_a8a718c8a7f2939b121da0c50c921b88e}{val\+\_\+table}} = self.\+val\+\_\+artifact.\+get(\textquotesingle{}val\textquotesingle{})
+\item 
+dict \mbox{\hyperlink{classutils_1_1wandb__logging_1_1wandb__utils_1_1_wandb_logger_a6e6ad8c77484bd14d8b8b03ed30bf853}{val\+\_\+table\+\_\+map}} = \{\}
+\item 
+\mbox{\hyperlink{classutils_1_1wandb__logging_1_1wandb__utils_1_1_wandb_logger_a30d7110c9ce30bd92072c2061b0372c6}{result\+\_\+table}}
+\item 
+\mbox{\hyperlink{classutils_1_1wandb__logging_1_1wandb__utils_1_1_wandb_logger_a3b51a021ab4a71e9b270e015f5bbce98}{result\+\_\+artifact}} = \{\}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classutils_1_1wandb__logging_1_1wandb__utils_1_1_wandb_logger_af8c95e0c59cd03b5cc21be031164f1f0}\index{utils.wandb\_logging.wandb\_utils.WandbLogger@{utils.wandb\_logging.wandb\_utils.WandbLogger}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!utils.wandb\_logging.wandb\_utils.WandbLogger@{utils.wandb\_logging.wandb\_utils.WandbLogger}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily \label{classutils_1_1wandb__logging_1_1wandb__utils_1_1_wandb_logger_af8c95e0c59cd03b5cc21be031164f1f0} 
+utils.\+wandb\+\_\+logging.\+wandb\+\_\+utils.\+Wandb\+Logger.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{opt}{, }\item[{}]{name}{, }\item[{}]{run\+\_\+id}{, }\item[{}]{data\+\_\+dict}{, }\item[{}]{job\+\_\+type}{ = {\ttfamily \textquotesingle{}Training\textquotesingle{}}}\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classutils_1_1wandb__logging_1_1wandb__utils_1_1_wandb_logger_af9cd53748a19734b2999db0767e0e8d5}\index{utils.wandb\_logging.wandb\_utils.WandbLogger@{utils.wandb\_logging.wandb\_utils.WandbLogger}!check\_and\_upload\_dataset@{check\_and\_upload\_dataset}}
+\index{check\_and\_upload\_dataset@{check\_and\_upload\_dataset}!utils.wandb\_logging.wandb\_utils.WandbLogger@{utils.wandb\_logging.wandb\_utils.WandbLogger}}
+\doxysubsubsection{\texorpdfstring{check\_and\_upload\_dataset()}{check\_and\_upload\_dataset()}}
+{\footnotesize\ttfamily \label{classutils_1_1wandb__logging_1_1wandb__utils_1_1_wandb_logger_af9cd53748a19734b2999db0767e0e8d5} 
+utils.\+wandb\+\_\+logging.\+wandb\+\_\+utils.\+Wandb\+Logger.\+check\+\_\+and\+\_\+upload\+\_\+dataset (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{opt}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classutils_1_1wandb__logging_1_1wandb__utils_1_1_wandb_logger_ab775e8dcfc884e939f2a936008d38e03}\index{utils.wandb\_logging.wandb\_utils.WandbLogger@{utils.wandb\_logging.wandb\_utils.WandbLogger}!create\_dataset\_table@{create\_dataset\_table}}
+\index{create\_dataset\_table@{create\_dataset\_table}!utils.wandb\_logging.wandb\_utils.WandbLogger@{utils.wandb\_logging.wandb\_utils.WandbLogger}}
+\doxysubsubsection{\texorpdfstring{create\_dataset\_table()}{create\_dataset\_table()}}
+{\footnotesize\ttfamily \label{classutils_1_1wandb__logging_1_1wandb__utils_1_1_wandb_logger_ab775e8dcfc884e939f2a936008d38e03} 
+utils.\+wandb\+\_\+logging.\+wandb\+\_\+utils.\+Wandb\+Logger.\+create\+\_\+dataset\+\_\+table (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{dataset}{, }\item[{}]{class\+\_\+to\+\_\+id}{, }\item[{}]{name}{ = {\ttfamily \textquotesingle{}dataset\textquotesingle{}}}\end{DoxyParamCaption})}
+
+\Hypertarget{classutils_1_1wandb__logging_1_1wandb__utils_1_1_wandb_logger_a3c5a2779d0bb5293e455c365d65b48b3}\index{utils.wandb\_logging.wandb\_utils.WandbLogger@{utils.wandb\_logging.wandb\_utils.WandbLogger}!download\_dataset\_artifact@{download\_dataset\_artifact}}
+\index{download\_dataset\_artifact@{download\_dataset\_artifact}!utils.wandb\_logging.wandb\_utils.WandbLogger@{utils.wandb\_logging.wandb\_utils.WandbLogger}}
+\doxysubsubsection{\texorpdfstring{download\_dataset\_artifact()}{download\_dataset\_artifact()}}
+{\footnotesize\ttfamily \label{classutils_1_1wandb__logging_1_1wandb__utils_1_1_wandb_logger_a3c5a2779d0bb5293e455c365d65b48b3} 
+utils.\+wandb\+\_\+logging.\+wandb\+\_\+utils.\+Wandb\+Logger.\+download\+\_\+dataset\+\_\+artifact (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{path}{, }\item[{}]{alias}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classutils_1_1wandb__logging_1_1wandb__utils_1_1_wandb_logger_ad2727ea4be50dafd2e457dd3ff90497b}\index{utils.wandb\_logging.wandb\_utils.WandbLogger@{utils.wandb\_logging.wandb\_utils.WandbLogger}!download\_model\_artifact@{download\_model\_artifact}}
+\index{download\_model\_artifact@{download\_model\_artifact}!utils.wandb\_logging.wandb\_utils.WandbLogger@{utils.wandb\_logging.wandb\_utils.WandbLogger}}
+\doxysubsubsection{\texorpdfstring{download\_model\_artifact()}{download\_model\_artifact()}}
+{\footnotesize\ttfamily \label{classutils_1_1wandb__logging_1_1wandb__utils_1_1_wandb_logger_ad2727ea4be50dafd2e457dd3ff90497b} 
+utils.\+wandb\+\_\+logging.\+wandb\+\_\+utils.\+Wandb\+Logger.\+download\+\_\+model\+\_\+artifact (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{opt}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classutils_1_1wandb__logging_1_1wandb__utils_1_1_wandb_logger_ae418b579212311a22112dd52a2ec2fae}\index{utils.wandb\_logging.wandb\_utils.WandbLogger@{utils.wandb\_logging.wandb\_utils.WandbLogger}!end\_epoch@{end\_epoch}}
+\index{end\_epoch@{end\_epoch}!utils.wandb\_logging.wandb\_utils.WandbLogger@{utils.wandb\_logging.wandb\_utils.WandbLogger}}
+\doxysubsubsection{\texorpdfstring{end\_epoch()}{end\_epoch()}}
+{\footnotesize\ttfamily \label{classutils_1_1wandb__logging_1_1wandb__utils_1_1_wandb_logger_ae418b579212311a22112dd52a2ec2fae} 
+utils.\+wandb\+\_\+logging.\+wandb\+\_\+utils.\+Wandb\+Logger.\+end\+\_\+epoch (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{best\+\_\+result}{ = {\ttfamily False}}\end{DoxyParamCaption})}
+
+\Hypertarget{classutils_1_1wandb__logging_1_1wandb__utils_1_1_wandb_logger_a95823e6f667984076391c7ff3dc7ac3a}\index{utils.wandb\_logging.wandb\_utils.WandbLogger@{utils.wandb\_logging.wandb\_utils.WandbLogger}!finish\_run@{finish\_run}}
+\index{finish\_run@{finish\_run}!utils.wandb\_logging.wandb\_utils.WandbLogger@{utils.wandb\_logging.wandb\_utils.WandbLogger}}
+\doxysubsubsection{\texorpdfstring{finish\_run()}{finish\_run()}}
+{\footnotesize\ttfamily \label{classutils_1_1wandb__logging_1_1wandb__utils_1_1_wandb_logger_a95823e6f667984076391c7ff3dc7ac3a} 
+utils.\+wandb\+\_\+logging.\+wandb\+\_\+utils.\+Wandb\+Logger.\+finish\+\_\+run (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classutils_1_1wandb__logging_1_1wandb__utils_1_1_wandb_logger_ae1666516655eb371e1d23b625adeee3d}\index{utils.wandb\_logging.wandb\_utils.WandbLogger@{utils.wandb\_logging.wandb\_utils.WandbLogger}!log@{log}}
+\index{log@{log}!utils.wandb\_logging.wandb\_utils.WandbLogger@{utils.wandb\_logging.wandb\_utils.WandbLogger}}
+\doxysubsubsection{\texorpdfstring{log()}{log()}}
+{\footnotesize\ttfamily \label{classutils_1_1wandb__logging_1_1wandb__utils_1_1_wandb_logger_ae1666516655eb371e1d23b625adeee3d} 
+utils.\+wandb\+\_\+logging.\+wandb\+\_\+utils.\+Wandb\+Logger.\+log (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{log\+\_\+dict}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classutils_1_1wandb__logging_1_1wandb__utils_1_1_wandb_logger_a661e8722e57593eb025ac3a54759edbd}\index{utils.wandb\_logging.wandb\_utils.WandbLogger@{utils.wandb\_logging.wandb\_utils.WandbLogger}!log\_dataset\_artifact@{log\_dataset\_artifact}}
+\index{log\_dataset\_artifact@{log\_dataset\_artifact}!utils.wandb\_logging.wandb\_utils.WandbLogger@{utils.wandb\_logging.wandb\_utils.WandbLogger}}
+\doxysubsubsection{\texorpdfstring{log\_dataset\_artifact()}{log\_dataset\_artifact()}}
+{\footnotesize\ttfamily \label{classutils_1_1wandb__logging_1_1wandb__utils_1_1_wandb_logger_a661e8722e57593eb025ac3a54759edbd} 
+utils.\+wandb\+\_\+logging.\+wandb\+\_\+utils.\+Wandb\+Logger.\+log\+\_\+dataset\+\_\+artifact (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{data\+\_\+file}{, }\item[{}]{single\+\_\+cls}{, }\item[{}]{project}{, }\item[{}]{overwrite\+\_\+config}{ = {\ttfamily False}}\end{DoxyParamCaption})}
+
+\Hypertarget{classutils_1_1wandb__logging_1_1wandb__utils_1_1_wandb_logger_a0c49c2161ef3c11a29d39a3e4bb0f90d}\index{utils.wandb\_logging.wandb\_utils.WandbLogger@{utils.wandb\_logging.wandb\_utils.WandbLogger}!log\_model@{log\_model}}
+\index{log\_model@{log\_model}!utils.wandb\_logging.wandb\_utils.WandbLogger@{utils.wandb\_logging.wandb\_utils.WandbLogger}}
+\doxysubsubsection{\texorpdfstring{log\_model()}{log\_model()}}
+{\footnotesize\ttfamily \label{classutils_1_1wandb__logging_1_1wandb__utils_1_1_wandb_logger_a0c49c2161ef3c11a29d39a3e4bb0f90d} 
+utils.\+wandb\+\_\+logging.\+wandb\+\_\+utils.\+Wandb\+Logger.\+log\+\_\+model (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{path}{, }\item[{}]{opt}{, }\item[{}]{epoch}{, }\item[{}]{fitness\+\_\+score}{, }\item[{}]{best\+\_\+model}{ = {\ttfamily False}}\end{DoxyParamCaption})}
+
+\Hypertarget{classutils_1_1wandb__logging_1_1wandb__utils_1_1_wandb_logger_a59aa015e00323f7bf3663e5b3f54b349}\index{utils.wandb\_logging.wandb\_utils.WandbLogger@{utils.wandb\_logging.wandb\_utils.WandbLogger}!log\_training\_progress@{log\_training\_progress}}
+\index{log\_training\_progress@{log\_training\_progress}!utils.wandb\_logging.wandb\_utils.WandbLogger@{utils.wandb\_logging.wandb\_utils.WandbLogger}}
+\doxysubsubsection{\texorpdfstring{log\_training\_progress()}{log\_training\_progress()}}
+{\footnotesize\ttfamily \label{classutils_1_1wandb__logging_1_1wandb__utils_1_1_wandb_logger_a59aa015e00323f7bf3663e5b3f54b349} 
+utils.\+wandb\+\_\+logging.\+wandb\+\_\+utils.\+Wandb\+Logger.\+log\+\_\+training\+\_\+progress (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{predn}{, }\item[{}]{path}{, }\item[{}]{names}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classutils_1_1wandb__logging_1_1wandb__utils_1_1_wandb_logger_a3c4c5f639d197c43c2e2314620b01d92}\index{utils.wandb\_logging.wandb\_utils.WandbLogger@{utils.wandb\_logging.wandb\_utils.WandbLogger}!map\_val\_table\_path@{map\_val\_table\_path}}
+\index{map\_val\_table\_path@{map\_val\_table\_path}!utils.wandb\_logging.wandb\_utils.WandbLogger@{utils.wandb\_logging.wandb\_utils.WandbLogger}}
+\doxysubsubsection{\texorpdfstring{map\_val\_table\_path()}{map\_val\_table\_path()}}
+{\footnotesize\ttfamily \label{classutils_1_1wandb__logging_1_1wandb__utils_1_1_wandb_logger_a3c4c5f639d197c43c2e2314620b01d92} 
+utils.\+wandb\+\_\+logging.\+wandb\+\_\+utils.\+Wandb\+Logger.\+map\+\_\+val\+\_\+table\+\_\+path (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classutils_1_1wandb__logging_1_1wandb__utils_1_1_wandb_logger_a1b0c12c0742d772ebbbbc83605f67bc5}\index{utils.wandb\_logging.wandb\_utils.WandbLogger@{utils.wandb\_logging.wandb\_utils.WandbLogger}!setup\_training@{setup\_training}}
+\index{setup\_training@{setup\_training}!utils.wandb\_logging.wandb\_utils.WandbLogger@{utils.wandb\_logging.wandb\_utils.WandbLogger}}
+\doxysubsubsection{\texorpdfstring{setup\_training()}{setup\_training()}}
+{\footnotesize\ttfamily \label{classutils_1_1wandb__logging_1_1wandb__utils_1_1_wandb_logger_a1b0c12c0742d772ebbbbc83605f67bc5} 
+utils.\+wandb\+\_\+logging.\+wandb\+\_\+utils.\+Wandb\+Logger.\+setup\+\_\+training (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{opt}{, }\item[{}]{data\+\_\+dict}{}\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classutils_1_1wandb__logging_1_1wandb__utils_1_1_wandb_logger_a5f19416bd19213a8ac742f06d268b395}\index{utils.wandb\_logging.wandb\_utils.WandbLogger@{utils.wandb\_logging.wandb\_utils.WandbLogger}!bbox\_interval@{bbox\_interval}}
+\index{bbox\_interval@{bbox\_interval}!utils.wandb\_logging.wandb\_utils.WandbLogger@{utils.wandb\_logging.wandb\_utils.WandbLogger}}
+\doxysubsubsection{\texorpdfstring{bbox\_interval}{bbox\_interval}}
+{\footnotesize\ttfamily \label{classutils_1_1wandb__logging_1_1wandb__utils_1_1_wandb_logger_a5f19416bd19213a8ac742f06d268b395} 
+utils.\+wandb\+\_\+logging.\+wandb\+\_\+utils.\+Wandb\+Logger.\+bbox\+\_\+interval = opt.\+bbox\+\_\+interval}
+
+\Hypertarget{classutils_1_1wandb__logging_1_1wandb__utils_1_1_wandb_logger_acdd3a8a89bfcf7425a4646f1526d1a1d}\index{utils.wandb\_logging.wandb\_utils.WandbLogger@{utils.wandb\_logging.wandb\_utils.WandbLogger}!current\_epoch@{current\_epoch}}
+\index{current\_epoch@{current\_epoch}!utils.wandb\_logging.wandb\_utils.WandbLogger@{utils.wandb\_logging.wandb\_utils.WandbLogger}}
+\doxysubsubsection{\texorpdfstring{current\_epoch}{current\_epoch}}
+{\footnotesize\ttfamily \label{classutils_1_1wandb__logging_1_1wandb__utils_1_1_wandb_logger_acdd3a8a89bfcf7425a4646f1526d1a1d} 
+utils.\+wandb\+\_\+logging.\+wandb\+\_\+utils.\+Wandb\+Logger.\+current\+\_\+epoch = self.\+val\+\_\+table\+\_\+map\mbox{[}Path(path).name\mbox{]}}
+
+\Hypertarget{classutils_1_1wandb__logging_1_1wandb__utils_1_1_wandb_logger_a9e3730570b7e3c222d636bf442f7c424}\index{utils.wandb\_logging.wandb\_utils.WandbLogger@{utils.wandb\_logging.wandb\_utils.WandbLogger}!data\_dict@{data\_dict}}
+\index{data\_dict@{data\_dict}!utils.wandb\_logging.wandb\_utils.WandbLogger@{utils.wandb\_logging.wandb\_utils.WandbLogger}}
+\doxysubsubsection{\texorpdfstring{data\_dict}{data\_dict}}
+{\footnotesize\ttfamily \label{classutils_1_1wandb__logging_1_1wandb__utils_1_1_wandb_logger_a9e3730570b7e3c222d636bf442f7c424} 
+utils.\+wandb\+\_\+logging.\+wandb\+\_\+utils.\+Wandb\+Logger.\+data\+\_\+dict = \mbox{\hyperlink{classutils_1_1wandb__logging_1_1wandb__utils_1_1_wandb_logger_a1ef656d3d2f2490a0c6c78dc1ba4f75a}{wandb}}, None if not \mbox{\hyperlink{classutils_1_1wandb__logging_1_1wandb__utils_1_1_wandb_logger_a1ef656d3d2f2490a0c6c78dc1ba4f75a}{wandb}} else wandb.\+run, data\+\_\+dict}
+
+\Hypertarget{classutils_1_1wandb__logging_1_1wandb__utils_1_1_wandb_logger_aa469aff4f7ab1ec3bb89c32614a4a27e}\index{utils.wandb\_logging.wandb\_utils.WandbLogger@{utils.wandb\_logging.wandb\_utils.WandbLogger}!job\_type@{job\_type}}
+\index{job\_type@{job\_type}!utils.wandb\_logging.wandb\_utils.WandbLogger@{utils.wandb\_logging.wandb\_utils.WandbLogger}}
+\doxysubsubsection{\texorpdfstring{job\_type}{job\_type}}
+{\footnotesize\ttfamily \label{classutils_1_1wandb__logging_1_1wandb__utils_1_1_wandb_logger_aa469aff4f7ab1ec3bb89c32614a4a27e} 
+str utils.\+wandb\+\_\+logging.\+wandb\+\_\+utils.\+Wandb\+Logger.\+job\+\_\+type = job\+\_\+type}
+
+\Hypertarget{classutils_1_1wandb__logging_1_1wandb__utils_1_1_wandb_logger_a6e8f8d8f135cf01ef7ca95460ceb3e18}\index{utils.wandb\_logging.wandb\_utils.WandbLogger@{utils.wandb\_logging.wandb\_utils.WandbLogger}!log\_dict@{log\_dict}}
+\index{log\_dict@{log\_dict}!utils.wandb\_logging.wandb\_utils.WandbLogger@{utils.wandb\_logging.wandb\_utils.WandbLogger}}
+\doxysubsubsection{\texorpdfstring{log\_dict}{log\_dict}}
+{\footnotesize\ttfamily \label{classutils_1_1wandb__logging_1_1wandb__utils_1_1_wandb_logger_a6e8f8d8f135cf01ef7ca95460ceb3e18} 
+utils.\+wandb\+\_\+logging.\+wandb\+\_\+utils.\+Wandb\+Logger.\+log\+\_\+dict}
+
+\Hypertarget{classutils_1_1wandb__logging_1_1wandb__utils_1_1_wandb_logger_afedb4b3b98ac71d0bafdec89431d5f74}\index{utils.wandb\_logging.wandb\_utils.WandbLogger@{utils.wandb\_logging.wandb\_utils.WandbLogger}!log\_imgs@{log\_imgs}}
+\index{log\_imgs@{log\_imgs}!utils.wandb\_logging.wandb\_utils.WandbLogger@{utils.wandb\_logging.wandb\_utils.WandbLogger}}
+\doxysubsubsection{\texorpdfstring{log\_imgs}{log\_imgs}}
+{\footnotesize\ttfamily \label{classutils_1_1wandb__logging_1_1wandb__utils_1_1_wandb_logger_afedb4b3b98ac71d0bafdec89431d5f74} 
+dict utils.\+wandb\+\_\+logging.\+wandb\+\_\+utils.\+Wandb\+Logger.\+log\+\_\+imgs = \{\}, 0, 16}
+
+\Hypertarget{classutils_1_1wandb__logging_1_1wandb__utils_1_1_wandb_logger_a3b51a021ab4a71e9b270e015f5bbce98}\index{utils.wandb\_logging.wandb\_utils.WandbLogger@{utils.wandb\_logging.wandb\_utils.WandbLogger}!result\_artifact@{result\_artifact}}
+\index{result\_artifact@{result\_artifact}!utils.wandb\_logging.wandb\_utils.WandbLogger@{utils.wandb\_logging.wandb\_utils.WandbLogger}}
+\doxysubsubsection{\texorpdfstring{result\_artifact}{result\_artifact}}
+{\footnotesize\ttfamily \label{classutils_1_1wandb__logging_1_1wandb__utils_1_1_wandb_logger_a3b51a021ab4a71e9b270e015f5bbce98} 
+utils.\+wandb\+\_\+logging.\+wandb\+\_\+utils.\+Wandb\+Logger.\+result\+\_\+artifact = \{\}}
+
+\Hypertarget{classutils_1_1wandb__logging_1_1wandb__utils_1_1_wandb_logger_a30d7110c9ce30bd92072c2061b0372c6}\index{utils.wandb\_logging.wandb\_utils.WandbLogger@{utils.wandb\_logging.wandb\_utils.WandbLogger}!result\_table@{result\_table}}
+\index{result\_table@{result\_table}!utils.wandb\_logging.wandb\_utils.WandbLogger@{utils.wandb\_logging.wandb\_utils.WandbLogger}}
+\doxysubsubsection{\texorpdfstring{result\_table}{result\_table}}
+{\footnotesize\ttfamily \label{classutils_1_1wandb__logging_1_1wandb__utils_1_1_wandb_logger_a30d7110c9ce30bd92072c2061b0372c6} 
+utils.\+wandb\+\_\+logging.\+wandb\+\_\+utils.\+Wandb\+Logger.\+result\+\_\+table}
+
+\Hypertarget{classutils_1_1wandb__logging_1_1wandb__utils_1_1_wandb_logger_aacf7cdd6868fcd2207f079be792f60cc}\index{utils.wandb\_logging.wandb\_utils.WandbLogger@{utils.wandb\_logging.wandb\_utils.WandbLogger}!train\_artifact@{train\_artifact}}
+\index{train\_artifact@{train\_artifact}!utils.wandb\_logging.wandb\_utils.WandbLogger@{utils.wandb\_logging.wandb\_utils.WandbLogger}}
+\doxysubsubsection{\texorpdfstring{train\_artifact}{train\_artifact}}
+{\footnotesize\ttfamily \label{classutils_1_1wandb__logging_1_1wandb__utils_1_1_wandb_logger_aacf7cdd6868fcd2207f079be792f60cc} 
+utils.\+wandb\+\_\+logging.\+wandb\+\_\+utils.\+Wandb\+Logger.\+train\+\_\+artifact}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \ self.create\_dataset\_table(LoadImagesAndLabels(}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ data[\textcolor{stringliteral}{'train'}]),\ names,\ name=\textcolor{stringliteral}{'train'})\ \textcolor{keywordflow}{if}\ data.get(\textcolor{stringliteral}{'train'})\ \textcolor{keywordflow}{else}\ \textcolor{keywordtype}{None}}
+
+\end{DoxyCode}
+\Hypertarget{classutils_1_1wandb__logging_1_1wandb__utils_1_1_wandb_logger_a81b841f1b8c65c040a14da142cb915e9}\index{utils.wandb\_logging.wandb\_utils.WandbLogger@{utils.wandb\_logging.wandb\_utils.WandbLogger}!val\_artifact@{val\_artifact}}
+\index{val\_artifact@{val\_artifact}!utils.wandb\_logging.wandb\_utils.WandbLogger@{utils.wandb\_logging.wandb\_utils.WandbLogger}}
+\doxysubsubsection{\texorpdfstring{val\_artifact}{val\_artifact}}
+{\footnotesize\ttfamily \label{classutils_1_1wandb__logging_1_1wandb__utils_1_1_wandb_logger_a81b841f1b8c65c040a14da142cb915e9} 
+utils.\+wandb\+\_\+logging.\+wandb\+\_\+utils.\+Wandb\+Logger.\+val\+\_\+artifact}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \ self.create\_dataset\_table(LoadImagesAndLabels(}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ data[\textcolor{stringliteral}{'val'}]),\ names,\ name=\textcolor{stringliteral}{'val'})\ \textcolor{keywordflow}{if}\ data.get(\textcolor{stringliteral}{'val'})\ \textcolor{keywordflow}{else}\ \textcolor{keywordtype}{None}}
+
+\end{DoxyCode}
+\Hypertarget{classutils_1_1wandb__logging_1_1wandb__utils_1_1_wandb_logger_a8a718c8a7f2939b121da0c50c921b88e}\index{utils.wandb\_logging.wandb\_utils.WandbLogger@{utils.wandb\_logging.wandb\_utils.WandbLogger}!val\_table@{val\_table}}
+\index{val\_table@{val\_table}!utils.wandb\_logging.wandb\_utils.WandbLogger@{utils.wandb\_logging.wandb\_utils.WandbLogger}}
+\doxysubsubsection{\texorpdfstring{val\_table}{val\_table}}
+{\footnotesize\ttfamily \label{classutils_1_1wandb__logging_1_1wandb__utils_1_1_wandb_logger_a8a718c8a7f2939b121da0c50c921b88e} 
+utils.\+wandb\+\_\+logging.\+wandb\+\_\+utils.\+Wandb\+Logger.\+val\+\_\+table = self.\+val\+\_\+artifact.\+get(\textquotesingle{}val\textquotesingle{})}
+
+\Hypertarget{classutils_1_1wandb__logging_1_1wandb__utils_1_1_wandb_logger_a6e6ad8c77484bd14d8b8b03ed30bf853}\index{utils.wandb\_logging.wandb\_utils.WandbLogger@{utils.wandb\_logging.wandb\_utils.WandbLogger}!val\_table\_map@{val\_table\_map}}
+\index{val\_table\_map@{val\_table\_map}!utils.wandb\_logging.wandb\_utils.WandbLogger@{utils.wandb\_logging.wandb\_utils.WandbLogger}}
+\doxysubsubsection{\texorpdfstring{val\_table\_map}{val\_table\_map}}
+{\footnotesize\ttfamily \label{classutils_1_1wandb__logging_1_1wandb__utils_1_1_wandb_logger_a6e6ad8c77484bd14d8b8b03ed30bf853} 
+dict utils.\+wandb\+\_\+logging.\+wandb\+\_\+utils.\+Wandb\+Logger.\+val\+\_\+table\+\_\+map = \{\}}
+
+\Hypertarget{classutils_1_1wandb__logging_1_1wandb__utils_1_1_wandb_logger_a1ef656d3d2f2490a0c6c78dc1ba4f75a}\index{utils.wandb\_logging.wandb\_utils.WandbLogger@{utils.wandb\_logging.wandb\_utils.WandbLogger}!wandb@{wandb}}
+\index{wandb@{wandb}!utils.wandb\_logging.wandb\_utils.WandbLogger@{utils.wandb\_logging.wandb\_utils.WandbLogger}}
+\doxysubsubsection{\texorpdfstring{wandb}{wandb}}
+{\footnotesize\ttfamily \label{classutils_1_1wandb__logging_1_1wandb__utils_1_1_wandb_logger_a1ef656d3d2f2490a0c6c78dc1ba4f75a} 
+utils.\+wandb\+\_\+logging.\+wandb\+\_\+utils.\+Wandb\+Logger.\+wandb}
+
+\Hypertarget{classutils_1_1wandb__logging_1_1wandb__utils_1_1_wandb_logger_a5ef2f589d37fbb992f59a6ac676f125e}\index{utils.wandb\_logging.wandb\_utils.WandbLogger@{utils.wandb\_logging.wandb\_utils.WandbLogger}!wandb\_run@{wandb\_run}}
+\index{wandb\_run@{wandb\_run}!utils.wandb\_logging.wandb\_utils.WandbLogger@{utils.wandb\_logging.wandb\_utils.WandbLogger}}
+\doxysubsubsection{\texorpdfstring{wandb\_run}{wandb\_run}}
+{\footnotesize\ttfamily \label{classutils_1_1wandb__logging_1_1wandb__utils_1_1_wandb_logger_a5ef2f589d37fbb992f59a6ac676f125e} 
+utils.\+wandb\+\_\+logging.\+wandb\+\_\+utils.\+Wandb\+Logger.\+wandb\+\_\+run}
+
+\Hypertarget{classutils_1_1wandb__logging_1_1wandb__utils_1_1_wandb_logger_ac8ff5ca844e655f50fb7442912a654dc}\index{utils.wandb\_logging.wandb\_utils.WandbLogger@{utils.wandb\_logging.wandb\_utils.WandbLogger}!weights@{weights}}
+\index{weights@{weights}!utils.wandb\_logging.wandb\_utils.WandbLogger@{utils.wandb\_logging.wandb\_utils.WandbLogger}}
+\doxysubsubsection{\texorpdfstring{weights}{weights}}
+{\footnotesize\ttfamily \label{classutils_1_1wandb__logging_1_1wandb__utils_1_1_wandb_logger_ac8ff5ca844e655f50fb7442912a654dc} 
+str utils.\+wandb\+\_\+logging.\+wandb\+\_\+utils.\+Wandb\+Logger.\+weights = Path(modeldir) / "{}last.\+pt"{}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Cervi\+AI/utils/wandb\+\_\+logging/\mbox{\hyperlink{wandb__utils_8py}{wandb\+\_\+utils.\+py}}\end{DoxyCompactItemize}

@@ -1,0 +1,75 @@
+\doxysection{torchvision\+\_\+down.\+models.\+optical\+\_\+flow.\+raft.\+Flow\+Head Class Reference}
+\hypertarget{classtorchvision__down_1_1models_1_1optical__flow_1_1raft_1_1_flow_head}{}\label{classtorchvision__down_1_1models_1_1optical__flow_1_1raft_1_1_flow_head}\index{torchvision\_down.models.optical\_flow.raft.FlowHead@{torchvision\_down.models.optical\_flow.raft.FlowHead}}
+Inheritance diagram for torchvision\+\_\+down.\+models.\+optical\+\_\+flow.\+raft.\+Flow\+Head\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classtorchvision__down_1_1models_1_1optical__flow_1_1raft_1_1_flow_head}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1models_1_1optical__flow_1_1raft_1_1_flow_head_abcf3820c7614c429e633840e22af4660}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, \texorpdfstring{$\ast$}{*}, in\+\_\+channels, hidden\+\_\+size)
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1models_1_1optical__flow_1_1raft_1_1_flow_head_a2d3cb145d9fa0c54a3927bf5339eb79a}{forward}} (self, x)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1models_1_1optical__flow_1_1raft_1_1_flow_head_ab91b57a54b3c34bcac36d96327cafa6c}{conv1}} = nn.\+Conv2d(in\+\_\+channels, hidden\+\_\+size, 3, padding=1)
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1models_1_1optical__flow_1_1raft_1_1_flow_head_a98b4126fd5cbb0f0394002eab8833c83}{conv2}} = nn.\+Conv2d(hidden\+\_\+size, 2, 3, padding=1)
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1models_1_1optical__flow_1_1raft_1_1_flow_head_a8dd23e6be89e326d85636c559076f272}{relu}} = nn.\+Re\+LU(inplace=True)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}Flow head, part of the update block.
+
+Takes the hidden state of the recurrent unit as input, and outputs the predicted "delta flow".
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classtorchvision__down_1_1models_1_1optical__flow_1_1raft_1_1_flow_head_abcf3820c7614c429e633840e22af4660}\index{torchvision\_down.models.optical\_flow.raft.FlowHead@{torchvision\_down.models.optical\_flow.raft.FlowHead}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!torchvision\_down.models.optical\_flow.raft.FlowHead@{torchvision\_down.models.optical\_flow.raft.FlowHead}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1models_1_1optical__flow_1_1raft_1_1_flow_head_abcf3820c7614c429e633840e22af4660} 
+torchvision\+\_\+down.\+models.\+optical\+\_\+flow.\+raft.\+Flow\+Head.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{\texorpdfstring{$\ast$}{*}}]{}{, }\item[{}]{in\+\_\+channels}{, }\item[{}]{hidden\+\_\+size}{}\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classtorchvision__down_1_1models_1_1optical__flow_1_1raft_1_1_flow_head_a2d3cb145d9fa0c54a3927bf5339eb79a}\index{torchvision\_down.models.optical\_flow.raft.FlowHead@{torchvision\_down.models.optical\_flow.raft.FlowHead}!forward@{forward}}
+\index{forward@{forward}!torchvision\_down.models.optical\_flow.raft.FlowHead@{torchvision\_down.models.optical\_flow.raft.FlowHead}}
+\doxysubsubsection{\texorpdfstring{forward()}{forward()}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1models_1_1optical__flow_1_1raft_1_1_flow_head_a2d3cb145d9fa0c54a3927bf5339eb79a} 
+torchvision\+\_\+down.\+models.\+optical\+\_\+flow.\+raft.\+Flow\+Head.\+forward (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{x}{}\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classtorchvision__down_1_1models_1_1optical__flow_1_1raft_1_1_flow_head_ab91b57a54b3c34bcac36d96327cafa6c}\index{torchvision\_down.models.optical\_flow.raft.FlowHead@{torchvision\_down.models.optical\_flow.raft.FlowHead}!conv1@{conv1}}
+\index{conv1@{conv1}!torchvision\_down.models.optical\_flow.raft.FlowHead@{torchvision\_down.models.optical\_flow.raft.FlowHead}}
+\doxysubsubsection{\texorpdfstring{conv1}{conv1}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1models_1_1optical__flow_1_1raft_1_1_flow_head_ab91b57a54b3c34bcac36d96327cafa6c} 
+torchvision\+\_\+down.\+models.\+optical\+\_\+flow.\+raft.\+Flow\+Head.\+conv1 = nn.\+Conv2d(in\+\_\+channels, hidden\+\_\+size, 3, padding=1)}
+
+\Hypertarget{classtorchvision__down_1_1models_1_1optical__flow_1_1raft_1_1_flow_head_a98b4126fd5cbb0f0394002eab8833c83}\index{torchvision\_down.models.optical\_flow.raft.FlowHead@{torchvision\_down.models.optical\_flow.raft.FlowHead}!conv2@{conv2}}
+\index{conv2@{conv2}!torchvision\_down.models.optical\_flow.raft.FlowHead@{torchvision\_down.models.optical\_flow.raft.FlowHead}}
+\doxysubsubsection{\texorpdfstring{conv2}{conv2}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1models_1_1optical__flow_1_1raft_1_1_flow_head_a98b4126fd5cbb0f0394002eab8833c83} 
+torchvision\+\_\+down.\+models.\+optical\+\_\+flow.\+raft.\+Flow\+Head.\+conv2 = nn.\+Conv2d(hidden\+\_\+size, 2, 3, padding=1)}
+
+\Hypertarget{classtorchvision__down_1_1models_1_1optical__flow_1_1raft_1_1_flow_head_a8dd23e6be89e326d85636c559076f272}\index{torchvision\_down.models.optical\_flow.raft.FlowHead@{torchvision\_down.models.optical\_flow.raft.FlowHead}!relu@{relu}}
+\index{relu@{relu}!torchvision\_down.models.optical\_flow.raft.FlowHead@{torchvision\_down.models.optical\_flow.raft.FlowHead}}
+\doxysubsubsection{\texorpdfstring{relu}{relu}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1models_1_1optical__flow_1_1raft_1_1_flow_head_a8dd23e6be89e326d85636c559076f272} 
+torchvision\+\_\+down.\+models.\+optical\+\_\+flow.\+raft.\+Flow\+Head.\+relu = nn.\+Re\+LU(inplace=True)}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Cervi\+AI/torchvision\+\_\+down/models/optical\+\_\+flow/\mbox{\hyperlink{raft_8py}{raft.\+py}}\end{DoxyCompactItemize}

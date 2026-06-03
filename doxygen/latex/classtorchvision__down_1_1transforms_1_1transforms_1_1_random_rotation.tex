@@ -1,0 +1,144 @@
+\doxysection{torchvision\+\_\+down.\+transforms.\+transforms.\+Random\+Rotation Class Reference}
+\hypertarget{classtorchvision__down_1_1transforms_1_1transforms_1_1_random_rotation}{}\label{classtorchvision__down_1_1transforms_1_1transforms_1_1_random_rotation}\index{torchvision\_down.transforms.transforms.RandomRotation@{torchvision\_down.transforms.transforms.RandomRotation}}
+Inheritance diagram for torchvision\+\_\+down.\+transforms.\+transforms.\+Random\+Rotation\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classtorchvision__down_1_1transforms_1_1transforms_1_1_random_rotation}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1transforms_1_1transforms_1_1_random_rotation_aedb8a7f8586cad2bdda87911c83c8cd7}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, \mbox{\hyperlink{classtorchvision__down_1_1transforms_1_1transforms_1_1_random_rotation_a6f3fdabc4ed1ecdc0671c297dc196e97}{degrees}}, interpolation=\mbox{\hyperlink{classtorchvision__down_1_1transforms_1_1functional_1_1_interpolation_mode_a6a6bb34c2976ea38186bca5ec09649c1}{Interpolation\+Mode.\+NEAREST}}, \mbox{\hyperlink{classtorchvision__down_1_1transforms_1_1transforms_1_1_random_rotation_aec659088e8595d7ed5c5b36b36a3cd1e}{expand}}=False, \mbox{\hyperlink{classtorchvision__down_1_1transforms_1_1transforms_1_1_random_rotation_a9c16731d62793073484340f1a046e722}{center}}=None, \mbox{\hyperlink{classtorchvision__down_1_1transforms_1_1transforms_1_1_random_rotation_aec8f31fba0d78a2c898e89abacc91178}{fill}}=0, \mbox{\hyperlink{classtorchvision__down_1_1transforms_1_1transforms_1_1_random_rotation_a41aba3faae5d0511186490b2ce74952c}{resample}}=None)
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1transforms_1_1transforms_1_1_random_rotation_ac58c1d7b8538ef091dd6592754ee0e6d}{forward}} (self, img)
+\item 
+str \mbox{\hyperlink{classtorchvision__down_1_1transforms_1_1transforms_1_1_random_rotation_a48ceaf8f56a2d3de2416d76ce6adb02c}{\+\_\+\+\_\+repr\+\_\+\+\_\+}} (self)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+float \mbox{\hyperlink{classtorchvision__down_1_1transforms_1_1transforms_1_1_random_rotation_a949c81b2601ffdf61520dc2714026670}{get\+\_\+params}} (List\mbox{[}float\mbox{]} \mbox{\hyperlink{classtorchvision__down_1_1transforms_1_1transforms_1_1_random_rotation_a6f3fdabc4ed1ecdc0671c297dc196e97}{degrees}})
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1transforms_1_1transforms_1_1_random_rotation_a6f3fdabc4ed1ecdc0671c297dc196e97}{degrees}} = \mbox{\hyperlink{namespacetorchvision__down_1_1transforms_1_1transforms_a40ee7b5e7fd3e9b5d8992c96a8df0e52}{\+\_\+setup\+\_\+angle}}(degrees, name="{}degrees"{}, req\+\_\+sizes=(2,))
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1transforms_1_1transforms_1_1_random_rotation_a9c16731d62793073484340f1a046e722}{center}} = center
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1transforms_1_1transforms_1_1_random_rotation_a41aba3faae5d0511186490b2ce74952c}{resample}} = interpolation
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1transforms_1_1transforms_1_1_random_rotation_aec659088e8595d7ed5c5b36b36a3cd1e}{expand}} = expand
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1transforms_1_1transforms_1_1_random_rotation_aec8f31fba0d78a2c898e89abacc91178}{fill}} = fill
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}Rotate the image by angle.
+If the image is torch Tensor, it is expected
+to have [..., H, W] shape, where ... means an arbitrary number of leading dimensions.
+
+Args:
+    degrees (sequence or number): Range of degrees to select from.
+        If degrees is a number instead of sequence like (min, max), the range of degrees
+        will be (-degrees, +degrees).
+    interpolation (InterpolationMode): Desired interpolation enum defined by
+        :class:`torchvision.transforms.InterpolationMode`. Default is ``InterpolationMode.NEAREST``.
+        If input is Tensor, only ``InterpolationMode.NEAREST``, ``InterpolationMode.BILINEAR`` are supported.
+        For backward compatibility integer values (e.g. ``PIL.Image.NEAREST``) are still acceptable.
+    expand (bool, optional): Optional expansion flag.
+        If true, expands the output to make it large enough to hold the entire rotated image.
+        If false or omitted, make the output image the same size as the input image.
+        Note that the expand flag assumes rotation around the center and no translation.
+    center (sequence, optional): Optional center of rotation, (x, y). Origin is the upper left corner.
+        Default is the center of the image.
+    fill (sequence or number): Pixel fill value for the area outside the rotated
+        image. Default is ``0``. If given a number, the value is used for all bands respectively.
+    resample (int, optional):
+        .. warning::
+            This parameter was deprecated in ``0.12`` and will be removed in ``0.14``. Please use ``interpolation``
+            instead.
+
+.. _filters: https://pillow.readthedocs.io/en/latest/handbook/concepts.html#filters
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classtorchvision__down_1_1transforms_1_1transforms_1_1_random_rotation_aedb8a7f8586cad2bdda87911c83c8cd7}\index{torchvision\_down.transforms.transforms.RandomRotation@{torchvision\_down.transforms.transforms.RandomRotation}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!torchvision\_down.transforms.transforms.RandomRotation@{torchvision\_down.transforms.transforms.RandomRotation}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1transforms_1_1transforms_1_1_random_rotation_aedb8a7f8586cad2bdda87911c83c8cd7} 
+torchvision\+\_\+down.\+transforms.\+transforms.\+Random\+Rotation.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{degrees}{, }\item[{}]{interpolation}{ = {\ttfamily \mbox{\hyperlink{classtorchvision__down_1_1transforms_1_1functional_1_1_interpolation_mode_a6a6bb34c2976ea38186bca5ec09649c1}{Interpolation\+Mode.\+NEAREST}}}, }\item[{}]{expand}{ = {\ttfamily False}, }\item[{}]{center}{ = {\ttfamily None}, }\item[{}]{fill}{ = {\ttfamily 0}, }\item[{}]{resample}{ = {\ttfamily None}}\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classtorchvision__down_1_1transforms_1_1transforms_1_1_random_rotation_a48ceaf8f56a2d3de2416d76ce6adb02c}\index{torchvision\_down.transforms.transforms.RandomRotation@{torchvision\_down.transforms.transforms.RandomRotation}!\_\_repr\_\_@{\_\_repr\_\_}}
+\index{\_\_repr\_\_@{\_\_repr\_\_}!torchvision\_down.transforms.transforms.RandomRotation@{torchvision\_down.transforms.transforms.RandomRotation}}
+\doxysubsubsection{\texorpdfstring{\_\_repr\_\_()}{\_\_repr\_\_()}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1transforms_1_1transforms_1_1_random_rotation_a48ceaf8f56a2d3de2416d76ce6adb02c} 
+ str torchvision\+\_\+down.\+transforms.\+transforms.\+Random\+Rotation.\+\_\+\+\_\+repr\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classtorchvision__down_1_1transforms_1_1transforms_1_1_random_rotation_ac58c1d7b8538ef091dd6592754ee0e6d}\index{torchvision\_down.transforms.transforms.RandomRotation@{torchvision\_down.transforms.transforms.RandomRotation}!forward@{forward}}
+\index{forward@{forward}!torchvision\_down.transforms.transforms.RandomRotation@{torchvision\_down.transforms.transforms.RandomRotation}}
+\doxysubsubsection{\texorpdfstring{forward()}{forward()}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1transforms_1_1transforms_1_1_random_rotation_ac58c1d7b8538ef091dd6592754ee0e6d} 
+torchvision\+\_\+down.\+transforms.\+transforms.\+Random\+Rotation.\+forward (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{img}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Args:
+    img (PIL Image or Tensor): Image to be rotated.
+
+Returns:
+    PIL Image or Tensor: Rotated image.
+\end{DoxyVerb}
+ \Hypertarget{classtorchvision__down_1_1transforms_1_1transforms_1_1_random_rotation_a949c81b2601ffdf61520dc2714026670}\index{torchvision\_down.transforms.transforms.RandomRotation@{torchvision\_down.transforms.transforms.RandomRotation}!get\_params@{get\_params}}
+\index{get\_params@{get\_params}!torchvision\_down.transforms.transforms.RandomRotation@{torchvision\_down.transforms.transforms.RandomRotation}}
+\doxysubsubsection{\texorpdfstring{get\_params()}{get\_params()}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1transforms_1_1transforms_1_1_random_rotation_a949c81b2601ffdf61520dc2714026670} 
+ float torchvision\+\_\+down.\+transforms.\+transforms.\+Random\+Rotation.\+get\+\_\+params (\begin{DoxyParamCaption}\item[{List\mbox{[}float\mbox{]}}]{degrees}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\begin{DoxyVerb}Get parameters for ``rotate`` for a random rotation.
+
+Returns:
+    float: angle parameter to be passed to ``rotate`` for random rotation.
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classtorchvision__down_1_1transforms_1_1transforms_1_1_random_rotation_a9c16731d62793073484340f1a046e722}\index{torchvision\_down.transforms.transforms.RandomRotation@{torchvision\_down.transforms.transforms.RandomRotation}!center@{center}}
+\index{center@{center}!torchvision\_down.transforms.transforms.RandomRotation@{torchvision\_down.transforms.transforms.RandomRotation}}
+\doxysubsubsection{\texorpdfstring{center}{center}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1transforms_1_1transforms_1_1_random_rotation_a9c16731d62793073484340f1a046e722} 
+torchvision\+\_\+down.\+transforms.\+transforms.\+Random\+Rotation.\+center = center}
+
+\Hypertarget{classtorchvision__down_1_1transforms_1_1transforms_1_1_random_rotation_a6f3fdabc4ed1ecdc0671c297dc196e97}\index{torchvision\_down.transforms.transforms.RandomRotation@{torchvision\_down.transforms.transforms.RandomRotation}!degrees@{degrees}}
+\index{degrees@{degrees}!torchvision\_down.transforms.transforms.RandomRotation@{torchvision\_down.transforms.transforms.RandomRotation}}
+\doxysubsubsection{\texorpdfstring{degrees}{degrees}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1transforms_1_1transforms_1_1_random_rotation_a6f3fdabc4ed1ecdc0671c297dc196e97} 
+torchvision\+\_\+down.\+transforms.\+transforms.\+Random\+Rotation.\+degrees = \mbox{\hyperlink{namespacetorchvision__down_1_1transforms_1_1transforms_a40ee7b5e7fd3e9b5d8992c96a8df0e52}{\+\_\+setup\+\_\+angle}}(degrees, name="{}degrees"{}, req\+\_\+sizes=(2,))}
+
+\Hypertarget{classtorchvision__down_1_1transforms_1_1transforms_1_1_random_rotation_aec659088e8595d7ed5c5b36b36a3cd1e}\index{torchvision\_down.transforms.transforms.RandomRotation@{torchvision\_down.transforms.transforms.RandomRotation}!expand@{expand}}
+\index{expand@{expand}!torchvision\_down.transforms.transforms.RandomRotation@{torchvision\_down.transforms.transforms.RandomRotation}}
+\doxysubsubsection{\texorpdfstring{expand}{expand}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1transforms_1_1transforms_1_1_random_rotation_aec659088e8595d7ed5c5b36b36a3cd1e} 
+torchvision\+\_\+down.\+transforms.\+transforms.\+Random\+Rotation.\+expand = expand}
+
+\Hypertarget{classtorchvision__down_1_1transforms_1_1transforms_1_1_random_rotation_aec8f31fba0d78a2c898e89abacc91178}\index{torchvision\_down.transforms.transforms.RandomRotation@{torchvision\_down.transforms.transforms.RandomRotation}!fill@{fill}}
+\index{fill@{fill}!torchvision\_down.transforms.transforms.RandomRotation@{torchvision\_down.transforms.transforms.RandomRotation}}
+\doxysubsubsection{\texorpdfstring{fill}{fill}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1transforms_1_1transforms_1_1_random_rotation_aec8f31fba0d78a2c898e89abacc91178} 
+torchvision\+\_\+down.\+transforms.\+transforms.\+Random\+Rotation.\+fill = fill}
+
+\Hypertarget{classtorchvision__down_1_1transforms_1_1transforms_1_1_random_rotation_a41aba3faae5d0511186490b2ce74952c}\index{torchvision\_down.transforms.transforms.RandomRotation@{torchvision\_down.transforms.transforms.RandomRotation}!resample@{resample}}
+\index{resample@{resample}!torchvision\_down.transforms.transforms.RandomRotation@{torchvision\_down.transforms.transforms.RandomRotation}}
+\doxysubsubsection{\texorpdfstring{resample}{resample}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1transforms_1_1transforms_1_1_random_rotation_a41aba3faae5d0511186490b2ce74952c} 
+torchvision\+\_\+down.\+transforms.\+transforms.\+Random\+Rotation.\+resample = interpolation}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Cervi\+AI/torchvision\+\_\+down/transforms/\mbox{\hyperlink{transforms_8py}{transforms.\+py}}\end{DoxyCompactItemize}

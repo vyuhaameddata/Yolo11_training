@@ -1,0 +1,251 @@
+\doxysection{WSDcell\+\_\+random Namespace Reference}
+\hypertarget{namespace_w_s_dcell__random}{}\label{namespace_w_s_dcell__random}\index{WSDcell\_random@{WSDcell\_random}}
+\doxysubsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{class_w_s_dcell__random_1_1_global_vars}{Global\+Vars}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{namespace_w_s_dcell__random_aa97c1a78978881eb3708ef56b06d93e9}{write\+\_\+ndpa}} (\mbox{\hyperlink{namespace_w_s_dcell__random_aa94433e623d0011e833b7116783df1e2}{tile\+\_\+size}}=1024, \mbox{\hyperlink{namespace_w_s_dcell__random_a5848b9970565311064955fb5e767d1c2}{overlap}}=128)
+\item 
+\mbox{\hyperlink{namespace_w_s_dcell__random_a73f9424e8d2288b9e2e24eece48998a0}{get\+\_\+referance}} (wsi\+\_\+path)
+\item 
+\mbox{\hyperlink{namespace_w_s_dcell__random_a5377be3d180b592b15b30a222a3f80bd}{update\+\_\+annote\+\_\+id}} (annotations)
+\item 
+\mbox{\hyperlink{namespace_w_s_dcell__random_ac1f65e978c1dc7d8fe967d4cadbb8d68}{run\+\_\+predict\+\_\+wsi\+\_\+multithread}} (path, model, \mbox{\hyperlink{namespace_w_s_dcell__random_a5848b9970565311064955fb5e767d1c2}{overlap}}, \mbox{\hyperlink{namespace_w_s_dcell__random_aa94433e623d0011e833b7116783df1e2}{tile\+\_\+size}}=1024, batch\+\_\+size=12)
+\item 
+\mbox{\hyperlink{namespace_w_s_dcell__random_afd97ce39de8298c54c7f80177730c4ae}{prune\+\_\+list}} (box\+\_\+list)
+\item 
+\mbox{\hyperlink{namespace_w_s_dcell__random_a1aee96f960024c0384c8e063e197d177}{replace\+\_\+bigger\+\_\+box}} (boxA, boxB)
+\item 
+\mbox{\hyperlink{namespace_w_s_dcell__random_a01b5ee630dec2eb5fce2e52e617af8f8}{bb\+\_\+intersection\+\_\+over\+\_\+union}} (boxA, boxB)
+\item 
+\mbox{\hyperlink{namespace_w_s_dcell__random_aee1acb368e4d9ba6eab58f2cc6a29fa6}{rerun\+\_\+predict\+\_\+pool}} (wsi\+\_\+path, model, pred\+\_\+list, \mbox{\hyperlink{namespace_w_s_dcell__random_aa94433e623d0011e833b7116783df1e2}{tile\+\_\+size}}=1024, batch\+\_\+size=12)
+\item 
+\mbox{\hyperlink{namespace_w_s_dcell__random_affc73bc0ea4c8c6d7b4943cb9e474cae}{divide\+\_\+chunks}} (Anotelist, batch\+\_\+size)
+\item 
+\mbox{\hyperlink{namespace_w_s_dcell__random_afb0e32ebd7fe36ff08808e0314f27d96}{read\+\_\+tiles\+\_\+parallel}} (slide\+\_\+path, pred\+\_\+list, \mbox{\hyperlink{namespace_w_s_dcell__random_aa94433e623d0011e833b7116783df1e2}{tile\+\_\+size}})
+\item 
+\mbox{\hyperlink{namespace_w_s_dcell__random_a0b122d63c08e17b5b8c6510f5dc55926}{process}} (wsi\+\_\+path, pred, \mbox{\hyperlink{namespace_w_s_dcell__random_aa94433e623d0011e833b7116783df1e2}{tile\+\_\+size}})
+\item 
+\mbox{\hyperlink{namespace_w_s_dcell__random_a57124a621f400cc14c30d400a969b870}{fetch\+\_\+batch}} (image)
+\item 
+\mbox{\hyperlink{namespace_w_s_dcell__random_a26f2e5441d94cbef2a975a77cd896e76}{get\+\_\+cat\+\_\+model}} ()
+\item 
+\mbox{\hyperlink{namespace_w_s_dcell__random_ae5fa6b7c9795ca9ffcdd08c1fb8c8dbb}{write\+\_\+xml}} (annotations, start\+\_\+id, anote\+\_\+list, X\+\_\+\+Reference, Y\+\_\+\+Reference, nm\+\_\+p)
+\item 
+\mbox{\hyperlink{namespace_w_s_dcell__random_ad4dbd06edfae322c7a2d6b66f1718bdf}{write\+\_\+annotation}} (annotations, \+\_\+id, x1, y1, x2, y2, cls, conf, X\+\_\+\+Reference, Y\+\_\+\+Reference, nm\+\_\+p=221)
+\item 
+\mbox{\hyperlink{namespace_w_s_dcell__random_abebe755686ec87bdd30f399ef975ea6f}{dump\+\_\+results}} (gt\+\_\+xml\+\_\+path, predicts\+\_\+xml\+\_\+path)
+\item 
+\mbox{\hyperlink{namespace_w_s_dcell__random_a2851e421c324b6fbcebbff7cc8c923ed}{get\+\_\+box\+\_\+list}} (xml\+\_\+path, nm\+\_\+p=221)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{namespace_w_s_dcell__random_afe87775c2557f2df29f5a97624b7d65d}{current\+\_\+dir}} = os.\+path.\+dirname(sys.\+executable)
+\item 
+str \mbox{\hyperlink{namespace_w_s_dcell__random_aa409746c4d75e181dccf22542740fff0}{url}} = "{}https\+://github.\+com/openslide/openslide-\/winbuild/releases/download/v20230414/openslide-\/win64-\/20230414.zip"{}
+\item 
+str \mbox{\hyperlink{namespace_w_s_dcell__random_ac5e16c3dc884e1cfe4c8470f58c44420}{filename}} = "{}openslide-\/win64-\/20230414.zip"{}
+\item 
+\mbox{\hyperlink{namespace_w_s_dcell__random_ae7a408af614160c7bfbbf8a58816a436}{response}} = requests.\+get(\mbox{\hyperlink{namespace_w_s_dcell__random_aa409746c4d75e181dccf22542740fff0}{url}}, stream=True)
+\item 
+\mbox{\hyperlink{namespace_w_s_dcell__random_abef5508e7507c56bd96d9f1267151088}{chunk\+\_\+size}}
+\item 
+\mbox{\hyperlink{namespace_w_s_dcell__random_a2a52dfc0093073daefe1ce05b4ff8b14}{OPENSLIDE\+\_\+\+PATH}} = os.\+path.\+join(\mbox{\hyperlink{namespace_w_s_dcell__random_afe87775c2557f2df29f5a97624b7d65d}{current\+\_\+dir}}, \textquotesingle{}openslide-\/win64-\/20230414\textquotesingle{}, \textquotesingle{}bin\textquotesingle{})
+\item 
+str \mbox{\hyperlink{namespace_w_s_dcell__random_a03c46486c37bdc51d30d7d45d1695fb1}{folder\+\_\+path}} = r\textquotesingle{}D\+:\textbackslash{}\+Shreyan\textbackslash{}\+Development\textbackslash{}\+Test\textquotesingle{}
+\item 
+\mbox{\hyperlink{namespace_w_s_dcell__random_a528a11d5c8c9a332d3c64137c88ea2c0}{global\+Vars}} = \mbox{\hyperlink{class_w_s_dcell__random_1_1_global_vars}{Global\+Vars}}(\mbox{\hyperlink{namespace_w_s_dcell__random_a03c46486c37bdc51d30d7d45d1695fb1}{folder\+\_\+path}})
+\item 
+\mbox{\hyperlink{namespace_w_s_dcell__random_ad12bc84590bc921eb250dc1048efe349}{start}} = time.\+time()
+\item 
+\mbox{\hyperlink{namespace_w_s_dcell__random_aa94433e623d0011e833b7116783df1e2}{tile\+\_\+size}}
+\item 
+\mbox{\hyperlink{namespace_w_s_dcell__random_a5848b9970565311064955fb5e767d1c2}{overlap}}
+\item 
+\mbox{\hyperlink{namespace_w_s_dcell__random_aa52302fd638aa7b22970693ab28fca50}{end}} = time.\+time()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{namespace_w_s_dcell__random_a01b5ee630dec2eb5fce2e52e617af8f8}\index{WSDcell\_random@{WSDcell\_random}!bb\_intersection\_over\_union@{bb\_intersection\_over\_union}}
+\index{bb\_intersection\_over\_union@{bb\_intersection\_over\_union}!WSDcell\_random@{WSDcell\_random}}
+\doxysubsubsection{\texorpdfstring{bb\_intersection\_over\_union()}{bb\_intersection\_over\_union()}}
+{\footnotesize\ttfamily \label{namespace_w_s_dcell__random_a01b5ee630dec2eb5fce2e52e617af8f8} 
+WSDcell\+\_\+random.\+bb\+\_\+intersection\+\_\+over\+\_\+union (\begin{DoxyParamCaption}\item[{}]{boxA}{, }\item[{}]{boxB}{}\end{DoxyParamCaption})}
+
+\Hypertarget{namespace_w_s_dcell__random_affc73bc0ea4c8c6d7b4943cb9e474cae}\index{WSDcell\_random@{WSDcell\_random}!divide\_chunks@{divide\_chunks}}
+\index{divide\_chunks@{divide\_chunks}!WSDcell\_random@{WSDcell\_random}}
+\doxysubsubsection{\texorpdfstring{divide\_chunks()}{divide\_chunks()}}
+{\footnotesize\ttfamily \label{namespace_w_s_dcell__random_affc73bc0ea4c8c6d7b4943cb9e474cae} 
+WSDcell\+\_\+random.\+divide\+\_\+chunks (\begin{DoxyParamCaption}\item[{}]{Anotelist}{, }\item[{}]{batch\+\_\+size}{}\end{DoxyParamCaption})}
+
+\Hypertarget{namespace_w_s_dcell__random_abebe755686ec87bdd30f399ef975ea6f}\index{WSDcell\_random@{WSDcell\_random}!dump\_results@{dump\_results}}
+\index{dump\_results@{dump\_results}!WSDcell\_random@{WSDcell\_random}}
+\doxysubsubsection{\texorpdfstring{dump\_results()}{dump\_results()}}
+{\footnotesize\ttfamily \label{namespace_w_s_dcell__random_abebe755686ec87bdd30f399ef975ea6f} 
+WSDcell\+\_\+random.\+dump\+\_\+results (\begin{DoxyParamCaption}\item[{}]{gt\+\_\+xml\+\_\+path}{, }\item[{}]{predicts\+\_\+xml\+\_\+path}{}\end{DoxyParamCaption})}
+
+\Hypertarget{namespace_w_s_dcell__random_a57124a621f400cc14c30d400a969b870}\index{WSDcell\_random@{WSDcell\_random}!fetch\_batch@{fetch\_batch}}
+\index{fetch\_batch@{fetch\_batch}!WSDcell\_random@{WSDcell\_random}}
+\doxysubsubsection{\texorpdfstring{fetch\_batch()}{fetch\_batch()}}
+{\footnotesize\ttfamily \label{namespace_w_s_dcell__random_a57124a621f400cc14c30d400a969b870} 
+WSDcell\+\_\+random.\+fetch\+\_\+batch (\begin{DoxyParamCaption}\item[{}]{image}{}\end{DoxyParamCaption})}
+
+\Hypertarget{namespace_w_s_dcell__random_a2851e421c324b6fbcebbff7cc8c923ed}\index{WSDcell\_random@{WSDcell\_random}!get\_box\_list@{get\_box\_list}}
+\index{get\_box\_list@{get\_box\_list}!WSDcell\_random@{WSDcell\_random}}
+\doxysubsubsection{\texorpdfstring{get\_box\_list()}{get\_box\_list()}}
+{\footnotesize\ttfamily \label{namespace_w_s_dcell__random_a2851e421c324b6fbcebbff7cc8c923ed} 
+WSDcell\+\_\+random.\+get\+\_\+box\+\_\+list (\begin{DoxyParamCaption}\item[{}]{xml\+\_\+path}{, }\item[{}]{nm\+\_\+p}{ = {\ttfamily 221}}\end{DoxyParamCaption})}
+
+\Hypertarget{namespace_w_s_dcell__random_a26f2e5441d94cbef2a975a77cd896e76}\index{WSDcell\_random@{WSDcell\_random}!get\_cat\_model@{get\_cat\_model}}
+\index{get\_cat\_model@{get\_cat\_model}!WSDcell\_random@{WSDcell\_random}}
+\doxysubsubsection{\texorpdfstring{get\_cat\_model()}{get\_cat\_model()}}
+{\footnotesize\ttfamily \label{namespace_w_s_dcell__random_a26f2e5441d94cbef2a975a77cd896e76} 
+WSDcell\+\_\+random.\+get\+\_\+cat\+\_\+model (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+\Hypertarget{namespace_w_s_dcell__random_a73f9424e8d2288b9e2e24eece48998a0}\index{WSDcell\_random@{WSDcell\_random}!get\_referance@{get\_referance}}
+\index{get\_referance@{get\_referance}!WSDcell\_random@{WSDcell\_random}}
+\doxysubsubsection{\texorpdfstring{get\_referance()}{get\_referance()}}
+{\footnotesize\ttfamily \label{namespace_w_s_dcell__random_a73f9424e8d2288b9e2e24eece48998a0} 
+WSDcell\+\_\+random.\+get\+\_\+referance (\begin{DoxyParamCaption}\item[{}]{wsi\+\_\+path}{}\end{DoxyParamCaption})}
+
+\Hypertarget{namespace_w_s_dcell__random_a0b122d63c08e17b5b8c6510f5dc55926}\index{WSDcell\_random@{WSDcell\_random}!process@{process}}
+\index{process@{process}!WSDcell\_random@{WSDcell\_random}}
+\doxysubsubsection{\texorpdfstring{process()}{process()}}
+{\footnotesize\ttfamily \label{namespace_w_s_dcell__random_a0b122d63c08e17b5b8c6510f5dc55926} 
+WSDcell\+\_\+random.\+process (\begin{DoxyParamCaption}\item[{}]{wsi\+\_\+path}{, }\item[{}]{pred}{, }\item[{}]{tile\+\_\+size}{}\end{DoxyParamCaption})}
+
+\Hypertarget{namespace_w_s_dcell__random_afd97ce39de8298c54c7f80177730c4ae}\index{WSDcell\_random@{WSDcell\_random}!prune\_list@{prune\_list}}
+\index{prune\_list@{prune\_list}!WSDcell\_random@{WSDcell\_random}}
+\doxysubsubsection{\texorpdfstring{prune\_list()}{prune\_list()}}
+{\footnotesize\ttfamily \label{namespace_w_s_dcell__random_afd97ce39de8298c54c7f80177730c4ae} 
+WSDcell\+\_\+random.\+prune\+\_\+list (\begin{DoxyParamCaption}\item[{}]{box\+\_\+list}{}\end{DoxyParamCaption})}
+
+\Hypertarget{namespace_w_s_dcell__random_afb0e32ebd7fe36ff08808e0314f27d96}\index{WSDcell\_random@{WSDcell\_random}!read\_tiles\_parallel@{read\_tiles\_parallel}}
+\index{read\_tiles\_parallel@{read\_tiles\_parallel}!WSDcell\_random@{WSDcell\_random}}
+\doxysubsubsection{\texorpdfstring{read\_tiles\_parallel()}{read\_tiles\_parallel()}}
+{\footnotesize\ttfamily \label{namespace_w_s_dcell__random_afb0e32ebd7fe36ff08808e0314f27d96} 
+WSDcell\+\_\+random.\+read\+\_\+tiles\+\_\+parallel (\begin{DoxyParamCaption}\item[{}]{slide\+\_\+path}{, }\item[{}]{pred\+\_\+list}{, }\item[{}]{tile\+\_\+size}{}\end{DoxyParamCaption})}
+
+\Hypertarget{namespace_w_s_dcell__random_a1aee96f960024c0384c8e063e197d177}\index{WSDcell\_random@{WSDcell\_random}!replace\_bigger\_box@{replace\_bigger\_box}}
+\index{replace\_bigger\_box@{replace\_bigger\_box}!WSDcell\_random@{WSDcell\_random}}
+\doxysubsubsection{\texorpdfstring{replace\_bigger\_box()}{replace\_bigger\_box()}}
+{\footnotesize\ttfamily \label{namespace_w_s_dcell__random_a1aee96f960024c0384c8e063e197d177} 
+WSDcell\+\_\+random.\+replace\+\_\+bigger\+\_\+box (\begin{DoxyParamCaption}\item[{}]{boxA}{, }\item[{}]{boxB}{}\end{DoxyParamCaption})}
+
+\Hypertarget{namespace_w_s_dcell__random_aee1acb368e4d9ba6eab58f2cc6a29fa6}\index{WSDcell\_random@{WSDcell\_random}!rerun\_predict\_pool@{rerun\_predict\_pool}}
+\index{rerun\_predict\_pool@{rerun\_predict\_pool}!WSDcell\_random@{WSDcell\_random}}
+\doxysubsubsection{\texorpdfstring{rerun\_predict\_pool()}{rerun\_predict\_pool()}}
+{\footnotesize\ttfamily \label{namespace_w_s_dcell__random_aee1acb368e4d9ba6eab58f2cc6a29fa6} 
+WSDcell\+\_\+random.\+rerun\+\_\+predict\+\_\+pool (\begin{DoxyParamCaption}\item[{}]{wsi\+\_\+path}{, }\item[{}]{model}{, }\item[{}]{pred\+\_\+list}{, }\item[{}]{tile\+\_\+size}{ = {\ttfamily 1024}, }\item[{}]{batch\+\_\+size}{ = {\ttfamily 12}}\end{DoxyParamCaption})}
+
+\Hypertarget{namespace_w_s_dcell__random_ac1f65e978c1dc7d8fe967d4cadbb8d68}\index{WSDcell\_random@{WSDcell\_random}!run\_predict\_wsi\_multithread@{run\_predict\_wsi\_multithread}}
+\index{run\_predict\_wsi\_multithread@{run\_predict\_wsi\_multithread}!WSDcell\_random@{WSDcell\_random}}
+\doxysubsubsection{\texorpdfstring{run\_predict\_wsi\_multithread()}{run\_predict\_wsi\_multithread()}}
+{\footnotesize\ttfamily \label{namespace_w_s_dcell__random_ac1f65e978c1dc7d8fe967d4cadbb8d68} 
+WSDcell\+\_\+random.\+run\+\_\+predict\+\_\+wsi\+\_\+multithread (\begin{DoxyParamCaption}\item[{}]{path}{, }\item[{}]{model}{, }\item[{}]{overlap}{, }\item[{}]{tile\+\_\+size}{ = {\ttfamily 1024}, }\item[{}]{batch\+\_\+size}{ = {\ttfamily 12}}\end{DoxyParamCaption})}
+
+\Hypertarget{namespace_w_s_dcell__random_a5377be3d180b592b15b30a222a3f80bd}\index{WSDcell\_random@{WSDcell\_random}!update\_annote\_id@{update\_annote\_id}}
+\index{update\_annote\_id@{update\_annote\_id}!WSDcell\_random@{WSDcell\_random}}
+\doxysubsubsection{\texorpdfstring{update\_annote\_id()}{update\_annote\_id()}}
+{\footnotesize\ttfamily \label{namespace_w_s_dcell__random_a5377be3d180b592b15b30a222a3f80bd} 
+WSDcell\+\_\+random.\+update\+\_\+annote\+\_\+id (\begin{DoxyParamCaption}\item[{}]{annotations}{}\end{DoxyParamCaption})}
+
+\Hypertarget{namespace_w_s_dcell__random_ad4dbd06edfae322c7a2d6b66f1718bdf}\index{WSDcell\_random@{WSDcell\_random}!write\_annotation@{write\_annotation}}
+\index{write\_annotation@{write\_annotation}!WSDcell\_random@{WSDcell\_random}}
+\doxysubsubsection{\texorpdfstring{write\_annotation()}{write\_annotation()}}
+{\footnotesize\ttfamily \label{namespace_w_s_dcell__random_ad4dbd06edfae322c7a2d6b66f1718bdf} 
+WSDcell\+\_\+random.\+write\+\_\+annotation (\begin{DoxyParamCaption}\item[{}]{annotations}{, }\item[{}]{\+\_\+id}{, }\item[{}]{x1}{, }\item[{}]{y1}{, }\item[{}]{x2}{, }\item[{}]{y2}{, }\item[{}]{cls}{, }\item[{}]{conf}{, }\item[{}]{X\+\_\+\+Reference}{, }\item[{}]{Y\+\_\+\+Reference}{, }\item[{}]{nm\+\_\+p}{ = {\ttfamily 221}}\end{DoxyParamCaption})}
+
+\Hypertarget{namespace_w_s_dcell__random_aa97c1a78978881eb3708ef56b06d93e9}\index{WSDcell\_random@{WSDcell\_random}!write\_ndpa@{write\_ndpa}}
+\index{write\_ndpa@{write\_ndpa}!WSDcell\_random@{WSDcell\_random}}
+\doxysubsubsection{\texorpdfstring{write\_ndpa()}{write\_ndpa()}}
+{\footnotesize\ttfamily \label{namespace_w_s_dcell__random_aa97c1a78978881eb3708ef56b06d93e9} 
+WSDcell\+\_\+random.\+write\+\_\+ndpa (\begin{DoxyParamCaption}\item[{}]{tile\+\_\+size}{ = {\ttfamily 1024}, }\item[{}]{overlap}{ = {\ttfamily 128}}\end{DoxyParamCaption})}
+
+\Hypertarget{namespace_w_s_dcell__random_ae5fa6b7c9795ca9ffcdd08c1fb8c8dbb}\index{WSDcell\_random@{WSDcell\_random}!write\_xml@{write\_xml}}
+\index{write\_xml@{write\_xml}!WSDcell\_random@{WSDcell\_random}}
+\doxysubsubsection{\texorpdfstring{write\_xml()}{write\_xml()}}
+{\footnotesize\ttfamily \label{namespace_w_s_dcell__random_ae5fa6b7c9795ca9ffcdd08c1fb8c8dbb} 
+WSDcell\+\_\+random.\+write\+\_\+xml (\begin{DoxyParamCaption}\item[{}]{annotations}{, }\item[{}]{start\+\_\+id}{, }\item[{}]{anote\+\_\+list}{, }\item[{}]{X\+\_\+\+Reference}{, }\item[{}]{Y\+\_\+\+Reference}{, }\item[{}]{nm\+\_\+p}{}\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Variable Documentation}
+\Hypertarget{namespace_w_s_dcell__random_abef5508e7507c56bd96d9f1267151088}\index{WSDcell\_random@{WSDcell\_random}!chunk\_size@{chunk\_size}}
+\index{chunk\_size@{chunk\_size}!WSDcell\_random@{WSDcell\_random}}
+\doxysubsubsection{\texorpdfstring{chunk\_size}{chunk\_size}}
+{\footnotesize\ttfamily \label{namespace_w_s_dcell__random_abef5508e7507c56bd96d9f1267151088} 
+WSDcell\+\_\+random.\+chunk\+\_\+size}
+
+\Hypertarget{namespace_w_s_dcell__random_afe87775c2557f2df29f5a97624b7d65d}\index{WSDcell\_random@{WSDcell\_random}!current\_dir@{current\_dir}}
+\index{current\_dir@{current\_dir}!WSDcell\_random@{WSDcell\_random}}
+\doxysubsubsection{\texorpdfstring{current\_dir}{current\_dir}}
+{\footnotesize\ttfamily \label{namespace_w_s_dcell__random_afe87775c2557f2df29f5a97624b7d65d} 
+WSDcell\+\_\+random.\+current\+\_\+dir = os.\+path.\+dirname(sys.\+executable)}
+
+\Hypertarget{namespace_w_s_dcell__random_aa52302fd638aa7b22970693ab28fca50}\index{WSDcell\_random@{WSDcell\_random}!end@{end}}
+\index{end@{end}!WSDcell\_random@{WSDcell\_random}}
+\doxysubsubsection{\texorpdfstring{end}{end}}
+{\footnotesize\ttfamily \label{namespace_w_s_dcell__random_aa52302fd638aa7b22970693ab28fca50} 
+WSDcell\+\_\+random.\+end = time.\+time()}
+
+\Hypertarget{namespace_w_s_dcell__random_ac5e16c3dc884e1cfe4c8470f58c44420}\index{WSDcell\_random@{WSDcell\_random}!filename@{filename}}
+\index{filename@{filename}!WSDcell\_random@{WSDcell\_random}}
+\doxysubsubsection{\texorpdfstring{filename}{filename}}
+{\footnotesize\ttfamily \label{namespace_w_s_dcell__random_ac5e16c3dc884e1cfe4c8470f58c44420} 
+str WSDcell\+\_\+random.\+filename = "{}openslide-\/win64-\/20230414.zip"{}}
+
+\Hypertarget{namespace_w_s_dcell__random_a03c46486c37bdc51d30d7d45d1695fb1}\index{WSDcell\_random@{WSDcell\_random}!folder\_path@{folder\_path}}
+\index{folder\_path@{folder\_path}!WSDcell\_random@{WSDcell\_random}}
+\doxysubsubsection{\texorpdfstring{folder\_path}{folder\_path}}
+{\footnotesize\ttfamily \label{namespace_w_s_dcell__random_a03c46486c37bdc51d30d7d45d1695fb1} 
+str WSDcell\+\_\+random.\+folder\+\_\+path = r\textquotesingle{}D\+:\textbackslash{}\+Shreyan\textbackslash{}\+Development\textbackslash{}\+Test\textquotesingle{}}
+
+\Hypertarget{namespace_w_s_dcell__random_a528a11d5c8c9a332d3c64137c88ea2c0}\index{WSDcell\_random@{WSDcell\_random}!globalVars@{globalVars}}
+\index{globalVars@{globalVars}!WSDcell\_random@{WSDcell\_random}}
+\doxysubsubsection{\texorpdfstring{globalVars}{globalVars}}
+{\footnotesize\ttfamily \label{namespace_w_s_dcell__random_a528a11d5c8c9a332d3c64137c88ea2c0} 
+WSDcell\+\_\+random.\+global\+Vars = \mbox{\hyperlink{class_w_s_dcell__random_1_1_global_vars}{Global\+Vars}}(\mbox{\hyperlink{namespace_w_s_dcell__random_a03c46486c37bdc51d30d7d45d1695fb1}{folder\+\_\+path}})}
+
+\Hypertarget{namespace_w_s_dcell__random_a2a52dfc0093073daefe1ce05b4ff8b14}\index{WSDcell\_random@{WSDcell\_random}!OPENSLIDE\_PATH@{OPENSLIDE\_PATH}}
+\index{OPENSLIDE\_PATH@{OPENSLIDE\_PATH}!WSDcell\_random@{WSDcell\_random}}
+\doxysubsubsection{\texorpdfstring{OPENSLIDE\_PATH}{OPENSLIDE\_PATH}}
+{\footnotesize\ttfamily \label{namespace_w_s_dcell__random_a2a52dfc0093073daefe1ce05b4ff8b14} 
+WSDcell\+\_\+random.\+OPENSLIDE\+\_\+\+PATH = os.\+path.\+join(\mbox{\hyperlink{namespace_w_s_dcell__random_afe87775c2557f2df29f5a97624b7d65d}{current\+\_\+dir}}, \textquotesingle{}openslide-\/win64-\/20230414\textquotesingle{}, \textquotesingle{}bin\textquotesingle{})}
+
+\Hypertarget{namespace_w_s_dcell__random_a5848b9970565311064955fb5e767d1c2}\index{WSDcell\_random@{WSDcell\_random}!overlap@{overlap}}
+\index{overlap@{overlap}!WSDcell\_random@{WSDcell\_random}}
+\doxysubsubsection{\texorpdfstring{overlap}{overlap}}
+{\footnotesize\ttfamily \label{namespace_w_s_dcell__random_a5848b9970565311064955fb5e767d1c2} 
+WSDcell\+\_\+random.\+overlap}
+
+\Hypertarget{namespace_w_s_dcell__random_ae7a408af614160c7bfbbf8a58816a436}\index{WSDcell\_random@{WSDcell\_random}!response@{response}}
+\index{response@{response}!WSDcell\_random@{WSDcell\_random}}
+\doxysubsubsection{\texorpdfstring{response}{response}}
+{\footnotesize\ttfamily \label{namespace_w_s_dcell__random_ae7a408af614160c7bfbbf8a58816a436} 
+WSDcell\+\_\+random.\+response = requests.\+get(\mbox{\hyperlink{namespace_w_s_dcell__random_aa409746c4d75e181dccf22542740fff0}{url}}, stream=True)}
+
+\Hypertarget{namespace_w_s_dcell__random_ad12bc84590bc921eb250dc1048efe349}\index{WSDcell\_random@{WSDcell\_random}!start@{start}}
+\index{start@{start}!WSDcell\_random@{WSDcell\_random}}
+\doxysubsubsection{\texorpdfstring{start}{start}}
+{\footnotesize\ttfamily \label{namespace_w_s_dcell__random_ad12bc84590bc921eb250dc1048efe349} 
+WSDcell\+\_\+random.\+start = time.\+time()}
+
+\Hypertarget{namespace_w_s_dcell__random_aa94433e623d0011e833b7116783df1e2}\index{WSDcell\_random@{WSDcell\_random}!tile\_size@{tile\_size}}
+\index{tile\_size@{tile\_size}!WSDcell\_random@{WSDcell\_random}}
+\doxysubsubsection{\texorpdfstring{tile\_size}{tile\_size}}
+{\footnotesize\ttfamily \label{namespace_w_s_dcell__random_aa94433e623d0011e833b7116783df1e2} 
+WSDcell\+\_\+random.\+tile\+\_\+size}
+
+\Hypertarget{namespace_w_s_dcell__random_aa409746c4d75e181dccf22542740fff0}\index{WSDcell\_random@{WSDcell\_random}!url@{url}}
+\index{url@{url}!WSDcell\_random@{WSDcell\_random}}
+\doxysubsubsection{\texorpdfstring{url}{url}}
+{\footnotesize\ttfamily \label{namespace_w_s_dcell__random_aa409746c4d75e181dccf22542740fff0} 
+str WSDcell\+\_\+random.\+url = "{}https\+://github.\+com/openslide/openslide-\/winbuild/releases/download/v20230414/openslide-\/win64-\/20230414.zip"{}}
+

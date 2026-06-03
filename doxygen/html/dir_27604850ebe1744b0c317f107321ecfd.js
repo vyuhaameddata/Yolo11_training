@@ -1,0 +1,27 @@
+var dir_27604850ebe1744b0c317f107321ecfd =
+[
+    [ "detection", "dir_18a6b3cb9d9d7ae19ab2faa7d29a034b.html", "dir_18a6b3cb9d9d7ae19ab2faa7d29a034b" ],
+    [ "optical_flow", "dir_5aef63aa456167fa03905ca95344a3d9.html", "dir_5aef63aa456167fa03905ca95344a3d9" ],
+    [ "quantization", "dir_bd600f357735f04ca37f8a4aa7e870ff.html", "dir_bd600f357735f04ca37f8a4aa7e870ff" ],
+    [ "segmentation", "dir_6bf5162d2b975c03bba6bff27a0543c8.html", "dir_6bf5162d2b975c03bba6bff27a0543c8" ],
+    [ "video", "dir_c620e31729ab8d8fbee68aa0843468a3.html", "dir_c620e31729ab8d8fbee68aa0843468a3" ],
+    [ "__init__.py", "torchvision__down_2models_2____init_____8py.html", null ],
+    [ "_utils.py", "models_2__utils_8py.html", "models_2__utils_8py" ],
+    [ "alexnet.py", "alexnet_8py.html", "alexnet_8py" ],
+    [ "convnext.py", "convnext_8py.html", "convnext_8py" ],
+    [ "densenet.py", "densenet_8py.html", "densenet_8py" ],
+    [ "efficientnet.py", "efficientnet_8py.html", "efficientnet_8py" ],
+    [ "feature_extraction.py", "feature__extraction_8py.html", "feature__extraction_8py" ],
+    [ "googlenet.py", "googlenet_8py.html", "googlenet_8py" ],
+    [ "inception.py", "inception_8py.html", "inception_8py" ],
+    [ "mnasnet.py", "mnasnet_8py.html", "mnasnet_8py" ],
+    [ "mobilenet.py", "mobilenet_8py.html", "mobilenet_8py" ],
+    [ "mobilenetv2.py", "mobilenetv2_8py.html", "mobilenetv2_8py" ],
+    [ "mobilenetv3.py", "mobilenetv3_8py.html", "mobilenetv3_8py" ],
+    [ "regnet.py", "regnet_8py.html", "regnet_8py" ],
+    [ "resnet.py", "resnet_8py.html", "resnet_8py" ],
+    [ "shufflenetv2.py", "shufflenetv2_8py.html", "shufflenetv2_8py" ],
+    [ "squeezenet.py", "squeezenet_8py.html", "squeezenet_8py" ],
+    [ "vgg.py", "vgg_8py.html", "vgg_8py" ],
+    [ "vision_transformer.py", "vision__transformer_8py.html", "vision__transformer_8py" ]
+];

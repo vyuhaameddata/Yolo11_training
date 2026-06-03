@@ -1,0 +1,384 @@
+\doxysection{export Namespace Reference}
+\hypertarget{namespaceexport}{}\label{namespaceexport}\index{export@{export}}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{namespaceexport_ad9dc6dee1e901730e7c5467c47e54e3e}{parser}} = argparse.\+Argument\+Parser()
+\item 
+\mbox{\hyperlink{namespaceexport_a76cc86a19da9d760e9c2aa65c4b78eb0}{type}}
+\item 
+\mbox{\hyperlink{namespaceexport_aec6719408a390fe5ef6401299162f1a2}{str}}
+\item 
+\mbox{\hyperlink{namespaceexport_a762deea96e86bf0f830318454cc66b1a}{default}}
+\item 
+\mbox{\hyperlink{namespaceexport_a1c4e7395b55c0dda7aec845aa7919912}{help}}
+\item 
+\mbox{\hyperlink{namespaceexport_a2ada2a384555fa54868f02fa8269ab6e}{nargs}}
+\item 
+\mbox{\hyperlink{namespaceexport_abd3d3aa7b89effc4a1ded980299ae52a}{int}}
+\item 
+\mbox{\hyperlink{namespaceexport_a0b7473fb2e97550c1d4eda2798750e58}{action}}
+\item 
+\mbox{\hyperlink{namespaceexport_aa2ece47b4b788c2ec140bc595f6773ec}{None}}
+\item 
+\mbox{\hyperlink{namespaceexport_a90e50294472bc51f13202aa10bcba93e}{float}}
+\item 
+\mbox{\hyperlink{namespaceexport_a0d9efe06403dd5221657e8ff6c0230ca}{opt}} = parser.\+parse\+\_\+args()
+\item 
+\mbox{\hyperlink{namespaceexport_ac2e3ffb20498fc638bdf956f3f862f6f}{dynamic}}
+\item 
+\mbox{\hyperlink{namespaceexport_ab876f92da883113d85fe2d012263d2c3}{t}} = time.\+time()
+\item 
+\mbox{\hyperlink{namespaceexport_a6634b32930b37f4943eda0769d999483}{device}} = select\+\_\+device(opt.\+device)
+\item 
+\mbox{\hyperlink{namespaceexport_aa5d6f6515f3150b11a349e20267dfeba}{model}} = attempt\+\_\+load(opt.\+weights, map\+\_\+location=\mbox{\hyperlink{namespaceexport_a6634b32930b37f4943eda0769d999483}{device}})
+\item 
+\mbox{\hyperlink{namespaceexport_a4d13476bf8832b1133909e18705d353a}{labels}} = model.\+names
+\item 
+\mbox{\hyperlink{namespaceexport_a79381f0970cd88244e8f188227630b9f}{gs}} = \mbox{\hyperlink{namespaceexport_abd3d3aa7b89effc4a1ded980299ae52a}{int}}(max(model.\+stride))
+\item 
+\mbox{\hyperlink{namespaceexport_af83060066ae1c1651be8bd41d844696d}{img\+\_\+size}}
+\item 
+\mbox{\hyperlink{namespaceexport_ac13c7657c898e565b9d231c6a6d7bd93}{img}} = torch.\+zeros(opt.\+batch\+\_\+size, 3, \texorpdfstring{$\ast$}{*}opt.\+img\+\_\+size).to(\mbox{\hyperlink{namespaceexport_a6634b32930b37f4943eda0769d999483}{device}})
+\item 
+\mbox{\hyperlink{namespaceexport_a0a62648a128e5a2e9dcf1cb052f96298}{\+\_\+non\+\_\+persistent\+\_\+buffers\+\_\+set}}
+\item 
+\mbox{\hyperlink{namespaceexport_a72464ce7d868ee3b7dd0a896232b5fe2}{act}}
+\item 
+\mbox{\hyperlink{namespaceexport_aa0ca94c1aebbf114c497278d77a3e0a2}{export}}
+\item 
+\mbox{\hyperlink{namespaceexport_ac936cff4b743c589a04e5533acb962bf}{y}} = \mbox{\hyperlink{namespaceexport_aa5d6f6515f3150b11a349e20267dfeba}{model}}(\mbox{\hyperlink{namespaceexport_ac13c7657c898e565b9d231c6a6d7bd93}{img}})
+\item 
+\mbox{\hyperlink{namespaceexport_ab1bf84ef503efff0c1381a90e853e9b3}{include\+\_\+nms}}
+\item 
+\mbox{\hyperlink{namespaceexport_afea9d6e8c7bd535cb888ef11bcf4b020}{f}} = opt.\+weights.\+replace(\textquotesingle{}.pt\textquotesingle{}, \textquotesingle{}.torchscript.\+pt\textquotesingle{})
+\item 
+\mbox{\hyperlink{namespaceexport_af68ecaf48e61902ca40daf7f3d926953}{ts}} = torch.\+jit.\+trace(\mbox{\hyperlink{namespaceexport_aa5d6f6515f3150b11a349e20267dfeba}{model}}, \mbox{\hyperlink{namespaceexport_ac13c7657c898e565b9d231c6a6d7bd93}{img}}, strict=\mbox{\hyperlink{namespaceexport_aeba34524ba0f2c9fb006d13c63316ef6}{False}})
+\item 
+\mbox{\hyperlink{namespaceexport_a4318c3e2e579c9e2ee0be55ad2a8482b}{ct\+\_\+model}} = ct.\+convert(\mbox{\hyperlink{namespaceexport_af68ecaf48e61902ca40daf7f3d926953}{ts}}, inputs=\mbox{[}ct.\+Image\+Type(\textquotesingle{}image\textquotesingle{}, shape=img.\+shape, scale=1 / 255.\+0, bias=\mbox{[}0, 0, 0\mbox{]})\mbox{]})
+\item 
+\mbox{\hyperlink{namespaceexport_a23e7211df3cdcf20e389b84c86c9b2a7}{bits}}
+\item 
+\mbox{\hyperlink{namespaceexport_ac993f3704706d03dd9b866ae3217d007}{mode}}
+\item 
+\mbox{\hyperlink{namespaceexport_a035b479dbafd799c96a121e25ac7767f}{category}}
+\item 
+\mbox{\hyperlink{namespaceexport_a3d2ade1bd73a2936515d4b12db087ba0}{tsl}} = torch.\+jit.\+trace(\mbox{\hyperlink{namespaceexport_aa5d6f6515f3150b11a349e20267dfeba}{model}}, \mbox{\hyperlink{namespaceexport_ac13c7657c898e565b9d231c6a6d7bd93}{img}}, strict=\mbox{\hyperlink{namespaceexport_aeba34524ba0f2c9fb006d13c63316ef6}{False}})
+\item 
+list \mbox{\hyperlink{namespaceexport_ac3dc10e632ecca95deaa2e4c70909c4e}{output\+\_\+names}} = \mbox{[}\textquotesingle{}classes\textquotesingle{}, \textquotesingle{}boxes\textquotesingle{}\mbox{]} if \mbox{\hyperlink{namespaceexport_ac936cff4b743c589a04e5533acb962bf}{y}} is \mbox{\hyperlink{namespaceexport_aa2ece47b4b788c2ec140bc595f6773ec}{None}} else \mbox{[}\textquotesingle{}output\textquotesingle{}\mbox{]}
+\item 
+\mbox{\hyperlink{namespaceexport_a774d794b859df4ea7d804338906aed89}{dynamic\+\_\+axes}} = \mbox{\hyperlink{namespaceexport_aa2ece47b4b788c2ec140bc595f6773ec}{None}}
+\item 
+\mbox{\hyperlink{namespaceexport_a01326db7feaef1f26f7d184ffea07f87}{batch\+\_\+size}}
+\item 
+dict \mbox{\hyperlink{namespaceexport_a254b5fe688bbfc3f7a63daf40639745e}{output\+\_\+axes}}
+\item 
+list \mbox{\hyperlink{namespaceexport_ab3484152c78c583a11b216060df3b4a8}{shapes}}
+\item 
+\mbox{\hyperlink{namespaceexport_a5ac8ea06bc9c26a25187dceac616f267}{concat}}
+\item 
+\mbox{\hyperlink{namespaceexport_ae267928f2564c081c4bebc05512f4574}{verbose}}
+\item 
+\mbox{\hyperlink{namespaceexport_aeba34524ba0f2c9fb006d13c63316ef6}{False}}
+\item 
+\mbox{\hyperlink{namespaceexport_a0ec24b4a741f54851ff392c156752605}{opset\+\_\+version}}
+\item 
+\mbox{\hyperlink{namespaceexport_ac24bf8c544efc93c31ee24d5799a2837}{input\+\_\+names}}
+\item 
+\mbox{\hyperlink{namespaceexport_a4c183a87b0b223bca562444e520a744b}{onnx\+\_\+model}} = onnx.\+load(\mbox{\hyperlink{namespaceexport_afea9d6e8c7bd535cb888ef11bcf4b020}{f}})
+\item 
+\mbox{\hyperlink{namespaceexport_ac6671d718a490e7c01010a97ed2f44ae}{dim\+\_\+param}}
+\item 
+\mbox{\hyperlink{namespaceexport_a13aca193e9f6392e0404c70e20de3e65}{check}}
+\item 
+\mbox{\hyperlink{namespaceexport_aad9b29d05c37fbd3828552e131b963f7}{mo}} = \mbox{\hyperlink{classutils_1_1add__nms_1_1_register_n_m_s}{Register\+NMS}}(\mbox{\hyperlink{namespaceexport_afea9d6e8c7bd535cb888ef11bcf4b020}{f}})
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Variable Documentation}
+\Hypertarget{namespaceexport_a0a62648a128e5a2e9dcf1cb052f96298}\index{export@{export}!\_non\_persistent\_buffers\_set@{\_non\_persistent\_buffers\_set}}
+\index{\_non\_persistent\_buffers\_set@{\_non\_persistent\_buffers\_set}!export@{export}}
+\doxysubsubsection{\texorpdfstring{\_non\_persistent\_buffers\_set}{\_non\_persistent\_buffers\_set}}
+{\footnotesize\ttfamily \label{namespaceexport_a0a62648a128e5a2e9dcf1cb052f96298} 
+export.\+\_\+non\+\_\+persistent\+\_\+buffers\+\_\+set\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{namespaceexport_a72464ce7d868ee3b7dd0a896232b5fe2}\index{export@{export}!act@{act}}
+\index{act@{act}!export@{export}}
+\doxysubsubsection{\texorpdfstring{act}{act}}
+{\footnotesize\ttfamily \label{namespaceexport_a72464ce7d868ee3b7dd0a896232b5fe2} 
+export.\+act}
+
+\Hypertarget{namespaceexport_a0b7473fb2e97550c1d4eda2798750e58}\index{export@{export}!action@{action}}
+\index{action@{action}!export@{export}}
+\doxysubsubsection{\texorpdfstring{action}{action}}
+{\footnotesize\ttfamily \label{namespaceexport_a0b7473fb2e97550c1d4eda2798750e58} 
+export.\+action}
+
+\Hypertarget{namespaceexport_a01326db7feaef1f26f7d184ffea07f87}\index{export@{export}!batch\_size@{batch\_size}}
+\index{batch\_size@{batch\_size}!export@{export}}
+\doxysubsubsection{\texorpdfstring{batch\_size}{batch\_size}}
+{\footnotesize\ttfamily \label{namespaceexport_a01326db7feaef1f26f7d184ffea07f87} 
+export.\+batch\+\_\+size}
+
+\Hypertarget{namespaceexport_a23e7211df3cdcf20e389b84c86c9b2a7}\index{export@{export}!bits@{bits}}
+\index{bits@{bits}!export@{export}}
+\doxysubsubsection{\texorpdfstring{bits}{bits}}
+{\footnotesize\ttfamily \label{namespaceexport_a23e7211df3cdcf20e389b84c86c9b2a7} 
+export.\+bits}
+
+\Hypertarget{namespaceexport_a035b479dbafd799c96a121e25ac7767f}\index{export@{export}!category@{category}}
+\index{category@{category}!export@{export}}
+\doxysubsubsection{\texorpdfstring{category}{category}}
+{\footnotesize\ttfamily \label{namespaceexport_a035b479dbafd799c96a121e25ac7767f} 
+export.\+category}
+
+\Hypertarget{namespaceexport_a13aca193e9f6392e0404c70e20de3e65}\index{export@{export}!check@{check}}
+\index{check@{check}!export@{export}}
+\doxysubsubsection{\texorpdfstring{check}{check}}
+{\footnotesize\ttfamily \label{namespaceexport_a13aca193e9f6392e0404c70e20de3e65} 
+export.\+check}
+
+\Hypertarget{namespaceexport_a5ac8ea06bc9c26a25187dceac616f267}\index{export@{export}!concat@{concat}}
+\index{concat@{concat}!export@{export}}
+\doxysubsubsection{\texorpdfstring{concat}{concat}}
+{\footnotesize\ttfamily \label{namespaceexport_a5ac8ea06bc9c26a25187dceac616f267} 
+export.\+concat}
+
+\Hypertarget{namespaceexport_a4318c3e2e579c9e2ee0be55ad2a8482b}\index{export@{export}!ct\_model@{ct\_model}}
+\index{ct\_model@{ct\_model}!export@{export}}
+\doxysubsubsection{\texorpdfstring{ct\_model}{ct\_model}}
+{\footnotesize\ttfamily \label{namespaceexport_a4318c3e2e579c9e2ee0be55ad2a8482b} 
+export.\+ct\+\_\+model = ct.\+convert(\mbox{\hyperlink{namespaceexport_af68ecaf48e61902ca40daf7f3d926953}{ts}}, inputs=\mbox{[}ct.\+Image\+Type(\textquotesingle{}image\textquotesingle{}, shape=img.\+shape, scale=1 / 255.\+0, bias=\mbox{[}0, 0, 0\mbox{]})\mbox{]})}
+
+\Hypertarget{namespaceexport_a762deea96e86bf0f830318454cc66b1a}\index{export@{export}!default@{default}}
+\index{default@{default}!export@{export}}
+\doxysubsubsection{\texorpdfstring{default}{default}}
+{\footnotesize\ttfamily \label{namespaceexport_a762deea96e86bf0f830318454cc66b1a} 
+export.\+default}
+
+\Hypertarget{namespaceexport_a6634b32930b37f4943eda0769d999483}\index{export@{export}!device@{device}}
+\index{device@{device}!export@{export}}
+\doxysubsubsection{\texorpdfstring{device}{device}}
+{\footnotesize\ttfamily \label{namespaceexport_a6634b32930b37f4943eda0769d999483} 
+export.\+device = select\+\_\+device(opt.\+device)}
+
+\Hypertarget{namespaceexport_ac6671d718a490e7c01010a97ed2f44ae}\index{export@{export}!dim\_param@{dim\_param}}
+\index{dim\_param@{dim\_param}!export@{export}}
+\doxysubsubsection{\texorpdfstring{dim\_param}{dim\_param}}
+{\footnotesize\ttfamily \label{namespaceexport_ac6671d718a490e7c01010a97ed2f44ae} 
+export.\+dim\+\_\+param}
+
+\Hypertarget{namespaceexport_ac2e3ffb20498fc638bdf956f3f862f6f}\index{export@{export}!dynamic@{dynamic}}
+\index{dynamic@{dynamic}!export@{export}}
+\doxysubsubsection{\texorpdfstring{dynamic}{dynamic}}
+{\footnotesize\ttfamily \label{namespaceexport_ac2e3ffb20498fc638bdf956f3f862f6f} 
+export.\+dynamic}
+
+\Hypertarget{namespaceexport_a774d794b859df4ea7d804338906aed89}\index{export@{export}!dynamic\_axes@{dynamic\_axes}}
+\index{dynamic\_axes@{dynamic\_axes}!export@{export}}
+\doxysubsubsection{\texorpdfstring{dynamic\_axes}{dynamic\_axes}}
+{\footnotesize\ttfamily \label{namespaceexport_a774d794b859df4ea7d804338906aed89} 
+dict export.\+dynamic\+\_\+axes = \mbox{\hyperlink{namespaceexport_aa2ece47b4b788c2ec140bc595f6773ec}{None}}}
+
+\Hypertarget{namespaceexport_aa0ca94c1aebbf114c497278d77a3e0a2}\index{export@{export}!export@{export}}
+\index{export@{export}!export@{export}}
+\doxysubsubsection{\texorpdfstring{export}{export}}
+{\footnotesize\ttfamily \label{namespaceexport_aa0ca94c1aebbf114c497278d77a3e0a2} 
+export.\+export}
+
+\Hypertarget{namespaceexport_afea9d6e8c7bd535cb888ef11bcf4b020}\index{export@{export}!f@{f}}
+\index{f@{f}!export@{export}}
+\doxysubsubsection{\texorpdfstring{f}{f}}
+{\footnotesize\ttfamily \label{namespaceexport_afea9d6e8c7bd535cb888ef11bcf4b020} 
+export.\+f = opt.\+weights.\+replace(\textquotesingle{}.pt\textquotesingle{}, \textquotesingle{}.torchscript.\+pt\textquotesingle{})}
+
+\Hypertarget{namespaceexport_aeba34524ba0f2c9fb006d13c63316ef6}\index{export@{export}!False@{False}}
+\index{False@{False}!export@{export}}
+\doxysubsubsection{\texorpdfstring{False}{False}}
+{\footnotesize\ttfamily \label{namespaceexport_aeba34524ba0f2c9fb006d13c63316ef6} 
+export.\+False}
+
+\Hypertarget{namespaceexport_a90e50294472bc51f13202aa10bcba93e}\index{export@{export}!float@{float}}
+\index{float@{float}!export@{export}}
+\doxysubsubsection{\texorpdfstring{float}{float}}
+{\footnotesize\ttfamily \label{namespaceexport_a90e50294472bc51f13202aa10bcba93e} 
+export.\+float}
+
+\Hypertarget{namespaceexport_a79381f0970cd88244e8f188227630b9f}\index{export@{export}!gs@{gs}}
+\index{gs@{gs}!export@{export}}
+\doxysubsubsection{\texorpdfstring{gs}{gs}}
+{\footnotesize\ttfamily \label{namespaceexport_a79381f0970cd88244e8f188227630b9f} 
+export.\+gs = \mbox{\hyperlink{namespaceexport_abd3d3aa7b89effc4a1ded980299ae52a}{int}}(max(model.\+stride))}
+
+\Hypertarget{namespaceexport_a1c4e7395b55c0dda7aec845aa7919912}\index{export@{export}!help@{help}}
+\index{help@{help}!export@{export}}
+\doxysubsubsection{\texorpdfstring{help}{help}}
+{\footnotesize\ttfamily \label{namespaceexport_a1c4e7395b55c0dda7aec845aa7919912} 
+export.\+help}
+
+\Hypertarget{namespaceexport_ac13c7657c898e565b9d231c6a6d7bd93}\index{export@{export}!img@{img}}
+\index{img@{img}!export@{export}}
+\doxysubsubsection{\texorpdfstring{img}{img}}
+{\footnotesize\ttfamily \label{namespaceexport_ac13c7657c898e565b9d231c6a6d7bd93} 
+export.\+img = torch.\+zeros(opt.\+batch\+\_\+size, 3, \texorpdfstring{$\ast$}{*}opt.\+img\+\_\+size).to(\mbox{\hyperlink{namespaceexport_a6634b32930b37f4943eda0769d999483}{device}})}
+
+\Hypertarget{namespaceexport_af83060066ae1c1651be8bd41d844696d}\index{export@{export}!img\_size@{img\_size}}
+\index{img\_size@{img\_size}!export@{export}}
+\doxysubsubsection{\texorpdfstring{img\_size}{img\_size}}
+{\footnotesize\ttfamily \label{namespaceexport_af83060066ae1c1651be8bd41d844696d} 
+export.\+img\+\_\+size}
+
+\Hypertarget{namespaceexport_ab1bf84ef503efff0c1381a90e853e9b3}\index{export@{export}!include\_nms@{include\_nms}}
+\index{include\_nms@{include\_nms}!export@{export}}
+\doxysubsubsection{\texorpdfstring{include\_nms}{include\_nms}}
+{\footnotesize\ttfamily \label{namespaceexport_ab1bf84ef503efff0c1381a90e853e9b3} 
+export.\+include\+\_\+nms}
+
+\Hypertarget{namespaceexport_ac24bf8c544efc93c31ee24d5799a2837}\index{export@{export}!input\_names@{input\_names}}
+\index{input\_names@{input\_names}!export@{export}}
+\doxysubsubsection{\texorpdfstring{input\_names}{input\_names}}
+{\footnotesize\ttfamily \label{namespaceexport_ac24bf8c544efc93c31ee24d5799a2837} 
+export.\+input\+\_\+names}
+
+\Hypertarget{namespaceexport_abd3d3aa7b89effc4a1ded980299ae52a}\index{export@{export}!int@{int}}
+\index{int@{int}!export@{export}}
+\doxysubsubsection{\texorpdfstring{int}{int}}
+{\footnotesize\ttfamily \label{namespaceexport_abd3d3aa7b89effc4a1ded980299ae52a} 
+export.\+int}
+
+\Hypertarget{namespaceexport_a4d13476bf8832b1133909e18705d353a}\index{export@{export}!labels@{labels}}
+\index{labels@{labels}!export@{export}}
+\doxysubsubsection{\texorpdfstring{labels}{labels}}
+{\footnotesize\ttfamily \label{namespaceexport_a4d13476bf8832b1133909e18705d353a} 
+export.\+labels = model.\+names}
+
+\Hypertarget{namespaceexport_aad9b29d05c37fbd3828552e131b963f7}\index{export@{export}!mo@{mo}}
+\index{mo@{mo}!export@{export}}
+\doxysubsubsection{\texorpdfstring{mo}{mo}}
+{\footnotesize\ttfamily \label{namespaceexport_aad9b29d05c37fbd3828552e131b963f7} 
+export.\+mo = \mbox{\hyperlink{classutils_1_1add__nms_1_1_register_n_m_s}{Register\+NMS}}(\mbox{\hyperlink{namespaceexport_afea9d6e8c7bd535cb888ef11bcf4b020}{f}})}
+
+\Hypertarget{namespaceexport_ac993f3704706d03dd9b866ae3217d007}\index{export@{export}!mode@{mode}}
+\index{mode@{mode}!export@{export}}
+\doxysubsubsection{\texorpdfstring{mode}{mode}}
+{\footnotesize\ttfamily \label{namespaceexport_ac993f3704706d03dd9b866ae3217d007} 
+export.\+mode}
+
+\Hypertarget{namespaceexport_aa5d6f6515f3150b11a349e20267dfeba}\index{export@{export}!model@{model}}
+\index{model@{model}!export@{export}}
+\doxysubsubsection{\texorpdfstring{model}{model}}
+{\footnotesize\ttfamily \label{namespaceexport_aa5d6f6515f3150b11a349e20267dfeba} 
+export.\+model = attempt\+\_\+load(opt.\+weights, map\+\_\+location=\mbox{\hyperlink{namespaceexport_a6634b32930b37f4943eda0769d999483}{device}})}
+
+\Hypertarget{namespaceexport_a2ada2a384555fa54868f02fa8269ab6e}\index{export@{export}!nargs@{nargs}}
+\index{nargs@{nargs}!export@{export}}
+\doxysubsubsection{\texorpdfstring{nargs}{nargs}}
+{\footnotesize\ttfamily \label{namespaceexport_a2ada2a384555fa54868f02fa8269ab6e} 
+export.\+nargs}
+
+\Hypertarget{namespaceexport_aa2ece47b4b788c2ec140bc595f6773ec}\index{export@{export}!None@{None}}
+\index{None@{None}!export@{export}}
+\doxysubsubsection{\texorpdfstring{None}{None}}
+{\footnotesize\ttfamily \label{namespaceexport_aa2ece47b4b788c2ec140bc595f6773ec} 
+export.\+None}
+
+\Hypertarget{namespaceexport_a4c183a87b0b223bca562444e520a744b}\index{export@{export}!onnx\_model@{onnx\_model}}
+\index{onnx\_model@{onnx\_model}!export@{export}}
+\doxysubsubsection{\texorpdfstring{onnx\_model}{onnx\_model}}
+{\footnotesize\ttfamily \label{namespaceexport_a4c183a87b0b223bca562444e520a744b} 
+export.\+onnx\+\_\+model = onnx.\+load(\mbox{\hyperlink{namespaceexport_afea9d6e8c7bd535cb888ef11bcf4b020}{f}})}
+
+\Hypertarget{namespaceexport_a0ec24b4a741f54851ff392c156752605}\index{export@{export}!opset\_version@{opset\_version}}
+\index{opset\_version@{opset\_version}!export@{export}}
+\doxysubsubsection{\texorpdfstring{opset\_version}{opset\_version}}
+{\footnotesize\ttfamily \label{namespaceexport_a0ec24b4a741f54851ff392c156752605} 
+export.\+opset\+\_\+version}
+
+\Hypertarget{namespaceexport_a0d9efe06403dd5221657e8ff6c0230ca}\index{export@{export}!opt@{opt}}
+\index{opt@{opt}!export@{export}}
+\doxysubsubsection{\texorpdfstring{opt}{opt}}
+{\footnotesize\ttfamily \label{namespaceexport_a0d9efe06403dd5221657e8ff6c0230ca} 
+export.\+opt = parser.\+parse\+\_\+args()}
+
+\Hypertarget{namespaceexport_a254b5fe688bbfc3f7a63daf40639745e}\index{export@{export}!output\_axes@{output\_axes}}
+\index{output\_axes@{output\_axes}!export@{export}}
+\doxysubsubsection{\texorpdfstring{output\_axes}{output\_axes}}
+{\footnotesize\ttfamily \label{namespaceexport_a254b5fe688bbfc3f7a63daf40639745e} 
+dict export.\+output\+\_\+axes}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ =\ \ \{}
+\DoxyCodeLine{00002\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{'num\_dets'}:\ \{0:\ \textcolor{stringliteral}{'batch'}\},}
+\DoxyCodeLine{00003\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{'det\_boxes'}:\ \{0:\ \textcolor{stringliteral}{'batch'}\},}
+\DoxyCodeLine{00004\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{'det\_scores'}:\ \{0:\ \textcolor{stringliteral}{'batch'}\},}
+\DoxyCodeLine{00005\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{'det\_classes'}:\ \{0:\ \textcolor{stringliteral}{'batch'}\},}
+\DoxyCodeLine{00006\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+
+\end{DoxyCode}
+\Hypertarget{namespaceexport_ac3dc10e632ecca95deaa2e4c70909c4e}\index{export@{export}!output\_names@{output\_names}}
+\index{output\_names@{output\_names}!export@{export}}
+\doxysubsubsection{\texorpdfstring{output\_names}{output\_names}}
+{\footnotesize\ttfamily \label{namespaceexport_ac3dc10e632ecca95deaa2e4c70909c4e} 
+list export.\+output\+\_\+names = \mbox{[}\textquotesingle{}classes\textquotesingle{}, \textquotesingle{}boxes\textquotesingle{}\mbox{]} if \mbox{\hyperlink{namespaceexport_ac936cff4b743c589a04e5533acb962bf}{y}} is \mbox{\hyperlink{namespaceexport_aa2ece47b4b788c2ec140bc595f6773ec}{None}} else \mbox{[}\textquotesingle{}output\textquotesingle{}\mbox{]}}
+
+\Hypertarget{namespaceexport_ad9dc6dee1e901730e7c5467c47e54e3e}\index{export@{export}!parser@{parser}}
+\index{parser@{parser}!export@{export}}
+\doxysubsubsection{\texorpdfstring{parser}{parser}}
+{\footnotesize\ttfamily \label{namespaceexport_ad9dc6dee1e901730e7c5467c47e54e3e} 
+export.\+parser = argparse.\+Argument\+Parser()}
+
+\Hypertarget{namespaceexport_ab3484152c78c583a11b216060df3b4a8}\index{export@{export}!shapes@{shapes}}
+\index{shapes@{shapes}!export@{export}}
+\doxysubsubsection{\texorpdfstring{shapes}{shapes}}
+{\footnotesize\ttfamily \label{namespaceexport_ab3484152c78c583a11b216060df3b4a8} 
+list export.\+shapes}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ =\ \ [opt.batch\_size,\ 1,\ opt.batch\_size,\ opt.topk\_all,\ 4,}
+\DoxyCodeLine{00002\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ opt.batch\_size,\ opt.topk\_all,\ opt.batch\_size,\ opt.topk\_all]}
+
+\end{DoxyCode}
+\Hypertarget{namespaceexport_aec6719408a390fe5ef6401299162f1a2}\index{export@{export}!str@{str}}
+\index{str@{str}!export@{export}}
+\doxysubsubsection{\texorpdfstring{str}{str}}
+{\footnotesize\ttfamily \label{namespaceexport_aec6719408a390fe5ef6401299162f1a2} 
+export.\+str}
+
+\Hypertarget{namespaceexport_ab876f92da883113d85fe2d012263d2c3}\index{export@{export}!t@{t}}
+\index{t@{t}!export@{export}}
+\doxysubsubsection{\texorpdfstring{t}{t}}
+{\footnotesize\ttfamily \label{namespaceexport_ab876f92da883113d85fe2d012263d2c3} 
+export.\+t = time.\+time()}
+
+\Hypertarget{namespaceexport_af68ecaf48e61902ca40daf7f3d926953}\index{export@{export}!ts@{ts}}
+\index{ts@{ts}!export@{export}}
+\doxysubsubsection{\texorpdfstring{ts}{ts}}
+{\footnotesize\ttfamily \label{namespaceexport_af68ecaf48e61902ca40daf7f3d926953} 
+export.\+ts = torch.\+jit.\+trace(\mbox{\hyperlink{namespaceexport_aa5d6f6515f3150b11a349e20267dfeba}{model}}, \mbox{\hyperlink{namespaceexport_ac13c7657c898e565b9d231c6a6d7bd93}{img}}, strict=\mbox{\hyperlink{namespaceexport_aeba34524ba0f2c9fb006d13c63316ef6}{False}})}
+
+\Hypertarget{namespaceexport_a3d2ade1bd73a2936515d4b12db087ba0}\index{export@{export}!tsl@{tsl}}
+\index{tsl@{tsl}!export@{export}}
+\doxysubsubsection{\texorpdfstring{tsl}{tsl}}
+{\footnotesize\ttfamily \label{namespaceexport_a3d2ade1bd73a2936515d4b12db087ba0} 
+export.\+tsl = torch.\+jit.\+trace(\mbox{\hyperlink{namespaceexport_aa5d6f6515f3150b11a349e20267dfeba}{model}}, \mbox{\hyperlink{namespaceexport_ac13c7657c898e565b9d231c6a6d7bd93}{img}}, strict=\mbox{\hyperlink{namespaceexport_aeba34524ba0f2c9fb006d13c63316ef6}{False}})}
+
+\Hypertarget{namespaceexport_a76cc86a19da9d760e9c2aa65c4b78eb0}\index{export@{export}!type@{type}}
+\index{type@{type}!export@{export}}
+\doxysubsubsection{\texorpdfstring{type}{type}}
+{\footnotesize\ttfamily \label{namespaceexport_a76cc86a19da9d760e9c2aa65c4b78eb0} 
+export.\+type}
+
+\Hypertarget{namespaceexport_ae267928f2564c081c4bebc05512f4574}\index{export@{export}!verbose@{verbose}}
+\index{verbose@{verbose}!export@{export}}
+\doxysubsubsection{\texorpdfstring{verbose}{verbose}}
+{\footnotesize\ttfamily \label{namespaceexport_ae267928f2564c081c4bebc05512f4574} 
+export.\+verbose}
+
+\Hypertarget{namespaceexport_ac936cff4b743c589a04e5533acb962bf}\index{export@{export}!y@{y}}
+\index{y@{y}!export@{export}}
+\doxysubsubsection{\texorpdfstring{y}{y}}
+{\footnotesize\ttfamily \label{namespaceexport_ac936cff4b743c589a04e5533acb962bf} 
+export.\+y = \mbox{\hyperlink{namespaceexport_aa5d6f6515f3150b11a349e20267dfeba}{model}}(\mbox{\hyperlink{namespaceexport_ac13c7657c898e565b9d231c6a6d7bd93}{img}})}
+

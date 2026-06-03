@@ -1,0 +1,76 @@
+\doxysection{models.\+common.\+Conv Class Reference}
+\hypertarget{classmodels_1_1common_1_1_conv}{}\label{classmodels_1_1common_1_1_conv}\index{models.common.Conv@{models.common.Conv}}
+Inheritance diagram for models.\+common.\+Conv\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classmodels_1_1common_1_1_conv}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classmodels_1_1common_1_1_conv_a7e34c7541bdb5ea78b7a73a4d97e10f7}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, c1, c2, k=1, s=1, p=None, g=1, \mbox{\hyperlink{classmodels_1_1common_1_1_conv_a62b8951e0b54348257e1f29eb23864bd}{act}}=True)
+\item 
+\mbox{\hyperlink{classmodels_1_1common_1_1_conv_a68fd85fb3838db808ed609ac6f5949ad}{forward}} (self, x)
+\item 
+\mbox{\hyperlink{classmodels_1_1common_1_1_conv_ae8308b34d9abc4c09e4b9a12e58fa065}{fuseforward}} (self, x)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classmodels_1_1common_1_1_conv_af05dbccfb0cee829a00aa919031453d8}{conv}} = nn.\+Conv2d(c1, c2, k, s, \mbox{\hyperlink{namespacemodels_1_1common_a756e6f5a297832de6af58fbf20a1a72c}{autopad}}(k, p), groups=g, bias=False)
+\item 
+\mbox{\hyperlink{classmodels_1_1common_1_1_conv_a47a40e914352711d6480f80824ae88ea}{bn}} = nn.\+Batch\+Norm2d(c2)
+\item 
+bool \mbox{\hyperlink{classmodels_1_1common_1_1_conv_a62b8951e0b54348257e1f29eb23864bd}{act}} = nn.\+Si\+LU() if act is True else (act if isinstance(act, nn.\+Module) else nn.\+Identity())
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classmodels_1_1common_1_1_conv_a7e34c7541bdb5ea78b7a73a4d97e10f7}\index{models.common.Conv@{models.common.Conv}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!models.common.Conv@{models.common.Conv}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily \label{classmodels_1_1common_1_1_conv_a7e34c7541bdb5ea78b7a73a4d97e10f7} 
+models.\+common.\+Conv.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{c1}{, }\item[{}]{c2}{, }\item[{}]{k}{ = {\ttfamily 1}, }\item[{}]{s}{ = {\ttfamily 1}, }\item[{}]{p}{ = {\ttfamily None}, }\item[{}]{g}{ = {\ttfamily 1}, }\item[{}]{act}{ = {\ttfamily True}}\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classmodels_1_1common_1_1_conv_a68fd85fb3838db808ed609ac6f5949ad}\index{models.common.Conv@{models.common.Conv}!forward@{forward}}
+\index{forward@{forward}!models.common.Conv@{models.common.Conv}}
+\doxysubsubsection{\texorpdfstring{forward()}{forward()}}
+{\footnotesize\ttfamily \label{classmodels_1_1common_1_1_conv_a68fd85fb3838db808ed609ac6f5949ad} 
+models.\+common.\+Conv.\+forward (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{x}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classmodels_1_1common_1_1_conv_ae8308b34d9abc4c09e4b9a12e58fa065}\index{models.common.Conv@{models.common.Conv}!fuseforward@{fuseforward}}
+\index{fuseforward@{fuseforward}!models.common.Conv@{models.common.Conv}}
+\doxysubsubsection{\texorpdfstring{fuseforward()}{fuseforward()}}
+{\footnotesize\ttfamily \label{classmodels_1_1common_1_1_conv_ae8308b34d9abc4c09e4b9a12e58fa065} 
+models.\+common.\+Conv.\+fuseforward (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{x}{}\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classmodels_1_1common_1_1_conv_a62b8951e0b54348257e1f29eb23864bd}\index{models.common.Conv@{models.common.Conv}!act@{act}}
+\index{act@{act}!models.common.Conv@{models.common.Conv}}
+\doxysubsubsection{\texorpdfstring{act}{act}}
+{\footnotesize\ttfamily \label{classmodels_1_1common_1_1_conv_a62b8951e0b54348257e1f29eb23864bd} 
+bool models.\+common.\+Conv.\+act = nn.\+Si\+LU() if act is True else (act if isinstance(act, nn.\+Module) else nn.\+Identity())}
+
+\Hypertarget{classmodels_1_1common_1_1_conv_a47a40e914352711d6480f80824ae88ea}\index{models.common.Conv@{models.common.Conv}!bn@{bn}}
+\index{bn@{bn}!models.common.Conv@{models.common.Conv}}
+\doxysubsubsection{\texorpdfstring{bn}{bn}}
+{\footnotesize\ttfamily \label{classmodels_1_1common_1_1_conv_a47a40e914352711d6480f80824ae88ea} 
+models.\+common.\+Conv.\+bn = nn.\+Batch\+Norm2d(c2)}
+
+\Hypertarget{classmodels_1_1common_1_1_conv_af05dbccfb0cee829a00aa919031453d8}\index{models.common.Conv@{models.common.Conv}!conv@{conv}}
+\index{conv@{conv}!models.common.Conv@{models.common.Conv}}
+\doxysubsubsection{\texorpdfstring{conv}{conv}}
+{\footnotesize\ttfamily \label{classmodels_1_1common_1_1_conv_af05dbccfb0cee829a00aa919031453d8} 
+models.\+common.\+Conv.\+conv = nn.\+Conv2d(c1, c2, k, s, \mbox{\hyperlink{namespacemodels_1_1common_a756e6f5a297832de6af58fbf20a1a72c}{autopad}}(k, p), groups=g, bias=False)}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Cervi\+AI/models/\mbox{\hyperlink{common_8py}{common.\+py}}\end{DoxyCompactItemize}

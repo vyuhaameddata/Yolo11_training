@@ -1,0 +1,100 @@
+\doxysection{torchvision\+\_\+down.\+models.\+squeezenet.\+Fire Class Reference}
+\hypertarget{classtorchvision__down_1_1models_1_1squeezenet_1_1_fire}{}\label{classtorchvision__down_1_1models_1_1squeezenet_1_1_fire}\index{torchvision\_down.models.squeezenet.Fire@{torchvision\_down.models.squeezenet.Fire}}
+Inheritance diagram for torchvision\+\_\+down.\+models.\+squeezenet.\+Fire\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classtorchvision__down_1_1models_1_1squeezenet_1_1_fire}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+None \mbox{\hyperlink{classtorchvision__down_1_1models_1_1squeezenet_1_1_fire_a019c9f1670ea94ad3e734b2b259b2a98}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, int \mbox{\hyperlink{classtorchvision__down_1_1models_1_1squeezenet_1_1_fire_a1e3a02f42f5e2c2fce9013853ab4782b}{inplanes}}, int squeeze\+\_\+planes, int expand1x1\+\_\+planes, int expand3x3\+\_\+planes)
+\item 
+torch.\+Tensor \mbox{\hyperlink{classtorchvision__down_1_1models_1_1squeezenet_1_1_fire_aa2b45b60541e244c59ba29119b707bba}{forward}} (self, torch.\+Tensor x)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1models_1_1squeezenet_1_1_fire_a1e3a02f42f5e2c2fce9013853ab4782b}{inplanes}} = inplanes
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1models_1_1squeezenet_1_1_fire_a3ea1e0acbf259bafae835655f547616c}{squeeze}} = nn.\+Conv2d(\mbox{\hyperlink{classtorchvision__down_1_1models_1_1squeezenet_1_1_fire_a1e3a02f42f5e2c2fce9013853ab4782b}{inplanes}}, squeeze\+\_\+planes, kernel\+\_\+size=1)
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1models_1_1squeezenet_1_1_fire_a4d0ab75acb57566a6b4cac5357c36a24}{squeeze\+\_\+activation}} = nn.\+Re\+LU(inplace=True)
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1models_1_1squeezenet_1_1_fire_a89483da32887a574ce4cca3113873e7b}{expand1x1}} = nn.\+Conv2d(squeeze\+\_\+planes, expand1x1\+\_\+planes, kernel\+\_\+size=1)
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1models_1_1squeezenet_1_1_fire_a4c27e2b8c33db2c76e8c196202e6db00}{expand1x1\+\_\+activation}} = nn.\+Re\+LU(inplace=True)
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1models_1_1squeezenet_1_1_fire_a13a9ffabe1c18e750bb8e44088538584}{expand3x3}} = nn.\+Conv2d(squeeze\+\_\+planes, expand3x3\+\_\+planes, kernel\+\_\+size=3, padding=1)
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1models_1_1squeezenet_1_1_fire_aab69df70050e11e02c0353622514a8f1}{expand3x3\+\_\+activation}} = nn.\+Re\+LU(inplace=True)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classtorchvision__down_1_1models_1_1squeezenet_1_1_fire_a019c9f1670ea94ad3e734b2b259b2a98}\index{torchvision\_down.models.squeezenet.Fire@{torchvision\_down.models.squeezenet.Fire}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!torchvision\_down.models.squeezenet.Fire@{torchvision\_down.models.squeezenet.Fire}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1models_1_1squeezenet_1_1_fire_a019c9f1670ea94ad3e734b2b259b2a98} 
+ None torchvision\+\_\+down.\+models.\+squeezenet.\+Fire.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{int}]{inplanes}{, }\item[{int}]{squeeze\+\_\+planes}{, }\item[{int}]{expand1x1\+\_\+planes}{, }\item[{int}]{expand3x3\+\_\+planes}{}\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classtorchvision__down_1_1models_1_1squeezenet_1_1_fire_aa2b45b60541e244c59ba29119b707bba}\index{torchvision\_down.models.squeezenet.Fire@{torchvision\_down.models.squeezenet.Fire}!forward@{forward}}
+\index{forward@{forward}!torchvision\_down.models.squeezenet.Fire@{torchvision\_down.models.squeezenet.Fire}}
+\doxysubsubsection{\texorpdfstring{forward()}{forward()}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1models_1_1squeezenet_1_1_fire_aa2b45b60541e244c59ba29119b707bba} 
+ torch.\+Tensor torchvision\+\_\+down.\+models.\+squeezenet.\+Fire.\+forward (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{torch.\+Tensor}]{x}{}\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classtorchvision__down_1_1models_1_1squeezenet_1_1_fire_a89483da32887a574ce4cca3113873e7b}\index{torchvision\_down.models.squeezenet.Fire@{torchvision\_down.models.squeezenet.Fire}!expand1x1@{expand1x1}}
+\index{expand1x1@{expand1x1}!torchvision\_down.models.squeezenet.Fire@{torchvision\_down.models.squeezenet.Fire}}
+\doxysubsubsection{\texorpdfstring{expand1x1}{expand1x1}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1models_1_1squeezenet_1_1_fire_a89483da32887a574ce4cca3113873e7b} 
+torchvision\+\_\+down.\+models.\+squeezenet.\+Fire.\+expand1x1 = nn.\+Conv2d(squeeze\+\_\+planes, expand1x1\+\_\+planes, kernel\+\_\+size=1)}
+
+\Hypertarget{classtorchvision__down_1_1models_1_1squeezenet_1_1_fire_a4c27e2b8c33db2c76e8c196202e6db00}\index{torchvision\_down.models.squeezenet.Fire@{torchvision\_down.models.squeezenet.Fire}!expand1x1\_activation@{expand1x1\_activation}}
+\index{expand1x1\_activation@{expand1x1\_activation}!torchvision\_down.models.squeezenet.Fire@{torchvision\_down.models.squeezenet.Fire}}
+\doxysubsubsection{\texorpdfstring{expand1x1\_activation}{expand1x1\_activation}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1models_1_1squeezenet_1_1_fire_a4c27e2b8c33db2c76e8c196202e6db00} 
+torchvision\+\_\+down.\+models.\+squeezenet.\+Fire.\+expand1x1\+\_\+activation = nn.\+Re\+LU(inplace=True)}
+
+\Hypertarget{classtorchvision__down_1_1models_1_1squeezenet_1_1_fire_a13a9ffabe1c18e750bb8e44088538584}\index{torchvision\_down.models.squeezenet.Fire@{torchvision\_down.models.squeezenet.Fire}!expand3x3@{expand3x3}}
+\index{expand3x3@{expand3x3}!torchvision\_down.models.squeezenet.Fire@{torchvision\_down.models.squeezenet.Fire}}
+\doxysubsubsection{\texorpdfstring{expand3x3}{expand3x3}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1models_1_1squeezenet_1_1_fire_a13a9ffabe1c18e750bb8e44088538584} 
+torchvision\+\_\+down.\+models.\+squeezenet.\+Fire.\+expand3x3 = nn.\+Conv2d(squeeze\+\_\+planes, expand3x3\+\_\+planes, kernel\+\_\+size=3, padding=1)}
+
+\Hypertarget{classtorchvision__down_1_1models_1_1squeezenet_1_1_fire_aab69df70050e11e02c0353622514a8f1}\index{torchvision\_down.models.squeezenet.Fire@{torchvision\_down.models.squeezenet.Fire}!expand3x3\_activation@{expand3x3\_activation}}
+\index{expand3x3\_activation@{expand3x3\_activation}!torchvision\_down.models.squeezenet.Fire@{torchvision\_down.models.squeezenet.Fire}}
+\doxysubsubsection{\texorpdfstring{expand3x3\_activation}{expand3x3\_activation}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1models_1_1squeezenet_1_1_fire_aab69df70050e11e02c0353622514a8f1} 
+torchvision\+\_\+down.\+models.\+squeezenet.\+Fire.\+expand3x3\+\_\+activation = nn.\+Re\+LU(inplace=True)}
+
+\Hypertarget{classtorchvision__down_1_1models_1_1squeezenet_1_1_fire_a1e3a02f42f5e2c2fce9013853ab4782b}\index{torchvision\_down.models.squeezenet.Fire@{torchvision\_down.models.squeezenet.Fire}!inplanes@{inplanes}}
+\index{inplanes@{inplanes}!torchvision\_down.models.squeezenet.Fire@{torchvision\_down.models.squeezenet.Fire}}
+\doxysubsubsection{\texorpdfstring{inplanes}{inplanes}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1models_1_1squeezenet_1_1_fire_a1e3a02f42f5e2c2fce9013853ab4782b} 
+torchvision\+\_\+down.\+models.\+squeezenet.\+Fire.\+inplanes = inplanes}
+
+\Hypertarget{classtorchvision__down_1_1models_1_1squeezenet_1_1_fire_a3ea1e0acbf259bafae835655f547616c}\index{torchvision\_down.models.squeezenet.Fire@{torchvision\_down.models.squeezenet.Fire}!squeeze@{squeeze}}
+\index{squeeze@{squeeze}!torchvision\_down.models.squeezenet.Fire@{torchvision\_down.models.squeezenet.Fire}}
+\doxysubsubsection{\texorpdfstring{squeeze}{squeeze}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1models_1_1squeezenet_1_1_fire_a3ea1e0acbf259bafae835655f547616c} 
+torchvision\+\_\+down.\+models.\+squeezenet.\+Fire.\+squeeze = nn.\+Conv2d(\mbox{\hyperlink{classtorchvision__down_1_1models_1_1squeezenet_1_1_fire_a1e3a02f42f5e2c2fce9013853ab4782b}{inplanes}}, squeeze\+\_\+planes, kernel\+\_\+size=1)}
+
+\Hypertarget{classtorchvision__down_1_1models_1_1squeezenet_1_1_fire_a4d0ab75acb57566a6b4cac5357c36a24}\index{torchvision\_down.models.squeezenet.Fire@{torchvision\_down.models.squeezenet.Fire}!squeeze\_activation@{squeeze\_activation}}
+\index{squeeze\_activation@{squeeze\_activation}!torchvision\_down.models.squeezenet.Fire@{torchvision\_down.models.squeezenet.Fire}}
+\doxysubsubsection{\texorpdfstring{squeeze\_activation}{squeeze\_activation}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1models_1_1squeezenet_1_1_fire_a4d0ab75acb57566a6b4cac5357c36a24} 
+torchvision\+\_\+down.\+models.\+squeezenet.\+Fire.\+squeeze\+\_\+activation = nn.\+Re\+LU(inplace=True)}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Cervi\+AI/torchvision\+\_\+down/models/\mbox{\hyperlink{squeezenet_8py}{squeezenet.\+py}}\end{DoxyCompactItemize}

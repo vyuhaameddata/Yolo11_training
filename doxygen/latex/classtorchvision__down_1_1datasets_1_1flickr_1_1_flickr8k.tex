@@ -1,0 +1,130 @@
+\doxysection{torchvision\+\_\+down.\+datasets.\+flickr.\+Flickr8k Class Reference}
+\hypertarget{classtorchvision__down_1_1datasets_1_1flickr_1_1_flickr8k}{}\label{classtorchvision__down_1_1datasets_1_1flickr_1_1_flickr8k}\index{torchvision\_down.datasets.flickr.Flickr8k@{torchvision\_down.datasets.flickr.Flickr8k}}
+Inheritance diagram for torchvision\+\_\+down.\+datasets.\+flickr.\+Flickr8k\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{classtorchvision__down_1_1datasets_1_1flickr_1_1_flickr8k}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+None \mbox{\hyperlink{classtorchvision__down_1_1datasets_1_1flickr_1_1_flickr8k_a0c4cc3ddb491f6867d6df4de02f86008}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, str \mbox{\hyperlink{classtorchvision__down_1_1datasets_1_1vision_1_1_vision_dataset_af52cf192ec18d3421afe216bf9b881d6}{root}}, str \mbox{\hyperlink{classtorchvision__down_1_1datasets_1_1flickr_1_1_flickr8k_a6e6c7395baf61a0530c4d0445292c8c9}{ann\+\_\+file}}, Optional\mbox{[}Callable\mbox{]} \mbox{\hyperlink{classtorchvision__down_1_1datasets_1_1vision_1_1_vision_dataset_ade1b4bca7d4f998bc3061e0400769de8}{transform}}=None, Optional\mbox{[}Callable\mbox{]} \mbox{\hyperlink{classtorchvision__down_1_1datasets_1_1vision_1_1_vision_dataset_a01f7d1bb7220bbfa4234ef140d021cc6}{target\+\_\+transform}}=None)
+\item 
+Tuple\mbox{[}Any, Any\mbox{]} \mbox{\hyperlink{classtorchvision__down_1_1datasets_1_1flickr_1_1_flickr8k_af707a16b5b6644d6273770229f5e7eb0}{\+\_\+\+\_\+getitem\+\_\+\+\_\+}} (self, int index)
+\item 
+int \mbox{\hyperlink{classtorchvision__down_1_1datasets_1_1flickr_1_1_flickr8k_ae40e54ed1d312a886e13e86a17f02063}{\+\_\+\+\_\+len\+\_\+\+\_\+}} (self)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{classtorchvision__down_1_1datasets_1_1vision_1_1_vision_dataset}{torchvision\+\_\+down.\+datasets.\+vision.\+Vision\+Dataset}}}
+\begin{DoxyCompactItemize}
+\item 
+None \mbox{\hyperlink{classtorchvision__down_1_1datasets_1_1vision_1_1_vision_dataset_a4fe475e0f96592c04a6d97bcd953aca8}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, str \mbox{\hyperlink{classtorchvision__down_1_1datasets_1_1vision_1_1_vision_dataset_af52cf192ec18d3421afe216bf9b881d6}{root}}, Optional\mbox{[}Callable\mbox{]} \mbox{\hyperlink{classtorchvision__down_1_1datasets_1_1vision_1_1_vision_dataset_a7963601da311133da990b66cb616cc83}{transforms}}=None, Optional\mbox{[}Callable\mbox{]} \mbox{\hyperlink{classtorchvision__down_1_1datasets_1_1vision_1_1_vision_dataset_ade1b4bca7d4f998bc3061e0400769de8}{transform}}=None, Optional\mbox{[}Callable\mbox{]} \mbox{\hyperlink{classtorchvision__down_1_1datasets_1_1vision_1_1_vision_dataset_a01f7d1bb7220bbfa4234ef140d021cc6}{target\+\_\+transform}}=None)
+\item 
+Any \mbox{\hyperlink{classtorchvision__down_1_1datasets_1_1vision_1_1_vision_dataset_aa96f56b711d61433df225154b9837daa}{\+\_\+\+\_\+getitem\+\_\+\+\_\+}} (self, int index)
+\item 
+int \mbox{\hyperlink{classtorchvision__down_1_1datasets_1_1vision_1_1_vision_dataset_abb1561c74b600d1d424cfa010f009a92}{\+\_\+\+\_\+len\+\_\+\+\_\+}} (self)
+\item 
+str \mbox{\hyperlink{classtorchvision__down_1_1datasets_1_1vision_1_1_vision_dataset_a40d28a5833742c49a70872e87edb1ef9}{\+\_\+\+\_\+repr\+\_\+\+\_\+}} (self)
+\item 
+str \mbox{\hyperlink{classtorchvision__down_1_1datasets_1_1vision_1_1_vision_dataset_a99093b3e6dd75e1ed1c49eed7ac2df00}{extra\+\_\+repr}} (self)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1datasets_1_1flickr_1_1_flickr8k_a6e6c7395baf61a0530c4d0445292c8c9}{ann\+\_\+file}} = os.\+path.\+expanduser(ann\+\_\+file)
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1datasets_1_1flickr_1_1_flickr8k_a4b5f5a4e87de7da9f8424146b4d353d6}{annotations}} = parser.\+annotations
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1datasets_1_1flickr_1_1_flickr8k_a634bb139a56486648c4862664a41e1f4}{ids}} = list(sorted(self.\+annotations.\+keys()))
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes inherited from \mbox{\hyperlink{classtorchvision__down_1_1datasets_1_1vision_1_1_vision_dataset}{torchvision\+\_\+down.\+datasets.\+vision.\+Vision\+Dataset}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1datasets_1_1vision_1_1_vision_dataset_af52cf192ec18d3421afe216bf9b881d6}{root}} = root
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1datasets_1_1vision_1_1_vision_dataset_ade1b4bca7d4f998bc3061e0400769de8}{transform}} = transform
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1datasets_1_1vision_1_1_vision_dataset_a01f7d1bb7220bbfa4234ef140d021cc6}{target\+\_\+transform}} = target\+\_\+transform
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1datasets_1_1vision_1_1_vision_dataset_a7963601da311133da990b66cb616cc83}{transforms}} = transforms
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Additional Inherited Members}
+\doxysubsection*{Protected Member Functions inherited from \mbox{\hyperlink{classtorchvision__down_1_1datasets_1_1vision_1_1_vision_dataset}{torchvision\+\_\+down.\+datasets.\+vision.\+Vision\+Dataset}}}
+\begin{DoxyCompactItemize}
+\item 
+List\mbox{[}str\mbox{]} \mbox{\hyperlink{classtorchvision__down_1_1datasets_1_1vision_1_1_vision_dataset_a9f1a9fad1ab8a0b963cdc3522a271689}{\+\_\+format\+\_\+transform\+\_\+repr}} (self, Callable \mbox{\hyperlink{classtorchvision__down_1_1datasets_1_1vision_1_1_vision_dataset_ade1b4bca7d4f998bc3061e0400769de8}{transform}}, str head)
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Protected Attributes inherited from \mbox{\hyperlink{classtorchvision__down_1_1datasets_1_1vision_1_1_vision_dataset}{torchvision\+\_\+down.\+datasets.\+vision.\+Vision\+Dataset}}}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{classtorchvision__down_1_1datasets_1_1vision_1_1_vision_dataset_a2eb99b64ccfc03378be35d0ff88e71b4}{\+\_\+repr\+\_\+indent}} = 4
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}`Flickr8k Entities <http://hockenmaier.cs.illinois.edu/8k-pictures.html>`_ Dataset.
+
+Args:
+    root (string): Root directory where images are downloaded to.
+    ann_file (string): Path to annotation file.
+    transform (callable, optional): A function/transform that takes in a PIL image
+        and returns a transformed version. E.g, ``transforms.ToTensor``
+    target_transform (callable, optional): A function/transform that takes in the
+        target and transforms it.
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classtorchvision__down_1_1datasets_1_1flickr_1_1_flickr8k_a0c4cc3ddb491f6867d6df4de02f86008}\index{torchvision\_down.datasets.flickr.Flickr8k@{torchvision\_down.datasets.flickr.Flickr8k}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!torchvision\_down.datasets.flickr.Flickr8k@{torchvision\_down.datasets.flickr.Flickr8k}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1datasets_1_1flickr_1_1_flickr8k_a0c4cc3ddb491f6867d6df4de02f86008} 
+ None torchvision\+\_\+down.\+datasets.\+flickr.\+Flickr8k.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{str}]{root}{, }\item[{str}]{ann\+\_\+file}{, }\item[{Optional\mbox{[}Callable\mbox{]} }]{transform}{ = {\ttfamily None}, }\item[{Optional\mbox{[}Callable\mbox{]} }]{target\+\_\+transform}{ = {\ttfamily None}}\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classtorchvision__down_1_1datasets_1_1flickr_1_1_flickr8k_af707a16b5b6644d6273770229f5e7eb0}\index{torchvision\_down.datasets.flickr.Flickr8k@{torchvision\_down.datasets.flickr.Flickr8k}!\_\_getitem\_\_@{\_\_getitem\_\_}}
+\index{\_\_getitem\_\_@{\_\_getitem\_\_}!torchvision\_down.datasets.flickr.Flickr8k@{torchvision\_down.datasets.flickr.Flickr8k}}
+\doxysubsubsection{\texorpdfstring{\_\_getitem\_\_()}{\_\_getitem\_\_()}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1datasets_1_1flickr_1_1_flickr8k_af707a16b5b6644d6273770229f5e7eb0} 
+ Tuple\mbox{[}Any, Any\mbox{]} torchvision\+\_\+down.\+datasets.\+flickr.\+Flickr8k.\+\_\+\+\_\+getitem\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{int}]{index}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Args:
+    index (int): Index
+
+Returns:
+    tuple: Tuple (image, target). target is a list of captions for the image.
+\end{DoxyVerb}
+ \Hypertarget{classtorchvision__down_1_1datasets_1_1flickr_1_1_flickr8k_ae40e54ed1d312a886e13e86a17f02063}\index{torchvision\_down.datasets.flickr.Flickr8k@{torchvision\_down.datasets.flickr.Flickr8k}!\_\_len\_\_@{\_\_len\_\_}}
+\index{\_\_len\_\_@{\_\_len\_\_}!torchvision\_down.datasets.flickr.Flickr8k@{torchvision\_down.datasets.flickr.Flickr8k}}
+\doxysubsubsection{\texorpdfstring{\_\_len\_\_()}{\_\_len\_\_()}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1datasets_1_1flickr_1_1_flickr8k_ae40e54ed1d312a886e13e86a17f02063} 
+ int torchvision\+\_\+down.\+datasets.\+flickr.\+Flickr8k.\+\_\+\+\_\+len\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classtorchvision__down_1_1datasets_1_1flickr_1_1_flickr8k_a6e6c7395baf61a0530c4d0445292c8c9}\index{torchvision\_down.datasets.flickr.Flickr8k@{torchvision\_down.datasets.flickr.Flickr8k}!ann\_file@{ann\_file}}
+\index{ann\_file@{ann\_file}!torchvision\_down.datasets.flickr.Flickr8k@{torchvision\_down.datasets.flickr.Flickr8k}}
+\doxysubsubsection{\texorpdfstring{ann\_file}{ann\_file}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1datasets_1_1flickr_1_1_flickr8k_a6e6c7395baf61a0530c4d0445292c8c9} 
+torchvision\+\_\+down.\+datasets.\+flickr.\+Flickr8k.\+ann\+\_\+file = os.\+path.\+expanduser(ann\+\_\+file)}
+
+\Hypertarget{classtorchvision__down_1_1datasets_1_1flickr_1_1_flickr8k_a4b5f5a4e87de7da9f8424146b4d353d6}\index{torchvision\_down.datasets.flickr.Flickr8k@{torchvision\_down.datasets.flickr.Flickr8k}!annotations@{annotations}}
+\index{annotations@{annotations}!torchvision\_down.datasets.flickr.Flickr8k@{torchvision\_down.datasets.flickr.Flickr8k}}
+\doxysubsubsection{\texorpdfstring{annotations}{annotations}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1datasets_1_1flickr_1_1_flickr8k_a4b5f5a4e87de7da9f8424146b4d353d6} 
+torchvision\+\_\+down.\+datasets.\+flickr.\+Flickr8k.\+annotations = parser.\+annotations}
+
+\Hypertarget{classtorchvision__down_1_1datasets_1_1flickr_1_1_flickr8k_a634bb139a56486648c4862664a41e1f4}\index{torchvision\_down.datasets.flickr.Flickr8k@{torchvision\_down.datasets.flickr.Flickr8k}!ids@{ids}}
+\index{ids@{ids}!torchvision\_down.datasets.flickr.Flickr8k@{torchvision\_down.datasets.flickr.Flickr8k}}
+\doxysubsubsection{\texorpdfstring{ids}{ids}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1datasets_1_1flickr_1_1_flickr8k_a634bb139a56486648c4862664a41e1f4} 
+torchvision\+\_\+down.\+datasets.\+flickr.\+Flickr8k.\+ids = list(sorted(self.\+annotations.\+keys()))}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Cervi\+AI/torchvision\+\_\+down/datasets/\mbox{\hyperlink{flickr_8py}{flickr.\+py}}\end{DoxyCompactItemize}

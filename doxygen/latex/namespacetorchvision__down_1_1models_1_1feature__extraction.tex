@@ -1,0 +1,212 @@
+\doxysection{torchvision\+\_\+down.\+models.\+feature\+\_\+extraction Namespace Reference}
+\hypertarget{namespacetorchvision__down_1_1models_1_1feature__extraction}{}\label{namespacetorchvision__down_1_1models_1_1feature__extraction}\index{torchvision\_down.models.feature\_extraction@{torchvision\_down.models.feature\_extraction}}
+\doxysubsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classtorchvision__down_1_1models_1_1feature__extraction_1_1_dual_graph_module}{Dual\+Graph\+Module}}
+\item 
+class \mbox{\hyperlink{classtorchvision__down_1_1models_1_1feature__extraction_1_1_leaf_module_aware_tracer}{Leaf\+Module\+Aware\+Tracer}}
+\item 
+class \mbox{\hyperlink{classtorchvision__down_1_1models_1_1feature__extraction_1_1_node_path_tracer}{Node\+Path\+Tracer}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{namespacetorchvision__down_1_1models_1_1feature__extraction_a585a4e555aa620104c1142f76ecff6c7}{\+\_\+is\+\_\+subseq}} (x, y)
+\item 
+\mbox{\hyperlink{namespacetorchvision__down_1_1models_1_1feature__extraction_a3fb96b1eefe8bb5ac3b7c699b7507cd3}{\+\_\+warn\+\_\+graph\+\_\+differences}} (\mbox{\hyperlink{classtorchvision__down_1_1models_1_1feature__extraction_1_1_node_path_tracer}{Node\+Path\+Tracer}} train\+\_\+tracer, \mbox{\hyperlink{classtorchvision__down_1_1models_1_1feature__extraction_1_1_node_path_tracer}{Node\+Path\+Tracer}} eval\+\_\+tracer)
+\item 
+List\mbox{[}type\mbox{]} \mbox{\hyperlink{namespacetorchvision__down_1_1models_1_1feature__extraction_acb6aa6f7f5328cc76c49973e6e42ff03}{\+\_\+get\+\_\+leaf\+\_\+modules\+\_\+for\+\_\+ops}} ()
+\item 
+Tuple\mbox{[}List\mbox{[}str\mbox{]}, List\mbox{[}str\mbox{]}\mbox{]} \mbox{\hyperlink{namespacetorchvision__down_1_1models_1_1feature__extraction_aa158dcdb6e9d22b10ee884142653e607}{get\+\_\+graph\+\_\+node\+\_\+names}} (nn.\+Module model, Optional\mbox{[}Dict\mbox{[}str, Any\mbox{]}\mbox{]} tracer\+\_\+kwargs=None, bool suppress\+\_\+diff\+\_\+warning=False)
+\item 
+fx.\+Graph\+Module \mbox{\hyperlink{namespacetorchvision__down_1_1models_1_1feature__extraction_a922901bb3f6e0034e72549839a6b7603}{create\+\_\+feature\+\_\+extractor}} (nn.\+Module model, Optional\mbox{[}Union\mbox{[}List\mbox{[}str\mbox{]}, Dict\mbox{[}str, str\mbox{]}\mbox{]}\mbox{]} return\+\_\+nodes=None, Optional\mbox{[}Union\mbox{[}List\mbox{[}str\mbox{]}, Dict\mbox{[}str, str\mbox{]}\mbox{]}\mbox{]} train\+\_\+return\+\_\+nodes=None, Optional\mbox{[}Union\mbox{[}List\mbox{[}str\mbox{]}, Dict\mbox{[}str, str\mbox{]}\mbox{]}\mbox{]} eval\+\_\+return\+\_\+nodes=None, Optional\mbox{[}Dict\mbox{[}str, Any\mbox{]}\mbox{]} tracer\+\_\+kwargs=None, bool suppress\+\_\+diff\+\_\+warning=False)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+list \mbox{\hyperlink{namespacetorchvision__down_1_1models_1_1feature__extraction_a53c32c20a161d8267a976d3107d4a32d}{\+\_\+\+\_\+all\+\_\+\+\_\+}} = \mbox{[}"{}create\+\_\+feature\+\_\+extractor"{}, "{}get\+\_\+graph\+\_\+node\+\_\+names"{}\mbox{]}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{namespacetorchvision__down_1_1models_1_1feature__extraction_acb6aa6f7f5328cc76c49973e6e42ff03}\index{torchvision\_down.models.feature\_extraction@{torchvision\_down.models.feature\_extraction}!\_get\_leaf\_modules\_for\_ops@{\_get\_leaf\_modules\_for\_ops}}
+\index{\_get\_leaf\_modules\_for\_ops@{\_get\_leaf\_modules\_for\_ops}!torchvision\_down.models.feature\_extraction@{torchvision\_down.models.feature\_extraction}}
+\doxysubsubsection{\texorpdfstring{\_get\_leaf\_modules\_for\_ops()}{\_get\_leaf\_modules\_for\_ops()}}
+{\footnotesize\ttfamily \label{namespacetorchvision__down_1_1models_1_1feature__extraction_acb6aa6f7f5328cc76c49973e6e42ff03} 
+ List\mbox{[}type\mbox{]} torchvision\+\_\+down.\+models.\+feature\+\_\+extraction.\+\_\+get\+\_\+leaf\+\_\+modules\+\_\+for\+\_\+ops (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{namespacetorchvision__down_1_1models_1_1feature__extraction_a585a4e555aa620104c1142f76ecff6c7}\index{torchvision\_down.models.feature\_extraction@{torchvision\_down.models.feature\_extraction}!\_is\_subseq@{\_is\_subseq}}
+\index{\_is\_subseq@{\_is\_subseq}!torchvision\_down.models.feature\_extraction@{torchvision\_down.models.feature\_extraction}}
+\doxysubsubsection{\texorpdfstring{\_is\_subseq()}{\_is\_subseq()}}
+{\footnotesize\ttfamily \label{namespacetorchvision__down_1_1models_1_1feature__extraction_a585a4e555aa620104c1142f76ecff6c7} 
+torchvision\+\_\+down.\+models.\+feature\+\_\+extraction.\+\_\+is\+\_\+subseq (\begin{DoxyParamCaption}\item[{}]{x}{, }\item[{}]{y}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\begin{DoxyVerb}Check if y is a subseqence of x
+https://stackoverflow.com/a/24017747/4391249
+\end{DoxyVerb}
+ \Hypertarget{namespacetorchvision__down_1_1models_1_1feature__extraction_a3fb96b1eefe8bb5ac3b7c699b7507cd3}\index{torchvision\_down.models.feature\_extraction@{torchvision\_down.models.feature\_extraction}!\_warn\_graph\_differences@{\_warn\_graph\_differences}}
+\index{\_warn\_graph\_differences@{\_warn\_graph\_differences}!torchvision\_down.models.feature\_extraction@{torchvision\_down.models.feature\_extraction}}
+\doxysubsubsection{\texorpdfstring{\_warn\_graph\_differences()}{\_warn\_graph\_differences()}}
+{\footnotesize\ttfamily \label{namespacetorchvision__down_1_1models_1_1feature__extraction_a3fb96b1eefe8bb5ac3b7c699b7507cd3} 
+torchvision\+\_\+down.\+models.\+feature\+\_\+extraction.\+\_\+warn\+\_\+graph\+\_\+differences (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classtorchvision__down_1_1models_1_1feature__extraction_1_1_node_path_tracer}{Node\+Path\+Tracer}}}]{train\+\_\+tracer}{, }\item[{\mbox{\hyperlink{classtorchvision__down_1_1models_1_1feature__extraction_1_1_node_path_tracer}{Node\+Path\+Tracer}}}]{eval\+\_\+tracer}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\begin{DoxyVerb}Utility function for warning the user if there are differences between
+the train graph nodes and the eval graph nodes.
+\end{DoxyVerb}
+ \Hypertarget{namespacetorchvision__down_1_1models_1_1feature__extraction_a922901bb3f6e0034e72549839a6b7603}\index{torchvision\_down.models.feature\_extraction@{torchvision\_down.models.feature\_extraction}!create\_feature\_extractor@{create\_feature\_extractor}}
+\index{create\_feature\_extractor@{create\_feature\_extractor}!torchvision\_down.models.feature\_extraction@{torchvision\_down.models.feature\_extraction}}
+\doxysubsubsection{\texorpdfstring{create\_feature\_extractor()}{create\_feature\_extractor()}}
+{\footnotesize\ttfamily \label{namespacetorchvision__down_1_1models_1_1feature__extraction_a922901bb3f6e0034e72549839a6b7603} 
+ fx.\+Graph\+Module torchvision\+\_\+down.\+models.\+feature\+\_\+extraction.\+create\+\_\+feature\+\_\+extractor (\begin{DoxyParamCaption}\item[{nn.\+Module}]{model}{, }\item[{Optional\mbox{[}Union\mbox{[}List\mbox{[}str\mbox{]}, Dict\mbox{[}str, str\mbox{]}\mbox{]}\mbox{]} }]{return\+\_\+nodes}{ = {\ttfamily None}, }\item[{Optional\mbox{[}Union\mbox{[}List\mbox{[}str\mbox{]}, Dict\mbox{[}str, str\mbox{]}\mbox{]}\mbox{]} }]{train\+\_\+return\+\_\+nodes}{ = {\ttfamily None}, }\item[{Optional\mbox{[}Union\mbox{[}List\mbox{[}str\mbox{]}, Dict\mbox{[}str, str\mbox{]}\mbox{]}\mbox{]} }]{eval\+\_\+return\+\_\+nodes}{ = {\ttfamily None}, }\item[{Optional\mbox{[}Dict\mbox{[}str, Any\mbox{]}\mbox{]} }]{tracer\+\_\+kwargs}{ = {\ttfamily None}, }\item[{bool }]{suppress\+\_\+diff\+\_\+warning}{ = {\ttfamily False}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Creates a new graph module that returns intermediate nodes from a given
+model as dictionary with user specified keys as strings, and the requested
+outputs as values. This is achieved by re-writing the computation graph of
+the model via FX to return the desired nodes as outputs. All unused nodes
+are removed, together with their corresponding parameters.
+
+Desired output nodes must be specified as a ``.`` separated
+path walking the module hierarchy from top level module down to leaf
+operation or leaf module. For more details on the node naming conventions
+used here, please see the :ref:`relevant subheading <about-node-names>`
+in the `documentation <https://pytorch.org/vision/stable/feature_extraction.html>`_.
+
+Not all models will be FX traceable, although with some massaging they can
+be made to cooperate. Here's a (not exhaustive) list of tips:
+
+    - If you don't need to trace through a particular, problematic
+      sub-module, turn it into a "leaf module" by passing a list of
+      ``leaf_modules`` as one of the ``tracer_kwargs`` (see example below).
+      It will not be traced through, but rather, the resulting graph will
+      hold a reference to that module's forward method.
+    - Likewise, you may turn functions into leaf functions by passing a
+      list of ``autowrap_functions`` as one of the ``tracer_kwargs`` (see
+      example below).
+    - Some inbuilt Python functions can be problematic. For instance,
+      ``int`` will raise an error during tracing. You may wrap them in your
+      own function and then pass that in ``autowrap_functions`` as one of
+      the ``tracer_kwargs``.
+
+For further information on FX see the
+`torch.fx documentation <https://pytorch.org/docs/stable/fx.html>`_.
+
+Args:
+    model (nn.Module): model on which we will extract the features
+    return_nodes (list or dict, optional): either a ``List`` or a ``Dict``
+        containing the names (or partial names - see note above)
+        of the nodes for which the activations will be returned. If it is
+        a ``Dict``, the keys are the node names, and the values
+        are the user-specified keys for the graph module's returned
+        dictionary. If it is a ``List``, it is treated as a ``Dict`` mapping
+        node specification strings directly to output names. In the case
+        that ``train_return_nodes`` and ``eval_return_nodes`` are specified,
+        this should not be specified.
+    train_return_nodes (list or dict, optional): similar to
+        ``return_nodes``. This can be used if the return nodes
+        for train mode are different than those from eval mode.
+        If this is specified, ``eval_return_nodes`` must also be specified,
+        and ``return_nodes`` should not be specified.
+    eval_return_nodes (list or dict, optional): similar to
+        ``return_nodes``. This can be used if the return nodes
+        for train mode are different than those from eval mode.
+        If this is specified, ``train_return_nodes`` must also be specified,
+        and `return_nodes` should not be specified.
+    tracer_kwargs (dict, optional): a dictionary of keywork arguments for
+        ``NodePathTracer`` (which passes them onto it's parent class
+        `torch.fx.Tracer <https://pytorch.org/docs/stable/fx.html#torch.fx.Tracer>`_).
+        By default it will be set to wrap and make leaf nodes all torchvision ops.
+    suppress_diff_warning (bool, optional): whether to suppress a warning
+        when there are discrepancies between the train and eval version of
+        the graph. Defaults to False.
+
+Examples::
+
+    >>> # Feature extraction with resnet
+    >>> model = torchvision.models.resnet18()
+    >>> # extract layer1 and layer3, giving as names `feat1` and feat2`
+    >>> model = create_feature_extractor(
+    >>>     model, {'layer1': 'feat1', 'layer3': 'feat2'})
+    >>> out = model(torch.rand(1, 3, 224, 224))
+    >>> print([(k, v.shape) for k, v in out.items()])
+    >>>     [('feat1', torch.Size([1, 64, 56, 56])),
+    >>>      ('feat2', torch.Size([1, 256, 14, 14]))]
+
+    >>> # Specifying leaf modules and leaf functions
+    >>> def leaf_function(x):
+    >>>     # This would raise a TypeError if traced through
+    >>>     return int(x)
+    >>>
+    >>> class LeafModule(torch.nn.Module):
+    >>>     def forward(self, x):
+    >>>         # This would raise a TypeError if traced through
+    >>>         int(x.shape[0])
+    >>>         return torch.nn.functional.relu(x + 4)
+    >>>
+    >>> class MyModule(torch.nn.Module):
+    >>>     def __init__(self):
+    >>>         super().__init__()
+    >>>         self.conv = torch.nn.Conv2d(3, 1, 3)
+    >>>         self.leaf_module = LeafModule()
+    >>>
+    >>>     def forward(self, x):
+    >>>         leaf_function(x.shape[0])
+    >>>         x = self.conv(x)
+    >>>         return self.leaf_module(x)
+    >>>
+    >>> model = create_feature_extractor(
+    >>>     MyModule(), return_nodes=['leaf_module'],
+    >>>     tracer_kwargs={'leaf_modules': [LeafModule],
+    >>>                    'autowrap_functions': [leaf_function]})
+\end{DoxyVerb}
+ \Hypertarget{namespacetorchvision__down_1_1models_1_1feature__extraction_aa158dcdb6e9d22b10ee884142653e607}\index{torchvision\_down.models.feature\_extraction@{torchvision\_down.models.feature\_extraction}!get\_graph\_node\_names@{get\_graph\_node\_names}}
+\index{get\_graph\_node\_names@{get\_graph\_node\_names}!torchvision\_down.models.feature\_extraction@{torchvision\_down.models.feature\_extraction}}
+\doxysubsubsection{\texorpdfstring{get\_graph\_node\_names()}{get\_graph\_node\_names()}}
+{\footnotesize\ttfamily \label{namespacetorchvision__down_1_1models_1_1feature__extraction_aa158dcdb6e9d22b10ee884142653e607} 
+ Tuple\mbox{[}List\mbox{[}str\mbox{]}, List\mbox{[}str\mbox{]}\mbox{]} torchvision\+\_\+down.\+models.\+feature\+\_\+extraction.\+get\+\_\+graph\+\_\+node\+\_\+names (\begin{DoxyParamCaption}\item[{nn.\+Module}]{model}{, }\item[{Optional\mbox{[}Dict\mbox{[}str, Any\mbox{]}\mbox{]} }]{tracer\+\_\+kwargs}{ = {\ttfamily None}, }\item[{bool }]{suppress\+\_\+diff\+\_\+warning}{ = {\ttfamily False}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Dev utility to return node names in order of execution. See note on node
+names under :func:`create_feature_extractor`. Useful for seeing which node
+names are available for feature extraction. There are two reasons that
+node names can't easily be read directly from the code for a model:
+
+    1. Not all submodules are traced through. Modules from ``torch.nn`` all
+       fall within this category.
+    2. Nodes representing the repeated application of the same operation
+       or leaf module get a ``_{counter}`` postfix.
+
+The model is traced twice: once in train mode, and once in eval mode. Both
+sets of node names are returned.
+
+For more details on the node naming conventions used here, please see the
+:ref:`relevant subheading <about-node-names>` in the
+`documentation <https://pytorch.org/vision/stable/feature_extraction.html>`_.
+
+Args:
+    model (nn.Module): model for which we'd like to print node names
+    tracer_kwargs (dict, optional): a dictionary of keywork arguments for
+        ``NodePathTracer`` (they are eventually passed onto
+        `torch.fx.Tracer <https://pytorch.org/docs/stable/fx.html#torch.fx.Tracer>`_).
+        By default it will be set to wrap and make leaf nodes all torchvision ops.
+    suppress_diff_warning (bool, optional): whether to suppress a warning
+        when there are discrepancies between the train and eval version of
+        the graph. Defaults to False.
+
+Returns:
+    tuple(list, list): a list of node names from tracing the model in
+    train mode, and another from tracing the model in eval mode.
+
+Examples::
+
+    >>> model = torchvision.models.resnet18()
+    >>> train_nodes, eval_nodes = get_graph_node_names(model)
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Variable Documentation}
+\Hypertarget{namespacetorchvision__down_1_1models_1_1feature__extraction_a53c32c20a161d8267a976d3107d4a32d}\index{torchvision\_down.models.feature\_extraction@{torchvision\_down.models.feature\_extraction}!\_\_all\_\_@{\_\_all\_\_}}
+\index{\_\_all\_\_@{\_\_all\_\_}!torchvision\_down.models.feature\_extraction@{torchvision\_down.models.feature\_extraction}}
+\doxysubsubsection{\texorpdfstring{\_\_all\_\_}{\_\_all\_\_}}
+{\footnotesize\ttfamily \label{namespacetorchvision__down_1_1models_1_1feature__extraction_a53c32c20a161d8267a976d3107d4a32d} 
+list torchvision\+\_\+down.\+models.\+feature\+\_\+extraction.\+\_\+\+\_\+all\+\_\+\+\_\+ = \mbox{[}"{}create\+\_\+feature\+\_\+extractor"{}, "{}get\+\_\+graph\+\_\+node\+\_\+names"{}\mbox{]}\hspace{0.3cm}{\ttfamily [private]}}
+

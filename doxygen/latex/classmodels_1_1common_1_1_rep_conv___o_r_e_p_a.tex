@@ -1,0 +1,197 @@
+\doxysection{models.\+common.\+Rep\+Conv\+\_\+\+OREPA Class Reference}
+\hypertarget{classmodels_1_1common_1_1_rep_conv___o_r_e_p_a}{}\label{classmodels_1_1common_1_1_rep_conv___o_r_e_p_a}\index{models.common.RepConv\_OREPA@{models.common.RepConv\_OREPA}}
+Inheritance diagram for models.\+common.\+Rep\+Conv\+\_\+\+OREPA\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classmodels_1_1common_1_1_rep_conv___o_r_e_p_a}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classmodels_1_1common_1_1_rep_conv___o_r_e_p_a_a60fa8ee28157a8c556f700f524e57f3b}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, c1, c2, k=3, s=1, \mbox{\hyperlink{classmodels_1_1common_1_1_rep_conv___o_r_e_p_a_a2fc41d0c9c1502ae82dcc0e04c015fb2}{padding}}=1, \mbox{\hyperlink{classmodels_1_1common_1_1_rep_conv___o_r_e_p_a_a771e6b3f9a10f88970f2a3ec424e6ee2}{dilation}}=1, \mbox{\hyperlink{classmodels_1_1common_1_1_rep_conv___o_r_e_p_a_ac3d3551e9ec6acdcfa80cd1a4ace3707}{groups}}=1, padding\+\_\+mode=\textquotesingle{}zeros\textquotesingle{}, \mbox{\hyperlink{classmodels_1_1common_1_1_rep_conv___o_r_e_p_a_a348a28ce5fab725b8a50d0db43b55cce}{deploy}}=False, use\+\_\+se=False, nonlinear=nn.\+Si\+LU())
+\item 
+\mbox{\hyperlink{classmodels_1_1common_1_1_rep_conv___o_r_e_p_a_a7f362513771cf9ee77591efde7011cdb}{forward}} (self, inputs)
+\item 
+\mbox{\hyperlink{classmodels_1_1common_1_1_rep_conv___o_r_e_p_a_a964565a70e95669518a83b1b30b1b2fe}{get\+\_\+custom\+\_\+\+L2}} (self)
+\item 
+\mbox{\hyperlink{classmodels_1_1common_1_1_rep_conv___o_r_e_p_a_aba4b81fcffeb77edd0da20ac04e7f817}{get\+\_\+equivalent\+\_\+kernel\+\_\+bias}} (self)
+\item 
+\mbox{\hyperlink{classmodels_1_1common_1_1_rep_conv___o_r_e_p_a_a2f33580c963f01627d79df525f83b607}{switch\+\_\+to\+\_\+deploy}} (self)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classmodels_1_1common_1_1_rep_conv___o_r_e_p_a_a348a28ce5fab725b8a50d0db43b55cce}{deploy}} = deploy
+\item 
+\mbox{\hyperlink{classmodels_1_1common_1_1_rep_conv___o_r_e_p_a_ac3d3551e9ec6acdcfa80cd1a4ace3707}{groups}} = groups
+\item 
+\mbox{\hyperlink{classmodels_1_1common_1_1_rep_conv___o_r_e_p_a_a4411ed5cc37c94f7bd503e2dff9d90f9}{in\+\_\+channels}} = c1
+\item 
+\mbox{\hyperlink{classmodels_1_1common_1_1_rep_conv___o_r_e_p_a_a7a0c87b1d766f678b61777ce594aaee6}{out\+\_\+channels}} = c2
+\item 
+\mbox{\hyperlink{classmodels_1_1common_1_1_rep_conv___o_r_e_p_a_a2fc41d0c9c1502ae82dcc0e04c015fb2}{padding}} = padding
+\item 
+\mbox{\hyperlink{classmodels_1_1common_1_1_rep_conv___o_r_e_p_a_a771e6b3f9a10f88970f2a3ec424e6ee2}{dilation}} = dilation
+\item 
+\mbox{\hyperlink{classmodels_1_1common_1_1_rep_conv___o_r_e_p_a_ae7dc5a8b89b3378c9661041f77dd97d5}{nonlinearity}} = nn.\+Identity()
+\item 
+\mbox{\hyperlink{classmodels_1_1common_1_1_rep_conv___o_r_e_p_a_afc1e7e9206a1b293990ba8ac48a02a2b}{se}} = SEBlock(self.\+out\+\_\+channels, internal\+\_\+neurons=self.\+out\+\_\+channels // 16)
+\item 
+\mbox{\hyperlink{classmodels_1_1common_1_1_rep_conv___o_r_e_p_a_a5011ca9a16ab4c3a9d4c5c1bc9142ddb}{rbr\+\_\+reparam}}
+\item 
+int \mbox{\hyperlink{classmodels_1_1common_1_1_rep_conv___o_r_e_p_a_a217a3f30781eb585b19dd83d25d71247}{rbr\+\_\+identity}} = 1 else None
+\item 
+\mbox{\hyperlink{classmodels_1_1common_1_1_rep_conv___o_r_e_p_a_a7579a8059b7bb8439a932cef5d7b72d5}{rbr\+\_\+dense}} = \mbox{\hyperlink{classmodels_1_1common_1_1_o_r_e_p_a__3x3___rep_conv}{OREPA\+\_\+3x3\+\_\+\+Rep\+Conv}}(\mbox{\hyperlink{classmodels_1_1common_1_1_rep_conv___o_r_e_p_a_a4411ed5cc37c94f7bd503e2dff9d90f9}{in\+\_\+channels}}=self.\+in\+\_\+channels, \mbox{\hyperlink{classmodels_1_1common_1_1_rep_conv___o_r_e_p_a_a7a0c87b1d766f678b61777ce594aaee6}{out\+\_\+channels}}=self.\+out\+\_\+channels, kernel\+\_\+size=k, stride=s, \mbox{\hyperlink{classmodels_1_1common_1_1_rep_conv___o_r_e_p_a_a2fc41d0c9c1502ae82dcc0e04c015fb2}{padding}}=\mbox{\hyperlink{classmodels_1_1common_1_1_rep_conv___o_r_e_p_a_a2fc41d0c9c1502ae82dcc0e04c015fb2}{padding}}, \mbox{\hyperlink{classmodels_1_1common_1_1_rep_conv___o_r_e_p_a_ac3d3551e9ec6acdcfa80cd1a4ace3707}{groups}}=\mbox{\hyperlink{classmodels_1_1common_1_1_rep_conv___o_r_e_p_a_ac3d3551e9ec6acdcfa80cd1a4ace3707}{groups}}, \mbox{\hyperlink{classmodels_1_1common_1_1_rep_conv___o_r_e_p_a_a771e6b3f9a10f88970f2a3ec424e6ee2}{dilation}}=1)
+\item 
+\mbox{\hyperlink{classmodels_1_1common_1_1_rep_conv___o_r_e_p_a_a35ad99ea1bf467d4e03f42cac670a694}{rbr\+\_\+1x1}} = \mbox{\hyperlink{classmodels_1_1common_1_1_conv_b_n}{Conv\+BN}}(\mbox{\hyperlink{classmodels_1_1common_1_1_rep_conv___o_r_e_p_a_a4411ed5cc37c94f7bd503e2dff9d90f9}{in\+\_\+channels}}=self.\+in\+\_\+channels, \mbox{\hyperlink{classmodels_1_1common_1_1_rep_conv___o_r_e_p_a_a7a0c87b1d766f678b61777ce594aaee6}{out\+\_\+channels}}=self.\+out\+\_\+channels, kernel\+\_\+size=1, stride=s, \mbox{\hyperlink{classmodels_1_1common_1_1_rep_conv___o_r_e_p_a_a2fc41d0c9c1502ae82dcc0e04c015fb2}{padding}}=padding\+\_\+11, \mbox{\hyperlink{classmodels_1_1common_1_1_rep_conv___o_r_e_p_a_ac3d3551e9ec6acdcfa80cd1a4ace3707}{groups}}=\mbox{\hyperlink{classmodels_1_1common_1_1_rep_conv___o_r_e_p_a_ac3d3551e9ec6acdcfa80cd1a4ace3707}{groups}}, \mbox{\hyperlink{classmodels_1_1common_1_1_rep_conv___o_r_e_p_a_a771e6b3f9a10f88970f2a3ec424e6ee2}{dilation}}=1)
+\item 
+\mbox{\hyperlink{classmodels_1_1common_1_1_rep_conv___o_r_e_p_a_a3db841f08180e4ea0bef676777b7bbc3}{id\+\_\+tensor}} = torch.\+from\+\_\+numpy(kernel\+\_\+value).to(branch.\+weight.\+device)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classmodels_1_1common_1_1_rep_conv___o_r_e_p_a_a744c2eb2c0d7e8a9be714ee49b30948e}{\+\_\+pad\+\_\+1x1\+\_\+to\+\_\+3x3\+\_\+tensor}} (self, kernel1x1)
+\item 
+\mbox{\hyperlink{classmodels_1_1common_1_1_rep_conv___o_r_e_p_a_afdb662b6d48f14234aef2fc628629a80}{\+\_\+fuse\+\_\+bn\+\_\+tensor}} (self, branch)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classmodels_1_1common_1_1_rep_conv___o_r_e_p_a_a60fa8ee28157a8c556f700f524e57f3b}\index{models.common.RepConv\_OREPA@{models.common.RepConv\_OREPA}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!models.common.RepConv\_OREPA@{models.common.RepConv\_OREPA}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily \label{classmodels_1_1common_1_1_rep_conv___o_r_e_p_a_a60fa8ee28157a8c556f700f524e57f3b} 
+models.\+common.\+Rep\+Conv\+\_\+\+OREPA.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{c1}{, }\item[{}]{c2}{, }\item[{}]{k}{ = {\ttfamily 3}, }\item[{}]{s}{ = {\ttfamily 1}, }\item[{}]{padding}{ = {\ttfamily 1}, }\item[{}]{dilation}{ = {\ttfamily 1}, }\item[{}]{groups}{ = {\ttfamily 1}, }\item[{}]{padding\+\_\+mode}{ = {\ttfamily \textquotesingle{}zeros\textquotesingle{}}, }\item[{}]{deploy}{ = {\ttfamily False}, }\item[{}]{use\+\_\+se}{ = {\ttfamily False}, }\item[{}]{nonlinear}{ = {\ttfamily nn.SiLU()}}\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classmodels_1_1common_1_1_rep_conv___o_r_e_p_a_afdb662b6d48f14234aef2fc628629a80}\index{models.common.RepConv\_OREPA@{models.common.RepConv\_OREPA}!\_fuse\_bn\_tensor@{\_fuse\_bn\_tensor}}
+\index{\_fuse\_bn\_tensor@{\_fuse\_bn\_tensor}!models.common.RepConv\_OREPA@{models.common.RepConv\_OREPA}}
+\doxysubsubsection{\texorpdfstring{\_fuse\_bn\_tensor()}{\_fuse\_bn\_tensor()}}
+{\footnotesize\ttfamily \label{classmodels_1_1common_1_1_rep_conv___o_r_e_p_a_afdb662b6d48f14234aef2fc628629a80} 
+models.\+common.\+Rep\+Conv\+\_\+\+OREPA.\+\_\+fuse\+\_\+bn\+\_\+tensor (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{branch}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classmodels_1_1common_1_1_rep_conv___o_r_e_p_a_a744c2eb2c0d7e8a9be714ee49b30948e}\index{models.common.RepConv\_OREPA@{models.common.RepConv\_OREPA}!\_pad\_1x1\_to\_3x3\_tensor@{\_pad\_1x1\_to\_3x3\_tensor}}
+\index{\_pad\_1x1\_to\_3x3\_tensor@{\_pad\_1x1\_to\_3x3\_tensor}!models.common.RepConv\_OREPA@{models.common.RepConv\_OREPA}}
+\doxysubsubsection{\texorpdfstring{\_pad\_1x1\_to\_3x3\_tensor()}{\_pad\_1x1\_to\_3x3\_tensor()}}
+{\footnotesize\ttfamily \label{classmodels_1_1common_1_1_rep_conv___o_r_e_p_a_a744c2eb2c0d7e8a9be714ee49b30948e} 
+models.\+common.\+Rep\+Conv\+\_\+\+OREPA.\+\_\+pad\+\_\+1x1\+\_\+to\+\_\+3x3\+\_\+tensor (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{kernel1x1}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classmodels_1_1common_1_1_rep_conv___o_r_e_p_a_a7f362513771cf9ee77591efde7011cdb}\index{models.common.RepConv\_OREPA@{models.common.RepConv\_OREPA}!forward@{forward}}
+\index{forward@{forward}!models.common.RepConv\_OREPA@{models.common.RepConv\_OREPA}}
+\doxysubsubsection{\texorpdfstring{forward()}{forward()}}
+{\footnotesize\ttfamily \label{classmodels_1_1common_1_1_rep_conv___o_r_e_p_a_a7f362513771cf9ee77591efde7011cdb} 
+models.\+common.\+Rep\+Conv\+\_\+\+OREPA.\+forward (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{inputs}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classmodels_1_1common_1_1_rep_conv___o_r_e_p_a_a964565a70e95669518a83b1b30b1b2fe}\index{models.common.RepConv\_OREPA@{models.common.RepConv\_OREPA}!get\_custom\_L2@{get\_custom\_L2}}
+\index{get\_custom\_L2@{get\_custom\_L2}!models.common.RepConv\_OREPA@{models.common.RepConv\_OREPA}}
+\doxysubsubsection{\texorpdfstring{get\_custom\_L2()}{get\_custom\_L2()}}
+{\footnotesize\ttfamily \label{classmodels_1_1common_1_1_rep_conv___o_r_e_p_a_a964565a70e95669518a83b1b30b1b2fe} 
+models.\+common.\+Rep\+Conv\+\_\+\+OREPA.\+get\+\_\+custom\+\_\+\+L2 (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classmodels_1_1common_1_1_rep_conv___o_r_e_p_a_aba4b81fcffeb77edd0da20ac04e7f817}\index{models.common.RepConv\_OREPA@{models.common.RepConv\_OREPA}!get\_equivalent\_kernel\_bias@{get\_equivalent\_kernel\_bias}}
+\index{get\_equivalent\_kernel\_bias@{get\_equivalent\_kernel\_bias}!models.common.RepConv\_OREPA@{models.common.RepConv\_OREPA}}
+\doxysubsubsection{\texorpdfstring{get\_equivalent\_kernel\_bias()}{get\_equivalent\_kernel\_bias()}}
+{\footnotesize\ttfamily \label{classmodels_1_1common_1_1_rep_conv___o_r_e_p_a_aba4b81fcffeb77edd0da20ac04e7f817} 
+models.\+common.\+Rep\+Conv\+\_\+\+OREPA.\+get\+\_\+equivalent\+\_\+kernel\+\_\+bias (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classmodels_1_1common_1_1_rep_conv___o_r_e_p_a_a2f33580c963f01627d79df525f83b607}\index{models.common.RepConv\_OREPA@{models.common.RepConv\_OREPA}!switch\_to\_deploy@{switch\_to\_deploy}}
+\index{switch\_to\_deploy@{switch\_to\_deploy}!models.common.RepConv\_OREPA@{models.common.RepConv\_OREPA}}
+\doxysubsubsection{\texorpdfstring{switch\_to\_deploy()}{switch\_to\_deploy()}}
+{\footnotesize\ttfamily \label{classmodels_1_1common_1_1_rep_conv___o_r_e_p_a_a2f33580c963f01627d79df525f83b607} 
+models.\+common.\+Rep\+Conv\+\_\+\+OREPA.\+switch\+\_\+to\+\_\+deploy (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classmodels_1_1common_1_1_rep_conv___o_r_e_p_a_a348a28ce5fab725b8a50d0db43b55cce}\index{models.common.RepConv\_OREPA@{models.common.RepConv\_OREPA}!deploy@{deploy}}
+\index{deploy@{deploy}!models.common.RepConv\_OREPA@{models.common.RepConv\_OREPA}}
+\doxysubsubsection{\texorpdfstring{deploy}{deploy}}
+{\footnotesize\ttfamily \label{classmodels_1_1common_1_1_rep_conv___o_r_e_p_a_a348a28ce5fab725b8a50d0db43b55cce} 
+models.\+common.\+Rep\+Conv\+\_\+\+OREPA.\+deploy = deploy}
+
+\Hypertarget{classmodels_1_1common_1_1_rep_conv___o_r_e_p_a_a771e6b3f9a10f88970f2a3ec424e6ee2}\index{models.common.RepConv\_OREPA@{models.common.RepConv\_OREPA}!dilation@{dilation}}
+\index{dilation@{dilation}!models.common.RepConv\_OREPA@{models.common.RepConv\_OREPA}}
+\doxysubsubsection{\texorpdfstring{dilation}{dilation}}
+{\footnotesize\ttfamily \label{classmodels_1_1common_1_1_rep_conv___o_r_e_p_a_a771e6b3f9a10f88970f2a3ec424e6ee2} 
+models.\+common.\+Rep\+Conv\+\_\+\+OREPA.\+dilation = dilation}
+
+\Hypertarget{classmodels_1_1common_1_1_rep_conv___o_r_e_p_a_ac3d3551e9ec6acdcfa80cd1a4ace3707}\index{models.common.RepConv\_OREPA@{models.common.RepConv\_OREPA}!groups@{groups}}
+\index{groups@{groups}!models.common.RepConv\_OREPA@{models.common.RepConv\_OREPA}}
+\doxysubsubsection{\texorpdfstring{groups}{groups}}
+{\footnotesize\ttfamily \label{classmodels_1_1common_1_1_rep_conv___o_r_e_p_a_ac3d3551e9ec6acdcfa80cd1a4ace3707} 
+models.\+common.\+Rep\+Conv\+\_\+\+OREPA.\+groups = groups}
+
+\Hypertarget{classmodels_1_1common_1_1_rep_conv___o_r_e_p_a_a3db841f08180e4ea0bef676777b7bbc3}\index{models.common.RepConv\_OREPA@{models.common.RepConv\_OREPA}!id\_tensor@{id\_tensor}}
+\index{id\_tensor@{id\_tensor}!models.common.RepConv\_OREPA@{models.common.RepConv\_OREPA}}
+\doxysubsubsection{\texorpdfstring{id\_tensor}{id\_tensor}}
+{\footnotesize\ttfamily \label{classmodels_1_1common_1_1_rep_conv___o_r_e_p_a_a3db841f08180e4ea0bef676777b7bbc3} 
+models.\+common.\+Rep\+Conv\+\_\+\+OREPA.\+id\+\_\+tensor = torch.\+from\+\_\+numpy(kernel\+\_\+value).to(branch.\+weight.\+device)}
+
+\Hypertarget{classmodels_1_1common_1_1_rep_conv___o_r_e_p_a_a4411ed5cc37c94f7bd503e2dff9d90f9}\index{models.common.RepConv\_OREPA@{models.common.RepConv\_OREPA}!in\_channels@{in\_channels}}
+\index{in\_channels@{in\_channels}!models.common.RepConv\_OREPA@{models.common.RepConv\_OREPA}}
+\doxysubsubsection{\texorpdfstring{in\_channels}{in\_channels}}
+{\footnotesize\ttfamily \label{classmodels_1_1common_1_1_rep_conv___o_r_e_p_a_a4411ed5cc37c94f7bd503e2dff9d90f9} 
+models.\+common.\+Rep\+Conv\+\_\+\+OREPA.\+in\+\_\+channels = c1}
+
+\Hypertarget{classmodels_1_1common_1_1_rep_conv___o_r_e_p_a_ae7dc5a8b89b3378c9661041f77dd97d5}\index{models.common.RepConv\_OREPA@{models.common.RepConv\_OREPA}!nonlinearity@{nonlinearity}}
+\index{nonlinearity@{nonlinearity}!models.common.RepConv\_OREPA@{models.common.RepConv\_OREPA}}
+\doxysubsubsection{\texorpdfstring{nonlinearity}{nonlinearity}}
+{\footnotesize\ttfamily \label{classmodels_1_1common_1_1_rep_conv___o_r_e_p_a_ae7dc5a8b89b3378c9661041f77dd97d5} 
+models.\+common.\+Rep\+Conv\+\_\+\+OREPA.\+nonlinearity = nn.\+Identity()}
+
+\Hypertarget{classmodels_1_1common_1_1_rep_conv___o_r_e_p_a_a7a0c87b1d766f678b61777ce594aaee6}\index{models.common.RepConv\_OREPA@{models.common.RepConv\_OREPA}!out\_channels@{out\_channels}}
+\index{out\_channels@{out\_channels}!models.common.RepConv\_OREPA@{models.common.RepConv\_OREPA}}
+\doxysubsubsection{\texorpdfstring{out\_channels}{out\_channels}}
+{\footnotesize\ttfamily \label{classmodels_1_1common_1_1_rep_conv___o_r_e_p_a_a7a0c87b1d766f678b61777ce594aaee6} 
+models.\+common.\+Rep\+Conv\+\_\+\+OREPA.\+out\+\_\+channels = c2}
+
+\Hypertarget{classmodels_1_1common_1_1_rep_conv___o_r_e_p_a_a2fc41d0c9c1502ae82dcc0e04c015fb2}\index{models.common.RepConv\_OREPA@{models.common.RepConv\_OREPA}!padding@{padding}}
+\index{padding@{padding}!models.common.RepConv\_OREPA@{models.common.RepConv\_OREPA}}
+\doxysubsubsection{\texorpdfstring{padding}{padding}}
+{\footnotesize\ttfamily \label{classmodels_1_1common_1_1_rep_conv___o_r_e_p_a_a2fc41d0c9c1502ae82dcc0e04c015fb2} 
+models.\+common.\+Rep\+Conv\+\_\+\+OREPA.\+padding = padding}
+
+\Hypertarget{classmodels_1_1common_1_1_rep_conv___o_r_e_p_a_a35ad99ea1bf467d4e03f42cac670a694}\index{models.common.RepConv\_OREPA@{models.common.RepConv\_OREPA}!rbr\_1x1@{rbr\_1x1}}
+\index{rbr\_1x1@{rbr\_1x1}!models.common.RepConv\_OREPA@{models.common.RepConv\_OREPA}}
+\doxysubsubsection{\texorpdfstring{rbr\_1x1}{rbr\_1x1}}
+{\footnotesize\ttfamily \label{classmodels_1_1common_1_1_rep_conv___o_r_e_p_a_a35ad99ea1bf467d4e03f42cac670a694} 
+models.\+common.\+Rep\+Conv\+\_\+\+OREPA.\+rbr\+\_\+1x1 = \mbox{\hyperlink{classmodels_1_1common_1_1_conv_b_n}{Conv\+BN}}(\mbox{\hyperlink{classmodels_1_1common_1_1_rep_conv___o_r_e_p_a_a4411ed5cc37c94f7bd503e2dff9d90f9}{in\+\_\+channels}}=self.\+in\+\_\+channels, \mbox{\hyperlink{classmodels_1_1common_1_1_rep_conv___o_r_e_p_a_a7a0c87b1d766f678b61777ce594aaee6}{out\+\_\+channels}}=self.\+out\+\_\+channels, kernel\+\_\+size=1, stride=s, \mbox{\hyperlink{classmodels_1_1common_1_1_rep_conv___o_r_e_p_a_a2fc41d0c9c1502ae82dcc0e04c015fb2}{padding}}=padding\+\_\+11, \mbox{\hyperlink{classmodels_1_1common_1_1_rep_conv___o_r_e_p_a_ac3d3551e9ec6acdcfa80cd1a4ace3707}{groups}}=\mbox{\hyperlink{classmodels_1_1common_1_1_rep_conv___o_r_e_p_a_ac3d3551e9ec6acdcfa80cd1a4ace3707}{groups}}, \mbox{\hyperlink{classmodels_1_1common_1_1_rep_conv___o_r_e_p_a_a771e6b3f9a10f88970f2a3ec424e6ee2}{dilation}}=1)}
+
+\Hypertarget{classmodels_1_1common_1_1_rep_conv___o_r_e_p_a_a7579a8059b7bb8439a932cef5d7b72d5}\index{models.common.RepConv\_OREPA@{models.common.RepConv\_OREPA}!rbr\_dense@{rbr\_dense}}
+\index{rbr\_dense@{rbr\_dense}!models.common.RepConv\_OREPA@{models.common.RepConv\_OREPA}}
+\doxysubsubsection{\texorpdfstring{rbr\_dense}{rbr\_dense}}
+{\footnotesize\ttfamily \label{classmodels_1_1common_1_1_rep_conv___o_r_e_p_a_a7579a8059b7bb8439a932cef5d7b72d5} 
+models.\+common.\+Rep\+Conv\+\_\+\+OREPA.\+rbr\+\_\+dense = \mbox{\hyperlink{classmodels_1_1common_1_1_o_r_e_p_a__3x3___rep_conv}{OREPA\+\_\+3x3\+\_\+\+Rep\+Conv}}(\mbox{\hyperlink{classmodels_1_1common_1_1_rep_conv___o_r_e_p_a_a4411ed5cc37c94f7bd503e2dff9d90f9}{in\+\_\+channels}}=self.\+in\+\_\+channels, \mbox{\hyperlink{classmodels_1_1common_1_1_rep_conv___o_r_e_p_a_a7a0c87b1d766f678b61777ce594aaee6}{out\+\_\+channels}}=self.\+out\+\_\+channels, kernel\+\_\+size=k, stride=s, \mbox{\hyperlink{classmodels_1_1common_1_1_rep_conv___o_r_e_p_a_a2fc41d0c9c1502ae82dcc0e04c015fb2}{padding}}=\mbox{\hyperlink{classmodels_1_1common_1_1_rep_conv___o_r_e_p_a_a2fc41d0c9c1502ae82dcc0e04c015fb2}{padding}}, \mbox{\hyperlink{classmodels_1_1common_1_1_rep_conv___o_r_e_p_a_ac3d3551e9ec6acdcfa80cd1a4ace3707}{groups}}=\mbox{\hyperlink{classmodels_1_1common_1_1_rep_conv___o_r_e_p_a_ac3d3551e9ec6acdcfa80cd1a4ace3707}{groups}}, \mbox{\hyperlink{classmodels_1_1common_1_1_rep_conv___o_r_e_p_a_a771e6b3f9a10f88970f2a3ec424e6ee2}{dilation}}=1)}
+
+\Hypertarget{classmodels_1_1common_1_1_rep_conv___o_r_e_p_a_a217a3f30781eb585b19dd83d25d71247}\index{models.common.RepConv\_OREPA@{models.common.RepConv\_OREPA}!rbr\_identity@{rbr\_identity}}
+\index{rbr\_identity@{rbr\_identity}!models.common.RepConv\_OREPA@{models.common.RepConv\_OREPA}}
+\doxysubsubsection{\texorpdfstring{rbr\_identity}{rbr\_identity}}
+{\footnotesize\ttfamily \label{classmodels_1_1common_1_1_rep_conv___o_r_e_p_a_a217a3f30781eb585b19dd83d25d71247} 
+models.\+common.\+Rep\+Conv\+\_\+\+OREPA.\+rbr\+\_\+identity = 1 else None}
+
+\Hypertarget{classmodels_1_1common_1_1_rep_conv___o_r_e_p_a_a5011ca9a16ab4c3a9d4c5c1bc9142ddb}\index{models.common.RepConv\_OREPA@{models.common.RepConv\_OREPA}!rbr\_reparam@{rbr\_reparam}}
+\index{rbr\_reparam@{rbr\_reparam}!models.common.RepConv\_OREPA@{models.common.RepConv\_OREPA}}
+\doxysubsubsection{\texorpdfstring{rbr\_reparam}{rbr\_reparam}}
+{\footnotesize\ttfamily \label{classmodels_1_1common_1_1_rep_conv___o_r_e_p_a_a5011ca9a16ab4c3a9d4c5c1bc9142ddb} 
+models.\+common.\+Rep\+Conv\+\_\+\+OREPA.\+rbr\+\_\+reparam}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \ nn.Conv2d(in\_channels=self.in\_channels,\ out\_channels=self.out\_channels,\ kernel\_size=k,\ stride=s,}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ padding=padding,\ dilation=dilation,\ groups=groups,\ bias=\textcolor{keyword}{True},\ padding\_mode=padding\_mode)}
+
+\end{DoxyCode}
+\Hypertarget{classmodels_1_1common_1_1_rep_conv___o_r_e_p_a_afc1e7e9206a1b293990ba8ac48a02a2b}\index{models.common.RepConv\_OREPA@{models.common.RepConv\_OREPA}!se@{se}}
+\index{se@{se}!models.common.RepConv\_OREPA@{models.common.RepConv\_OREPA}}
+\doxysubsubsection{\texorpdfstring{se}{se}}
+{\footnotesize\ttfamily \label{classmodels_1_1common_1_1_rep_conv___o_r_e_p_a_afc1e7e9206a1b293990ba8ac48a02a2b} 
+models.\+common.\+Rep\+Conv\+\_\+\+OREPA.\+se = SEBlock(self.\+out\+\_\+channels, internal\+\_\+neurons=self.\+out\+\_\+channels // 16)}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Cervi\+AI/models/\mbox{\hyperlink{common_8py}{common.\+py}}\end{DoxyCompactItemize}

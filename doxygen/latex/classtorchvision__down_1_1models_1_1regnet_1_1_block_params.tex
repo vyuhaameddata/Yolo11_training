@@ -1,0 +1,129 @@
+\doxysection{torchvision\+\_\+down.\+models.\+regnet.\+Block\+Params Class Reference}
+\hypertarget{classtorchvision__down_1_1models_1_1regnet_1_1_block_params}{}\label{classtorchvision__down_1_1models_1_1regnet_1_1_block_params}\index{torchvision\_down.models.regnet.BlockParams@{torchvision\_down.models.regnet.BlockParams}}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+None \mbox{\hyperlink{classtorchvision__down_1_1models_1_1regnet_1_1_block_params_a2657130225c9247dffdc4a6b2b0b0ceb}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, List\mbox{[}int\mbox{]} \mbox{\hyperlink{classtorchvision__down_1_1models_1_1regnet_1_1_block_params_aa386029cba4d58dcd85f9844515a0c0d}{depths}}, List\mbox{[}int\mbox{]} \mbox{\hyperlink{classtorchvision__down_1_1models_1_1regnet_1_1_block_params_a17595b36472b696bb344a29f15d2125b}{widths}}, List\mbox{[}int\mbox{]} \mbox{\hyperlink{classtorchvision__down_1_1models_1_1regnet_1_1_block_params_a441501565f4eb8317acc9e360c5e6bcd}{group\+\_\+widths}}, List\mbox{[}float\mbox{]} \mbox{\hyperlink{classtorchvision__down_1_1models_1_1regnet_1_1_block_params_a4c78eeb26f4712a9fa5b2375e3bfcec4}{bottleneck\+\_\+multipliers}}, List\mbox{[}int\mbox{]} \mbox{\hyperlink{classtorchvision__down_1_1models_1_1regnet_1_1_block_params_a0874ed9a0e1b883c485fc7d6ccaeb535}{strides}}, Optional\mbox{[}float\mbox{]} \mbox{\hyperlink{classtorchvision__down_1_1models_1_1regnet_1_1_block_params_ab062afe36ac4e57b4893110cf0db1a7d}{se\+\_\+ratio}}=None)
+\item 
+"{}Block\+Params"{} \mbox{\hyperlink{classtorchvision__down_1_1models_1_1regnet_1_1_block_params_a5c1e8c596c41c6b7a7b74ad45a0e9c7c}{from\+\_\+init\+\_\+params}} (cls, int depth, int w\+\_\+0, float w\+\_\+a, float w\+\_\+m, int group\+\_\+width, float bottleneck\+\_\+multiplier=1.\+0, Optional\mbox{[}float\mbox{]} \mbox{\hyperlink{classtorchvision__down_1_1models_1_1regnet_1_1_block_params_ab062afe36ac4e57b4893110cf0db1a7d}{se\+\_\+ratio}}=None, \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}Any kwargs)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1models_1_1regnet_1_1_block_params_aa386029cba4d58dcd85f9844515a0c0d}{depths}} = depths
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1models_1_1regnet_1_1_block_params_a17595b36472b696bb344a29f15d2125b}{widths}} = widths
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1models_1_1regnet_1_1_block_params_a441501565f4eb8317acc9e360c5e6bcd}{group\+\_\+widths}} = group\+\_\+widths
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1models_1_1regnet_1_1_block_params_a4c78eeb26f4712a9fa5b2375e3bfcec4}{bottleneck\+\_\+multipliers}} = bottleneck\+\_\+multipliers
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1models_1_1regnet_1_1_block_params_a0874ed9a0e1b883c485fc7d6ccaeb535}{strides}} = strides
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1models_1_1regnet_1_1_block_params_ab062afe36ac4e57b4893110cf0db1a7d}{se\+\_\+ratio}} = se\+\_\+ratio
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1models_1_1regnet_1_1_block_params_a8bb234f980a298f608bd4467c7e034c3}{\+\_\+get\+\_\+expanded\+\_\+params}} (self)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+Tuple\mbox{[}List\mbox{[}int\mbox{]}, List\mbox{[}int\mbox{]}\mbox{]} \mbox{\hyperlink{classtorchvision__down_1_1models_1_1regnet_1_1_block_params_a5cc86c75dcbbf6710e89a39029b2c1fc}{\+\_\+adjust\+\_\+widths\+\_\+groups\+\_\+compatibilty}} (List\mbox{[}int\mbox{]} stage\+\_\+widths, List\mbox{[}float\mbox{]} bottleneck\+\_\+ratios, List\mbox{[}int\mbox{]} \mbox{\hyperlink{classtorchvision__down_1_1models_1_1regnet_1_1_block_params_a441501565f4eb8317acc9e360c5e6bcd}{group\+\_\+widths}})
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classtorchvision__down_1_1models_1_1regnet_1_1_block_params_a2657130225c9247dffdc4a6b2b0b0ceb}\index{torchvision\_down.models.regnet.BlockParams@{torchvision\_down.models.regnet.BlockParams}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!torchvision\_down.models.regnet.BlockParams@{torchvision\_down.models.regnet.BlockParams}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1models_1_1regnet_1_1_block_params_a2657130225c9247dffdc4a6b2b0b0ceb} 
+ None torchvision\+\_\+down.\+models.\+regnet.\+Block\+Params.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{List\mbox{[}int\mbox{]}}]{depths}{, }\item[{List\mbox{[}int\mbox{]}}]{widths}{, }\item[{List\mbox{[}int\mbox{]}}]{group\+\_\+widths}{, }\item[{List\mbox{[}float\mbox{]}}]{bottleneck\+\_\+multipliers}{, }\item[{List\mbox{[}int\mbox{]}}]{strides}{, }\item[{Optional\mbox{[}float\mbox{]} }]{se\+\_\+ratio}{ = {\ttfamily None}}\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classtorchvision__down_1_1models_1_1regnet_1_1_block_params_a5cc86c75dcbbf6710e89a39029b2c1fc}\index{torchvision\_down.models.regnet.BlockParams@{torchvision\_down.models.regnet.BlockParams}!\_adjust\_widths\_groups\_compatibilty@{\_adjust\_widths\_groups\_compatibilty}}
+\index{\_adjust\_widths\_groups\_compatibilty@{\_adjust\_widths\_groups\_compatibilty}!torchvision\_down.models.regnet.BlockParams@{torchvision\_down.models.regnet.BlockParams}}
+\doxysubsubsection{\texorpdfstring{\_adjust\_widths\_groups\_compatibilty()}{\_adjust\_widths\_groups\_compatibilty()}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1models_1_1regnet_1_1_block_params_a5cc86c75dcbbf6710e89a39029b2c1fc} 
+ Tuple\mbox{[}List\mbox{[}int\mbox{]}, List\mbox{[}int\mbox{]}\mbox{]} torchvision\+\_\+down.\+models.\+regnet.\+Block\+Params.\+\_\+adjust\+\_\+widths\+\_\+groups\+\_\+compatibilty (\begin{DoxyParamCaption}\item[{List\mbox{[}int\mbox{]}}]{stage\+\_\+widths}{, }\item[{List\mbox{[}float\mbox{]}}]{bottleneck\+\_\+ratios}{, }\item[{List\mbox{[}int\mbox{]}     }]{group\+\_\+widths}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}
+
+\begin{DoxyVerb}Adjusts the compatibility of widths and groups,
+depending on the bottleneck ratio.
+\end{DoxyVerb}
+ \Hypertarget{classtorchvision__down_1_1models_1_1regnet_1_1_block_params_a8bb234f980a298f608bd4467c7e034c3}\index{torchvision\_down.models.regnet.BlockParams@{torchvision\_down.models.regnet.BlockParams}!\_get\_expanded\_params@{\_get\_expanded\_params}}
+\index{\_get\_expanded\_params@{\_get\_expanded\_params}!torchvision\_down.models.regnet.BlockParams@{torchvision\_down.models.regnet.BlockParams}}
+\doxysubsubsection{\texorpdfstring{\_get\_expanded\_params()}{\_get\_expanded\_params()}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1models_1_1regnet_1_1_block_params_a8bb234f980a298f608bd4467c7e034c3} 
+torchvision\+\_\+down.\+models.\+regnet.\+Block\+Params.\+\_\+get\+\_\+expanded\+\_\+params (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classtorchvision__down_1_1models_1_1regnet_1_1_block_params_a5c1e8c596c41c6b7a7b74ad45a0e9c7c}\index{torchvision\_down.models.regnet.BlockParams@{torchvision\_down.models.regnet.BlockParams}!from\_init\_params@{from\_init\_params}}
+\index{from\_init\_params@{from\_init\_params}!torchvision\_down.models.regnet.BlockParams@{torchvision\_down.models.regnet.BlockParams}}
+\doxysubsubsection{\texorpdfstring{from\_init\_params()}{from\_init\_params()}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1models_1_1regnet_1_1_block_params_a5c1e8c596c41c6b7a7b74ad45a0e9c7c} 
+ "{}Block\+Params"{} torchvision\+\_\+down.\+models.\+regnet.\+Block\+Params.\+from\+\_\+init\+\_\+params (\begin{DoxyParamCaption}\item[{}]{cls}{, }\item[{int}]{depth}{, }\item[{int}]{w\+\_\+0}{, }\item[{float}]{w\+\_\+a}{, }\item[{float}]{w\+\_\+m}{, }\item[{int}]{group\+\_\+width}{, }\item[{float }]{bottleneck\+\_\+multiplier}{ = {\ttfamily 1.0}, }\item[{Optional\mbox{[}float\mbox{]} }]{se\+\_\+ratio}{ = {\ttfamily None}, }\item[{\texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}Any}]{kwargs}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Programatically compute all the per-block settings,
+given the RegNet parameters.
+
+The first step is to compute the quantized linear block parameters,
+in log space. Key parameters are:
+- `w_a` is the width progression slope
+- `w_0` is the initial width
+- `w_m` is the width stepping in the log space
+
+In other terms
+`log(block_width) = log(w_0) + w_m * block_capacity`,
+with `bock_capacity` ramping up following the w_0 and w_a params.
+This block width is finally quantized to multiples of 8.
+
+The second step is to compute the parameters per stage,
+taking into account the skip connection and the final 1x1 convolutions.
+We use the fact that the output width is constant within a stage.
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classtorchvision__down_1_1models_1_1regnet_1_1_block_params_a4c78eeb26f4712a9fa5b2375e3bfcec4}\index{torchvision\_down.models.regnet.BlockParams@{torchvision\_down.models.regnet.BlockParams}!bottleneck\_multipliers@{bottleneck\_multipliers}}
+\index{bottleneck\_multipliers@{bottleneck\_multipliers}!torchvision\_down.models.regnet.BlockParams@{torchvision\_down.models.regnet.BlockParams}}
+\doxysubsubsection{\texorpdfstring{bottleneck\_multipliers}{bottleneck\_multipliers}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1models_1_1regnet_1_1_block_params_a4c78eeb26f4712a9fa5b2375e3bfcec4} 
+torchvision\+\_\+down.\+models.\+regnet.\+Block\+Params.\+bottleneck\+\_\+multipliers = bottleneck\+\_\+multipliers}
+
+\Hypertarget{classtorchvision__down_1_1models_1_1regnet_1_1_block_params_aa386029cba4d58dcd85f9844515a0c0d}\index{torchvision\_down.models.regnet.BlockParams@{torchvision\_down.models.regnet.BlockParams}!depths@{depths}}
+\index{depths@{depths}!torchvision\_down.models.regnet.BlockParams@{torchvision\_down.models.regnet.BlockParams}}
+\doxysubsubsection{\texorpdfstring{depths}{depths}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1models_1_1regnet_1_1_block_params_aa386029cba4d58dcd85f9844515a0c0d} 
+torchvision\+\_\+down.\+models.\+regnet.\+Block\+Params.\+depths = depths}
+
+\Hypertarget{classtorchvision__down_1_1models_1_1regnet_1_1_block_params_a441501565f4eb8317acc9e360c5e6bcd}\index{torchvision\_down.models.regnet.BlockParams@{torchvision\_down.models.regnet.BlockParams}!group\_widths@{group\_widths}}
+\index{group\_widths@{group\_widths}!torchvision\_down.models.regnet.BlockParams@{torchvision\_down.models.regnet.BlockParams}}
+\doxysubsubsection{\texorpdfstring{group\_widths}{group\_widths}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1models_1_1regnet_1_1_block_params_a441501565f4eb8317acc9e360c5e6bcd} 
+torchvision\+\_\+down.\+models.\+regnet.\+Block\+Params.\+group\+\_\+widths = group\+\_\+widths}
+
+\Hypertarget{classtorchvision__down_1_1models_1_1regnet_1_1_block_params_ab062afe36ac4e57b4893110cf0db1a7d}\index{torchvision\_down.models.regnet.BlockParams@{torchvision\_down.models.regnet.BlockParams}!se\_ratio@{se\_ratio}}
+\index{se\_ratio@{se\_ratio}!torchvision\_down.models.regnet.BlockParams@{torchvision\_down.models.regnet.BlockParams}}
+\doxysubsubsection{\texorpdfstring{se\_ratio}{se\_ratio}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1models_1_1regnet_1_1_block_params_ab062afe36ac4e57b4893110cf0db1a7d} 
+torchvision\+\_\+down.\+models.\+regnet.\+Block\+Params.\+se\+\_\+ratio = se\+\_\+ratio}
+
+\Hypertarget{classtorchvision__down_1_1models_1_1regnet_1_1_block_params_a0874ed9a0e1b883c485fc7d6ccaeb535}\index{torchvision\_down.models.regnet.BlockParams@{torchvision\_down.models.regnet.BlockParams}!strides@{strides}}
+\index{strides@{strides}!torchvision\_down.models.regnet.BlockParams@{torchvision\_down.models.regnet.BlockParams}}
+\doxysubsubsection{\texorpdfstring{strides}{strides}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1models_1_1regnet_1_1_block_params_a0874ed9a0e1b883c485fc7d6ccaeb535} 
+torchvision\+\_\+down.\+models.\+regnet.\+Block\+Params.\+strides = strides}
+
+\Hypertarget{classtorchvision__down_1_1models_1_1regnet_1_1_block_params_a17595b36472b696bb344a29f15d2125b}\index{torchvision\_down.models.regnet.BlockParams@{torchvision\_down.models.regnet.BlockParams}!widths@{widths}}
+\index{widths@{widths}!torchvision\_down.models.regnet.BlockParams@{torchvision\_down.models.regnet.BlockParams}}
+\doxysubsubsection{\texorpdfstring{widths}{widths}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1models_1_1regnet_1_1_block_params_a17595b36472b696bb344a29f15d2125b} 
+torchvision\+\_\+down.\+models.\+regnet.\+Block\+Params.\+widths = widths}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Cervi\+AI/torchvision\+\_\+down/models/\mbox{\hyperlink{regnet_8py}{regnet.\+py}}\end{DoxyCompactItemize}

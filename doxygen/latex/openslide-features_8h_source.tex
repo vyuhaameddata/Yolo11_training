@@ -1,0 +1,94 @@
+\doxysection{openslide-\/features.h}
+\hypertarget{openslide-features_8h_source}{}\label{openslide-features_8h_source}\index{CerviAI/openslide-\/win64-\/20230414/include/openslide/openslide-\/features.h@{CerviAI/openslide-\/win64-\/20230414/include/openslide/openslide-\/features.h}}
+\mbox{\hyperlink{openslide-features_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{comment}{/*}}
+\DoxyCodeLine{00002\ \textcolor{comment}{\ *\ \ OpenSlide,\ a\ library\ for\ reading\ whole\ slide\ image\ files}}
+\DoxyCodeLine{00003\ \textcolor{comment}{\ *}}
+\DoxyCodeLine{00004\ \textcolor{comment}{\ *\ \ Copyright\ (c)\ 2007-\/2012\ Carnegie\ Mellon\ University}}
+\DoxyCodeLine{00005\ \textcolor{comment}{\ *\ \ All\ rights\ reserved.}}
+\DoxyCodeLine{00006\ \textcolor{comment}{\ *}}
+\DoxyCodeLine{00007\ \textcolor{comment}{\ *\ \ OpenSlide\ is\ free\ software:\ you\ can\ redistribute\ it\ and/or\ modify}}
+\DoxyCodeLine{00008\ \textcolor{comment}{\ *\ \ it\ under\ the\ terms\ of\ the\ GNU\ Lesser\ General\ Public\ License\ as}}
+\DoxyCodeLine{00009\ \textcolor{comment}{\ *\ \ published\ by\ the\ Free\ Software\ Foundation,\ version\ 2.1.}}
+\DoxyCodeLine{00010\ \textcolor{comment}{\ *}}
+\DoxyCodeLine{00011\ \textcolor{comment}{\ *\ \ OpenSlide\ is\ distributed\ in\ the\ hope\ that\ it\ will\ be\ useful,}}
+\DoxyCodeLine{00012\ \textcolor{comment}{\ *\ \ but\ WITHOUT\ ANY\ WARRANTY;\ without\ even\ the\ implied\ warranty\ of}}
+\DoxyCodeLine{00013\ \textcolor{comment}{\ *\ \ MERCHANTABILITY\ or\ FITNESS\ FOR\ A\ PARTICULAR\ PURPOSE.\ See\ the}}
+\DoxyCodeLine{00014\ \textcolor{comment}{\ *\ \ GNU\ Lesser\ General\ Public\ License\ for\ more\ details.}}
+\DoxyCodeLine{00015\ \textcolor{comment}{\ *}}
+\DoxyCodeLine{00016\ \textcolor{comment}{\ *\ \ You\ should\ have\ received\ a\ copy\ of\ the\ GNU\ Lesser\ General\ Public}}
+\DoxyCodeLine{00017\ \textcolor{comment}{\ *\ \ License\ along\ with\ OpenSlide.\ If\ not,\ see}}
+\DoxyCodeLine{00018\ \textcolor{comment}{\ *\ \ <http://www.gnu.org/licenses/>.}}
+\DoxyCodeLine{00019\ \textcolor{comment}{\ *}}
+\DoxyCodeLine{00020\ \textcolor{comment}{\ */}}
+\DoxyCodeLine{00021\ }
+\DoxyCodeLine{00022\ \textcolor{preprocessor}{\#ifndef\ OPENSLIDE\_OPENSLIDE\_FEATURES\_H\_}}
+\DoxyCodeLine{00023\ \textcolor{preprocessor}{\#define\ OPENSLIDE\_OPENSLIDE\_FEATURES\_H\_}}
+\DoxyCodeLine{00024\ }
+\DoxyCodeLine{00025\ }
+\DoxyCodeLine{00026\ \textcolor{preprocessor}{\#ifndef\ \_\_cplusplus}}
+\DoxyCodeLine{00027\ \textcolor{preprocessor}{\#\ \ ifdef\ \_MSC\_VER}}
+\DoxyCodeLine{00028\ \textcolor{preprocessor}{\#\ \ \ \ ifndef\ bool}}
+\DoxyCodeLine{00029\ \textcolor{preprocessor}{\#\ \ \ \ \ \ define\ bool\ unsigned\ char}}
+\DoxyCodeLine{00030\ \textcolor{preprocessor}{\#\ \ \ \ endif}}
+\DoxyCodeLine{00031\ \textcolor{preprocessor}{\#\ \ \ \ ifndef\ true}}
+\DoxyCodeLine{00032\ \textcolor{preprocessor}{\#\ \ \ \ \ \ define\ true\ 1}}
+\DoxyCodeLine{00033\ \textcolor{preprocessor}{\#\ \ \ \ endif}}
+\DoxyCodeLine{00034\ \textcolor{preprocessor}{\#\ \ \ \ ifndef\ false}}
+\DoxyCodeLine{00035\ \textcolor{preprocessor}{\#\ \ \ \ \ \ define\ false\ 0}}
+\DoxyCodeLine{00036\ \textcolor{preprocessor}{\#\ \ \ \ endif}}
+\DoxyCodeLine{00037\ \textcolor{preprocessor}{\#\ \ \ \ ifndef\ \_\_bool\_true\_false\_are\_defined}}
+\DoxyCodeLine{00038\ \textcolor{preprocessor}{\#\ \ \ \ \ \ define\ \_\_bool\_true\_false\_are\_defined\ 1}}
+\DoxyCodeLine{00039\ \textcolor{preprocessor}{\#\ \ \ \ endif}}
+\DoxyCodeLine{00040\ \textcolor{preprocessor}{\#\ \ else}}
+\DoxyCodeLine{00041\ \textcolor{preprocessor}{\#\ \ \ \ include\ <stdbool.h>}}
+\DoxyCodeLine{00042\ \textcolor{preprocessor}{\#\ \ endif}}
+\DoxyCodeLine{00043\ \textcolor{preprocessor}{\#endif}}
+\DoxyCodeLine{00044\ }
+\DoxyCodeLine{00045\ }
+\DoxyCodeLine{00046\ \textcolor{comment}{//\ for\ exporting\ from\ shared\ libraries\ or\ DLLs}}
+\DoxyCodeLine{00047\ \textcolor{preprocessor}{\#if\ defined\ \_WIN32}}
+\DoxyCodeLine{00048\ \textcolor{preprocessor}{\#\ \ ifdef\ \_OPENSLIDE\_BUILDING\_DLL}}
+\DoxyCodeLine{00049\ \textcolor{preprocessor}{\#\ \ \ \ define\ OPENSLIDE\_PUBLIC()\ \_\_declspec(dllexport)}}
+\DoxyCodeLine{00050\ \textcolor{preprocessor}{\#\ \ else}}
+\DoxyCodeLine{00051\ \textcolor{preprocessor}{\#\ \ \ \ define\ OPENSLIDE\_PUBLIC()\ \_\_declspec(dllimport)}}
+\DoxyCodeLine{00052\ \textcolor{preprocessor}{\#\ \ endif}}
+\DoxyCodeLine{00053\ \textcolor{preprocessor}{\#elif\ defined\ OPENSLIDE\_SIMPLIFY\_HEADERS}}
+\DoxyCodeLine{00054\ \textcolor{comment}{//\ avoid\ constructs\ that\ could\ confuse\ a\ simplistic\ header\ parser}}
+\DoxyCodeLine{00055\ \textcolor{preprocessor}{\#\ define\ OPENSLIDE\_PUBLIC()}}
+\DoxyCodeLine{00056\ \textcolor{preprocessor}{\#elif\ \_\_GNUC\_\_\ >\ 3}}
+\DoxyCodeLine{00057\ \textcolor{preprocessor}{\#\ define\ OPENSLIDE\_PUBLIC()\ \_\_attribute\_\_\ ((visibility("{}default"{})))}}
+\DoxyCodeLine{00058\ \textcolor{preprocessor}{\#else}}
+\DoxyCodeLine{00059\ \textcolor{preprocessor}{\#\ define\ OPENSLIDE\_PUBLIC()}}
+\DoxyCodeLine{00060\ \textcolor{preprocessor}{\#endif}}
+\DoxyCodeLine{00061\ }
+\DoxyCodeLine{00062\ }
+\DoxyCodeLine{00063\ \textcolor{comment}{//\ if\ possible,\ produce\ compiler\ warnings\ when\ deprecated\ functions}}
+\DoxyCodeLine{00064\ \textcolor{comment}{//\ are\ used}}
+\DoxyCodeLine{00065\ \textcolor{preprocessor}{\#if\ defined\ OPENSLIDE\_SIMPLIFY\_HEADERS}}
+\DoxyCodeLine{00066\ \textcolor{preprocessor}{\#\ define\ OPENSLIDE\_DEPRECATED()}}
+\DoxyCodeLine{00067\ \textcolor{preprocessor}{\#elif\ \_\_GNUC\_\_\ >\ 3\ ||\ (\_\_GNUC\_\_\ ==\ 3\ \&\&\ \_\_GNUC\_MINOR\_\_\ >=\ 1)}}
+\DoxyCodeLine{00068\ \textcolor{preprocessor}{\#\ define\ OPENSLIDE\_DEPRECATED()\ \_\_attribute\_\_((deprecated))}}
+\DoxyCodeLine{00069\ \textcolor{preprocessor}{\#elif\ defined\ \_MSC\_VER}}
+\DoxyCodeLine{00070\ \textcolor{preprocessor}{\#\ define\ OPENSLIDE\_DEPRECATED()\ \_\_declspec(deprecated)}}
+\DoxyCodeLine{00071\ \textcolor{preprocessor}{\#else}}
+\DoxyCodeLine{00072\ \textcolor{preprocessor}{\#\ define\ OPENSLIDE\_DEPRECATED()}}
+\DoxyCodeLine{00073\ \textcolor{preprocessor}{\#endif}}
+\DoxyCodeLine{00074\ }
+\DoxyCodeLine{00075\ \textcolor{preprocessor}{\#if\ defined\ OPENSLIDE\_SIMPLIFY\_HEADERS}}
+\DoxyCodeLine{00076\ \textcolor{preprocessor}{\#\ define\ OPENSLIDE\_DEPRECATED\_FOR(f)}}
+\DoxyCodeLine{00077\ \textcolor{preprocessor}{\#elif\ \_\_GNUC\_\_\ >\ 4\ ||\ (\_\_GNUC\_\_\ ==\ 4\ \&\&\ \_\_GNUC\_MINOR\_\_\ >=\ 5)}}
+\DoxyCodeLine{00078\ \textcolor{preprocessor}{\#\ define\ OPENSLIDE\_DEPRECATED\_FOR(f)\ \(\backslash\)}}
+\DoxyCodeLine{00079\ \textcolor{preprocessor}{\ \ \_\_attribute\_\_((deprecated("{}Use\ "{}\ \#f\ "{}\ instead"{})))}}
+\DoxyCodeLine{00080\ \textcolor{preprocessor}{\#elif\ defined\ \_MSC\_VER}}
+\DoxyCodeLine{00081\ \textcolor{preprocessor}{\#\ define\ OPENSLIDE\_DEPRECATED\_FOR(f)\ \(\backslash\)}}
+\DoxyCodeLine{00082\ \textcolor{preprocessor}{\ \ \_\_declspec(deprecated("{}deprecated:\ Use\ "{}\ \#f\ "{}\ instead"{}))}}
+\DoxyCodeLine{00083\ \textcolor{preprocessor}{\#else}}
+\DoxyCodeLine{00084\ \textcolor{preprocessor}{\#\ define\ OPENSLIDE\_DEPRECATED\_FOR(f)\ OPENSLIDE\_DEPRECATED()}}
+\DoxyCodeLine{00085\ \textcolor{preprocessor}{\#endif}}
+\DoxyCodeLine{00086\ }
+\DoxyCodeLine{00087\ }
+\DoxyCodeLine{00088\ \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}

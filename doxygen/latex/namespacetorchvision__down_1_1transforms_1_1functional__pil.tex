@@ -1,0 +1,214 @@
+\doxysection{torchvision\+\_\+down.\+transforms.\+functional\+\_\+pil Namespace Reference}
+\hypertarget{namespacetorchvision__down_1_1transforms_1_1functional__pil}{}\label{namespacetorchvision__down_1_1transforms_1_1functional__pil}\index{torchvision\_down.transforms.functional\_pil@{torchvision\_down.transforms.functional\_pil}}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{namespacetorchvision__down_1_1transforms_1_1functional__pil_a7fa66efc305f21d80e3cb0328a0d6de5}{\+\_\+is\+\_\+pil\+\_\+image}} (Any img)
+\item 
+List\mbox{[}int\mbox{]} \mbox{\hyperlink{namespacetorchvision__down_1_1transforms_1_1functional__pil_a9e576a39543a06a7a4d9fcfec26df145}{get\+\_\+image\+\_\+size}} (Any img)
+\item 
+int \mbox{\hyperlink{namespacetorchvision__down_1_1transforms_1_1functional__pil_a7e7c99aa7f040b594ee18398ce46d2b1}{get\+\_\+image\+\_\+num\+\_\+channels}} (Any img)
+\item 
+Image.\+Image \mbox{\hyperlink{namespacetorchvision__down_1_1transforms_1_1functional__pil_a7ee18924aa29b6146e387b269ffeac2d}{hflip}} (Image.\+Image img)
+\item 
+Image.\+Image \mbox{\hyperlink{namespacetorchvision__down_1_1transforms_1_1functional__pil_a26a35b69ba39ecde933fdfa41567857b}{vflip}} (Image.\+Image img)
+\item 
+Image.\+Image \mbox{\hyperlink{namespacetorchvision__down_1_1transforms_1_1functional__pil_ab52f2d7b2a2cc33e1b7db9088ac8c3d3}{adjust\+\_\+brightness}} (Image.\+Image img, float brightness\+\_\+factor)
+\item 
+Image.\+Image \mbox{\hyperlink{namespacetorchvision__down_1_1transforms_1_1functional__pil_ac25b262b54333f1725a9e635a5ee55a9}{adjust\+\_\+contrast}} (Image.\+Image img, float contrast\+\_\+factor)
+\item 
+Image.\+Image \mbox{\hyperlink{namespacetorchvision__down_1_1transforms_1_1functional__pil_a48fbcae544982e85259b56b2082508b0}{adjust\+\_\+saturation}} (Image.\+Image img, float saturation\+\_\+factor)
+\item 
+Image.\+Image \mbox{\hyperlink{namespacetorchvision__down_1_1transforms_1_1functional__pil_a18644c2f3c6f406ce5c7b487c7b58e6f}{adjust\+\_\+hue}} (Image.\+Image img, float hue\+\_\+factor)
+\item 
+Image.\+Image \mbox{\hyperlink{namespacetorchvision__down_1_1transforms_1_1functional__pil_a4da9f775c568df607820a981058b9f9c}{adjust\+\_\+gamma}} (Image.\+Image img, float gamma, float gain=1.\+0)
+\item 
+Image.\+Image \mbox{\hyperlink{namespacetorchvision__down_1_1transforms_1_1functional__pil_a92456c4620d1fec4f7d529672c44c8cb}{pad}} (Image.\+Image img, Union\mbox{[}int, List\mbox{[}int\mbox{]}, Tuple\mbox{[}int,...\mbox{]}\mbox{]} padding, Optional\mbox{[}Union\mbox{[}float, List\mbox{[}float\mbox{]}, Tuple\mbox{[}float,...\mbox{]}\mbox{]}\mbox{]} fill=0, Literal\mbox{[}"{}constant"{}, "{}edge"{}, "{}reflect"{}, "{}symmetric"{}\mbox{]} padding\+\_\+mode="{}constant"{})
+\item 
+Image.\+Image \mbox{\hyperlink{namespacetorchvision__down_1_1transforms_1_1functional__pil_aa805354464c568c2e04cef2df2f7984f}{crop}} (Image.\+Image img, int top, int left, int height, int width)
+\item 
+Image.\+Image \mbox{\hyperlink{namespacetorchvision__down_1_1transforms_1_1functional__pil_a60bca489f3e81d14f37f812beb631406}{resize}} (Image.\+Image img, Union\mbox{[}Sequence\mbox{[}int\mbox{]}, int\mbox{]} size, int interpolation=Image.\+BILINEAR, Optional\mbox{[}int\mbox{]} max\+\_\+size=None)
+\item 
+Dict\mbox{[}str, Optional\mbox{[}Union\mbox{[}float, List\mbox{[}float\mbox{]}, Tuple\mbox{[}float,...\mbox{]}\mbox{]}\mbox{]}\mbox{]} \mbox{\hyperlink{namespacetorchvision__down_1_1transforms_1_1functional__pil_a25a8ae3cb0804b042356481cc6dc30d7}{\+\_\+parse\+\_\+fill}} (Optional\mbox{[}Union\mbox{[}float, List\mbox{[}float\mbox{]}, Tuple\mbox{[}float,...\mbox{]}\mbox{]}\mbox{]} fill, Image.\+Image img, str name="{}fillcolor"{})
+\item 
+Image.\+Image \mbox{\hyperlink{namespacetorchvision__down_1_1transforms_1_1functional__pil_abfe43c60eadf695065e4afea5a2a00ca}{affine}} (Image.\+Image img, List\mbox{[}float\mbox{]} matrix, int interpolation=Image.\+NEAREST, Optional\mbox{[}Union\mbox{[}float, List\mbox{[}float\mbox{]}, Tuple\mbox{[}float,...\mbox{]}\mbox{]}\mbox{]} fill=0)
+\item 
+Image.\+Image \mbox{\hyperlink{namespacetorchvision__down_1_1transforms_1_1functional__pil_a38a7ee27ab68e813e304494e20998b33}{rotate}} (Image.\+Image img, float angle, int interpolation=Image.\+NEAREST, bool expand=False, Optional\mbox{[}Tuple\mbox{[}int, int\mbox{]}\mbox{]} center=None, Optional\mbox{[}Union\mbox{[}float, List\mbox{[}float\mbox{]}, Tuple\mbox{[}float,...\mbox{]}\mbox{]}\mbox{]} fill=0)
+\item 
+Image.\+Image \mbox{\hyperlink{namespacetorchvision__down_1_1transforms_1_1functional__pil_ac9bc614d10342ae6837d566111acc731}{perspective}} (Image.\+Image img, float perspective\+\_\+coeffs, int interpolation=Image.\+BICUBIC, Optional\mbox{[}Union\mbox{[}float, List\mbox{[}float\mbox{]}, Tuple\mbox{[}float,...\mbox{]}\mbox{]}\mbox{]} fill=0)
+\item 
+Image.\+Image \mbox{\hyperlink{namespacetorchvision__down_1_1transforms_1_1functional__pil_aa60c191185be6e8e5d913db20d00c8d1}{to\+\_\+grayscale}} (Image.\+Image img, int num\+\_\+output\+\_\+channels)
+\item 
+Image.\+Image \mbox{\hyperlink{namespacetorchvision__down_1_1transforms_1_1functional__pil_ad638e28c951e778a6557056564d74a0c}{invert}} (Image.\+Image img)
+\item 
+Image.\+Image \mbox{\hyperlink{namespacetorchvision__down_1_1transforms_1_1functional__pil_a1e2d204423a1d035c608f100982d1bb5}{posterize}} (Image.\+Image img, int bits)
+\item 
+Image.\+Image \mbox{\hyperlink{namespacetorchvision__down_1_1transforms_1_1functional__pil_a91529d62b4aadfffe5dc6a9ec0b68357}{solarize}} (Image.\+Image img, int threshold)
+\item 
+Image.\+Image \mbox{\hyperlink{namespacetorchvision__down_1_1transforms_1_1functional__pil_a90a2061774c8b62b0d5a631de6610798}{adjust\+\_\+sharpness}} (Image.\+Image img, float sharpness\+\_\+factor)
+\item 
+Image.\+Image \mbox{\hyperlink{namespacetorchvision__down_1_1transforms_1_1functional__pil_acc856b568b3c21446f253cda6b62df1a}{autocontrast}} (Image.\+Image img)
+\item 
+Image.\+Image \mbox{\hyperlink{namespacetorchvision__down_1_1transforms_1_1functional__pil_ad9b2bcb0704cfdd3f24436ffa61bc2a3}{equalize}} (Image.\+Image img)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{namespacetorchvision__down_1_1transforms_1_1functional__pil_ae64b215f7e23caedf5c2b3ea91b20202}{accimage}} = None
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{namespacetorchvision__down_1_1transforms_1_1functional__pil_a7fa66efc305f21d80e3cb0328a0d6de5}\index{torchvision\_down.transforms.functional\_pil@{torchvision\_down.transforms.functional\_pil}!\_is\_pil\_image@{\_is\_pil\_image}}
+\index{\_is\_pil\_image@{\_is\_pil\_image}!torchvision\_down.transforms.functional\_pil@{torchvision\_down.transforms.functional\_pil}}
+\doxysubsubsection{\texorpdfstring{\_is\_pil\_image()}{\_is\_pil\_image()}}
+{\footnotesize\ttfamily \label{namespacetorchvision__down_1_1transforms_1_1functional__pil_a7fa66efc305f21d80e3cb0328a0d6de5} 
+ bool torchvision\+\_\+down.\+transforms.\+functional\+\_\+pil.\+\_\+is\+\_\+pil\+\_\+image (\begin{DoxyParamCaption}\item[{Any}]{img}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{namespacetorchvision__down_1_1transforms_1_1functional__pil_a25a8ae3cb0804b042356481cc6dc30d7}\index{torchvision\_down.transforms.functional\_pil@{torchvision\_down.transforms.functional\_pil}!\_parse\_fill@{\_parse\_fill}}
+\index{\_parse\_fill@{\_parse\_fill}!torchvision\_down.transforms.functional\_pil@{torchvision\_down.transforms.functional\_pil}}
+\doxysubsubsection{\texorpdfstring{\_parse\_fill()}{\_parse\_fill()}}
+{\footnotesize\ttfamily \label{namespacetorchvision__down_1_1transforms_1_1functional__pil_a25a8ae3cb0804b042356481cc6dc30d7} 
+ Dict\mbox{[}str, Optional\mbox{[}Union\mbox{[}float, List\mbox{[}float\mbox{]}, Tuple\mbox{[}float, ...\mbox{]}\mbox{]}\mbox{]}\mbox{]} torchvision\+\_\+down.\+transforms.\+functional\+\_\+pil.\+\_\+parse\+\_\+fill (\begin{DoxyParamCaption}\item[{Optional\mbox{[}Union\mbox{[}float, List\mbox{[}float\mbox{]}, Tuple\mbox{[}float, ...\mbox{]}\mbox{]}\mbox{]}}]{fill}{, }\item[{Image.\+Image}]{img}{, }\item[{str }]{name}{ = {\ttfamily "{}fillcolor"{}}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{namespacetorchvision__down_1_1transforms_1_1functional__pil_ab52f2d7b2a2cc33e1b7db9088ac8c3d3}\index{torchvision\_down.transforms.functional\_pil@{torchvision\_down.transforms.functional\_pil}!adjust\_brightness@{adjust\_brightness}}
+\index{adjust\_brightness@{adjust\_brightness}!torchvision\_down.transforms.functional\_pil@{torchvision\_down.transforms.functional\_pil}}
+\doxysubsubsection{\texorpdfstring{adjust\_brightness()}{adjust\_brightness()}}
+{\footnotesize\ttfamily \label{namespacetorchvision__down_1_1transforms_1_1functional__pil_ab52f2d7b2a2cc33e1b7db9088ac8c3d3} 
+ Image.\+Image torchvision\+\_\+down.\+transforms.\+functional\+\_\+pil.\+adjust\+\_\+brightness (\begin{DoxyParamCaption}\item[{Image.\+Image}]{img}{, }\item[{float}]{brightness\+\_\+factor}{}\end{DoxyParamCaption})}
+
+\Hypertarget{namespacetorchvision__down_1_1transforms_1_1functional__pil_ac25b262b54333f1725a9e635a5ee55a9}\index{torchvision\_down.transforms.functional\_pil@{torchvision\_down.transforms.functional\_pil}!adjust\_contrast@{adjust\_contrast}}
+\index{adjust\_contrast@{adjust\_contrast}!torchvision\_down.transforms.functional\_pil@{torchvision\_down.transforms.functional\_pil}}
+\doxysubsubsection{\texorpdfstring{adjust\_contrast()}{adjust\_contrast()}}
+{\footnotesize\ttfamily \label{namespacetorchvision__down_1_1transforms_1_1functional__pil_ac25b262b54333f1725a9e635a5ee55a9} 
+ Image.\+Image torchvision\+\_\+down.\+transforms.\+functional\+\_\+pil.\+adjust\+\_\+contrast (\begin{DoxyParamCaption}\item[{Image.\+Image}]{img}{, }\item[{float}]{contrast\+\_\+factor}{}\end{DoxyParamCaption})}
+
+\Hypertarget{namespacetorchvision__down_1_1transforms_1_1functional__pil_a4da9f775c568df607820a981058b9f9c}\index{torchvision\_down.transforms.functional\_pil@{torchvision\_down.transforms.functional\_pil}!adjust\_gamma@{adjust\_gamma}}
+\index{adjust\_gamma@{adjust\_gamma}!torchvision\_down.transforms.functional\_pil@{torchvision\_down.transforms.functional\_pil}}
+\doxysubsubsection{\texorpdfstring{adjust\_gamma()}{adjust\_gamma()}}
+{\footnotesize\ttfamily \label{namespacetorchvision__down_1_1transforms_1_1functional__pil_a4da9f775c568df607820a981058b9f9c} 
+ Image.\+Image torchvision\+\_\+down.\+transforms.\+functional\+\_\+pil.\+adjust\+\_\+gamma (\begin{DoxyParamCaption}\item[{Image.\+Image}]{img}{, }\item[{float}]{gamma}{, }\item[{float }]{gain}{ = {\ttfamily 1.0}}\end{DoxyParamCaption})}
+
+\Hypertarget{namespacetorchvision__down_1_1transforms_1_1functional__pil_a18644c2f3c6f406ce5c7b487c7b58e6f}\index{torchvision\_down.transforms.functional\_pil@{torchvision\_down.transforms.functional\_pil}!adjust\_hue@{adjust\_hue}}
+\index{adjust\_hue@{adjust\_hue}!torchvision\_down.transforms.functional\_pil@{torchvision\_down.transforms.functional\_pil}}
+\doxysubsubsection{\texorpdfstring{adjust\_hue()}{adjust\_hue()}}
+{\footnotesize\ttfamily \label{namespacetorchvision__down_1_1transforms_1_1functional__pil_a18644c2f3c6f406ce5c7b487c7b58e6f} 
+ Image.\+Image torchvision\+\_\+down.\+transforms.\+functional\+\_\+pil.\+adjust\+\_\+hue (\begin{DoxyParamCaption}\item[{Image.\+Image}]{img}{, }\item[{float}]{hue\+\_\+factor}{}\end{DoxyParamCaption})}
+
+\Hypertarget{namespacetorchvision__down_1_1transforms_1_1functional__pil_a48fbcae544982e85259b56b2082508b0}\index{torchvision\_down.transforms.functional\_pil@{torchvision\_down.transforms.functional\_pil}!adjust\_saturation@{adjust\_saturation}}
+\index{adjust\_saturation@{adjust\_saturation}!torchvision\_down.transforms.functional\_pil@{torchvision\_down.transforms.functional\_pil}}
+\doxysubsubsection{\texorpdfstring{adjust\_saturation()}{adjust\_saturation()}}
+{\footnotesize\ttfamily \label{namespacetorchvision__down_1_1transforms_1_1functional__pil_a48fbcae544982e85259b56b2082508b0} 
+ Image.\+Image torchvision\+\_\+down.\+transforms.\+functional\+\_\+pil.\+adjust\+\_\+saturation (\begin{DoxyParamCaption}\item[{Image.\+Image}]{img}{, }\item[{float}]{saturation\+\_\+factor}{}\end{DoxyParamCaption})}
+
+\Hypertarget{namespacetorchvision__down_1_1transforms_1_1functional__pil_a90a2061774c8b62b0d5a631de6610798}\index{torchvision\_down.transforms.functional\_pil@{torchvision\_down.transforms.functional\_pil}!adjust\_sharpness@{adjust\_sharpness}}
+\index{adjust\_sharpness@{adjust\_sharpness}!torchvision\_down.transforms.functional\_pil@{torchvision\_down.transforms.functional\_pil}}
+\doxysubsubsection{\texorpdfstring{adjust\_sharpness()}{adjust\_sharpness()}}
+{\footnotesize\ttfamily \label{namespacetorchvision__down_1_1transforms_1_1functional__pil_a90a2061774c8b62b0d5a631de6610798} 
+ Image.\+Image torchvision\+\_\+down.\+transforms.\+functional\+\_\+pil.\+adjust\+\_\+sharpness (\begin{DoxyParamCaption}\item[{Image.\+Image}]{img}{, }\item[{float}]{sharpness\+\_\+factor}{}\end{DoxyParamCaption})}
+
+\Hypertarget{namespacetorchvision__down_1_1transforms_1_1functional__pil_abfe43c60eadf695065e4afea5a2a00ca}\index{torchvision\_down.transforms.functional\_pil@{torchvision\_down.transforms.functional\_pil}!affine@{affine}}
+\index{affine@{affine}!torchvision\_down.transforms.functional\_pil@{torchvision\_down.transforms.functional\_pil}}
+\doxysubsubsection{\texorpdfstring{affine()}{affine()}}
+{\footnotesize\ttfamily \label{namespacetorchvision__down_1_1transforms_1_1functional__pil_abfe43c60eadf695065e4afea5a2a00ca} 
+ Image.\+Image torchvision\+\_\+down.\+transforms.\+functional\+\_\+pil.\+affine (\begin{DoxyParamCaption}\item[{Image.\+Image}]{img}{, }\item[{List\mbox{[}float\mbox{]}}]{matrix}{, }\item[{int }]{interpolation}{ = {\ttfamily Image.NEAREST}, }\item[{Optional\mbox{[}Union\mbox{[}float, List\mbox{[}float\mbox{]}, Tuple\mbox{[}float, ...\mbox{]}\mbox{]}\mbox{]} }]{fill}{ = {\ttfamily 0}}\end{DoxyParamCaption})}
+
+\Hypertarget{namespacetorchvision__down_1_1transforms_1_1functional__pil_acc856b568b3c21446f253cda6b62df1a}\index{torchvision\_down.transforms.functional\_pil@{torchvision\_down.transforms.functional\_pil}!autocontrast@{autocontrast}}
+\index{autocontrast@{autocontrast}!torchvision\_down.transforms.functional\_pil@{torchvision\_down.transforms.functional\_pil}}
+\doxysubsubsection{\texorpdfstring{autocontrast()}{autocontrast()}}
+{\footnotesize\ttfamily \label{namespacetorchvision__down_1_1transforms_1_1functional__pil_acc856b568b3c21446f253cda6b62df1a} 
+ Image.\+Image torchvision\+\_\+down.\+transforms.\+functional\+\_\+pil.\+autocontrast (\begin{DoxyParamCaption}\item[{Image.\+Image}]{img}{}\end{DoxyParamCaption})}
+
+\Hypertarget{namespacetorchvision__down_1_1transforms_1_1functional__pil_aa805354464c568c2e04cef2df2f7984f}\index{torchvision\_down.transforms.functional\_pil@{torchvision\_down.transforms.functional\_pil}!crop@{crop}}
+\index{crop@{crop}!torchvision\_down.transforms.functional\_pil@{torchvision\_down.transforms.functional\_pil}}
+\doxysubsubsection{\texorpdfstring{crop()}{crop()}}
+{\footnotesize\ttfamily \label{namespacetorchvision__down_1_1transforms_1_1functional__pil_aa805354464c568c2e04cef2df2f7984f} 
+ Image.\+Image torchvision\+\_\+down.\+transforms.\+functional\+\_\+pil.\+crop (\begin{DoxyParamCaption}\item[{Image.\+Image}]{img}{, }\item[{int}]{top}{, }\item[{int}]{left}{, }\item[{int}]{height}{, }\item[{int}]{width}{}\end{DoxyParamCaption})}
+
+\Hypertarget{namespacetorchvision__down_1_1transforms_1_1functional__pil_ad9b2bcb0704cfdd3f24436ffa61bc2a3}\index{torchvision\_down.transforms.functional\_pil@{torchvision\_down.transforms.functional\_pil}!equalize@{equalize}}
+\index{equalize@{equalize}!torchvision\_down.transforms.functional\_pil@{torchvision\_down.transforms.functional\_pil}}
+\doxysubsubsection{\texorpdfstring{equalize()}{equalize()}}
+{\footnotesize\ttfamily \label{namespacetorchvision__down_1_1transforms_1_1functional__pil_ad9b2bcb0704cfdd3f24436ffa61bc2a3} 
+ Image.\+Image torchvision\+\_\+down.\+transforms.\+functional\+\_\+pil.\+equalize (\begin{DoxyParamCaption}\item[{Image.\+Image}]{img}{}\end{DoxyParamCaption})}
+
+\Hypertarget{namespacetorchvision__down_1_1transforms_1_1functional__pil_a7e7c99aa7f040b594ee18398ce46d2b1}\index{torchvision\_down.transforms.functional\_pil@{torchvision\_down.transforms.functional\_pil}!get\_image\_num\_channels@{get\_image\_num\_channels}}
+\index{get\_image\_num\_channels@{get\_image\_num\_channels}!torchvision\_down.transforms.functional\_pil@{torchvision\_down.transforms.functional\_pil}}
+\doxysubsubsection{\texorpdfstring{get\_image\_num\_channels()}{get\_image\_num\_channels()}}
+{\footnotesize\ttfamily \label{namespacetorchvision__down_1_1transforms_1_1functional__pil_a7e7c99aa7f040b594ee18398ce46d2b1} 
+ int torchvision\+\_\+down.\+transforms.\+functional\+\_\+pil.\+get\+\_\+image\+\_\+num\+\_\+channels (\begin{DoxyParamCaption}\item[{Any}]{img}{}\end{DoxyParamCaption})}
+
+\Hypertarget{namespacetorchvision__down_1_1transforms_1_1functional__pil_a9e576a39543a06a7a4d9fcfec26df145}\index{torchvision\_down.transforms.functional\_pil@{torchvision\_down.transforms.functional\_pil}!get\_image\_size@{get\_image\_size}}
+\index{get\_image\_size@{get\_image\_size}!torchvision\_down.transforms.functional\_pil@{torchvision\_down.transforms.functional\_pil}}
+\doxysubsubsection{\texorpdfstring{get\_image\_size()}{get\_image\_size()}}
+{\footnotesize\ttfamily \label{namespacetorchvision__down_1_1transforms_1_1functional__pil_a9e576a39543a06a7a4d9fcfec26df145} 
+ List\mbox{[}int\mbox{]} torchvision\+\_\+down.\+transforms.\+functional\+\_\+pil.\+get\+\_\+image\+\_\+size (\begin{DoxyParamCaption}\item[{Any}]{img}{}\end{DoxyParamCaption})}
+
+\Hypertarget{namespacetorchvision__down_1_1transforms_1_1functional__pil_a7ee18924aa29b6146e387b269ffeac2d}\index{torchvision\_down.transforms.functional\_pil@{torchvision\_down.transforms.functional\_pil}!hflip@{hflip}}
+\index{hflip@{hflip}!torchvision\_down.transforms.functional\_pil@{torchvision\_down.transforms.functional\_pil}}
+\doxysubsubsection{\texorpdfstring{hflip()}{hflip()}}
+{\footnotesize\ttfamily \label{namespacetorchvision__down_1_1transforms_1_1functional__pil_a7ee18924aa29b6146e387b269ffeac2d} 
+ Image.\+Image torchvision\+\_\+down.\+transforms.\+functional\+\_\+pil.\+hflip (\begin{DoxyParamCaption}\item[{Image.\+Image}]{img}{}\end{DoxyParamCaption})}
+
+\Hypertarget{namespacetorchvision__down_1_1transforms_1_1functional__pil_ad638e28c951e778a6557056564d74a0c}\index{torchvision\_down.transforms.functional\_pil@{torchvision\_down.transforms.functional\_pil}!invert@{invert}}
+\index{invert@{invert}!torchvision\_down.transforms.functional\_pil@{torchvision\_down.transforms.functional\_pil}}
+\doxysubsubsection{\texorpdfstring{invert()}{invert()}}
+{\footnotesize\ttfamily \label{namespacetorchvision__down_1_1transforms_1_1functional__pil_ad638e28c951e778a6557056564d74a0c} 
+ Image.\+Image torchvision\+\_\+down.\+transforms.\+functional\+\_\+pil.\+invert (\begin{DoxyParamCaption}\item[{Image.\+Image}]{img}{}\end{DoxyParamCaption})}
+
+\Hypertarget{namespacetorchvision__down_1_1transforms_1_1functional__pil_a92456c4620d1fec4f7d529672c44c8cb}\index{torchvision\_down.transforms.functional\_pil@{torchvision\_down.transforms.functional\_pil}!pad@{pad}}
+\index{pad@{pad}!torchvision\_down.transforms.functional\_pil@{torchvision\_down.transforms.functional\_pil}}
+\doxysubsubsection{\texorpdfstring{pad()}{pad()}}
+{\footnotesize\ttfamily \label{namespacetorchvision__down_1_1transforms_1_1functional__pil_a92456c4620d1fec4f7d529672c44c8cb} 
+ Image.\+Image torchvision\+\_\+down.\+transforms.\+functional\+\_\+pil.\+pad (\begin{DoxyParamCaption}\item[{Image.\+Image}]{img}{, }\item[{Union\mbox{[}int, List\mbox{[}int\mbox{]}, Tuple\mbox{[}int, ...\mbox{]}\mbox{]}}]{padding}{, }\item[{Optional\mbox{[}Union\mbox{[}float, List\mbox{[}float\mbox{]}, Tuple\mbox{[}float, ...\mbox{]}\mbox{]}\mbox{]} }]{fill}{ = {\ttfamily 0}, }\item[{Literal\mbox{[}"{}constant"{}, "{}edge"{}, "{}reflect"{}, "{}symmetric"{}\mbox{]} }]{padding\+\_\+mode}{ = {\ttfamily "{}constant"{}}}\end{DoxyParamCaption})}
+
+\Hypertarget{namespacetorchvision__down_1_1transforms_1_1functional__pil_ac9bc614d10342ae6837d566111acc731}\index{torchvision\_down.transforms.functional\_pil@{torchvision\_down.transforms.functional\_pil}!perspective@{perspective}}
+\index{perspective@{perspective}!torchvision\_down.transforms.functional\_pil@{torchvision\_down.transforms.functional\_pil}}
+\doxysubsubsection{\texorpdfstring{perspective()}{perspective()}}
+{\footnotesize\ttfamily \label{namespacetorchvision__down_1_1transforms_1_1functional__pil_ac9bc614d10342ae6837d566111acc731} 
+ Image.\+Image torchvision\+\_\+down.\+transforms.\+functional\+\_\+pil.\+perspective (\begin{DoxyParamCaption}\item[{Image.\+Image}]{img}{, }\item[{float}]{perspective\+\_\+coeffs}{, }\item[{int }]{interpolation}{ = {\ttfamily Image.BICUBIC}, }\item[{Optional\mbox{[}Union\mbox{[}float, List\mbox{[}float\mbox{]}, Tuple\mbox{[}float, ...\mbox{]}\mbox{]}\mbox{]} }]{fill}{ = {\ttfamily 0}}\end{DoxyParamCaption})}
+
+\Hypertarget{namespacetorchvision__down_1_1transforms_1_1functional__pil_a1e2d204423a1d035c608f100982d1bb5}\index{torchvision\_down.transforms.functional\_pil@{torchvision\_down.transforms.functional\_pil}!posterize@{posterize}}
+\index{posterize@{posterize}!torchvision\_down.transforms.functional\_pil@{torchvision\_down.transforms.functional\_pil}}
+\doxysubsubsection{\texorpdfstring{posterize()}{posterize()}}
+{\footnotesize\ttfamily \label{namespacetorchvision__down_1_1transforms_1_1functional__pil_a1e2d204423a1d035c608f100982d1bb5} 
+ Image.\+Image torchvision\+\_\+down.\+transforms.\+functional\+\_\+pil.\+posterize (\begin{DoxyParamCaption}\item[{Image.\+Image}]{img}{, }\item[{int}]{bits}{}\end{DoxyParamCaption})}
+
+\Hypertarget{namespacetorchvision__down_1_1transforms_1_1functional__pil_a60bca489f3e81d14f37f812beb631406}\index{torchvision\_down.transforms.functional\_pil@{torchvision\_down.transforms.functional\_pil}!resize@{resize}}
+\index{resize@{resize}!torchvision\_down.transforms.functional\_pil@{torchvision\_down.transforms.functional\_pil}}
+\doxysubsubsection{\texorpdfstring{resize()}{resize()}}
+{\footnotesize\ttfamily \label{namespacetorchvision__down_1_1transforms_1_1functional__pil_a60bca489f3e81d14f37f812beb631406} 
+ Image.\+Image torchvision\+\_\+down.\+transforms.\+functional\+\_\+pil.\+resize (\begin{DoxyParamCaption}\item[{Image.\+Image}]{img}{, }\item[{Union\mbox{[}Sequence\mbox{[}int\mbox{]}, int\mbox{]}}]{size}{, }\item[{int }]{interpolation}{ = {\ttfamily Image.BILINEAR}, }\item[{Optional\mbox{[}int\mbox{]} }]{max\+\_\+size}{ = {\ttfamily None}}\end{DoxyParamCaption})}
+
+\Hypertarget{namespacetorchvision__down_1_1transforms_1_1functional__pil_a38a7ee27ab68e813e304494e20998b33}\index{torchvision\_down.transforms.functional\_pil@{torchvision\_down.transforms.functional\_pil}!rotate@{rotate}}
+\index{rotate@{rotate}!torchvision\_down.transforms.functional\_pil@{torchvision\_down.transforms.functional\_pil}}
+\doxysubsubsection{\texorpdfstring{rotate()}{rotate()}}
+{\footnotesize\ttfamily \label{namespacetorchvision__down_1_1transforms_1_1functional__pil_a38a7ee27ab68e813e304494e20998b33} 
+ Image.\+Image torchvision\+\_\+down.\+transforms.\+functional\+\_\+pil.\+rotate (\begin{DoxyParamCaption}\item[{Image.\+Image}]{img}{, }\item[{float}]{angle}{, }\item[{int }]{interpolation}{ = {\ttfamily Image.NEAREST}, }\item[{bool }]{expand}{ = {\ttfamily False}, }\item[{Optional\mbox{[}Tuple\mbox{[}int, int\mbox{]}\mbox{]} }]{center}{ = {\ttfamily None}, }\item[{Optional\mbox{[}Union\mbox{[}float, List\mbox{[}float\mbox{]}, Tuple\mbox{[}float, ...\mbox{]}\mbox{]}\mbox{]} }]{fill}{ = {\ttfamily 0}}\end{DoxyParamCaption})}
+
+\Hypertarget{namespacetorchvision__down_1_1transforms_1_1functional__pil_a91529d62b4aadfffe5dc6a9ec0b68357}\index{torchvision\_down.transforms.functional\_pil@{torchvision\_down.transforms.functional\_pil}!solarize@{solarize}}
+\index{solarize@{solarize}!torchvision\_down.transforms.functional\_pil@{torchvision\_down.transforms.functional\_pil}}
+\doxysubsubsection{\texorpdfstring{solarize()}{solarize()}}
+{\footnotesize\ttfamily \label{namespacetorchvision__down_1_1transforms_1_1functional__pil_a91529d62b4aadfffe5dc6a9ec0b68357} 
+ Image.\+Image torchvision\+\_\+down.\+transforms.\+functional\+\_\+pil.\+solarize (\begin{DoxyParamCaption}\item[{Image.\+Image}]{img}{, }\item[{int}]{threshold}{}\end{DoxyParamCaption})}
+
+\Hypertarget{namespacetorchvision__down_1_1transforms_1_1functional__pil_aa60c191185be6e8e5d913db20d00c8d1}\index{torchvision\_down.transforms.functional\_pil@{torchvision\_down.transforms.functional\_pil}!to\_grayscale@{to\_grayscale}}
+\index{to\_grayscale@{to\_grayscale}!torchvision\_down.transforms.functional\_pil@{torchvision\_down.transforms.functional\_pil}}
+\doxysubsubsection{\texorpdfstring{to\_grayscale()}{to\_grayscale()}}
+{\footnotesize\ttfamily \label{namespacetorchvision__down_1_1transforms_1_1functional__pil_aa60c191185be6e8e5d913db20d00c8d1} 
+ Image.\+Image torchvision\+\_\+down.\+transforms.\+functional\+\_\+pil.\+to\+\_\+grayscale (\begin{DoxyParamCaption}\item[{Image.\+Image}]{img}{, }\item[{int}]{num\+\_\+output\+\_\+channels}{}\end{DoxyParamCaption})}
+
+\Hypertarget{namespacetorchvision__down_1_1transforms_1_1functional__pil_a26a35b69ba39ecde933fdfa41567857b}\index{torchvision\_down.transforms.functional\_pil@{torchvision\_down.transforms.functional\_pil}!vflip@{vflip}}
+\index{vflip@{vflip}!torchvision\_down.transforms.functional\_pil@{torchvision\_down.transforms.functional\_pil}}
+\doxysubsubsection{\texorpdfstring{vflip()}{vflip()}}
+{\footnotesize\ttfamily \label{namespacetorchvision__down_1_1transforms_1_1functional__pil_a26a35b69ba39ecde933fdfa41567857b} 
+ Image.\+Image torchvision\+\_\+down.\+transforms.\+functional\+\_\+pil.\+vflip (\begin{DoxyParamCaption}\item[{Image.\+Image}]{img}{}\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Variable Documentation}
+\Hypertarget{namespacetorchvision__down_1_1transforms_1_1functional__pil_ae64b215f7e23caedf5c2b3ea91b20202}\index{torchvision\_down.transforms.functional\_pil@{torchvision\_down.transforms.functional\_pil}!accimage@{accimage}}
+\index{accimage@{accimage}!torchvision\_down.transforms.functional\_pil@{torchvision\_down.transforms.functional\_pil}}
+\doxysubsubsection{\texorpdfstring{accimage}{accimage}}
+{\footnotesize\ttfamily \label{namespacetorchvision__down_1_1transforms_1_1functional__pil_ae64b215f7e23caedf5c2b3ea91b20202} 
+torchvision\+\_\+down.\+transforms.\+functional\+\_\+pil.\+accimage = None}
+

@@ -1,0 +1,96 @@
+\doxysection{torchvision\+\_\+down.\+models.\+vision\+\_\+transformer.\+Encoder\+Block Class Reference}
+\hypertarget{classtorchvision__down_1_1models_1_1vision__transformer_1_1_encoder_block}{}\label{classtorchvision__down_1_1models_1_1vision__transformer_1_1_encoder_block}\index{torchvision\_down.models.vision\_transformer.EncoderBlock@{torchvision\_down.models.vision\_transformer.EncoderBlock}}
+Inheritance diagram for torchvision\+\_\+down.\+models.\+vision\+\_\+transformer.\+Encoder\+Block\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classtorchvision__down_1_1models_1_1vision__transformer_1_1_encoder_block}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1models_1_1vision__transformer_1_1_encoder_block_a7dda6dbed60f0831a1e43d9be904116e}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, int \mbox{\hyperlink{classtorchvision__down_1_1models_1_1vision__transformer_1_1_encoder_block_a74fca554c285fa59565755f1e5b6599e}{num\+\_\+heads}}, int hidden\+\_\+dim, int mlp\+\_\+dim, float \mbox{\hyperlink{classtorchvision__down_1_1models_1_1vision__transformer_1_1_encoder_block_a78837f2d39ecbb79b5c1e71bdf2f7e95}{dropout}}, float attention\+\_\+dropout, Callable\mbox{[}..., torch.\+nn.\+Module\mbox{]} norm\+\_\+layer=partial(nn.\+Layer\+Norm, eps=1e-\/6))
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1models_1_1vision__transformer_1_1_encoder_block_a745e6f74d3dd12070fb733b3ea92567f}{forward}} (self, torch.\+Tensor input)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1models_1_1vision__transformer_1_1_encoder_block_a74fca554c285fa59565755f1e5b6599e}{num\+\_\+heads}} = num\+\_\+heads
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1models_1_1vision__transformer_1_1_encoder_block_a320552f9761219dd6e5b17eb25f571ac}{ln\+\_\+1}} = norm\+\_\+layer(hidden\+\_\+dim)
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1models_1_1vision__transformer_1_1_encoder_block_a8b0a0289859ed9bf6418eb3461988dcb}{self\+\_\+attention}} = nn.\+Multihead\+Attention(hidden\+\_\+dim, \mbox{\hyperlink{classtorchvision__down_1_1models_1_1vision__transformer_1_1_encoder_block_a74fca554c285fa59565755f1e5b6599e}{num\+\_\+heads}}, \mbox{\hyperlink{classtorchvision__down_1_1models_1_1vision__transformer_1_1_encoder_block_a78837f2d39ecbb79b5c1e71bdf2f7e95}{dropout}}=attention\+\_\+dropout, batch\+\_\+first=True)
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1models_1_1vision__transformer_1_1_encoder_block_a78837f2d39ecbb79b5c1e71bdf2f7e95}{dropout}} = nn.\+Dropout(dropout)
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1models_1_1vision__transformer_1_1_encoder_block_a3a884747f54f730c32f71dde5154ed41}{ln\+\_\+2}} = norm\+\_\+layer(hidden\+\_\+dim)
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1models_1_1vision__transformer_1_1_encoder_block_ae143143f51abafcc8b258d7c061de483}{mlp}} = \mbox{\hyperlink{classtorchvision__down_1_1models_1_1vision__transformer_1_1_m_l_p_block}{MLPBlock}}(hidden\+\_\+dim, mlp\+\_\+dim, \mbox{\hyperlink{classtorchvision__down_1_1models_1_1vision__transformer_1_1_encoder_block_a78837f2d39ecbb79b5c1e71bdf2f7e95}{dropout}})
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}Transformer encoder block.\end{DoxyVerb}
+ 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classtorchvision__down_1_1models_1_1vision__transformer_1_1_encoder_block_a7dda6dbed60f0831a1e43d9be904116e}\index{torchvision\_down.models.vision\_transformer.EncoderBlock@{torchvision\_down.models.vision\_transformer.EncoderBlock}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!torchvision\_down.models.vision\_transformer.EncoderBlock@{torchvision\_down.models.vision\_transformer.EncoderBlock}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1models_1_1vision__transformer_1_1_encoder_block_a7dda6dbed60f0831a1e43d9be904116e} 
+torchvision\+\_\+down.\+models.\+vision\+\_\+transformer.\+Encoder\+Block.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{int}]{num\+\_\+heads}{, }\item[{int}]{hidden\+\_\+dim}{, }\item[{int}]{mlp\+\_\+dim}{, }\item[{float}]{dropout}{, }\item[{float}]{attention\+\_\+dropout}{, }\item[{Callable\mbox{[}..., torch.\+nn.\+Module\mbox{]} }]{norm\+\_\+layer}{ = {\ttfamily partial(nn.LayerNorm,~eps=1e-\/6)}}\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classtorchvision__down_1_1models_1_1vision__transformer_1_1_encoder_block_a745e6f74d3dd12070fb733b3ea92567f}\index{torchvision\_down.models.vision\_transformer.EncoderBlock@{torchvision\_down.models.vision\_transformer.EncoderBlock}!forward@{forward}}
+\index{forward@{forward}!torchvision\_down.models.vision\_transformer.EncoderBlock@{torchvision\_down.models.vision\_transformer.EncoderBlock}}
+\doxysubsubsection{\texorpdfstring{forward()}{forward()}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1models_1_1vision__transformer_1_1_encoder_block_a745e6f74d3dd12070fb733b3ea92567f} 
+torchvision\+\_\+down.\+models.\+vision\+\_\+transformer.\+Encoder\+Block.\+forward (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{torch.\+Tensor}]{input}{}\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classtorchvision__down_1_1models_1_1vision__transformer_1_1_encoder_block_a78837f2d39ecbb79b5c1e71bdf2f7e95}\index{torchvision\_down.models.vision\_transformer.EncoderBlock@{torchvision\_down.models.vision\_transformer.EncoderBlock}!dropout@{dropout}}
+\index{dropout@{dropout}!torchvision\_down.models.vision\_transformer.EncoderBlock@{torchvision\_down.models.vision\_transformer.EncoderBlock}}
+\doxysubsubsection{\texorpdfstring{dropout}{dropout}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1models_1_1vision__transformer_1_1_encoder_block_a78837f2d39ecbb79b5c1e71bdf2f7e95} 
+torchvision\+\_\+down.\+models.\+vision\+\_\+transformer.\+Encoder\+Block.\+dropout = nn.\+Dropout(dropout)}
+
+\Hypertarget{classtorchvision__down_1_1models_1_1vision__transformer_1_1_encoder_block_a320552f9761219dd6e5b17eb25f571ac}\index{torchvision\_down.models.vision\_transformer.EncoderBlock@{torchvision\_down.models.vision\_transformer.EncoderBlock}!ln\_1@{ln\_1}}
+\index{ln\_1@{ln\_1}!torchvision\_down.models.vision\_transformer.EncoderBlock@{torchvision\_down.models.vision\_transformer.EncoderBlock}}
+\doxysubsubsection{\texorpdfstring{ln\_1}{ln\_1}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1models_1_1vision__transformer_1_1_encoder_block_a320552f9761219dd6e5b17eb25f571ac} 
+torchvision\+\_\+down.\+models.\+vision\+\_\+transformer.\+Encoder\+Block.\+ln\+\_\+1 = norm\+\_\+layer(hidden\+\_\+dim)}
+
+\Hypertarget{classtorchvision__down_1_1models_1_1vision__transformer_1_1_encoder_block_a3a884747f54f730c32f71dde5154ed41}\index{torchvision\_down.models.vision\_transformer.EncoderBlock@{torchvision\_down.models.vision\_transformer.EncoderBlock}!ln\_2@{ln\_2}}
+\index{ln\_2@{ln\_2}!torchvision\_down.models.vision\_transformer.EncoderBlock@{torchvision\_down.models.vision\_transformer.EncoderBlock}}
+\doxysubsubsection{\texorpdfstring{ln\_2}{ln\_2}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1models_1_1vision__transformer_1_1_encoder_block_a3a884747f54f730c32f71dde5154ed41} 
+torchvision\+\_\+down.\+models.\+vision\+\_\+transformer.\+Encoder\+Block.\+ln\+\_\+2 = norm\+\_\+layer(hidden\+\_\+dim)}
+
+\Hypertarget{classtorchvision__down_1_1models_1_1vision__transformer_1_1_encoder_block_ae143143f51abafcc8b258d7c061de483}\index{torchvision\_down.models.vision\_transformer.EncoderBlock@{torchvision\_down.models.vision\_transformer.EncoderBlock}!mlp@{mlp}}
+\index{mlp@{mlp}!torchvision\_down.models.vision\_transformer.EncoderBlock@{torchvision\_down.models.vision\_transformer.EncoderBlock}}
+\doxysubsubsection{\texorpdfstring{mlp}{mlp}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1models_1_1vision__transformer_1_1_encoder_block_ae143143f51abafcc8b258d7c061de483} 
+torchvision\+\_\+down.\+models.\+vision\+\_\+transformer.\+Encoder\+Block.\+mlp = \mbox{\hyperlink{classtorchvision__down_1_1models_1_1vision__transformer_1_1_m_l_p_block}{MLPBlock}}(hidden\+\_\+dim, mlp\+\_\+dim, \mbox{\hyperlink{classtorchvision__down_1_1models_1_1vision__transformer_1_1_encoder_block_a78837f2d39ecbb79b5c1e71bdf2f7e95}{dropout}})}
+
+\Hypertarget{classtorchvision__down_1_1models_1_1vision__transformer_1_1_encoder_block_a74fca554c285fa59565755f1e5b6599e}\index{torchvision\_down.models.vision\_transformer.EncoderBlock@{torchvision\_down.models.vision\_transformer.EncoderBlock}!num\_heads@{num\_heads}}
+\index{num\_heads@{num\_heads}!torchvision\_down.models.vision\_transformer.EncoderBlock@{torchvision\_down.models.vision\_transformer.EncoderBlock}}
+\doxysubsubsection{\texorpdfstring{num\_heads}{num\_heads}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1models_1_1vision__transformer_1_1_encoder_block_a74fca554c285fa59565755f1e5b6599e} 
+torchvision\+\_\+down.\+models.\+vision\+\_\+transformer.\+Encoder\+Block.\+num\+\_\+heads = num\+\_\+heads}
+
+\Hypertarget{classtorchvision__down_1_1models_1_1vision__transformer_1_1_encoder_block_a8b0a0289859ed9bf6418eb3461988dcb}\index{torchvision\_down.models.vision\_transformer.EncoderBlock@{torchvision\_down.models.vision\_transformer.EncoderBlock}!self\_attention@{self\_attention}}
+\index{self\_attention@{self\_attention}!torchvision\_down.models.vision\_transformer.EncoderBlock@{torchvision\_down.models.vision\_transformer.EncoderBlock}}
+\doxysubsubsection{\texorpdfstring{self\_attention}{self\_attention}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1models_1_1vision__transformer_1_1_encoder_block_a8b0a0289859ed9bf6418eb3461988dcb} 
+torchvision\+\_\+down.\+models.\+vision\+\_\+transformer.\+Encoder\+Block.\+self\+\_\+attention = nn.\+Multihead\+Attention(hidden\+\_\+dim, \mbox{\hyperlink{classtorchvision__down_1_1models_1_1vision__transformer_1_1_encoder_block_a74fca554c285fa59565755f1e5b6599e}{num\+\_\+heads}}, \mbox{\hyperlink{classtorchvision__down_1_1models_1_1vision__transformer_1_1_encoder_block_a78837f2d39ecbb79b5c1e71bdf2f7e95}{dropout}}=attention\+\_\+dropout, batch\+\_\+first=True)}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Cervi\+AI/torchvision\+\_\+down/models/\mbox{\hyperlink{vision__transformer_8py}{vision\+\_\+transformer.\+py}}\end{DoxyCompactItemize}

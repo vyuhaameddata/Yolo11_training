@@ -1,0 +1,27 @@
+var regnet_8py =
+[
+    [ "torchvision_down.models.regnet.SimpleStemIN", "classtorchvision__down_1_1models_1_1regnet_1_1_simple_stem_i_n.html", "classtorchvision__down_1_1models_1_1regnet_1_1_simple_stem_i_n" ],
+    [ "torchvision_down.models.regnet.BottleneckTransform", "classtorchvision__down_1_1models_1_1regnet_1_1_bottleneck_transform.html", "classtorchvision__down_1_1models_1_1regnet_1_1_bottleneck_transform" ],
+    [ "torchvision_down.models.regnet.ResBottleneckBlock", "classtorchvision__down_1_1models_1_1regnet_1_1_res_bottleneck_block.html", "classtorchvision__down_1_1models_1_1regnet_1_1_res_bottleneck_block" ],
+    [ "torchvision_down.models.regnet.AnyStage", "classtorchvision__down_1_1models_1_1regnet_1_1_any_stage.html", "classtorchvision__down_1_1models_1_1regnet_1_1_any_stage" ],
+    [ "torchvision_down.models.regnet.BlockParams", "classtorchvision__down_1_1models_1_1regnet_1_1_block_params.html", "classtorchvision__down_1_1models_1_1regnet_1_1_block_params" ],
+    [ "torchvision_down.models.regnet.RegNet", "classtorchvision__down_1_1models_1_1regnet_1_1_reg_net.html", "classtorchvision__down_1_1models_1_1regnet_1_1_reg_net" ],
+    [ "torchvision_down.models.regnet._regnet", "namespacetorchvision__down_1_1models_1_1regnet.html#ac8bb0a0a3564aaeb91859cbd056a4a8f", null ],
+    [ "torchvision_down.models.regnet.regnet_x_16gf", "namespacetorchvision__down_1_1models_1_1regnet.html#a0b798707f0c186252ee04ab0836072b4", null ],
+    [ "torchvision_down.models.regnet.regnet_x_1_6gf", "namespacetorchvision__down_1_1models_1_1regnet.html#a6f36126ca99a3f77fe2866852c276803", null ],
+    [ "torchvision_down.models.regnet.regnet_x_32gf", "namespacetorchvision__down_1_1models_1_1regnet.html#a561ac342a82abfb6bbe237dbceb3e354", null ],
+    [ "torchvision_down.models.regnet.regnet_x_3_2gf", "namespacetorchvision__down_1_1models_1_1regnet.html#aae435449172f682c1513db5fc88ed2ea", null ],
+    [ "torchvision_down.models.regnet.regnet_x_400mf", "namespacetorchvision__down_1_1models_1_1regnet.html#ad64cc853954e0b63b1ad2947b216b1f3", null ],
+    [ "torchvision_down.models.regnet.regnet_x_800mf", "namespacetorchvision__down_1_1models_1_1regnet.html#a7f69e73198acc4537b66b9d57c50ba5a", null ],
+    [ "torchvision_down.models.regnet.regnet_x_8gf", "namespacetorchvision__down_1_1models_1_1regnet.html#a1736130e4dc36ec9acd310a3249a8b02", null ],
+    [ "torchvision_down.models.regnet.regnet_y_128gf", "namespacetorchvision__down_1_1models_1_1regnet.html#a049b08e8e1e62047da78e484d1564a7b", null ],
+    [ "torchvision_down.models.regnet.regnet_y_16gf", "namespacetorchvision__down_1_1models_1_1regnet.html#a6cb8d2345ff2a4ac817b4a5bedcb3df0", null ],
+    [ "torchvision_down.models.regnet.regnet_y_1_6gf", "namespacetorchvision__down_1_1models_1_1regnet.html#a4535833767da0df3576679f3a0d0787f", null ],
+    [ "torchvision_down.models.regnet.regnet_y_32gf", "namespacetorchvision__down_1_1models_1_1regnet.html#a61b45dadf7fc2efabce506292d53117a", null ],
+    [ "torchvision_down.models.regnet.regnet_y_3_2gf", "namespacetorchvision__down_1_1models_1_1regnet.html#a207bf5e0a57bb2305b0bcb0ea14267cd", null ],
+    [ "torchvision_down.models.regnet.regnet_y_400mf", "namespacetorchvision__down_1_1models_1_1regnet.html#a587b63de56160f3b6ee676907e635efa", null ],
+    [ "torchvision_down.models.regnet.regnet_y_800mf", "namespacetorchvision__down_1_1models_1_1regnet.html#afff37365e32e563cb7ff07ce82d8adac", null ],
+    [ "torchvision_down.models.regnet.regnet_y_8gf", "namespacetorchvision__down_1_1models_1_1regnet.html#aec5c50888d70095ff9471e1e7f5db885", null ],
+    [ "torchvision_down.models.regnet.__all__", "namespacetorchvision__down_1_1models_1_1regnet.html#a674cb97e1eaf94be036d0ded7bbbfab8", null ],
+    [ "torchvision_down.models.regnet.model_urls", "namespacetorchvision__down_1_1models_1_1regnet.html#a11c90746e58368bf655ada82c784ab64", null ]
+];

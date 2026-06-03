@@ -1,0 +1,39 @@
+\doxysection{torchvision\+\_\+down.\+models.\+detection.\+rpn Namespace Reference}
+\hypertarget{namespacetorchvision__down_1_1models_1_1detection_1_1rpn}{}\label{namespacetorchvision__down_1_1models_1_1detection_1_1rpn}\index{torchvision\_down.models.detection.rpn@{torchvision\_down.models.detection.rpn}}
+\doxysubsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classtorchvision__down_1_1models_1_1detection_1_1rpn_1_1_region_proposal_network}{Region\+Proposal\+Network}}
+\item 
+class \mbox{\hyperlink{classtorchvision__down_1_1models_1_1detection_1_1rpn_1_1_r_p_n_head}{RPNHead}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+Tuple\mbox{[}int, int\mbox{]} \mbox{\hyperlink{namespacetorchvision__down_1_1models_1_1detection_1_1rpn_a9598ef29be16b132283d944142f3f7da}{\+\_\+onnx\+\_\+get\+\_\+num\+\_\+anchors\+\_\+and\+\_\+pre\+\_\+nms\+\_\+top\+\_\+n}} (Tensor ob, int orig\+\_\+pre\+\_\+nms\+\_\+top\+\_\+n)
+\item 
+Tensor \mbox{\hyperlink{namespacetorchvision__down_1_1models_1_1detection_1_1rpn_aed951230cd51b889320bd3f42879a9a5}{permute\+\_\+and\+\_\+flatten}} (Tensor layer, int N, int A, int C, int H, int W)
+\item 
+Tuple\mbox{[}Tensor, Tensor\mbox{]} \mbox{\hyperlink{namespacetorchvision__down_1_1models_1_1detection_1_1rpn_ae6a2da0936527f8e78f296d24d70b394}{concat\+\_\+box\+\_\+prediction\+\_\+layers}} (List\mbox{[}Tensor\mbox{]} box\+\_\+cls, List\mbox{[}Tensor\mbox{]} box\+\_\+regression)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{namespacetorchvision__down_1_1models_1_1detection_1_1rpn_a9598ef29be16b132283d944142f3f7da}\index{torchvision\_down.models.detection.rpn@{torchvision\_down.models.detection.rpn}!\_onnx\_get\_num\_anchors\_and\_pre\_nms\_top\_n@{\_onnx\_get\_num\_anchors\_and\_pre\_nms\_top\_n}}
+\index{\_onnx\_get\_num\_anchors\_and\_pre\_nms\_top\_n@{\_onnx\_get\_num\_anchors\_and\_pre\_nms\_top\_n}!torchvision\_down.models.detection.rpn@{torchvision\_down.models.detection.rpn}}
+\doxysubsubsection{\texorpdfstring{\_onnx\_get\_num\_anchors\_and\_pre\_nms\_top\_n()}{\_onnx\_get\_num\_anchors\_and\_pre\_nms\_top\_n()}}
+{\footnotesize\ttfamily \label{namespacetorchvision__down_1_1models_1_1detection_1_1rpn_a9598ef29be16b132283d944142f3f7da} 
+ Tuple\mbox{[}int, int\mbox{]} torchvision\+\_\+down.\+models.\+detection.\+rpn.\+\_\+onnx\+\_\+get\+\_\+num\+\_\+anchors\+\_\+and\+\_\+pre\+\_\+nms\+\_\+top\+\_\+n (\begin{DoxyParamCaption}\item[{Tensor}]{ob}{, }\item[{int}]{orig\+\_\+pre\+\_\+nms\+\_\+top\+\_\+n}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{namespacetorchvision__down_1_1models_1_1detection_1_1rpn_ae6a2da0936527f8e78f296d24d70b394}\index{torchvision\_down.models.detection.rpn@{torchvision\_down.models.detection.rpn}!concat\_box\_prediction\_layers@{concat\_box\_prediction\_layers}}
+\index{concat\_box\_prediction\_layers@{concat\_box\_prediction\_layers}!torchvision\_down.models.detection.rpn@{torchvision\_down.models.detection.rpn}}
+\doxysubsubsection{\texorpdfstring{concat\_box\_prediction\_layers()}{concat\_box\_prediction\_layers()}}
+{\footnotesize\ttfamily \label{namespacetorchvision__down_1_1models_1_1detection_1_1rpn_ae6a2da0936527f8e78f296d24d70b394} 
+ Tuple\mbox{[}Tensor, Tensor\mbox{]} torchvision\+\_\+down.\+models.\+detection.\+rpn.\+concat\+\_\+box\+\_\+prediction\+\_\+layers (\begin{DoxyParamCaption}\item[{List\mbox{[}Tensor\mbox{]}}]{box\+\_\+cls}{, }\item[{List\mbox{[}Tensor\mbox{]}}]{box\+\_\+regression}{}\end{DoxyParamCaption})}
+
+\Hypertarget{namespacetorchvision__down_1_1models_1_1detection_1_1rpn_aed951230cd51b889320bd3f42879a9a5}\index{torchvision\_down.models.detection.rpn@{torchvision\_down.models.detection.rpn}!permute\_and\_flatten@{permute\_and\_flatten}}
+\index{permute\_and\_flatten@{permute\_and\_flatten}!torchvision\_down.models.detection.rpn@{torchvision\_down.models.detection.rpn}}
+\doxysubsubsection{\texorpdfstring{permute\_and\_flatten()}{permute\_and\_flatten()}}
+{\footnotesize\ttfamily \label{namespacetorchvision__down_1_1models_1_1detection_1_1rpn_aed951230cd51b889320bd3f42879a9a5} 
+ Tensor torchvision\+\_\+down.\+models.\+detection.\+rpn.\+permute\+\_\+and\+\_\+flatten (\begin{DoxyParamCaption}\item[{Tensor}]{layer}{, }\item[{int}]{N}{, }\item[{int}]{A}{, }\item[{int}]{C}{, }\item[{int}]{H}{, }\item[{int}]{W}{}\end{DoxyParamCaption})}
+

@@ -1,0 +1,83 @@
+\doxysection{torchvision\+\_\+down.\+models.\+optical\+\_\+flow.\+raft.\+Update\+Block Class Reference}
+\hypertarget{classtorchvision__down_1_1models_1_1optical__flow_1_1raft_1_1_update_block}{}\label{classtorchvision__down_1_1models_1_1optical__flow_1_1raft_1_1_update_block}\index{torchvision\_down.models.optical\_flow.raft.UpdateBlock@{torchvision\_down.models.optical\_flow.raft.UpdateBlock}}
+Inheritance diagram for torchvision\+\_\+down.\+models.\+optical\+\_\+flow.\+raft.\+Update\+Block\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classtorchvision__down_1_1models_1_1optical__flow_1_1raft_1_1_update_block}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1models_1_1optical__flow_1_1raft_1_1_update_block_a3142c289bd115ef51811d9c76e53d675}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, \texorpdfstring{$\ast$}{*}, \mbox{\hyperlink{classtorchvision__down_1_1models_1_1optical__flow_1_1raft_1_1_update_block_a6c59fc9ffa88c37c75de16a7ff7702fb}{motion\+\_\+encoder}}, \mbox{\hyperlink{classtorchvision__down_1_1models_1_1optical__flow_1_1raft_1_1_update_block_a9ad800d1f680653b4e7b70d573bf0506}{recurrent\+\_\+block}}, \mbox{\hyperlink{classtorchvision__down_1_1models_1_1optical__flow_1_1raft_1_1_update_block_ac06321d3d750ac432f62b4c18071c0e4}{flow\+\_\+head}})
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1models_1_1optical__flow_1_1raft_1_1_update_block_a09fb8724902773f51a442fbb3110479f}{forward}} (self, hidden\+\_\+state, context, corr\+\_\+features, flow)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1models_1_1optical__flow_1_1raft_1_1_update_block_a6c59fc9ffa88c37c75de16a7ff7702fb}{motion\+\_\+encoder}} = motion\+\_\+encoder
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1models_1_1optical__flow_1_1raft_1_1_update_block_a9ad800d1f680653b4e7b70d573bf0506}{recurrent\+\_\+block}} = recurrent\+\_\+block
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1models_1_1optical__flow_1_1raft_1_1_update_block_ac06321d3d750ac432f62b4c18071c0e4}{flow\+\_\+head}} = flow\+\_\+head
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1models_1_1optical__flow_1_1raft_1_1_update_block_a4215cc951a5e721f6b101ce8c28117a4}{hidden\+\_\+state\+\_\+size}} = recurrent\+\_\+block.\+hidden\+\_\+size
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}The update block which contains the motion encoder, the recurrent block, and the flow head.
+
+It must expose a ``hidden_state_size`` attribute which is the hidden state size of its recurrent block.
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classtorchvision__down_1_1models_1_1optical__flow_1_1raft_1_1_update_block_a3142c289bd115ef51811d9c76e53d675}\index{torchvision\_down.models.optical\_flow.raft.UpdateBlock@{torchvision\_down.models.optical\_flow.raft.UpdateBlock}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!torchvision\_down.models.optical\_flow.raft.UpdateBlock@{torchvision\_down.models.optical\_flow.raft.UpdateBlock}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1models_1_1optical__flow_1_1raft_1_1_update_block_a3142c289bd115ef51811d9c76e53d675} 
+torchvision\+\_\+down.\+models.\+optical\+\_\+flow.\+raft.\+Update\+Block.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{\texorpdfstring{$\ast$}{*}}]{}{, }\item[{}]{motion\+\_\+encoder}{, }\item[{}]{recurrent\+\_\+block}{, }\item[{}]{flow\+\_\+head}{}\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classtorchvision__down_1_1models_1_1optical__flow_1_1raft_1_1_update_block_a09fb8724902773f51a442fbb3110479f}\index{torchvision\_down.models.optical\_flow.raft.UpdateBlock@{torchvision\_down.models.optical\_flow.raft.UpdateBlock}!forward@{forward}}
+\index{forward@{forward}!torchvision\_down.models.optical\_flow.raft.UpdateBlock@{torchvision\_down.models.optical\_flow.raft.UpdateBlock}}
+\doxysubsubsection{\texorpdfstring{forward()}{forward()}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1models_1_1optical__flow_1_1raft_1_1_update_block_a09fb8724902773f51a442fbb3110479f} 
+torchvision\+\_\+down.\+models.\+optical\+\_\+flow.\+raft.\+Update\+Block.\+forward (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{hidden\+\_\+state}{, }\item[{}]{context}{, }\item[{}]{corr\+\_\+features}{, }\item[{}]{flow}{}\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classtorchvision__down_1_1models_1_1optical__flow_1_1raft_1_1_update_block_ac06321d3d750ac432f62b4c18071c0e4}\index{torchvision\_down.models.optical\_flow.raft.UpdateBlock@{torchvision\_down.models.optical\_flow.raft.UpdateBlock}!flow\_head@{flow\_head}}
+\index{flow\_head@{flow\_head}!torchvision\_down.models.optical\_flow.raft.UpdateBlock@{torchvision\_down.models.optical\_flow.raft.UpdateBlock}}
+\doxysubsubsection{\texorpdfstring{flow\_head}{flow\_head}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1models_1_1optical__flow_1_1raft_1_1_update_block_ac06321d3d750ac432f62b4c18071c0e4} 
+torchvision\+\_\+down.\+models.\+optical\+\_\+flow.\+raft.\+Update\+Block.\+flow\+\_\+head = flow\+\_\+head}
+
+\Hypertarget{classtorchvision__down_1_1models_1_1optical__flow_1_1raft_1_1_update_block_a4215cc951a5e721f6b101ce8c28117a4}\index{torchvision\_down.models.optical\_flow.raft.UpdateBlock@{torchvision\_down.models.optical\_flow.raft.UpdateBlock}!hidden\_state\_size@{hidden\_state\_size}}
+\index{hidden\_state\_size@{hidden\_state\_size}!torchvision\_down.models.optical\_flow.raft.UpdateBlock@{torchvision\_down.models.optical\_flow.raft.UpdateBlock}}
+\doxysubsubsection{\texorpdfstring{hidden\_state\_size}{hidden\_state\_size}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1models_1_1optical__flow_1_1raft_1_1_update_block_a4215cc951a5e721f6b101ce8c28117a4} 
+torchvision\+\_\+down.\+models.\+optical\+\_\+flow.\+raft.\+Update\+Block.\+hidden\+\_\+state\+\_\+size = recurrent\+\_\+block.\+hidden\+\_\+size}
+
+\Hypertarget{classtorchvision__down_1_1models_1_1optical__flow_1_1raft_1_1_update_block_a6c59fc9ffa88c37c75de16a7ff7702fb}\index{torchvision\_down.models.optical\_flow.raft.UpdateBlock@{torchvision\_down.models.optical\_flow.raft.UpdateBlock}!motion\_encoder@{motion\_encoder}}
+\index{motion\_encoder@{motion\_encoder}!torchvision\_down.models.optical\_flow.raft.UpdateBlock@{torchvision\_down.models.optical\_flow.raft.UpdateBlock}}
+\doxysubsubsection{\texorpdfstring{motion\_encoder}{motion\_encoder}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1models_1_1optical__flow_1_1raft_1_1_update_block_a6c59fc9ffa88c37c75de16a7ff7702fb} 
+torchvision\+\_\+down.\+models.\+optical\+\_\+flow.\+raft.\+Update\+Block.\+motion\+\_\+encoder = motion\+\_\+encoder}
+
+\Hypertarget{classtorchvision__down_1_1models_1_1optical__flow_1_1raft_1_1_update_block_a9ad800d1f680653b4e7b70d573bf0506}\index{torchvision\_down.models.optical\_flow.raft.UpdateBlock@{torchvision\_down.models.optical\_flow.raft.UpdateBlock}!recurrent\_block@{recurrent\_block}}
+\index{recurrent\_block@{recurrent\_block}!torchvision\_down.models.optical\_flow.raft.UpdateBlock@{torchvision\_down.models.optical\_flow.raft.UpdateBlock}}
+\doxysubsubsection{\texorpdfstring{recurrent\_block}{recurrent\_block}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1models_1_1optical__flow_1_1raft_1_1_update_block_a9ad800d1f680653b4e7b70d573bf0506} 
+torchvision\+\_\+down.\+models.\+optical\+\_\+flow.\+raft.\+Update\+Block.\+recurrent\+\_\+block = recurrent\+\_\+block}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Cervi\+AI/torchvision\+\_\+down/models/optical\+\_\+flow/\mbox{\hyperlink{raft_8py}{raft.\+py}}\end{DoxyCompactItemize}

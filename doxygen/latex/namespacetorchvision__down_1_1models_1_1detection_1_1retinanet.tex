@@ -1,0 +1,110 @@
+\doxysection{torchvision\+\_\+down.\+models.\+detection.\+retinanet Namespace Reference}
+\hypertarget{namespacetorchvision__down_1_1models_1_1detection_1_1retinanet}{}\label{namespacetorchvision__down_1_1models_1_1detection_1_1retinanet}\index{torchvision\_down.models.detection.retinanet@{torchvision\_down.models.detection.retinanet}}
+\doxysubsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classtorchvision__down_1_1models_1_1detection_1_1retinanet_1_1_retina_net}{Retina\+Net}}
+\item 
+class \mbox{\hyperlink{classtorchvision__down_1_1models_1_1detection_1_1retinanet_1_1_retina_net_classification_head}{Retina\+Net\+Classification\+Head}}
+\item 
+class \mbox{\hyperlink{classtorchvision__down_1_1models_1_1detection_1_1retinanet_1_1_retina_net_head}{Retina\+Net\+Head}}
+\item 
+class \mbox{\hyperlink{classtorchvision__down_1_1models_1_1detection_1_1retinanet_1_1_retina_net_regression_head}{Retina\+Net\+Regression\+Head}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+Tensor \mbox{\hyperlink{namespacetorchvision__down_1_1models_1_1detection_1_1retinanet_a8fca180ffc23175f5742c09689309893}{\+\_\+sum}} (List\mbox{[}Tensor\mbox{]} x)
+\item 
+\mbox{\hyperlink{namespacetorchvision__down_1_1models_1_1detection_1_1retinanet_afb58f1a25383daa197df2a31da483e1d}{retinanet\+\_\+resnet50\+\_\+fpn}} (pretrained=False, progress=True, num\+\_\+classes=91, pretrained\+\_\+backbone=True, trainable\+\_\+backbone\+\_\+layers=None, \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}kwargs)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+list \mbox{\hyperlink{namespacetorchvision__down_1_1models_1_1detection_1_1retinanet_a65b4d755b9a3bef89ef6fc5a9f9640b9}{\+\_\+\+\_\+all\+\_\+\+\_\+}} = \mbox{[}"{}Retina\+Net"{}, "{}retinanet\+\_\+resnet50\+\_\+fpn"{}\mbox{]}
+\item 
+dict \mbox{\hyperlink{namespacetorchvision__down_1_1models_1_1detection_1_1retinanet_a39ba749617674c034b7e1c6abef64058}{model\+\_\+urls}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{namespacetorchvision__down_1_1models_1_1detection_1_1retinanet_a8fca180ffc23175f5742c09689309893}\index{torchvision\_down.models.detection.retinanet@{torchvision\_down.models.detection.retinanet}!\_sum@{\_sum}}
+\index{\_sum@{\_sum}!torchvision\_down.models.detection.retinanet@{torchvision\_down.models.detection.retinanet}}
+\doxysubsubsection{\texorpdfstring{\_sum()}{\_sum()}}
+{\footnotesize\ttfamily \label{namespacetorchvision__down_1_1models_1_1detection_1_1retinanet_a8fca180ffc23175f5742c09689309893} 
+ Tensor torchvision\+\_\+down.\+models.\+detection.\+retinanet.\+\_\+sum (\begin{DoxyParamCaption}\item[{List\mbox{[}Tensor\mbox{]}}]{x}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{namespacetorchvision__down_1_1models_1_1detection_1_1retinanet_afb58f1a25383daa197df2a31da483e1d}\index{torchvision\_down.models.detection.retinanet@{torchvision\_down.models.detection.retinanet}!retinanet\_resnet50\_fpn@{retinanet\_resnet50\_fpn}}
+\index{retinanet\_resnet50\_fpn@{retinanet\_resnet50\_fpn}!torchvision\_down.models.detection.retinanet@{torchvision\_down.models.detection.retinanet}}
+\doxysubsubsection{\texorpdfstring{retinanet\_resnet50\_fpn()}{retinanet\_resnet50\_fpn()}}
+{\footnotesize\ttfamily \label{namespacetorchvision__down_1_1models_1_1detection_1_1retinanet_afb58f1a25383daa197df2a31da483e1d} 
+torchvision\+\_\+down.\+models.\+detection.\+retinanet.\+retinanet\+\_\+resnet50\+\_\+fpn (\begin{DoxyParamCaption}\item[{}]{pretrained}{ = {\ttfamily False}, }\item[{}]{progress}{ = {\ttfamily True}, }\item[{}]{num\+\_\+classes}{ = {\ttfamily 91}, }\item[{}]{pretrained\+\_\+backbone}{ = {\ttfamily True}, }\item[{}]{trainable\+\_\+backbone\+\_\+layers}{ = {\ttfamily None}, }\item[{\texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}}]{kwargs}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Constructs a RetinaNet model with a ResNet-50-FPN backbone.
+
+Reference: `"Focal Loss for Dense Object Detection" <https://arxiv.org/abs/1708.02002>`_.
+
+The input to the model is expected to be a list of tensors, each of shape ``[C, H, W]``, one for each
+image, and should be in ``0-1`` range. Different images can have different sizes.
+
+The behavior of the model changes depending if it is in training or evaluation mode.
+
+During training, the model expects both the input tensors, as well as a targets (list of dictionary),
+containing:
+
+    - boxes (``FloatTensor[N, 4]``): the ground-truth boxes in ``[x1, y1, x2, y2]`` format, with
+      ``0 <= x1 < x2 <= W`` and ``0 <= y1 < y2 <= H``.
+    - labels (``Int64Tensor[N]``): the class label for each ground-truth box
+
+The model returns a ``Dict[Tensor]`` during training, containing the classification and regression
+losses.
+
+During inference, the model requires only the input tensors, and returns the post-processed
+predictions as a ``List[Dict[Tensor]]``, one for each input image. The fields of the ``Dict`` are as
+follows, where ``N`` is the number of detections:
+
+    - boxes (``FloatTensor[N, 4]``): the predicted boxes in ``[x1, y1, x2, y2]`` format, with
+      ``0 <= x1 < x2 <= W`` and ``0 <= y1 < y2 <= H``.
+    - labels (``Int64Tensor[N]``): the predicted labels for each detection
+    - scores (``Tensor[N]``): the scores of each detection
+
+For more details on the output, you may refer to :ref:`instance_seg_output`.
+
+Example::
+
+    >>> model = torchvision.models.detection.retinanet_resnet50_fpn(pretrained=True)
+    >>> model.eval()
+    >>> x = [torch.rand(3, 300, 400), torch.rand(3, 500, 400)]
+    >>> predictions = model(x)
+
+Args:
+    pretrained (bool): If True, returns a model pre-trained on COCO train2017
+    progress (bool): If True, displays a progress bar of the download to stderr
+    num_classes (int): number of output classes of the model (including the background)
+    pretrained_backbone (bool): If True, returns a model with backbone pre-trained on Imagenet
+    trainable_backbone_layers (int): number of trainable (not frozen) resnet layers starting from final block.
+        Valid values are between 0 and 5, with 5 meaning all backbone layers are trainable. If ``None`` is
+        passed (the default) this value is set to 3.
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Variable Documentation}
+\Hypertarget{namespacetorchvision__down_1_1models_1_1detection_1_1retinanet_a65b4d755b9a3bef89ef6fc5a9f9640b9}\index{torchvision\_down.models.detection.retinanet@{torchvision\_down.models.detection.retinanet}!\_\_all\_\_@{\_\_all\_\_}}
+\index{\_\_all\_\_@{\_\_all\_\_}!torchvision\_down.models.detection.retinanet@{torchvision\_down.models.detection.retinanet}}
+\doxysubsubsection{\texorpdfstring{\_\_all\_\_}{\_\_all\_\_}}
+{\footnotesize\ttfamily \label{namespacetorchvision__down_1_1models_1_1detection_1_1retinanet_a65b4d755b9a3bef89ef6fc5a9f9640b9} 
+list torchvision\+\_\+down.\+models.\+detection.\+retinanet.\+\_\+\+\_\+all\+\_\+\+\_\+ = \mbox{[}"{}Retina\+Net"{}, "{}retinanet\+\_\+resnet50\+\_\+fpn"{}\mbox{]}\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{namespacetorchvision__down_1_1models_1_1detection_1_1retinanet_a39ba749617674c034b7e1c6abef64058}\index{torchvision\_down.models.detection.retinanet@{torchvision\_down.models.detection.retinanet}!model\_urls@{model\_urls}}
+\index{model\_urls@{model\_urls}!torchvision\_down.models.detection.retinanet@{torchvision\_down.models.detection.retinanet}}
+\doxysubsubsection{\texorpdfstring{model\_urls}{model\_urls}}
+{\footnotesize\ttfamily \label{namespacetorchvision__down_1_1models_1_1detection_1_1retinanet_a39ba749617674c034b7e1c6abef64058} 
+dict torchvision\+\_\+down.\+models.\+detection.\+retinanet.\+model\+\_\+urls}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ =\ \ \{}
+\DoxyCodeLine{00002\ \ \ \ \ \textcolor{stringliteral}{"{}retinanet\_resnet50\_fpn\_coco"{}}:\ \textcolor{stringliteral}{"{}https://download.pytorch.org/models/retinanet\_resnet50\_fpn\_coco-\/eeacb38b.pth"{}},}
+\DoxyCodeLine{00003\ \}}
+
+\end{DoxyCode}

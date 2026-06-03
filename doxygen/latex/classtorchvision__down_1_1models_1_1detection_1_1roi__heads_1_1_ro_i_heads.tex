@@ -1,0 +1,270 @@
+\doxysection{torchvision\+\_\+down.\+models.\+detection.\+roi\+\_\+heads.\+Ro\+IHeads Class Reference}
+\hypertarget{classtorchvision__down_1_1models_1_1detection_1_1roi__heads_1_1_ro_i_heads}{}\label{classtorchvision__down_1_1models_1_1detection_1_1roi__heads_1_1_ro_i_heads}\index{torchvision\_down.models.detection.roi\_heads.RoIHeads@{torchvision\_down.models.detection.roi\_heads.RoIHeads}}
+Inheritance diagram for torchvision\+\_\+down.\+models.\+detection.\+roi\+\_\+heads.\+Ro\+IHeads\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classtorchvision__down_1_1models_1_1detection_1_1roi__heads_1_1_ro_i_heads}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1models_1_1detection_1_1roi__heads_1_1_ro_i_heads_a77f8b919c2bd3e27dc43080d6bbefda1}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, \mbox{\hyperlink{classtorchvision__down_1_1models_1_1detection_1_1roi__heads_1_1_ro_i_heads_afe5046511274be0fe555dd54b90008b4}{box\+\_\+roi\+\_\+pool}}, \mbox{\hyperlink{classtorchvision__down_1_1models_1_1detection_1_1roi__heads_1_1_ro_i_heads_a89c4d4b2733e237c43632e60a271176e}{box\+\_\+head}}, \mbox{\hyperlink{classtorchvision__down_1_1models_1_1detection_1_1roi__heads_1_1_ro_i_heads_a6114ffe7c95be60ce32c84f393c73f1a}{box\+\_\+predictor}}, fg\+\_\+iou\+\_\+thresh, bg\+\_\+iou\+\_\+thresh, batch\+\_\+size\+\_\+per\+\_\+image, positive\+\_\+fraction, bbox\+\_\+reg\+\_\+weights, \mbox{\hyperlink{classtorchvision__down_1_1models_1_1detection_1_1roi__heads_1_1_ro_i_heads_a034b407544b6713e16b80a17a648912f}{score\+\_\+thresh}}, \mbox{\hyperlink{classtorchvision__down_1_1models_1_1detection_1_1roi__heads_1_1_ro_i_heads_a2f96ae0b3afed0f4e951943a617692f7}{nms\+\_\+thresh}}, \mbox{\hyperlink{classtorchvision__down_1_1models_1_1detection_1_1roi__heads_1_1_ro_i_heads_aa95b5b8567ccb5c33bd8e724ab6c0e84}{detections\+\_\+per\+\_\+img}}, \mbox{\hyperlink{classtorchvision__down_1_1models_1_1detection_1_1roi__heads_1_1_ro_i_heads_af7ae1d18d1129415357432b5d175b33b}{mask\+\_\+roi\+\_\+pool}}=None, \mbox{\hyperlink{classtorchvision__down_1_1models_1_1detection_1_1roi__heads_1_1_ro_i_heads_a444367388b1060ab2c2750642131f7e2}{mask\+\_\+head}}=None, \mbox{\hyperlink{classtorchvision__down_1_1models_1_1detection_1_1roi__heads_1_1_ro_i_heads_a4570bab88a4dd86d5fe773cfcefda614}{mask\+\_\+predictor}}=None, \mbox{\hyperlink{classtorchvision__down_1_1models_1_1detection_1_1roi__heads_1_1_ro_i_heads_aa0bea4ff7136352330bf789aa5bba8e0}{keypoint\+\_\+roi\+\_\+pool}}=None, \mbox{\hyperlink{classtorchvision__down_1_1models_1_1detection_1_1roi__heads_1_1_ro_i_heads_a7980bb33b863963f81c53ef46e490a1b}{keypoint\+\_\+head}}=None, \mbox{\hyperlink{classtorchvision__down_1_1models_1_1detection_1_1roi__heads_1_1_ro_i_heads_af10fd86c21a981eb74b0303277393051}{keypoint\+\_\+predictor}}=None)
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1models_1_1detection_1_1roi__heads_1_1_ro_i_heads_abd11c1ae9a31b67391b7c4a0af20e247}{has\+\_\+mask}} (self)
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1models_1_1detection_1_1roi__heads_1_1_ro_i_heads_ac56ae90c207851e87ebffafcde42e62e}{has\+\_\+keypoint}} (self)
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1models_1_1detection_1_1roi__heads_1_1_ro_i_heads_a5b3fc7dc971c7587988335bbaa1aba36}{assign\+\_\+targets\+\_\+to\+\_\+proposals}} (self, proposals, gt\+\_\+boxes, gt\+\_\+labels)
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1models_1_1detection_1_1roi__heads_1_1_ro_i_heads_a08c1f433a16bca10b0543108a0d35a9b}{subsample}} (self, labels)
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1models_1_1detection_1_1roi__heads_1_1_ro_i_heads_a49b3d55455d0d308f02929388993fe67}{add\+\_\+gt\+\_\+proposals}} (self, proposals, gt\+\_\+boxes)
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1models_1_1detection_1_1roi__heads_1_1_ro_i_heads_afe651b5c5af36d7427e9e8c2afc9e807}{check\+\_\+targets}} (self, targets)
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1models_1_1detection_1_1roi__heads_1_1_ro_i_heads_ab6993b9946aa85cf95f34eed8840fa20}{select\+\_\+training\+\_\+samples}} (self, proposals, targets)
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1models_1_1detection_1_1roi__heads_1_1_ro_i_heads_a98a3d2c458bbef36a9d33c0f45433301}{postprocess\+\_\+detections}} (self, class\+\_\+logits, box\+\_\+regression, proposals, image\+\_\+shapes)
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1models_1_1detection_1_1roi__heads_1_1_ro_i_heads_ab66dd1ee3851fba3eb66dc1882e2b78e}{forward}} (self, features, proposals, image\+\_\+shapes, targets=None)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1models_1_1detection_1_1roi__heads_1_1_ro_i_heads_a5d1500a115c8cf2100b787da717d96da}{box\+\_\+similarity}} = box\+\_\+ops.\+box\+\_\+iou
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1models_1_1detection_1_1roi__heads_1_1_ro_i_heads_aaa91df82abaf4aa56d8e458d20b32cea}{proposal\+\_\+matcher}} = det\+\_\+utils.\+Matcher(fg\+\_\+iou\+\_\+thresh, bg\+\_\+iou\+\_\+thresh, allow\+\_\+low\+\_\+quality\+\_\+matches=False)
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1models_1_1detection_1_1roi__heads_1_1_ro_i_heads_a7beb81d24e897b31b0b22aeefa7ef2bb}{fg\+\_\+bg\+\_\+sampler}} = det\+\_\+utils.\+Balanced\+Positive\+Negative\+Sampler(batch\+\_\+size\+\_\+per\+\_\+image, positive\+\_\+fraction)
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1models_1_1detection_1_1roi__heads_1_1_ro_i_heads_a5f22d9e42a92ae2744acf1913d536038}{box\+\_\+coder}} = det\+\_\+utils.\+Box\+Coder(bbox\+\_\+reg\+\_\+weights)
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1models_1_1detection_1_1roi__heads_1_1_ro_i_heads_afe5046511274be0fe555dd54b90008b4}{box\+\_\+roi\+\_\+pool}} = box\+\_\+roi\+\_\+pool
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1models_1_1detection_1_1roi__heads_1_1_ro_i_heads_a89c4d4b2733e237c43632e60a271176e}{box\+\_\+head}} = box\+\_\+head
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1models_1_1detection_1_1roi__heads_1_1_ro_i_heads_a6114ffe7c95be60ce32c84f393c73f1a}{box\+\_\+predictor}} = box\+\_\+predictor
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1models_1_1detection_1_1roi__heads_1_1_ro_i_heads_a034b407544b6713e16b80a17a648912f}{score\+\_\+thresh}} = score\+\_\+thresh
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1models_1_1detection_1_1roi__heads_1_1_ro_i_heads_a2f96ae0b3afed0f4e951943a617692f7}{nms\+\_\+thresh}} = nms\+\_\+thresh
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1models_1_1detection_1_1roi__heads_1_1_ro_i_heads_aa95b5b8567ccb5c33bd8e724ab6c0e84}{detections\+\_\+per\+\_\+img}} = detections\+\_\+per\+\_\+img
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1models_1_1detection_1_1roi__heads_1_1_ro_i_heads_af7ae1d18d1129415357432b5d175b33b}{mask\+\_\+roi\+\_\+pool}} = mask\+\_\+roi\+\_\+pool
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1models_1_1detection_1_1roi__heads_1_1_ro_i_heads_a444367388b1060ab2c2750642131f7e2}{mask\+\_\+head}} = mask\+\_\+head
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1models_1_1detection_1_1roi__heads_1_1_ro_i_heads_a4570bab88a4dd86d5fe773cfcefda614}{mask\+\_\+predictor}} = mask\+\_\+predictor
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1models_1_1detection_1_1roi__heads_1_1_ro_i_heads_aa0bea4ff7136352330bf789aa5bba8e0}{keypoint\+\_\+roi\+\_\+pool}} = keypoint\+\_\+roi\+\_\+pool
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1models_1_1detection_1_1roi__heads_1_1_ro_i_heads_a7980bb33b863963f81c53ef46e490a1b}{keypoint\+\_\+head}} = keypoint\+\_\+head
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1models_1_1detection_1_1roi__heads_1_1_ro_i_heads_af10fd86c21a981eb74b0303277393051}{keypoint\+\_\+predictor}} = keypoint\+\_\+predictor
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1models_1_1detection_1_1roi__heads_1_1_ro_i_heads_a68db736f99ba60acf75a2a0541f47953}{training}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+dict \mbox{\hyperlink{classtorchvision__down_1_1models_1_1detection_1_1roi__heads_1_1_ro_i_heads_a7d21979725af4db7505204bd6dae0319}{\+\_\+\+\_\+annotations\+\_\+\+\_\+}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classtorchvision__down_1_1models_1_1detection_1_1roi__heads_1_1_ro_i_heads_a77f8b919c2bd3e27dc43080d6bbefda1}\index{torchvision\_down.models.detection.roi\_heads.RoIHeads@{torchvision\_down.models.detection.roi\_heads.RoIHeads}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!torchvision\_down.models.detection.roi\_heads.RoIHeads@{torchvision\_down.models.detection.roi\_heads.RoIHeads}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1models_1_1detection_1_1roi__heads_1_1_ro_i_heads_a77f8b919c2bd3e27dc43080d6bbefda1} 
+torchvision\+\_\+down.\+models.\+detection.\+roi\+\_\+heads.\+Ro\+IHeads.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{box\+\_\+roi\+\_\+pool}{, }\item[{}]{box\+\_\+head}{, }\item[{}]{box\+\_\+predictor}{, }\item[{}]{fg\+\_\+iou\+\_\+thresh}{, }\item[{}]{bg\+\_\+iou\+\_\+thresh}{, }\item[{}]{batch\+\_\+size\+\_\+per\+\_\+image}{, }\item[{}]{positive\+\_\+fraction}{, }\item[{}]{bbox\+\_\+reg\+\_\+weights}{, }\item[{}]{score\+\_\+thresh}{, }\item[{}]{nms\+\_\+thresh}{, }\item[{}]{detections\+\_\+per\+\_\+img}{, }\item[{}]{mask\+\_\+roi\+\_\+pool}{ = {\ttfamily None}, }\item[{}]{mask\+\_\+head}{ = {\ttfamily None}, }\item[{}]{mask\+\_\+predictor}{ = {\ttfamily None}, }\item[{}]{keypoint\+\_\+roi\+\_\+pool}{ = {\ttfamily None}, }\item[{}]{keypoint\+\_\+head}{ = {\ttfamily None}, }\item[{}]{keypoint\+\_\+predictor}{ = {\ttfamily None}}\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classtorchvision__down_1_1models_1_1detection_1_1roi__heads_1_1_ro_i_heads_a49b3d55455d0d308f02929388993fe67}\index{torchvision\_down.models.detection.roi\_heads.RoIHeads@{torchvision\_down.models.detection.roi\_heads.RoIHeads}!add\_gt\_proposals@{add\_gt\_proposals}}
+\index{add\_gt\_proposals@{add\_gt\_proposals}!torchvision\_down.models.detection.roi\_heads.RoIHeads@{torchvision\_down.models.detection.roi\_heads.RoIHeads}}
+\doxysubsubsection{\texorpdfstring{add\_gt\_proposals()}{add\_gt\_proposals()}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1models_1_1detection_1_1roi__heads_1_1_ro_i_heads_a49b3d55455d0d308f02929388993fe67} 
+torchvision\+\_\+down.\+models.\+detection.\+roi\+\_\+heads.\+Ro\+IHeads.\+add\+\_\+gt\+\_\+proposals (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{proposals}{, }\item[{}]{gt\+\_\+boxes}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classtorchvision__down_1_1models_1_1detection_1_1roi__heads_1_1_ro_i_heads_a5b3fc7dc971c7587988335bbaa1aba36}\index{torchvision\_down.models.detection.roi\_heads.RoIHeads@{torchvision\_down.models.detection.roi\_heads.RoIHeads}!assign\_targets\_to\_proposals@{assign\_targets\_to\_proposals}}
+\index{assign\_targets\_to\_proposals@{assign\_targets\_to\_proposals}!torchvision\_down.models.detection.roi\_heads.RoIHeads@{torchvision\_down.models.detection.roi\_heads.RoIHeads}}
+\doxysubsubsection{\texorpdfstring{assign\_targets\_to\_proposals()}{assign\_targets\_to\_proposals()}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1models_1_1detection_1_1roi__heads_1_1_ro_i_heads_a5b3fc7dc971c7587988335bbaa1aba36} 
+torchvision\+\_\+down.\+models.\+detection.\+roi\+\_\+heads.\+Ro\+IHeads.\+assign\+\_\+targets\+\_\+to\+\_\+proposals (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{proposals}{, }\item[{}]{gt\+\_\+boxes}{, }\item[{}]{gt\+\_\+labels}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classtorchvision__down_1_1models_1_1detection_1_1roi__heads_1_1_ro_i_heads_afe651b5c5af36d7427e9e8c2afc9e807}\index{torchvision\_down.models.detection.roi\_heads.RoIHeads@{torchvision\_down.models.detection.roi\_heads.RoIHeads}!check\_targets@{check\_targets}}
+\index{check\_targets@{check\_targets}!torchvision\_down.models.detection.roi\_heads.RoIHeads@{torchvision\_down.models.detection.roi\_heads.RoIHeads}}
+\doxysubsubsection{\texorpdfstring{check\_targets()}{check\_targets()}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1models_1_1detection_1_1roi__heads_1_1_ro_i_heads_afe651b5c5af36d7427e9e8c2afc9e807} 
+torchvision\+\_\+down.\+models.\+detection.\+roi\+\_\+heads.\+Ro\+IHeads.\+check\+\_\+targets (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{targets}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classtorchvision__down_1_1models_1_1detection_1_1roi__heads_1_1_ro_i_heads_ab66dd1ee3851fba3eb66dc1882e2b78e}\index{torchvision\_down.models.detection.roi\_heads.RoIHeads@{torchvision\_down.models.detection.roi\_heads.RoIHeads}!forward@{forward}}
+\index{forward@{forward}!torchvision\_down.models.detection.roi\_heads.RoIHeads@{torchvision\_down.models.detection.roi\_heads.RoIHeads}}
+\doxysubsubsection{\texorpdfstring{forward()}{forward()}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1models_1_1detection_1_1roi__heads_1_1_ro_i_heads_ab66dd1ee3851fba3eb66dc1882e2b78e} 
+torchvision\+\_\+down.\+models.\+detection.\+roi\+\_\+heads.\+Ro\+IHeads.\+forward (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{features}{, }\item[{}]{proposals}{, }\item[{}]{image\+\_\+shapes}{, }\item[{}]{targets}{ = {\ttfamily None}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Args:
+    features (List[Tensor])
+    proposals (List[Tensor[N, 4]])
+    image_shapes (List[Tuple[H, W]])
+    targets (List[Dict])
+\end{DoxyVerb}
+ \Hypertarget{classtorchvision__down_1_1models_1_1detection_1_1roi__heads_1_1_ro_i_heads_ac56ae90c207851e87ebffafcde42e62e}\index{torchvision\_down.models.detection.roi\_heads.RoIHeads@{torchvision\_down.models.detection.roi\_heads.RoIHeads}!has\_keypoint@{has\_keypoint}}
+\index{has\_keypoint@{has\_keypoint}!torchvision\_down.models.detection.roi\_heads.RoIHeads@{torchvision\_down.models.detection.roi\_heads.RoIHeads}}
+\doxysubsubsection{\texorpdfstring{has\_keypoint()}{has\_keypoint()}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1models_1_1detection_1_1roi__heads_1_1_ro_i_heads_ac56ae90c207851e87ebffafcde42e62e} 
+torchvision\+\_\+down.\+models.\+detection.\+roi\+\_\+heads.\+Ro\+IHeads.\+has\+\_\+keypoint (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classtorchvision__down_1_1models_1_1detection_1_1roi__heads_1_1_ro_i_heads_abd11c1ae9a31b67391b7c4a0af20e247}\index{torchvision\_down.models.detection.roi\_heads.RoIHeads@{torchvision\_down.models.detection.roi\_heads.RoIHeads}!has\_mask@{has\_mask}}
+\index{has\_mask@{has\_mask}!torchvision\_down.models.detection.roi\_heads.RoIHeads@{torchvision\_down.models.detection.roi\_heads.RoIHeads}}
+\doxysubsubsection{\texorpdfstring{has\_mask()}{has\_mask()}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1models_1_1detection_1_1roi__heads_1_1_ro_i_heads_abd11c1ae9a31b67391b7c4a0af20e247} 
+torchvision\+\_\+down.\+models.\+detection.\+roi\+\_\+heads.\+Ro\+IHeads.\+has\+\_\+mask (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classtorchvision__down_1_1models_1_1detection_1_1roi__heads_1_1_ro_i_heads_a98a3d2c458bbef36a9d33c0f45433301}\index{torchvision\_down.models.detection.roi\_heads.RoIHeads@{torchvision\_down.models.detection.roi\_heads.RoIHeads}!postprocess\_detections@{postprocess\_detections}}
+\index{postprocess\_detections@{postprocess\_detections}!torchvision\_down.models.detection.roi\_heads.RoIHeads@{torchvision\_down.models.detection.roi\_heads.RoIHeads}}
+\doxysubsubsection{\texorpdfstring{postprocess\_detections()}{postprocess\_detections()}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1models_1_1detection_1_1roi__heads_1_1_ro_i_heads_a98a3d2c458bbef36a9d33c0f45433301} 
+torchvision\+\_\+down.\+models.\+detection.\+roi\+\_\+heads.\+Ro\+IHeads.\+postprocess\+\_\+detections (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{class\+\_\+logits}{, }\item[{}]{box\+\_\+regression}{, }\item[{}]{proposals}{, }\item[{}]{image\+\_\+shapes}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classtorchvision__down_1_1models_1_1detection_1_1roi__heads_1_1_ro_i_heads_ab6993b9946aa85cf95f34eed8840fa20}\index{torchvision\_down.models.detection.roi\_heads.RoIHeads@{torchvision\_down.models.detection.roi\_heads.RoIHeads}!select\_training\_samples@{select\_training\_samples}}
+\index{select\_training\_samples@{select\_training\_samples}!torchvision\_down.models.detection.roi\_heads.RoIHeads@{torchvision\_down.models.detection.roi\_heads.RoIHeads}}
+\doxysubsubsection{\texorpdfstring{select\_training\_samples()}{select\_training\_samples()}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1models_1_1detection_1_1roi__heads_1_1_ro_i_heads_ab6993b9946aa85cf95f34eed8840fa20} 
+torchvision\+\_\+down.\+models.\+detection.\+roi\+\_\+heads.\+Ro\+IHeads.\+select\+\_\+training\+\_\+samples (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{proposals}{, }\item[{}]{targets}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classtorchvision__down_1_1models_1_1detection_1_1roi__heads_1_1_ro_i_heads_a08c1f433a16bca10b0543108a0d35a9b}\index{torchvision\_down.models.detection.roi\_heads.RoIHeads@{torchvision\_down.models.detection.roi\_heads.RoIHeads}!subsample@{subsample}}
+\index{subsample@{subsample}!torchvision\_down.models.detection.roi\_heads.RoIHeads@{torchvision\_down.models.detection.roi\_heads.RoIHeads}}
+\doxysubsubsection{\texorpdfstring{subsample()}{subsample()}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1models_1_1detection_1_1roi__heads_1_1_ro_i_heads_a08c1f433a16bca10b0543108a0d35a9b} 
+torchvision\+\_\+down.\+models.\+detection.\+roi\+\_\+heads.\+Ro\+IHeads.\+subsample (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{labels}{}\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classtorchvision__down_1_1models_1_1detection_1_1roi__heads_1_1_ro_i_heads_a7d21979725af4db7505204bd6dae0319}\index{torchvision\_down.models.detection.roi\_heads.RoIHeads@{torchvision\_down.models.detection.roi\_heads.RoIHeads}!\_\_annotations\_\_@{\_\_annotations\_\_}}
+\index{\_\_annotations\_\_@{\_\_annotations\_\_}!torchvision\_down.models.detection.roi\_heads.RoIHeads@{torchvision\_down.models.detection.roi\_heads.RoIHeads}}
+\doxysubsubsection{\texorpdfstring{\_\_annotations\_\_}{\_\_annotations\_\_}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1models_1_1detection_1_1roi__heads_1_1_ro_i_heads_a7d21979725af4db7505204bd6dae0319} 
+dict torchvision\+\_\+down.\+models.\+detection.\+roi\+\_\+heads.\+Ro\+IHeads.\+\_\+\+\_\+annotations\+\_\+\+\_\+\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}box\_coder"{}}:\ det\_utils.BoxCoder,}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}proposal\_matcher"{}}:\ det\_utils.Matcher,}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}fg\_bg\_sampler"{}}:\ det\_utils.BalancedPositiveNegativeSampler,}
+\DoxyCodeLine{\ \ \ \ \}}
+
+\end{DoxyCode}
+\Hypertarget{classtorchvision__down_1_1models_1_1detection_1_1roi__heads_1_1_ro_i_heads_a5f22d9e42a92ae2744acf1913d536038}\index{torchvision\_down.models.detection.roi\_heads.RoIHeads@{torchvision\_down.models.detection.roi\_heads.RoIHeads}!box\_coder@{box\_coder}}
+\index{box\_coder@{box\_coder}!torchvision\_down.models.detection.roi\_heads.RoIHeads@{torchvision\_down.models.detection.roi\_heads.RoIHeads}}
+\doxysubsubsection{\texorpdfstring{box\_coder}{box\_coder}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1models_1_1detection_1_1roi__heads_1_1_ro_i_heads_a5f22d9e42a92ae2744acf1913d536038} 
+torchvision\+\_\+down.\+models.\+detection.\+roi\+\_\+heads.\+Ro\+IHeads.\+box\+\_\+coder = det\+\_\+utils.\+Box\+Coder(bbox\+\_\+reg\+\_\+weights)}
+
+\Hypertarget{classtorchvision__down_1_1models_1_1detection_1_1roi__heads_1_1_ro_i_heads_a89c4d4b2733e237c43632e60a271176e}\index{torchvision\_down.models.detection.roi\_heads.RoIHeads@{torchvision\_down.models.detection.roi\_heads.RoIHeads}!box\_head@{box\_head}}
+\index{box\_head@{box\_head}!torchvision\_down.models.detection.roi\_heads.RoIHeads@{torchvision\_down.models.detection.roi\_heads.RoIHeads}}
+\doxysubsubsection{\texorpdfstring{box\_head}{box\_head}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1models_1_1detection_1_1roi__heads_1_1_ro_i_heads_a89c4d4b2733e237c43632e60a271176e} 
+torchvision\+\_\+down.\+models.\+detection.\+roi\+\_\+heads.\+Ro\+IHeads.\+box\+\_\+head = box\+\_\+head}
+
+\Hypertarget{classtorchvision__down_1_1models_1_1detection_1_1roi__heads_1_1_ro_i_heads_a6114ffe7c95be60ce32c84f393c73f1a}\index{torchvision\_down.models.detection.roi\_heads.RoIHeads@{torchvision\_down.models.detection.roi\_heads.RoIHeads}!box\_predictor@{box\_predictor}}
+\index{box\_predictor@{box\_predictor}!torchvision\_down.models.detection.roi\_heads.RoIHeads@{torchvision\_down.models.detection.roi\_heads.RoIHeads}}
+\doxysubsubsection{\texorpdfstring{box\_predictor}{box\_predictor}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1models_1_1detection_1_1roi__heads_1_1_ro_i_heads_a6114ffe7c95be60ce32c84f393c73f1a} 
+torchvision\+\_\+down.\+models.\+detection.\+roi\+\_\+heads.\+Ro\+IHeads.\+box\+\_\+predictor = box\+\_\+predictor}
+
+\Hypertarget{classtorchvision__down_1_1models_1_1detection_1_1roi__heads_1_1_ro_i_heads_afe5046511274be0fe555dd54b90008b4}\index{torchvision\_down.models.detection.roi\_heads.RoIHeads@{torchvision\_down.models.detection.roi\_heads.RoIHeads}!box\_roi\_pool@{box\_roi\_pool}}
+\index{box\_roi\_pool@{box\_roi\_pool}!torchvision\_down.models.detection.roi\_heads.RoIHeads@{torchvision\_down.models.detection.roi\_heads.RoIHeads}}
+\doxysubsubsection{\texorpdfstring{box\_roi\_pool}{box\_roi\_pool}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1models_1_1detection_1_1roi__heads_1_1_ro_i_heads_afe5046511274be0fe555dd54b90008b4} 
+torchvision\+\_\+down.\+models.\+detection.\+roi\+\_\+heads.\+Ro\+IHeads.\+box\+\_\+roi\+\_\+pool = box\+\_\+roi\+\_\+pool}
+
+\Hypertarget{classtorchvision__down_1_1models_1_1detection_1_1roi__heads_1_1_ro_i_heads_a5d1500a115c8cf2100b787da717d96da}\index{torchvision\_down.models.detection.roi\_heads.RoIHeads@{torchvision\_down.models.detection.roi\_heads.RoIHeads}!box\_similarity@{box\_similarity}}
+\index{box\_similarity@{box\_similarity}!torchvision\_down.models.detection.roi\_heads.RoIHeads@{torchvision\_down.models.detection.roi\_heads.RoIHeads}}
+\doxysubsubsection{\texorpdfstring{box\_similarity}{box\_similarity}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1models_1_1detection_1_1roi__heads_1_1_ro_i_heads_a5d1500a115c8cf2100b787da717d96da} 
+torchvision\+\_\+down.\+models.\+detection.\+roi\+\_\+heads.\+Ro\+IHeads.\+box\+\_\+similarity = box\+\_\+ops.\+box\+\_\+iou}
+
+\Hypertarget{classtorchvision__down_1_1models_1_1detection_1_1roi__heads_1_1_ro_i_heads_aa95b5b8567ccb5c33bd8e724ab6c0e84}\index{torchvision\_down.models.detection.roi\_heads.RoIHeads@{torchvision\_down.models.detection.roi\_heads.RoIHeads}!detections\_per\_img@{detections\_per\_img}}
+\index{detections\_per\_img@{detections\_per\_img}!torchvision\_down.models.detection.roi\_heads.RoIHeads@{torchvision\_down.models.detection.roi\_heads.RoIHeads}}
+\doxysubsubsection{\texorpdfstring{detections\_per\_img}{detections\_per\_img}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1models_1_1detection_1_1roi__heads_1_1_ro_i_heads_aa95b5b8567ccb5c33bd8e724ab6c0e84} 
+torchvision\+\_\+down.\+models.\+detection.\+roi\+\_\+heads.\+Ro\+IHeads.\+detections\+\_\+per\+\_\+img = detections\+\_\+per\+\_\+img}
+
+\Hypertarget{classtorchvision__down_1_1models_1_1detection_1_1roi__heads_1_1_ro_i_heads_a7beb81d24e897b31b0b22aeefa7ef2bb}\index{torchvision\_down.models.detection.roi\_heads.RoIHeads@{torchvision\_down.models.detection.roi\_heads.RoIHeads}!fg\_bg\_sampler@{fg\_bg\_sampler}}
+\index{fg\_bg\_sampler@{fg\_bg\_sampler}!torchvision\_down.models.detection.roi\_heads.RoIHeads@{torchvision\_down.models.detection.roi\_heads.RoIHeads}}
+\doxysubsubsection{\texorpdfstring{fg\_bg\_sampler}{fg\_bg\_sampler}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1models_1_1detection_1_1roi__heads_1_1_ro_i_heads_a7beb81d24e897b31b0b22aeefa7ef2bb} 
+torchvision\+\_\+down.\+models.\+detection.\+roi\+\_\+heads.\+Ro\+IHeads.\+fg\+\_\+bg\+\_\+sampler = det\+\_\+utils.\+Balanced\+Positive\+Negative\+Sampler(batch\+\_\+size\+\_\+per\+\_\+image, positive\+\_\+fraction)}
+
+\Hypertarget{classtorchvision__down_1_1models_1_1detection_1_1roi__heads_1_1_ro_i_heads_a7980bb33b863963f81c53ef46e490a1b}\index{torchvision\_down.models.detection.roi\_heads.RoIHeads@{torchvision\_down.models.detection.roi\_heads.RoIHeads}!keypoint\_head@{keypoint\_head}}
+\index{keypoint\_head@{keypoint\_head}!torchvision\_down.models.detection.roi\_heads.RoIHeads@{torchvision\_down.models.detection.roi\_heads.RoIHeads}}
+\doxysubsubsection{\texorpdfstring{keypoint\_head}{keypoint\_head}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1models_1_1detection_1_1roi__heads_1_1_ro_i_heads_a7980bb33b863963f81c53ef46e490a1b} 
+torchvision\+\_\+down.\+models.\+detection.\+roi\+\_\+heads.\+Ro\+IHeads.\+keypoint\+\_\+head = keypoint\+\_\+head}
+
+\Hypertarget{classtorchvision__down_1_1models_1_1detection_1_1roi__heads_1_1_ro_i_heads_af10fd86c21a981eb74b0303277393051}\index{torchvision\_down.models.detection.roi\_heads.RoIHeads@{torchvision\_down.models.detection.roi\_heads.RoIHeads}!keypoint\_predictor@{keypoint\_predictor}}
+\index{keypoint\_predictor@{keypoint\_predictor}!torchvision\_down.models.detection.roi\_heads.RoIHeads@{torchvision\_down.models.detection.roi\_heads.RoIHeads}}
+\doxysubsubsection{\texorpdfstring{keypoint\_predictor}{keypoint\_predictor}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1models_1_1detection_1_1roi__heads_1_1_ro_i_heads_af10fd86c21a981eb74b0303277393051} 
+torchvision\+\_\+down.\+models.\+detection.\+roi\+\_\+heads.\+Ro\+IHeads.\+keypoint\+\_\+predictor = keypoint\+\_\+predictor}
+
+\Hypertarget{classtorchvision__down_1_1models_1_1detection_1_1roi__heads_1_1_ro_i_heads_aa0bea4ff7136352330bf789aa5bba8e0}\index{torchvision\_down.models.detection.roi\_heads.RoIHeads@{torchvision\_down.models.detection.roi\_heads.RoIHeads}!keypoint\_roi\_pool@{keypoint\_roi\_pool}}
+\index{keypoint\_roi\_pool@{keypoint\_roi\_pool}!torchvision\_down.models.detection.roi\_heads.RoIHeads@{torchvision\_down.models.detection.roi\_heads.RoIHeads}}
+\doxysubsubsection{\texorpdfstring{keypoint\_roi\_pool}{keypoint\_roi\_pool}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1models_1_1detection_1_1roi__heads_1_1_ro_i_heads_aa0bea4ff7136352330bf789aa5bba8e0} 
+torchvision\+\_\+down.\+models.\+detection.\+roi\+\_\+heads.\+Ro\+IHeads.\+keypoint\+\_\+roi\+\_\+pool = keypoint\+\_\+roi\+\_\+pool}
+
+\Hypertarget{classtorchvision__down_1_1models_1_1detection_1_1roi__heads_1_1_ro_i_heads_a444367388b1060ab2c2750642131f7e2}\index{torchvision\_down.models.detection.roi\_heads.RoIHeads@{torchvision\_down.models.detection.roi\_heads.RoIHeads}!mask\_head@{mask\_head}}
+\index{mask\_head@{mask\_head}!torchvision\_down.models.detection.roi\_heads.RoIHeads@{torchvision\_down.models.detection.roi\_heads.RoIHeads}}
+\doxysubsubsection{\texorpdfstring{mask\_head}{mask\_head}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1models_1_1detection_1_1roi__heads_1_1_ro_i_heads_a444367388b1060ab2c2750642131f7e2} 
+torchvision\+\_\+down.\+models.\+detection.\+roi\+\_\+heads.\+Ro\+IHeads.\+mask\+\_\+head = mask\+\_\+head}
+
+\Hypertarget{classtorchvision__down_1_1models_1_1detection_1_1roi__heads_1_1_ro_i_heads_a4570bab88a4dd86d5fe773cfcefda614}\index{torchvision\_down.models.detection.roi\_heads.RoIHeads@{torchvision\_down.models.detection.roi\_heads.RoIHeads}!mask\_predictor@{mask\_predictor}}
+\index{mask\_predictor@{mask\_predictor}!torchvision\_down.models.detection.roi\_heads.RoIHeads@{torchvision\_down.models.detection.roi\_heads.RoIHeads}}
+\doxysubsubsection{\texorpdfstring{mask\_predictor}{mask\_predictor}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1models_1_1detection_1_1roi__heads_1_1_ro_i_heads_a4570bab88a4dd86d5fe773cfcefda614} 
+torchvision\+\_\+down.\+models.\+detection.\+roi\+\_\+heads.\+Ro\+IHeads.\+mask\+\_\+predictor = mask\+\_\+predictor}
+
+\Hypertarget{classtorchvision__down_1_1models_1_1detection_1_1roi__heads_1_1_ro_i_heads_af7ae1d18d1129415357432b5d175b33b}\index{torchvision\_down.models.detection.roi\_heads.RoIHeads@{torchvision\_down.models.detection.roi\_heads.RoIHeads}!mask\_roi\_pool@{mask\_roi\_pool}}
+\index{mask\_roi\_pool@{mask\_roi\_pool}!torchvision\_down.models.detection.roi\_heads.RoIHeads@{torchvision\_down.models.detection.roi\_heads.RoIHeads}}
+\doxysubsubsection{\texorpdfstring{mask\_roi\_pool}{mask\_roi\_pool}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1models_1_1detection_1_1roi__heads_1_1_ro_i_heads_af7ae1d18d1129415357432b5d175b33b} 
+torchvision\+\_\+down.\+models.\+detection.\+roi\+\_\+heads.\+Ro\+IHeads.\+mask\+\_\+roi\+\_\+pool = mask\+\_\+roi\+\_\+pool}
+
+\Hypertarget{classtorchvision__down_1_1models_1_1detection_1_1roi__heads_1_1_ro_i_heads_a2f96ae0b3afed0f4e951943a617692f7}\index{torchvision\_down.models.detection.roi\_heads.RoIHeads@{torchvision\_down.models.detection.roi\_heads.RoIHeads}!nms\_thresh@{nms\_thresh}}
+\index{nms\_thresh@{nms\_thresh}!torchvision\_down.models.detection.roi\_heads.RoIHeads@{torchvision\_down.models.detection.roi\_heads.RoIHeads}}
+\doxysubsubsection{\texorpdfstring{nms\_thresh}{nms\_thresh}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1models_1_1detection_1_1roi__heads_1_1_ro_i_heads_a2f96ae0b3afed0f4e951943a617692f7} 
+torchvision\+\_\+down.\+models.\+detection.\+roi\+\_\+heads.\+Ro\+IHeads.\+nms\+\_\+thresh = nms\+\_\+thresh}
+
+\Hypertarget{classtorchvision__down_1_1models_1_1detection_1_1roi__heads_1_1_ro_i_heads_aaa91df82abaf4aa56d8e458d20b32cea}\index{torchvision\_down.models.detection.roi\_heads.RoIHeads@{torchvision\_down.models.detection.roi\_heads.RoIHeads}!proposal\_matcher@{proposal\_matcher}}
+\index{proposal\_matcher@{proposal\_matcher}!torchvision\_down.models.detection.roi\_heads.RoIHeads@{torchvision\_down.models.detection.roi\_heads.RoIHeads}}
+\doxysubsubsection{\texorpdfstring{proposal\_matcher}{proposal\_matcher}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1models_1_1detection_1_1roi__heads_1_1_ro_i_heads_aaa91df82abaf4aa56d8e458d20b32cea} 
+torchvision\+\_\+down.\+models.\+detection.\+roi\+\_\+heads.\+Ro\+IHeads.\+proposal\+\_\+matcher = det\+\_\+utils.\+Matcher(fg\+\_\+iou\+\_\+thresh, bg\+\_\+iou\+\_\+thresh, allow\+\_\+low\+\_\+quality\+\_\+matches=False)}
+
+\Hypertarget{classtorchvision__down_1_1models_1_1detection_1_1roi__heads_1_1_ro_i_heads_a034b407544b6713e16b80a17a648912f}\index{torchvision\_down.models.detection.roi\_heads.RoIHeads@{torchvision\_down.models.detection.roi\_heads.RoIHeads}!score\_thresh@{score\_thresh}}
+\index{score\_thresh@{score\_thresh}!torchvision\_down.models.detection.roi\_heads.RoIHeads@{torchvision\_down.models.detection.roi\_heads.RoIHeads}}
+\doxysubsubsection{\texorpdfstring{score\_thresh}{score\_thresh}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1models_1_1detection_1_1roi__heads_1_1_ro_i_heads_a034b407544b6713e16b80a17a648912f} 
+torchvision\+\_\+down.\+models.\+detection.\+roi\+\_\+heads.\+Ro\+IHeads.\+score\+\_\+thresh = score\+\_\+thresh}
+
+\Hypertarget{classtorchvision__down_1_1models_1_1detection_1_1roi__heads_1_1_ro_i_heads_a68db736f99ba60acf75a2a0541f47953}\index{torchvision\_down.models.detection.roi\_heads.RoIHeads@{torchvision\_down.models.detection.roi\_heads.RoIHeads}!training@{training}}
+\index{training@{training}!torchvision\_down.models.detection.roi\_heads.RoIHeads@{torchvision\_down.models.detection.roi\_heads.RoIHeads}}
+\doxysubsubsection{\texorpdfstring{training}{training}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1models_1_1detection_1_1roi__heads_1_1_ro_i_heads_a68db736f99ba60acf75a2a0541f47953} 
+torchvision\+\_\+down.\+models.\+detection.\+roi\+\_\+heads.\+Ro\+IHeads.\+training}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Cervi\+AI/torchvision\+\_\+down/models/detection/\mbox{\hyperlink{roi__heads_8py}{roi\+\_\+heads.\+py}}\end{DoxyCompactItemize}

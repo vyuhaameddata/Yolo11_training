@@ -1,0 +1,82 @@
+\doxysection{torchvision\+\_\+down.\+transforms.\+transforms.\+Random\+Grayscale Class Reference}
+\hypertarget{classtorchvision__down_1_1transforms_1_1transforms_1_1_random_grayscale}{}\label{classtorchvision__down_1_1transforms_1_1transforms_1_1_random_grayscale}\index{torchvision\_down.transforms.transforms.RandomGrayscale@{torchvision\_down.transforms.transforms.RandomGrayscale}}
+Inheritance diagram for torchvision\+\_\+down.\+transforms.\+transforms.\+Random\+Grayscale\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classtorchvision__down_1_1transforms_1_1transforms_1_1_random_grayscale}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1transforms_1_1transforms_1_1_random_grayscale_a3d162edcb5f671e5048c69ebb089a55a}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, \mbox{\hyperlink{classtorchvision__down_1_1transforms_1_1transforms_1_1_random_grayscale_a224d270ffce680f203ce864aca2e5498}{p}}=0.\+1)
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1transforms_1_1transforms_1_1_random_grayscale_a400035f5a341e8a4730d0dbd8c7337d4}{forward}} (self, img)
+\item 
+str \mbox{\hyperlink{classtorchvision__down_1_1transforms_1_1transforms_1_1_random_grayscale_a499a4ae437927de3113bb2e33c758f7c}{\+\_\+\+\_\+repr\+\_\+\+\_\+}} (self)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1transforms_1_1transforms_1_1_random_grayscale_a224d270ffce680f203ce864aca2e5498}{p}} = p
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}Randomly convert image to grayscale with a probability of p (default 0.1).
+If the image is torch Tensor, it is expected
+to have [..., 3, H, W] shape, where ... means an arbitrary number of leading dimensions
+
+Args:
+    p (float): probability that image should be converted to grayscale.
+
+Returns:
+    PIL Image or Tensor: Grayscale version of the input image with probability p and unchanged
+    with probability (1-p).
+    - If input image is 1 channel: grayscale version is 1 channel
+    - If input image is 3 channel: grayscale version is 3 channel with r == g == b
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classtorchvision__down_1_1transforms_1_1transforms_1_1_random_grayscale_a3d162edcb5f671e5048c69ebb089a55a}\index{torchvision\_down.transforms.transforms.RandomGrayscale@{torchvision\_down.transforms.transforms.RandomGrayscale}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!torchvision\_down.transforms.transforms.RandomGrayscale@{torchvision\_down.transforms.transforms.RandomGrayscale}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1transforms_1_1transforms_1_1_random_grayscale_a3d162edcb5f671e5048c69ebb089a55a} 
+torchvision\+\_\+down.\+transforms.\+transforms.\+Random\+Grayscale.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{p}{ = {\ttfamily 0.1}}\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classtorchvision__down_1_1transforms_1_1transforms_1_1_random_grayscale_a499a4ae437927de3113bb2e33c758f7c}\index{torchvision\_down.transforms.transforms.RandomGrayscale@{torchvision\_down.transforms.transforms.RandomGrayscale}!\_\_repr\_\_@{\_\_repr\_\_}}
+\index{\_\_repr\_\_@{\_\_repr\_\_}!torchvision\_down.transforms.transforms.RandomGrayscale@{torchvision\_down.transforms.transforms.RandomGrayscale}}
+\doxysubsubsection{\texorpdfstring{\_\_repr\_\_()}{\_\_repr\_\_()}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1transforms_1_1transforms_1_1_random_grayscale_a499a4ae437927de3113bb2e33c758f7c} 
+ str torchvision\+\_\+down.\+transforms.\+transforms.\+Random\+Grayscale.\+\_\+\+\_\+repr\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classtorchvision__down_1_1transforms_1_1transforms_1_1_random_grayscale_a400035f5a341e8a4730d0dbd8c7337d4}\index{torchvision\_down.transforms.transforms.RandomGrayscale@{torchvision\_down.transforms.transforms.RandomGrayscale}!forward@{forward}}
+\index{forward@{forward}!torchvision\_down.transforms.transforms.RandomGrayscale@{torchvision\_down.transforms.transforms.RandomGrayscale}}
+\doxysubsubsection{\texorpdfstring{forward()}{forward()}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1transforms_1_1transforms_1_1_random_grayscale_a400035f5a341e8a4730d0dbd8c7337d4} 
+torchvision\+\_\+down.\+transforms.\+transforms.\+Random\+Grayscale.\+forward (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{img}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Args:
+    img (PIL Image or Tensor): Image to be converted to grayscale.
+
+Returns:
+    PIL Image or Tensor: Randomly grayscaled image.
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classtorchvision__down_1_1transforms_1_1transforms_1_1_random_grayscale_a224d270ffce680f203ce864aca2e5498}\index{torchvision\_down.transforms.transforms.RandomGrayscale@{torchvision\_down.transforms.transforms.RandomGrayscale}!p@{p}}
+\index{p@{p}!torchvision\_down.transforms.transforms.RandomGrayscale@{torchvision\_down.transforms.transforms.RandomGrayscale}}
+\doxysubsubsection{\texorpdfstring{p}{p}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1transforms_1_1transforms_1_1_random_grayscale_a224d270ffce680f203ce864aca2e5498} 
+torchvision\+\_\+down.\+transforms.\+transforms.\+Random\+Grayscale.\+p = p}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Cervi\+AI/torchvision\+\_\+down/transforms/\mbox{\hyperlink{transforms_8py}{transforms.\+py}}\end{DoxyCompactItemize}

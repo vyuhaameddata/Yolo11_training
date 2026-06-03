@@ -1,0 +1,68 @@
+\doxysection{models.\+common.\+Bottleneck Class Reference}
+\hypertarget{classmodels_1_1common_1_1_bottleneck}{}\label{classmodels_1_1common_1_1_bottleneck}\index{models.common.Bottleneck@{models.common.Bottleneck}}
+Inheritance diagram for models.\+common.\+Bottleneck\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{classmodels_1_1common_1_1_bottleneck}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classmodels_1_1common_1_1_bottleneck_a2564b616fb909cbc95fc6c1757aa13ef}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, c1, c2, shortcut=True, g=1, e=0.\+5)
+\item 
+\mbox{\hyperlink{classmodels_1_1common_1_1_bottleneck_a7129357bcb3c76f40ad04ad1398a1b73}{forward}} (self, x)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classmodels_1_1common_1_1_bottleneck_a424adcd9e98f1cb91cc3234bf40975ad}{cv1}} = \mbox{\hyperlink{classmodels_1_1common_1_1_conv}{Conv}}(c1, c\+\_\+, 1, 1)
+\item 
+\mbox{\hyperlink{classmodels_1_1common_1_1_bottleneck_adebaf30425b9d55bf80795b90af022b6}{cv2}} = \mbox{\hyperlink{classmodels_1_1common_1_1_conv}{Conv}}(c\+\_\+, c2, 3, 1, g=g)
+\item 
+\mbox{\hyperlink{classmodels_1_1common_1_1_bottleneck_afd3d258814dd96f1ca54e952222a926b}{add}} = c2
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classmodels_1_1common_1_1_bottleneck_a2564b616fb909cbc95fc6c1757aa13ef}\index{models.common.Bottleneck@{models.common.Bottleneck}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!models.common.Bottleneck@{models.common.Bottleneck}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily \label{classmodels_1_1common_1_1_bottleneck_a2564b616fb909cbc95fc6c1757aa13ef} 
+models.\+common.\+Bottleneck.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{c1}{, }\item[{}]{c2}{, }\item[{}]{shortcut}{ = {\ttfamily True}, }\item[{}]{g}{ = {\ttfamily 1}, }\item[{}]{e}{ = {\ttfamily 0.5}}\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classmodels_1_1common_1_1_bottleneck_a7129357bcb3c76f40ad04ad1398a1b73}\index{models.common.Bottleneck@{models.common.Bottleneck}!forward@{forward}}
+\index{forward@{forward}!models.common.Bottleneck@{models.common.Bottleneck}}
+\doxysubsubsection{\texorpdfstring{forward()}{forward()}}
+{\footnotesize\ttfamily \label{classmodels_1_1common_1_1_bottleneck_a7129357bcb3c76f40ad04ad1398a1b73} 
+models.\+common.\+Bottleneck.\+forward (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{x}{}\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classmodels_1_1common_1_1_bottleneck_afd3d258814dd96f1ca54e952222a926b}\index{models.common.Bottleneck@{models.common.Bottleneck}!add@{add}}
+\index{add@{add}!models.common.Bottleneck@{models.common.Bottleneck}}
+\doxysubsubsection{\texorpdfstring{add}{add}}
+{\footnotesize\ttfamily \label{classmodels_1_1common_1_1_bottleneck_afd3d258814dd96f1ca54e952222a926b} 
+models.\+common.\+Bottleneck.\+add = c2}
+
+\Hypertarget{classmodels_1_1common_1_1_bottleneck_a424adcd9e98f1cb91cc3234bf40975ad}\index{models.common.Bottleneck@{models.common.Bottleneck}!cv1@{cv1}}
+\index{cv1@{cv1}!models.common.Bottleneck@{models.common.Bottleneck}}
+\doxysubsubsection{\texorpdfstring{cv1}{cv1}}
+{\footnotesize\ttfamily \label{classmodels_1_1common_1_1_bottleneck_a424adcd9e98f1cb91cc3234bf40975ad} 
+models.\+common.\+Bottleneck.\+cv1 = \mbox{\hyperlink{classmodels_1_1common_1_1_conv}{Conv}}(c1, c\+\_\+, 1, 1)}
+
+\Hypertarget{classmodels_1_1common_1_1_bottleneck_adebaf30425b9d55bf80795b90af022b6}\index{models.common.Bottleneck@{models.common.Bottleneck}!cv2@{cv2}}
+\index{cv2@{cv2}!models.common.Bottleneck@{models.common.Bottleneck}}
+\doxysubsubsection{\texorpdfstring{cv2}{cv2}}
+{\footnotesize\ttfamily \label{classmodels_1_1common_1_1_bottleneck_adebaf30425b9d55bf80795b90af022b6} 
+models.\+common.\+Bottleneck.\+cv2 = \mbox{\hyperlink{classmodels_1_1common_1_1_conv}{Conv}}(c\+\_\+, c2, 3, 1, g=g)}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Cervi\+AI/models/\mbox{\hyperlink{common_8py}{common.\+py}}\end{DoxyCompactItemize}

@@ -1,0 +1,86 @@
+\doxysection{torchvision\+\_\+down.\+transforms.\+transforms.\+Random\+Solarize Class Reference}
+\hypertarget{classtorchvision__down_1_1transforms_1_1transforms_1_1_random_solarize}{}\label{classtorchvision__down_1_1transforms_1_1transforms_1_1_random_solarize}\index{torchvision\_down.transforms.transforms.RandomSolarize@{torchvision\_down.transforms.transforms.RandomSolarize}}
+Inheritance diagram for torchvision\+\_\+down.\+transforms.\+transforms.\+Random\+Solarize\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classtorchvision__down_1_1transforms_1_1transforms_1_1_random_solarize}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1transforms_1_1transforms_1_1_random_solarize_a280d5c0dedafbaa045c4215cde62c437}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, \mbox{\hyperlink{classtorchvision__down_1_1transforms_1_1transforms_1_1_random_solarize_a442534258f5150840300bb513bc98013}{threshold}}, \mbox{\hyperlink{classtorchvision__down_1_1transforms_1_1transforms_1_1_random_solarize_a45f210d90d5a29a559d25539c12eb382}{p}}=0.\+5)
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1transforms_1_1transforms_1_1_random_solarize_a77acf51a619fca9de33fdd5f782e0793}{forward}} (self, img)
+\item 
+str \mbox{\hyperlink{classtorchvision__down_1_1transforms_1_1transforms_1_1_random_solarize_a42203a9fc6e9bcee6068cea3f3c73104}{\+\_\+\+\_\+repr\+\_\+\+\_\+}} (self)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1transforms_1_1transforms_1_1_random_solarize_a442534258f5150840300bb513bc98013}{threshold}} = threshold
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1transforms_1_1transforms_1_1_random_solarize_a45f210d90d5a29a559d25539c12eb382}{p}} = p
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}Solarize the image randomly with a given probability by inverting all pixel
+values above a threshold. If img is a Tensor, it is expected to be in [..., 1 or 3, H, W] format,
+where ... means it can have an arbitrary number of leading dimensions.
+If img is PIL Image, it is expected to be in mode "L" or "RGB".
+
+Args:
+    threshold (float): all pixels equal or above this value are inverted.
+    p (float): probability of the image being color inverted. Default value is 0.5
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classtorchvision__down_1_1transforms_1_1transforms_1_1_random_solarize_a280d5c0dedafbaa045c4215cde62c437}\index{torchvision\_down.transforms.transforms.RandomSolarize@{torchvision\_down.transforms.transforms.RandomSolarize}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!torchvision\_down.transforms.transforms.RandomSolarize@{torchvision\_down.transforms.transforms.RandomSolarize}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1transforms_1_1transforms_1_1_random_solarize_a280d5c0dedafbaa045c4215cde62c437} 
+torchvision\+\_\+down.\+transforms.\+transforms.\+Random\+Solarize.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{threshold}{, }\item[{}]{p}{ = {\ttfamily 0.5}}\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classtorchvision__down_1_1transforms_1_1transforms_1_1_random_solarize_a42203a9fc6e9bcee6068cea3f3c73104}\index{torchvision\_down.transforms.transforms.RandomSolarize@{torchvision\_down.transforms.transforms.RandomSolarize}!\_\_repr\_\_@{\_\_repr\_\_}}
+\index{\_\_repr\_\_@{\_\_repr\_\_}!torchvision\_down.transforms.transforms.RandomSolarize@{torchvision\_down.transforms.transforms.RandomSolarize}}
+\doxysubsubsection{\texorpdfstring{\_\_repr\_\_()}{\_\_repr\_\_()}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1transforms_1_1transforms_1_1_random_solarize_a42203a9fc6e9bcee6068cea3f3c73104} 
+ str torchvision\+\_\+down.\+transforms.\+transforms.\+Random\+Solarize.\+\_\+\+\_\+repr\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classtorchvision__down_1_1transforms_1_1transforms_1_1_random_solarize_a77acf51a619fca9de33fdd5f782e0793}\index{torchvision\_down.transforms.transforms.RandomSolarize@{torchvision\_down.transforms.transforms.RandomSolarize}!forward@{forward}}
+\index{forward@{forward}!torchvision\_down.transforms.transforms.RandomSolarize@{torchvision\_down.transforms.transforms.RandomSolarize}}
+\doxysubsubsection{\texorpdfstring{forward()}{forward()}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1transforms_1_1transforms_1_1_random_solarize_a77acf51a619fca9de33fdd5f782e0793} 
+torchvision\+\_\+down.\+transforms.\+transforms.\+Random\+Solarize.\+forward (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{img}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Args:
+    img (PIL Image or Tensor): Image to be solarized.
+
+Returns:
+    PIL Image or Tensor: Randomly solarized image.
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classtorchvision__down_1_1transforms_1_1transforms_1_1_random_solarize_a45f210d90d5a29a559d25539c12eb382}\index{torchvision\_down.transforms.transforms.RandomSolarize@{torchvision\_down.transforms.transforms.RandomSolarize}!p@{p}}
+\index{p@{p}!torchvision\_down.transforms.transforms.RandomSolarize@{torchvision\_down.transforms.transforms.RandomSolarize}}
+\doxysubsubsection{\texorpdfstring{p}{p}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1transforms_1_1transforms_1_1_random_solarize_a45f210d90d5a29a559d25539c12eb382} 
+torchvision\+\_\+down.\+transforms.\+transforms.\+Random\+Solarize.\+p = p}
+
+\Hypertarget{classtorchvision__down_1_1transforms_1_1transforms_1_1_random_solarize_a442534258f5150840300bb513bc98013}\index{torchvision\_down.transforms.transforms.RandomSolarize@{torchvision\_down.transforms.transforms.RandomSolarize}!threshold@{threshold}}
+\index{threshold@{threshold}!torchvision\_down.transforms.transforms.RandomSolarize@{torchvision\_down.transforms.transforms.RandomSolarize}}
+\doxysubsubsection{\texorpdfstring{threshold}{threshold}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1transforms_1_1transforms_1_1_random_solarize_a442534258f5150840300bb513bc98013} 
+torchvision\+\_\+down.\+transforms.\+transforms.\+Random\+Solarize.\+threshold = threshold}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Cervi\+AI/torchvision\+\_\+down/transforms/\mbox{\hyperlink{transforms_8py}{transforms.\+py}}\end{DoxyCompactItemize}

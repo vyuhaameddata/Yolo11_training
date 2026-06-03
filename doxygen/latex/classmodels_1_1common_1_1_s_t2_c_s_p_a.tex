@@ -1,0 +1,76 @@
+\doxysection{models.\+common.\+ST2\+CSPA Class Reference}
+\hypertarget{classmodels_1_1common_1_1_s_t2_c_s_p_a}{}\label{classmodels_1_1common_1_1_s_t2_c_s_p_a}\index{models.common.ST2CSPA@{models.common.ST2CSPA}}
+Inheritance diagram for models.\+common.\+ST2\+CSPA\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classmodels_1_1common_1_1_s_t2_c_s_p_a}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classmodels_1_1common_1_1_s_t2_c_s_p_a_a9c9681fcd522437d253dacc1c5db0b94}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, c1, c2, n=1, shortcut=True, g=1, e=0.\+5)
+\item 
+\mbox{\hyperlink{classmodels_1_1common_1_1_s_t2_c_s_p_a_a1a70c2bf3c05ff7731406bf00db9a287}{forward}} (self, x)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classmodels_1_1common_1_1_s_t2_c_s_p_a_a7a52d16c80cd0f84213272d6a58d29ef}{cv1}} = \mbox{\hyperlink{classmodels_1_1common_1_1_conv}{Conv}}(c1, c\+\_\+, 1, 1)
+\item 
+\mbox{\hyperlink{classmodels_1_1common_1_1_s_t2_c_s_p_a_abbb010740537e5a096ecc01c92fcfcc1}{cv2}} = \mbox{\hyperlink{classmodels_1_1common_1_1_conv}{Conv}}(c1, c\+\_\+, 1, 1)
+\item 
+\mbox{\hyperlink{classmodels_1_1common_1_1_s_t2_c_s_p_a_ac2ba8dc5c83693a37a94c1a6c9d30984}{cv3}} = \mbox{\hyperlink{classmodels_1_1common_1_1_conv}{Conv}}(2 \texorpdfstring{$\ast$}{*} c\+\_\+, c2, 1, 1)
+\item 
+\mbox{\hyperlink{classmodels_1_1common_1_1_s_t2_c_s_p_a_a4862530ebe88e56933ec4a7ad992090f}{m}} = \mbox{\hyperlink{classmodels_1_1common_1_1_swin_transformer2_block}{Swin\+Transformer2\+Block}}(c\+\_\+, c\+\_\+, num\+\_\+heads, n)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classmodels_1_1common_1_1_s_t2_c_s_p_a_a9c9681fcd522437d253dacc1c5db0b94}\index{models.common.ST2CSPA@{models.common.ST2CSPA}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!models.common.ST2CSPA@{models.common.ST2CSPA}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily \label{classmodels_1_1common_1_1_s_t2_c_s_p_a_a9c9681fcd522437d253dacc1c5db0b94} 
+models.\+common.\+ST2\+CSPA.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{c1}{, }\item[{}]{c2}{, }\item[{}]{n}{ = {\ttfamily 1}, }\item[{}]{shortcut}{ = {\ttfamily True}, }\item[{}]{g}{ = {\ttfamily 1}, }\item[{}]{e}{ = {\ttfamily 0.5}}\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classmodels_1_1common_1_1_s_t2_c_s_p_a_a1a70c2bf3c05ff7731406bf00db9a287}\index{models.common.ST2CSPA@{models.common.ST2CSPA}!forward@{forward}}
+\index{forward@{forward}!models.common.ST2CSPA@{models.common.ST2CSPA}}
+\doxysubsubsection{\texorpdfstring{forward()}{forward()}}
+{\footnotesize\ttfamily \label{classmodels_1_1common_1_1_s_t2_c_s_p_a_a1a70c2bf3c05ff7731406bf00db9a287} 
+models.\+common.\+ST2\+CSPA.\+forward (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{x}{}\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classmodels_1_1common_1_1_s_t2_c_s_p_a_a7a52d16c80cd0f84213272d6a58d29ef}\index{models.common.ST2CSPA@{models.common.ST2CSPA}!cv1@{cv1}}
+\index{cv1@{cv1}!models.common.ST2CSPA@{models.common.ST2CSPA}}
+\doxysubsubsection{\texorpdfstring{cv1}{cv1}}
+{\footnotesize\ttfamily \label{classmodels_1_1common_1_1_s_t2_c_s_p_a_a7a52d16c80cd0f84213272d6a58d29ef} 
+models.\+common.\+ST2\+CSPA.\+cv1 = \mbox{\hyperlink{classmodels_1_1common_1_1_conv}{Conv}}(c1, c\+\_\+, 1, 1)}
+
+\Hypertarget{classmodels_1_1common_1_1_s_t2_c_s_p_a_abbb010740537e5a096ecc01c92fcfcc1}\index{models.common.ST2CSPA@{models.common.ST2CSPA}!cv2@{cv2}}
+\index{cv2@{cv2}!models.common.ST2CSPA@{models.common.ST2CSPA}}
+\doxysubsubsection{\texorpdfstring{cv2}{cv2}}
+{\footnotesize\ttfamily \label{classmodels_1_1common_1_1_s_t2_c_s_p_a_abbb010740537e5a096ecc01c92fcfcc1} 
+models.\+common.\+ST2\+CSPA.\+cv2 = \mbox{\hyperlink{classmodels_1_1common_1_1_conv}{Conv}}(c1, c\+\_\+, 1, 1)}
+
+\Hypertarget{classmodels_1_1common_1_1_s_t2_c_s_p_a_ac2ba8dc5c83693a37a94c1a6c9d30984}\index{models.common.ST2CSPA@{models.common.ST2CSPA}!cv3@{cv3}}
+\index{cv3@{cv3}!models.common.ST2CSPA@{models.common.ST2CSPA}}
+\doxysubsubsection{\texorpdfstring{cv3}{cv3}}
+{\footnotesize\ttfamily \label{classmodels_1_1common_1_1_s_t2_c_s_p_a_ac2ba8dc5c83693a37a94c1a6c9d30984} 
+models.\+common.\+ST2\+CSPA.\+cv3 = \mbox{\hyperlink{classmodels_1_1common_1_1_conv}{Conv}}(2 \texorpdfstring{$\ast$}{*} c\+\_\+, c2, 1, 1)}
+
+\Hypertarget{classmodels_1_1common_1_1_s_t2_c_s_p_a_a4862530ebe88e56933ec4a7ad992090f}\index{models.common.ST2CSPA@{models.common.ST2CSPA}!m@{m}}
+\index{m@{m}!models.common.ST2CSPA@{models.common.ST2CSPA}}
+\doxysubsubsection{\texorpdfstring{m}{m}}
+{\footnotesize\ttfamily \label{classmodels_1_1common_1_1_s_t2_c_s_p_a_a4862530ebe88e56933ec4a7ad992090f} 
+models.\+common.\+ST2\+CSPA.\+m = \mbox{\hyperlink{classmodels_1_1common_1_1_swin_transformer2_block}{Swin\+Transformer2\+Block}}(c\+\_\+, c\+\_\+, num\+\_\+heads, n)}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Cervi\+AI/models/\mbox{\hyperlink{common_8py}{common.\+py}}\end{DoxyCompactItemize}

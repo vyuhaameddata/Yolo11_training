@@ -1,0 +1,112 @@
+\doxysection{torchvision\+\_\+down.\+models.\+quantization.\+resnet.\+Quantizable\+Bottleneck Class Reference}
+\hypertarget{classtorchvision__down_1_1models_1_1quantization_1_1resnet_1_1_quantizable_bottleneck}{}\label{classtorchvision__down_1_1models_1_1quantization_1_1resnet_1_1_quantizable_bottleneck}\index{torchvision\_down.models.quantization.resnet.QuantizableBottleneck@{torchvision\_down.models.quantization.resnet.QuantizableBottleneck}}
+Inheritance diagram for torchvision\+\_\+down.\+models.\+quantization.\+resnet.\+Quantizable\+Bottleneck\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{classtorchvision__down_1_1models_1_1quantization_1_1resnet_1_1_quantizable_bottleneck}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+None \mbox{\hyperlink{classtorchvision__down_1_1models_1_1quantization_1_1resnet_1_1_quantizable_bottleneck_adf0897cf62ac596d24ce0a1f7b36e71d}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, \texorpdfstring{$\ast$}{*}Any args, \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}Any kwargs)
+\item 
+Tensor \mbox{\hyperlink{classtorchvision__down_1_1models_1_1quantization_1_1resnet_1_1_quantizable_bottleneck_ac387c0e7797941fc6a47bb5a64931bd3}{forward}} (self, Tensor x)
+\item 
+None \mbox{\hyperlink{classtorchvision__down_1_1models_1_1quantization_1_1resnet_1_1_quantizable_bottleneck_abb020c33f8df5dd0ab29e1aa6c92b833}{fuse\+\_\+model}} (self, Optional\mbox{[}bool\mbox{]} is\+\_\+qat=None)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{classtorchvision__down_1_1models_1_1resnet_1_1_bottleneck}{torchvision\+\_\+down.\+models.\+resnet.\+Bottleneck}}}
+\begin{DoxyCompactItemize}
+\item 
+None \mbox{\hyperlink{classtorchvision__down_1_1models_1_1resnet_1_1_bottleneck_a986518ce873fceff539362ee3e850829}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, int inplanes, int planes, int \mbox{\hyperlink{classtorchvision__down_1_1models_1_1resnet_1_1_bottleneck_a9aed1d669f23213776486def56a4205d}{stride}}=1, Optional\mbox{[}nn.\+Module\mbox{]} \mbox{\hyperlink{classtorchvision__down_1_1models_1_1resnet_1_1_bottleneck_aa5703243b8a7b3f3d53a8ddc55c133d6}{downsample}}=None, int groups=1, int base\+\_\+width=64, int dilation=1, Optional\mbox{[}Callable\mbox{[}..., nn.\+Module\mbox{]}\mbox{]} norm\+\_\+layer=None)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1models_1_1quantization_1_1resnet_1_1_quantizable_bottleneck_aa726388dd1925cb4f071a29549c0e449}{skip\+\_\+add\+\_\+relu}} = nn.\+quantized.\+Float\+Functional()
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1models_1_1quantization_1_1resnet_1_1_quantizable_bottleneck_aa131634f3e9d7a620664cb40d21fbfe5}{relu1}} = nn.\+Re\+LU(inplace=False)
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1models_1_1quantization_1_1resnet_1_1_quantizable_bottleneck_a31fce20e88251ce3b19d02c1786dacd7}{relu2}} = nn.\+Re\+LU(inplace=False)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes inherited from \mbox{\hyperlink{classtorchvision__down_1_1models_1_1resnet_1_1_bottleneck}{torchvision\+\_\+down.\+models.\+resnet.\+Bottleneck}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1models_1_1resnet_1_1_bottleneck_a56303ea947a066fe41181232691cfdb0}{conv1}} = \mbox{\hyperlink{namespacetorchvision__down_1_1models_1_1resnet_a5871bf7ce1939b09f11345ba66069193}{conv1x1}}(inplanes, width)
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1models_1_1resnet_1_1_bottleneck_a6802c2943d0ba8ef38ba2a00cd47f3ae}{bn1}} = norm\+\_\+layer(width)
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1models_1_1resnet_1_1_bottleneck_ad691bffbb6e66e770deeadce2172dc94}{conv2}} = \mbox{\hyperlink{namespacetorchvision__down_1_1models_1_1resnet_ae2d435c4ca5854c513215bb5a0d3bfbe}{conv3x3}}(width, width, \mbox{\hyperlink{classtorchvision__down_1_1models_1_1resnet_1_1_bottleneck_a9aed1d669f23213776486def56a4205d}{stride}}, groups, dilation)
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1models_1_1resnet_1_1_bottleneck_ac5aa915347dcbc4a0992f322ee179f42}{bn2}} = norm\+\_\+layer(width)
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1models_1_1resnet_1_1_bottleneck_a7cdf99e33eca6380eeeebf7e5297f3f8}{conv3}} = \mbox{\hyperlink{namespacetorchvision__down_1_1models_1_1resnet_a5871bf7ce1939b09f11345ba66069193}{conv1x1}}(width, planes \texorpdfstring{$\ast$}{*} self.\+expansion)
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1models_1_1resnet_1_1_bottleneck_a14983c7aeadf1e1fb498a9ab3323a792}{bn3}} = norm\+\_\+layer(planes \texorpdfstring{$\ast$}{*} self.\+expansion)
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1models_1_1resnet_1_1_bottleneck_a4b99e4b9e5b4d0ed6d1947f5275673e2}{relu}} = nn.\+Re\+LU(inplace=True)
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1models_1_1resnet_1_1_bottleneck_aa5703243b8a7b3f3d53a8ddc55c133d6}{downsample}} = downsample
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1models_1_1resnet_1_1_bottleneck_a9aed1d669f23213776486def56a4205d}{stride}} = stride
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Additional Inherited Members}
+\doxysubsection*{Static Public Attributes inherited from \mbox{\hyperlink{classtorchvision__down_1_1models_1_1resnet_1_1_bottleneck}{torchvision\+\_\+down.\+models.\+resnet.\+Bottleneck}}}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{classtorchvision__down_1_1models_1_1resnet_1_1_bottleneck_a58fb37caff13f6fbef83e5e57fbc2892}{expansion}} = 4
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classtorchvision__down_1_1models_1_1quantization_1_1resnet_1_1_quantizable_bottleneck_adf0897cf62ac596d24ce0a1f7b36e71d}\index{torchvision\_down.models.quantization.resnet.QuantizableBottleneck@{torchvision\_down.models.quantization.resnet.QuantizableBottleneck}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!torchvision\_down.models.quantization.resnet.QuantizableBottleneck@{torchvision\_down.models.quantization.resnet.QuantizableBottleneck}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1models_1_1quantization_1_1resnet_1_1_quantizable_bottleneck_adf0897cf62ac596d24ce0a1f7b36e71d} 
+ None torchvision\+\_\+down.\+models.\+quantization.\+resnet.\+Quantizable\+Bottleneck.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{\texorpdfstring{$\ast$}{*}Any}]{args}{, }\item[{\texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}Any}]{kwargs}{}\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classtorchvision__down_1_1models_1_1quantization_1_1resnet_1_1_quantizable_bottleneck_ac387c0e7797941fc6a47bb5a64931bd3}\index{torchvision\_down.models.quantization.resnet.QuantizableBottleneck@{torchvision\_down.models.quantization.resnet.QuantizableBottleneck}!forward@{forward}}
+\index{forward@{forward}!torchvision\_down.models.quantization.resnet.QuantizableBottleneck@{torchvision\_down.models.quantization.resnet.QuantizableBottleneck}}
+\doxysubsubsection{\texorpdfstring{forward()}{forward()}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1models_1_1quantization_1_1resnet_1_1_quantizable_bottleneck_ac387c0e7797941fc6a47bb5a64931bd3} 
+ Tensor torchvision\+\_\+down.\+models.\+quantization.\+resnet.\+Quantizable\+Bottleneck.\+forward (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{Tensor}]{x}{}\end{DoxyParamCaption})}
+
+
+
+Reimplemented from \mbox{\hyperlink{classtorchvision__down_1_1models_1_1resnet_1_1_bottleneck_a034a3e1aa937fe66907853c5557ea083}{torchvision\+\_\+down.\+models.\+resnet.\+Bottleneck}}.
+
+\Hypertarget{classtorchvision__down_1_1models_1_1quantization_1_1resnet_1_1_quantizable_bottleneck_abb020c33f8df5dd0ab29e1aa6c92b833}\index{torchvision\_down.models.quantization.resnet.QuantizableBottleneck@{torchvision\_down.models.quantization.resnet.QuantizableBottleneck}!fuse\_model@{fuse\_model}}
+\index{fuse\_model@{fuse\_model}!torchvision\_down.models.quantization.resnet.QuantizableBottleneck@{torchvision\_down.models.quantization.resnet.QuantizableBottleneck}}
+\doxysubsubsection{\texorpdfstring{fuse\_model()}{fuse\_model()}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1models_1_1quantization_1_1resnet_1_1_quantizable_bottleneck_abb020c33f8df5dd0ab29e1aa6c92b833} 
+ None torchvision\+\_\+down.\+models.\+quantization.\+resnet.\+Quantizable\+Bottleneck.\+fuse\+\_\+model (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{Optional\mbox{[}bool\mbox{]} }]{is\+\_\+qat}{ = {\ttfamily None}}\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classtorchvision__down_1_1models_1_1quantization_1_1resnet_1_1_quantizable_bottleneck_aa131634f3e9d7a620664cb40d21fbfe5}\index{torchvision\_down.models.quantization.resnet.QuantizableBottleneck@{torchvision\_down.models.quantization.resnet.QuantizableBottleneck}!relu1@{relu1}}
+\index{relu1@{relu1}!torchvision\_down.models.quantization.resnet.QuantizableBottleneck@{torchvision\_down.models.quantization.resnet.QuantizableBottleneck}}
+\doxysubsubsection{\texorpdfstring{relu1}{relu1}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1models_1_1quantization_1_1resnet_1_1_quantizable_bottleneck_aa131634f3e9d7a620664cb40d21fbfe5} 
+torchvision\+\_\+down.\+models.\+quantization.\+resnet.\+Quantizable\+Bottleneck.\+relu1 = nn.\+Re\+LU(inplace=False)}
+
+\Hypertarget{classtorchvision__down_1_1models_1_1quantization_1_1resnet_1_1_quantizable_bottleneck_a31fce20e88251ce3b19d02c1786dacd7}\index{torchvision\_down.models.quantization.resnet.QuantizableBottleneck@{torchvision\_down.models.quantization.resnet.QuantizableBottleneck}!relu2@{relu2}}
+\index{relu2@{relu2}!torchvision\_down.models.quantization.resnet.QuantizableBottleneck@{torchvision\_down.models.quantization.resnet.QuantizableBottleneck}}
+\doxysubsubsection{\texorpdfstring{relu2}{relu2}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1models_1_1quantization_1_1resnet_1_1_quantizable_bottleneck_a31fce20e88251ce3b19d02c1786dacd7} 
+torchvision\+\_\+down.\+models.\+quantization.\+resnet.\+Quantizable\+Bottleneck.\+relu2 = nn.\+Re\+LU(inplace=False)}
+
+\Hypertarget{classtorchvision__down_1_1models_1_1quantization_1_1resnet_1_1_quantizable_bottleneck_aa726388dd1925cb4f071a29549c0e449}\index{torchvision\_down.models.quantization.resnet.QuantizableBottleneck@{torchvision\_down.models.quantization.resnet.QuantizableBottleneck}!skip\_add\_relu@{skip\_add\_relu}}
+\index{skip\_add\_relu@{skip\_add\_relu}!torchvision\_down.models.quantization.resnet.QuantizableBottleneck@{torchvision\_down.models.quantization.resnet.QuantizableBottleneck}}
+\doxysubsubsection{\texorpdfstring{skip\_add\_relu}{skip\_add\_relu}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1models_1_1quantization_1_1resnet_1_1_quantizable_bottleneck_aa726388dd1925cb4f071a29549c0e449} 
+torchvision\+\_\+down.\+models.\+quantization.\+resnet.\+Quantizable\+Bottleneck.\+skip\+\_\+add\+\_\+relu = nn.\+quantized.\+Float\+Functional()}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Cervi\+AI/torchvision\+\_\+down/models/quantization/\mbox{\hyperlink{quantization_2resnet_8py}{resnet.\+py}}\end{DoxyCompactItemize}

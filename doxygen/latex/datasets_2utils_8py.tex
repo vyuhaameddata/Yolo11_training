@@ -1,0 +1,73 @@
+\doxysection{Cervi\+AI/torchvision\+\_\+down/datasets/utils.py File Reference}
+\hypertarget{datasets_2utils_8py}{}\label{datasets_2utils_8py}\index{CerviAI/torchvision\_down/datasets/utils.py@{CerviAI/torchvision\_down/datasets/utils.py}}
+\doxysubsubsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+namespace \mbox{\hyperlink{namespacetorchvision__down}{torchvision\+\_\+down}}
+\item 
+namespace \mbox{\hyperlink{namespacetorchvision__down_1_1datasets}{torchvision\+\_\+down.\+datasets}}
+\item 
+namespace \mbox{\hyperlink{namespacetorchvision__down_1_1datasets_1_1utils}{torchvision\+\_\+down.\+datasets.\+utils}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+None \mbox{\hyperlink{namespacetorchvision__down_1_1datasets_1_1utils_ab84706e711da768af3ceaf1eaae602cf}{torchvision\+\_\+down.\+datasets.\+utils.\+\_\+urlretrieve}} (str url, str filename, int chunk\+\_\+size=1024)
+\item 
+Callable\mbox{[}\mbox{[}int, int, int\mbox{]}, None\mbox{]} \mbox{\hyperlink{namespacetorchvision__down_1_1datasets_1_1utils_afcdf59042bbe0fd5a7114e9aacfeed58}{torchvision\+\_\+down.\+datasets.\+utils.\+gen\+\_\+bar\+\_\+updater}} ()
+\item 
+str \mbox{\hyperlink{namespacetorchvision__down_1_1datasets_1_1utils_a41550e44773595fae83a251e10e6cc7a}{torchvision\+\_\+down.\+datasets.\+utils.\+calculate\+\_\+md5}} (str fpath, int chunk\+\_\+size=1024 \texorpdfstring{$\ast$}{*}1024)
+\item 
+bool \mbox{\hyperlink{namespacetorchvision__down_1_1datasets_1_1utils_acecc94e29f7aec60775e198d962f9974}{torchvision\+\_\+down.\+datasets.\+utils.\+check\+\_\+md5}} (str fpath, str md5, \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}Any kwargs)
+\item 
+bool \mbox{\hyperlink{namespacetorchvision__down_1_1datasets_1_1utils_a5e6713a653e271d81107fcadddc36925}{torchvision\+\_\+down.\+datasets.\+utils.\+check\+\_\+integrity}} (str fpath, Optional\mbox{[}str\mbox{]} md5=None)
+\item 
+str \mbox{\hyperlink{namespacetorchvision__down_1_1datasets_1_1utils_a9c035a65d4af34620693f8658e74ef02}{torchvision\+\_\+down.\+datasets.\+utils.\+\_\+get\+\_\+redirect\+\_\+url}} (str url, int max\+\_\+hops=3)
+\item 
+Optional\mbox{[}str\mbox{]} \mbox{\hyperlink{namespacetorchvision__down_1_1datasets_1_1utils_af829169e04a8cedf457eb78dd20eebae}{torchvision\+\_\+down.\+datasets.\+utils.\+\_\+get\+\_\+google\+\_\+drive\+\_\+file\+\_\+id}} (str url)
+\item 
+None \mbox{\hyperlink{namespacetorchvision__down_1_1datasets_1_1utils_a8479fcb1ce192b40a2f1956b0a13943e}{torchvision\+\_\+down.\+datasets.\+utils.\+download\+\_\+url}} (str url, str root, Optional\mbox{[}str\mbox{]} filename=None, Optional\mbox{[}str\mbox{]} md5=None, int max\+\_\+redirect\+\_\+hops=3)
+\item 
+List\mbox{[}str\mbox{]} \mbox{\hyperlink{namespacetorchvision__down_1_1datasets_1_1utils_aee33c5b2f82fac1bfdbb316359c37478}{torchvision\+\_\+down.\+datasets.\+utils.\+list\+\_\+dir}} (str root, bool prefix=False)
+\item 
+List\mbox{[}str\mbox{]} \mbox{\hyperlink{namespacetorchvision__down_1_1datasets_1_1utils_a1f00429a54e888d32459f2f6406ade67}{torchvision\+\_\+down.\+datasets.\+utils.\+list\+\_\+files}} (str root, str suffix, bool prefix=False)
+\item 
+bool \mbox{\hyperlink{namespacetorchvision__down_1_1datasets_1_1utils_a2bcc41090078c4d4fda555e8dde10613}{torchvision\+\_\+down.\+datasets.\+utils.\+\_\+quota\+\_\+exceeded}} (bytes first\+\_\+chunk)
+\item 
+\mbox{\hyperlink{namespacetorchvision__down_1_1datasets_1_1utils_af224738eb49a86280846a280fd28bcf3}{torchvision\+\_\+down.\+datasets.\+utils.\+download\+\_\+file\+\_\+from\+\_\+google\+\_\+drive}} (str file\+\_\+id, str root, Optional\mbox{[}str\mbox{]} filename=None, Optional\mbox{[}str\mbox{]} md5=None)
+\item 
+Optional\mbox{[}str\mbox{]} \mbox{\hyperlink{namespacetorchvision__down_1_1datasets_1_1utils_aaf000a5e4ae16a1472e9e808709d6ab0}{torchvision\+\_\+down.\+datasets.\+utils.\+\_\+get\+\_\+confirm\+\_\+token}} (requests.\+models.\+Response response)
+\item 
+None \mbox{\hyperlink{namespacetorchvision__down_1_1datasets_1_1utils_add77df490708b699c7542e1b4286106a}{torchvision\+\_\+down.\+datasets.\+utils.\+\_\+save\+\_\+response\+\_\+content}} (Iterator\mbox{[}bytes\mbox{]} response\+\_\+gen, str destination)
+\item 
+None \mbox{\hyperlink{namespacetorchvision__down_1_1datasets_1_1utils_a41dccaa683595219aec28120bb6b861e}{torchvision\+\_\+down.\+datasets.\+utils.\+\_\+extract\+\_\+tar}} (str from\+\_\+path, str to\+\_\+path, Optional\mbox{[}str\mbox{]} compression)
+\item 
+None \mbox{\hyperlink{namespacetorchvision__down_1_1datasets_1_1utils_a6a650ece5d0438c4a64f46f164e89821}{torchvision\+\_\+down.\+datasets.\+utils.\+\_\+extract\+\_\+zip}} (str from\+\_\+path, str to\+\_\+path, Optional\mbox{[}str\mbox{]} compression)
+\item 
+Tuple\mbox{[}str, Optional\mbox{[}str\mbox{]}, Optional\mbox{[}str\mbox{]}\mbox{]} \mbox{\hyperlink{namespacetorchvision__down_1_1datasets_1_1utils_af1dab29a93ddbd1e4724234d8be3d8fc}{torchvision\+\_\+down.\+datasets.\+utils.\+\_\+detect\+\_\+file\+\_\+type}} (str file)
+\item 
+str \mbox{\hyperlink{namespacetorchvision__down_1_1datasets_1_1utils_a950dd0b4eb33cf38d671ab32727b4eba}{torchvision\+\_\+down.\+datasets.\+utils.\+\_\+decompress}} (str from\+\_\+path, Optional\mbox{[}str\mbox{]} to\+\_\+path=None, bool remove\+\_\+finished=False)
+\item 
+str \mbox{\hyperlink{namespacetorchvision__down_1_1datasets_1_1utils_a9500e1f64a71c9338498014cbbcda2a8}{torchvision\+\_\+down.\+datasets.\+utils.\+extract\+\_\+archive}} (str from\+\_\+path, Optional\mbox{[}str\mbox{]} to\+\_\+path=None, bool remove\+\_\+finished=False)
+\item 
+None \mbox{\hyperlink{namespacetorchvision__down_1_1datasets_1_1utils_a09ba13fb7d76630c30a0f5472db5adf4}{torchvision\+\_\+down.\+datasets.\+utils.\+download\+\_\+and\+\_\+extract\+\_\+archive}} (str url, str download\+\_\+root, Optional\mbox{[}str\mbox{]} extract\+\_\+root=None, Optional\mbox{[}str\mbox{]} filename=None, Optional\mbox{[}str\mbox{]} md5=None, bool remove\+\_\+finished=False)
+\item 
+str \mbox{\hyperlink{namespacetorchvision__down_1_1datasets_1_1utils_ab477f18de62ca77fdd402e6bcf65f09b}{torchvision\+\_\+down.\+datasets.\+utils.\+iterable\+\_\+to\+\_\+str}} (Iterable iterable)
+\item 
+\mbox{\hyperlink{namespacetorchvision__down_1_1datasets_1_1utils_acf63b3454d17d18c38c5d85e72fdac0e}{T}} \mbox{\hyperlink{namespacetorchvision__down_1_1datasets_1_1utils_abcf5d9cfc0236d3f7e59d0cd8d61f934}{torchvision\+\_\+down.\+datasets.\+utils.\+verify\+\_\+str\+\_\+arg}} (\mbox{\hyperlink{namespacetorchvision__down_1_1datasets_1_1utils_acf63b3454d17d18c38c5d85e72fdac0e}{T}} value, Optional\mbox{[}str\mbox{]} arg=None, Iterable\mbox{[}\mbox{\hyperlink{namespacetorchvision__down_1_1datasets_1_1utils_acf63b3454d17d18c38c5d85e72fdac0e}{T}}\mbox{]} valid\+\_\+values=None, Optional\mbox{[}str\mbox{]} custom\+\_\+msg=None)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+str \mbox{\hyperlink{namespacetorchvision__down_1_1datasets_1_1utils_a298cdaea608926d6cbeca478d5c2d5d6}{torchvision\+\_\+down.\+datasets.\+utils.\+USER\+\_\+\+AGENT}} = "{}pytorch/vision"{}
+\item 
+dict \mbox{\hyperlink{namespacetorchvision__down_1_1datasets_1_1utils_a3f804efbb7a27a9a4728799e555275b5}{torchvision\+\_\+down.\+datasets.\+utils.\+\_\+\+ZIP\+\_\+\+COMPRESSION\+\_\+\+MAP}}
+\item 
+dict \mbox{\hyperlink{namespacetorchvision__down_1_1datasets_1_1utils_ab134b1ba24d4785d711a5c1fd97155b2}{torchvision\+\_\+down.\+datasets.\+utils.\+\_\+\+ARCHIVE\+\_\+\+EXTRACTORS}}
+\item 
+dict \mbox{\hyperlink{namespacetorchvision__down_1_1datasets_1_1utils_a8ba30318f9eae89926232b3955495492}{torchvision\+\_\+down.\+datasets.\+utils.\+\_\+\+COMPRESSED\+\_\+\+FILE\+\_\+\+OPENERS}}
+\item 
+dict \mbox{\hyperlink{namespacetorchvision__down_1_1datasets_1_1utils_aaab72d1d50e56b672a599ef33869a8f4}{torchvision\+\_\+down.\+datasets.\+utils.\+\_\+\+FILE\+\_\+\+TYPE\+\_\+\+ALIASES}}
+\item 
+\mbox{\hyperlink{namespacetorchvision__down_1_1datasets_1_1utils_acf63b3454d17d18c38c5d85e72fdac0e}{torchvision\+\_\+down.\+datasets.\+utils.\+T}} = Type\+Var("{}T"{}, str, bytes)
+\end{DoxyCompactItemize}

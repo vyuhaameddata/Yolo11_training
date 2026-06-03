@@ -1,0 +1,41 @@
+\doxysection{Cervi\+AI/torchvision\+\_\+down/io/video.py File Reference}
+\hypertarget{video_8py}{}\label{video_8py}\index{CerviAI/torchvision\_down/io/video.py@{CerviAI/torchvision\_down/io/video.py}}
+\doxysubsubsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+namespace \mbox{\hyperlink{namespacetorchvision__down}{torchvision\+\_\+down}}
+\item 
+namespace \mbox{\hyperlink{namespacetorchvision__down_1_1io}{torchvision\+\_\+down.\+io}}
+\item 
+namespace \mbox{\hyperlink{namespacetorchvision__down_1_1io_1_1video}{torchvision\+\_\+down.\+io.\+video}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+None \mbox{\hyperlink{namespacetorchvision__down_1_1io_1_1video_abbeb4711880e045e2e2b01eaab1ac4d9}{torchvision\+\_\+down.\+io.\+video.\+\_\+check\+\_\+av\+\_\+available}} ()
+\item 
+bool \mbox{\hyperlink{namespacetorchvision__down_1_1io_1_1video_ad6a1ba961ba60cc1d72e4e012df1d151}{torchvision\+\_\+down.\+io.\+video.\+\_\+av\+\_\+available}} ()
+\item 
+None \mbox{\hyperlink{namespacetorchvision__down_1_1io_1_1video_a9176da51f8e0f61460a39961c6f8a6f0}{torchvision\+\_\+down.\+io.\+video.\+write\+\_\+video}} (str filename, torch.\+Tensor video\+\_\+array, float fps, str video\+\_\+codec="{}libx264"{}, Optional\mbox{[}Dict\mbox{[}str, Any\mbox{]}\mbox{]} options=None, Optional\mbox{[}torch.\+Tensor\mbox{]} audio\+\_\+array=None, Optional\mbox{[}float\mbox{]} audio\+\_\+fps=None, Optional\mbox{[}str\mbox{]} audio\+\_\+codec=None, Optional\mbox{[}Dict\mbox{[}str, Any\mbox{]}\mbox{]} audio\+\_\+options=None)
+\item 
+List\mbox{[}"{}av.\+frame.\+Frame"{}\mbox{]} \mbox{\hyperlink{namespacetorchvision__down_1_1io_1_1video_a248bdd9e9ec298fbb63771b97027abbe}{torchvision\+\_\+down.\+io.\+video.\+\_\+read\+\_\+from\+\_\+stream}} ("{}av.\+container.\+Container"{} container, float start\+\_\+offset, float end\+\_\+offset, str pts\+\_\+unit, "{}av.\+stream.\+Stream"{} stream, Dict\mbox{[}str, Optional\mbox{[}Union\mbox{[}int, Tuple\mbox{[}int,...\mbox{]}, List\mbox{[}int\mbox{]}\mbox{]}\mbox{]}\mbox{]} stream\+\_\+name)
+\item 
+torch.\+Tensor \mbox{\hyperlink{namespacetorchvision__down_1_1io_1_1video_a9a5a3f7ae3f48b992b90db6e2c8199c9}{torchvision\+\_\+down.\+io.\+video.\+\_\+align\+\_\+audio\+\_\+frames}} (torch.\+Tensor aframes, List\mbox{[}"{}av.\+frame.\+Frame"{}\mbox{]} audio\+\_\+frames, int ref\+\_\+start, float ref\+\_\+end)
+\item 
+Tuple\mbox{[}torch.\+Tensor, torch.\+Tensor, Dict\mbox{[}str, Any\mbox{]}\mbox{]} \mbox{\hyperlink{namespacetorchvision__down_1_1io_1_1video_a65e9bcbb2362647f4811ebc541c588c6}{torchvision\+\_\+down.\+io.\+video.\+read\+\_\+video}} (str filename, Union\mbox{[}float, Fraction\mbox{]} start\+\_\+pts=0, Optional\mbox{[}Union\mbox{[}float, Fraction\mbox{]}\mbox{]} end\+\_\+pts=None, str pts\+\_\+unit="{}pts"{})
+\item 
+bool \mbox{\hyperlink{namespacetorchvision__down_1_1io_1_1video_ae8ecf5b3cc332924db6cafbdb7bacccf}{torchvision\+\_\+down.\+io.\+video.\+\_\+can\+\_\+read\+\_\+timestamps\+\_\+from\+\_\+packets}} ("{}av.\+container.\+Container"{} container)
+\item 
+List\mbox{[}int\mbox{]} \mbox{\hyperlink{namespacetorchvision__down_1_1io_1_1video_a04e5b738e26a7f26b845e20606bc7b62}{torchvision\+\_\+down.\+io.\+video.\+\_\+decode\+\_\+video\+\_\+timestamps}} ("{}av.\+container.\+Container"{} container)
+\item 
+Tuple\mbox{[}List\mbox{[}int\mbox{]}, Optional\mbox{[}float\mbox{]}\mbox{]} \mbox{\hyperlink{namespacetorchvision__down_1_1io_1_1video_ad2e934ead036cc745143f84874d559c3}{torchvision\+\_\+down.\+io.\+video.\+read\+\_\+video\+\_\+timestamps}} (str filename, str pts\+\_\+unit="{}pts"{})
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{namespacetorchvision__down_1_1io_1_1video_a7d3711c682d862ffd51d25c72316b8bb}{torchvision\+\_\+down.\+io.\+video.\+av}}
+\item 
+int \mbox{\hyperlink{namespacetorchvision__down_1_1io_1_1video_abee0e45b9837077b4ecaeb449fbd8831}{torchvision\+\_\+down.\+io.\+video.\+\_\+\+CALLED\+\_\+\+TIMES}} = 0
+\item 
+int \mbox{\hyperlink{namespacetorchvision__down_1_1io_1_1video_a74f2370963141ee6773461207c5dc740}{torchvision\+\_\+down.\+io.\+video.\+\_\+\+GC\+\_\+\+COLLECTION\+\_\+\+INTERVAL}} = 10
+\end{DoxyCompactItemize}

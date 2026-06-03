@@ -1,0 +1,190 @@
+\doxysection{torchvision\+\_\+down.\+models.\+resnet.\+Res\+Net Class Reference}
+\hypertarget{classtorchvision__down_1_1models_1_1resnet_1_1_res_net}{}\label{classtorchvision__down_1_1models_1_1resnet_1_1_res_net}\index{torchvision\_down.models.resnet.ResNet@{torchvision\_down.models.resnet.ResNet}}
+Inheritance diagram for torchvision\+\_\+down.\+models.\+resnet.\+Res\+Net\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{classtorchvision__down_1_1models_1_1resnet_1_1_res_net}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+None \mbox{\hyperlink{classtorchvision__down_1_1models_1_1resnet_1_1_res_net_a8088bd6dbfd947e9a7dae79a1de047da}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, Type\mbox{[}Union\mbox{[}\mbox{\hyperlink{classtorchvision__down_1_1models_1_1resnet_1_1_basic_block}{Basic\+Block}}, \mbox{\hyperlink{classtorchvision__down_1_1models_1_1resnet_1_1_bottleneck}{Bottleneck}}\mbox{]}\mbox{]} block, List\mbox{[}int\mbox{]} layers, int num\+\_\+classes=1000, bool zero\+\_\+init\+\_\+residual=False, int \mbox{\hyperlink{classtorchvision__down_1_1models_1_1resnet_1_1_res_net_ae7a3cf406dc04c5c546e307a2e2e2f83}{groups}}=1, int width\+\_\+per\+\_\+group=64, Optional\mbox{[}List\mbox{[}bool\mbox{]}\mbox{]} replace\+\_\+stride\+\_\+with\+\_\+dilation=None, Optional\mbox{[}Callable\mbox{[}..., nn.\+Module\mbox{]}\mbox{]} norm\+\_\+layer=None)
+\item 
+Tensor \mbox{\hyperlink{classtorchvision__down_1_1models_1_1resnet_1_1_res_net_af78b55c4d687b4c073b6d630ea14f0cf}{forward}} (self, Tensor x)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{classtorchvision__down_1_1models_1_1resnet_1_1_res_net_aa26e623a9a9cf0bd6fdbdf916c98bdd4}{inplanes}} = 64
+\item 
+int \mbox{\hyperlink{classtorchvision__down_1_1models_1_1resnet_1_1_res_net_a57a52f9d1693a7686158a24c686c36e3}{dilation}} = 1
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1models_1_1resnet_1_1_res_net_ae7a3cf406dc04c5c546e307a2e2e2f83}{groups}} = groups
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1models_1_1resnet_1_1_res_net_a7351ed9cfb701b9768496bec1747aae3}{base\+\_\+width}} = width\+\_\+per\+\_\+group
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1models_1_1resnet_1_1_res_net_a814b5bf367908aae1df516258ffb2052}{conv1}} = nn.\+Conv2d(3, self.\+inplanes, kernel\+\_\+size=7, stride=2, padding=3, bias=False)
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1models_1_1resnet_1_1_res_net_af126e5cecc9bfc4c828f3b65cb5e14d8}{bn1}} = norm\+\_\+layer(self.\+inplanes)
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1models_1_1resnet_1_1_res_net_ad086748091785307f266cc9a990ba2a7}{relu}} = nn.\+Re\+LU(inplace=True)
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1models_1_1resnet_1_1_res_net_ad8cedbb9a536105d3c6b879a78d0fe39}{maxpool}} = nn.\+Max\+Pool2d(kernel\+\_\+size=3, stride=2, padding=1)
+\item 
+nn.\+Sequential \mbox{\hyperlink{classtorchvision__down_1_1models_1_1resnet_1_1_res_net_adb6b588bf63a6b96f4f2bab7329f538f}{layer1}} = self.\+\_\+make\+\_\+layer(block, 64, layers\mbox{[}0\mbox{]})
+\item 
+nn.\+Sequential \mbox{\hyperlink{classtorchvision__down_1_1models_1_1resnet_1_1_res_net_a2c4da0eae79bb782553fe5f1719b760e}{layer2}} = self.\+\_\+make\+\_\+layer(block, 128, layers\mbox{[}1\mbox{]}, stride=2, dilate=replace\+\_\+stride\+\_\+with\+\_\+dilation\mbox{[}0\mbox{]})
+\item 
+nn.\+Sequential \mbox{\hyperlink{classtorchvision__down_1_1models_1_1resnet_1_1_res_net_add3bc2ee6fb29cb0f17fcd73d58d26e9}{layer3}} = self.\+\_\+make\+\_\+layer(block, 256, layers\mbox{[}2\mbox{]}, stride=2, dilate=replace\+\_\+stride\+\_\+with\+\_\+dilation\mbox{[}1\mbox{]})
+\item 
+nn.\+Sequential \mbox{\hyperlink{classtorchvision__down_1_1models_1_1resnet_1_1_res_net_a00a9ca78cdac812225d22bda2b19ee5a}{layer4}} = self.\+\_\+make\+\_\+layer(block, 512, layers\mbox{[}3\mbox{]}, stride=2, dilate=replace\+\_\+stride\+\_\+with\+\_\+dilation\mbox{[}2\mbox{]})
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1models_1_1resnet_1_1_res_net_a223586a7ed128fc50d8cd3d682057dca}{avgpool}} = nn.\+Adaptive\+Avg\+Pool2d((1, 1))
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1models_1_1resnet_1_1_res_net_a78ac6d29027b9ae0155051f59a7b6f68}{fc}} = nn.\+Linear(512 \texorpdfstring{$\ast$}{*} block.\+expansion, num\+\_\+classes)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+nn.\+Sequential \mbox{\hyperlink{classtorchvision__down_1_1models_1_1resnet_1_1_res_net_a56497c467603e93f9c056d2ebce1d821}{\+\_\+make\+\_\+layer}} (self, Type\mbox{[}Union\mbox{[}\mbox{\hyperlink{classtorchvision__down_1_1models_1_1resnet_1_1_basic_block}{Basic\+Block}}, \mbox{\hyperlink{classtorchvision__down_1_1models_1_1resnet_1_1_bottleneck}{Bottleneck}}\mbox{]}\mbox{]} block, int planes, int blocks, int stride=1, bool dilate=False)
+\item 
+Tensor \mbox{\hyperlink{classtorchvision__down_1_1models_1_1resnet_1_1_res_net_a69468ad2bd7f124a9b213b76f7b46102}{\+\_\+forward\+\_\+impl}} (self, Tensor x)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1models_1_1resnet_1_1_res_net_a2ca6ad06da07b0400a1cc6e2aca71623}{\+\_\+norm\+\_\+layer}} = norm\+\_\+layer
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classtorchvision__down_1_1models_1_1resnet_1_1_res_net_a8088bd6dbfd947e9a7dae79a1de047da}\index{torchvision\_down.models.resnet.ResNet@{torchvision\_down.models.resnet.ResNet}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!torchvision\_down.models.resnet.ResNet@{torchvision\_down.models.resnet.ResNet}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1models_1_1resnet_1_1_res_net_a8088bd6dbfd947e9a7dae79a1de047da} 
+ None torchvision\+\_\+down.\+models.\+resnet.\+Res\+Net.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{Type\mbox{[}Union\mbox{[}\mbox{\hyperlink{classtorchvision__down_1_1models_1_1resnet_1_1_basic_block}{Basic\+Block}}, \mbox{\hyperlink{classtorchvision__down_1_1models_1_1resnet_1_1_bottleneck}{Bottleneck}}\mbox{]}\mbox{]}}]{block}{, }\item[{List\mbox{[}int\mbox{]}}]{layers}{, }\item[{int }]{num\+\_\+classes}{ = {\ttfamily 1000}, }\item[{bool }]{zero\+\_\+init\+\_\+residual}{ = {\ttfamily False}, }\item[{int }]{groups}{ = {\ttfamily 1}, }\item[{int }]{width\+\_\+per\+\_\+group}{ = {\ttfamily 64}, }\item[{Optional\mbox{[}List\mbox{[}bool\mbox{]}\mbox{]} }]{replace\+\_\+stride\+\_\+with\+\_\+dilation}{ = {\ttfamily None}, }\item[{Optional\mbox{[}Callable\mbox{[}..., nn.\+Module\mbox{]}\mbox{]} }]{norm\+\_\+layer}{ = {\ttfamily None}}\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classtorchvision__down_1_1models_1_1resnet_1_1_res_net_a69468ad2bd7f124a9b213b76f7b46102}\index{torchvision\_down.models.resnet.ResNet@{torchvision\_down.models.resnet.ResNet}!\_forward\_impl@{\_forward\_impl}}
+\index{\_forward\_impl@{\_forward\_impl}!torchvision\_down.models.resnet.ResNet@{torchvision\_down.models.resnet.ResNet}}
+\doxysubsubsection{\texorpdfstring{\_forward\_impl()}{\_forward\_impl()}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1models_1_1resnet_1_1_res_net_a69468ad2bd7f124a9b213b76f7b46102} 
+ Tensor torchvision\+\_\+down.\+models.\+resnet.\+Res\+Net.\+\_\+forward\+\_\+impl (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{Tensor}]{x}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classtorchvision__down_1_1models_1_1resnet_1_1_res_net_a56497c467603e93f9c056d2ebce1d821}\index{torchvision\_down.models.resnet.ResNet@{torchvision\_down.models.resnet.ResNet}!\_make\_layer@{\_make\_layer}}
+\index{\_make\_layer@{\_make\_layer}!torchvision\_down.models.resnet.ResNet@{torchvision\_down.models.resnet.ResNet}}
+\doxysubsubsection{\texorpdfstring{\_make\_layer()}{\_make\_layer()}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1models_1_1resnet_1_1_res_net_a56497c467603e93f9c056d2ebce1d821} 
+ nn.\+Sequential torchvision\+\_\+down.\+models.\+resnet.\+Res\+Net.\+\_\+make\+\_\+layer (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{Type\mbox{[}Union\mbox{[}\mbox{\hyperlink{classtorchvision__down_1_1models_1_1resnet_1_1_basic_block}{Basic\+Block}}, \mbox{\hyperlink{classtorchvision__down_1_1models_1_1resnet_1_1_bottleneck}{Bottleneck}}\mbox{]}\mbox{]}}]{block}{, }\item[{int}]{planes}{, }\item[{int}]{blocks}{, }\item[{int }]{stride}{ = {\ttfamily 1}, }\item[{bool }]{dilate}{ = {\ttfamily False}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classtorchvision__down_1_1models_1_1resnet_1_1_res_net_af78b55c4d687b4c073b6d630ea14f0cf}\index{torchvision\_down.models.resnet.ResNet@{torchvision\_down.models.resnet.ResNet}!forward@{forward}}
+\index{forward@{forward}!torchvision\_down.models.resnet.ResNet@{torchvision\_down.models.resnet.ResNet}}
+\doxysubsubsection{\texorpdfstring{forward()}{forward()}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1models_1_1resnet_1_1_res_net_af78b55c4d687b4c073b6d630ea14f0cf} 
+ Tensor torchvision\+\_\+down.\+models.\+resnet.\+Res\+Net.\+forward (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{Tensor}]{x}{}\end{DoxyParamCaption})}
+
+
+
+Reimplemented in \mbox{\hyperlink{classtorchvision__down_1_1models_1_1quantization_1_1resnet_1_1_quantizable_res_net_acc81384b71d76f251763f307334b8298}{torchvision\+\_\+down.\+models.\+quantization.\+resnet.\+Quantizable\+Res\+Net}}.
+
+
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classtorchvision__down_1_1models_1_1resnet_1_1_res_net_a2ca6ad06da07b0400a1cc6e2aca71623}\index{torchvision\_down.models.resnet.ResNet@{torchvision\_down.models.resnet.ResNet}!\_norm\_layer@{\_norm\_layer}}
+\index{\_norm\_layer@{\_norm\_layer}!torchvision\_down.models.resnet.ResNet@{torchvision\_down.models.resnet.ResNet}}
+\doxysubsubsection{\texorpdfstring{\_norm\_layer}{\_norm\_layer}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1models_1_1resnet_1_1_res_net_a2ca6ad06da07b0400a1cc6e2aca71623} 
+torchvision\+\_\+down.\+models.\+resnet.\+Res\+Net.\+\_\+norm\+\_\+layer = norm\+\_\+layer\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classtorchvision__down_1_1models_1_1resnet_1_1_res_net_a223586a7ed128fc50d8cd3d682057dca}\index{torchvision\_down.models.resnet.ResNet@{torchvision\_down.models.resnet.ResNet}!avgpool@{avgpool}}
+\index{avgpool@{avgpool}!torchvision\_down.models.resnet.ResNet@{torchvision\_down.models.resnet.ResNet}}
+\doxysubsubsection{\texorpdfstring{avgpool}{avgpool}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1models_1_1resnet_1_1_res_net_a223586a7ed128fc50d8cd3d682057dca} 
+torchvision\+\_\+down.\+models.\+resnet.\+Res\+Net.\+avgpool = nn.\+Adaptive\+Avg\+Pool2d((1, 1))}
+
+\Hypertarget{classtorchvision__down_1_1models_1_1resnet_1_1_res_net_a7351ed9cfb701b9768496bec1747aae3}\index{torchvision\_down.models.resnet.ResNet@{torchvision\_down.models.resnet.ResNet}!base\_width@{base\_width}}
+\index{base\_width@{base\_width}!torchvision\_down.models.resnet.ResNet@{torchvision\_down.models.resnet.ResNet}}
+\doxysubsubsection{\texorpdfstring{base\_width}{base\_width}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1models_1_1resnet_1_1_res_net_a7351ed9cfb701b9768496bec1747aae3} 
+torchvision\+\_\+down.\+models.\+resnet.\+Res\+Net.\+base\+\_\+width = width\+\_\+per\+\_\+group}
+
+\Hypertarget{classtorchvision__down_1_1models_1_1resnet_1_1_res_net_af126e5cecc9bfc4c828f3b65cb5e14d8}\index{torchvision\_down.models.resnet.ResNet@{torchvision\_down.models.resnet.ResNet}!bn1@{bn1}}
+\index{bn1@{bn1}!torchvision\_down.models.resnet.ResNet@{torchvision\_down.models.resnet.ResNet}}
+\doxysubsubsection{\texorpdfstring{bn1}{bn1}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1models_1_1resnet_1_1_res_net_af126e5cecc9bfc4c828f3b65cb5e14d8} 
+torchvision\+\_\+down.\+models.\+resnet.\+Res\+Net.\+bn1 = norm\+\_\+layer(self.\+inplanes)}
+
+\Hypertarget{classtorchvision__down_1_1models_1_1resnet_1_1_res_net_a814b5bf367908aae1df516258ffb2052}\index{torchvision\_down.models.resnet.ResNet@{torchvision\_down.models.resnet.ResNet}!conv1@{conv1}}
+\index{conv1@{conv1}!torchvision\_down.models.resnet.ResNet@{torchvision\_down.models.resnet.ResNet}}
+\doxysubsubsection{\texorpdfstring{conv1}{conv1}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1models_1_1resnet_1_1_res_net_a814b5bf367908aae1df516258ffb2052} 
+torchvision\+\_\+down.\+models.\+resnet.\+Res\+Net.\+conv1 = nn.\+Conv2d(3, self.\+inplanes, kernel\+\_\+size=7, stride=2, padding=3, bias=False)}
+
+\Hypertarget{classtorchvision__down_1_1models_1_1resnet_1_1_res_net_a57a52f9d1693a7686158a24c686c36e3}\index{torchvision\_down.models.resnet.ResNet@{torchvision\_down.models.resnet.ResNet}!dilation@{dilation}}
+\index{dilation@{dilation}!torchvision\_down.models.resnet.ResNet@{torchvision\_down.models.resnet.ResNet}}
+\doxysubsubsection{\texorpdfstring{dilation}{dilation}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1models_1_1resnet_1_1_res_net_a57a52f9d1693a7686158a24c686c36e3} 
+int torchvision\+\_\+down.\+models.\+resnet.\+Res\+Net.\+dilation = 1}
+
+\Hypertarget{classtorchvision__down_1_1models_1_1resnet_1_1_res_net_a78ac6d29027b9ae0155051f59a7b6f68}\index{torchvision\_down.models.resnet.ResNet@{torchvision\_down.models.resnet.ResNet}!fc@{fc}}
+\index{fc@{fc}!torchvision\_down.models.resnet.ResNet@{torchvision\_down.models.resnet.ResNet}}
+\doxysubsubsection{\texorpdfstring{fc}{fc}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1models_1_1resnet_1_1_res_net_a78ac6d29027b9ae0155051f59a7b6f68} 
+torchvision\+\_\+down.\+models.\+resnet.\+Res\+Net.\+fc = nn.\+Linear(512 \texorpdfstring{$\ast$}{*} block.\+expansion, num\+\_\+classes)}
+
+\Hypertarget{classtorchvision__down_1_1models_1_1resnet_1_1_res_net_ae7a3cf406dc04c5c546e307a2e2e2f83}\index{torchvision\_down.models.resnet.ResNet@{torchvision\_down.models.resnet.ResNet}!groups@{groups}}
+\index{groups@{groups}!torchvision\_down.models.resnet.ResNet@{torchvision\_down.models.resnet.ResNet}}
+\doxysubsubsection{\texorpdfstring{groups}{groups}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1models_1_1resnet_1_1_res_net_ae7a3cf406dc04c5c546e307a2e2e2f83} 
+torchvision\+\_\+down.\+models.\+resnet.\+Res\+Net.\+groups = groups}
+
+\Hypertarget{classtorchvision__down_1_1models_1_1resnet_1_1_res_net_aa26e623a9a9cf0bd6fdbdf916c98bdd4}\index{torchvision\_down.models.resnet.ResNet@{torchvision\_down.models.resnet.ResNet}!inplanes@{inplanes}}
+\index{inplanes@{inplanes}!torchvision\_down.models.resnet.ResNet@{torchvision\_down.models.resnet.ResNet}}
+\doxysubsubsection{\texorpdfstring{inplanes}{inplanes}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1models_1_1resnet_1_1_res_net_aa26e623a9a9cf0bd6fdbdf916c98bdd4} 
+torchvision\+\_\+down.\+models.\+resnet.\+Res\+Net.\+inplanes = 64}
+
+\Hypertarget{classtorchvision__down_1_1models_1_1resnet_1_1_res_net_adb6b588bf63a6b96f4f2bab7329f538f}\index{torchvision\_down.models.resnet.ResNet@{torchvision\_down.models.resnet.ResNet}!layer1@{layer1}}
+\index{layer1@{layer1}!torchvision\_down.models.resnet.ResNet@{torchvision\_down.models.resnet.ResNet}}
+\doxysubsubsection{\texorpdfstring{layer1}{layer1}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1models_1_1resnet_1_1_res_net_adb6b588bf63a6b96f4f2bab7329f538f} 
+nn.\+Sequential torchvision\+\_\+down.\+models.\+resnet.\+Res\+Net.\+layer1 = self.\+\_\+make\+\_\+layer(block, 64, layers\mbox{[}0\mbox{]})}
+
+\Hypertarget{classtorchvision__down_1_1models_1_1resnet_1_1_res_net_a2c4da0eae79bb782553fe5f1719b760e}\index{torchvision\_down.models.resnet.ResNet@{torchvision\_down.models.resnet.ResNet}!layer2@{layer2}}
+\index{layer2@{layer2}!torchvision\_down.models.resnet.ResNet@{torchvision\_down.models.resnet.ResNet}}
+\doxysubsubsection{\texorpdfstring{layer2}{layer2}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1models_1_1resnet_1_1_res_net_a2c4da0eae79bb782553fe5f1719b760e} 
+nn.\+Sequential torchvision\+\_\+down.\+models.\+resnet.\+Res\+Net.\+layer2 = self.\+\_\+make\+\_\+layer(block, 128, layers\mbox{[}1\mbox{]}, stride=2, dilate=replace\+\_\+stride\+\_\+with\+\_\+dilation\mbox{[}0\mbox{]})}
+
+\Hypertarget{classtorchvision__down_1_1models_1_1resnet_1_1_res_net_add3bc2ee6fb29cb0f17fcd73d58d26e9}\index{torchvision\_down.models.resnet.ResNet@{torchvision\_down.models.resnet.ResNet}!layer3@{layer3}}
+\index{layer3@{layer3}!torchvision\_down.models.resnet.ResNet@{torchvision\_down.models.resnet.ResNet}}
+\doxysubsubsection{\texorpdfstring{layer3}{layer3}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1models_1_1resnet_1_1_res_net_add3bc2ee6fb29cb0f17fcd73d58d26e9} 
+nn.\+Sequential torchvision\+\_\+down.\+models.\+resnet.\+Res\+Net.\+layer3 = self.\+\_\+make\+\_\+layer(block, 256, layers\mbox{[}2\mbox{]}, stride=2, dilate=replace\+\_\+stride\+\_\+with\+\_\+dilation\mbox{[}1\mbox{]})}
+
+\Hypertarget{classtorchvision__down_1_1models_1_1resnet_1_1_res_net_a00a9ca78cdac812225d22bda2b19ee5a}\index{torchvision\_down.models.resnet.ResNet@{torchvision\_down.models.resnet.ResNet}!layer4@{layer4}}
+\index{layer4@{layer4}!torchvision\_down.models.resnet.ResNet@{torchvision\_down.models.resnet.ResNet}}
+\doxysubsubsection{\texorpdfstring{layer4}{layer4}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1models_1_1resnet_1_1_res_net_a00a9ca78cdac812225d22bda2b19ee5a} 
+nn.\+Sequential torchvision\+\_\+down.\+models.\+resnet.\+Res\+Net.\+layer4 = self.\+\_\+make\+\_\+layer(block, 512, layers\mbox{[}3\mbox{]}, stride=2, dilate=replace\+\_\+stride\+\_\+with\+\_\+dilation\mbox{[}2\mbox{]})}
+
+\Hypertarget{classtorchvision__down_1_1models_1_1resnet_1_1_res_net_ad8cedbb9a536105d3c6b879a78d0fe39}\index{torchvision\_down.models.resnet.ResNet@{torchvision\_down.models.resnet.ResNet}!maxpool@{maxpool}}
+\index{maxpool@{maxpool}!torchvision\_down.models.resnet.ResNet@{torchvision\_down.models.resnet.ResNet}}
+\doxysubsubsection{\texorpdfstring{maxpool}{maxpool}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1models_1_1resnet_1_1_res_net_ad8cedbb9a536105d3c6b879a78d0fe39} 
+torchvision\+\_\+down.\+models.\+resnet.\+Res\+Net.\+maxpool = nn.\+Max\+Pool2d(kernel\+\_\+size=3, stride=2, padding=1)}
+
+\Hypertarget{classtorchvision__down_1_1models_1_1resnet_1_1_res_net_ad086748091785307f266cc9a990ba2a7}\index{torchvision\_down.models.resnet.ResNet@{torchvision\_down.models.resnet.ResNet}!relu@{relu}}
+\index{relu@{relu}!torchvision\_down.models.resnet.ResNet@{torchvision\_down.models.resnet.ResNet}}
+\doxysubsubsection{\texorpdfstring{relu}{relu}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1models_1_1resnet_1_1_res_net_ad086748091785307f266cc9a990ba2a7} 
+torchvision\+\_\+down.\+models.\+resnet.\+Res\+Net.\+relu = nn.\+Re\+LU(inplace=True)}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Cervi\+AI/torchvision\+\_\+down/models/\mbox{\hyperlink{resnet_8py}{resnet.\+py}}\end{DoxyCompactItemize}

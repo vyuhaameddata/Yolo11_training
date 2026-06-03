@@ -1,0 +1,102 @@
+\doxysection{torchvision\+\_\+down.\+models.\+detection.\+retinanet.\+Retina\+Net\+Classification\+Head Class Reference}
+\hypertarget{classtorchvision__down_1_1models_1_1detection_1_1retinanet_1_1_retina_net_classification_head}{}\label{classtorchvision__down_1_1models_1_1detection_1_1retinanet_1_1_retina_net_classification_head}\index{torchvision\_down.models.detection.retinanet.RetinaNetClassificationHead@{torchvision\_down.models.detection.retinanet.RetinaNetClassificationHead}}
+Inheritance diagram for torchvision\+\_\+down.\+models.\+detection.\+retinanet.\+Retina\+Net\+Classification\+Head\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classtorchvision__down_1_1models_1_1detection_1_1retinanet_1_1_retina_net_classification_head}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1models_1_1detection_1_1retinanet_1_1_retina_net_classification_head_ac6ee42d33bffb7011285a33b47b79c49}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, in\+\_\+channels, \mbox{\hyperlink{classtorchvision__down_1_1models_1_1detection_1_1retinanet_1_1_retina_net_classification_head_a97e99af49c0cf77b096cf8f091fa873c}{num\+\_\+anchors}}, \mbox{\hyperlink{classtorchvision__down_1_1models_1_1detection_1_1retinanet_1_1_retina_net_classification_head_a200c43f4570899f97a7c4ff1a2575a80}{num\+\_\+classes}}, prior\+\_\+probability=0.\+01)
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1models_1_1detection_1_1retinanet_1_1_retina_net_classification_head_a49cfd38d2b1bf200ef33027e126275ce}{compute\+\_\+loss}} (self, targets, head\+\_\+outputs, matched\+\_\+idxs)
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1models_1_1detection_1_1retinanet_1_1_retina_net_classification_head_a9675f9db215ecd5a7ecec0ca58777260}{forward}} (self, x)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1models_1_1detection_1_1retinanet_1_1_retina_net_classification_head_a0208e7810b9ccf63526ef086771585fc}{conv}} = nn.\+Sequential(\texorpdfstring{$\ast$}{*}conv)
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1models_1_1detection_1_1retinanet_1_1_retina_net_classification_head_a29a5f637e3ca45305185323c35806e32}{cls\+\_\+logits}} = nn.\+Conv2d(in\+\_\+channels, \mbox{\hyperlink{classtorchvision__down_1_1models_1_1detection_1_1retinanet_1_1_retina_net_classification_head_a97e99af49c0cf77b096cf8f091fa873c}{num\+\_\+anchors}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{classtorchvision__down_1_1models_1_1detection_1_1retinanet_1_1_retina_net_classification_head_a200c43f4570899f97a7c4ff1a2575a80}{num\+\_\+classes}}, kernel\+\_\+size=3, stride=1, padding=1)
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1models_1_1detection_1_1retinanet_1_1_retina_net_classification_head_a200c43f4570899f97a7c4ff1a2575a80}{num\+\_\+classes}} = num\+\_\+classes
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1models_1_1detection_1_1retinanet_1_1_retina_net_classification_head_a97e99af49c0cf77b096cf8f091fa873c}{num\+\_\+anchors}} = num\+\_\+anchors
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1models_1_1detection_1_1retinanet_1_1_retina_net_classification_head_aa810074ba1913e05ceb43a278fa40795}{BETWEEN\+\_\+\+THRESHOLDS}} = det\+\_\+utils.\+Matcher.\+BETWEEN\+\_\+\+THRESHOLDS
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}A classification head for use in RetinaNet.
+
+Args:
+    in_channels (int): number of channels of the input feature
+    num_anchors (int): number of anchors to be predicted
+    num_classes (int): number of classes to be predicted
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classtorchvision__down_1_1models_1_1detection_1_1retinanet_1_1_retina_net_classification_head_ac6ee42d33bffb7011285a33b47b79c49}\index{torchvision\_down.models.detection.retinanet.RetinaNetClassificationHead@{torchvision\_down.models.detection.retinanet.RetinaNetClassificationHead}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!torchvision\_down.models.detection.retinanet.RetinaNetClassificationHead@{torchvision\_down.models.detection.retinanet.RetinaNetClassificationHead}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1models_1_1detection_1_1retinanet_1_1_retina_net_classification_head_ac6ee42d33bffb7011285a33b47b79c49} 
+torchvision\+\_\+down.\+models.\+detection.\+retinanet.\+Retina\+Net\+Classification\+Head.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{in\+\_\+channels}{, }\item[{}]{num\+\_\+anchors}{, }\item[{}]{num\+\_\+classes}{, }\item[{}]{prior\+\_\+probability}{ = {\ttfamily 0.01}}\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classtorchvision__down_1_1models_1_1detection_1_1retinanet_1_1_retina_net_classification_head_a49cfd38d2b1bf200ef33027e126275ce}\index{torchvision\_down.models.detection.retinanet.RetinaNetClassificationHead@{torchvision\_down.models.detection.retinanet.RetinaNetClassificationHead}!compute\_loss@{compute\_loss}}
+\index{compute\_loss@{compute\_loss}!torchvision\_down.models.detection.retinanet.RetinaNetClassificationHead@{torchvision\_down.models.detection.retinanet.RetinaNetClassificationHead}}
+\doxysubsubsection{\texorpdfstring{compute\_loss()}{compute\_loss()}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1models_1_1detection_1_1retinanet_1_1_retina_net_classification_head_a49cfd38d2b1bf200ef33027e126275ce} 
+torchvision\+\_\+down.\+models.\+detection.\+retinanet.\+Retina\+Net\+Classification\+Head.\+compute\+\_\+loss (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{targets}{, }\item[{}]{head\+\_\+outputs}{, }\item[{}]{matched\+\_\+idxs}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classtorchvision__down_1_1models_1_1detection_1_1retinanet_1_1_retina_net_classification_head_a9675f9db215ecd5a7ecec0ca58777260}\index{torchvision\_down.models.detection.retinanet.RetinaNetClassificationHead@{torchvision\_down.models.detection.retinanet.RetinaNetClassificationHead}!forward@{forward}}
+\index{forward@{forward}!torchvision\_down.models.detection.retinanet.RetinaNetClassificationHead@{torchvision\_down.models.detection.retinanet.RetinaNetClassificationHead}}
+\doxysubsubsection{\texorpdfstring{forward()}{forward()}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1models_1_1detection_1_1retinanet_1_1_retina_net_classification_head_a9675f9db215ecd5a7ecec0ca58777260} 
+torchvision\+\_\+down.\+models.\+detection.\+retinanet.\+Retina\+Net\+Classification\+Head.\+forward (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{x}{}\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classtorchvision__down_1_1models_1_1detection_1_1retinanet_1_1_retina_net_classification_head_aa810074ba1913e05ceb43a278fa40795}\index{torchvision\_down.models.detection.retinanet.RetinaNetClassificationHead@{torchvision\_down.models.detection.retinanet.RetinaNetClassificationHead}!BETWEEN\_THRESHOLDS@{BETWEEN\_THRESHOLDS}}
+\index{BETWEEN\_THRESHOLDS@{BETWEEN\_THRESHOLDS}!torchvision\_down.models.detection.retinanet.RetinaNetClassificationHead@{torchvision\_down.models.detection.retinanet.RetinaNetClassificationHead}}
+\doxysubsubsection{\texorpdfstring{BETWEEN\_THRESHOLDS}{BETWEEN\_THRESHOLDS}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1models_1_1detection_1_1retinanet_1_1_retina_net_classification_head_aa810074ba1913e05ceb43a278fa40795} 
+torchvision\+\_\+down.\+models.\+detection.\+retinanet.\+Retina\+Net\+Classification\+Head.\+BETWEEN\+\_\+\+THRESHOLDS = det\+\_\+utils.\+Matcher.\+BETWEEN\+\_\+\+THRESHOLDS}
+
+\Hypertarget{classtorchvision__down_1_1models_1_1detection_1_1retinanet_1_1_retina_net_classification_head_a29a5f637e3ca45305185323c35806e32}\index{torchvision\_down.models.detection.retinanet.RetinaNetClassificationHead@{torchvision\_down.models.detection.retinanet.RetinaNetClassificationHead}!cls\_logits@{cls\_logits}}
+\index{cls\_logits@{cls\_logits}!torchvision\_down.models.detection.retinanet.RetinaNetClassificationHead@{torchvision\_down.models.detection.retinanet.RetinaNetClassificationHead}}
+\doxysubsubsection{\texorpdfstring{cls\_logits}{cls\_logits}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1models_1_1detection_1_1retinanet_1_1_retina_net_classification_head_a29a5f637e3ca45305185323c35806e32} 
+torchvision\+\_\+down.\+models.\+detection.\+retinanet.\+Retina\+Net\+Classification\+Head.\+cls\+\_\+logits = nn.\+Conv2d(in\+\_\+channels, \mbox{\hyperlink{classtorchvision__down_1_1models_1_1detection_1_1retinanet_1_1_retina_net_classification_head_a97e99af49c0cf77b096cf8f091fa873c}{num\+\_\+anchors}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{classtorchvision__down_1_1models_1_1detection_1_1retinanet_1_1_retina_net_classification_head_a200c43f4570899f97a7c4ff1a2575a80}{num\+\_\+classes}}, kernel\+\_\+size=3, stride=1, padding=1)}
+
+\Hypertarget{classtorchvision__down_1_1models_1_1detection_1_1retinanet_1_1_retina_net_classification_head_a0208e7810b9ccf63526ef086771585fc}\index{torchvision\_down.models.detection.retinanet.RetinaNetClassificationHead@{torchvision\_down.models.detection.retinanet.RetinaNetClassificationHead}!conv@{conv}}
+\index{conv@{conv}!torchvision\_down.models.detection.retinanet.RetinaNetClassificationHead@{torchvision\_down.models.detection.retinanet.RetinaNetClassificationHead}}
+\doxysubsubsection{\texorpdfstring{conv}{conv}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1models_1_1detection_1_1retinanet_1_1_retina_net_classification_head_a0208e7810b9ccf63526ef086771585fc} 
+torchvision\+\_\+down.\+models.\+detection.\+retinanet.\+Retina\+Net\+Classification\+Head.\+conv = nn.\+Sequential(\texorpdfstring{$\ast$}{*}conv)}
+
+\Hypertarget{classtorchvision__down_1_1models_1_1detection_1_1retinanet_1_1_retina_net_classification_head_a97e99af49c0cf77b096cf8f091fa873c}\index{torchvision\_down.models.detection.retinanet.RetinaNetClassificationHead@{torchvision\_down.models.detection.retinanet.RetinaNetClassificationHead}!num\_anchors@{num\_anchors}}
+\index{num\_anchors@{num\_anchors}!torchvision\_down.models.detection.retinanet.RetinaNetClassificationHead@{torchvision\_down.models.detection.retinanet.RetinaNetClassificationHead}}
+\doxysubsubsection{\texorpdfstring{num\_anchors}{num\_anchors}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1models_1_1detection_1_1retinanet_1_1_retina_net_classification_head_a97e99af49c0cf77b096cf8f091fa873c} 
+torchvision\+\_\+down.\+models.\+detection.\+retinanet.\+Retina\+Net\+Classification\+Head.\+num\+\_\+anchors = num\+\_\+anchors}
+
+\Hypertarget{classtorchvision__down_1_1models_1_1detection_1_1retinanet_1_1_retina_net_classification_head_a200c43f4570899f97a7c4ff1a2575a80}\index{torchvision\_down.models.detection.retinanet.RetinaNetClassificationHead@{torchvision\_down.models.detection.retinanet.RetinaNetClassificationHead}!num\_classes@{num\_classes}}
+\index{num\_classes@{num\_classes}!torchvision\_down.models.detection.retinanet.RetinaNetClassificationHead@{torchvision\_down.models.detection.retinanet.RetinaNetClassificationHead}}
+\doxysubsubsection{\texorpdfstring{num\_classes}{num\_classes}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1models_1_1detection_1_1retinanet_1_1_retina_net_classification_head_a200c43f4570899f97a7c4ff1a2575a80} 
+torchvision\+\_\+down.\+models.\+detection.\+retinanet.\+Retina\+Net\+Classification\+Head.\+num\+\_\+classes = num\+\_\+classes}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Cervi\+AI/torchvision\+\_\+down/models/detection/\mbox{\hyperlink{retinanet_8py}{retinanet.\+py}}\end{DoxyCompactItemize}

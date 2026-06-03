@@ -1,0 +1,270 @@
+\doxysection{torchvision\+\_\+down.\+datasets.\+sbd.\+SBDataset Class Reference}
+\hypertarget{classtorchvision__down_1_1datasets_1_1sbd_1_1_s_b_dataset}{}\label{classtorchvision__down_1_1datasets_1_1sbd_1_1_s_b_dataset}\index{torchvision\_down.datasets.sbd.SBDataset@{torchvision\_down.datasets.sbd.SBDataset}}
+Inheritance diagram for torchvision\+\_\+down.\+datasets.\+sbd.\+SBDataset\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{classtorchvision__down_1_1datasets_1_1sbd_1_1_s_b_dataset}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+None \mbox{\hyperlink{classtorchvision__down_1_1datasets_1_1sbd_1_1_s_b_dataset_a26728f0012c9087f72d62469d1230434}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, str \mbox{\hyperlink{classtorchvision__down_1_1datasets_1_1sbd_1_1_s_b_dataset}{root}}, str \mbox{\hyperlink{classtorchvision__down_1_1datasets_1_1sbd_1_1_s_b_dataset_a4a9370419c3d31614b3f55a41992efa8}{image\+\_\+set}}="{}train"{}, str \mbox{\hyperlink{classtorchvision__down_1_1datasets_1_1sbd_1_1_s_b_dataset_a2377e95dcb24a2a8ecffbae7faef7031}{mode}}="{}boundaries"{}, bool download=False, Optional\mbox{[}Callable\mbox{]} \mbox{\hyperlink{classtorchvision__down_1_1datasets_1_1vision_1_1_vision_dataset_a7963601da311133da990b66cb616cc83}{transforms}}=None)
+\item 
+Tuple\mbox{[}Any, Any\mbox{]} \mbox{\hyperlink{classtorchvision__down_1_1datasets_1_1sbd_1_1_s_b_dataset_a7d7a92684fdb4d4ad0f6d2b7b1170158}{\+\_\+\+\_\+getitem\+\_\+\+\_\+}} (self, int index)
+\item 
+int \mbox{\hyperlink{classtorchvision__down_1_1datasets_1_1sbd_1_1_s_b_dataset_afb5111888bd7f662cca7ecdd300d100d}{\+\_\+\+\_\+len\+\_\+\+\_\+}} (self)
+\item 
+str \mbox{\hyperlink{classtorchvision__down_1_1datasets_1_1sbd_1_1_s_b_dataset_a4f8ea0c1b0759bbfc0c7dd2b26336eea}{extra\+\_\+repr}} (self)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{classtorchvision__down_1_1datasets_1_1vision_1_1_vision_dataset}{torchvision\+\_\+down.\+datasets.\+vision.\+Vision\+Dataset}}}
+\begin{DoxyCompactItemize}
+\item 
+None \mbox{\hyperlink{classtorchvision__down_1_1datasets_1_1vision_1_1_vision_dataset_a4fe475e0f96592c04a6d97bcd953aca8}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, str \mbox{\hyperlink{classtorchvision__down_1_1datasets_1_1vision_1_1_vision_dataset_af52cf192ec18d3421afe216bf9b881d6}{root}}, Optional\mbox{[}Callable\mbox{]} \mbox{\hyperlink{classtorchvision__down_1_1datasets_1_1vision_1_1_vision_dataset_a7963601da311133da990b66cb616cc83}{transforms}}=None, Optional\mbox{[}Callable\mbox{]} \mbox{\hyperlink{classtorchvision__down_1_1datasets_1_1vision_1_1_vision_dataset_ade1b4bca7d4f998bc3061e0400769de8}{transform}}=None, Optional\mbox{[}Callable\mbox{]} \mbox{\hyperlink{classtorchvision__down_1_1datasets_1_1vision_1_1_vision_dataset_a01f7d1bb7220bbfa4234ef140d021cc6}{target\+\_\+transform}}=None)
+\item 
+Any \mbox{\hyperlink{classtorchvision__down_1_1datasets_1_1vision_1_1_vision_dataset_aa96f56b711d61433df225154b9837daa}{\+\_\+\+\_\+getitem\+\_\+\+\_\+}} (self, int index)
+\item 
+int \mbox{\hyperlink{classtorchvision__down_1_1datasets_1_1vision_1_1_vision_dataset_abb1561c74b600d1d424cfa010f009a92}{\+\_\+\+\_\+len\+\_\+\+\_\+}} (self)
+\item 
+str \mbox{\hyperlink{classtorchvision__down_1_1datasets_1_1vision_1_1_vision_dataset_a40d28a5833742c49a70872e87edb1ef9}{\+\_\+\+\_\+repr\+\_\+\+\_\+}} (self)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1datasets_1_1sbd_1_1_s_b_dataset_a4a9370419c3d31614b3f55a41992efa8}{image\+\_\+set}} = verify\+\_\+str\+\_\+arg(image\+\_\+set, "{}image\+\_\+set"{}, ("{}train"{}, "{}val"{}, "{}train\+\_\+noval"{}))
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1datasets_1_1sbd_1_1_s_b_dataset_a2377e95dcb24a2a8ecffbae7faef7031}{mode}} = verify\+\_\+str\+\_\+arg(mode, "{}mode"{}, ("{}segmentation"{}, "{}boundaries"{}))
+\item 
+int \mbox{\hyperlink{classtorchvision__down_1_1datasets_1_1sbd_1_1_s_b_dataset_aa13a14dfd34f3fea439ea7c6c5a2b4b6}{num\+\_\+classes}} = 20
+\item 
+list \mbox{\hyperlink{classtorchvision__down_1_1datasets_1_1sbd_1_1_s_b_dataset_a785ad50c33edd7a70302d8765cccf1cf}{images}} = \mbox{[}os.\+path.\+join(image\+\_\+dir, x + "{}.jpg"{}) for x in file\+\_\+names\mbox{]}
+\item 
+list \mbox{\hyperlink{classtorchvision__down_1_1datasets_1_1sbd_1_1_s_b_dataset_a846b8637b585a06446749960070f3575}{masks}} = \mbox{[}os.\+path.\+join(mask\+\_\+dir, x + "{}.mat"{}) for x in file\+\_\+names\mbox{]}
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes inherited from \mbox{\hyperlink{classtorchvision__down_1_1datasets_1_1vision_1_1_vision_dataset}{torchvision\+\_\+down.\+datasets.\+vision.\+Vision\+Dataset}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1datasets_1_1vision_1_1_vision_dataset_af52cf192ec18d3421afe216bf9b881d6}{root}} = root
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1datasets_1_1vision_1_1_vision_dataset_ade1b4bca7d4f998bc3061e0400769de8}{transform}} = transform
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1datasets_1_1vision_1_1_vision_dataset_a01f7d1bb7220bbfa4234ef140d021cc6}{target\+\_\+transform}} = target\+\_\+transform
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1datasets_1_1vision_1_1_vision_dataset_a7963601da311133da990b66cb616cc83}{transforms}} = transforms
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+str \mbox{\hyperlink{classtorchvision__down_1_1datasets_1_1sbd_1_1_s_b_dataset_a292066fcb63dff109a4b5ffab8d6c994}{url}} = "{}https\+://www2.\+eecs.\+berkeley.\+edu/Research/Projects/CS/vision/grouping/semantic\+\_\+contours/benchmark.\+tgz"{}
+\item 
+str \mbox{\hyperlink{classtorchvision__down_1_1datasets_1_1sbd_1_1_s_b_dataset_a6e08e6eb6ccfb181e37463f2283d15e8}{md5}} = "{}82b4d87ceb2ed10f6038a1cba92111cb"{}
+\item 
+str \mbox{\hyperlink{classtorchvision__down_1_1datasets_1_1sbd_1_1_s_b_dataset_a072e841619879086bfa824a0f165eea6}{filename}} = "{}benchmark.\+tgz"{}
+\item 
+str \mbox{\hyperlink{classtorchvision__down_1_1datasets_1_1sbd_1_1_s_b_dataset_aaa0b9695068a05aeac747ec5d32bf135}{voc\+\_\+train\+\_\+url}} = "{}http\+://home.\+bharathh.\+info/pubs/codes/SBD/train\+\_\+noval.\+txt"{}
+\item 
+str \mbox{\hyperlink{classtorchvision__down_1_1datasets_1_1sbd_1_1_s_b_dataset_a6b555a70478cf19c89834e276007b13f}{voc\+\_\+split\+\_\+filename}} = "{}train\+\_\+noval.\+txt"{}
+\item 
+str \mbox{\hyperlink{classtorchvision__down_1_1datasets_1_1sbd_1_1_s_b_dataset_a0efda9489ba332c985af4cf81dccd94a}{voc\+\_\+split\+\_\+md5}} = "{}79bff800c5f0b1ec6b21080a3c066722"{}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+Image.\+Image \mbox{\hyperlink{classtorchvision__down_1_1datasets_1_1sbd_1_1_s_b_dataset_a99d1604a7122b4a03d5ffa1c7cc2cb7d}{\+\_\+get\+\_\+segmentation\+\_\+target}} (self, str filepath)
+\item 
+np.\+ndarray \mbox{\hyperlink{classtorchvision__down_1_1datasets_1_1sbd_1_1_s_b_dataset_afb61e712150da658ad55ee57cc315388}{\+\_\+get\+\_\+boundaries\+\_\+target}} (self, str filepath)
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions inherited from \mbox{\hyperlink{classtorchvision__down_1_1datasets_1_1vision_1_1_vision_dataset}{torchvision\+\_\+down.\+datasets.\+vision.\+Vision\+Dataset}}}
+\begin{DoxyCompactItemize}
+\item 
+List\mbox{[}str\mbox{]} \mbox{\hyperlink{classtorchvision__down_1_1datasets_1_1vision_1_1_vision_dataset_a9f1a9fad1ab8a0b963cdc3522a271689}{\+\_\+format\+\_\+transform\+\_\+repr}} (self, Callable \mbox{\hyperlink{classtorchvision__down_1_1datasets_1_1vision_1_1_vision_dataset_ade1b4bca7d4f998bc3061e0400769de8}{transform}}, str head)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1datasets_1_1sbd_1_1_s_b_dataset_a31f699b7c97bd1abe2fd862a332c5bbd}{\+\_\+loadmat}} = loadmat
+\item 
+Image.\+Image \mbox{\hyperlink{classtorchvision__down_1_1datasets_1_1sbd_1_1_s_b_dataset_ad9516304aea91509a4766ccf8f2d2b77}{\+\_\+get\+\_\+target}} = "{}segmentation"{} else self.\+\_\+get\+\_\+boundaries\+\_\+target
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1datasets_1_1sbd_1_1_s_b_dataset_adbeee488d757d19ad362314ebd9caee4}{\+\_\+\+\_\+dict\+\_\+\+\_\+}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Additional Inherited Members}
+\doxysubsection*{Static Protected Attributes inherited from \mbox{\hyperlink{classtorchvision__down_1_1datasets_1_1vision_1_1_vision_dataset}{torchvision\+\_\+down.\+datasets.\+vision.\+Vision\+Dataset}}}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{classtorchvision__down_1_1datasets_1_1vision_1_1_vision_dataset_a2eb99b64ccfc03378be35d0ff88e71b4}{\+\_\+repr\+\_\+indent}} = 4
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}`Semantic Boundaries Dataset <http://home.bharathh.info/pubs/codes/SBD/download.html>`_
+
+The SBD currently contains annotations from 11355 images taken from the PASCAL VOC 2011 dataset.
+
+.. note ::
+
+    Please note that the train and val splits included with this dataset are different from
+    the splits in the PASCAL VOC dataset. In particular some "train" images might be part of
+    VOC2012 val.
+    If you are interested in testing on VOC 2012 val, then use `image_set='train_noval'`,
+    which excludes all val images.
+
+.. warning::
+
+    This class needs `scipy <https://docs.scipy.org/doc/>`_ to load target files from `.mat` format.
+
+Args:
+    root (string): Root directory of the Semantic Boundaries Dataset
+    image_set (string, optional): Select the image_set to use, ``train``, ``val`` or ``train_noval``.
+        Image set ``train_noval`` excludes VOC 2012 val images.
+    mode (string, optional): Select target type. Possible values 'boundaries' or 'segmentation'.
+        In case of 'boundaries', the target is an array of shape `[num_classes, H, W]`,
+        where `num_classes=20`.
+    download (bool, optional): If true, downloads the dataset from the internet and
+        puts it in root directory. If dataset is already downloaded, it is not
+        downloaded again.
+    transforms (callable, optional): A function/transform that takes input sample and its target as entry
+        and returns a transformed version. Input sample is PIL image and target is a numpy array
+        if `mode='boundaries'` or PIL image if `mode='segmentation'`.
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classtorchvision__down_1_1datasets_1_1sbd_1_1_s_b_dataset_a26728f0012c9087f72d62469d1230434}\index{torchvision\_down.datasets.sbd.SBDataset@{torchvision\_down.datasets.sbd.SBDataset}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!torchvision\_down.datasets.sbd.SBDataset@{torchvision\_down.datasets.sbd.SBDataset}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1datasets_1_1sbd_1_1_s_b_dataset_a26728f0012c9087f72d62469d1230434} 
+ None torchvision\+\_\+down.\+datasets.\+sbd.\+SBDataset.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{str}]{root}{, }\item[{str }]{image\+\_\+set}{ = {\ttfamily "{}train"{}}, }\item[{str }]{mode}{ = {\ttfamily "{}boundaries"{}}, }\item[{bool }]{download}{ = {\ttfamily False}, }\item[{Optional\mbox{[}Callable\mbox{]} }]{transforms}{ = {\ttfamily None}}\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classtorchvision__down_1_1datasets_1_1sbd_1_1_s_b_dataset_a7d7a92684fdb4d4ad0f6d2b7b1170158}\index{torchvision\_down.datasets.sbd.SBDataset@{torchvision\_down.datasets.sbd.SBDataset}!\_\_getitem\_\_@{\_\_getitem\_\_}}
+\index{\_\_getitem\_\_@{\_\_getitem\_\_}!torchvision\_down.datasets.sbd.SBDataset@{torchvision\_down.datasets.sbd.SBDataset}}
+\doxysubsubsection{\texorpdfstring{\_\_getitem\_\_()}{\_\_getitem\_\_()}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1datasets_1_1sbd_1_1_s_b_dataset_a7d7a92684fdb4d4ad0f6d2b7b1170158} 
+ Tuple\mbox{[}Any, Any\mbox{]} torchvision\+\_\+down.\+datasets.\+sbd.\+SBDataset.\+\_\+\+\_\+getitem\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{int}]{index}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classtorchvision__down_1_1datasets_1_1sbd_1_1_s_b_dataset_afb5111888bd7f662cca7ecdd300d100d}\index{torchvision\_down.datasets.sbd.SBDataset@{torchvision\_down.datasets.sbd.SBDataset}!\_\_len\_\_@{\_\_len\_\_}}
+\index{\_\_len\_\_@{\_\_len\_\_}!torchvision\_down.datasets.sbd.SBDataset@{torchvision\_down.datasets.sbd.SBDataset}}
+\doxysubsubsection{\texorpdfstring{\_\_len\_\_()}{\_\_len\_\_()}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1datasets_1_1sbd_1_1_s_b_dataset_afb5111888bd7f662cca7ecdd300d100d} 
+ int torchvision\+\_\+down.\+datasets.\+sbd.\+SBDataset.\+\_\+\+\_\+len\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classtorchvision__down_1_1datasets_1_1sbd_1_1_s_b_dataset_afb61e712150da658ad55ee57cc315388}\index{torchvision\_down.datasets.sbd.SBDataset@{torchvision\_down.datasets.sbd.SBDataset}!\_get\_boundaries\_target@{\_get\_boundaries\_target}}
+\index{\_get\_boundaries\_target@{\_get\_boundaries\_target}!torchvision\_down.datasets.sbd.SBDataset@{torchvision\_down.datasets.sbd.SBDataset}}
+\doxysubsubsection{\texorpdfstring{\_get\_boundaries\_target()}{\_get\_boundaries\_target()}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1datasets_1_1sbd_1_1_s_b_dataset_afb61e712150da658ad55ee57cc315388} 
+ np.\+ndarray torchvision\+\_\+down.\+datasets.\+sbd.\+SBDataset.\+\_\+get\+\_\+boundaries\+\_\+target (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{str}]{filepath}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classtorchvision__down_1_1datasets_1_1sbd_1_1_s_b_dataset_a99d1604a7122b4a03d5ffa1c7cc2cb7d}\index{torchvision\_down.datasets.sbd.SBDataset@{torchvision\_down.datasets.sbd.SBDataset}!\_get\_segmentation\_target@{\_get\_segmentation\_target}}
+\index{\_get\_segmentation\_target@{\_get\_segmentation\_target}!torchvision\_down.datasets.sbd.SBDataset@{torchvision\_down.datasets.sbd.SBDataset}}
+\doxysubsubsection{\texorpdfstring{\_get\_segmentation\_target()}{\_get\_segmentation\_target()}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1datasets_1_1sbd_1_1_s_b_dataset_a99d1604a7122b4a03d5ffa1c7cc2cb7d} 
+ Image.\+Image torchvision\+\_\+down.\+datasets.\+sbd.\+SBDataset.\+\_\+get\+\_\+segmentation\+\_\+target (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{str}]{filepath}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classtorchvision__down_1_1datasets_1_1sbd_1_1_s_b_dataset_a4f8ea0c1b0759bbfc0c7dd2b26336eea}\index{torchvision\_down.datasets.sbd.SBDataset@{torchvision\_down.datasets.sbd.SBDataset}!extra\_repr@{extra\_repr}}
+\index{extra\_repr@{extra\_repr}!torchvision\_down.datasets.sbd.SBDataset@{torchvision\_down.datasets.sbd.SBDataset}}
+\doxysubsubsection{\texorpdfstring{extra\_repr()}{extra\_repr()}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1datasets_1_1sbd_1_1_s_b_dataset_a4f8ea0c1b0759bbfc0c7dd2b26336eea} 
+ str torchvision\+\_\+down.\+datasets.\+sbd.\+SBDataset.\+extra\+\_\+repr (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+
+
+Reimplemented from \mbox{\hyperlink{classtorchvision__down_1_1datasets_1_1vision_1_1_vision_dataset_a99093b3e6dd75e1ed1c49eed7ac2df00}{torchvision\+\_\+down.\+datasets.\+vision.\+Vision\+Dataset}}.
+
+
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classtorchvision__down_1_1datasets_1_1sbd_1_1_s_b_dataset_adbeee488d757d19ad362314ebd9caee4}\index{torchvision\_down.datasets.sbd.SBDataset@{torchvision\_down.datasets.sbd.SBDataset}!\_\_dict\_\_@{\_\_dict\_\_}}
+\index{\_\_dict\_\_@{\_\_dict\_\_}!torchvision\_down.datasets.sbd.SBDataset@{torchvision\_down.datasets.sbd.SBDataset}}
+\doxysubsubsection{\texorpdfstring{\_\_dict\_\_}{\_\_dict\_\_}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1datasets_1_1sbd_1_1_s_b_dataset_adbeee488d757d19ad362314ebd9caee4} 
+torchvision\+\_\+down.\+datasets.\+sbd.\+SBDataset.\+\_\+\+\_\+dict\+\_\+\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{classtorchvision__down_1_1datasets_1_1sbd_1_1_s_b_dataset_ad9516304aea91509a4766ccf8f2d2b77}\index{torchvision\_down.datasets.sbd.SBDataset@{torchvision\_down.datasets.sbd.SBDataset}!\_get\_target@{\_get\_target}}
+\index{\_get\_target@{\_get\_target}!torchvision\_down.datasets.sbd.SBDataset@{torchvision\_down.datasets.sbd.SBDataset}}
+\doxysubsubsection{\texorpdfstring{\_get\_target}{\_get\_target}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1datasets_1_1sbd_1_1_s_b_dataset_ad9516304aea91509a4766ccf8f2d2b77} 
+Image.\+Image torchvision\+\_\+down.\+datasets.\+sbd.\+SBDataset.\+\_\+get\+\_\+target = "{}segmentation"{} else self.\+\_\+get\+\_\+boundaries\+\_\+target\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classtorchvision__down_1_1datasets_1_1sbd_1_1_s_b_dataset_a31f699b7c97bd1abe2fd862a332c5bbd}\index{torchvision\_down.datasets.sbd.SBDataset@{torchvision\_down.datasets.sbd.SBDataset}!\_loadmat@{\_loadmat}}
+\index{\_loadmat@{\_loadmat}!torchvision\_down.datasets.sbd.SBDataset@{torchvision\_down.datasets.sbd.SBDataset}}
+\doxysubsubsection{\texorpdfstring{\_loadmat}{\_loadmat}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1datasets_1_1sbd_1_1_s_b_dataset_a31f699b7c97bd1abe2fd862a332c5bbd} 
+torchvision\+\_\+down.\+datasets.\+sbd.\+SBDataset.\+\_\+loadmat = loadmat\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classtorchvision__down_1_1datasets_1_1sbd_1_1_s_b_dataset_a072e841619879086bfa824a0f165eea6}\index{torchvision\_down.datasets.sbd.SBDataset@{torchvision\_down.datasets.sbd.SBDataset}!filename@{filename}}
+\index{filename@{filename}!torchvision\_down.datasets.sbd.SBDataset@{torchvision\_down.datasets.sbd.SBDataset}}
+\doxysubsubsection{\texorpdfstring{filename}{filename}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1datasets_1_1sbd_1_1_s_b_dataset_a072e841619879086bfa824a0f165eea6} 
+str torchvision\+\_\+down.\+datasets.\+sbd.\+SBDataset.\+filename = "{}benchmark.\+tgz"{}\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classtorchvision__down_1_1datasets_1_1sbd_1_1_s_b_dataset_a4a9370419c3d31614b3f55a41992efa8}\index{torchvision\_down.datasets.sbd.SBDataset@{torchvision\_down.datasets.sbd.SBDataset}!image\_set@{image\_set}}
+\index{image\_set@{image\_set}!torchvision\_down.datasets.sbd.SBDataset@{torchvision\_down.datasets.sbd.SBDataset}}
+\doxysubsubsection{\texorpdfstring{image\_set}{image\_set}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1datasets_1_1sbd_1_1_s_b_dataset_a4a9370419c3d31614b3f55a41992efa8} 
+torchvision\+\_\+down.\+datasets.\+sbd.\+SBDataset.\+image\+\_\+set = verify\+\_\+str\+\_\+arg(image\+\_\+set, "{}image\+\_\+set"{}, ("{}train"{}, "{}val"{}, "{}train\+\_\+noval"{}))}
+
+\Hypertarget{classtorchvision__down_1_1datasets_1_1sbd_1_1_s_b_dataset_a785ad50c33edd7a70302d8765cccf1cf}\index{torchvision\_down.datasets.sbd.SBDataset@{torchvision\_down.datasets.sbd.SBDataset}!images@{images}}
+\index{images@{images}!torchvision\_down.datasets.sbd.SBDataset@{torchvision\_down.datasets.sbd.SBDataset}}
+\doxysubsubsection{\texorpdfstring{images}{images}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1datasets_1_1sbd_1_1_s_b_dataset_a785ad50c33edd7a70302d8765cccf1cf} 
+torchvision\+\_\+down.\+datasets.\+sbd.\+SBDataset.\+images = \mbox{[}os.\+path.\+join(image\+\_\+dir, x + "{}.jpg"{}) for x in file\+\_\+names\mbox{]}}
+
+\Hypertarget{classtorchvision__down_1_1datasets_1_1sbd_1_1_s_b_dataset_a846b8637b585a06446749960070f3575}\index{torchvision\_down.datasets.sbd.SBDataset@{torchvision\_down.datasets.sbd.SBDataset}!masks@{masks}}
+\index{masks@{masks}!torchvision\_down.datasets.sbd.SBDataset@{torchvision\_down.datasets.sbd.SBDataset}}
+\doxysubsubsection{\texorpdfstring{masks}{masks}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1datasets_1_1sbd_1_1_s_b_dataset_a846b8637b585a06446749960070f3575} 
+list torchvision\+\_\+down.\+datasets.\+sbd.\+SBDataset.\+masks = \mbox{[}os.\+path.\+join(mask\+\_\+dir, x + "{}.mat"{}) for x in file\+\_\+names\mbox{]}}
+
+\Hypertarget{classtorchvision__down_1_1datasets_1_1sbd_1_1_s_b_dataset_a6e08e6eb6ccfb181e37463f2283d15e8}\index{torchvision\_down.datasets.sbd.SBDataset@{torchvision\_down.datasets.sbd.SBDataset}!md5@{md5}}
+\index{md5@{md5}!torchvision\_down.datasets.sbd.SBDataset@{torchvision\_down.datasets.sbd.SBDataset}}
+\doxysubsubsection{\texorpdfstring{md5}{md5}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1datasets_1_1sbd_1_1_s_b_dataset_a6e08e6eb6ccfb181e37463f2283d15e8} 
+str torchvision\+\_\+down.\+datasets.\+sbd.\+SBDataset.\+md5 = "{}82b4d87ceb2ed10f6038a1cba92111cb"{}\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classtorchvision__down_1_1datasets_1_1sbd_1_1_s_b_dataset_a2377e95dcb24a2a8ecffbae7faef7031}\index{torchvision\_down.datasets.sbd.SBDataset@{torchvision\_down.datasets.sbd.SBDataset}!mode@{mode}}
+\index{mode@{mode}!torchvision\_down.datasets.sbd.SBDataset@{torchvision\_down.datasets.sbd.SBDataset}}
+\doxysubsubsection{\texorpdfstring{mode}{mode}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1datasets_1_1sbd_1_1_s_b_dataset_a2377e95dcb24a2a8ecffbae7faef7031} 
+torchvision\+\_\+down.\+datasets.\+sbd.\+SBDataset.\+mode = verify\+\_\+str\+\_\+arg(mode, "{}mode"{}, ("{}segmentation"{}, "{}boundaries"{}))}
+
+\Hypertarget{classtorchvision__down_1_1datasets_1_1sbd_1_1_s_b_dataset_aa13a14dfd34f3fea439ea7c6c5a2b4b6}\index{torchvision\_down.datasets.sbd.SBDataset@{torchvision\_down.datasets.sbd.SBDataset}!num\_classes@{num\_classes}}
+\index{num\_classes@{num\_classes}!torchvision\_down.datasets.sbd.SBDataset@{torchvision\_down.datasets.sbd.SBDataset}}
+\doxysubsubsection{\texorpdfstring{num\_classes}{num\_classes}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1datasets_1_1sbd_1_1_s_b_dataset_aa13a14dfd34f3fea439ea7c6c5a2b4b6} 
+int torchvision\+\_\+down.\+datasets.\+sbd.\+SBDataset.\+num\+\_\+classes = 20}
+
+\Hypertarget{classtorchvision__down_1_1datasets_1_1sbd_1_1_s_b_dataset_a292066fcb63dff109a4b5ffab8d6c994}\index{torchvision\_down.datasets.sbd.SBDataset@{torchvision\_down.datasets.sbd.SBDataset}!url@{url}}
+\index{url@{url}!torchvision\_down.datasets.sbd.SBDataset@{torchvision\_down.datasets.sbd.SBDataset}}
+\doxysubsubsection{\texorpdfstring{url}{url}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1datasets_1_1sbd_1_1_s_b_dataset_a292066fcb63dff109a4b5ffab8d6c994} 
+torchvision\+\_\+down.\+datasets.\+sbd.\+SBDataset.\+url = "{}https\+://www2.\+eecs.\+berkeley.\+edu/Research/Projects/CS/vision/grouping/semantic\+\_\+contours/benchmark.\+tgz"{}\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classtorchvision__down_1_1datasets_1_1sbd_1_1_s_b_dataset_a6b555a70478cf19c89834e276007b13f}\index{torchvision\_down.datasets.sbd.SBDataset@{torchvision\_down.datasets.sbd.SBDataset}!voc\_split\_filename@{voc\_split\_filename}}
+\index{voc\_split\_filename@{voc\_split\_filename}!torchvision\_down.datasets.sbd.SBDataset@{torchvision\_down.datasets.sbd.SBDataset}}
+\doxysubsubsection{\texorpdfstring{voc\_split\_filename}{voc\_split\_filename}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1datasets_1_1sbd_1_1_s_b_dataset_a6b555a70478cf19c89834e276007b13f} 
+torchvision\+\_\+down.\+datasets.\+sbd.\+SBDataset.\+voc\+\_\+split\+\_\+filename = "{}train\+\_\+noval.\+txt"{}\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classtorchvision__down_1_1datasets_1_1sbd_1_1_s_b_dataset_a0efda9489ba332c985af4cf81dccd94a}\index{torchvision\_down.datasets.sbd.SBDataset@{torchvision\_down.datasets.sbd.SBDataset}!voc\_split\_md5@{voc\_split\_md5}}
+\index{voc\_split\_md5@{voc\_split\_md5}!torchvision\_down.datasets.sbd.SBDataset@{torchvision\_down.datasets.sbd.SBDataset}}
+\doxysubsubsection{\texorpdfstring{voc\_split\_md5}{voc\_split\_md5}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1datasets_1_1sbd_1_1_s_b_dataset_a0efda9489ba332c985af4cf81dccd94a} 
+torchvision\+\_\+down.\+datasets.\+sbd.\+SBDataset.\+voc\+\_\+split\+\_\+md5 = "{}79bff800c5f0b1ec6b21080a3c066722"{}\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classtorchvision__down_1_1datasets_1_1sbd_1_1_s_b_dataset_aaa0b9695068a05aeac747ec5d32bf135}\index{torchvision\_down.datasets.sbd.SBDataset@{torchvision\_down.datasets.sbd.SBDataset}!voc\_train\_url@{voc\_train\_url}}
+\index{voc\_train\_url@{voc\_train\_url}!torchvision\_down.datasets.sbd.SBDataset@{torchvision\_down.datasets.sbd.SBDataset}}
+\doxysubsubsection{\texorpdfstring{voc\_train\_url}{voc\_train\_url}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1datasets_1_1sbd_1_1_s_b_dataset_aaa0b9695068a05aeac747ec5d32bf135} 
+torchvision\+\_\+down.\+datasets.\+sbd.\+SBDataset.\+voc\+\_\+train\+\_\+url = "{}http\+://home.\+bharathh.\+info/pubs/codes/SBD/train\+\_\+noval.\+txt"{}\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Cervi\+AI/torchvision\+\_\+down/datasets/\mbox{\hyperlink{sbd_8py}{sbd.\+py}}\end{DoxyCompactItemize}

@@ -1,0 +1,106 @@
+\doxysection{Cervi\+AI/torchvision\+\_\+down/transforms/functional.py File Reference}
+\hypertarget{functional_8py}{}\label{functional_8py}\index{CerviAI/torchvision\_down/transforms/functional.py@{CerviAI/torchvision\_down/transforms/functional.py}}
+\doxysubsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classtorchvision__down_1_1transforms_1_1functional_1_1_interpolation_mode}{torchvision\+\_\+down.\+transforms.\+functional.\+Interpolation\+Mode}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+namespace \mbox{\hyperlink{namespacetorchvision__down}{torchvision\+\_\+down}}
+\item 
+namespace \mbox{\hyperlink{namespacetorchvision__down_1_1transforms}{torchvision\+\_\+down.\+transforms}}
+\item 
+namespace \mbox{\hyperlink{namespacetorchvision__down_1_1transforms_1_1functional}{torchvision\+\_\+down.\+transforms.\+functional}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1transforms_1_1functional_1_1_interpolation_mode}{Interpolation\+Mode}} \mbox{\hyperlink{namespacetorchvision__down_1_1transforms_1_1functional_a414b1c2d468ec636936f5aac597c3a8d}{torchvision\+\_\+down.\+transforms.\+functional.\+\_\+interpolation\+\_\+modes\+\_\+from\+\_\+int}} (int i)
+\item 
+List\mbox{[}int\mbox{]} \mbox{\hyperlink{namespacetorchvision__down_1_1transforms_1_1functional_ad63b55e4045390afc9ee14c49f044506}{torchvision\+\_\+down.\+transforms.\+functional.\+get\+\_\+image\+\_\+size}} (Tensor img)
+\item 
+int \mbox{\hyperlink{namespacetorchvision__down_1_1transforms_1_1functional_a1de409ad3d395a06f1eb0080c5890f09}{torchvision\+\_\+down.\+transforms.\+functional.\+get\+\_\+image\+\_\+num\+\_\+channels}} (Tensor img)
+\item 
+bool \mbox{\hyperlink{namespacetorchvision__down_1_1transforms_1_1functional_ae235f87ae0a7fabd37f094a838c7c07e}{torchvision\+\_\+down.\+transforms.\+functional.\+\_\+is\+\_\+numpy}} (Any img)
+\item 
+bool \mbox{\hyperlink{namespacetorchvision__down_1_1transforms_1_1functional_a50b8fd06c48e872b478a461a09a2f163}{torchvision\+\_\+down.\+transforms.\+functional.\+\_\+is\+\_\+numpy\+\_\+image}} (Any img)
+\item 
+\mbox{\hyperlink{namespacetorchvision__down_1_1transforms_1_1functional_a8892e5156f1310679d72114103f720cd}{torchvision\+\_\+down.\+transforms.\+functional.\+to\+\_\+tensor}} (pic)
+\item 
+\mbox{\hyperlink{namespacetorchvision__down_1_1transforms_1_1functional_a61c1e5f8cccec3773b81f66686531dd1}{torchvision\+\_\+down.\+transforms.\+functional.\+pil\+\_\+to\+\_\+tensor}} (pic)
+\item 
+torch.\+Tensor \mbox{\hyperlink{namespacetorchvision__down_1_1transforms_1_1functional_a2b4f3af43411f57f80089e818dd5fcb0}{torchvision\+\_\+down.\+transforms.\+functional.\+convert\+\_\+image\+\_\+dtype}} (torch.\+Tensor image, torch.\+dtype dtype=torch.\+float)
+\item 
+\mbox{\hyperlink{namespacetorchvision__down_1_1transforms_1_1functional_ac9d31d3e6c0bed048438b2af43f8b898}{torchvision\+\_\+down.\+transforms.\+functional.\+to\+\_\+pil\+\_\+image}} (pic, mode=None)
+\item 
+Tensor \mbox{\hyperlink{namespacetorchvision__down_1_1transforms_1_1functional_a4e7da9422586a582ae0786fc38ef3443}{torchvision\+\_\+down.\+transforms.\+functional.\+normalize}} (Tensor tensor, List\mbox{[}float\mbox{]} mean, List\mbox{[}float\mbox{]} std, bool inplace=False)
+\item 
+Tensor \mbox{\hyperlink{namespacetorchvision__down_1_1transforms_1_1functional_a8fa3e890b626a5cc11e24581ccf38019}{torchvision\+\_\+down.\+transforms.\+functional.\+resize}} (Tensor img, List\mbox{[}int\mbox{]} size, \mbox{\hyperlink{classtorchvision__down_1_1transforms_1_1functional_1_1_interpolation_mode}{Interpolation\+Mode}} interpolation=\mbox{\hyperlink{classtorchvision__down_1_1transforms_1_1functional_1_1_interpolation_mode_a38fd90165d745724a2f2373aa0879c87}{Interpolation\+Mode.\+BILINEAR}}, Optional\mbox{[}int\mbox{]} max\+\_\+size=None, Optional\mbox{[}bool\mbox{]} antialias=None)
+\item 
+Tensor \mbox{\hyperlink{namespacetorchvision__down_1_1transforms_1_1functional_a14ddecfe69e6f10e520234adca5f19bd}{torchvision\+\_\+down.\+transforms.\+functional.\+pad}} (Tensor img, List\mbox{[}int\mbox{]} padding, int fill=0, str padding\+\_\+mode="{}constant"{})
+\item 
+Tensor \mbox{\hyperlink{namespacetorchvision__down_1_1transforms_1_1functional_a7119dce1defcfb6467c9afff26fbba2a}{torchvision\+\_\+down.\+transforms.\+functional.\+crop}} (Tensor img, int top, int left, int height, int width)
+\item 
+Tensor \mbox{\hyperlink{namespacetorchvision__down_1_1transforms_1_1functional_ab6e914b3abd0ed8ff668c90ac28b19b3}{torchvision\+\_\+down.\+transforms.\+functional.\+center\+\_\+crop}} (Tensor img, List\mbox{[}int\mbox{]} output\+\_\+size)
+\item 
+Tensor \mbox{\hyperlink{namespacetorchvision__down_1_1transforms_1_1functional_a0e4f2e06c2d93ca52d0788b94886f417}{torchvision\+\_\+down.\+transforms.\+functional.\+resized\+\_\+crop}} (Tensor img, int top, int left, int height, int width, List\mbox{[}int\mbox{]} size, \mbox{\hyperlink{classtorchvision__down_1_1transforms_1_1functional_1_1_interpolation_mode}{Interpolation\+Mode}} interpolation=\mbox{\hyperlink{classtorchvision__down_1_1transforms_1_1functional_1_1_interpolation_mode_a38fd90165d745724a2f2373aa0879c87}{Interpolation\+Mode.\+BILINEAR}})
+\item 
+Tensor \mbox{\hyperlink{namespacetorchvision__down_1_1transforms_1_1functional_ad5e6da10218f08b1f7380ed823bc72a6}{torchvision\+\_\+down.\+transforms.\+functional.\+hflip}} (Tensor img)
+\item 
+List\mbox{[}float\mbox{]} \mbox{\hyperlink{namespacetorchvision__down_1_1transforms_1_1functional_a77dfdf7d283623f4fcbd7d0f87315de4}{torchvision\+\_\+down.\+transforms.\+functional.\+\_\+get\+\_\+perspective\+\_\+coeffs}} (List\mbox{[}List\mbox{[}int\mbox{]}\mbox{]} startpoints, List\mbox{[}List\mbox{[}int\mbox{]}\mbox{]} endpoints)
+\item 
+Tensor \mbox{\hyperlink{namespacetorchvision__down_1_1transforms_1_1functional_a416aee57ec18a57859c0c6d03361173d}{torchvision\+\_\+down.\+transforms.\+functional.\+perspective}} (Tensor img, List\mbox{[}List\mbox{[}int\mbox{]}\mbox{]} startpoints, List\mbox{[}List\mbox{[}int\mbox{]}\mbox{]} endpoints, \mbox{\hyperlink{classtorchvision__down_1_1transforms_1_1functional_1_1_interpolation_mode}{Interpolation\+Mode}} interpolation=\mbox{\hyperlink{classtorchvision__down_1_1transforms_1_1functional_1_1_interpolation_mode_a38fd90165d745724a2f2373aa0879c87}{Interpolation\+Mode.\+BILINEAR}}, Optional\mbox{[}List\mbox{[}float\mbox{]}\mbox{]} fill=None)
+\item 
+Tensor \mbox{\hyperlink{namespacetorchvision__down_1_1transforms_1_1functional_a6392288067482eb5f6d1e5a07164bf9c}{torchvision\+\_\+down.\+transforms.\+functional.\+vflip}} (Tensor img)
+\item 
+Tuple\mbox{[}Tensor, Tensor, Tensor, Tensor, Tensor\mbox{]} \mbox{\hyperlink{namespacetorchvision__down_1_1transforms_1_1functional_a522876b12fb61b73020eece15192c049}{torchvision\+\_\+down.\+transforms.\+functional.\+five\+\_\+crop}} (Tensor img, List\mbox{[}int\mbox{]} size)
+\item 
+List\mbox{[}Tensor\mbox{]} \mbox{\hyperlink{namespacetorchvision__down_1_1transforms_1_1functional_a905c87291cadb0947a732d6ae84eba2e}{torchvision\+\_\+down.\+transforms.\+functional.\+ten\+\_\+crop}} (Tensor img, List\mbox{[}int\mbox{]} size, bool vertical\+\_\+flip=False)
+\item 
+Tensor \mbox{\hyperlink{namespacetorchvision__down_1_1transforms_1_1functional_ab58d2a68738897895b14d8a7f2760d73}{torchvision\+\_\+down.\+transforms.\+functional.\+adjust\+\_\+brightness}} (Tensor img, float brightness\+\_\+factor)
+\item 
+Tensor \mbox{\hyperlink{namespacetorchvision__down_1_1transforms_1_1functional_a6770c5f1593465ee7a268888582e1b9b}{torchvision\+\_\+down.\+transforms.\+functional.\+adjust\+\_\+contrast}} (Tensor img, float contrast\+\_\+factor)
+\item 
+Tensor \mbox{\hyperlink{namespacetorchvision__down_1_1transforms_1_1functional_aa71d996fec79549f2252600fbc257f94}{torchvision\+\_\+down.\+transforms.\+functional.\+adjust\+\_\+saturation}} (Tensor img, float saturation\+\_\+factor)
+\item 
+Tensor \mbox{\hyperlink{namespacetorchvision__down_1_1transforms_1_1functional_aaad214ba3ca0998c1d636c432a5c2b30}{torchvision\+\_\+down.\+transforms.\+functional.\+adjust\+\_\+hue}} (Tensor img, float hue\+\_\+factor)
+\item 
+Tensor \mbox{\hyperlink{namespacetorchvision__down_1_1transforms_1_1functional_a32164b19239e2e864b1d80ca803ec4cc}{torchvision\+\_\+down.\+transforms.\+functional.\+adjust\+\_\+gamma}} (Tensor img, float gamma, float gain=1)
+\item 
+List\mbox{[}float\mbox{]} \mbox{\hyperlink{namespacetorchvision__down_1_1transforms_1_1functional_ac3f96a4ce608c462019c54442519f8b8}{torchvision\+\_\+down.\+transforms.\+functional.\+\_\+get\+\_\+inverse\+\_\+affine\+\_\+matrix}} (List\mbox{[}float\mbox{]} center, float angle, List\mbox{[}float\mbox{]} translate, float scale, List\mbox{[}float\mbox{]} shear)
+\item 
+Tensor \mbox{\hyperlink{namespacetorchvision__down_1_1transforms_1_1functional_a19c1807303f6b22fc868e3d942ffa72c}{torchvision\+\_\+down.\+transforms.\+functional.\+rotate}} (Tensor img, float angle, \mbox{\hyperlink{classtorchvision__down_1_1transforms_1_1functional_1_1_interpolation_mode}{Interpolation\+Mode}} interpolation=\mbox{\hyperlink{classtorchvision__down_1_1transforms_1_1functional_1_1_interpolation_mode_a6a6bb34c2976ea38186bca5ec09649c1}{Interpolation\+Mode.\+NEAREST}}, bool expand=False, Optional\mbox{[}List\mbox{[}int\mbox{]}\mbox{]} center=None, Optional\mbox{[}List\mbox{[}float\mbox{]}\mbox{]} fill=None, Optional\mbox{[}int\mbox{]} resample=None)
+\item 
+Tensor \mbox{\hyperlink{namespacetorchvision__down_1_1transforms_1_1functional_a7a53843fef7aee14aa5be65ca247e3d4}{torchvision\+\_\+down.\+transforms.\+functional.\+affine}} (Tensor img, float angle, List\mbox{[}int\mbox{]} translate, float scale, List\mbox{[}float\mbox{]} shear, \mbox{\hyperlink{classtorchvision__down_1_1transforms_1_1functional_1_1_interpolation_mode}{Interpolation\+Mode}} interpolation=\mbox{\hyperlink{classtorchvision__down_1_1transforms_1_1functional_1_1_interpolation_mode_a6a6bb34c2976ea38186bca5ec09649c1}{Interpolation\+Mode.\+NEAREST}}, Optional\mbox{[}List\mbox{[}float\mbox{]}\mbox{]} fill=None, Optional\mbox{[}int\mbox{]} resample=None, Optional\mbox{[}List\mbox{[}float\mbox{]}\mbox{]} fillcolor=None, Optional\mbox{[}List\mbox{[}int\mbox{]}\mbox{]} center=None)
+\item 
+\mbox{\hyperlink{namespacetorchvision__down_1_1transforms_1_1functional_a4343ae56fee364e695aa6f16392d5edd}{torchvision\+\_\+down.\+transforms.\+functional.\+to\+\_\+grayscale}} (img, num\+\_\+output\+\_\+channels=1)
+\item 
+Tensor \mbox{\hyperlink{namespacetorchvision__down_1_1transforms_1_1functional_a58c3d29ce6feec7f6b79152c498bdb62}{torchvision\+\_\+down.\+transforms.\+functional.\+rgb\+\_\+to\+\_\+grayscale}} (Tensor img, int num\+\_\+output\+\_\+channels=1)
+\item 
+Tensor \mbox{\hyperlink{namespacetorchvision__down_1_1transforms_1_1functional_a5f40c2cc29ed3c5a64e81e996db041d4}{torchvision\+\_\+down.\+transforms.\+functional.\+erase}} (Tensor img, int i, int j, int h, int w, Tensor v, bool inplace=False)
+\item 
+Tensor \mbox{\hyperlink{namespacetorchvision__down_1_1transforms_1_1functional_ae63dc0e17818f5c898e1021635706bd3}{torchvision\+\_\+down.\+transforms.\+functional.\+gaussian\+\_\+blur}} (Tensor img, List\mbox{[}int\mbox{]} kernel\+\_\+size, Optional\mbox{[}List\mbox{[}float\mbox{]}\mbox{]} sigma=None)
+\item 
+Tensor \mbox{\hyperlink{namespacetorchvision__down_1_1transforms_1_1functional_ae4e2bbd8a0270384dd7a60e62c324530}{torchvision\+\_\+down.\+transforms.\+functional.\+invert}} (Tensor img)
+\item 
+Tensor \mbox{\hyperlink{namespacetorchvision__down_1_1transforms_1_1functional_a8b4d0a6f0e59290c46443f5fd228dccf}{torchvision\+\_\+down.\+transforms.\+functional.\+posterize}} (Tensor img, int bits)
+\item 
+Tensor \mbox{\hyperlink{namespacetorchvision__down_1_1transforms_1_1functional_a1a0684c1a85be760653c310bf7a86c7d}{torchvision\+\_\+down.\+transforms.\+functional.\+solarize}} (Tensor img, float threshold)
+\item 
+Tensor \mbox{\hyperlink{namespacetorchvision__down_1_1transforms_1_1functional_a574a93f9bc9dd429712b560882e738b0}{torchvision\+\_\+down.\+transforms.\+functional.\+adjust\+\_\+sharpness}} (Tensor img, float sharpness\+\_\+factor)
+\item 
+Tensor \mbox{\hyperlink{namespacetorchvision__down_1_1transforms_1_1functional_acd5d653e148603d4b26db87858dc1273}{torchvision\+\_\+down.\+transforms.\+functional.\+autocontrast}} (Tensor img)
+\item 
+Tensor \mbox{\hyperlink{namespacetorchvision__down_1_1transforms_1_1functional_a063c31a94556b33e283c0a5f0b7dbec9}{torchvision\+\_\+down.\+transforms.\+functional.\+equalize}} (Tensor img)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{namespacetorchvision__down_1_1transforms_1_1functional_af99194b56a2eeaea4f45da549807d3e8}{torchvision\+\_\+down.\+transforms.\+functional.\+accimage}} = None
+\item 
+dict \mbox{\hyperlink{namespacetorchvision__down_1_1transforms_1_1functional_ac27230bf3a47086f91900e9593eb32e7}{torchvision\+\_\+down.\+transforms.\+functional.\+pil\+\_\+modes\+\_\+mapping}}
+\item 
+\mbox{\hyperlink{namespacetorchvision__down_1_1transforms_1_1functional_a07cba6238da4d9637ac73f23049d4468}{torchvision\+\_\+down.\+transforms.\+functional.\+\_\+is\+\_\+pil\+\_\+image}} = F\+\_\+pil.\+\_\+is\+\_\+pil\+\_\+image
+\end{DoxyCompactItemize}

@@ -1,0 +1,251 @@
+\doxysection{WSD\+\_\+ver 0\+\_\+newlogic Namespace Reference}
+\hypertarget{namespace_w_s_d__ver_010__newlogic}{}\label{namespace_w_s_d__ver_010__newlogic}\index{WSD\_ver 0\_newlogic@{WSD\_ver 0\_newlogic}}
+\doxysubsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{class_w_s_d__ver_010__newlogic_1_1_global_vars}{Global\+Vars}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{namespace_w_s_d__ver_010__newlogic_ab3e45119d4a6bc161674784f07a6b50f}{write\+\_\+ndpa}} (\mbox{\hyperlink{namespace_w_s_d__ver_010__newlogic_a66a57f04893deb603d1b39995bf909b0}{tile\+\_\+size}}=1024, \mbox{\hyperlink{namespace_w_s_d__ver_010__newlogic_abcf6a57170e5dbc6ebab05f9923ef19f}{overlap}}=128)
+\item 
+\mbox{\hyperlink{namespace_w_s_d__ver_010__newlogic_a7880d0156987e00b9f3460318e27756f}{get\+\_\+referance}} (wsi\+\_\+path)
+\item 
+\mbox{\hyperlink{namespace_w_s_d__ver_010__newlogic_a10be0ffc737752847fba26659aea6114}{update\+\_\+annote\+\_\+id}} (annotations)
+\item 
+\mbox{\hyperlink{namespace_w_s_d__ver_010__newlogic_ad6055b9567970c6589a9accc8ae6a5f1}{run\+\_\+predict\+\_\+wsi\+\_\+multithread}} (path, model, \mbox{\hyperlink{namespace_w_s_d__ver_010__newlogic_abcf6a57170e5dbc6ebab05f9923ef19f}{overlap}}, \mbox{\hyperlink{namespace_w_s_d__ver_010__newlogic_a66a57f04893deb603d1b39995bf909b0}{tile\+\_\+size}}=1024, batch\+\_\+size=12)
+\item 
+\mbox{\hyperlink{namespace_w_s_d__ver_010__newlogic_ae5da2070b1efd15301a57eee930af53e}{prune\+\_\+list}} (box\+\_\+list)
+\item 
+\mbox{\hyperlink{namespace_w_s_d__ver_010__newlogic_a6f9ce1f2c210d35fe0dd4a6b566ee025}{replace\+\_\+bigger\+\_\+box}} (boxA, boxB)
+\item 
+\mbox{\hyperlink{namespace_w_s_d__ver_010__newlogic_a65bc825a04a4d5bee4c6badaabff7ff8}{bb\+\_\+intersection\+\_\+over\+\_\+union}} (boxA, boxB)
+\item 
+\mbox{\hyperlink{namespace_w_s_d__ver_010__newlogic_aea7ee4de1066e74e6c9b074b9274c842}{rerun\+\_\+predict\+\_\+pool}} (wsi\+\_\+path, model, pred\+\_\+list, \mbox{\hyperlink{namespace_w_s_d__ver_010__newlogic_a66a57f04893deb603d1b39995bf909b0}{tile\+\_\+size}}=1024, batch\+\_\+size=12)
+\item 
+\mbox{\hyperlink{namespace_w_s_d__ver_010__newlogic_ab39049081f6c501b8998958c53b96f94}{get\+\_\+cat\+\_\+model}} ()
+\item 
+\mbox{\hyperlink{namespace_w_s_d__ver_010__newlogic_ac6e6a172532e2585def050d424957f7e}{divide\+\_\+chunks}} (Anotelist, batch\+\_\+size)
+\item 
+\mbox{\hyperlink{namespace_w_s_d__ver_010__newlogic_a380a579e606bad0a24a27bd9d31c29bb}{fetch\+\_\+batch}} (image, batch\+\_\+size=32)
+\item 
+\mbox{\hyperlink{namespace_w_s_d__ver_010__newlogic_a06d929cecbeb92e6f45943b328c81e87}{read\+\_\+tiles\+\_\+parallel}} (slide\+\_\+path, pred\+\_\+list, \mbox{\hyperlink{namespace_w_s_d__ver_010__newlogic_a66a57f04893deb603d1b39995bf909b0}{tile\+\_\+size}})
+\item 
+\mbox{\hyperlink{namespace_w_s_d__ver_010__newlogic_a85674ffb7976c32fb1d987e1bf4e0472}{process}} (wsi\+\_\+path, pred, \mbox{\hyperlink{namespace_w_s_d__ver_010__newlogic_a66a57f04893deb603d1b39995bf909b0}{tile\+\_\+size}})
+\item 
+\mbox{\hyperlink{namespace_w_s_d__ver_010__newlogic_a8be4985b18f2873d8b4e225f9c77e7e6}{write\+\_\+xml}} (annotations, start\+\_\+id, anote\+\_\+list, X\+\_\+\+Reference, Y\+\_\+\+Reference, nm\+\_\+p)
+\item 
+\mbox{\hyperlink{namespace_w_s_d__ver_010__newlogic_a361d251565414386e386cb83338c248c}{write\+\_\+annotation}} (annotations, \+\_\+id, x1, y1, x2, y2, cls, conf, X\+\_\+\+Reference, Y\+\_\+\+Reference, nm\+\_\+p=221)
+\item 
+\mbox{\hyperlink{namespace_w_s_d__ver_010__newlogic_a899aec65e19a0dc89e64ca251922569c}{dump\+\_\+results}} (gt\+\_\+xml\+\_\+path, predicts\+\_\+xml\+\_\+path)
+\item 
+\mbox{\hyperlink{namespace_w_s_d__ver_010__newlogic_a975a78571bc5645c5fc38a45f53977e3}{get\+\_\+box\+\_\+list}} (xml\+\_\+path, nm\+\_\+p=221)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{namespace_w_s_d__ver_010__newlogic_a62ab2aaa3c3e94b8bc9ee3fb0184cf1f}{current\+\_\+dir}} = os.\+path.\+dirname(sys.\+executable)
+\item 
+str \mbox{\hyperlink{namespace_w_s_d__ver_010__newlogic_a548d72b0c53f40f7d9d4662346644696}{url}} = "{}https\+://github.\+com/openslide/openslide-\/winbuild/releases/download/v20230414/openslide-\/win64-\/20230414.zip"{}
+\item 
+str \mbox{\hyperlink{namespace_w_s_d__ver_010__newlogic_ae7cfb54d8da8adbef357c2a8376e0e22}{filename}} = "{}openslide-\/win64-\/20230414.zip"{}
+\item 
+\mbox{\hyperlink{namespace_w_s_d__ver_010__newlogic_ab0ae49d58b68bb5b3a5e7aec5a680959}{response}} = requests.\+get(\mbox{\hyperlink{namespace_w_s_d__ver_010__newlogic_a548d72b0c53f40f7d9d4662346644696}{url}}, stream=True)
+\item 
+\mbox{\hyperlink{namespace_w_s_d__ver_010__newlogic_ae2e05beca481f35b7f39ca0cae7d90ca}{chunk\+\_\+size}}
+\item 
+\mbox{\hyperlink{namespace_w_s_d__ver_010__newlogic_ad48194b373450aba1687e5b029f71c49}{OPENSLIDE\+\_\+\+PATH}} = os.\+path.\+join(\mbox{\hyperlink{namespace_w_s_d__ver_010__newlogic_a62ab2aaa3c3e94b8bc9ee3fb0184cf1f}{current\+\_\+dir}}, \textquotesingle{}openslide-\/win64-\/20230414\textquotesingle{}, \textquotesingle{}bin\textquotesingle{})
+\item 
+str \mbox{\hyperlink{namespace_w_s_d__ver_010__newlogic_ad3d671688f98c3f41e7659d675a334f3}{folder\+\_\+path}} = "{}D\+:\textbackslash{}\+Shreyan\textbackslash{}\+Test"{}
+\item 
+\mbox{\hyperlink{namespace_w_s_d__ver_010__newlogic_a3b7b80264bd1ff7d4e88898445d23bbb}{global\+Vars}} = \mbox{\hyperlink{class_w_s_d__ver_010__newlogic_1_1_global_vars}{Global\+Vars}}(\mbox{\hyperlink{namespace_w_s_d__ver_010__newlogic_ad3d671688f98c3f41e7659d675a334f3}{folder\+\_\+path}})
+\item 
+\mbox{\hyperlink{namespace_w_s_d__ver_010__newlogic_adbc363180130e38e44da6cc20811b9c5}{start}} = time.\+time()
+\item 
+\mbox{\hyperlink{namespace_w_s_d__ver_010__newlogic_a66a57f04893deb603d1b39995bf909b0}{tile\+\_\+size}}
+\item 
+\mbox{\hyperlink{namespace_w_s_d__ver_010__newlogic_abcf6a57170e5dbc6ebab05f9923ef19f}{overlap}}
+\item 
+\mbox{\hyperlink{namespace_w_s_d__ver_010__newlogic_a933579a0599bfa42a0563249618a8248}{end}} = time.\+time()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{namespace_w_s_d__ver_010__newlogic_a65bc825a04a4d5bee4c6badaabff7ff8}\index{WSD\_ver 0\_newlogic@{WSD\_ver 0\_newlogic}!bb\_intersection\_over\_union@{bb\_intersection\_over\_union}}
+\index{bb\_intersection\_over\_union@{bb\_intersection\_over\_union}!WSD\_ver 0\_newlogic@{WSD\_ver 0\_newlogic}}
+\doxysubsubsection{\texorpdfstring{bb\_intersection\_over\_union()}{bb\_intersection\_over\_union()}}
+{\footnotesize\ttfamily \label{namespace_w_s_d__ver_010__newlogic_a65bc825a04a4d5bee4c6badaabff7ff8} 
+WSD\+\_\+ver 0\+\_\+newlogic.\+bb\+\_\+intersection\+\_\+over\+\_\+union (\begin{DoxyParamCaption}\item[{}]{boxA}{, }\item[{}]{boxB}{}\end{DoxyParamCaption})}
+
+\Hypertarget{namespace_w_s_d__ver_010__newlogic_ac6e6a172532e2585def050d424957f7e}\index{WSD\_ver 0\_newlogic@{WSD\_ver 0\_newlogic}!divide\_chunks@{divide\_chunks}}
+\index{divide\_chunks@{divide\_chunks}!WSD\_ver 0\_newlogic@{WSD\_ver 0\_newlogic}}
+\doxysubsubsection{\texorpdfstring{divide\_chunks()}{divide\_chunks()}}
+{\footnotesize\ttfamily \label{namespace_w_s_d__ver_010__newlogic_ac6e6a172532e2585def050d424957f7e} 
+WSD\+\_\+ver 0\+\_\+newlogic.\+divide\+\_\+chunks (\begin{DoxyParamCaption}\item[{}]{Anotelist}{, }\item[{}]{batch\+\_\+size}{}\end{DoxyParamCaption})}
+
+\Hypertarget{namespace_w_s_d__ver_010__newlogic_a899aec65e19a0dc89e64ca251922569c}\index{WSD\_ver 0\_newlogic@{WSD\_ver 0\_newlogic}!dump\_results@{dump\_results}}
+\index{dump\_results@{dump\_results}!WSD\_ver 0\_newlogic@{WSD\_ver 0\_newlogic}}
+\doxysubsubsection{\texorpdfstring{dump\_results()}{dump\_results()}}
+{\footnotesize\ttfamily \label{namespace_w_s_d__ver_010__newlogic_a899aec65e19a0dc89e64ca251922569c} 
+WSD\+\_\+ver 0\+\_\+newlogic.\+dump\+\_\+results (\begin{DoxyParamCaption}\item[{}]{gt\+\_\+xml\+\_\+path}{, }\item[{}]{predicts\+\_\+xml\+\_\+path}{}\end{DoxyParamCaption})}
+
+\Hypertarget{namespace_w_s_d__ver_010__newlogic_a380a579e606bad0a24a27bd9d31c29bb}\index{WSD\_ver 0\_newlogic@{WSD\_ver 0\_newlogic}!fetch\_batch@{fetch\_batch}}
+\index{fetch\_batch@{fetch\_batch}!WSD\_ver 0\_newlogic@{WSD\_ver 0\_newlogic}}
+\doxysubsubsection{\texorpdfstring{fetch\_batch()}{fetch\_batch()}}
+{\footnotesize\ttfamily \label{namespace_w_s_d__ver_010__newlogic_a380a579e606bad0a24a27bd9d31c29bb} 
+WSD\+\_\+ver 0\+\_\+newlogic.\+fetch\+\_\+batch (\begin{DoxyParamCaption}\item[{}]{image}{, }\item[{}]{batch\+\_\+size}{ = {\ttfamily 32}}\end{DoxyParamCaption})}
+
+\Hypertarget{namespace_w_s_d__ver_010__newlogic_a975a78571bc5645c5fc38a45f53977e3}\index{WSD\_ver 0\_newlogic@{WSD\_ver 0\_newlogic}!get\_box\_list@{get\_box\_list}}
+\index{get\_box\_list@{get\_box\_list}!WSD\_ver 0\_newlogic@{WSD\_ver 0\_newlogic}}
+\doxysubsubsection{\texorpdfstring{get\_box\_list()}{get\_box\_list()}}
+{\footnotesize\ttfamily \label{namespace_w_s_d__ver_010__newlogic_a975a78571bc5645c5fc38a45f53977e3} 
+WSD\+\_\+ver 0\+\_\+newlogic.\+get\+\_\+box\+\_\+list (\begin{DoxyParamCaption}\item[{}]{xml\+\_\+path}{, }\item[{}]{nm\+\_\+p}{ = {\ttfamily 221}}\end{DoxyParamCaption})}
+
+\Hypertarget{namespace_w_s_d__ver_010__newlogic_ab39049081f6c501b8998958c53b96f94}\index{WSD\_ver 0\_newlogic@{WSD\_ver 0\_newlogic}!get\_cat\_model@{get\_cat\_model}}
+\index{get\_cat\_model@{get\_cat\_model}!WSD\_ver 0\_newlogic@{WSD\_ver 0\_newlogic}}
+\doxysubsubsection{\texorpdfstring{get\_cat\_model()}{get\_cat\_model()}}
+{\footnotesize\ttfamily \label{namespace_w_s_d__ver_010__newlogic_ab39049081f6c501b8998958c53b96f94} 
+WSD\+\_\+ver 0\+\_\+newlogic.\+get\+\_\+cat\+\_\+model (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+\Hypertarget{namespace_w_s_d__ver_010__newlogic_a7880d0156987e00b9f3460318e27756f}\index{WSD\_ver 0\_newlogic@{WSD\_ver 0\_newlogic}!get\_referance@{get\_referance}}
+\index{get\_referance@{get\_referance}!WSD\_ver 0\_newlogic@{WSD\_ver 0\_newlogic}}
+\doxysubsubsection{\texorpdfstring{get\_referance()}{get\_referance()}}
+{\footnotesize\ttfamily \label{namespace_w_s_d__ver_010__newlogic_a7880d0156987e00b9f3460318e27756f} 
+WSD\+\_\+ver 0\+\_\+newlogic.\+get\+\_\+referance (\begin{DoxyParamCaption}\item[{}]{wsi\+\_\+path}{}\end{DoxyParamCaption})}
+
+\Hypertarget{namespace_w_s_d__ver_010__newlogic_a85674ffb7976c32fb1d987e1bf4e0472}\index{WSD\_ver 0\_newlogic@{WSD\_ver 0\_newlogic}!process@{process}}
+\index{process@{process}!WSD\_ver 0\_newlogic@{WSD\_ver 0\_newlogic}}
+\doxysubsubsection{\texorpdfstring{process()}{process()}}
+{\footnotesize\ttfamily \label{namespace_w_s_d__ver_010__newlogic_a85674ffb7976c32fb1d987e1bf4e0472} 
+WSD\+\_\+ver 0\+\_\+newlogic.\+process (\begin{DoxyParamCaption}\item[{}]{wsi\+\_\+path}{, }\item[{}]{pred}{, }\item[{}]{tile\+\_\+size}{}\end{DoxyParamCaption})}
+
+\Hypertarget{namespace_w_s_d__ver_010__newlogic_ae5da2070b1efd15301a57eee930af53e}\index{WSD\_ver 0\_newlogic@{WSD\_ver 0\_newlogic}!prune\_list@{prune\_list}}
+\index{prune\_list@{prune\_list}!WSD\_ver 0\_newlogic@{WSD\_ver 0\_newlogic}}
+\doxysubsubsection{\texorpdfstring{prune\_list()}{prune\_list()}}
+{\footnotesize\ttfamily \label{namespace_w_s_d__ver_010__newlogic_ae5da2070b1efd15301a57eee930af53e} 
+WSD\+\_\+ver 0\+\_\+newlogic.\+prune\+\_\+list (\begin{DoxyParamCaption}\item[{}]{box\+\_\+list}{}\end{DoxyParamCaption})}
+
+\Hypertarget{namespace_w_s_d__ver_010__newlogic_a06d929cecbeb92e6f45943b328c81e87}\index{WSD\_ver 0\_newlogic@{WSD\_ver 0\_newlogic}!read\_tiles\_parallel@{read\_tiles\_parallel}}
+\index{read\_tiles\_parallel@{read\_tiles\_parallel}!WSD\_ver 0\_newlogic@{WSD\_ver 0\_newlogic}}
+\doxysubsubsection{\texorpdfstring{read\_tiles\_parallel()}{read\_tiles\_parallel()}}
+{\footnotesize\ttfamily \label{namespace_w_s_d__ver_010__newlogic_a06d929cecbeb92e6f45943b328c81e87} 
+WSD\+\_\+ver 0\+\_\+newlogic.\+read\+\_\+tiles\+\_\+parallel (\begin{DoxyParamCaption}\item[{}]{slide\+\_\+path}{, }\item[{}]{pred\+\_\+list}{, }\item[{}]{tile\+\_\+size}{}\end{DoxyParamCaption})}
+
+\Hypertarget{namespace_w_s_d__ver_010__newlogic_a6f9ce1f2c210d35fe0dd4a6b566ee025}\index{WSD\_ver 0\_newlogic@{WSD\_ver 0\_newlogic}!replace\_bigger\_box@{replace\_bigger\_box}}
+\index{replace\_bigger\_box@{replace\_bigger\_box}!WSD\_ver 0\_newlogic@{WSD\_ver 0\_newlogic}}
+\doxysubsubsection{\texorpdfstring{replace\_bigger\_box()}{replace\_bigger\_box()}}
+{\footnotesize\ttfamily \label{namespace_w_s_d__ver_010__newlogic_a6f9ce1f2c210d35fe0dd4a6b566ee025} 
+WSD\+\_\+ver 0\+\_\+newlogic.\+replace\+\_\+bigger\+\_\+box (\begin{DoxyParamCaption}\item[{}]{boxA}{, }\item[{}]{boxB}{}\end{DoxyParamCaption})}
+
+\Hypertarget{namespace_w_s_d__ver_010__newlogic_aea7ee4de1066e74e6c9b074b9274c842}\index{WSD\_ver 0\_newlogic@{WSD\_ver 0\_newlogic}!rerun\_predict\_pool@{rerun\_predict\_pool}}
+\index{rerun\_predict\_pool@{rerun\_predict\_pool}!WSD\_ver 0\_newlogic@{WSD\_ver 0\_newlogic}}
+\doxysubsubsection{\texorpdfstring{rerun\_predict\_pool()}{rerun\_predict\_pool()}}
+{\footnotesize\ttfamily \label{namespace_w_s_d__ver_010__newlogic_aea7ee4de1066e74e6c9b074b9274c842} 
+WSD\+\_\+ver 0\+\_\+newlogic.\+rerun\+\_\+predict\+\_\+pool (\begin{DoxyParamCaption}\item[{}]{wsi\+\_\+path}{, }\item[{}]{model}{, }\item[{}]{pred\+\_\+list}{, }\item[{}]{tile\+\_\+size}{ = {\ttfamily 1024}, }\item[{}]{batch\+\_\+size}{ = {\ttfamily 12}}\end{DoxyParamCaption})}
+
+\Hypertarget{namespace_w_s_d__ver_010__newlogic_ad6055b9567970c6589a9accc8ae6a5f1}\index{WSD\_ver 0\_newlogic@{WSD\_ver 0\_newlogic}!run\_predict\_wsi\_multithread@{run\_predict\_wsi\_multithread}}
+\index{run\_predict\_wsi\_multithread@{run\_predict\_wsi\_multithread}!WSD\_ver 0\_newlogic@{WSD\_ver 0\_newlogic}}
+\doxysubsubsection{\texorpdfstring{run\_predict\_wsi\_multithread()}{run\_predict\_wsi\_multithread()}}
+{\footnotesize\ttfamily \label{namespace_w_s_d__ver_010__newlogic_ad6055b9567970c6589a9accc8ae6a5f1} 
+WSD\+\_\+ver 0\+\_\+newlogic.\+run\+\_\+predict\+\_\+wsi\+\_\+multithread (\begin{DoxyParamCaption}\item[{}]{path}{, }\item[{}]{model}{, }\item[{}]{overlap}{, }\item[{}]{tile\+\_\+size}{ = {\ttfamily 1024}, }\item[{}]{batch\+\_\+size}{ = {\ttfamily 12}}\end{DoxyParamCaption})}
+
+\Hypertarget{namespace_w_s_d__ver_010__newlogic_a10be0ffc737752847fba26659aea6114}\index{WSD\_ver 0\_newlogic@{WSD\_ver 0\_newlogic}!update\_annote\_id@{update\_annote\_id}}
+\index{update\_annote\_id@{update\_annote\_id}!WSD\_ver 0\_newlogic@{WSD\_ver 0\_newlogic}}
+\doxysubsubsection{\texorpdfstring{update\_annote\_id()}{update\_annote\_id()}}
+{\footnotesize\ttfamily \label{namespace_w_s_d__ver_010__newlogic_a10be0ffc737752847fba26659aea6114} 
+WSD\+\_\+ver 0\+\_\+newlogic.\+update\+\_\+annote\+\_\+id (\begin{DoxyParamCaption}\item[{}]{annotations}{}\end{DoxyParamCaption})}
+
+\Hypertarget{namespace_w_s_d__ver_010__newlogic_a361d251565414386e386cb83338c248c}\index{WSD\_ver 0\_newlogic@{WSD\_ver 0\_newlogic}!write\_annotation@{write\_annotation}}
+\index{write\_annotation@{write\_annotation}!WSD\_ver 0\_newlogic@{WSD\_ver 0\_newlogic}}
+\doxysubsubsection{\texorpdfstring{write\_annotation()}{write\_annotation()}}
+{\footnotesize\ttfamily \label{namespace_w_s_d__ver_010__newlogic_a361d251565414386e386cb83338c248c} 
+WSD\+\_\+ver 0\+\_\+newlogic.\+write\+\_\+annotation (\begin{DoxyParamCaption}\item[{}]{annotations}{, }\item[{}]{\+\_\+id}{, }\item[{}]{x1}{, }\item[{}]{y1}{, }\item[{}]{x2}{, }\item[{}]{y2}{, }\item[{}]{cls}{, }\item[{}]{conf}{, }\item[{}]{X\+\_\+\+Reference}{, }\item[{}]{Y\+\_\+\+Reference}{, }\item[{}]{nm\+\_\+p}{ = {\ttfamily 221}}\end{DoxyParamCaption})}
+
+\Hypertarget{namespace_w_s_d__ver_010__newlogic_ab3e45119d4a6bc161674784f07a6b50f}\index{WSD\_ver 0\_newlogic@{WSD\_ver 0\_newlogic}!write\_ndpa@{write\_ndpa}}
+\index{write\_ndpa@{write\_ndpa}!WSD\_ver 0\_newlogic@{WSD\_ver 0\_newlogic}}
+\doxysubsubsection{\texorpdfstring{write\_ndpa()}{write\_ndpa()}}
+{\footnotesize\ttfamily \label{namespace_w_s_d__ver_010__newlogic_ab3e45119d4a6bc161674784f07a6b50f} 
+WSD\+\_\+ver 0\+\_\+newlogic.\+write\+\_\+ndpa (\begin{DoxyParamCaption}\item[{}]{tile\+\_\+size}{ = {\ttfamily 1024}, }\item[{}]{overlap}{ = {\ttfamily 128}}\end{DoxyParamCaption})}
+
+\Hypertarget{namespace_w_s_d__ver_010__newlogic_a8be4985b18f2873d8b4e225f9c77e7e6}\index{WSD\_ver 0\_newlogic@{WSD\_ver 0\_newlogic}!write\_xml@{write\_xml}}
+\index{write\_xml@{write\_xml}!WSD\_ver 0\_newlogic@{WSD\_ver 0\_newlogic}}
+\doxysubsubsection{\texorpdfstring{write\_xml()}{write\_xml()}}
+{\footnotesize\ttfamily \label{namespace_w_s_d__ver_010__newlogic_a8be4985b18f2873d8b4e225f9c77e7e6} 
+WSD\+\_\+ver 0\+\_\+newlogic.\+write\+\_\+xml (\begin{DoxyParamCaption}\item[{}]{annotations}{, }\item[{}]{start\+\_\+id}{, }\item[{}]{anote\+\_\+list}{, }\item[{}]{X\+\_\+\+Reference}{, }\item[{}]{Y\+\_\+\+Reference}{, }\item[{}]{nm\+\_\+p}{}\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Variable Documentation}
+\Hypertarget{namespace_w_s_d__ver_010__newlogic_ae2e05beca481f35b7f39ca0cae7d90ca}\index{WSD\_ver 0\_newlogic@{WSD\_ver 0\_newlogic}!chunk\_size@{chunk\_size}}
+\index{chunk\_size@{chunk\_size}!WSD\_ver 0\_newlogic@{WSD\_ver 0\_newlogic}}
+\doxysubsubsection{\texorpdfstring{chunk\_size}{chunk\_size}}
+{\footnotesize\ttfamily \label{namespace_w_s_d__ver_010__newlogic_ae2e05beca481f35b7f39ca0cae7d90ca} 
+WSD\+\_\+ver 0\+\_\+newlogic.\+chunk\+\_\+size}
+
+\Hypertarget{namespace_w_s_d__ver_010__newlogic_a62ab2aaa3c3e94b8bc9ee3fb0184cf1f}\index{WSD\_ver 0\_newlogic@{WSD\_ver 0\_newlogic}!current\_dir@{current\_dir}}
+\index{current\_dir@{current\_dir}!WSD\_ver 0\_newlogic@{WSD\_ver 0\_newlogic}}
+\doxysubsubsection{\texorpdfstring{current\_dir}{current\_dir}}
+{\footnotesize\ttfamily \label{namespace_w_s_d__ver_010__newlogic_a62ab2aaa3c3e94b8bc9ee3fb0184cf1f} 
+WSD\+\_\+ver 0\+\_\+newlogic.\+current\+\_\+dir = os.\+path.\+dirname(sys.\+executable)}
+
+\Hypertarget{namespace_w_s_d__ver_010__newlogic_a933579a0599bfa42a0563249618a8248}\index{WSD\_ver 0\_newlogic@{WSD\_ver 0\_newlogic}!end@{end}}
+\index{end@{end}!WSD\_ver 0\_newlogic@{WSD\_ver 0\_newlogic}}
+\doxysubsubsection{\texorpdfstring{end}{end}}
+{\footnotesize\ttfamily \label{namespace_w_s_d__ver_010__newlogic_a933579a0599bfa42a0563249618a8248} 
+WSD\+\_\+ver 0\+\_\+newlogic.\+end = time.\+time()}
+
+\Hypertarget{namespace_w_s_d__ver_010__newlogic_ae7cfb54d8da8adbef357c2a8376e0e22}\index{WSD\_ver 0\_newlogic@{WSD\_ver 0\_newlogic}!filename@{filename}}
+\index{filename@{filename}!WSD\_ver 0\_newlogic@{WSD\_ver 0\_newlogic}}
+\doxysubsubsection{\texorpdfstring{filename}{filename}}
+{\footnotesize\ttfamily \label{namespace_w_s_d__ver_010__newlogic_ae7cfb54d8da8adbef357c2a8376e0e22} 
+str WSD\+\_\+ver 0\+\_\+newlogic.\+filename = "{}openslide-\/win64-\/20230414.zip"{}}
+
+\Hypertarget{namespace_w_s_d__ver_010__newlogic_ad3d671688f98c3f41e7659d675a334f3}\index{WSD\_ver 0\_newlogic@{WSD\_ver 0\_newlogic}!folder\_path@{folder\_path}}
+\index{folder\_path@{folder\_path}!WSD\_ver 0\_newlogic@{WSD\_ver 0\_newlogic}}
+\doxysubsubsection{\texorpdfstring{folder\_path}{folder\_path}}
+{\footnotesize\ttfamily \label{namespace_w_s_d__ver_010__newlogic_ad3d671688f98c3f41e7659d675a334f3} 
+str WSD\+\_\+ver 0\+\_\+newlogic.\+folder\+\_\+path = "{}D\+:\textbackslash{}\+Shreyan\textbackslash{}\+Test"{}}
+
+\Hypertarget{namespace_w_s_d__ver_010__newlogic_a3b7b80264bd1ff7d4e88898445d23bbb}\index{WSD\_ver 0\_newlogic@{WSD\_ver 0\_newlogic}!globalVars@{globalVars}}
+\index{globalVars@{globalVars}!WSD\_ver 0\_newlogic@{WSD\_ver 0\_newlogic}}
+\doxysubsubsection{\texorpdfstring{globalVars}{globalVars}}
+{\footnotesize\ttfamily \label{namespace_w_s_d__ver_010__newlogic_a3b7b80264bd1ff7d4e88898445d23bbb} 
+WSD\+\_\+ver 0\+\_\+newlogic.\+global\+Vars = \mbox{\hyperlink{class_w_s_d__ver_010__newlogic_1_1_global_vars}{Global\+Vars}}(\mbox{\hyperlink{namespace_w_s_d__ver_010__newlogic_ad3d671688f98c3f41e7659d675a334f3}{folder\+\_\+path}})}
+
+\Hypertarget{namespace_w_s_d__ver_010__newlogic_ad48194b373450aba1687e5b029f71c49}\index{WSD\_ver 0\_newlogic@{WSD\_ver 0\_newlogic}!OPENSLIDE\_PATH@{OPENSLIDE\_PATH}}
+\index{OPENSLIDE\_PATH@{OPENSLIDE\_PATH}!WSD\_ver 0\_newlogic@{WSD\_ver 0\_newlogic}}
+\doxysubsubsection{\texorpdfstring{OPENSLIDE\_PATH}{OPENSLIDE\_PATH}}
+{\footnotesize\ttfamily \label{namespace_w_s_d__ver_010__newlogic_ad48194b373450aba1687e5b029f71c49} 
+WSD\+\_\+ver 0\+\_\+newlogic.\+OPENSLIDE\+\_\+\+PATH = os.\+path.\+join(\mbox{\hyperlink{namespace_w_s_d__ver_010__newlogic_a62ab2aaa3c3e94b8bc9ee3fb0184cf1f}{current\+\_\+dir}}, \textquotesingle{}openslide-\/win64-\/20230414\textquotesingle{}, \textquotesingle{}bin\textquotesingle{})}
+
+\Hypertarget{namespace_w_s_d__ver_010__newlogic_abcf6a57170e5dbc6ebab05f9923ef19f}\index{WSD\_ver 0\_newlogic@{WSD\_ver 0\_newlogic}!overlap@{overlap}}
+\index{overlap@{overlap}!WSD\_ver 0\_newlogic@{WSD\_ver 0\_newlogic}}
+\doxysubsubsection{\texorpdfstring{overlap}{overlap}}
+{\footnotesize\ttfamily \label{namespace_w_s_d__ver_010__newlogic_abcf6a57170e5dbc6ebab05f9923ef19f} 
+WSD\+\_\+ver 0\+\_\+newlogic.\+overlap}
+
+\Hypertarget{namespace_w_s_d__ver_010__newlogic_ab0ae49d58b68bb5b3a5e7aec5a680959}\index{WSD\_ver 0\_newlogic@{WSD\_ver 0\_newlogic}!response@{response}}
+\index{response@{response}!WSD\_ver 0\_newlogic@{WSD\_ver 0\_newlogic}}
+\doxysubsubsection{\texorpdfstring{response}{response}}
+{\footnotesize\ttfamily \label{namespace_w_s_d__ver_010__newlogic_ab0ae49d58b68bb5b3a5e7aec5a680959} 
+WSD\+\_\+ver 0\+\_\+newlogic.\+response = requests.\+get(\mbox{\hyperlink{namespace_w_s_d__ver_010__newlogic_a548d72b0c53f40f7d9d4662346644696}{url}}, stream=True)}
+
+\Hypertarget{namespace_w_s_d__ver_010__newlogic_adbc363180130e38e44da6cc20811b9c5}\index{WSD\_ver 0\_newlogic@{WSD\_ver 0\_newlogic}!start@{start}}
+\index{start@{start}!WSD\_ver 0\_newlogic@{WSD\_ver 0\_newlogic}}
+\doxysubsubsection{\texorpdfstring{start}{start}}
+{\footnotesize\ttfamily \label{namespace_w_s_d__ver_010__newlogic_adbc363180130e38e44da6cc20811b9c5} 
+WSD\+\_\+ver 0\+\_\+newlogic.\+start = time.\+time()}
+
+\Hypertarget{namespace_w_s_d__ver_010__newlogic_a66a57f04893deb603d1b39995bf909b0}\index{WSD\_ver 0\_newlogic@{WSD\_ver 0\_newlogic}!tile\_size@{tile\_size}}
+\index{tile\_size@{tile\_size}!WSD\_ver 0\_newlogic@{WSD\_ver 0\_newlogic}}
+\doxysubsubsection{\texorpdfstring{tile\_size}{tile\_size}}
+{\footnotesize\ttfamily \label{namespace_w_s_d__ver_010__newlogic_a66a57f04893deb603d1b39995bf909b0} 
+WSD\+\_\+ver 0\+\_\+newlogic.\+tile\+\_\+size}
+
+\Hypertarget{namespace_w_s_d__ver_010__newlogic_a548d72b0c53f40f7d9d4662346644696}\index{WSD\_ver 0\_newlogic@{WSD\_ver 0\_newlogic}!url@{url}}
+\index{url@{url}!WSD\_ver 0\_newlogic@{WSD\_ver 0\_newlogic}}
+\doxysubsubsection{\texorpdfstring{url}{url}}
+{\footnotesize\ttfamily \label{namespace_w_s_d__ver_010__newlogic_a548d72b0c53f40f7d9d4662346644696} 
+str WSD\+\_\+ver 0\+\_\+newlogic.\+url = "{}https\+://github.\+com/openslide/openslide-\/winbuild/releases/download/v20230414/openslide-\/win64-\/20230414.zip"{}}
+

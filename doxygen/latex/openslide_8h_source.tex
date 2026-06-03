@@ -1,0 +1,193 @@
+\doxysection{openslide.\+h}
+\hypertarget{openslide_8h_source}{}\label{openslide_8h_source}\index{CerviAI/openslide-\/win64-\/20230414/include/openslide/openslide.h@{CerviAI/openslide-\/win64-\/20230414/include/openslide/openslide.h}}
+\mbox{\hyperlink{openslide_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{comment}{/*}}
+\DoxyCodeLine{00002\ \textcolor{comment}{\ *\ \ OpenSlide,\ a\ library\ for\ reading\ whole\ slide\ image\ files}}
+\DoxyCodeLine{00003\ \textcolor{comment}{\ *}}
+\DoxyCodeLine{00004\ \textcolor{comment}{\ *\ \ Copyright\ (c)\ 2007-\/2014\ Carnegie\ Mellon\ University}}
+\DoxyCodeLine{00005\ \textcolor{comment}{\ *\ \ All\ rights\ reserved.}}
+\DoxyCodeLine{00006\ \textcolor{comment}{\ *}}
+\DoxyCodeLine{00007\ \textcolor{comment}{\ *\ \ OpenSlide\ is\ free\ software:\ you\ can\ redistribute\ it\ and/or\ modify}}
+\DoxyCodeLine{00008\ \textcolor{comment}{\ *\ \ it\ under\ the\ terms\ of\ the\ GNU\ Lesser\ General\ Public\ License\ as}}
+\DoxyCodeLine{00009\ \textcolor{comment}{\ *\ \ published\ by\ the\ Free\ Software\ Foundation,\ version\ 2.1.}}
+\DoxyCodeLine{00010\ \textcolor{comment}{\ *}}
+\DoxyCodeLine{00011\ \textcolor{comment}{\ *\ \ OpenSlide\ is\ distributed\ in\ the\ hope\ that\ it\ will\ be\ useful,}}
+\DoxyCodeLine{00012\ \textcolor{comment}{\ *\ \ but\ WITHOUT\ ANY\ WARRANTY;\ without\ even\ the\ implied\ warranty\ of}}
+\DoxyCodeLine{00013\ \textcolor{comment}{\ *\ \ MERCHANTABILITY\ or\ FITNESS\ FOR\ A\ PARTICULAR\ PURPOSE.\ See\ the}}
+\DoxyCodeLine{00014\ \textcolor{comment}{\ *\ \ GNU\ Lesser\ General\ Public\ License\ for\ more\ details.}}
+\DoxyCodeLine{00015\ \textcolor{comment}{\ *}}
+\DoxyCodeLine{00016\ \textcolor{comment}{\ *\ \ You\ should\ have\ received\ a\ copy\ of\ the\ GNU\ Lesser\ General\ Public}}
+\DoxyCodeLine{00017\ \textcolor{comment}{\ *\ \ License\ along\ with\ OpenSlide.\ If\ not,\ see}}
+\DoxyCodeLine{00018\ \textcolor{comment}{\ *\ \ <http://www.gnu.org/licenses/>.}}
+\DoxyCodeLine{00019\ \textcolor{comment}{\ *}}
+\DoxyCodeLine{00020\ \textcolor{comment}{\ */}}
+\DoxyCodeLine{00021\ }
+\DoxyCodeLine{00029\ }
+\DoxyCodeLine{00030\ \textcolor{preprocessor}{\#ifndef\ OPENSLIDE\_OPENSLIDE\_H\_}}
+\DoxyCodeLine{00031\ \textcolor{preprocessor}{\#define\ OPENSLIDE\_OPENSLIDE\_H\_}}
+\DoxyCodeLine{00032\ }
+\DoxyCodeLine{00033\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{openslide-features_8h}{openslide-\/features.h}}"{}}}
+\DoxyCodeLine{00034\ }
+\DoxyCodeLine{00035\ \textcolor{preprocessor}{\#include\ <stdint.h>}}
+\DoxyCodeLine{00036\ }
+\DoxyCodeLine{00037\ \textcolor{preprocessor}{\#ifdef\ \_\_cplusplus}}
+\DoxyCodeLine{00038\ \textcolor{keyword}{extern}\ \textcolor{stringliteral}{"{}C"{}}\ \{}
+\DoxyCodeLine{00039\ \textcolor{preprocessor}{\#endif}}
+\DoxyCodeLine{00040\ }
+\DoxyCodeLine{00044\ \textcolor{keyword}{typedef}\ \textcolor{keyword}{struct\ }\_openslide\ \mbox{\hyperlink{openslide_8h_a990dde8d8caba731de6a9c8895df41cb}{openslide\_t}};}
+\DoxyCodeLine{00045\ }
+\DoxyCodeLine{00046\ }
+\DoxyCodeLine{00052\ }
+\DoxyCodeLine{00069\ \mbox{\hyperlink{openslide-features_8h_a1680f062acc9c25b61c94eb433fdde72}{OPENSLIDE\_PUBLIC}}()}
+\DoxyCodeLine{00070\ const\ \textcolor{keywordtype}{char}\ *\mbox{\hyperlink{openslide_8h_a213fb2cd919a61a13fe43bc38134854a}{openslide\_detect\_vendor}}(const\ \textcolor{keywordtype}{char}\ *filename);}
+\DoxyCodeLine{00071\ }
+\DoxyCodeLine{00072\ }
+\DoxyCodeLine{00088\ \mbox{\hyperlink{openslide-features_8h_a1680f062acc9c25b61c94eb433fdde72}{OPENSLIDE\_PUBLIC}}()}
+\DoxyCodeLine{00089\ \mbox{\hyperlink{openslide_8h_a990dde8d8caba731de6a9c8895df41cb}{openslide\_t}}\ *\mbox{\hyperlink{openslide_8h_acb25a6142891aeb52a00d97ca07af7b8}{openslide\_open}}(const\ \textcolor{keywordtype}{char}\ *filename);}
+\DoxyCodeLine{00090\ }
+\DoxyCodeLine{00091\ }
+\DoxyCodeLine{00099\ \mbox{\hyperlink{openslide-features_8h_a1680f062acc9c25b61c94eb433fdde72}{OPENSLIDE\_PUBLIC}}()}
+\DoxyCodeLine{00100\ int32\_t\ \mbox{\hyperlink{openslide_8h_a19eedd09aef2bd65db7e3b0a44e54738}{openslide\_get\_level\_count}}(\mbox{\hyperlink{openslide_8h_a990dde8d8caba731de6a9c8895df41cb}{openslide\_t}}\ *osr);}
+\DoxyCodeLine{00101\ }
+\DoxyCodeLine{00102\ }
+\DoxyCodeLine{00112\ \mbox{\hyperlink{openslide-features_8h_a1680f062acc9c25b61c94eb433fdde72}{OPENSLIDE\_PUBLIC}}()}
+\DoxyCodeLine{00113\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{openslide_8h_ae075e78f69c4c443300fdcf36d019e82}{openslide\_get\_level0\_dimensions}}(\mbox{\hyperlink{openslide_8h_a990dde8d8caba731de6a9c8895df41cb}{openslide\_t}}\ *osr,\ int64\_t\ *w,\ int64\_t\ *h);}
+\DoxyCodeLine{00114\ }
+\DoxyCodeLine{00115\ }
+\DoxyCodeLine{00127\ \mbox{\hyperlink{openslide-features_8h_a1680f062acc9c25b61c94eb433fdde72}{OPENSLIDE\_PUBLIC}}()}
+\DoxyCodeLine{00128\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{openslide_8h_a5c9c95c21b0657ea9965ddb4fab7eda8}{openslide\_get\_level\_dimensions}}(\mbox{\hyperlink{openslide_8h_a990dde8d8caba731de6a9c8895df41cb}{openslide\_t}}\ *osr,\ int32\_t\ level,}
+\DoxyCodeLine{00129\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ int64\_t\ *w,\ int64\_t\ *h);}
+\DoxyCodeLine{00130\ }
+\DoxyCodeLine{00131\ }
+\DoxyCodeLine{00141\ \mbox{\hyperlink{openslide-features_8h_a1680f062acc9c25b61c94eb433fdde72}{OPENSLIDE\_PUBLIC}}()}
+\DoxyCodeLine{00142\ \textcolor{keywordtype}{double}\ \mbox{\hyperlink{openslide_8h_a60daced5880dc3e4cf428dd81ba67bee}{openslide\_get\_level\_downsample}}(\mbox{\hyperlink{openslide_8h_a990dde8d8caba731de6a9c8895df41cb}{openslide\_t}}\ *osr,\ int32\_t\ level);}
+\DoxyCodeLine{00143\ }
+\DoxyCodeLine{00144\ }
+\DoxyCodeLine{00153\ \mbox{\hyperlink{openslide-features_8h_a1680f062acc9c25b61c94eb433fdde72}{OPENSLIDE\_PUBLIC}}()}
+\DoxyCodeLine{00154\ int32\_t\ \mbox{\hyperlink{openslide_8h_ac8a91866597157a270b8f8434cb4d7fc}{openslide\_get\_best\_level\_for\_downsample}}(\mbox{\hyperlink{openslide_8h_a990dde8d8caba731de6a9c8895df41cb}{openslide\_t}}\ *osr,}
+\DoxyCodeLine{00155\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{double}\ downsample);}
+\DoxyCodeLine{00156\ }
+\DoxyCodeLine{00174\ \mbox{\hyperlink{openslide-features_8h_a1680f062acc9c25b61c94eb433fdde72}{OPENSLIDE\_PUBLIC}}()}
+\DoxyCodeLine{00175\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{openslide_8h_a0eeecec682efdf2ef18c8426109acad0}{openslide\_read\_region}}(\mbox{\hyperlink{openslide_8h_a990dde8d8caba731de6a9c8895df41cb}{openslide\_t}}\ *osr,}
+\DoxyCodeLine{00176\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ uint32\_t\ *dest,}
+\DoxyCodeLine{00177\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ int64\_t\ x,\ int64\_t\ y,}
+\DoxyCodeLine{00178\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ int32\_t\ level,}
+\DoxyCodeLine{00179\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ int64\_t\ w,\ int64\_t\ h);}
+\DoxyCodeLine{00180\ }
+\DoxyCodeLine{00181\ }
+\DoxyCodeLine{00189\ \mbox{\hyperlink{openslide-features_8h_a1680f062acc9c25b61c94eb433fdde72}{OPENSLIDE\_PUBLIC}}()}
+\DoxyCodeLine{00190\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{openslide_8h_a3a69dfe81462a4e90c8da78d1addc4bd}{openslide\_close}}(\mbox{\hyperlink{openslide_8h_a990dde8d8caba731de6a9c8895df41cb}{openslide\_t}}\ *osr);}
+\DoxyCodeLine{00192\ }
+\DoxyCodeLine{00221\ }
+\DoxyCodeLine{00234\ \mbox{\hyperlink{openslide-features_8h_a1680f062acc9c25b61c94eb433fdde72}{OPENSLIDE\_PUBLIC}}()}
+\DoxyCodeLine{00235\ const\ \textcolor{keywordtype}{char}\ *\mbox{\hyperlink{openslide_8h_aa6600c795407ef09b27507e437c02e74}{openslide\_get\_error}}(\mbox{\hyperlink{openslide_8h_a990dde8d8caba731de6a9c8895df41cb}{openslide\_t}}\ *osr);}
+\DoxyCodeLine{00237\ }
+\DoxyCodeLine{00243\ }
+\DoxyCodeLine{00247\ \textcolor{preprocessor}{\#define\ OPENSLIDE\_PROPERTY\_NAME\_COMMENT\ "{}openslide.comment"{}}}
+\DoxyCodeLine{00248\ }
+\DoxyCodeLine{00252\ \textcolor{preprocessor}{\#define\ OPENSLIDE\_PROPERTY\_NAME\_VENDOR\ "{}openslide.vendor"{}}}
+\DoxyCodeLine{00253\ }
+\DoxyCodeLine{00257\ \textcolor{preprocessor}{\#define\ OPENSLIDE\_PROPERTY\_NAME\_QUICKHASH1\ "{}openslide.quickhash-\/1"{}}}
+\DoxyCodeLine{00258\ }
+\DoxyCodeLine{00265\ \textcolor{preprocessor}{\#define\ OPENSLIDE\_PROPERTY\_NAME\_BACKGROUND\_COLOR\ "{}openslide.background-\/color"{}}}
+\DoxyCodeLine{00266\ }
+\DoxyCodeLine{00272\ \textcolor{preprocessor}{\#define\ OPENSLIDE\_PROPERTY\_NAME\_OBJECTIVE\_POWER\ "{}openslide.objective-\/power"{}}}
+\DoxyCodeLine{00273\ }
+\DoxyCodeLine{00280\ \textcolor{preprocessor}{\#define\ OPENSLIDE\_PROPERTY\_NAME\_MPP\_X\ "{}openslide.mpp-\/x"{}}}
+\DoxyCodeLine{00281\ }
+\DoxyCodeLine{00288\ \textcolor{preprocessor}{\#define\ OPENSLIDE\_PROPERTY\_NAME\_MPP\_Y\ "{}openslide.mpp-\/y"{}}}
+\DoxyCodeLine{00289\ }
+\DoxyCodeLine{00296\ \textcolor{preprocessor}{\#define\ OPENSLIDE\_PROPERTY\_NAME\_BOUNDS\_X\ "{}openslide.bounds-\/x"{}}}
+\DoxyCodeLine{00297\ }
+\DoxyCodeLine{00304\ \textcolor{preprocessor}{\#define\ OPENSLIDE\_PROPERTY\_NAME\_BOUNDS\_Y\ "{}openslide.bounds-\/y"{}}}
+\DoxyCodeLine{00305\ }
+\DoxyCodeLine{00312\ \textcolor{preprocessor}{\#define\ OPENSLIDE\_PROPERTY\_NAME\_BOUNDS\_WIDTH\ "{}openslide.bounds-\/width"{}}}
+\DoxyCodeLine{00313\ }
+\DoxyCodeLine{00320\ \textcolor{preprocessor}{\#define\ OPENSLIDE\_PROPERTY\_NAME\_BOUNDS\_HEIGHT\ "{}openslide.bounds-\/height"{}}}
+\DoxyCodeLine{00322\ \textcolor{preprocessor}{}}
+\DoxyCodeLine{00328\ \textcolor{preprocessor}{}}
+\DoxyCodeLine{00341\ \mbox{\hyperlink{openslide-features_8h_a1680f062acc9c25b61c94eb433fdde72}{OPENSLIDE\_PUBLIC}}()}
+\DoxyCodeLine{00342\ const\ \textcolor{keywordtype}{char}\ *\ const\ *\mbox{\hyperlink{openslide_8h_ae67443921b5bce769ec3dff5c3288b68}{openslide\_get\_property\_names}}(\mbox{\hyperlink{openslide_8h_a990dde8d8caba731de6a9c8895df41cb}{openslide\_t}}\ *osr);}
+\DoxyCodeLine{00343\ }
+\DoxyCodeLine{00344\ }
+\DoxyCodeLine{00359\ \mbox{\hyperlink{openslide-features_8h_a1680f062acc9c25b61c94eb433fdde72}{OPENSLIDE\_PUBLIC}}()}
+\DoxyCodeLine{00360\ const\ \textcolor{keywordtype}{char}\ *\mbox{\hyperlink{openslide_8h_a23d3f612be44b5d6edce120e804539f4}{openslide\_get\_property\_value}}(\mbox{\hyperlink{openslide_8h_a990dde8d8caba731de6a9c8895df41cb}{openslide\_t}}\ *osr,\ const\ \textcolor{keywordtype}{char}\ *name);}
+\DoxyCodeLine{00361\ }
+\DoxyCodeLine{00363\ }
+\DoxyCodeLine{00369\ }
+\DoxyCodeLine{00384\ \mbox{\hyperlink{openslide-features_8h_a1680f062acc9c25b61c94eb433fdde72}{OPENSLIDE\_PUBLIC}}()}
+\DoxyCodeLine{00385\ const\ \textcolor{keywordtype}{char}\ *\ const\ *\mbox{\hyperlink{openslide_8h_a0e1396ecc9104fa4993f35e80ddf8928}{openslide\_get\_associated\_image\_names}}(\mbox{\hyperlink{openslide_8h_a990dde8d8caba731de6a9c8895df41cb}{openslide\_t}}\ *osr);}
+\DoxyCodeLine{00386\ }
+\DoxyCodeLine{00400\ \mbox{\hyperlink{openslide-features_8h_a1680f062acc9c25b61c94eb433fdde72}{OPENSLIDE\_PUBLIC}}()}
+\DoxyCodeLine{00401\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{openslide_8h_a2d1bca93ff5cbd2e13c4e6aaec868fd1}{openslide\_get\_associated\_image\_dimensions}}(\mbox{\hyperlink{openslide_8h_a990dde8d8caba731de6a9c8895df41cb}{openslide\_t}}\ *osr,}
+\DoxyCodeLine{00402\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ const\ \textcolor{keywordtype}{char}\ *name,}
+\DoxyCodeLine{00403\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ int64\_t\ *w,\ int64\_t\ *h);}
+\DoxyCodeLine{00404\ }
+\DoxyCodeLine{00405\ }
+\DoxyCodeLine{00421\ \mbox{\hyperlink{openslide-features_8h_a1680f062acc9c25b61c94eb433fdde72}{OPENSLIDE\_PUBLIC}}()}
+\DoxyCodeLine{00422\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{openslide_8h_a71ace07f87c9aeab328d3a6efcd2f983}{openslide\_read\_associated\_image}}(\mbox{\hyperlink{openslide_8h_a990dde8d8caba731de6a9c8895df41cb}{openslide\_t}}\ *osr,}
+\DoxyCodeLine{00423\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ const\ \textcolor{keywordtype}{char}\ *name,}
+\DoxyCodeLine{00424\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ uint32\_t\ *dest);}
+\DoxyCodeLine{00426\ }
+\DoxyCodeLine{00432\ }
+\DoxyCodeLine{00439\ \mbox{\hyperlink{openslide-features_8h_a1680f062acc9c25b61c94eb433fdde72}{OPENSLIDE\_PUBLIC}}()}
+\DoxyCodeLine{00440\ const\ \textcolor{keywordtype}{char}\ *\mbox{\hyperlink{openslide_8h_a0bf9b1f6eb8776873372e736e401661b}{openslide\_get\_version}}(\textcolor{keywordtype}{void});}
+\DoxyCodeLine{00441\ }
+\DoxyCodeLine{00443\ }
+\DoxyCodeLine{00452\ }
+\DoxyCodeLine{00472\ \mbox{\hyperlink{openslide-features_8h_a1680f062acc9c25b61c94eb433fdde72}{OPENSLIDE\_PUBLIC}}()}
+\DoxyCodeLine{00473\ \mbox{\hyperlink{openslide-features_8h_ab0fb87417740ccbd0177b541bb6e81c9}{OPENSLIDE\_DEPRECATED\_FOR}}(\mbox{\hyperlink{openslide_8h_a213fb2cd919a61a13fe43bc38134854a}{openslide\_detect\_vendor}}\ or\ \mbox{\hyperlink{openslide_8h_acb25a6142891aeb52a00d97ca07af7b8}{openslide\_open}})}
+\DoxyCodeLine{00474\ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{openslide_8h_af3aad60d3b901dd9a6d1278a52b1105d}{openslide\_can\_open}}(const\ \textcolor{keywordtype}{char}\ *filename);}
+\DoxyCodeLine{00475\ }
+\DoxyCodeLine{00476\ }
+\DoxyCodeLine{00484\ \mbox{\hyperlink{openslide-features_8h_a1680f062acc9c25b61c94eb433fdde72}{OPENSLIDE\_PUBLIC}}()}
+\DoxyCodeLine{00485\ \mbox{\hyperlink{openslide-features_8h_ab0fb87417740ccbd0177b541bb6e81c9}{OPENSLIDE\_DEPRECATED\_FOR}}(\mbox{\hyperlink{openslide_8h_a19eedd09aef2bd65db7e3b0a44e54738}{openslide\_get\_level\_count}})}
+\DoxyCodeLine{00486\ int32\_t\ \mbox{\hyperlink{openslide_8h_a504f741f8bc17e0ecac563f2f1125509}{openslide\_get\_layer\_count}}(\mbox{\hyperlink{openslide_8h_a990dde8d8caba731de6a9c8895df41cb}{openslide\_t}}\ *osr);}
+\DoxyCodeLine{00487\ }
+\DoxyCodeLine{00488\ }
+\DoxyCodeLine{00498\ \mbox{\hyperlink{openslide-features_8h_a1680f062acc9c25b61c94eb433fdde72}{OPENSLIDE\_PUBLIC}}()}
+\DoxyCodeLine{00499\ \mbox{\hyperlink{openslide-features_8h_ab0fb87417740ccbd0177b541bb6e81c9}{OPENSLIDE\_DEPRECATED\_FOR}}(\mbox{\hyperlink{openslide_8h_ae075e78f69c4c443300fdcf36d019e82}{openslide\_get\_level0\_dimensions}})}
+\DoxyCodeLine{00500\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{openslide_8h_a01ace929808942ca6c62218dea7eb2e6}{openslide\_get\_layer0\_dimensions}}(\mbox{\hyperlink{openslide_8h_a990dde8d8caba731de6a9c8895df41cb}{openslide\_t}}\ *osr,\ int64\_t\ *w,\ int64\_t\ *h);}
+\DoxyCodeLine{00501\ }
+\DoxyCodeLine{00502\ }
+\DoxyCodeLine{00514\ \mbox{\hyperlink{openslide-features_8h_a1680f062acc9c25b61c94eb433fdde72}{OPENSLIDE\_PUBLIC}}()}
+\DoxyCodeLine{00515\ \mbox{\hyperlink{openslide-features_8h_ab0fb87417740ccbd0177b541bb6e81c9}{OPENSLIDE\_DEPRECATED\_FOR}}(\mbox{\hyperlink{openslide_8h_a5c9c95c21b0657ea9965ddb4fab7eda8}{openslide\_get\_level\_dimensions}})}
+\DoxyCodeLine{00516\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{openslide_8h_ab02f7110b02c6aeb9646e83646035f00}{openslide\_get\_layer\_dimensions}}(\mbox{\hyperlink{openslide_8h_a990dde8d8caba731de6a9c8895df41cb}{openslide\_t}}\ *osr,\ int32\_t\ level,}
+\DoxyCodeLine{00517\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ int64\_t\ *w,\ int64\_t\ *h);}
+\DoxyCodeLine{00518\ }
+\DoxyCodeLine{00519\ }
+\DoxyCodeLine{00529\ \mbox{\hyperlink{openslide-features_8h_a1680f062acc9c25b61c94eb433fdde72}{OPENSLIDE\_PUBLIC}}()}
+\DoxyCodeLine{00530\ \mbox{\hyperlink{openslide-features_8h_ab0fb87417740ccbd0177b541bb6e81c9}{OPENSLIDE\_DEPRECATED\_FOR}}(\mbox{\hyperlink{openslide_8h_a60daced5880dc3e4cf428dd81ba67bee}{openslide\_get\_level\_downsample}})}
+\DoxyCodeLine{00531\ \textcolor{keywordtype}{double}\ \mbox{\hyperlink{openslide_8h_a88b7d2ecc8606c0673c3c49485f075d2}{openslide\_get\_layer\_downsample}}(\mbox{\hyperlink{openslide_8h_a990dde8d8caba731de6a9c8895df41cb}{openslide\_t}}\ *osr,\ int32\_t\ level);}
+\DoxyCodeLine{00532\ }
+\DoxyCodeLine{00533\ }
+\DoxyCodeLine{00542\ \mbox{\hyperlink{openslide-features_8h_a1680f062acc9c25b61c94eb433fdde72}{OPENSLIDE\_PUBLIC}}()}
+\DoxyCodeLine{00543\ \mbox{\hyperlink{openslide-features_8h_ab0fb87417740ccbd0177b541bb6e81c9}{OPENSLIDE\_DEPRECATED\_FOR}}(\mbox{\hyperlink{openslide_8h_ac8a91866597157a270b8f8434cb4d7fc}{openslide\_get\_best\_level\_for\_downsample}})}
+\DoxyCodeLine{00544\ int32\_t\ \mbox{\hyperlink{openslide_8h_ad2dfde287c3c84eb5a2e5e7bab3848d9}{openslide\_get\_best\_layer\_for\_downsample}}(\mbox{\hyperlink{openslide_8h_a990dde8d8caba731de6a9c8895df41cb}{openslide\_t}}\ *osr,}
+\DoxyCodeLine{00545\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{double}\ downsample);}
+\DoxyCodeLine{00546\ }
+\DoxyCodeLine{00556\ \mbox{\hyperlink{openslide-features_8h_a1680f062acc9c25b61c94eb433fdde72}{OPENSLIDE\_PUBLIC}}()}
+\DoxyCodeLine{00557\ \mbox{\hyperlink{openslide-features_8h_ab0fb87417740ccbd0177b541bb6e81c9}{OPENSLIDE\_DEPRECATED\_FOR}}(\mbox{\hyperlink{openslide_8h_a23d3f612be44b5d6edce120e804539f4}{openslide\_get\_property\_value}}(osr,\ \mbox{\hyperlink{openslide_8h_acab4512e53b74cb5b70b652fa322236e}{OPENSLIDE\_PROPERTY\_NAME\_COMMENT}}))}
+\DoxyCodeLine{00558\ const\ \textcolor{keywordtype}{char}\ *\mbox{\hyperlink{openslide_8h_af7647c5d29280fab6b26378bc6b4db9e}{openslide\_get\_comment}}(\mbox{\hyperlink{openslide_8h_a990dde8d8caba731de6a9c8895df41cb}{openslide\_t}}\ *osr);}
+\DoxyCodeLine{00559\ }
+\DoxyCodeLine{00561\ }
+\DoxyCodeLine{00562\ \textcolor{preprocessor}{\#ifndef\ OPENSLIDE\_SIMPLIFY\_HEADERS}}
+\DoxyCodeLine{00563\ \textcolor{comment}{//\ these\ are\ meant\ to\ throw\ compile-\/\ and\ link-\/time\ errors,}}
+\DoxyCodeLine{00564\ \textcolor{comment}{//\ since\ the\ functions\ they\ replace\ were\ never\ implemented}}
+\DoxyCodeLine{00565\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{openslide_8h_aecab667d8d22cfb59f37ab9a6c82c852}{\_openslide\_give\_prefetch\_hint\_UNIMPLEMENTED}}(\textcolor{keywordtype}{void});}
+\DoxyCodeLine{00566\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{openslide_8h_a89901e37d821f71e193b2943984a7ea8}{\_openslide\_cancel\_prefetch\_hint\_UNIMPLEMENTED}}(\textcolor{keywordtype}{void});}
+\DoxyCodeLine{00567\ \textcolor{preprocessor}{\#define\ openslide\_give\_prefetch\_hint(osr,\ x,\ y,\ level,\ w,\ h)\ \ \ \ \(\backslash\)}}
+\DoxyCodeLine{00568\ \textcolor{preprocessor}{\ \ \_openslide\_give\_prefetch\_hint\_UNIMPLEMENTED(-\/1);}}
+\DoxyCodeLine{00569\ \textcolor{preprocessor}{\#define\ openslide\_cancel\_prefetch\_hint(osr,\ prefetch\_id)\ \ \ \ \(\backslash\)}}
+\DoxyCodeLine{00570\ \textcolor{preprocessor}{\ \ \_openslide\_cancel\_prefetch\_hint\_UNIMPLEMENTED(-\/1)}}
+\DoxyCodeLine{00571\ \textcolor{preprocessor}{\#endif}}
+\DoxyCodeLine{00572\ }
+\DoxyCodeLine{00580\ }
+\DoxyCodeLine{00581\ \textcolor{preprocessor}{\#ifdef\ \_\_cplusplus}}
+\DoxyCodeLine{00582\ \}}
+\DoxyCodeLine{00583\ \textcolor{preprocessor}{\#endif}}
+\DoxyCodeLine{00584\ }
+\DoxyCodeLine{00585\ \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}

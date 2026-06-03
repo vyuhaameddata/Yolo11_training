@@ -1,0 +1,126 @@
+\doxysection{datasets -\/ Copy.\+Load\+Streams Class Reference}
+\hypertarget{classdatasets_01-_01_copy_1_1_load_streams}{}\label{classdatasets_01-_01_copy_1_1_load_streams}\index{datasets -\/ Copy.LoadStreams@{datasets -\/ Copy.LoadStreams}}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classdatasets_01-_01_copy_1_1_load_streams_af34dba574dd7bc09e6f8ad89c33ee4ea}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, \mbox{\hyperlink{classdatasets_01-_01_copy_1_1_load_streams_ac1345f196a2a09354d2fa26419d0f15c}{sources}}=\textquotesingle{}streams.\+txt\textquotesingle{}, \mbox{\hyperlink{classdatasets_01-_01_copy_1_1_load_streams_a375f309dec25c6a05885092494273e57}{img\+\_\+size}}=640, \mbox{\hyperlink{classdatasets_01-_01_copy_1_1_load_streams_a0620b4bc311ca05d668fa6bae4c6565e}{stride}}=32)
+\item 
+\mbox{\hyperlink{classdatasets_01-_01_copy_1_1_load_streams_a0c99441ceaa107b91a08b6c3f8f5fe0a}{update}} (self, index, cap)
+\item 
+\mbox{\hyperlink{classdatasets_01-_01_copy_1_1_load_streams_a3bc68bc415023185ebdeded3a0149ecd}{\+\_\+\+\_\+iter\+\_\+\+\_\+}} (self)
+\item 
+\mbox{\hyperlink{classdatasets_01-_01_copy_1_1_load_streams_a3792c55650a2c629ed0f6703534ed6f0}{\+\_\+\+\_\+next\+\_\+\+\_\+}} (self)
+\item 
+\mbox{\hyperlink{classdatasets_01-_01_copy_1_1_load_streams_a40957695f0cb07633fd60228e5fd892e}{\+\_\+\+\_\+len\+\_\+\+\_\+}} (self)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+str \mbox{\hyperlink{classdatasets_01-_01_copy_1_1_load_streams_a556e9723209e5d02f7e6b69d13e0a4ce}{mode}} = \textquotesingle{}stream\textquotesingle{}
+\item 
+\mbox{\hyperlink{classdatasets_01-_01_copy_1_1_load_streams_a375f309dec25c6a05885092494273e57}{img\+\_\+size}} = img\+\_\+size
+\item 
+\mbox{\hyperlink{classdatasets_01-_01_copy_1_1_load_streams_a0620b4bc311ca05d668fa6bae4c6565e}{stride}} = stride
+\item 
+list \mbox{\hyperlink{classdatasets_01-_01_copy_1_1_load_streams_a40b3661a42828f96fb3c2c0a02638917}{imgs}} = \mbox{[}None\mbox{]} \texorpdfstring{$\ast$}{*} n
+\item 
+list \mbox{\hyperlink{classdatasets_01-_01_copy_1_1_load_streams_ac1345f196a2a09354d2fa26419d0f15c}{sources}} = \mbox{[}clean\+\_\+str(x) for x in sources\mbox{]}
+\item 
+int \mbox{\hyperlink{classdatasets_01-_01_copy_1_1_load_streams_a6a7d59371267b1a5b3b627ad37c97033}{fps}} = cap.\+get(cv2.\+CAP\+\_\+\+PROP\+\_\+\+FPS) \% 100
+\item 
+int \mbox{\hyperlink{classdatasets_01-_01_copy_1_1_load_streams_aa013ad4888c4f059876abd452773fa8c}{rect}} = 1
+\item 
+int \mbox{\hyperlink{classdatasets_01-_01_copy_1_1_load_streams_a0ba7e427c406b8dd84f8edbec9c2cd44}{count}} = -\/1
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classdatasets_01-_01_copy_1_1_load_streams_af34dba574dd7bc09e6f8ad89c33ee4ea}\index{datasets -\/ Copy.LoadStreams@{datasets -\/ Copy.LoadStreams}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!datasets -\/ Copy.LoadStreams@{datasets -\/ Copy.LoadStreams}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily \label{classdatasets_01-_01_copy_1_1_load_streams_af34dba574dd7bc09e6f8ad89c33ee4ea} 
+datasets -\/ Copy.\+Load\+Streams.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{sources}{ = {\ttfamily \textquotesingle{}streams.txt\textquotesingle{}}, }\item[{}]{img\+\_\+size}{ = {\ttfamily 640}, }\item[{}]{stride}{ = {\ttfamily 32}}\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classdatasets_01-_01_copy_1_1_load_streams_a3bc68bc415023185ebdeded3a0149ecd}\index{datasets -\/ Copy.LoadStreams@{datasets -\/ Copy.LoadStreams}!\_\_iter\_\_@{\_\_iter\_\_}}
+\index{\_\_iter\_\_@{\_\_iter\_\_}!datasets -\/ Copy.LoadStreams@{datasets -\/ Copy.LoadStreams}}
+\doxysubsubsection{\texorpdfstring{\_\_iter\_\_()}{\_\_iter\_\_()}}
+{\footnotesize\ttfamily \label{classdatasets_01-_01_copy_1_1_load_streams_a3bc68bc415023185ebdeded3a0149ecd} 
+datasets -\/ Copy.\+Load\+Streams.\+\_\+\+\_\+iter\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classdatasets_01-_01_copy_1_1_load_streams_a40957695f0cb07633fd60228e5fd892e}\index{datasets -\/ Copy.LoadStreams@{datasets -\/ Copy.LoadStreams}!\_\_len\_\_@{\_\_len\_\_}}
+\index{\_\_len\_\_@{\_\_len\_\_}!datasets -\/ Copy.LoadStreams@{datasets -\/ Copy.LoadStreams}}
+\doxysubsubsection{\texorpdfstring{\_\_len\_\_()}{\_\_len\_\_()}}
+{\footnotesize\ttfamily \label{classdatasets_01-_01_copy_1_1_load_streams_a40957695f0cb07633fd60228e5fd892e} 
+datasets -\/ Copy.\+Load\+Streams.\+\_\+\+\_\+len\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classdatasets_01-_01_copy_1_1_load_streams_a3792c55650a2c629ed0f6703534ed6f0}\index{datasets -\/ Copy.LoadStreams@{datasets -\/ Copy.LoadStreams}!\_\_next\_\_@{\_\_next\_\_}}
+\index{\_\_next\_\_@{\_\_next\_\_}!datasets -\/ Copy.LoadStreams@{datasets -\/ Copy.LoadStreams}}
+\doxysubsubsection{\texorpdfstring{\_\_next\_\_()}{\_\_next\_\_()}}
+{\footnotesize\ttfamily \label{classdatasets_01-_01_copy_1_1_load_streams_a3792c55650a2c629ed0f6703534ed6f0} 
+datasets -\/ Copy.\+Load\+Streams.\+\_\+\+\_\+next\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classdatasets_01-_01_copy_1_1_load_streams_a0c99441ceaa107b91a08b6c3f8f5fe0a}\index{datasets -\/ Copy.LoadStreams@{datasets -\/ Copy.LoadStreams}!update@{update}}
+\index{update@{update}!datasets -\/ Copy.LoadStreams@{datasets -\/ Copy.LoadStreams}}
+\doxysubsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily \label{classdatasets_01-_01_copy_1_1_load_streams_a0c99441ceaa107b91a08b6c3f8f5fe0a} 
+datasets -\/ Copy.\+Load\+Streams.\+update (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{index}{, }\item[{}]{cap}{}\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classdatasets_01-_01_copy_1_1_load_streams_a0ba7e427c406b8dd84f8edbec9c2cd44}\index{datasets -\/ Copy.LoadStreams@{datasets -\/ Copy.LoadStreams}!count@{count}}
+\index{count@{count}!datasets -\/ Copy.LoadStreams@{datasets -\/ Copy.LoadStreams}}
+\doxysubsubsection{\texorpdfstring{count}{count}}
+{\footnotesize\ttfamily \label{classdatasets_01-_01_copy_1_1_load_streams_a0ba7e427c406b8dd84f8edbec9c2cd44} 
+int datasets -\/ Copy.\+Load\+Streams.\+count = -\/1}
+
+\Hypertarget{classdatasets_01-_01_copy_1_1_load_streams_a6a7d59371267b1a5b3b627ad37c97033}\index{datasets -\/ Copy.LoadStreams@{datasets -\/ Copy.LoadStreams}!fps@{fps}}
+\index{fps@{fps}!datasets -\/ Copy.LoadStreams@{datasets -\/ Copy.LoadStreams}}
+\doxysubsubsection{\texorpdfstring{fps}{fps}}
+{\footnotesize\ttfamily \label{classdatasets_01-_01_copy_1_1_load_streams_a6a7d59371267b1a5b3b627ad37c97033} 
+datasets -\/ Copy.\+Load\+Streams.\+fps = cap.\+get(cv2.\+CAP\+\_\+\+PROP\+\_\+\+FPS) \% 100}
+
+\Hypertarget{classdatasets_01-_01_copy_1_1_load_streams_a375f309dec25c6a05885092494273e57}\index{datasets -\/ Copy.LoadStreams@{datasets -\/ Copy.LoadStreams}!img\_size@{img\_size}}
+\index{img\_size@{img\_size}!datasets -\/ Copy.LoadStreams@{datasets -\/ Copy.LoadStreams}}
+\doxysubsubsection{\texorpdfstring{img\_size}{img\_size}}
+{\footnotesize\ttfamily \label{classdatasets_01-_01_copy_1_1_load_streams_a375f309dec25c6a05885092494273e57} 
+datasets -\/ Copy.\+Load\+Streams.\+img\+\_\+size = img\+\_\+size}
+
+\Hypertarget{classdatasets_01-_01_copy_1_1_load_streams_a40b3661a42828f96fb3c2c0a02638917}\index{datasets -\/ Copy.LoadStreams@{datasets -\/ Copy.LoadStreams}!imgs@{imgs}}
+\index{imgs@{imgs}!datasets -\/ Copy.LoadStreams@{datasets -\/ Copy.LoadStreams}}
+\doxysubsubsection{\texorpdfstring{imgs}{imgs}}
+{\footnotesize\ttfamily \label{classdatasets_01-_01_copy_1_1_load_streams_a40b3661a42828f96fb3c2c0a02638917} 
+list datasets -\/ Copy.\+Load\+Streams.\+imgs = \mbox{[}None\mbox{]} \texorpdfstring{$\ast$}{*} n}
+
+\Hypertarget{classdatasets_01-_01_copy_1_1_load_streams_a556e9723209e5d02f7e6b69d13e0a4ce}\index{datasets -\/ Copy.LoadStreams@{datasets -\/ Copy.LoadStreams}!mode@{mode}}
+\index{mode@{mode}!datasets -\/ Copy.LoadStreams@{datasets -\/ Copy.LoadStreams}}
+\doxysubsubsection{\texorpdfstring{mode}{mode}}
+{\footnotesize\ttfamily \label{classdatasets_01-_01_copy_1_1_load_streams_a556e9723209e5d02f7e6b69d13e0a4ce} 
+str datasets -\/ Copy.\+Load\+Streams.\+mode = \textquotesingle{}stream\textquotesingle{}}
+
+\Hypertarget{classdatasets_01-_01_copy_1_1_load_streams_aa013ad4888c4f059876abd452773fa8c}\index{datasets -\/ Copy.LoadStreams@{datasets -\/ Copy.LoadStreams}!rect@{rect}}
+\index{rect@{rect}!datasets -\/ Copy.LoadStreams@{datasets -\/ Copy.LoadStreams}}
+\doxysubsubsection{\texorpdfstring{rect}{rect}}
+{\footnotesize\ttfamily \label{classdatasets_01-_01_copy_1_1_load_streams_aa013ad4888c4f059876abd452773fa8c} 
+int datasets -\/ Copy.\+Load\+Streams.\+rect = 1}
+
+\Hypertarget{classdatasets_01-_01_copy_1_1_load_streams_ac1345f196a2a09354d2fa26419d0f15c}\index{datasets -\/ Copy.LoadStreams@{datasets -\/ Copy.LoadStreams}!sources@{sources}}
+\index{sources@{sources}!datasets -\/ Copy.LoadStreams@{datasets -\/ Copy.LoadStreams}}
+\doxysubsubsection{\texorpdfstring{sources}{sources}}
+{\footnotesize\ttfamily \label{classdatasets_01-_01_copy_1_1_load_streams_ac1345f196a2a09354d2fa26419d0f15c} 
+datasets -\/ Copy.\+Load\+Streams.\+sources = \mbox{[}clean\+\_\+str(x) for x in sources\mbox{]}}
+
+\Hypertarget{classdatasets_01-_01_copy_1_1_load_streams_a0620b4bc311ca05d668fa6bae4c6565e}\index{datasets -\/ Copy.LoadStreams@{datasets -\/ Copy.LoadStreams}!stride@{stride}}
+\index{stride@{stride}!datasets -\/ Copy.LoadStreams@{datasets -\/ Copy.LoadStreams}}
+\doxysubsubsection{\texorpdfstring{stride}{stride}}
+{\footnotesize\ttfamily \label{classdatasets_01-_01_copy_1_1_load_streams_a0620b4bc311ca05d668fa6bae4c6565e} 
+datasets -\/ Copy.\+Load\+Streams.\+stride = stride}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Cervi\+AI/utils/backup dump/\mbox{\hyperlink{datasets_01-_01_copy_8py}{datasets -\/ Copy.\+py}}\end{DoxyCompactItemize}

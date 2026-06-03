@@ -1,0 +1,105 @@
+\doxysection{torchvision\+\_\+down.\+transforms.\+transforms.\+Ten\+Crop Class Reference}
+\hypertarget{classtorchvision__down_1_1transforms_1_1transforms_1_1_ten_crop}{}\label{classtorchvision__down_1_1transforms_1_1transforms_1_1_ten_crop}\index{torchvision\_down.transforms.transforms.TenCrop@{torchvision\_down.transforms.transforms.TenCrop}}
+Inheritance diagram for torchvision\+\_\+down.\+transforms.\+transforms.\+Ten\+Crop\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classtorchvision__down_1_1transforms_1_1transforms_1_1_ten_crop}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1transforms_1_1transforms_1_1_ten_crop_ac3b0d13837ccb6a1c6f07a23a907dfe7}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, \mbox{\hyperlink{classtorchvision__down_1_1transforms_1_1transforms_1_1_ten_crop_a671590bf105fc93965796282c69198b6}{size}}, \mbox{\hyperlink{classtorchvision__down_1_1transforms_1_1transforms_1_1_ten_crop_ae8cf2cca79c723ab0e383752a5b4b076}{vertical\+\_\+flip}}=False)
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1transforms_1_1transforms_1_1_ten_crop_ac5ceb67b2bfe35b8127623a91dfff1e9}{forward}} (self, img)
+\item 
+str \mbox{\hyperlink{classtorchvision__down_1_1transforms_1_1transforms_1_1_ten_crop_a5278d2360cf569b57c1e6ca647467d1a}{\+\_\+\+\_\+repr\+\_\+\+\_\+}} (self)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1transforms_1_1transforms_1_1_ten_crop_a671590bf105fc93965796282c69198b6}{size}} = \mbox{\hyperlink{namespacetorchvision__down_1_1transforms_1_1transforms_a846a850c6e655e35dfd8dbfbc09e212c}{\+\_\+setup\+\_\+size}}(size, error\+\_\+msg="{}Please provide only two dimensions (h, w) for size."{})
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1transforms_1_1transforms_1_1_ten_crop_ae8cf2cca79c723ab0e383752a5b4b076}{vertical\+\_\+flip}} = vertical\+\_\+flip
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}Crop the given image into four corners and the central crop plus the flipped version of
+these (horizontal flipping is used by default).
+If the image is torch Tensor, it is expected
+to have [..., H, W] shape, where ... means an arbitrary number of leading
+dimensions
+
+.. Note::
+     This transform returns a tuple of images and there may be a mismatch in the number of
+     inputs and targets your Dataset returns. See below for an example of how to deal with
+     this.
+
+Args:
+    size (sequence or int): Desired output size of the crop. If size is an
+        int instead of sequence like (h, w), a square crop (size, size) is
+        made. If provided a sequence of length 1, it will be interpreted as (size[0], size[0]).
+    vertical_flip (bool): Use vertical flipping instead of horizontal
+
+Example:
+     >>> transform = Compose([
+     >>>    TenCrop(size), # this is a list of PIL Images
+     >>>    Lambda(lambda crops: torch.stack([ToTensor()(crop) for crop in crops])) # returns a 4D tensor
+     >>> ])
+     >>> #In your test loop you can do the following:
+     >>> input, target = batch # input is a 5d tensor, target is 2d
+     >>> bs, ncrops, c, h, w = input.size()
+     >>> result = model(input.view(-1, c, h, w)) # fuse batch size and ncrops
+     >>> result_avg = result.view(bs, ncrops, -1).mean(1) # avg over crops
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classtorchvision__down_1_1transforms_1_1transforms_1_1_ten_crop_ac3b0d13837ccb6a1c6f07a23a907dfe7}\index{torchvision\_down.transforms.transforms.TenCrop@{torchvision\_down.transforms.transforms.TenCrop}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!torchvision\_down.transforms.transforms.TenCrop@{torchvision\_down.transforms.transforms.TenCrop}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1transforms_1_1transforms_1_1_ten_crop_ac3b0d13837ccb6a1c6f07a23a907dfe7} 
+torchvision\+\_\+down.\+transforms.\+transforms.\+Ten\+Crop.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{size}{, }\item[{}]{vertical\+\_\+flip}{ = {\ttfamily False}}\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classtorchvision__down_1_1transforms_1_1transforms_1_1_ten_crop_a5278d2360cf569b57c1e6ca647467d1a}\index{torchvision\_down.transforms.transforms.TenCrop@{torchvision\_down.transforms.transforms.TenCrop}!\_\_repr\_\_@{\_\_repr\_\_}}
+\index{\_\_repr\_\_@{\_\_repr\_\_}!torchvision\_down.transforms.transforms.TenCrop@{torchvision\_down.transforms.transforms.TenCrop}}
+\doxysubsubsection{\texorpdfstring{\_\_repr\_\_()}{\_\_repr\_\_()}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1transforms_1_1transforms_1_1_ten_crop_a5278d2360cf569b57c1e6ca647467d1a} 
+ str torchvision\+\_\+down.\+transforms.\+transforms.\+Ten\+Crop.\+\_\+\+\_\+repr\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classtorchvision__down_1_1transforms_1_1transforms_1_1_ten_crop_ac5ceb67b2bfe35b8127623a91dfff1e9}\index{torchvision\_down.transforms.transforms.TenCrop@{torchvision\_down.transforms.transforms.TenCrop}!forward@{forward}}
+\index{forward@{forward}!torchvision\_down.transforms.transforms.TenCrop@{torchvision\_down.transforms.transforms.TenCrop}}
+\doxysubsubsection{\texorpdfstring{forward()}{forward()}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1transforms_1_1transforms_1_1_ten_crop_ac5ceb67b2bfe35b8127623a91dfff1e9} 
+torchvision\+\_\+down.\+transforms.\+transforms.\+Ten\+Crop.\+forward (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{img}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Args:
+    img (PIL Image or Tensor): Image to be cropped.
+
+Returns:
+    tuple of 10 images. Image can be PIL Image or Tensor
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classtorchvision__down_1_1transforms_1_1transforms_1_1_ten_crop_a671590bf105fc93965796282c69198b6}\index{torchvision\_down.transforms.transforms.TenCrop@{torchvision\_down.transforms.transforms.TenCrop}!size@{size}}
+\index{size@{size}!torchvision\_down.transforms.transforms.TenCrop@{torchvision\_down.transforms.transforms.TenCrop}}
+\doxysubsubsection{\texorpdfstring{size}{size}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1transforms_1_1transforms_1_1_ten_crop_a671590bf105fc93965796282c69198b6} 
+torchvision\+\_\+down.\+transforms.\+transforms.\+Ten\+Crop.\+size = \mbox{\hyperlink{namespacetorchvision__down_1_1transforms_1_1transforms_a846a850c6e655e35dfd8dbfbc09e212c}{\+\_\+setup\+\_\+size}}(size, error\+\_\+msg="{}Please provide only two dimensions (h, w) for size."{})}
+
+\Hypertarget{classtorchvision__down_1_1transforms_1_1transforms_1_1_ten_crop_ae8cf2cca79c723ab0e383752a5b4b076}\index{torchvision\_down.transforms.transforms.TenCrop@{torchvision\_down.transforms.transforms.TenCrop}!vertical\_flip@{vertical\_flip}}
+\index{vertical\_flip@{vertical\_flip}!torchvision\_down.transforms.transforms.TenCrop@{torchvision\_down.transforms.transforms.TenCrop}}
+\doxysubsubsection{\texorpdfstring{vertical\_flip}{vertical\_flip}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1transforms_1_1transforms_1_1_ten_crop_ae8cf2cca79c723ab0e383752a5b4b076} 
+torchvision\+\_\+down.\+transforms.\+transforms.\+Ten\+Crop.\+vertical\+\_\+flip = vertical\+\_\+flip}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Cervi\+AI/torchvision\+\_\+down/transforms/\mbox{\hyperlink{transforms_8py}{transforms.\+py}}\end{DoxyCompactItemize}

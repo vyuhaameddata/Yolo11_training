@@ -1,0 +1,78 @@
+\doxysection{Cervi\+AI/\+WSD.py File Reference}
+\hypertarget{_w_s_d_8py}{}\label{_w_s_d_8py}\index{CerviAI/WSD.py@{CerviAI/WSD.py}}
+\doxysubsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{class_w_s_d_1_1_global_vars}{WSD.\+Global\+Vars}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+namespace \mbox{\hyperlink{namespace_w_s_d}{WSD}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{namespace_w_s_d_a0b2b0126520a4780e468e8265691ecb1}{WSD.\+write\+\_\+ndpa}} (\mbox{\hyperlink{namespace_w_s_d_abf48a8e2de30c37844a1e19e28ae01c7}{tile\+\_\+size}}=1024, \mbox{\hyperlink{namespace_w_s_d_abce1dcadec6f2c1101f3160b8caa996e}{overlap}}=128)
+\item 
+\mbox{\hyperlink{namespace_w_s_d_a35851aa316b63b3a32f5d0bd7fd96dd3}{WSD.\+get\+\_\+referance}} (wsi\+\_\+path)
+\item 
+\mbox{\hyperlink{namespace_w_s_d_a4910f9e1f78e0454bb883c918df6bec7}{WSD.\+update\+\_\+annote\+\_\+id}} (annotations)
+\item 
+\mbox{\hyperlink{namespace_w_s_d_ab2d7fa824a1221b95857b611acb8a7d3}{WSD.\+run\+\_\+predict\+\_\+wsi\+\_\+multithread}} (path, model, \mbox{\hyperlink{namespace_w_s_d_abce1dcadec6f2c1101f3160b8caa996e}{overlap}}, \mbox{\hyperlink{namespace_w_s_d_abf48a8e2de30c37844a1e19e28ae01c7}{tile\+\_\+size}}=1024, batch\+\_\+size=12)
+\item 
+\mbox{\hyperlink{namespace_w_s_d_a4905e7a4398c78eac058462a40e175ac}{WSD.\+prune\+\_\+list}} (box\+\_\+list)
+\item 
+\mbox{\hyperlink{namespace_w_s_d_ac502b3182a41a26f990e197e5339094a}{WSD.\+replace\+\_\+bigger\+\_\+box}} (boxA, boxB)
+\item 
+\mbox{\hyperlink{namespace_w_s_d_a589211f0df0756d07af9c56c74ced992}{WSD.\+bb\+\_\+intersection\+\_\+over\+\_\+union}} (boxA, boxB)
+\item 
+\mbox{\hyperlink{namespace_w_s_d_a796c9d48390b3fbbd63d36ee64761c0e}{WSD.\+rerun\+\_\+predict\+\_\+pool}} (wsi\+\_\+path, model, pred\+\_\+list, \mbox{\hyperlink{namespace_w_s_d_abf48a8e2de30c37844a1e19e28ae01c7}{tile\+\_\+size}}=1024, batch\+\_\+size=12)
+\item 
+\mbox{\hyperlink{namespace_w_s_d_a75f922eea3de12580ac4f8083b191cf7}{WSD.\+divide\+\_\+chunks}} (Anotelist, batch\+\_\+size)
+\item 
+\mbox{\hyperlink{namespace_w_s_d_af5092688aa7be946d47e6ea600a1c766}{WSD.\+read\+\_\+tiles\+\_\+parallel}} (slide\+\_\+path, pred\+\_\+list, \mbox{\hyperlink{namespace_w_s_d_abf48a8e2de30c37844a1e19e28ae01c7}{tile\+\_\+size}})
+\item 
+\mbox{\hyperlink{namespace_w_s_d_a2c52486efd07c1404d7f0fa2fc60d472}{WSD.\+process}} (wsi\+\_\+path, pred, \mbox{\hyperlink{namespace_w_s_d_abf48a8e2de30c37844a1e19e28ae01c7}{tile\+\_\+size}})
+\item 
+\mbox{\hyperlink{namespace_w_s_d_a506739aada1c43b577434e510a0b89f1}{WSD.\+fetch\+\_\+batch}} (image)
+\item 
+\mbox{\hyperlink{namespace_w_s_d_a6a75d9b0994f5a160aec3a303e2dfd51}{WSD.\+get\+\_\+cat\+\_\+model}} ()
+\item 
+\mbox{\hyperlink{namespace_w_s_d_aae910f8dc2f8ca12b22f7317c1e22e79}{WSD.\+relabel\+\_\+uncategorized}} (pred\+\_\+list, cat\+\_\+list)
+\item 
+\mbox{\hyperlink{namespace_w_s_d_a64c6ddfda73d9c9940946c86bd9b12e2}{WSD.\+write\+\_\+xml}} (annotations, start\+\_\+id, anote\+\_\+list, X\+\_\+\+Reference, Y\+\_\+\+Reference, nm\+\_\+p)
+\item 
+\mbox{\hyperlink{namespace_w_s_d_a999c350f5fe9219f5b3253646316c9ea}{WSD.\+write\+\_\+annotation}} (annotations, \+\_\+id, x1, y1, x2, y2, cls, conf, X\+\_\+\+Reference, Y\+\_\+\+Reference, nm\+\_\+p=221)
+\item 
+\mbox{\hyperlink{namespace_w_s_d_adf1c4453f816d4a7ea229c6fa5cf1eae}{WSD.\+dump\+\_\+results}} (gt\+\_\+xml\+\_\+path, predicts\+\_\+xml\+\_\+path)
+\item 
+\mbox{\hyperlink{namespace_w_s_d_a3de76669d6b7da714b566827988333e2}{WSD.\+get\+\_\+box\+\_\+list}} (xml\+\_\+path, nm\+\_\+p=221)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{namespace_w_s_d_a6d2f1b6537740d60c88fec374b79ff77}{WSD.\+current\+\_\+dir}} = os.\+path.\+dirname(sys.\+executable)
+\item 
+str \mbox{\hyperlink{namespace_w_s_d_aca5154155291fe74dc093583c4f5cba9}{WSD.\+url}} = "{}https\+://github.\+com/openslide/openslide-\/winbuild/releases/download/v20230414/openslide-\/win64-\/20230414.zip"{}
+\item 
+str \mbox{\hyperlink{namespace_w_s_d_a175b70a3419abf956a81071d30995de9}{WSD.\+filename}} = "{}openslide-\/win64-\/20230414.zip"{}
+\item 
+\mbox{\hyperlink{namespace_w_s_d_a59bdcc2f5e9d2e0595530066c0027c09}{WSD.\+response}} = requests.\+get(\mbox{\hyperlink{namespace_w_s_d_aca5154155291fe74dc093583c4f5cba9}{url}}, stream=True)
+\item 
+\mbox{\hyperlink{namespace_w_s_d_a872dfa24a08c71537f5c034968c277e1}{WSD.\+chunk\+\_\+size}}
+\item 
+\mbox{\hyperlink{namespace_w_s_d_abbb679e7148abbb2df83288b3b598eb6}{WSD.\+OPENSLIDE\+\_\+\+PATH}} = os.\+path.\+join(\mbox{\hyperlink{namespace_w_s_d_a6d2f1b6537740d60c88fec374b79ff77}{current\+\_\+dir}}, \textquotesingle{}openslide-\/win64-\/20230414\textquotesingle{}, \textquotesingle{}bin\textquotesingle{})
+\item 
+str \mbox{\hyperlink{namespace_w_s_d_a800e7040c46ebace5996704deab4f680}{WSD.\+folder\+\_\+path}} = r\textquotesingle{}D\+:\textbackslash{}\+Shreyan\textbackslash{}\+Development\textbackslash{}\+Test\textbackslash{}dump\textquotesingle{}
+\item 
+\mbox{\hyperlink{namespace_w_s_d_a3ba7f7e06289a1a48dd0b4ff6443baa7}{WSD.\+global\+Vars}} = \mbox{\hyperlink{class_w_s_d_1_1_global_vars}{Global\+Vars}}(\mbox{\hyperlink{namespace_w_s_d_a800e7040c46ebace5996704deab4f680}{folder\+\_\+path}})
+\item 
+\mbox{\hyperlink{namespace_w_s_d_ab77e748ee98c10f0ec51f0b8f26c3001}{WSD.\+start}} = time.\+time()
+\item 
+\mbox{\hyperlink{namespace_w_s_d_abf48a8e2de30c37844a1e19e28ae01c7}{WSD.\+tile\+\_\+size}}
+\item 
+\mbox{\hyperlink{namespace_w_s_d_abce1dcadec6f2c1101f3160b8caa996e}{WSD.\+overlap}}
+\item 
+\mbox{\hyperlink{namespace_w_s_d_af18ed839497955e13489b92e24b94aba}{WSD.\+end}} = time.\+time()
+\end{DoxyCompactItemize}

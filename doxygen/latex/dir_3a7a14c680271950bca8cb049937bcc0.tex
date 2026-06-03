@@ -1,0 +1,194 @@
+\doxysection{Cervi\+AI/deploy/triton-\/inference-\/server Directory Reference}
+\hypertarget{dir_3a7a14c680271950bca8cb049937bcc0}{}\label{dir_3a7a14c680271950bca8cb049937bcc0}\index{CerviAI/deploy/triton-\/inference-\/server Directory Reference@{CerviAI/deploy/triton-\/inference-\/server Directory Reference}}
+\doxysubsubsection*{Files}
+\begin{DoxyCompactItemize}
+\item 
+file \mbox{\hyperlink{boundingbox_8py}{boundingbox.\+py}}
+\item 
+file \mbox{\hyperlink{client_8py}{client.\+py}}
+\item 
+file \mbox{\hyperlink{labels_8py}{labels.\+py}}
+\item 
+file \mbox{\hyperlink{processing_8py}{processing.\+py}}
+\item 
+file \mbox{\hyperlink{render_8py}{render.\+py}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Instructions to deploy YOLOv7 as Tensor\+RT engine to \href{https://github.com/NVIDIA/triton-inference-server}{\texttt{ Triton Inference Server}}.
+
+Triton Inference Server takes care of model deployment with many out-\/of-\/the-\/box benefits, like a GRPC and HTTP interface, automatic scheduling on multiple GPUs, shared memory (even on GPU), dynamic server-\/side batching, health metrics and memory resource management.
+
+There are no additional dependencies needed to run this deployment, except a working docker daemon with GPU support.\hypertarget{README.md_autotoc_md1}{}\doxysubsection{\texorpdfstring{Export Tensor\+RT}{Export Tensor\+RT}}\label{README.md_autotoc_md1}
+See \href{https://github.com/WongKinYiu/yolov7\#export}{\texttt{ https\+://github.\+com/\+Wong\+Kin\+Yiu/yolov7\#export}} for more info.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\#install\ onnx-\/simplifier\ not\ listed\ in\ general\ yolov7\ requirements.txt}
+\DoxyCodeLine{pip3\ install\ onnx-\/simplifier\ }
+\DoxyCodeLine{}
+\DoxyCodeLine{\#\ Pytorch\ Yolov7\ -\/>\ ONNX\ with\ grid,\ EfficientNMS\ plugin\ and\ dynamic\ batch\ size}
+\DoxyCodeLine{python\ export.py\ -\/-\/weights\ ./yolov7.pt\ -\/-\/grid\ -\/-\/end2end\ -\/-\/dynamic-\/batch\ -\/-\/simplify\ -\/-\/topk-\/all\ 100\ -\/-\/iou-\/thres\ 0.65\ -\/-\/conf-\/thres\ 0.35\ -\/-\/img-\/size\ 640\ 640}
+\DoxyCodeLine{\#\ ONNX\ -\/>\ TensorRT\ with\ trtexec\ and\ docker}
+\DoxyCodeLine{docker\ run\ -\/it\ -\/-\/rm\ -\/-\/gpus=all\ nvcr.io/nvidia/tensorrt:22.06-\/py3}
+\DoxyCodeLine{\#\ Copy\ onnx\ -\/>\ container:\ docker\ cp\ yolov7.onnx\ <container-\/id>:/workspace/}
+\DoxyCodeLine{\#\ Export\ with\ FP16\ precision,\ min\ batch\ 1,\ opt\ batch\ 8\ and\ max\ batch\ 8}
+\DoxyCodeLine{./tensorrt/bin/trtexec\ -\/-\/onnx=yolov7.onnx\ -\/-\/minShapes=images:1x3x640x640\ -\/-\/optShapes=images:8x3x640x640\ -\/-\/maxShapes=images:8x3x640x640\ -\/-\/fp16\ -\/-\/workspace=4096\ -\/-\/saveEngine=yolov7-\/fp16-\/1x8x8.engine\ -\/-\/timingCacheFile=timing.cache}
+\DoxyCodeLine{\#\ Test\ engine}
+\DoxyCodeLine{./tensorrt/bin/trtexec\ -\/-\/loadEngine=yolov7-\/fp16-\/1x8x8.engine}
+\DoxyCodeLine{\#\ Copy\ engine\ -\/>\ host:\ docker\ cp\ <container-\/id>:/workspace/yolov7-\/fp16-\/1x8x8.engine\ .}
+
+\end{DoxyCode}
+
+
+Example output of test with RTX 3090.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{[I]\ ===\ Performance\ summary\ ===}
+\DoxyCodeLine{[I]\ Throughput:\ 73.4985\ qps}
+\DoxyCodeLine{[I]\ Latency:\ min\ =\ 14.8578\ ms,\ max\ =\ 15.8344\ ms,\ mean\ =\ 15.07\ ms,\ median\ =\ 15.0422\ ms,\ percentile(99\%)\ =\ 15.7443\ ms}
+\DoxyCodeLine{[I]\ End-\/to-\/End\ Host\ Latency:\ min\ =\ 25.8715\ ms,\ max\ =\ 28.4102\ ms,\ mean\ =\ 26.672\ ms,\ median\ =\ 26.6082\ ms,\ percentile(99\%)\ =\ 27.8314\ ms}
+\DoxyCodeLine{[I]\ Enqueue\ Time:\ min\ =\ 0.793701\ ms,\ max\ =\ 1.47144\ ms,\ mean\ =\ 1.2008\ ms,\ median\ =\ 1.28644\ ms,\ percentile(99\%)\ =\ 1.38965\ ms}
+\DoxyCodeLine{[I]\ H2D\ Latency:\ min\ =\ 1.50073\ ms,\ max\ =\ 1.52454\ ms,\ mean\ =\ 1.51225\ ms,\ median\ =\ 1.51404\ ms,\ percentile(99\%)\ =\ 1.51941\ ms}
+\DoxyCodeLine{[I]\ GPU\ Compute\ Time:\ min\ =\ 13.3386\ ms,\ max\ =\ 14.3186\ ms,\ mean\ =\ 13.5448\ ms,\ median\ =\ 13.5178\ ms,\ percentile(99\%)\ =\ 14.2151\ ms}
+\DoxyCodeLine{[I]\ D2H\ Latency:\ min\ =\ 0.00878906\ ms,\ max\ =\ 0.0172729\ ms,\ mean\ =\ 0.0128844\ ms,\ median\ =\ 0.0125732\ ms,\ percentile(99\%)\ =\ 0.0166016\ ms}
+\DoxyCodeLine{[I]\ Total\ Host\ Walltime:\ 3.04768\ s}
+\DoxyCodeLine{[I]\ Total\ GPU\ Compute\ Time:\ 3.03404\ s}
+\DoxyCodeLine{[I]\ Explanations\ of\ the\ performance\ metrics\ are\ printed\ in\ the\ verbose\ logs.}
+
+\end{DoxyCode}
+ Note\+: 73.\+5 qps x batch 8 = 588 fps @ \texorpdfstring{$\sim$}{\string~}15ms latency.\hypertarget{README.md_autotoc_md2}{}\doxysubsection{\texorpdfstring{Model Repository}{Model Repository}}\label{README.md_autotoc_md2}
+See \href{https://github.com/triton-inference-server/server/blob/main/docs/model_repository.md\#model-repository}{\texttt{ Triton Model Repository Documentation}} for more info.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\#\ Create\ folder\ structure}
+\DoxyCodeLine{mkdir\ -\/p\ triton-\/deploy/models/yolov7/1/}
+\DoxyCodeLine{touch\ triton-\/deploy/models/yolov7/config.pbtxt}
+\DoxyCodeLine{\#\ Place\ model}
+\DoxyCodeLine{mv\ yolov7-\/fp16-\/1x8x8.engine\ triton-\/deploy/models/yolov7/1/model.plan}
+
+\end{DoxyCode}
+\hypertarget{README.md_autotoc_md3}{}\doxysubsection{\texorpdfstring{Model Configuration}{Model Configuration}}\label{README.md_autotoc_md3}
+See \href{https://github.com/triton-inference-server/server/blob/main/docs/model_configuration.md\#model-configuration}{\texttt{ Triton Model Configuration Documentation}} for more info.
+
+Minimal configuration for {\ttfamily triton-\/deploy/models/yolov7/config.\+pbtxt}\+:
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{name:\ "{}yolov7"{}}
+\DoxyCodeLine{platform:\ "{}tensorrt\_plan"{}}
+\DoxyCodeLine{max\_batch\_size:\ 8}
+\DoxyCodeLine{dynamic\_batching\ \{\ \}}
+
+\end{DoxyCode}
+
+
+Example repository\+:
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\$\ tree\ triton-\/deploy/}
+\DoxyCodeLine{triton-\/deploy/}
+\DoxyCodeLine{└──\ models}
+\DoxyCodeLine{\ \ \ \ └──\ yolov7}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ ├──\ 1}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ │  \ └──\ model.plan}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ └──\ config.pbtxt}
+\DoxyCodeLine{}
+\DoxyCodeLine{3\ directories,\ 2\ files}
+
+\end{DoxyCode}
+\hypertarget{README.md_autotoc_md4}{}\doxysubsection{\texorpdfstring{Start Triton Inference Server}{Start Triton Inference Server}}\label{README.md_autotoc_md4}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{docker\ run\ -\/-\/gpus\ all\ -\/-\/rm\ -\/-\/ipc=host\ -\/-\/shm-\/size=1g\ -\/-\/ulimit\ memlock=-\/1\ -\/-\/ulimit\ stack=67108864\ -\/p8000:8000\ -\/p8001:8001\ -\/p8002:8002\ -\/v\$(pwd)/triton-\/deploy/models:/models\ nvcr.io/nvidia/tritonserver:22.06-\/py3\ tritonserver\ -\/-\/model-\/repository=/models\ -\/-\/strict-\/model-\/config=false\ -\/-\/log-\/verbose\ 1}
+
+\end{DoxyCode}
+
+
+In the log you should see\+:
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{+-\/-\/-\/-\/-\/-\/-\/-\/+-\/-\/-\/-\/-\/-\/-\/-\/-\/+-\/-\/-\/-\/-\/-\/-\/-\/+}
+\DoxyCodeLine{|\ Model\ \ |\ Version\ |\ Status\ |}
+\DoxyCodeLine{+-\/-\/-\/-\/-\/-\/-\/-\/+-\/-\/-\/-\/-\/-\/-\/-\/-\/+-\/-\/-\/-\/-\/-\/-\/-\/+}
+\DoxyCodeLine{|\ yolov7\ |\ 1\ \ \ \ \ \ \ |\ READY\ \ |}
+\DoxyCodeLine{+-\/-\/-\/-\/-\/-\/-\/-\/+-\/-\/-\/-\/-\/-\/-\/-\/-\/+-\/-\/-\/-\/-\/-\/-\/-\/+}
+
+\end{DoxyCode}
+\hypertarget{README.md_autotoc_md5}{}\doxysubsection{\texorpdfstring{Performance with Model Analyzer}{Performance with Model Analyzer}}\label{README.md_autotoc_md5}
+See \href{https://github.com/triton-inference-server/server/blob/main/docs/model_analyzer.md\#model-analyzer}{\texttt{ Triton Model Analyzer Documentation}} for more info.
+
+Performance numbers @ RTX 3090 + AMD Ryzen 9 5950X
+
+Example test for 16 concurrent clients using shared memory, each with batch size 1 requests\+:
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{docker\ run\ -\/it\ -\/-\/ipc=host\ -\/-\/net=host\ nvcr.io/nvidia/tritonserver:22.06-\/py3-\/sdk\ /bin/bash}
+\DoxyCodeLine{}
+\DoxyCodeLine{./install/bin/perf\_analyzer\ -\/m\ yolov7\ -\/u\ 127.0.0.1:8001\ -\/i\ grpc\ -\/-\/shared-\/memory\ system\ -\/-\/concurrency-\/range\ 16}
+\DoxyCodeLine{}
+\DoxyCodeLine{\#\ Result\ (truncated)}
+\DoxyCodeLine{Concurrency:\ 16,\ throughput:\ 590.119\ infer/sec,\ latency\ 27080\ usec}
+
+\end{DoxyCode}
+
+
+Throughput for 16 clients with batch size 1 is the same as for a single thread running the engine at 16 batch size locally thanks to Triton \href{https://github.com/triton-inference-server/server/blob/main/docs/model_configuration.md\#dynamic-batcher}{\texttt{ Dynamic Batching Strategy}}. Result without dynamic batching (disable in model configuration) considerably worse\+:
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\#\ Result\ (truncated)}
+\DoxyCodeLine{Concurrency:\ 16,\ throughput:\ 335.587\ infer/sec,\ latency\ 47616\ usec}
+
+\end{DoxyCode}
+\hypertarget{README.md_autotoc_md6}{}\doxysubsection{\texorpdfstring{How to run model in your code}{How to run model in your code}}\label{README.md_autotoc_md6}
+Example client can be found in \doxylink{client_8py}{client.\+py}. It can run dummy input, images and videos.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{pip3\ install\ tritonclient[all]\ opencv-\/python}
+\DoxyCodeLine{python3\ client.py\ image\ data/dog.jpg}
+
+\end{DoxyCode}
+
+
+
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\$\ python3\ client.py\ -\/-\/help}
+\DoxyCodeLine{usage:\ client.py\ [-\/h]\ [-\/m\ MODEL]\ [-\/-\/width\ WIDTH]\ [-\/-\/height\ HEIGHT]\ [-\/u\ URL]\ [-\/o\ OUT]\ [-\/f\ FPS]\ [-\/i]\ [-\/v]\ [-\/t\ CLIENT\_TIMEOUT]\ [-\/s]\ [-\/r\ ROOT\_CERTIFICATES]\ [-\/p\ PRIVATE\_KEY]\ [-\/x\ CERTIFICATE\_CHAIN]\ \{dummy,image,video\}\ [input]}
+\DoxyCodeLine{}
+\DoxyCodeLine{positional\ arguments:}
+\DoxyCodeLine{\ \ \{dummy,image,video\}\ \ \ Run\ mode.\ 'dummy'\ will\ send\ an\ emtpy\ buffer\ to\ the\ server\ to\ test\ if\ inference\ works.\ 'image'\ will\ process\ an\ image.\ 'video'\ will\ process\ a\ video.}
+\DoxyCodeLine{\ \ input\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ Input\ file\ to\ load\ from\ in\ image\ or\ video\ mode}
+\DoxyCodeLine{}
+\DoxyCodeLine{optional\ arguments:}
+\DoxyCodeLine{\ \ -\/h,\ -\/-\/help\ \ \ \ \ \ \ \ \ \ \ \ show\ this\ help\ message\ and\ exit}
+\DoxyCodeLine{\ \ -\/m\ MODEL,\ -\/-\/model\ MODEL}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ Inference\ model\ name,\ default\ yolov7}
+\DoxyCodeLine{\ \ -\/-\/width\ WIDTH\ \ \ \ \ \ \ \ \ Inference\ model\ input\ width,\ default\ 640}
+\DoxyCodeLine{\ \ -\/-\/height\ HEIGHT\ \ \ \ \ \ \ Inference\ model\ input\ height,\ default\ 640}
+\DoxyCodeLine{\ \ -\/u\ URL,\ -\/-\/url\ URL\ \ \ \ \ Inference\ server\ URL,\ default\ localhost:8001}
+\DoxyCodeLine{\ \ -\/o\ OUT,\ -\/-\/out\ OUT\ \ \ \ \ Write\ output\ into\ file\ instead\ of\ displaying\ it}
+\DoxyCodeLine{\ \ -\/f\ FPS,\ -\/-\/fps\ FPS\ \ \ \ \ Video\ output\ fps,\ default\ 24.0\ FPS}
+\DoxyCodeLine{\ \ -\/i,\ -\/-\/model-\/info\ \ \ \ \ \ Print\ model\ status,\ configuration\ and\ statistics}
+\DoxyCodeLine{\ \ -\/v,\ -\/-\/verbose\ \ \ \ \ \ \ \ \ Enable\ verbose\ client\ output}
+\DoxyCodeLine{\ \ -\/t\ CLIENT\_TIMEOUT,\ -\/-\/client-\/timeout\ CLIENT\_TIMEOUT}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ Client\ timeout\ in\ seconds,\ default\ no\ timeout}
+\DoxyCodeLine{\ \ -\/s,\ -\/-\/ssl\ \ \ \ \ \ \ \ \ \ \ \ \ Enable\ SSL\ encrypted\ channel\ to\ the\ server}
+\DoxyCodeLine{\ \ -\/r\ ROOT\_CERTIFICATES,\ -\/-\/root-\/certificates\ ROOT\_CERTIFICATES}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ File\ holding\ PEM-\/encoded\ root\ certificates,\ default\ none}
+\DoxyCodeLine{\ \ -\/p\ PRIVATE\_KEY,\ -\/-\/private-\/key\ PRIVATE\_KEY}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ File\ holding\ PEM-\/encoded\ private\ key,\ default\ is\ none}
+\DoxyCodeLine{\ \ -\/x\ CERTIFICATE\_CHAIN,\ -\/-\/certificate-\/chain\ CERTIFICATE\_CHAIN}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ File\ holding\ PEM-\/encoded\ certicate\ chain\ default\ is\ none}
+
+\end{DoxyCode}
+ 

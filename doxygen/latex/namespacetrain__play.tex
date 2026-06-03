@@ -1,0 +1,440 @@
+\doxysection{train\+\_\+play Namespace Reference}
+\hypertarget{namespacetrain__play}{}\label{namespacetrain__play}\index{train\_play@{train\_play}}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{namespacetrain__play_a1bcaa6888f6f915465ad6473ff75c942}{train}} (\mbox{\hyperlink{namespacetrain__play_a69dd2eccec40be0d53a1eb7ba143310d}{hyp}}, \mbox{\hyperlink{namespacetrain__play_a5fe42a850824d1b33986ad021e146479}{opt}}, \mbox{\hyperlink{namespacetrain__play_acebb33e211afc8e5c660b74f4394a308}{device}}, \mbox{\hyperlink{namespacetrain__play_a4368539913819a07435f2e3bfa2d2b33}{tb\+\_\+writer}}=\mbox{\hyperlink{namespacetrain__play_a202d40c80ab17f83c83b0eb7096bdffb}{None}})
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{namespacetrain__play_a6be14fdf1387ea1aafd786c228611c66}{logger}} = logging.\+get\+Logger(\+\_\+\+\_\+name\+\_\+\+\_\+)
+\item 
+\mbox{\hyperlink{namespacetrain__play_a65582fb3646858db6498d467966247b9}{parser}} = argparse.\+Argument\+Parser()
+\item 
+\mbox{\hyperlink{namespacetrain__play_a16072fdce108a2e16322fa0abe44fd4a}{type}}
+\item 
+\mbox{\hyperlink{namespacetrain__play_a48c30347e8bd7708709027b15e04f384}{str}}
+\item 
+\mbox{\hyperlink{namespacetrain__play_a63e736797b3106f8d02ff383f85e2010}{default}}
+\item 
+\mbox{\hyperlink{namespacetrain__play_a64e34014c2fea798949af2c6cf281929}{help}}
+\item 
+\mbox{\hyperlink{namespacetrain__play_afa25776b2f0e71243ea960f62a652d06}{int}}
+\item 
+\mbox{\hyperlink{namespacetrain__play_a9375ae2da0678f305988df954481bf2e}{nargs}}
+\item 
+\mbox{\hyperlink{namespacetrain__play_afd55f64a0e14329d184e5a8bd872045c}{action}}
+\item 
+\mbox{\hyperlink{namespacetrain__play_a7e48f1b561977e795bc8ab5ed411f085}{const}}
+\item 
+\mbox{\hyperlink{namespacetrain__play_aa94bf291fe9b6b75d34d8b144a8ad99a}{True}}
+\item 
+\mbox{\hyperlink{namespacetrain__play_ae88d22c611a73b81f4ea63056e7db127}{False}}
+\item 
+\mbox{\hyperlink{namespacetrain__play_a202d40c80ab17f83c83b0eb7096bdffb}{None}}
+\item 
+\mbox{\hyperlink{namespacetrain__play_ac45b65d61555eb03d9eda4497450b38d}{float}}
+\item 
+\mbox{\hyperlink{namespacetrain__play_a5fe42a850824d1b33986ad021e146479}{opt}} = parser.\+parse\+\_\+args()
+\item 
+\mbox{\hyperlink{namespacetrain__play_a622cf624e2b53c9fdaace0169df9b9d3}{yaml\+\_\+opt}} = yaml.\+safe\+\_\+load(f)
+\item 
+\mbox{\hyperlink{namespacetrain__play_a09c3c46b883377d34260303c3d0a242e}{world\+\_\+size}}
+\item 
+\mbox{\hyperlink{namespacetrain__play_af2644b5ef8c4be8685fb299a121c686a}{global\+\_\+rank}}
+\item 
+\mbox{\hyperlink{namespacetrain__play_ab06221a766b1e4bf05e004f62e7ebe52}{wandb\+\_\+run}} = check\+\_\+wandb\+\_\+resume(\mbox{\hyperlink{namespacetrain__play_a5fe42a850824d1b33986ad021e146479}{opt}})
+\item 
+\mbox{\hyperlink{namespacetrain__play_a9f6cf1fbe7ff1be9b5fbe0b235e5a54e}{ckpt}} = opt.\+resume if isinstance(opt.\+resume, \mbox{\hyperlink{namespacetrain__play_a48c30347e8bd7708709027b15e04f384}{str}}) else get\+\_\+latest\+\_\+run()
+\item 
+\mbox{\hyperlink{namespacetrain__play_ab3c6de593b35de2a948f318871481346}{apriori}} = opt.\+global\+\_\+rank, opt.\+local\+\_\+rank
+\item 
+\mbox{\hyperlink{namespacetrain__play_aad50a06c4d7876d78b6ae0224ca8da9c}{local\+\_\+rank}}
+\item 
+\mbox{\hyperlink{namespacetrain__play_a69dd2eccec40be0d53a1eb7ba143310d}{hyp}} = yaml.\+load(f, Loader=yaml.\+Safe\+Loader)
+\item 
+\mbox{\hyperlink{namespacetrain__play_a5698edbecd59787e2ae114ef4edb6396}{name}}
+\item 
+\mbox{\hyperlink{namespacetrain__play_a592d9492b6c93d247708630df2962000}{save\+\_\+dir}}
+\item 
+\mbox{\hyperlink{namespacetrain__play_ae066ae25dc828cd7a81c4e52261ab98f}{exist\+\_\+ok}}
+\item 
+\mbox{\hyperlink{namespacetrain__play_ad23f7fde418340496d0a815edd33a1cb}{total\+\_\+batch\+\_\+size}}
+\item 
+\mbox{\hyperlink{namespacetrain__play_acebb33e211afc8e5c660b74f4394a308}{device}} = select\+\_\+device(opt.\+device, \mbox{\hyperlink{namespacetrain__play_a2b42e72a066ec59af082be97ed74c1f5}{batch\+\_\+size}}=opt.\+batch\+\_\+size)
+\item 
+\mbox{\hyperlink{namespacetrain__play_a0b67f6f2ec3f04f0a853a19de9257962}{backend}}
+\item 
+\mbox{\hyperlink{namespacetrain__play_a31464e121490b5be4deb553ca6179bc0}{init\+\_\+method}}
+\item 
+\mbox{\hyperlink{namespacetrain__play_a2b42e72a066ec59af082be97ed74c1f5}{batch\+\_\+size}}
+\item 
+\mbox{\hyperlink{namespacetrain__play_a4368539913819a07435f2e3bfa2d2b33}{tb\+\_\+writer}} = \mbox{\hyperlink{namespacetrain__play_a202d40c80ab17f83c83b0eb7096bdffb}{None}}
+\item 
+\mbox{\hyperlink{namespacetrain__play_a3e9317fe7f03bb9447e599c57cf1ceb2}{prefix}} = colorstr(\textquotesingle{}tensorboard\+: \textquotesingle{})
+\item 
+dict \mbox{\hyperlink{namespacetrain__play_acf2d38e0c4c13a9e2e7a985e0f22782c}{meta}}
+\item 
+\mbox{\hyperlink{namespacetrain__play_a421ee4749007d689af137dd2bb02d264}{errors}}
+\item 
+\mbox{\hyperlink{namespacetrain__play_a18b73b5c84838cdf49fb1a9448c8ca5a}{nosave}}
+\item 
+\mbox{\hyperlink{namespacetrain__play_a48c30347e8bd7708709027b15e04f384}{str}} \mbox{\hyperlink{namespacetrain__play_ae81786b981aaf2a0d57c9637158a105d}{yaml\+\_\+file}} = Path(opt.\+save\+\_\+dir) / \textquotesingle{}hyp\+\_\+evolved.\+yaml\textquotesingle{}
+\item 
+\mbox{\hyperlink{namespacetrain__play_a48c30347e8bd7708709027b15e04f384}{str}} \mbox{\hyperlink{namespacetrain__play_a8f5f989d9399981b3af94372e756f49d}{parent}} = \textquotesingle{}single\textquotesingle{}
+\item 
+\mbox{\hyperlink{namespacetrain__play_afe9de50c95c626571383657866a4576e}{x}} = np.\+loadtxt(\textquotesingle{}evolve.\+txt\textquotesingle{}, ndmin=2)
+\item 
+\mbox{\hyperlink{namespacetrain__play_a91287d1dd3a11d4e8df63692e6f5aa29}{n}} = min(5, len(\mbox{\hyperlink{namespacetrain__play_afe9de50c95c626571383657866a4576e}{x}}))
+\item 
+\mbox{\hyperlink{namespacetrain__play_a986e9c7ec3a6e644f842c557ae858699}{w}} = fitness(\mbox{\hyperlink{namespacetrain__play_afe9de50c95c626571383657866a4576e}{x}}) -\/ fitness(\mbox{\hyperlink{namespacetrain__play_afe9de50c95c626571383657866a4576e}{x}}).min()
+\item 
+\mbox{\hyperlink{namespacetrain__play_a4fa6e3739afdb4096530eab6f3356b08}{mp}}
+\item 
+\mbox{\hyperlink{namespacetrain__play_a7fd4cfa8c200a8ab67da61a3d7ef50db}{s}}
+\item 
+\mbox{\hyperlink{namespacetrain__play_ac1775d9afa65c8714921402be1242af5}{npr}} = np.\+random
+\item 
+\mbox{\hyperlink{namespacetrain__play_a8a0d3cfa390fafeabdf2e3721bf19c2a}{g}} = np.\+array(\mbox{[}\mbox{\hyperlink{namespacetrain__play_afe9de50c95c626571383657866a4576e}{x}}\mbox{[}0\mbox{]} for \mbox{\hyperlink{namespacetrain__play_afe9de50c95c626571383657866a4576e}{x}} in meta.\+values()\mbox{]})
+\item 
+\mbox{\hyperlink{namespacetrain__play_a3c2e645a6b32f75a479d5e75f34b1873}{ng}} = len(\mbox{\hyperlink{namespacetrain__play_acf2d38e0c4c13a9e2e7a985e0f22782c}{meta}})
+\item 
+\mbox{\hyperlink{namespacetrain__play_a41a7a0d61134d4a305033fe741fc55f0}{v}} = np.\+ones(\mbox{\hyperlink{namespacetrain__play_a3c2e645a6b32f75a479d5e75f34b1873}{ng}})
+\item 
+\mbox{\hyperlink{namespacetrain__play_a67d87275771fb51ffdfd15860d5192f1}{results}} = \mbox{\hyperlink{namespacetrain__play_a1bcaa6888f6f915465ad6473ff75c942}{train}}(hyp.\+copy(), \mbox{\hyperlink{namespacetrain__play_a5fe42a850824d1b33986ad021e146479}{opt}}, \mbox{\hyperlink{namespacetrain__play_acebb33e211afc8e5c660b74f4394a308}{device}})
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{namespacetrain__play_a1bcaa6888f6f915465ad6473ff75c942}\index{train\_play@{train\_play}!train@{train}}
+\index{train@{train}!train\_play@{train\_play}}
+\doxysubsubsection{\texorpdfstring{train()}{train()}}
+{\footnotesize\ttfamily \label{namespacetrain__play_a1bcaa6888f6f915465ad6473ff75c942} 
+train\+\_\+play.\+train (\begin{DoxyParamCaption}\item[{}]{hyp}{, }\item[{}]{opt}{, }\item[{}]{device}{, }\item[{}]{tb\+\_\+writer}{ = {\ttfamily \mbox{\hyperlink{namespacetrain__play_a202d40c80ab17f83c83b0eb7096bdffb}{None}}}}\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Variable Documentation}
+\Hypertarget{namespacetrain__play_afd55f64a0e14329d184e5a8bd872045c}\index{train\_play@{train\_play}!action@{action}}
+\index{action@{action}!train\_play@{train\_play}}
+\doxysubsubsection{\texorpdfstring{action}{action}}
+{\footnotesize\ttfamily \label{namespacetrain__play_afd55f64a0e14329d184e5a8bd872045c} 
+train\+\_\+play.\+action}
+
+\Hypertarget{namespacetrain__play_ab3c6de593b35de2a948f318871481346}\index{train\_play@{train\_play}!apriori@{apriori}}
+\index{apriori@{apriori}!train\_play@{train\_play}}
+\doxysubsubsection{\texorpdfstring{apriori}{apriori}}
+{\footnotesize\ttfamily \label{namespacetrain__play_ab3c6de593b35de2a948f318871481346} 
+train\+\_\+play.\+apriori = opt.\+global\+\_\+rank, opt.\+local\+\_\+rank}
+
+\Hypertarget{namespacetrain__play_a0b67f6f2ec3f04f0a853a19de9257962}\index{train\_play@{train\_play}!backend@{backend}}
+\index{backend@{backend}!train\_play@{train\_play}}
+\doxysubsubsection{\texorpdfstring{backend}{backend}}
+{\footnotesize\ttfamily \label{namespacetrain__play_a0b67f6f2ec3f04f0a853a19de9257962} 
+train\+\_\+play.\+backend}
+
+\Hypertarget{namespacetrain__play_a2b42e72a066ec59af082be97ed74c1f5}\index{train\_play@{train\_play}!batch\_size@{batch\_size}}
+\index{batch\_size@{batch\_size}!train\_play@{train\_play}}
+\doxysubsubsection{\texorpdfstring{batch\_size}{batch\_size}}
+{\footnotesize\ttfamily \label{namespacetrain__play_a2b42e72a066ec59af082be97ed74c1f5} 
+train\+\_\+play.\+batch\+\_\+size}
+
+\Hypertarget{namespacetrain__play_a9f6cf1fbe7ff1be9b5fbe0b235e5a54e}\index{train\_play@{train\_play}!ckpt@{ckpt}}
+\index{ckpt@{ckpt}!train\_play@{train\_play}}
+\doxysubsubsection{\texorpdfstring{ckpt}{ckpt}}
+{\footnotesize\ttfamily \label{namespacetrain__play_a9f6cf1fbe7ff1be9b5fbe0b235e5a54e} 
+train\+\_\+play.\+ckpt = opt.\+resume if isinstance(opt.\+resume, \mbox{\hyperlink{namespacetrain__play_a48c30347e8bd7708709027b15e04f384}{str}}) else get\+\_\+latest\+\_\+run()}
+
+\Hypertarget{namespacetrain__play_a7e48f1b561977e795bc8ab5ed411f085}\index{train\_play@{train\_play}!const@{const}}
+\index{const@{const}!train\_play@{train\_play}}
+\doxysubsubsection{\texorpdfstring{const}{const}}
+{\footnotesize\ttfamily \label{namespacetrain__play_a7e48f1b561977e795bc8ab5ed411f085} 
+train\+\_\+play.\+const}
+
+\Hypertarget{namespacetrain__play_a63e736797b3106f8d02ff383f85e2010}\index{train\_play@{train\_play}!default@{default}}
+\index{default@{default}!train\_play@{train\_play}}
+\doxysubsubsection{\texorpdfstring{default}{default}}
+{\footnotesize\ttfamily \label{namespacetrain__play_a63e736797b3106f8d02ff383f85e2010} 
+train\+\_\+play.\+default}
+
+\Hypertarget{namespacetrain__play_acebb33e211afc8e5c660b74f4394a308}\index{train\_play@{train\_play}!device@{device}}
+\index{device@{device}!train\_play@{train\_play}}
+\doxysubsubsection{\texorpdfstring{device}{device}}
+{\footnotesize\ttfamily \label{namespacetrain__play_acebb33e211afc8e5c660b74f4394a308} 
+train\+\_\+play.\+device = select\+\_\+device(opt.\+device, \mbox{\hyperlink{namespacetrain__play_a2b42e72a066ec59af082be97ed74c1f5}{batch\+\_\+size}}=opt.\+batch\+\_\+size)}
+
+\Hypertarget{namespacetrain__play_a421ee4749007d689af137dd2bb02d264}\index{train\_play@{train\_play}!errors@{errors}}
+\index{errors@{errors}!train\_play@{train\_play}}
+\doxysubsubsection{\texorpdfstring{errors}{errors}}
+{\footnotesize\ttfamily \label{namespacetrain__play_a421ee4749007d689af137dd2bb02d264} 
+train\+\_\+play.\+errors}
+
+\Hypertarget{namespacetrain__play_ae066ae25dc828cd7a81c4e52261ab98f}\index{train\_play@{train\_play}!exist\_ok@{exist\_ok}}
+\index{exist\_ok@{exist\_ok}!train\_play@{train\_play}}
+\doxysubsubsection{\texorpdfstring{exist\_ok}{exist\_ok}}
+{\footnotesize\ttfamily \label{namespacetrain__play_ae066ae25dc828cd7a81c4e52261ab98f} 
+train\+\_\+play.\+exist\+\_\+ok}
+
+\Hypertarget{namespacetrain__play_ae88d22c611a73b81f4ea63056e7db127}\index{train\_play@{train\_play}!False@{False}}
+\index{False@{False}!train\_play@{train\_play}}
+\doxysubsubsection{\texorpdfstring{False}{False}}
+{\footnotesize\ttfamily \label{namespacetrain__play_ae88d22c611a73b81f4ea63056e7db127} 
+train\+\_\+play.\+False}
+
+\Hypertarget{namespacetrain__play_ac45b65d61555eb03d9eda4497450b38d}\index{train\_play@{train\_play}!float@{float}}
+\index{float@{float}!train\_play@{train\_play}}
+\doxysubsubsection{\texorpdfstring{float}{float}}
+{\footnotesize\ttfamily \label{namespacetrain__play_ac45b65d61555eb03d9eda4497450b38d} 
+train\+\_\+play.\+float}
+
+\Hypertarget{namespacetrain__play_a8a0d3cfa390fafeabdf2e3721bf19c2a}\index{train\_play@{train\_play}!g@{g}}
+\index{g@{g}!train\_play@{train\_play}}
+\doxysubsubsection{\texorpdfstring{g}{g}}
+{\footnotesize\ttfamily \label{namespacetrain__play_a8a0d3cfa390fafeabdf2e3721bf19c2a} 
+train\+\_\+play.\+g = np.\+array(\mbox{[}\mbox{\hyperlink{namespacetrain__play_afe9de50c95c626571383657866a4576e}{x}}\mbox{[}0\mbox{]} for \mbox{\hyperlink{namespacetrain__play_afe9de50c95c626571383657866a4576e}{x}} in meta.\+values()\mbox{]})}
+
+\Hypertarget{namespacetrain__play_af2644b5ef8c4be8685fb299a121c686a}\index{train\_play@{train\_play}!global\_rank@{global\_rank}}
+\index{global\_rank@{global\_rank}!train\_play@{train\_play}}
+\doxysubsubsection{\texorpdfstring{global\_rank}{global\_rank}}
+{\footnotesize\ttfamily \label{namespacetrain__play_af2644b5ef8c4be8685fb299a121c686a} 
+train\+\_\+play.\+global\+\_\+rank}
+
+\Hypertarget{namespacetrain__play_a64e34014c2fea798949af2c6cf281929}\index{train\_play@{train\_play}!help@{help}}
+\index{help@{help}!train\_play@{train\_play}}
+\doxysubsubsection{\texorpdfstring{help}{help}}
+{\footnotesize\ttfamily \label{namespacetrain__play_a64e34014c2fea798949af2c6cf281929} 
+train\+\_\+play.\+help}
+
+\Hypertarget{namespacetrain__play_a69dd2eccec40be0d53a1eb7ba143310d}\index{train\_play@{train\_play}!hyp@{hyp}}
+\index{hyp@{hyp}!train\_play@{train\_play}}
+\doxysubsubsection{\texorpdfstring{hyp}{hyp}}
+{\footnotesize\ttfamily \label{namespacetrain__play_a69dd2eccec40be0d53a1eb7ba143310d} 
+train\+\_\+play.\+hyp = yaml.\+load(f, Loader=yaml.\+Safe\+Loader)}
+
+\Hypertarget{namespacetrain__play_a31464e121490b5be4deb553ca6179bc0}\index{train\_play@{train\_play}!init\_method@{init\_method}}
+\index{init\_method@{init\_method}!train\_play@{train\_play}}
+\doxysubsubsection{\texorpdfstring{init\_method}{init\_method}}
+{\footnotesize\ttfamily \label{namespacetrain__play_a31464e121490b5be4deb553ca6179bc0} 
+train\+\_\+play.\+init\+\_\+method}
+
+\Hypertarget{namespacetrain__play_afa25776b2f0e71243ea960f62a652d06}\index{train\_play@{train\_play}!int@{int}}
+\index{int@{int}!train\_play@{train\_play}}
+\doxysubsubsection{\texorpdfstring{int}{int}}
+{\footnotesize\ttfamily \label{namespacetrain__play_afa25776b2f0e71243ea960f62a652d06} 
+train\+\_\+play.\+int}
+
+\Hypertarget{namespacetrain__play_aad50a06c4d7876d78b6ae0224ca8da9c}\index{train\_play@{train\_play}!local\_rank@{local\_rank}}
+\index{local\_rank@{local\_rank}!train\_play@{train\_play}}
+\doxysubsubsection{\texorpdfstring{local\_rank}{local\_rank}}
+{\footnotesize\ttfamily \label{namespacetrain__play_aad50a06c4d7876d78b6ae0224ca8da9c} 
+train\+\_\+play.\+local\+\_\+rank}
+
+\Hypertarget{namespacetrain__play_a6be14fdf1387ea1aafd786c228611c66}\index{train\_play@{train\_play}!logger@{logger}}
+\index{logger@{logger}!train\_play@{train\_play}}
+\doxysubsubsection{\texorpdfstring{logger}{logger}}
+{\footnotesize\ttfamily \label{namespacetrain__play_a6be14fdf1387ea1aafd786c228611c66} 
+train\+\_\+play.\+logger = logging.\+get\+Logger(\+\_\+\+\_\+name\+\_\+\+\_\+)}
+
+\Hypertarget{namespacetrain__play_acf2d38e0c4c13a9e2e7a985e0f22782c}\index{train\_play@{train\_play}!meta@{meta}}
+\index{meta@{meta}!train\_play@{train\_play}}
+\doxysubsubsection{\texorpdfstring{meta}{meta}}
+{\footnotesize\ttfamily \label{namespacetrain__play_acf2d38e0c4c13a9e2e7a985e0f22782c} 
+dict train\+\_\+play.\+meta}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ =\ \ \{\textcolor{stringliteral}{'lr0'}:\ (1,\ 1e-\/5,\ 1e-\/1),\ \ \textcolor{comment}{\#\ initial\ learning\ rate\ (SGD=1E-\/2,\ Adam=1E-\/3)}}
+\DoxyCodeLine{00002\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{'lrf'}:\ (1,\ 0.01,\ 1.0),\ \ \textcolor{comment}{\#\ final\ OneCycleLR\ learning\ rate\ (lr0\ *\ lrf)}}
+\DoxyCodeLine{00003\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{'momentum'}:\ (0.3,\ 0.6,\ 0.98),\ \ \textcolor{comment}{\#\ SGD\ momentum/Adam\ beta1}}
+\DoxyCodeLine{00004\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{'weight\_decay'}:\ (1,\ 0.0,\ 0.001),\ \ \textcolor{comment}{\#\ optimizer\ weight\ decay}}
+\DoxyCodeLine{00005\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{'warmup\_epochs'}:\ (1,\ 0.0,\ 5.0),\ \ \textcolor{comment}{\#\ warmup\ epochs\ (fractions\ ok)}}
+\DoxyCodeLine{00006\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{'warmup\_momentum'}:\ (1,\ 0.0,\ 0.95),\ \ \textcolor{comment}{\#\ warmup\ initial\ momentum}}
+\DoxyCodeLine{00007\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{'warmup\_bias\_lr'}:\ (1,\ 0.0,\ 0.2),\ \ \textcolor{comment}{\#\ warmup\ initial\ bias\ lr}}
+\DoxyCodeLine{00008\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{'box'}:\ (1,\ 0.02,\ 0.2),\ \ \textcolor{comment}{\#\ box\ loss\ gain}}
+\DoxyCodeLine{00009\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{'cls'}:\ (1,\ 0.2,\ 4.0),\ \ \textcolor{comment}{\#\ cls\ loss\ gain}}
+\DoxyCodeLine{00010\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{'cls\_pw'}:\ (1,\ 0.5,\ 2.0),\ \ \textcolor{comment}{\#\ cls\ BCELoss\ positive\_weight}}
+\DoxyCodeLine{00011\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{'obj'}:\ (1,\ 0.2,\ 4.0),\ \ \textcolor{comment}{\#\ obj\ loss\ gain\ (scale\ with\ pixels)}}
+\DoxyCodeLine{00012\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{'obj\_pw'}:\ (1,\ 0.5,\ 2.0),\ \ \textcolor{comment}{\#\ obj\ BCELoss\ positive\_weight}}
+\DoxyCodeLine{00013\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{'iou\_t'}:\ (0,\ 0.1,\ 0.7),\ \ \textcolor{comment}{\#\ IoU\ training\ threshold}}
+\DoxyCodeLine{00014\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{'anchor\_t'}:\ (1,\ 2.0,\ 8.0),\ \ \textcolor{comment}{\#\ anchor-\/multiple\ threshold}}
+\DoxyCodeLine{00015\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{'anchors'}:\ (2,\ 2.0,\ 10.0),\ \ \textcolor{comment}{\#\ anchors\ per\ output\ grid\ (0\ to\ ignore)}}
+\DoxyCodeLine{00016\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{'fl\_gamma'}:\ (0,\ 0.0,\ 2.0),\ \ \textcolor{comment}{\#\ focal\ loss\ gamma\ (efficientDet\ default\ gamma=1.5)}}
+\DoxyCodeLine{00017\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{'hsv\_h'}:\ (1,\ 0.0,\ 0.1),\ \ \textcolor{comment}{\#\ image\ HSV-\/Hue\ augmentation\ (fraction)}}
+\DoxyCodeLine{00018\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{'hsv\_s'}:\ (1,\ 0.0,\ 0.9),\ \ \textcolor{comment}{\#\ image\ HSV-\/Saturation\ augmentation\ (fraction)}}
+\DoxyCodeLine{00019\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{'hsv\_v'}:\ (1,\ 0.0,\ 0.9),\ \ \textcolor{comment}{\#\ image\ HSV-\/Value\ augmentation\ (fraction)}}
+\DoxyCodeLine{00020\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{'degrees'}:\ (1,\ 0.0,\ 45.0),\ \ \textcolor{comment}{\#\ image\ rotation\ (+/-\/\ deg)}}
+\DoxyCodeLine{00021\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{'translate'}:\ (1,\ 0.0,\ 0.9),\ \ \textcolor{comment}{\#\ image\ translation\ (+/-\/\ fraction)}}
+\DoxyCodeLine{00022\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{'scale'}:\ (1,\ 0.0,\ 0.9),\ \ \textcolor{comment}{\#\ image\ scale\ (+/-\/\ gain)}}
+\DoxyCodeLine{00023\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{'shear'}:\ (1,\ 0.0,\ 10.0),\ \ \textcolor{comment}{\#\ image\ shear\ (+/-\/\ deg)}}
+\DoxyCodeLine{00024\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{'perspective'}:\ (0,\ 0.0,\ 0.001),\ \ \textcolor{comment}{\#\ image\ perspective\ (+/-\/\ fraction),\ range\ 0-\/0.001}}
+\DoxyCodeLine{00025\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{'flipud'}:\ (1,\ 0.0,\ 1.0),\ \ \textcolor{comment}{\#\ image\ flip\ up-\/down\ (probability)}}
+\DoxyCodeLine{00026\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{'fliplr'}:\ (0,\ 0.0,\ 1.0),\ \ \textcolor{comment}{\#\ image\ flip\ left-\/right\ (probability)}}
+\DoxyCodeLine{00027\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{'mosaic'}:\ (1,\ 0.0,\ 1.0),\ \ \textcolor{comment}{\#\ image\ mixup\ (probability)}}
+\DoxyCodeLine{00028\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{'mixup'}:\ (1,\ 0.0,\ 1.0),\ \ \ \textcolor{comment}{\#\ image\ mixup\ (probability)}}
+\DoxyCodeLine{00029\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{'copy\_paste'}:\ (1,\ 0.0,\ 1.0),\ \ \textcolor{comment}{\#\ segment\ copy-\/paste\ (probability)}}
+\DoxyCodeLine{00030\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{'paste\_in'}:\ (1,\ 0.0,\ 1.0)\}}
+
+\end{DoxyCode}
+\Hypertarget{namespacetrain__play_a4fa6e3739afdb4096530eab6f3356b08}\index{train\_play@{train\_play}!mp@{mp}}
+\index{mp@{mp}!train\_play@{train\_play}}
+\doxysubsubsection{\texorpdfstring{mp}{mp}}
+{\footnotesize\ttfamily \label{namespacetrain__play_a4fa6e3739afdb4096530eab6f3356b08} 
+train\+\_\+play.\+mp}
+
+\Hypertarget{namespacetrain__play_a91287d1dd3a11d4e8df63692e6f5aa29}\index{train\_play@{train\_play}!n@{n}}
+\index{n@{n}!train\_play@{train\_play}}
+\doxysubsubsection{\texorpdfstring{n}{n}}
+{\footnotesize\ttfamily \label{namespacetrain__play_a91287d1dd3a11d4e8df63692e6f5aa29} 
+train\+\_\+play.\+n = min(5, len(\mbox{\hyperlink{namespacetrain__play_afe9de50c95c626571383657866a4576e}{x}}))}
+
+\Hypertarget{namespacetrain__play_a5698edbecd59787e2ae114ef4edb6396}\index{train\_play@{train\_play}!name@{name}}
+\index{name@{name}!train\_play@{train\_play}}
+\doxysubsubsection{\texorpdfstring{name}{name}}
+{\footnotesize\ttfamily \label{namespacetrain__play_a5698edbecd59787e2ae114ef4edb6396} 
+train\+\_\+play.\+name}
+
+\Hypertarget{namespacetrain__play_a9375ae2da0678f305988df954481bf2e}\index{train\_play@{train\_play}!nargs@{nargs}}
+\index{nargs@{nargs}!train\_play@{train\_play}}
+\doxysubsubsection{\texorpdfstring{nargs}{nargs}}
+{\footnotesize\ttfamily \label{namespacetrain__play_a9375ae2da0678f305988df954481bf2e} 
+train\+\_\+play.\+nargs}
+
+\Hypertarget{namespacetrain__play_a3c2e645a6b32f75a479d5e75f34b1873}\index{train\_play@{train\_play}!ng@{ng}}
+\index{ng@{ng}!train\_play@{train\_play}}
+\doxysubsubsection{\texorpdfstring{ng}{ng}}
+{\footnotesize\ttfamily \label{namespacetrain__play_a3c2e645a6b32f75a479d5e75f34b1873} 
+train\+\_\+play.\+ng = len(\mbox{\hyperlink{namespacetrain__play_acf2d38e0c4c13a9e2e7a985e0f22782c}{meta}})}
+
+\Hypertarget{namespacetrain__play_a202d40c80ab17f83c83b0eb7096bdffb}\index{train\_play@{train\_play}!None@{None}}
+\index{None@{None}!train\_play@{train\_play}}
+\doxysubsubsection{\texorpdfstring{None}{None}}
+{\footnotesize\ttfamily \label{namespacetrain__play_a202d40c80ab17f83c83b0eb7096bdffb} 
+train\+\_\+play.\+None}
+
+\Hypertarget{namespacetrain__play_a18b73b5c84838cdf49fb1a9448c8ca5a}\index{train\_play@{train\_play}!nosave@{nosave}}
+\index{nosave@{nosave}!train\_play@{train\_play}}
+\doxysubsubsection{\texorpdfstring{nosave}{nosave}}
+{\footnotesize\ttfamily \label{namespacetrain__play_a18b73b5c84838cdf49fb1a9448c8ca5a} 
+train\+\_\+play.\+nosave}
+
+\Hypertarget{namespacetrain__play_ac1775d9afa65c8714921402be1242af5}\index{train\_play@{train\_play}!npr@{npr}}
+\index{npr@{npr}!train\_play@{train\_play}}
+\doxysubsubsection{\texorpdfstring{npr}{npr}}
+{\footnotesize\ttfamily \label{namespacetrain__play_ac1775d9afa65c8714921402be1242af5} 
+train\+\_\+play.\+npr = np.\+random}
+
+\Hypertarget{namespacetrain__play_a5fe42a850824d1b33986ad021e146479}\index{train\_play@{train\_play}!opt@{opt}}
+\index{opt@{opt}!train\_play@{train\_play}}
+\doxysubsubsection{\texorpdfstring{opt}{opt}}
+{\footnotesize\ttfamily \label{namespacetrain__play_a5fe42a850824d1b33986ad021e146479} 
+train\+\_\+play.\+opt = parser.\+parse\+\_\+args()}
+
+\Hypertarget{namespacetrain__play_a8f5f989d9399981b3af94372e756f49d}\index{train\_play@{train\_play}!parent@{parent}}
+\index{parent@{parent}!train\_play@{train\_play}}
+\doxysubsubsection{\texorpdfstring{parent}{parent}}
+{\footnotesize\ttfamily \label{namespacetrain__play_a8f5f989d9399981b3af94372e756f49d} 
+\mbox{\hyperlink{namespacetrain__play_a48c30347e8bd7708709027b15e04f384}{str}} train\+\_\+play.\+parent = \textquotesingle{}single\textquotesingle{}}
+
+\Hypertarget{namespacetrain__play_a65582fb3646858db6498d467966247b9}\index{train\_play@{train\_play}!parser@{parser}}
+\index{parser@{parser}!train\_play@{train\_play}}
+\doxysubsubsection{\texorpdfstring{parser}{parser}}
+{\footnotesize\ttfamily \label{namespacetrain__play_a65582fb3646858db6498d467966247b9} 
+train\+\_\+play.\+parser = argparse.\+Argument\+Parser()}
+
+\Hypertarget{namespacetrain__play_a3e9317fe7f03bb9447e599c57cf1ceb2}\index{train\_play@{train\_play}!prefix@{prefix}}
+\index{prefix@{prefix}!train\_play@{train\_play}}
+\doxysubsubsection{\texorpdfstring{prefix}{prefix}}
+{\footnotesize\ttfamily \label{namespacetrain__play_a3e9317fe7f03bb9447e599c57cf1ceb2} 
+train\+\_\+play.\+prefix = colorstr(\textquotesingle{}tensorboard\+: \textquotesingle{})}
+
+\Hypertarget{namespacetrain__play_a67d87275771fb51ffdfd15860d5192f1}\index{train\_play@{train\_play}!results@{results}}
+\index{results@{results}!train\_play@{train\_play}}
+\doxysubsubsection{\texorpdfstring{results}{results}}
+{\footnotesize\ttfamily \label{namespacetrain__play_a67d87275771fb51ffdfd15860d5192f1} 
+train\+\_\+play.\+results = \mbox{\hyperlink{namespacetrain__play_a1bcaa6888f6f915465ad6473ff75c942}{train}}(hyp.\+copy(), \mbox{\hyperlink{namespacetrain__play_a5fe42a850824d1b33986ad021e146479}{opt}}, \mbox{\hyperlink{namespacetrain__play_acebb33e211afc8e5c660b74f4394a308}{device}})}
+
+\Hypertarget{namespacetrain__play_a7fd4cfa8c200a8ab67da61a3d7ef50db}\index{train\_play@{train\_play}!s@{s}}
+\index{s@{s}!train\_play@{train\_play}}
+\doxysubsubsection{\texorpdfstring{s}{s}}
+{\footnotesize\ttfamily \label{namespacetrain__play_a7fd4cfa8c200a8ab67da61a3d7ef50db} 
+train\+\_\+play.\+s}
+
+\Hypertarget{namespacetrain__play_a592d9492b6c93d247708630df2962000}\index{train\_play@{train\_play}!save\_dir@{save\_dir}}
+\index{save\_dir@{save\_dir}!train\_play@{train\_play}}
+\doxysubsubsection{\texorpdfstring{save\_dir}{save\_dir}}
+{\footnotesize\ttfamily \label{namespacetrain__play_a592d9492b6c93d247708630df2962000} 
+train\+\_\+play.\+save\+\_\+dir}
+
+\Hypertarget{namespacetrain__play_a48c30347e8bd7708709027b15e04f384}\index{train\_play@{train\_play}!str@{str}}
+\index{str@{str}!train\_play@{train\_play}}
+\doxysubsubsection{\texorpdfstring{str}{str}}
+{\footnotesize\ttfamily \label{namespacetrain__play_a48c30347e8bd7708709027b15e04f384} 
+train\+\_\+play.\+str}
+
+\Hypertarget{namespacetrain__play_a4368539913819a07435f2e3bfa2d2b33}\index{train\_play@{train\_play}!tb\_writer@{tb\_writer}}
+\index{tb\_writer@{tb\_writer}!train\_play@{train\_play}}
+\doxysubsubsection{\texorpdfstring{tb\_writer}{tb\_writer}}
+{\footnotesize\ttfamily \label{namespacetrain__play_a4368539913819a07435f2e3bfa2d2b33} 
+train\+\_\+play.\+tb\+\_\+writer = \mbox{\hyperlink{namespacetrain__play_a202d40c80ab17f83c83b0eb7096bdffb}{None}}}
+
+\Hypertarget{namespacetrain__play_ad23f7fde418340496d0a815edd33a1cb}\index{train\_play@{train\_play}!total\_batch\_size@{total\_batch\_size}}
+\index{total\_batch\_size@{total\_batch\_size}!train\_play@{train\_play}}
+\doxysubsubsection{\texorpdfstring{total\_batch\_size}{total\_batch\_size}}
+{\footnotesize\ttfamily \label{namespacetrain__play_ad23f7fde418340496d0a815edd33a1cb} 
+train\+\_\+play.\+total\+\_\+batch\+\_\+size}
+
+\Hypertarget{namespacetrain__play_aa94bf291fe9b6b75d34d8b144a8ad99a}\index{train\_play@{train\_play}!True@{True}}
+\index{True@{True}!train\_play@{train\_play}}
+\doxysubsubsection{\texorpdfstring{True}{True}}
+{\footnotesize\ttfamily \label{namespacetrain__play_aa94bf291fe9b6b75d34d8b144a8ad99a} 
+train\+\_\+play.\+True}
+
+\Hypertarget{namespacetrain__play_a16072fdce108a2e16322fa0abe44fd4a}\index{train\_play@{train\_play}!type@{type}}
+\index{type@{type}!train\_play@{train\_play}}
+\doxysubsubsection{\texorpdfstring{type}{type}}
+{\footnotesize\ttfamily \label{namespacetrain__play_a16072fdce108a2e16322fa0abe44fd4a} 
+train\+\_\+play.\+type}
+
+\Hypertarget{namespacetrain__play_a41a7a0d61134d4a305033fe741fc55f0}\index{train\_play@{train\_play}!v@{v}}
+\index{v@{v}!train\_play@{train\_play}}
+\doxysubsubsection{\texorpdfstring{v}{v}}
+{\footnotesize\ttfamily \label{namespacetrain__play_a41a7a0d61134d4a305033fe741fc55f0} 
+tuple train\+\_\+play.\+v = np.\+ones(\mbox{\hyperlink{namespacetrain__play_a3c2e645a6b32f75a479d5e75f34b1873}{ng}})}
+
+\Hypertarget{namespacetrain__play_a986e9c7ec3a6e644f842c557ae858699}\index{train\_play@{train\_play}!w@{w}}
+\index{w@{w}!train\_play@{train\_play}}
+\doxysubsubsection{\texorpdfstring{w}{w}}
+{\footnotesize\ttfamily \label{namespacetrain__play_a986e9c7ec3a6e644f842c557ae858699} 
+train\+\_\+play.\+w = fitness(\mbox{\hyperlink{namespacetrain__play_afe9de50c95c626571383657866a4576e}{x}}) -\/ fitness(\mbox{\hyperlink{namespacetrain__play_afe9de50c95c626571383657866a4576e}{x}}).min()}
+
+\Hypertarget{namespacetrain__play_ab06221a766b1e4bf05e004f62e7ebe52}\index{train\_play@{train\_play}!wandb\_run@{wandb\_run}}
+\index{wandb\_run@{wandb\_run}!train\_play@{train\_play}}
+\doxysubsubsection{\texorpdfstring{wandb\_run}{wandb\_run}}
+{\footnotesize\ttfamily \label{namespacetrain__play_ab06221a766b1e4bf05e004f62e7ebe52} 
+train\+\_\+play.\+wandb\+\_\+run = check\+\_\+wandb\+\_\+resume(\mbox{\hyperlink{namespacetrain__play_a5fe42a850824d1b33986ad021e146479}{opt}})}
+
+\Hypertarget{namespacetrain__play_a09c3c46b883377d34260303c3d0a242e}\index{train\_play@{train\_play}!world\_size@{world\_size}}
+\index{world\_size@{world\_size}!train\_play@{train\_play}}
+\doxysubsubsection{\texorpdfstring{world\_size}{world\_size}}
+{\footnotesize\ttfamily \label{namespacetrain__play_a09c3c46b883377d34260303c3d0a242e} 
+train\+\_\+play.\+world\+\_\+size}
+
+\Hypertarget{namespacetrain__play_afe9de50c95c626571383657866a4576e}\index{train\_play@{train\_play}!x@{x}}
+\index{x@{x}!train\_play@{train\_play}}
+\doxysubsubsection{\texorpdfstring{x}{x}}
+{\footnotesize\ttfamily \label{namespacetrain__play_afe9de50c95c626571383657866a4576e} 
+tuple train\+\_\+play.\+x = np.\+loadtxt(\textquotesingle{}evolve.\+txt\textquotesingle{}, ndmin=2)}
+
+\Hypertarget{namespacetrain__play_ae81786b981aaf2a0d57c9637158a105d}\index{train\_play@{train\_play}!yaml\_file@{yaml\_file}}
+\index{yaml\_file@{yaml\_file}!train\_play@{train\_play}}
+\doxysubsubsection{\texorpdfstring{yaml\_file}{yaml\_file}}
+{\footnotesize\ttfamily \label{namespacetrain__play_ae81786b981aaf2a0d57c9637158a105d} 
+\mbox{\hyperlink{namespacetrain__play_a48c30347e8bd7708709027b15e04f384}{str}} train\+\_\+play.\+yaml\+\_\+file = Path(opt.\+save\+\_\+dir) / \textquotesingle{}hyp\+\_\+evolved.\+yaml\textquotesingle{}}
+
+\Hypertarget{namespacetrain__play_a622cf624e2b53c9fdaace0169df9b9d3}\index{train\_play@{train\_play}!yaml\_opt@{yaml\_opt}}
+\index{yaml\_opt@{yaml\_opt}!train\_play@{train\_play}}
+\doxysubsubsection{\texorpdfstring{yaml\_opt}{yaml\_opt}}
+{\footnotesize\ttfamily \label{namespacetrain__play_a622cf624e2b53c9fdaace0169df9b9d3} 
+train\+\_\+play.\+yaml\+\_\+opt = yaml.\+safe\+\_\+load(f)}
+

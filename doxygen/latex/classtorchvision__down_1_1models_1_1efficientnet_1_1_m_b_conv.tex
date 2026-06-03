@@ -1,0 +1,76 @@
+\doxysection{torchvision\+\_\+down.\+models.\+efficientnet.\+MBConv Class Reference}
+\hypertarget{classtorchvision__down_1_1models_1_1efficientnet_1_1_m_b_conv}{}\label{classtorchvision__down_1_1models_1_1efficientnet_1_1_m_b_conv}\index{torchvision\_down.models.efficientnet.MBConv@{torchvision\_down.models.efficientnet.MBConv}}
+Inheritance diagram for torchvision\+\_\+down.\+models.\+efficientnet.\+MBConv\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classtorchvision__down_1_1models_1_1efficientnet_1_1_m_b_conv}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+None \mbox{\hyperlink{classtorchvision__down_1_1models_1_1efficientnet_1_1_m_b_conv_a2114b0f13bd212c3f2f81d28f2b9c6f1}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, \mbox{\hyperlink{classtorchvision__down_1_1models_1_1efficientnet_1_1_m_b_conv_config}{MBConv\+Config}} cnf, float stochastic\+\_\+depth\+\_\+prob, Callable\mbox{[}..., nn.\+Module\mbox{]} norm\+\_\+layer, Callable\mbox{[}..., nn.\+Module\mbox{]} se\+\_\+layer=\mbox{\hyperlink{classtorchvision__down_1_1ops_1_1misc_1_1_squeeze_excitation}{Squeeze\+Excitation}})
+\item 
+Tensor \mbox{\hyperlink{classtorchvision__down_1_1models_1_1efficientnet_1_1_m_b_conv_abca0b20bd320103f7cc671d5d3e1d63a}{forward}} (self, Tensor input)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{classtorchvision__down_1_1models_1_1efficientnet_1_1_m_b_conv_aee589b036f9a9f6f586aec74d3d6141f}{use\+\_\+res\+\_\+connect}} = cnf.\+out\+\_\+channels
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1models_1_1efficientnet_1_1_m_b_conv_a92e9b0792d3880356a1a9f46875fb41b}{block}} = nn.\+Sequential(\texorpdfstring{$\ast$}{*}layers)
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1models_1_1efficientnet_1_1_m_b_conv_a09d43cd0b249b31569641a32897c4fcb}{stochastic\+\_\+depth}} = \mbox{\hyperlink{classtorchvision__down_1_1ops_1_1stochastic__depth_1_1_stochastic_depth}{Stochastic\+Depth}}(stochastic\+\_\+depth\+\_\+prob, "{}row"{})
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1models_1_1efficientnet_1_1_m_b_conv_abf824badf510404a176a65c202fdd59c}{out\+\_\+channels}} = cnf.\+out\+\_\+channels
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classtorchvision__down_1_1models_1_1efficientnet_1_1_m_b_conv_a2114b0f13bd212c3f2f81d28f2b9c6f1}\index{torchvision\_down.models.efficientnet.MBConv@{torchvision\_down.models.efficientnet.MBConv}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!torchvision\_down.models.efficientnet.MBConv@{torchvision\_down.models.efficientnet.MBConv}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1models_1_1efficientnet_1_1_m_b_conv_a2114b0f13bd212c3f2f81d28f2b9c6f1} 
+ None torchvision\+\_\+down.\+models.\+efficientnet.\+MBConv.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{\mbox{\hyperlink{classtorchvision__down_1_1models_1_1efficientnet_1_1_m_b_conv_config}{MBConv\+Config}}}]{cnf}{, }\item[{float}]{stochastic\+\_\+depth\+\_\+prob}{, }\item[{Callable\mbox{[}..., nn.\+Module\mbox{]}}]{norm\+\_\+layer}{, }\item[{Callable\mbox{[}..., nn.\+Module\mbox{]} }]{se\+\_\+layer}{ = {\ttfamily \mbox{\hyperlink{classtorchvision__down_1_1ops_1_1misc_1_1_squeeze_excitation}{Squeeze\+Excitation}}}}\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classtorchvision__down_1_1models_1_1efficientnet_1_1_m_b_conv_abca0b20bd320103f7cc671d5d3e1d63a}\index{torchvision\_down.models.efficientnet.MBConv@{torchvision\_down.models.efficientnet.MBConv}!forward@{forward}}
+\index{forward@{forward}!torchvision\_down.models.efficientnet.MBConv@{torchvision\_down.models.efficientnet.MBConv}}
+\doxysubsubsection{\texorpdfstring{forward()}{forward()}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1models_1_1efficientnet_1_1_m_b_conv_abca0b20bd320103f7cc671d5d3e1d63a} 
+ Tensor torchvision\+\_\+down.\+models.\+efficientnet.\+MBConv.\+forward (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{Tensor}]{input}{}\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classtorchvision__down_1_1models_1_1efficientnet_1_1_m_b_conv_a92e9b0792d3880356a1a9f46875fb41b}\index{torchvision\_down.models.efficientnet.MBConv@{torchvision\_down.models.efficientnet.MBConv}!block@{block}}
+\index{block@{block}!torchvision\_down.models.efficientnet.MBConv@{torchvision\_down.models.efficientnet.MBConv}}
+\doxysubsubsection{\texorpdfstring{block}{block}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1models_1_1efficientnet_1_1_m_b_conv_a92e9b0792d3880356a1a9f46875fb41b} 
+torchvision\+\_\+down.\+models.\+efficientnet.\+MBConv.\+block = nn.\+Sequential(\texorpdfstring{$\ast$}{*}layers)}
+
+\Hypertarget{classtorchvision__down_1_1models_1_1efficientnet_1_1_m_b_conv_abf824badf510404a176a65c202fdd59c}\index{torchvision\_down.models.efficientnet.MBConv@{torchvision\_down.models.efficientnet.MBConv}!out\_channels@{out\_channels}}
+\index{out\_channels@{out\_channels}!torchvision\_down.models.efficientnet.MBConv@{torchvision\_down.models.efficientnet.MBConv}}
+\doxysubsubsection{\texorpdfstring{out\_channels}{out\_channels}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1models_1_1efficientnet_1_1_m_b_conv_abf824badf510404a176a65c202fdd59c} 
+torchvision\+\_\+down.\+models.\+efficientnet.\+MBConv.\+out\+\_\+channels = cnf.\+out\+\_\+channels}
+
+\Hypertarget{classtorchvision__down_1_1models_1_1efficientnet_1_1_m_b_conv_a09d43cd0b249b31569641a32897c4fcb}\index{torchvision\_down.models.efficientnet.MBConv@{torchvision\_down.models.efficientnet.MBConv}!stochastic\_depth@{stochastic\_depth}}
+\index{stochastic\_depth@{stochastic\_depth}!torchvision\_down.models.efficientnet.MBConv@{torchvision\_down.models.efficientnet.MBConv}}
+\doxysubsubsection{\texorpdfstring{stochastic\_depth}{stochastic\_depth}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1models_1_1efficientnet_1_1_m_b_conv_a09d43cd0b249b31569641a32897c4fcb} 
+torchvision\+\_\+down.\+models.\+efficientnet.\+MBConv.\+stochastic\+\_\+depth = \mbox{\hyperlink{classtorchvision__down_1_1ops_1_1stochastic__depth_1_1_stochastic_depth}{Stochastic\+Depth}}(stochastic\+\_\+depth\+\_\+prob, "{}row"{})}
+
+\Hypertarget{classtorchvision__down_1_1models_1_1efficientnet_1_1_m_b_conv_aee589b036f9a9f6f586aec74d3d6141f}\index{torchvision\_down.models.efficientnet.MBConv@{torchvision\_down.models.efficientnet.MBConv}!use\_res\_connect@{use\_res\_connect}}
+\index{use\_res\_connect@{use\_res\_connect}!torchvision\_down.models.efficientnet.MBConv@{torchvision\_down.models.efficientnet.MBConv}}
+\doxysubsubsection{\texorpdfstring{use\_res\_connect}{use\_res\_connect}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1models_1_1efficientnet_1_1_m_b_conv_aee589b036f9a9f6f586aec74d3d6141f} 
+int torchvision\+\_\+down.\+models.\+efficientnet.\+MBConv.\+use\+\_\+res\+\_\+connect = cnf.\+out\+\_\+channels}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Cervi\+AI/torchvision\+\_\+down/models/\mbox{\hyperlink{efficientnet_8py}{efficientnet.\+py}}\end{DoxyCompactItemize}

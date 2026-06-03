@@ -1,0 +1,66 @@
+\doxysection{torchvision\+\_\+down.\+models.\+detection.\+image\+\_\+list.\+Image\+List Class Reference}
+\hypertarget{classtorchvision__down_1_1models_1_1detection_1_1image__list_1_1_image_list}{}\label{classtorchvision__down_1_1models_1_1detection_1_1image__list_1_1_image_list}\index{torchvision\_down.models.detection.image\_list.ImageList@{torchvision\_down.models.detection.image\_list.ImageList}}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+None \mbox{\hyperlink{classtorchvision__down_1_1models_1_1detection_1_1image__list_1_1_image_list_ad09bfc86c97515ca8efbe4440396c0e1}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, Tensor \mbox{\hyperlink{classtorchvision__down_1_1models_1_1detection_1_1image__list_1_1_image_list_a0d62b5443916b0cee9bd048c593a9cbe}{tensors}}, List\mbox{[}Tuple\mbox{[}int, int\mbox{]}\mbox{]} \mbox{\hyperlink{classtorchvision__down_1_1models_1_1detection_1_1image__list_1_1_image_list_a6dd7c397bebf42b69d16296e7c2542a7}{image\+\_\+sizes}})
+\item 
+"{}Image\+List"{} \mbox{\hyperlink{classtorchvision__down_1_1models_1_1detection_1_1image__list_1_1_image_list_aea08fb77f70f5c1adf62b1dab1800263}{to}} (self, torch.\+device device)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1models_1_1detection_1_1image__list_1_1_image_list_a0d62b5443916b0cee9bd048c593a9cbe}{tensors}} = tensors
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1models_1_1detection_1_1image__list_1_1_image_list_a6dd7c397bebf42b69d16296e7c2542a7}{image\+\_\+sizes}} = image\+\_\+sizes
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}Structure that holds a list of images (of possibly
+varying sizes) as a single tensor.
+This works by padding the images to the same size,
+and storing in a field the original sizes of each image
+
+Args:
+    tensors (tensor): Tensor containing images.
+    image_sizes (list[tuple[int, int]]): List of Tuples each containing size of images.
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classtorchvision__down_1_1models_1_1detection_1_1image__list_1_1_image_list_ad09bfc86c97515ca8efbe4440396c0e1}\index{torchvision\_down.models.detection.image\_list.ImageList@{torchvision\_down.models.detection.image\_list.ImageList}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!torchvision\_down.models.detection.image\_list.ImageList@{torchvision\_down.models.detection.image\_list.ImageList}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1models_1_1detection_1_1image__list_1_1_image_list_ad09bfc86c97515ca8efbe4440396c0e1} 
+ None torchvision\+\_\+down.\+models.\+detection.\+image\+\_\+list.\+Image\+List.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{Tensor}]{tensors}{, }\item[{List\mbox{[}Tuple\mbox{[}int, int\mbox{]}\mbox{]}}]{image\+\_\+sizes}{}\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classtorchvision__down_1_1models_1_1detection_1_1image__list_1_1_image_list_aea08fb77f70f5c1adf62b1dab1800263}\index{torchvision\_down.models.detection.image\_list.ImageList@{torchvision\_down.models.detection.image\_list.ImageList}!to@{to}}
+\index{to@{to}!torchvision\_down.models.detection.image\_list.ImageList@{torchvision\_down.models.detection.image\_list.ImageList}}
+\doxysubsubsection{\texorpdfstring{to()}{to()}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1models_1_1detection_1_1image__list_1_1_image_list_aea08fb77f70f5c1adf62b1dab1800263} 
+ "{}Image\+List"{} torchvision\+\_\+down.\+models.\+detection.\+image\+\_\+list.\+Image\+List.\+to (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{torch.\+device}]{device}{}\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classtorchvision__down_1_1models_1_1detection_1_1image__list_1_1_image_list_a6dd7c397bebf42b69d16296e7c2542a7}\index{torchvision\_down.models.detection.image\_list.ImageList@{torchvision\_down.models.detection.image\_list.ImageList}!image\_sizes@{image\_sizes}}
+\index{image\_sizes@{image\_sizes}!torchvision\_down.models.detection.image\_list.ImageList@{torchvision\_down.models.detection.image\_list.ImageList}}
+\doxysubsubsection{\texorpdfstring{image\_sizes}{image\_sizes}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1models_1_1detection_1_1image__list_1_1_image_list_a6dd7c397bebf42b69d16296e7c2542a7} 
+torchvision\+\_\+down.\+models.\+detection.\+image\+\_\+list.\+Image\+List.\+image\+\_\+sizes = image\+\_\+sizes}
+
+\Hypertarget{classtorchvision__down_1_1models_1_1detection_1_1image__list_1_1_image_list_a0d62b5443916b0cee9bd048c593a9cbe}\index{torchvision\_down.models.detection.image\_list.ImageList@{torchvision\_down.models.detection.image\_list.ImageList}!tensors@{tensors}}
+\index{tensors@{tensors}!torchvision\_down.models.detection.image\_list.ImageList@{torchvision\_down.models.detection.image\_list.ImageList}}
+\doxysubsubsection{\texorpdfstring{tensors}{tensors}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1models_1_1detection_1_1image__list_1_1_image_list_a0d62b5443916b0cee9bd048c593a9cbe} 
+torchvision\+\_\+down.\+models.\+detection.\+image\+\_\+list.\+Image\+List.\+tensors = tensors}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Cervi\+AI/torchvision\+\_\+down/models/detection/\mbox{\hyperlink{image__list_8py}{image\+\_\+list.\+py}}\end{DoxyCompactItemize}

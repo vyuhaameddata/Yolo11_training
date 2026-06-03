@@ -1,0 +1,111 @@
+\doxysection{torchvision\+\_\+down.\+ops.\+misc.\+Squeeze\+Excitation Class Reference}
+\hypertarget{classtorchvision__down_1_1ops_1_1misc_1_1_squeeze_excitation}{}\label{classtorchvision__down_1_1ops_1_1misc_1_1_squeeze_excitation}\index{torchvision\_down.ops.misc.SqueezeExcitation@{torchvision\_down.ops.misc.SqueezeExcitation}}
+Inheritance diagram for torchvision\+\_\+down.\+ops.\+misc.\+Squeeze\+Excitation\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{classtorchvision__down_1_1ops_1_1misc_1_1_squeeze_excitation}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+None \mbox{\hyperlink{classtorchvision__down_1_1ops_1_1misc_1_1_squeeze_excitation_aa5fd8ae5eb819c7b25f4ab5efcef2e75}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, int input\+\_\+channels, int squeeze\+\_\+channels, Callable\mbox{[}..., torch.\+nn.\+Module\mbox{]} \mbox{\hyperlink{classtorchvision__down_1_1ops_1_1misc_1_1_squeeze_excitation_a860c68013e113ffc57d81170b9436d73}{activation}}=torch.\+nn.\+Re\+LU, Callable\mbox{[}..., torch.\+nn.\+Module\mbox{]} \mbox{\hyperlink{classtorchvision__down_1_1ops_1_1misc_1_1_squeeze_excitation_a640aa5ae565cc151d1649849ed6387d5}{scale\+\_\+activation}}=torch.\+nn.\+Sigmoid)
+\item 
+Tensor \mbox{\hyperlink{classtorchvision__down_1_1ops_1_1misc_1_1_squeeze_excitation_ae90f38cc689423be2530accd21073d19}{forward}} (self, Tensor input)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1ops_1_1misc_1_1_squeeze_excitation_a7976db610f881790c64bf048146aa38d}{avgpool}} = torch.\+nn.\+Adaptive\+Avg\+Pool2d(1)
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1ops_1_1misc_1_1_squeeze_excitation_a88adf71ba15c81dadf41a1d8e43f2bc6}{fc1}} = torch.\+nn.\+Conv2d(input\+\_\+channels, squeeze\+\_\+channels, 1)
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1ops_1_1misc_1_1_squeeze_excitation_a95cebe9910e2d0c4b921ac0b3c448895}{fc2}} = torch.\+nn.\+Conv2d(squeeze\+\_\+channels, input\+\_\+channels, 1)
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1ops_1_1misc_1_1_squeeze_excitation_a860c68013e113ffc57d81170b9436d73}{activation}} = activation()
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1ops_1_1misc_1_1_squeeze_excitation_a640aa5ae565cc151d1649849ed6387d5}{scale\+\_\+activation}} = scale\+\_\+activation()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+Tensor \mbox{\hyperlink{classtorchvision__down_1_1ops_1_1misc_1_1_squeeze_excitation_a5d4385caf30b9e6269e0a1741323a056}{\+\_\+scale}} (self, Tensor input)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}This block implements the Squeeze-and-Excitation block from https://arxiv.org/abs/1709.01507 (see Fig. 1).
+Parameters ``activation``, and ``scale_activation`` correspond to ``delta`` and ``sigma`` in in eq. 3.
+
+Args:
+    input_channels (int): Number of channels in the input image
+    squeeze_channels (int): Number of squeeze channels
+    activation (Callable[..., torch.nn.Module], optional): ``delta`` activation. Default: ``torch.nn.ReLU``
+    scale_activation (Callable[..., torch.nn.Module]): ``sigma`` activation. Default: ``torch.nn.Sigmoid``
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classtorchvision__down_1_1ops_1_1misc_1_1_squeeze_excitation_aa5fd8ae5eb819c7b25f4ab5efcef2e75}\index{torchvision\_down.ops.misc.SqueezeExcitation@{torchvision\_down.ops.misc.SqueezeExcitation}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!torchvision\_down.ops.misc.SqueezeExcitation@{torchvision\_down.ops.misc.SqueezeExcitation}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1ops_1_1misc_1_1_squeeze_excitation_aa5fd8ae5eb819c7b25f4ab5efcef2e75} 
+ None torchvision\+\_\+down.\+ops.\+misc.\+Squeeze\+Excitation.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{int}]{input\+\_\+channels}{, }\item[{int}]{squeeze\+\_\+channels}{, }\item[{Callable\mbox{[}..., torch.\+nn.\+Module\mbox{]} }]{activation}{ = {\ttfamily torch.nn.ReLU}, }\item[{Callable\mbox{[}..., torch.\+nn.\+Module\mbox{]} }]{scale\+\_\+activation}{ = {\ttfamily torch.nn.Sigmoid}}\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classtorchvision__down_1_1ops_1_1misc_1_1_squeeze_excitation_a5d4385caf30b9e6269e0a1741323a056}\index{torchvision\_down.ops.misc.SqueezeExcitation@{torchvision\_down.ops.misc.SqueezeExcitation}!\_scale@{\_scale}}
+\index{\_scale@{\_scale}!torchvision\_down.ops.misc.SqueezeExcitation@{torchvision\_down.ops.misc.SqueezeExcitation}}
+\doxysubsubsection{\texorpdfstring{\_scale()}{\_scale()}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1ops_1_1misc_1_1_squeeze_excitation_a5d4385caf30b9e6269e0a1741323a056} 
+ Tensor torchvision\+\_\+down.\+ops.\+misc.\+Squeeze\+Excitation.\+\_\+scale (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{Tensor}]{input}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classtorchvision__down_1_1ops_1_1misc_1_1_squeeze_excitation_ae90f38cc689423be2530accd21073d19}\index{torchvision\_down.ops.misc.SqueezeExcitation@{torchvision\_down.ops.misc.SqueezeExcitation}!forward@{forward}}
+\index{forward@{forward}!torchvision\_down.ops.misc.SqueezeExcitation@{torchvision\_down.ops.misc.SqueezeExcitation}}
+\doxysubsubsection{\texorpdfstring{forward()}{forward()}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1ops_1_1misc_1_1_squeeze_excitation_ae90f38cc689423be2530accd21073d19} 
+ Tensor torchvision\+\_\+down.\+ops.\+misc.\+Squeeze\+Excitation.\+forward (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{Tensor}]{input}{}\end{DoxyParamCaption})}
+
+
+
+Reimplemented in \mbox{\hyperlink{classtorchvision__down_1_1models_1_1quantization_1_1mobilenetv3_1_1_quantizable_squeeze_excitation_a2375c82e3afd7d8ede2783644edf69e7}{torchvision\+\_\+down.\+models.\+quantization.\+mobilenetv3.\+Quantizable\+Squeeze\+Excitation}}.
+
+
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classtorchvision__down_1_1ops_1_1misc_1_1_squeeze_excitation_a860c68013e113ffc57d81170b9436d73}\index{torchvision\_down.ops.misc.SqueezeExcitation@{torchvision\_down.ops.misc.SqueezeExcitation}!activation@{activation}}
+\index{activation@{activation}!torchvision\_down.ops.misc.SqueezeExcitation@{torchvision\_down.ops.misc.SqueezeExcitation}}
+\doxysubsubsection{\texorpdfstring{activation}{activation}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1ops_1_1misc_1_1_squeeze_excitation_a860c68013e113ffc57d81170b9436d73} 
+torchvision\+\_\+down.\+ops.\+misc.\+Squeeze\+Excitation.\+activation = activation()}
+
+\Hypertarget{classtorchvision__down_1_1ops_1_1misc_1_1_squeeze_excitation_a7976db610f881790c64bf048146aa38d}\index{torchvision\_down.ops.misc.SqueezeExcitation@{torchvision\_down.ops.misc.SqueezeExcitation}!avgpool@{avgpool}}
+\index{avgpool@{avgpool}!torchvision\_down.ops.misc.SqueezeExcitation@{torchvision\_down.ops.misc.SqueezeExcitation}}
+\doxysubsubsection{\texorpdfstring{avgpool}{avgpool}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1ops_1_1misc_1_1_squeeze_excitation_a7976db610f881790c64bf048146aa38d} 
+torchvision\+\_\+down.\+ops.\+misc.\+Squeeze\+Excitation.\+avgpool = torch.\+nn.\+Adaptive\+Avg\+Pool2d(1)}
+
+\Hypertarget{classtorchvision__down_1_1ops_1_1misc_1_1_squeeze_excitation_a88adf71ba15c81dadf41a1d8e43f2bc6}\index{torchvision\_down.ops.misc.SqueezeExcitation@{torchvision\_down.ops.misc.SqueezeExcitation}!fc1@{fc1}}
+\index{fc1@{fc1}!torchvision\_down.ops.misc.SqueezeExcitation@{torchvision\_down.ops.misc.SqueezeExcitation}}
+\doxysubsubsection{\texorpdfstring{fc1}{fc1}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1ops_1_1misc_1_1_squeeze_excitation_a88adf71ba15c81dadf41a1d8e43f2bc6} 
+torchvision\+\_\+down.\+ops.\+misc.\+Squeeze\+Excitation.\+fc1 = torch.\+nn.\+Conv2d(input\+\_\+channels, squeeze\+\_\+channels, 1)}
+
+\Hypertarget{classtorchvision__down_1_1ops_1_1misc_1_1_squeeze_excitation_a95cebe9910e2d0c4b921ac0b3c448895}\index{torchvision\_down.ops.misc.SqueezeExcitation@{torchvision\_down.ops.misc.SqueezeExcitation}!fc2@{fc2}}
+\index{fc2@{fc2}!torchvision\_down.ops.misc.SqueezeExcitation@{torchvision\_down.ops.misc.SqueezeExcitation}}
+\doxysubsubsection{\texorpdfstring{fc2}{fc2}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1ops_1_1misc_1_1_squeeze_excitation_a95cebe9910e2d0c4b921ac0b3c448895} 
+torchvision\+\_\+down.\+ops.\+misc.\+Squeeze\+Excitation.\+fc2 = torch.\+nn.\+Conv2d(squeeze\+\_\+channels, input\+\_\+channels, 1)}
+
+\Hypertarget{classtorchvision__down_1_1ops_1_1misc_1_1_squeeze_excitation_a640aa5ae565cc151d1649849ed6387d5}\index{torchvision\_down.ops.misc.SqueezeExcitation@{torchvision\_down.ops.misc.SqueezeExcitation}!scale\_activation@{scale\_activation}}
+\index{scale\_activation@{scale\_activation}!torchvision\_down.ops.misc.SqueezeExcitation@{torchvision\_down.ops.misc.SqueezeExcitation}}
+\doxysubsubsection{\texorpdfstring{scale\_activation}{scale\_activation}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1ops_1_1misc_1_1_squeeze_excitation_a640aa5ae565cc151d1649849ed6387d5} 
+torchvision\+\_\+down.\+ops.\+misc.\+Squeeze\+Excitation.\+scale\+\_\+activation = scale\+\_\+activation()}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Cervi\+AI/torchvision\+\_\+down/ops/\mbox{\hyperlink{misc_8py}{misc.\+py}}\end{DoxyCompactItemize}

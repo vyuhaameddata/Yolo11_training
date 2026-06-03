@@ -1,0 +1,113 @@
+\doxysection{torchvision\+\_\+down.\+models.\+detection.\+ssdlite Namespace Reference}
+\hypertarget{namespacetorchvision__down_1_1models_1_1detection_1_1ssdlite}{}\label{namespacetorchvision__down_1_1models_1_1detection_1_1ssdlite}\index{torchvision\_down.models.detection.ssdlite@{torchvision\_down.models.detection.ssdlite}}
+\doxysubsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classtorchvision__down_1_1models_1_1detection_1_1ssdlite_1_1_s_s_d_lite_classification_head}{SSDLite\+Classification\+Head}}
+\item 
+class \mbox{\hyperlink{classtorchvision__down_1_1models_1_1detection_1_1ssdlite_1_1_s_s_d_lite_feature_extractor_mobile_net}{SSDLite\+Feature\+Extractor\+Mobile\+Net}}
+\item 
+class \mbox{\hyperlink{classtorchvision__down_1_1models_1_1detection_1_1ssdlite_1_1_s_s_d_lite_head}{SSDLite\+Head}}
+\item 
+class \mbox{\hyperlink{classtorchvision__down_1_1models_1_1detection_1_1ssdlite_1_1_s_s_d_lite_regression_head}{SSDLite\+Regression\+Head}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+nn.\+Sequential \mbox{\hyperlink{namespacetorchvision__down_1_1models_1_1detection_1_1ssdlite_ac2a56acab1e8eaa916981e9d2d1775bc}{\+\_\+prediction\+\_\+block}} (int in\+\_\+channels, int out\+\_\+channels, int kernel\+\_\+size, Callable\mbox{[}..., nn.\+Module\mbox{]} norm\+\_\+layer)
+\item 
+nn.\+Sequential \mbox{\hyperlink{namespacetorchvision__down_1_1models_1_1detection_1_1ssdlite_ab13b7dc0d60aaf083671688528aa3a9f}{\+\_\+extra\+\_\+block}} (int in\+\_\+channels, int out\+\_\+channels, Callable\mbox{[}..., nn.\+Module\mbox{]} norm\+\_\+layer)
+\item 
+\mbox{\hyperlink{namespacetorchvision__down_1_1models_1_1detection_1_1ssdlite_a380fae73a8c72bec043a309673c477dc}{\+\_\+normal\+\_\+init}} (nn.\+Module conv)
+\item 
+\mbox{\hyperlink{namespacetorchvision__down_1_1models_1_1detection_1_1ssdlite_a046d5a0145307fd6a5d104f69071f767}{\+\_\+mobilenet\+\_\+extractor}} (Union\mbox{[}\mbox{\hyperlink{classtorchvision__down_1_1models_1_1mobilenetv2_1_1_mobile_net_v2}{mobilenet.\+Mobile\+Net\+V2}}, \mbox{\hyperlink{classtorchvision__down_1_1models_1_1mobilenetv3_1_1_mobile_net_v3}{mobilenet.\+Mobile\+Net\+V3}}\mbox{]} backbone, int trainable\+\_\+layers, Callable\mbox{[}..., nn.\+Module\mbox{]} norm\+\_\+layer)
+\item 
+\mbox{\hyperlink{namespacetorchvision__down_1_1models_1_1detection_1_1ssdlite_af48fa09d269cd36d47fb9c0b53b4a695}{ssdlite320\+\_\+mobilenet\+\_\+v3\+\_\+large}} (bool pretrained=False, bool progress=True, int num\+\_\+classes=91, bool pretrained\+\_\+backbone=False, Optional\mbox{[}int\mbox{]} trainable\+\_\+backbone\+\_\+layers=None, Optional\mbox{[}Callable\mbox{[}..., nn.\+Module\mbox{]}\mbox{]} norm\+\_\+layer=None, \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}Any kwargs)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+list \mbox{\hyperlink{namespacetorchvision__down_1_1models_1_1detection_1_1ssdlite_acad06745ace571b7d69fe4c3530ac3c1}{\+\_\+\+\_\+all\+\_\+\+\_\+}} = \mbox{[}"{}ssdlite320\+\_\+mobilenet\+\_\+v3\+\_\+large"{}\mbox{]}
+\item 
+dict \mbox{\hyperlink{namespacetorchvision__down_1_1models_1_1detection_1_1ssdlite_a71bb7a8b19a988dda2443fbb5c90bfc2}{model\+\_\+urls}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{namespacetorchvision__down_1_1models_1_1detection_1_1ssdlite_ab13b7dc0d60aaf083671688528aa3a9f}\index{torchvision\_down.models.detection.ssdlite@{torchvision\_down.models.detection.ssdlite}!\_extra\_block@{\_extra\_block}}
+\index{\_extra\_block@{\_extra\_block}!torchvision\_down.models.detection.ssdlite@{torchvision\_down.models.detection.ssdlite}}
+\doxysubsubsection{\texorpdfstring{\_extra\_block()}{\_extra\_block()}}
+{\footnotesize\ttfamily \label{namespacetorchvision__down_1_1models_1_1detection_1_1ssdlite_ab13b7dc0d60aaf083671688528aa3a9f} 
+ nn.\+Sequential torchvision\+\_\+down.\+models.\+detection.\+ssdlite.\+\_\+extra\+\_\+block (\begin{DoxyParamCaption}\item[{int}]{in\+\_\+channels}{, }\item[{int}]{out\+\_\+channels}{, }\item[{Callable\mbox{[}..., nn.\+Module\mbox{]}}]{norm\+\_\+layer}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{namespacetorchvision__down_1_1models_1_1detection_1_1ssdlite_a046d5a0145307fd6a5d104f69071f767}\index{torchvision\_down.models.detection.ssdlite@{torchvision\_down.models.detection.ssdlite}!\_mobilenet\_extractor@{\_mobilenet\_extractor}}
+\index{\_mobilenet\_extractor@{\_mobilenet\_extractor}!torchvision\_down.models.detection.ssdlite@{torchvision\_down.models.detection.ssdlite}}
+\doxysubsubsection{\texorpdfstring{\_mobilenet\_extractor()}{\_mobilenet\_extractor()}}
+{\footnotesize\ttfamily \label{namespacetorchvision__down_1_1models_1_1detection_1_1ssdlite_a046d5a0145307fd6a5d104f69071f767} 
+torchvision\+\_\+down.\+models.\+detection.\+ssdlite.\+\_\+mobilenet\+\_\+extractor (\begin{DoxyParamCaption}\item[{Union\mbox{[}\mbox{\hyperlink{classtorchvision__down_1_1models_1_1mobilenetv2_1_1_mobile_net_v2}{mobilenet.\+Mobile\+Net\+V2}}, \mbox{\hyperlink{classtorchvision__down_1_1models_1_1mobilenetv3_1_1_mobile_net_v3}{mobilenet.\+Mobile\+Net\+V3}}\mbox{]}}]{backbone}{, }\item[{int}]{trainable\+\_\+layers}{, }\item[{Callable\mbox{[}..., nn.\+Module\mbox{]}}]{norm\+\_\+layer}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{namespacetorchvision__down_1_1models_1_1detection_1_1ssdlite_a380fae73a8c72bec043a309673c477dc}\index{torchvision\_down.models.detection.ssdlite@{torchvision\_down.models.detection.ssdlite}!\_normal\_init@{\_normal\_init}}
+\index{\_normal\_init@{\_normal\_init}!torchvision\_down.models.detection.ssdlite@{torchvision\_down.models.detection.ssdlite}}
+\doxysubsubsection{\texorpdfstring{\_normal\_init()}{\_normal\_init()}}
+{\footnotesize\ttfamily \label{namespacetorchvision__down_1_1models_1_1detection_1_1ssdlite_a380fae73a8c72bec043a309673c477dc} 
+torchvision\+\_\+down.\+models.\+detection.\+ssdlite.\+\_\+normal\+\_\+init (\begin{DoxyParamCaption}\item[{nn.\+Module}]{conv}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{namespacetorchvision__down_1_1models_1_1detection_1_1ssdlite_ac2a56acab1e8eaa916981e9d2d1775bc}\index{torchvision\_down.models.detection.ssdlite@{torchvision\_down.models.detection.ssdlite}!\_prediction\_block@{\_prediction\_block}}
+\index{\_prediction\_block@{\_prediction\_block}!torchvision\_down.models.detection.ssdlite@{torchvision\_down.models.detection.ssdlite}}
+\doxysubsubsection{\texorpdfstring{\_prediction\_block()}{\_prediction\_block()}}
+{\footnotesize\ttfamily \label{namespacetorchvision__down_1_1models_1_1detection_1_1ssdlite_ac2a56acab1e8eaa916981e9d2d1775bc} 
+ nn.\+Sequential torchvision\+\_\+down.\+models.\+detection.\+ssdlite.\+\_\+prediction\+\_\+block (\begin{DoxyParamCaption}\item[{int}]{in\+\_\+channels}{, }\item[{int}]{out\+\_\+channels}{, }\item[{int}]{kernel\+\_\+size}{, }\item[{Callable\mbox{[}..., nn.\+Module\mbox{]} }]{norm\+\_\+layer}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{namespacetorchvision__down_1_1models_1_1detection_1_1ssdlite_af48fa09d269cd36d47fb9c0b53b4a695}\index{torchvision\_down.models.detection.ssdlite@{torchvision\_down.models.detection.ssdlite}!ssdlite320\_mobilenet\_v3\_large@{ssdlite320\_mobilenet\_v3\_large}}
+\index{ssdlite320\_mobilenet\_v3\_large@{ssdlite320\_mobilenet\_v3\_large}!torchvision\_down.models.detection.ssdlite@{torchvision\_down.models.detection.ssdlite}}
+\doxysubsubsection{\texorpdfstring{ssdlite320\_mobilenet\_v3\_large()}{ssdlite320\_mobilenet\_v3\_large()}}
+{\footnotesize\ttfamily \label{namespacetorchvision__down_1_1models_1_1detection_1_1ssdlite_af48fa09d269cd36d47fb9c0b53b4a695} 
+torchvision\+\_\+down.\+models.\+detection.\+ssdlite.\+ssdlite320\+\_\+mobilenet\+\_\+v3\+\_\+large (\begin{DoxyParamCaption}\item[{bool }]{pretrained}{ = {\ttfamily False}, }\item[{bool }]{progress}{ = {\ttfamily True}, }\item[{int }]{num\+\_\+classes}{ = {\ttfamily 91}, }\item[{bool }]{pretrained\+\_\+backbone}{ = {\ttfamily False}, }\item[{Optional\mbox{[}int\mbox{]} }]{trainable\+\_\+backbone\+\_\+layers}{ = {\ttfamily None}, }\item[{Optional\mbox{[}Callable\mbox{[}..., nn.\+Module\mbox{]}\mbox{]} }]{norm\+\_\+layer}{ = {\ttfamily None}, }\item[{\texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}Any}]{kwargs}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Constructs an SSDlite model with input size 320x320 and a MobileNetV3 Large backbone, as described at
+`"Searching for MobileNetV3"
+<https://arxiv.org/abs/1905.02244>`_ and
+`"MobileNetV2: Inverted Residuals and Linear Bottlenecks"
+<https://arxiv.org/abs/1801.04381>`_.
+
+See :func:`~torchvision.models.detection.ssd300_vgg16` for more details.
+
+Example:
+
+    >>> model = torchvision.models.detection.ssdlite320_mobilenet_v3_large(pretrained=True)
+    >>> model.eval()
+    >>> x = [torch.rand(3, 320, 320), torch.rand(3, 500, 400)]
+    >>> predictions = model(x)
+
+Args:
+    pretrained (bool): If True, returns a model pre-trained on COCO train2017
+    progress (bool): If True, displays a progress bar of the download to stderr
+    num_classes (int): number of output classes of the model (including the background)
+    pretrained_backbone (bool): If True, returns a model with backbone pre-trained on Imagenet
+    trainable_backbone_layers (int): number of trainable (not frozen) resnet layers starting from final block.
+        Valid values are between 0 and 6, with 6 meaning all backbone layers are trainable. If ``None`` is
+        passed (the default) this value is set to 6.
+    norm_layer (callable, optional): Module specifying the normalization layer to use.
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Variable Documentation}
+\Hypertarget{namespacetorchvision__down_1_1models_1_1detection_1_1ssdlite_acad06745ace571b7d69fe4c3530ac3c1}\index{torchvision\_down.models.detection.ssdlite@{torchvision\_down.models.detection.ssdlite}!\_\_all\_\_@{\_\_all\_\_}}
+\index{\_\_all\_\_@{\_\_all\_\_}!torchvision\_down.models.detection.ssdlite@{torchvision\_down.models.detection.ssdlite}}
+\doxysubsubsection{\texorpdfstring{\_\_all\_\_}{\_\_all\_\_}}
+{\footnotesize\ttfamily \label{namespacetorchvision__down_1_1models_1_1detection_1_1ssdlite_acad06745ace571b7d69fe4c3530ac3c1} 
+list torchvision\+\_\+down.\+models.\+detection.\+ssdlite.\+\_\+\+\_\+all\+\_\+\+\_\+ = \mbox{[}"{}ssdlite320\+\_\+mobilenet\+\_\+v3\+\_\+large"{}\mbox{]}\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{namespacetorchvision__down_1_1models_1_1detection_1_1ssdlite_a71bb7a8b19a988dda2443fbb5c90bfc2}\index{torchvision\_down.models.detection.ssdlite@{torchvision\_down.models.detection.ssdlite}!model\_urls@{model\_urls}}
+\index{model\_urls@{model\_urls}!torchvision\_down.models.detection.ssdlite@{torchvision\_down.models.detection.ssdlite}}
+\doxysubsubsection{\texorpdfstring{model\_urls}{model\_urls}}
+{\footnotesize\ttfamily \label{namespacetorchvision__down_1_1models_1_1detection_1_1ssdlite_a71bb7a8b19a988dda2443fbb5c90bfc2} 
+dict torchvision\+\_\+down.\+models.\+detection.\+ssdlite.\+model\+\_\+urls}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ =\ \ \{}
+\DoxyCodeLine{00002\ \ \ \ \ \textcolor{stringliteral}{"{}ssdlite320\_mobilenet\_v3\_large\_coco"{}}:\ \textcolor{stringliteral}{"{}https://download.pytorch.org/models/ssdlite320\_mobilenet\_v3\_large\_coco-\/a79551df.pth"{}}}
+\DoxyCodeLine{00003\ \}}
+
+\end{DoxyCode}

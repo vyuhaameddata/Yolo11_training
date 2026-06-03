@@ -1,0 +1,105 @@
+\doxysection{torchvision\+\_\+down.\+models.\+detection.\+fcos.\+FCOSHead Class Reference}
+\hypertarget{classtorchvision__down_1_1models_1_1detection_1_1fcos_1_1_f_c_o_s_head}{}\label{classtorchvision__down_1_1models_1_1detection_1_1fcos_1_1_f_c_o_s_head}\index{torchvision\_down.models.detection.fcos.FCOSHead@{torchvision\_down.models.detection.fcos.FCOSHead}}
+Inheritance diagram for torchvision\+\_\+down.\+models.\+detection.\+fcos.\+FCOSHead\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classtorchvision__down_1_1models_1_1detection_1_1fcos_1_1_f_c_o_s_head}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+None \mbox{\hyperlink{classtorchvision__down_1_1models_1_1detection_1_1fcos_1_1_f_c_o_s_head_a413e49ed52999cd5f7b2f7c3d0f74622}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, int in\+\_\+channels, int num\+\_\+anchors, int num\+\_\+classes, Optional\mbox{[}int\mbox{]} num\+\_\+convs=4)
+\item 
+Dict\mbox{[}str, Tensor\mbox{]} \mbox{\hyperlink{classtorchvision__down_1_1models_1_1detection_1_1fcos_1_1_f_c_o_s_head_a725900b799a56ecdb08685d08be2be79}{compute\+\_\+loss}} (self, List\mbox{[}Dict\mbox{[}str, Tensor\mbox{]}\mbox{]} targets, Dict\mbox{[}str, Tensor\mbox{]} head\+\_\+outputs, List\mbox{[}Tensor\mbox{]} anchors, List\mbox{[}Tensor\mbox{]} matched\+\_\+idxs)
+\item 
+Dict\mbox{[}str, Tensor\mbox{]} \mbox{\hyperlink{classtorchvision__down_1_1models_1_1detection_1_1fcos_1_1_f_c_o_s_head_a904b300f7593c41e51c388fdc4060c98}{forward}} (self, List\mbox{[}Tensor\mbox{]} x)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1models_1_1detection_1_1fcos_1_1_f_c_o_s_head_a12f91095bfbfd3c24e6119511f958107}{box\+\_\+coder}} = det\+\_\+utils.\+Box\+Linear\+Coder(normalize\+\_\+by\+\_\+size=True)
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1models_1_1detection_1_1fcos_1_1_f_c_o_s_head_aa4e31169913ed353f5c21d81fb359bc8}{classification\+\_\+head}} = \mbox{\hyperlink{classtorchvision__down_1_1models_1_1detection_1_1fcos_1_1_f_c_o_s_classification_head}{FCOSClassification\+Head}}(in\+\_\+channels, num\+\_\+anchors, num\+\_\+classes, num\+\_\+convs)
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1models_1_1detection_1_1fcos_1_1_f_c_o_s_head_a16b8c3786f20b8ca657a03d7f13fbb15}{regression\+\_\+head}} = \mbox{\hyperlink{classtorchvision__down_1_1models_1_1detection_1_1fcos_1_1_f_c_o_s_regression_head}{FCOSRegression\+Head}}(in\+\_\+channels, num\+\_\+anchors, num\+\_\+convs)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+dict \mbox{\hyperlink{classtorchvision__down_1_1models_1_1detection_1_1fcos_1_1_f_c_o_s_head_a9c9499f8bf5cd3d569361ff8595c7d66}{\+\_\+\+\_\+annotations\+\_\+\+\_\+}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}A regression and classification head for use in FCOS.
+
+Args:
+    in_channels (int): number of channels of the input feature
+    num_anchors (int): number of anchors to be predicted
+    num_classes (int): number of classes to be predicted
+    num_convs (Optional[int]): number of conv layer of head. Default: 4.
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classtorchvision__down_1_1models_1_1detection_1_1fcos_1_1_f_c_o_s_head_a413e49ed52999cd5f7b2f7c3d0f74622}\index{torchvision\_down.models.detection.fcos.FCOSHead@{torchvision\_down.models.detection.fcos.FCOSHead}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!torchvision\_down.models.detection.fcos.FCOSHead@{torchvision\_down.models.detection.fcos.FCOSHead}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1models_1_1detection_1_1fcos_1_1_f_c_o_s_head_a413e49ed52999cd5f7b2f7c3d0f74622} 
+ None torchvision\+\_\+down.\+models.\+detection.\+fcos.\+FCOSHead.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{int}]{in\+\_\+channels}{, }\item[{int}]{num\+\_\+anchors}{, }\item[{int}]{num\+\_\+classes}{, }\item[{Optional\mbox{[}int\mbox{]} }]{num\+\_\+convs}{ = {\ttfamily 4}}\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classtorchvision__down_1_1models_1_1detection_1_1fcos_1_1_f_c_o_s_head_a725900b799a56ecdb08685d08be2be79}\index{torchvision\_down.models.detection.fcos.FCOSHead@{torchvision\_down.models.detection.fcos.FCOSHead}!compute\_loss@{compute\_loss}}
+\index{compute\_loss@{compute\_loss}!torchvision\_down.models.detection.fcos.FCOSHead@{torchvision\_down.models.detection.fcos.FCOSHead}}
+\doxysubsubsection{\texorpdfstring{compute\_loss()}{compute\_loss()}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1models_1_1detection_1_1fcos_1_1_f_c_o_s_head_a725900b799a56ecdb08685d08be2be79} 
+ Dict\mbox{[}str, Tensor\mbox{]} torchvision\+\_\+down.\+models.\+detection.\+fcos.\+FCOSHead.\+compute\+\_\+loss (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{List\mbox{[}Dict\mbox{[}str, Tensor\mbox{]}\mbox{]}}]{targets}{, }\item[{Dict\mbox{[}str, Tensor\mbox{]}}]{head\+\_\+outputs}{, }\item[{List\mbox{[}Tensor\mbox{]}}]{anchors}{, }\item[{List\mbox{[}Tensor\mbox{]}}]{matched\+\_\+idxs}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classtorchvision__down_1_1models_1_1detection_1_1fcos_1_1_f_c_o_s_head_a904b300f7593c41e51c388fdc4060c98}\index{torchvision\_down.models.detection.fcos.FCOSHead@{torchvision\_down.models.detection.fcos.FCOSHead}!forward@{forward}}
+\index{forward@{forward}!torchvision\_down.models.detection.fcos.FCOSHead@{torchvision\_down.models.detection.fcos.FCOSHead}}
+\doxysubsubsection{\texorpdfstring{forward()}{forward()}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1models_1_1detection_1_1fcos_1_1_f_c_o_s_head_a904b300f7593c41e51c388fdc4060c98} 
+ Dict\mbox{[}str, Tensor\mbox{]} torchvision\+\_\+down.\+models.\+detection.\+fcos.\+FCOSHead.\+forward (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{List\mbox{[}Tensor\mbox{]}}]{x}{}\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classtorchvision__down_1_1models_1_1detection_1_1fcos_1_1_f_c_o_s_head_a9c9499f8bf5cd3d569361ff8595c7d66}\index{torchvision\_down.models.detection.fcos.FCOSHead@{torchvision\_down.models.detection.fcos.FCOSHead}!\_\_annotations\_\_@{\_\_annotations\_\_}}
+\index{\_\_annotations\_\_@{\_\_annotations\_\_}!torchvision\_down.models.detection.fcos.FCOSHead@{torchvision\_down.models.detection.fcos.FCOSHead}}
+\doxysubsubsection{\texorpdfstring{\_\_annotations\_\_}{\_\_annotations\_\_}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1models_1_1detection_1_1fcos_1_1_f_c_o_s_head_a9c9499f8bf5cd3d569361ff8595c7d66} 
+dict torchvision\+\_\+down.\+models.\+detection.\+fcos.\+FCOSHead.\+\_\+\+\_\+annotations\+\_\+\+\_\+\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}box\_coder"{}}:\ det\_utils.BoxLinearCoder,}
+\DoxyCodeLine{\ \ \ \ \}}
+
+\end{DoxyCode}
+\Hypertarget{classtorchvision__down_1_1models_1_1detection_1_1fcos_1_1_f_c_o_s_head_a12f91095bfbfd3c24e6119511f958107}\index{torchvision\_down.models.detection.fcos.FCOSHead@{torchvision\_down.models.detection.fcos.FCOSHead}!box\_coder@{box\_coder}}
+\index{box\_coder@{box\_coder}!torchvision\_down.models.detection.fcos.FCOSHead@{torchvision\_down.models.detection.fcos.FCOSHead}}
+\doxysubsubsection{\texorpdfstring{box\_coder}{box\_coder}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1models_1_1detection_1_1fcos_1_1_f_c_o_s_head_a12f91095bfbfd3c24e6119511f958107} 
+torchvision\+\_\+down.\+models.\+detection.\+fcos.\+FCOSHead.\+box\+\_\+coder = det\+\_\+utils.\+Box\+Linear\+Coder(normalize\+\_\+by\+\_\+size=True)}
+
+\Hypertarget{classtorchvision__down_1_1models_1_1detection_1_1fcos_1_1_f_c_o_s_head_aa4e31169913ed353f5c21d81fb359bc8}\index{torchvision\_down.models.detection.fcos.FCOSHead@{torchvision\_down.models.detection.fcos.FCOSHead}!classification\_head@{classification\_head}}
+\index{classification\_head@{classification\_head}!torchvision\_down.models.detection.fcos.FCOSHead@{torchvision\_down.models.detection.fcos.FCOSHead}}
+\doxysubsubsection{\texorpdfstring{classification\_head}{classification\_head}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1models_1_1detection_1_1fcos_1_1_f_c_o_s_head_aa4e31169913ed353f5c21d81fb359bc8} 
+torchvision\+\_\+down.\+models.\+detection.\+fcos.\+FCOSHead.\+classification\+\_\+head = \mbox{\hyperlink{classtorchvision__down_1_1models_1_1detection_1_1fcos_1_1_f_c_o_s_classification_head}{FCOSClassification\+Head}}(in\+\_\+channels, num\+\_\+anchors, num\+\_\+classes, num\+\_\+convs)}
+
+\Hypertarget{classtorchvision__down_1_1models_1_1detection_1_1fcos_1_1_f_c_o_s_head_a16b8c3786f20b8ca657a03d7f13fbb15}\index{torchvision\_down.models.detection.fcos.FCOSHead@{torchvision\_down.models.detection.fcos.FCOSHead}!regression\_head@{regression\_head}}
+\index{regression\_head@{regression\_head}!torchvision\_down.models.detection.fcos.FCOSHead@{torchvision\_down.models.detection.fcos.FCOSHead}}
+\doxysubsubsection{\texorpdfstring{regression\_head}{regression\_head}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1models_1_1detection_1_1fcos_1_1_f_c_o_s_head_a16b8c3786f20b8ca657a03d7f13fbb15} 
+torchvision\+\_\+down.\+models.\+detection.\+fcos.\+FCOSHead.\+regression\+\_\+head = \mbox{\hyperlink{classtorchvision__down_1_1models_1_1detection_1_1fcos_1_1_f_c_o_s_regression_head}{FCOSRegression\+Head}}(in\+\_\+channels, num\+\_\+anchors, num\+\_\+convs)}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Cervi\+AI/torchvision\+\_\+down/models/detection/\mbox{\hyperlink{fcos_8py}{fcos.\+py}}\end{DoxyCompactItemize}

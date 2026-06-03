@@ -1,0 +1,163 @@
+\doxysection{torchvision\+\_\+down.\+io.\+video Namespace Reference}
+\hypertarget{namespacetorchvision__down_1_1io_1_1video}{}\label{namespacetorchvision__down_1_1io_1_1video}\index{torchvision\_down.io.video@{torchvision\_down.io.video}}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+None \mbox{\hyperlink{namespacetorchvision__down_1_1io_1_1video_abbeb4711880e045e2e2b01eaab1ac4d9}{\+\_\+check\+\_\+av\+\_\+available}} ()
+\item 
+bool \mbox{\hyperlink{namespacetorchvision__down_1_1io_1_1video_ad6a1ba961ba60cc1d72e4e012df1d151}{\+\_\+av\+\_\+available}} ()
+\item 
+None \mbox{\hyperlink{namespacetorchvision__down_1_1io_1_1video_a9176da51f8e0f61460a39961c6f8a6f0}{write\+\_\+video}} (str filename, torch.\+Tensor video\+\_\+array, float fps, str video\+\_\+codec="{}libx264"{}, Optional\mbox{[}Dict\mbox{[}str, Any\mbox{]}\mbox{]} options=None, Optional\mbox{[}torch.\+Tensor\mbox{]} audio\+\_\+array=None, Optional\mbox{[}float\mbox{]} audio\+\_\+fps=None, Optional\mbox{[}str\mbox{]} audio\+\_\+codec=None, Optional\mbox{[}Dict\mbox{[}str, Any\mbox{]}\mbox{]} audio\+\_\+options=None)
+\item 
+List\mbox{[}"{}av.\+frame.\+Frame"{}\mbox{]} \mbox{\hyperlink{namespacetorchvision__down_1_1io_1_1video_a248bdd9e9ec298fbb63771b97027abbe}{\+\_\+read\+\_\+from\+\_\+stream}} ("{}av.\+container.\+Container"{} container, float start\+\_\+offset, float end\+\_\+offset, str pts\+\_\+unit, "{}av.\+stream.\+Stream"{} stream, Dict\mbox{[}str, Optional\mbox{[}Union\mbox{[}int, Tuple\mbox{[}int,...\mbox{]}, List\mbox{[}int\mbox{]}\mbox{]}\mbox{]}\mbox{]} stream\+\_\+name)
+\item 
+torch.\+Tensor \mbox{\hyperlink{namespacetorchvision__down_1_1io_1_1video_a9a5a3f7ae3f48b992b90db6e2c8199c9}{\+\_\+align\+\_\+audio\+\_\+frames}} (torch.\+Tensor aframes, List\mbox{[}"{}av.\+frame.\+Frame"{}\mbox{]} audio\+\_\+frames, int ref\+\_\+start, float ref\+\_\+end)
+\item 
+Tuple\mbox{[}torch.\+Tensor, torch.\+Tensor, Dict\mbox{[}str, Any\mbox{]}\mbox{]} \mbox{\hyperlink{namespacetorchvision__down_1_1io_1_1video_a65e9bcbb2362647f4811ebc541c588c6}{read\+\_\+video}} (str filename, Union\mbox{[}float, Fraction\mbox{]} start\+\_\+pts=0, Optional\mbox{[}Union\mbox{[}float, Fraction\mbox{]}\mbox{]} end\+\_\+pts=None, str pts\+\_\+unit="{}pts"{})
+\item 
+bool \mbox{\hyperlink{namespacetorchvision__down_1_1io_1_1video_ae8ecf5b3cc332924db6cafbdb7bacccf}{\+\_\+can\+\_\+read\+\_\+timestamps\+\_\+from\+\_\+packets}} ("{}av.\+container.\+Container"{} container)
+\item 
+List\mbox{[}int\mbox{]} \mbox{\hyperlink{namespacetorchvision__down_1_1io_1_1video_a04e5b738e26a7f26b845e20606bc7b62}{\+\_\+decode\+\_\+video\+\_\+timestamps}} ("{}av.\+container.\+Container"{} container)
+\item 
+Tuple\mbox{[}List\mbox{[}int\mbox{]}, Optional\mbox{[}float\mbox{]}\mbox{]} \mbox{\hyperlink{namespacetorchvision__down_1_1io_1_1video_ad2e934ead036cc745143f84874d559c3}{read\+\_\+video\+\_\+timestamps}} (str filename, str pts\+\_\+unit="{}pts"{})
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{namespacetorchvision__down_1_1io_1_1video_a7d3711c682d862ffd51d25c72316b8bb}{av}}
+\item 
+int \mbox{\hyperlink{namespacetorchvision__down_1_1io_1_1video_abee0e45b9837077b4ecaeb449fbd8831}{\+\_\+\+CALLED\+\_\+\+TIMES}} = 0
+\item 
+int \mbox{\hyperlink{namespacetorchvision__down_1_1io_1_1video_a74f2370963141ee6773461207c5dc740}{\+\_\+\+GC\+\_\+\+COLLECTION\+\_\+\+INTERVAL}} = 10
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{namespacetorchvision__down_1_1io_1_1video_a9a5a3f7ae3f48b992b90db6e2c8199c9}\index{torchvision\_down.io.video@{torchvision\_down.io.video}!\_align\_audio\_frames@{\_align\_audio\_frames}}
+\index{\_align\_audio\_frames@{\_align\_audio\_frames}!torchvision\_down.io.video@{torchvision\_down.io.video}}
+\doxysubsubsection{\texorpdfstring{\_align\_audio\_frames()}{\_align\_audio\_frames()}}
+{\footnotesize\ttfamily \label{namespacetorchvision__down_1_1io_1_1video_a9a5a3f7ae3f48b992b90db6e2c8199c9} 
+ torch.\+Tensor torchvision\+\_\+down.\+io.\+video.\+\_\+align\+\_\+audio\+\_\+frames (\begin{DoxyParamCaption}\item[{torch.\+Tensor}]{aframes}{, }\item[{List\mbox{[}"{}av.\+frame.\+Frame"{}\mbox{]}}]{audio\+\_\+frames}{, }\item[{int}]{ref\+\_\+start}{, }\item[{float }]{ref\+\_\+end}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{namespacetorchvision__down_1_1io_1_1video_ad6a1ba961ba60cc1d72e4e012df1d151}\index{torchvision\_down.io.video@{torchvision\_down.io.video}!\_av\_available@{\_av\_available}}
+\index{\_av\_available@{\_av\_available}!torchvision\_down.io.video@{torchvision\_down.io.video}}
+\doxysubsubsection{\texorpdfstring{\_av\_available()}{\_av\_available()}}
+{\footnotesize\ttfamily \label{namespacetorchvision__down_1_1io_1_1video_ad6a1ba961ba60cc1d72e4e012df1d151} 
+ bool torchvision\+\_\+down.\+io.\+video.\+\_\+av\+\_\+available (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{namespacetorchvision__down_1_1io_1_1video_ae8ecf5b3cc332924db6cafbdb7bacccf}\index{torchvision\_down.io.video@{torchvision\_down.io.video}!\_can\_read\_timestamps\_from\_packets@{\_can\_read\_timestamps\_from\_packets}}
+\index{\_can\_read\_timestamps\_from\_packets@{\_can\_read\_timestamps\_from\_packets}!torchvision\_down.io.video@{torchvision\_down.io.video}}
+\doxysubsubsection{\texorpdfstring{\_can\_read\_timestamps\_from\_packets()}{\_can\_read\_timestamps\_from\_packets()}}
+{\footnotesize\ttfamily \label{namespacetorchvision__down_1_1io_1_1video_ae8ecf5b3cc332924db6cafbdb7bacccf} 
+ bool torchvision\+\_\+down.\+io.\+video.\+\_\+can\+\_\+read\+\_\+timestamps\+\_\+from\+\_\+packets (\begin{DoxyParamCaption}\item[{"{}av.\+container.\+Container"{}}]{container}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{namespacetorchvision__down_1_1io_1_1video_abbeb4711880e045e2e2b01eaab1ac4d9}\index{torchvision\_down.io.video@{torchvision\_down.io.video}!\_check\_av\_available@{\_check\_av\_available}}
+\index{\_check\_av\_available@{\_check\_av\_available}!torchvision\_down.io.video@{torchvision\_down.io.video}}
+\doxysubsubsection{\texorpdfstring{\_check\_av\_available()}{\_check\_av\_available()}}
+{\footnotesize\ttfamily \label{namespacetorchvision__down_1_1io_1_1video_abbeb4711880e045e2e2b01eaab1ac4d9} 
+ None torchvision\+\_\+down.\+io.\+video.\+\_\+check\+\_\+av\+\_\+available (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{namespacetorchvision__down_1_1io_1_1video_a04e5b738e26a7f26b845e20606bc7b62}\index{torchvision\_down.io.video@{torchvision\_down.io.video}!\_decode\_video\_timestamps@{\_decode\_video\_timestamps}}
+\index{\_decode\_video\_timestamps@{\_decode\_video\_timestamps}!torchvision\_down.io.video@{torchvision\_down.io.video}}
+\doxysubsubsection{\texorpdfstring{\_decode\_video\_timestamps()}{\_decode\_video\_timestamps()}}
+{\footnotesize\ttfamily \label{namespacetorchvision__down_1_1io_1_1video_a04e5b738e26a7f26b845e20606bc7b62} 
+ List\mbox{[}int\mbox{]} torchvision\+\_\+down.\+io.\+video.\+\_\+decode\+\_\+video\+\_\+timestamps (\begin{DoxyParamCaption}\item[{"{}av.\+container.\+Container"{}}]{container}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{namespacetorchvision__down_1_1io_1_1video_a248bdd9e9ec298fbb63771b97027abbe}\index{torchvision\_down.io.video@{torchvision\_down.io.video}!\_read\_from\_stream@{\_read\_from\_stream}}
+\index{\_read\_from\_stream@{\_read\_from\_stream}!torchvision\_down.io.video@{torchvision\_down.io.video}}
+\doxysubsubsection{\texorpdfstring{\_read\_from\_stream()}{\_read\_from\_stream()}}
+{\footnotesize\ttfamily \label{namespacetorchvision__down_1_1io_1_1video_a248bdd9e9ec298fbb63771b97027abbe} 
+ List\mbox{[}"{}av.\+frame.\+Frame"{}\mbox{]} torchvision\+\_\+down.\+io.\+video.\+\_\+read\+\_\+from\+\_\+stream (\begin{DoxyParamCaption}\item[{"{}av.\+container.\+Container"{}}]{container}{, }\item[{float}]{start\+\_\+offset}{, }\item[{float}]{end\+\_\+offset}{, }\item[{str}]{pts\+\_\+unit}{, }\item[{"{}av.\+stream.\+Stream"{}}]{stream}{, }\item[{Dict\mbox{[}str, Optional\mbox{[}Union\mbox{[}int, Tuple\mbox{[}int, ...\mbox{]}, List\mbox{[}int\mbox{]}\mbox{]}\mbox{]}\mbox{]}}]{stream\+\_\+name}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{namespacetorchvision__down_1_1io_1_1video_a65e9bcbb2362647f4811ebc541c588c6}\index{torchvision\_down.io.video@{torchvision\_down.io.video}!read\_video@{read\_video}}
+\index{read\_video@{read\_video}!torchvision\_down.io.video@{torchvision\_down.io.video}}
+\doxysubsubsection{\texorpdfstring{read\_video()}{read\_video()}}
+{\footnotesize\ttfamily \label{namespacetorchvision__down_1_1io_1_1video_a65e9bcbb2362647f4811ebc541c588c6} 
+ Tuple\mbox{[}torch.\+Tensor, torch.\+Tensor, Dict\mbox{[}str, Any\mbox{]}\mbox{]} torchvision\+\_\+down.\+io.\+video.\+read\+\_\+video (\begin{DoxyParamCaption}\item[{str}]{filename}{, }\item[{Union\mbox{[}float, Fraction\mbox{]} }]{start\+\_\+pts}{ = {\ttfamily 0}, }\item[{Optional\mbox{[}Union\mbox{[}float, Fraction\mbox{]}\mbox{]} }]{end\+\_\+pts}{ = {\ttfamily None}, }\item[{str }]{pts\+\_\+unit}{ = {\ttfamily "{}pts"{}}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Reads a video from a file, returning both the video frames as well as
+the audio frames
+
+Args:
+    filename (str): path to the video file
+    start_pts (int if pts_unit = 'pts', float / Fraction if pts_unit = 'sec', optional):
+        The start presentation time of the video
+    end_pts (int if pts_unit = 'pts', float / Fraction if pts_unit = 'sec', optional):
+        The end presentation time
+    pts_unit (str, optional): unit in which start_pts and end_pts values will be interpreted,
+        either 'pts' or 'sec'. Defaults to 'pts'.
+
+Returns:
+    vframes (Tensor[T, H, W, C]): the `T` video frames
+    aframes (Tensor[K, L]): the audio frames, where `K` is the number of channels and `L` is the number of points
+    info (Dict): metadata for the video and audio. Can contain the fields video_fps (float) and audio_fps (int)
+\end{DoxyVerb}
+ \Hypertarget{namespacetorchvision__down_1_1io_1_1video_ad2e934ead036cc745143f84874d559c3}\index{torchvision\_down.io.video@{torchvision\_down.io.video}!read\_video\_timestamps@{read\_video\_timestamps}}
+\index{read\_video\_timestamps@{read\_video\_timestamps}!torchvision\_down.io.video@{torchvision\_down.io.video}}
+\doxysubsubsection{\texorpdfstring{read\_video\_timestamps()}{read\_video\_timestamps()}}
+{\footnotesize\ttfamily \label{namespacetorchvision__down_1_1io_1_1video_ad2e934ead036cc745143f84874d559c3} 
+ Tuple\mbox{[}List\mbox{[}int\mbox{]}, Optional\mbox{[}float\mbox{]}\mbox{]} torchvision\+\_\+down.\+io.\+video.\+read\+\_\+video\+\_\+timestamps (\begin{DoxyParamCaption}\item[{str}]{filename}{, }\item[{str }]{pts\+\_\+unit}{ = {\ttfamily "{}pts"{}}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}List the video frames timestamps.
+
+Note that the function decodes the whole video frame-by-frame.
+
+Args:
+    filename (str): path to the video file
+    pts_unit (str, optional): unit in which timestamp values will be returned
+        either 'pts' or 'sec'. Defaults to 'pts'.
+
+Returns:
+    pts (List[int] if pts_unit = 'pts', List[Fraction] if pts_unit = 'sec'):
+        presentation timestamps for each one of the frames in the video.
+    video_fps (float, optional): the frame rate for the video
+\end{DoxyVerb}
+ \Hypertarget{namespacetorchvision__down_1_1io_1_1video_a9176da51f8e0f61460a39961c6f8a6f0}\index{torchvision\_down.io.video@{torchvision\_down.io.video}!write\_video@{write\_video}}
+\index{write\_video@{write\_video}!torchvision\_down.io.video@{torchvision\_down.io.video}}
+\doxysubsubsection{\texorpdfstring{write\_video()}{write\_video()}}
+{\footnotesize\ttfamily \label{namespacetorchvision__down_1_1io_1_1video_a9176da51f8e0f61460a39961c6f8a6f0} 
+ None torchvision\+\_\+down.\+io.\+video.\+write\+\_\+video (\begin{DoxyParamCaption}\item[{str}]{filename}{, }\item[{torch.\+Tensor}]{video\+\_\+array}{, }\item[{float}]{fps}{, }\item[{str }]{video\+\_\+codec}{ = {\ttfamily "{}libx264"{}}, }\item[{Optional\mbox{[}Dict\mbox{[}str, Any\mbox{]}\mbox{]} }]{options}{ = {\ttfamily None}, }\item[{Optional\mbox{[}torch.\+Tensor\mbox{]} }]{audio\+\_\+array}{ = {\ttfamily None}, }\item[{Optional\mbox{[}float\mbox{]} }]{audio\+\_\+fps}{ = {\ttfamily None}, }\item[{Optional\mbox{[}str\mbox{]} }]{audio\+\_\+codec}{ = {\ttfamily None}, }\item[{Optional\mbox{[}Dict\mbox{[}str, Any\mbox{]}\mbox{]} }]{audio\+\_\+options}{ = {\ttfamily None}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Writes a 4d tensor in [T, H, W, C] format in a video file
+
+Args:
+    filename (str): path where the video will be saved
+    video_array (Tensor[T, H, W, C]): tensor containing the individual frames,
+        as a uint8 tensor in [T, H, W, C] format
+    fps (Number): video frames per second
+    video_codec (str): the name of the video codec, i.e. "libx264", "h264", etc.
+    options (Dict): dictionary containing options to be passed into the PyAV video stream
+    audio_array (Tensor[C, N]): tensor containing the audio, where C is the number of channels
+        and N is the number of samples
+    audio_fps (Number): audio sample rate, typically 44100 or 48000
+    audio_codec (str): the name of the audio codec, i.e. "mp3", "aac", etc.
+    audio_options (Dict): dictionary containing options to be passed into the PyAV audio stream
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Variable Documentation}
+\Hypertarget{namespacetorchvision__down_1_1io_1_1video_abee0e45b9837077b4ecaeb449fbd8831}\index{torchvision\_down.io.video@{torchvision\_down.io.video}!\_CALLED\_TIMES@{\_CALLED\_TIMES}}
+\index{\_CALLED\_TIMES@{\_CALLED\_TIMES}!torchvision\_down.io.video@{torchvision\_down.io.video}}
+\doxysubsubsection{\texorpdfstring{\_CALLED\_TIMES}{\_CALLED\_TIMES}}
+{\footnotesize\ttfamily \label{namespacetorchvision__down_1_1io_1_1video_abee0e45b9837077b4ecaeb449fbd8831} 
+int torchvision\+\_\+down.\+io.\+video.\+\_\+\+CALLED\+\_\+\+TIMES = 0\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{namespacetorchvision__down_1_1io_1_1video_a74f2370963141ee6773461207c5dc740}\index{torchvision\_down.io.video@{torchvision\_down.io.video}!\_GC\_COLLECTION\_INTERVAL@{\_GC\_COLLECTION\_INTERVAL}}
+\index{\_GC\_COLLECTION\_INTERVAL@{\_GC\_COLLECTION\_INTERVAL}!torchvision\_down.io.video@{torchvision\_down.io.video}}
+\doxysubsubsection{\texorpdfstring{\_GC\_COLLECTION\_INTERVAL}{\_GC\_COLLECTION\_INTERVAL}}
+{\footnotesize\ttfamily \label{namespacetorchvision__down_1_1io_1_1video_a74f2370963141ee6773461207c5dc740} 
+int torchvision\+\_\+down.\+io.\+video.\+\_\+\+GC\+\_\+\+COLLECTION\+\_\+\+INTERVAL = 10\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{namespacetorchvision__down_1_1io_1_1video_a7d3711c682d862ffd51d25c72316b8bb}\index{torchvision\_down.io.video@{torchvision\_down.io.video}!av@{av}}
+\index{av@{av}!torchvision\_down.io.video@{torchvision\_down.io.video}}
+\doxysubsubsection{\texorpdfstring{av}{av}}
+{\footnotesize\ttfamily \label{namespacetorchvision__down_1_1io_1_1video_a7d3711c682d862ffd51d25c72316b8bb} 
+torchvision\+\_\+down.\+io.\+video.\+av}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ =\ \ ImportError(}
+\DoxyCodeLine{00002\ \ \ \ \ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00003\ \ \ \ \ \ \ \ \ )}
+
+\end{DoxyCode}

@@ -1,0 +1,998 @@
+\doxysection{torchvision\+\_\+down.\+transforms.\+functional Namespace Reference}
+\hypertarget{namespacetorchvision__down_1_1transforms_1_1functional}{}\label{namespacetorchvision__down_1_1transforms_1_1functional}\index{torchvision\_down.transforms.functional@{torchvision\_down.transforms.functional}}
+\doxysubsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classtorchvision__down_1_1transforms_1_1functional_1_1_interpolation_mode}{Interpolation\+Mode}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1transforms_1_1functional_1_1_interpolation_mode}{Interpolation\+Mode}} \mbox{\hyperlink{namespacetorchvision__down_1_1transforms_1_1functional_a414b1c2d468ec636936f5aac597c3a8d}{\+\_\+interpolation\+\_\+modes\+\_\+from\+\_\+int}} (int i)
+\item 
+List\mbox{[}int\mbox{]} \mbox{\hyperlink{namespacetorchvision__down_1_1transforms_1_1functional_ad63b55e4045390afc9ee14c49f044506}{get\+\_\+image\+\_\+size}} (Tensor img)
+\item 
+int \mbox{\hyperlink{namespacetorchvision__down_1_1transforms_1_1functional_a1de409ad3d395a06f1eb0080c5890f09}{get\+\_\+image\+\_\+num\+\_\+channels}} (Tensor img)
+\item 
+bool \mbox{\hyperlink{namespacetorchvision__down_1_1transforms_1_1functional_ae235f87ae0a7fabd37f094a838c7c07e}{\+\_\+is\+\_\+numpy}} (Any img)
+\item 
+bool \mbox{\hyperlink{namespacetorchvision__down_1_1transforms_1_1functional_a50b8fd06c48e872b478a461a09a2f163}{\+\_\+is\+\_\+numpy\+\_\+image}} (Any img)
+\item 
+\mbox{\hyperlink{namespacetorchvision__down_1_1transforms_1_1functional_a8892e5156f1310679d72114103f720cd}{to\+\_\+tensor}} (pic)
+\item 
+\mbox{\hyperlink{namespacetorchvision__down_1_1transforms_1_1functional_a61c1e5f8cccec3773b81f66686531dd1}{pil\+\_\+to\+\_\+tensor}} (pic)
+\item 
+torch.\+Tensor \mbox{\hyperlink{namespacetorchvision__down_1_1transforms_1_1functional_a2b4f3af43411f57f80089e818dd5fcb0}{convert\+\_\+image\+\_\+dtype}} (torch.\+Tensor image, torch.\+dtype dtype=torch.\+float)
+\item 
+\mbox{\hyperlink{namespacetorchvision__down_1_1transforms_1_1functional_ac9d31d3e6c0bed048438b2af43f8b898}{to\+\_\+pil\+\_\+image}} (pic, mode=None)
+\item 
+Tensor \mbox{\hyperlink{namespacetorchvision__down_1_1transforms_1_1functional_a4e7da9422586a582ae0786fc38ef3443}{normalize}} (Tensor tensor, List\mbox{[}float\mbox{]} mean, List\mbox{[}float\mbox{]} std, bool inplace=False)
+\item 
+Tensor \mbox{\hyperlink{namespacetorchvision__down_1_1transforms_1_1functional_a8fa3e890b626a5cc11e24581ccf38019}{resize}} (Tensor img, List\mbox{[}int\mbox{]} size, \mbox{\hyperlink{classtorchvision__down_1_1transforms_1_1functional_1_1_interpolation_mode}{Interpolation\+Mode}} interpolation=\mbox{\hyperlink{classtorchvision__down_1_1transforms_1_1functional_1_1_interpolation_mode_a38fd90165d745724a2f2373aa0879c87}{Interpolation\+Mode.\+BILINEAR}}, Optional\mbox{[}int\mbox{]} max\+\_\+size=None, Optional\mbox{[}bool\mbox{]} antialias=None)
+\item 
+Tensor \mbox{\hyperlink{namespacetorchvision__down_1_1transforms_1_1functional_a14ddecfe69e6f10e520234adca5f19bd}{pad}} (Tensor img, List\mbox{[}int\mbox{]} padding, int fill=0, str padding\+\_\+mode="{}constant"{})
+\item 
+Tensor \mbox{\hyperlink{namespacetorchvision__down_1_1transforms_1_1functional_a7119dce1defcfb6467c9afff26fbba2a}{crop}} (Tensor img, int top, int left, int height, int width)
+\item 
+Tensor \mbox{\hyperlink{namespacetorchvision__down_1_1transforms_1_1functional_ab6e914b3abd0ed8ff668c90ac28b19b3}{center\+\_\+crop}} (Tensor img, List\mbox{[}int\mbox{]} output\+\_\+size)
+\item 
+Tensor \mbox{\hyperlink{namespacetorchvision__down_1_1transforms_1_1functional_a0e4f2e06c2d93ca52d0788b94886f417}{resized\+\_\+crop}} (Tensor img, int top, int left, int height, int width, List\mbox{[}int\mbox{]} size, \mbox{\hyperlink{classtorchvision__down_1_1transforms_1_1functional_1_1_interpolation_mode}{Interpolation\+Mode}} interpolation=\mbox{\hyperlink{classtorchvision__down_1_1transforms_1_1functional_1_1_interpolation_mode_a38fd90165d745724a2f2373aa0879c87}{Interpolation\+Mode.\+BILINEAR}})
+\item 
+Tensor \mbox{\hyperlink{namespacetorchvision__down_1_1transforms_1_1functional_ad5e6da10218f08b1f7380ed823bc72a6}{hflip}} (Tensor img)
+\item 
+List\mbox{[}float\mbox{]} \mbox{\hyperlink{namespacetorchvision__down_1_1transforms_1_1functional_a77dfdf7d283623f4fcbd7d0f87315de4}{\+\_\+get\+\_\+perspective\+\_\+coeffs}} (List\mbox{[}List\mbox{[}int\mbox{]}\mbox{]} startpoints, List\mbox{[}List\mbox{[}int\mbox{]}\mbox{]} endpoints)
+\item 
+Tensor \mbox{\hyperlink{namespacetorchvision__down_1_1transforms_1_1functional_a416aee57ec18a57859c0c6d03361173d}{perspective}} (Tensor img, List\mbox{[}List\mbox{[}int\mbox{]}\mbox{]} startpoints, List\mbox{[}List\mbox{[}int\mbox{]}\mbox{]} endpoints, \mbox{\hyperlink{classtorchvision__down_1_1transforms_1_1functional_1_1_interpolation_mode}{Interpolation\+Mode}} interpolation=\mbox{\hyperlink{classtorchvision__down_1_1transforms_1_1functional_1_1_interpolation_mode_a38fd90165d745724a2f2373aa0879c87}{Interpolation\+Mode.\+BILINEAR}}, Optional\mbox{[}List\mbox{[}float\mbox{]}\mbox{]} fill=None)
+\item 
+Tensor \mbox{\hyperlink{namespacetorchvision__down_1_1transforms_1_1functional_a6392288067482eb5f6d1e5a07164bf9c}{vflip}} (Tensor img)
+\item 
+Tuple\mbox{[}Tensor, Tensor, Tensor, Tensor, Tensor\mbox{]} \mbox{\hyperlink{namespacetorchvision__down_1_1transforms_1_1functional_a522876b12fb61b73020eece15192c049}{five\+\_\+crop}} (Tensor img, List\mbox{[}int\mbox{]} size)
+\item 
+List\mbox{[}Tensor\mbox{]} \mbox{\hyperlink{namespacetorchvision__down_1_1transforms_1_1functional_a905c87291cadb0947a732d6ae84eba2e}{ten\+\_\+crop}} (Tensor img, List\mbox{[}int\mbox{]} size, bool vertical\+\_\+flip=False)
+\item 
+Tensor \mbox{\hyperlink{namespacetorchvision__down_1_1transforms_1_1functional_ab58d2a68738897895b14d8a7f2760d73}{adjust\+\_\+brightness}} (Tensor img, float brightness\+\_\+factor)
+\item 
+Tensor \mbox{\hyperlink{namespacetorchvision__down_1_1transforms_1_1functional_a6770c5f1593465ee7a268888582e1b9b}{adjust\+\_\+contrast}} (Tensor img, float contrast\+\_\+factor)
+\item 
+Tensor \mbox{\hyperlink{namespacetorchvision__down_1_1transforms_1_1functional_aa71d996fec79549f2252600fbc257f94}{adjust\+\_\+saturation}} (Tensor img, float saturation\+\_\+factor)
+\item 
+Tensor \mbox{\hyperlink{namespacetorchvision__down_1_1transforms_1_1functional_aaad214ba3ca0998c1d636c432a5c2b30}{adjust\+\_\+hue}} (Tensor img, float hue\+\_\+factor)
+\item 
+Tensor \mbox{\hyperlink{namespacetorchvision__down_1_1transforms_1_1functional_a32164b19239e2e864b1d80ca803ec4cc}{adjust\+\_\+gamma}} (Tensor img, float gamma, float gain=1)
+\item 
+List\mbox{[}float\mbox{]} \mbox{\hyperlink{namespacetorchvision__down_1_1transforms_1_1functional_ac3f96a4ce608c462019c54442519f8b8}{\+\_\+get\+\_\+inverse\+\_\+affine\+\_\+matrix}} (List\mbox{[}float\mbox{]} center, float angle, List\mbox{[}float\mbox{]} translate, float scale, List\mbox{[}float\mbox{]} shear)
+\item 
+Tensor \mbox{\hyperlink{namespacetorchvision__down_1_1transforms_1_1functional_a19c1807303f6b22fc868e3d942ffa72c}{rotate}} (Tensor img, float angle, \mbox{\hyperlink{classtorchvision__down_1_1transforms_1_1functional_1_1_interpolation_mode}{Interpolation\+Mode}} interpolation=\mbox{\hyperlink{classtorchvision__down_1_1transforms_1_1functional_1_1_interpolation_mode_a6a6bb34c2976ea38186bca5ec09649c1}{Interpolation\+Mode.\+NEAREST}}, bool expand=False, Optional\mbox{[}List\mbox{[}int\mbox{]}\mbox{]} center=None, Optional\mbox{[}List\mbox{[}float\mbox{]}\mbox{]} fill=None, Optional\mbox{[}int\mbox{]} resample=None)
+\item 
+Tensor \mbox{\hyperlink{namespacetorchvision__down_1_1transforms_1_1functional_a7a53843fef7aee14aa5be65ca247e3d4}{affine}} (Tensor img, float angle, List\mbox{[}int\mbox{]} translate, float scale, List\mbox{[}float\mbox{]} shear, \mbox{\hyperlink{classtorchvision__down_1_1transforms_1_1functional_1_1_interpolation_mode}{Interpolation\+Mode}} interpolation=\mbox{\hyperlink{classtorchvision__down_1_1transforms_1_1functional_1_1_interpolation_mode_a6a6bb34c2976ea38186bca5ec09649c1}{Interpolation\+Mode.\+NEAREST}}, Optional\mbox{[}List\mbox{[}float\mbox{]}\mbox{]} fill=None, Optional\mbox{[}int\mbox{]} resample=None, Optional\mbox{[}List\mbox{[}float\mbox{]}\mbox{]} fillcolor=None, Optional\mbox{[}List\mbox{[}int\mbox{]}\mbox{]} center=None)
+\item 
+\mbox{\hyperlink{namespacetorchvision__down_1_1transforms_1_1functional_a4343ae56fee364e695aa6f16392d5edd}{to\+\_\+grayscale}} (img, num\+\_\+output\+\_\+channels=1)
+\item 
+Tensor \mbox{\hyperlink{namespacetorchvision__down_1_1transforms_1_1functional_a58c3d29ce6feec7f6b79152c498bdb62}{rgb\+\_\+to\+\_\+grayscale}} (Tensor img, int num\+\_\+output\+\_\+channels=1)
+\item 
+Tensor \mbox{\hyperlink{namespacetorchvision__down_1_1transforms_1_1functional_a5f40c2cc29ed3c5a64e81e996db041d4}{erase}} (Tensor img, int i, int j, int h, int w, Tensor v, bool inplace=False)
+\item 
+Tensor \mbox{\hyperlink{namespacetorchvision__down_1_1transforms_1_1functional_ae63dc0e17818f5c898e1021635706bd3}{gaussian\+\_\+blur}} (Tensor img, List\mbox{[}int\mbox{]} kernel\+\_\+size, Optional\mbox{[}List\mbox{[}float\mbox{]}\mbox{]} sigma=None)
+\item 
+Tensor \mbox{\hyperlink{namespacetorchvision__down_1_1transforms_1_1functional_ae4e2bbd8a0270384dd7a60e62c324530}{invert}} (Tensor img)
+\item 
+Tensor \mbox{\hyperlink{namespacetorchvision__down_1_1transforms_1_1functional_a8b4d0a6f0e59290c46443f5fd228dccf}{posterize}} (Tensor img, int bits)
+\item 
+Tensor \mbox{\hyperlink{namespacetorchvision__down_1_1transforms_1_1functional_a1a0684c1a85be760653c310bf7a86c7d}{solarize}} (Tensor img, float threshold)
+\item 
+Tensor \mbox{\hyperlink{namespacetorchvision__down_1_1transforms_1_1functional_a574a93f9bc9dd429712b560882e738b0}{adjust\+\_\+sharpness}} (Tensor img, float sharpness\+\_\+factor)
+\item 
+Tensor \mbox{\hyperlink{namespacetorchvision__down_1_1transforms_1_1functional_acd5d653e148603d4b26db87858dc1273}{autocontrast}} (Tensor img)
+\item 
+Tensor \mbox{\hyperlink{namespacetorchvision__down_1_1transforms_1_1functional_a063c31a94556b33e283c0a5f0b7dbec9}{equalize}} (Tensor img)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{namespacetorchvision__down_1_1transforms_1_1functional_af99194b56a2eeaea4f45da549807d3e8}{accimage}} = None
+\item 
+dict \mbox{\hyperlink{namespacetorchvision__down_1_1transforms_1_1functional_ac27230bf3a47086f91900e9593eb32e7}{pil\+\_\+modes\+\_\+mapping}}
+\item 
+\mbox{\hyperlink{namespacetorchvision__down_1_1transforms_1_1functional_a07cba6238da4d9637ac73f23049d4468}{\+\_\+is\+\_\+pil\+\_\+image}} = F\+\_\+pil.\+\_\+is\+\_\+pil\+\_\+image
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{namespacetorchvision__down_1_1transforms_1_1functional_ac3f96a4ce608c462019c54442519f8b8}\index{torchvision\_down.transforms.functional@{torchvision\_down.transforms.functional}!\_get\_inverse\_affine\_matrix@{\_get\_inverse\_affine\_matrix}}
+\index{\_get\_inverse\_affine\_matrix@{\_get\_inverse\_affine\_matrix}!torchvision\_down.transforms.functional@{torchvision\_down.transforms.functional}}
+\doxysubsubsection{\texorpdfstring{\_get\_inverse\_affine\_matrix()}{\_get\_inverse\_affine\_matrix()}}
+{\footnotesize\ttfamily \label{namespacetorchvision__down_1_1transforms_1_1functional_ac3f96a4ce608c462019c54442519f8b8} 
+ List\mbox{[}float\mbox{]} torchvision\+\_\+down.\+transforms.\+functional.\+\_\+get\+\_\+inverse\+\_\+affine\+\_\+matrix (\begin{DoxyParamCaption}\item[{List\mbox{[}float\mbox{]}}]{center}{, }\item[{float}]{angle}{, }\item[{List\mbox{[}float\mbox{]}}]{translate}{, }\item[{float}]{scale}{, }\item[{List\mbox{[}float\mbox{]}}]{shear}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{namespacetorchvision__down_1_1transforms_1_1functional_a77dfdf7d283623f4fcbd7d0f87315de4}\index{torchvision\_down.transforms.functional@{torchvision\_down.transforms.functional}!\_get\_perspective\_coeffs@{\_get\_perspective\_coeffs}}
+\index{\_get\_perspective\_coeffs@{\_get\_perspective\_coeffs}!torchvision\_down.transforms.functional@{torchvision\_down.transforms.functional}}
+\doxysubsubsection{\texorpdfstring{\_get\_perspective\_coeffs()}{\_get\_perspective\_coeffs()}}
+{\footnotesize\ttfamily \label{namespacetorchvision__down_1_1transforms_1_1functional_a77dfdf7d283623f4fcbd7d0f87315de4} 
+ List\mbox{[}float\mbox{]} torchvision\+\_\+down.\+transforms.\+functional.\+\_\+get\+\_\+perspective\+\_\+coeffs (\begin{DoxyParamCaption}\item[{List\mbox{[}List\mbox{[}int\mbox{]}\mbox{]}}]{startpoints}{, }\item[{List\mbox{[}List\mbox{[}int\mbox{]}\mbox{]}}]{endpoints}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\begin{DoxyVerb}Helper function to get the coefficients (a, b, c, d, e, f, g, h) for the perspective transforms.
+
+In Perspective Transform each pixel (x, y) in the original image gets transformed as,
+ (x, y) -> ( (ax + by + c) / (gx + hy + 1), (dx + ey + f) / (gx + hy + 1) )
+
+Args:
+    startpoints (list of list of ints): List containing four lists of two integers corresponding to four corners
+        ``[top-left, top-right, bottom-right, bottom-left]`` of the original image.
+    endpoints (list of list of ints): List containing four lists of two integers corresponding to four corners
+        ``[top-left, top-right, bottom-right, bottom-left]`` of the transformed image.
+
+Returns:
+    octuple (a, b, c, d, e, f, g, h) for transforming each pixel.
+\end{DoxyVerb}
+ \Hypertarget{namespacetorchvision__down_1_1transforms_1_1functional_a414b1c2d468ec636936f5aac597c3a8d}\index{torchvision\_down.transforms.functional@{torchvision\_down.transforms.functional}!\_interpolation\_modes\_from\_int@{\_interpolation\_modes\_from\_int}}
+\index{\_interpolation\_modes\_from\_int@{\_interpolation\_modes\_from\_int}!torchvision\_down.transforms.functional@{torchvision\_down.transforms.functional}}
+\doxysubsubsection{\texorpdfstring{\_interpolation\_modes\_from\_int()}{\_interpolation\_modes\_from\_int()}}
+{\footnotesize\ttfamily \label{namespacetorchvision__down_1_1transforms_1_1functional_a414b1c2d468ec636936f5aac597c3a8d} 
+ \mbox{\hyperlink{classtorchvision__down_1_1transforms_1_1functional_1_1_interpolation_mode}{Interpolation\+Mode}} torchvision\+\_\+down.\+transforms.\+functional.\+\_\+interpolation\+\_\+modes\+\_\+from\+\_\+int (\begin{DoxyParamCaption}\item[{int}]{i}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{namespacetorchvision__down_1_1transforms_1_1functional_ae235f87ae0a7fabd37f094a838c7c07e}\index{torchvision\_down.transforms.functional@{torchvision\_down.transforms.functional}!\_is\_numpy@{\_is\_numpy}}
+\index{\_is\_numpy@{\_is\_numpy}!torchvision\_down.transforms.functional@{torchvision\_down.transforms.functional}}
+\doxysubsubsection{\texorpdfstring{\_is\_numpy()}{\_is\_numpy()}}
+{\footnotesize\ttfamily \label{namespacetorchvision__down_1_1transforms_1_1functional_ae235f87ae0a7fabd37f094a838c7c07e} 
+ bool torchvision\+\_\+down.\+transforms.\+functional.\+\_\+is\+\_\+numpy (\begin{DoxyParamCaption}\item[{Any}]{img}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{namespacetorchvision__down_1_1transforms_1_1functional_a50b8fd06c48e872b478a461a09a2f163}\index{torchvision\_down.transforms.functional@{torchvision\_down.transforms.functional}!\_is\_numpy\_image@{\_is\_numpy\_image}}
+\index{\_is\_numpy\_image@{\_is\_numpy\_image}!torchvision\_down.transforms.functional@{torchvision\_down.transforms.functional}}
+\doxysubsubsection{\texorpdfstring{\_is\_numpy\_image()}{\_is\_numpy\_image()}}
+{\footnotesize\ttfamily \label{namespacetorchvision__down_1_1transforms_1_1functional_a50b8fd06c48e872b478a461a09a2f163} 
+ bool torchvision\+\_\+down.\+transforms.\+functional.\+\_\+is\+\_\+numpy\+\_\+image (\begin{DoxyParamCaption}\item[{Any}]{img}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{namespacetorchvision__down_1_1transforms_1_1functional_ab58d2a68738897895b14d8a7f2760d73}\index{torchvision\_down.transforms.functional@{torchvision\_down.transforms.functional}!adjust\_brightness@{adjust\_brightness}}
+\index{adjust\_brightness@{adjust\_brightness}!torchvision\_down.transforms.functional@{torchvision\_down.transforms.functional}}
+\doxysubsubsection{\texorpdfstring{adjust\_brightness()}{adjust\_brightness()}}
+{\footnotesize\ttfamily \label{namespacetorchvision__down_1_1transforms_1_1functional_ab58d2a68738897895b14d8a7f2760d73} 
+ Tensor torchvision\+\_\+down.\+transforms.\+functional.\+adjust\+\_\+brightness (\begin{DoxyParamCaption}\item[{Tensor}]{img}{, }\item[{float}]{brightness\+\_\+factor}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Adjust brightness of an image.
+
+Args:
+    img (PIL Image or Tensor): Image to be adjusted.
+        If img is torch Tensor, it is expected to be in [..., 1 or 3, H, W] format,
+        where ... means it can have an arbitrary number of leading dimensions.
+    brightness_factor (float):  How much to adjust the brightness. Can be
+        any non negative number. 0 gives a black image, 1 gives the
+        original image while 2 increases the brightness by a factor of 2.
+
+Returns:
+    PIL Image or Tensor: Brightness adjusted image.
+\end{DoxyVerb}
+ \Hypertarget{namespacetorchvision__down_1_1transforms_1_1functional_a6770c5f1593465ee7a268888582e1b9b}\index{torchvision\_down.transforms.functional@{torchvision\_down.transforms.functional}!adjust\_contrast@{adjust\_contrast}}
+\index{adjust\_contrast@{adjust\_contrast}!torchvision\_down.transforms.functional@{torchvision\_down.transforms.functional}}
+\doxysubsubsection{\texorpdfstring{adjust\_contrast()}{adjust\_contrast()}}
+{\footnotesize\ttfamily \label{namespacetorchvision__down_1_1transforms_1_1functional_a6770c5f1593465ee7a268888582e1b9b} 
+ Tensor torchvision\+\_\+down.\+transforms.\+functional.\+adjust\+\_\+contrast (\begin{DoxyParamCaption}\item[{Tensor}]{img}{, }\item[{float}]{contrast\+\_\+factor}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Adjust contrast of an image.
+
+Args:
+    img (PIL Image or Tensor): Image to be adjusted.
+        If img is torch Tensor, it is expected to be in [..., 1 or 3, H, W] format,
+        where ... means it can have an arbitrary number of leading dimensions.
+    contrast_factor (float): How much to adjust the contrast. Can be any
+        non negative number. 0 gives a solid gray image, 1 gives the
+        original image while 2 increases the contrast by a factor of 2.
+
+Returns:
+    PIL Image or Tensor: Contrast adjusted image.
+\end{DoxyVerb}
+ \Hypertarget{namespacetorchvision__down_1_1transforms_1_1functional_a32164b19239e2e864b1d80ca803ec4cc}\index{torchvision\_down.transforms.functional@{torchvision\_down.transforms.functional}!adjust\_gamma@{adjust\_gamma}}
+\index{adjust\_gamma@{adjust\_gamma}!torchvision\_down.transforms.functional@{torchvision\_down.transforms.functional}}
+\doxysubsubsection{\texorpdfstring{adjust\_gamma()}{adjust\_gamma()}}
+{\footnotesize\ttfamily \label{namespacetorchvision__down_1_1transforms_1_1functional_a32164b19239e2e864b1d80ca803ec4cc} 
+ Tensor torchvision\+\_\+down.\+transforms.\+functional.\+adjust\+\_\+gamma (\begin{DoxyParamCaption}\item[{Tensor}]{img}{, }\item[{float}]{gamma}{, }\item[{float }]{gain}{ = {\ttfamily 1}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Perform gamma correction on an image.
+
+Also known as Power Law Transform. Intensities in RGB mode are adjusted
+based on the following equation:
+
+.. math::
+    I_{\text{out}} = 255 \times \text{gain} \times \left(\frac{I_{\text{in}}}{255}\right)^{\gamma}
+
+See `Gamma Correction`_ for more details.
+
+.. _Gamma Correction: https://en.wikipedia.org/wiki/Gamma_correction
+
+Args:
+    img (PIL Image or Tensor): PIL Image to be adjusted.
+        If img is torch Tensor, it is expected to be in [..., 1 or 3, H, W] format,
+        where ... means it can have an arbitrary number of leading dimensions.
+        If img is PIL Image, modes with transparency (alpha channel) are not supported.
+    gamma (float): Non negative real number, same as :math:`\gamma` in the equation.
+        gamma larger than 1 make the shadows darker,
+        while gamma smaller than 1 make dark regions lighter.
+    gain (float): The constant multiplier.
+Returns:
+    PIL Image or Tensor: Gamma correction adjusted image.
+\end{DoxyVerb}
+ \Hypertarget{namespacetorchvision__down_1_1transforms_1_1functional_aaad214ba3ca0998c1d636c432a5c2b30}\index{torchvision\_down.transforms.functional@{torchvision\_down.transforms.functional}!adjust\_hue@{adjust\_hue}}
+\index{adjust\_hue@{adjust\_hue}!torchvision\_down.transforms.functional@{torchvision\_down.transforms.functional}}
+\doxysubsubsection{\texorpdfstring{adjust\_hue()}{adjust\_hue()}}
+{\footnotesize\ttfamily \label{namespacetorchvision__down_1_1transforms_1_1functional_aaad214ba3ca0998c1d636c432a5c2b30} 
+ Tensor torchvision\+\_\+down.\+transforms.\+functional.\+adjust\+\_\+hue (\begin{DoxyParamCaption}\item[{Tensor}]{img}{, }\item[{float}]{hue\+\_\+factor}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Adjust hue of an image.
+
+The image hue is adjusted by converting the image to HSV and
+cyclically shifting the intensities in the hue channel (H).
+The image is then converted back to original image mode.
+
+`hue_factor` is the amount of shift in H channel and must be in the
+interval `[-0.5, 0.5]`.
+
+See `Hue`_ for more details.
+
+.. _Hue: https://en.wikipedia.org/wiki/Hue
+
+Args:
+    img (PIL Image or Tensor): Image to be adjusted.
+        If img is torch Tensor, it is expected to be in [..., 1 or 3, H, W] format,
+        where ... means it can have an arbitrary number of leading dimensions.
+        If img is PIL Image mode "1", "I", "F" and modes with transparency (alpha channel) are not supported.
+    hue_factor (float):  How much to shift the hue channel. Should be in
+        [-0.5, 0.5]. 0.5 and -0.5 give complete reversal of hue channel in
+        HSV space in positive and negative direction respectively.
+        0 means no shift. Therefore, both -0.5 and 0.5 will give an image
+        with complementary colors while 0 gives the original image.
+
+Returns:
+    PIL Image or Tensor: Hue adjusted image.
+\end{DoxyVerb}
+ \Hypertarget{namespacetorchvision__down_1_1transforms_1_1functional_aa71d996fec79549f2252600fbc257f94}\index{torchvision\_down.transforms.functional@{torchvision\_down.transforms.functional}!adjust\_saturation@{adjust\_saturation}}
+\index{adjust\_saturation@{adjust\_saturation}!torchvision\_down.transforms.functional@{torchvision\_down.transforms.functional}}
+\doxysubsubsection{\texorpdfstring{adjust\_saturation()}{adjust\_saturation()}}
+{\footnotesize\ttfamily \label{namespacetorchvision__down_1_1transforms_1_1functional_aa71d996fec79549f2252600fbc257f94} 
+ Tensor torchvision\+\_\+down.\+transforms.\+functional.\+adjust\+\_\+saturation (\begin{DoxyParamCaption}\item[{Tensor}]{img}{, }\item[{float}]{saturation\+\_\+factor}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Adjust color saturation of an image.
+
+Args:
+    img (PIL Image or Tensor): Image to be adjusted.
+        If img is torch Tensor, it is expected to be in [..., 1 or 3, H, W] format,
+        where ... means it can have an arbitrary number of leading dimensions.
+    saturation_factor (float):  How much to adjust the saturation. 0 will
+        give a black and white image, 1 will give the original image while
+        2 will enhance the saturation by a factor of 2.
+
+Returns:
+    PIL Image or Tensor: Saturation adjusted image.
+\end{DoxyVerb}
+ \Hypertarget{namespacetorchvision__down_1_1transforms_1_1functional_a574a93f9bc9dd429712b560882e738b0}\index{torchvision\_down.transforms.functional@{torchvision\_down.transforms.functional}!adjust\_sharpness@{adjust\_sharpness}}
+\index{adjust\_sharpness@{adjust\_sharpness}!torchvision\_down.transforms.functional@{torchvision\_down.transforms.functional}}
+\doxysubsubsection{\texorpdfstring{adjust\_sharpness()}{adjust\_sharpness()}}
+{\footnotesize\ttfamily \label{namespacetorchvision__down_1_1transforms_1_1functional_a574a93f9bc9dd429712b560882e738b0} 
+ Tensor torchvision\+\_\+down.\+transforms.\+functional.\+adjust\+\_\+sharpness (\begin{DoxyParamCaption}\item[{Tensor}]{img}{, }\item[{float}]{sharpness\+\_\+factor}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Adjust the sharpness of an image.
+
+Args:
+    img (PIL Image or Tensor): Image to be adjusted.
+        If img is torch Tensor, it is expected to be in [..., 1 or 3, H, W] format,
+        where ... means it can have an arbitrary number of leading dimensions.
+    sharpness_factor (float):  How much to adjust the sharpness. Can be
+        any non negative number. 0 gives a blurred image, 1 gives the
+        original image while 2 increases the sharpness by a factor of 2.
+
+Returns:
+    PIL Image or Tensor: Sharpness adjusted image.
+\end{DoxyVerb}
+ \Hypertarget{namespacetorchvision__down_1_1transforms_1_1functional_a7a53843fef7aee14aa5be65ca247e3d4}\index{torchvision\_down.transforms.functional@{torchvision\_down.transforms.functional}!affine@{affine}}
+\index{affine@{affine}!torchvision\_down.transforms.functional@{torchvision\_down.transforms.functional}}
+\doxysubsubsection{\texorpdfstring{affine()}{affine()}}
+{\footnotesize\ttfamily \label{namespacetorchvision__down_1_1transforms_1_1functional_a7a53843fef7aee14aa5be65ca247e3d4} 
+ Tensor torchvision\+\_\+down.\+transforms.\+functional.\+affine (\begin{DoxyParamCaption}\item[{Tensor}]{img}{, }\item[{float}]{angle}{, }\item[{List\mbox{[}int\mbox{]}}]{translate}{, }\item[{float}]{scale}{, }\item[{List\mbox{[}float\mbox{]}}]{shear}{, }\item[{\mbox{\hyperlink{classtorchvision__down_1_1transforms_1_1functional_1_1_interpolation_mode}{Interpolation\+Mode}} }]{interpolation}{ = {\ttfamily \mbox{\hyperlink{classtorchvision__down_1_1transforms_1_1functional_1_1_interpolation_mode_a6a6bb34c2976ea38186bca5ec09649c1}{Interpolation\+Mode.\+NEAREST}}}, }\item[{Optional\mbox{[}List\mbox{[}float\mbox{]}\mbox{]} }]{fill}{ = {\ttfamily None}, }\item[{Optional\mbox{[}int\mbox{]} }]{resample}{ = {\ttfamily None}, }\item[{Optional\mbox{[}List\mbox{[}float\mbox{]}\mbox{]} }]{fillcolor}{ = {\ttfamily None}, }\item[{Optional\mbox{[}List\mbox{[}int\mbox{]}\mbox{]} }]{center}{ = {\ttfamily None}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Apply affine transformation on the image keeping image center invariant.
+If the image is torch Tensor, it is expected
+to have [..., H, W] shape, where ... means an arbitrary number of leading dimensions.
+
+Args:
+    img (PIL Image or Tensor): image to transform.
+    angle (number): rotation angle in degrees between -180 and 180, clockwise direction.
+    translate (sequence of integers): horizontal and vertical translations (post-rotation translation)
+    scale (float): overall scale
+    shear (float or sequence): shear angle value in degrees between -180 to 180, clockwise direction.
+        If a sequence is specified, the first value corresponds to a shear parallel to the x axis, while
+        the second value corresponds to a shear parallel to the y axis.
+    interpolation (InterpolationMode): Desired interpolation enum defined by
+        :class:`torchvision.transforms.InterpolationMode`. Default is ``InterpolationMode.NEAREST``.
+        If input is Tensor, only ``InterpolationMode.NEAREST``, ``InterpolationMode.BILINEAR`` are supported.
+        For backward compatibility integer values (e.g. ``PIL.Image.NEAREST``) are still acceptable.
+    fill (sequence or number, optional): Pixel fill value for the area outside the transformed
+        image. If given a number, the value is used for all bands respectively.
+
+        .. note::
+            In torchscript mode single int/float value is not supported, please use a sequence
+            of length 1: ``[value, ]``.
+    fillcolor (sequence or number, optional):
+        .. warning::
+            This parameter was deprecated in ``0.12`` and will be removed in ``0.14``. Please use ``fill`` instead.
+    resample (int, optional):
+        .. warning::
+            This parameter was deprecated in ``0.12`` and will be removed in ``0.14``. Please use ``interpolation``
+            instead.
+    center (sequence, optional): Optional center of rotation. Origin is the upper left corner.
+        Default is the center of the image.
+
+Returns:
+    PIL Image or Tensor: Transformed image.
+\end{DoxyVerb}
+ \Hypertarget{namespacetorchvision__down_1_1transforms_1_1functional_acd5d653e148603d4b26db87858dc1273}\index{torchvision\_down.transforms.functional@{torchvision\_down.transforms.functional}!autocontrast@{autocontrast}}
+\index{autocontrast@{autocontrast}!torchvision\_down.transforms.functional@{torchvision\_down.transforms.functional}}
+\doxysubsubsection{\texorpdfstring{autocontrast()}{autocontrast()}}
+{\footnotesize\ttfamily \label{namespacetorchvision__down_1_1transforms_1_1functional_acd5d653e148603d4b26db87858dc1273} 
+ Tensor torchvision\+\_\+down.\+transforms.\+functional.\+autocontrast (\begin{DoxyParamCaption}\item[{Tensor}]{img}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Maximize contrast of an image by remapping its
+pixels per channel so that the lowest becomes black and the lightest
+becomes white.
+
+Args:
+    img (PIL Image or Tensor): Image on which autocontrast is applied.
+        If img is torch Tensor, it is expected to be in [..., 1 or 3, H, W] format,
+        where ... means it can have an arbitrary number of leading dimensions.
+        If img is PIL Image, it is expected to be in mode "L" or "RGB".
+
+Returns:
+    PIL Image or Tensor: An image that was autocontrasted.
+\end{DoxyVerb}
+ \Hypertarget{namespacetorchvision__down_1_1transforms_1_1functional_ab6e914b3abd0ed8ff668c90ac28b19b3}\index{torchvision\_down.transforms.functional@{torchvision\_down.transforms.functional}!center\_crop@{center\_crop}}
+\index{center\_crop@{center\_crop}!torchvision\_down.transforms.functional@{torchvision\_down.transforms.functional}}
+\doxysubsubsection{\texorpdfstring{center\_crop()}{center\_crop()}}
+{\footnotesize\ttfamily \label{namespacetorchvision__down_1_1transforms_1_1functional_ab6e914b3abd0ed8ff668c90ac28b19b3} 
+ Tensor torchvision\+\_\+down.\+transforms.\+functional.\+center\+\_\+crop (\begin{DoxyParamCaption}\item[{Tensor}]{img}{, }\item[{List\mbox{[}int\mbox{]}}]{output\+\_\+size}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Crops the given image at the center.
+If the image is torch Tensor, it is expected
+to have [..., H, W] shape, where ... means an arbitrary number of leading dimensions.
+If image size is smaller than output size along any edge, image is padded with 0 and then center cropped.
+
+Args:
+    img (PIL Image or Tensor): Image to be cropped.
+    output_size (sequence or int): (height, width) of the crop box. If int or sequence with single int,
+        it is used for both directions.
+
+Returns:
+    PIL Image or Tensor: Cropped image.
+\end{DoxyVerb}
+ \Hypertarget{namespacetorchvision__down_1_1transforms_1_1functional_a2b4f3af43411f57f80089e818dd5fcb0}\index{torchvision\_down.transforms.functional@{torchvision\_down.transforms.functional}!convert\_image\_dtype@{convert\_image\_dtype}}
+\index{convert\_image\_dtype@{convert\_image\_dtype}!torchvision\_down.transforms.functional@{torchvision\_down.transforms.functional}}
+\doxysubsubsection{\texorpdfstring{convert\_image\_dtype()}{convert\_image\_dtype()}}
+{\footnotesize\ttfamily \label{namespacetorchvision__down_1_1transforms_1_1functional_a2b4f3af43411f57f80089e818dd5fcb0} 
+ torch.\+Tensor torchvision\+\_\+down.\+transforms.\+functional.\+convert\+\_\+image\+\_\+dtype (\begin{DoxyParamCaption}\item[{torch.\+Tensor}]{image}{, }\item[{torch.\+dtype }]{dtype}{ = {\ttfamily torch.float}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Convert a tensor image to the given ``dtype`` and scale the values accordingly
+This function does not support PIL Image.
+
+Args:
+    image (torch.Tensor): Image to be converted
+    dtype (torch.dtype): Desired data type of the output
+
+Returns:
+    Tensor: Converted image
+
+.. note::
+
+    When converting from a smaller to a larger integer ``dtype`` the maximum values are **not** mapped exactly.
+    If converted back and forth, this mismatch has no effect.
+
+Raises:
+    RuntimeError: When trying to cast :class:`torch.float32` to :class:`torch.int32` or :class:`torch.int64` as
+        well as for trying to cast :class:`torch.float64` to :class:`torch.int64`. These conversions might lead to
+        overflow errors since the floating point ``dtype`` cannot store consecutive integers over the whole range
+        of the integer ``dtype``.
+\end{DoxyVerb}
+ \Hypertarget{namespacetorchvision__down_1_1transforms_1_1functional_a7119dce1defcfb6467c9afff26fbba2a}\index{torchvision\_down.transforms.functional@{torchvision\_down.transforms.functional}!crop@{crop}}
+\index{crop@{crop}!torchvision\_down.transforms.functional@{torchvision\_down.transforms.functional}}
+\doxysubsubsection{\texorpdfstring{crop()}{crop()}}
+{\footnotesize\ttfamily \label{namespacetorchvision__down_1_1transforms_1_1functional_a7119dce1defcfb6467c9afff26fbba2a} 
+ Tensor torchvision\+\_\+down.\+transforms.\+functional.\+crop (\begin{DoxyParamCaption}\item[{Tensor}]{img}{, }\item[{int}]{top}{, }\item[{int}]{left}{, }\item[{int}]{height}{, }\item[{int}]{width}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Crop the given image at specified location and output size.
+If the image is torch Tensor, it is expected
+to have [..., H, W] shape, where ... means an arbitrary number of leading dimensions.
+If image size is smaller than output size along any edge, image is padded with 0 and then cropped.
+
+Args:
+    img (PIL Image or Tensor): Image to be cropped. (0,0) denotes the top left corner of the image.
+    top (int): Vertical component of the top left corner of the crop box.
+    left (int): Horizontal component of the top left corner of the crop box.
+    height (int): Height of the crop box.
+    width (int): Width of the crop box.
+
+Returns:
+    PIL Image or Tensor: Cropped image.
+\end{DoxyVerb}
+ \Hypertarget{namespacetorchvision__down_1_1transforms_1_1functional_a063c31a94556b33e283c0a5f0b7dbec9}\index{torchvision\_down.transforms.functional@{torchvision\_down.transforms.functional}!equalize@{equalize}}
+\index{equalize@{equalize}!torchvision\_down.transforms.functional@{torchvision\_down.transforms.functional}}
+\doxysubsubsection{\texorpdfstring{equalize()}{equalize()}}
+{\footnotesize\ttfamily \label{namespacetorchvision__down_1_1transforms_1_1functional_a063c31a94556b33e283c0a5f0b7dbec9} 
+ Tensor torchvision\+\_\+down.\+transforms.\+functional.\+equalize (\begin{DoxyParamCaption}\item[{Tensor}]{img}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Equalize the histogram of an image by applying
+a non-linear mapping to the input in order to create a uniform
+distribution of grayscale values in the output.
+
+Args:
+    img (PIL Image or Tensor): Image on which equalize is applied.
+        If img is torch Tensor, it is expected to be in [..., 1 or 3, H, W] format,
+        where ... means it can have an arbitrary number of leading dimensions.
+        The tensor dtype must be ``torch.uint8`` and values are expected to be in ``[0, 255]``.
+        If img is PIL Image, it is expected to be in mode "P", "L" or "RGB".
+
+Returns:
+    PIL Image or Tensor: An image that was equalized.
+\end{DoxyVerb}
+ \Hypertarget{namespacetorchvision__down_1_1transforms_1_1functional_a5f40c2cc29ed3c5a64e81e996db041d4}\index{torchvision\_down.transforms.functional@{torchvision\_down.transforms.functional}!erase@{erase}}
+\index{erase@{erase}!torchvision\_down.transforms.functional@{torchvision\_down.transforms.functional}}
+\doxysubsubsection{\texorpdfstring{erase()}{erase()}}
+{\footnotesize\ttfamily \label{namespacetorchvision__down_1_1transforms_1_1functional_a5f40c2cc29ed3c5a64e81e996db041d4} 
+ Tensor torchvision\+\_\+down.\+transforms.\+functional.\+erase (\begin{DoxyParamCaption}\item[{Tensor}]{img}{, }\item[{int}]{i}{, }\item[{int}]{j}{, }\item[{int}]{h}{, }\item[{int}]{w}{, }\item[{Tensor}]{v}{, }\item[{bool }]{inplace}{ = {\ttfamily False}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Erase the input Tensor Image with given value.
+This transform does not support PIL Image.
+
+Args:
+    img (Tensor Image): Tensor image of size (C, H, W) to be erased
+    i (int): i in (i,j) i.e coordinates of the upper left corner.
+    j (int): j in (i,j) i.e coordinates of the upper left corner.
+    h (int): Height of the erased region.
+    w (int): Width of the erased region.
+    v: Erasing value.
+    inplace(bool, optional): For in-place operations. By default is set False.
+
+Returns:
+    Tensor Image: Erased image.
+\end{DoxyVerb}
+ \Hypertarget{namespacetorchvision__down_1_1transforms_1_1functional_a522876b12fb61b73020eece15192c049}\index{torchvision\_down.transforms.functional@{torchvision\_down.transforms.functional}!five\_crop@{five\_crop}}
+\index{five\_crop@{five\_crop}!torchvision\_down.transforms.functional@{torchvision\_down.transforms.functional}}
+\doxysubsubsection{\texorpdfstring{five\_crop()}{five\_crop()}}
+{\footnotesize\ttfamily \label{namespacetorchvision__down_1_1transforms_1_1functional_a522876b12fb61b73020eece15192c049} 
+ Tuple\mbox{[}Tensor, Tensor, Tensor, Tensor, Tensor\mbox{]} torchvision\+\_\+down.\+transforms.\+functional.\+five\+\_\+crop (\begin{DoxyParamCaption}\item[{Tensor}]{img}{, }\item[{List\mbox{[}int\mbox{]}}]{size}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Crop the given image into four corners and the central crop.
+If the image is torch Tensor, it is expected
+to have [..., H, W] shape, where ... means an arbitrary number of leading dimensions
+
+.. Note::
+    This transform returns a tuple of images and there may be a
+    mismatch in the number of inputs and targets your ``Dataset`` returns.
+
+Args:
+    img (PIL Image or Tensor): Image to be cropped.
+    size (sequence or int): Desired output size of the crop. If size is an
+        int instead of sequence like (h, w), a square crop (size, size) is
+        made. If provided a sequence of length 1, it will be interpreted as (size[0], size[0]).
+
+Returns:
+   tuple: tuple (tl, tr, bl, br, center)
+   Corresponding top left, top right, bottom left, bottom right and center crop.
+\end{DoxyVerb}
+ \Hypertarget{namespacetorchvision__down_1_1transforms_1_1functional_ae63dc0e17818f5c898e1021635706bd3}\index{torchvision\_down.transforms.functional@{torchvision\_down.transforms.functional}!gaussian\_blur@{gaussian\_blur}}
+\index{gaussian\_blur@{gaussian\_blur}!torchvision\_down.transforms.functional@{torchvision\_down.transforms.functional}}
+\doxysubsubsection{\texorpdfstring{gaussian\_blur()}{gaussian\_blur()}}
+{\footnotesize\ttfamily \label{namespacetorchvision__down_1_1transforms_1_1functional_ae63dc0e17818f5c898e1021635706bd3} 
+ Tensor torchvision\+\_\+down.\+transforms.\+functional.\+gaussian\+\_\+blur (\begin{DoxyParamCaption}\item[{Tensor}]{img}{, }\item[{List\mbox{[}int\mbox{]}}]{kernel\+\_\+size}{, }\item[{Optional\mbox{[}List\mbox{[}float\mbox{]}\mbox{]} }]{sigma}{ = {\ttfamily None}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Performs Gaussian blurring on the image by given kernel.
+If the image is torch Tensor, it is expected
+to have [..., H, W] shape, where ... means an arbitrary number of leading dimensions.
+
+Args:
+    img (PIL Image or Tensor): Image to be blurred
+    kernel_size (sequence of ints or int): Gaussian kernel size. Can be a sequence of integers
+        like ``(kx, ky)`` or a single integer for square kernels.
+
+        .. note::
+            In torchscript mode kernel_size as single int is not supported, use a sequence of
+            length 1: ``[ksize, ]``.
+    sigma (sequence of floats or float, optional): Gaussian kernel standard deviation. Can be a
+        sequence of floats like ``(sigma_x, sigma_y)`` or a single float to define the
+        same sigma in both X/Y directions. If None, then it is computed using
+        ``kernel_size`` as ``sigma = 0.3 * ((kernel_size - 1) * 0.5 - 1) + 0.8``.
+        Default, None.
+
+        .. note::
+            In torchscript mode sigma as single float is
+            not supported, use a sequence of length 1: ``[sigma, ]``.
+
+Returns:
+    PIL Image or Tensor: Gaussian Blurred version of the image.
+\end{DoxyVerb}
+ \Hypertarget{namespacetorchvision__down_1_1transforms_1_1functional_a1de409ad3d395a06f1eb0080c5890f09}\index{torchvision\_down.transforms.functional@{torchvision\_down.transforms.functional}!get\_image\_num\_channels@{get\_image\_num\_channels}}
+\index{get\_image\_num\_channels@{get\_image\_num\_channels}!torchvision\_down.transforms.functional@{torchvision\_down.transforms.functional}}
+\doxysubsubsection{\texorpdfstring{get\_image\_num\_channels()}{get\_image\_num\_channels()}}
+{\footnotesize\ttfamily \label{namespacetorchvision__down_1_1transforms_1_1functional_a1de409ad3d395a06f1eb0080c5890f09} 
+ int torchvision\+\_\+down.\+transforms.\+functional.\+get\+\_\+image\+\_\+num\+\_\+channels (\begin{DoxyParamCaption}\item[{Tensor}]{img}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Returns the number of channels of an image.
+
+Args:
+    img (PIL Image or Tensor): The image to be checked.
+
+Returns:
+    int: The number of channels.
+\end{DoxyVerb}
+ \Hypertarget{namespacetorchvision__down_1_1transforms_1_1functional_ad63b55e4045390afc9ee14c49f044506}\index{torchvision\_down.transforms.functional@{torchvision\_down.transforms.functional}!get\_image\_size@{get\_image\_size}}
+\index{get\_image\_size@{get\_image\_size}!torchvision\_down.transforms.functional@{torchvision\_down.transforms.functional}}
+\doxysubsubsection{\texorpdfstring{get\_image\_size()}{get\_image\_size()}}
+{\footnotesize\ttfamily \label{namespacetorchvision__down_1_1transforms_1_1functional_ad63b55e4045390afc9ee14c49f044506} 
+ List\mbox{[}int\mbox{]} torchvision\+\_\+down.\+transforms.\+functional.\+get\+\_\+image\+\_\+size (\begin{DoxyParamCaption}\item[{Tensor}]{img}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Returns the size of an image as [width, height].
+
+Args:
+    img (PIL Image or Tensor): The image to be checked.
+
+Returns:
+    List[int]: The image size.
+\end{DoxyVerb}
+ \Hypertarget{namespacetorchvision__down_1_1transforms_1_1functional_ad5e6da10218f08b1f7380ed823bc72a6}\index{torchvision\_down.transforms.functional@{torchvision\_down.transforms.functional}!hflip@{hflip}}
+\index{hflip@{hflip}!torchvision\_down.transforms.functional@{torchvision\_down.transforms.functional}}
+\doxysubsubsection{\texorpdfstring{hflip()}{hflip()}}
+{\footnotesize\ttfamily \label{namespacetorchvision__down_1_1transforms_1_1functional_ad5e6da10218f08b1f7380ed823bc72a6} 
+ Tensor torchvision\+\_\+down.\+transforms.\+functional.\+hflip (\begin{DoxyParamCaption}\item[{Tensor}]{img}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Horizontally flip the given image.
+
+Args:
+    img (PIL Image or Tensor): Image to be flipped. If img
+        is a Tensor, it is expected to be in [..., H, W] format,
+        where ... means it can have an arbitrary number of leading
+        dimensions.
+
+Returns:
+    PIL Image or Tensor:  Horizontally flipped image.
+\end{DoxyVerb}
+ \Hypertarget{namespacetorchvision__down_1_1transforms_1_1functional_ae4e2bbd8a0270384dd7a60e62c324530}\index{torchvision\_down.transforms.functional@{torchvision\_down.transforms.functional}!invert@{invert}}
+\index{invert@{invert}!torchvision\_down.transforms.functional@{torchvision\_down.transforms.functional}}
+\doxysubsubsection{\texorpdfstring{invert()}{invert()}}
+{\footnotesize\ttfamily \label{namespacetorchvision__down_1_1transforms_1_1functional_ae4e2bbd8a0270384dd7a60e62c324530} 
+ Tensor torchvision\+\_\+down.\+transforms.\+functional.\+invert (\begin{DoxyParamCaption}\item[{Tensor}]{img}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Invert the colors of an RGB/grayscale image.
+
+Args:
+    img (PIL Image or Tensor): Image to have its colors inverted.
+        If img is torch Tensor, it is expected to be in [..., 1 or 3, H, W] format,
+        where ... means it can have an arbitrary number of leading dimensions.
+        If img is PIL Image, it is expected to be in mode "L" or "RGB".
+
+Returns:
+    PIL Image or Tensor: Color inverted image.
+\end{DoxyVerb}
+ \Hypertarget{namespacetorchvision__down_1_1transforms_1_1functional_a4e7da9422586a582ae0786fc38ef3443}\index{torchvision\_down.transforms.functional@{torchvision\_down.transforms.functional}!normalize@{normalize}}
+\index{normalize@{normalize}!torchvision\_down.transforms.functional@{torchvision\_down.transforms.functional}}
+\doxysubsubsection{\texorpdfstring{normalize()}{normalize()}}
+{\footnotesize\ttfamily \label{namespacetorchvision__down_1_1transforms_1_1functional_a4e7da9422586a582ae0786fc38ef3443} 
+ Tensor torchvision\+\_\+down.\+transforms.\+functional.\+normalize (\begin{DoxyParamCaption}\item[{Tensor}]{tensor}{, }\item[{List\mbox{[}float\mbox{]}}]{mean}{, }\item[{List\mbox{[}float\mbox{]}}]{std}{, }\item[{bool }]{inplace}{ = {\ttfamily False}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Normalize a float tensor image with mean and standard deviation.
+This transform does not support PIL Image.
+
+.. note::
+    This transform acts out of place by default, i.e., it does not mutates the input tensor.
+
+See :class:`~torchvision.transforms.Normalize` for more details.
+
+Args:
+    tensor (Tensor): Float tensor image of size (C, H, W) or (B, C, H, W) to be normalized.
+    mean (sequence): Sequence of means for each channel.
+    std (sequence): Sequence of standard deviations for each channel.
+    inplace(bool,optional): Bool to make this operation inplace.
+
+Returns:
+    Tensor: Normalized Tensor image.
+\end{DoxyVerb}
+ \Hypertarget{namespacetorchvision__down_1_1transforms_1_1functional_a14ddecfe69e6f10e520234adca5f19bd}\index{torchvision\_down.transforms.functional@{torchvision\_down.transforms.functional}!pad@{pad}}
+\index{pad@{pad}!torchvision\_down.transforms.functional@{torchvision\_down.transforms.functional}}
+\doxysubsubsection{\texorpdfstring{pad()}{pad()}}
+{\footnotesize\ttfamily \label{namespacetorchvision__down_1_1transforms_1_1functional_a14ddecfe69e6f10e520234adca5f19bd} 
+ Tensor torchvision\+\_\+down.\+transforms.\+functional.\+pad (\begin{DoxyParamCaption}\item[{Tensor}]{img}{, }\item[{List\mbox{[}int\mbox{]}}]{padding}{, }\item[{int }]{fill}{ = {\ttfamily 0}, }\item[{str }]{padding\+\_\+mode}{ = {\ttfamily "{}constant"{}}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Pad the given image on all sides with the given "pad" value.
+If the image is torch Tensor, it is expected
+to have [..., H, W] shape, where ... means at most 2 leading dimensions for mode reflect and symmetric,
+at most 3 leading dimensions for mode edge,
+and an arbitrary number of leading dimensions for mode constant
+
+Args:
+img (PIL Image or Tensor): Image to be padded.
+padding (int or sequence): Padding on each border. If a single int is provided this
+    is used to pad all borders. If sequence of length 2 is provided this is the padding
+    on left/right and top/bottom respectively. If a sequence of length 4 is provided
+    this is the padding for the left, top, right and bottom borders respectively.
+
+    .. note::
+        In torchscript mode padding as single int is not supported, use a sequence of
+        length 1: ``[padding, ]``.
+fill (number or str or tuple): Pixel fill value for constant fill. Default is 0.
+    If a tuple of length 3, it is used to fill R, G, B channels respectively.
+    This value is only used when the padding_mode is constant.
+    Only number is supported for torch Tensor.
+    Only int or str or tuple value is supported for PIL Image.
+padding_mode (str): Type of padding. Should be: constant, edge, reflect or symmetric.
+    Default is constant.
+
+    - constant: pads with a constant value, this value is specified with fill
+
+    - edge: pads with the last value at the edge of the image.
+      If input a 5D torch Tensor, the last 3 dimensions will be padded instead of the last 2
+
+    - reflect: pads with reflection of image without repeating the last value on the edge.
+      For example, padding [1, 2, 3, 4] with 2 elements on both sides in reflect mode
+      will result in [3, 2, 1, 2, 3, 4, 3, 2]
+
+    - symmetric: pads with reflection of image repeating the last value on the edge.
+      For example, padding [1, 2, 3, 4] with 2 elements on both sides in symmetric mode
+      will result in [2, 1, 1, 2, 3, 4, 4, 3]
+
+Returns:
+PIL Image or Tensor: Padded image.
+\end{DoxyVerb}
+ \Hypertarget{namespacetorchvision__down_1_1transforms_1_1functional_a416aee57ec18a57859c0c6d03361173d}\index{torchvision\_down.transforms.functional@{torchvision\_down.transforms.functional}!perspective@{perspective}}
+\index{perspective@{perspective}!torchvision\_down.transforms.functional@{torchvision\_down.transforms.functional}}
+\doxysubsubsection{\texorpdfstring{perspective()}{perspective()}}
+{\footnotesize\ttfamily \label{namespacetorchvision__down_1_1transforms_1_1functional_a416aee57ec18a57859c0c6d03361173d} 
+ Tensor torchvision\+\_\+down.\+transforms.\+functional.\+perspective (\begin{DoxyParamCaption}\item[{Tensor}]{img}{, }\item[{List\mbox{[}List\mbox{[}int\mbox{]}\mbox{]}}]{startpoints}{, }\item[{List\mbox{[}List\mbox{[}int\mbox{]}\mbox{]}}]{endpoints}{, }\item[{\mbox{\hyperlink{classtorchvision__down_1_1transforms_1_1functional_1_1_interpolation_mode}{Interpolation\+Mode}} }]{interpolation}{ = {\ttfamily \mbox{\hyperlink{classtorchvision__down_1_1transforms_1_1functional_1_1_interpolation_mode_a38fd90165d745724a2f2373aa0879c87}{Interpolation\+Mode.\+BILINEAR}}}, }\item[{Optional\mbox{[}List\mbox{[}float\mbox{]}\mbox{]} }]{fill}{ = {\ttfamily None}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Perform perspective transform of the given image.
+If the image is torch Tensor, it is expected
+to have [..., H, W] shape, where ... means an arbitrary number of leading dimensions.
+
+Args:
+    img (PIL Image or Tensor): Image to be transformed.
+    startpoints (list of list of ints): List containing four lists of two integers corresponding to four corners
+        ``[top-left, top-right, bottom-right, bottom-left]`` of the original image.
+    endpoints (list of list of ints): List containing four lists of two integers corresponding to four corners
+        ``[top-left, top-right, bottom-right, bottom-left]`` of the transformed image.
+    interpolation (InterpolationMode): Desired interpolation enum defined by
+        :class:`torchvision.transforms.InterpolationMode`. Default is ``InterpolationMode.BILINEAR``.
+        If input is Tensor, only ``InterpolationMode.NEAREST``, ``InterpolationMode.BILINEAR`` are supported.
+        For backward compatibility integer values (e.g. ``PIL.Image.NEAREST``) are still acceptable.
+    fill (sequence or number, optional): Pixel fill value for the area outside the transformed
+        image. If given a number, the value is used for all bands respectively.
+
+        .. note::
+            In torchscript mode single int/float value is not supported, please use a sequence
+            of length 1: ``[value, ]``.
+
+Returns:
+    PIL Image or Tensor: transformed Image.
+\end{DoxyVerb}
+ \Hypertarget{namespacetorchvision__down_1_1transforms_1_1functional_a61c1e5f8cccec3773b81f66686531dd1}\index{torchvision\_down.transforms.functional@{torchvision\_down.transforms.functional}!pil\_to\_tensor@{pil\_to\_tensor}}
+\index{pil\_to\_tensor@{pil\_to\_tensor}!torchvision\_down.transforms.functional@{torchvision\_down.transforms.functional}}
+\doxysubsubsection{\texorpdfstring{pil\_to\_tensor()}{pil\_to\_tensor()}}
+{\footnotesize\ttfamily \label{namespacetorchvision__down_1_1transforms_1_1functional_a61c1e5f8cccec3773b81f66686531dd1} 
+torchvision\+\_\+down.\+transforms.\+functional.\+pil\+\_\+to\+\_\+tensor (\begin{DoxyParamCaption}\item[{}]{pic}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Convert a ``PIL Image`` to a tensor of the same type.
+This function does not support torchscript.
+
+See :class:`~torchvision.transforms.PILToTensor` for more details.
+
+.. note::
+
+    A deep copy of the underlying array is performed.
+
+Args:
+    pic (PIL Image): Image to be converted to tensor.
+
+Returns:
+    Tensor: Converted image.
+\end{DoxyVerb}
+ \Hypertarget{namespacetorchvision__down_1_1transforms_1_1functional_a8b4d0a6f0e59290c46443f5fd228dccf}\index{torchvision\_down.transforms.functional@{torchvision\_down.transforms.functional}!posterize@{posterize}}
+\index{posterize@{posterize}!torchvision\_down.transforms.functional@{torchvision\_down.transforms.functional}}
+\doxysubsubsection{\texorpdfstring{posterize()}{posterize()}}
+{\footnotesize\ttfamily \label{namespacetorchvision__down_1_1transforms_1_1functional_a8b4d0a6f0e59290c46443f5fd228dccf} 
+ Tensor torchvision\+\_\+down.\+transforms.\+functional.\+posterize (\begin{DoxyParamCaption}\item[{Tensor}]{img}{, }\item[{int}]{bits}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Posterize an image by reducing the number of bits for each color channel.
+
+Args:
+    img (PIL Image or Tensor): Image to have its colors posterized.
+        If img is torch Tensor, it should be of type torch.uint8 and
+        it is expected to be in [..., 1 or 3, H, W] format, where ... means
+        it can have an arbitrary number of leading dimensions.
+        If img is PIL Image, it is expected to be in mode "L" or "RGB".
+    bits (int): The number of bits to keep for each channel (0-8).
+Returns:
+    PIL Image or Tensor: Posterized image.
+\end{DoxyVerb}
+ \Hypertarget{namespacetorchvision__down_1_1transforms_1_1functional_a8fa3e890b626a5cc11e24581ccf38019}\index{torchvision\_down.transforms.functional@{torchvision\_down.transforms.functional}!resize@{resize}}
+\index{resize@{resize}!torchvision\_down.transforms.functional@{torchvision\_down.transforms.functional}}
+\doxysubsubsection{\texorpdfstring{resize()}{resize()}}
+{\footnotesize\ttfamily \label{namespacetorchvision__down_1_1transforms_1_1functional_a8fa3e890b626a5cc11e24581ccf38019} 
+ Tensor torchvision\+\_\+down.\+transforms.\+functional.\+resize (\begin{DoxyParamCaption}\item[{Tensor}]{img}{, }\item[{List\mbox{[}int\mbox{]}}]{size}{, }\item[{\mbox{\hyperlink{classtorchvision__down_1_1transforms_1_1functional_1_1_interpolation_mode}{Interpolation\+Mode}} }]{interpolation}{ = {\ttfamily \mbox{\hyperlink{classtorchvision__down_1_1transforms_1_1functional_1_1_interpolation_mode_a38fd90165d745724a2f2373aa0879c87}{Interpolation\+Mode.\+BILINEAR}}}, }\item[{Optional\mbox{[}int\mbox{]} }]{max\+\_\+size}{ = {\ttfamily None}, }\item[{Optional\mbox{[}bool\mbox{]} }]{antialias}{ = {\ttfamily None}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Resize the input image to the given size.
+If the image is torch Tensor, it is expected
+to have [..., H, W] shape, where ... means an arbitrary number of leading dimensions
+
+.. warning::
+The output image might be different depending on its type: when downsampling, the interpolation of PIL images
+and tensors is slightly different, because PIL applies antialiasing. This may lead to significant differences
+in the performance of a network. Therefore, it is preferable to train and serve a model with the same input
+types. See also below the ``antialias`` parameter, which can help making the output of PIL images and tensors
+closer.
+
+Args:
+img (PIL Image or Tensor): Image to be resized.
+size (sequence or int): Desired output size. If size is a sequence like
+    (h, w), the output size will be matched to this. If size is an int,
+    the smaller edge of the image will be matched to this number maintaining
+    the aspect ratio. i.e, if height > width, then image will be rescaled to
+    :math:`\left(\text{size} \times \frac{\text{height}}{\text{width}}, \text{size}\right)`.
+
+    .. note::
+        In torchscript mode size as single int is not supported, use a sequence of length 1: ``[size, ]``.
+interpolation (InterpolationMode): Desired interpolation enum defined by
+    :class:`torchvision.transforms.InterpolationMode`.
+    Default is ``InterpolationMode.BILINEAR``. If input is Tensor, only ``InterpolationMode.NEAREST``,
+    ``InterpolationMode.BILINEAR`` and ``InterpolationMode.BICUBIC`` are supported.
+    For backward compatibility integer values (e.g. ``PIL.Image.NEAREST``) are still acceptable.
+max_size (int, optional): The maximum allowed for the longer edge of
+    the resized image: if the longer edge of the image is greater
+    than ``max_size`` after being resized according to ``size``, then
+    the image is resized again so that the longer edge is equal to
+    ``max_size``. As a result, ``size`` might be overruled, i.e the
+    smaller edge may be shorter than ``size``. This is only supported
+    if ``size`` is an int (or a sequence of length 1 in torchscript
+    mode).
+antialias (bool, optional): antialias flag. If ``img`` is PIL Image, the flag is ignored and anti-alias
+    is always used. If ``img`` is Tensor, the flag is False by default and can be set to True for
+    ``InterpolationMode.BILINEAR`` only mode. This can help making the output for PIL images and tensors
+    closer.
+
+    .. warning::
+        There is no autodiff support for ``antialias=True`` option with input ``img`` as Tensor.
+
+Returns:
+PIL Image or Tensor: Resized image.
+\end{DoxyVerb}
+ \Hypertarget{namespacetorchvision__down_1_1transforms_1_1functional_a0e4f2e06c2d93ca52d0788b94886f417}\index{torchvision\_down.transforms.functional@{torchvision\_down.transforms.functional}!resized\_crop@{resized\_crop}}
+\index{resized\_crop@{resized\_crop}!torchvision\_down.transforms.functional@{torchvision\_down.transforms.functional}}
+\doxysubsubsection{\texorpdfstring{resized\_crop()}{resized\_crop()}}
+{\footnotesize\ttfamily \label{namespacetorchvision__down_1_1transforms_1_1functional_a0e4f2e06c2d93ca52d0788b94886f417} 
+ Tensor torchvision\+\_\+down.\+transforms.\+functional.\+resized\+\_\+crop (\begin{DoxyParamCaption}\item[{Tensor}]{img}{, }\item[{int}]{top}{, }\item[{int}]{left}{, }\item[{int}]{height}{, }\item[{int}]{width}{, }\item[{List\mbox{[}int\mbox{]}}]{size}{, }\item[{\mbox{\hyperlink{classtorchvision__down_1_1transforms_1_1functional_1_1_interpolation_mode}{Interpolation\+Mode}} }]{interpolation}{ = {\ttfamily \mbox{\hyperlink{classtorchvision__down_1_1transforms_1_1functional_1_1_interpolation_mode_a38fd90165d745724a2f2373aa0879c87}{Interpolation\+Mode.\+BILINEAR}}}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Crop the given image and resize it to desired size.
+If the image is torch Tensor, it is expected
+to have [..., H, W] shape, where ... means an arbitrary number of leading dimensions
+
+Notably used in :class:`~torchvision.transforms.RandomResizedCrop`.
+
+Args:
+    img (PIL Image or Tensor): Image to be cropped. (0,0) denotes the top left corner of the image.
+    top (int): Vertical component of the top left corner of the crop box.
+    left (int): Horizontal component of the top left corner of the crop box.
+    height (int): Height of the crop box.
+    width (int): Width of the crop box.
+    size (sequence or int): Desired output size. Same semantics as ``resize``.
+    interpolation (InterpolationMode): Desired interpolation enum defined by
+        :class:`torchvision.transforms.InterpolationMode`.
+        Default is ``InterpolationMode.BILINEAR``. If input is Tensor, only ``InterpolationMode.NEAREST``,
+        ``InterpolationMode.BILINEAR`` and ``InterpolationMode.BICUBIC`` are supported.
+        For backward compatibility integer values (e.g. ``PIL.Image.NEAREST``) are still acceptable.
+
+Returns:
+    PIL Image or Tensor: Cropped image.
+\end{DoxyVerb}
+ \Hypertarget{namespacetorchvision__down_1_1transforms_1_1functional_a58c3d29ce6feec7f6b79152c498bdb62}\index{torchvision\_down.transforms.functional@{torchvision\_down.transforms.functional}!rgb\_to\_grayscale@{rgb\_to\_grayscale}}
+\index{rgb\_to\_grayscale@{rgb\_to\_grayscale}!torchvision\_down.transforms.functional@{torchvision\_down.transforms.functional}}
+\doxysubsubsection{\texorpdfstring{rgb\_to\_grayscale()}{rgb\_to\_grayscale()}}
+{\footnotesize\ttfamily \label{namespacetorchvision__down_1_1transforms_1_1functional_a58c3d29ce6feec7f6b79152c498bdb62} 
+ Tensor torchvision\+\_\+down.\+transforms.\+functional.\+rgb\+\_\+to\+\_\+grayscale (\begin{DoxyParamCaption}\item[{Tensor}]{img}{, }\item[{int }]{num\+\_\+output\+\_\+channels}{ = {\ttfamily 1}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Convert RGB image to grayscale version of image.
+If the image is torch Tensor, it is expected
+to have [..., 3, H, W] shape, where ... means an arbitrary number of leading dimensions
+
+Note:
+    Please, note that this method supports only RGB images as input. For inputs in other color spaces,
+    please, consider using meth:`~torchvision.transforms.functional.to_grayscale` with PIL Image.
+
+Args:
+    img (PIL Image or Tensor): RGB Image to be converted to grayscale.
+    num_output_channels (int): number of channels of the output image. Value can be 1 or 3. Default, 1.
+
+Returns:
+    PIL Image or Tensor: Grayscale version of the image.
+
+    - if num_output_channels = 1 : returned image is single channel
+    - if num_output_channels = 3 : returned image is 3 channel with r = g = b
+\end{DoxyVerb}
+ \Hypertarget{namespacetorchvision__down_1_1transforms_1_1functional_a19c1807303f6b22fc868e3d942ffa72c}\index{torchvision\_down.transforms.functional@{torchvision\_down.transforms.functional}!rotate@{rotate}}
+\index{rotate@{rotate}!torchvision\_down.transforms.functional@{torchvision\_down.transforms.functional}}
+\doxysubsubsection{\texorpdfstring{rotate()}{rotate()}}
+{\footnotesize\ttfamily \label{namespacetorchvision__down_1_1transforms_1_1functional_a19c1807303f6b22fc868e3d942ffa72c} 
+ Tensor torchvision\+\_\+down.\+transforms.\+functional.\+rotate (\begin{DoxyParamCaption}\item[{Tensor}]{img}{, }\item[{float}]{angle}{, }\item[{\mbox{\hyperlink{classtorchvision__down_1_1transforms_1_1functional_1_1_interpolation_mode}{Interpolation\+Mode}} }]{interpolation}{ = {\ttfamily \mbox{\hyperlink{classtorchvision__down_1_1transforms_1_1functional_1_1_interpolation_mode_a6a6bb34c2976ea38186bca5ec09649c1}{Interpolation\+Mode.\+NEAREST}}}, }\item[{bool }]{expand}{ = {\ttfamily False}, }\item[{Optional\mbox{[}List\mbox{[}int\mbox{]}\mbox{]} }]{center}{ = {\ttfamily None}, }\item[{Optional\mbox{[}List\mbox{[}float\mbox{]}\mbox{]} }]{fill}{ = {\ttfamily None}, }\item[{Optional\mbox{[}int\mbox{]} }]{resample}{ = {\ttfamily None}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Rotate the image by angle.
+If the image is torch Tensor, it is expected
+to have [..., H, W] shape, where ... means an arbitrary number of leading dimensions.
+
+Args:
+    img (PIL Image or Tensor): image to be rotated.
+    angle (number): rotation angle value in degrees, counter-clockwise.
+    interpolation (InterpolationMode): Desired interpolation enum defined by
+        :class:`torchvision.transforms.InterpolationMode`. Default is ``InterpolationMode.NEAREST``.
+        If input is Tensor, only ``InterpolationMode.NEAREST``, ``InterpolationMode.BILINEAR`` are supported.
+        For backward compatibility integer values (e.g. ``PIL.Image.NEAREST``) are still acceptable.
+    expand (bool, optional): Optional expansion flag.
+        If true, expands the output image to make it large enough to hold the entire rotated image.
+        If false or omitted, make the output image the same size as the input image.
+        Note that the expand flag assumes rotation around the center and no translation.
+    center (sequence, optional): Optional center of rotation. Origin is the upper left corner.
+        Default is the center of the image.
+    fill (sequence or number, optional): Pixel fill value for the area outside the transformed
+        image. If given a number, the value is used for all bands respectively.
+
+        .. note::
+            In torchscript mode single int/float value is not supported, please use a sequence
+            of length 1: ``[value, ]``.
+    resample (int, optional):
+        .. warning::
+            This parameter was deprecated in ``0.12`` and will be removed in ``0.14``. Please use ``interpolation``
+            instead.
+
+Returns:
+    PIL Image or Tensor: Rotated image.
+
+.. _filters: https://pillow.readthedocs.io/en/latest/handbook/concepts.html#filters
+\end{DoxyVerb}
+ \Hypertarget{namespacetorchvision__down_1_1transforms_1_1functional_a1a0684c1a85be760653c310bf7a86c7d}\index{torchvision\_down.transforms.functional@{torchvision\_down.transforms.functional}!solarize@{solarize}}
+\index{solarize@{solarize}!torchvision\_down.transforms.functional@{torchvision\_down.transforms.functional}}
+\doxysubsubsection{\texorpdfstring{solarize()}{solarize()}}
+{\footnotesize\ttfamily \label{namespacetorchvision__down_1_1transforms_1_1functional_a1a0684c1a85be760653c310bf7a86c7d} 
+ Tensor torchvision\+\_\+down.\+transforms.\+functional.\+solarize (\begin{DoxyParamCaption}\item[{Tensor}]{img}{, }\item[{float}]{threshold}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Solarize an RGB/grayscale image by inverting all pixel values above a threshold.
+
+Args:
+    img (PIL Image or Tensor): Image to have its colors inverted.
+        If img is torch Tensor, it is expected to be in [..., 1 or 3, H, W] format,
+        where ... means it can have an arbitrary number of leading dimensions.
+        If img is PIL Image, it is expected to be in mode "L" or "RGB".
+    threshold (float): All pixels equal or above this value are inverted.
+Returns:
+    PIL Image or Tensor: Solarized image.
+\end{DoxyVerb}
+ \Hypertarget{namespacetorchvision__down_1_1transforms_1_1functional_a905c87291cadb0947a732d6ae84eba2e}\index{torchvision\_down.transforms.functional@{torchvision\_down.transforms.functional}!ten\_crop@{ten\_crop}}
+\index{ten\_crop@{ten\_crop}!torchvision\_down.transforms.functional@{torchvision\_down.transforms.functional}}
+\doxysubsubsection{\texorpdfstring{ten\_crop()}{ten\_crop()}}
+{\footnotesize\ttfamily \label{namespacetorchvision__down_1_1transforms_1_1functional_a905c87291cadb0947a732d6ae84eba2e} 
+ List\mbox{[}Tensor\mbox{]} torchvision\+\_\+down.\+transforms.\+functional.\+ten\+\_\+crop (\begin{DoxyParamCaption}\item[{Tensor}]{img}{, }\item[{List\mbox{[}int\mbox{]}}]{size}{, }\item[{bool }]{vertical\+\_\+flip}{ = {\ttfamily False}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Generate ten cropped images from the given image.
+Crop the given image into four corners and the central crop plus the
+flipped version of these (horizontal flipping is used by default).
+If the image is torch Tensor, it is expected
+to have [..., H, W] shape, where ... means an arbitrary number of leading dimensions
+
+.. Note::
+    This transform returns a tuple of images and there may be a
+    mismatch in the number of inputs and targets your ``Dataset`` returns.
+
+Args:
+    img (PIL Image or Tensor): Image to be cropped.
+    size (sequence or int): Desired output size of the crop. If size is an
+        int instead of sequence like (h, w), a square crop (size, size) is
+        made. If provided a sequence of length 1, it will be interpreted as (size[0], size[0]).
+    vertical_flip (bool): Use vertical flipping instead of horizontal
+
+Returns:
+    tuple: tuple (tl, tr, bl, br, center, tl_flip, tr_flip, bl_flip, br_flip, center_flip)
+    Corresponding top left, top right, bottom left, bottom right and
+    center crop and same for the flipped image.
+\end{DoxyVerb}
+ \Hypertarget{namespacetorchvision__down_1_1transforms_1_1functional_a4343ae56fee364e695aa6f16392d5edd}\index{torchvision\_down.transforms.functional@{torchvision\_down.transforms.functional}!to\_grayscale@{to\_grayscale}}
+\index{to\_grayscale@{to\_grayscale}!torchvision\_down.transforms.functional@{torchvision\_down.transforms.functional}}
+\doxysubsubsection{\texorpdfstring{to\_grayscale()}{to\_grayscale()}}
+{\footnotesize\ttfamily \label{namespacetorchvision__down_1_1transforms_1_1functional_a4343ae56fee364e695aa6f16392d5edd} 
+torchvision\+\_\+down.\+transforms.\+functional.\+to\+\_\+grayscale (\begin{DoxyParamCaption}\item[{}]{img}{, }\item[{}]{num\+\_\+output\+\_\+channels}{ = {\ttfamily 1}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Convert PIL image of any mode (RGB, HSV, LAB, etc) to grayscale version of image.
+This transform does not support torch Tensor.
+
+Args:
+    img (PIL Image): PIL Image to be converted to grayscale.
+    num_output_channels (int): number of channels of the output image. Value can be 1 or 3. Default is 1.
+
+Returns:
+    PIL Image: Grayscale version of the image.
+
+    - if num_output_channels = 1 : returned image is single channel
+    - if num_output_channels = 3 : returned image is 3 channel with r = g = b
+\end{DoxyVerb}
+ \Hypertarget{namespacetorchvision__down_1_1transforms_1_1functional_ac9d31d3e6c0bed048438b2af43f8b898}\index{torchvision\_down.transforms.functional@{torchvision\_down.transforms.functional}!to\_pil\_image@{to\_pil\_image}}
+\index{to\_pil\_image@{to\_pil\_image}!torchvision\_down.transforms.functional@{torchvision\_down.transforms.functional}}
+\doxysubsubsection{\texorpdfstring{to\_pil\_image()}{to\_pil\_image()}}
+{\footnotesize\ttfamily \label{namespacetorchvision__down_1_1transforms_1_1functional_ac9d31d3e6c0bed048438b2af43f8b898} 
+torchvision\+\_\+down.\+transforms.\+functional.\+to\+\_\+pil\+\_\+image (\begin{DoxyParamCaption}\item[{}]{pic}{, }\item[{}]{mode}{ = {\ttfamily None}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Convert a tensor or an ndarray to PIL Image. This function does not support torchscript.
+
+See :class:`~torchvision.transforms.ToPILImage` for more details.
+
+Args:
+    pic (Tensor or numpy.ndarray): Image to be converted to PIL Image.
+    mode (`PIL.Image mode`_): color space and pixel depth of input data (optional).
+
+.. _PIL.Image mode: https://pillow.readthedocs.io/en/latest/handbook/concepts.html#concept-modes
+
+Returns:
+    PIL Image: Image converted to PIL Image.
+\end{DoxyVerb}
+ \Hypertarget{namespacetorchvision__down_1_1transforms_1_1functional_a8892e5156f1310679d72114103f720cd}\index{torchvision\_down.transforms.functional@{torchvision\_down.transforms.functional}!to\_tensor@{to\_tensor}}
+\index{to\_tensor@{to\_tensor}!torchvision\_down.transforms.functional@{torchvision\_down.transforms.functional}}
+\doxysubsubsection{\texorpdfstring{to\_tensor()}{to\_tensor()}}
+{\footnotesize\ttfamily \label{namespacetorchvision__down_1_1transforms_1_1functional_a8892e5156f1310679d72114103f720cd} 
+torchvision\+\_\+down.\+transforms.\+functional.\+to\+\_\+tensor (\begin{DoxyParamCaption}\item[{}]{pic}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Convert a ``PIL Image`` or ``numpy.ndarray`` to tensor.
+This function does not support torchscript.
+
+See :class:`~torchvision.transforms.ToTensor` for more details.
+
+Args:
+    pic (PIL Image or numpy.ndarray): Image to be converted to tensor.
+
+Returns:
+    Tensor: Converted image.
+\end{DoxyVerb}
+ \Hypertarget{namespacetorchvision__down_1_1transforms_1_1functional_a6392288067482eb5f6d1e5a07164bf9c}\index{torchvision\_down.transforms.functional@{torchvision\_down.transforms.functional}!vflip@{vflip}}
+\index{vflip@{vflip}!torchvision\_down.transforms.functional@{torchvision\_down.transforms.functional}}
+\doxysubsubsection{\texorpdfstring{vflip()}{vflip()}}
+{\footnotesize\ttfamily \label{namespacetorchvision__down_1_1transforms_1_1functional_a6392288067482eb5f6d1e5a07164bf9c} 
+ Tensor torchvision\+\_\+down.\+transforms.\+functional.\+vflip (\begin{DoxyParamCaption}\item[{Tensor}]{img}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Vertically flip the given image.
+
+Args:
+    img (PIL Image or Tensor): Image to be flipped. If img
+        is a Tensor, it is expected to be in [..., H, W] format,
+        where ... means it can have an arbitrary number of leading
+        dimensions.
+
+Returns:
+    PIL Image or Tensor:  Vertically flipped image.
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Variable Documentation}
+\Hypertarget{namespacetorchvision__down_1_1transforms_1_1functional_a07cba6238da4d9637ac73f23049d4468}\index{torchvision\_down.transforms.functional@{torchvision\_down.transforms.functional}!\_is\_pil\_image@{\_is\_pil\_image}}
+\index{\_is\_pil\_image@{\_is\_pil\_image}!torchvision\_down.transforms.functional@{torchvision\_down.transforms.functional}}
+\doxysubsubsection{\texorpdfstring{\_is\_pil\_image}{\_is\_pil\_image}}
+{\footnotesize\ttfamily \label{namespacetorchvision__down_1_1transforms_1_1functional_a07cba6238da4d9637ac73f23049d4468} 
+torchvision\+\_\+down.\+transforms.\+functional.\+\_\+is\+\_\+pil\+\_\+image = F\+\_\+pil.\+\_\+is\+\_\+pil\+\_\+image\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{namespacetorchvision__down_1_1transforms_1_1functional_af99194b56a2eeaea4f45da549807d3e8}\index{torchvision\_down.transforms.functional@{torchvision\_down.transforms.functional}!accimage@{accimage}}
+\index{accimage@{accimage}!torchvision\_down.transforms.functional@{torchvision\_down.transforms.functional}}
+\doxysubsubsection{\texorpdfstring{accimage}{accimage}}
+{\footnotesize\ttfamily \label{namespacetorchvision__down_1_1transforms_1_1functional_af99194b56a2eeaea4f45da549807d3e8} 
+torchvision\+\_\+down.\+transforms.\+functional.\+accimage = None}
+
+\Hypertarget{namespacetorchvision__down_1_1transforms_1_1functional_ac27230bf3a47086f91900e9593eb32e7}\index{torchvision\_down.transforms.functional@{torchvision\_down.transforms.functional}!pil\_modes\_mapping@{pil\_modes\_mapping}}
+\index{pil\_modes\_mapping@{pil\_modes\_mapping}!torchvision\_down.transforms.functional@{torchvision\_down.transforms.functional}}
+\doxysubsubsection{\texorpdfstring{pil\_modes\_mapping}{pil\_modes\_mapping}}
+{\footnotesize\ttfamily \label{namespacetorchvision__down_1_1transforms_1_1functional_ac27230bf3a47086f91900e9593eb32e7} 
+dict torchvision\+\_\+down.\+transforms.\+functional.\+pil\+\_\+modes\+\_\+mapping}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ =\ \ \{}
+\DoxyCodeLine{00002\ \ \ \ \ InterpolationMode.NEAREST:\ 0,}
+\DoxyCodeLine{00003\ \ \ \ \ InterpolationMode.BILINEAR:\ 2,}
+\DoxyCodeLine{00004\ \ \ \ \ InterpolationMode.BICUBIC:\ 3,}
+\DoxyCodeLine{00005\ \ \ \ \ InterpolationMode.BOX:\ 4,}
+\DoxyCodeLine{00006\ \ \ \ \ InterpolationMode.HAMMING:\ 5,}
+\DoxyCodeLine{00007\ \ \ \ \ InterpolationMode.LANCZOS:\ 1,}
+\DoxyCodeLine{00008\ \}}
+
+\end{DoxyCode}

@@ -1,0 +1,43 @@
+\doxysection{Cervi\+AI/\+Shreyan scripts/abandoned/\+TPcollector.py File Reference}
+\hypertarget{_t_pcollector_8py}{}\label{_t_pcollector_8py}\index{CerviAI/Shreyan scripts/abandoned/TPcollector.py@{CerviAI/Shreyan scripts/abandoned/TPcollector.py}}
+\doxysubsubsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+namespace \mbox{\hyperlink{namespace_t_pcollector}{TPcollector}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{namespace_t_pcollector_ab8fc9b35813be9279483cd32409ac1a2}{TPcollector.\+parse\+\_\+annotations}} (ndpa\+\_\+file)
+\item 
+\mbox{\hyperlink{namespace_t_pcollector_a156f85f9007f1a40a3fb4f1c8fcab073}{TPcollector.\+get\+\_\+referance}} (wsi\+\_\+path)
+\item 
+\mbox{\hyperlink{namespace_t_pcollector_a23601691e29aea1f64c9fd3b4e55aa08}{TPcollector.\+extract\+\_\+tile}} (wsi\+\_\+path, bbox, \mbox{\hyperlink{namespace_t_pcollector_ab243a65f4c5e2c99e77c0de820ab9844}{tile\+\_\+size}}, X\+\_\+\+Ref, Y\+\_\+\+Ref, nm\+\_\+per\+\_\+pixel)
+\item 
+\mbox{\hyperlink{namespace_t_pcollector_a1d417559f805709d78a6e245185fa172}{TPcollector.\+process\+\_\+wsi}} (row)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{namespace_t_pcollector_adae05a0e5325ef90cb4d9f74807198e0}{TPcollector.\+OPENSLIDE\+\_\+\+PATH}} = os.\+path.\+join(r"{}\+D\+:\textbackslash{}\+Shreyan\textbackslash{}\+Development\textbackslash{}\+Cervi\+AI"{}, \textquotesingle{}openslide-\/win64-\/20230414\textquotesingle{}, \textquotesingle{}bin\textquotesingle{})
+\item 
+str \mbox{\hyperlink{namespace_t_pcollector_ad369890959a69a715b4bece345c0d91b}{TPcollector.\+inputdir}} = r"{}\+E\+:\textbackslash{}archive\+\_\+\+Shreyan\textbackslash{}\+Training data jan 2025"{}
+\item 
+str \mbox{\hyperlink{namespace_t_pcollector_a7263211dd6d791cb359360aa6d1d1273}{TPcollector.\+outputdir}} = r"{}\+E\+:\textbackslash{}archive\+\_\+\+Shreyan\textbackslash{}result"{}
+\item 
+str \mbox{\hyperlink{namespace_t_pcollector_a24b441fd3fb5e675eac92988969a9276}{TPcollector.\+excel}} = "{}TP ANNOTATIONS.\+xlsx"{}
+\item 
+int \mbox{\hyperlink{namespace_t_pcollector_ab243a65f4c5e2c99e77c0de820ab9844}{TPcollector.\+tile\+\_\+size}} = 1024
+\item 
+\mbox{\hyperlink{namespace_t_pcollector_a75330575137a9623df3d928a3c6dcb9e}{TPcollector.\+exist\+\_\+ok}}
+\item 
+\mbox{\hyperlink{namespace_t_pcollector_ab7095c677a66d6d53cc5657311e4de1a}{TPcollector.\+excel\+\_\+path}} = os.\+path.\+join(\mbox{\hyperlink{namespace_t_pcollector_ad369890959a69a715b4bece345c0d91b}{inputdir}}, \mbox{\hyperlink{namespace_t_pcollector_a24b441fd3fb5e675eac92988969a9276}{excel}})
+\item 
+\mbox{\hyperlink{namespace_t_pcollector_a45ea82e2f4c0098596a486bce2fe85b0}{TPcollector.\+df}} = pd.\+read\+\_\+excel(\mbox{\hyperlink{namespace_t_pcollector_ab7095c677a66d6d53cc5657311e4de1a}{excel\+\_\+path}}, engine=\textquotesingle{}openpyxl\textquotesingle{})
+\item 
+\mbox{\hyperlink{namespace_t_pcollector_a85199e9d8b5329f514f1626337d2446e}{TPcollector.\+inplace}}
+\item 
+list \mbox{\hyperlink{namespace_t_pcollector_ab066b879da6fb000332d3dbbe9802f8c}{TPcollector.\+threads}} = \mbox{[}$\,$\mbox{]}
+\item 
+\mbox{\hyperlink{namespace_t_pcollector_afed9508435699b20676dcee12b299e6f}{TPcollector.\+thread}} = threading.\+Thread(target=\mbox{\hyperlink{namespace_t_pcollector_a1d417559f805709d78a6e245185fa172}{process\+\_\+wsi}}, args=(row,))
+\end{DoxyCompactItemize}

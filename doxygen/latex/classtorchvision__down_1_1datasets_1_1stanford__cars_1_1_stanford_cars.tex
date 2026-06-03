@@ -1,0 +1,200 @@
+\doxysection{torchvision\+\_\+down.\+datasets.\+stanford\+\_\+cars.\+Stanford\+Cars Class Reference}
+\hypertarget{classtorchvision__down_1_1datasets_1_1stanford__cars_1_1_stanford_cars}{}\label{classtorchvision__down_1_1datasets_1_1stanford__cars_1_1_stanford_cars}\index{torchvision\_down.datasets.stanford\_cars.StanfordCars@{torchvision\_down.datasets.stanford\_cars.StanfordCars}}
+Inheritance diagram for torchvision\+\_\+down.\+datasets.\+stanford\+\_\+cars.\+Stanford\+Cars\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{classtorchvision__down_1_1datasets_1_1stanford__cars_1_1_stanford_cars}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+None \mbox{\hyperlink{classtorchvision__down_1_1datasets_1_1stanford__cars_1_1_stanford_cars_a5c9995b923df6a90c8843891735fb7ae}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, str \mbox{\hyperlink{classtorchvision__down_1_1datasets_1_1vision_1_1_vision_dataset_af52cf192ec18d3421afe216bf9b881d6}{root}}, str split="{}train"{}, Optional\mbox{[}Callable\mbox{]} \mbox{\hyperlink{classtorchvision__down_1_1datasets_1_1vision_1_1_vision_dataset_ade1b4bca7d4f998bc3061e0400769de8}{transform}}=None, Optional\mbox{[}Callable\mbox{]} \mbox{\hyperlink{classtorchvision__down_1_1datasets_1_1vision_1_1_vision_dataset_a01f7d1bb7220bbfa4234ef140d021cc6}{target\+\_\+transform}}=None, bool \mbox{\hyperlink{classtorchvision__down_1_1datasets_1_1stanford__cars_1_1_stanford_cars_a689d09f3b4dd20eb0cbd440473d6b37b}{download}}=False)
+\item 
+int \mbox{\hyperlink{classtorchvision__down_1_1datasets_1_1stanford__cars_1_1_stanford_cars_a0c46d490f24114dfe974bd6100861624}{\+\_\+\+\_\+len\+\_\+\+\_\+}} (self)
+\item 
+Tuple\mbox{[}Any, Any\mbox{]} \mbox{\hyperlink{classtorchvision__down_1_1datasets_1_1stanford__cars_1_1_stanford_cars_aaf1a700d5b7d0559a8e1138acf2aeeb5}{\+\_\+\+\_\+getitem\+\_\+\+\_\+}} (self, int idx)
+\item 
+None \mbox{\hyperlink{classtorchvision__down_1_1datasets_1_1stanford__cars_1_1_stanford_cars_a689d09f3b4dd20eb0cbd440473d6b37b}{download}} (self)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{classtorchvision__down_1_1datasets_1_1vision_1_1_vision_dataset}{torchvision\+\_\+down.\+datasets.\+vision.\+Vision\+Dataset}}}
+\begin{DoxyCompactItemize}
+\item 
+None \mbox{\hyperlink{classtorchvision__down_1_1datasets_1_1vision_1_1_vision_dataset_a4fe475e0f96592c04a6d97bcd953aca8}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, str \mbox{\hyperlink{classtorchvision__down_1_1datasets_1_1vision_1_1_vision_dataset_af52cf192ec18d3421afe216bf9b881d6}{root}}, Optional\mbox{[}Callable\mbox{]} \mbox{\hyperlink{classtorchvision__down_1_1datasets_1_1vision_1_1_vision_dataset_a7963601da311133da990b66cb616cc83}{transforms}}=None, Optional\mbox{[}Callable\mbox{]} \mbox{\hyperlink{classtorchvision__down_1_1datasets_1_1vision_1_1_vision_dataset_ade1b4bca7d4f998bc3061e0400769de8}{transform}}=None, Optional\mbox{[}Callable\mbox{]} \mbox{\hyperlink{classtorchvision__down_1_1datasets_1_1vision_1_1_vision_dataset_a01f7d1bb7220bbfa4234ef140d021cc6}{target\+\_\+transform}}=None)
+\item 
+Any \mbox{\hyperlink{classtorchvision__down_1_1datasets_1_1vision_1_1_vision_dataset_aa96f56b711d61433df225154b9837daa}{\+\_\+\+\_\+getitem\+\_\+\+\_\+}} (self, int index)
+\item 
+int \mbox{\hyperlink{classtorchvision__down_1_1datasets_1_1vision_1_1_vision_dataset_abb1561c74b600d1d424cfa010f009a92}{\+\_\+\+\_\+len\+\_\+\+\_\+}} (self)
+\item 
+str \mbox{\hyperlink{classtorchvision__down_1_1datasets_1_1vision_1_1_vision_dataset_a40d28a5833742c49a70872e87edb1ef9}{\+\_\+\+\_\+repr\+\_\+\+\_\+}} (self)
+\item 
+str \mbox{\hyperlink{classtorchvision__down_1_1datasets_1_1vision_1_1_vision_dataset_a99093b3e6dd75e1ed1c49eed7ac2df00}{extra\+\_\+repr}} (self)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1datasets_1_1stanford__cars_1_1_stanford_cars_acf32e1da377a008e45e323d6fb2aa7be}{classes}} = sio.\+loadmat(str(devkit / "{}cars\+\_\+meta.\+mat"{}), squeeze\+\_\+me=True)\mbox{[}"{}class\+\_\+names"{}\mbox{]}.tolist()
+\item 
+dict \mbox{\hyperlink{classtorchvision__down_1_1datasets_1_1stanford__cars_1_1_stanford_cars_ab6344f09677f46cf8312c09cf21eece8}{class\+\_\+to\+\_\+idx}} = \{cls\+: i for i, cls in enumerate(self.\+classes)\}
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes inherited from \mbox{\hyperlink{classtorchvision__down_1_1datasets_1_1vision_1_1_vision_dataset}{torchvision\+\_\+down.\+datasets.\+vision.\+Vision\+Dataset}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1datasets_1_1vision_1_1_vision_dataset_af52cf192ec18d3421afe216bf9b881d6}{root}} = root
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1datasets_1_1vision_1_1_vision_dataset_ade1b4bca7d4f998bc3061e0400769de8}{transform}} = transform
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1datasets_1_1vision_1_1_vision_dataset_a01f7d1bb7220bbfa4234ef140d021cc6}{target\+\_\+transform}} = target\+\_\+transform
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1datasets_1_1vision_1_1_vision_dataset_a7963601da311133da990b66cb616cc83}{transforms}} = transforms
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{classtorchvision__down_1_1datasets_1_1stanford__cars_1_1_stanford_cars_a57759fd130cbfabf03729dc74cb051a8}{\+\_\+check\+\_\+exists}} (self)
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions inherited from \mbox{\hyperlink{classtorchvision__down_1_1datasets_1_1vision_1_1_vision_dataset}{torchvision\+\_\+down.\+datasets.\+vision.\+Vision\+Dataset}}}
+\begin{DoxyCompactItemize}
+\item 
+List\mbox{[}str\mbox{]} \mbox{\hyperlink{classtorchvision__down_1_1datasets_1_1vision_1_1_vision_dataset_a9f1a9fad1ab8a0b963cdc3522a271689}{\+\_\+format\+\_\+transform\+\_\+repr}} (self, Callable \mbox{\hyperlink{classtorchvision__down_1_1datasets_1_1vision_1_1_vision_dataset_ade1b4bca7d4f998bc3061e0400769de8}{transform}}, str head)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+str \mbox{\hyperlink{classtorchvision__down_1_1datasets_1_1stanford__cars_1_1_stanford_cars_ac2f7b3dd8dac19c85b5e1974caaffa6b}{\+\_\+split}} = verify\+\_\+str\+\_\+arg(split, "{}split"{}, ("{}train"{}, "{}test"{}))
+\item 
+str \mbox{\hyperlink{classtorchvision__down_1_1datasets_1_1stanford__cars_1_1_stanford_cars_ad40e4370889bd43d705c9127186e96c4}{\+\_\+base\+\_\+folder}} = pathlib.\+Path(\mbox{\hyperlink{classtorchvision__down_1_1datasets_1_1vision_1_1_vision_dataset_af52cf192ec18d3421afe216bf9b881d6}{root}}) / "{}stanford\+\_\+cars"{}
+\item 
+str \mbox{\hyperlink{classtorchvision__down_1_1datasets_1_1stanford__cars_1_1_stanford_cars_a8b6738f4f0f90399630f402c96bb41f6}{\+\_\+annotations\+\_\+mat\+\_\+path}} = devkit / "{}cars\+\_\+train\+\_\+annos.\+mat"{}
+\item 
+str \mbox{\hyperlink{classtorchvision__down_1_1datasets_1_1stanford__cars_1_1_stanford_cars_a216cd96d099c5d355ce4231c90e875a1}{\+\_\+images\+\_\+base\+\_\+path}} = self.\+\_\+base\+\_\+folder / "{}cars\+\_\+train"{}
+\item 
+list \mbox{\hyperlink{classtorchvision__down_1_1datasets_1_1stanford__cars_1_1_stanford_cars_a933b50bc28143defc514b8721bfaa42d}{\+\_\+samples}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Additional Inherited Members}
+\doxysubsection*{Static Protected Attributes inherited from \mbox{\hyperlink{classtorchvision__down_1_1datasets_1_1vision_1_1_vision_dataset}{torchvision\+\_\+down.\+datasets.\+vision.\+Vision\+Dataset}}}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{classtorchvision__down_1_1datasets_1_1vision_1_1_vision_dataset_a2eb99b64ccfc03378be35d0ff88e71b4}{\+\_\+repr\+\_\+indent}} = 4
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}`Stanford Cars <https://ai.stanford.edu/~jkrause/cars/car_dataset.html>`_ Dataset
+
+The Cars dataset contains 16,185 images of 196 classes of cars. The data is
+split into 8,144 training images and 8,041 testing images, where each class
+has been split roughly in a 50-50 split
+
+.. note::
+
+    This class needs `scipy <https://docs.scipy.org/doc/>`_ to load target files from `.mat` format.
+
+Args:
+    root (string): Root directory of dataset
+    split (string, optional): The dataset split, supports ``"train"`` (default) or ``"test"``.
+    transform (callable, optional): A function/transform that  takes in an PIL image
+        and returns a transformed version. E.g, ``transforms.RandomCrop``
+    target_transform (callable, optional): A function/transform that takes in the
+        target and transforms it.
+    download (bool, optional): If True, downloads the dataset from the internet and
+        puts it in root directory. If dataset is already downloaded, it is not
+        downloaded again.\end{DoxyVerb}
+ 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classtorchvision__down_1_1datasets_1_1stanford__cars_1_1_stanford_cars_a5c9995b923df6a90c8843891735fb7ae}\index{torchvision\_down.datasets.stanford\_cars.StanfordCars@{torchvision\_down.datasets.stanford\_cars.StanfordCars}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!torchvision\_down.datasets.stanford\_cars.StanfordCars@{torchvision\_down.datasets.stanford\_cars.StanfordCars}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1datasets_1_1stanford__cars_1_1_stanford_cars_a5c9995b923df6a90c8843891735fb7ae} 
+ None torchvision\+\_\+down.\+datasets.\+stanford\+\_\+cars.\+Stanford\+Cars.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{str}]{root}{, }\item[{str }]{split}{ = {\ttfamily "{}train"{}}, }\item[{Optional\mbox{[}Callable\mbox{]} }]{transform}{ = {\ttfamily None}, }\item[{Optional\mbox{[}Callable\mbox{]} }]{target\+\_\+transform}{ = {\ttfamily None}, }\item[{bool }]{download}{ = {\ttfamily False}}\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classtorchvision__down_1_1datasets_1_1stanford__cars_1_1_stanford_cars_aaf1a700d5b7d0559a8e1138acf2aeeb5}\index{torchvision\_down.datasets.stanford\_cars.StanfordCars@{torchvision\_down.datasets.stanford\_cars.StanfordCars}!\_\_getitem\_\_@{\_\_getitem\_\_}}
+\index{\_\_getitem\_\_@{\_\_getitem\_\_}!torchvision\_down.datasets.stanford\_cars.StanfordCars@{torchvision\_down.datasets.stanford\_cars.StanfordCars}}
+\doxysubsubsection{\texorpdfstring{\_\_getitem\_\_()}{\_\_getitem\_\_()}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1datasets_1_1stanford__cars_1_1_stanford_cars_aaf1a700d5b7d0559a8e1138acf2aeeb5} 
+ Tuple\mbox{[}Any, Any\mbox{]} torchvision\+\_\+down.\+datasets.\+stanford\+\_\+cars.\+Stanford\+Cars.\+\_\+\+\_\+getitem\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{int}]{idx}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Returns pil_image and class_id for given index\end{DoxyVerb}
+ \Hypertarget{classtorchvision__down_1_1datasets_1_1stanford__cars_1_1_stanford_cars_a0c46d490f24114dfe974bd6100861624}\index{torchvision\_down.datasets.stanford\_cars.StanfordCars@{torchvision\_down.datasets.stanford\_cars.StanfordCars}!\_\_len\_\_@{\_\_len\_\_}}
+\index{\_\_len\_\_@{\_\_len\_\_}!torchvision\_down.datasets.stanford\_cars.StanfordCars@{torchvision\_down.datasets.stanford\_cars.StanfordCars}}
+\doxysubsubsection{\texorpdfstring{\_\_len\_\_()}{\_\_len\_\_()}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1datasets_1_1stanford__cars_1_1_stanford_cars_a0c46d490f24114dfe974bd6100861624} 
+ int torchvision\+\_\+down.\+datasets.\+stanford\+\_\+cars.\+Stanford\+Cars.\+\_\+\+\_\+len\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classtorchvision__down_1_1datasets_1_1stanford__cars_1_1_stanford_cars_a57759fd130cbfabf03729dc74cb051a8}\index{torchvision\_down.datasets.stanford\_cars.StanfordCars@{torchvision\_down.datasets.stanford\_cars.StanfordCars}!\_check\_exists@{\_check\_exists}}
+\index{\_check\_exists@{\_check\_exists}!torchvision\_down.datasets.stanford\_cars.StanfordCars@{torchvision\_down.datasets.stanford\_cars.StanfordCars}}
+\doxysubsubsection{\texorpdfstring{\_check\_exists()}{\_check\_exists()}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1datasets_1_1stanford__cars_1_1_stanford_cars_a57759fd130cbfabf03729dc74cb051a8} 
+ bool torchvision\+\_\+down.\+datasets.\+stanford\+\_\+cars.\+Stanford\+Cars.\+\_\+check\+\_\+exists (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classtorchvision__down_1_1datasets_1_1stanford__cars_1_1_stanford_cars_a689d09f3b4dd20eb0cbd440473d6b37b}\index{torchvision\_down.datasets.stanford\_cars.StanfordCars@{torchvision\_down.datasets.stanford\_cars.StanfordCars}!download@{download}}
+\index{download@{download}!torchvision\_down.datasets.stanford\_cars.StanfordCars@{torchvision\_down.datasets.stanford\_cars.StanfordCars}}
+\doxysubsubsection{\texorpdfstring{download()}{download()}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1datasets_1_1stanford__cars_1_1_stanford_cars_a689d09f3b4dd20eb0cbd440473d6b37b} 
+ None torchvision\+\_\+down.\+datasets.\+stanford\+\_\+cars.\+Stanford\+Cars.\+download (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classtorchvision__down_1_1datasets_1_1stanford__cars_1_1_stanford_cars_a8b6738f4f0f90399630f402c96bb41f6}\index{torchvision\_down.datasets.stanford\_cars.StanfordCars@{torchvision\_down.datasets.stanford\_cars.StanfordCars}!\_annotations\_mat\_path@{\_annotations\_mat\_path}}
+\index{\_annotations\_mat\_path@{\_annotations\_mat\_path}!torchvision\_down.datasets.stanford\_cars.StanfordCars@{torchvision\_down.datasets.stanford\_cars.StanfordCars}}
+\doxysubsubsection{\texorpdfstring{\_annotations\_mat\_path}{\_annotations\_mat\_path}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1datasets_1_1stanford__cars_1_1_stanford_cars_a8b6738f4f0f90399630f402c96bb41f6} 
+str torchvision\+\_\+down.\+datasets.\+stanford\+\_\+cars.\+Stanford\+Cars.\+\_\+annotations\+\_\+mat\+\_\+path = devkit / "{}cars\+\_\+train\+\_\+annos.\+mat"{}\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classtorchvision__down_1_1datasets_1_1stanford__cars_1_1_stanford_cars_ad40e4370889bd43d705c9127186e96c4}\index{torchvision\_down.datasets.stanford\_cars.StanfordCars@{torchvision\_down.datasets.stanford\_cars.StanfordCars}!\_base\_folder@{\_base\_folder}}
+\index{\_base\_folder@{\_base\_folder}!torchvision\_down.datasets.stanford\_cars.StanfordCars@{torchvision\_down.datasets.stanford\_cars.StanfordCars}}
+\doxysubsubsection{\texorpdfstring{\_base\_folder}{\_base\_folder}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1datasets_1_1stanford__cars_1_1_stanford_cars_ad40e4370889bd43d705c9127186e96c4} 
+str torchvision\+\_\+down.\+datasets.\+stanford\+\_\+cars.\+Stanford\+Cars.\+\_\+base\+\_\+folder = pathlib.\+Path(\mbox{\hyperlink{classtorchvision__down_1_1datasets_1_1vision_1_1_vision_dataset_af52cf192ec18d3421afe216bf9b881d6}{root}}) / "{}stanford\+\_\+cars"{}\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classtorchvision__down_1_1datasets_1_1stanford__cars_1_1_stanford_cars_a216cd96d099c5d355ce4231c90e875a1}\index{torchvision\_down.datasets.stanford\_cars.StanfordCars@{torchvision\_down.datasets.stanford\_cars.StanfordCars}!\_images\_base\_path@{\_images\_base\_path}}
+\index{\_images\_base\_path@{\_images\_base\_path}!torchvision\_down.datasets.stanford\_cars.StanfordCars@{torchvision\_down.datasets.stanford\_cars.StanfordCars}}
+\doxysubsubsection{\texorpdfstring{\_images\_base\_path}{\_images\_base\_path}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1datasets_1_1stanford__cars_1_1_stanford_cars_a216cd96d099c5d355ce4231c90e875a1} 
+str torchvision\+\_\+down.\+datasets.\+stanford\+\_\+cars.\+Stanford\+Cars.\+\_\+images\+\_\+base\+\_\+path = self.\+\_\+base\+\_\+folder / "{}cars\+\_\+train"{}\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classtorchvision__down_1_1datasets_1_1stanford__cars_1_1_stanford_cars_a933b50bc28143defc514b8721bfaa42d}\index{torchvision\_down.datasets.stanford\_cars.StanfordCars@{torchvision\_down.datasets.stanford\_cars.StanfordCars}!\_samples@{\_samples}}
+\index{\_samples@{\_samples}!torchvision\_down.datasets.stanford\_cars.StanfordCars@{torchvision\_down.datasets.stanford\_cars.StanfordCars}}
+\doxysubsubsection{\texorpdfstring{\_samples}{\_samples}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1datasets_1_1stanford__cars_1_1_stanford_cars_a933b50bc28143defc514b8721bfaa42d} 
+torchvision\+\_\+down.\+datasets.\+stanford\+\_\+cars.\+Stanford\+Cars.\+\_\+samples\hspace{0.3cm}{\ttfamily [protected]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \ [}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ (}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ str(self.\_images\_base\_path\ /\ annotation[\textcolor{stringliteral}{"{}fname"{}}]),}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ annotation[\textcolor{stringliteral}{"{}class"{}}]\ -\/\ 1,\ \ \textcolor{comment}{\#\ Original\ target\ mapping\ \ starts\ from\ 1,\ hence\ -\/1}}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ )}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{for}\ annotation\ \textcolor{keywordflow}{in}\ sio.loadmat(self.\_annotations\_mat\_path,\ squeeze\_me=\textcolor{keyword}{True})[\textcolor{stringliteral}{"{}annotations"{}}]}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ ]}
+
+\end{DoxyCode}
+\Hypertarget{classtorchvision__down_1_1datasets_1_1stanford__cars_1_1_stanford_cars_ac2f7b3dd8dac19c85b5e1974caaffa6b}\index{torchvision\_down.datasets.stanford\_cars.StanfordCars@{torchvision\_down.datasets.stanford\_cars.StanfordCars}!\_split@{\_split}}
+\index{\_split@{\_split}!torchvision\_down.datasets.stanford\_cars.StanfordCars@{torchvision\_down.datasets.stanford\_cars.StanfordCars}}
+\doxysubsubsection{\texorpdfstring{\_split}{\_split}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1datasets_1_1stanford__cars_1_1_stanford_cars_ac2f7b3dd8dac19c85b5e1974caaffa6b} 
+str torchvision\+\_\+down.\+datasets.\+stanford\+\_\+cars.\+Stanford\+Cars.\+\_\+split = verify\+\_\+str\+\_\+arg(split, "{}split"{}, ("{}train"{}, "{}test"{}))\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classtorchvision__down_1_1datasets_1_1stanford__cars_1_1_stanford_cars_ab6344f09677f46cf8312c09cf21eece8}\index{torchvision\_down.datasets.stanford\_cars.StanfordCars@{torchvision\_down.datasets.stanford\_cars.StanfordCars}!class\_to\_idx@{class\_to\_idx}}
+\index{class\_to\_idx@{class\_to\_idx}!torchvision\_down.datasets.stanford\_cars.StanfordCars@{torchvision\_down.datasets.stanford\_cars.StanfordCars}}
+\doxysubsubsection{\texorpdfstring{class\_to\_idx}{class\_to\_idx}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1datasets_1_1stanford__cars_1_1_stanford_cars_ab6344f09677f46cf8312c09cf21eece8} 
+dict torchvision\+\_\+down.\+datasets.\+stanford\+\_\+cars.\+Stanford\+Cars.\+class\+\_\+to\+\_\+idx = \{cls\+: i for i, cls in enumerate(self.\+classes)\}}
+
+\Hypertarget{classtorchvision__down_1_1datasets_1_1stanford__cars_1_1_stanford_cars_acf32e1da377a008e45e323d6fb2aa7be}\index{torchvision\_down.datasets.stanford\_cars.StanfordCars@{torchvision\_down.datasets.stanford\_cars.StanfordCars}!classes@{classes}}
+\index{classes@{classes}!torchvision\_down.datasets.stanford\_cars.StanfordCars@{torchvision\_down.datasets.stanford\_cars.StanfordCars}}
+\doxysubsubsection{\texorpdfstring{classes}{classes}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1datasets_1_1stanford__cars_1_1_stanford_cars_acf32e1da377a008e45e323d6fb2aa7be} 
+torchvision\+\_\+down.\+datasets.\+stanford\+\_\+cars.\+Stanford\+Cars.\+classes = sio.\+loadmat(str(devkit / "{}cars\+\_\+meta.\+mat"{}), squeeze\+\_\+me=True)\mbox{[}"{}class\+\_\+names"{}\mbox{]}.tolist()}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Cervi\+AI/torchvision\+\_\+down/datasets/\mbox{\hyperlink{stanford__cars_8py}{stanford\+\_\+cars.\+py}}\end{DoxyCompactItemize}

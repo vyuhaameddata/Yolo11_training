@@ -1,0 +1,144 @@
+\doxysection{torchvision\+\_\+down.\+models.\+quantization.\+googlenet.\+Quantizable\+Goog\+Le\+Net Class Reference}
+\hypertarget{classtorchvision__down_1_1models_1_1quantization_1_1googlenet_1_1_quantizable_goog_le_net}{}\label{classtorchvision__down_1_1models_1_1quantization_1_1googlenet_1_1_quantizable_goog_le_net}\index{torchvision\_down.models.quantization.googlenet.QuantizableGoogLeNet@{torchvision\_down.models.quantization.googlenet.QuantizableGoogLeNet}}
+Inheritance diagram for torchvision\+\_\+down.\+models.\+quantization.\+googlenet.\+Quantizable\+Goog\+Le\+Net\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{classtorchvision__down_1_1models_1_1quantization_1_1googlenet_1_1_quantizable_goog_le_net}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+None \mbox{\hyperlink{classtorchvision__down_1_1models_1_1quantization_1_1googlenet_1_1_quantizable_goog_le_net_a30c007f1dfe293184c8cdec35c3f943e}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, \texorpdfstring{$\ast$}{*}Any args, \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}Any kwargs)
+\item 
+\mbox{\hyperlink{namespacetorchvision__down_1_1models_1_1googlenet_ae4dd7d61dea375f22628fb6bc2e5f77d}{Goog\+Le\+Net\+Outputs}} \mbox{\hyperlink{classtorchvision__down_1_1models_1_1quantization_1_1googlenet_1_1_quantizable_goog_le_net_a77ce9891b686448e43316d2f05438ea4}{forward}} (self, Tensor x)
+\item 
+None \mbox{\hyperlink{classtorchvision__down_1_1models_1_1quantization_1_1googlenet_1_1_quantizable_goog_le_net_a7d188e9d7023b3fb1c1f8ca8b29266f9}{fuse\+\_\+model}} (self, Optional\mbox{[}bool\mbox{]} is\+\_\+qat=None)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{classtorchvision__down_1_1models_1_1googlenet_1_1_goog_le_net}{torchvision\+\_\+down.\+models.\+googlenet.\+Goog\+Le\+Net}}}
+\begin{DoxyCompactItemize}
+\item 
+None \mbox{\hyperlink{classtorchvision__down_1_1models_1_1googlenet_1_1_goog_le_net_a1f985e263daa59bf4ce208b48cf64ef5}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, int num\+\_\+classes=1000, bool \mbox{\hyperlink{classtorchvision__down_1_1models_1_1googlenet_1_1_goog_le_net_afa73e36992e48805c862ba2fef167ba3}{aux\+\_\+logits}}=True, bool \mbox{\hyperlink{classtorchvision__down_1_1models_1_1googlenet_1_1_goog_le_net_a6b58ee9871bdb37044dbad21da8046a0}{transform\+\_\+input}}=False, Optional\mbox{[}bool\mbox{]} init\+\_\+weights=None, Optional\mbox{[}List\mbox{[}Callable\mbox{[}..., nn.\+Module\mbox{]}\mbox{]}\mbox{]} blocks=None, float \mbox{\hyperlink{classtorchvision__down_1_1models_1_1googlenet_1_1_goog_le_net_ae43be7ed6436f80e955c18a27f8b83ef}{dropout}}=0.\+2, float dropout\+\_\+aux=0.\+7)
+\item 
+\mbox{\hyperlink{namespacetorchvision__down_1_1models_1_1googlenet_ae4dd7d61dea375f22628fb6bc2e5f77d}{Goog\+Le\+Net\+Outputs}} \mbox{\hyperlink{classtorchvision__down_1_1models_1_1googlenet_1_1_goog_le_net_a1385379c2c372f69f87a1b13f788fddc}{eager\+\_\+outputs}} (self, Tensor x, Tensor \mbox{\hyperlink{classtorchvision__down_1_1models_1_1googlenet_1_1_goog_le_net_ac1a6361b84ff2df5474071a6139a3425}{aux2}}, Optional\mbox{[}Tensor\mbox{]} \mbox{\hyperlink{classtorchvision__down_1_1models_1_1googlenet_1_1_goog_le_net_abe7b9cf29caba8165f4228d7ae9c2091}{aux1}})
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1models_1_1quantization_1_1googlenet_1_1_quantizable_goog_le_net_a5d01b8e10719b703100592302d5100f9}{quant}} = torch.\+ao.\+quantization.\+Quant\+Stub()
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1models_1_1quantization_1_1googlenet_1_1_quantizable_goog_le_net_af78ae3b3cdc437190e8876f4e388f3ab}{dequant}} = torch.\+ao.\+quantization.\+De\+Quant\+Stub()
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes inherited from \mbox{\hyperlink{classtorchvision__down_1_1models_1_1googlenet_1_1_goog_le_net}{torchvision\+\_\+down.\+models.\+googlenet.\+Goog\+Le\+Net}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1models_1_1googlenet_1_1_goog_le_net_afa73e36992e48805c862ba2fef167ba3}{aux\+\_\+logits}} = aux\+\_\+logits
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1models_1_1googlenet_1_1_goog_le_net_a6b58ee9871bdb37044dbad21da8046a0}{transform\+\_\+input}} = transform\+\_\+input
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1models_1_1googlenet_1_1_goog_le_net_aec1571139943f7f035a8dfdde22611ef}{conv1}} = conv\+\_\+block(3, 64, kernel\+\_\+size=7, stride=2, padding=3)
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1models_1_1googlenet_1_1_goog_le_net_a5761a4b7241c7d1ac8964e487fb3159a}{maxpool1}} = nn.\+Max\+Pool2d(3, stride=2, ceil\+\_\+mode=True)
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1models_1_1googlenet_1_1_goog_le_net_a228d0235590ae7301e1993f4babb55ea}{conv2}} = conv\+\_\+block(64, 64, kernel\+\_\+size=1)
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1models_1_1googlenet_1_1_goog_le_net_a5c9e5e9b9ebe04286e3dfc297dfa34ed}{conv3}} = conv\+\_\+block(64, 192, kernel\+\_\+size=3, padding=1)
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1models_1_1googlenet_1_1_goog_le_net_a6653c9bcad92588a36ae4cbbc5de1246}{maxpool2}} = nn.\+Max\+Pool2d(3, stride=2, ceil\+\_\+mode=True)
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1models_1_1googlenet_1_1_goog_le_net_af43fd1eda4b611a00a146a21b656263a}{inception3a}} = inception\+\_\+block(192, 64, 96, 128, 16, 32, 32)
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1models_1_1googlenet_1_1_goog_le_net_a1eababfce1be15d280d8c032ca96b9a9}{inception3b}} = inception\+\_\+block(256, 128, 128, 192, 32, 96, 64)
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1models_1_1googlenet_1_1_goog_le_net_ae408d549fc6a84fb4201508c3469a817}{maxpool3}} = nn.\+Max\+Pool2d(3, stride=2, ceil\+\_\+mode=True)
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1models_1_1googlenet_1_1_goog_le_net_acd9e133d450796abe3d6fbd7d5931d45}{inception4a}} = inception\+\_\+block(480, 192, 96, 208, 16, 48, 64)
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1models_1_1googlenet_1_1_goog_le_net_a90eed0a0719f1a85501b393a93d839f6}{inception4b}} = inception\+\_\+block(512, 160, 112, 224, 24, 64, 64)
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1models_1_1googlenet_1_1_goog_le_net_a5229f42b2f5427e70e0a10e89e6ed4fb}{inception4c}} = inception\+\_\+block(512, 128, 128, 256, 24, 64, 64)
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1models_1_1googlenet_1_1_goog_le_net_a3b30464934751a54364f25d309a0cb68}{inception4d}} = inception\+\_\+block(512, 112, 144, 288, 32, 64, 64)
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1models_1_1googlenet_1_1_goog_le_net_af9ca79c418ba469857402e38cba56ca0}{inception4e}} = inception\+\_\+block(528, 256, 160, 320, 32, 128, 128)
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1models_1_1googlenet_1_1_goog_le_net_a31ab1116ac9571dde027240cc7143bec}{maxpool4}} = nn.\+Max\+Pool2d(2, stride=2, ceil\+\_\+mode=True)
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1models_1_1googlenet_1_1_goog_le_net_a40912d559fbacb6a97aa034070115c10}{inception5a}} = inception\+\_\+block(832, 256, 160, 320, 32, 128, 128)
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1models_1_1googlenet_1_1_goog_le_net_a99014c3759933ec5b82cbdfc51e31586}{inception5b}} = inception\+\_\+block(832, 384, 192, 384, 48, 128, 128)
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1models_1_1googlenet_1_1_goog_le_net_abe7b9cf29caba8165f4228d7ae9c2091}{aux1}} = inception\+\_\+aux\+\_\+block(512, num\+\_\+classes, \mbox{\hyperlink{classtorchvision__down_1_1models_1_1googlenet_1_1_goog_le_net_ae43be7ed6436f80e955c18a27f8b83ef}{dropout}}=dropout\+\_\+aux)
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1models_1_1googlenet_1_1_goog_le_net_ac1a6361b84ff2df5474071a6139a3425}{aux2}} = inception\+\_\+aux\+\_\+block(528, num\+\_\+classes, \mbox{\hyperlink{classtorchvision__down_1_1models_1_1googlenet_1_1_goog_le_net_ae43be7ed6436f80e955c18a27f8b83ef}{dropout}}=dropout\+\_\+aux)
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1models_1_1googlenet_1_1_goog_le_net_a8c3f4cfe18653f3eb15201b514765dc8}{avgpool}} = nn.\+Adaptive\+Avg\+Pool2d((1, 1))
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1models_1_1googlenet_1_1_goog_le_net_ae43be7ed6436f80e955c18a27f8b83ef}{dropout}} = nn.\+Dropout(p=dropout)
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1models_1_1googlenet_1_1_goog_le_net_a6142b034b1768ede3bba5ac01435ab74}{fc}} = nn.\+Linear(1024, num\+\_\+classes)
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1models_1_1googlenet_1_1_goog_le_net_ac1f3b56140167e4fc850a0145a96b3a7}{training}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Additional Inherited Members}
+\doxysubsection*{Protected Member Functions inherited from \mbox{\hyperlink{classtorchvision__down_1_1models_1_1googlenet_1_1_goog_le_net}{torchvision\+\_\+down.\+models.\+googlenet.\+Goog\+Le\+Net}}}
+\begin{DoxyCompactItemize}
+\item 
+Tensor \mbox{\hyperlink{classtorchvision__down_1_1models_1_1googlenet_1_1_goog_le_net_a0c25f38f88e0b5b27b82b5b2dc40bfc5}{\+\_\+transform\+\_\+input}} (self, Tensor x)
+\item 
+Tuple\mbox{[}Tensor, Optional\mbox{[}Tensor\mbox{]}, Optional\mbox{[}Tensor\mbox{]}\mbox{]} \mbox{\hyperlink{classtorchvision__down_1_1models_1_1googlenet_1_1_goog_le_net_aa0bb89fcb08b7cd9a9d4ad72685f5c82}{\+\_\+forward}} (self, Tensor x)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classtorchvision__down_1_1models_1_1quantization_1_1googlenet_1_1_quantizable_goog_le_net_a30c007f1dfe293184c8cdec35c3f943e}\index{torchvision\_down.models.quantization.googlenet.QuantizableGoogLeNet@{torchvision\_down.models.quantization.googlenet.QuantizableGoogLeNet}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!torchvision\_down.models.quantization.googlenet.QuantizableGoogLeNet@{torchvision\_down.models.quantization.googlenet.QuantizableGoogLeNet}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1models_1_1quantization_1_1googlenet_1_1_quantizable_goog_le_net_a30c007f1dfe293184c8cdec35c3f943e} 
+ None torchvision\+\_\+down.\+models.\+quantization.\+googlenet.\+Quantizable\+Goog\+Le\+Net.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{\texorpdfstring{$\ast$}{*}Any}]{args}{, }\item[{\texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}Any}]{kwargs}{}\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classtorchvision__down_1_1models_1_1quantization_1_1googlenet_1_1_quantizable_goog_le_net_a77ce9891b686448e43316d2f05438ea4}\index{torchvision\_down.models.quantization.googlenet.QuantizableGoogLeNet@{torchvision\_down.models.quantization.googlenet.QuantizableGoogLeNet}!forward@{forward}}
+\index{forward@{forward}!torchvision\_down.models.quantization.googlenet.QuantizableGoogLeNet@{torchvision\_down.models.quantization.googlenet.QuantizableGoogLeNet}}
+\doxysubsubsection{\texorpdfstring{forward()}{forward()}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1models_1_1quantization_1_1googlenet_1_1_quantizable_goog_le_net_a77ce9891b686448e43316d2f05438ea4} 
+ \mbox{\hyperlink{namespacetorchvision__down_1_1models_1_1googlenet_ae4dd7d61dea375f22628fb6bc2e5f77d}{Goog\+Le\+Net\+Outputs}} torchvision\+\_\+down.\+models.\+quantization.\+googlenet.\+Quantizable\+Goog\+Le\+Net.\+forward (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{Tensor}]{x}{}\end{DoxyParamCaption})}
+
+
+
+Reimplemented from \mbox{\hyperlink{classtorchvision__down_1_1models_1_1googlenet_1_1_goog_le_net_a8d2fd504ff703f1044c8dab1f4c78379}{torchvision\+\_\+down.\+models.\+googlenet.\+Goog\+Le\+Net}}.
+
+\Hypertarget{classtorchvision__down_1_1models_1_1quantization_1_1googlenet_1_1_quantizable_goog_le_net_a7d188e9d7023b3fb1c1f8ca8b29266f9}\index{torchvision\_down.models.quantization.googlenet.QuantizableGoogLeNet@{torchvision\_down.models.quantization.googlenet.QuantizableGoogLeNet}!fuse\_model@{fuse\_model}}
+\index{fuse\_model@{fuse\_model}!torchvision\_down.models.quantization.googlenet.QuantizableGoogLeNet@{torchvision\_down.models.quantization.googlenet.QuantizableGoogLeNet}}
+\doxysubsubsection{\texorpdfstring{fuse\_model()}{fuse\_model()}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1models_1_1quantization_1_1googlenet_1_1_quantizable_goog_le_net_a7d188e9d7023b3fb1c1f8ca8b29266f9} 
+ None torchvision\+\_\+down.\+models.\+quantization.\+googlenet.\+Quantizable\+Goog\+Le\+Net.\+fuse\+\_\+model (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{Optional\mbox{[}bool\mbox{]} }]{is\+\_\+qat}{ = {\ttfamily None}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Fuse conv/bn/relu modules in googlenet model
+
+Fuse conv+bn+relu/ conv+relu/conv+bn modules to prepare for quantization.
+Model is modified in place.  Note that this operation does not change numerics
+and the model after modification is in floating point
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classtorchvision__down_1_1models_1_1quantization_1_1googlenet_1_1_quantizable_goog_le_net_af78ae3b3cdc437190e8876f4e388f3ab}\index{torchvision\_down.models.quantization.googlenet.QuantizableGoogLeNet@{torchvision\_down.models.quantization.googlenet.QuantizableGoogLeNet}!dequant@{dequant}}
+\index{dequant@{dequant}!torchvision\_down.models.quantization.googlenet.QuantizableGoogLeNet@{torchvision\_down.models.quantization.googlenet.QuantizableGoogLeNet}}
+\doxysubsubsection{\texorpdfstring{dequant}{dequant}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1models_1_1quantization_1_1googlenet_1_1_quantizable_goog_le_net_af78ae3b3cdc437190e8876f4e388f3ab} 
+torchvision\+\_\+down.\+models.\+quantization.\+googlenet.\+Quantizable\+Goog\+Le\+Net.\+dequant = torch.\+ao.\+quantization.\+De\+Quant\+Stub()}
+
+\Hypertarget{classtorchvision__down_1_1models_1_1quantization_1_1googlenet_1_1_quantizable_goog_le_net_a5d01b8e10719b703100592302d5100f9}\index{torchvision\_down.models.quantization.googlenet.QuantizableGoogLeNet@{torchvision\_down.models.quantization.googlenet.QuantizableGoogLeNet}!quant@{quant}}
+\index{quant@{quant}!torchvision\_down.models.quantization.googlenet.QuantizableGoogLeNet@{torchvision\_down.models.quantization.googlenet.QuantizableGoogLeNet}}
+\doxysubsubsection{\texorpdfstring{quant}{quant}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1models_1_1quantization_1_1googlenet_1_1_quantizable_goog_le_net_a5d01b8e10719b703100592302d5100f9} 
+torchvision\+\_\+down.\+models.\+quantization.\+googlenet.\+Quantizable\+Goog\+Le\+Net.\+quant = torch.\+ao.\+quantization.\+Quant\+Stub()}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Cervi\+AI/torchvision\+\_\+down/models/quantization/\mbox{\hyperlink{quantization_2googlenet_8py}{googlenet.\+py}}\end{DoxyCompactItemize}

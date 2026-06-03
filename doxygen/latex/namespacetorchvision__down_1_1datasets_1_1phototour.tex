@@ -1,0 +1,46 @@
+\doxysection{torchvision\+\_\+down.\+datasets.\+phototour Namespace Reference}
+\hypertarget{namespacetorchvision__down_1_1datasets_1_1phototour}{}\label{namespacetorchvision__down_1_1datasets_1_1phototour}\index{torchvision\_down.datasets.phototour@{torchvision\_down.datasets.phototour}}
+\doxysubsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classtorchvision__down_1_1datasets_1_1phototour_1_1_photo_tour}{Photo\+Tour}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+torch.\+Tensor \mbox{\hyperlink{namespacetorchvision__down_1_1datasets_1_1phototour_a5b4f8f3303602df9348495567f69d11e}{read\+\_\+image\+\_\+file}} (str data\+\_\+dir, str image\+\_\+ext, int n)
+\item 
+torch.\+Tensor \mbox{\hyperlink{namespacetorchvision__down_1_1datasets_1_1phototour_ac70a69cf2a3cf7d87c4555aef59d709e}{read\+\_\+info\+\_\+file}} (str data\+\_\+dir, str info\+\_\+file)
+\item 
+torch.\+Tensor \mbox{\hyperlink{namespacetorchvision__down_1_1datasets_1_1phototour_a921e950d002cf56fcd522ac8219486b4}{read\+\_\+matches\+\_\+files}} (str data\+\_\+dir, str matches\+\_\+file)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{namespacetorchvision__down_1_1datasets_1_1phototour_a5b4f8f3303602df9348495567f69d11e}\index{torchvision\_down.datasets.phototour@{torchvision\_down.datasets.phototour}!read\_image\_file@{read\_image\_file}}
+\index{read\_image\_file@{read\_image\_file}!torchvision\_down.datasets.phototour@{torchvision\_down.datasets.phototour}}
+\doxysubsubsection{\texorpdfstring{read\_image\_file()}{read\_image\_file()}}
+{\footnotesize\ttfamily \label{namespacetorchvision__down_1_1datasets_1_1phototour_a5b4f8f3303602df9348495567f69d11e} 
+ torch.\+Tensor torchvision\+\_\+down.\+datasets.\+phototour.\+read\+\_\+image\+\_\+file (\begin{DoxyParamCaption}\item[{str}]{data\+\_\+dir}{, }\item[{str}]{image\+\_\+ext}{, }\item[{int}]{n}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Return a Tensor containing the patches\end{DoxyVerb}
+ \Hypertarget{namespacetorchvision__down_1_1datasets_1_1phototour_ac70a69cf2a3cf7d87c4555aef59d709e}\index{torchvision\_down.datasets.phototour@{torchvision\_down.datasets.phototour}!read\_info\_file@{read\_info\_file}}
+\index{read\_info\_file@{read\_info\_file}!torchvision\_down.datasets.phototour@{torchvision\_down.datasets.phototour}}
+\doxysubsubsection{\texorpdfstring{read\_info\_file()}{read\_info\_file()}}
+{\footnotesize\ttfamily \label{namespacetorchvision__down_1_1datasets_1_1phototour_ac70a69cf2a3cf7d87c4555aef59d709e} 
+ torch.\+Tensor torchvision\+\_\+down.\+datasets.\+phototour.\+read\+\_\+info\+\_\+file (\begin{DoxyParamCaption}\item[{str}]{data\+\_\+dir}{, }\item[{str}]{info\+\_\+file}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Return a Tensor containing the list of labels
+Read the file and keep only the ID of the 3D point.
+\end{DoxyVerb}
+ \Hypertarget{namespacetorchvision__down_1_1datasets_1_1phototour_a921e950d002cf56fcd522ac8219486b4}\index{torchvision\_down.datasets.phototour@{torchvision\_down.datasets.phototour}!read\_matches\_files@{read\_matches\_files}}
+\index{read\_matches\_files@{read\_matches\_files}!torchvision\_down.datasets.phototour@{torchvision\_down.datasets.phototour}}
+\doxysubsubsection{\texorpdfstring{read\_matches\_files()}{read\_matches\_files()}}
+{\footnotesize\ttfamily \label{namespacetorchvision__down_1_1datasets_1_1phototour_a921e950d002cf56fcd522ac8219486b4} 
+ torch.\+Tensor torchvision\+\_\+down.\+datasets.\+phototour.\+read\+\_\+matches\+\_\+files (\begin{DoxyParamCaption}\item[{str}]{data\+\_\+dir}{, }\item[{str}]{matches\+\_\+file}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Return a Tensor containing the ground truth matches
+Read the file and keep only 3D point ID.
+Matches are represented with a 1, non matches with a 0.
+\end{DoxyVerb}
+ 

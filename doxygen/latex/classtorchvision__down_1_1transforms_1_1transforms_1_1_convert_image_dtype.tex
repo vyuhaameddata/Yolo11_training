@@ -1,0 +1,72 @@
+\doxysection{torchvision\+\_\+down.\+transforms.\+transforms.\+Convert\+Image\+Dtype Class Reference}
+\hypertarget{classtorchvision__down_1_1transforms_1_1transforms_1_1_convert_image_dtype}{}\label{classtorchvision__down_1_1transforms_1_1transforms_1_1_convert_image_dtype}\index{torchvision\_down.transforms.transforms.ConvertImageDtype@{torchvision\_down.transforms.transforms.ConvertImageDtype}}
+Inheritance diagram for torchvision\+\_\+down.\+transforms.\+transforms.\+Convert\+Image\+Dtype\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classtorchvision__down_1_1transforms_1_1transforms_1_1_convert_image_dtype}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+None \mbox{\hyperlink{classtorchvision__down_1_1transforms_1_1transforms_1_1_convert_image_dtype_ac57d2535146674f21399bf13669092a2}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, torch.\+dtype \mbox{\hyperlink{classtorchvision__down_1_1transforms_1_1transforms_1_1_convert_image_dtype_ae5d4c4077de62a8fe986385795ec5209}{dtype}})
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1transforms_1_1transforms_1_1_convert_image_dtype_a015dc983bb9badf75b614e58c4275faf}{forward}} (self, image)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1transforms_1_1transforms_1_1_convert_image_dtype_ae5d4c4077de62a8fe986385795ec5209}{dtype}} = dtype
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}Convert a tensor image to the given ``dtype`` and scale the values accordingly
+This function does not support PIL Image.
+
+Args:
+    dtype (torch.dtype): Desired data type of the output
+
+.. note::
+
+    When converting from a smaller to a larger integer ``dtype`` the maximum values are **not** mapped exactly.
+    If converted back and forth, this mismatch has no effect.
+
+Raises:
+    RuntimeError: When trying to cast :class:`torch.float32` to :class:`torch.int32` or :class:`torch.int64` as
+        well as for trying to cast :class:`torch.float64` to :class:`torch.int64`. These conversions might lead to
+        overflow errors since the floating point ``dtype`` cannot store consecutive integers over the whole range
+        of the integer ``dtype``.
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classtorchvision__down_1_1transforms_1_1transforms_1_1_convert_image_dtype_ac57d2535146674f21399bf13669092a2}\index{torchvision\_down.transforms.transforms.ConvertImageDtype@{torchvision\_down.transforms.transforms.ConvertImageDtype}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!torchvision\_down.transforms.transforms.ConvertImageDtype@{torchvision\_down.transforms.transforms.ConvertImageDtype}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1transforms_1_1transforms_1_1_convert_image_dtype_ac57d2535146674f21399bf13669092a2} 
+ None torchvision\+\_\+down.\+transforms.\+transforms.\+Convert\+Image\+Dtype.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{torch.\+dtype}]{dtype}{}\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classtorchvision__down_1_1transforms_1_1transforms_1_1_convert_image_dtype_a015dc983bb9badf75b614e58c4275faf}\index{torchvision\_down.transforms.transforms.ConvertImageDtype@{torchvision\_down.transforms.transforms.ConvertImageDtype}!forward@{forward}}
+\index{forward@{forward}!torchvision\_down.transforms.transforms.ConvertImageDtype@{torchvision\_down.transforms.transforms.ConvertImageDtype}}
+\doxysubsubsection{\texorpdfstring{forward()}{forward()}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1transforms_1_1transforms_1_1_convert_image_dtype_a015dc983bb9badf75b614e58c4275faf} 
+torchvision\+\_\+down.\+transforms.\+transforms.\+Convert\+Image\+Dtype.\+forward (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{image}{}\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classtorchvision__down_1_1transforms_1_1transforms_1_1_convert_image_dtype_ae5d4c4077de62a8fe986385795ec5209}\index{torchvision\_down.transforms.transforms.ConvertImageDtype@{torchvision\_down.transforms.transforms.ConvertImageDtype}!dtype@{dtype}}
+\index{dtype@{dtype}!torchvision\_down.transforms.transforms.ConvertImageDtype@{torchvision\_down.transforms.transforms.ConvertImageDtype}}
+\doxysubsubsection{\texorpdfstring{dtype}{dtype}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1transforms_1_1transforms_1_1_convert_image_dtype_ae5d4c4077de62a8fe986385795ec5209} 
+torchvision\+\_\+down.\+transforms.\+transforms.\+Convert\+Image\+Dtype.\+dtype = dtype}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Cervi\+AI/torchvision\+\_\+down/transforms/\mbox{\hyperlink{transforms_8py}{transforms.\+py}}\end{DoxyCompactItemize}

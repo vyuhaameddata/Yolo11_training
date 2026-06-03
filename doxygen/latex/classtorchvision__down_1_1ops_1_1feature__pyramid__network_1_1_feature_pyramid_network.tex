@@ -1,0 +1,136 @@
+\doxysection{torchvision\+\_\+down.\+ops.\+feature\+\_\+pyramid\+\_\+network.\+Feature\+Pyramid\+Network Class Reference}
+\hypertarget{classtorchvision__down_1_1ops_1_1feature__pyramid__network_1_1_feature_pyramid_network}{}\label{classtorchvision__down_1_1ops_1_1feature__pyramid__network_1_1_feature_pyramid_network}\index{torchvision\_down.ops.feature\_pyramid\_network.FeaturePyramidNetwork@{torchvision\_down.ops.feature\_pyramid\_network.FeaturePyramidNetwork}}
+Inheritance diagram for torchvision\+\_\+down.\+ops.\+feature\+\_\+pyramid\+\_\+network.\+Feature\+Pyramid\+Network\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classtorchvision__down_1_1ops_1_1feature__pyramid__network_1_1_feature_pyramid_network}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1ops_1_1feature__pyramid__network_1_1_feature_pyramid_network_a34ee12940179fa7b1833811375a85942}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, List\mbox{[}int\mbox{]} in\+\_\+channels\+\_\+list, int out\+\_\+channels, Optional\mbox{[}\mbox{\hyperlink{classtorchvision__down_1_1ops_1_1feature__pyramid__network_1_1_extra_f_p_n_block}{Extra\+FPNBlock}}\mbox{]} \mbox{\hyperlink{classtorchvision__down_1_1ops_1_1feature__pyramid__network_1_1_feature_pyramid_network_aa7ebb720d306a0bfa3769bd57dc80c10}{extra\+\_\+blocks}}=None)
+\item 
+Tensor \mbox{\hyperlink{classtorchvision__down_1_1ops_1_1feature__pyramid__network_1_1_feature_pyramid_network_a3de810293a6cf166bb5b05d98e0c25c0}{get\+\_\+result\+\_\+from\+\_\+inner\+\_\+blocks}} (self, Tensor x, int idx)
+\item 
+Tensor \mbox{\hyperlink{classtorchvision__down_1_1ops_1_1feature__pyramid__network_1_1_feature_pyramid_network_afb214a01e1bec00c921b1e48e6bc331a}{get\+\_\+result\+\_\+from\+\_\+layer\+\_\+blocks}} (self, Tensor x, int idx)
+\item 
+Dict\mbox{[}str, Tensor\mbox{]} \mbox{\hyperlink{classtorchvision__down_1_1ops_1_1feature__pyramid__network_1_1_feature_pyramid_network_ac9d34aa6d25ea8b1b8490cb47293db28}{forward}} (self, Dict\mbox{[}str, Tensor\mbox{]} x)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1ops_1_1feature__pyramid__network_1_1_feature_pyramid_network_aea1564ed00b1548f4814797140404f70}{inner\+\_\+blocks}} = nn.\+Module\+List()
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1ops_1_1feature__pyramid__network_1_1_feature_pyramid_network_a996e8c607f098c562eecff41cead9027}{layer\+\_\+blocks}} = nn.\+Module\+List()
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1ops_1_1feature__pyramid__network_1_1_feature_pyramid_network_aa7ebb720d306a0bfa3769bd57dc80c10}{extra\+\_\+blocks}} = extra\+\_\+blocks
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}Module that adds a FPN from on top of a set of feature maps. This is based on
+`"Feature Pyramid Network for Object Detection" <https://arxiv.org/abs/1612.03144>`_.
+
+The feature maps are currently supposed to be in increasing depth
+order.
+
+The input to the model is expected to be an OrderedDict[Tensor], containing
+the feature maps on top of which the FPN will be added.
+
+Args:
+    in_channels_list (list[int]): number of channels for each feature map that
+        is passed to the module
+    out_channels (int): number of channels of the FPN representation
+    extra_blocks (ExtraFPNBlock or None): if provided, extra operations will
+        be performed. It is expected to take the fpn features, the original
+        features and the names of the original features as input, and returns
+        a new list of feature maps and their corresponding names
+
+Examples::
+
+    >>> m = torchvision.ops.FeaturePyramidNetwork([10, 20, 30], 5)
+    >>> # get some dummy data
+    >>> x = OrderedDict()
+    >>> x['feat0'] = torch.rand(1, 10, 64, 64)
+    >>> x['feat2'] = torch.rand(1, 20, 16, 16)
+    >>> x['feat3'] = torch.rand(1, 30, 8, 8)
+    >>> # compute the FPN on top of x
+    >>> output = m(x)
+    >>> print([(k, v.shape) for k, v in output.items()])
+    >>> # returns
+    >>>   [('feat0', torch.Size([1, 5, 64, 64])),
+    >>>    ('feat2', torch.Size([1, 5, 16, 16])),
+    >>>    ('feat3', torch.Size([1, 5, 8, 8]))]
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classtorchvision__down_1_1ops_1_1feature__pyramid__network_1_1_feature_pyramid_network_a34ee12940179fa7b1833811375a85942}\index{torchvision\_down.ops.feature\_pyramid\_network.FeaturePyramidNetwork@{torchvision\_down.ops.feature\_pyramid\_network.FeaturePyramidNetwork}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!torchvision\_down.ops.feature\_pyramid\_network.FeaturePyramidNetwork@{torchvision\_down.ops.feature\_pyramid\_network.FeaturePyramidNetwork}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1ops_1_1feature__pyramid__network_1_1_feature_pyramid_network_a34ee12940179fa7b1833811375a85942} 
+torchvision\+\_\+down.\+ops.\+feature\+\_\+pyramid\+\_\+network.\+Feature\+Pyramid\+Network.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{List\mbox{[}int\mbox{]}}]{in\+\_\+channels\+\_\+list}{, }\item[{int}]{out\+\_\+channels}{, }\item[{Optional\mbox{[}\mbox{\hyperlink{classtorchvision__down_1_1ops_1_1feature__pyramid__network_1_1_extra_f_p_n_block}{Extra\+FPNBlock}}\mbox{]} }]{extra\+\_\+blocks}{ = {\ttfamily None}}\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classtorchvision__down_1_1ops_1_1feature__pyramid__network_1_1_feature_pyramid_network_ac9d34aa6d25ea8b1b8490cb47293db28}\index{torchvision\_down.ops.feature\_pyramid\_network.FeaturePyramidNetwork@{torchvision\_down.ops.feature\_pyramid\_network.FeaturePyramidNetwork}!forward@{forward}}
+\index{forward@{forward}!torchvision\_down.ops.feature\_pyramid\_network.FeaturePyramidNetwork@{torchvision\_down.ops.feature\_pyramid\_network.FeaturePyramidNetwork}}
+\doxysubsubsection{\texorpdfstring{forward()}{forward()}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1ops_1_1feature__pyramid__network_1_1_feature_pyramid_network_ac9d34aa6d25ea8b1b8490cb47293db28} 
+ Dict\mbox{[}str, Tensor\mbox{]} torchvision\+\_\+down.\+ops.\+feature\+\_\+pyramid\+\_\+network.\+Feature\+Pyramid\+Network.\+forward (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{Dict\mbox{[}str, Tensor\mbox{]}}]{x}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Computes the FPN for a set of feature maps.
+
+Args:
+    x (OrderedDict[Tensor]): feature maps for each feature level.
+
+Returns:
+    results (OrderedDict[Tensor]): feature maps after FPN layers.
+        They are ordered from highest resolution first.
+\end{DoxyVerb}
+ \Hypertarget{classtorchvision__down_1_1ops_1_1feature__pyramid__network_1_1_feature_pyramid_network_a3de810293a6cf166bb5b05d98e0c25c0}\index{torchvision\_down.ops.feature\_pyramid\_network.FeaturePyramidNetwork@{torchvision\_down.ops.feature\_pyramid\_network.FeaturePyramidNetwork}!get\_result\_from\_inner\_blocks@{get\_result\_from\_inner\_blocks}}
+\index{get\_result\_from\_inner\_blocks@{get\_result\_from\_inner\_blocks}!torchvision\_down.ops.feature\_pyramid\_network.FeaturePyramidNetwork@{torchvision\_down.ops.feature\_pyramid\_network.FeaturePyramidNetwork}}
+\doxysubsubsection{\texorpdfstring{get\_result\_from\_inner\_blocks()}{get\_result\_from\_inner\_blocks()}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1ops_1_1feature__pyramid__network_1_1_feature_pyramid_network_a3de810293a6cf166bb5b05d98e0c25c0} 
+ Tensor torchvision\+\_\+down.\+ops.\+feature\+\_\+pyramid\+\_\+network.\+Feature\+Pyramid\+Network.\+get\+\_\+result\+\_\+from\+\_\+inner\+\_\+blocks (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{Tensor}]{x}{, }\item[{int}]{idx}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}This is equivalent to self.inner_blocks[idx](x),
+but torchscript doesn't support this yet
+\end{DoxyVerb}
+ \Hypertarget{classtorchvision__down_1_1ops_1_1feature__pyramid__network_1_1_feature_pyramid_network_afb214a01e1bec00c921b1e48e6bc331a}\index{torchvision\_down.ops.feature\_pyramid\_network.FeaturePyramidNetwork@{torchvision\_down.ops.feature\_pyramid\_network.FeaturePyramidNetwork}!get\_result\_from\_layer\_blocks@{get\_result\_from\_layer\_blocks}}
+\index{get\_result\_from\_layer\_blocks@{get\_result\_from\_layer\_blocks}!torchvision\_down.ops.feature\_pyramid\_network.FeaturePyramidNetwork@{torchvision\_down.ops.feature\_pyramid\_network.FeaturePyramidNetwork}}
+\doxysubsubsection{\texorpdfstring{get\_result\_from\_layer\_blocks()}{get\_result\_from\_layer\_blocks()}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1ops_1_1feature__pyramid__network_1_1_feature_pyramid_network_afb214a01e1bec00c921b1e48e6bc331a} 
+ Tensor torchvision\+\_\+down.\+ops.\+feature\+\_\+pyramid\+\_\+network.\+Feature\+Pyramid\+Network.\+get\+\_\+result\+\_\+from\+\_\+layer\+\_\+blocks (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{Tensor}]{x}{, }\item[{int}]{idx}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}This is equivalent to self.layer_blocks[idx](x),
+but torchscript doesn't support this yet
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classtorchvision__down_1_1ops_1_1feature__pyramid__network_1_1_feature_pyramid_network_aa7ebb720d306a0bfa3769bd57dc80c10}\index{torchvision\_down.ops.feature\_pyramid\_network.FeaturePyramidNetwork@{torchvision\_down.ops.feature\_pyramid\_network.FeaturePyramidNetwork}!extra\_blocks@{extra\_blocks}}
+\index{extra\_blocks@{extra\_blocks}!torchvision\_down.ops.feature\_pyramid\_network.FeaturePyramidNetwork@{torchvision\_down.ops.feature\_pyramid\_network.FeaturePyramidNetwork}}
+\doxysubsubsection{\texorpdfstring{extra\_blocks}{extra\_blocks}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1ops_1_1feature__pyramid__network_1_1_feature_pyramid_network_aa7ebb720d306a0bfa3769bd57dc80c10} 
+torchvision\+\_\+down.\+ops.\+feature\+\_\+pyramid\+\_\+network.\+Feature\+Pyramid\+Network.\+extra\+\_\+blocks = extra\+\_\+blocks}
+
+\Hypertarget{classtorchvision__down_1_1ops_1_1feature__pyramid__network_1_1_feature_pyramid_network_aea1564ed00b1548f4814797140404f70}\index{torchvision\_down.ops.feature\_pyramid\_network.FeaturePyramidNetwork@{torchvision\_down.ops.feature\_pyramid\_network.FeaturePyramidNetwork}!inner\_blocks@{inner\_blocks}}
+\index{inner\_blocks@{inner\_blocks}!torchvision\_down.ops.feature\_pyramid\_network.FeaturePyramidNetwork@{torchvision\_down.ops.feature\_pyramid\_network.FeaturePyramidNetwork}}
+\doxysubsubsection{\texorpdfstring{inner\_blocks}{inner\_blocks}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1ops_1_1feature__pyramid__network_1_1_feature_pyramid_network_aea1564ed00b1548f4814797140404f70} 
+torchvision\+\_\+down.\+ops.\+feature\+\_\+pyramid\+\_\+network.\+Feature\+Pyramid\+Network.\+inner\+\_\+blocks = nn.\+Module\+List()}
+
+\Hypertarget{classtorchvision__down_1_1ops_1_1feature__pyramid__network_1_1_feature_pyramid_network_a996e8c607f098c562eecff41cead9027}\index{torchvision\_down.ops.feature\_pyramid\_network.FeaturePyramidNetwork@{torchvision\_down.ops.feature\_pyramid\_network.FeaturePyramidNetwork}!layer\_blocks@{layer\_blocks}}
+\index{layer\_blocks@{layer\_blocks}!torchvision\_down.ops.feature\_pyramid\_network.FeaturePyramidNetwork@{torchvision\_down.ops.feature\_pyramid\_network.FeaturePyramidNetwork}}
+\doxysubsubsection{\texorpdfstring{layer\_blocks}{layer\_blocks}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1ops_1_1feature__pyramid__network_1_1_feature_pyramid_network_a996e8c607f098c562eecff41cead9027} 
+torchvision\+\_\+down.\+ops.\+feature\+\_\+pyramid\+\_\+network.\+Feature\+Pyramid\+Network.\+layer\+\_\+blocks = nn.\+Module\+List()}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Cervi\+AI/torchvision\+\_\+down/ops/\mbox{\hyperlink{feature__pyramid__network_8py}{feature\+\_\+pyramid\+\_\+network.\+py}}\end{DoxyCompactItemize}

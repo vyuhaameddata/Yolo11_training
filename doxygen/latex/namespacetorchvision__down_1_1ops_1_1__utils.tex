@@ -1,0 +1,42 @@
+\doxysection{torchvision\+\_\+down.\+ops.\+\_\+utils Namespace Reference}
+\hypertarget{namespacetorchvision__down_1_1ops_1_1__utils}{}\label{namespacetorchvision__down_1_1ops_1_1__utils}\index{torchvision\_down.ops.\_utils@{torchvision\_down.ops.\_utils}}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+Tensor \mbox{\hyperlink{namespacetorchvision__down_1_1ops_1_1__utils_a251de86c4183136aade346b99e49355e}{\+\_\+cat}} (List\mbox{[}Tensor\mbox{]} tensors, int dim=0)
+\item 
+Tensor \mbox{\hyperlink{namespacetorchvision__down_1_1ops_1_1__utils_a9ab84d697a031f4453c71b5ee859c5e2}{convert\+\_\+boxes\+\_\+to\+\_\+roi\+\_\+format}} (List\mbox{[}Tensor\mbox{]} boxes)
+\item 
+\mbox{\hyperlink{namespacetorchvision__down_1_1ops_1_1__utils_a2048d0077616917b6deac48933513fbd}{check\+\_\+roi\+\_\+boxes\+\_\+shape}} (Union\mbox{[}Tensor, List\mbox{[}Tensor\mbox{]}\mbox{]} boxes)
+\item 
+Tuple\mbox{[}List\mbox{[}Tensor\mbox{]}, List\mbox{[}Tensor\mbox{]}\mbox{]} \mbox{\hyperlink{namespacetorchvision__down_1_1ops_1_1__utils_a8aecf8fd8bb62d74f9de7d4b7d390d25}{split\+\_\+normalization\+\_\+params}} (nn.\+Module model, Optional\mbox{[}List\mbox{[}type\mbox{]}\mbox{]} norm\+\_\+classes=None)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{namespacetorchvision__down_1_1ops_1_1__utils_a251de86c4183136aade346b99e49355e}\index{torchvision\_down.ops.\_utils@{torchvision\_down.ops.\_utils}!\_cat@{\_cat}}
+\index{\_cat@{\_cat}!torchvision\_down.ops.\_utils@{torchvision\_down.ops.\_utils}}
+\doxysubsubsection{\texorpdfstring{\_cat()}{\_cat()}}
+{\footnotesize\ttfamily \label{namespacetorchvision__down_1_1ops_1_1__utils_a251de86c4183136aade346b99e49355e} 
+ Tensor torchvision\+\_\+down.\+ops.\+\_\+utils.\+\_\+cat (\begin{DoxyParamCaption}\item[{List\mbox{[}Tensor\mbox{]}}]{tensors}{, }\item[{int }]{dim}{ = {\ttfamily 0}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\begin{DoxyVerb}Efficient version of torch.cat that avoids a copy if there is only a single element in a list
+\end{DoxyVerb}
+ \Hypertarget{namespacetorchvision__down_1_1ops_1_1__utils_a2048d0077616917b6deac48933513fbd}\index{torchvision\_down.ops.\_utils@{torchvision\_down.ops.\_utils}!check\_roi\_boxes\_shape@{check\_roi\_boxes\_shape}}
+\index{check\_roi\_boxes\_shape@{check\_roi\_boxes\_shape}!torchvision\_down.ops.\_utils@{torchvision\_down.ops.\_utils}}
+\doxysubsubsection{\texorpdfstring{check\_roi\_boxes\_shape()}{check\_roi\_boxes\_shape()}}
+{\footnotesize\ttfamily \label{namespacetorchvision__down_1_1ops_1_1__utils_a2048d0077616917b6deac48933513fbd} 
+torchvision\+\_\+down.\+ops.\+\_\+utils.\+check\+\_\+roi\+\_\+boxes\+\_\+shape (\begin{DoxyParamCaption}\item[{Union\mbox{[}Tensor, List\mbox{[}Tensor\mbox{]}\mbox{]}}]{boxes}{}\end{DoxyParamCaption})}
+
+\Hypertarget{namespacetorchvision__down_1_1ops_1_1__utils_a9ab84d697a031f4453c71b5ee859c5e2}\index{torchvision\_down.ops.\_utils@{torchvision\_down.ops.\_utils}!convert\_boxes\_to\_roi\_format@{convert\_boxes\_to\_roi\_format}}
+\index{convert\_boxes\_to\_roi\_format@{convert\_boxes\_to\_roi\_format}!torchvision\_down.ops.\_utils@{torchvision\_down.ops.\_utils}}
+\doxysubsubsection{\texorpdfstring{convert\_boxes\_to\_roi\_format()}{convert\_boxes\_to\_roi\_format()}}
+{\footnotesize\ttfamily \label{namespacetorchvision__down_1_1ops_1_1__utils_a9ab84d697a031f4453c71b5ee859c5e2} 
+ Tensor torchvision\+\_\+down.\+ops.\+\_\+utils.\+convert\+\_\+boxes\+\_\+to\+\_\+roi\+\_\+format (\begin{DoxyParamCaption}\item[{List\mbox{[}Tensor\mbox{]}}]{boxes}{}\end{DoxyParamCaption})}
+
+\Hypertarget{namespacetorchvision__down_1_1ops_1_1__utils_a8aecf8fd8bb62d74f9de7d4b7d390d25}\index{torchvision\_down.ops.\_utils@{torchvision\_down.ops.\_utils}!split\_normalization\_params@{split\_normalization\_params}}
+\index{split\_normalization\_params@{split\_normalization\_params}!torchvision\_down.ops.\_utils@{torchvision\_down.ops.\_utils}}
+\doxysubsubsection{\texorpdfstring{split\_normalization\_params()}{split\_normalization\_params()}}
+{\footnotesize\ttfamily \label{namespacetorchvision__down_1_1ops_1_1__utils_a8aecf8fd8bb62d74f9de7d4b7d390d25} 
+ Tuple\mbox{[}List\mbox{[}Tensor\mbox{]}, List\mbox{[}Tensor\mbox{]}\mbox{]} torchvision\+\_\+down.\+ops.\+\_\+utils.\+split\+\_\+normalization\+\_\+params (\begin{DoxyParamCaption}\item[{nn.\+Module}]{model}{, }\item[{Optional\mbox{[}List\mbox{[}type\mbox{]}\mbox{]} }]{norm\+\_\+classes}{ = {\ttfamily None}}\end{DoxyParamCaption})}
+

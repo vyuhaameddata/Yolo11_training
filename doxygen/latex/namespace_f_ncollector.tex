@@ -1,0 +1,136 @@
+\doxysection{FNcollector Namespace Reference}
+\hypertarget{namespace_f_ncollector}{}\label{namespace_f_ncollector}\index{FNcollector@{FNcollector}}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{namespace_f_ncollector_a947054be310caa2ba61341e9d9762d5b}{parse\+\_\+annotations}} (ndpa\+\_\+file)
+\item 
+\mbox{\hyperlink{namespace_f_ncollector_a71680ea77596a03fe719f386c386ad0f}{get\+\_\+referance}} (wsi\+\_\+path)
+\item 
+\mbox{\hyperlink{namespace_f_ncollector_a01e3741cfd18c69a500dfcba6120e401}{extract\+\_\+tile}} (wsi\+\_\+path, bbox, \mbox{\hyperlink{namespace_f_ncollector_ad8f793c348e8d9a186145582cd2c28dc}{tile\+\_\+size}}, X\+\_\+\+Ref, Y\+\_\+\+Ref, nm\+\_\+per\+\_\+pixel)
+\item 
+\mbox{\hyperlink{namespace_f_ncollector_a3b15f6f69e842801de208ac10aeef428}{process\+\_\+wsi}} (row)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{namespace_f_ncollector_a8071e472d2193cb2e1785744e23d277c}{OPENSLIDE\+\_\+\+PATH}} = os.\+path.\+join(r"{}\+D\+:\textbackslash{}\+Shreyan\textbackslash{}\+Development\textbackslash{}\+Cervi\+AI"{}, \textquotesingle{}openslide-\/win64-\/20230414\textquotesingle{}, \textquotesingle{}bin\textquotesingle{})
+\item 
+str \mbox{\hyperlink{namespace_f_ncollector_a5ff7c2a45add38f1a4bf38df4b7b8596}{inputdir}} = r"{}\+E\+:\textbackslash{}archive\+\_\+\+Shreyan\textbackslash{}\+Training data jan 2025"{}
+\item 
+str \mbox{\hyperlink{namespace_f_ncollector_a91193ea42b76f1362d2141401d3015ac}{outputdir}} = r"{}\+E\+:\textbackslash{}archive\+\_\+\+Shreyan\textbackslash{}result"{}
+\item 
+str \mbox{\hyperlink{namespace_f_ncollector_acdb3406a46bfae148f22f9e4c6735203}{excel}} = "{}FN annotations.\+xlsx"{}
+\item 
+int \mbox{\hyperlink{namespace_f_ncollector_ad8f793c348e8d9a186145582cd2c28dc}{tile\+\_\+size}} = 1024
+\item 
+\mbox{\hyperlink{namespace_f_ncollector_ad1416ca63d2e7da0cb7217dd3334da68}{exist\+\_\+ok}}
+\item 
+\mbox{\hyperlink{namespace_f_ncollector_ae6860f93ff25d8ad07c0820f10c545d0}{excel\+\_\+path}} = os.\+path.\+join(\mbox{\hyperlink{namespace_f_ncollector_a5ff7c2a45add38f1a4bf38df4b7b8596}{inputdir}}, \mbox{\hyperlink{namespace_f_ncollector_acdb3406a46bfae148f22f9e4c6735203}{excel}})
+\item 
+\mbox{\hyperlink{namespace_f_ncollector_ae765f121b6bf6eb3d09149fe5199810c}{df}} = pd.\+read\+\_\+excel(\mbox{\hyperlink{namespace_f_ncollector_ae6860f93ff25d8ad07c0820f10c545d0}{excel\+\_\+path}}, engine=\textquotesingle{}openpyxl\textquotesingle{})
+\item 
+\mbox{\hyperlink{namespace_f_ncollector_ad876f6c638427f6492e7f34ab5c7fa9e}{inplace}}
+\item 
+list \mbox{\hyperlink{namespace_f_ncollector_a418e035e45e5392e189192c456e86937}{threads}} = \mbox{[}$\,$\mbox{]}
+\item 
+\mbox{\hyperlink{namespace_f_ncollector_ac8655b9a4e936558432f8966888c1811}{thread}} = threading.\+Thread(target=\mbox{\hyperlink{namespace_f_ncollector_a3b15f6f69e842801de208ac10aeef428}{process\+\_\+wsi}}, args=(row,))
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{namespace_f_ncollector_a01e3741cfd18c69a500dfcba6120e401}\index{FNcollector@{FNcollector}!extract\_tile@{extract\_tile}}
+\index{extract\_tile@{extract\_tile}!FNcollector@{FNcollector}}
+\doxysubsubsection{\texorpdfstring{extract\_tile()}{extract\_tile()}}
+{\footnotesize\ttfamily \label{namespace_f_ncollector_a01e3741cfd18c69a500dfcba6120e401} 
+FNcollector.\+extract\+\_\+tile (\begin{DoxyParamCaption}\item[{}]{wsi\+\_\+path}{, }\item[{}]{bbox}{, }\item[{}]{tile\+\_\+size}{, }\item[{}]{X\+\_\+\+Ref}{, }\item[{}]{Y\+\_\+\+Ref}{, }\item[{}]{nm\+\_\+per\+\_\+pixel}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Extract the correct tile and calculate the label in YOLO format.\end{DoxyVerb}
+ \Hypertarget{namespace_f_ncollector_a71680ea77596a03fe719f386c386ad0f}\index{FNcollector@{FNcollector}!get\_referance@{get\_referance}}
+\index{get\_referance@{get\_referance}!FNcollector@{FNcollector}}
+\doxysubsubsection{\texorpdfstring{get\_referance()}{get\_referance()}}
+{\footnotesize\ttfamily \label{namespace_f_ncollector_a71680ea77596a03fe719f386c386ad0f} 
+FNcollector.\+get\+\_\+referance (\begin{DoxyParamCaption}\item[{}]{wsi\+\_\+path}{}\end{DoxyParamCaption})}
+
+\Hypertarget{namespace_f_ncollector_a947054be310caa2ba61341e9d9762d5b}\index{FNcollector@{FNcollector}!parse\_annotations@{parse\_annotations}}
+\index{parse\_annotations@{parse\_annotations}!FNcollector@{FNcollector}}
+\doxysubsubsection{\texorpdfstring{parse\_annotations()}{parse\_annotations()}}
+{\footnotesize\ttfamily \label{namespace_f_ncollector_a947054be310caa2ba61341e9d9762d5b} 
+FNcollector.\+parse\+\_\+annotations (\begin{DoxyParamCaption}\item[{}]{ndpa\+\_\+file}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Parse the .ndpi.ndpa XML file to extract bounding boxes.\end{DoxyVerb}
+ \Hypertarget{namespace_f_ncollector_a3b15f6f69e842801de208ac10aeef428}\index{FNcollector@{FNcollector}!process\_wsi@{process\_wsi}}
+\index{process\_wsi@{process\_wsi}!FNcollector@{FNcollector}}
+\doxysubsubsection{\texorpdfstring{process\_wsi()}{process\_wsi()}}
+{\footnotesize\ttfamily \label{namespace_f_ncollector_a3b15f6f69e842801de208ac10aeef428} 
+FNcollector.\+process\+\_\+wsi (\begin{DoxyParamCaption}\item[{}]{row}{}\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Variable Documentation}
+\Hypertarget{namespace_f_ncollector_ae765f121b6bf6eb3d09149fe5199810c}\index{FNcollector@{FNcollector}!df@{df}}
+\index{df@{df}!FNcollector@{FNcollector}}
+\doxysubsubsection{\texorpdfstring{df}{df}}
+{\footnotesize\ttfamily \label{namespace_f_ncollector_ae765f121b6bf6eb3d09149fe5199810c} 
+FNcollector.\+df = pd.\+read\+\_\+excel(\mbox{\hyperlink{namespace_f_ncollector_ae6860f93ff25d8ad07c0820f10c545d0}{excel\+\_\+path}}, engine=\textquotesingle{}openpyxl\textquotesingle{})}
+
+\Hypertarget{namespace_f_ncollector_acdb3406a46bfae148f22f9e4c6735203}\index{FNcollector@{FNcollector}!excel@{excel}}
+\index{excel@{excel}!FNcollector@{FNcollector}}
+\doxysubsubsection{\texorpdfstring{excel}{excel}}
+{\footnotesize\ttfamily \label{namespace_f_ncollector_acdb3406a46bfae148f22f9e4c6735203} 
+str FNcollector.\+excel = "{}FN annotations.\+xlsx"{}}
+
+\Hypertarget{namespace_f_ncollector_ae6860f93ff25d8ad07c0820f10c545d0}\index{FNcollector@{FNcollector}!excel\_path@{excel\_path}}
+\index{excel\_path@{excel\_path}!FNcollector@{FNcollector}}
+\doxysubsubsection{\texorpdfstring{excel\_path}{excel\_path}}
+{\footnotesize\ttfamily \label{namespace_f_ncollector_ae6860f93ff25d8ad07c0820f10c545d0} 
+FNcollector.\+excel\+\_\+path = os.\+path.\+join(\mbox{\hyperlink{namespace_f_ncollector_a5ff7c2a45add38f1a4bf38df4b7b8596}{inputdir}}, \mbox{\hyperlink{namespace_f_ncollector_acdb3406a46bfae148f22f9e4c6735203}{excel}})}
+
+\Hypertarget{namespace_f_ncollector_ad1416ca63d2e7da0cb7217dd3334da68}\index{FNcollector@{FNcollector}!exist\_ok@{exist\_ok}}
+\index{exist\_ok@{exist\_ok}!FNcollector@{FNcollector}}
+\doxysubsubsection{\texorpdfstring{exist\_ok}{exist\_ok}}
+{\footnotesize\ttfamily \label{namespace_f_ncollector_ad1416ca63d2e7da0cb7217dd3334da68} 
+FNcollector.\+exist\+\_\+ok}
+
+\Hypertarget{namespace_f_ncollector_ad876f6c638427f6492e7f34ab5c7fa9e}\index{FNcollector@{FNcollector}!inplace@{inplace}}
+\index{inplace@{inplace}!FNcollector@{FNcollector}}
+\doxysubsubsection{\texorpdfstring{inplace}{inplace}}
+{\footnotesize\ttfamily \label{namespace_f_ncollector_ad876f6c638427f6492e7f34ab5c7fa9e} 
+FNcollector.\+inplace}
+
+\Hypertarget{namespace_f_ncollector_a5ff7c2a45add38f1a4bf38df4b7b8596}\index{FNcollector@{FNcollector}!inputdir@{inputdir}}
+\index{inputdir@{inputdir}!FNcollector@{FNcollector}}
+\doxysubsubsection{\texorpdfstring{inputdir}{inputdir}}
+{\footnotesize\ttfamily \label{namespace_f_ncollector_a5ff7c2a45add38f1a4bf38df4b7b8596} 
+str FNcollector.\+inputdir = r"{}\+E\+:\textbackslash{}archive\+\_\+\+Shreyan\textbackslash{}\+Training data jan 2025"{}}
+
+\Hypertarget{namespace_f_ncollector_a8071e472d2193cb2e1785744e23d277c}\index{FNcollector@{FNcollector}!OPENSLIDE\_PATH@{OPENSLIDE\_PATH}}
+\index{OPENSLIDE\_PATH@{OPENSLIDE\_PATH}!FNcollector@{FNcollector}}
+\doxysubsubsection{\texorpdfstring{OPENSLIDE\_PATH}{OPENSLIDE\_PATH}}
+{\footnotesize\ttfamily \label{namespace_f_ncollector_a8071e472d2193cb2e1785744e23d277c} 
+FNcollector.\+OPENSLIDE\+\_\+\+PATH = os.\+path.\+join(r"{}\+D\+:\textbackslash{}\+Shreyan\textbackslash{}\+Development\textbackslash{}\+Cervi\+AI"{}, \textquotesingle{}openslide-\/win64-\/20230414\textquotesingle{}, \textquotesingle{}bin\textquotesingle{})}
+
+\Hypertarget{namespace_f_ncollector_a91193ea42b76f1362d2141401d3015ac}\index{FNcollector@{FNcollector}!outputdir@{outputdir}}
+\index{outputdir@{outputdir}!FNcollector@{FNcollector}}
+\doxysubsubsection{\texorpdfstring{outputdir}{outputdir}}
+{\footnotesize\ttfamily \label{namespace_f_ncollector_a91193ea42b76f1362d2141401d3015ac} 
+FNcollector.\+outputdir = r"{}\+E\+:\textbackslash{}archive\+\_\+\+Shreyan\textbackslash{}result"{}}
+
+\Hypertarget{namespace_f_ncollector_ac8655b9a4e936558432f8966888c1811}\index{FNcollector@{FNcollector}!thread@{thread}}
+\index{thread@{thread}!FNcollector@{FNcollector}}
+\doxysubsubsection{\texorpdfstring{thread}{thread}}
+{\footnotesize\ttfamily \label{namespace_f_ncollector_ac8655b9a4e936558432f8966888c1811} 
+FNcollector.\+thread = threading.\+Thread(target=\mbox{\hyperlink{namespace_f_ncollector_a3b15f6f69e842801de208ac10aeef428}{process\+\_\+wsi}}, args=(row,))}
+
+\Hypertarget{namespace_f_ncollector_a418e035e45e5392e189192c456e86937}\index{FNcollector@{FNcollector}!threads@{threads}}
+\index{threads@{threads}!FNcollector@{FNcollector}}
+\doxysubsubsection{\texorpdfstring{threads}{threads}}
+{\footnotesize\ttfamily \label{namespace_f_ncollector_a418e035e45e5392e189192c456e86937} 
+list FNcollector.\+threads = \mbox{[}$\,$\mbox{]}}
+
+\Hypertarget{namespace_f_ncollector_ad8f793c348e8d9a186145582cd2c28dc}\index{FNcollector@{FNcollector}!tile\_size@{tile\_size}}
+\index{tile\_size@{tile\_size}!FNcollector@{FNcollector}}
+\doxysubsubsection{\texorpdfstring{tile\_size}{tile\_size}}
+{\footnotesize\ttfamily \label{namespace_f_ncollector_ad8f793c348e8d9a186145582cd2c28dc} 
+int FNcollector.\+tile\+\_\+size = 1024}
+

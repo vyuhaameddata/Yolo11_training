@@ -1,0 +1,229 @@
+\doxysection{torchvision\+\_\+down.\+io.\+image Namespace Reference}
+\hypertarget{namespacetorchvision__down_1_1io_1_1image}{}\label{namespacetorchvision__down_1_1io_1_1image}\index{torchvision\_down.io.image@{torchvision\_down.io.image}}
+\doxysubsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classtorchvision__down_1_1io_1_1image_1_1_image_read_mode}{Image\+Read\+Mode}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+torch.\+Tensor \mbox{\hyperlink{namespacetorchvision__down_1_1io_1_1image_a9d77f483f58b2a44e308a2c10310ec5f}{read\+\_\+file}} (str path)
+\item 
+None \mbox{\hyperlink{namespacetorchvision__down_1_1io_1_1image_a01ad73867b4f5049140a2f509087cf2e}{write\+\_\+file}} (str filename, torch.\+Tensor data)
+\item 
+torch.\+Tensor \mbox{\hyperlink{namespacetorchvision__down_1_1io_1_1image_aa476d585784a2ffdbb37e42eaf221363}{decode\+\_\+png}} (torch.\+Tensor input, \mbox{\hyperlink{classtorchvision__down_1_1io_1_1image_1_1_image_read_mode}{Image\+Read\+Mode}} mode=\mbox{\hyperlink{classtorchvision__down_1_1io_1_1image_1_1_image_read_mode_aa8f3f02ddc9bfed435ca393844773bc0}{Image\+Read\+Mode.\+UNCHANGED}})
+\item 
+torch.\+Tensor \mbox{\hyperlink{namespacetorchvision__down_1_1io_1_1image_a8ec5e5636619608a4a56d60a4f08fdeb}{encode\+\_\+png}} (torch.\+Tensor input, int compression\+\_\+level=6)
+\item 
+\mbox{\hyperlink{namespacetorchvision__down_1_1io_1_1image_ad1026eea4f00a10e3d79fc95f3e6134e}{write\+\_\+png}} (torch.\+Tensor input, str filename, int compression\+\_\+level=6)
+\item 
+torch.\+Tensor \mbox{\hyperlink{namespacetorchvision__down_1_1io_1_1image_a7b74fdc5dcc486cecb5ea5d7b8452b9e}{decode\+\_\+jpeg}} (torch.\+Tensor input, \mbox{\hyperlink{classtorchvision__down_1_1io_1_1image_1_1_image_read_mode}{Image\+Read\+Mode}} mode=\mbox{\hyperlink{classtorchvision__down_1_1io_1_1image_1_1_image_read_mode_aa8f3f02ddc9bfed435ca393844773bc0}{Image\+Read\+Mode.\+UNCHANGED}}, str device="{}cpu"{})
+\item 
+torch.\+Tensor \mbox{\hyperlink{namespacetorchvision__down_1_1io_1_1image_a19df8489accb54ff70b2ee9faa092091}{encode\+\_\+jpeg}} (torch.\+Tensor input, int quality=75)
+\item 
+\mbox{\hyperlink{namespacetorchvision__down_1_1io_1_1image_ae437aa92d993dbd7dba2a0f676c29856}{write\+\_\+jpeg}} (torch.\+Tensor input, str filename, int quality=75)
+\item 
+torch.\+Tensor \mbox{\hyperlink{namespacetorchvision__down_1_1io_1_1image_a37e78b7ce59eb8d4d22a01d038706cec}{decode\+\_\+image}} (torch.\+Tensor input, \mbox{\hyperlink{classtorchvision__down_1_1io_1_1image_1_1_image_read_mode}{Image\+Read\+Mode}} mode=\mbox{\hyperlink{classtorchvision__down_1_1io_1_1image_1_1_image_read_mode_aa8f3f02ddc9bfed435ca393844773bc0}{Image\+Read\+Mode.\+UNCHANGED}})
+\item 
+torch.\+Tensor \mbox{\hyperlink{namespacetorchvision__down_1_1io_1_1image_a31595330c79531c2cd956ca28b569584}{read\+\_\+image}} (str path, \mbox{\hyperlink{classtorchvision__down_1_1io_1_1image_1_1_image_read_mode}{Image\+Read\+Mode}} mode=\mbox{\hyperlink{classtorchvision__down_1_1io_1_1image_1_1_image_read_mode_aa8f3f02ddc9bfed435ca393844773bc0}{Image\+Read\+Mode.\+UNCHANGED}})
+\item 
+torch.\+Tensor \mbox{\hyperlink{namespacetorchvision__down_1_1io_1_1image_a7c18d4bb15be23a78091d07458b3336a}{\+\_\+read\+\_\+png\+\_\+16}} (str path, \mbox{\hyperlink{classtorchvision__down_1_1io_1_1image_1_1_image_read_mode}{Image\+Read\+Mode}} mode=\mbox{\hyperlink{classtorchvision__down_1_1io_1_1image_1_1_image_read_mode_aa8f3f02ddc9bfed435ca393844773bc0}{Image\+Read\+Mode.\+UNCHANGED}})
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{namespacetorchvision__down_1_1io_1_1image_a7c18d4bb15be23a78091d07458b3336a}\index{torchvision\_down.io.image@{torchvision\_down.io.image}!\_read\_png\_16@{\_read\_png\_16}}
+\index{\_read\_png\_16@{\_read\_png\_16}!torchvision\_down.io.image@{torchvision\_down.io.image}}
+\doxysubsubsection{\texorpdfstring{\_read\_png\_16()}{\_read\_png\_16()}}
+{\footnotesize\ttfamily \label{namespacetorchvision__down_1_1io_1_1image_a7c18d4bb15be23a78091d07458b3336a} 
+ torch.\+Tensor torchvision\+\_\+down.\+io.\+image.\+\_\+read\+\_\+png\+\_\+16 (\begin{DoxyParamCaption}\item[{str}]{path}{, }\item[{\mbox{\hyperlink{classtorchvision__down_1_1io_1_1image_1_1_image_read_mode}{Image\+Read\+Mode}} }]{mode}{ = {\ttfamily \mbox{\hyperlink{classtorchvision__down_1_1io_1_1image_1_1_image_read_mode_aa8f3f02ddc9bfed435ca393844773bc0}{Image\+Read\+Mode.\+UNCHANGED}}}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{namespacetorchvision__down_1_1io_1_1image_a37e78b7ce59eb8d4d22a01d038706cec}\index{torchvision\_down.io.image@{torchvision\_down.io.image}!decode\_image@{decode\_image}}
+\index{decode\_image@{decode\_image}!torchvision\_down.io.image@{torchvision\_down.io.image}}
+\doxysubsubsection{\texorpdfstring{decode\_image()}{decode\_image()}}
+{\footnotesize\ttfamily \label{namespacetorchvision__down_1_1io_1_1image_a37e78b7ce59eb8d4d22a01d038706cec} 
+ torch.\+Tensor torchvision\+\_\+down.\+io.\+image.\+decode\+\_\+image (\begin{DoxyParamCaption}\item[{torch.\+Tensor}]{input}{, }\item[{\mbox{\hyperlink{classtorchvision__down_1_1io_1_1image_1_1_image_read_mode}{Image\+Read\+Mode}} }]{mode}{ = {\ttfamily \mbox{\hyperlink{classtorchvision__down_1_1io_1_1image_1_1_image_read_mode_aa8f3f02ddc9bfed435ca393844773bc0}{Image\+Read\+Mode.\+UNCHANGED}}}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Detects whether an image is a JPEG or PNG and performs the appropriate
+operation to decode the image into a 3 dimensional RGB or grayscale Tensor.
+
+Optionally converts the image to the desired format.
+The values of the output tensor are uint8 in [0, 255].
+
+Args:
+    input (Tensor): a one dimensional uint8 tensor containing the raw bytes of the
+        PNG or JPEG image.
+    mode (ImageReadMode): the read mode used for optionally converting the image.
+        Default: ``ImageReadMode.UNCHANGED``.
+        See ``ImageReadMode`` class for more information on various
+        available modes.
+
+Returns:
+    output (Tensor[image_channels, image_height, image_width])
+\end{DoxyVerb}
+ \Hypertarget{namespacetorchvision__down_1_1io_1_1image_a7b74fdc5dcc486cecb5ea5d7b8452b9e}\index{torchvision\_down.io.image@{torchvision\_down.io.image}!decode\_jpeg@{decode\_jpeg}}
+\index{decode\_jpeg@{decode\_jpeg}!torchvision\_down.io.image@{torchvision\_down.io.image}}
+\doxysubsubsection{\texorpdfstring{decode\_jpeg()}{decode\_jpeg()}}
+{\footnotesize\ttfamily \label{namespacetorchvision__down_1_1io_1_1image_a7b74fdc5dcc486cecb5ea5d7b8452b9e} 
+ torch.\+Tensor torchvision\+\_\+down.\+io.\+image.\+decode\+\_\+jpeg (\begin{DoxyParamCaption}\item[{torch.\+Tensor}]{input}{, }\item[{\mbox{\hyperlink{classtorchvision__down_1_1io_1_1image_1_1_image_read_mode}{Image\+Read\+Mode}} }]{mode}{ = {\ttfamily \mbox{\hyperlink{classtorchvision__down_1_1io_1_1image_1_1_image_read_mode_aa8f3f02ddc9bfed435ca393844773bc0}{Image\+Read\+Mode.\+UNCHANGED}}}, }\item[{str }]{device}{ = {\ttfamily "{}cpu"{}}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Decodes a JPEG image into a 3 dimensional RGB or grayscale Tensor.
+Optionally converts the image to the desired format.
+The values of the output tensor are uint8 between 0 and 255.
+
+Args:
+    input (Tensor[1]): a one dimensional uint8 tensor containing
+        the raw bytes of the JPEG image. This tensor must be on CPU,
+        regardless of the ``device`` parameter.
+    mode (ImageReadMode): the read mode used for optionally
+        converting the image. Default: ``ImageReadMode.UNCHANGED``.
+        See ``ImageReadMode`` class for more information on various
+        available modes.
+    device (str or torch.device): The device on which the decoded image will
+        be stored. If a cuda device is specified, the image will be decoded
+        with `nvjpeg <https://developer.nvidia.com/nvjpeg>`_. This is only
+        supported for CUDA version >= 10.1
+
+Returns:
+    output (Tensor[image_channels, image_height, image_width])
+\end{DoxyVerb}
+ \Hypertarget{namespacetorchvision__down_1_1io_1_1image_aa476d585784a2ffdbb37e42eaf221363}\index{torchvision\_down.io.image@{torchvision\_down.io.image}!decode\_png@{decode\_png}}
+\index{decode\_png@{decode\_png}!torchvision\_down.io.image@{torchvision\_down.io.image}}
+\doxysubsubsection{\texorpdfstring{decode\_png()}{decode\_png()}}
+{\footnotesize\ttfamily \label{namespacetorchvision__down_1_1io_1_1image_aa476d585784a2ffdbb37e42eaf221363} 
+ torch.\+Tensor torchvision\+\_\+down.\+io.\+image.\+decode\+\_\+png (\begin{DoxyParamCaption}\item[{torch.\+Tensor}]{input}{, }\item[{\mbox{\hyperlink{classtorchvision__down_1_1io_1_1image_1_1_image_read_mode}{Image\+Read\+Mode}} }]{mode}{ = {\ttfamily \mbox{\hyperlink{classtorchvision__down_1_1io_1_1image_1_1_image_read_mode_aa8f3f02ddc9bfed435ca393844773bc0}{Image\+Read\+Mode.\+UNCHANGED}}}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Decodes a PNG image into a 3 dimensional RGB or grayscale Tensor.
+Optionally converts the image to the desired format.
+The values of the output tensor are uint8 in [0, 255].
+
+Args:
+    input (Tensor[1]): a one dimensional uint8 tensor containing
+        the raw bytes of the PNG image.
+    mode (ImageReadMode): the read mode used for optionally
+        converting the image. Default: ``ImageReadMode.UNCHANGED``.
+        See `ImageReadMode` class for more information on various
+        available modes.
+
+Returns:
+    output (Tensor[image_channels, image_height, image_width])
+\end{DoxyVerb}
+ \Hypertarget{namespacetorchvision__down_1_1io_1_1image_a19df8489accb54ff70b2ee9faa092091}\index{torchvision\_down.io.image@{torchvision\_down.io.image}!encode\_jpeg@{encode\_jpeg}}
+\index{encode\_jpeg@{encode\_jpeg}!torchvision\_down.io.image@{torchvision\_down.io.image}}
+\doxysubsubsection{\texorpdfstring{encode\_jpeg()}{encode\_jpeg()}}
+{\footnotesize\ttfamily \label{namespacetorchvision__down_1_1io_1_1image_a19df8489accb54ff70b2ee9faa092091} 
+ torch.\+Tensor torchvision\+\_\+down.\+io.\+image.\+encode\+\_\+jpeg (\begin{DoxyParamCaption}\item[{torch.\+Tensor}]{input}{, }\item[{int }]{quality}{ = {\ttfamily 75}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Takes an input tensor in CHW layout and returns a buffer with the contents
+of its corresponding JPEG file.
+
+Args:
+    input (Tensor[channels, image_height, image_width])): int8 image tensor of
+        ``c`` channels, where ``c`` must be 1 or 3.
+    quality (int): Quality of the resulting JPEG file, it must be a number between
+        1 and 100. Default: 75
+
+Returns:
+    output (Tensor[1]): A one dimensional int8 tensor that contains the raw bytes of the
+        JPEG file.
+\end{DoxyVerb}
+ \Hypertarget{namespacetorchvision__down_1_1io_1_1image_a8ec5e5636619608a4a56d60a4f08fdeb}\index{torchvision\_down.io.image@{torchvision\_down.io.image}!encode\_png@{encode\_png}}
+\index{encode\_png@{encode\_png}!torchvision\_down.io.image@{torchvision\_down.io.image}}
+\doxysubsubsection{\texorpdfstring{encode\_png()}{encode\_png()}}
+{\footnotesize\ttfamily \label{namespacetorchvision__down_1_1io_1_1image_a8ec5e5636619608a4a56d60a4f08fdeb} 
+ torch.\+Tensor torchvision\+\_\+down.\+io.\+image.\+encode\+\_\+png (\begin{DoxyParamCaption}\item[{torch.\+Tensor}]{input}{, }\item[{int }]{compression\+\_\+level}{ = {\ttfamily 6}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Takes an input tensor in CHW layout and returns a buffer with the contents
+of its corresponding PNG file.
+
+Args:
+    input (Tensor[channels, image_height, image_width]): int8 image tensor of
+        ``c`` channels, where ``c`` must 3 or 1.
+    compression_level (int): Compression factor for the resulting file, it must be a number
+        between 0 and 9. Default: 6
+
+Returns:
+    Tensor[1]: A one dimensional int8 tensor that contains the raw bytes of the
+        PNG file.
+\end{DoxyVerb}
+ \Hypertarget{namespacetorchvision__down_1_1io_1_1image_a9d77f483f58b2a44e308a2c10310ec5f}\index{torchvision\_down.io.image@{torchvision\_down.io.image}!read\_file@{read\_file}}
+\index{read\_file@{read\_file}!torchvision\_down.io.image@{torchvision\_down.io.image}}
+\doxysubsubsection{\texorpdfstring{read\_file()}{read\_file()}}
+{\footnotesize\ttfamily \label{namespacetorchvision__down_1_1io_1_1image_a9d77f483f58b2a44e308a2c10310ec5f} 
+ torch.\+Tensor torchvision\+\_\+down.\+io.\+image.\+read\+\_\+file (\begin{DoxyParamCaption}\item[{str}]{path}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Reads and outputs the bytes contents of a file as a uint8 Tensor
+with one dimension.
+
+Args:
+    path (str): the path to the file to be read
+
+Returns:
+    data (Tensor)
+\end{DoxyVerb}
+ \Hypertarget{namespacetorchvision__down_1_1io_1_1image_a31595330c79531c2cd956ca28b569584}\index{torchvision\_down.io.image@{torchvision\_down.io.image}!read\_image@{read\_image}}
+\index{read\_image@{read\_image}!torchvision\_down.io.image@{torchvision\_down.io.image}}
+\doxysubsubsection{\texorpdfstring{read\_image()}{read\_image()}}
+{\footnotesize\ttfamily \label{namespacetorchvision__down_1_1io_1_1image_a31595330c79531c2cd956ca28b569584} 
+ torch.\+Tensor torchvision\+\_\+down.\+io.\+image.\+read\+\_\+image (\begin{DoxyParamCaption}\item[{str}]{path}{, }\item[{\mbox{\hyperlink{classtorchvision__down_1_1io_1_1image_1_1_image_read_mode}{Image\+Read\+Mode}} }]{mode}{ = {\ttfamily \mbox{\hyperlink{classtorchvision__down_1_1io_1_1image_1_1_image_read_mode_aa8f3f02ddc9bfed435ca393844773bc0}{Image\+Read\+Mode.\+UNCHANGED}}}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Reads a JPEG or PNG image into a 3 dimensional RGB or grayscale Tensor.
+Optionally converts the image to the desired format.
+The values of the output tensor are uint8 in [0, 255].
+
+Args:
+    path (str): path of the JPEG or PNG image.
+    mode (ImageReadMode): the read mode used for optionally converting the image.
+        Default: ``ImageReadMode.UNCHANGED``.
+        See ``ImageReadMode`` class for more information on various
+        available modes.
+
+Returns:
+    output (Tensor[image_channels, image_height, image_width])
+\end{DoxyVerb}
+ \Hypertarget{namespacetorchvision__down_1_1io_1_1image_a01ad73867b4f5049140a2f509087cf2e}\index{torchvision\_down.io.image@{torchvision\_down.io.image}!write\_file@{write\_file}}
+\index{write\_file@{write\_file}!torchvision\_down.io.image@{torchvision\_down.io.image}}
+\doxysubsubsection{\texorpdfstring{write\_file()}{write\_file()}}
+{\footnotesize\ttfamily \label{namespacetorchvision__down_1_1io_1_1image_a01ad73867b4f5049140a2f509087cf2e} 
+ None torchvision\+\_\+down.\+io.\+image.\+write\+\_\+file (\begin{DoxyParamCaption}\item[{str}]{filename}{, }\item[{torch.\+Tensor}]{data}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Writes the contents of a uint8 tensor with one dimension to a
+file.
+
+Args:
+    filename (str): the path to the file to be written
+    data (Tensor): the contents to be written to the output file
+\end{DoxyVerb}
+ \Hypertarget{namespacetorchvision__down_1_1io_1_1image_ae437aa92d993dbd7dba2a0f676c29856}\index{torchvision\_down.io.image@{torchvision\_down.io.image}!write\_jpeg@{write\_jpeg}}
+\index{write\_jpeg@{write\_jpeg}!torchvision\_down.io.image@{torchvision\_down.io.image}}
+\doxysubsubsection{\texorpdfstring{write\_jpeg()}{write\_jpeg()}}
+{\footnotesize\ttfamily \label{namespacetorchvision__down_1_1io_1_1image_ae437aa92d993dbd7dba2a0f676c29856} 
+torchvision\+\_\+down.\+io.\+image.\+write\+\_\+jpeg (\begin{DoxyParamCaption}\item[{torch.\+Tensor}]{input}{, }\item[{str}]{filename}{, }\item[{int }]{quality}{ = {\ttfamily 75}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Takes an input tensor in CHW layout and saves it in a JPEG file.
+
+Args:
+    input (Tensor[channels, image_height, image_width]): int8 image tensor of ``c``
+        channels, where ``c`` must be 1 or 3.
+    filename (str): Path to save the image.
+    quality (int): Quality of the resulting JPEG file, it must be a number
+        between 1 and 100. Default: 75
+\end{DoxyVerb}
+ \Hypertarget{namespacetorchvision__down_1_1io_1_1image_ad1026eea4f00a10e3d79fc95f3e6134e}\index{torchvision\_down.io.image@{torchvision\_down.io.image}!write\_png@{write\_png}}
+\index{write\_png@{write\_png}!torchvision\_down.io.image@{torchvision\_down.io.image}}
+\doxysubsubsection{\texorpdfstring{write\_png()}{write\_png()}}
+{\footnotesize\ttfamily \label{namespacetorchvision__down_1_1io_1_1image_ad1026eea4f00a10e3d79fc95f3e6134e} 
+torchvision\+\_\+down.\+io.\+image.\+write\+\_\+png (\begin{DoxyParamCaption}\item[{torch.\+Tensor}]{input}{, }\item[{str}]{filename}{, }\item[{int }]{compression\+\_\+level}{ = {\ttfamily 6}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Takes an input tensor in CHW layout (or HW in the case of grayscale images)
+and saves it in a PNG file.
+
+Args:
+    input (Tensor[channels, image_height, image_width]): int8 image tensor of
+        ``c`` channels, where ``c`` must be 1 or 3.
+    filename (str): Path to save the image.
+    compression_level (int): Compression factor for the resulting file, it must be a number
+        between 0 and 9. Default: 6
+\end{DoxyVerb}
+ 

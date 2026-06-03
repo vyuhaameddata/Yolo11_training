@@ -1,0 +1,60 @@
+\doxysection{torchvision\+\_\+down.\+models.\+detection.\+ssd.\+SSDHead Class Reference}
+\hypertarget{classtorchvision__down_1_1models_1_1detection_1_1ssd_1_1_s_s_d_head}{}\label{classtorchvision__down_1_1models_1_1detection_1_1ssd_1_1_s_s_d_head}\index{torchvision\_down.models.detection.ssd.SSDHead@{torchvision\_down.models.detection.ssd.SSDHead}}
+Inheritance diagram for torchvision\+\_\+down.\+models.\+detection.\+ssd.\+SSDHead\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classtorchvision__down_1_1models_1_1detection_1_1ssd_1_1_s_s_d_head}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1models_1_1detection_1_1ssd_1_1_s_s_d_head_a99ea6bbc49042e83c5fa000ef2a78bf4}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, List\mbox{[}int\mbox{]} in\+\_\+channels, List\mbox{[}int\mbox{]} num\+\_\+anchors, int num\+\_\+classes)
+\item 
+Dict\mbox{[}str, Tensor\mbox{]} \mbox{\hyperlink{classtorchvision__down_1_1models_1_1detection_1_1ssd_1_1_s_s_d_head_a41835434ad346f2760f568b1f907b6ea}{forward}} (self, List\mbox{[}Tensor\mbox{]} x)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1models_1_1detection_1_1ssd_1_1_s_s_d_head_a43bcc177336b9300578f10f4c4cac0c6}{classification\+\_\+head}} = \mbox{\hyperlink{classtorchvision__down_1_1models_1_1detection_1_1ssd_1_1_s_s_d_classification_head}{SSDClassification\+Head}}(in\+\_\+channels, num\+\_\+anchors, num\+\_\+classes)
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1models_1_1detection_1_1ssd_1_1_s_s_d_head_ae37382ddbf1eaf2f2cc2e361989b3692}{regression\+\_\+head}} = \mbox{\hyperlink{classtorchvision__down_1_1models_1_1detection_1_1ssd_1_1_s_s_d_regression_head}{SSDRegression\+Head}}(in\+\_\+channels, num\+\_\+anchors)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classtorchvision__down_1_1models_1_1detection_1_1ssd_1_1_s_s_d_head_a99ea6bbc49042e83c5fa000ef2a78bf4}\index{torchvision\_down.models.detection.ssd.SSDHead@{torchvision\_down.models.detection.ssd.SSDHead}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!torchvision\_down.models.detection.ssd.SSDHead@{torchvision\_down.models.detection.ssd.SSDHead}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1models_1_1detection_1_1ssd_1_1_s_s_d_head_a99ea6bbc49042e83c5fa000ef2a78bf4} 
+torchvision\+\_\+down.\+models.\+detection.\+ssd.\+SSDHead.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{List\mbox{[}int\mbox{]}}]{in\+\_\+channels}{, }\item[{List\mbox{[}int\mbox{]}}]{num\+\_\+anchors}{, }\item[{int}]{num\+\_\+classes}{}\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classtorchvision__down_1_1models_1_1detection_1_1ssd_1_1_s_s_d_head_a41835434ad346f2760f568b1f907b6ea}\index{torchvision\_down.models.detection.ssd.SSDHead@{torchvision\_down.models.detection.ssd.SSDHead}!forward@{forward}}
+\index{forward@{forward}!torchvision\_down.models.detection.ssd.SSDHead@{torchvision\_down.models.detection.ssd.SSDHead}}
+\doxysubsubsection{\texorpdfstring{forward()}{forward()}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1models_1_1detection_1_1ssd_1_1_s_s_d_head_a41835434ad346f2760f568b1f907b6ea} 
+ Dict\mbox{[}str, Tensor\mbox{]} torchvision\+\_\+down.\+models.\+detection.\+ssd.\+SSDHead.\+forward (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{List\mbox{[}Tensor\mbox{]}}]{x}{}\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classtorchvision__down_1_1models_1_1detection_1_1ssd_1_1_s_s_d_head_a43bcc177336b9300578f10f4c4cac0c6}\index{torchvision\_down.models.detection.ssd.SSDHead@{torchvision\_down.models.detection.ssd.SSDHead}!classification\_head@{classification\_head}}
+\index{classification\_head@{classification\_head}!torchvision\_down.models.detection.ssd.SSDHead@{torchvision\_down.models.detection.ssd.SSDHead}}
+\doxysubsubsection{\texorpdfstring{classification\_head}{classification\_head}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1models_1_1detection_1_1ssd_1_1_s_s_d_head_a43bcc177336b9300578f10f4c4cac0c6} 
+torchvision\+\_\+down.\+models.\+detection.\+ssd.\+SSDHead.\+classification\+\_\+head = \mbox{\hyperlink{classtorchvision__down_1_1models_1_1detection_1_1ssd_1_1_s_s_d_classification_head}{SSDClassification\+Head}}(in\+\_\+channels, num\+\_\+anchors, num\+\_\+classes)}
+
+\Hypertarget{classtorchvision__down_1_1models_1_1detection_1_1ssd_1_1_s_s_d_head_ae37382ddbf1eaf2f2cc2e361989b3692}\index{torchvision\_down.models.detection.ssd.SSDHead@{torchvision\_down.models.detection.ssd.SSDHead}!regression\_head@{regression\_head}}
+\index{regression\_head@{regression\_head}!torchvision\_down.models.detection.ssd.SSDHead@{torchvision\_down.models.detection.ssd.SSDHead}}
+\doxysubsubsection{\texorpdfstring{regression\_head}{regression\_head}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1models_1_1detection_1_1ssd_1_1_s_s_d_head_ae37382ddbf1eaf2f2cc2e361989b3692} 
+torchvision\+\_\+down.\+models.\+detection.\+ssd.\+SSDHead.\+regression\+\_\+head = \mbox{\hyperlink{classtorchvision__down_1_1models_1_1detection_1_1ssd_1_1_s_s_d_regression_head}{SSDRegression\+Head}}(in\+\_\+channels, num\+\_\+anchors)}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Cervi\+AI/torchvision\+\_\+down/models/detection/\mbox{\hyperlink{ssd_8py}{ssd.\+py}}\end{DoxyCompactItemize}

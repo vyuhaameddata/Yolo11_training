@@ -1,0 +1,150 @@
+\doxysection{torchvision\+\_\+down.\+transforms.\+transforms.\+Color\+Jitter Class Reference}
+\hypertarget{classtorchvision__down_1_1transforms_1_1transforms_1_1_color_jitter}{}\label{classtorchvision__down_1_1transforms_1_1transforms_1_1_color_jitter}\index{torchvision\_down.transforms.transforms.ColorJitter@{torchvision\_down.transforms.transforms.ColorJitter}}
+Inheritance diagram for torchvision\+\_\+down.\+transforms.\+transforms.\+Color\+Jitter\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classtorchvision__down_1_1transforms_1_1transforms_1_1_color_jitter}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1transforms_1_1transforms_1_1_color_jitter_a06c0eba58dd32b2425fe41202786d483}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, \mbox{\hyperlink{classtorchvision__down_1_1transforms_1_1transforms_1_1_color_jitter_a68af69598ad5866aff65260792dd86f7}{brightness}}=0, \mbox{\hyperlink{classtorchvision__down_1_1transforms_1_1transforms_1_1_color_jitter_a49f412df70f93b51e170f98f7adec80d}{contrast}}=0, \mbox{\hyperlink{classtorchvision__down_1_1transforms_1_1transforms_1_1_color_jitter_a94c1576aba4485cfffc4a8c563aa5531}{saturation}}=0, \mbox{\hyperlink{classtorchvision__down_1_1transforms_1_1transforms_1_1_color_jitter_aec935a8530b03aa66d33bdbf294036b0}{hue}}=0)
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1transforms_1_1transforms_1_1_color_jitter_a5d1805e06816f5f1a3f0c40ef2872887}{forward}} (self, img)
+\item 
+str \mbox{\hyperlink{classtorchvision__down_1_1transforms_1_1transforms_1_1_color_jitter_a52567a3e0162a099b95d97559aabec45}{\+\_\+\+\_\+repr\+\_\+\+\_\+}} (self)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+Tuple\mbox{[}Tensor, Optional\mbox{[}float\mbox{]}, Optional\mbox{[}float\mbox{]}, Optional\mbox{[}float\mbox{]}, Optional\mbox{[}float\mbox{]}\mbox{]} \mbox{\hyperlink{classtorchvision__down_1_1transforms_1_1transforms_1_1_color_jitter_abeaf8f734319ec480c22af6a19ccc784}{get\+\_\+params}} (Optional\mbox{[}List\mbox{[}float\mbox{]}\mbox{]} \mbox{\hyperlink{classtorchvision__down_1_1transforms_1_1transforms_1_1_color_jitter_a68af69598ad5866aff65260792dd86f7}{brightness}}, Optional\mbox{[}List\mbox{[}float\mbox{]}\mbox{]} \mbox{\hyperlink{classtorchvision__down_1_1transforms_1_1transforms_1_1_color_jitter_a49f412df70f93b51e170f98f7adec80d}{contrast}}, Optional\mbox{[}List\mbox{[}float\mbox{]}\mbox{]} \mbox{\hyperlink{classtorchvision__down_1_1transforms_1_1transforms_1_1_color_jitter_a94c1576aba4485cfffc4a8c563aa5531}{saturation}}, Optional\mbox{[}List\mbox{[}float\mbox{]}\mbox{]} \mbox{\hyperlink{classtorchvision__down_1_1transforms_1_1transforms_1_1_color_jitter_aec935a8530b03aa66d33bdbf294036b0}{hue}})
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1transforms_1_1transforms_1_1_color_jitter_a68af69598ad5866aff65260792dd86f7}{brightness}} = self.\+\_\+check\+\_\+input(brightness, "{}brightness"{})
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1transforms_1_1transforms_1_1_color_jitter_a49f412df70f93b51e170f98f7adec80d}{contrast}} = self.\+\_\+check\+\_\+input(contrast, "{}contrast"{})
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1transforms_1_1transforms_1_1_color_jitter_a94c1576aba4485cfffc4a8c563aa5531}{saturation}} = self.\+\_\+check\+\_\+input(saturation, "{}saturation"{})
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1transforms_1_1transforms_1_1_color_jitter_aec935a8530b03aa66d33bdbf294036b0}{hue}} = self.\+\_\+check\+\_\+input(hue, "{}hue"{}, center=0, bound=(-\/0.\+5, 0.\+5), clip\+\_\+first\+\_\+on\+\_\+zero=False)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1transforms_1_1transforms_1_1_color_jitter_ae712e2db8750bdef4bbf2f465b2d31e3}{\+\_\+check\+\_\+input}} (self, value, name, center=1, bound=(0, float("{}inf"{})), clip\+\_\+first\+\_\+on\+\_\+zero=True)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}Randomly change the brightness, contrast, saturation and hue of an image.
+If the image is torch Tensor, it is expected
+to have [..., 1 or 3, H, W] shape, where ... means an arbitrary number of leading dimensions.
+If img is PIL Image, mode "1", "I", "F" and modes with transparency (alpha channel) are not supported.
+
+Args:
+    brightness (float or tuple of float (min, max)): How much to jitter brightness.
+        brightness_factor is chosen uniformly from [max(0, 1 - brightness), 1 + brightness]
+        or the given [min, max]. Should be non negative numbers.
+    contrast (float or tuple of float (min, max)): How much to jitter contrast.
+        contrast_factor is chosen uniformly from [max(0, 1 - contrast), 1 + contrast]
+        or the given [min, max]. Should be non negative numbers.
+    saturation (float or tuple of float (min, max)): How much to jitter saturation.
+        saturation_factor is chosen uniformly from [max(0, 1 - saturation), 1 + saturation]
+        or the given [min, max]. Should be non negative numbers.
+    hue (float or tuple of float (min, max)): How much to jitter hue.
+        hue_factor is chosen uniformly from [-hue, hue] or the given [min, max].
+        Should have 0<= hue <= 0.5 or -0.5 <= min <= max <= 0.5.
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classtorchvision__down_1_1transforms_1_1transforms_1_1_color_jitter_a06c0eba58dd32b2425fe41202786d483}\index{torchvision\_down.transforms.transforms.ColorJitter@{torchvision\_down.transforms.transforms.ColorJitter}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!torchvision\_down.transforms.transforms.ColorJitter@{torchvision\_down.transforms.transforms.ColorJitter}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1transforms_1_1transforms_1_1_color_jitter_a06c0eba58dd32b2425fe41202786d483} 
+torchvision\+\_\+down.\+transforms.\+transforms.\+Color\+Jitter.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{brightness}{ = {\ttfamily 0}, }\item[{}]{contrast}{ = {\ttfamily 0}, }\item[{}]{saturation}{ = {\ttfamily 0}, }\item[{}]{hue}{ = {\ttfamily 0}}\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classtorchvision__down_1_1transforms_1_1transforms_1_1_color_jitter_a52567a3e0162a099b95d97559aabec45}\index{torchvision\_down.transforms.transforms.ColorJitter@{torchvision\_down.transforms.transforms.ColorJitter}!\_\_repr\_\_@{\_\_repr\_\_}}
+\index{\_\_repr\_\_@{\_\_repr\_\_}!torchvision\_down.transforms.transforms.ColorJitter@{torchvision\_down.transforms.transforms.ColorJitter}}
+\doxysubsubsection{\texorpdfstring{\_\_repr\_\_()}{\_\_repr\_\_()}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1transforms_1_1transforms_1_1_color_jitter_a52567a3e0162a099b95d97559aabec45} 
+ str torchvision\+\_\+down.\+transforms.\+transforms.\+Color\+Jitter.\+\_\+\+\_\+repr\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classtorchvision__down_1_1transforms_1_1transforms_1_1_color_jitter_ae712e2db8750bdef4bbf2f465b2d31e3}\index{torchvision\_down.transforms.transforms.ColorJitter@{torchvision\_down.transforms.transforms.ColorJitter}!\_check\_input@{\_check\_input}}
+\index{\_check\_input@{\_check\_input}!torchvision\_down.transforms.transforms.ColorJitter@{torchvision\_down.transforms.transforms.ColorJitter}}
+\doxysubsubsection{\texorpdfstring{\_check\_input()}{\_check\_input()}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1transforms_1_1transforms_1_1_color_jitter_ae712e2db8750bdef4bbf2f465b2d31e3} 
+torchvision\+\_\+down.\+transforms.\+transforms.\+Color\+Jitter.\+\_\+check\+\_\+input (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{value}{, }\item[{}]{name}{, }\item[{}]{center}{ = {\ttfamily 1}, }\item[{}]{bound}{ = {\ttfamily (0,~float("{}inf"{}))}, }\item[{}]{clip\+\_\+first\+\_\+on\+\_\+zero}{ = {\ttfamily True}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classtorchvision__down_1_1transforms_1_1transforms_1_1_color_jitter_a5d1805e06816f5f1a3f0c40ef2872887}\index{torchvision\_down.transforms.transforms.ColorJitter@{torchvision\_down.transforms.transforms.ColorJitter}!forward@{forward}}
+\index{forward@{forward}!torchvision\_down.transforms.transforms.ColorJitter@{torchvision\_down.transforms.transforms.ColorJitter}}
+\doxysubsubsection{\texorpdfstring{forward()}{forward()}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1transforms_1_1transforms_1_1_color_jitter_a5d1805e06816f5f1a3f0c40ef2872887} 
+torchvision\+\_\+down.\+transforms.\+transforms.\+Color\+Jitter.\+forward (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{img}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Args:
+    img (PIL Image or Tensor): Input image.
+
+Returns:
+    PIL Image or Tensor: Color jittered image.
+\end{DoxyVerb}
+ \Hypertarget{classtorchvision__down_1_1transforms_1_1transforms_1_1_color_jitter_abeaf8f734319ec480c22af6a19ccc784}\index{torchvision\_down.transforms.transforms.ColorJitter@{torchvision\_down.transforms.transforms.ColorJitter}!get\_params@{get\_params}}
+\index{get\_params@{get\_params}!torchvision\_down.transforms.transforms.ColorJitter@{torchvision\_down.transforms.transforms.ColorJitter}}
+\doxysubsubsection{\texorpdfstring{get\_params()}{get\_params()}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1transforms_1_1transforms_1_1_color_jitter_abeaf8f734319ec480c22af6a19ccc784} 
+ Tuple\mbox{[}Tensor, Optional\mbox{[}float\mbox{]}, Optional\mbox{[}float\mbox{]}, Optional\mbox{[}float\mbox{]}, Optional\mbox{[}float\mbox{]}\mbox{]} torchvision\+\_\+down.\+transforms.\+transforms.\+Color\+Jitter.\+get\+\_\+params (\begin{DoxyParamCaption}\item[{Optional\mbox{[}List\mbox{[}float\mbox{]}\mbox{]}}]{brightness}{, }\item[{Optional\mbox{[}List\mbox{[}float\mbox{]}\mbox{]}}]{contrast}{, }\item[{Optional\mbox{[}List\mbox{[}float\mbox{]}\mbox{]}}]{saturation}{, }\item[{Optional\mbox{[}List\mbox{[}float\mbox{]}\mbox{]}}]{hue}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\begin{DoxyVerb}Get the parameters for the randomized transform to be applied on image.
+
+Args:
+    brightness (tuple of float (min, max), optional): The range from which the brightness_factor is chosen
+        uniformly. Pass None to turn off the transformation.
+    contrast (tuple of float (min, max), optional): The range from which the contrast_factor is chosen
+        uniformly. Pass None to turn off the transformation.
+    saturation (tuple of float (min, max), optional): The range from which the saturation_factor is chosen
+        uniformly. Pass None to turn off the transformation.
+    hue (tuple of float (min, max), optional): The range from which the hue_factor is chosen uniformly.
+        Pass None to turn off the transformation.
+
+Returns:
+    tuple: The parameters used to apply the randomized transform
+    along with their random order.
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classtorchvision__down_1_1transforms_1_1transforms_1_1_color_jitter_a68af69598ad5866aff65260792dd86f7}\index{torchvision\_down.transforms.transforms.ColorJitter@{torchvision\_down.transforms.transforms.ColorJitter}!brightness@{brightness}}
+\index{brightness@{brightness}!torchvision\_down.transforms.transforms.ColorJitter@{torchvision\_down.transforms.transforms.ColorJitter}}
+\doxysubsubsection{\texorpdfstring{brightness}{brightness}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1transforms_1_1transforms_1_1_color_jitter_a68af69598ad5866aff65260792dd86f7} 
+torchvision\+\_\+down.\+transforms.\+transforms.\+Color\+Jitter.\+brightness = self.\+\_\+check\+\_\+input(brightness, "{}brightness"{})}
+
+\Hypertarget{classtorchvision__down_1_1transforms_1_1transforms_1_1_color_jitter_a49f412df70f93b51e170f98f7adec80d}\index{torchvision\_down.transforms.transforms.ColorJitter@{torchvision\_down.transforms.transforms.ColorJitter}!contrast@{contrast}}
+\index{contrast@{contrast}!torchvision\_down.transforms.transforms.ColorJitter@{torchvision\_down.transforms.transforms.ColorJitter}}
+\doxysubsubsection{\texorpdfstring{contrast}{contrast}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1transforms_1_1transforms_1_1_color_jitter_a49f412df70f93b51e170f98f7adec80d} 
+torchvision\+\_\+down.\+transforms.\+transforms.\+Color\+Jitter.\+contrast = self.\+\_\+check\+\_\+input(contrast, "{}contrast"{})}
+
+\Hypertarget{classtorchvision__down_1_1transforms_1_1transforms_1_1_color_jitter_aec935a8530b03aa66d33bdbf294036b0}\index{torchvision\_down.transforms.transforms.ColorJitter@{torchvision\_down.transforms.transforms.ColorJitter}!hue@{hue}}
+\index{hue@{hue}!torchvision\_down.transforms.transforms.ColorJitter@{torchvision\_down.transforms.transforms.ColorJitter}}
+\doxysubsubsection{\texorpdfstring{hue}{hue}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1transforms_1_1transforms_1_1_color_jitter_aec935a8530b03aa66d33bdbf294036b0} 
+torchvision\+\_\+down.\+transforms.\+transforms.\+Color\+Jitter.\+hue = self.\+\_\+check\+\_\+input(hue, "{}hue"{}, center=0, bound=(-\/0.\+5, 0.\+5), clip\+\_\+first\+\_\+on\+\_\+zero=False)}
+
+\Hypertarget{classtorchvision__down_1_1transforms_1_1transforms_1_1_color_jitter_a94c1576aba4485cfffc4a8c563aa5531}\index{torchvision\_down.transforms.transforms.ColorJitter@{torchvision\_down.transforms.transforms.ColorJitter}!saturation@{saturation}}
+\index{saturation@{saturation}!torchvision\_down.transforms.transforms.ColorJitter@{torchvision\_down.transforms.transforms.ColorJitter}}
+\doxysubsubsection{\texorpdfstring{saturation}{saturation}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1transforms_1_1transforms_1_1_color_jitter_a94c1576aba4485cfffc4a8c563aa5531} 
+torchvision\+\_\+down.\+transforms.\+transforms.\+Color\+Jitter.\+saturation = self.\+\_\+check\+\_\+input(saturation, "{}saturation"{})}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Cervi\+AI/torchvision\+\_\+down/transforms/\mbox{\hyperlink{transforms_8py}{transforms.\+py}}\end{DoxyCompactItemize}

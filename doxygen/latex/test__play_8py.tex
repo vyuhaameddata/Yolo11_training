@@ -1,0 +1,67 @@
+\doxysection{Cervi\+AI/\+Shreyan scripts/\+WSD versions/test\+\_\+play.py File Reference}
+\hypertarget{test__play_8py}{}\label{test__play_8py}\index{CerviAI/Shreyan scripts/WSD versions/test\_play.py@{CerviAI/Shreyan scripts/WSD versions/test\_play.py}}
+\doxysubsubsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+namespace \mbox{\hyperlink{namespacetest__play}{test\+\_\+play}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{namespacetest__play_a5bde1ff0608a510c6b9ff0bfbaa2cebd}{test\+\_\+play.\+test}} (\mbox{\hyperlink{namespacetest__play_a7f0cd149f85b002dab0592baea31426e}{data}}, weights=None, batch\+\_\+size=32, imgsz=640, conf\+\_\+thres=0.\+001, iou\+\_\+thres=0.\+6, \mbox{\hyperlink{namespacetest__play_af8419ab285e7792d2a3b9241ef86460f}{save\+\_\+json}}=\mbox{\hyperlink{namespacetest__play_aca76d238086f94c8cf9456ef3231a576}{False}}, single\+\_\+cls=\mbox{\hyperlink{namespacetest__play_aca76d238086f94c8cf9456ef3231a576}{False}}, augment=\mbox{\hyperlink{namespacetest__play_aca76d238086f94c8cf9456ef3231a576}{False}}, verbose=\mbox{\hyperlink{namespacetest__play_aca76d238086f94c8cf9456ef3231a576}{False}}, model=None, dataloader=None, save\+\_\+dir=Path(\textquotesingle{}\textquotesingle{}), \mbox{\hyperlink{namespacetest__play_aae77279f693d7f84d5aa6bb270b7b058}{save\+\_\+txt}}=\mbox{\hyperlink{namespacetest__play_aca76d238086f94c8cf9456ef3231a576}{False}}, \mbox{\hyperlink{namespacetest__play_a313754ea7a3efe66b2a1d1908491ce1c}{save\+\_\+hybrid}}=\mbox{\hyperlink{namespacetest__play_aca76d238086f94c8cf9456ef3231a576}{False}}, \mbox{\hyperlink{namespacetest__play_a8c841a4671d208a9dc7115e6ce10c98c}{save\+\_\+conf}}=\mbox{\hyperlink{namespacetest__play_aca76d238086f94c8cf9456ef3231a576}{False}}, \mbox{\hyperlink{namespacetest__play_a52335abba7737b5435ab96142d1f72b8}{plots}}=True, wandb\+\_\+logger=None, compute\+\_\+loss=None, half\+\_\+precision=True, \mbox{\hyperlink{namespacetest__play_afd9b7fe0b176e097e9cdd64552c7af5d}{trace}}=\mbox{\hyperlink{namespacetest__play_aca76d238086f94c8cf9456ef3231a576}{False}}, is\+\_\+coco=\mbox{\hyperlink{namespacetest__play_aca76d238086f94c8cf9456ef3231a576}{False}}, \mbox{\hyperlink{namespacetest__play_a5f01a8219d2cc500a46c77d52602f414}{v5\+\_\+metric}}=\mbox{\hyperlink{namespacetest__play_aca76d238086f94c8cf9456ef3231a576}{False}})
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{namespacetest__play_acd293c4f74065c43440c9f31691de574}{test\+\_\+play.\+parser}} = argparse.\+Argument\+Parser(prog=\textquotesingle{}test.\+py\textquotesingle{})
+\item 
+\mbox{\hyperlink{namespacetest__play_aeee8db3b21219475fb0c029b4fe11d29}{test\+\_\+play.\+nargs}}
+\item 
+\mbox{\hyperlink{namespacetest__play_a2c25be774d9018604df715a4820a3d59}{test\+\_\+play.\+type}}
+\item 
+\mbox{\hyperlink{namespacetest__play_a53b9fa5a462b820c62bbc3a963b7c1df}{test\+\_\+play.\+str}}
+\item 
+\mbox{\hyperlink{namespacetest__play_a771a6ba96c05352457088f659ba6f3c0}{test\+\_\+play.\+default}}
+\item 
+\mbox{\hyperlink{namespacetest__play_ace91ac9e5cfcc3f78f801c36f7a8ad34}{test\+\_\+play.\+help}}
+\item 
+\mbox{\hyperlink{namespacetest__play_ae253f07ac9552bcff27579929e72deb9}{test\+\_\+play.\+int}}
+\item 
+\mbox{\hyperlink{namespacetest__play_a0886701c20800a1f52f25be9b6f6a024}{test\+\_\+play.\+float}}
+\item 
+\mbox{\hyperlink{namespacetest__play_a85e37c4743e78eb57293537551460e44}{test\+\_\+play.\+action}}
+\item 
+\mbox{\hyperlink{namespacetest__play_a26a9dd283d66bc3466c5b56f7ebe810f}{test\+\_\+play.\+opt}} = parser.\+parse\+\_\+args()
+\item 
+\mbox{\hyperlink{namespacetest__play_a7f0cd149f85b002dab0592baea31426e}{test\+\_\+play.\+data}}
+\item 
+\mbox{\hyperlink{namespacetest__play_aae77279f693d7f84d5aa6bb270b7b058}{test\+\_\+play.\+save\+\_\+txt}}
+\item 
+\mbox{\hyperlink{namespacetest__play_a313754ea7a3efe66b2a1d1908491ce1c}{test\+\_\+play.\+save\+\_\+hybrid}}
+\item 
+\mbox{\hyperlink{namespacetest__play_a8c841a4671d208a9dc7115e6ce10c98c}{test\+\_\+play.\+save\+\_\+conf}}
+\item 
+\mbox{\hyperlink{namespacetest__play_afd9b7fe0b176e097e9cdd64552c7af5d}{test\+\_\+play.\+trace}}
+\item 
+\mbox{\hyperlink{namespacetest__play_a5f01a8219d2cc500a46c77d52602f414}{test\+\_\+play.\+v5\+\_\+metric}}
+\item 
+\mbox{\hyperlink{namespacetest__play_af8419ab285e7792d2a3b9241ef86460f}{test\+\_\+play.\+save\+\_\+json}}
+\item 
+\mbox{\hyperlink{namespacetest__play_aca76d238086f94c8cf9456ef3231a576}{test\+\_\+play.\+False}}
+\item 
+\mbox{\hyperlink{namespacetest__play_a52335abba7737b5435ab96142d1f72b8}{test\+\_\+play.\+plots}}
+\item 
+\mbox{\hyperlink{namespacetest__play_a396eb2c2eda90da2b7f8c14ed8e80a68}{test\+\_\+play.\+x}} = list(range(256, 1536 + 128, 128))
+\item 
+\mbox{\hyperlink{namespacetest__play_a53b9fa5a462b820c62bbc3a963b7c1df}{str}} \mbox{\hyperlink{namespacetest__play_aea51265cc24a58d951381ff9f47299ea}{test\+\_\+play.\+f}} = f\textquotesingle{}study\+\_\+\{Path(opt.\+data).stem\}\mbox{\hyperlink{namespacetest__play_a29007be8fc5c3ebb28e282b7c745c8bf}{\+\_\+}}\{Path(w).stem\}.txt\textquotesingle{}
+\item 
+list \mbox{\hyperlink{namespacetest__play_a8b05e40353958cc1699ba7062c5e80f2}{test\+\_\+play.\+y}} = \mbox{[}$\,$\mbox{]}
+\item 
+\mbox{\hyperlink{namespacetest__play_afa3274ac0fef61567167666345f52601}{test\+\_\+play.\+r}}
+\item 
+\mbox{\hyperlink{namespacetest__play_a29007be8fc5c3ebb28e282b7c745c8bf}{test\+\_\+play.\+\_\+}}
+\item 
+\mbox{\hyperlink{namespacetest__play_a23d82bdf10ac75c4353b5562b56c1cb5}{test\+\_\+play.\+t}}
+\item 
+\mbox{\hyperlink{namespacetest__play_ac7b22792b6fbdae33ca17f0603197e03}{test\+\_\+play.\+fmt}}
+\end{DoxyCompactItemize}

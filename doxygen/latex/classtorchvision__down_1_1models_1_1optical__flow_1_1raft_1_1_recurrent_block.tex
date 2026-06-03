@@ -1,0 +1,90 @@
+\doxysection{torchvision\+\_\+down.\+models.\+optical\+\_\+flow.\+raft.\+Recurrent\+Block Class Reference}
+\hypertarget{classtorchvision__down_1_1models_1_1optical__flow_1_1raft_1_1_recurrent_block}{}\label{classtorchvision__down_1_1models_1_1optical__flow_1_1raft_1_1_recurrent_block}\index{torchvision\_down.models.optical\_flow.raft.RecurrentBlock@{torchvision\_down.models.optical\_flow.raft.RecurrentBlock}}
+Inheritance diagram for torchvision\+\_\+down.\+models.\+optical\+\_\+flow.\+raft.\+Recurrent\+Block\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classtorchvision__down_1_1models_1_1optical__flow_1_1raft_1_1_recurrent_block}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1models_1_1optical__flow_1_1raft_1_1_recurrent_block_a65a92cd9ebbca993500bcb0839140333}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, \texorpdfstring{$\ast$}{*}, input\+\_\+size, \mbox{\hyperlink{classtorchvision__down_1_1models_1_1optical__flow_1_1raft_1_1_recurrent_block_a59061b7a801ecb83f0719fb74b3df44d}{hidden\+\_\+size}}, kernel\+\_\+size=((1, 5),(5, 1)), padding=((0, 2),(2, 0)))
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1models_1_1optical__flow_1_1raft_1_1_recurrent_block_a31ef721625b12daacf96c53c77d1e5db}{forward}} (self, h, x)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1models_1_1optical__flow_1_1raft_1_1_recurrent_block_a7ae2e21330ea7874368f495965fe2221}{convgru1}}
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1models_1_1optical__flow_1_1raft_1_1_recurrent_block_acee8aa85d0fba1f51d97eb92668e97b3}{convgru2}}
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1models_1_1optical__flow_1_1raft_1_1_recurrent_block_a59061b7a801ecb83f0719fb74b3df44d}{hidden\+\_\+size}} = hidden\+\_\+size
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}Recurrent block, part of the update block.
+
+Takes the current hidden state and the concatenation of (motion encoder output, context) as input.
+Returns an updated hidden state.
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classtorchvision__down_1_1models_1_1optical__flow_1_1raft_1_1_recurrent_block_a65a92cd9ebbca993500bcb0839140333}\index{torchvision\_down.models.optical\_flow.raft.RecurrentBlock@{torchvision\_down.models.optical\_flow.raft.RecurrentBlock}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!torchvision\_down.models.optical\_flow.raft.RecurrentBlock@{torchvision\_down.models.optical\_flow.raft.RecurrentBlock}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1models_1_1optical__flow_1_1raft_1_1_recurrent_block_a65a92cd9ebbca993500bcb0839140333} 
+torchvision\+\_\+down.\+models.\+optical\+\_\+flow.\+raft.\+Recurrent\+Block.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{\texorpdfstring{$\ast$}{*}}]{}{, }\item[{}]{input\+\_\+size}{, }\item[{}]{hidden\+\_\+size}{, }\item[{}]{kernel\+\_\+size}{ = {\ttfamily ((1,~5),~(5,~1))}, }\item[{}]{padding}{ = {\ttfamily ((0,~2),~(2,~0))}}\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classtorchvision__down_1_1models_1_1optical__flow_1_1raft_1_1_recurrent_block_a31ef721625b12daacf96c53c77d1e5db}\index{torchvision\_down.models.optical\_flow.raft.RecurrentBlock@{torchvision\_down.models.optical\_flow.raft.RecurrentBlock}!forward@{forward}}
+\index{forward@{forward}!torchvision\_down.models.optical\_flow.raft.RecurrentBlock@{torchvision\_down.models.optical\_flow.raft.RecurrentBlock}}
+\doxysubsubsection{\texorpdfstring{forward()}{forward()}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1models_1_1optical__flow_1_1raft_1_1_recurrent_block_a31ef721625b12daacf96c53c77d1e5db} 
+torchvision\+\_\+down.\+models.\+optical\+\_\+flow.\+raft.\+Recurrent\+Block.\+forward (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{h}{, }\item[{}]{x}{}\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classtorchvision__down_1_1models_1_1optical__flow_1_1raft_1_1_recurrent_block_a7ae2e21330ea7874368f495965fe2221}\index{torchvision\_down.models.optical\_flow.raft.RecurrentBlock@{torchvision\_down.models.optical\_flow.raft.RecurrentBlock}!convgru1@{convgru1}}
+\index{convgru1@{convgru1}!torchvision\_down.models.optical\_flow.raft.RecurrentBlock@{torchvision\_down.models.optical\_flow.raft.RecurrentBlock}}
+\doxysubsubsection{\texorpdfstring{convgru1}{convgru1}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1models_1_1optical__flow_1_1raft_1_1_recurrent_block_a7ae2e21330ea7874368f495965fe2221} 
+torchvision\+\_\+down.\+models.\+optical\+\_\+flow.\+raft.\+Recurrent\+Block.\+convgru1}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \ ConvGRU(}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ input\_size=input\_size,\ hidden\_size=hidden\_size,\ kernel\_size=kernel\_size[0],\ padding=padding[0]}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ )}
+
+\end{DoxyCode}
+\Hypertarget{classtorchvision__down_1_1models_1_1optical__flow_1_1raft_1_1_recurrent_block_acee8aa85d0fba1f51d97eb92668e97b3}\index{torchvision\_down.models.optical\_flow.raft.RecurrentBlock@{torchvision\_down.models.optical\_flow.raft.RecurrentBlock}!convgru2@{convgru2}}
+\index{convgru2@{convgru2}!torchvision\_down.models.optical\_flow.raft.RecurrentBlock@{torchvision\_down.models.optical\_flow.raft.RecurrentBlock}}
+\doxysubsubsection{\texorpdfstring{convgru2}{convgru2}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1models_1_1optical__flow_1_1raft_1_1_recurrent_block_acee8aa85d0fba1f51d97eb92668e97b3} 
+torchvision\+\_\+down.\+models.\+optical\+\_\+flow.\+raft.\+Recurrent\+Block.\+convgru2}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \ ConvGRU(}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ input\_size=input\_size,\ hidden\_size=hidden\_size,\ kernel\_size=kernel\_size[1],\ padding=padding[1]}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ )}
+
+\end{DoxyCode}
+\Hypertarget{classtorchvision__down_1_1models_1_1optical__flow_1_1raft_1_1_recurrent_block_a59061b7a801ecb83f0719fb74b3df44d}\index{torchvision\_down.models.optical\_flow.raft.RecurrentBlock@{torchvision\_down.models.optical\_flow.raft.RecurrentBlock}!hidden\_size@{hidden\_size}}
+\index{hidden\_size@{hidden\_size}!torchvision\_down.models.optical\_flow.raft.RecurrentBlock@{torchvision\_down.models.optical\_flow.raft.RecurrentBlock}}
+\doxysubsubsection{\texorpdfstring{hidden\_size}{hidden\_size}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1models_1_1optical__flow_1_1raft_1_1_recurrent_block_a59061b7a801ecb83f0719fb74b3df44d} 
+torchvision\+\_\+down.\+models.\+optical\+\_\+flow.\+raft.\+Recurrent\+Block.\+hidden\+\_\+size = hidden\+\_\+size}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Cervi\+AI/torchvision\+\_\+down/models/optical\+\_\+flow/\mbox{\hyperlink{raft_8py}{raft.\+py}}\end{DoxyCompactItemize}

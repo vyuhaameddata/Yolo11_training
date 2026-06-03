@@ -1,0 +1,126 @@
+\doxysection{torchvision\+\_\+down.\+models.\+detection.\+generalized\+\_\+rcnn.\+Generalized\+RCNN Class Reference}
+\hypertarget{classtorchvision__down_1_1models_1_1detection_1_1generalized__rcnn_1_1_generalized_r_c_n_n}{}\label{classtorchvision__down_1_1models_1_1detection_1_1generalized__rcnn_1_1_generalized_r_c_n_n}\index{torchvision\_down.models.detection.generalized\_rcnn.GeneralizedRCNN@{torchvision\_down.models.detection.generalized\_rcnn.GeneralizedRCNN}}
+Inheritance diagram for torchvision\+\_\+down.\+models.\+detection.\+generalized\+\_\+rcnn.\+Generalized\+RCNN\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.622951cm]{classtorchvision__down_1_1models_1_1detection_1_1generalized__rcnn_1_1_generalized_r_c_n_n}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+None \mbox{\hyperlink{classtorchvision__down_1_1models_1_1detection_1_1generalized__rcnn_1_1_generalized_r_c_n_n_af59ddb524758ba24400091c747242ce1}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, nn.\+Module \mbox{\hyperlink{classtorchvision__down_1_1models_1_1detection_1_1generalized__rcnn_1_1_generalized_r_c_n_n_acfd00ccbdf64ecb8ccd748b35a299edf}{backbone}}, nn.\+Module \mbox{\hyperlink{classtorchvision__down_1_1models_1_1detection_1_1generalized__rcnn_1_1_generalized_r_c_n_n_ab31224a182defcbe4f35772f0535615c}{rpn}}, nn.\+Module \mbox{\hyperlink{classtorchvision__down_1_1models_1_1detection_1_1generalized__rcnn_1_1_generalized_r_c_n_n_ab712662e3fd1ed7380107abac5303655}{roi\+\_\+heads}}, nn.\+Module \mbox{\hyperlink{classtorchvision__down_1_1models_1_1detection_1_1generalized__rcnn_1_1_generalized_r_c_n_n_ade06edc5a96dc7fac4c38a0b93cf52e8}{transform}})
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1models_1_1detection_1_1generalized__rcnn_1_1_generalized_r_c_n_n_acd58e035c394395c7f497d38f5bd1437}{eager\+\_\+outputs}} (self, losses, detections)
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1models_1_1detection_1_1generalized__rcnn_1_1_generalized_r_c_n_n_a003cc0e577391cacbec321d8088f1cbf}{forward}} (self, images, targets=None)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1models_1_1detection_1_1generalized__rcnn_1_1_generalized_r_c_n_n_ade06edc5a96dc7fac4c38a0b93cf52e8}{transform}} = transform
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1models_1_1detection_1_1generalized__rcnn_1_1_generalized_r_c_n_n_acfd00ccbdf64ecb8ccd748b35a299edf}{backbone}} = backbone
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1models_1_1detection_1_1generalized__rcnn_1_1_generalized_r_c_n_n_ab31224a182defcbe4f35772f0535615c}{rpn}} = rpn
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1models_1_1detection_1_1generalized__rcnn_1_1_generalized_r_c_n_n_ab712662e3fd1ed7380107abac5303655}{roi\+\_\+heads}} = roi\+\_\+heads
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1models_1_1detection_1_1generalized__rcnn_1_1_generalized_r_c_n_n_af4702f2bf14112f86dcdcd70682f1ff5}{training}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{classtorchvision__down_1_1models_1_1detection_1_1generalized__rcnn_1_1_generalized_r_c_n_n_a56b5bb01c59ee8369557fbad3d190f02}{\+\_\+has\+\_\+warned}} = False
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}Main class for Generalized R-CNN.
+
+Args:
+    backbone (nn.Module):
+    rpn (nn.Module):
+    roi_heads (nn.Module): takes the features + the proposals from the RPN and computes
+        detections / masks from it.
+    transform (nn.Module): performs the data transformation from the inputs to feed into
+        the model
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classtorchvision__down_1_1models_1_1detection_1_1generalized__rcnn_1_1_generalized_r_c_n_n_af59ddb524758ba24400091c747242ce1}\index{torchvision\_down.models.detection.generalized\_rcnn.GeneralizedRCNN@{torchvision\_down.models.detection.generalized\_rcnn.GeneralizedRCNN}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!torchvision\_down.models.detection.generalized\_rcnn.GeneralizedRCNN@{torchvision\_down.models.detection.generalized\_rcnn.GeneralizedRCNN}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1models_1_1detection_1_1generalized__rcnn_1_1_generalized_r_c_n_n_af59ddb524758ba24400091c747242ce1} 
+ None torchvision\+\_\+down.\+models.\+detection.\+generalized\+\_\+rcnn.\+Generalized\+RCNN.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{nn.\+Module}]{backbone}{, }\item[{nn.\+Module}]{rpn}{, }\item[{nn.\+Module}]{roi\+\_\+heads}{, }\item[{nn.\+Module}]{transform}{}\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classtorchvision__down_1_1models_1_1detection_1_1generalized__rcnn_1_1_generalized_r_c_n_n_acd58e035c394395c7f497d38f5bd1437}\index{torchvision\_down.models.detection.generalized\_rcnn.GeneralizedRCNN@{torchvision\_down.models.detection.generalized\_rcnn.GeneralizedRCNN}!eager\_outputs@{eager\_outputs}}
+\index{eager\_outputs@{eager\_outputs}!torchvision\_down.models.detection.generalized\_rcnn.GeneralizedRCNN@{torchvision\_down.models.detection.generalized\_rcnn.GeneralizedRCNN}}
+\doxysubsubsection{\texorpdfstring{eager\_outputs()}{eager\_outputs()}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1models_1_1detection_1_1generalized__rcnn_1_1_generalized_r_c_n_n_acd58e035c394395c7f497d38f5bd1437} 
+torchvision\+\_\+down.\+models.\+detection.\+generalized\+\_\+rcnn.\+Generalized\+RCNN.\+eager\+\_\+outputs (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{losses}{, }\item[{}]{detections}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classtorchvision__down_1_1models_1_1detection_1_1generalized__rcnn_1_1_generalized_r_c_n_n_a003cc0e577391cacbec321d8088f1cbf}\index{torchvision\_down.models.detection.generalized\_rcnn.GeneralizedRCNN@{torchvision\_down.models.detection.generalized\_rcnn.GeneralizedRCNN}!forward@{forward}}
+\index{forward@{forward}!torchvision\_down.models.detection.generalized\_rcnn.GeneralizedRCNN@{torchvision\_down.models.detection.generalized\_rcnn.GeneralizedRCNN}}
+\doxysubsubsection{\texorpdfstring{forward()}{forward()}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1models_1_1detection_1_1generalized__rcnn_1_1_generalized_r_c_n_n_a003cc0e577391cacbec321d8088f1cbf} 
+torchvision\+\_\+down.\+models.\+detection.\+generalized\+\_\+rcnn.\+Generalized\+RCNN.\+forward (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{images}{, }\item[{}]{targets}{ = {\ttfamily None}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Args:
+    images (list[Tensor]): images to be processed
+    targets (list[Dict[str, Tensor]]): ground-truth boxes present in the image (optional)
+
+Returns:
+    result (list[BoxList] or dict[Tensor]): the output from the model.
+        During training, it returns a dict[Tensor] which contains the losses.
+        During testing, it returns list[BoxList] contains additional fields
+        like `scores`, `labels` and `mask` (for Mask R-CNN models).
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classtorchvision__down_1_1models_1_1detection_1_1generalized__rcnn_1_1_generalized_r_c_n_n_a56b5bb01c59ee8369557fbad3d190f02}\index{torchvision\_down.models.detection.generalized\_rcnn.GeneralizedRCNN@{torchvision\_down.models.detection.generalized\_rcnn.GeneralizedRCNN}!\_has\_warned@{\_has\_warned}}
+\index{\_has\_warned@{\_has\_warned}!torchvision\_down.models.detection.generalized\_rcnn.GeneralizedRCNN@{torchvision\_down.models.detection.generalized\_rcnn.GeneralizedRCNN}}
+\doxysubsubsection{\texorpdfstring{\_has\_warned}{\_has\_warned}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1models_1_1detection_1_1generalized__rcnn_1_1_generalized_r_c_n_n_a56b5bb01c59ee8369557fbad3d190f02} 
+bool torchvision\+\_\+down.\+models.\+detection.\+generalized\+\_\+rcnn.\+Generalized\+RCNN.\+\_\+has\+\_\+warned = False\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classtorchvision__down_1_1models_1_1detection_1_1generalized__rcnn_1_1_generalized_r_c_n_n_acfd00ccbdf64ecb8ccd748b35a299edf}\index{torchvision\_down.models.detection.generalized\_rcnn.GeneralizedRCNN@{torchvision\_down.models.detection.generalized\_rcnn.GeneralizedRCNN}!backbone@{backbone}}
+\index{backbone@{backbone}!torchvision\_down.models.detection.generalized\_rcnn.GeneralizedRCNN@{torchvision\_down.models.detection.generalized\_rcnn.GeneralizedRCNN}}
+\doxysubsubsection{\texorpdfstring{backbone}{backbone}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1models_1_1detection_1_1generalized__rcnn_1_1_generalized_r_c_n_n_acfd00ccbdf64ecb8ccd748b35a299edf} 
+torchvision\+\_\+down.\+models.\+detection.\+generalized\+\_\+rcnn.\+Generalized\+RCNN.\+backbone = backbone}
+
+\Hypertarget{classtorchvision__down_1_1models_1_1detection_1_1generalized__rcnn_1_1_generalized_r_c_n_n_ab712662e3fd1ed7380107abac5303655}\index{torchvision\_down.models.detection.generalized\_rcnn.GeneralizedRCNN@{torchvision\_down.models.detection.generalized\_rcnn.GeneralizedRCNN}!roi\_heads@{roi\_heads}}
+\index{roi\_heads@{roi\_heads}!torchvision\_down.models.detection.generalized\_rcnn.GeneralizedRCNN@{torchvision\_down.models.detection.generalized\_rcnn.GeneralizedRCNN}}
+\doxysubsubsection{\texorpdfstring{roi\_heads}{roi\_heads}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1models_1_1detection_1_1generalized__rcnn_1_1_generalized_r_c_n_n_ab712662e3fd1ed7380107abac5303655} 
+torchvision\+\_\+down.\+models.\+detection.\+generalized\+\_\+rcnn.\+Generalized\+RCNN.\+roi\+\_\+heads = roi\+\_\+heads}
+
+\Hypertarget{classtorchvision__down_1_1models_1_1detection_1_1generalized__rcnn_1_1_generalized_r_c_n_n_ab31224a182defcbe4f35772f0535615c}\index{torchvision\_down.models.detection.generalized\_rcnn.GeneralizedRCNN@{torchvision\_down.models.detection.generalized\_rcnn.GeneralizedRCNN}!rpn@{rpn}}
+\index{rpn@{rpn}!torchvision\_down.models.detection.generalized\_rcnn.GeneralizedRCNN@{torchvision\_down.models.detection.generalized\_rcnn.GeneralizedRCNN}}
+\doxysubsubsection{\texorpdfstring{rpn}{rpn}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1models_1_1detection_1_1generalized__rcnn_1_1_generalized_r_c_n_n_ab31224a182defcbe4f35772f0535615c} 
+torchvision\+\_\+down.\+models.\+detection.\+generalized\+\_\+rcnn.\+Generalized\+RCNN.\+rpn = rpn}
+
+\Hypertarget{classtorchvision__down_1_1models_1_1detection_1_1generalized__rcnn_1_1_generalized_r_c_n_n_af4702f2bf14112f86dcdcd70682f1ff5}\index{torchvision\_down.models.detection.generalized\_rcnn.GeneralizedRCNN@{torchvision\_down.models.detection.generalized\_rcnn.GeneralizedRCNN}!training@{training}}
+\index{training@{training}!torchvision\_down.models.detection.generalized\_rcnn.GeneralizedRCNN@{torchvision\_down.models.detection.generalized\_rcnn.GeneralizedRCNN}}
+\doxysubsubsection{\texorpdfstring{training}{training}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1models_1_1detection_1_1generalized__rcnn_1_1_generalized_r_c_n_n_af4702f2bf14112f86dcdcd70682f1ff5} 
+torchvision\+\_\+down.\+models.\+detection.\+generalized\+\_\+rcnn.\+Generalized\+RCNN.\+training}
+
+\Hypertarget{classtorchvision__down_1_1models_1_1detection_1_1generalized__rcnn_1_1_generalized_r_c_n_n_ade06edc5a96dc7fac4c38a0b93cf52e8}\index{torchvision\_down.models.detection.generalized\_rcnn.GeneralizedRCNN@{torchvision\_down.models.detection.generalized\_rcnn.GeneralizedRCNN}!transform@{transform}}
+\index{transform@{transform}!torchvision\_down.models.detection.generalized\_rcnn.GeneralizedRCNN@{torchvision\_down.models.detection.generalized\_rcnn.GeneralizedRCNN}}
+\doxysubsubsection{\texorpdfstring{transform}{transform}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1models_1_1detection_1_1generalized__rcnn_1_1_generalized_r_c_n_n_ade06edc5a96dc7fac4c38a0b93cf52e8} 
+torchvision\+\_\+down.\+models.\+detection.\+generalized\+\_\+rcnn.\+Generalized\+RCNN.\+transform = transform}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Cervi\+AI/torchvision\+\_\+down/models/detection/\mbox{\hyperlink{generalized__rcnn_8py}{generalized\+\_\+rcnn.\+py}}\end{DoxyCompactItemize}

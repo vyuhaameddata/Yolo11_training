@@ -1,0 +1,80 @@
+\doxysection{torchvision\+\_\+down.\+ops.\+misc.\+Frozen\+Batch\+Norm2d Class Reference}
+\hypertarget{classtorchvision__down_1_1ops_1_1misc_1_1_frozen_batch_norm2d}{}\label{classtorchvision__down_1_1ops_1_1misc_1_1_frozen_batch_norm2d}\index{torchvision\_down.ops.misc.FrozenBatchNorm2d@{torchvision\_down.ops.misc.FrozenBatchNorm2d}}
+Inheritance diagram for torchvision\+\_\+down.\+ops.\+misc.\+Frozen\+Batch\+Norm2d\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classtorchvision__down_1_1ops_1_1misc_1_1_frozen_batch_norm2d}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1ops_1_1misc_1_1_frozen_batch_norm2d_a2e15e0698427e8d1b1f834d64dbafa2e}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, int num\+\_\+features, float \mbox{\hyperlink{classtorchvision__down_1_1ops_1_1misc_1_1_frozen_batch_norm2d_a6a69f7182b697c1fe827e64dd9c349db}{eps}}=1e-\/5)
+\item 
+Tensor \mbox{\hyperlink{classtorchvision__down_1_1ops_1_1misc_1_1_frozen_batch_norm2d_a805188a8868569ede722a4f5fd37cb54}{forward}} (self, Tensor x)
+\item 
+str \mbox{\hyperlink{classtorchvision__down_1_1ops_1_1misc_1_1_frozen_batch_norm2d_abe0fb76ddcb6d4b3aecf642834c3dd6e}{\+\_\+\+\_\+repr\+\_\+\+\_\+}} (self)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1ops_1_1misc_1_1_frozen_batch_norm2d_a6a69f7182b697c1fe827e64dd9c349db}{eps}} = eps
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1ops_1_1misc_1_1_frozen_batch_norm2d_aef3228019c3566ed56c26e86c62b4a51}{\+\_\+load\+\_\+from\+\_\+state\+\_\+dict}} (self, dict state\+\_\+dict, str prefix, dict local\+\_\+metadata, bool strict, List\mbox{[}str\mbox{]} missing\+\_\+keys, List\mbox{[}str\mbox{]} unexpected\+\_\+keys, List\mbox{[}str\mbox{]} error\+\_\+msgs)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}BatchNorm2d where the batch statistics and the affine parameters are fixed
+
+Args:
+    num_features (int): Number of features ``C`` from an expected input of size ``(N, C, H, W)``
+    eps (float): a value added to the denominator for numerical stability. Default: 1e-5
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classtorchvision__down_1_1ops_1_1misc_1_1_frozen_batch_norm2d_a2e15e0698427e8d1b1f834d64dbafa2e}\index{torchvision\_down.ops.misc.FrozenBatchNorm2d@{torchvision\_down.ops.misc.FrozenBatchNorm2d}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!torchvision\_down.ops.misc.FrozenBatchNorm2d@{torchvision\_down.ops.misc.FrozenBatchNorm2d}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1ops_1_1misc_1_1_frozen_batch_norm2d_a2e15e0698427e8d1b1f834d64dbafa2e} 
+torchvision\+\_\+down.\+ops.\+misc.\+Frozen\+Batch\+Norm2d.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{int}]{num\+\_\+features}{, }\item[{float }]{eps}{ = {\ttfamily 1e-\/5}}\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classtorchvision__down_1_1ops_1_1misc_1_1_frozen_batch_norm2d_abe0fb76ddcb6d4b3aecf642834c3dd6e}\index{torchvision\_down.ops.misc.FrozenBatchNorm2d@{torchvision\_down.ops.misc.FrozenBatchNorm2d}!\_\_repr\_\_@{\_\_repr\_\_}}
+\index{\_\_repr\_\_@{\_\_repr\_\_}!torchvision\_down.ops.misc.FrozenBatchNorm2d@{torchvision\_down.ops.misc.FrozenBatchNorm2d}}
+\doxysubsubsection{\texorpdfstring{\_\_repr\_\_()}{\_\_repr\_\_()}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1ops_1_1misc_1_1_frozen_batch_norm2d_abe0fb76ddcb6d4b3aecf642834c3dd6e} 
+ str torchvision\+\_\+down.\+ops.\+misc.\+Frozen\+Batch\+Norm2d.\+\_\+\+\_\+repr\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classtorchvision__down_1_1ops_1_1misc_1_1_frozen_batch_norm2d_aef3228019c3566ed56c26e86c62b4a51}\index{torchvision\_down.ops.misc.FrozenBatchNorm2d@{torchvision\_down.ops.misc.FrozenBatchNorm2d}!\_load\_from\_state\_dict@{\_load\_from\_state\_dict}}
+\index{\_load\_from\_state\_dict@{\_load\_from\_state\_dict}!torchvision\_down.ops.misc.FrozenBatchNorm2d@{torchvision\_down.ops.misc.FrozenBatchNorm2d}}
+\doxysubsubsection{\texorpdfstring{\_load\_from\_state\_dict()}{\_load\_from\_state\_dict()}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1ops_1_1misc_1_1_frozen_batch_norm2d_aef3228019c3566ed56c26e86c62b4a51} 
+torchvision\+\_\+down.\+ops.\+misc.\+Frozen\+Batch\+Norm2d.\+\_\+load\+\_\+from\+\_\+state\+\_\+dict (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{dict}]{state\+\_\+dict}{, }\item[{str}]{prefix}{, }\item[{dict}]{local\+\_\+metadata}{, }\item[{bool}]{strict}{, }\item[{List\mbox{[}str\mbox{]}}]{missing\+\_\+keys}{, }\item[{List\mbox{[}str\mbox{]}}]{unexpected\+\_\+keys}{, }\item[{List\mbox{[}str\mbox{]}}]{error\+\_\+msgs}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classtorchvision__down_1_1ops_1_1misc_1_1_frozen_batch_norm2d_a805188a8868569ede722a4f5fd37cb54}\index{torchvision\_down.ops.misc.FrozenBatchNorm2d@{torchvision\_down.ops.misc.FrozenBatchNorm2d}!forward@{forward}}
+\index{forward@{forward}!torchvision\_down.ops.misc.FrozenBatchNorm2d@{torchvision\_down.ops.misc.FrozenBatchNorm2d}}
+\doxysubsubsection{\texorpdfstring{forward()}{forward()}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1ops_1_1misc_1_1_frozen_batch_norm2d_a805188a8868569ede722a4f5fd37cb54} 
+ Tensor torchvision\+\_\+down.\+ops.\+misc.\+Frozen\+Batch\+Norm2d.\+forward (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{Tensor}]{x}{}\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classtorchvision__down_1_1ops_1_1misc_1_1_frozen_batch_norm2d_a6a69f7182b697c1fe827e64dd9c349db}\index{torchvision\_down.ops.misc.FrozenBatchNorm2d@{torchvision\_down.ops.misc.FrozenBatchNorm2d}!eps@{eps}}
+\index{eps@{eps}!torchvision\_down.ops.misc.FrozenBatchNorm2d@{torchvision\_down.ops.misc.FrozenBatchNorm2d}}
+\doxysubsubsection{\texorpdfstring{eps}{eps}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1ops_1_1misc_1_1_frozen_batch_norm2d_a6a69f7182b697c1fe827e64dd9c349db} 
+torchvision\+\_\+down.\+ops.\+misc.\+Frozen\+Batch\+Norm2d.\+eps = eps}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Cervi\+AI/torchvision\+\_\+down/ops/\mbox{\hyperlink{misc_8py}{misc.\+py}}\end{DoxyCompactItemize}

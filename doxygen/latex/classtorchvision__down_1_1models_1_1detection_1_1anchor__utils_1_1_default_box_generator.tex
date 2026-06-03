@@ -1,0 +1,140 @@
+\doxysection{torchvision\+\_\+down.\+models.\+detection.\+anchor\+\_\+utils.\+Default\+Box\+Generator Class Reference}
+\hypertarget{classtorchvision__down_1_1models_1_1detection_1_1anchor__utils_1_1_default_box_generator}{}\label{classtorchvision__down_1_1models_1_1detection_1_1anchor__utils_1_1_default_box_generator}\index{torchvision\_down.models.detection.anchor\_utils.DefaultBoxGenerator@{torchvision\_down.models.detection.anchor\_utils.DefaultBoxGenerator}}
+Inheritance diagram for torchvision\+\_\+down.\+models.\+detection.\+anchor\+\_\+utils.\+Default\+Box\+Generator\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classtorchvision__down_1_1models_1_1detection_1_1anchor__utils_1_1_default_box_generator}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1models_1_1detection_1_1anchor__utils_1_1_default_box_generator_ae49cd3bd58d41d569db1425faa0e66cc}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, List\mbox{[}List\mbox{[}int\mbox{]}\mbox{]} \mbox{\hyperlink{classtorchvision__down_1_1models_1_1detection_1_1anchor__utils_1_1_default_box_generator_ab904c4acc5ca948469a0963c9315b10b}{aspect\+\_\+ratios}}, float min\+\_\+ratio=0.\+15, float max\+\_\+ratio=0.\+9, Optional\mbox{[}List\mbox{[}float\mbox{]}\mbox{]} \mbox{\hyperlink{classtorchvision__down_1_1models_1_1detection_1_1anchor__utils_1_1_default_box_generator_a3fe9a94fd8f6fb33dbad99c6e2d9087f}{scales}}=None, Optional\mbox{[}List\mbox{[}int\mbox{]}\mbox{]} \mbox{\hyperlink{classtorchvision__down_1_1models_1_1detection_1_1anchor__utils_1_1_default_box_generator_ab0b4d442ea1c0a6bdab9b43af57bbfa1}{steps}}=None, bool \mbox{\hyperlink{classtorchvision__down_1_1models_1_1detection_1_1anchor__utils_1_1_default_box_generator_a58ee677a79b07cbb7bfb8a082a7cb488}{clip}}=True)
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1models_1_1detection_1_1anchor__utils_1_1_default_box_generator_a4bf41018e2ab88be462a8d5a9268269f}{num\+\_\+anchors\+\_\+per\+\_\+location}} (self)
+\item 
+str \mbox{\hyperlink{classtorchvision__down_1_1models_1_1detection_1_1anchor__utils_1_1_default_box_generator_a2a8e57f9e7af98c21fc1fc938ca34222}{\+\_\+\+\_\+repr\+\_\+\+\_\+}} (self)
+\item 
+List\mbox{[}Tensor\mbox{]} \mbox{\hyperlink{classtorchvision__down_1_1models_1_1detection_1_1anchor__utils_1_1_default_box_generator_ae63ed45f05c01e9704d7a2520be91112}{forward}} (self, \mbox{\hyperlink{classtorchvision__down_1_1models_1_1detection_1_1image__list_1_1_image_list}{Image\+List}} image\+\_\+list, List\mbox{[}Tensor\mbox{]} feature\+\_\+maps)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1models_1_1detection_1_1anchor__utils_1_1_default_box_generator_ab904c4acc5ca948469a0963c9315b10b}{aspect\+\_\+ratios}} = aspect\+\_\+ratios
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1models_1_1detection_1_1anchor__utils_1_1_default_box_generator_ab0b4d442ea1c0a6bdab9b43af57bbfa1}{steps}} = steps
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1models_1_1detection_1_1anchor__utils_1_1_default_box_generator_a58ee677a79b07cbb7bfb8a082a7cb488}{clip}} = clip
+\item 
+list \mbox{\hyperlink{classtorchvision__down_1_1models_1_1detection_1_1anchor__utils_1_1_default_box_generator_a3fe9a94fd8f6fb33dbad99c6e2d9087f}{scales}} = \mbox{[}min\+\_\+ratio + range\+\_\+ratio \texorpdfstring{$\ast$}{*} k / (num\+\_\+outputs -\/ 1.\+0) for k in range(num\+\_\+outputs)\mbox{]}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+List\mbox{[}Tensor\mbox{]} \mbox{\hyperlink{classtorchvision__down_1_1models_1_1detection_1_1anchor__utils_1_1_default_box_generator_a2b3b2cc1cd34f035813279df501a2d41}{\+\_\+generate\+\_\+wh\+\_\+pairs}} (self, int num\+\_\+outputs, torch.\+dtype dtype=torch.\+float32, torch.\+device device=torch.\+device("{}cpu"{}))
+\item 
+Tensor \mbox{\hyperlink{classtorchvision__down_1_1models_1_1detection_1_1anchor__utils_1_1_default_box_generator_a7a4d5fadb94447ba22bd0cf26da4ad3e}{\+\_\+grid\+\_\+default\+\_\+boxes}} (self, List\mbox{[}List\mbox{[}int\mbox{]}\mbox{]} grid\+\_\+sizes, List\mbox{[}int\mbox{]} image\+\_\+size, torch.\+dtype dtype=torch.\+float32)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+List\mbox{[}Tensor\mbox{]} \mbox{\hyperlink{classtorchvision__down_1_1models_1_1detection_1_1anchor__utils_1_1_default_box_generator_ad6835c6731a5862aa38807e22464850b}{\+\_\+wh\+\_\+pairs}} = self.\+\_\+generate\+\_\+wh\+\_\+pairs(num\+\_\+outputs)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}This module generates the default boxes of SSD for a set of feature maps and image sizes.
+
+Args:
+    aspect_ratios (List[List[int]]): A list with all the aspect ratios used in each feature map.
+    min_ratio (float): The minimum scale :math:`\text{s}_{\text{min}}` of the default boxes used in the estimation
+        of the scales of each feature map. It is used only if the ``scales`` parameter is not provided.
+    max_ratio (float): The maximum scale :math:`\text{s}_{\text{max}}`  of the default boxes used in the estimation
+        of the scales of each feature map. It is used only if the ``scales`` parameter is not provided.
+    scales (List[float]], optional): The scales of the default boxes. If not provided it will be estimated using
+        the ``min_ratio`` and ``max_ratio`` parameters.
+    steps (List[int]], optional): It's a hyper-parameter that affects the tiling of defalt boxes. If not provided
+        it will be estimated from the data.
+    clip (bool): Whether the standardized values of default boxes should be clipped between 0 and 1. The clipping
+        is applied while the boxes are encoded in format ``(cx, cy, w, h)``.
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classtorchvision__down_1_1models_1_1detection_1_1anchor__utils_1_1_default_box_generator_ae49cd3bd58d41d569db1425faa0e66cc}\index{torchvision\_down.models.detection.anchor\_utils.DefaultBoxGenerator@{torchvision\_down.models.detection.anchor\_utils.DefaultBoxGenerator}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!torchvision\_down.models.detection.anchor\_utils.DefaultBoxGenerator@{torchvision\_down.models.detection.anchor\_utils.DefaultBoxGenerator}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1models_1_1detection_1_1anchor__utils_1_1_default_box_generator_ae49cd3bd58d41d569db1425faa0e66cc} 
+torchvision\+\_\+down.\+models.\+detection.\+anchor\+\_\+utils.\+Default\+Box\+Generator.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{List\mbox{[}List\mbox{[}int\mbox{]}\mbox{]}}]{aspect\+\_\+ratios}{, }\item[{float }]{min\+\_\+ratio}{ = {\ttfamily 0.15}, }\item[{float }]{max\+\_\+ratio}{ = {\ttfamily 0.9}, }\item[{Optional\mbox{[}List\mbox{[}float\mbox{]}\mbox{]} }]{scales}{ = {\ttfamily None}, }\item[{Optional\mbox{[}List\mbox{[}int\mbox{]}\mbox{]} }]{steps}{ = {\ttfamily None}, }\item[{bool }]{clip}{ = {\ttfamily True}}\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classtorchvision__down_1_1models_1_1detection_1_1anchor__utils_1_1_default_box_generator_a2a8e57f9e7af98c21fc1fc938ca34222}\index{torchvision\_down.models.detection.anchor\_utils.DefaultBoxGenerator@{torchvision\_down.models.detection.anchor\_utils.DefaultBoxGenerator}!\_\_repr\_\_@{\_\_repr\_\_}}
+\index{\_\_repr\_\_@{\_\_repr\_\_}!torchvision\_down.models.detection.anchor\_utils.DefaultBoxGenerator@{torchvision\_down.models.detection.anchor\_utils.DefaultBoxGenerator}}
+\doxysubsubsection{\texorpdfstring{\_\_repr\_\_()}{\_\_repr\_\_()}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1models_1_1detection_1_1anchor__utils_1_1_default_box_generator_a2a8e57f9e7af98c21fc1fc938ca34222} 
+ str torchvision\+\_\+down.\+models.\+detection.\+anchor\+\_\+utils.\+Default\+Box\+Generator.\+\_\+\+\_\+repr\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classtorchvision__down_1_1models_1_1detection_1_1anchor__utils_1_1_default_box_generator_a2b3b2cc1cd34f035813279df501a2d41}\index{torchvision\_down.models.detection.anchor\_utils.DefaultBoxGenerator@{torchvision\_down.models.detection.anchor\_utils.DefaultBoxGenerator}!\_generate\_wh\_pairs@{\_generate\_wh\_pairs}}
+\index{\_generate\_wh\_pairs@{\_generate\_wh\_pairs}!torchvision\_down.models.detection.anchor\_utils.DefaultBoxGenerator@{torchvision\_down.models.detection.anchor\_utils.DefaultBoxGenerator}}
+\doxysubsubsection{\texorpdfstring{\_generate\_wh\_pairs()}{\_generate\_wh\_pairs()}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1models_1_1detection_1_1anchor__utils_1_1_default_box_generator_a2b3b2cc1cd34f035813279df501a2d41} 
+ List\mbox{[}Tensor\mbox{]} torchvision\+\_\+down.\+models.\+detection.\+anchor\+\_\+utils.\+Default\+Box\+Generator.\+\_\+generate\+\_\+wh\+\_\+pairs (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{int}]{num\+\_\+outputs}{, }\item[{torch.\+dtype }]{dtype}{ = {\ttfamily torch.float32}, }\item[{torch.\+device }]{device}{ = {\ttfamily torch.device("{}cpu"{})}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classtorchvision__down_1_1models_1_1detection_1_1anchor__utils_1_1_default_box_generator_a7a4d5fadb94447ba22bd0cf26da4ad3e}\index{torchvision\_down.models.detection.anchor\_utils.DefaultBoxGenerator@{torchvision\_down.models.detection.anchor\_utils.DefaultBoxGenerator}!\_grid\_default\_boxes@{\_grid\_default\_boxes}}
+\index{\_grid\_default\_boxes@{\_grid\_default\_boxes}!torchvision\_down.models.detection.anchor\_utils.DefaultBoxGenerator@{torchvision\_down.models.detection.anchor\_utils.DefaultBoxGenerator}}
+\doxysubsubsection{\texorpdfstring{\_grid\_default\_boxes()}{\_grid\_default\_boxes()}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1models_1_1detection_1_1anchor__utils_1_1_default_box_generator_a7a4d5fadb94447ba22bd0cf26da4ad3e} 
+ Tensor torchvision\+\_\+down.\+models.\+detection.\+anchor\+\_\+utils.\+Default\+Box\+Generator.\+\_\+grid\+\_\+default\+\_\+boxes (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{List\mbox{[}List\mbox{[}int\mbox{]}\mbox{]}}]{grid\+\_\+sizes}{, }\item[{List\mbox{[}int\mbox{]}}]{image\+\_\+size}{, }\item[{torch.\+dtype }]{dtype}{ = {\ttfamily torch.float32}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classtorchvision__down_1_1models_1_1detection_1_1anchor__utils_1_1_default_box_generator_ae63ed45f05c01e9704d7a2520be91112}\index{torchvision\_down.models.detection.anchor\_utils.DefaultBoxGenerator@{torchvision\_down.models.detection.anchor\_utils.DefaultBoxGenerator}!forward@{forward}}
+\index{forward@{forward}!torchvision\_down.models.detection.anchor\_utils.DefaultBoxGenerator@{torchvision\_down.models.detection.anchor\_utils.DefaultBoxGenerator}}
+\doxysubsubsection{\texorpdfstring{forward()}{forward()}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1models_1_1detection_1_1anchor__utils_1_1_default_box_generator_ae63ed45f05c01e9704d7a2520be91112} 
+ List\mbox{[}Tensor\mbox{]} torchvision\+\_\+down.\+models.\+detection.\+anchor\+\_\+utils.\+Default\+Box\+Generator.\+forward (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{\mbox{\hyperlink{classtorchvision__down_1_1models_1_1detection_1_1image__list_1_1_image_list}{Image\+List}}}]{image\+\_\+list}{, }\item[{List\mbox{[}Tensor\mbox{]}}]{feature\+\_\+maps}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classtorchvision__down_1_1models_1_1detection_1_1anchor__utils_1_1_default_box_generator_a4bf41018e2ab88be462a8d5a9268269f}\index{torchvision\_down.models.detection.anchor\_utils.DefaultBoxGenerator@{torchvision\_down.models.detection.anchor\_utils.DefaultBoxGenerator}!num\_anchors\_per\_location@{num\_anchors\_per\_location}}
+\index{num\_anchors\_per\_location@{num\_anchors\_per\_location}!torchvision\_down.models.detection.anchor\_utils.DefaultBoxGenerator@{torchvision\_down.models.detection.anchor\_utils.DefaultBoxGenerator}}
+\doxysubsubsection{\texorpdfstring{num\_anchors\_per\_location()}{num\_anchors\_per\_location()}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1models_1_1detection_1_1anchor__utils_1_1_default_box_generator_a4bf41018e2ab88be462a8d5a9268269f} 
+torchvision\+\_\+down.\+models.\+detection.\+anchor\+\_\+utils.\+Default\+Box\+Generator.\+num\+\_\+anchors\+\_\+per\+\_\+location (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classtorchvision__down_1_1models_1_1detection_1_1anchor__utils_1_1_default_box_generator_ad6835c6731a5862aa38807e22464850b}\index{torchvision\_down.models.detection.anchor\_utils.DefaultBoxGenerator@{torchvision\_down.models.detection.anchor\_utils.DefaultBoxGenerator}!\_wh\_pairs@{\_wh\_pairs}}
+\index{\_wh\_pairs@{\_wh\_pairs}!torchvision\_down.models.detection.anchor\_utils.DefaultBoxGenerator@{torchvision\_down.models.detection.anchor\_utils.DefaultBoxGenerator}}
+\doxysubsubsection{\texorpdfstring{\_wh\_pairs}{\_wh\_pairs}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1models_1_1detection_1_1anchor__utils_1_1_default_box_generator_ad6835c6731a5862aa38807e22464850b} 
+List\mbox{[}Tensor\mbox{]} torchvision\+\_\+down.\+models.\+detection.\+anchor\+\_\+utils.\+Default\+Box\+Generator.\+\_\+wh\+\_\+pairs = self.\+\_\+generate\+\_\+wh\+\_\+pairs(num\+\_\+outputs)\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classtorchvision__down_1_1models_1_1detection_1_1anchor__utils_1_1_default_box_generator_ab904c4acc5ca948469a0963c9315b10b}\index{torchvision\_down.models.detection.anchor\_utils.DefaultBoxGenerator@{torchvision\_down.models.detection.anchor\_utils.DefaultBoxGenerator}!aspect\_ratios@{aspect\_ratios}}
+\index{aspect\_ratios@{aspect\_ratios}!torchvision\_down.models.detection.anchor\_utils.DefaultBoxGenerator@{torchvision\_down.models.detection.anchor\_utils.DefaultBoxGenerator}}
+\doxysubsubsection{\texorpdfstring{aspect\_ratios}{aspect\_ratios}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1models_1_1detection_1_1anchor__utils_1_1_default_box_generator_ab904c4acc5ca948469a0963c9315b10b} 
+torchvision\+\_\+down.\+models.\+detection.\+anchor\+\_\+utils.\+Default\+Box\+Generator.\+aspect\+\_\+ratios = aspect\+\_\+ratios}
+
+\Hypertarget{classtorchvision__down_1_1models_1_1detection_1_1anchor__utils_1_1_default_box_generator_a58ee677a79b07cbb7bfb8a082a7cb488}\index{torchvision\_down.models.detection.anchor\_utils.DefaultBoxGenerator@{torchvision\_down.models.detection.anchor\_utils.DefaultBoxGenerator}!clip@{clip}}
+\index{clip@{clip}!torchvision\_down.models.detection.anchor\_utils.DefaultBoxGenerator@{torchvision\_down.models.detection.anchor\_utils.DefaultBoxGenerator}}
+\doxysubsubsection{\texorpdfstring{clip}{clip}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1models_1_1detection_1_1anchor__utils_1_1_default_box_generator_a58ee677a79b07cbb7bfb8a082a7cb488} 
+torchvision\+\_\+down.\+models.\+detection.\+anchor\+\_\+utils.\+Default\+Box\+Generator.\+clip = clip}
+
+\Hypertarget{classtorchvision__down_1_1models_1_1detection_1_1anchor__utils_1_1_default_box_generator_a3fe9a94fd8f6fb33dbad99c6e2d9087f}\index{torchvision\_down.models.detection.anchor\_utils.DefaultBoxGenerator@{torchvision\_down.models.detection.anchor\_utils.DefaultBoxGenerator}!scales@{scales}}
+\index{scales@{scales}!torchvision\_down.models.detection.anchor\_utils.DefaultBoxGenerator@{torchvision\_down.models.detection.anchor\_utils.DefaultBoxGenerator}}
+\doxysubsubsection{\texorpdfstring{scales}{scales}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1models_1_1detection_1_1anchor__utils_1_1_default_box_generator_a3fe9a94fd8f6fb33dbad99c6e2d9087f} 
+list torchvision\+\_\+down.\+models.\+detection.\+anchor\+\_\+utils.\+Default\+Box\+Generator.\+scales = \mbox{[}min\+\_\+ratio + range\+\_\+ratio \texorpdfstring{$\ast$}{*} k / (num\+\_\+outputs -\/ 1.\+0) for k in range(num\+\_\+outputs)\mbox{]}}
+
+\Hypertarget{classtorchvision__down_1_1models_1_1detection_1_1anchor__utils_1_1_default_box_generator_ab0b4d442ea1c0a6bdab9b43af57bbfa1}\index{torchvision\_down.models.detection.anchor\_utils.DefaultBoxGenerator@{torchvision\_down.models.detection.anchor\_utils.DefaultBoxGenerator}!steps@{steps}}
+\index{steps@{steps}!torchvision\_down.models.detection.anchor\_utils.DefaultBoxGenerator@{torchvision\_down.models.detection.anchor\_utils.DefaultBoxGenerator}}
+\doxysubsubsection{\texorpdfstring{steps}{steps}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1models_1_1detection_1_1anchor__utils_1_1_default_box_generator_ab0b4d442ea1c0a6bdab9b43af57bbfa1} 
+torchvision\+\_\+down.\+models.\+detection.\+anchor\+\_\+utils.\+Default\+Box\+Generator.\+steps = steps}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Cervi\+AI/torchvision\+\_\+down/models/detection/\mbox{\hyperlink{anchor__utils_8py}{anchor\+\_\+utils.\+py}}\end{DoxyCompactItemize}

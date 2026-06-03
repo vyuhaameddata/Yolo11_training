@@ -1,0 +1,75 @@
+\doxysection{models.\+common.\+Robust\+Conv2 Class Reference}
+\hypertarget{classmodels_1_1common_1_1_robust_conv2}{}\label{classmodels_1_1common_1_1_robust_conv2}\index{models.common.RobustConv2@{models.common.RobustConv2}}
+Inheritance diagram for models.\+common.\+Robust\+Conv2\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classmodels_1_1common_1_1_robust_conv2}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classmodels_1_1common_1_1_robust_conv2_a7813b7fa2bd253eff7ced36103d54a4e}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, c1, c2, k=7, s=4, p=None, g=1, act=True, layer\+\_\+scale\+\_\+init\+\_\+value=1e-\/6)
+\item 
+\mbox{\hyperlink{classmodels_1_1common_1_1_robust_conv2_a6df068428d12af18ab9e228181d839d6}{forward}} (self, x)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classmodels_1_1common_1_1_robust_conv2_a4edd6cd00e66c906eaad65b3104c1c98}{conv\+\_\+strided}} = \mbox{\hyperlink{classmodels_1_1common_1_1_conv}{Conv}}(c1, c1, k=k, s=s, p=p, g=c1, act=act)
+\item 
+\mbox{\hyperlink{classmodels_1_1common_1_1_robust_conv2_a4de32545dc7cba19ded86defd989700d}{conv\+\_\+deconv}}
+\item 
+int \mbox{\hyperlink{classmodels_1_1common_1_1_robust_conv2_adc9c17699c3dc2e9bbbc7de4e3114cdd}{gamma}} = nn.\+Parameter(layer\+\_\+scale\+\_\+init\+\_\+value \texorpdfstring{$\ast$}{*} torch.\+ones(c2)) if layer\+\_\+scale\+\_\+init\+\_\+value $>$ 0 else None
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classmodels_1_1common_1_1_robust_conv2_a7813b7fa2bd253eff7ced36103d54a4e}\index{models.common.RobustConv2@{models.common.RobustConv2}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!models.common.RobustConv2@{models.common.RobustConv2}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily \label{classmodels_1_1common_1_1_robust_conv2_a7813b7fa2bd253eff7ced36103d54a4e} 
+models.\+common.\+Robust\+Conv2.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{c1}{, }\item[{}]{c2}{, }\item[{}]{k}{ = {\ttfamily 7}, }\item[{}]{s}{ = {\ttfamily 4}, }\item[{}]{p}{ = {\ttfamily None}, }\item[{}]{g}{ = {\ttfamily 1}, }\item[{}]{act}{ = {\ttfamily True}, }\item[{}]{layer\+\_\+scale\+\_\+init\+\_\+value}{ = {\ttfamily 1e-\/6}}\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classmodels_1_1common_1_1_robust_conv2_a6df068428d12af18ab9e228181d839d6}\index{models.common.RobustConv2@{models.common.RobustConv2}!forward@{forward}}
+\index{forward@{forward}!models.common.RobustConv2@{models.common.RobustConv2}}
+\doxysubsubsection{\texorpdfstring{forward()}{forward()}}
+{\footnotesize\ttfamily \label{classmodels_1_1common_1_1_robust_conv2_a6df068428d12af18ab9e228181d839d6} 
+models.\+common.\+Robust\+Conv2.\+forward (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{x}{}\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classmodels_1_1common_1_1_robust_conv2_a4de32545dc7cba19ded86defd989700d}\index{models.common.RobustConv2@{models.common.RobustConv2}!conv\_deconv@{conv\_deconv}}
+\index{conv\_deconv@{conv\_deconv}!models.common.RobustConv2@{models.common.RobustConv2}}
+\doxysubsubsection{\texorpdfstring{conv\_deconv}{conv\_deconv}}
+{\footnotesize\ttfamily \label{classmodels_1_1common_1_1_robust_conv2_a4de32545dc7cba19ded86defd989700d} 
+models.\+common.\+Robust\+Conv2.\+conv\+\_\+deconv}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \ nn.ConvTranspose2d(in\_channels=c1,\ out\_channels=c2,\ kernel\_size=s,\ stride=s,\ }
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ padding=0,\ bias=\textcolor{keyword}{True},\ dilation=1,\ groups=1}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ )}
+
+\end{DoxyCode}
+\Hypertarget{classmodels_1_1common_1_1_robust_conv2_a4edd6cd00e66c906eaad65b3104c1c98}\index{models.common.RobustConv2@{models.common.RobustConv2}!conv\_strided@{conv\_strided}}
+\index{conv\_strided@{conv\_strided}!models.common.RobustConv2@{models.common.RobustConv2}}
+\doxysubsubsection{\texorpdfstring{conv\_strided}{conv\_strided}}
+{\footnotesize\ttfamily \label{classmodels_1_1common_1_1_robust_conv2_a4edd6cd00e66c906eaad65b3104c1c98} 
+models.\+common.\+Robust\+Conv2.\+conv\+\_\+strided = \mbox{\hyperlink{classmodels_1_1common_1_1_conv}{Conv}}(c1, c1, k=k, s=s, p=p, g=c1, act=act)}
+
+\Hypertarget{classmodels_1_1common_1_1_robust_conv2_adc9c17699c3dc2e9bbbc7de4e3114cdd}\index{models.common.RobustConv2@{models.common.RobustConv2}!gamma@{gamma}}
+\index{gamma@{gamma}!models.common.RobustConv2@{models.common.RobustConv2}}
+\doxysubsubsection{\texorpdfstring{gamma}{gamma}}
+{\footnotesize\ttfamily \label{classmodels_1_1common_1_1_robust_conv2_adc9c17699c3dc2e9bbbc7de4e3114cdd} 
+int models.\+common.\+Robust\+Conv2.\+gamma = nn.\+Parameter(layer\+\_\+scale\+\_\+init\+\_\+value \texorpdfstring{$\ast$}{*} torch.\+ones(c2)) if layer\+\_\+scale\+\_\+init\+\_\+value $>$ 0 else None}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Cervi\+AI/models/\mbox{\hyperlink{common_8py}{common.\+py}}\end{DoxyCompactItemize}

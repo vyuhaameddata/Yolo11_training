@@ -1,0 +1,64 @@
+\doxysection{Cervi\+AI/\+WSD11.py File Reference}
+\hypertarget{_w_s_d11_8py}{}\label{_w_s_d11_8py}\index{CerviAI/WSD11.py@{CerviAI/WSD11.py}}
+\doxysubsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{class_w_s_d11_1_1_global_vars}{WSD11.\+Global\+Vars}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+namespace \mbox{\hyperlink{namespace_w_s_d11}{WSD11}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{namespace_w_s_d11_a268e56aa5eb3cfb8f40bf5ca433779a0}{WSD11.\+write\+\_\+ndpa}} (\mbox{\hyperlink{namespace_w_s_d11_a0128fe372b18cc04ebc5cf7ff30417ca}{tile\+\_\+size}}=1024, \mbox{\hyperlink{namespace_w_s_d11_a13eb9343fdda30bdeed4a28f7d65eb65}{overlap}}=128)
+\item 
+\mbox{\hyperlink{namespace_w_s_d11_a1b0724512dcdab24e8125aa42521dd3c}{WSD11.\+get\+\_\+referance}} (wsi\+\_\+path)
+\item 
+\mbox{\hyperlink{namespace_w_s_d11_abb7b90c1ce89e96f8f3cfeee2e71c93a}{WSD11.\+update\+\_\+annote\+\_\+id}} (annotations)
+\item 
+\mbox{\hyperlink{namespace_w_s_d11_a0f0a09953be1f3a006276dee742c3b15}{WSD11.\+run\+\_\+predict\+\_\+wsi\+\_\+multithread}} (path, model, \mbox{\hyperlink{namespace_w_s_d11_a13eb9343fdda30bdeed4a28f7d65eb65}{overlap}}, \mbox{\hyperlink{namespace_w_s_d11_a0128fe372b18cc04ebc5cf7ff30417ca}{tile\+\_\+size}}=1024, batch\+\_\+size=12)
+\item 
+\mbox{\hyperlink{namespace_w_s_d11_a7e074219f0c8d8ca64a6ee349de385e8}{WSD11.\+prune\+\_\+list}} (box\+\_\+list)
+\item 
+\mbox{\hyperlink{namespace_w_s_d11_a11e4e8cc81c512ecdaf8a9325469a22a}{WSD11.\+replace\+\_\+bigger\+\_\+box}} (boxA, boxB)
+\item 
+\mbox{\hyperlink{namespace_w_s_d11_aae47c14c78b1214acc6e6123b1d5d391}{WSD11.\+bb\+\_\+intersection\+\_\+over\+\_\+union}} (boxA, boxB)
+\item 
+\mbox{\hyperlink{namespace_w_s_d11_aebd1e93d631d40b49f588a302c487c79}{WSD11.\+rerun\+\_\+predict\+\_\+pool}} (wsi\+\_\+path, model, pred\+\_\+list, \mbox{\hyperlink{namespace_w_s_d11_a0128fe372b18cc04ebc5cf7ff30417ca}{tile\+\_\+size}}=1024, batch\+\_\+size=12)
+\item 
+\mbox{\hyperlink{namespace_w_s_d11_a33c33e34916ee673f7e9fb8074910397}{WSD11.\+divide\+\_\+chunks}} (Anotelist, batch\+\_\+size)
+\item 
+\mbox{\hyperlink{namespace_w_s_d11_a713009b783b829cd62901dbd7854ddd7}{WSD11.\+read\+\_\+tiles\+\_\+parallel}} (slide\+\_\+path, pred\+\_\+list, \mbox{\hyperlink{namespace_w_s_d11_a0128fe372b18cc04ebc5cf7ff30417ca}{tile\+\_\+size}})
+\item 
+\mbox{\hyperlink{namespace_w_s_d11_a6f7fdd5d618e7cb4f753c18bcd5aa4ce}{WSD11.\+process}} (wsi\+\_\+path, pred, \mbox{\hyperlink{namespace_w_s_d11_a0128fe372b18cc04ebc5cf7ff30417ca}{tile\+\_\+size}})
+\item 
+\mbox{\hyperlink{namespace_w_s_d11_adffa93ef164c7860eada2ef35b2ff9ea}{WSD11.\+fetch\+\_\+batch}} (image)
+\item 
+\mbox{\hyperlink{namespace_w_s_d11_acc4eb6359520b8ecbb426a96251d9a9f}{WSD11.\+get\+\_\+cat\+\_\+model}} ()
+\item 
+\mbox{\hyperlink{namespace_w_s_d11_a70a82da27cb76741874c09432989e22b}{WSD11.\+write\+\_\+xml}} (annotations, start\+\_\+id, anote\+\_\+list, X\+\_\+\+Reference, Y\+\_\+\+Reference, nm\+\_\+p)
+\item 
+\mbox{\hyperlink{namespace_w_s_d11_a566b048f5cbccaeb0b7f5430203d7366}{WSD11.\+write\+\_\+annotation}} (annotations, \+\_\+id, x1, y1, x2, y2, cls, conf, X\+\_\+\+Reference, Y\+\_\+\+Reference, nm\+\_\+p=221)
+\item 
+\mbox{\hyperlink{namespace_w_s_d11_a2f128c84c27ae34744f5a3e57127da5f}{WSD11.\+dump\+\_\+results}} (gt\+\_\+xml\+\_\+path, predicts\+\_\+xml\+\_\+path)
+\item 
+\mbox{\hyperlink{namespace_w_s_d11_a357d492c89c22240847927911be622f4}{WSD11.\+get\+\_\+box\+\_\+list}} (xml\+\_\+path, nm\+\_\+p=221)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+str \mbox{\hyperlink{namespace_w_s_d11_a8c5c205170c6cf2c90d7dee2892c7ba0}{WSD11.\+folder\+\_\+path}} = r\textquotesingle{}D\+:\textbackslash{}\+Shreyan\textbackslash{}\+Development\textbackslash{}\+Test\textbackslash{}dump\textquotesingle{}
+\item 
+\mbox{\hyperlink{namespace_w_s_d11_a44cbdda44ec9006146b0171c9af1dc5b}{WSD11.\+global\+Vars}} = \mbox{\hyperlink{class_w_s_d11_1_1_global_vars}{Global\+Vars}}(\mbox{\hyperlink{namespace_w_s_d11_a8c5c205170c6cf2c90d7dee2892c7ba0}{folder\+\_\+path}})
+\item 
+\mbox{\hyperlink{namespace_w_s_d11_a7712fe583cfbd1d36262dfb5f30dc844}{WSD11.\+start}} = time.\+time()
+\item 
+\mbox{\hyperlink{namespace_w_s_d11_a0128fe372b18cc04ebc5cf7ff30417ca}{WSD11.\+tile\+\_\+size}}
+\item 
+\mbox{\hyperlink{namespace_w_s_d11_a13eb9343fdda30bdeed4a28f7d65eb65}{WSD11.\+overlap}}
+\item 
+\mbox{\hyperlink{namespace_w_s_d11_ade67d646c59646f12dd6973da0609fcf}{WSD11.\+end}} = time.\+time()
+\end{DoxyCompactItemize}

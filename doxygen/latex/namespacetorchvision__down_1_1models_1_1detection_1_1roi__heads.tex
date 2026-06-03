@@ -1,0 +1,202 @@
+\doxysection{torchvision\+\_\+down.\+models.\+detection.\+roi\+\_\+heads Namespace Reference}
+\hypertarget{namespacetorchvision__down_1_1models_1_1detection_1_1roi__heads}{}\label{namespacetorchvision__down_1_1models_1_1detection_1_1roi__heads}\index{torchvision\_down.models.detection.roi\_heads@{torchvision\_down.models.detection.roi\_heads}}
+\doxysubsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classtorchvision__down_1_1models_1_1detection_1_1roi__heads_1_1_ro_i_heads}{Ro\+IHeads}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{namespacetorchvision__down_1_1models_1_1detection_1_1roi__heads_af2a8bcfb9f89bf17c063b459d2d54958}{fastrcnn\+\_\+loss}} (class\+\_\+logits, box\+\_\+regression, labels, regression\+\_\+targets)
+\item 
+\mbox{\hyperlink{namespacetorchvision__down_1_1models_1_1detection_1_1roi__heads_ae6acc064e174abc1c0abe9897e2e1165}{maskrcnn\+\_\+inference}} (x, labels)
+\item 
+\mbox{\hyperlink{namespacetorchvision__down_1_1models_1_1detection_1_1roi__heads_afd0fc1221eb7d36df5bf59bf1a068d12}{project\+\_\+masks\+\_\+on\+\_\+boxes}} (gt\+\_\+masks, boxes, matched\+\_\+idxs, M)
+\item 
+\mbox{\hyperlink{namespacetorchvision__down_1_1models_1_1detection_1_1roi__heads_adf705592105e28ff4f6d2b7edc7afd58}{maskrcnn\+\_\+loss}} (mask\+\_\+logits, proposals, gt\+\_\+masks, gt\+\_\+labels, mask\+\_\+matched\+\_\+idxs)
+\item 
+\mbox{\hyperlink{namespacetorchvision__down_1_1models_1_1detection_1_1roi__heads_a98e86d72776e4246389bde2fe160a714}{keypoints\+\_\+to\+\_\+heatmap}} (keypoints, rois, heatmap\+\_\+size)
+\item 
+\mbox{\hyperlink{namespacetorchvision__down_1_1models_1_1detection_1_1roi__heads_a843d51b813aa4058c2089375b00cf926}{\+\_\+onnx\+\_\+heatmaps\+\_\+to\+\_\+keypoints}} (maps, maps\+\_\+i, roi\+\_\+map\+\_\+width, roi\+\_\+map\+\_\+height, widths\+\_\+i, heights\+\_\+i, offset\+\_\+x\+\_\+i, offset\+\_\+y\+\_\+i)
+\item 
+\mbox{\hyperlink{namespacetorchvision__down_1_1models_1_1detection_1_1roi__heads_a001212020952bf2985c27c850c371f73}{\+\_\+onnx\+\_\+heatmaps\+\_\+to\+\_\+keypoints\+\_\+loop}} (maps, rois, widths\+\_\+ceil, heights\+\_\+ceil, widths, heights, offset\+\_\+x, offset\+\_\+y, num\+\_\+keypoints)
+\item 
+\mbox{\hyperlink{namespacetorchvision__down_1_1models_1_1detection_1_1roi__heads_acd652d597b000c558c82ce89546c9b2e}{heatmaps\+\_\+to\+\_\+keypoints}} (maps, rois)
+\item 
+\mbox{\hyperlink{namespacetorchvision__down_1_1models_1_1detection_1_1roi__heads_a070e840aaf585653c89dd697e1968505}{keypointrcnn\+\_\+loss}} (keypoint\+\_\+logits, proposals, gt\+\_\+keypoints, keypoint\+\_\+matched\+\_\+idxs)
+\item 
+\mbox{\hyperlink{namespacetorchvision__down_1_1models_1_1detection_1_1roi__heads_abbf0caa2889693cca52ba5f65b3719a2}{keypointrcnn\+\_\+inference}} (x, boxes)
+\item 
+\mbox{\hyperlink{namespacetorchvision__down_1_1models_1_1detection_1_1roi__heads_af8f726ee0f69849c3f317d037c49d24d}{\+\_\+onnx\+\_\+expand\+\_\+boxes}} (boxes, scale)
+\item 
+\mbox{\hyperlink{namespacetorchvision__down_1_1models_1_1detection_1_1roi__heads_ad15a6c9c364801f1d8b570f217e03a0a}{expand\+\_\+boxes}} (boxes, scale)
+\item 
+\mbox{\hyperlink{namespacetorchvision__down_1_1models_1_1detection_1_1roi__heads_a8bb4748a8a5d2ae947cbae85cd89a711}{expand\+\_\+masks\+\_\+tracing\+\_\+scale}} (M, padding)
+\item 
+\mbox{\hyperlink{namespacetorchvision__down_1_1models_1_1detection_1_1roi__heads_ad540fa950fcb36b010e4c2ad5dfa0e9c}{expand\+\_\+masks}} (mask, padding)
+\item 
+\mbox{\hyperlink{namespacetorchvision__down_1_1models_1_1detection_1_1roi__heads_af560df763f3c83fdbde20e7977f5eb67}{paste\+\_\+mask\+\_\+in\+\_\+image}} (mask, box, im\+\_\+h, im\+\_\+w)
+\item 
+\mbox{\hyperlink{namespacetorchvision__down_1_1models_1_1detection_1_1roi__heads_a118c2c40872b669fc40352cac674ab69}{\+\_\+onnx\+\_\+paste\+\_\+mask\+\_\+in\+\_\+image}} (mask, box, im\+\_\+h, im\+\_\+w)
+\item 
+\mbox{\hyperlink{namespacetorchvision__down_1_1models_1_1detection_1_1roi__heads_a8809dc235b9f2dc449f159e06fbc9204}{\+\_\+onnx\+\_\+paste\+\_\+masks\+\_\+in\+\_\+image\+\_\+loop}} (masks, boxes, im\+\_\+h, im\+\_\+w)
+\item 
+\mbox{\hyperlink{namespacetorchvision__down_1_1models_1_1detection_1_1roi__heads_ab687f257f8f1e0acf014f7645c2829b4}{paste\+\_\+masks\+\_\+in\+\_\+image}} (masks, boxes, img\+\_\+shape, padding=1)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{namespacetorchvision__down_1_1models_1_1detection_1_1roi__heads_af8f726ee0f69849c3f317d037c49d24d}\index{torchvision\_down.models.detection.roi\_heads@{torchvision\_down.models.detection.roi\_heads}!\_onnx\_expand\_boxes@{\_onnx\_expand\_boxes}}
+\index{\_onnx\_expand\_boxes@{\_onnx\_expand\_boxes}!torchvision\_down.models.detection.roi\_heads@{torchvision\_down.models.detection.roi\_heads}}
+\doxysubsubsection{\texorpdfstring{\_onnx\_expand\_boxes()}{\_onnx\_expand\_boxes()}}
+{\footnotesize\ttfamily \label{namespacetorchvision__down_1_1models_1_1detection_1_1roi__heads_af8f726ee0f69849c3f317d037c49d24d} 
+torchvision\+\_\+down.\+models.\+detection.\+roi\+\_\+heads.\+\_\+onnx\+\_\+expand\+\_\+boxes (\begin{DoxyParamCaption}\item[{}]{boxes}{, }\item[{}]{scale}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{namespacetorchvision__down_1_1models_1_1detection_1_1roi__heads_a843d51b813aa4058c2089375b00cf926}\index{torchvision\_down.models.detection.roi\_heads@{torchvision\_down.models.detection.roi\_heads}!\_onnx\_heatmaps\_to\_keypoints@{\_onnx\_heatmaps\_to\_keypoints}}
+\index{\_onnx\_heatmaps\_to\_keypoints@{\_onnx\_heatmaps\_to\_keypoints}!torchvision\_down.models.detection.roi\_heads@{torchvision\_down.models.detection.roi\_heads}}
+\doxysubsubsection{\texorpdfstring{\_onnx\_heatmaps\_to\_keypoints()}{\_onnx\_heatmaps\_to\_keypoints()}}
+{\footnotesize\ttfamily \label{namespacetorchvision__down_1_1models_1_1detection_1_1roi__heads_a843d51b813aa4058c2089375b00cf926} 
+torchvision\+\_\+down.\+models.\+detection.\+roi\+\_\+heads.\+\_\+onnx\+\_\+heatmaps\+\_\+to\+\_\+keypoints (\begin{DoxyParamCaption}\item[{}]{maps}{, }\item[{}]{maps\+\_\+i}{, }\item[{}]{roi\+\_\+map\+\_\+width}{, }\item[{}]{roi\+\_\+map\+\_\+height}{, }\item[{}]{widths\+\_\+i}{, }\item[{}]{heights\+\_\+i}{, }\item[{}]{offset\+\_\+x\+\_\+i}{, }\item[{}]{offset\+\_\+y\+\_\+i}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{namespacetorchvision__down_1_1models_1_1detection_1_1roi__heads_a001212020952bf2985c27c850c371f73}\index{torchvision\_down.models.detection.roi\_heads@{torchvision\_down.models.detection.roi\_heads}!\_onnx\_heatmaps\_to\_keypoints\_loop@{\_onnx\_heatmaps\_to\_keypoints\_loop}}
+\index{\_onnx\_heatmaps\_to\_keypoints\_loop@{\_onnx\_heatmaps\_to\_keypoints\_loop}!torchvision\_down.models.detection.roi\_heads@{torchvision\_down.models.detection.roi\_heads}}
+\doxysubsubsection{\texorpdfstring{\_onnx\_heatmaps\_to\_keypoints\_loop()}{\_onnx\_heatmaps\_to\_keypoints\_loop()}}
+{\footnotesize\ttfamily \label{namespacetorchvision__down_1_1models_1_1detection_1_1roi__heads_a001212020952bf2985c27c850c371f73} 
+torchvision\+\_\+down.\+models.\+detection.\+roi\+\_\+heads.\+\_\+onnx\+\_\+heatmaps\+\_\+to\+\_\+keypoints\+\_\+loop (\begin{DoxyParamCaption}\item[{}]{maps}{, }\item[{}]{rois}{, }\item[{}]{widths\+\_\+ceil}{, }\item[{}]{heights\+\_\+ceil}{, }\item[{}]{widths}{, }\item[{}]{heights}{, }\item[{}]{offset\+\_\+x}{, }\item[{}]{offset\+\_\+y}{, }\item[{}]{num\+\_\+keypoints}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{namespacetorchvision__down_1_1models_1_1detection_1_1roi__heads_a118c2c40872b669fc40352cac674ab69}\index{torchvision\_down.models.detection.roi\_heads@{torchvision\_down.models.detection.roi\_heads}!\_onnx\_paste\_mask\_in\_image@{\_onnx\_paste\_mask\_in\_image}}
+\index{\_onnx\_paste\_mask\_in\_image@{\_onnx\_paste\_mask\_in\_image}!torchvision\_down.models.detection.roi\_heads@{torchvision\_down.models.detection.roi\_heads}}
+\doxysubsubsection{\texorpdfstring{\_onnx\_paste\_mask\_in\_image()}{\_onnx\_paste\_mask\_in\_image()}}
+{\footnotesize\ttfamily \label{namespacetorchvision__down_1_1models_1_1detection_1_1roi__heads_a118c2c40872b669fc40352cac674ab69} 
+torchvision\+\_\+down.\+models.\+detection.\+roi\+\_\+heads.\+\_\+onnx\+\_\+paste\+\_\+mask\+\_\+in\+\_\+image (\begin{DoxyParamCaption}\item[{}]{mask}{, }\item[{}]{box}{, }\item[{}]{im\+\_\+h}{, }\item[{}]{im\+\_\+w}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{namespacetorchvision__down_1_1models_1_1detection_1_1roi__heads_a8809dc235b9f2dc449f159e06fbc9204}\index{torchvision\_down.models.detection.roi\_heads@{torchvision\_down.models.detection.roi\_heads}!\_onnx\_paste\_masks\_in\_image\_loop@{\_onnx\_paste\_masks\_in\_image\_loop}}
+\index{\_onnx\_paste\_masks\_in\_image\_loop@{\_onnx\_paste\_masks\_in\_image\_loop}!torchvision\_down.models.detection.roi\_heads@{torchvision\_down.models.detection.roi\_heads}}
+\doxysubsubsection{\texorpdfstring{\_onnx\_paste\_masks\_in\_image\_loop()}{\_onnx\_paste\_masks\_in\_image\_loop()}}
+{\footnotesize\ttfamily \label{namespacetorchvision__down_1_1models_1_1detection_1_1roi__heads_a8809dc235b9f2dc449f159e06fbc9204} 
+torchvision\+\_\+down.\+models.\+detection.\+roi\+\_\+heads.\+\_\+onnx\+\_\+paste\+\_\+masks\+\_\+in\+\_\+image\+\_\+loop (\begin{DoxyParamCaption}\item[{}]{masks}{, }\item[{}]{boxes}{, }\item[{}]{im\+\_\+h}{, }\item[{}]{im\+\_\+w}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{namespacetorchvision__down_1_1models_1_1detection_1_1roi__heads_ad15a6c9c364801f1d8b570f217e03a0a}\index{torchvision\_down.models.detection.roi\_heads@{torchvision\_down.models.detection.roi\_heads}!expand\_boxes@{expand\_boxes}}
+\index{expand\_boxes@{expand\_boxes}!torchvision\_down.models.detection.roi\_heads@{torchvision\_down.models.detection.roi\_heads}}
+\doxysubsubsection{\texorpdfstring{expand\_boxes()}{expand\_boxes()}}
+{\footnotesize\ttfamily \label{namespacetorchvision__down_1_1models_1_1detection_1_1roi__heads_ad15a6c9c364801f1d8b570f217e03a0a} 
+torchvision\+\_\+down.\+models.\+detection.\+roi\+\_\+heads.\+expand\+\_\+boxes (\begin{DoxyParamCaption}\item[{}]{boxes}{, }\item[{}]{scale}{}\end{DoxyParamCaption})}
+
+\Hypertarget{namespacetorchvision__down_1_1models_1_1detection_1_1roi__heads_ad540fa950fcb36b010e4c2ad5dfa0e9c}\index{torchvision\_down.models.detection.roi\_heads@{torchvision\_down.models.detection.roi\_heads}!expand\_masks@{expand\_masks}}
+\index{expand\_masks@{expand\_masks}!torchvision\_down.models.detection.roi\_heads@{torchvision\_down.models.detection.roi\_heads}}
+\doxysubsubsection{\texorpdfstring{expand\_masks()}{expand\_masks()}}
+{\footnotesize\ttfamily \label{namespacetorchvision__down_1_1models_1_1detection_1_1roi__heads_ad540fa950fcb36b010e4c2ad5dfa0e9c} 
+torchvision\+\_\+down.\+models.\+detection.\+roi\+\_\+heads.\+expand\+\_\+masks (\begin{DoxyParamCaption}\item[{}]{mask}{, }\item[{}]{padding}{}\end{DoxyParamCaption})}
+
+\Hypertarget{namespacetorchvision__down_1_1models_1_1detection_1_1roi__heads_a8bb4748a8a5d2ae947cbae85cd89a711}\index{torchvision\_down.models.detection.roi\_heads@{torchvision\_down.models.detection.roi\_heads}!expand\_masks\_tracing\_scale@{expand\_masks\_tracing\_scale}}
+\index{expand\_masks\_tracing\_scale@{expand\_masks\_tracing\_scale}!torchvision\_down.models.detection.roi\_heads@{torchvision\_down.models.detection.roi\_heads}}
+\doxysubsubsection{\texorpdfstring{expand\_masks\_tracing\_scale()}{expand\_masks\_tracing\_scale()}}
+{\footnotesize\ttfamily \label{namespacetorchvision__down_1_1models_1_1detection_1_1roi__heads_a8bb4748a8a5d2ae947cbae85cd89a711} 
+torchvision\+\_\+down.\+models.\+detection.\+roi\+\_\+heads.\+expand\+\_\+masks\+\_\+tracing\+\_\+scale (\begin{DoxyParamCaption}\item[{}]{M}{, }\item[{}]{padding}{}\end{DoxyParamCaption})}
+
+\Hypertarget{namespacetorchvision__down_1_1models_1_1detection_1_1roi__heads_af2a8bcfb9f89bf17c063b459d2d54958}\index{torchvision\_down.models.detection.roi\_heads@{torchvision\_down.models.detection.roi\_heads}!fastrcnn\_loss@{fastrcnn\_loss}}
+\index{fastrcnn\_loss@{fastrcnn\_loss}!torchvision\_down.models.detection.roi\_heads@{torchvision\_down.models.detection.roi\_heads}}
+\doxysubsubsection{\texorpdfstring{fastrcnn\_loss()}{fastrcnn\_loss()}}
+{\footnotesize\ttfamily \label{namespacetorchvision__down_1_1models_1_1detection_1_1roi__heads_af2a8bcfb9f89bf17c063b459d2d54958} 
+torchvision\+\_\+down.\+models.\+detection.\+roi\+\_\+heads.\+fastrcnn\+\_\+loss (\begin{DoxyParamCaption}\item[{}]{class\+\_\+logits}{, }\item[{}]{box\+\_\+regression}{, }\item[{}]{labels}{, }\item[{}]{regression\+\_\+targets}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Computes the loss for Faster R-CNN.
+
+Args:
+    class_logits (Tensor)
+    box_regression (Tensor)
+    labels (list[BoxList])
+    regression_targets (Tensor)
+
+Returns:
+    classification_loss (Tensor)
+    box_loss (Tensor)
+\end{DoxyVerb}
+ \Hypertarget{namespacetorchvision__down_1_1models_1_1detection_1_1roi__heads_acd652d597b000c558c82ce89546c9b2e}\index{torchvision\_down.models.detection.roi\_heads@{torchvision\_down.models.detection.roi\_heads}!heatmaps\_to\_keypoints@{heatmaps\_to\_keypoints}}
+\index{heatmaps\_to\_keypoints@{heatmaps\_to\_keypoints}!torchvision\_down.models.detection.roi\_heads@{torchvision\_down.models.detection.roi\_heads}}
+\doxysubsubsection{\texorpdfstring{heatmaps\_to\_keypoints()}{heatmaps\_to\_keypoints()}}
+{\footnotesize\ttfamily \label{namespacetorchvision__down_1_1models_1_1detection_1_1roi__heads_acd652d597b000c558c82ce89546c9b2e} 
+torchvision\+\_\+down.\+models.\+detection.\+roi\+\_\+heads.\+heatmaps\+\_\+to\+\_\+keypoints (\begin{DoxyParamCaption}\item[{}]{maps}{, }\item[{}]{rois}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Extract predicted keypoint locations from heatmaps. Output has shape
+(#rois, 4, #keypoints) with the 4 rows corresponding to (x, y, logit, prob)
+for each keypoint.
+\end{DoxyVerb}
+ \Hypertarget{namespacetorchvision__down_1_1models_1_1detection_1_1roi__heads_abbf0caa2889693cca52ba5f65b3719a2}\index{torchvision\_down.models.detection.roi\_heads@{torchvision\_down.models.detection.roi\_heads}!keypointrcnn\_inference@{keypointrcnn\_inference}}
+\index{keypointrcnn\_inference@{keypointrcnn\_inference}!torchvision\_down.models.detection.roi\_heads@{torchvision\_down.models.detection.roi\_heads}}
+\doxysubsubsection{\texorpdfstring{keypointrcnn\_inference()}{keypointrcnn\_inference()}}
+{\footnotesize\ttfamily \label{namespacetorchvision__down_1_1models_1_1detection_1_1roi__heads_abbf0caa2889693cca52ba5f65b3719a2} 
+torchvision\+\_\+down.\+models.\+detection.\+roi\+\_\+heads.\+keypointrcnn\+\_\+inference (\begin{DoxyParamCaption}\item[{}]{x}{, }\item[{}]{boxes}{}\end{DoxyParamCaption})}
+
+\Hypertarget{namespacetorchvision__down_1_1models_1_1detection_1_1roi__heads_a070e840aaf585653c89dd697e1968505}\index{torchvision\_down.models.detection.roi\_heads@{torchvision\_down.models.detection.roi\_heads}!keypointrcnn\_loss@{keypointrcnn\_loss}}
+\index{keypointrcnn\_loss@{keypointrcnn\_loss}!torchvision\_down.models.detection.roi\_heads@{torchvision\_down.models.detection.roi\_heads}}
+\doxysubsubsection{\texorpdfstring{keypointrcnn\_loss()}{keypointrcnn\_loss()}}
+{\footnotesize\ttfamily \label{namespacetorchvision__down_1_1models_1_1detection_1_1roi__heads_a070e840aaf585653c89dd697e1968505} 
+torchvision\+\_\+down.\+models.\+detection.\+roi\+\_\+heads.\+keypointrcnn\+\_\+loss (\begin{DoxyParamCaption}\item[{}]{keypoint\+\_\+logits}{, }\item[{}]{proposals}{, }\item[{}]{gt\+\_\+keypoints}{, }\item[{}]{keypoint\+\_\+matched\+\_\+idxs}{}\end{DoxyParamCaption})}
+
+\Hypertarget{namespacetorchvision__down_1_1models_1_1detection_1_1roi__heads_a98e86d72776e4246389bde2fe160a714}\index{torchvision\_down.models.detection.roi\_heads@{torchvision\_down.models.detection.roi\_heads}!keypoints\_to\_heatmap@{keypoints\_to\_heatmap}}
+\index{keypoints\_to\_heatmap@{keypoints\_to\_heatmap}!torchvision\_down.models.detection.roi\_heads@{torchvision\_down.models.detection.roi\_heads}}
+\doxysubsubsection{\texorpdfstring{keypoints\_to\_heatmap()}{keypoints\_to\_heatmap()}}
+{\footnotesize\ttfamily \label{namespacetorchvision__down_1_1models_1_1detection_1_1roi__heads_a98e86d72776e4246389bde2fe160a714} 
+torchvision\+\_\+down.\+models.\+detection.\+roi\+\_\+heads.\+keypoints\+\_\+to\+\_\+heatmap (\begin{DoxyParamCaption}\item[{}]{keypoints}{, }\item[{}]{rois}{, }\item[{}]{heatmap\+\_\+size}{}\end{DoxyParamCaption})}
+
+\Hypertarget{namespacetorchvision__down_1_1models_1_1detection_1_1roi__heads_ae6acc064e174abc1c0abe9897e2e1165}\index{torchvision\_down.models.detection.roi\_heads@{torchvision\_down.models.detection.roi\_heads}!maskrcnn\_inference@{maskrcnn\_inference}}
+\index{maskrcnn\_inference@{maskrcnn\_inference}!torchvision\_down.models.detection.roi\_heads@{torchvision\_down.models.detection.roi\_heads}}
+\doxysubsubsection{\texorpdfstring{maskrcnn\_inference()}{maskrcnn\_inference()}}
+{\footnotesize\ttfamily \label{namespacetorchvision__down_1_1models_1_1detection_1_1roi__heads_ae6acc064e174abc1c0abe9897e2e1165} 
+torchvision\+\_\+down.\+models.\+detection.\+roi\+\_\+heads.\+maskrcnn\+\_\+inference (\begin{DoxyParamCaption}\item[{}]{x}{, }\item[{}]{labels}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}From the results of the CNN, post process the masks
+by taking the mask corresponding to the class with max
+probability (which are of fixed size and directly output
+by the CNN) and return the masks in the mask field of the BoxList.
+
+Args:
+    x (Tensor): the mask logits
+    labels (list[BoxList]): bounding boxes that are used as
+        reference, one for ech image
+
+Returns:
+    results (list[BoxList]): one BoxList for each image, containing
+        the extra field mask
+\end{DoxyVerb}
+ \Hypertarget{namespacetorchvision__down_1_1models_1_1detection_1_1roi__heads_adf705592105e28ff4f6d2b7edc7afd58}\index{torchvision\_down.models.detection.roi\_heads@{torchvision\_down.models.detection.roi\_heads}!maskrcnn\_loss@{maskrcnn\_loss}}
+\index{maskrcnn\_loss@{maskrcnn\_loss}!torchvision\_down.models.detection.roi\_heads@{torchvision\_down.models.detection.roi\_heads}}
+\doxysubsubsection{\texorpdfstring{maskrcnn\_loss()}{maskrcnn\_loss()}}
+{\footnotesize\ttfamily \label{namespacetorchvision__down_1_1models_1_1detection_1_1roi__heads_adf705592105e28ff4f6d2b7edc7afd58} 
+torchvision\+\_\+down.\+models.\+detection.\+roi\+\_\+heads.\+maskrcnn\+\_\+loss (\begin{DoxyParamCaption}\item[{}]{mask\+\_\+logits}{, }\item[{}]{proposals}{, }\item[{}]{gt\+\_\+masks}{, }\item[{}]{gt\+\_\+labels}{, }\item[{}]{mask\+\_\+matched\+\_\+idxs}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Args:
+    proposals (list[BoxList])
+    mask_logits (Tensor)
+    targets (list[BoxList])
+
+Return:
+    mask_loss (Tensor): scalar tensor containing the loss
+\end{DoxyVerb}
+ \Hypertarget{namespacetorchvision__down_1_1models_1_1detection_1_1roi__heads_af560df763f3c83fdbde20e7977f5eb67}\index{torchvision\_down.models.detection.roi\_heads@{torchvision\_down.models.detection.roi\_heads}!paste\_mask\_in\_image@{paste\_mask\_in\_image}}
+\index{paste\_mask\_in\_image@{paste\_mask\_in\_image}!torchvision\_down.models.detection.roi\_heads@{torchvision\_down.models.detection.roi\_heads}}
+\doxysubsubsection{\texorpdfstring{paste\_mask\_in\_image()}{paste\_mask\_in\_image()}}
+{\footnotesize\ttfamily \label{namespacetorchvision__down_1_1models_1_1detection_1_1roi__heads_af560df763f3c83fdbde20e7977f5eb67} 
+torchvision\+\_\+down.\+models.\+detection.\+roi\+\_\+heads.\+paste\+\_\+mask\+\_\+in\+\_\+image (\begin{DoxyParamCaption}\item[{}]{mask}{, }\item[{}]{box}{, }\item[{}]{im\+\_\+h}{, }\item[{}]{im\+\_\+w}{}\end{DoxyParamCaption})}
+
+\Hypertarget{namespacetorchvision__down_1_1models_1_1detection_1_1roi__heads_ab687f257f8f1e0acf014f7645c2829b4}\index{torchvision\_down.models.detection.roi\_heads@{torchvision\_down.models.detection.roi\_heads}!paste\_masks\_in\_image@{paste\_masks\_in\_image}}
+\index{paste\_masks\_in\_image@{paste\_masks\_in\_image}!torchvision\_down.models.detection.roi\_heads@{torchvision\_down.models.detection.roi\_heads}}
+\doxysubsubsection{\texorpdfstring{paste\_masks\_in\_image()}{paste\_masks\_in\_image()}}
+{\footnotesize\ttfamily \label{namespacetorchvision__down_1_1models_1_1detection_1_1roi__heads_ab687f257f8f1e0acf014f7645c2829b4} 
+torchvision\+\_\+down.\+models.\+detection.\+roi\+\_\+heads.\+paste\+\_\+masks\+\_\+in\+\_\+image (\begin{DoxyParamCaption}\item[{}]{masks}{, }\item[{}]{boxes}{, }\item[{}]{img\+\_\+shape}{, }\item[{}]{padding}{ = {\ttfamily 1}}\end{DoxyParamCaption})}
+
+\Hypertarget{namespacetorchvision__down_1_1models_1_1detection_1_1roi__heads_afd0fc1221eb7d36df5bf59bf1a068d12}\index{torchvision\_down.models.detection.roi\_heads@{torchvision\_down.models.detection.roi\_heads}!project\_masks\_on\_boxes@{project\_masks\_on\_boxes}}
+\index{project\_masks\_on\_boxes@{project\_masks\_on\_boxes}!torchvision\_down.models.detection.roi\_heads@{torchvision\_down.models.detection.roi\_heads}}
+\doxysubsubsection{\texorpdfstring{project\_masks\_on\_boxes()}{project\_masks\_on\_boxes()}}
+{\footnotesize\ttfamily \label{namespacetorchvision__down_1_1models_1_1detection_1_1roi__heads_afd0fc1221eb7d36df5bf59bf1a068d12} 
+torchvision\+\_\+down.\+models.\+detection.\+roi\+\_\+heads.\+project\+\_\+masks\+\_\+on\+\_\+boxes (\begin{DoxyParamCaption}\item[{}]{gt\+\_\+masks}{, }\item[{}]{boxes}{, }\item[{}]{matched\+\_\+idxs}{, }\item[{}]{M}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Given segmentation masks and the bounding boxes corresponding
+to the location of the masks in the image, this function
+crops and resizes the masks in the position defined by the
+boxes. This prepares the masks for them to be fed to the
+loss computation as the targets.
+\end{DoxyVerb}
+ 

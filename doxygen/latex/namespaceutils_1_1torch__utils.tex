@@ -1,0 +1,193 @@
+\doxysection{utils.\+torch\+\_\+utils Namespace Reference}
+\hypertarget{namespaceutils_1_1torch__utils}{}\label{namespaceutils_1_1torch__utils}\index{utils.torch\_utils@{utils.torch\_utils}}
+\doxysubsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classutils_1_1torch__utils_1_1_batch_norm_xd}{Batch\+Norm\+Xd}}
+\item 
+class \mbox{\hyperlink{classutils_1_1torch__utils_1_1_model_e_m_a}{Model\+EMA}}
+\item 
+class \mbox{\hyperlink{classutils_1_1torch__utils_1_1_traced_model}{Traced\+Model}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{namespaceutils_1_1torch__utils_a4bde0a04cf1360cc587360009d51653b}{torch\+\_\+distributed\+\_\+zero\+\_\+first}} (int local\+\_\+rank)
+\item 
+\mbox{\hyperlink{namespaceutils_1_1torch__utils_a16f2c8d0258b4267deb64ec0180d21a4}{init\+\_\+torch\+\_\+seeds}} (seed=0)
+\item 
+\mbox{\hyperlink{namespaceutils_1_1torch__utils_afdfa6bb74de71a659031e12d4de58af2}{date\+\_\+modified}} (path=\+\_\+\+\_\+file\+\_\+\+\_\+)
+\item 
+\mbox{\hyperlink{namespaceutils_1_1torch__utils_a048ae2045ea4e55d244e46b5259b3e2c}{git\+\_\+describe}} (path=Path(\+\_\+\+\_\+file\+\_\+\+\_\+).parent)
+\item 
+\mbox{\hyperlink{namespaceutils_1_1torch__utils_a56b83ed23d33c568233e68256d200636}{select\+\_\+device}} (device=\textquotesingle{}\textquotesingle{}, batch\+\_\+size=None)
+\item 
+\mbox{\hyperlink{namespaceutils_1_1torch__utils_a11d053b2fefd041f9318dbf1c88f5e40}{time\+\_\+synchronized}} ()
+\item 
+\mbox{\hyperlink{namespaceutils_1_1torch__utils_a98f2afda92116de895c8161f79268867}{profile}} (x, ops, n=100, device=None)
+\item 
+\mbox{\hyperlink{namespaceutils_1_1torch__utils_a82ce1df6cd0d3b6d6f74ae2b11d1c76c}{is\+\_\+parallel}} (model)
+\item 
+\mbox{\hyperlink{namespaceutils_1_1torch__utils_a1655c34f01b066f53d8cb21df34d65ef}{intersect\+\_\+dicts}} (da, db, exclude=())
+\item 
+\mbox{\hyperlink{namespaceutils_1_1torch__utils_a054a2cb76c2def88877e7f9b14d04dc3}{initialize\+\_\+weights}} (model)
+\item 
+\mbox{\hyperlink{namespaceutils_1_1torch__utils_a7c12a9444daa8efcd340f091a7a1e62e}{find\+\_\+modules}} (model, mclass=nn.\+Conv2d)
+\item 
+\mbox{\hyperlink{namespaceutils_1_1torch__utils_acadf18716d33e04abbeb936e3961818e}{sparsity}} (model)
+\item 
+\mbox{\hyperlink{namespaceutils_1_1torch__utils_a7c61e514e5280bbe0828434fa149fc55}{prune}} (model, amount=0.\+3)
+\item 
+\mbox{\hyperlink{namespaceutils_1_1torch__utils_a47786566d98be89ac7d7c640921fa42c}{fuse\+\_\+conv\+\_\+and\+\_\+bn}} (conv, bn)
+\item 
+\mbox{\hyperlink{namespaceutils_1_1torch__utils_afd0042e00ec28ee7791eadd118b9f68c}{model\+\_\+info}} (model, verbose=False, img\+\_\+size=640)
+\item 
+\mbox{\hyperlink{namespaceutils_1_1torch__utils_ae96a2725bd3d39956151d30ae0244e35}{load\+\_\+classifier}} (name=\textquotesingle{}resnet101\textquotesingle{}, n=2)
+\item 
+\mbox{\hyperlink{namespaceutils_1_1torch__utils_af498e4842dd961c38444f645e38b552b}{scale\+\_\+img}} (img, ratio=1.\+0, same\+\_\+shape=False, gs=32)
+\item 
+\mbox{\hyperlink{namespaceutils_1_1torch__utils_af9e05f408848d0912fc3dd3d86959778}{copy\+\_\+attr}} (a, b, include=(), exclude=())
+\item 
+\mbox{\hyperlink{namespaceutils_1_1torch__utils_ad01e2a24e2450c944730c5c7b86628c4}{revert\+\_\+sync\+\_\+batchnorm}} (module)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{namespaceutils_1_1torch__utils_ad74401a9fbe9c48fe7152252835f17d6}{thop}} = None
+\item 
+\mbox{\hyperlink{namespaceutils_1_1torch__utils_a2be133e6df6a1bd9244f73f717ac2898}{logger}} = logging.\+get\+Logger(\+\_\+\+\_\+name\+\_\+\+\_\+)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{namespaceutils_1_1torch__utils_af9e05f408848d0912fc3dd3d86959778}\index{utils.torch\_utils@{utils.torch\_utils}!copy\_attr@{copy\_attr}}
+\index{copy\_attr@{copy\_attr}!utils.torch\_utils@{utils.torch\_utils}}
+\doxysubsubsection{\texorpdfstring{copy\_attr()}{copy\_attr()}}
+{\footnotesize\ttfamily \label{namespaceutils_1_1torch__utils_af9e05f408848d0912fc3dd3d86959778} 
+utils.\+torch\+\_\+utils.\+copy\+\_\+attr (\begin{DoxyParamCaption}\item[{}]{a}{, }\item[{}]{b}{, }\item[{}]{include}{ = {\ttfamily ()}, }\item[{}]{exclude}{ = {\ttfamily ()}}\end{DoxyParamCaption})}
+
+\Hypertarget{namespaceutils_1_1torch__utils_afdfa6bb74de71a659031e12d4de58af2}\index{utils.torch\_utils@{utils.torch\_utils}!date\_modified@{date\_modified}}
+\index{date\_modified@{date\_modified}!utils.torch\_utils@{utils.torch\_utils}}
+\doxysubsubsection{\texorpdfstring{date\_modified()}{date\_modified()}}
+{\footnotesize\ttfamily \label{namespaceutils_1_1torch__utils_afdfa6bb74de71a659031e12d4de58af2} 
+utils.\+torch\+\_\+utils.\+date\+\_\+modified (\begin{DoxyParamCaption}\item[{}]{path}{ = {\ttfamily \+\_\+\+\_\+file\+\_\+\+\_\+}}\end{DoxyParamCaption})}
+
+\Hypertarget{namespaceutils_1_1torch__utils_a7c12a9444daa8efcd340f091a7a1e62e}\index{utils.torch\_utils@{utils.torch\_utils}!find\_modules@{find\_modules}}
+\index{find\_modules@{find\_modules}!utils.torch\_utils@{utils.torch\_utils}}
+\doxysubsubsection{\texorpdfstring{find\_modules()}{find\_modules()}}
+{\footnotesize\ttfamily \label{namespaceutils_1_1torch__utils_a7c12a9444daa8efcd340f091a7a1e62e} 
+utils.\+torch\+\_\+utils.\+find\+\_\+modules (\begin{DoxyParamCaption}\item[{}]{model}{, }\item[{}]{mclass}{ = {\ttfamily nn.Conv2d}}\end{DoxyParamCaption})}
+
+\Hypertarget{namespaceutils_1_1torch__utils_a47786566d98be89ac7d7c640921fa42c}\index{utils.torch\_utils@{utils.torch\_utils}!fuse\_conv\_and\_bn@{fuse\_conv\_and\_bn}}
+\index{fuse\_conv\_and\_bn@{fuse\_conv\_and\_bn}!utils.torch\_utils@{utils.torch\_utils}}
+\doxysubsubsection{\texorpdfstring{fuse\_conv\_and\_bn()}{fuse\_conv\_and\_bn()}}
+{\footnotesize\ttfamily \label{namespaceutils_1_1torch__utils_a47786566d98be89ac7d7c640921fa42c} 
+utils.\+torch\+\_\+utils.\+fuse\+\_\+conv\+\_\+and\+\_\+bn (\begin{DoxyParamCaption}\item[{}]{conv}{, }\item[{}]{bn}{}\end{DoxyParamCaption})}
+
+\Hypertarget{namespaceutils_1_1torch__utils_a048ae2045ea4e55d244e46b5259b3e2c}\index{utils.torch\_utils@{utils.torch\_utils}!git\_describe@{git\_describe}}
+\index{git\_describe@{git\_describe}!utils.torch\_utils@{utils.torch\_utils}}
+\doxysubsubsection{\texorpdfstring{git\_describe()}{git\_describe()}}
+{\footnotesize\ttfamily \label{namespaceutils_1_1torch__utils_a048ae2045ea4e55d244e46b5259b3e2c} 
+utils.\+torch\+\_\+utils.\+git\+\_\+describe (\begin{DoxyParamCaption}\item[{}]{path}{ = {\ttfamily Path(\+\_\+\+\_\+file\+\_\+\+\_\+).parent}}\end{DoxyParamCaption})}
+
+\Hypertarget{namespaceutils_1_1torch__utils_a16f2c8d0258b4267deb64ec0180d21a4}\index{utils.torch\_utils@{utils.torch\_utils}!init\_torch\_seeds@{init\_torch\_seeds}}
+\index{init\_torch\_seeds@{init\_torch\_seeds}!utils.torch\_utils@{utils.torch\_utils}}
+\doxysubsubsection{\texorpdfstring{init\_torch\_seeds()}{init\_torch\_seeds()}}
+{\footnotesize\ttfamily \label{namespaceutils_1_1torch__utils_a16f2c8d0258b4267deb64ec0180d21a4} 
+utils.\+torch\+\_\+utils.\+init\+\_\+torch\+\_\+seeds (\begin{DoxyParamCaption}\item[{}]{seed}{ = {\ttfamily 0}}\end{DoxyParamCaption})}
+
+\Hypertarget{namespaceutils_1_1torch__utils_a054a2cb76c2def88877e7f9b14d04dc3}\index{utils.torch\_utils@{utils.torch\_utils}!initialize\_weights@{initialize\_weights}}
+\index{initialize\_weights@{initialize\_weights}!utils.torch\_utils@{utils.torch\_utils}}
+\doxysubsubsection{\texorpdfstring{initialize\_weights()}{initialize\_weights()}}
+{\footnotesize\ttfamily \label{namespaceutils_1_1torch__utils_a054a2cb76c2def88877e7f9b14d04dc3} 
+utils.\+torch\+\_\+utils.\+initialize\+\_\+weights (\begin{DoxyParamCaption}\item[{}]{model}{}\end{DoxyParamCaption})}
+
+\Hypertarget{namespaceutils_1_1torch__utils_a1655c34f01b066f53d8cb21df34d65ef}\index{utils.torch\_utils@{utils.torch\_utils}!intersect\_dicts@{intersect\_dicts}}
+\index{intersect\_dicts@{intersect\_dicts}!utils.torch\_utils@{utils.torch\_utils}}
+\doxysubsubsection{\texorpdfstring{intersect\_dicts()}{intersect\_dicts()}}
+{\footnotesize\ttfamily \label{namespaceutils_1_1torch__utils_a1655c34f01b066f53d8cb21df34d65ef} 
+utils.\+torch\+\_\+utils.\+intersect\+\_\+dicts (\begin{DoxyParamCaption}\item[{}]{da}{, }\item[{}]{db}{, }\item[{}]{exclude}{ = {\ttfamily ()}}\end{DoxyParamCaption})}
+
+\Hypertarget{namespaceutils_1_1torch__utils_a82ce1df6cd0d3b6d6f74ae2b11d1c76c}\index{utils.torch\_utils@{utils.torch\_utils}!is\_parallel@{is\_parallel}}
+\index{is\_parallel@{is\_parallel}!utils.torch\_utils@{utils.torch\_utils}}
+\doxysubsubsection{\texorpdfstring{is\_parallel()}{is\_parallel()}}
+{\footnotesize\ttfamily \label{namespaceutils_1_1torch__utils_a82ce1df6cd0d3b6d6f74ae2b11d1c76c} 
+utils.\+torch\+\_\+utils.\+is\+\_\+parallel (\begin{DoxyParamCaption}\item[{}]{model}{}\end{DoxyParamCaption})}
+
+\Hypertarget{namespaceutils_1_1torch__utils_ae96a2725bd3d39956151d30ae0244e35}\index{utils.torch\_utils@{utils.torch\_utils}!load\_classifier@{load\_classifier}}
+\index{load\_classifier@{load\_classifier}!utils.torch\_utils@{utils.torch\_utils}}
+\doxysubsubsection{\texorpdfstring{load\_classifier()}{load\_classifier()}}
+{\footnotesize\ttfamily \label{namespaceutils_1_1torch__utils_ae96a2725bd3d39956151d30ae0244e35} 
+utils.\+torch\+\_\+utils.\+load\+\_\+classifier (\begin{DoxyParamCaption}\item[{}]{name}{ = {\ttfamily \textquotesingle{}resnet101\textquotesingle{}}, }\item[{}]{n}{ = {\ttfamily 2}}\end{DoxyParamCaption})}
+
+\Hypertarget{namespaceutils_1_1torch__utils_afd0042e00ec28ee7791eadd118b9f68c}\index{utils.torch\_utils@{utils.torch\_utils}!model\_info@{model\_info}}
+\index{model\_info@{model\_info}!utils.torch\_utils@{utils.torch\_utils}}
+\doxysubsubsection{\texorpdfstring{model\_info()}{model\_info()}}
+{\footnotesize\ttfamily \label{namespaceutils_1_1torch__utils_afd0042e00ec28ee7791eadd118b9f68c} 
+utils.\+torch\+\_\+utils.\+model\+\_\+info (\begin{DoxyParamCaption}\item[{}]{model}{, }\item[{}]{verbose}{ = {\ttfamily False}, }\item[{}]{img\+\_\+size}{ = {\ttfamily 640}}\end{DoxyParamCaption})}
+
+\Hypertarget{namespaceutils_1_1torch__utils_a98f2afda92116de895c8161f79268867}\index{utils.torch\_utils@{utils.torch\_utils}!profile@{profile}}
+\index{profile@{profile}!utils.torch\_utils@{utils.torch\_utils}}
+\doxysubsubsection{\texorpdfstring{profile()}{profile()}}
+{\footnotesize\ttfamily \label{namespaceutils_1_1torch__utils_a98f2afda92116de895c8161f79268867} 
+utils.\+torch\+\_\+utils.\+profile (\begin{DoxyParamCaption}\item[{}]{x}{, }\item[{}]{ops}{, }\item[{}]{n}{ = {\ttfamily 100}, }\item[{}]{device}{ = {\ttfamily None}}\end{DoxyParamCaption})}
+
+\Hypertarget{namespaceutils_1_1torch__utils_a7c61e514e5280bbe0828434fa149fc55}\index{utils.torch\_utils@{utils.torch\_utils}!prune@{prune}}
+\index{prune@{prune}!utils.torch\_utils@{utils.torch\_utils}}
+\doxysubsubsection{\texorpdfstring{prune()}{prune()}}
+{\footnotesize\ttfamily \label{namespaceutils_1_1torch__utils_a7c61e514e5280bbe0828434fa149fc55} 
+utils.\+torch\+\_\+utils.\+prune (\begin{DoxyParamCaption}\item[{}]{model}{, }\item[{}]{amount}{ = {\ttfamily 0.3}}\end{DoxyParamCaption})}
+
+\Hypertarget{namespaceutils_1_1torch__utils_ad01e2a24e2450c944730c5c7b86628c4}\index{utils.torch\_utils@{utils.torch\_utils}!revert\_sync\_batchnorm@{revert\_sync\_batchnorm}}
+\index{revert\_sync\_batchnorm@{revert\_sync\_batchnorm}!utils.torch\_utils@{utils.torch\_utils}}
+\doxysubsubsection{\texorpdfstring{revert\_sync\_batchnorm()}{revert\_sync\_batchnorm()}}
+{\footnotesize\ttfamily \label{namespaceutils_1_1torch__utils_ad01e2a24e2450c944730c5c7b86628c4} 
+utils.\+torch\+\_\+utils.\+revert\+\_\+sync\+\_\+batchnorm (\begin{DoxyParamCaption}\item[{}]{module}{}\end{DoxyParamCaption})}
+
+\Hypertarget{namespaceutils_1_1torch__utils_af498e4842dd961c38444f645e38b552b}\index{utils.torch\_utils@{utils.torch\_utils}!scale\_img@{scale\_img}}
+\index{scale\_img@{scale\_img}!utils.torch\_utils@{utils.torch\_utils}}
+\doxysubsubsection{\texorpdfstring{scale\_img()}{scale\_img()}}
+{\footnotesize\ttfamily \label{namespaceutils_1_1torch__utils_af498e4842dd961c38444f645e38b552b} 
+utils.\+torch\+\_\+utils.\+scale\+\_\+img (\begin{DoxyParamCaption}\item[{}]{img}{, }\item[{}]{ratio}{ = {\ttfamily 1.0}, }\item[{}]{same\+\_\+shape}{ = {\ttfamily False}, }\item[{}]{gs}{ = {\ttfamily 32}}\end{DoxyParamCaption})}
+
+\Hypertarget{namespaceutils_1_1torch__utils_a56b83ed23d33c568233e68256d200636}\index{utils.torch\_utils@{utils.torch\_utils}!select\_device@{select\_device}}
+\index{select\_device@{select\_device}!utils.torch\_utils@{utils.torch\_utils}}
+\doxysubsubsection{\texorpdfstring{select\_device()}{select\_device()}}
+{\footnotesize\ttfamily \label{namespaceutils_1_1torch__utils_a56b83ed23d33c568233e68256d200636} 
+utils.\+torch\+\_\+utils.\+select\+\_\+device (\begin{DoxyParamCaption}\item[{}]{device}{ = {\ttfamily \textquotesingle{}\textquotesingle{}}, }\item[{}]{batch\+\_\+size}{ = {\ttfamily None}}\end{DoxyParamCaption})}
+
+\Hypertarget{namespaceutils_1_1torch__utils_acadf18716d33e04abbeb936e3961818e}\index{utils.torch\_utils@{utils.torch\_utils}!sparsity@{sparsity}}
+\index{sparsity@{sparsity}!utils.torch\_utils@{utils.torch\_utils}}
+\doxysubsubsection{\texorpdfstring{sparsity()}{sparsity()}}
+{\footnotesize\ttfamily \label{namespaceutils_1_1torch__utils_acadf18716d33e04abbeb936e3961818e} 
+utils.\+torch\+\_\+utils.\+sparsity (\begin{DoxyParamCaption}\item[{}]{model}{}\end{DoxyParamCaption})}
+
+\Hypertarget{namespaceutils_1_1torch__utils_a11d053b2fefd041f9318dbf1c88f5e40}\index{utils.torch\_utils@{utils.torch\_utils}!time\_synchronized@{time\_synchronized}}
+\index{time\_synchronized@{time\_synchronized}!utils.torch\_utils@{utils.torch\_utils}}
+\doxysubsubsection{\texorpdfstring{time\_synchronized()}{time\_synchronized()}}
+{\footnotesize\ttfamily \label{namespaceutils_1_1torch__utils_a11d053b2fefd041f9318dbf1c88f5e40} 
+utils.\+torch\+\_\+utils.\+time\+\_\+synchronized (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+\Hypertarget{namespaceutils_1_1torch__utils_a4bde0a04cf1360cc587360009d51653b}\index{utils.torch\_utils@{utils.torch\_utils}!torch\_distributed\_zero\_first@{torch\_distributed\_zero\_first}}
+\index{torch\_distributed\_zero\_first@{torch\_distributed\_zero\_first}!utils.torch\_utils@{utils.torch\_utils}}
+\doxysubsubsection{\texorpdfstring{torch\_distributed\_zero\_first()}{torch\_distributed\_zero\_first()}}
+{\footnotesize\ttfamily \label{namespaceutils_1_1torch__utils_a4bde0a04cf1360cc587360009d51653b} 
+utils.\+torch\+\_\+utils.\+torch\+\_\+distributed\+\_\+zero\+\_\+first (\begin{DoxyParamCaption}\item[{int}]{local\+\_\+rank}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Decorator to make all processes in distributed training wait for each local_master to do something.
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Variable Documentation}
+\Hypertarget{namespaceutils_1_1torch__utils_a2be133e6df6a1bd9244f73f717ac2898}\index{utils.torch\_utils@{utils.torch\_utils}!logger@{logger}}
+\index{logger@{logger}!utils.torch\_utils@{utils.torch\_utils}}
+\doxysubsubsection{\texorpdfstring{logger}{logger}}
+{\footnotesize\ttfamily \label{namespaceutils_1_1torch__utils_a2be133e6df6a1bd9244f73f717ac2898} 
+utils.\+torch\+\_\+utils.\+logger = logging.\+get\+Logger(\+\_\+\+\_\+name\+\_\+\+\_\+)}
+
+\Hypertarget{namespaceutils_1_1torch__utils_ad74401a9fbe9c48fe7152252835f17d6}\index{utils.torch\_utils@{utils.torch\_utils}!thop@{thop}}
+\index{thop@{thop}!utils.torch\_utils@{utils.torch\_utils}}
+\doxysubsubsection{\texorpdfstring{thop}{thop}}
+{\footnotesize\ttfamily \label{namespaceutils_1_1torch__utils_ad74401a9fbe9c48fe7152252835f17d6} 
+utils.\+torch\+\_\+utils.\+thop = None}
+

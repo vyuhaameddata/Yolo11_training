@@ -1,0 +1,89 @@
+\doxysection{torchvision\+\_\+down.\+transforms.\+transforms.\+Random\+Apply Class Reference}
+\hypertarget{classtorchvision__down_1_1transforms_1_1transforms_1_1_random_apply}{}\label{classtorchvision__down_1_1transforms_1_1transforms_1_1_random_apply}\index{torchvision\_down.transforms.transforms.RandomApply@{torchvision\_down.transforms.transforms.RandomApply}}
+Inheritance diagram for torchvision\+\_\+down.\+transforms.\+transforms.\+Random\+Apply\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classtorchvision__down_1_1transforms_1_1transforms_1_1_random_apply}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1transforms_1_1transforms_1_1_random_apply_ae0182fa4a1338b62703d5e889d9d7ba6}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, \mbox{\hyperlink{classtorchvision__down_1_1transforms_1_1transforms_1_1_random_apply_afa4629aad4bc8c9dc0d1b0034008db67}{transforms}}, \mbox{\hyperlink{classtorchvision__down_1_1transforms_1_1transforms_1_1_random_apply_a14629fa71baaed0752aac80b0e9e56bc}{p}}=0.\+5)
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1transforms_1_1transforms_1_1_random_apply_a3a6362805ba3d411b3fb0c6ba77e1725}{forward}} (self, img)
+\item 
+str \mbox{\hyperlink{classtorchvision__down_1_1transforms_1_1transforms_1_1_random_apply_a172d9469687b925a8c45ad9efd7cf340}{\+\_\+\+\_\+repr\+\_\+\+\_\+}} (self)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1transforms_1_1transforms_1_1_random_apply_afa4629aad4bc8c9dc0d1b0034008db67}{transforms}} = transforms
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1transforms_1_1transforms_1_1_random_apply_a14629fa71baaed0752aac80b0e9e56bc}{p}} = p
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}Apply randomly a list of transformations with a given probability.
+
+.. note::
+    In order to script the transformation, please use ``torch.nn.ModuleList`` as input instead of list/tuple of
+    transforms as shown below:
+
+    >>> transforms = transforms.RandomApply(torch.nn.ModuleList([
+    >>>     transforms.ColorJitter(),
+    >>> ]), p=0.3)
+    >>> scripted_transforms = torch.jit.script(transforms)
+
+    Make sure to use only scriptable transformations, i.e. that work with ``torch.Tensor``, does not require
+    `lambda` functions or ``PIL.Image``.
+
+Args:
+    transforms (sequence or torch.nn.Module): list of transformations
+    p (float): probability
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classtorchvision__down_1_1transforms_1_1transforms_1_1_random_apply_ae0182fa4a1338b62703d5e889d9d7ba6}\index{torchvision\_down.transforms.transforms.RandomApply@{torchvision\_down.transforms.transforms.RandomApply}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!torchvision\_down.transforms.transforms.RandomApply@{torchvision\_down.transforms.transforms.RandomApply}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1transforms_1_1transforms_1_1_random_apply_ae0182fa4a1338b62703d5e889d9d7ba6} 
+torchvision\+\_\+down.\+transforms.\+transforms.\+Random\+Apply.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{transforms}{, }\item[{}]{p}{ = {\ttfamily 0.5}}\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classtorchvision__down_1_1transforms_1_1transforms_1_1_random_apply_a172d9469687b925a8c45ad9efd7cf340}\index{torchvision\_down.transforms.transforms.RandomApply@{torchvision\_down.transforms.transforms.RandomApply}!\_\_repr\_\_@{\_\_repr\_\_}}
+\index{\_\_repr\_\_@{\_\_repr\_\_}!torchvision\_down.transforms.transforms.RandomApply@{torchvision\_down.transforms.transforms.RandomApply}}
+\doxysubsubsection{\texorpdfstring{\_\_repr\_\_()}{\_\_repr\_\_()}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1transforms_1_1transforms_1_1_random_apply_a172d9469687b925a8c45ad9efd7cf340} 
+ str torchvision\+\_\+down.\+transforms.\+transforms.\+Random\+Apply.\+\_\+\+\_\+repr\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classtorchvision__down_1_1transforms_1_1transforms_1_1_random_apply_a3a6362805ba3d411b3fb0c6ba77e1725}\index{torchvision\_down.transforms.transforms.RandomApply@{torchvision\_down.transforms.transforms.RandomApply}!forward@{forward}}
+\index{forward@{forward}!torchvision\_down.transforms.transforms.RandomApply@{torchvision\_down.transforms.transforms.RandomApply}}
+\doxysubsubsection{\texorpdfstring{forward()}{forward()}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1transforms_1_1transforms_1_1_random_apply_a3a6362805ba3d411b3fb0c6ba77e1725} 
+torchvision\+\_\+down.\+transforms.\+transforms.\+Random\+Apply.\+forward (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{img}{}\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classtorchvision__down_1_1transforms_1_1transforms_1_1_random_apply_a14629fa71baaed0752aac80b0e9e56bc}\index{torchvision\_down.transforms.transforms.RandomApply@{torchvision\_down.transforms.transforms.RandomApply}!p@{p}}
+\index{p@{p}!torchvision\_down.transforms.transforms.RandomApply@{torchvision\_down.transforms.transforms.RandomApply}}
+\doxysubsubsection{\texorpdfstring{p}{p}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1transforms_1_1transforms_1_1_random_apply_a14629fa71baaed0752aac80b0e9e56bc} 
+torchvision\+\_\+down.\+transforms.\+transforms.\+Random\+Apply.\+p = p}
+
+\Hypertarget{classtorchvision__down_1_1transforms_1_1transforms_1_1_random_apply_afa4629aad4bc8c9dc0d1b0034008db67}\index{torchvision\_down.transforms.transforms.RandomApply@{torchvision\_down.transforms.transforms.RandomApply}!transforms@{transforms}}
+\index{transforms@{transforms}!torchvision\_down.transforms.transforms.RandomApply@{torchvision\_down.transforms.transforms.RandomApply}}
+\doxysubsubsection{\texorpdfstring{transforms}{transforms}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1transforms_1_1transforms_1_1_random_apply_afa4629aad4bc8c9dc0d1b0034008db67} 
+torchvision\+\_\+down.\+transforms.\+transforms.\+Random\+Apply.\+transforms = transforms}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Cervi\+AI/torchvision\+\_\+down/transforms/\mbox{\hyperlink{transforms_8py}{transforms.\+py}}\end{DoxyCompactItemize}

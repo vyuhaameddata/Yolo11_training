@@ -1,0 +1,108 @@
+\doxysection{hubconf Namespace Reference}
+\hypertarget{namespacehubconf}{}\label{namespacehubconf}\index{hubconf@{hubconf}}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{namespacehubconf_af38d464d4191eb3a3f68971366fbf641}{create}} (name, pretrained, channels, classes, autoshape)
+\item 
+\mbox{\hyperlink{namespacehubconf_a0f96def2e0001d6c6c457178da4b177b}{custom}} (path\+\_\+or\+\_\+model=\textquotesingle{}path/to/model.\+pt\textquotesingle{}, autoshape=True)
+\item 
+\mbox{\hyperlink{namespacehubconf_adb375fa02f0e5d64b45fa92149ed9568}{yolov7}} (pretrained=True, channels=3, classes=80, autoshape=True)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+list \mbox{\hyperlink{namespacehubconf_ab9b0de913bf2cf0da624589d5ad9ede1}{dependencies}} = \mbox{[}\textquotesingle{}torch\textquotesingle{}, \textquotesingle{}yaml\textquotesingle{}\mbox{]}
+\item 
+\mbox{\hyperlink{namespacehubconf_aababa695f5130f281be181e6a20b18c5}{exclude}}
+\item 
+\mbox{\hyperlink{namespacehubconf_a121754ebff6ebf330a6c0113afe25550}{model}} = \mbox{\hyperlink{namespacehubconf_a0f96def2e0001d6c6c457178da4b177b}{custom}}(path\+\_\+or\+\_\+model=\textquotesingle{}yolov7.\+pt\textquotesingle{})
+\item 
+list \mbox{\hyperlink{namespacehubconf_af4d150499d1d02ae1ad95234cdc82a29}{imgs}} = \mbox{[}np.\+zeros((640, 480, 3))\mbox{]}
+\item 
+\mbox{\hyperlink{namespacehubconf_a42799aa2cc6319465e4d8653c1d67474}{results}} = \mbox{\hyperlink{namespacehubconf_a121754ebff6ebf330a6c0113afe25550}{model}}(\mbox{\hyperlink{namespacehubconf_af4d150499d1d02ae1ad95234cdc82a29}{imgs}})
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}PyTorch Hub models
+
+Usage:
+    import torch
+    model = torch.hub.load('repo', 'model')
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Function Documentation}
+\Hypertarget{namespacehubconf_af38d464d4191eb3a3f68971366fbf641}\index{hubconf@{hubconf}!create@{create}}
+\index{create@{create}!hubconf@{hubconf}}
+\doxysubsubsection{\texorpdfstring{create()}{create()}}
+{\footnotesize\ttfamily \label{namespacehubconf_af38d464d4191eb3a3f68971366fbf641} 
+hubconf.\+create (\begin{DoxyParamCaption}\item[{}]{name}{, }\item[{}]{pretrained}{, }\item[{}]{channels}{, }\item[{}]{classes}{, }\item[{}]{autoshape}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Creates a specified model
+
+Arguments:
+    name (str): name of model, i.e. 'yolov7'
+    pretrained (bool): load pretrained weights into the model
+    channels (int): number of input channels
+    classes (int): number of model classes
+
+Returns:
+    pytorch model
+\end{DoxyVerb}
+ \Hypertarget{namespacehubconf_a0f96def2e0001d6c6c457178da4b177b}\index{hubconf@{hubconf}!custom@{custom}}
+\index{custom@{custom}!hubconf@{hubconf}}
+\doxysubsubsection{\texorpdfstring{custom()}{custom()}}
+{\footnotesize\ttfamily \label{namespacehubconf_a0f96def2e0001d6c6c457178da4b177b} 
+hubconf.\+custom (\begin{DoxyParamCaption}\item[{}]{path\+\_\+or\+\_\+model}{ = {\ttfamily \textquotesingle{}path/to/model.pt\textquotesingle{}}, }\item[{}]{autoshape}{ = {\ttfamily True}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}custom mode
+
+Arguments (3 options):
+    path_or_model (str): 'path/to/model.pt'
+    path_or_model (dict): torch.load('path/to/model.pt')
+    path_or_model (nn.Module): torch.load('path/to/model.pt')['model']
+
+Returns:
+    pytorch model
+\end{DoxyVerb}
+ \Hypertarget{namespacehubconf_adb375fa02f0e5d64b45fa92149ed9568}\index{hubconf@{hubconf}!yolov7@{yolov7}}
+\index{yolov7@{yolov7}!hubconf@{hubconf}}
+\doxysubsubsection{\texorpdfstring{yolov7()}{yolov7()}}
+{\footnotesize\ttfamily \label{namespacehubconf_adb375fa02f0e5d64b45fa92149ed9568} 
+hubconf.\+yolov7 (\begin{DoxyParamCaption}\item[{}]{pretrained}{ = {\ttfamily True}, }\item[{}]{channels}{ = {\ttfamily 3}, }\item[{}]{classes}{ = {\ttfamily 80}, }\item[{}]{autoshape}{ = {\ttfamily True}}\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Variable Documentation}
+\Hypertarget{namespacehubconf_ab9b0de913bf2cf0da624589d5ad9ede1}\index{hubconf@{hubconf}!dependencies@{dependencies}}
+\index{dependencies@{dependencies}!hubconf@{hubconf}}
+\doxysubsubsection{\texorpdfstring{dependencies}{dependencies}}
+{\footnotesize\ttfamily \label{namespacehubconf_ab9b0de913bf2cf0da624589d5ad9ede1} 
+list hubconf.\+dependencies = \mbox{[}\textquotesingle{}torch\textquotesingle{}, \textquotesingle{}yaml\textquotesingle{}\mbox{]}}
+
+\Hypertarget{namespacehubconf_aababa695f5130f281be181e6a20b18c5}\index{hubconf@{hubconf}!exclude@{exclude}}
+\index{exclude@{exclude}!hubconf@{hubconf}}
+\doxysubsubsection{\texorpdfstring{exclude}{exclude}}
+{\footnotesize\ttfamily \label{namespacehubconf_aababa695f5130f281be181e6a20b18c5} 
+hubconf.\+exclude}
+
+\Hypertarget{namespacehubconf_af4d150499d1d02ae1ad95234cdc82a29}\index{hubconf@{hubconf}!imgs@{imgs}}
+\index{imgs@{imgs}!hubconf@{hubconf}}
+\doxysubsubsection{\texorpdfstring{imgs}{imgs}}
+{\footnotesize\ttfamily \label{namespacehubconf_af4d150499d1d02ae1ad95234cdc82a29} 
+list hubconf.\+imgs = \mbox{[}np.\+zeros((640, 480, 3))\mbox{]}}
+
+\Hypertarget{namespacehubconf_a121754ebff6ebf330a6c0113afe25550}\index{hubconf@{hubconf}!model@{model}}
+\index{model@{model}!hubconf@{hubconf}}
+\doxysubsubsection{\texorpdfstring{model}{model}}
+{\footnotesize\ttfamily \label{namespacehubconf_a121754ebff6ebf330a6c0113afe25550} 
+hubconf.\+model = \mbox{\hyperlink{namespacehubconf_a0f96def2e0001d6c6c457178da4b177b}{custom}}(path\+\_\+or\+\_\+model=\textquotesingle{}yolov7.\+pt\textquotesingle{})}
+
+\Hypertarget{namespacehubconf_a42799aa2cc6319465e4d8653c1d67474}\index{hubconf@{hubconf}!results@{results}}
+\index{results@{results}!hubconf@{hubconf}}
+\doxysubsubsection{\texorpdfstring{results}{results}}
+{\footnotesize\ttfamily \label{namespacehubconf_a42799aa2cc6319465e4d8653c1d67474} 
+hubconf.\+results = \mbox{\hyperlink{namespacehubconf_a121754ebff6ebf330a6c0113afe25550}{model}}(\mbox{\hyperlink{namespacehubconf_af4d150499d1d02ae1ad95234cdc82a29}{imgs}})}
+

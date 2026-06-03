@@ -1,0 +1,136 @@
+\doxysection{torchvision\+\_\+down Namespace Reference}
+\hypertarget{namespacetorchvision__down}{}\label{namespacetorchvision__down}\index{torchvision\_down@{torchvision\_down}}
+\doxysubsubsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+namespace \mbox{\hyperlink{namespacetorchvision__down_1_1__internally__replaced__utils}{\+\_\+internally\+\_\+replaced\+\_\+utils}}
+\item 
+namespace \mbox{\hyperlink{namespacetorchvision__down_1_1datasets}{datasets}}
+\item 
+namespace \mbox{\hyperlink{namespacetorchvision__down_1_1extension}{extension}}
+\item 
+namespace \mbox{\hyperlink{namespacetorchvision__down_1_1io}{io}}
+\item 
+namespace \mbox{\hyperlink{namespacetorchvision__down_1_1models}{models}}
+\item 
+namespace \mbox{\hyperlink{namespacetorchvision__down_1_1ops}{ops}}
+\item 
+namespace \mbox{\hyperlink{namespacetorchvision__down_1_1transforms}{transforms}}
+\item 
+namespace \mbox{\hyperlink{namespacetorchvision__down_1_1utils}{utils}}
+\item 
+namespace \mbox{\hyperlink{namespacetorchvision__down_1_1version}{version}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{namespacetorchvision__down_a5912f5894e93e3df322d0007c8ebd50f}{set\+\_\+image\+\_\+backend}} (backend)
+\item 
+\mbox{\hyperlink{namespacetorchvision__down_ad924d3ad3a61fd20ab5ade379c6de17b}{get\+\_\+image\+\_\+backend}} ()
+\item 
+\mbox{\hyperlink{namespacetorchvision__down_a1f621ad048ad5aec3226979ca3e674a0}{set\+\_\+video\+\_\+backend}} (backend)
+\item 
+\mbox{\hyperlink{namespacetorchvision__down_a54342cf0528f6de5ca8cc951aa3f6c05}{get\+\_\+video\+\_\+backend}} ()
+\item 
+\mbox{\hyperlink{namespacetorchvision__down_ae46668927116b4d6b085a285c041a803}{\+\_\+is\+\_\+tracing}} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+tuple \mbox{\hyperlink{namespacetorchvision__down_a1453f60bc768698a08e2cf1f8537dac2}{message}}
+\item 
+str \mbox{\hyperlink{namespacetorchvision__down_a5ff956b5336428a19da0a6a3faf0fefe}{\+\_\+image\+\_\+backend}} = "{}PIL"{}
+\item 
+str \mbox{\hyperlink{namespacetorchvision__down_add48086f33d29ed52091dc038e5f1232}{\+\_\+video\+\_\+backend}} = "{}pyav"{}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{namespacetorchvision__down_ae46668927116b4d6b085a285c041a803}\index{torchvision\_down@{torchvision\_down}!\_is\_tracing@{\_is\_tracing}}
+\index{\_is\_tracing@{\_is\_tracing}!torchvision\_down@{torchvision\_down}}
+\doxysubsubsection{\texorpdfstring{\_is\_tracing()}{\_is\_tracing()}}
+{\footnotesize\ttfamily \label{namespacetorchvision__down_ae46668927116b4d6b085a285c041a803} 
+torchvision\+\_\+down.\+\_\+is\+\_\+tracing (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{namespacetorchvision__down_ad924d3ad3a61fd20ab5ade379c6de17b}\index{torchvision\_down@{torchvision\_down}!get\_image\_backend@{get\_image\_backend}}
+\index{get\_image\_backend@{get\_image\_backend}!torchvision\_down@{torchvision\_down}}
+\doxysubsubsection{\texorpdfstring{get\_image\_backend()}{get\_image\_backend()}}
+{\footnotesize\ttfamily \label{namespacetorchvision__down_ad924d3ad3a61fd20ab5ade379c6de17b} 
+torchvision\+\_\+down.\+get\+\_\+image\+\_\+backend (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Gets the name of the package used to load images
+\end{DoxyVerb}
+ \Hypertarget{namespacetorchvision__down_a54342cf0528f6de5ca8cc951aa3f6c05}\index{torchvision\_down@{torchvision\_down}!get\_video\_backend@{get\_video\_backend}}
+\index{get\_video\_backend@{get\_video\_backend}!torchvision\_down@{torchvision\_down}}
+\doxysubsubsection{\texorpdfstring{get\_video\_backend()}{get\_video\_backend()}}
+{\footnotesize\ttfamily \label{namespacetorchvision__down_a54342cf0528f6de5ca8cc951aa3f6c05} 
+torchvision\+\_\+down.\+get\+\_\+video\+\_\+backend (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Returns the currently active video backend used to decode videos.
+
+Returns:
+    str: Name of the video backend. one of {'pyav', 'video_reader'}.
+\end{DoxyVerb}
+ \Hypertarget{namespacetorchvision__down_a5912f5894e93e3df322d0007c8ebd50f}\index{torchvision\_down@{torchvision\_down}!set\_image\_backend@{set\_image\_backend}}
+\index{set\_image\_backend@{set\_image\_backend}!torchvision\_down@{torchvision\_down}}
+\doxysubsubsection{\texorpdfstring{set\_image\_backend()}{set\_image\_backend()}}
+{\footnotesize\ttfamily \label{namespacetorchvision__down_a5912f5894e93e3df322d0007c8ebd50f} 
+torchvision\+\_\+down.\+set\+\_\+image\+\_\+backend (\begin{DoxyParamCaption}\item[{}]{backend}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Specifies the package used to load images.
+
+Args:
+    backend (string): Name of the image backend. one of {'PIL', 'accimage'}.
+        The :mod:`accimage` package uses the Intel IPP library. It is
+        generally faster than PIL, but does not support as many operations.
+\end{DoxyVerb}
+ \Hypertarget{namespacetorchvision__down_a1f621ad048ad5aec3226979ca3e674a0}\index{torchvision\_down@{torchvision\_down}!set\_video\_backend@{set\_video\_backend}}
+\index{set\_video\_backend@{set\_video\_backend}!torchvision\_down@{torchvision\_down}}
+\doxysubsubsection{\texorpdfstring{set\_video\_backend()}{set\_video\_backend()}}
+{\footnotesize\ttfamily \label{namespacetorchvision__down_a1f621ad048ad5aec3226979ca3e674a0} 
+torchvision\+\_\+down.\+set\+\_\+video\+\_\+backend (\begin{DoxyParamCaption}\item[{}]{backend}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Specifies the package used to decode videos.
+
+Args:
+    backend (string): Name of the video backend. one of {'pyav', 'video_reader'}.
+        The :mod:`pyav` package uses the 3rd party PyAv library. It is a Pythonic
+        binding for the FFmpeg libraries.
+        The :mod:`video_reader` package includes a native C++ implementation on
+        top of FFMPEG libraries, and a python API of TorchScript custom operator.
+        It generally decodes faster than :mod:`pyav`, but is perhaps less robust.
+
+.. note::
+    Building with FFMPEG is disabled by default in the latest `main`. If you want to use the 'video_reader'
+    backend, please compile torchvision from source.
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Variable Documentation}
+\Hypertarget{namespacetorchvision__down_a5ff956b5336428a19da0a6a3faf0fefe}\index{torchvision\_down@{torchvision\_down}!\_image\_backend@{\_image\_backend}}
+\index{\_image\_backend@{\_image\_backend}!torchvision\_down@{torchvision\_down}}
+\doxysubsubsection{\texorpdfstring{\_image\_backend}{\_image\_backend}}
+{\footnotesize\ttfamily \label{namespacetorchvision__down_a5ff956b5336428a19da0a6a3faf0fefe} 
+str torchvision\+\_\+down.\+\_\+image\+\_\+backend = "{}PIL"{}\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{namespacetorchvision__down_add48086f33d29ed52091dc038e5f1232}\index{torchvision\_down@{torchvision\_down}!\_video\_backend@{\_video\_backend}}
+\index{\_video\_backend@{\_video\_backend}!torchvision\_down@{torchvision\_down}}
+\doxysubsubsection{\texorpdfstring{\_video\_backend}{\_video\_backend}}
+{\footnotesize\ttfamily \label{namespacetorchvision__down_add48086f33d29ed52091dc038e5f1232} 
+str torchvision\+\_\+down.\+\_\+video\+\_\+backend = "{}pyav"{}\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{namespacetorchvision__down_a1453f60bc768698a08e2cf1f8537dac2}\index{torchvision\_down@{torchvision\_down}!message@{message}}
+\index{message@{message}!torchvision\_down@{torchvision\_down}}
+\doxysubsubsection{\texorpdfstring{message}{message}}
+{\footnotesize\ttfamily \label{namespacetorchvision__down_a1453f60bc768698a08e2cf1f8537dac2} 
+tuple torchvision\+\_\+down.\+message}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ =\ \ (}
+\DoxyCodeLine{00002\ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}You\ are\ importing\ torchvision\ within\ its\ own\ root\ folder\ (\{\}).\ "{}}}
+\DoxyCodeLine{00003\ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}This\ is\ not\ expected\ to\ work\ and\ may\ give\ errors.\ Please\ exit\ the\ "{}}}
+\DoxyCodeLine{00004\ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}torchvision\ project\ source\ and\ relaunch\ your\ python\ interpreter."{}}}
+\DoxyCodeLine{00005\ \ \ \ \ )}
+
+\end{DoxyCode}

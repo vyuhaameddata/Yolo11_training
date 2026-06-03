@@ -1,0 +1,142 @@
+\doxysection{datasets\+\_\+backup.\+Load\+Images Class Reference}
+\hypertarget{classdatasets__backup_1_1_load_images}{}\label{classdatasets__backup_1_1_load_images}\index{datasets\_backup.LoadImages@{datasets\_backup.LoadImages}}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classdatasets__backup_1_1_load_images_a2f82b4ceaae4599bb7d5e6fffdf45fad}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, path, \mbox{\hyperlink{classdatasets__backup_1_1_load_images_a6b9ea8afc3745d5c47ad9089d18f84b1}{img\+\_\+size}}=640, \mbox{\hyperlink{classdatasets__backup_1_1_load_images_aefc5955ac77af711369cd89375114073}{stride}}=32)
+\item 
+\mbox{\hyperlink{classdatasets__backup_1_1_load_images_a56050f58b528f1a50d0f441cf2f5dffd}{\+\_\+\+\_\+iter\+\_\+\+\_\+}} (self)
+\item 
+\mbox{\hyperlink{classdatasets__backup_1_1_load_images_aedbdaa730708330ee46707594337f9ce}{\+\_\+\+\_\+next\+\_\+\+\_\+}} (self)
+\item 
+\mbox{\hyperlink{classdatasets__backup_1_1_load_images_aaa4fff811660622f9c3f6d6345bda4e1}{new\+\_\+video}} (self, path)
+\item 
+\mbox{\hyperlink{classdatasets__backup_1_1_load_images_a059a71f7dcd57e17ff09545050695bc4}{\+\_\+\+\_\+len\+\_\+\+\_\+}} (self)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classdatasets__backup_1_1_load_images_a6b9ea8afc3745d5c47ad9089d18f84b1}{img\+\_\+size}} = img\+\_\+size
+\item 
+\mbox{\hyperlink{classdatasets__backup_1_1_load_images_aefc5955ac77af711369cd89375114073}{stride}} = stride
+\item 
+\mbox{\hyperlink{classdatasets__backup_1_1_load_images_a58e9063e6a8d60d120589b5063dab0b4}{files}} = images + videos
+\item 
+\mbox{\hyperlink{classdatasets__backup_1_1_load_images_a205f3bdbb5a598694d8bee1a80e8fd54}{nf}} = ni + nv
+\item 
+list \mbox{\hyperlink{classdatasets__backup_1_1_load_images_abd89cc20f6775ad0faf73dbe9284c91e}{video\+\_\+flag}} = \mbox{[}False\mbox{]} \texorpdfstring{$\ast$}{*} ni + \mbox{[}True\mbox{]} \texorpdfstring{$\ast$}{*} nv
+\item 
+str \mbox{\hyperlink{classdatasets__backup_1_1_load_images_a0e7cfe7b1174af0a6f9881e42b78c3ae}{mode}} = \textquotesingle{}image\textquotesingle{}
+\item 
+\mbox{\hyperlink{classdatasets__backup_1_1_load_images_a295ccc033616c8094d135b5b1daa0f63}{cap}} = None
+\item 
+int \mbox{\hyperlink{classdatasets__backup_1_1_load_images_a874403864b348d0d25fd8ab4336989ce}{count}} = 0
+\item 
+int \mbox{\hyperlink{classdatasets__backup_1_1_load_images_ac2a78e0c2bb9ec76c6e71a554acadc2f}{frame}} = 0
+\item 
+\mbox{\hyperlink{classdatasets__backup_1_1_load_images_a61bc151210e039fd7c927970ebc7ef97}{nframes}} = int(self.\+cap.\+get(cv2.\+CAP\+\_\+\+PROP\+\_\+\+FRAME\+\_\+\+COUNT))
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classdatasets__backup_1_1_load_images_a2f82b4ceaae4599bb7d5e6fffdf45fad}\index{datasets\_backup.LoadImages@{datasets\_backup.LoadImages}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!datasets\_backup.LoadImages@{datasets\_backup.LoadImages}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily \label{classdatasets__backup_1_1_load_images_a2f82b4ceaae4599bb7d5e6fffdf45fad} 
+datasets\+\_\+backup.\+Load\+Images.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{path}{, }\item[{}]{img\+\_\+size}{ = {\ttfamily 640}, }\item[{}]{stride}{ = {\ttfamily 32}}\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classdatasets__backup_1_1_load_images_a56050f58b528f1a50d0f441cf2f5dffd}\index{datasets\_backup.LoadImages@{datasets\_backup.LoadImages}!\_\_iter\_\_@{\_\_iter\_\_}}
+\index{\_\_iter\_\_@{\_\_iter\_\_}!datasets\_backup.LoadImages@{datasets\_backup.LoadImages}}
+\doxysubsubsection{\texorpdfstring{\_\_iter\_\_()}{\_\_iter\_\_()}}
+{\footnotesize\ttfamily \label{classdatasets__backup_1_1_load_images_a56050f58b528f1a50d0f441cf2f5dffd} 
+datasets\+\_\+backup.\+Load\+Images.\+\_\+\+\_\+iter\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classdatasets__backup_1_1_load_images_a059a71f7dcd57e17ff09545050695bc4}\index{datasets\_backup.LoadImages@{datasets\_backup.LoadImages}!\_\_len\_\_@{\_\_len\_\_}}
+\index{\_\_len\_\_@{\_\_len\_\_}!datasets\_backup.LoadImages@{datasets\_backup.LoadImages}}
+\doxysubsubsection{\texorpdfstring{\_\_len\_\_()}{\_\_len\_\_()}}
+{\footnotesize\ttfamily \label{classdatasets__backup_1_1_load_images_a059a71f7dcd57e17ff09545050695bc4} 
+datasets\+\_\+backup.\+Load\+Images.\+\_\+\+\_\+len\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classdatasets__backup_1_1_load_images_aedbdaa730708330ee46707594337f9ce}\index{datasets\_backup.LoadImages@{datasets\_backup.LoadImages}!\_\_next\_\_@{\_\_next\_\_}}
+\index{\_\_next\_\_@{\_\_next\_\_}!datasets\_backup.LoadImages@{datasets\_backup.LoadImages}}
+\doxysubsubsection{\texorpdfstring{\_\_next\_\_()}{\_\_next\_\_()}}
+{\footnotesize\ttfamily \label{classdatasets__backup_1_1_load_images_aedbdaa730708330ee46707594337f9ce} 
+datasets\+\_\+backup.\+Load\+Images.\+\_\+\+\_\+next\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classdatasets__backup_1_1_load_images_aaa4fff811660622f9c3f6d6345bda4e1}\index{datasets\_backup.LoadImages@{datasets\_backup.LoadImages}!new\_video@{new\_video}}
+\index{new\_video@{new\_video}!datasets\_backup.LoadImages@{datasets\_backup.LoadImages}}
+\doxysubsubsection{\texorpdfstring{new\_video()}{new\_video()}}
+{\footnotesize\ttfamily \label{classdatasets__backup_1_1_load_images_aaa4fff811660622f9c3f6d6345bda4e1} 
+datasets\+\_\+backup.\+Load\+Images.\+new\+\_\+video (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{path}{}\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classdatasets__backup_1_1_load_images_a295ccc033616c8094d135b5b1daa0f63}\index{datasets\_backup.LoadImages@{datasets\_backup.LoadImages}!cap@{cap}}
+\index{cap@{cap}!datasets\_backup.LoadImages@{datasets\_backup.LoadImages}}
+\doxysubsubsection{\texorpdfstring{cap}{cap}}
+{\footnotesize\ttfamily \label{classdatasets__backup_1_1_load_images_a295ccc033616c8094d135b5b1daa0f63} 
+datasets\+\_\+backup.\+Load\+Images.\+cap = None}
+
+\Hypertarget{classdatasets__backup_1_1_load_images_a874403864b348d0d25fd8ab4336989ce}\index{datasets\_backup.LoadImages@{datasets\_backup.LoadImages}!count@{count}}
+\index{count@{count}!datasets\_backup.LoadImages@{datasets\_backup.LoadImages}}
+\doxysubsubsection{\texorpdfstring{count}{count}}
+{\footnotesize\ttfamily \label{classdatasets__backup_1_1_load_images_a874403864b348d0d25fd8ab4336989ce} 
+int datasets\+\_\+backup.\+Load\+Images.\+count = 0}
+
+\Hypertarget{classdatasets__backup_1_1_load_images_a58e9063e6a8d60d120589b5063dab0b4}\index{datasets\_backup.LoadImages@{datasets\_backup.LoadImages}!files@{files}}
+\index{files@{files}!datasets\_backup.LoadImages@{datasets\_backup.LoadImages}}
+\doxysubsubsection{\texorpdfstring{files}{files}}
+{\footnotesize\ttfamily \label{classdatasets__backup_1_1_load_images_a58e9063e6a8d60d120589b5063dab0b4} 
+datasets\+\_\+backup.\+Load\+Images.\+files = images + videos}
+
+\Hypertarget{classdatasets__backup_1_1_load_images_ac2a78e0c2bb9ec76c6e71a554acadc2f}\index{datasets\_backup.LoadImages@{datasets\_backup.LoadImages}!frame@{frame}}
+\index{frame@{frame}!datasets\_backup.LoadImages@{datasets\_backup.LoadImages}}
+\doxysubsubsection{\texorpdfstring{frame}{frame}}
+{\footnotesize\ttfamily \label{classdatasets__backup_1_1_load_images_ac2a78e0c2bb9ec76c6e71a554acadc2f} 
+int datasets\+\_\+backup.\+Load\+Images.\+frame = 0}
+
+\Hypertarget{classdatasets__backup_1_1_load_images_a6b9ea8afc3745d5c47ad9089d18f84b1}\index{datasets\_backup.LoadImages@{datasets\_backup.LoadImages}!img\_size@{img\_size}}
+\index{img\_size@{img\_size}!datasets\_backup.LoadImages@{datasets\_backup.LoadImages}}
+\doxysubsubsection{\texorpdfstring{img\_size}{img\_size}}
+{\footnotesize\ttfamily \label{classdatasets__backup_1_1_load_images_a6b9ea8afc3745d5c47ad9089d18f84b1} 
+datasets\+\_\+backup.\+Load\+Images.\+img\+\_\+size = img\+\_\+size}
+
+\Hypertarget{classdatasets__backup_1_1_load_images_a0e7cfe7b1174af0a6f9881e42b78c3ae}\index{datasets\_backup.LoadImages@{datasets\_backup.LoadImages}!mode@{mode}}
+\index{mode@{mode}!datasets\_backup.LoadImages@{datasets\_backup.LoadImages}}
+\doxysubsubsection{\texorpdfstring{mode}{mode}}
+{\footnotesize\ttfamily \label{classdatasets__backup_1_1_load_images_a0e7cfe7b1174af0a6f9881e42b78c3ae} 
+str datasets\+\_\+backup.\+Load\+Images.\+mode = \textquotesingle{}image\textquotesingle{}}
+
+\Hypertarget{classdatasets__backup_1_1_load_images_a205f3bdbb5a598694d8bee1a80e8fd54}\index{datasets\_backup.LoadImages@{datasets\_backup.LoadImages}!nf@{nf}}
+\index{nf@{nf}!datasets\_backup.LoadImages@{datasets\_backup.LoadImages}}
+\doxysubsubsection{\texorpdfstring{nf}{nf}}
+{\footnotesize\ttfamily \label{classdatasets__backup_1_1_load_images_a205f3bdbb5a598694d8bee1a80e8fd54} 
+datasets\+\_\+backup.\+Load\+Images.\+nf = ni + nv}
+
+\Hypertarget{classdatasets__backup_1_1_load_images_a61bc151210e039fd7c927970ebc7ef97}\index{datasets\_backup.LoadImages@{datasets\_backup.LoadImages}!nframes@{nframes}}
+\index{nframes@{nframes}!datasets\_backup.LoadImages@{datasets\_backup.LoadImages}}
+\doxysubsubsection{\texorpdfstring{nframes}{nframes}}
+{\footnotesize\ttfamily \label{classdatasets__backup_1_1_load_images_a61bc151210e039fd7c927970ebc7ef97} 
+datasets\+\_\+backup.\+Load\+Images.\+nframes = int(self.\+cap.\+get(cv2.\+CAP\+\_\+\+PROP\+\_\+\+FRAME\+\_\+\+COUNT))}
+
+\Hypertarget{classdatasets__backup_1_1_load_images_aefc5955ac77af711369cd89375114073}\index{datasets\_backup.LoadImages@{datasets\_backup.LoadImages}!stride@{stride}}
+\index{stride@{stride}!datasets\_backup.LoadImages@{datasets\_backup.LoadImages}}
+\doxysubsubsection{\texorpdfstring{stride}{stride}}
+{\footnotesize\ttfamily \label{classdatasets__backup_1_1_load_images_aefc5955ac77af711369cd89375114073} 
+datasets\+\_\+backup.\+Load\+Images.\+stride = stride}
+
+\Hypertarget{classdatasets__backup_1_1_load_images_abd89cc20f6775ad0faf73dbe9284c91e}\index{datasets\_backup.LoadImages@{datasets\_backup.LoadImages}!video\_flag@{video\_flag}}
+\index{video\_flag@{video\_flag}!datasets\_backup.LoadImages@{datasets\_backup.LoadImages}}
+\doxysubsubsection{\texorpdfstring{video\_flag}{video\_flag}}
+{\footnotesize\ttfamily \label{classdatasets__backup_1_1_load_images_abd89cc20f6775ad0faf73dbe9284c91e} 
+list datasets\+\_\+backup.\+Load\+Images.\+video\+\_\+flag = \mbox{[}False\mbox{]} \texorpdfstring{$\ast$}{*} ni + \mbox{[}True\mbox{]} \texorpdfstring{$\ast$}{*} nv}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Cervi\+AI/utils/backup dump/\mbox{\hyperlink{datasets__backup_8py}{datasets\+\_\+backup.\+py}}\end{DoxyCompactItemize}

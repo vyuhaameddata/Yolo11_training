@@ -1,0 +1,97 @@
+\doxysection{torchvision\+\_\+down.\+models.\+quantization.\+mobilenetv2.\+Quantizable\+Mobile\+Net\+V2 Class Reference}
+\hypertarget{classtorchvision__down_1_1models_1_1quantization_1_1mobilenetv2_1_1_quantizable_mobile_net_v2}{}\label{classtorchvision__down_1_1models_1_1quantization_1_1mobilenetv2_1_1_quantizable_mobile_net_v2}\index{torchvision\_down.models.quantization.mobilenetv2.QuantizableMobileNetV2@{torchvision\_down.models.quantization.mobilenetv2.QuantizableMobileNetV2}}
+Inheritance diagram for torchvision\+\_\+down.\+models.\+quantization.\+mobilenetv2.\+Quantizable\+Mobile\+Net\+V2\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{classtorchvision__down_1_1models_1_1quantization_1_1mobilenetv2_1_1_quantizable_mobile_net_v2}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+None \mbox{\hyperlink{classtorchvision__down_1_1models_1_1quantization_1_1mobilenetv2_1_1_quantizable_mobile_net_v2_a1ca474bbfc0836659aa1e92d986dfc7f}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, \texorpdfstring{$\ast$}{*}Any args, \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}Any kwargs)
+\item 
+Tensor \mbox{\hyperlink{classtorchvision__down_1_1models_1_1quantization_1_1mobilenetv2_1_1_quantizable_mobile_net_v2_a1df96b66b04d5041290c3f8634f592b7}{forward}} (self, Tensor x)
+\item 
+None \mbox{\hyperlink{classtorchvision__down_1_1models_1_1quantization_1_1mobilenetv2_1_1_quantizable_mobile_net_v2_aed921ac2bc9194960ddcdc9c0de40de5}{fuse\+\_\+model}} (self, Optional\mbox{[}bool\mbox{]} is\+\_\+qat=None)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{classtorchvision__down_1_1models_1_1mobilenetv2_1_1_mobile_net_v2}{torchvision\+\_\+down.\+models.\+mobilenetv2.\+Mobile\+Net\+V2}}}
+\begin{DoxyCompactItemize}
+\item 
+None \mbox{\hyperlink{classtorchvision__down_1_1models_1_1mobilenetv2_1_1_mobile_net_v2_a9e86da4ddebb76dc0a83648e53cc82c9}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, int num\+\_\+classes=1000, float width\+\_\+mult=1.\+0, Optional\mbox{[}List\mbox{[}List\mbox{[}int\mbox{]}\mbox{]}\mbox{]} inverted\+\_\+residual\+\_\+setting=None, int round\+\_\+nearest=8, Optional\mbox{[}Callable\mbox{[}..., nn.\+Module\mbox{]}\mbox{]} block=None, Optional\mbox{[}Callable\mbox{[}..., nn.\+Module\mbox{]}\mbox{]} norm\+\_\+layer=None, float dropout=0.\+2)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1models_1_1quantization_1_1mobilenetv2_1_1_quantizable_mobile_net_v2_aa889ba821e20f568e5ebbf088b543822}{quant}} = Quant\+Stub()
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1models_1_1quantization_1_1mobilenetv2_1_1_quantizable_mobile_net_v2_a1c0510bae6abe237392ca6e56984a75a}{dequant}} = De\+Quant\+Stub()
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes inherited from \mbox{\hyperlink{classtorchvision__down_1_1models_1_1mobilenetv2_1_1_mobile_net_v2}{torchvision\+\_\+down.\+models.\+mobilenetv2.\+Mobile\+Net\+V2}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1models_1_1mobilenetv2_1_1_mobile_net_v2_ad14342626609be2601e04d837979ccec}{last\+\_\+channel}} = \+\_\+make\+\_\+divisible(last\+\_\+channel \texorpdfstring{$\ast$}{*} max(1.\+0, width\+\_\+mult), round\+\_\+nearest)
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1models_1_1mobilenetv2_1_1_mobile_net_v2_a96d112714a5a029c633918918b0720ee}{features}} = nn.\+Sequential(\texorpdfstring{$\ast$}{*}features)
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1models_1_1mobilenetv2_1_1_mobile_net_v2_a27e54e0c08930b31aa2b925f03c439aa}{classifier}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Additional Inherited Members}
+\doxysubsection*{Protected Member Functions inherited from \mbox{\hyperlink{classtorchvision__down_1_1models_1_1mobilenetv2_1_1_mobile_net_v2}{torchvision\+\_\+down.\+models.\+mobilenetv2.\+Mobile\+Net\+V2}}}
+\begin{DoxyCompactItemize}
+\item 
+Tensor \mbox{\hyperlink{classtorchvision__down_1_1models_1_1mobilenetv2_1_1_mobile_net_v2_a4d6c96492a73b44f0b3f9770fb5608ed}{\+\_\+forward\+\_\+impl}} (self, Tensor x)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classtorchvision__down_1_1models_1_1quantization_1_1mobilenetv2_1_1_quantizable_mobile_net_v2_a1ca474bbfc0836659aa1e92d986dfc7f}\index{torchvision\_down.models.quantization.mobilenetv2.QuantizableMobileNetV2@{torchvision\_down.models.quantization.mobilenetv2.QuantizableMobileNetV2}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!torchvision\_down.models.quantization.mobilenetv2.QuantizableMobileNetV2@{torchvision\_down.models.quantization.mobilenetv2.QuantizableMobileNetV2}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1models_1_1quantization_1_1mobilenetv2_1_1_quantizable_mobile_net_v2_a1ca474bbfc0836659aa1e92d986dfc7f} 
+ None torchvision\+\_\+down.\+models.\+quantization.\+mobilenetv2.\+Quantizable\+Mobile\+Net\+V2.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{\texorpdfstring{$\ast$}{*}Any}]{args}{, }\item[{\texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}Any}]{kwargs}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}MobileNet V2 main class
+
+Args:
+   Inherits args from floating point MobileNetV2
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classtorchvision__down_1_1models_1_1quantization_1_1mobilenetv2_1_1_quantizable_mobile_net_v2_a1df96b66b04d5041290c3f8634f592b7}\index{torchvision\_down.models.quantization.mobilenetv2.QuantizableMobileNetV2@{torchvision\_down.models.quantization.mobilenetv2.QuantizableMobileNetV2}!forward@{forward}}
+\index{forward@{forward}!torchvision\_down.models.quantization.mobilenetv2.QuantizableMobileNetV2@{torchvision\_down.models.quantization.mobilenetv2.QuantizableMobileNetV2}}
+\doxysubsubsection{\texorpdfstring{forward()}{forward()}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1models_1_1quantization_1_1mobilenetv2_1_1_quantizable_mobile_net_v2_a1df96b66b04d5041290c3f8634f592b7} 
+ Tensor torchvision\+\_\+down.\+models.\+quantization.\+mobilenetv2.\+Quantizable\+Mobile\+Net\+V2.\+forward (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{Tensor}]{x}{}\end{DoxyParamCaption})}
+
+
+
+Reimplemented from \mbox{\hyperlink{classtorchvision__down_1_1models_1_1mobilenetv2_1_1_mobile_net_v2_a47dda19635d587140a21ab554363d9c8}{torchvision\+\_\+down.\+models.\+mobilenetv2.\+Mobile\+Net\+V2}}.
+
+\Hypertarget{classtorchvision__down_1_1models_1_1quantization_1_1mobilenetv2_1_1_quantizable_mobile_net_v2_aed921ac2bc9194960ddcdc9c0de40de5}\index{torchvision\_down.models.quantization.mobilenetv2.QuantizableMobileNetV2@{torchvision\_down.models.quantization.mobilenetv2.QuantizableMobileNetV2}!fuse\_model@{fuse\_model}}
+\index{fuse\_model@{fuse\_model}!torchvision\_down.models.quantization.mobilenetv2.QuantizableMobileNetV2@{torchvision\_down.models.quantization.mobilenetv2.QuantizableMobileNetV2}}
+\doxysubsubsection{\texorpdfstring{fuse\_model()}{fuse\_model()}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1models_1_1quantization_1_1mobilenetv2_1_1_quantizable_mobile_net_v2_aed921ac2bc9194960ddcdc9c0de40de5} 
+ None torchvision\+\_\+down.\+models.\+quantization.\+mobilenetv2.\+Quantizable\+Mobile\+Net\+V2.\+fuse\+\_\+model (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{Optional\mbox{[}bool\mbox{]} }]{is\+\_\+qat}{ = {\ttfamily None}}\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classtorchvision__down_1_1models_1_1quantization_1_1mobilenetv2_1_1_quantizable_mobile_net_v2_a1c0510bae6abe237392ca6e56984a75a}\index{torchvision\_down.models.quantization.mobilenetv2.QuantizableMobileNetV2@{torchvision\_down.models.quantization.mobilenetv2.QuantizableMobileNetV2}!dequant@{dequant}}
+\index{dequant@{dequant}!torchvision\_down.models.quantization.mobilenetv2.QuantizableMobileNetV2@{torchvision\_down.models.quantization.mobilenetv2.QuantizableMobileNetV2}}
+\doxysubsubsection{\texorpdfstring{dequant}{dequant}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1models_1_1quantization_1_1mobilenetv2_1_1_quantizable_mobile_net_v2_a1c0510bae6abe237392ca6e56984a75a} 
+torchvision\+\_\+down.\+models.\+quantization.\+mobilenetv2.\+Quantizable\+Mobile\+Net\+V2.\+dequant = De\+Quant\+Stub()}
+
+\Hypertarget{classtorchvision__down_1_1models_1_1quantization_1_1mobilenetv2_1_1_quantizable_mobile_net_v2_aa889ba821e20f568e5ebbf088b543822}\index{torchvision\_down.models.quantization.mobilenetv2.QuantizableMobileNetV2@{torchvision\_down.models.quantization.mobilenetv2.QuantizableMobileNetV2}!quant@{quant}}
+\index{quant@{quant}!torchvision\_down.models.quantization.mobilenetv2.QuantizableMobileNetV2@{torchvision\_down.models.quantization.mobilenetv2.QuantizableMobileNetV2}}
+\doxysubsubsection{\texorpdfstring{quant}{quant}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1models_1_1quantization_1_1mobilenetv2_1_1_quantizable_mobile_net_v2_aa889ba821e20f568e5ebbf088b543822} 
+torchvision\+\_\+down.\+models.\+quantization.\+mobilenetv2.\+Quantizable\+Mobile\+Net\+V2.\+quant = Quant\+Stub()}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Cervi\+AI/torchvision\+\_\+down/models/quantization/\mbox{\hyperlink{quantization_2mobilenetv2_8py}{mobilenetv2.\+py}}\end{DoxyCompactItemize}

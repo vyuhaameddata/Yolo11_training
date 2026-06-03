@@ -1,0 +1,106 @@
+\doxysection{torchvision\+\_\+down.\+models.\+optical\+\_\+flow.\+raft.\+Motion\+Encoder Class Reference}
+\hypertarget{classtorchvision__down_1_1models_1_1optical__flow_1_1raft_1_1_motion_encoder}{}\label{classtorchvision__down_1_1models_1_1optical__flow_1_1raft_1_1_motion_encoder}\index{torchvision\_down.models.optical\_flow.raft.MotionEncoder@{torchvision\_down.models.optical\_flow.raft.MotionEncoder}}
+Inheritance diagram for torchvision\+\_\+down.\+models.\+optical\+\_\+flow.\+raft.\+Motion\+Encoder\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classtorchvision__down_1_1models_1_1optical__flow_1_1raft_1_1_motion_encoder}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1models_1_1optical__flow_1_1raft_1_1_motion_encoder_ad7270679997c7e8b8fe39053debd14c1}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, \texorpdfstring{$\ast$}{*}, in\+\_\+channels\+\_\+corr, corr\+\_\+layers=(256, 192), flow\+\_\+layers=(128, 64), \mbox{\hyperlink{classtorchvision__down_1_1models_1_1optical__flow_1_1raft_1_1_motion_encoder_a195e74f17e0f3ec1a2b891ff06850435}{out\+\_\+channels}}=128)
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1models_1_1optical__flow_1_1raft_1_1_motion_encoder_a324629ef2874779ef7ffb27df1ac7a8f}{forward}} (self, flow, corr\+\_\+features)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1models_1_1optical__flow_1_1raft_1_1_motion_encoder_a7fd4a925e0fb67486e4ef94328f5001b}{convcorr1}} = \mbox{\hyperlink{classtorchvision__down_1_1ops_1_1misc_1_1_conv_norm_activation}{Conv\+Norm\+Activation}}(in\+\_\+channels\+\_\+corr, corr\+\_\+layers\mbox{[}0\mbox{]}, norm\+\_\+layer=None, kernel\+\_\+size=1)
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1models_1_1optical__flow_1_1raft_1_1_motion_encoder_af0215863b8e634d84fdaedffdc007c46}{convcorr2}} = \mbox{\hyperlink{classtorchvision__down_1_1ops_1_1misc_1_1_conv_norm_activation}{Conv\+Norm\+Activation}}(corr\+\_\+layers\mbox{[}0\mbox{]}, corr\+\_\+layers\mbox{[}1\mbox{]}, norm\+\_\+layer=None, kernel\+\_\+size=3)
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1models_1_1optical__flow_1_1raft_1_1_motion_encoder_a1e59295b35367759af1829848d744e2a}{convflow1}} = \mbox{\hyperlink{classtorchvision__down_1_1ops_1_1misc_1_1_conv_norm_activation}{Conv\+Norm\+Activation}}(2, flow\+\_\+layers\mbox{[}0\mbox{]}, norm\+\_\+layer=None, kernel\+\_\+size=7)
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1models_1_1optical__flow_1_1raft_1_1_motion_encoder_a6b53b2f7c135f5eb4c4ba03a09a6809c}{convflow2}} = \mbox{\hyperlink{classtorchvision__down_1_1ops_1_1misc_1_1_conv_norm_activation}{Conv\+Norm\+Activation}}(flow\+\_\+layers\mbox{[}0\mbox{]}, flow\+\_\+layers\mbox{[}1\mbox{]}, norm\+\_\+layer=None, kernel\+\_\+size=3)
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1models_1_1optical__flow_1_1raft_1_1_motion_encoder_a4aa51bb9970cdd9504a63a5761081203}{conv}}
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1models_1_1optical__flow_1_1raft_1_1_motion_encoder_a195e74f17e0f3ec1a2b891ff06850435}{out\+\_\+channels}} = out\+\_\+channels
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}The motion encoder, part of the update block.
+
+Takes the current predicted flow and the correlation features as input and returns an encoded version of these.
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classtorchvision__down_1_1models_1_1optical__flow_1_1raft_1_1_motion_encoder_ad7270679997c7e8b8fe39053debd14c1}\index{torchvision\_down.models.optical\_flow.raft.MotionEncoder@{torchvision\_down.models.optical\_flow.raft.MotionEncoder}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!torchvision\_down.models.optical\_flow.raft.MotionEncoder@{torchvision\_down.models.optical\_flow.raft.MotionEncoder}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1models_1_1optical__flow_1_1raft_1_1_motion_encoder_ad7270679997c7e8b8fe39053debd14c1} 
+torchvision\+\_\+down.\+models.\+optical\+\_\+flow.\+raft.\+Motion\+Encoder.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{\texorpdfstring{$\ast$}{*}}]{}{, }\item[{}]{in\+\_\+channels\+\_\+corr}{, }\item[{}]{corr\+\_\+layers}{ = {\ttfamily (256,~192)}, }\item[{}]{flow\+\_\+layers}{ = {\ttfamily (128,~64)}, }\item[{}]{out\+\_\+channels}{ = {\ttfamily 128}}\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classtorchvision__down_1_1models_1_1optical__flow_1_1raft_1_1_motion_encoder_a324629ef2874779ef7ffb27df1ac7a8f}\index{torchvision\_down.models.optical\_flow.raft.MotionEncoder@{torchvision\_down.models.optical\_flow.raft.MotionEncoder}!forward@{forward}}
+\index{forward@{forward}!torchvision\_down.models.optical\_flow.raft.MotionEncoder@{torchvision\_down.models.optical\_flow.raft.MotionEncoder}}
+\doxysubsubsection{\texorpdfstring{forward()}{forward()}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1models_1_1optical__flow_1_1raft_1_1_motion_encoder_a324629ef2874779ef7ffb27df1ac7a8f} 
+torchvision\+\_\+down.\+models.\+optical\+\_\+flow.\+raft.\+Motion\+Encoder.\+forward (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{flow}{, }\item[{}]{corr\+\_\+features}{}\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classtorchvision__down_1_1models_1_1optical__flow_1_1raft_1_1_motion_encoder_a4aa51bb9970cdd9504a63a5761081203}\index{torchvision\_down.models.optical\_flow.raft.MotionEncoder@{torchvision\_down.models.optical\_flow.raft.MotionEncoder}!conv@{conv}}
+\index{conv@{conv}!torchvision\_down.models.optical\_flow.raft.MotionEncoder@{torchvision\_down.models.optical\_flow.raft.MotionEncoder}}
+\doxysubsubsection{\texorpdfstring{conv}{conv}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1models_1_1optical__flow_1_1raft_1_1_motion_encoder_a4aa51bb9970cdd9504a63a5761081203} 
+torchvision\+\_\+down.\+models.\+optical\+\_\+flow.\+raft.\+Motion\+Encoder.\+conv}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \ ConvNormActivation(}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ corr\_layers[-\/1]\ +\ flow\_layers[-\/1],\ out\_channels\ -\/\ 2,\ norm\_layer=\textcolor{keywordtype}{None},\ kernel\_size=3}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ )}
+
+\end{DoxyCode}
+\Hypertarget{classtorchvision__down_1_1models_1_1optical__flow_1_1raft_1_1_motion_encoder_a7fd4a925e0fb67486e4ef94328f5001b}\index{torchvision\_down.models.optical\_flow.raft.MotionEncoder@{torchvision\_down.models.optical\_flow.raft.MotionEncoder}!convcorr1@{convcorr1}}
+\index{convcorr1@{convcorr1}!torchvision\_down.models.optical\_flow.raft.MotionEncoder@{torchvision\_down.models.optical\_flow.raft.MotionEncoder}}
+\doxysubsubsection{\texorpdfstring{convcorr1}{convcorr1}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1models_1_1optical__flow_1_1raft_1_1_motion_encoder_a7fd4a925e0fb67486e4ef94328f5001b} 
+torchvision\+\_\+down.\+models.\+optical\+\_\+flow.\+raft.\+Motion\+Encoder.\+convcorr1 = \mbox{\hyperlink{classtorchvision__down_1_1ops_1_1misc_1_1_conv_norm_activation}{Conv\+Norm\+Activation}}(in\+\_\+channels\+\_\+corr, corr\+\_\+layers\mbox{[}0\mbox{]}, norm\+\_\+layer=None, kernel\+\_\+size=1)}
+
+\Hypertarget{classtorchvision__down_1_1models_1_1optical__flow_1_1raft_1_1_motion_encoder_af0215863b8e634d84fdaedffdc007c46}\index{torchvision\_down.models.optical\_flow.raft.MotionEncoder@{torchvision\_down.models.optical\_flow.raft.MotionEncoder}!convcorr2@{convcorr2}}
+\index{convcorr2@{convcorr2}!torchvision\_down.models.optical\_flow.raft.MotionEncoder@{torchvision\_down.models.optical\_flow.raft.MotionEncoder}}
+\doxysubsubsection{\texorpdfstring{convcorr2}{convcorr2}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1models_1_1optical__flow_1_1raft_1_1_motion_encoder_af0215863b8e634d84fdaedffdc007c46} 
+torchvision\+\_\+down.\+models.\+optical\+\_\+flow.\+raft.\+Motion\+Encoder.\+convcorr2 = \mbox{\hyperlink{classtorchvision__down_1_1ops_1_1misc_1_1_conv_norm_activation}{Conv\+Norm\+Activation}}(corr\+\_\+layers\mbox{[}0\mbox{]}, corr\+\_\+layers\mbox{[}1\mbox{]}, norm\+\_\+layer=None, kernel\+\_\+size=3)}
+
+\Hypertarget{classtorchvision__down_1_1models_1_1optical__flow_1_1raft_1_1_motion_encoder_a1e59295b35367759af1829848d744e2a}\index{torchvision\_down.models.optical\_flow.raft.MotionEncoder@{torchvision\_down.models.optical\_flow.raft.MotionEncoder}!convflow1@{convflow1}}
+\index{convflow1@{convflow1}!torchvision\_down.models.optical\_flow.raft.MotionEncoder@{torchvision\_down.models.optical\_flow.raft.MotionEncoder}}
+\doxysubsubsection{\texorpdfstring{convflow1}{convflow1}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1models_1_1optical__flow_1_1raft_1_1_motion_encoder_a1e59295b35367759af1829848d744e2a} 
+torchvision\+\_\+down.\+models.\+optical\+\_\+flow.\+raft.\+Motion\+Encoder.\+convflow1 = \mbox{\hyperlink{classtorchvision__down_1_1ops_1_1misc_1_1_conv_norm_activation}{Conv\+Norm\+Activation}}(2, flow\+\_\+layers\mbox{[}0\mbox{]}, norm\+\_\+layer=None, kernel\+\_\+size=7)}
+
+\Hypertarget{classtorchvision__down_1_1models_1_1optical__flow_1_1raft_1_1_motion_encoder_a6b53b2f7c135f5eb4c4ba03a09a6809c}\index{torchvision\_down.models.optical\_flow.raft.MotionEncoder@{torchvision\_down.models.optical\_flow.raft.MotionEncoder}!convflow2@{convflow2}}
+\index{convflow2@{convflow2}!torchvision\_down.models.optical\_flow.raft.MotionEncoder@{torchvision\_down.models.optical\_flow.raft.MotionEncoder}}
+\doxysubsubsection{\texorpdfstring{convflow2}{convflow2}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1models_1_1optical__flow_1_1raft_1_1_motion_encoder_a6b53b2f7c135f5eb4c4ba03a09a6809c} 
+torchvision\+\_\+down.\+models.\+optical\+\_\+flow.\+raft.\+Motion\+Encoder.\+convflow2 = \mbox{\hyperlink{classtorchvision__down_1_1ops_1_1misc_1_1_conv_norm_activation}{Conv\+Norm\+Activation}}(flow\+\_\+layers\mbox{[}0\mbox{]}, flow\+\_\+layers\mbox{[}1\mbox{]}, norm\+\_\+layer=None, kernel\+\_\+size=3)}
+
+\Hypertarget{classtorchvision__down_1_1models_1_1optical__flow_1_1raft_1_1_motion_encoder_a195e74f17e0f3ec1a2b891ff06850435}\index{torchvision\_down.models.optical\_flow.raft.MotionEncoder@{torchvision\_down.models.optical\_flow.raft.MotionEncoder}!out\_channels@{out\_channels}}
+\index{out\_channels@{out\_channels}!torchvision\_down.models.optical\_flow.raft.MotionEncoder@{torchvision\_down.models.optical\_flow.raft.MotionEncoder}}
+\doxysubsubsection{\texorpdfstring{out\_channels}{out\_channels}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1models_1_1optical__flow_1_1raft_1_1_motion_encoder_a195e74f17e0f3ec1a2b891ff06850435} 
+torchvision\+\_\+down.\+models.\+optical\+\_\+flow.\+raft.\+Motion\+Encoder.\+out\+\_\+channels = out\+\_\+channels}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Cervi\+AI/torchvision\+\_\+down/models/optical\+\_\+flow/\mbox{\hyperlink{raft_8py}{raft.\+py}}\end{DoxyCompactItemize}

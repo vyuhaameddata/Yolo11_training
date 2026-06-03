@@ -1,0 +1,40 @@
+\doxysection{torchvision\+\_\+down.\+models.\+optical\+\_\+flow.\+\_\+utils Namespace Reference}
+\hypertarget{namespacetorchvision__down_1_1models_1_1optical__flow_1_1__utils}{}\label{namespacetorchvision__down_1_1models_1_1optical__flow_1_1__utils}\index{torchvision\_down.models.optical\_flow.\_utils@{torchvision\_down.models.optical\_flow.\_utils}}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{namespacetorchvision__down_1_1models_1_1optical__flow_1_1__utils_a5c6c99e8b16fa5a747add787e416441b}{grid\+\_\+sample}} (Tensor img, Tensor absolute\+\_\+grid, str mode="{}bilinear"{}, Optional\mbox{[}bool\mbox{]} align\+\_\+corners=None)
+\item 
+\mbox{\hyperlink{namespacetorchvision__down_1_1models_1_1optical__flow_1_1__utils_aacefbd13889022fa1080796cb27bb8a4}{make\+\_\+coords\+\_\+grid}} (int batch\+\_\+size, int h, int w)
+\item 
+\mbox{\hyperlink{namespacetorchvision__down_1_1models_1_1optical__flow_1_1__utils_aa7e86860187175b7e51d46fc29e2804c}{upsample\+\_\+flow}} (flow, Optional\mbox{[}Tensor\mbox{]} up\+\_\+mask=None)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{namespacetorchvision__down_1_1models_1_1optical__flow_1_1__utils_a5c6c99e8b16fa5a747add787e416441b}\index{torchvision\_down.models.optical\_flow.\_utils@{torchvision\_down.models.optical\_flow.\_utils}!grid\_sample@{grid\_sample}}
+\index{grid\_sample@{grid\_sample}!torchvision\_down.models.optical\_flow.\_utils@{torchvision\_down.models.optical\_flow.\_utils}}
+\doxysubsubsection{\texorpdfstring{grid\_sample()}{grid\_sample()}}
+{\footnotesize\ttfamily \label{namespacetorchvision__down_1_1models_1_1optical__flow_1_1__utils_a5c6c99e8b16fa5a747add787e416441b} 
+torchvision\+\_\+down.\+models.\+optical\+\_\+flow.\+\_\+utils.\+grid\+\_\+sample (\begin{DoxyParamCaption}\item[{Tensor}]{img}{, }\item[{Tensor}]{absolute\+\_\+grid}{, }\item[{str }]{mode}{ = {\ttfamily "{}bilinear"{}}, }\item[{Optional\mbox{[}bool\mbox{]} }]{align\+\_\+corners}{ = {\ttfamily None}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Same as torch's grid_sample, with absolute pixel coordinates instead of normalized coordinates.\end{DoxyVerb}
+ \Hypertarget{namespacetorchvision__down_1_1models_1_1optical__flow_1_1__utils_aacefbd13889022fa1080796cb27bb8a4}\index{torchvision\_down.models.optical\_flow.\_utils@{torchvision\_down.models.optical\_flow.\_utils}!make\_coords\_grid@{make\_coords\_grid}}
+\index{make\_coords\_grid@{make\_coords\_grid}!torchvision\_down.models.optical\_flow.\_utils@{torchvision\_down.models.optical\_flow.\_utils}}
+\doxysubsubsection{\texorpdfstring{make\_coords\_grid()}{make\_coords\_grid()}}
+{\footnotesize\ttfamily \label{namespacetorchvision__down_1_1models_1_1optical__flow_1_1__utils_aacefbd13889022fa1080796cb27bb8a4} 
+torchvision\+\_\+down.\+models.\+optical\+\_\+flow.\+\_\+utils.\+make\+\_\+coords\+\_\+grid (\begin{DoxyParamCaption}\item[{int}]{batch\+\_\+size}{, }\item[{int}]{h}{, }\item[{int}]{w}{}\end{DoxyParamCaption})}
+
+\Hypertarget{namespacetorchvision__down_1_1models_1_1optical__flow_1_1__utils_aa7e86860187175b7e51d46fc29e2804c}\index{torchvision\_down.models.optical\_flow.\_utils@{torchvision\_down.models.optical\_flow.\_utils}!upsample\_flow@{upsample\_flow}}
+\index{upsample\_flow@{upsample\_flow}!torchvision\_down.models.optical\_flow.\_utils@{torchvision\_down.models.optical\_flow.\_utils}}
+\doxysubsubsection{\texorpdfstring{upsample\_flow()}{upsample\_flow()}}
+{\footnotesize\ttfamily \label{namespacetorchvision__down_1_1models_1_1optical__flow_1_1__utils_aa7e86860187175b7e51d46fc29e2804c} 
+torchvision\+\_\+down.\+models.\+optical\+\_\+flow.\+\_\+utils.\+upsample\+\_\+flow (\begin{DoxyParamCaption}\item[{}]{flow}{, }\item[{Optional\mbox{[}Tensor\mbox{]} }]{up\+\_\+mask}{ = {\ttfamily None}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Upsample flow by a factor of 8.
+
+If up_mask is None we just interpolate.
+If up_mask is specified, we upsample using a convex combination of its weights. See paper page 8 and appendix B.
+Note that in appendix B the picture assumes a downsample factor of 4 instead of 8.
+\end{DoxyVerb}
+ 

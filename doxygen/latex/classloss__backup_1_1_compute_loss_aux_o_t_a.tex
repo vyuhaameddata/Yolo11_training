@@ -1,0 +1,150 @@
+\doxysection{loss\+\_\+backup.\+Compute\+Loss\+Aux\+OTA Class Reference}
+\hypertarget{classloss__backup_1_1_compute_loss_aux_o_t_a}{}\label{classloss__backup_1_1_compute_loss_aux_o_t_a}\index{loss\_backup.ComputeLossAuxOTA@{loss\_backup.ComputeLossAuxOTA}}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classloss__backup_1_1_compute_loss_aux_o_t_a_ab34060a15ce8dab0a25315778c064a2d}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, model, \mbox{\hyperlink{classloss__backup_1_1_compute_loss_aux_o_t_a_a91b9149f3b5e264e41e0cceff1a8c0ee}{autobalance}}=False)
+\item 
+\mbox{\hyperlink{classloss__backup_1_1_compute_loss_aux_o_t_a_a17b3dbd68bae354c1e7beaf81afa0a54}{\+\_\+\+\_\+call\+\_\+\+\_\+}} (self, p, targets, imgs)
+\item 
+\mbox{\hyperlink{classloss__backup_1_1_compute_loss_aux_o_t_a_adab059ebc7ab3920d906568f4da408ec}{build\+\_\+targets}} (self, p, targets, imgs)
+\item 
+\mbox{\hyperlink{classloss__backup_1_1_compute_loss_aux_o_t_a_a28f99b02f55e67782298eede05da021a}{build\+\_\+targets2}} (self, p, targets, imgs)
+\item 
+\mbox{\hyperlink{classloss__backup_1_1_compute_loss_aux_o_t_a_a0c73c6fa22d59512e2637cdcb8f981eb}{find\+\_\+5\+\_\+positive}} (self, p, targets)
+\item 
+\mbox{\hyperlink{classloss__backup_1_1_compute_loss_aux_o_t_a_adbfb6976964510a9967e5d42561bb4ac}{find\+\_\+3\+\_\+positive}} (self, p, targets)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classloss__backup_1_1_compute_loss_aux_o_t_a_a180a48662c25d08fc591607e7745fe87}{cp}}
+\item 
+\mbox{\hyperlink{classloss__backup_1_1_compute_loss_aux_o_t_a_a4a028d43d8fd239403f08ea3ed5b8cb0}{cn}} = \mbox{\hyperlink{namespaceloss__backup_a94c86cf0bfbffae0ff3fe50725f02b72}{smooth\+\_\+\+BCE}}(eps=h.\+get(\textquotesingle{}label\+\_\+smoothing\textquotesingle{}, 0.\+0))
+\item 
+dict \mbox{\hyperlink{classloss__backup_1_1_compute_loss_aux_o_t_a_a5d273d897162d4ea9632f53d5873ccf4}{balance}} = \{3\+: \mbox{[}4.\+0, 1.\+0, 0.\+4\mbox{]}\}.get(det.\+nl, \mbox{[}4.\+0, 1.\+0, 0.\+25, 0.\+06, .\+02\mbox{]})
+\item 
+int \mbox{\hyperlink{classloss__backup_1_1_compute_loss_aux_o_t_a_abab76829700bf1080fe19d4b037741aa}{ssi}} = list(det.\+stride).index(16) if \mbox{\hyperlink{classloss__backup_1_1_compute_loss_aux_o_t_a_a91b9149f3b5e264e41e0cceff1a8c0ee}{autobalance}} else 0
+\item 
+\mbox{\hyperlink{classloss__backup_1_1_compute_loss_aux_o_t_a_a5010c15df112108ef75f646ee6863d5b}{BCEcls}}
+\item 
+\mbox{\hyperlink{classloss__backup_1_1_compute_loss_aux_o_t_a_a9d00a434ac5629edbf5309c4bc662629}{BCEobj}}
+\item 
+\mbox{\hyperlink{classloss__backup_1_1_compute_loss_aux_o_t_a_ab21279c0b89ee2748481ed47d19a10ef}{gr}}
+\item 
+\mbox{\hyperlink{classloss__backup_1_1_compute_loss_aux_o_t_a_aafbf9d185149ba2744cbee8cb34ff099}{hyp}}
+\item 
+\mbox{\hyperlink{classloss__backup_1_1_compute_loss_aux_o_t_a_a91b9149f3b5e264e41e0cceff1a8c0ee}{autobalance}} = \mbox{\hyperlink{classloss__backup_1_1_compute_loss_aux_o_t_a_a5010c15df112108ef75f646ee6863d5b}{BCEcls}}, \mbox{\hyperlink{classloss__backup_1_1_compute_loss_aux_o_t_a_a9d00a434ac5629edbf5309c4bc662629}{BCEobj}}, model.\+gr, h, autobalance
+\item 
+\mbox{\hyperlink{classloss__backup_1_1_compute_loss_aux_o_t_a_a7acbc0833671f25923dcdf601fb8ea61}{nl}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classloss__backup_1_1_compute_loss_aux_o_t_a_ab34060a15ce8dab0a25315778c064a2d}\index{loss\_backup.ComputeLossAuxOTA@{loss\_backup.ComputeLossAuxOTA}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!loss\_backup.ComputeLossAuxOTA@{loss\_backup.ComputeLossAuxOTA}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily \label{classloss__backup_1_1_compute_loss_aux_o_t_a_ab34060a15ce8dab0a25315778c064a2d} 
+loss\+\_\+backup.\+Compute\+Loss\+Aux\+OTA.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{model}{, }\item[{}]{autobalance}{ = {\ttfamily False}}\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classloss__backup_1_1_compute_loss_aux_o_t_a_a17b3dbd68bae354c1e7beaf81afa0a54}\index{loss\_backup.ComputeLossAuxOTA@{loss\_backup.ComputeLossAuxOTA}!\_\_call\_\_@{\_\_call\_\_}}
+\index{\_\_call\_\_@{\_\_call\_\_}!loss\_backup.ComputeLossAuxOTA@{loss\_backup.ComputeLossAuxOTA}}
+\doxysubsubsection{\texorpdfstring{\_\_call\_\_()}{\_\_call\_\_()}}
+{\footnotesize\ttfamily \label{classloss__backup_1_1_compute_loss_aux_o_t_a_a17b3dbd68bae354c1e7beaf81afa0a54} 
+loss\+\_\+backup.\+Compute\+Loss\+Aux\+OTA.\+\_\+\+\_\+call\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{p}{, }\item[{}]{targets}{, }\item[{}]{imgs}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classloss__backup_1_1_compute_loss_aux_o_t_a_adab059ebc7ab3920d906568f4da408ec}\index{loss\_backup.ComputeLossAuxOTA@{loss\_backup.ComputeLossAuxOTA}!build\_targets@{build\_targets}}
+\index{build\_targets@{build\_targets}!loss\_backup.ComputeLossAuxOTA@{loss\_backup.ComputeLossAuxOTA}}
+\doxysubsubsection{\texorpdfstring{build\_targets()}{build\_targets()}}
+{\footnotesize\ttfamily \label{classloss__backup_1_1_compute_loss_aux_o_t_a_adab059ebc7ab3920d906568f4da408ec} 
+loss\+\_\+backup.\+Compute\+Loss\+Aux\+OTA.\+build\+\_\+targets (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{p}{, }\item[{}]{targets}{, }\item[{}]{imgs}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classloss__backup_1_1_compute_loss_aux_o_t_a_a28f99b02f55e67782298eede05da021a}\index{loss\_backup.ComputeLossAuxOTA@{loss\_backup.ComputeLossAuxOTA}!build\_targets2@{build\_targets2}}
+\index{build\_targets2@{build\_targets2}!loss\_backup.ComputeLossAuxOTA@{loss\_backup.ComputeLossAuxOTA}}
+\doxysubsubsection{\texorpdfstring{build\_targets2()}{build\_targets2()}}
+{\footnotesize\ttfamily \label{classloss__backup_1_1_compute_loss_aux_o_t_a_a28f99b02f55e67782298eede05da021a} 
+loss\+\_\+backup.\+Compute\+Loss\+Aux\+OTA.\+build\+\_\+targets2 (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{p}{, }\item[{}]{targets}{, }\item[{}]{imgs}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classloss__backup_1_1_compute_loss_aux_o_t_a_adbfb6976964510a9967e5d42561bb4ac}\index{loss\_backup.ComputeLossAuxOTA@{loss\_backup.ComputeLossAuxOTA}!find\_3\_positive@{find\_3\_positive}}
+\index{find\_3\_positive@{find\_3\_positive}!loss\_backup.ComputeLossAuxOTA@{loss\_backup.ComputeLossAuxOTA}}
+\doxysubsubsection{\texorpdfstring{find\_3\_positive()}{find\_3\_positive()}}
+{\footnotesize\ttfamily \label{classloss__backup_1_1_compute_loss_aux_o_t_a_adbfb6976964510a9967e5d42561bb4ac} 
+loss\+\_\+backup.\+Compute\+Loss\+Aux\+OTA.\+find\+\_\+3\+\_\+positive (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{p}{, }\item[{}]{targets}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classloss__backup_1_1_compute_loss_aux_o_t_a_a0c73c6fa22d59512e2637cdcb8f981eb}\index{loss\_backup.ComputeLossAuxOTA@{loss\_backup.ComputeLossAuxOTA}!find\_5\_positive@{find\_5\_positive}}
+\index{find\_5\_positive@{find\_5\_positive}!loss\_backup.ComputeLossAuxOTA@{loss\_backup.ComputeLossAuxOTA}}
+\doxysubsubsection{\texorpdfstring{find\_5\_positive()}{find\_5\_positive()}}
+{\footnotesize\ttfamily \label{classloss__backup_1_1_compute_loss_aux_o_t_a_a0c73c6fa22d59512e2637cdcb8f981eb} 
+loss\+\_\+backup.\+Compute\+Loss\+Aux\+OTA.\+find\+\_\+5\+\_\+positive (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{p}{, }\item[{}]{targets}{}\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classloss__backup_1_1_compute_loss_aux_o_t_a_a91b9149f3b5e264e41e0cceff1a8c0ee}\index{loss\_backup.ComputeLossAuxOTA@{loss\_backup.ComputeLossAuxOTA}!autobalance@{autobalance}}
+\index{autobalance@{autobalance}!loss\_backup.ComputeLossAuxOTA@{loss\_backup.ComputeLossAuxOTA}}
+\doxysubsubsection{\texorpdfstring{autobalance}{autobalance}}
+{\footnotesize\ttfamily \label{classloss__backup_1_1_compute_loss_aux_o_t_a_a91b9149f3b5e264e41e0cceff1a8c0ee} 
+loss\+\_\+backup.\+Compute\+Loss\+Aux\+OTA.\+autobalance = \mbox{\hyperlink{classloss__backup_1_1_compute_loss_aux_o_t_a_a5010c15df112108ef75f646ee6863d5b}{BCEcls}}, \mbox{\hyperlink{classloss__backup_1_1_compute_loss_aux_o_t_a_a9d00a434ac5629edbf5309c4bc662629}{BCEobj}}, model.\+gr, h, autobalance}
+
+\Hypertarget{classloss__backup_1_1_compute_loss_aux_o_t_a_a5d273d897162d4ea9632f53d5873ccf4}\index{loss\_backup.ComputeLossAuxOTA@{loss\_backup.ComputeLossAuxOTA}!balance@{balance}}
+\index{balance@{balance}!loss\_backup.ComputeLossAuxOTA@{loss\_backup.ComputeLossAuxOTA}}
+\doxysubsubsection{\texorpdfstring{balance}{balance}}
+{\footnotesize\ttfamily \label{classloss__backup_1_1_compute_loss_aux_o_t_a_a5d273d897162d4ea9632f53d5873ccf4} 
+dict loss\+\_\+backup.\+Compute\+Loss\+Aux\+OTA.\+balance = \{3\+: \mbox{[}4.\+0, 1.\+0, 0.\+4\mbox{]}\}.get(det.\+nl, \mbox{[}4.\+0, 1.\+0, 0.\+25, 0.\+06, .\+02\mbox{]})}
+
+\Hypertarget{classloss__backup_1_1_compute_loss_aux_o_t_a_a5010c15df112108ef75f646ee6863d5b}\index{loss\_backup.ComputeLossAuxOTA@{loss\_backup.ComputeLossAuxOTA}!BCEcls@{BCEcls}}
+\index{BCEcls@{BCEcls}!loss\_backup.ComputeLossAuxOTA@{loss\_backup.ComputeLossAuxOTA}}
+\doxysubsubsection{\texorpdfstring{BCEcls}{BCEcls}}
+{\footnotesize\ttfamily \label{classloss__backup_1_1_compute_loss_aux_o_t_a_a5010c15df112108ef75f646ee6863d5b} 
+loss\+\_\+backup.\+Compute\+Loss\+Aux\+OTA.\+BCEcls}
+
+\Hypertarget{classloss__backup_1_1_compute_loss_aux_o_t_a_a9d00a434ac5629edbf5309c4bc662629}\index{loss\_backup.ComputeLossAuxOTA@{loss\_backup.ComputeLossAuxOTA}!BCEobj@{BCEobj}}
+\index{BCEobj@{BCEobj}!loss\_backup.ComputeLossAuxOTA@{loss\_backup.ComputeLossAuxOTA}}
+\doxysubsubsection{\texorpdfstring{BCEobj}{BCEobj}}
+{\footnotesize\ttfamily \label{classloss__backup_1_1_compute_loss_aux_o_t_a_a9d00a434ac5629edbf5309c4bc662629} 
+loss\+\_\+backup.\+Compute\+Loss\+Aux\+OTA.\+BCEobj}
+
+\Hypertarget{classloss__backup_1_1_compute_loss_aux_o_t_a_a4a028d43d8fd239403f08ea3ed5b8cb0}\index{loss\_backup.ComputeLossAuxOTA@{loss\_backup.ComputeLossAuxOTA}!cn@{cn}}
+\index{cn@{cn}!loss\_backup.ComputeLossAuxOTA@{loss\_backup.ComputeLossAuxOTA}}
+\doxysubsubsection{\texorpdfstring{cn}{cn}}
+{\footnotesize\ttfamily \label{classloss__backup_1_1_compute_loss_aux_o_t_a_a4a028d43d8fd239403f08ea3ed5b8cb0} 
+loss\+\_\+backup.\+Compute\+Loss\+Aux\+OTA.\+cn = \mbox{\hyperlink{namespaceloss__backup_a94c86cf0bfbffae0ff3fe50725f02b72}{smooth\+\_\+\+BCE}}(eps=h.\+get(\textquotesingle{}label\+\_\+smoothing\textquotesingle{}, 0.\+0))}
+
+\Hypertarget{classloss__backup_1_1_compute_loss_aux_o_t_a_a180a48662c25d08fc591607e7745fe87}\index{loss\_backup.ComputeLossAuxOTA@{loss\_backup.ComputeLossAuxOTA}!cp@{cp}}
+\index{cp@{cp}!loss\_backup.ComputeLossAuxOTA@{loss\_backup.ComputeLossAuxOTA}}
+\doxysubsubsection{\texorpdfstring{cp}{cp}}
+{\footnotesize\ttfamily \label{classloss__backup_1_1_compute_loss_aux_o_t_a_a180a48662c25d08fc591607e7745fe87} 
+loss\+\_\+backup.\+Compute\+Loss\+Aux\+OTA.\+cp}
+
+\Hypertarget{classloss__backup_1_1_compute_loss_aux_o_t_a_ab21279c0b89ee2748481ed47d19a10ef}\index{loss\_backup.ComputeLossAuxOTA@{loss\_backup.ComputeLossAuxOTA}!gr@{gr}}
+\index{gr@{gr}!loss\_backup.ComputeLossAuxOTA@{loss\_backup.ComputeLossAuxOTA}}
+\doxysubsubsection{\texorpdfstring{gr}{gr}}
+{\footnotesize\ttfamily \label{classloss__backup_1_1_compute_loss_aux_o_t_a_ab21279c0b89ee2748481ed47d19a10ef} 
+loss\+\_\+backup.\+Compute\+Loss\+Aux\+OTA.\+gr}
+
+\Hypertarget{classloss__backup_1_1_compute_loss_aux_o_t_a_aafbf9d185149ba2744cbee8cb34ff099}\index{loss\_backup.ComputeLossAuxOTA@{loss\_backup.ComputeLossAuxOTA}!hyp@{hyp}}
+\index{hyp@{hyp}!loss\_backup.ComputeLossAuxOTA@{loss\_backup.ComputeLossAuxOTA}}
+\doxysubsubsection{\texorpdfstring{hyp}{hyp}}
+{\footnotesize\ttfamily \label{classloss__backup_1_1_compute_loss_aux_o_t_a_aafbf9d185149ba2744cbee8cb34ff099} 
+loss\+\_\+backup.\+Compute\+Loss\+Aux\+OTA.\+hyp}
+
+\Hypertarget{classloss__backup_1_1_compute_loss_aux_o_t_a_a7acbc0833671f25923dcdf601fb8ea61}\index{loss\_backup.ComputeLossAuxOTA@{loss\_backup.ComputeLossAuxOTA}!nl@{nl}}
+\index{nl@{nl}!loss\_backup.ComputeLossAuxOTA@{loss\_backup.ComputeLossAuxOTA}}
+\doxysubsubsection{\texorpdfstring{nl}{nl}}
+{\footnotesize\ttfamily \label{classloss__backup_1_1_compute_loss_aux_o_t_a_a7acbc0833671f25923dcdf601fb8ea61} 
+loss\+\_\+backup.\+Compute\+Loss\+Aux\+OTA.\+nl}
+
+\Hypertarget{classloss__backup_1_1_compute_loss_aux_o_t_a_abab76829700bf1080fe19d4b037741aa}\index{loss\_backup.ComputeLossAuxOTA@{loss\_backup.ComputeLossAuxOTA}!ssi@{ssi}}
+\index{ssi@{ssi}!loss\_backup.ComputeLossAuxOTA@{loss\_backup.ComputeLossAuxOTA}}
+\doxysubsubsection{\texorpdfstring{ssi}{ssi}}
+{\footnotesize\ttfamily \label{classloss__backup_1_1_compute_loss_aux_o_t_a_abab76829700bf1080fe19d4b037741aa} 
+int loss\+\_\+backup.\+Compute\+Loss\+Aux\+OTA.\+ssi = list(det.\+stride).index(16) if \mbox{\hyperlink{classloss__backup_1_1_compute_loss_aux_o_t_a_a91b9149f3b5e264e41e0cceff1a8c0ee}{autobalance}} else 0}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Cervi\+AI/utils/backup dump/\mbox{\hyperlink{loss__backup_8py}{loss\+\_\+backup.\+py}}\end{DoxyCompactItemize}

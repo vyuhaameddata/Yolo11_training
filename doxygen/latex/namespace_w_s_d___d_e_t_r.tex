@@ -1,0 +1,251 @@
+\doxysection{WSD\+\_\+\+DETR Namespace Reference}
+\hypertarget{namespace_w_s_d___d_e_t_r}{}\label{namespace_w_s_d___d_e_t_r}\index{WSD\_DETR@{WSD\_DETR}}
+\doxysubsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{class_w_s_d___d_e_t_r_1_1_global_vars}{Global\+Vars}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{namespace_w_s_d___d_e_t_r_aa288c4b2a50b4ee49bdea70033fa5f94}{write\+\_\+ndpa}} (\mbox{\hyperlink{namespace_w_s_d___d_e_t_r_a0d1c1fed87049e48d5f12b2a691b805d}{tile\+\_\+size}}=1024, \mbox{\hyperlink{namespace_w_s_d___d_e_t_r_a0716e8d4b0ea27ae1ff29ef4322bb533}{overlap}}=128)
+\item 
+\mbox{\hyperlink{namespace_w_s_d___d_e_t_r_aa3d770ee7a79afefbd063721943c0d13}{get\+\_\+referance}} (wsi\+\_\+path)
+\item 
+\mbox{\hyperlink{namespace_w_s_d___d_e_t_r_a1c93007dd397da35588bfeb1d7b79009}{update\+\_\+annote\+\_\+id}} (annotations)
+\item 
+\mbox{\hyperlink{namespace_w_s_d___d_e_t_r_ae364710eea067903606dca1ec196aa19}{run\+\_\+predict\+\_\+wsi\+\_\+multithread}} (path, model, \mbox{\hyperlink{namespace_w_s_d___d_e_t_r_a0716e8d4b0ea27ae1ff29ef4322bb533}{overlap}}, \mbox{\hyperlink{namespace_w_s_d___d_e_t_r_a0d1c1fed87049e48d5f12b2a691b805d}{tile\+\_\+size}}=1024, batch\+\_\+size=12)
+\item 
+\mbox{\hyperlink{namespace_w_s_d___d_e_t_r_a8a4e71aa1ea647851c725227df86dc06}{prune\+\_\+list}} (box\+\_\+list)
+\item 
+\mbox{\hyperlink{namespace_w_s_d___d_e_t_r_a78cb3c04c857f960d0cce102f1a70533}{replace\+\_\+bigger\+\_\+box}} (boxA, boxB)
+\item 
+\mbox{\hyperlink{namespace_w_s_d___d_e_t_r_a99854dd72402e7b1c6ea85598b475a81}{bb\+\_\+intersection\+\_\+over\+\_\+union}} (boxA, boxB)
+\item 
+\mbox{\hyperlink{namespace_w_s_d___d_e_t_r_aeab4a96aa86a3c65623be4a68239ec3e}{rerun\+\_\+predict\+\_\+pool}} (wsi\+\_\+path, model, pred\+\_\+list, \mbox{\hyperlink{namespace_w_s_d___d_e_t_r_a0d1c1fed87049e48d5f12b2a691b805d}{tile\+\_\+size}}=1024, batch\+\_\+size=12)
+\item 
+\mbox{\hyperlink{namespace_w_s_d___d_e_t_r_a1ec8320e3cf730211c862248b3fb52b5}{divide\+\_\+chunks}} (Anotelist, batch\+\_\+size)
+\item 
+\mbox{\hyperlink{namespace_w_s_d___d_e_t_r_af3c1df8b5643ba33c7b8949e7a4336ad}{read\+\_\+tiles\+\_\+parallel}} (slide\+\_\+path, pred\+\_\+list, \mbox{\hyperlink{namespace_w_s_d___d_e_t_r_a0d1c1fed87049e48d5f12b2a691b805d}{tile\+\_\+size}})
+\item 
+\mbox{\hyperlink{namespace_w_s_d___d_e_t_r_a6f5d9b4f08e9a8c22dd1be6735bf5716}{process}} (wsi\+\_\+path, pred, \mbox{\hyperlink{namespace_w_s_d___d_e_t_r_a0d1c1fed87049e48d5f12b2a691b805d}{tile\+\_\+size}})
+\item 
+\mbox{\hyperlink{namespace_w_s_d___d_e_t_r_a1f89571133e5a63a38d4b53960ee5a2c}{fetch\+\_\+batch}} (image)
+\item 
+\mbox{\hyperlink{namespace_w_s_d___d_e_t_r_afa6d768f43189dbd168a970022f1271b}{get\+\_\+cat\+\_\+model}} ()
+\item 
+\mbox{\hyperlink{namespace_w_s_d___d_e_t_r_a9136315a9cb4c247227c7694c5bfb30d}{write\+\_\+xml}} (annotations, start\+\_\+id, anote\+\_\+list, X\+\_\+\+Reference, Y\+\_\+\+Reference, nm\+\_\+p)
+\item 
+\mbox{\hyperlink{namespace_w_s_d___d_e_t_r_a31623819f6728a1377eea65f272952ca}{write\+\_\+annotation}} (annotations, \+\_\+id, x1, y1, x2, y2, cls, conf, X\+\_\+\+Reference, Y\+\_\+\+Reference, nm\+\_\+p=221)
+\item 
+\mbox{\hyperlink{namespace_w_s_d___d_e_t_r_ad8bd20d91036ccbd70893b70eb6b071f}{dump\+\_\+results}} (gt\+\_\+xml\+\_\+path, predicts\+\_\+xml\+\_\+path)
+\item 
+\mbox{\hyperlink{namespace_w_s_d___d_e_t_r_a27b0f02e343841d9687fbc922f2e4151}{get\+\_\+box\+\_\+list}} (xml\+\_\+path, nm\+\_\+p=221)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{namespace_w_s_d___d_e_t_r_a0b7eb28b76d862c0bb19a2cc4a27e780}{current\+\_\+dir}} = os.\+path.\+dirname(sys.\+executable)
+\item 
+str \mbox{\hyperlink{namespace_w_s_d___d_e_t_r_adbccea1234e646207c24dbd2b76d2f3d}{url}} = "{}https\+://github.\+com/openslide/openslide-\/winbuild/releases/download/v20230414/openslide-\/win64-\/20230414.zip"{}
+\item 
+str \mbox{\hyperlink{namespace_w_s_d___d_e_t_r_a6a40d247afe75c9947cc8a9e3a9f17bd}{filename}} = "{}openslide-\/win64-\/20230414.zip"{}
+\item 
+\mbox{\hyperlink{namespace_w_s_d___d_e_t_r_add0dab6f3a6e0435c0afb5a3ceb294bf}{response}} = requests.\+get(\mbox{\hyperlink{namespace_w_s_d___d_e_t_r_adbccea1234e646207c24dbd2b76d2f3d}{url}}, stream=True)
+\item 
+\mbox{\hyperlink{namespace_w_s_d___d_e_t_r_ae4f80d19cd71b60838923d8b5ac5ab20}{chunk\+\_\+size}}
+\item 
+\mbox{\hyperlink{namespace_w_s_d___d_e_t_r_a813810f3398b53c45cdbecef8bfedd32}{OPENSLIDE\+\_\+\+PATH}} = os.\+path.\+join(\mbox{\hyperlink{namespace_w_s_d___d_e_t_r_a0b7eb28b76d862c0bb19a2cc4a27e780}{current\+\_\+dir}}, \textquotesingle{}openslide-\/win64-\/20230414\textquotesingle{}, \textquotesingle{}bin\textquotesingle{})
+\item 
+str \mbox{\hyperlink{namespace_w_s_d___d_e_t_r_a4097c2d7f9bc5a84605b218ce3fbd501}{folder\+\_\+path}} = r\textquotesingle{}D\+:\textbackslash{}\+Shreyan\textbackslash{}\+Development\textbackslash{}\+Test\textquotesingle{}
+\item 
+\mbox{\hyperlink{namespace_w_s_d___d_e_t_r_a8a5a4c9ba1e045ca8ad6fcead150ef0e}{global\+Vars}} = \mbox{\hyperlink{class_w_s_d___d_e_t_r_1_1_global_vars}{Global\+Vars}}(\mbox{\hyperlink{namespace_w_s_d___d_e_t_r_a4097c2d7f9bc5a84605b218ce3fbd501}{folder\+\_\+path}})
+\item 
+\mbox{\hyperlink{namespace_w_s_d___d_e_t_r_aa9a9ace5b3dfade4e22e17dc5f5ad9af}{start}} = time.\+time()
+\item 
+\mbox{\hyperlink{namespace_w_s_d___d_e_t_r_a0d1c1fed87049e48d5f12b2a691b805d}{tile\+\_\+size}}
+\item 
+\mbox{\hyperlink{namespace_w_s_d___d_e_t_r_a0716e8d4b0ea27ae1ff29ef4322bb533}{overlap}}
+\item 
+\mbox{\hyperlink{namespace_w_s_d___d_e_t_r_a88d0a680e2948459f1f421e0aab1742f}{end}} = time.\+time()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{namespace_w_s_d___d_e_t_r_a99854dd72402e7b1c6ea85598b475a81}\index{WSD\_DETR@{WSD\_DETR}!bb\_intersection\_over\_union@{bb\_intersection\_over\_union}}
+\index{bb\_intersection\_over\_union@{bb\_intersection\_over\_union}!WSD\_DETR@{WSD\_DETR}}
+\doxysubsubsection{\texorpdfstring{bb\_intersection\_over\_union()}{bb\_intersection\_over\_union()}}
+{\footnotesize\ttfamily \label{namespace_w_s_d___d_e_t_r_a99854dd72402e7b1c6ea85598b475a81} 
+WSD\+\_\+\+DETR.\+bb\+\_\+intersection\+\_\+over\+\_\+union (\begin{DoxyParamCaption}\item[{}]{boxA}{, }\item[{}]{boxB}{}\end{DoxyParamCaption})}
+
+\Hypertarget{namespace_w_s_d___d_e_t_r_a1ec8320e3cf730211c862248b3fb52b5}\index{WSD\_DETR@{WSD\_DETR}!divide\_chunks@{divide\_chunks}}
+\index{divide\_chunks@{divide\_chunks}!WSD\_DETR@{WSD\_DETR}}
+\doxysubsubsection{\texorpdfstring{divide\_chunks()}{divide\_chunks()}}
+{\footnotesize\ttfamily \label{namespace_w_s_d___d_e_t_r_a1ec8320e3cf730211c862248b3fb52b5} 
+WSD\+\_\+\+DETR.\+divide\+\_\+chunks (\begin{DoxyParamCaption}\item[{}]{Anotelist}{, }\item[{}]{batch\+\_\+size}{}\end{DoxyParamCaption})}
+
+\Hypertarget{namespace_w_s_d___d_e_t_r_ad8bd20d91036ccbd70893b70eb6b071f}\index{WSD\_DETR@{WSD\_DETR}!dump\_results@{dump\_results}}
+\index{dump\_results@{dump\_results}!WSD\_DETR@{WSD\_DETR}}
+\doxysubsubsection{\texorpdfstring{dump\_results()}{dump\_results()}}
+{\footnotesize\ttfamily \label{namespace_w_s_d___d_e_t_r_ad8bd20d91036ccbd70893b70eb6b071f} 
+WSD\+\_\+\+DETR.\+dump\+\_\+results (\begin{DoxyParamCaption}\item[{}]{gt\+\_\+xml\+\_\+path}{, }\item[{}]{predicts\+\_\+xml\+\_\+path}{}\end{DoxyParamCaption})}
+
+\Hypertarget{namespace_w_s_d___d_e_t_r_a1f89571133e5a63a38d4b53960ee5a2c}\index{WSD\_DETR@{WSD\_DETR}!fetch\_batch@{fetch\_batch}}
+\index{fetch\_batch@{fetch\_batch}!WSD\_DETR@{WSD\_DETR}}
+\doxysubsubsection{\texorpdfstring{fetch\_batch()}{fetch\_batch()}}
+{\footnotesize\ttfamily \label{namespace_w_s_d___d_e_t_r_a1f89571133e5a63a38d4b53960ee5a2c} 
+WSD\+\_\+\+DETR.\+fetch\+\_\+batch (\begin{DoxyParamCaption}\item[{}]{image}{}\end{DoxyParamCaption})}
+
+\Hypertarget{namespace_w_s_d___d_e_t_r_a27b0f02e343841d9687fbc922f2e4151}\index{WSD\_DETR@{WSD\_DETR}!get\_box\_list@{get\_box\_list}}
+\index{get\_box\_list@{get\_box\_list}!WSD\_DETR@{WSD\_DETR}}
+\doxysubsubsection{\texorpdfstring{get\_box\_list()}{get\_box\_list()}}
+{\footnotesize\ttfamily \label{namespace_w_s_d___d_e_t_r_a27b0f02e343841d9687fbc922f2e4151} 
+WSD\+\_\+\+DETR.\+get\+\_\+box\+\_\+list (\begin{DoxyParamCaption}\item[{}]{xml\+\_\+path}{, }\item[{}]{nm\+\_\+p}{ = {\ttfamily 221}}\end{DoxyParamCaption})}
+
+\Hypertarget{namespace_w_s_d___d_e_t_r_afa6d768f43189dbd168a970022f1271b}\index{WSD\_DETR@{WSD\_DETR}!get\_cat\_model@{get\_cat\_model}}
+\index{get\_cat\_model@{get\_cat\_model}!WSD\_DETR@{WSD\_DETR}}
+\doxysubsubsection{\texorpdfstring{get\_cat\_model()}{get\_cat\_model()}}
+{\footnotesize\ttfamily \label{namespace_w_s_d___d_e_t_r_afa6d768f43189dbd168a970022f1271b} 
+WSD\+\_\+\+DETR.\+get\+\_\+cat\+\_\+model (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+\Hypertarget{namespace_w_s_d___d_e_t_r_aa3d770ee7a79afefbd063721943c0d13}\index{WSD\_DETR@{WSD\_DETR}!get\_referance@{get\_referance}}
+\index{get\_referance@{get\_referance}!WSD\_DETR@{WSD\_DETR}}
+\doxysubsubsection{\texorpdfstring{get\_referance()}{get\_referance()}}
+{\footnotesize\ttfamily \label{namespace_w_s_d___d_e_t_r_aa3d770ee7a79afefbd063721943c0d13} 
+WSD\+\_\+\+DETR.\+get\+\_\+referance (\begin{DoxyParamCaption}\item[{}]{wsi\+\_\+path}{}\end{DoxyParamCaption})}
+
+\Hypertarget{namespace_w_s_d___d_e_t_r_a6f5d9b4f08e9a8c22dd1be6735bf5716}\index{WSD\_DETR@{WSD\_DETR}!process@{process}}
+\index{process@{process}!WSD\_DETR@{WSD\_DETR}}
+\doxysubsubsection{\texorpdfstring{process()}{process()}}
+{\footnotesize\ttfamily \label{namespace_w_s_d___d_e_t_r_a6f5d9b4f08e9a8c22dd1be6735bf5716} 
+WSD\+\_\+\+DETR.\+process (\begin{DoxyParamCaption}\item[{}]{wsi\+\_\+path}{, }\item[{}]{pred}{, }\item[{}]{tile\+\_\+size}{}\end{DoxyParamCaption})}
+
+\Hypertarget{namespace_w_s_d___d_e_t_r_a8a4e71aa1ea647851c725227df86dc06}\index{WSD\_DETR@{WSD\_DETR}!prune\_list@{prune\_list}}
+\index{prune\_list@{prune\_list}!WSD\_DETR@{WSD\_DETR}}
+\doxysubsubsection{\texorpdfstring{prune\_list()}{prune\_list()}}
+{\footnotesize\ttfamily \label{namespace_w_s_d___d_e_t_r_a8a4e71aa1ea647851c725227df86dc06} 
+WSD\+\_\+\+DETR.\+prune\+\_\+list (\begin{DoxyParamCaption}\item[{}]{box\+\_\+list}{}\end{DoxyParamCaption})}
+
+\Hypertarget{namespace_w_s_d___d_e_t_r_af3c1df8b5643ba33c7b8949e7a4336ad}\index{WSD\_DETR@{WSD\_DETR}!read\_tiles\_parallel@{read\_tiles\_parallel}}
+\index{read\_tiles\_parallel@{read\_tiles\_parallel}!WSD\_DETR@{WSD\_DETR}}
+\doxysubsubsection{\texorpdfstring{read\_tiles\_parallel()}{read\_tiles\_parallel()}}
+{\footnotesize\ttfamily \label{namespace_w_s_d___d_e_t_r_af3c1df8b5643ba33c7b8949e7a4336ad} 
+WSD\+\_\+\+DETR.\+read\+\_\+tiles\+\_\+parallel (\begin{DoxyParamCaption}\item[{}]{slide\+\_\+path}{, }\item[{}]{pred\+\_\+list}{, }\item[{}]{tile\+\_\+size}{}\end{DoxyParamCaption})}
+
+\Hypertarget{namespace_w_s_d___d_e_t_r_a78cb3c04c857f960d0cce102f1a70533}\index{WSD\_DETR@{WSD\_DETR}!replace\_bigger\_box@{replace\_bigger\_box}}
+\index{replace\_bigger\_box@{replace\_bigger\_box}!WSD\_DETR@{WSD\_DETR}}
+\doxysubsubsection{\texorpdfstring{replace\_bigger\_box()}{replace\_bigger\_box()}}
+{\footnotesize\ttfamily \label{namespace_w_s_d___d_e_t_r_a78cb3c04c857f960d0cce102f1a70533} 
+WSD\+\_\+\+DETR.\+replace\+\_\+bigger\+\_\+box (\begin{DoxyParamCaption}\item[{}]{boxA}{, }\item[{}]{boxB}{}\end{DoxyParamCaption})}
+
+\Hypertarget{namespace_w_s_d___d_e_t_r_aeab4a96aa86a3c65623be4a68239ec3e}\index{WSD\_DETR@{WSD\_DETR}!rerun\_predict\_pool@{rerun\_predict\_pool}}
+\index{rerun\_predict\_pool@{rerun\_predict\_pool}!WSD\_DETR@{WSD\_DETR}}
+\doxysubsubsection{\texorpdfstring{rerun\_predict\_pool()}{rerun\_predict\_pool()}}
+{\footnotesize\ttfamily \label{namespace_w_s_d___d_e_t_r_aeab4a96aa86a3c65623be4a68239ec3e} 
+WSD\+\_\+\+DETR.\+rerun\+\_\+predict\+\_\+pool (\begin{DoxyParamCaption}\item[{}]{wsi\+\_\+path}{, }\item[{}]{model}{, }\item[{}]{pred\+\_\+list}{, }\item[{}]{tile\+\_\+size}{ = {\ttfamily 1024}, }\item[{}]{batch\+\_\+size}{ = {\ttfamily 12}}\end{DoxyParamCaption})}
+
+\Hypertarget{namespace_w_s_d___d_e_t_r_ae364710eea067903606dca1ec196aa19}\index{WSD\_DETR@{WSD\_DETR}!run\_predict\_wsi\_multithread@{run\_predict\_wsi\_multithread}}
+\index{run\_predict\_wsi\_multithread@{run\_predict\_wsi\_multithread}!WSD\_DETR@{WSD\_DETR}}
+\doxysubsubsection{\texorpdfstring{run\_predict\_wsi\_multithread()}{run\_predict\_wsi\_multithread()}}
+{\footnotesize\ttfamily \label{namespace_w_s_d___d_e_t_r_ae364710eea067903606dca1ec196aa19} 
+WSD\+\_\+\+DETR.\+run\+\_\+predict\+\_\+wsi\+\_\+multithread (\begin{DoxyParamCaption}\item[{}]{path}{, }\item[{}]{model}{, }\item[{}]{overlap}{, }\item[{}]{tile\+\_\+size}{ = {\ttfamily 1024}, }\item[{}]{batch\+\_\+size}{ = {\ttfamily 12}}\end{DoxyParamCaption})}
+
+\Hypertarget{namespace_w_s_d___d_e_t_r_a1c93007dd397da35588bfeb1d7b79009}\index{WSD\_DETR@{WSD\_DETR}!update\_annote\_id@{update\_annote\_id}}
+\index{update\_annote\_id@{update\_annote\_id}!WSD\_DETR@{WSD\_DETR}}
+\doxysubsubsection{\texorpdfstring{update\_annote\_id()}{update\_annote\_id()}}
+{\footnotesize\ttfamily \label{namespace_w_s_d___d_e_t_r_a1c93007dd397da35588bfeb1d7b79009} 
+WSD\+\_\+\+DETR.\+update\+\_\+annote\+\_\+id (\begin{DoxyParamCaption}\item[{}]{annotations}{}\end{DoxyParamCaption})}
+
+\Hypertarget{namespace_w_s_d___d_e_t_r_a31623819f6728a1377eea65f272952ca}\index{WSD\_DETR@{WSD\_DETR}!write\_annotation@{write\_annotation}}
+\index{write\_annotation@{write\_annotation}!WSD\_DETR@{WSD\_DETR}}
+\doxysubsubsection{\texorpdfstring{write\_annotation()}{write\_annotation()}}
+{\footnotesize\ttfamily \label{namespace_w_s_d___d_e_t_r_a31623819f6728a1377eea65f272952ca} 
+WSD\+\_\+\+DETR.\+write\+\_\+annotation (\begin{DoxyParamCaption}\item[{}]{annotations}{, }\item[{}]{\+\_\+id}{, }\item[{}]{x1}{, }\item[{}]{y1}{, }\item[{}]{x2}{, }\item[{}]{y2}{, }\item[{}]{cls}{, }\item[{}]{conf}{, }\item[{}]{X\+\_\+\+Reference}{, }\item[{}]{Y\+\_\+\+Reference}{, }\item[{}]{nm\+\_\+p}{ = {\ttfamily 221}}\end{DoxyParamCaption})}
+
+\Hypertarget{namespace_w_s_d___d_e_t_r_aa288c4b2a50b4ee49bdea70033fa5f94}\index{WSD\_DETR@{WSD\_DETR}!write\_ndpa@{write\_ndpa}}
+\index{write\_ndpa@{write\_ndpa}!WSD\_DETR@{WSD\_DETR}}
+\doxysubsubsection{\texorpdfstring{write\_ndpa()}{write\_ndpa()}}
+{\footnotesize\ttfamily \label{namespace_w_s_d___d_e_t_r_aa288c4b2a50b4ee49bdea70033fa5f94} 
+WSD\+\_\+\+DETR.\+write\+\_\+ndpa (\begin{DoxyParamCaption}\item[{}]{tile\+\_\+size}{ = {\ttfamily 1024}, }\item[{}]{overlap}{ = {\ttfamily 128}}\end{DoxyParamCaption})}
+
+\Hypertarget{namespace_w_s_d___d_e_t_r_a9136315a9cb4c247227c7694c5bfb30d}\index{WSD\_DETR@{WSD\_DETR}!write\_xml@{write\_xml}}
+\index{write\_xml@{write\_xml}!WSD\_DETR@{WSD\_DETR}}
+\doxysubsubsection{\texorpdfstring{write\_xml()}{write\_xml()}}
+{\footnotesize\ttfamily \label{namespace_w_s_d___d_e_t_r_a9136315a9cb4c247227c7694c5bfb30d} 
+WSD\+\_\+\+DETR.\+write\+\_\+xml (\begin{DoxyParamCaption}\item[{}]{annotations}{, }\item[{}]{start\+\_\+id}{, }\item[{}]{anote\+\_\+list}{, }\item[{}]{X\+\_\+\+Reference}{, }\item[{}]{Y\+\_\+\+Reference}{, }\item[{}]{nm\+\_\+p}{}\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Variable Documentation}
+\Hypertarget{namespace_w_s_d___d_e_t_r_ae4f80d19cd71b60838923d8b5ac5ab20}\index{WSD\_DETR@{WSD\_DETR}!chunk\_size@{chunk\_size}}
+\index{chunk\_size@{chunk\_size}!WSD\_DETR@{WSD\_DETR}}
+\doxysubsubsection{\texorpdfstring{chunk\_size}{chunk\_size}}
+{\footnotesize\ttfamily \label{namespace_w_s_d___d_e_t_r_ae4f80d19cd71b60838923d8b5ac5ab20} 
+WSD\+\_\+\+DETR.\+chunk\+\_\+size}
+
+\Hypertarget{namespace_w_s_d___d_e_t_r_a0b7eb28b76d862c0bb19a2cc4a27e780}\index{WSD\_DETR@{WSD\_DETR}!current\_dir@{current\_dir}}
+\index{current\_dir@{current\_dir}!WSD\_DETR@{WSD\_DETR}}
+\doxysubsubsection{\texorpdfstring{current\_dir}{current\_dir}}
+{\footnotesize\ttfamily \label{namespace_w_s_d___d_e_t_r_a0b7eb28b76d862c0bb19a2cc4a27e780} 
+WSD\+\_\+\+DETR.\+current\+\_\+dir = os.\+path.\+dirname(sys.\+executable)}
+
+\Hypertarget{namespace_w_s_d___d_e_t_r_a88d0a680e2948459f1f421e0aab1742f}\index{WSD\_DETR@{WSD\_DETR}!end@{end}}
+\index{end@{end}!WSD\_DETR@{WSD\_DETR}}
+\doxysubsubsection{\texorpdfstring{end}{end}}
+{\footnotesize\ttfamily \label{namespace_w_s_d___d_e_t_r_a88d0a680e2948459f1f421e0aab1742f} 
+WSD\+\_\+\+DETR.\+end = time.\+time()}
+
+\Hypertarget{namespace_w_s_d___d_e_t_r_a6a40d247afe75c9947cc8a9e3a9f17bd}\index{WSD\_DETR@{WSD\_DETR}!filename@{filename}}
+\index{filename@{filename}!WSD\_DETR@{WSD\_DETR}}
+\doxysubsubsection{\texorpdfstring{filename}{filename}}
+{\footnotesize\ttfamily \label{namespace_w_s_d___d_e_t_r_a6a40d247afe75c9947cc8a9e3a9f17bd} 
+str WSD\+\_\+\+DETR.\+filename = "{}openslide-\/win64-\/20230414.zip"{}}
+
+\Hypertarget{namespace_w_s_d___d_e_t_r_a4097c2d7f9bc5a84605b218ce3fbd501}\index{WSD\_DETR@{WSD\_DETR}!folder\_path@{folder\_path}}
+\index{folder\_path@{folder\_path}!WSD\_DETR@{WSD\_DETR}}
+\doxysubsubsection{\texorpdfstring{folder\_path}{folder\_path}}
+{\footnotesize\ttfamily \label{namespace_w_s_d___d_e_t_r_a4097c2d7f9bc5a84605b218ce3fbd501} 
+str WSD\+\_\+\+DETR.\+folder\+\_\+path = r\textquotesingle{}D\+:\textbackslash{}\+Shreyan\textbackslash{}\+Development\textbackslash{}\+Test\textquotesingle{}}
+
+\Hypertarget{namespace_w_s_d___d_e_t_r_a8a5a4c9ba1e045ca8ad6fcead150ef0e}\index{WSD\_DETR@{WSD\_DETR}!globalVars@{globalVars}}
+\index{globalVars@{globalVars}!WSD\_DETR@{WSD\_DETR}}
+\doxysubsubsection{\texorpdfstring{globalVars}{globalVars}}
+{\footnotesize\ttfamily \label{namespace_w_s_d___d_e_t_r_a8a5a4c9ba1e045ca8ad6fcead150ef0e} 
+WSD\+\_\+\+DETR.\+global\+Vars = \mbox{\hyperlink{class_w_s_d___d_e_t_r_1_1_global_vars}{Global\+Vars}}(\mbox{\hyperlink{namespace_w_s_d___d_e_t_r_a4097c2d7f9bc5a84605b218ce3fbd501}{folder\+\_\+path}})}
+
+\Hypertarget{namespace_w_s_d___d_e_t_r_a813810f3398b53c45cdbecef8bfedd32}\index{WSD\_DETR@{WSD\_DETR}!OPENSLIDE\_PATH@{OPENSLIDE\_PATH}}
+\index{OPENSLIDE\_PATH@{OPENSLIDE\_PATH}!WSD\_DETR@{WSD\_DETR}}
+\doxysubsubsection{\texorpdfstring{OPENSLIDE\_PATH}{OPENSLIDE\_PATH}}
+{\footnotesize\ttfamily \label{namespace_w_s_d___d_e_t_r_a813810f3398b53c45cdbecef8bfedd32} 
+WSD\+\_\+\+DETR.\+OPENSLIDE\+\_\+\+PATH = os.\+path.\+join(\mbox{\hyperlink{namespace_w_s_d___d_e_t_r_a0b7eb28b76d862c0bb19a2cc4a27e780}{current\+\_\+dir}}, \textquotesingle{}openslide-\/win64-\/20230414\textquotesingle{}, \textquotesingle{}bin\textquotesingle{})}
+
+\Hypertarget{namespace_w_s_d___d_e_t_r_a0716e8d4b0ea27ae1ff29ef4322bb533}\index{WSD\_DETR@{WSD\_DETR}!overlap@{overlap}}
+\index{overlap@{overlap}!WSD\_DETR@{WSD\_DETR}}
+\doxysubsubsection{\texorpdfstring{overlap}{overlap}}
+{\footnotesize\ttfamily \label{namespace_w_s_d___d_e_t_r_a0716e8d4b0ea27ae1ff29ef4322bb533} 
+WSD\+\_\+\+DETR.\+overlap}
+
+\Hypertarget{namespace_w_s_d___d_e_t_r_add0dab6f3a6e0435c0afb5a3ceb294bf}\index{WSD\_DETR@{WSD\_DETR}!response@{response}}
+\index{response@{response}!WSD\_DETR@{WSD\_DETR}}
+\doxysubsubsection{\texorpdfstring{response}{response}}
+{\footnotesize\ttfamily \label{namespace_w_s_d___d_e_t_r_add0dab6f3a6e0435c0afb5a3ceb294bf} 
+WSD\+\_\+\+DETR.\+response = requests.\+get(\mbox{\hyperlink{namespace_w_s_d___d_e_t_r_adbccea1234e646207c24dbd2b76d2f3d}{url}}, stream=True)}
+
+\Hypertarget{namespace_w_s_d___d_e_t_r_aa9a9ace5b3dfade4e22e17dc5f5ad9af}\index{WSD\_DETR@{WSD\_DETR}!start@{start}}
+\index{start@{start}!WSD\_DETR@{WSD\_DETR}}
+\doxysubsubsection{\texorpdfstring{start}{start}}
+{\footnotesize\ttfamily \label{namespace_w_s_d___d_e_t_r_aa9a9ace5b3dfade4e22e17dc5f5ad9af} 
+WSD\+\_\+\+DETR.\+start = time.\+time()}
+
+\Hypertarget{namespace_w_s_d___d_e_t_r_a0d1c1fed87049e48d5f12b2a691b805d}\index{WSD\_DETR@{WSD\_DETR}!tile\_size@{tile\_size}}
+\index{tile\_size@{tile\_size}!WSD\_DETR@{WSD\_DETR}}
+\doxysubsubsection{\texorpdfstring{tile\_size}{tile\_size}}
+{\footnotesize\ttfamily \label{namespace_w_s_d___d_e_t_r_a0d1c1fed87049e48d5f12b2a691b805d} 
+WSD\+\_\+\+DETR.\+tile\+\_\+size}
+
+\Hypertarget{namespace_w_s_d___d_e_t_r_adbccea1234e646207c24dbd2b76d2f3d}\index{WSD\_DETR@{WSD\_DETR}!url@{url}}
+\index{url@{url}!WSD\_DETR@{WSD\_DETR}}
+\doxysubsubsection{\texorpdfstring{url}{url}}
+{\footnotesize\ttfamily \label{namespace_w_s_d___d_e_t_r_adbccea1234e646207c24dbd2b76d2f3d} 
+str WSD\+\_\+\+DETR.\+url = "{}https\+://github.\+com/openslide/openslide-\/winbuild/releases/download/v20230414/openslide-\/win64-\/20230414.zip"{}}
+

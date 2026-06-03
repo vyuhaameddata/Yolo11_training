@@ -1,0 +1,108 @@
+\doxysection{models.\+common.\+SPPCSPC Class Reference}
+\hypertarget{classmodels_1_1common_1_1_s_p_p_c_s_p_c}{}\label{classmodels_1_1common_1_1_s_p_p_c_s_p_c}\index{models.common.SPPCSPC@{models.common.SPPCSPC}}
+Inheritance diagram for models.\+common.\+SPPCSPC\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{classmodels_1_1common_1_1_s_p_p_c_s_p_c}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classmodels_1_1common_1_1_s_p_p_c_s_p_c_adc76b01cb1b9e9733c1f02bb5f46b0d9}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, c1, c2, n=1, shortcut=False, g=1, e=0.\+5, k=(5, 9, 13))
+\item 
+\mbox{\hyperlink{classmodels_1_1common_1_1_s_p_p_c_s_p_c_afc6facb92c6e1b24a61a94c3c1fd81fe}{forward}} (self, x)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classmodels_1_1common_1_1_s_p_p_c_s_p_c_a8c9d45d2a2085aaaad88dd3bc9fd98ba}{cv1}} = \mbox{\hyperlink{classmodels_1_1common_1_1_conv}{Conv}}(c1, c\+\_\+, 1, 1)
+\item 
+\mbox{\hyperlink{classmodels_1_1common_1_1_s_p_p_c_s_p_c_ae0de48a43fde60cda696adce19695221}{cv2}} = \mbox{\hyperlink{classmodels_1_1common_1_1_conv}{Conv}}(c1, c\+\_\+, 1, 1)
+\item 
+\mbox{\hyperlink{classmodels_1_1common_1_1_s_p_p_c_s_p_c_aad5ef71d8980d3525bb2ecc923822142}{cv3}} = \mbox{\hyperlink{classmodels_1_1common_1_1_conv}{Conv}}(c\+\_\+, c\+\_\+, 3, 1)
+\item 
+\mbox{\hyperlink{classmodels_1_1common_1_1_s_p_p_c_s_p_c_a03254ef15dfcdd87c1ffe22976ea80b9}{cv4}} = \mbox{\hyperlink{classmodels_1_1common_1_1_conv}{Conv}}(c\+\_\+, c\+\_\+, 1, 1)
+\item 
+\mbox{\hyperlink{classmodels_1_1common_1_1_s_p_p_c_s_p_c_a4f59bd25be26ca3e094e58dd7723d1aa}{m}} = nn.\+Module\+List(\mbox{[}nn.\+Max\+Pool2d(kernel\+\_\+size=x, stride=1, padding=x // 2) for x in k\mbox{]})
+\item 
+\mbox{\hyperlink{classmodels_1_1common_1_1_s_p_p_c_s_p_c_a891311efcb7ad63468e3cd042a30b6bd}{cv5}} = \mbox{\hyperlink{classmodels_1_1common_1_1_conv}{Conv}}(4 \texorpdfstring{$\ast$}{*} c\+\_\+, c\+\_\+, 1, 1)
+\item 
+\mbox{\hyperlink{classmodels_1_1common_1_1_s_p_p_c_s_p_c_ae4bbb00f34a72e36fc8c51a59ed5ac7b}{cv6}} = \mbox{\hyperlink{classmodels_1_1common_1_1_conv}{Conv}}(c\+\_\+, c\+\_\+, 3, 1)
+\item 
+\mbox{\hyperlink{classmodels_1_1common_1_1_s_p_p_c_s_p_c_a3722cddce3fba0fba1a0123d886f69ca}{cv7}} = \mbox{\hyperlink{classmodels_1_1common_1_1_conv}{Conv}}(2 \texorpdfstring{$\ast$}{*} c\+\_\+, c2, 1, 1)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classmodels_1_1common_1_1_s_p_p_c_s_p_c_adc76b01cb1b9e9733c1f02bb5f46b0d9}\index{models.common.SPPCSPC@{models.common.SPPCSPC}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!models.common.SPPCSPC@{models.common.SPPCSPC}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily \label{classmodels_1_1common_1_1_s_p_p_c_s_p_c_adc76b01cb1b9e9733c1f02bb5f46b0d9} 
+models.\+common.\+SPPCSPC.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{c1}{, }\item[{}]{c2}{, }\item[{}]{n}{ = {\ttfamily 1}, }\item[{}]{shortcut}{ = {\ttfamily False}, }\item[{}]{g}{ = {\ttfamily 1}, }\item[{}]{e}{ = {\ttfamily 0.5}, }\item[{}]{k}{ = {\ttfamily (5,~9,~13)}}\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classmodels_1_1common_1_1_s_p_p_c_s_p_c_afc6facb92c6e1b24a61a94c3c1fd81fe}\index{models.common.SPPCSPC@{models.common.SPPCSPC}!forward@{forward}}
+\index{forward@{forward}!models.common.SPPCSPC@{models.common.SPPCSPC}}
+\doxysubsubsection{\texorpdfstring{forward()}{forward()}}
+{\footnotesize\ttfamily \label{classmodels_1_1common_1_1_s_p_p_c_s_p_c_afc6facb92c6e1b24a61a94c3c1fd81fe} 
+models.\+common.\+SPPCSPC.\+forward (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{x}{}\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classmodels_1_1common_1_1_s_p_p_c_s_p_c_a8c9d45d2a2085aaaad88dd3bc9fd98ba}\index{models.common.SPPCSPC@{models.common.SPPCSPC}!cv1@{cv1}}
+\index{cv1@{cv1}!models.common.SPPCSPC@{models.common.SPPCSPC}}
+\doxysubsubsection{\texorpdfstring{cv1}{cv1}}
+{\footnotesize\ttfamily \label{classmodels_1_1common_1_1_s_p_p_c_s_p_c_a8c9d45d2a2085aaaad88dd3bc9fd98ba} 
+models.\+common.\+SPPCSPC.\+cv1 = \mbox{\hyperlink{classmodels_1_1common_1_1_conv}{Conv}}(c1, c\+\_\+, 1, 1)}
+
+\Hypertarget{classmodels_1_1common_1_1_s_p_p_c_s_p_c_ae0de48a43fde60cda696adce19695221}\index{models.common.SPPCSPC@{models.common.SPPCSPC}!cv2@{cv2}}
+\index{cv2@{cv2}!models.common.SPPCSPC@{models.common.SPPCSPC}}
+\doxysubsubsection{\texorpdfstring{cv2}{cv2}}
+{\footnotesize\ttfamily \label{classmodels_1_1common_1_1_s_p_p_c_s_p_c_ae0de48a43fde60cda696adce19695221} 
+models.\+common.\+SPPCSPC.\+cv2 = \mbox{\hyperlink{classmodels_1_1common_1_1_conv}{Conv}}(c1, c\+\_\+, 1, 1)}
+
+\Hypertarget{classmodels_1_1common_1_1_s_p_p_c_s_p_c_aad5ef71d8980d3525bb2ecc923822142}\index{models.common.SPPCSPC@{models.common.SPPCSPC}!cv3@{cv3}}
+\index{cv3@{cv3}!models.common.SPPCSPC@{models.common.SPPCSPC}}
+\doxysubsubsection{\texorpdfstring{cv3}{cv3}}
+{\footnotesize\ttfamily \label{classmodels_1_1common_1_1_s_p_p_c_s_p_c_aad5ef71d8980d3525bb2ecc923822142} 
+models.\+common.\+SPPCSPC.\+cv3 = \mbox{\hyperlink{classmodels_1_1common_1_1_conv}{Conv}}(c\+\_\+, c\+\_\+, 3, 1)}
+
+\Hypertarget{classmodels_1_1common_1_1_s_p_p_c_s_p_c_a03254ef15dfcdd87c1ffe22976ea80b9}\index{models.common.SPPCSPC@{models.common.SPPCSPC}!cv4@{cv4}}
+\index{cv4@{cv4}!models.common.SPPCSPC@{models.common.SPPCSPC}}
+\doxysubsubsection{\texorpdfstring{cv4}{cv4}}
+{\footnotesize\ttfamily \label{classmodels_1_1common_1_1_s_p_p_c_s_p_c_a03254ef15dfcdd87c1ffe22976ea80b9} 
+models.\+common.\+SPPCSPC.\+cv4 = \mbox{\hyperlink{classmodels_1_1common_1_1_conv}{Conv}}(c\+\_\+, c\+\_\+, 1, 1)}
+
+\Hypertarget{classmodels_1_1common_1_1_s_p_p_c_s_p_c_a891311efcb7ad63468e3cd042a30b6bd}\index{models.common.SPPCSPC@{models.common.SPPCSPC}!cv5@{cv5}}
+\index{cv5@{cv5}!models.common.SPPCSPC@{models.common.SPPCSPC}}
+\doxysubsubsection{\texorpdfstring{cv5}{cv5}}
+{\footnotesize\ttfamily \label{classmodels_1_1common_1_1_s_p_p_c_s_p_c_a891311efcb7ad63468e3cd042a30b6bd} 
+models.\+common.\+SPPCSPC.\+cv5 = \mbox{\hyperlink{classmodels_1_1common_1_1_conv}{Conv}}(4 \texorpdfstring{$\ast$}{*} c\+\_\+, c\+\_\+, 1, 1)}
+
+\Hypertarget{classmodels_1_1common_1_1_s_p_p_c_s_p_c_ae4bbb00f34a72e36fc8c51a59ed5ac7b}\index{models.common.SPPCSPC@{models.common.SPPCSPC}!cv6@{cv6}}
+\index{cv6@{cv6}!models.common.SPPCSPC@{models.common.SPPCSPC}}
+\doxysubsubsection{\texorpdfstring{cv6}{cv6}}
+{\footnotesize\ttfamily \label{classmodels_1_1common_1_1_s_p_p_c_s_p_c_ae4bbb00f34a72e36fc8c51a59ed5ac7b} 
+models.\+common.\+SPPCSPC.\+cv6 = \mbox{\hyperlink{classmodels_1_1common_1_1_conv}{Conv}}(c\+\_\+, c\+\_\+, 3, 1)}
+
+\Hypertarget{classmodels_1_1common_1_1_s_p_p_c_s_p_c_a3722cddce3fba0fba1a0123d886f69ca}\index{models.common.SPPCSPC@{models.common.SPPCSPC}!cv7@{cv7}}
+\index{cv7@{cv7}!models.common.SPPCSPC@{models.common.SPPCSPC}}
+\doxysubsubsection{\texorpdfstring{cv7}{cv7}}
+{\footnotesize\ttfamily \label{classmodels_1_1common_1_1_s_p_p_c_s_p_c_a3722cddce3fba0fba1a0123d886f69ca} 
+models.\+common.\+SPPCSPC.\+cv7 = \mbox{\hyperlink{classmodels_1_1common_1_1_conv}{Conv}}(2 \texorpdfstring{$\ast$}{*} c\+\_\+, c2, 1, 1)}
+
+\Hypertarget{classmodels_1_1common_1_1_s_p_p_c_s_p_c_a4f59bd25be26ca3e094e58dd7723d1aa}\index{models.common.SPPCSPC@{models.common.SPPCSPC}!m@{m}}
+\index{m@{m}!models.common.SPPCSPC@{models.common.SPPCSPC}}
+\doxysubsubsection{\texorpdfstring{m}{m}}
+{\footnotesize\ttfamily \label{classmodels_1_1common_1_1_s_p_p_c_s_p_c_a4f59bd25be26ca3e094e58dd7723d1aa} 
+models.\+common.\+SPPCSPC.\+m = nn.\+Module\+List(\mbox{[}nn.\+Max\+Pool2d(kernel\+\_\+size=x, stride=1, padding=x // 2) for x in k\mbox{]})}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Cervi\+AI/models/\mbox{\hyperlink{common_8py}{common.\+py}}\end{DoxyCompactItemize}

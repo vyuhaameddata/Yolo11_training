@@ -1,0 +1,98 @@
+\doxysection{Cervi\+AI/utils/backup dump/datasets\+\_\+shr.py File Reference}
+\hypertarget{datasets__shr_8py}{}\label{datasets__shr_8py}\index{CerviAI/utils/backup dump/datasets\_shr.py@{CerviAI/utils/backup dump/datasets\_shr.py}}
+\doxysubsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classdatasets__shr_1_1load__custom}{datasets\+\_\+shr.\+load\+\_\+custom}}
+\item 
+class \mbox{\hyperlink{classdatasets__shr_1_1_infinite_data_loader}{datasets\+\_\+shr.\+Infinite\+Data\+Loader}}
+\item 
+class \mbox{\hyperlink{classdatasets__shr_1_1___repeat_sampler}{datasets\+\_\+shr.\+\_\+\+Repeat\+Sampler}}
+\item 
+class \mbox{\hyperlink{classdatasets__shr_1_1_load_images}{datasets\+\_\+shr.\+Load\+Images}}
+\item 
+class \mbox{\hyperlink{classdatasets__shr_1_1_load_webcam}{datasets\+\_\+shr.\+Load\+Webcam}}
+\item 
+class \mbox{\hyperlink{classdatasets__shr_1_1_load_streams}{datasets\+\_\+shr.\+Load\+Streams}}
+\item 
+class \mbox{\hyperlink{classdatasets__shr_1_1_load_images_and_labels}{datasets\+\_\+shr.\+Load\+Images\+And\+Labels}}
+\item 
+class \mbox{\hyperlink{classdatasets__shr_1_1_albumentations}{datasets\+\_\+shr.\+Albumentations}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+namespace \mbox{\hyperlink{namespacedatasets__shr}{datasets\+\_\+shr}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{namespacedatasets__shr_a4f39eeb43663992af596573da82d7421}{datasets\+\_\+shr.\+get\+\_\+hash}} (files)
+\item 
+\mbox{\hyperlink{namespacedatasets__shr_a9e7428effeefd596d850944947a20e01}{datasets\+\_\+shr.\+exif\+\_\+size}} (img)
+\item 
+\mbox{\hyperlink{namespacedatasets__shr_a942ba8393531e82d645d658145850ce6}{datasets\+\_\+shr.\+create\+\_\+dataloader\+\_\+custom}} (path, imgsz, stride, opt, batch\+\_\+size, tile\+\_\+size, overlap, hyp=None, augment=False, rect=False, pad=0.\+0, rank=-\/1, world\+\_\+size=1, workers=4, image\+\_\+weights=False, quad=False)
+\item 
+\mbox{\hyperlink{namespacedatasets__shr_a83c78f65992b7eea5763e2456a817471}{datasets\+\_\+shr.\+load\+\_\+tile}} (self, index)
+\item 
+\mbox{\hyperlink{namespacedatasets__shr_aa3a8e137e73dafc4700879e2a4b4ed53}{datasets\+\_\+shr.\+create\+\_\+dataloader}} (path, imgsz, batch\+\_\+size, stride, opt, hyp=None, augment=False, cache=False, pad=0.\+0, rect=False, rank=-\/1, world\+\_\+size=1, workers=8, image\+\_\+weights=False, quad=False, prefix=\textquotesingle{}\textquotesingle{})
+\item 
+\mbox{\hyperlink{namespacedatasets__shr_a676efda7af08c854a1238170635c34ac}{datasets\+\_\+shr.\+img2label\+\_\+paths}} (img\+\_\+paths)
+\item 
+\mbox{\hyperlink{namespacedatasets__shr_a42c8672ec736228f9d47fa27532c6225}{datasets\+\_\+shr.\+load\+\_\+image}} (self, index)
+\item 
+\mbox{\hyperlink{namespacedatasets__shr_aa24d1b63ca4ccd0d1cd9983f9c7a5821}{datasets\+\_\+shr.\+augment\+\_\+hsv}} (img, hgain=0.\+5, sgain=0.\+5, vgain=0.\+5)
+\item 
+\mbox{\hyperlink{namespacedatasets__shr_a42c21ef98fb2f4c8e47f8d5fcade0ca6}{datasets\+\_\+shr.\+hist\+\_\+equalize}} (img, clahe=True, bgr=False)
+\item 
+\mbox{\hyperlink{namespacedatasets__shr_a918b8ccff46b5e31f77b4be7d7493686}{datasets\+\_\+shr.\+load\+\_\+mosaic}} (self, index)
+\item 
+\mbox{\hyperlink{namespacedatasets__shr_ad0e561247f5f186e2bc9bb7436bb99dc}{datasets\+\_\+shr.\+load\+\_\+mosaic9}} (self, index)
+\item 
+\mbox{\hyperlink{namespacedatasets__shr_a05101eee1e9cb78a9f89fb1c8e384d70}{datasets\+\_\+shr.\+load\+\_\+samples}} (self, index)
+\item 
+\mbox{\hyperlink{namespacedatasets__shr_a5f9c653e3c61411c9a893fb3db24f363}{datasets\+\_\+shr.\+copy\+\_\+paste}} (img, labels, segments, probability=0.\+5)
+\item 
+\mbox{\hyperlink{namespacedatasets__shr_a68c7c40b9dd622ace72626a02301e6c8}{datasets\+\_\+shr.\+remove\+\_\+background}} (img, labels, segments)
+\item 
+\mbox{\hyperlink{namespacedatasets__shr_a635d24675d706bf4b239b0a3cbdb08be}{datasets\+\_\+shr.\+sample\+\_\+segments}} (img, labels, segments, probability=0.\+5)
+\item 
+\mbox{\hyperlink{namespacedatasets__shr_a93658baec1110fba47c80fccc0918ea6}{datasets\+\_\+shr.\+replicate}} (img, labels)
+\item 
+\mbox{\hyperlink{namespacedatasets__shr_a2b762300f3c443b42681d0139bc1193f}{datasets\+\_\+shr.\+letterbox}} (img, new\+\_\+shape=(640, 640), color=(114, 114, 114), auto=True, scale\+Fill=False, scaleup=True, stride=32)
+\item 
+\mbox{\hyperlink{namespacedatasets__shr_a7d0b502abd9a2f785dbedfa20d8ea219}{datasets\+\_\+shr.\+random\+\_\+perspective}} (img, targets=(), segments=(), degrees=10, translate=.\+1, scale=.\+1, shear=10, perspective=0.\+0, border=(0, 0))
+\item 
+\mbox{\hyperlink{namespacedatasets__shr_ab057c82802f7ce9dd1b176d09b88a7b8}{datasets\+\_\+shr.\+box\+\_\+candidates}} (box1, box2, wh\+\_\+thr=2, ar\+\_\+thr=20, area\+\_\+thr=0.\+1, eps=1e-\/16)
+\item 
+\mbox{\hyperlink{namespacedatasets__shr_aa0e80e574376e38f0b1aa9febab96e95}{datasets\+\_\+shr.\+bbox\+\_\+ioa}} (box1, box2)
+\item 
+\mbox{\hyperlink{namespacedatasets__shr_a095ba81db844aff7bab13ccefdf327c4}{datasets\+\_\+shr.\+cutout}} (image, labels)
+\item 
+\mbox{\hyperlink{namespacedatasets__shr_a56e44742bde63d449ef624ad7aa98661}{datasets\+\_\+shr.\+pastein}} (image, labels, sample\+\_\+labels, sample\+\_\+images, sample\+\_\+masks)
+\item 
+\mbox{\hyperlink{namespacedatasets__shr_a40ca993033c17cce34981ca54442839e}{datasets\+\_\+shr.\+create\+\_\+folder}} (path=\textquotesingle{}./new\textquotesingle{})
+\item 
+\mbox{\hyperlink{namespacedatasets__shr_a69a62bbd7a964e5174aabf1443b7d0c7}{datasets\+\_\+shr.\+flatten\+\_\+recursive}} (path=\textquotesingle{}../coco\textquotesingle{})
+\item 
+\mbox{\hyperlink{namespacedatasets__shr_a8b7e13616ec23078c138c6df3810300b}{datasets\+\_\+shr.\+extract\+\_\+boxes}} (path=\textquotesingle{}../coco/\textquotesingle{})
+\item 
+\mbox{\hyperlink{namespacedatasets__shr_af674e46ec561b9f9a03d4bf2d987091a}{datasets\+\_\+shr.\+autosplit}} (path=\textquotesingle{}../coco\textquotesingle{}, weights=(0.\+9, 0.\+1, 0.\+0), annotated\+\_\+only=False)
+\item 
+\mbox{\hyperlink{namespacedatasets__shr_a37aef90e4d9008026fc9184ff58951a6}{datasets\+\_\+shr.\+load\+\_\+segmentations}} (self, index)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+str \mbox{\hyperlink{namespacedatasets__shr_aedd536d5e071ed427945b839b40978dd}{datasets\+\_\+shr.\+current\+\_\+dir}} = r\textquotesingle{}D\+:\textbackslash{}\+Shreyan\textbackslash{}labsys\textbackslash{}yolov7\textquotesingle{}
+\item 
+\mbox{\hyperlink{namespacedatasets__shr_a290d09c30b37cf2c043a36e5212b50fe}{datasets\+\_\+shr.\+OPENSLIDE\+\_\+\+PATH}} = os.\+path.\+join(\mbox{\hyperlink{namespacedatasets__shr_aedd536d5e071ed427945b839b40978dd}{current\+\_\+dir}}, \textquotesingle{}openslide-\/win64-\/20230414\textquotesingle{}, \textquotesingle{}bin\textquotesingle{})
+\item 
+str \mbox{\hyperlink{namespacedatasets__shr_a697fe5e023ce377fd66a7a7562b19633}{datasets\+\_\+shr.\+help\+\_\+url}} = \textquotesingle{}https\+://github.\+com/ultralytics/yolov5/wiki/Train-\/Custom-\/Data\textquotesingle{}
+\item 
+list \mbox{\hyperlink{namespacedatasets__shr_aed65b0200553db9ff971f4c2ecea6e85}{datasets\+\_\+shr.\+img\+\_\+formats}} = \mbox{[}\textquotesingle{}bmp\textquotesingle{}, \textquotesingle{}jpg\textquotesingle{}, \textquotesingle{}jpeg\textquotesingle{}, \textquotesingle{}png\textquotesingle{}, \textquotesingle{}tif\textquotesingle{}, \textquotesingle{}tiff\textquotesingle{}, \textquotesingle{}dng\textquotesingle{}, \textquotesingle{}webp\textquotesingle{}, \textquotesingle{}mpo\textquotesingle{}\mbox{]}
+\item 
+list \mbox{\hyperlink{namespacedatasets__shr_a1a2896830c8b609c3156877369522224}{datasets\+\_\+shr.\+vid\+\_\+formats}} = \mbox{[}\textquotesingle{}mov\textquotesingle{}, \textquotesingle{}avi\textquotesingle{}, \textquotesingle{}mp4\textquotesingle{}, \textquotesingle{}mpg\textquotesingle{}, \textquotesingle{}mpeg\textquotesingle{}, \textquotesingle{}m4v\textquotesingle{}, \textquotesingle{}wmv\textquotesingle{}, \textquotesingle{}mkv\textquotesingle{}\mbox{]}
+\item 
+\mbox{\hyperlink{namespacedatasets__shr_a85396f88691c1f8c0133fe335cf2d5ca}{datasets\+\_\+shr.\+logger}} = logging.\+get\+Logger(\+\_\+\+\_\+name\+\_\+\+\_\+)
+\end{DoxyCompactItemize}

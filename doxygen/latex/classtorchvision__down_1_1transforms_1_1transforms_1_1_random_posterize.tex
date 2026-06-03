@@ -1,0 +1,86 @@
+\doxysection{torchvision\+\_\+down.\+transforms.\+transforms.\+Random\+Posterize Class Reference}
+\hypertarget{classtorchvision__down_1_1transforms_1_1transforms_1_1_random_posterize}{}\label{classtorchvision__down_1_1transforms_1_1transforms_1_1_random_posterize}\index{torchvision\_down.transforms.transforms.RandomPosterize@{torchvision\_down.transforms.transforms.RandomPosterize}}
+Inheritance diagram for torchvision\+\_\+down.\+transforms.\+transforms.\+Random\+Posterize\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classtorchvision__down_1_1transforms_1_1transforms_1_1_random_posterize}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1transforms_1_1transforms_1_1_random_posterize_ae7642c0dcb4a5619133b40fe7ff260e0}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, \mbox{\hyperlink{classtorchvision__down_1_1transforms_1_1transforms_1_1_random_posterize_a3bedad39a53537eac3bcaec04e1b7c16}{bits}}, \mbox{\hyperlink{classtorchvision__down_1_1transforms_1_1transforms_1_1_random_posterize_ac43d709e704ccabf8a6e38a8cc30e3fb}{p}}=0.\+5)
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1transforms_1_1transforms_1_1_random_posterize_a3a460aed8cc7a81bf73e73f723de5d19}{forward}} (self, img)
+\item 
+str \mbox{\hyperlink{classtorchvision__down_1_1transforms_1_1transforms_1_1_random_posterize_afd1c83ff280057e3348b46b88e305be4}{\+\_\+\+\_\+repr\+\_\+\+\_\+}} (self)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1transforms_1_1transforms_1_1_random_posterize_a3bedad39a53537eac3bcaec04e1b7c16}{bits}} = bits
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1transforms_1_1transforms_1_1_random_posterize_ac43d709e704ccabf8a6e38a8cc30e3fb}{p}} = p
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}Posterize the image randomly with a given probability by reducing the
+number of bits for each color channel. If the image is torch Tensor, it should be of type torch.uint8,
+and it is expected to have [..., 1 or 3, H, W] shape, where ... means an arbitrary number of leading dimensions.
+If img is PIL Image, it is expected to be in mode "L" or "RGB".
+
+Args:
+    bits (int): number of bits to keep for each channel (0-8)
+    p (float): probability of the image being color inverted. Default value is 0.5
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classtorchvision__down_1_1transforms_1_1transforms_1_1_random_posterize_ae7642c0dcb4a5619133b40fe7ff260e0}\index{torchvision\_down.transforms.transforms.RandomPosterize@{torchvision\_down.transforms.transforms.RandomPosterize}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!torchvision\_down.transforms.transforms.RandomPosterize@{torchvision\_down.transforms.transforms.RandomPosterize}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1transforms_1_1transforms_1_1_random_posterize_ae7642c0dcb4a5619133b40fe7ff260e0} 
+torchvision\+\_\+down.\+transforms.\+transforms.\+Random\+Posterize.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{bits}{, }\item[{}]{p}{ = {\ttfamily 0.5}}\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classtorchvision__down_1_1transforms_1_1transforms_1_1_random_posterize_afd1c83ff280057e3348b46b88e305be4}\index{torchvision\_down.transforms.transforms.RandomPosterize@{torchvision\_down.transforms.transforms.RandomPosterize}!\_\_repr\_\_@{\_\_repr\_\_}}
+\index{\_\_repr\_\_@{\_\_repr\_\_}!torchvision\_down.transforms.transforms.RandomPosterize@{torchvision\_down.transforms.transforms.RandomPosterize}}
+\doxysubsubsection{\texorpdfstring{\_\_repr\_\_()}{\_\_repr\_\_()}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1transforms_1_1transforms_1_1_random_posterize_afd1c83ff280057e3348b46b88e305be4} 
+ str torchvision\+\_\+down.\+transforms.\+transforms.\+Random\+Posterize.\+\_\+\+\_\+repr\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classtorchvision__down_1_1transforms_1_1transforms_1_1_random_posterize_a3a460aed8cc7a81bf73e73f723de5d19}\index{torchvision\_down.transforms.transforms.RandomPosterize@{torchvision\_down.transforms.transforms.RandomPosterize}!forward@{forward}}
+\index{forward@{forward}!torchvision\_down.transforms.transforms.RandomPosterize@{torchvision\_down.transforms.transforms.RandomPosterize}}
+\doxysubsubsection{\texorpdfstring{forward()}{forward()}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1transforms_1_1transforms_1_1_random_posterize_a3a460aed8cc7a81bf73e73f723de5d19} 
+torchvision\+\_\+down.\+transforms.\+transforms.\+Random\+Posterize.\+forward (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{img}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Args:
+    img (PIL Image or Tensor): Image to be posterized.
+
+Returns:
+    PIL Image or Tensor: Randomly posterized image.
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classtorchvision__down_1_1transforms_1_1transforms_1_1_random_posterize_a3bedad39a53537eac3bcaec04e1b7c16}\index{torchvision\_down.transforms.transforms.RandomPosterize@{torchvision\_down.transforms.transforms.RandomPosterize}!bits@{bits}}
+\index{bits@{bits}!torchvision\_down.transforms.transforms.RandomPosterize@{torchvision\_down.transforms.transforms.RandomPosterize}}
+\doxysubsubsection{\texorpdfstring{bits}{bits}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1transforms_1_1transforms_1_1_random_posterize_a3bedad39a53537eac3bcaec04e1b7c16} 
+torchvision\+\_\+down.\+transforms.\+transforms.\+Random\+Posterize.\+bits = bits}
+
+\Hypertarget{classtorchvision__down_1_1transforms_1_1transforms_1_1_random_posterize_ac43d709e704ccabf8a6e38a8cc30e3fb}\index{torchvision\_down.transforms.transforms.RandomPosterize@{torchvision\_down.transforms.transforms.RandomPosterize}!p@{p}}
+\index{p@{p}!torchvision\_down.transforms.transforms.RandomPosterize@{torchvision\_down.transforms.transforms.RandomPosterize}}
+\doxysubsubsection{\texorpdfstring{p}{p}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1transforms_1_1transforms_1_1_random_posterize_ac43d709e704ccabf8a6e38a8cc30e3fb} 
+torchvision\+\_\+down.\+transforms.\+transforms.\+Random\+Posterize.\+p = p}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Cervi\+AI/torchvision\+\_\+down/transforms/\mbox{\hyperlink{transforms_8py}{transforms.\+py}}\end{DoxyCompactItemize}

@@ -1,0 +1,113 @@
+\doxysection{torchvision\+\_\+down.\+datasets.\+folder Namespace Reference}
+\hypertarget{namespacetorchvision__down_1_1datasets_1_1folder}{}\label{namespacetorchvision__down_1_1datasets_1_1folder}\index{torchvision\_down.datasets.folder@{torchvision\_down.datasets.folder}}
+\doxysubsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classtorchvision__down_1_1datasets_1_1folder_1_1_dataset_folder}{Dataset\+Folder}}
+\item 
+class \mbox{\hyperlink{classtorchvision__down_1_1datasets_1_1folder_1_1_image_folder}{Image\+Folder}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{namespacetorchvision__down_1_1datasets_1_1folder_a490156ea7ac8ea8105c5565482b7513e}{has\+\_\+file\+\_\+allowed\+\_\+extension}} (str filename, Union\mbox{[}str, Tuple\mbox{[}str,...\mbox{]}\mbox{]} extensions)
+\item 
+bool \mbox{\hyperlink{namespacetorchvision__down_1_1datasets_1_1folder_aaf001468d22591cc1b9613531649721f}{is\+\_\+image\+\_\+file}} (str filename)
+\item 
+Tuple\mbox{[}List\mbox{[}str\mbox{]}, Dict\mbox{[}str, int\mbox{]}\mbox{]} \mbox{\hyperlink{namespacetorchvision__down_1_1datasets_1_1folder_adec72d984c7dbbf0ddefce62009406b3}{find\+\_\+classes}} (str directory)
+\item 
+List\mbox{[}Tuple\mbox{[}str, int\mbox{]}\mbox{]} \mbox{\hyperlink{namespacetorchvision__down_1_1datasets_1_1folder_a2662cbb2238b10d89b813bada3f3f8dc}{make\+\_\+dataset}} (str directory, Optional\mbox{[}Dict\mbox{[}str, int\mbox{]}\mbox{]} class\+\_\+to\+\_\+idx=None, Optional\mbox{[}Union\mbox{[}str, Tuple\mbox{[}str,...\mbox{]}\mbox{]}\mbox{]} extensions=None, Optional\mbox{[}Callable\mbox{[}\mbox{[}str\mbox{]}, bool\mbox{]}\mbox{]} is\+\_\+valid\+\_\+file=None)
+\item 
+Image.\+Image \mbox{\hyperlink{namespacetorchvision__down_1_1datasets_1_1folder_a8b82498bc7dc9bbb19754cf57e689133}{pil\+\_\+loader}} (str path)
+\item 
+Any \mbox{\hyperlink{namespacetorchvision__down_1_1datasets_1_1folder_aa7deb7923dcce49cec2427f7b1164514}{accimage\+\_\+loader}} (str path)
+\item 
+Any \mbox{\hyperlink{namespacetorchvision__down_1_1datasets_1_1folder_a9340c088991a2a64e25663bd6c17a122}{default\+\_\+loader}} (str path)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+tuple \mbox{\hyperlink{namespacetorchvision__down_1_1datasets_1_1folder_a6e923001b9458a2de6385b3b1c4a4f03}{IMG\+\_\+\+EXTENSIONS}} = ("{}.jpg"{}, "{}.jpeg"{}, "{}.png"{}, "{}.ppm"{}, "{}.bmp"{}, "{}.pgm"{}, "{}.tif"{}, "{}.tiff"{}, "{}.webp"{})
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{namespacetorchvision__down_1_1datasets_1_1folder_aa7deb7923dcce49cec2427f7b1164514}\index{torchvision\_down.datasets.folder@{torchvision\_down.datasets.folder}!accimage\_loader@{accimage\_loader}}
+\index{accimage\_loader@{accimage\_loader}!torchvision\_down.datasets.folder@{torchvision\_down.datasets.folder}}
+\doxysubsubsection{\texorpdfstring{accimage\_loader()}{accimage\_loader()}}
+{\footnotesize\ttfamily \label{namespacetorchvision__down_1_1datasets_1_1folder_aa7deb7923dcce49cec2427f7b1164514} 
+ Any torchvision\+\_\+down.\+datasets.\+folder.\+accimage\+\_\+loader (\begin{DoxyParamCaption}\item[{str}]{path}{}\end{DoxyParamCaption})}
+
+\Hypertarget{namespacetorchvision__down_1_1datasets_1_1folder_a9340c088991a2a64e25663bd6c17a122}\index{torchvision\_down.datasets.folder@{torchvision\_down.datasets.folder}!default\_loader@{default\_loader}}
+\index{default\_loader@{default\_loader}!torchvision\_down.datasets.folder@{torchvision\_down.datasets.folder}}
+\doxysubsubsection{\texorpdfstring{default\_loader()}{default\_loader()}}
+{\footnotesize\ttfamily \label{namespacetorchvision__down_1_1datasets_1_1folder_a9340c088991a2a64e25663bd6c17a122} 
+ Any torchvision\+\_\+down.\+datasets.\+folder.\+default\+\_\+loader (\begin{DoxyParamCaption}\item[{str}]{path}{}\end{DoxyParamCaption})}
+
+\Hypertarget{namespacetorchvision__down_1_1datasets_1_1folder_adec72d984c7dbbf0ddefce62009406b3}\index{torchvision\_down.datasets.folder@{torchvision\_down.datasets.folder}!find\_classes@{find\_classes}}
+\index{find\_classes@{find\_classes}!torchvision\_down.datasets.folder@{torchvision\_down.datasets.folder}}
+\doxysubsubsection{\texorpdfstring{find\_classes()}{find\_classes()}}
+{\footnotesize\ttfamily \label{namespacetorchvision__down_1_1datasets_1_1folder_adec72d984c7dbbf0ddefce62009406b3} 
+ Tuple\mbox{[}List\mbox{[}str\mbox{]}, Dict\mbox{[}str, int\mbox{]}\mbox{]} torchvision\+\_\+down.\+datasets.\+folder.\+find\+\_\+classes (\begin{DoxyParamCaption}\item[{str}]{directory}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Finds the class folders in a dataset.
+
+See :class:`DatasetFolder` for details.
+\end{DoxyVerb}
+ \Hypertarget{namespacetorchvision__down_1_1datasets_1_1folder_a490156ea7ac8ea8105c5565482b7513e}\index{torchvision\_down.datasets.folder@{torchvision\_down.datasets.folder}!has\_file\_allowed\_extension@{has\_file\_allowed\_extension}}
+\index{has\_file\_allowed\_extension@{has\_file\_allowed\_extension}!torchvision\_down.datasets.folder@{torchvision\_down.datasets.folder}}
+\doxysubsubsection{\texorpdfstring{has\_file\_allowed\_extension()}{has\_file\_allowed\_extension()}}
+{\footnotesize\ttfamily \label{namespacetorchvision__down_1_1datasets_1_1folder_a490156ea7ac8ea8105c5565482b7513e} 
+ bool torchvision\+\_\+down.\+datasets.\+folder.\+has\+\_\+file\+\_\+allowed\+\_\+extension (\begin{DoxyParamCaption}\item[{str}]{filename}{, }\item[{Union\mbox{[}str, Tuple\mbox{[}str, ...\mbox{]}\mbox{]}}]{extensions}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Checks if a file is an allowed extension.
+
+Args:
+    filename (string): path to a file
+    extensions (tuple of strings): extensions to consider (lowercase)
+
+Returns:
+    bool: True if the filename ends with one of given extensions
+\end{DoxyVerb}
+ \Hypertarget{namespacetorchvision__down_1_1datasets_1_1folder_aaf001468d22591cc1b9613531649721f}\index{torchvision\_down.datasets.folder@{torchvision\_down.datasets.folder}!is\_image\_file@{is\_image\_file}}
+\index{is\_image\_file@{is\_image\_file}!torchvision\_down.datasets.folder@{torchvision\_down.datasets.folder}}
+\doxysubsubsection{\texorpdfstring{is\_image\_file()}{is\_image\_file()}}
+{\footnotesize\ttfamily \label{namespacetorchvision__down_1_1datasets_1_1folder_aaf001468d22591cc1b9613531649721f} 
+ bool torchvision\+\_\+down.\+datasets.\+folder.\+is\+\_\+image\+\_\+file (\begin{DoxyParamCaption}\item[{str}]{filename}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Checks if a file is an allowed image extension.
+
+Args:
+    filename (string): path to a file
+
+Returns:
+    bool: True if the filename ends with a known image extension
+\end{DoxyVerb}
+ \Hypertarget{namespacetorchvision__down_1_1datasets_1_1folder_a2662cbb2238b10d89b813bada3f3f8dc}\index{torchvision\_down.datasets.folder@{torchvision\_down.datasets.folder}!make\_dataset@{make\_dataset}}
+\index{make\_dataset@{make\_dataset}!torchvision\_down.datasets.folder@{torchvision\_down.datasets.folder}}
+\doxysubsubsection{\texorpdfstring{make\_dataset()}{make\_dataset()}}
+{\footnotesize\ttfamily \label{namespacetorchvision__down_1_1datasets_1_1folder_a2662cbb2238b10d89b813bada3f3f8dc} 
+ List\mbox{[}Tuple\mbox{[}str, int\mbox{]}\mbox{]} torchvision\+\_\+down.\+datasets.\+folder.\+make\+\_\+dataset (\begin{DoxyParamCaption}\item[{str}]{directory}{, }\item[{Optional\mbox{[}Dict\mbox{[}str, int\mbox{]}\mbox{]} }]{class\+\_\+to\+\_\+idx}{ = {\ttfamily None}, }\item[{Optional\mbox{[}Union\mbox{[}str, Tuple\mbox{[}str, ...\mbox{]}\mbox{]}\mbox{]} }]{extensions}{ = {\ttfamily None}, }\item[{Optional\mbox{[}Callable\mbox{[}\mbox{[}str\mbox{]}, bool\mbox{]}\mbox{]} }]{is\+\_\+valid\+\_\+file}{ = {\ttfamily None}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Generates a list of samples of a form (path_to_sample, class).
+
+See :class:`DatasetFolder` for details.
+
+Note: The class_to_idx parameter is here optional and will use the logic of the ``find_classes`` function
+by default.
+\end{DoxyVerb}
+ \Hypertarget{namespacetorchvision__down_1_1datasets_1_1folder_a8b82498bc7dc9bbb19754cf57e689133}\index{torchvision\_down.datasets.folder@{torchvision\_down.datasets.folder}!pil\_loader@{pil\_loader}}
+\index{pil\_loader@{pil\_loader}!torchvision\_down.datasets.folder@{torchvision\_down.datasets.folder}}
+\doxysubsubsection{\texorpdfstring{pil\_loader()}{pil\_loader()}}
+{\footnotesize\ttfamily \label{namespacetorchvision__down_1_1datasets_1_1folder_a8b82498bc7dc9bbb19754cf57e689133} 
+ Image.\+Image torchvision\+\_\+down.\+datasets.\+folder.\+pil\+\_\+loader (\begin{DoxyParamCaption}\item[{str}]{path}{}\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Variable Documentation}
+\Hypertarget{namespacetorchvision__down_1_1datasets_1_1folder_a6e923001b9458a2de6385b3b1c4a4f03}\index{torchvision\_down.datasets.folder@{torchvision\_down.datasets.folder}!IMG\_EXTENSIONS@{IMG\_EXTENSIONS}}
+\index{IMG\_EXTENSIONS@{IMG\_EXTENSIONS}!torchvision\_down.datasets.folder@{torchvision\_down.datasets.folder}}
+\doxysubsubsection{\texorpdfstring{IMG\_EXTENSIONS}{IMG\_EXTENSIONS}}
+{\footnotesize\ttfamily \label{namespacetorchvision__down_1_1datasets_1_1folder_a6e923001b9458a2de6385b3b1c4a4f03} 
+tuple torchvision\+\_\+down.\+datasets.\+folder.\+IMG\+\_\+\+EXTENSIONS = ("{}.jpg"{}, "{}.jpeg"{}, "{}.png"{}, "{}.ppm"{}, "{}.bmp"{}, "{}.pgm"{}, "{}.tif"{}, "{}.tiff"{}, "{}.webp"{})}
+

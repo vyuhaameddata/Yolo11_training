@@ -1,0 +1,94 @@
+\doxysection{torchvision\+\_\+down.\+transforms.\+transforms.\+Linear\+Transformation Class Reference}
+\hypertarget{classtorchvision__down_1_1transforms_1_1transforms_1_1_linear_transformation}{}\label{classtorchvision__down_1_1transforms_1_1transforms_1_1_linear_transformation}\index{torchvision\_down.transforms.transforms.LinearTransformation@{torchvision\_down.transforms.transforms.LinearTransformation}}
+Inheritance diagram for torchvision\+\_\+down.\+transforms.\+transforms.\+Linear\+Transformation\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classtorchvision__down_1_1transforms_1_1transforms_1_1_linear_transformation}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1transforms_1_1transforms_1_1_linear_transformation_a7fb05791bdcc1c6bde192d9a2ac768bc}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, \mbox{\hyperlink{classtorchvision__down_1_1transforms_1_1transforms_1_1_linear_transformation_a7a7627e533711fe1bcb15b38761cf2a4}{transformation\+\_\+matrix}}, \mbox{\hyperlink{classtorchvision__down_1_1transforms_1_1transforms_1_1_linear_transformation_a69a18232f316ae283c7cc28a0e2e4c64}{mean\+\_\+vector}})
+\item 
+Tensor \mbox{\hyperlink{classtorchvision__down_1_1transforms_1_1transforms_1_1_linear_transformation_add2905602f8b4610e654dd83863d3f3b}{forward}} (self, Tensor tensor)
+\item 
+str \mbox{\hyperlink{classtorchvision__down_1_1transforms_1_1transforms_1_1_linear_transformation_adc27935963fbf1812dfe4af4e5548cac}{\+\_\+\+\_\+repr\+\_\+\+\_\+}} (self)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1transforms_1_1transforms_1_1_linear_transformation_a7a7627e533711fe1bcb15b38761cf2a4}{transformation\+\_\+matrix}} = transformation\+\_\+matrix
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1transforms_1_1transforms_1_1_linear_transformation_a69a18232f316ae283c7cc28a0e2e4c64}{mean\+\_\+vector}} = mean\+\_\+vector
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}Transform a tensor image with a square transformation matrix and a mean_vector computed
+offline.
+This transform does not support PIL Image.
+Given transformation_matrix and mean_vector, will flatten the torch.*Tensor and
+subtract mean_vector from it which is then followed by computing the dot
+product with the transformation matrix and then reshaping the tensor to its
+original shape.
+
+Applications:
+    whitening transformation: Suppose X is a column vector zero-centered data.
+    Then compute the data covariance matrix [D x D] with torch.mm(X.t(), X),
+    perform SVD on this matrix and pass it as transformation_matrix.
+
+Args:
+    transformation_matrix (Tensor): tensor [D x D], D = C x H x W
+    mean_vector (Tensor): tensor [D], D = C x H x W
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classtorchvision__down_1_1transforms_1_1transforms_1_1_linear_transformation_a7fb05791bdcc1c6bde192d9a2ac768bc}\index{torchvision\_down.transforms.transforms.LinearTransformation@{torchvision\_down.transforms.transforms.LinearTransformation}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!torchvision\_down.transforms.transforms.LinearTransformation@{torchvision\_down.transforms.transforms.LinearTransformation}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1transforms_1_1transforms_1_1_linear_transformation_a7fb05791bdcc1c6bde192d9a2ac768bc} 
+torchvision\+\_\+down.\+transforms.\+transforms.\+Linear\+Transformation.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{transformation\+\_\+matrix}{, }\item[{}]{mean\+\_\+vector}{}\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classtorchvision__down_1_1transforms_1_1transforms_1_1_linear_transformation_adc27935963fbf1812dfe4af4e5548cac}\index{torchvision\_down.transforms.transforms.LinearTransformation@{torchvision\_down.transforms.transforms.LinearTransformation}!\_\_repr\_\_@{\_\_repr\_\_}}
+\index{\_\_repr\_\_@{\_\_repr\_\_}!torchvision\_down.transforms.transforms.LinearTransformation@{torchvision\_down.transforms.transforms.LinearTransformation}}
+\doxysubsubsection{\texorpdfstring{\_\_repr\_\_()}{\_\_repr\_\_()}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1transforms_1_1transforms_1_1_linear_transformation_adc27935963fbf1812dfe4af4e5548cac} 
+ str torchvision\+\_\+down.\+transforms.\+transforms.\+Linear\+Transformation.\+\_\+\+\_\+repr\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classtorchvision__down_1_1transforms_1_1transforms_1_1_linear_transformation_add2905602f8b4610e654dd83863d3f3b}\index{torchvision\_down.transforms.transforms.LinearTransformation@{torchvision\_down.transforms.transforms.LinearTransformation}!forward@{forward}}
+\index{forward@{forward}!torchvision\_down.transforms.transforms.LinearTransformation@{torchvision\_down.transforms.transforms.LinearTransformation}}
+\doxysubsubsection{\texorpdfstring{forward()}{forward()}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1transforms_1_1transforms_1_1_linear_transformation_add2905602f8b4610e654dd83863d3f3b} 
+ Tensor torchvision\+\_\+down.\+transforms.\+transforms.\+Linear\+Transformation.\+forward (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{Tensor}]{tensor}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Args:
+    tensor (Tensor): Tensor image to be whitened.
+
+Returns:
+    Tensor: Transformed image.
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classtorchvision__down_1_1transforms_1_1transforms_1_1_linear_transformation_a69a18232f316ae283c7cc28a0e2e4c64}\index{torchvision\_down.transforms.transforms.LinearTransformation@{torchvision\_down.transforms.transforms.LinearTransformation}!mean\_vector@{mean\_vector}}
+\index{mean\_vector@{mean\_vector}!torchvision\_down.transforms.transforms.LinearTransformation@{torchvision\_down.transforms.transforms.LinearTransformation}}
+\doxysubsubsection{\texorpdfstring{mean\_vector}{mean\_vector}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1transforms_1_1transforms_1_1_linear_transformation_a69a18232f316ae283c7cc28a0e2e4c64} 
+torchvision\+\_\+down.\+transforms.\+transforms.\+Linear\+Transformation.\+mean\+\_\+vector = mean\+\_\+vector}
+
+\Hypertarget{classtorchvision__down_1_1transforms_1_1transforms_1_1_linear_transformation_a7a7627e533711fe1bcb15b38761cf2a4}\index{torchvision\_down.transforms.transforms.LinearTransformation@{torchvision\_down.transforms.transforms.LinearTransformation}!transformation\_matrix@{transformation\_matrix}}
+\index{transformation\_matrix@{transformation\_matrix}!torchvision\_down.transforms.transforms.LinearTransformation@{torchvision\_down.transforms.transforms.LinearTransformation}}
+\doxysubsubsection{\texorpdfstring{transformation\_matrix}{transformation\_matrix}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1transforms_1_1transforms_1_1_linear_transformation_a7a7627e533711fe1bcb15b38761cf2a4} 
+torchvision\+\_\+down.\+transforms.\+transforms.\+Linear\+Transformation.\+transformation\+\_\+matrix = transformation\+\_\+matrix}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Cervi\+AI/torchvision\+\_\+down/transforms/\mbox{\hyperlink{transforms_8py}{transforms.\+py}}\end{DoxyCompactItemize}

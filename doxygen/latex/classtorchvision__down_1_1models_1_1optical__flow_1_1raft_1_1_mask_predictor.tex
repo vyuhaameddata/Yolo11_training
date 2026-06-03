@@ -1,0 +1,76 @@
+\doxysection{torchvision\+\_\+down.\+models.\+optical\+\_\+flow.\+raft.\+Mask\+Predictor Class Reference}
+\hypertarget{classtorchvision__down_1_1models_1_1optical__flow_1_1raft_1_1_mask_predictor}{}\label{classtorchvision__down_1_1models_1_1optical__flow_1_1raft_1_1_mask_predictor}\index{torchvision\_down.models.optical\_flow.raft.MaskPredictor@{torchvision\_down.models.optical\_flow.raft.MaskPredictor}}
+Inheritance diagram for torchvision\+\_\+down.\+models.\+optical\+\_\+flow.\+raft.\+Mask\+Predictor\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classtorchvision__down_1_1models_1_1optical__flow_1_1raft_1_1_mask_predictor}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1models_1_1optical__flow_1_1raft_1_1_mask_predictor_aee6c1db3cb3a6b1d3341d8827244843e}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, \texorpdfstring{$\ast$}{*}, in\+\_\+channels, hidden\+\_\+size, \mbox{\hyperlink{classtorchvision__down_1_1models_1_1optical__flow_1_1raft_1_1_mask_predictor_a9011d24c934ec54bea7e789f1b6628c0}{multiplier}}=0.\+25)
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1models_1_1optical__flow_1_1raft_1_1_mask_predictor_a17a1f41d31cf9dabaac315aef0cf6ad8}{forward}} (self, x)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1models_1_1optical__flow_1_1raft_1_1_mask_predictor_a52c945d583d5d68da847880fb0849a29}{convrelu}} = \mbox{\hyperlink{classtorchvision__down_1_1ops_1_1misc_1_1_conv_norm_activation}{Conv\+Norm\+Activation}}(in\+\_\+channels, hidden\+\_\+size, norm\+\_\+layer=None, kernel\+\_\+size=3)
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1models_1_1optical__flow_1_1raft_1_1_mask_predictor_abcb41b08c220d0f7601809c603aba9a2}{conv}} = nn.\+Conv2d(hidden\+\_\+size, 8 \texorpdfstring{$\ast$}{*} 8 \texorpdfstring{$\ast$}{*} 9, 1, padding=0)
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1models_1_1optical__flow_1_1raft_1_1_mask_predictor_a9011d24c934ec54bea7e789f1b6628c0}{multiplier}} = multiplier
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}Mask predictor to be used when upsampling the predicted flow.
+
+It takes the hidden state of the recurrent unit as input and outputs the mask.
+This is not used in the raft-small model.
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classtorchvision__down_1_1models_1_1optical__flow_1_1raft_1_1_mask_predictor_aee6c1db3cb3a6b1d3341d8827244843e}\index{torchvision\_down.models.optical\_flow.raft.MaskPredictor@{torchvision\_down.models.optical\_flow.raft.MaskPredictor}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!torchvision\_down.models.optical\_flow.raft.MaskPredictor@{torchvision\_down.models.optical\_flow.raft.MaskPredictor}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1models_1_1optical__flow_1_1raft_1_1_mask_predictor_aee6c1db3cb3a6b1d3341d8827244843e} 
+torchvision\+\_\+down.\+models.\+optical\+\_\+flow.\+raft.\+Mask\+Predictor.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{\texorpdfstring{$\ast$}{*}}]{}{, }\item[{}]{in\+\_\+channels}{, }\item[{}]{hidden\+\_\+size}{, }\item[{}]{multiplier}{ = {\ttfamily 0.25}}\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classtorchvision__down_1_1models_1_1optical__flow_1_1raft_1_1_mask_predictor_a17a1f41d31cf9dabaac315aef0cf6ad8}\index{torchvision\_down.models.optical\_flow.raft.MaskPredictor@{torchvision\_down.models.optical\_flow.raft.MaskPredictor}!forward@{forward}}
+\index{forward@{forward}!torchvision\_down.models.optical\_flow.raft.MaskPredictor@{torchvision\_down.models.optical\_flow.raft.MaskPredictor}}
+\doxysubsubsection{\texorpdfstring{forward()}{forward()}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1models_1_1optical__flow_1_1raft_1_1_mask_predictor_a17a1f41d31cf9dabaac315aef0cf6ad8} 
+torchvision\+\_\+down.\+models.\+optical\+\_\+flow.\+raft.\+Mask\+Predictor.\+forward (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{x}{}\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classtorchvision__down_1_1models_1_1optical__flow_1_1raft_1_1_mask_predictor_abcb41b08c220d0f7601809c603aba9a2}\index{torchvision\_down.models.optical\_flow.raft.MaskPredictor@{torchvision\_down.models.optical\_flow.raft.MaskPredictor}!conv@{conv}}
+\index{conv@{conv}!torchvision\_down.models.optical\_flow.raft.MaskPredictor@{torchvision\_down.models.optical\_flow.raft.MaskPredictor}}
+\doxysubsubsection{\texorpdfstring{conv}{conv}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1models_1_1optical__flow_1_1raft_1_1_mask_predictor_abcb41b08c220d0f7601809c603aba9a2} 
+torchvision\+\_\+down.\+models.\+optical\+\_\+flow.\+raft.\+Mask\+Predictor.\+conv = nn.\+Conv2d(hidden\+\_\+size, 8 \texorpdfstring{$\ast$}{*} 8 \texorpdfstring{$\ast$}{*} 9, 1, padding=0)}
+
+\Hypertarget{classtorchvision__down_1_1models_1_1optical__flow_1_1raft_1_1_mask_predictor_a52c945d583d5d68da847880fb0849a29}\index{torchvision\_down.models.optical\_flow.raft.MaskPredictor@{torchvision\_down.models.optical\_flow.raft.MaskPredictor}!convrelu@{convrelu}}
+\index{convrelu@{convrelu}!torchvision\_down.models.optical\_flow.raft.MaskPredictor@{torchvision\_down.models.optical\_flow.raft.MaskPredictor}}
+\doxysubsubsection{\texorpdfstring{convrelu}{convrelu}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1models_1_1optical__flow_1_1raft_1_1_mask_predictor_a52c945d583d5d68da847880fb0849a29} 
+torchvision\+\_\+down.\+models.\+optical\+\_\+flow.\+raft.\+Mask\+Predictor.\+convrelu = \mbox{\hyperlink{classtorchvision__down_1_1ops_1_1misc_1_1_conv_norm_activation}{Conv\+Norm\+Activation}}(in\+\_\+channels, hidden\+\_\+size, norm\+\_\+layer=None, kernel\+\_\+size=3)}
+
+\Hypertarget{classtorchvision__down_1_1models_1_1optical__flow_1_1raft_1_1_mask_predictor_a9011d24c934ec54bea7e789f1b6628c0}\index{torchvision\_down.models.optical\_flow.raft.MaskPredictor@{torchvision\_down.models.optical\_flow.raft.MaskPredictor}!multiplier@{multiplier}}
+\index{multiplier@{multiplier}!torchvision\_down.models.optical\_flow.raft.MaskPredictor@{torchvision\_down.models.optical\_flow.raft.MaskPredictor}}
+\doxysubsubsection{\texorpdfstring{multiplier}{multiplier}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1models_1_1optical__flow_1_1raft_1_1_mask_predictor_a9011d24c934ec54bea7e789f1b6628c0} 
+torchvision\+\_\+down.\+models.\+optical\+\_\+flow.\+raft.\+Mask\+Predictor.\+multiplier = multiplier}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Cervi\+AI/torchvision\+\_\+down/models/optical\+\_\+flow/\mbox{\hyperlink{raft_8py}{raft.\+py}}\end{DoxyCompactItemize}

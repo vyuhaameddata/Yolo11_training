@@ -1,0 +1,199 @@
+\doxysection{loss\+\_\+backup.\+Sigmoid\+Bin Class Reference}
+\hypertarget{classloss__backup_1_1_sigmoid_bin}{}\label{classloss__backup_1_1_sigmoid_bin}\index{loss\_backup.SigmoidBin@{loss\_backup.SigmoidBin}}
+Inheritance diagram for loss\+\_\+backup.\+Sigmoid\+Bin\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classloss__backup_1_1_sigmoid_bin}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classloss__backup_1_1_sigmoid_bin_ae47c361a27887fded033a01c6413e658}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, \mbox{\hyperlink{classloss__backup_1_1_sigmoid_bin_afb41c86b99826f0b920b2842452c403f}{bin\+\_\+count}}=10, \mbox{\hyperlink{classloss__backup_1_1_sigmoid_bin_a60ed065f7abaff20a8b6fd204ce6a632}{min}}=0.\+0, \mbox{\hyperlink{classloss__backup_1_1_sigmoid_bin_afd1f770f02b6ba05c6dbc207508bf5be}{max}}=1.\+0, \mbox{\hyperlink{classloss__backup_1_1_sigmoid_bin_a6de72fda70de2e2a7b0832db5d9fbd8c}{reg\+\_\+scale}}=2.\+0, \mbox{\hyperlink{classloss__backup_1_1_sigmoid_bin_a4f9805f7f434f037c2819461c9d6356d}{use\+\_\+loss\+\_\+regression}}=True, \mbox{\hyperlink{classloss__backup_1_1_sigmoid_bin_ada60836d2a554e72b909bf8bca1a4ad9}{use\+\_\+fw\+\_\+regression}}=True, \mbox{\hyperlink{classloss__backup_1_1_sigmoid_bin_a6350484888a8664a3f5b68e9ed767206}{BCE\+\_\+weight}}=1.\+0, smooth\+\_\+eps=0.\+0)
+\item 
+\mbox{\hyperlink{classloss__backup_1_1_sigmoid_bin_a3e9e25782c04b423eccd55ee7bb11744}{get\+\_\+length}} (self)
+\item 
+\mbox{\hyperlink{classloss__backup_1_1_sigmoid_bin_a0cc174415631e08fad3d1980f06c7307}{forward}} (self, pred)
+\item 
+\mbox{\hyperlink{classloss__backup_1_1_sigmoid_bin_ac749cc62cd33be73c634ce983b45e53e}{training\+\_\+loss}} (self, pred, target)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classloss__backup_1_1_sigmoid_bin_afb41c86b99826f0b920b2842452c403f}{bin\+\_\+count}} = bin\+\_\+count
+\item 
+int \mbox{\hyperlink{classloss__backup_1_1_sigmoid_bin_ac44fa843cc865ba447e34c0983afef3a}{length}} = \mbox{\hyperlink{classloss__backup_1_1_sigmoid_bin_afb41c86b99826f0b920b2842452c403f}{bin\+\_\+count}} + 1
+\item 
+\mbox{\hyperlink{classloss__backup_1_1_sigmoid_bin_a60ed065f7abaff20a8b6fd204ce6a632}{min}} = min
+\item 
+\mbox{\hyperlink{classloss__backup_1_1_sigmoid_bin_afd1f770f02b6ba05c6dbc207508bf5be}{max}} = max
+\item 
+\mbox{\hyperlink{classloss__backup_1_1_sigmoid_bin_ad121a60d6e3b0df2ed10ea06bb13ff87}{scale}} = float(\mbox{\hyperlink{classloss__backup_1_1_sigmoid_bin_afd1f770f02b6ba05c6dbc207508bf5be}{max}} -\/ \mbox{\hyperlink{classloss__backup_1_1_sigmoid_bin_a60ed065f7abaff20a8b6fd204ce6a632}{min}})
+\item 
+float \mbox{\hyperlink{classloss__backup_1_1_sigmoid_bin_a1f6fe2370f10570899cc4d1e6a0b4402}{shift}} = self.\+scale / 2.\+0
+\item 
+\mbox{\hyperlink{classloss__backup_1_1_sigmoid_bin_a4f9805f7f434f037c2819461c9d6356d}{use\+\_\+loss\+\_\+regression}} = use\+\_\+loss\+\_\+regression
+\item 
+\mbox{\hyperlink{classloss__backup_1_1_sigmoid_bin_ada60836d2a554e72b909bf8bca1a4ad9}{use\+\_\+fw\+\_\+regression}} = use\+\_\+fw\+\_\+regression
+\item 
+\mbox{\hyperlink{classloss__backup_1_1_sigmoid_bin_a6de72fda70de2e2a7b0832db5d9fbd8c}{reg\+\_\+scale}} = reg\+\_\+scale
+\item 
+\mbox{\hyperlink{classloss__backup_1_1_sigmoid_bin_a6350484888a8664a3f5b68e9ed767206}{BCE\+\_\+weight}} = BCE\+\_\+weight
+\item 
+\mbox{\hyperlink{classloss__backup_1_1_sigmoid_bin_a234405a530792662f4daeaa1bfc275bd}{step}} = step
+\item 
+float \mbox{\hyperlink{classloss__backup_1_1_sigmoid_bin_a7fe04e6ce3fe39cc7f8366433d52616b}{cp}} = 1.\+0 -\/ 0.\+5 \texorpdfstring{$\ast$}{*} smooth\+\_\+eps
+\item 
+float \mbox{\hyperlink{classloss__backup_1_1_sigmoid_bin_ae5d4564cc43dd3c7994370f79a48ac6c}{cn}} = 0.\+5 \texorpdfstring{$\ast$}{*} smooth\+\_\+eps
+\item 
+\mbox{\hyperlink{classloss__backup_1_1_sigmoid_bin_a4157a653c071d3b79509392e653e0cb9}{BCEbins}} = nn.\+BCEWith\+Logits\+Loss(pos\+\_\+weight=torch.\+Tensor(\mbox{[}\mbox{\hyperlink{classloss__backup_1_1_sigmoid_bin_a6350484888a8664a3f5b68e9ed767206}{BCE\+\_\+weight}}\mbox{]}))
+\item 
+\mbox{\hyperlink{classloss__backup_1_1_sigmoid_bin_a0f9500fb076b4a2ced9f5397dc7bec2b}{MSELoss}} = nn.\+MSELoss()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classloss__backup_1_1_sigmoid_bin_a7b4892a9423f98a554e66d7d4aa24195}{stride}} = None
+\item 
+bool \mbox{\hyperlink{classloss__backup_1_1_sigmoid_bin_a7c555ab7b8200500c0c9f6d97dcd8710}{export}} = False
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classloss__backup_1_1_sigmoid_bin_ae47c361a27887fded033a01c6413e658}\index{loss\_backup.SigmoidBin@{loss\_backup.SigmoidBin}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!loss\_backup.SigmoidBin@{loss\_backup.SigmoidBin}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily \label{classloss__backup_1_1_sigmoid_bin_ae47c361a27887fded033a01c6413e658} 
+loss\+\_\+backup.\+Sigmoid\+Bin.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{bin\+\_\+count}{ = {\ttfamily 10}, }\item[{}]{min}{ = {\ttfamily 0.0}, }\item[{}]{max}{ = {\ttfamily 1.0}, }\item[{}]{reg\+\_\+scale}{ = {\ttfamily 2.0}, }\item[{}]{use\+\_\+loss\+\_\+regression}{ = {\ttfamily True}, }\item[{}]{use\+\_\+fw\+\_\+regression}{ = {\ttfamily True}, }\item[{}]{BCE\+\_\+weight}{ = {\ttfamily 1.0}, }\item[{}]{smooth\+\_\+eps}{ = {\ttfamily 0.0}}\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classloss__backup_1_1_sigmoid_bin_a0cc174415631e08fad3d1980f06c7307}\index{loss\_backup.SigmoidBin@{loss\_backup.SigmoidBin}!forward@{forward}}
+\index{forward@{forward}!loss\_backup.SigmoidBin@{loss\_backup.SigmoidBin}}
+\doxysubsubsection{\texorpdfstring{forward()}{forward()}}
+{\footnotesize\ttfamily \label{classloss__backup_1_1_sigmoid_bin_a0cc174415631e08fad3d1980f06c7307} 
+loss\+\_\+backup.\+Sigmoid\+Bin.\+forward (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{pred}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classloss__backup_1_1_sigmoid_bin_a3e9e25782c04b423eccd55ee7bb11744}\index{loss\_backup.SigmoidBin@{loss\_backup.SigmoidBin}!get\_length@{get\_length}}
+\index{get\_length@{get\_length}!loss\_backup.SigmoidBin@{loss\_backup.SigmoidBin}}
+\doxysubsubsection{\texorpdfstring{get\_length()}{get\_length()}}
+{\footnotesize\ttfamily \label{classloss__backup_1_1_sigmoid_bin_a3e9e25782c04b423eccd55ee7bb11744} 
+loss\+\_\+backup.\+Sigmoid\+Bin.\+get\+\_\+length (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classloss__backup_1_1_sigmoid_bin_ac749cc62cd33be73c634ce983b45e53e}\index{loss\_backup.SigmoidBin@{loss\_backup.SigmoidBin}!training\_loss@{training\_loss}}
+\index{training\_loss@{training\_loss}!loss\_backup.SigmoidBin@{loss\_backup.SigmoidBin}}
+\doxysubsubsection{\texorpdfstring{training\_loss()}{training\_loss()}}
+{\footnotesize\ttfamily \label{classloss__backup_1_1_sigmoid_bin_ac749cc62cd33be73c634ce983b45e53e} 
+loss\+\_\+backup.\+Sigmoid\+Bin.\+training\+\_\+loss (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{pred}{, }\item[{}]{target}{}\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classloss__backup_1_1_sigmoid_bin_a6350484888a8664a3f5b68e9ed767206}\index{loss\_backup.SigmoidBin@{loss\_backup.SigmoidBin}!BCE\_weight@{BCE\_weight}}
+\index{BCE\_weight@{BCE\_weight}!loss\_backup.SigmoidBin@{loss\_backup.SigmoidBin}}
+\doxysubsubsection{\texorpdfstring{BCE\_weight}{BCE\_weight}}
+{\footnotesize\ttfamily \label{classloss__backup_1_1_sigmoid_bin_a6350484888a8664a3f5b68e9ed767206} 
+loss\+\_\+backup.\+Sigmoid\+Bin.\+BCE\+\_\+weight = BCE\+\_\+weight}
+
+\Hypertarget{classloss__backup_1_1_sigmoid_bin_a4157a653c071d3b79509392e653e0cb9}\index{loss\_backup.SigmoidBin@{loss\_backup.SigmoidBin}!BCEbins@{BCEbins}}
+\index{BCEbins@{BCEbins}!loss\_backup.SigmoidBin@{loss\_backup.SigmoidBin}}
+\doxysubsubsection{\texorpdfstring{BCEbins}{BCEbins}}
+{\footnotesize\ttfamily \label{classloss__backup_1_1_sigmoid_bin_a4157a653c071d3b79509392e653e0cb9} 
+loss\+\_\+backup.\+Sigmoid\+Bin.\+BCEbins = nn.\+BCEWith\+Logits\+Loss(pos\+\_\+weight=torch.\+Tensor(\mbox{[}\mbox{\hyperlink{classloss__backup_1_1_sigmoid_bin_a6350484888a8664a3f5b68e9ed767206}{BCE\+\_\+weight}}\mbox{]}))}
+
+\Hypertarget{classloss__backup_1_1_sigmoid_bin_afb41c86b99826f0b920b2842452c403f}\index{loss\_backup.SigmoidBin@{loss\_backup.SigmoidBin}!bin\_count@{bin\_count}}
+\index{bin\_count@{bin\_count}!loss\_backup.SigmoidBin@{loss\_backup.SigmoidBin}}
+\doxysubsubsection{\texorpdfstring{bin\_count}{bin\_count}}
+{\footnotesize\ttfamily \label{classloss__backup_1_1_sigmoid_bin_afb41c86b99826f0b920b2842452c403f} 
+loss\+\_\+backup.\+Sigmoid\+Bin.\+bin\+\_\+count = bin\+\_\+count}
+
+\Hypertarget{classloss__backup_1_1_sigmoid_bin_ae5d4564cc43dd3c7994370f79a48ac6c}\index{loss\_backup.SigmoidBin@{loss\_backup.SigmoidBin}!cn@{cn}}
+\index{cn@{cn}!loss\_backup.SigmoidBin@{loss\_backup.SigmoidBin}}
+\doxysubsubsection{\texorpdfstring{cn}{cn}}
+{\footnotesize\ttfamily \label{classloss__backup_1_1_sigmoid_bin_ae5d4564cc43dd3c7994370f79a48ac6c} 
+float loss\+\_\+backup.\+Sigmoid\+Bin.\+cn = 0.\+5 \texorpdfstring{$\ast$}{*} smooth\+\_\+eps}
+
+\Hypertarget{classloss__backup_1_1_sigmoid_bin_a7fe04e6ce3fe39cc7f8366433d52616b}\index{loss\_backup.SigmoidBin@{loss\_backup.SigmoidBin}!cp@{cp}}
+\index{cp@{cp}!loss\_backup.SigmoidBin@{loss\_backup.SigmoidBin}}
+\doxysubsubsection{\texorpdfstring{cp}{cp}}
+{\footnotesize\ttfamily \label{classloss__backup_1_1_sigmoid_bin_a7fe04e6ce3fe39cc7f8366433d52616b} 
+float loss\+\_\+backup.\+Sigmoid\+Bin.\+cp = 1.\+0 -\/ 0.\+5 \texorpdfstring{$\ast$}{*} smooth\+\_\+eps}
+
+\Hypertarget{classloss__backup_1_1_sigmoid_bin_a7c555ab7b8200500c0c9f6d97dcd8710}\index{loss\_backup.SigmoidBin@{loss\_backup.SigmoidBin}!export@{export}}
+\index{export@{export}!loss\_backup.SigmoidBin@{loss\_backup.SigmoidBin}}
+\doxysubsubsection{\texorpdfstring{export}{export}}
+{\footnotesize\ttfamily \label{classloss__backup_1_1_sigmoid_bin_a7c555ab7b8200500c0c9f6d97dcd8710} 
+bool loss\+\_\+backup.\+Sigmoid\+Bin.\+export = False\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classloss__backup_1_1_sigmoid_bin_ac44fa843cc865ba447e34c0983afef3a}\index{loss\_backup.SigmoidBin@{loss\_backup.SigmoidBin}!length@{length}}
+\index{length@{length}!loss\_backup.SigmoidBin@{loss\_backup.SigmoidBin}}
+\doxysubsubsection{\texorpdfstring{length}{length}}
+{\footnotesize\ttfamily \label{classloss__backup_1_1_sigmoid_bin_ac44fa843cc865ba447e34c0983afef3a} 
+int loss\+\_\+backup.\+Sigmoid\+Bin.\+length = \mbox{\hyperlink{classloss__backup_1_1_sigmoid_bin_afb41c86b99826f0b920b2842452c403f}{bin\+\_\+count}} + 1}
+
+\Hypertarget{classloss__backup_1_1_sigmoid_bin_afd1f770f02b6ba05c6dbc207508bf5be}\index{loss\_backup.SigmoidBin@{loss\_backup.SigmoidBin}!max@{max}}
+\index{max@{max}!loss\_backup.SigmoidBin@{loss\_backup.SigmoidBin}}
+\doxysubsubsection{\texorpdfstring{max}{max}}
+{\footnotesize\ttfamily \label{classloss__backup_1_1_sigmoid_bin_afd1f770f02b6ba05c6dbc207508bf5be} 
+loss\+\_\+backup.\+Sigmoid\+Bin.\+max = max}
+
+\Hypertarget{classloss__backup_1_1_sigmoid_bin_a60ed065f7abaff20a8b6fd204ce6a632}\index{loss\_backup.SigmoidBin@{loss\_backup.SigmoidBin}!min@{min}}
+\index{min@{min}!loss\_backup.SigmoidBin@{loss\_backup.SigmoidBin}}
+\doxysubsubsection{\texorpdfstring{min}{min}}
+{\footnotesize\ttfamily \label{classloss__backup_1_1_sigmoid_bin_a60ed065f7abaff20a8b6fd204ce6a632} 
+loss\+\_\+backup.\+Sigmoid\+Bin.\+min = min}
+
+\Hypertarget{classloss__backup_1_1_sigmoid_bin_a0f9500fb076b4a2ced9f5397dc7bec2b}\index{loss\_backup.SigmoidBin@{loss\_backup.SigmoidBin}!MSELoss@{MSELoss}}
+\index{MSELoss@{MSELoss}!loss\_backup.SigmoidBin@{loss\_backup.SigmoidBin}}
+\doxysubsubsection{\texorpdfstring{MSELoss}{MSELoss}}
+{\footnotesize\ttfamily \label{classloss__backup_1_1_sigmoid_bin_a0f9500fb076b4a2ced9f5397dc7bec2b} 
+loss\+\_\+backup.\+Sigmoid\+Bin.\+MSELoss = nn.\+MSELoss()}
+
+\Hypertarget{classloss__backup_1_1_sigmoid_bin_a6de72fda70de2e2a7b0832db5d9fbd8c}\index{loss\_backup.SigmoidBin@{loss\_backup.SigmoidBin}!reg\_scale@{reg\_scale}}
+\index{reg\_scale@{reg\_scale}!loss\_backup.SigmoidBin@{loss\_backup.SigmoidBin}}
+\doxysubsubsection{\texorpdfstring{reg\_scale}{reg\_scale}}
+{\footnotesize\ttfamily \label{classloss__backup_1_1_sigmoid_bin_a6de72fda70de2e2a7b0832db5d9fbd8c} 
+loss\+\_\+backup.\+Sigmoid\+Bin.\+reg\+\_\+scale = reg\+\_\+scale}
+
+\Hypertarget{classloss__backup_1_1_sigmoid_bin_ad121a60d6e3b0df2ed10ea06bb13ff87}\index{loss\_backup.SigmoidBin@{loss\_backup.SigmoidBin}!scale@{scale}}
+\index{scale@{scale}!loss\_backup.SigmoidBin@{loss\_backup.SigmoidBin}}
+\doxysubsubsection{\texorpdfstring{scale}{scale}}
+{\footnotesize\ttfamily \label{classloss__backup_1_1_sigmoid_bin_ad121a60d6e3b0df2ed10ea06bb13ff87} 
+loss\+\_\+backup.\+Sigmoid\+Bin.\+scale = float(\mbox{\hyperlink{classloss__backup_1_1_sigmoid_bin_afd1f770f02b6ba05c6dbc207508bf5be}{max}} -\/ \mbox{\hyperlink{classloss__backup_1_1_sigmoid_bin_a60ed065f7abaff20a8b6fd204ce6a632}{min}})}
+
+\Hypertarget{classloss__backup_1_1_sigmoid_bin_a1f6fe2370f10570899cc4d1e6a0b4402}\index{loss\_backup.SigmoidBin@{loss\_backup.SigmoidBin}!shift@{shift}}
+\index{shift@{shift}!loss\_backup.SigmoidBin@{loss\_backup.SigmoidBin}}
+\doxysubsubsection{\texorpdfstring{shift}{shift}}
+{\footnotesize\ttfamily \label{classloss__backup_1_1_sigmoid_bin_a1f6fe2370f10570899cc4d1e6a0b4402} 
+float loss\+\_\+backup.\+Sigmoid\+Bin.\+shift = self.\+scale / 2.\+0}
+
+\Hypertarget{classloss__backup_1_1_sigmoid_bin_a234405a530792662f4daeaa1bfc275bd}\index{loss\_backup.SigmoidBin@{loss\_backup.SigmoidBin}!step@{step}}
+\index{step@{step}!loss\_backup.SigmoidBin@{loss\_backup.SigmoidBin}}
+\doxysubsubsection{\texorpdfstring{step}{step}}
+{\footnotesize\ttfamily \label{classloss__backup_1_1_sigmoid_bin_a234405a530792662f4daeaa1bfc275bd} 
+loss\+\_\+backup.\+Sigmoid\+Bin.\+step = step}
+
+\Hypertarget{classloss__backup_1_1_sigmoid_bin_a7b4892a9423f98a554e66d7d4aa24195}\index{loss\_backup.SigmoidBin@{loss\_backup.SigmoidBin}!stride@{stride}}
+\index{stride@{stride}!loss\_backup.SigmoidBin@{loss\_backup.SigmoidBin}}
+\doxysubsubsection{\texorpdfstring{stride}{stride}}
+{\footnotesize\ttfamily \label{classloss__backup_1_1_sigmoid_bin_a7b4892a9423f98a554e66d7d4aa24195} 
+loss\+\_\+backup.\+Sigmoid\+Bin.\+stride = None\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classloss__backup_1_1_sigmoid_bin_ada60836d2a554e72b909bf8bca1a4ad9}\index{loss\_backup.SigmoidBin@{loss\_backup.SigmoidBin}!use\_fw\_regression@{use\_fw\_regression}}
+\index{use\_fw\_regression@{use\_fw\_regression}!loss\_backup.SigmoidBin@{loss\_backup.SigmoidBin}}
+\doxysubsubsection{\texorpdfstring{use\_fw\_regression}{use\_fw\_regression}}
+{\footnotesize\ttfamily \label{classloss__backup_1_1_sigmoid_bin_ada60836d2a554e72b909bf8bca1a4ad9} 
+loss\+\_\+backup.\+Sigmoid\+Bin.\+use\+\_\+fw\+\_\+regression = use\+\_\+fw\+\_\+regression}
+
+\Hypertarget{classloss__backup_1_1_sigmoid_bin_a4f9805f7f434f037c2819461c9d6356d}\index{loss\_backup.SigmoidBin@{loss\_backup.SigmoidBin}!use\_loss\_regression@{use\_loss\_regression}}
+\index{use\_loss\_regression@{use\_loss\_regression}!loss\_backup.SigmoidBin@{loss\_backup.SigmoidBin}}
+\doxysubsubsection{\texorpdfstring{use\_loss\_regression}{use\_loss\_regression}}
+{\footnotesize\ttfamily \label{classloss__backup_1_1_sigmoid_bin_a4f9805f7f434f037c2819461c9d6356d} 
+loss\+\_\+backup.\+Sigmoid\+Bin.\+use\+\_\+loss\+\_\+regression = use\+\_\+loss\+\_\+regression}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Cervi\+AI/utils/backup dump/\mbox{\hyperlink{loss__backup_8py}{loss\+\_\+backup.\+py}}\end{DoxyCompactItemize}

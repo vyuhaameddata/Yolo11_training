@@ -1,0 +1,130 @@
+\doxysection{models.\+common.\+Window\+Attention Class Reference}
+\hypertarget{classmodels_1_1common_1_1_window_attention}{}\label{classmodels_1_1common_1_1_window_attention}\index{models.common.WindowAttention@{models.common.WindowAttention}}
+Inheritance diagram for models.\+common.\+Window\+Attention\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classmodels_1_1common_1_1_window_attention}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classmodels_1_1common_1_1_window_attention_a50f223d8a17fcfead1d975afa7492552}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, \mbox{\hyperlink{classmodels_1_1common_1_1_window_attention_ad4aacfdd47cad2ae3150eb0ce453187d}{dim}}, \mbox{\hyperlink{classmodels_1_1common_1_1_window_attention_a8453983f0b9de347f1b8d9a9190d4aba}{window\+\_\+size}}, \mbox{\hyperlink{classmodels_1_1common_1_1_window_attention_afe645018c15caa03b3ca2e8fc5a5da44}{num\+\_\+heads}}, qkv\+\_\+bias=True, qk\+\_\+scale=None, \mbox{\hyperlink{classmodels_1_1common_1_1_window_attention_af6ef9861ef388332d9d03af3d54f9cb8}{attn\+\_\+drop}}=0., \mbox{\hyperlink{classmodels_1_1common_1_1_window_attention_aff65c7e4b9bd9b4886c1aefe19669b80}{proj\+\_\+drop}}=0.)
+\item 
+\mbox{\hyperlink{classmodels_1_1common_1_1_window_attention_a97e2b1f52aa88b9e9ced2166828b438e}{forward}} (self, x, mask=None)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classmodels_1_1common_1_1_window_attention_ad4aacfdd47cad2ae3150eb0ce453187d}{dim}} = dim
+\item 
+\mbox{\hyperlink{classmodels_1_1common_1_1_window_attention_a8453983f0b9de347f1b8d9a9190d4aba}{window\+\_\+size}} = window\+\_\+size
+\item 
+\mbox{\hyperlink{classmodels_1_1common_1_1_window_attention_afe645018c15caa03b3ca2e8fc5a5da44}{num\+\_\+heads}} = num\+\_\+heads
+\item 
+float \mbox{\hyperlink{classmodels_1_1common_1_1_window_attention_ab780ad45e5229dc43121b6cbe82c306b}{scale}} = qk\+\_\+scale or head\+\_\+dim \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*} -\/0.\+5
+\item 
+\mbox{\hyperlink{classmodels_1_1common_1_1_window_attention_a834a9f7b2b258fdefa13cf6ef6c4557b}{relative\+\_\+position\+\_\+bias\+\_\+table}}
+\item 
+\mbox{\hyperlink{classmodels_1_1common_1_1_window_attention_a00496e7d56fb8dad5c6ffe9faf42ccb1}{qkv}} = nn.\+Linear(\mbox{\hyperlink{classmodels_1_1common_1_1_window_attention_ad4aacfdd47cad2ae3150eb0ce453187d}{dim}}, \mbox{\hyperlink{classmodels_1_1common_1_1_window_attention_ad4aacfdd47cad2ae3150eb0ce453187d}{dim}} \texorpdfstring{$\ast$}{*} 3, bias=qkv\+\_\+bias)
+\item 
+\mbox{\hyperlink{classmodels_1_1common_1_1_window_attention_af6ef9861ef388332d9d03af3d54f9cb8}{attn\+\_\+drop}} = nn.\+Dropout(attn\+\_\+drop)
+\item 
+\mbox{\hyperlink{classmodels_1_1common_1_1_window_attention_a9e1b97e15fed42522a31c9784558fac1}{proj}} = nn.\+Linear(\mbox{\hyperlink{classmodels_1_1common_1_1_window_attention_ad4aacfdd47cad2ae3150eb0ce453187d}{dim}}, \mbox{\hyperlink{classmodels_1_1common_1_1_window_attention_ad4aacfdd47cad2ae3150eb0ce453187d}{dim}})
+\item 
+\mbox{\hyperlink{classmodels_1_1common_1_1_window_attention_aff65c7e4b9bd9b4886c1aefe19669b80}{proj\+\_\+drop}} = nn.\+Dropout(proj\+\_\+drop)
+\item 
+\mbox{\hyperlink{classmodels_1_1common_1_1_window_attention_a55d21cbd2522673a1edf6fbdaa502a81}{softmax}} = nn.\+Softmax(\mbox{\hyperlink{classmodels_1_1common_1_1_window_attention_ad4aacfdd47cad2ae3150eb0ce453187d}{dim}}=-\/1)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classmodels_1_1common_1_1_window_attention_a50f223d8a17fcfead1d975afa7492552}\index{models.common.WindowAttention@{models.common.WindowAttention}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!models.common.WindowAttention@{models.common.WindowAttention}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily \label{classmodels_1_1common_1_1_window_attention_a50f223d8a17fcfead1d975afa7492552} 
+models.\+common.\+Window\+Attention.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{dim}{, }\item[{}]{window\+\_\+size}{, }\item[{}]{num\+\_\+heads}{, }\item[{}]{qkv\+\_\+bias}{ = {\ttfamily True}, }\item[{}]{qk\+\_\+scale}{ = {\ttfamily None}, }\item[{}]{attn\+\_\+drop}{ = {\ttfamily 0.}, }\item[{}]{proj\+\_\+drop}{ = {\ttfamily 0.}}\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classmodels_1_1common_1_1_window_attention_a97e2b1f52aa88b9e9ced2166828b438e}\index{models.common.WindowAttention@{models.common.WindowAttention}!forward@{forward}}
+\index{forward@{forward}!models.common.WindowAttention@{models.common.WindowAttention}}
+\doxysubsubsection{\texorpdfstring{forward()}{forward()}}
+{\footnotesize\ttfamily \label{classmodels_1_1common_1_1_window_attention_a97e2b1f52aa88b9e9ced2166828b438e} 
+models.\+common.\+Window\+Attention.\+forward (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{x}{, }\item[{}]{mask}{ = {\ttfamily None}}\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classmodels_1_1common_1_1_window_attention_af6ef9861ef388332d9d03af3d54f9cb8}\index{models.common.WindowAttention@{models.common.WindowAttention}!attn\_drop@{attn\_drop}}
+\index{attn\_drop@{attn\_drop}!models.common.WindowAttention@{models.common.WindowAttention}}
+\doxysubsubsection{\texorpdfstring{attn\_drop}{attn\_drop}}
+{\footnotesize\ttfamily \label{classmodels_1_1common_1_1_window_attention_af6ef9861ef388332d9d03af3d54f9cb8} 
+models.\+common.\+Window\+Attention.\+attn\+\_\+drop = nn.\+Dropout(attn\+\_\+drop)}
+
+\Hypertarget{classmodels_1_1common_1_1_window_attention_ad4aacfdd47cad2ae3150eb0ce453187d}\index{models.common.WindowAttention@{models.common.WindowAttention}!dim@{dim}}
+\index{dim@{dim}!models.common.WindowAttention@{models.common.WindowAttention}}
+\doxysubsubsection{\texorpdfstring{dim}{dim}}
+{\footnotesize\ttfamily \label{classmodels_1_1common_1_1_window_attention_ad4aacfdd47cad2ae3150eb0ce453187d} 
+models.\+common.\+Window\+Attention.\+dim = dim}
+
+\Hypertarget{classmodels_1_1common_1_1_window_attention_afe645018c15caa03b3ca2e8fc5a5da44}\index{models.common.WindowAttention@{models.common.WindowAttention}!num\_heads@{num\_heads}}
+\index{num\_heads@{num\_heads}!models.common.WindowAttention@{models.common.WindowAttention}}
+\doxysubsubsection{\texorpdfstring{num\_heads}{num\_heads}}
+{\footnotesize\ttfamily \label{classmodels_1_1common_1_1_window_attention_afe645018c15caa03b3ca2e8fc5a5da44} 
+models.\+common.\+Window\+Attention.\+num\+\_\+heads = num\+\_\+heads}
+
+\Hypertarget{classmodels_1_1common_1_1_window_attention_a9e1b97e15fed42522a31c9784558fac1}\index{models.common.WindowAttention@{models.common.WindowAttention}!proj@{proj}}
+\index{proj@{proj}!models.common.WindowAttention@{models.common.WindowAttention}}
+\doxysubsubsection{\texorpdfstring{proj}{proj}}
+{\footnotesize\ttfamily \label{classmodels_1_1common_1_1_window_attention_a9e1b97e15fed42522a31c9784558fac1} 
+models.\+common.\+Window\+Attention.\+proj = nn.\+Linear(\mbox{\hyperlink{classmodels_1_1common_1_1_window_attention_ad4aacfdd47cad2ae3150eb0ce453187d}{dim}}, \mbox{\hyperlink{classmodels_1_1common_1_1_window_attention_ad4aacfdd47cad2ae3150eb0ce453187d}{dim}})}
+
+\Hypertarget{classmodels_1_1common_1_1_window_attention_aff65c7e4b9bd9b4886c1aefe19669b80}\index{models.common.WindowAttention@{models.common.WindowAttention}!proj\_drop@{proj\_drop}}
+\index{proj\_drop@{proj\_drop}!models.common.WindowAttention@{models.common.WindowAttention}}
+\doxysubsubsection{\texorpdfstring{proj\_drop}{proj\_drop}}
+{\footnotesize\ttfamily \label{classmodels_1_1common_1_1_window_attention_aff65c7e4b9bd9b4886c1aefe19669b80} 
+models.\+common.\+Window\+Attention.\+proj\+\_\+drop = nn.\+Dropout(proj\+\_\+drop)}
+
+\Hypertarget{classmodels_1_1common_1_1_window_attention_a00496e7d56fb8dad5c6ffe9faf42ccb1}\index{models.common.WindowAttention@{models.common.WindowAttention}!qkv@{qkv}}
+\index{qkv@{qkv}!models.common.WindowAttention@{models.common.WindowAttention}}
+\doxysubsubsection{\texorpdfstring{qkv}{qkv}}
+{\footnotesize\ttfamily \label{classmodels_1_1common_1_1_window_attention_a00496e7d56fb8dad5c6ffe9faf42ccb1} 
+models.\+common.\+Window\+Attention.\+qkv = nn.\+Linear(\mbox{\hyperlink{classmodels_1_1common_1_1_window_attention_ad4aacfdd47cad2ae3150eb0ce453187d}{dim}}, \mbox{\hyperlink{classmodels_1_1common_1_1_window_attention_ad4aacfdd47cad2ae3150eb0ce453187d}{dim}} \texorpdfstring{$\ast$}{*} 3, bias=qkv\+\_\+bias)}
+
+\Hypertarget{classmodels_1_1common_1_1_window_attention_a834a9f7b2b258fdefa13cf6ef6c4557b}\index{models.common.WindowAttention@{models.common.WindowAttention}!relative\_position\_bias\_table@{relative\_position\_bias\_table}}
+\index{relative\_position\_bias\_table@{relative\_position\_bias\_table}!models.common.WindowAttention@{models.common.WindowAttention}}
+\doxysubsubsection{\texorpdfstring{relative\_position\_bias\_table}{relative\_position\_bias\_table}}
+{\footnotesize\ttfamily \label{classmodels_1_1common_1_1_window_attention_a834a9f7b2b258fdefa13cf6ef6c4557b} 
+models.\+common.\+Window\+Attention.\+relative\+\_\+position\+\_\+bias\+\_\+table}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \ nn.Parameter(}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ torch.zeros((2\ *\ window\_size[0]\ -\/\ 1)\ *\ (2\ *\ window\_size[1]\ -\/\ 1),\ num\_heads))}
+
+\end{DoxyCode}
+\Hypertarget{classmodels_1_1common_1_1_window_attention_ab780ad45e5229dc43121b6cbe82c306b}\index{models.common.WindowAttention@{models.common.WindowAttention}!scale@{scale}}
+\index{scale@{scale}!models.common.WindowAttention@{models.common.WindowAttention}}
+\doxysubsubsection{\texorpdfstring{scale}{scale}}
+{\footnotesize\ttfamily \label{classmodels_1_1common_1_1_window_attention_ab780ad45e5229dc43121b6cbe82c306b} 
+float models.\+common.\+Window\+Attention.\+scale = qk\+\_\+scale or head\+\_\+dim \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*} -\/0.\+5}
+
+\Hypertarget{classmodels_1_1common_1_1_window_attention_a55d21cbd2522673a1edf6fbdaa502a81}\index{models.common.WindowAttention@{models.common.WindowAttention}!softmax@{softmax}}
+\index{softmax@{softmax}!models.common.WindowAttention@{models.common.WindowAttention}}
+\doxysubsubsection{\texorpdfstring{softmax}{softmax}}
+{\footnotesize\ttfamily \label{classmodels_1_1common_1_1_window_attention_a55d21cbd2522673a1edf6fbdaa502a81} 
+models.\+common.\+Window\+Attention.\+softmax = nn.\+Softmax(\mbox{\hyperlink{classmodels_1_1common_1_1_window_attention_ad4aacfdd47cad2ae3150eb0ce453187d}{dim}}=-\/1)}
+
+\Hypertarget{classmodels_1_1common_1_1_window_attention_a8453983f0b9de347f1b8d9a9190d4aba}\index{models.common.WindowAttention@{models.common.WindowAttention}!window\_size@{window\_size}}
+\index{window\_size@{window\_size}!models.common.WindowAttention@{models.common.WindowAttention}}
+\doxysubsubsection{\texorpdfstring{window\_size}{window\_size}}
+{\footnotesize\ttfamily \label{classmodels_1_1common_1_1_window_attention_a8453983f0b9de347f1b8d9a9190d4aba} 
+models.\+common.\+Window\+Attention.\+window\+\_\+size = window\+\_\+size}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Cervi\+AI/models/\mbox{\hyperlink{common_8py}{common.\+py}}\end{DoxyCompactItemize}

@@ -1,0 +1,344 @@
+\doxysection{torchvision\+\_\+down.\+datasets.\+video\+\_\+utils.\+Video\+Clips Class Reference}
+\hypertarget{classtorchvision__down_1_1datasets_1_1video__utils_1_1_video_clips}{}\label{classtorchvision__down_1_1datasets_1_1video__utils_1_1_video_clips}\index{torchvision\_down.datasets.video\_utils.VideoClips@{torchvision\_down.datasets.video\_utils.VideoClips}}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+None \mbox{\hyperlink{classtorchvision__down_1_1datasets_1_1video__utils_1_1_video_clips_aa875de4407b17bad64627805f86945dd}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, List\mbox{[}str\mbox{]} \mbox{\hyperlink{classtorchvision__down_1_1datasets_1_1video__utils_1_1_video_clips_a924cbb4688d21f650fad50fe00bde690}{video\+\_\+paths}}, int clip\+\_\+length\+\_\+in\+\_\+frames=16, int frames\+\_\+between\+\_\+clips=1, Optional\mbox{[}int\mbox{]} \mbox{\hyperlink{classtorchvision__down_1_1datasets_1_1video__utils_1_1_video_clips_ac5dac8f10e3b70ab2dda88de38c7dacd}{frame\+\_\+rate}}=None, Optional\mbox{[}Dict\mbox{[}str, Any\mbox{]}\mbox{]} \+\_\+precomputed\+\_\+metadata=None, int \mbox{\hyperlink{classtorchvision__down_1_1datasets_1_1video__utils_1_1_video_clips_ad5e1c743b13cd7a55900ce93a6a93f67}{num\+\_\+workers}}=0, int \mbox{\hyperlink{classtorchvision__down_1_1datasets_1_1video__utils_1_1_video_clips_a2a73c3b28475e99839de09503769b4e9}{\+\_\+video\+\_\+width}}=0, int \mbox{\hyperlink{classtorchvision__down_1_1datasets_1_1video__utils_1_1_video_clips_a8a378d8d7ba88bd5c3c648f08cda6162}{\+\_\+video\+\_\+height}}=0, int \mbox{\hyperlink{classtorchvision__down_1_1datasets_1_1video__utils_1_1_video_clips_a596bb4a3939c432c5525edef82691206}{\+\_\+video\+\_\+min\+\_\+dimension}}=0, int \mbox{\hyperlink{classtorchvision__down_1_1datasets_1_1video__utils_1_1_video_clips_a310039c6c44a20d9e8287a54dc897a68}{\+\_\+video\+\_\+max\+\_\+dimension}}=0, int \mbox{\hyperlink{classtorchvision__down_1_1datasets_1_1video__utils_1_1_video_clips_a1be07f1878f08d3dcdd60d10ac45101b}{\+\_\+audio\+\_\+samples}}=0, int \mbox{\hyperlink{classtorchvision__down_1_1datasets_1_1video__utils_1_1_video_clips_ae78410c1ebf52142d0c8925285628276}{\+\_\+audio\+\_\+channels}}=0)
+\item 
+Dict\mbox{[}str, Any\mbox{]} \mbox{\hyperlink{classtorchvision__down_1_1datasets_1_1video__utils_1_1_video_clips_a60963536a1bebf9f8267d7786c58f8ef}{metadata}} (self)
+\item 
+"{}Video\+Clips"{} \mbox{\hyperlink{classtorchvision__down_1_1datasets_1_1video__utils_1_1_video_clips_ac6054d95a4b078fcfe8458c3c53c049e}{subset}} (self, List\mbox{[}int\mbox{]} indices)
+\item 
+None \mbox{\hyperlink{classtorchvision__down_1_1datasets_1_1video__utils_1_1_video_clips_ab7e6824a4537933305a36ae2cbecd1da}{compute\+\_\+clips}} (self, int \mbox{\hyperlink{classtorchvision__down_1_1datasets_1_1video__utils_1_1_video_clips_a1088ad740ad1a2efa3d7b864f01beefd}{num\+\_\+frames}}, int \mbox{\hyperlink{classtorchvision__down_1_1datasets_1_1video__utils_1_1_video_clips_a075cf17539ef017a0d0eed073a72ac3d}{step}}, Optional\mbox{[}int\mbox{]} \mbox{\hyperlink{classtorchvision__down_1_1datasets_1_1video__utils_1_1_video_clips_ac5dac8f10e3b70ab2dda88de38c7dacd}{frame\+\_\+rate}}=None)
+\item 
+int \mbox{\hyperlink{classtorchvision__down_1_1datasets_1_1video__utils_1_1_video_clips_a1fe299743640135e4a4669053457a432}{\+\_\+\+\_\+len\+\_\+\+\_\+}} (self)
+\item 
+int \mbox{\hyperlink{classtorchvision__down_1_1datasets_1_1video__utils_1_1_video_clips_a7e3c3117357a1d41862fb90e0850467d}{num\+\_\+videos}} (self)
+\item 
+int \mbox{\hyperlink{classtorchvision__down_1_1datasets_1_1video__utils_1_1_video_clips_ac4a8875009b75fd2ab4af2adcd576aa6}{num\+\_\+clips}} (self)
+\item 
+Tuple\mbox{[}int, int\mbox{]} \mbox{\hyperlink{classtorchvision__down_1_1datasets_1_1video__utils_1_1_video_clips_a85cf896228cf8d0b678142755d66587e}{get\+\_\+clip\+\_\+location}} (self, int idx)
+\item 
+Tuple\mbox{[}torch.\+Tensor, torch.\+Tensor, Dict\mbox{[}str, Any\mbox{]}, int\mbox{]} \mbox{\hyperlink{classtorchvision__down_1_1datasets_1_1video__utils_1_1_video_clips_add4ee0d3bd6ee85c06ddc39954dfa1cf}{get\+\_\+clip}} (self, int idx)
+\item 
+Dict\mbox{[}str, Any\mbox{]} \mbox{\hyperlink{classtorchvision__down_1_1datasets_1_1video__utils_1_1_video_clips_a6106be1e17d756863d4c5beef2130469}{\+\_\+\+\_\+getstate\+\_\+\+\_\+}} (self)
+\item 
+None \mbox{\hyperlink{classtorchvision__down_1_1datasets_1_1video__utils_1_1_video_clips_a64a91944c01f4f86dca389b4c0012ae0}{\+\_\+\+\_\+setstate\+\_\+\+\_\+}} (self, Dict\mbox{[}str, Any\mbox{]} d)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+Tuple\mbox{[}torch.\+Tensor, Union\mbox{[}List\mbox{[}slice\mbox{]}, torch.\+Tensor\mbox{]}\mbox{]} \mbox{\hyperlink{classtorchvision__down_1_1datasets_1_1video__utils_1_1_video_clips_a884f68501a123be6be8334591f5fbe25}{compute\+\_\+clips\+\_\+for\+\_\+video}} (torch.\+Tensor \mbox{\hyperlink{classtorchvision__down_1_1datasets_1_1video__utils_1_1_video_clips_a82f18849227218af1b594c1f22ebbfb9}{video\+\_\+pts}}, int \mbox{\hyperlink{classtorchvision__down_1_1datasets_1_1video__utils_1_1_video_clips_a1088ad740ad1a2efa3d7b864f01beefd}{num\+\_\+frames}}, int \mbox{\hyperlink{classtorchvision__down_1_1datasets_1_1video__utils_1_1_video_clips_a075cf17539ef017a0d0eed073a72ac3d}{step}}, int fps, Optional\mbox{[}int\mbox{]} \mbox{\hyperlink{classtorchvision__down_1_1datasets_1_1video__utils_1_1_video_clips_ac5dac8f10e3b70ab2dda88de38c7dacd}{frame\+\_\+rate}}=None)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+Dict\mbox{[}str, Any\mbox{]} \mbox{\hyperlink{classtorchvision__down_1_1datasets_1_1video__utils_1_1_video_clips_a924cbb4688d21f650fad50fe00bde690}{video\+\_\+paths}} = video\+\_\+paths
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1datasets_1_1video__utils_1_1_video_clips_ad5e1c743b13cd7a55900ce93a6a93f67}{num\+\_\+workers}} = num\+\_\+workers
+\item 
+list \mbox{\hyperlink{classtorchvision__down_1_1datasets_1_1video__utils_1_1_video_clips_a82f18849227218af1b594c1f22ebbfb9}{video\+\_\+pts}} = \mbox{[}$\,$\mbox{]}
+\item 
+list \mbox{\hyperlink{classtorchvision__down_1_1datasets_1_1video__utils_1_1_video_clips_a4e4538ceac7f261919b4eb5275e0160f}{video\+\_\+fps}} = \mbox{[}$\,$\mbox{]}
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1datasets_1_1video__utils_1_1_video_clips_a1088ad740ad1a2efa3d7b864f01beefd}{num\+\_\+frames}} = d
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1datasets_1_1video__utils_1_1_video_clips_a075cf17539ef017a0d0eed073a72ac3d}{step}}
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1datasets_1_1video__utils_1_1_video_clips_ac5dac8f10e3b70ab2dda88de38c7dacd}{frame\+\_\+rate}}
+\item 
+list \mbox{\hyperlink{classtorchvision__down_1_1datasets_1_1video__utils_1_1_video_clips_ac6dfb5d1def9e351d6b48dfdf95537ca}{clips}} = \mbox{[}$\,$\mbox{]}
+\item 
+list \mbox{\hyperlink{classtorchvision__down_1_1datasets_1_1video__utils_1_1_video_clips_a8d3801f2b8d306204d68aaf4e19c52a1}{resampling\+\_\+idxs}} = \mbox{[}$\,$\mbox{]}
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1datasets_1_1video__utils_1_1_video_clips_a79539574e8b5ed2af29928f9e9112f9e}{cumulative\+\_\+sizes}} = clip\+\_\+lengths.\+cumsum(0).tolist()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+None \mbox{\hyperlink{classtorchvision__down_1_1datasets_1_1video__utils_1_1_video_clips_a5c0372bf9412b8b32f2b4f6a5f4ab4be}{\+\_\+compute\+\_\+frame\+\_\+pts}} (self)
+\item 
+None \mbox{\hyperlink{classtorchvision__down_1_1datasets_1_1video__utils_1_1_video_clips_ada865338f76779ea9a73e4ed00b15e3e}{\+\_\+init\+\_\+from\+\_\+metadata}} (self, Dict\mbox{[}str, Any\mbox{]} \mbox{\hyperlink{classtorchvision__down_1_1datasets_1_1video__utils_1_1_video_clips_a60963536a1bebf9f8267d7786c58f8ef}{metadata}})
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+Union\mbox{[}slice, torch.\+Tensor\mbox{]} \mbox{\hyperlink{classtorchvision__down_1_1datasets_1_1video__utils_1_1_video_clips_a2f9c8f937da3ad6f9bda707930b2c9c9}{\+\_\+resample\+\_\+video\+\_\+idx}} (int \mbox{\hyperlink{classtorchvision__down_1_1datasets_1_1video__utils_1_1_video_clips_a1088ad740ad1a2efa3d7b864f01beefd}{num\+\_\+frames}}, int original\+\_\+fps, int new\+\_\+fps)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1datasets_1_1video__utils_1_1_video_clips_a2a73c3b28475e99839de09503769b4e9}{\+\_\+video\+\_\+width}} = \+\_\+video\+\_\+width
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1datasets_1_1video__utils_1_1_video_clips_a8a378d8d7ba88bd5c3c648f08cda6162}{\+\_\+video\+\_\+height}} = \+\_\+video\+\_\+height
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1datasets_1_1video__utils_1_1_video_clips_a596bb4a3939c432c5525edef82691206}{\+\_\+video\+\_\+min\+\_\+dimension}} = \+\_\+video\+\_\+min\+\_\+dimension
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1datasets_1_1video__utils_1_1_video_clips_a310039c6c44a20d9e8287a54dc897a68}{\+\_\+video\+\_\+max\+\_\+dimension}} = \+\_\+video\+\_\+max\+\_\+dimension
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1datasets_1_1video__utils_1_1_video_clips_a1be07f1878f08d3dcdd60d10ac45101b}{\+\_\+audio\+\_\+samples}} = \+\_\+audio\+\_\+samples
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1datasets_1_1video__utils_1_1_video_clips_ae78410c1ebf52142d0c8925285628276}{\+\_\+audio\+\_\+channels}} = \+\_\+audio\+\_\+channels
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1datasets_1_1video__utils_1_1_video_clips_aeb7415d9a848e5d0934a33aae9396b6e}{\+\_\+\+\_\+dict\+\_\+\+\_\+}} = d
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}Given a list of video files, computes all consecutive subvideos of size
+`clip_length_in_frames`, where the distance between each subvideo in the
+same video is defined by `frames_between_clips`.
+If `frame_rate` is specified, it will also resample all the videos to have
+the same frame rate, and the clips will refer to this frame rate.
+
+Creating this instance the first time is time-consuming, as it needs to
+decode all the videos in `video_paths`. It is recommended that you
+cache the results after instantiation of the class.
+
+Recreating the clips for different clip lengths is fast, and can be done
+with the `compute_clips` method.
+
+Args:
+    video_paths (List[str]): paths to the video files
+    clip_length_in_frames (int): size of a clip in number of frames
+    frames_between_clips (int): step (in frames) between each clip
+    frame_rate (int, optional): if specified, it will resample the video
+        so that it has `frame_rate`, and then the clips will be defined
+        on the resampled video
+    num_workers (int): how many subprocesses to use for data loading.
+        0 means that the data will be loaded in the main process. (default: 0)
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classtorchvision__down_1_1datasets_1_1video__utils_1_1_video_clips_aa875de4407b17bad64627805f86945dd}\index{torchvision\_down.datasets.video\_utils.VideoClips@{torchvision\_down.datasets.video\_utils.VideoClips}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!torchvision\_down.datasets.video\_utils.VideoClips@{torchvision\_down.datasets.video\_utils.VideoClips}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1datasets_1_1video__utils_1_1_video_clips_aa875de4407b17bad64627805f86945dd} 
+ None torchvision\+\_\+down.\+datasets.\+video\+\_\+utils.\+Video\+Clips.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{List\mbox{[}str\mbox{]}}]{video\+\_\+paths}{, }\item[{int }]{clip\+\_\+length\+\_\+in\+\_\+frames}{ = {\ttfamily 16}, }\item[{int }]{frames\+\_\+between\+\_\+clips}{ = {\ttfamily 1}, }\item[{Optional\mbox{[}int\mbox{]} }]{frame\+\_\+rate}{ = {\ttfamily None}, }\item[{Optional\mbox{[}Dict\mbox{[}str, Any\mbox{]}\mbox{]} }]{\+\_\+precomputed\+\_\+metadata}{ = {\ttfamily None}, }\item[{int }]{num\+\_\+workers}{ = {\ttfamily 0}, }\item[{int }]{\+\_\+video\+\_\+width}{ = {\ttfamily 0}, }\item[{int }]{\+\_\+video\+\_\+height}{ = {\ttfamily 0}, }\item[{int }]{\+\_\+video\+\_\+min\+\_\+dimension}{ = {\ttfamily 0}, }\item[{int }]{\+\_\+video\+\_\+max\+\_\+dimension}{ = {\ttfamily 0}, }\item[{int }]{\+\_\+audio\+\_\+samples}{ = {\ttfamily 0}, }\item[{int }]{\+\_\+audio\+\_\+channels}{ = {\ttfamily 0}}\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classtorchvision__down_1_1datasets_1_1video__utils_1_1_video_clips_a6106be1e17d756863d4c5beef2130469}\index{torchvision\_down.datasets.video\_utils.VideoClips@{torchvision\_down.datasets.video\_utils.VideoClips}!\_\_getstate\_\_@{\_\_getstate\_\_}}
+\index{\_\_getstate\_\_@{\_\_getstate\_\_}!torchvision\_down.datasets.video\_utils.VideoClips@{torchvision\_down.datasets.video\_utils.VideoClips}}
+\doxysubsubsection{\texorpdfstring{\_\_getstate\_\_()}{\_\_getstate\_\_()}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1datasets_1_1video__utils_1_1_video_clips_a6106be1e17d756863d4c5beef2130469} 
+ Dict\mbox{[}str, Any\mbox{]} torchvision\+\_\+down.\+datasets.\+video\+\_\+utils.\+Video\+Clips.\+\_\+\+\_\+getstate\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classtorchvision__down_1_1datasets_1_1video__utils_1_1_video_clips_a1fe299743640135e4a4669053457a432}\index{torchvision\_down.datasets.video\_utils.VideoClips@{torchvision\_down.datasets.video\_utils.VideoClips}!\_\_len\_\_@{\_\_len\_\_}}
+\index{\_\_len\_\_@{\_\_len\_\_}!torchvision\_down.datasets.video\_utils.VideoClips@{torchvision\_down.datasets.video\_utils.VideoClips}}
+\doxysubsubsection{\texorpdfstring{\_\_len\_\_()}{\_\_len\_\_()}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1datasets_1_1video__utils_1_1_video_clips_a1fe299743640135e4a4669053457a432} 
+ int torchvision\+\_\+down.\+datasets.\+video\+\_\+utils.\+Video\+Clips.\+\_\+\+\_\+len\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classtorchvision__down_1_1datasets_1_1video__utils_1_1_video_clips_a64a91944c01f4f86dca389b4c0012ae0}\index{torchvision\_down.datasets.video\_utils.VideoClips@{torchvision\_down.datasets.video\_utils.VideoClips}!\_\_setstate\_\_@{\_\_setstate\_\_}}
+\index{\_\_setstate\_\_@{\_\_setstate\_\_}!torchvision\_down.datasets.video\_utils.VideoClips@{torchvision\_down.datasets.video\_utils.VideoClips}}
+\doxysubsubsection{\texorpdfstring{\_\_setstate\_\_()}{\_\_setstate\_\_()}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1datasets_1_1video__utils_1_1_video_clips_a64a91944c01f4f86dca389b4c0012ae0} 
+ None torchvision\+\_\+down.\+datasets.\+video\+\_\+utils.\+Video\+Clips.\+\_\+\+\_\+setstate\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{Dict\mbox{[}str, Any\mbox{]}}]{d}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classtorchvision__down_1_1datasets_1_1video__utils_1_1_video_clips_a5c0372bf9412b8b32f2b4f6a5f4ab4be}\index{torchvision\_down.datasets.video\_utils.VideoClips@{torchvision\_down.datasets.video\_utils.VideoClips}!\_compute\_frame\_pts@{\_compute\_frame\_pts}}
+\index{\_compute\_frame\_pts@{\_compute\_frame\_pts}!torchvision\_down.datasets.video\_utils.VideoClips@{torchvision\_down.datasets.video\_utils.VideoClips}}
+\doxysubsubsection{\texorpdfstring{\_compute\_frame\_pts()}{\_compute\_frame\_pts()}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1datasets_1_1video__utils_1_1_video_clips_a5c0372bf9412b8b32f2b4f6a5f4ab4be} 
+ None torchvision\+\_\+down.\+datasets.\+video\+\_\+utils.\+Video\+Clips.\+\_\+compute\+\_\+frame\+\_\+pts (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classtorchvision__down_1_1datasets_1_1video__utils_1_1_video_clips_ada865338f76779ea9a73e4ed00b15e3e}\index{torchvision\_down.datasets.video\_utils.VideoClips@{torchvision\_down.datasets.video\_utils.VideoClips}!\_init\_from\_metadata@{\_init\_from\_metadata}}
+\index{\_init\_from\_metadata@{\_init\_from\_metadata}!torchvision\_down.datasets.video\_utils.VideoClips@{torchvision\_down.datasets.video\_utils.VideoClips}}
+\doxysubsubsection{\texorpdfstring{\_init\_from\_metadata()}{\_init\_from\_metadata()}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1datasets_1_1video__utils_1_1_video_clips_ada865338f76779ea9a73e4ed00b15e3e} 
+ None torchvision\+\_\+down.\+datasets.\+video\+\_\+utils.\+Video\+Clips.\+\_\+init\+\_\+from\+\_\+metadata (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{Dict\mbox{[}str, Any\mbox{]}}]{metadata}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classtorchvision__down_1_1datasets_1_1video__utils_1_1_video_clips_a2f9c8f937da3ad6f9bda707930b2c9c9}\index{torchvision\_down.datasets.video\_utils.VideoClips@{torchvision\_down.datasets.video\_utils.VideoClips}!\_resample\_video\_idx@{\_resample\_video\_idx}}
+\index{\_resample\_video\_idx@{\_resample\_video\_idx}!torchvision\_down.datasets.video\_utils.VideoClips@{torchvision\_down.datasets.video\_utils.VideoClips}}
+\doxysubsubsection{\texorpdfstring{\_resample\_video\_idx()}{\_resample\_video\_idx()}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1datasets_1_1video__utils_1_1_video_clips_a2f9c8f937da3ad6f9bda707930b2c9c9} 
+ Union\mbox{[}slice, torch.\+Tensor\mbox{]} torchvision\+\_\+down.\+datasets.\+video\+\_\+utils.\+Video\+Clips.\+\_\+resample\+\_\+video\+\_\+idx (\begin{DoxyParamCaption}\item[{int}]{num\+\_\+frames}{, }\item[{int}]{original\+\_\+fps}{, }\item[{int}]{new\+\_\+fps}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}
+
+\Hypertarget{classtorchvision__down_1_1datasets_1_1video__utils_1_1_video_clips_ab7e6824a4537933305a36ae2cbecd1da}\index{torchvision\_down.datasets.video\_utils.VideoClips@{torchvision\_down.datasets.video\_utils.VideoClips}!compute\_clips@{compute\_clips}}
+\index{compute\_clips@{compute\_clips}!torchvision\_down.datasets.video\_utils.VideoClips@{torchvision\_down.datasets.video\_utils.VideoClips}}
+\doxysubsubsection{\texorpdfstring{compute\_clips()}{compute\_clips()}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1datasets_1_1video__utils_1_1_video_clips_ab7e6824a4537933305a36ae2cbecd1da} 
+ None torchvision\+\_\+down.\+datasets.\+video\+\_\+utils.\+Video\+Clips.\+compute\+\_\+clips (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{int}]{num\+\_\+frames}{, }\item[{int}]{step}{, }\item[{Optional\mbox{[}int\mbox{]} }]{frame\+\_\+rate}{ = {\ttfamily None}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Compute all consecutive sequences of clips from video_pts.
+Always returns clips of size `num_frames`, meaning that the
+last few frames in a video can potentially be dropped.
+
+Args:
+    num_frames (int): number of frames for the clip
+    step (int): distance between two clips
+    frame_rate (int, optional): The frame rate
+\end{DoxyVerb}
+ \Hypertarget{classtorchvision__down_1_1datasets_1_1video__utils_1_1_video_clips_a884f68501a123be6be8334591f5fbe25}\index{torchvision\_down.datasets.video\_utils.VideoClips@{torchvision\_down.datasets.video\_utils.VideoClips}!compute\_clips\_for\_video@{compute\_clips\_for\_video}}
+\index{compute\_clips\_for\_video@{compute\_clips\_for\_video}!torchvision\_down.datasets.video\_utils.VideoClips@{torchvision\_down.datasets.video\_utils.VideoClips}}
+\doxysubsubsection{\texorpdfstring{compute\_clips\_for\_video()}{compute\_clips\_for\_video()}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1datasets_1_1video__utils_1_1_video_clips_a884f68501a123be6be8334591f5fbe25} 
+ Tuple\mbox{[}torch.\+Tensor, Union\mbox{[}List\mbox{[}slice\mbox{]}, torch.\+Tensor\mbox{]}\mbox{]} torchvision\+\_\+down.\+datasets.\+video\+\_\+utils.\+Video\+Clips.\+compute\+\_\+clips\+\_\+for\+\_\+video (\begin{DoxyParamCaption}\item[{torch.\+Tensor}]{video\+\_\+pts}{, }\item[{int}]{num\+\_\+frames}{, }\item[{int}]{step}{, }\item[{int}]{fps}{, }\item[{Optional\mbox{[}int\mbox{]} }]{frame\+\_\+rate}{ = {\ttfamily None}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classtorchvision__down_1_1datasets_1_1video__utils_1_1_video_clips_add4ee0d3bd6ee85c06ddc39954dfa1cf}\index{torchvision\_down.datasets.video\_utils.VideoClips@{torchvision\_down.datasets.video\_utils.VideoClips}!get\_clip@{get\_clip}}
+\index{get\_clip@{get\_clip}!torchvision\_down.datasets.video\_utils.VideoClips@{torchvision\_down.datasets.video\_utils.VideoClips}}
+\doxysubsubsection{\texorpdfstring{get\_clip()}{get\_clip()}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1datasets_1_1video__utils_1_1_video_clips_add4ee0d3bd6ee85c06ddc39954dfa1cf} 
+ Tuple\mbox{[}torch.\+Tensor, torch.\+Tensor, Dict\mbox{[}str, Any\mbox{]}, int\mbox{]} torchvision\+\_\+down.\+datasets.\+video\+\_\+utils.\+Video\+Clips.\+get\+\_\+clip (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{int}]{idx}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Gets a subclip from a list of videos.
+
+Args:
+    idx (int): index of the subclip. Must be between 0 and num_clips().
+
+Returns:
+    video (Tensor)
+    audio (Tensor)
+    info (Dict)
+    video_idx (int): index of the video in `video_paths`
+\end{DoxyVerb}
+ \Hypertarget{classtorchvision__down_1_1datasets_1_1video__utils_1_1_video_clips_a85cf896228cf8d0b678142755d66587e}\index{torchvision\_down.datasets.video\_utils.VideoClips@{torchvision\_down.datasets.video\_utils.VideoClips}!get\_clip\_location@{get\_clip\_location}}
+\index{get\_clip\_location@{get\_clip\_location}!torchvision\_down.datasets.video\_utils.VideoClips@{torchvision\_down.datasets.video\_utils.VideoClips}}
+\doxysubsubsection{\texorpdfstring{get\_clip\_location()}{get\_clip\_location()}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1datasets_1_1video__utils_1_1_video_clips_a85cf896228cf8d0b678142755d66587e} 
+ Tuple\mbox{[}int, int\mbox{]} torchvision\+\_\+down.\+datasets.\+video\+\_\+utils.\+Video\+Clips.\+get\+\_\+clip\+\_\+location (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{int}]{idx}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Converts a flattened representation of the indices into a video_idx, clip_idx
+representation.
+\end{DoxyVerb}
+ \Hypertarget{classtorchvision__down_1_1datasets_1_1video__utils_1_1_video_clips_a60963536a1bebf9f8267d7786c58f8ef}\index{torchvision\_down.datasets.video\_utils.VideoClips@{torchvision\_down.datasets.video\_utils.VideoClips}!metadata@{metadata}}
+\index{metadata@{metadata}!torchvision\_down.datasets.video\_utils.VideoClips@{torchvision\_down.datasets.video\_utils.VideoClips}}
+\doxysubsubsection{\texorpdfstring{metadata()}{metadata()}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1datasets_1_1video__utils_1_1_video_clips_a60963536a1bebf9f8267d7786c58f8ef} 
+ Dict\mbox{[}str, Any\mbox{]} torchvision\+\_\+down.\+datasets.\+video\+\_\+utils.\+Video\+Clips.\+metadata (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classtorchvision__down_1_1datasets_1_1video__utils_1_1_video_clips_ac4a8875009b75fd2ab4af2adcd576aa6}\index{torchvision\_down.datasets.video\_utils.VideoClips@{torchvision\_down.datasets.video\_utils.VideoClips}!num\_clips@{num\_clips}}
+\index{num\_clips@{num\_clips}!torchvision\_down.datasets.video\_utils.VideoClips@{torchvision\_down.datasets.video\_utils.VideoClips}}
+\doxysubsubsection{\texorpdfstring{num\_clips()}{num\_clips()}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1datasets_1_1video__utils_1_1_video_clips_ac4a8875009b75fd2ab4af2adcd576aa6} 
+ int torchvision\+\_\+down.\+datasets.\+video\+\_\+utils.\+Video\+Clips.\+num\+\_\+clips (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Number of subclips that are available in the video list.
+\end{DoxyVerb}
+ \Hypertarget{classtorchvision__down_1_1datasets_1_1video__utils_1_1_video_clips_a7e3c3117357a1d41862fb90e0850467d}\index{torchvision\_down.datasets.video\_utils.VideoClips@{torchvision\_down.datasets.video\_utils.VideoClips}!num\_videos@{num\_videos}}
+\index{num\_videos@{num\_videos}!torchvision\_down.datasets.video\_utils.VideoClips@{torchvision\_down.datasets.video\_utils.VideoClips}}
+\doxysubsubsection{\texorpdfstring{num\_videos()}{num\_videos()}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1datasets_1_1video__utils_1_1_video_clips_a7e3c3117357a1d41862fb90e0850467d} 
+ int torchvision\+\_\+down.\+datasets.\+video\+\_\+utils.\+Video\+Clips.\+num\+\_\+videos (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classtorchvision__down_1_1datasets_1_1video__utils_1_1_video_clips_ac6054d95a4b078fcfe8458c3c53c049e}\index{torchvision\_down.datasets.video\_utils.VideoClips@{torchvision\_down.datasets.video\_utils.VideoClips}!subset@{subset}}
+\index{subset@{subset}!torchvision\_down.datasets.video\_utils.VideoClips@{torchvision\_down.datasets.video\_utils.VideoClips}}
+\doxysubsubsection{\texorpdfstring{subset()}{subset()}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1datasets_1_1video__utils_1_1_video_clips_ac6054d95a4b078fcfe8458c3c53c049e} 
+ "{}Video\+Clips"{} torchvision\+\_\+down.\+datasets.\+video\+\_\+utils.\+Video\+Clips.\+subset (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{List\mbox{[}int\mbox{]}}]{indices}{}\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classtorchvision__down_1_1datasets_1_1video__utils_1_1_video_clips_aeb7415d9a848e5d0934a33aae9396b6e}\index{torchvision\_down.datasets.video\_utils.VideoClips@{torchvision\_down.datasets.video\_utils.VideoClips}!\_\_dict\_\_@{\_\_dict\_\_}}
+\index{\_\_dict\_\_@{\_\_dict\_\_}!torchvision\_down.datasets.video\_utils.VideoClips@{torchvision\_down.datasets.video\_utils.VideoClips}}
+\doxysubsubsection{\texorpdfstring{\_\_dict\_\_}{\_\_dict\_\_}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1datasets_1_1video__utils_1_1_video_clips_aeb7415d9a848e5d0934a33aae9396b6e} 
+torchvision\+\_\+down.\+datasets.\+video\+\_\+utils.\+Video\+Clips.\+\_\+\+\_\+dict\+\_\+\+\_\+ = d\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{classtorchvision__down_1_1datasets_1_1video__utils_1_1_video_clips_ae78410c1ebf52142d0c8925285628276}\index{torchvision\_down.datasets.video\_utils.VideoClips@{torchvision\_down.datasets.video\_utils.VideoClips}!\_audio\_channels@{\_audio\_channels}}
+\index{\_audio\_channels@{\_audio\_channels}!torchvision\_down.datasets.video\_utils.VideoClips@{torchvision\_down.datasets.video\_utils.VideoClips}}
+\doxysubsubsection{\texorpdfstring{\_audio\_channels}{\_audio\_channels}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1datasets_1_1video__utils_1_1_video_clips_ae78410c1ebf52142d0c8925285628276} 
+torchvision\+\_\+down.\+datasets.\+video\+\_\+utils.\+Video\+Clips.\+\_\+audio\+\_\+channels = \+\_\+audio\+\_\+channels\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classtorchvision__down_1_1datasets_1_1video__utils_1_1_video_clips_a1be07f1878f08d3dcdd60d10ac45101b}\index{torchvision\_down.datasets.video\_utils.VideoClips@{torchvision\_down.datasets.video\_utils.VideoClips}!\_audio\_samples@{\_audio\_samples}}
+\index{\_audio\_samples@{\_audio\_samples}!torchvision\_down.datasets.video\_utils.VideoClips@{torchvision\_down.datasets.video\_utils.VideoClips}}
+\doxysubsubsection{\texorpdfstring{\_audio\_samples}{\_audio\_samples}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1datasets_1_1video__utils_1_1_video_clips_a1be07f1878f08d3dcdd60d10ac45101b} 
+torchvision\+\_\+down.\+datasets.\+video\+\_\+utils.\+Video\+Clips.\+\_\+audio\+\_\+samples = \+\_\+audio\+\_\+samples\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classtorchvision__down_1_1datasets_1_1video__utils_1_1_video_clips_a8a378d8d7ba88bd5c3c648f08cda6162}\index{torchvision\_down.datasets.video\_utils.VideoClips@{torchvision\_down.datasets.video\_utils.VideoClips}!\_video\_height@{\_video\_height}}
+\index{\_video\_height@{\_video\_height}!torchvision\_down.datasets.video\_utils.VideoClips@{torchvision\_down.datasets.video\_utils.VideoClips}}
+\doxysubsubsection{\texorpdfstring{\_video\_height}{\_video\_height}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1datasets_1_1video__utils_1_1_video_clips_a8a378d8d7ba88bd5c3c648f08cda6162} 
+torchvision\+\_\+down.\+datasets.\+video\+\_\+utils.\+Video\+Clips.\+\_\+video\+\_\+height = \+\_\+video\+\_\+height\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classtorchvision__down_1_1datasets_1_1video__utils_1_1_video_clips_a310039c6c44a20d9e8287a54dc897a68}\index{torchvision\_down.datasets.video\_utils.VideoClips@{torchvision\_down.datasets.video\_utils.VideoClips}!\_video\_max\_dimension@{\_video\_max\_dimension}}
+\index{\_video\_max\_dimension@{\_video\_max\_dimension}!torchvision\_down.datasets.video\_utils.VideoClips@{torchvision\_down.datasets.video\_utils.VideoClips}}
+\doxysubsubsection{\texorpdfstring{\_video\_max\_dimension}{\_video\_max\_dimension}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1datasets_1_1video__utils_1_1_video_clips_a310039c6c44a20d9e8287a54dc897a68} 
+torchvision\+\_\+down.\+datasets.\+video\+\_\+utils.\+Video\+Clips.\+\_\+video\+\_\+max\+\_\+dimension = \+\_\+video\+\_\+max\+\_\+dimension\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classtorchvision__down_1_1datasets_1_1video__utils_1_1_video_clips_a596bb4a3939c432c5525edef82691206}\index{torchvision\_down.datasets.video\_utils.VideoClips@{torchvision\_down.datasets.video\_utils.VideoClips}!\_video\_min\_dimension@{\_video\_min\_dimension}}
+\index{\_video\_min\_dimension@{\_video\_min\_dimension}!torchvision\_down.datasets.video\_utils.VideoClips@{torchvision\_down.datasets.video\_utils.VideoClips}}
+\doxysubsubsection{\texorpdfstring{\_video\_min\_dimension}{\_video\_min\_dimension}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1datasets_1_1video__utils_1_1_video_clips_a596bb4a3939c432c5525edef82691206} 
+torchvision\+\_\+down.\+datasets.\+video\+\_\+utils.\+Video\+Clips.\+\_\+video\+\_\+min\+\_\+dimension = \+\_\+video\+\_\+min\+\_\+dimension\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classtorchvision__down_1_1datasets_1_1video__utils_1_1_video_clips_a2a73c3b28475e99839de09503769b4e9}\index{torchvision\_down.datasets.video\_utils.VideoClips@{torchvision\_down.datasets.video\_utils.VideoClips}!\_video\_width@{\_video\_width}}
+\index{\_video\_width@{\_video\_width}!torchvision\_down.datasets.video\_utils.VideoClips@{torchvision\_down.datasets.video\_utils.VideoClips}}
+\doxysubsubsection{\texorpdfstring{\_video\_width}{\_video\_width}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1datasets_1_1video__utils_1_1_video_clips_a2a73c3b28475e99839de09503769b4e9} 
+torchvision\+\_\+down.\+datasets.\+video\+\_\+utils.\+Video\+Clips.\+\_\+video\+\_\+width = \+\_\+video\+\_\+width\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classtorchvision__down_1_1datasets_1_1video__utils_1_1_video_clips_ac6dfb5d1def9e351d6b48dfdf95537ca}\index{torchvision\_down.datasets.video\_utils.VideoClips@{torchvision\_down.datasets.video\_utils.VideoClips}!clips@{clips}}
+\index{clips@{clips}!torchvision\_down.datasets.video\_utils.VideoClips@{torchvision\_down.datasets.video\_utils.VideoClips}}
+\doxysubsubsection{\texorpdfstring{clips}{clips}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1datasets_1_1video__utils_1_1_video_clips_ac6dfb5d1def9e351d6b48dfdf95537ca} 
+list torchvision\+\_\+down.\+datasets.\+video\+\_\+utils.\+Video\+Clips.\+clips = \mbox{[}$\,$\mbox{]}}
+
+\Hypertarget{classtorchvision__down_1_1datasets_1_1video__utils_1_1_video_clips_a79539574e8b5ed2af29928f9e9112f9e}\index{torchvision\_down.datasets.video\_utils.VideoClips@{torchvision\_down.datasets.video\_utils.VideoClips}!cumulative\_sizes@{cumulative\_sizes}}
+\index{cumulative\_sizes@{cumulative\_sizes}!torchvision\_down.datasets.video\_utils.VideoClips@{torchvision\_down.datasets.video\_utils.VideoClips}}
+\doxysubsubsection{\texorpdfstring{cumulative\_sizes}{cumulative\_sizes}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1datasets_1_1video__utils_1_1_video_clips_a79539574e8b5ed2af29928f9e9112f9e} 
+torchvision\+\_\+down.\+datasets.\+video\+\_\+utils.\+Video\+Clips.\+cumulative\+\_\+sizes = clip\+\_\+lengths.\+cumsum(0).tolist()}
+
+\Hypertarget{classtorchvision__down_1_1datasets_1_1video__utils_1_1_video_clips_ac5dac8f10e3b70ab2dda88de38c7dacd}\index{torchvision\_down.datasets.video\_utils.VideoClips@{torchvision\_down.datasets.video\_utils.VideoClips}!frame\_rate@{frame\_rate}}
+\index{frame\_rate@{frame\_rate}!torchvision\_down.datasets.video\_utils.VideoClips@{torchvision\_down.datasets.video\_utils.VideoClips}}
+\doxysubsubsection{\texorpdfstring{frame\_rate}{frame\_rate}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1datasets_1_1video__utils_1_1_video_clips_ac5dac8f10e3b70ab2dda88de38c7dacd} 
+torchvision\+\_\+down.\+datasets.\+video\+\_\+utils.\+Video\+Clips.\+frame\+\_\+rate}
+
+\Hypertarget{classtorchvision__down_1_1datasets_1_1video__utils_1_1_video_clips_a1088ad740ad1a2efa3d7b864f01beefd}\index{torchvision\_down.datasets.video\_utils.VideoClips@{torchvision\_down.datasets.video\_utils.VideoClips}!num\_frames@{num\_frames}}
+\index{num\_frames@{num\_frames}!torchvision\_down.datasets.video\_utils.VideoClips@{torchvision\_down.datasets.video\_utils.VideoClips}}
+\doxysubsubsection{\texorpdfstring{num\_frames}{num\_frames}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1datasets_1_1video__utils_1_1_video_clips_a1088ad740ad1a2efa3d7b864f01beefd} 
+torchvision\+\_\+down.\+datasets.\+video\+\_\+utils.\+Video\+Clips.\+num\+\_\+frames = d}
+
+\Hypertarget{classtorchvision__down_1_1datasets_1_1video__utils_1_1_video_clips_ad5e1c743b13cd7a55900ce93a6a93f67}\index{torchvision\_down.datasets.video\_utils.VideoClips@{torchvision\_down.datasets.video\_utils.VideoClips}!num\_workers@{num\_workers}}
+\index{num\_workers@{num\_workers}!torchvision\_down.datasets.video\_utils.VideoClips@{torchvision\_down.datasets.video\_utils.VideoClips}}
+\doxysubsubsection{\texorpdfstring{num\_workers}{num\_workers}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1datasets_1_1video__utils_1_1_video_clips_ad5e1c743b13cd7a55900ce93a6a93f67} 
+torchvision\+\_\+down.\+datasets.\+video\+\_\+utils.\+Video\+Clips.\+num\+\_\+workers = num\+\_\+workers}
+
+\Hypertarget{classtorchvision__down_1_1datasets_1_1video__utils_1_1_video_clips_a8d3801f2b8d306204d68aaf4e19c52a1}\index{torchvision\_down.datasets.video\_utils.VideoClips@{torchvision\_down.datasets.video\_utils.VideoClips}!resampling\_idxs@{resampling\_idxs}}
+\index{resampling\_idxs@{resampling\_idxs}!torchvision\_down.datasets.video\_utils.VideoClips@{torchvision\_down.datasets.video\_utils.VideoClips}}
+\doxysubsubsection{\texorpdfstring{resampling\_idxs}{resampling\_idxs}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1datasets_1_1video__utils_1_1_video_clips_a8d3801f2b8d306204d68aaf4e19c52a1} 
+list torchvision\+\_\+down.\+datasets.\+video\+\_\+utils.\+Video\+Clips.\+resampling\+\_\+idxs = \mbox{[}$\,$\mbox{]}}
+
+\Hypertarget{classtorchvision__down_1_1datasets_1_1video__utils_1_1_video_clips_a075cf17539ef017a0d0eed073a72ac3d}\index{torchvision\_down.datasets.video\_utils.VideoClips@{torchvision\_down.datasets.video\_utils.VideoClips}!step@{step}}
+\index{step@{step}!torchvision\_down.datasets.video\_utils.VideoClips@{torchvision\_down.datasets.video\_utils.VideoClips}}
+\doxysubsubsection{\texorpdfstring{step}{step}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1datasets_1_1video__utils_1_1_video_clips_a075cf17539ef017a0d0eed073a72ac3d} 
+torchvision\+\_\+down.\+datasets.\+video\+\_\+utils.\+Video\+Clips.\+step}
+
+\Hypertarget{classtorchvision__down_1_1datasets_1_1video__utils_1_1_video_clips_a4e4538ceac7f261919b4eb5275e0160f}\index{torchvision\_down.datasets.video\_utils.VideoClips@{torchvision\_down.datasets.video\_utils.VideoClips}!video\_fps@{video\_fps}}
+\index{video\_fps@{video\_fps}!torchvision\_down.datasets.video\_utils.VideoClips@{torchvision\_down.datasets.video\_utils.VideoClips}}
+\doxysubsubsection{\texorpdfstring{video\_fps}{video\_fps}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1datasets_1_1video__utils_1_1_video_clips_a4e4538ceac7f261919b4eb5275e0160f} 
+torchvision\+\_\+down.\+datasets.\+video\+\_\+utils.\+Video\+Clips.\+video\+\_\+fps = \mbox{[}$\,$\mbox{]}}
+
+\Hypertarget{classtorchvision__down_1_1datasets_1_1video__utils_1_1_video_clips_a924cbb4688d21f650fad50fe00bde690}\index{torchvision\_down.datasets.video\_utils.VideoClips@{torchvision\_down.datasets.video\_utils.VideoClips}!video\_paths@{video\_paths}}
+\index{video\_paths@{video\_paths}!torchvision\_down.datasets.video\_utils.VideoClips@{torchvision\_down.datasets.video\_utils.VideoClips}}
+\doxysubsubsection{\texorpdfstring{video\_paths}{video\_paths}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1datasets_1_1video__utils_1_1_video_clips_a924cbb4688d21f650fad50fe00bde690} 
+torchvision\+\_\+down.\+datasets.\+video\+\_\+utils.\+Video\+Clips.\+video\+\_\+paths = video\+\_\+paths}
+
+\Hypertarget{classtorchvision__down_1_1datasets_1_1video__utils_1_1_video_clips_a82f18849227218af1b594c1f22ebbfb9}\index{torchvision\_down.datasets.video\_utils.VideoClips@{torchvision\_down.datasets.video\_utils.VideoClips}!video\_pts@{video\_pts}}
+\index{video\_pts@{video\_pts}!torchvision\_down.datasets.video\_utils.VideoClips@{torchvision\_down.datasets.video\_utils.VideoClips}}
+\doxysubsubsection{\texorpdfstring{video\_pts}{video\_pts}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1datasets_1_1video__utils_1_1_video_clips_a82f18849227218af1b594c1f22ebbfb9} 
+torchvision\+\_\+down.\+datasets.\+video\+\_\+utils.\+Video\+Clips.\+video\+\_\+pts = \mbox{[}$\,$\mbox{]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Cervi\+AI/torchvision\+\_\+down/datasets/\mbox{\hyperlink{video__utils_8py}{video\+\_\+utils.\+py}}\end{DoxyCompactItemize}

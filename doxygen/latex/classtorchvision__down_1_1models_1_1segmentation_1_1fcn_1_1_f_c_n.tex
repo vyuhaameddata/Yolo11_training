@@ -1,0 +1,46 @@
+\doxysection{torchvision\+\_\+down.\+models.\+segmentation.\+fcn.\+FCN Class Reference}
+\hypertarget{classtorchvision__down_1_1models_1_1segmentation_1_1fcn_1_1_f_c_n}{}\label{classtorchvision__down_1_1models_1_1segmentation_1_1fcn_1_1_f_c_n}\index{torchvision\_down.models.segmentation.fcn.FCN@{torchvision\_down.models.segmentation.fcn.FCN}}
+Inheritance diagram for torchvision\+\_\+down.\+models.\+segmentation.\+fcn.\+FCN\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{classtorchvision__down_1_1models_1_1segmentation_1_1fcn_1_1_f_c_n}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Additional Inherited Members}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{classtorchvision__down_1_1models_1_1segmentation_1_1__utils_1_1___simple_segmentation_model}{torchvision\+\_\+down.\+models.\+segmentation.\+\_\+utils.\+\_\+\+Simple\+Segmentation\+Model}}}
+\begin{DoxyCompactItemize}
+\item 
+None \mbox{\hyperlink{classtorchvision__down_1_1models_1_1segmentation_1_1__utils_1_1___simple_segmentation_model_aa82bc0abbafb4433201cf91488f9e9aa}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, nn.\+Module \mbox{\hyperlink{classtorchvision__down_1_1models_1_1segmentation_1_1__utils_1_1___simple_segmentation_model_adf687a4fcf51b0a70fa8e1da7b957e85}{backbone}}, nn.\+Module \mbox{\hyperlink{classtorchvision__down_1_1models_1_1segmentation_1_1__utils_1_1___simple_segmentation_model_a3aa50c333c27312335b610748006b070}{classifier}}, Optional\mbox{[}nn.\+Module\mbox{]} \mbox{\hyperlink{classtorchvision__down_1_1models_1_1segmentation_1_1__utils_1_1___simple_segmentation_model_abf54ecccc0e45287089febe99c8aa4a8}{aux\+\_\+classifier}}=None)
+\item 
+Dict\mbox{[}str, Tensor\mbox{]} \mbox{\hyperlink{classtorchvision__down_1_1models_1_1segmentation_1_1__utils_1_1___simple_segmentation_model_a5f0761b4137f9a1dbeb398238ed8e890}{forward}} (self, Tensor x)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes inherited from \mbox{\hyperlink{classtorchvision__down_1_1models_1_1segmentation_1_1__utils_1_1___simple_segmentation_model}{torchvision\+\_\+down.\+models.\+segmentation.\+\_\+utils.\+\_\+\+Simple\+Segmentation\+Model}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1models_1_1segmentation_1_1__utils_1_1___simple_segmentation_model_adf687a4fcf51b0a70fa8e1da7b957e85}{backbone}} = backbone
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1models_1_1segmentation_1_1__utils_1_1___simple_segmentation_model_a3aa50c333c27312335b610748006b070}{classifier}} = classifier
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1models_1_1segmentation_1_1__utils_1_1___simple_segmentation_model_abf54ecccc0e45287089febe99c8aa4a8}{aux\+\_\+classifier}} = aux\+\_\+classifier
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}Implements FCN model from
+`"Fully Convolutional Networks for Semantic Segmentation"
+<https://arxiv.org/abs/1411.4038>`_.
+
+Args:
+    backbone (nn.Module): the network used to compute the features for the model.
+        The backbone should return an OrderedDict[Tensor], with the key being
+        "out" for the last feature map used, and "aux" if an auxiliary classifier
+        is used.
+    classifier (nn.Module): module that takes the "out" element returned from
+        the backbone and returns a dense prediction.
+    aux_classifier (nn.Module, optional): auxiliary classifier used during training
+\end{DoxyVerb}
+ 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Cervi\+AI/torchvision\+\_\+down/models/segmentation/\mbox{\hyperlink{fcn_8py}{fcn.\+py}}\end{DoxyCompactItemize}

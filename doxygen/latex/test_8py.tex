@@ -1,0 +1,71 @@
+\doxysection{Cervi\+AI/test.py File Reference}
+\hypertarget{test_8py}{}\label{test_8py}\index{CerviAI/test.py@{CerviAI/test.py}}
+\doxysubsubsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+namespace \mbox{\hyperlink{namespacetest}{test}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{namespacetest_adccbc6024e205de9cae820fbd0b9ca4e}{test.\+test}} (\mbox{\hyperlink{namespacetest_aa6c44496d6660b944cf7c0292405fc14}{data}}, weights=None, batch\+\_\+size=32, imgsz=640, conf\+\_\+thres=0.\+001, iou\+\_\+thres=0.\+6, \mbox{\hyperlink{namespacetest_af127d6f6808cfb62c70b0f9548ba29e9}{save\+\_\+json}}=\mbox{\hyperlink{namespacetest_ac65bccd63c3214d52723379a438fa57b}{False}}, single\+\_\+cls=\mbox{\hyperlink{namespacetest_ac65bccd63c3214d52723379a438fa57b}{False}}, augment=\mbox{\hyperlink{namespacetest_ac65bccd63c3214d52723379a438fa57b}{False}}, verbose=\mbox{\hyperlink{namespacetest_ac65bccd63c3214d52723379a438fa57b}{False}}, model=None, dataloader=None, save\+\_\+dir=Path(\textquotesingle{}\textquotesingle{}), \mbox{\hyperlink{namespacetest_ac218a3516763b412159e38a34363c84c}{save\+\_\+txt}}=\mbox{\hyperlink{namespacetest_ac65bccd63c3214d52723379a438fa57b}{False}}, \mbox{\hyperlink{namespacetest_a4b6112091df46157f76069511cdab0e9}{save\+\_\+hybrid}}=\mbox{\hyperlink{namespacetest_ac65bccd63c3214d52723379a438fa57b}{False}}, \mbox{\hyperlink{namespacetest_acf360226e8e5d10240a175d82d2567ed}{save\+\_\+conf}}=\mbox{\hyperlink{namespacetest_ac65bccd63c3214d52723379a438fa57b}{False}}, \mbox{\hyperlink{namespacetest_a552b73a48f79d53085d6b7fc74caf040}{plots}}=True, wandb\+\_\+logger=None, compute\+\_\+loss=None, half\+\_\+precision=True, \mbox{\hyperlink{namespacetest_a9b16356eaf703e500858a84536d936d3}{trace}}=\mbox{\hyperlink{namespacetest_ac65bccd63c3214d52723379a438fa57b}{False}}, is\+\_\+coco=\mbox{\hyperlink{namespacetest_ac65bccd63c3214d52723379a438fa57b}{False}}, \mbox{\hyperlink{namespacetest_a1010e982497b5f591c635b0afaf369ba}{v5\+\_\+metric}}=\mbox{\hyperlink{namespacetest_ac65bccd63c3214d52723379a438fa57b}{False}})
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{namespacetest_a5868a2908793ccf384abecffb2e10f9f}{test.\+parser}} = argparse.\+Argument\+Parser(prog=\textquotesingle{}test.\+py\textquotesingle{})
+\item 
+\mbox{\hyperlink{namespacetest_a3866ac553b94fad00fcaa45112956658}{test.\+nargs}}
+\item 
+\mbox{\hyperlink{namespacetest_aa5babada9ae94655f1c280efba7fc6f9}{test.\+type}}
+\item 
+\mbox{\hyperlink{namespacetest_a25d1c08ead5d6fa93dd0f4422aff1228}{test.\+str}}
+\item 
+\mbox{\hyperlink{namespacetest_ab495196548118a10835355cbbcb6c34c}{test.\+default}}
+\item 
+\mbox{\hyperlink{namespacetest_ae07aa539fc28078762bd459af906f5e0}{test.\+help}}
+\item 
+\mbox{\hyperlink{namespacetest_a02f234a0e0ba9fa6dab66f15e9047217}{test.\+int}}
+\item 
+\mbox{\hyperlink{namespacetest_a69f5981c5fb049c70656dc44e15dd740}{test.\+float}}
+\item 
+\mbox{\hyperlink{namespacetest_afd7cbaa24b9a76b11854a2d239deb753}{test.\+action}}
+\item 
+\mbox{\hyperlink{namespacetest_a29371b4d5d71e6aa165cdf0927c07350}{test.\+opt}} = parser.\+parse\+\_\+args()
+\item 
+\mbox{\hyperlink{namespacetest_aa6c44496d6660b944cf7c0292405fc14}{test.\+data}}
+\item 
+\mbox{\hyperlink{namespacetest_a290418c0f05d95983896f552d82362f6}{test.\+start}} = time.\+time()
+\item 
+\mbox{\hyperlink{namespacetest_ac218a3516763b412159e38a34363c84c}{test.\+save\+\_\+txt}}
+\item 
+\mbox{\hyperlink{namespacetest_a4b6112091df46157f76069511cdab0e9}{test.\+save\+\_\+hybrid}}
+\item 
+\mbox{\hyperlink{namespacetest_acf360226e8e5d10240a175d82d2567ed}{test.\+save\+\_\+conf}}
+\item 
+\mbox{\hyperlink{namespacetest_a9b16356eaf703e500858a84536d936d3}{test.\+trace}}
+\item 
+\mbox{\hyperlink{namespacetest_a1010e982497b5f591c635b0afaf369ba}{test.\+v5\+\_\+metric}}
+\item 
+\mbox{\hyperlink{namespacetest_af127d6f6808cfb62c70b0f9548ba29e9}{test.\+save\+\_\+json}}
+\item 
+\mbox{\hyperlink{namespacetest_ac65bccd63c3214d52723379a438fa57b}{test.\+False}}
+\item 
+\mbox{\hyperlink{namespacetest_a552b73a48f79d53085d6b7fc74caf040}{test.\+plots}}
+\item 
+\mbox{\hyperlink{namespacetest_accf9c2b29590b2e2d68bb2614364444e}{test.\+x}} = list(range(256, 1536 + 128, 128))
+\item 
+\mbox{\hyperlink{namespacetest_a25d1c08ead5d6fa93dd0f4422aff1228}{str}} \mbox{\hyperlink{namespacetest_a5001a75284dab653378def774d4f4c56}{test.\+f}} = f\textquotesingle{}study\+\_\+\{Path(opt.\+data).stem\}\mbox{\hyperlink{namespacetest_a693cfa63e0c191a98241f1dfdd8f901e}{\+\_\+}}\{Path(w).stem\}.txt\textquotesingle{}
+\item 
+list \mbox{\hyperlink{namespacetest_a8e35cd41a1bbd5493b663b19c9df1d1d}{test.\+y}} = \mbox{[}$\,$\mbox{]}
+\item 
+\mbox{\hyperlink{namespacetest_ac1f92ca15306aee561188e0f37aabc66}{test.\+r}}
+\item 
+\mbox{\hyperlink{namespacetest_a693cfa63e0c191a98241f1dfdd8f901e}{test.\+\_\+}}
+\item 
+\mbox{\hyperlink{namespacetest_ae9ebdaf735944736b55d720cfe9c3e02}{test.\+t}}
+\item 
+\mbox{\hyperlink{namespacetest_a48b29b871466edf4bc50da6a8f354636}{test.\+fmt}}
+\item 
+\mbox{\hyperlink{namespacetest_a385f0c0aa41b9094f6f4c978546c60a8}{test.\+end}} = time.\+time()
+\end{DoxyCompactItemize}

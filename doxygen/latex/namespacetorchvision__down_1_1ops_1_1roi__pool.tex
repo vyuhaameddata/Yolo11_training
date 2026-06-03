@@ -1,0 +1,44 @@
+\doxysection{torchvision\+\_\+down.\+ops.\+roi\+\_\+pool Namespace Reference}
+\hypertarget{namespacetorchvision__down_1_1ops_1_1roi__pool}{}\label{namespacetorchvision__down_1_1ops_1_1roi__pool}\index{torchvision\_down.ops.roi\_pool@{torchvision\_down.ops.roi\_pool}}
+\doxysubsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classtorchvision__down_1_1ops_1_1roi__pool_1_1_ro_i_pool}{Ro\+IPool}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+Tensor \mbox{\hyperlink{namespacetorchvision__down_1_1ops_1_1roi__pool_add6651615ce449e3d99344f601887bc5}{roi\+\_\+pool}} (Tensor input, Union\mbox{[}Tensor, List\mbox{[}Tensor\mbox{]}\mbox{]} boxes, Broadcasting\+List2\mbox{[}int\mbox{]} output\+\_\+size, float spatial\+\_\+scale=1.\+0)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{namespacetorchvision__down_1_1ops_1_1roi__pool_add6651615ce449e3d99344f601887bc5}\index{torchvision\_down.ops.roi\_pool@{torchvision\_down.ops.roi\_pool}!roi\_pool@{roi\_pool}}
+\index{roi\_pool@{roi\_pool}!torchvision\_down.ops.roi\_pool@{torchvision\_down.ops.roi\_pool}}
+\doxysubsubsection{\texorpdfstring{roi\_pool()}{roi\_pool()}}
+{\footnotesize\ttfamily \label{namespacetorchvision__down_1_1ops_1_1roi__pool_add6651615ce449e3d99344f601887bc5} 
+ Tensor torchvision\+\_\+down.\+ops.\+roi\+\_\+pool.\+roi\+\_\+pool (\begin{DoxyParamCaption}\item[{Tensor}]{input}{, }\item[{Union\mbox{[}Tensor, List\mbox{[}Tensor\mbox{]}\mbox{]}}]{boxes}{, }\item[{Broadcasting\+List2\mbox{[}int\mbox{]}}]{output\+\_\+size}{, }\item[{float }]{spatial\+\_\+scale}{ = {\ttfamily 1.0}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Performs Region of Interest (RoI) Pool operator described in Fast R-CNN
+
+Args:
+    input (Tensor[N, C, H, W]): The input tensor, i.e. a batch with ``N`` elements. Each element
+        contains ``C`` feature maps of dimensions ``H x W``.
+    boxes (Tensor[K, 5] or List[Tensor[L, 4]]): the box coordinates in (x1, y1, x2, y2)
+        format where the regions will be taken from.
+        The coordinate must satisfy ``0 <= x1 < x2`` and ``0 <= y1 < y2``.
+        If a single Tensor is passed, then the first column should
+        contain the index of the corresponding element in the batch, i.e. a number in ``[0, N - 1]``.
+        If a list of Tensors is passed, then each Tensor will correspond to the boxes for an element i
+        in the batch.
+    output_size (int or Tuple[int, int]): the size of the output after the cropping
+        is performed, as (height, width)
+    spatial_scale (float): a scaling factor that maps the box coordinates to
+        the input coordinates. For example, if your boxes are defined on the scale
+        of a 224x224 image and your input is a 112x112 feature map (resulting from a 0.5x scaling of
+        the original image), you'll want to set this to 0.5. Default: 1.0
+
+Returns:
+    Tensor[K, C, output_size[0], output_size[1]]: The pooled RoIs.
+\end{DoxyVerb}
+ 

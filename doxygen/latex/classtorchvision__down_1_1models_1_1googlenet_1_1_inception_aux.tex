@@ -1,0 +1,80 @@
+\doxysection{torchvision\+\_\+down.\+models.\+googlenet.\+Inception\+Aux Class Reference}
+\hypertarget{classtorchvision__down_1_1models_1_1googlenet_1_1_inception_aux}{}\label{classtorchvision__down_1_1models_1_1googlenet_1_1_inception_aux}\index{torchvision\_down.models.googlenet.InceptionAux@{torchvision\_down.models.googlenet.InceptionAux}}
+Inheritance diagram for torchvision\+\_\+down.\+models.\+googlenet.\+Inception\+Aux\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{classtorchvision__down_1_1models_1_1googlenet_1_1_inception_aux}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+None \mbox{\hyperlink{classtorchvision__down_1_1models_1_1googlenet_1_1_inception_aux_a94d8de1003a8f835ff40510b5d0f7bbc}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, int in\+\_\+channels, int num\+\_\+classes, Optional\mbox{[}Callable\mbox{[}..., nn.\+Module\mbox{]}\mbox{]} conv\+\_\+block=None, float \mbox{\hyperlink{classtorchvision__down_1_1models_1_1googlenet_1_1_inception_aux_a857ab7542e8f2b1f0a24be1d90d971c3}{dropout}}=0.\+7)
+\item 
+Tensor \mbox{\hyperlink{classtorchvision__down_1_1models_1_1googlenet_1_1_inception_aux_a98214bbc851d47cd1350a030f00767ca}{forward}} (self, Tensor x)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1models_1_1googlenet_1_1_inception_aux_afa7cb56c5fb897a83eaffabd3d881dd9}{conv}} = conv\+\_\+block(in\+\_\+channels, 128, kernel\+\_\+size=1)
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1models_1_1googlenet_1_1_inception_aux_abd3dd1926be923d08123896d20b51484}{fc1}} = nn.\+Linear(2048, 1024)
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1models_1_1googlenet_1_1_inception_aux_afe90089f27c6a98deaf40d8c2fbd8c04}{fc2}} = nn.\+Linear(1024, num\+\_\+classes)
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1models_1_1googlenet_1_1_inception_aux_a857ab7542e8f2b1f0a24be1d90d971c3}{dropout}} = nn.\+Dropout(p=dropout)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classtorchvision__down_1_1models_1_1googlenet_1_1_inception_aux_a94d8de1003a8f835ff40510b5d0f7bbc}\index{torchvision\_down.models.googlenet.InceptionAux@{torchvision\_down.models.googlenet.InceptionAux}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!torchvision\_down.models.googlenet.InceptionAux@{torchvision\_down.models.googlenet.InceptionAux}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1models_1_1googlenet_1_1_inception_aux_a94d8de1003a8f835ff40510b5d0f7bbc} 
+ None torchvision\+\_\+down.\+models.\+googlenet.\+Inception\+Aux.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{int}]{in\+\_\+channels}{, }\item[{int}]{num\+\_\+classes}{, }\item[{Optional\mbox{[}Callable\mbox{[}..., nn.\+Module\mbox{]}\mbox{]} }]{conv\+\_\+block}{ = {\ttfamily None}, }\item[{float }]{dropout}{ = {\ttfamily 0.7}}\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classtorchvision__down_1_1models_1_1googlenet_1_1_inception_aux_a98214bbc851d47cd1350a030f00767ca}\index{torchvision\_down.models.googlenet.InceptionAux@{torchvision\_down.models.googlenet.InceptionAux}!forward@{forward}}
+\index{forward@{forward}!torchvision\_down.models.googlenet.InceptionAux@{torchvision\_down.models.googlenet.InceptionAux}}
+\doxysubsubsection{\texorpdfstring{forward()}{forward()}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1models_1_1googlenet_1_1_inception_aux_a98214bbc851d47cd1350a030f00767ca} 
+ Tensor torchvision\+\_\+down.\+models.\+googlenet.\+Inception\+Aux.\+forward (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{Tensor}]{x}{}\end{DoxyParamCaption})}
+
+
+
+Reimplemented in \mbox{\hyperlink{classtorchvision__down_1_1models_1_1quantization_1_1googlenet_1_1_quantizable_inception_aux_a2ca7cfc199746bc6360e5243e2d386f2}{torchvision\+\_\+down.\+models.\+quantization.\+googlenet.\+Quantizable\+Inception\+Aux}}.
+
+
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classtorchvision__down_1_1models_1_1googlenet_1_1_inception_aux_afa7cb56c5fb897a83eaffabd3d881dd9}\index{torchvision\_down.models.googlenet.InceptionAux@{torchvision\_down.models.googlenet.InceptionAux}!conv@{conv}}
+\index{conv@{conv}!torchvision\_down.models.googlenet.InceptionAux@{torchvision\_down.models.googlenet.InceptionAux}}
+\doxysubsubsection{\texorpdfstring{conv}{conv}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1models_1_1googlenet_1_1_inception_aux_afa7cb56c5fb897a83eaffabd3d881dd9} 
+torchvision\+\_\+down.\+models.\+googlenet.\+Inception\+Aux.\+conv = conv\+\_\+block(in\+\_\+channels, 128, kernel\+\_\+size=1)}
+
+\Hypertarget{classtorchvision__down_1_1models_1_1googlenet_1_1_inception_aux_a857ab7542e8f2b1f0a24be1d90d971c3}\index{torchvision\_down.models.googlenet.InceptionAux@{torchvision\_down.models.googlenet.InceptionAux}!dropout@{dropout}}
+\index{dropout@{dropout}!torchvision\_down.models.googlenet.InceptionAux@{torchvision\_down.models.googlenet.InceptionAux}}
+\doxysubsubsection{\texorpdfstring{dropout}{dropout}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1models_1_1googlenet_1_1_inception_aux_a857ab7542e8f2b1f0a24be1d90d971c3} 
+torchvision\+\_\+down.\+models.\+googlenet.\+Inception\+Aux.\+dropout = nn.\+Dropout(p=dropout)}
+
+\Hypertarget{classtorchvision__down_1_1models_1_1googlenet_1_1_inception_aux_abd3dd1926be923d08123896d20b51484}\index{torchvision\_down.models.googlenet.InceptionAux@{torchvision\_down.models.googlenet.InceptionAux}!fc1@{fc1}}
+\index{fc1@{fc1}!torchvision\_down.models.googlenet.InceptionAux@{torchvision\_down.models.googlenet.InceptionAux}}
+\doxysubsubsection{\texorpdfstring{fc1}{fc1}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1models_1_1googlenet_1_1_inception_aux_abd3dd1926be923d08123896d20b51484} 
+torchvision\+\_\+down.\+models.\+googlenet.\+Inception\+Aux.\+fc1 = nn.\+Linear(2048, 1024)}
+
+\Hypertarget{classtorchvision__down_1_1models_1_1googlenet_1_1_inception_aux_afe90089f27c6a98deaf40d8c2fbd8c04}\index{torchvision\_down.models.googlenet.InceptionAux@{torchvision\_down.models.googlenet.InceptionAux}!fc2@{fc2}}
+\index{fc2@{fc2}!torchvision\_down.models.googlenet.InceptionAux@{torchvision\_down.models.googlenet.InceptionAux}}
+\doxysubsubsection{\texorpdfstring{fc2}{fc2}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1models_1_1googlenet_1_1_inception_aux_afe90089f27c6a98deaf40d8c2fbd8c04} 
+torchvision\+\_\+down.\+models.\+googlenet.\+Inception\+Aux.\+fc2 = nn.\+Linear(1024, num\+\_\+classes)}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Cervi\+AI/torchvision\+\_\+down/models/\mbox{\hyperlink{googlenet_8py}{googlenet.\+py}}\end{DoxyCompactItemize}

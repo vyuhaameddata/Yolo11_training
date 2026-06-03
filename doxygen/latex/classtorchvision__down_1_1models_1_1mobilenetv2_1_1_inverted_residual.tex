@@ -1,0 +1,87 @@
+\doxysection{torchvision\+\_\+down.\+models.\+mobilenetv2.\+Inverted\+Residual Class Reference}
+\hypertarget{classtorchvision__down_1_1models_1_1mobilenetv2_1_1_inverted_residual}{}\label{classtorchvision__down_1_1models_1_1mobilenetv2_1_1_inverted_residual}\index{torchvision\_down.models.mobilenetv2.InvertedResidual@{torchvision\_down.models.mobilenetv2.InvertedResidual}}
+Inheritance diagram for torchvision\+\_\+down.\+models.\+mobilenetv2.\+Inverted\+Residual\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classtorchvision__down_1_1models_1_1mobilenetv2_1_1_inverted_residual}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+None \mbox{\hyperlink{classtorchvision__down_1_1models_1_1mobilenetv2_1_1_inverted_residual_a02a47fc5e092098370a9ce9f122800a9}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, int inp, int oup, int \mbox{\hyperlink{classtorchvision__down_1_1models_1_1mobilenetv2_1_1_inverted_residual_ae07fe08da8406a2738f653f56caa2598}{stride}}, int expand\+\_\+ratio, Optional\mbox{[}Callable\mbox{[}..., nn.\+Module\mbox{]}\mbox{]} norm\+\_\+layer=None)
+\item 
+Tensor \mbox{\hyperlink{classtorchvision__down_1_1models_1_1mobilenetv2_1_1_inverted_residual_aea8dbaf80a8098bedfdb3c5469e4aa25}{forward}} (self, Tensor x)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1models_1_1mobilenetv2_1_1_inverted_residual_ae07fe08da8406a2738f653f56caa2598}{stride}} = stride
+\item 
+int \mbox{\hyperlink{classtorchvision__down_1_1models_1_1mobilenetv2_1_1_inverted_residual_aca8f3ea36df59bcf1578eda5a3dcb8a4}{use\+\_\+res\+\_\+connect}} = oup
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1models_1_1mobilenetv2_1_1_inverted_residual_a87a9686417be3c64d718700f22712907}{conv}} = nn.\+Sequential(\texorpdfstring{$\ast$}{*}layers)
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1models_1_1mobilenetv2_1_1_inverted_residual_abdb20027671a76b6af042088ddd06a3f}{out\+\_\+channels}} = oup
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{classtorchvision__down_1_1models_1_1mobilenetv2_1_1_inverted_residual_a8346bf39e3425aece3d515f6442754d4}{\+\_\+is\+\_\+cn}} = \mbox{\hyperlink{classtorchvision__down_1_1models_1_1mobilenetv2_1_1_inverted_residual_ae07fe08da8406a2738f653f56caa2598}{stride}} $>$ 1
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classtorchvision__down_1_1models_1_1mobilenetv2_1_1_inverted_residual_a02a47fc5e092098370a9ce9f122800a9}\index{torchvision\_down.models.mobilenetv2.InvertedResidual@{torchvision\_down.models.mobilenetv2.InvertedResidual}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!torchvision\_down.models.mobilenetv2.InvertedResidual@{torchvision\_down.models.mobilenetv2.InvertedResidual}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1models_1_1mobilenetv2_1_1_inverted_residual_a02a47fc5e092098370a9ce9f122800a9} 
+ None torchvision\+\_\+down.\+models.\+mobilenetv2.\+Inverted\+Residual.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{int}]{inp}{, }\item[{int}]{oup}{, }\item[{int}]{stride}{, }\item[{int}]{expand\+\_\+ratio}{, }\item[{Optional\mbox{[}Callable\mbox{[}..., nn.\+Module\mbox{]}\mbox{]} }]{norm\+\_\+layer}{ = {\ttfamily None}}\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classtorchvision__down_1_1models_1_1mobilenetv2_1_1_inverted_residual_aea8dbaf80a8098bedfdb3c5469e4aa25}\index{torchvision\_down.models.mobilenetv2.InvertedResidual@{torchvision\_down.models.mobilenetv2.InvertedResidual}!forward@{forward}}
+\index{forward@{forward}!torchvision\_down.models.mobilenetv2.InvertedResidual@{torchvision\_down.models.mobilenetv2.InvertedResidual}}
+\doxysubsubsection{\texorpdfstring{forward()}{forward()}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1models_1_1mobilenetv2_1_1_inverted_residual_aea8dbaf80a8098bedfdb3c5469e4aa25} 
+ Tensor torchvision\+\_\+down.\+models.\+mobilenetv2.\+Inverted\+Residual.\+forward (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{Tensor}]{x}{}\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classtorchvision__down_1_1models_1_1mobilenetv2_1_1_inverted_residual_a8346bf39e3425aece3d515f6442754d4}\index{torchvision\_down.models.mobilenetv2.InvertedResidual@{torchvision\_down.models.mobilenetv2.InvertedResidual}!\_is\_cn@{\_is\_cn}}
+\index{\_is\_cn@{\_is\_cn}!torchvision\_down.models.mobilenetv2.InvertedResidual@{torchvision\_down.models.mobilenetv2.InvertedResidual}}
+\doxysubsubsection{\texorpdfstring{\_is\_cn}{\_is\_cn}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1models_1_1mobilenetv2_1_1_inverted_residual_a8346bf39e3425aece3d515f6442754d4} 
+int torchvision\+\_\+down.\+models.\+mobilenetv2.\+Inverted\+Residual.\+\_\+is\+\_\+cn = \mbox{\hyperlink{classtorchvision__down_1_1models_1_1mobilenetv2_1_1_inverted_residual_ae07fe08da8406a2738f653f56caa2598}{stride}} $>$ 1\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classtorchvision__down_1_1models_1_1mobilenetv2_1_1_inverted_residual_a87a9686417be3c64d718700f22712907}\index{torchvision\_down.models.mobilenetv2.InvertedResidual@{torchvision\_down.models.mobilenetv2.InvertedResidual}!conv@{conv}}
+\index{conv@{conv}!torchvision\_down.models.mobilenetv2.InvertedResidual@{torchvision\_down.models.mobilenetv2.InvertedResidual}}
+\doxysubsubsection{\texorpdfstring{conv}{conv}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1models_1_1mobilenetv2_1_1_inverted_residual_a87a9686417be3c64d718700f22712907} 
+torchvision\+\_\+down.\+models.\+mobilenetv2.\+Inverted\+Residual.\+conv = nn.\+Sequential(\texorpdfstring{$\ast$}{*}layers)}
+
+\Hypertarget{classtorchvision__down_1_1models_1_1mobilenetv2_1_1_inverted_residual_abdb20027671a76b6af042088ddd06a3f}\index{torchvision\_down.models.mobilenetv2.InvertedResidual@{torchvision\_down.models.mobilenetv2.InvertedResidual}!out\_channels@{out\_channels}}
+\index{out\_channels@{out\_channels}!torchvision\_down.models.mobilenetv2.InvertedResidual@{torchvision\_down.models.mobilenetv2.InvertedResidual}}
+\doxysubsubsection{\texorpdfstring{out\_channels}{out\_channels}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1models_1_1mobilenetv2_1_1_inverted_residual_abdb20027671a76b6af042088ddd06a3f} 
+torchvision\+\_\+down.\+models.\+mobilenetv2.\+Inverted\+Residual.\+out\+\_\+channels = oup}
+
+\Hypertarget{classtorchvision__down_1_1models_1_1mobilenetv2_1_1_inverted_residual_ae07fe08da8406a2738f653f56caa2598}\index{torchvision\_down.models.mobilenetv2.InvertedResidual@{torchvision\_down.models.mobilenetv2.InvertedResidual}!stride@{stride}}
+\index{stride@{stride}!torchvision\_down.models.mobilenetv2.InvertedResidual@{torchvision\_down.models.mobilenetv2.InvertedResidual}}
+\doxysubsubsection{\texorpdfstring{stride}{stride}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1models_1_1mobilenetv2_1_1_inverted_residual_ae07fe08da8406a2738f653f56caa2598} 
+torchvision\+\_\+down.\+models.\+mobilenetv2.\+Inverted\+Residual.\+stride = stride}
+
+\Hypertarget{classtorchvision__down_1_1models_1_1mobilenetv2_1_1_inverted_residual_aca8f3ea36df59bcf1578eda5a3dcb8a4}\index{torchvision\_down.models.mobilenetv2.InvertedResidual@{torchvision\_down.models.mobilenetv2.InvertedResidual}!use\_res\_connect@{use\_res\_connect}}
+\index{use\_res\_connect@{use\_res\_connect}!torchvision\_down.models.mobilenetv2.InvertedResidual@{torchvision\_down.models.mobilenetv2.InvertedResidual}}
+\doxysubsubsection{\texorpdfstring{use\_res\_connect}{use\_res\_connect}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1models_1_1mobilenetv2_1_1_inverted_residual_aca8f3ea36df59bcf1578eda5a3dcb8a4} 
+int torchvision\+\_\+down.\+models.\+mobilenetv2.\+Inverted\+Residual.\+use\+\_\+res\+\_\+connect = oup}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Cervi\+AI/torchvision\+\_\+down/models/\mbox{\hyperlink{mobilenetv2_8py}{mobilenetv2.\+py}}\end{DoxyCompactItemize}

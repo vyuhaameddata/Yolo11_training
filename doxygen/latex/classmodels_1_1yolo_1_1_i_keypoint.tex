@@ -1,0 +1,217 @@
+\doxysection{models.\+yolo.\+IKeypoint Class Reference}
+\hypertarget{classmodels_1_1yolo_1_1_i_keypoint}{}\label{classmodels_1_1yolo_1_1_i_keypoint}\index{models.yolo.IKeypoint@{models.yolo.IKeypoint}}
+Inheritance diagram for models.\+yolo.\+IKeypoint\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classmodels_1_1yolo_1_1_i_keypoint}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classmodels_1_1yolo_1_1_i_keypoint_a5c3e182ce2bb70dc788a5df68096074e}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, \mbox{\hyperlink{classmodels_1_1yolo_1_1_i_keypoint_a39b6719922b88e770679d3e83f69718a}{nc}}=80, anchors=(), \mbox{\hyperlink{classmodels_1_1yolo_1_1_i_keypoint_a9a26c660189ebd00a11a19e587f8c1dc}{nkpt}}=17, ch=(), \mbox{\hyperlink{classmodels_1_1yolo_1_1_i_keypoint_a559e722ea82d3d9fc0fe3cbed2d2d1e0}{inplace}}=True, \mbox{\hyperlink{classmodels_1_1yolo_1_1_i_keypoint_a8cf7ff364f31e0174b3c4ae548f00dd1}{dw\+\_\+conv\+\_\+kpt}}=False)
+\item 
+\mbox{\hyperlink{classmodels_1_1yolo_1_1_i_keypoint_a4489a305ca8dd98a2bc9154ed13061d8}{forward}} (self, x)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classmodels_1_1yolo_1_1_i_keypoint_a39b6719922b88e770679d3e83f69718a}{nc}} = nc
+\item 
+int \mbox{\hyperlink{classmodels_1_1yolo_1_1_i_keypoint_a9a26c660189ebd00a11a19e587f8c1dc}{nkpt}} = nkpt
+\item 
+\#keypoint head is slightly more complex \mbox{\hyperlink{classmodels_1_1yolo_1_1_i_keypoint_a8cf7ff364f31e0174b3c4ae548f00dd1}{dw\+\_\+conv\+\_\+kpt}} = dw\+\_\+conv\+\_\+kpt
+\item 
+tuple \mbox{\hyperlink{classmodels_1_1yolo_1_1_i_keypoint_af4e388419677a5eb1cc703310ebc1ac5}{no\+\_\+det}} = (\mbox{\hyperlink{classmodels_1_1yolo_1_1_i_keypoint_a39b6719922b88e770679d3e83f69718a}{nc}} + 5)
+\item 
+int \mbox{\hyperlink{classmodels_1_1yolo_1_1_i_keypoint_ab7d1abf9a3a13c6cec3fd00346080cdb}{no\+\_\+kpt}} = self.\+no\+\_\+det+self.\+no\+\_\+kpt
+\begin{DoxyCompactList}\small\item\em number of outputs per anchor for keypoints \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classmodels_1_1yolo_1_1_i_keypoint_af0e8bb412dfff5446c1a93a596a349bb}{nl}} = len(anchors)
+\item 
+int \mbox{\hyperlink{classmodels_1_1yolo_1_1_i_keypoint_a5691e888b918274898aa0b924d20c1c4}{na}} = len(anchors\mbox{[}0\mbox{]}) // 2
+\item 
+list \mbox{\hyperlink{classmodels_1_1yolo_1_1_i_keypoint_a2b4961c1f94b3e7b26c64f6fb06ce8b7}{grid}} = \mbox{[}torch.\+zeros(1)\mbox{]} \texorpdfstring{$\ast$}{*} self.\+nl
+\item 
+bool \mbox{\hyperlink{classmodels_1_1yolo_1_1_i_keypoint_a2cf3810ea391d9ca97fd32bf9826a771}{flip\+\_\+test}} = False
+\item 
+\mbox{\hyperlink{classmodels_1_1yolo_1_1_i_keypoint_aeeb21d29f9992ba92f3fe4deccc428f3}{m}} = nn.\+Module\+List(nn.\+Conv2d(x, self.\+no\+\_\+det \texorpdfstring{$\ast$}{*} self.\+na, 1) for x in ch)
+\item 
+\mbox{\hyperlink{classmodels_1_1yolo_1_1_i_keypoint_a122573f8fe60ad4f375b654cb198f7c9}{ia}} = nn.\+Module\+List(\mbox{\hyperlink{classmodels_1_1common_1_1_implicit_a}{ImplicitA}}(x) for x in ch)
+\item 
+\mbox{\hyperlink{classmodels_1_1yolo_1_1_i_keypoint_a8fe55c1998db0e222447d58fdeaafa7a}{im}} = nn.\+Module\+List(\mbox{\hyperlink{classmodels_1_1common_1_1_implicit_m}{ImplicitM}}(self.\+no\+\_\+det \texorpdfstring{$\ast$}{*} self.\+na) for \+\_\+ in ch)
+\item 
+\mbox{\hyperlink{classmodels_1_1yolo_1_1_i_keypoint_a9487d6241f8b33e9cebce4b71f99f3ed}{m\+\_\+kpt}}
+\item 
+\mbox{\hyperlink{classmodels_1_1yolo_1_1_i_keypoint_a559e722ea82d3d9fc0fe3cbed2d2d1e0}{inplace}} = inplace
+\item 
+\# inference \mbox{\hyperlink{classmodels_1_1yolo_1_1_i_keypoint_a8183a6edac7774c2f379fedcbc74ad93}{training}} = x\mbox{[}i\mbox{]}\mbox{[}..., 6\+:\mbox{]}
+\item 
+\mbox{\hyperlink{classmodels_1_1yolo_1_1_i_keypoint_a823cff79984e1289780c04281445c0ff}{no}} = torch.\+cat((xy, wh, \mbox{\hyperlink{namespacemodels_1_1yolo_a7a1c730f259e7fd9cb76a7526da1bd8e}{y}}\mbox{[}..., 4\+:\mbox{]}), -\/1)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classmodels_1_1yolo_1_1_i_keypoint_a35925e35a16fe3f6b305f3ded650d9fc}{stride}} = None
+\item 
+bool \mbox{\hyperlink{classmodels_1_1yolo_1_1_i_keypoint_a719a7eaec4224a34935f717aabfb7c97}{export}} = False
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classmodels_1_1yolo_1_1_i_keypoint_a63994027fd48ac71582165cfbcc4c46b}{\+\_\+make\+\_\+grid}} (nx=20, ny=20)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classmodels_1_1yolo_1_1_i_keypoint_a5c3e182ce2bb70dc788a5df68096074e}\index{models.yolo.IKeypoint@{models.yolo.IKeypoint}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!models.yolo.IKeypoint@{models.yolo.IKeypoint}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily \label{classmodels_1_1yolo_1_1_i_keypoint_a5c3e182ce2bb70dc788a5df68096074e} 
+models.\+yolo.\+IKeypoint.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{nc}{ = {\ttfamily 80}, }\item[{}]{anchors}{ = {\ttfamily ()}, }\item[{}]{nkpt}{ = {\ttfamily 17}, }\item[{}]{ch}{ = {\ttfamily ()}, }\item[{}]{inplace}{ = {\ttfamily True}, }\item[{}]{dw\+\_\+conv\+\_\+kpt}{ = {\ttfamily False}}\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classmodels_1_1yolo_1_1_i_keypoint_a63994027fd48ac71582165cfbcc4c46b}\index{models.yolo.IKeypoint@{models.yolo.IKeypoint}!\_make\_grid@{\_make\_grid}}
+\index{\_make\_grid@{\_make\_grid}!models.yolo.IKeypoint@{models.yolo.IKeypoint}}
+\doxysubsubsection{\texorpdfstring{\_make\_grid()}{\_make\_grid()}}
+{\footnotesize\ttfamily \label{classmodels_1_1yolo_1_1_i_keypoint_a63994027fd48ac71582165cfbcc4c46b} 
+models.\+yolo.\+IKeypoint.\+\_\+make\+\_\+grid (\begin{DoxyParamCaption}\item[{}]{nx}{ = {\ttfamily 20}, }\item[{}]{ny}{ = {\ttfamily 20}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}
+
+\Hypertarget{classmodels_1_1yolo_1_1_i_keypoint_a4489a305ca8dd98a2bc9154ed13061d8}\index{models.yolo.IKeypoint@{models.yolo.IKeypoint}!forward@{forward}}
+\index{forward@{forward}!models.yolo.IKeypoint@{models.yolo.IKeypoint}}
+\doxysubsubsection{\texorpdfstring{forward()}{forward()}}
+{\footnotesize\ttfamily \label{classmodels_1_1yolo_1_1_i_keypoint_a4489a305ca8dd98a2bc9154ed13061d8} 
+models.\+yolo.\+IKeypoint.\+forward (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{x}{}\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classmodels_1_1yolo_1_1_i_keypoint_a8cf7ff364f31e0174b3c4ae548f00dd1}\index{models.yolo.IKeypoint@{models.yolo.IKeypoint}!dw\_conv\_kpt@{dw\_conv\_kpt}}
+\index{dw\_conv\_kpt@{dw\_conv\_kpt}!models.yolo.IKeypoint@{models.yolo.IKeypoint}}
+\doxysubsubsection{\texorpdfstring{dw\_conv\_kpt}{dw\_conv\_kpt}}
+{\footnotesize\ttfamily \label{classmodels_1_1yolo_1_1_i_keypoint_a8cf7ff364f31e0174b3c4ae548f00dd1} 
+\#keypoint head is slightly more complex models.\+yolo.\+IKeypoint.\+dw\+\_\+conv\+\_\+kpt = dw\+\_\+conv\+\_\+kpt}
+
+\Hypertarget{classmodels_1_1yolo_1_1_i_keypoint_a719a7eaec4224a34935f717aabfb7c97}\index{models.yolo.IKeypoint@{models.yolo.IKeypoint}!export@{export}}
+\index{export@{export}!models.yolo.IKeypoint@{models.yolo.IKeypoint}}
+\doxysubsubsection{\texorpdfstring{export}{export}}
+{\footnotesize\ttfamily \label{classmodels_1_1yolo_1_1_i_keypoint_a719a7eaec4224a34935f717aabfb7c97} 
+bool models.\+yolo.\+IKeypoint.\+export = False\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classmodels_1_1yolo_1_1_i_keypoint_a2cf3810ea391d9ca97fd32bf9826a771}\index{models.yolo.IKeypoint@{models.yolo.IKeypoint}!flip\_test@{flip\_test}}
+\index{flip\_test@{flip\_test}!models.yolo.IKeypoint@{models.yolo.IKeypoint}}
+\doxysubsubsection{\texorpdfstring{flip\_test}{flip\_test}}
+{\footnotesize\ttfamily \label{classmodels_1_1yolo_1_1_i_keypoint_a2cf3810ea391d9ca97fd32bf9826a771} 
+bool models.\+yolo.\+IKeypoint.\+flip\+\_\+test = False}
+
+\Hypertarget{classmodels_1_1yolo_1_1_i_keypoint_a2b4961c1f94b3e7b26c64f6fb06ce8b7}\index{models.yolo.IKeypoint@{models.yolo.IKeypoint}!grid@{grid}}
+\index{grid@{grid}!models.yolo.IKeypoint@{models.yolo.IKeypoint}}
+\doxysubsubsection{\texorpdfstring{grid}{grid}}
+{\footnotesize\ttfamily \label{classmodels_1_1yolo_1_1_i_keypoint_a2b4961c1f94b3e7b26c64f6fb06ce8b7} 
+list models.\+yolo.\+IKeypoint.\+grid = \mbox{[}torch.\+zeros(1)\mbox{]} \texorpdfstring{$\ast$}{*} self.\+nl}
+
+\Hypertarget{classmodels_1_1yolo_1_1_i_keypoint_a122573f8fe60ad4f375b654cb198f7c9}\index{models.yolo.IKeypoint@{models.yolo.IKeypoint}!ia@{ia}}
+\index{ia@{ia}!models.yolo.IKeypoint@{models.yolo.IKeypoint}}
+\doxysubsubsection{\texorpdfstring{ia}{ia}}
+{\footnotesize\ttfamily \label{classmodels_1_1yolo_1_1_i_keypoint_a122573f8fe60ad4f375b654cb198f7c9} 
+models.\+yolo.\+IKeypoint.\+ia = nn.\+Module\+List(\mbox{\hyperlink{classmodels_1_1common_1_1_implicit_a}{ImplicitA}}(x) for x in ch)}
+
+\Hypertarget{classmodels_1_1yolo_1_1_i_keypoint_a8fe55c1998db0e222447d58fdeaafa7a}\index{models.yolo.IKeypoint@{models.yolo.IKeypoint}!im@{im}}
+\index{im@{im}!models.yolo.IKeypoint@{models.yolo.IKeypoint}}
+\doxysubsubsection{\texorpdfstring{im}{im}}
+{\footnotesize\ttfamily \label{classmodels_1_1yolo_1_1_i_keypoint_a8fe55c1998db0e222447d58fdeaafa7a} 
+models.\+yolo.\+IKeypoint.\+im = nn.\+Module\+List(\mbox{\hyperlink{classmodels_1_1common_1_1_implicit_m}{ImplicitM}}(self.\+no\+\_\+det \texorpdfstring{$\ast$}{*} self.\+na) for \+\_\+ in ch)}
+
+\Hypertarget{classmodels_1_1yolo_1_1_i_keypoint_a559e722ea82d3d9fc0fe3cbed2d2d1e0}\index{models.yolo.IKeypoint@{models.yolo.IKeypoint}!inplace@{inplace}}
+\index{inplace@{inplace}!models.yolo.IKeypoint@{models.yolo.IKeypoint}}
+\doxysubsubsection{\texorpdfstring{inplace}{inplace}}
+{\footnotesize\ttfamily \label{classmodels_1_1yolo_1_1_i_keypoint_a559e722ea82d3d9fc0fe3cbed2d2d1e0} 
+models.\+yolo.\+IKeypoint.\+inplace = inplace}
+
+\Hypertarget{classmodels_1_1yolo_1_1_i_keypoint_aeeb21d29f9992ba92f3fe4deccc428f3}\index{models.yolo.IKeypoint@{models.yolo.IKeypoint}!m@{m}}
+\index{m@{m}!models.yolo.IKeypoint@{models.yolo.IKeypoint}}
+\doxysubsubsection{\texorpdfstring{m}{m}}
+{\footnotesize\ttfamily \label{classmodels_1_1yolo_1_1_i_keypoint_aeeb21d29f9992ba92f3fe4deccc428f3} 
+models.\+yolo.\+IKeypoint.\+m = nn.\+Module\+List(nn.\+Conv2d(x, self.\+no\+\_\+det \texorpdfstring{$\ast$}{*} self.\+na, 1) for x in ch)}
+
+\Hypertarget{classmodels_1_1yolo_1_1_i_keypoint_a9487d6241f8b33e9cebce4b71f99f3ed}\index{models.yolo.IKeypoint@{models.yolo.IKeypoint}!m\_kpt@{m\_kpt}}
+\index{m\_kpt@{m\_kpt}!models.yolo.IKeypoint@{models.yolo.IKeypoint}}
+\doxysubsubsection{\texorpdfstring{m\_kpt}{m\_kpt}}
+{\footnotesize\ttfamily \label{classmodels_1_1yolo_1_1_i_keypoint_a9487d6241f8b33e9cebce4b71f99f3ed} 
+models.\+yolo.\+IKeypoint.\+m\+\_\+kpt}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \ nn.ModuleList(}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ nn.Sequential(DWConv(x,\ x,\ k=3),\ Conv(x,x),}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ DWConv(x,\ x,\ k=3),\ Conv(x,\ x),}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ DWConv(x,\ x,\ k=3),\ Conv(x,x),}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ DWConv(x,\ x,\ k=3),\ Conv(x,\ x),}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ DWConv(x,\ x,\ k=3),\ Conv(x,\ x),}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ DWConv(x,\ x,\ k=3),\ nn.Conv2d(x,\ self.no\_kpt\ *\ self.na,\ 1))\ \textcolor{keywordflow}{for}\ x\ \textcolor{keywordflow}{in}\ ch)}
+
+\end{DoxyCode}
+\Hypertarget{classmodels_1_1yolo_1_1_i_keypoint_a5691e888b918274898aa0b924d20c1c4}\index{models.yolo.IKeypoint@{models.yolo.IKeypoint}!na@{na}}
+\index{na@{na}!models.yolo.IKeypoint@{models.yolo.IKeypoint}}
+\doxysubsubsection{\texorpdfstring{na}{na}}
+{\footnotesize\ttfamily \label{classmodels_1_1yolo_1_1_i_keypoint_a5691e888b918274898aa0b924d20c1c4} 
+int models.\+yolo.\+IKeypoint.\+na = len(anchors\mbox{[}0\mbox{]}) // 2}
+
+\Hypertarget{classmodels_1_1yolo_1_1_i_keypoint_a39b6719922b88e770679d3e83f69718a}\index{models.yolo.IKeypoint@{models.yolo.IKeypoint}!nc@{nc}}
+\index{nc@{nc}!models.yolo.IKeypoint@{models.yolo.IKeypoint}}
+\doxysubsubsection{\texorpdfstring{nc}{nc}}
+{\footnotesize\ttfamily \label{classmodels_1_1yolo_1_1_i_keypoint_a39b6719922b88e770679d3e83f69718a} 
+models.\+yolo.\+IKeypoint.\+nc = nc}
+
+\Hypertarget{classmodels_1_1yolo_1_1_i_keypoint_a9a26c660189ebd00a11a19e587f8c1dc}\index{models.yolo.IKeypoint@{models.yolo.IKeypoint}!nkpt@{nkpt}}
+\index{nkpt@{nkpt}!models.yolo.IKeypoint@{models.yolo.IKeypoint}}
+\doxysubsubsection{\texorpdfstring{nkpt}{nkpt}}
+{\footnotesize\ttfamily \label{classmodels_1_1yolo_1_1_i_keypoint_a9a26c660189ebd00a11a19e587f8c1dc} 
+int models.\+yolo.\+IKeypoint.\+nkpt = nkpt}
+
+\Hypertarget{classmodels_1_1yolo_1_1_i_keypoint_af0e8bb412dfff5446c1a93a596a349bb}\index{models.yolo.IKeypoint@{models.yolo.IKeypoint}!nl@{nl}}
+\index{nl@{nl}!models.yolo.IKeypoint@{models.yolo.IKeypoint}}
+\doxysubsubsection{\texorpdfstring{nl}{nl}}
+{\footnotesize\ttfamily \label{classmodels_1_1yolo_1_1_i_keypoint_af0e8bb412dfff5446c1a93a596a349bb} 
+models.\+yolo.\+IKeypoint.\+nl = len(anchors)}
+
+\Hypertarget{classmodels_1_1yolo_1_1_i_keypoint_a823cff79984e1289780c04281445c0ff}\index{models.yolo.IKeypoint@{models.yolo.IKeypoint}!no@{no}}
+\index{no@{no}!models.yolo.IKeypoint@{models.yolo.IKeypoint}}
+\doxysubsubsection{\texorpdfstring{no}{no}}
+{\footnotesize\ttfamily \label{classmodels_1_1yolo_1_1_i_keypoint_a823cff79984e1289780c04281445c0ff} 
+models.\+yolo.\+IKeypoint.\+no = torch.\+cat((xy, wh, \mbox{\hyperlink{namespacemodels_1_1yolo_a7a1c730f259e7fd9cb76a7526da1bd8e}{y}}\mbox{[}..., 4\+:\mbox{]}), -\/1)}
+
+\Hypertarget{classmodels_1_1yolo_1_1_i_keypoint_af4e388419677a5eb1cc703310ebc1ac5}\index{models.yolo.IKeypoint@{models.yolo.IKeypoint}!no\_det@{no\_det}}
+\index{no\_det@{no\_det}!models.yolo.IKeypoint@{models.yolo.IKeypoint}}
+\doxysubsubsection{\texorpdfstring{no\_det}{no\_det}}
+{\footnotesize\ttfamily \label{classmodels_1_1yolo_1_1_i_keypoint_af4e388419677a5eb1cc703310ebc1ac5} 
+tuple models.\+yolo.\+IKeypoint.\+no\+\_\+det = (\mbox{\hyperlink{classmodels_1_1yolo_1_1_i_keypoint_a39b6719922b88e770679d3e83f69718a}{nc}} + 5)}
+
+\Hypertarget{classmodels_1_1yolo_1_1_i_keypoint_ab7d1abf9a3a13c6cec3fd00346080cdb}\index{models.yolo.IKeypoint@{models.yolo.IKeypoint}!no\_kpt@{no\_kpt}}
+\index{no\_kpt@{no\_kpt}!models.yolo.IKeypoint@{models.yolo.IKeypoint}}
+\doxysubsubsection{\texorpdfstring{no\_kpt}{no\_kpt}}
+{\footnotesize\ttfamily \label{classmodels_1_1yolo_1_1_i_keypoint_ab7d1abf9a3a13c6cec3fd00346080cdb} 
+int models.\+yolo.\+IKeypoint.\+no\+\_\+kpt = self.\+no\+\_\+det+self.\+no\+\_\+kpt}
+
+
+
+number of outputs per anchor for keypoints 
+
+\Hypertarget{classmodels_1_1yolo_1_1_i_keypoint_a35925e35a16fe3f6b305f3ded650d9fc}\index{models.yolo.IKeypoint@{models.yolo.IKeypoint}!stride@{stride}}
+\index{stride@{stride}!models.yolo.IKeypoint@{models.yolo.IKeypoint}}
+\doxysubsubsection{\texorpdfstring{stride}{stride}}
+{\footnotesize\ttfamily \label{classmodels_1_1yolo_1_1_i_keypoint_a35925e35a16fe3f6b305f3ded650d9fc} 
+models.\+yolo.\+IKeypoint.\+stride = None\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classmodels_1_1yolo_1_1_i_keypoint_a8183a6edac7774c2f379fedcbc74ad93}\index{models.yolo.IKeypoint@{models.yolo.IKeypoint}!training@{training}}
+\index{training@{training}!models.yolo.IKeypoint@{models.yolo.IKeypoint}}
+\doxysubsubsection{\texorpdfstring{training}{training}}
+{\footnotesize\ttfamily \label{classmodels_1_1yolo_1_1_i_keypoint_a8183a6edac7774c2f379fedcbc74ad93} 
+\# inference models.\+yolo.\+IKeypoint.\+training = x\mbox{[}i\mbox{]}\mbox{[}..., 6\+:\mbox{]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Cervi\+AI/models/\mbox{\hyperlink{yolo_8py}{yolo.\+py}}\end{DoxyCompactItemize}

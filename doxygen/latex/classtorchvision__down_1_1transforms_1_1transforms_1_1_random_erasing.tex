@@ -1,0 +1,151 @@
+\doxysection{torchvision\+\_\+down.\+transforms.\+transforms.\+Random\+Erasing Class Reference}
+\hypertarget{classtorchvision__down_1_1transforms_1_1transforms_1_1_random_erasing}{}\label{classtorchvision__down_1_1transforms_1_1transforms_1_1_random_erasing}\index{torchvision\_down.transforms.transforms.RandomErasing@{torchvision\_down.transforms.transforms.RandomErasing}}
+Inheritance diagram for torchvision\+\_\+down.\+transforms.\+transforms.\+Random\+Erasing\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classtorchvision__down_1_1transforms_1_1transforms_1_1_random_erasing}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1transforms_1_1transforms_1_1_random_erasing_af3562261c412307ac6ed943b19c70e79}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, \mbox{\hyperlink{classtorchvision__down_1_1transforms_1_1transforms_1_1_random_erasing_ada118689a000818385c6252827988ccd}{p}}=0.\+5, \mbox{\hyperlink{classtorchvision__down_1_1transforms_1_1transforms_1_1_random_erasing_a8b3ec1a188bcc7101192187b3581b59a}{scale}}=(0.\+02, 0.\+33), \mbox{\hyperlink{classtorchvision__down_1_1transforms_1_1transforms_1_1_random_erasing_a14fdf0973373b85a126881929eb0ee10}{ratio}}=(0.\+3, 3.\+3), \mbox{\hyperlink{classtorchvision__down_1_1transforms_1_1transforms_1_1_random_erasing_af3862a998a38056cb428cca7f3666768}{value}}=0, \mbox{\hyperlink{classtorchvision__down_1_1transforms_1_1transforms_1_1_random_erasing_a121581ba9831c94e67fa54972901b22b}{inplace}}=False)
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1transforms_1_1transforms_1_1_random_erasing_a1f1a8e2f9317310ddd458875459f5ec0}{forward}} (self, img)
+\item 
+str \mbox{\hyperlink{classtorchvision__down_1_1transforms_1_1transforms_1_1_random_erasing_a8a197df6c1719229ec1b9a1dfa072299}{\+\_\+\+\_\+repr\+\_\+\+\_\+}} (self)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+Tuple\mbox{[}int, int, int, int, Tensor\mbox{]} \mbox{\hyperlink{classtorchvision__down_1_1transforms_1_1transforms_1_1_random_erasing_a200da9d22f139c429bc64b420ce33f8d}{get\+\_\+params}} (Tensor img, Tuple\mbox{[}float, float\mbox{]} \mbox{\hyperlink{classtorchvision__down_1_1transforms_1_1transforms_1_1_random_erasing_a8b3ec1a188bcc7101192187b3581b59a}{scale}}, Tuple\mbox{[}float, float\mbox{]} \mbox{\hyperlink{classtorchvision__down_1_1transforms_1_1transforms_1_1_random_erasing_a14fdf0973373b85a126881929eb0ee10}{ratio}}, Optional\mbox{[}List\mbox{[}float\mbox{]}\mbox{]} \mbox{\hyperlink{classtorchvision__down_1_1transforms_1_1transforms_1_1_random_erasing_af3862a998a38056cb428cca7f3666768}{value}}=None)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1transforms_1_1transforms_1_1_random_erasing_ada118689a000818385c6252827988ccd}{p}} = p
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1transforms_1_1transforms_1_1_random_erasing_a8b3ec1a188bcc7101192187b3581b59a}{scale}} = scale
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1transforms_1_1transforms_1_1_random_erasing_a14fdf0973373b85a126881929eb0ee10}{ratio}} = ratio
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1transforms_1_1transforms_1_1_random_erasing_af3862a998a38056cb428cca7f3666768}{value}} = value
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1transforms_1_1transforms_1_1_random_erasing_a121581ba9831c94e67fa54972901b22b}{inplace}} = inplace
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}Randomly selects a rectangle region in an torch Tensor image and erases its pixels.
+This transform does not support PIL Image.
+'Random Erasing Data Augmentation' by Zhong et al. See https://arxiv.org/abs/1708.04896
+
+Args:
+     p: probability that the random erasing operation will be performed.
+     scale: range of proportion of erased area against input image.
+     ratio: range of aspect ratio of erased area.
+     value: erasing value. Default is 0. If a single int, it is used to
+        erase all pixels. If a tuple of length 3, it is used to erase
+        R, G, B channels respectively.
+        If a str of 'random', erasing each pixel with random values.
+     inplace: boolean to make this transform inplace. Default set to False.
+
+Returns:
+    Erased Image.
+
+Example:
+    >>> transform = transforms.Compose([
+    >>>   transforms.RandomHorizontalFlip(),
+    >>>   transforms.PILToTensor(),
+    >>>   transforms.ConvertImageDtype(torch.float),
+    >>>   transforms.Normalize((0.485, 0.456, 0.406), (0.229, 0.224, 0.225)),
+    >>>   transforms.RandomErasing(),
+    >>> ])
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classtorchvision__down_1_1transforms_1_1transforms_1_1_random_erasing_af3562261c412307ac6ed943b19c70e79}\index{torchvision\_down.transforms.transforms.RandomErasing@{torchvision\_down.transforms.transforms.RandomErasing}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!torchvision\_down.transforms.transforms.RandomErasing@{torchvision\_down.transforms.transforms.RandomErasing}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1transforms_1_1transforms_1_1_random_erasing_af3562261c412307ac6ed943b19c70e79} 
+torchvision\+\_\+down.\+transforms.\+transforms.\+Random\+Erasing.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{p}{ = {\ttfamily 0.5}, }\item[{}]{scale}{ = {\ttfamily (0.02,~0.33)}, }\item[{}]{ratio}{ = {\ttfamily (0.3,~3.3)}, }\item[{}]{value}{ = {\ttfamily 0}, }\item[{}]{inplace}{ = {\ttfamily False}}\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classtorchvision__down_1_1transforms_1_1transforms_1_1_random_erasing_a8a197df6c1719229ec1b9a1dfa072299}\index{torchvision\_down.transforms.transforms.RandomErasing@{torchvision\_down.transforms.transforms.RandomErasing}!\_\_repr\_\_@{\_\_repr\_\_}}
+\index{\_\_repr\_\_@{\_\_repr\_\_}!torchvision\_down.transforms.transforms.RandomErasing@{torchvision\_down.transforms.transforms.RandomErasing}}
+\doxysubsubsection{\texorpdfstring{\_\_repr\_\_()}{\_\_repr\_\_()}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1transforms_1_1transforms_1_1_random_erasing_a8a197df6c1719229ec1b9a1dfa072299} 
+ str torchvision\+\_\+down.\+transforms.\+transforms.\+Random\+Erasing.\+\_\+\+\_\+repr\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classtorchvision__down_1_1transforms_1_1transforms_1_1_random_erasing_a1f1a8e2f9317310ddd458875459f5ec0}\index{torchvision\_down.transforms.transforms.RandomErasing@{torchvision\_down.transforms.transforms.RandomErasing}!forward@{forward}}
+\index{forward@{forward}!torchvision\_down.transforms.transforms.RandomErasing@{torchvision\_down.transforms.transforms.RandomErasing}}
+\doxysubsubsection{\texorpdfstring{forward()}{forward()}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1transforms_1_1transforms_1_1_random_erasing_a1f1a8e2f9317310ddd458875459f5ec0} 
+torchvision\+\_\+down.\+transforms.\+transforms.\+Random\+Erasing.\+forward (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{img}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Args:
+    img (Tensor): Tensor image to be erased.
+
+Returns:
+    img (Tensor): Erased Tensor image.
+\end{DoxyVerb}
+ \Hypertarget{classtorchvision__down_1_1transforms_1_1transforms_1_1_random_erasing_a200da9d22f139c429bc64b420ce33f8d}\index{torchvision\_down.transforms.transforms.RandomErasing@{torchvision\_down.transforms.transforms.RandomErasing}!get\_params@{get\_params}}
+\index{get\_params@{get\_params}!torchvision\_down.transforms.transforms.RandomErasing@{torchvision\_down.transforms.transforms.RandomErasing}}
+\doxysubsubsection{\texorpdfstring{get\_params()}{get\_params()}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1transforms_1_1transforms_1_1_random_erasing_a200da9d22f139c429bc64b420ce33f8d} 
+ Tuple\mbox{[}int, int, int, int, Tensor\mbox{]} torchvision\+\_\+down.\+transforms.\+transforms.\+Random\+Erasing.\+get\+\_\+params (\begin{DoxyParamCaption}\item[{Tensor}]{img}{, }\item[{Tuple\mbox{[}float, float\mbox{]}}]{scale}{, }\item[{Tuple\mbox{[}float, float\mbox{]}}]{ratio}{, }\item[{Optional\mbox{[}List\mbox{[}float\mbox{]}\mbox{]} }]{value}{ = {\ttfamily None}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\begin{DoxyVerb}Get parameters for ``erase`` for a random erasing.
+
+Args:
+    img (Tensor): Tensor image to be erased.
+    scale (sequence): range of proportion of erased area against input image.
+    ratio (sequence): range of aspect ratio of erased area.
+    value (list, optional): erasing value. If None, it is interpreted as "random"
+        (erasing each pixel with random values). If ``len(value)`` is 1, it is interpreted as a number,
+        i.e. ``value[0]``.
+
+Returns:
+    tuple: params (i, j, h, w, v) to be passed to ``erase`` for random erasing.
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classtorchvision__down_1_1transforms_1_1transforms_1_1_random_erasing_a121581ba9831c94e67fa54972901b22b}\index{torchvision\_down.transforms.transforms.RandomErasing@{torchvision\_down.transforms.transforms.RandomErasing}!inplace@{inplace}}
+\index{inplace@{inplace}!torchvision\_down.transforms.transforms.RandomErasing@{torchvision\_down.transforms.transforms.RandomErasing}}
+\doxysubsubsection{\texorpdfstring{inplace}{inplace}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1transforms_1_1transforms_1_1_random_erasing_a121581ba9831c94e67fa54972901b22b} 
+torchvision\+\_\+down.\+transforms.\+transforms.\+Random\+Erasing.\+inplace = inplace}
+
+\Hypertarget{classtorchvision__down_1_1transforms_1_1transforms_1_1_random_erasing_ada118689a000818385c6252827988ccd}\index{torchvision\_down.transforms.transforms.RandomErasing@{torchvision\_down.transforms.transforms.RandomErasing}!p@{p}}
+\index{p@{p}!torchvision\_down.transforms.transforms.RandomErasing@{torchvision\_down.transforms.transforms.RandomErasing}}
+\doxysubsubsection{\texorpdfstring{p}{p}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1transforms_1_1transforms_1_1_random_erasing_ada118689a000818385c6252827988ccd} 
+torchvision\+\_\+down.\+transforms.\+transforms.\+Random\+Erasing.\+p = p}
+
+\Hypertarget{classtorchvision__down_1_1transforms_1_1transforms_1_1_random_erasing_a14fdf0973373b85a126881929eb0ee10}\index{torchvision\_down.transforms.transforms.RandomErasing@{torchvision\_down.transforms.transforms.RandomErasing}!ratio@{ratio}}
+\index{ratio@{ratio}!torchvision\_down.transforms.transforms.RandomErasing@{torchvision\_down.transforms.transforms.RandomErasing}}
+\doxysubsubsection{\texorpdfstring{ratio}{ratio}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1transforms_1_1transforms_1_1_random_erasing_a14fdf0973373b85a126881929eb0ee10} 
+torchvision\+\_\+down.\+transforms.\+transforms.\+Random\+Erasing.\+ratio = ratio}
+
+\Hypertarget{classtorchvision__down_1_1transforms_1_1transforms_1_1_random_erasing_a8b3ec1a188bcc7101192187b3581b59a}\index{torchvision\_down.transforms.transforms.RandomErasing@{torchvision\_down.transforms.transforms.RandomErasing}!scale@{scale}}
+\index{scale@{scale}!torchvision\_down.transforms.transforms.RandomErasing@{torchvision\_down.transforms.transforms.RandomErasing}}
+\doxysubsubsection{\texorpdfstring{scale}{scale}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1transforms_1_1transforms_1_1_random_erasing_a8b3ec1a188bcc7101192187b3581b59a} 
+torchvision\+\_\+down.\+transforms.\+transforms.\+Random\+Erasing.\+scale = scale}
+
+\Hypertarget{classtorchvision__down_1_1transforms_1_1transforms_1_1_random_erasing_af3862a998a38056cb428cca7f3666768}\index{torchvision\_down.transforms.transforms.RandomErasing@{torchvision\_down.transforms.transforms.RandomErasing}!value@{value}}
+\index{value@{value}!torchvision\_down.transforms.transforms.RandomErasing@{torchvision\_down.transforms.transforms.RandomErasing}}
+\doxysubsubsection{\texorpdfstring{value}{value}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1transforms_1_1transforms_1_1_random_erasing_af3862a998a38056cb428cca7f3666768} 
+torchvision\+\_\+down.\+transforms.\+transforms.\+Random\+Erasing.\+value = value}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Cervi\+AI/torchvision\+\_\+down/transforms/\mbox{\hyperlink{transforms_8py}{transforms.\+py}}\end{DoxyCompactItemize}

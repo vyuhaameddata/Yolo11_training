@@ -1,0 +1,77 @@
+\doxysection{torchvision\+\_\+down.\+ops.\+feature\+\_\+pyramid\+\_\+network.\+Last\+Level\+P6\+P7 Class Reference}
+\hypertarget{classtorchvision__down_1_1ops_1_1feature__pyramid__network_1_1_last_level_p6_p7}{}\label{classtorchvision__down_1_1ops_1_1feature__pyramid__network_1_1_last_level_p6_p7}\index{torchvision\_down.ops.feature\_pyramid\_network.LastLevelP6P7@{torchvision\_down.ops.feature\_pyramid\_network.LastLevelP6P7}}
+Inheritance diagram for torchvision\+\_\+down.\+ops.\+feature\+\_\+pyramid\+\_\+network.\+Last\+Level\+P6\+P7\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{classtorchvision__down_1_1ops_1_1feature__pyramid__network_1_1_last_level_p6_p7}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1ops_1_1feature__pyramid__network_1_1_last_level_p6_p7_a408d7847b2e61ca89d3dbc067a2fb568}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, int in\+\_\+channels, int out\+\_\+channels)
+\item 
+Tuple\mbox{[}List\mbox{[}Tensor\mbox{]}, List\mbox{[}str\mbox{]}\mbox{]} \mbox{\hyperlink{classtorchvision__down_1_1ops_1_1feature__pyramid__network_1_1_last_level_p6_p7_a4c5944ae711eda06fd01199c0a9ccb24}{forward}} (self, List\mbox{[}Tensor\mbox{]} p, List\mbox{[}Tensor\mbox{]} c, List\mbox{[}str\mbox{]} names)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1ops_1_1feature__pyramid__network_1_1_last_level_p6_p7_a9b2d1ce8f929ebbf99cbe6e558cc0918}{p6}} = nn.\+Conv2d(in\+\_\+channels, out\+\_\+channels, 3, 2, 1)
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1ops_1_1feature__pyramid__network_1_1_last_level_p6_p7_a255120aa48c988c7287ba799c5c805f2}{p7}} = nn.\+Conv2d(out\+\_\+channels, out\+\_\+channels, 3, 2, 1)
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1ops_1_1feature__pyramid__network_1_1_last_level_p6_p7_a7d266ff9bc751922ecde8feee720bbbd}{use\+\_\+\+P5}} = out\+\_\+channels
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}This module is used in RetinaNet to generate extra layers, P6 and P7.
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classtorchvision__down_1_1ops_1_1feature__pyramid__network_1_1_last_level_p6_p7_a408d7847b2e61ca89d3dbc067a2fb568}\index{torchvision\_down.ops.feature\_pyramid\_network.LastLevelP6P7@{torchvision\_down.ops.feature\_pyramid\_network.LastLevelP6P7}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!torchvision\_down.ops.feature\_pyramid\_network.LastLevelP6P7@{torchvision\_down.ops.feature\_pyramid\_network.LastLevelP6P7}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1ops_1_1feature__pyramid__network_1_1_last_level_p6_p7_a408d7847b2e61ca89d3dbc067a2fb568} 
+torchvision\+\_\+down.\+ops.\+feature\+\_\+pyramid\+\_\+network.\+Last\+Level\+P6\+P7.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{int}]{in\+\_\+channels}{, }\item[{int}]{out\+\_\+channels}{}\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classtorchvision__down_1_1ops_1_1feature__pyramid__network_1_1_last_level_p6_p7_a4c5944ae711eda06fd01199c0a9ccb24}\index{torchvision\_down.ops.feature\_pyramid\_network.LastLevelP6P7@{torchvision\_down.ops.feature\_pyramid\_network.LastLevelP6P7}!forward@{forward}}
+\index{forward@{forward}!torchvision\_down.ops.feature\_pyramid\_network.LastLevelP6P7@{torchvision\_down.ops.feature\_pyramid\_network.LastLevelP6P7}}
+\doxysubsubsection{\texorpdfstring{forward()}{forward()}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1ops_1_1feature__pyramid__network_1_1_last_level_p6_p7_a4c5944ae711eda06fd01199c0a9ccb24} 
+ Tuple\mbox{[}List\mbox{[}Tensor\mbox{]}, List\mbox{[}str\mbox{]}\mbox{]} torchvision\+\_\+down.\+ops.\+feature\+\_\+pyramid\+\_\+network.\+Last\+Level\+P6\+P7.\+forward (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{List\mbox{[}Tensor\mbox{]}}]{p}{, }\item[{List\mbox{[}Tensor\mbox{]}}]{c}{, }\item[{List\mbox{[}str\mbox{]}}]{names}{}\end{DoxyParamCaption})}
+
+
+
+Reimplemented from \mbox{\hyperlink{classtorchvision__down_1_1ops_1_1feature__pyramid__network_1_1_extra_f_p_n_block_a6293e8d7f6271e32a1328a1bbb90098f}{torchvision\+\_\+down.\+ops.\+feature\+\_\+pyramid\+\_\+network.\+Extra\+FPNBlock}}.
+
+
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classtorchvision__down_1_1ops_1_1feature__pyramid__network_1_1_last_level_p6_p7_a9b2d1ce8f929ebbf99cbe6e558cc0918}\index{torchvision\_down.ops.feature\_pyramid\_network.LastLevelP6P7@{torchvision\_down.ops.feature\_pyramid\_network.LastLevelP6P7}!p6@{p6}}
+\index{p6@{p6}!torchvision\_down.ops.feature\_pyramid\_network.LastLevelP6P7@{torchvision\_down.ops.feature\_pyramid\_network.LastLevelP6P7}}
+\doxysubsubsection{\texorpdfstring{p6}{p6}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1ops_1_1feature__pyramid__network_1_1_last_level_p6_p7_a9b2d1ce8f929ebbf99cbe6e558cc0918} 
+torchvision\+\_\+down.\+ops.\+feature\+\_\+pyramid\+\_\+network.\+Last\+Level\+P6\+P7.\+p6 = nn.\+Conv2d(in\+\_\+channels, out\+\_\+channels, 3, 2, 1)}
+
+\Hypertarget{classtorchvision__down_1_1ops_1_1feature__pyramid__network_1_1_last_level_p6_p7_a255120aa48c988c7287ba799c5c805f2}\index{torchvision\_down.ops.feature\_pyramid\_network.LastLevelP6P7@{torchvision\_down.ops.feature\_pyramid\_network.LastLevelP6P7}!p7@{p7}}
+\index{p7@{p7}!torchvision\_down.ops.feature\_pyramid\_network.LastLevelP6P7@{torchvision\_down.ops.feature\_pyramid\_network.LastLevelP6P7}}
+\doxysubsubsection{\texorpdfstring{p7}{p7}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1ops_1_1feature__pyramid__network_1_1_last_level_p6_p7_a255120aa48c988c7287ba799c5c805f2} 
+torchvision\+\_\+down.\+ops.\+feature\+\_\+pyramid\+\_\+network.\+Last\+Level\+P6\+P7.\+p7 = nn.\+Conv2d(out\+\_\+channels, out\+\_\+channels, 3, 2, 1)}
+
+\Hypertarget{classtorchvision__down_1_1ops_1_1feature__pyramid__network_1_1_last_level_p6_p7_a7d266ff9bc751922ecde8feee720bbbd}\index{torchvision\_down.ops.feature\_pyramid\_network.LastLevelP6P7@{torchvision\_down.ops.feature\_pyramid\_network.LastLevelP6P7}!use\_P5@{use\_P5}}
+\index{use\_P5@{use\_P5}!torchvision\_down.ops.feature\_pyramid\_network.LastLevelP6P7@{torchvision\_down.ops.feature\_pyramid\_network.LastLevelP6P7}}
+\doxysubsubsection{\texorpdfstring{use\_P5}{use\_P5}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1ops_1_1feature__pyramid__network_1_1_last_level_p6_p7_a7d266ff9bc751922ecde8feee720bbbd} 
+torchvision\+\_\+down.\+ops.\+feature\+\_\+pyramid\+\_\+network.\+Last\+Level\+P6\+P7.\+use\+\_\+\+P5 = out\+\_\+channels}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Cervi\+AI/torchvision\+\_\+down/ops/\mbox{\hyperlink{feature__pyramid__network_8py}{feature\+\_\+pyramid\+\_\+network.\+py}}\end{DoxyCompactItemize}

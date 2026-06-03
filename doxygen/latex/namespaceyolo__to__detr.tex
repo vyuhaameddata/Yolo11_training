@@ -1,0 +1,305 @@
+\doxysection{yolo\+\_\+to\+\_\+detr Namespace Reference}
+\hypertarget{namespaceyolo__to__detr}{}\label{namespaceyolo__to__detr}\index{yolo\_to\_detr@{yolo\_to\_detr}}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+str \mbox{\hyperlink{namespaceyolo__to__detr_a68a9e733e59de2a0f31d3d55b05baa82}{data\+\_\+dir}} = r"{}\+D\+:\textbackslash{}\+Shreyan\textbackslash{}\+Development\textbackslash{}\+Train\textbackslash{}\+Data\textbackslash{}cat"{}
+\item 
+str \mbox{\hyperlink{namespaceyolo__to__detr_a336c7a2f552689b1be9fe03fd1bac90f}{output\+\_\+dir}} = r"{}\+D\+:\textbackslash{}\+Shreyan\textbackslash{}\+Development\textbackslash{}\+Train\textbackslash{}\+Data\textbackslash{}cat\+\_\+detr"{}
+\item 
+str \mbox{\hyperlink{namespaceyolo__to__detr_a6c7fadf38f457bb1c1bb3c1b99a7eb72}{class\+\_\+file}} = r"{}\+D\+:\textbackslash{}\+Shreyan\textbackslash{}\+Development\textbackslash{}\+Cervi\+AI\+\_\+detr\textbackslash{}classes.\+txt"{}
+\item 
+list \mbox{\hyperlink{namespaceyolo__to__detr_aaab6308b8f9b0deedfcaac56198503bd}{class\+\_\+list}} = \mbox{[}line.\+strip() for line in f.\+readlines()\mbox{]}
+\item 
+dict \mbox{\hyperlink{namespaceyolo__to__detr_a224257264ba857dca16060546803f091}{class\+\_\+dict}} = \{i\+: name for i, name in enumerate(\mbox{\hyperlink{namespaceyolo__to__detr_aaab6308b8f9b0deedfcaac56198503bd}{class\+\_\+list}})\}
+\item 
+\mbox{\hyperlink{namespaceyolo__to__detr_acfd48b0e84c0790498fc366d10a3822e}{images\+\_\+dir}} = os.\+path.\+join(\mbox{\hyperlink{namespaceyolo__to__detr_a68a9e733e59de2a0f31d3d55b05baa82}{data\+\_\+dir}}, split, "{}images"{})
+\item 
+\mbox{\hyperlink{namespaceyolo__to__detr_aa0a33c78fc6c7405576584a00ca15a53}{labels\+\_\+dir}} = os.\+path.\+join(\mbox{\hyperlink{namespaceyolo__to__detr_a68a9e733e59de2a0f31d3d55b05baa82}{data\+\_\+dir}}, split, "{}labels"{})
+\item 
+\mbox{\hyperlink{namespaceyolo__to__detr_a513a009a8efa47c68cc29aa07c466048}{output\+\_\+images\+\_\+dir}} = os.\+path.\+join(\mbox{\hyperlink{namespaceyolo__to__detr_a336c7a2f552689b1be9fe03fd1bac90f}{output\+\_\+dir}}, split, "{}images"{})
+\item 
+\mbox{\hyperlink{namespaceyolo__to__detr_a0570042c05a3ce5dcdfb3fc4aea55caf}{output\+\_\+annotations\+\_\+dir}} = os.\+path.\+join(\mbox{\hyperlink{namespaceyolo__to__detr_a336c7a2f552689b1be9fe03fd1bac90f}{output\+\_\+dir}}, split, "{}annotations"{})
+\item 
+\mbox{\hyperlink{namespaceyolo__to__detr_a2dffd6bedc0cd390eb2b552f4ab2415f}{exist\+\_\+ok}}
+\item 
+dict \mbox{\hyperlink{namespaceyolo__to__detr_a45e84675d5725164f6341196bf6213d2}{detr\+\_\+format}}
+\item 
+int \mbox{\hyperlink{namespaceyolo__to__detr_a215ad096d35bee182894cac9dd72ec8d}{image\+\_\+id}} = 0
+\item 
+int \mbox{\hyperlink{namespaceyolo__to__detr_a79bf7a4836b30f5bad8e095b9fe313a8}{annotation\+\_\+id}} = 0
+\item 
+\mbox{\hyperlink{namespaceyolo__to__detr_afebcd9f488b42103414ac6ec314441e3}{desc}}
+\item 
+\mbox{\hyperlink{namespaceyolo__to__detr_a14cbfb618a0a412040b057b22651a1f3}{image\+\_\+path}} = os.\+path.\+join(\mbox{\hyperlink{namespaceyolo__to__detr_acfd48b0e84c0790498fc366d10a3822e}{images\+\_\+dir}}, filename)
+\item 
+\mbox{\hyperlink{namespaceyolo__to__detr_a2f6b44c3d56a08ec79a7671fad7130b7}{label\+\_\+path}} = os.\+path.\+join(\mbox{\hyperlink{namespaceyolo__to__detr_aa0a33c78fc6c7405576584a00ca15a53}{labels\+\_\+dir}}, filename.\+replace("{}.tif"{}, "{}.txt"{}))
+\item 
+\mbox{\hyperlink{namespaceyolo__to__detr_a14d051d2cb1196e51790336f4dad50b8}{new\+\_\+filename}} = filename.\+replace("{}.tif"{}, "{}.jpg"{})
+\item 
+\mbox{\hyperlink{namespaceyolo__to__detr_a64905b80da65d25097bd2a64b0c874a6}{new\+\_\+image\+\_\+path}} = os.\+path.\+join(\mbox{\hyperlink{namespaceyolo__to__detr_a513a009a8efa47c68cc29aa07c466048}{output\+\_\+images\+\_\+dir}}, \mbox{\hyperlink{namespaceyolo__to__detr_a14d051d2cb1196e51790336f4dad50b8}{new\+\_\+filename}})
+\item 
+\mbox{\hyperlink{namespaceyolo__to__detr_a5f1a5fcb10a2b75d10677c081228974f}{image}} = cv2.\+imread(\mbox{\hyperlink{namespaceyolo__to__detr_a14cbfb618a0a412040b057b22651a1f3}{image\+\_\+path}}, cv2.\+IMREAD\+\_\+\+UNCHANGED)
+\item 
+\mbox{\hyperlink{namespaceyolo__to__detr_afa8b3954fa841d75892cc65bd6fc5929}{height}}
+\item 
+\mbox{\hyperlink{namespaceyolo__to__detr_a3b86de4c14cb5ce941b4d6e8fbe30091}{width}}
+\item 
+list \mbox{\hyperlink{namespaceyolo__to__detr_ab519cb7ed03a0407d291307a6144efad}{lines}} = \mbox{[}line.\+strip() for line in f.\+readlines() if line.\+strip()\mbox{]}
+\item 
+\mbox{\hyperlink{namespaceyolo__to__detr_a56e81825e5c60f700b9e4126cbc535f4}{parts}} = line.\+split()
+\item 
+\mbox{\hyperlink{namespaceyolo__to__detr_ad450950836b143115f8d9ddd75586c99}{class\+\_\+id}} = int(\mbox{\hyperlink{namespaceyolo__to__detr_a56e81825e5c60f700b9e4126cbc535f4}{parts}}\mbox{[}0\mbox{]})
+\item 
+\mbox{\hyperlink{namespaceyolo__to__detr_a09d31fa4929dd3cac2e7d1068e8d1b43}{x\+\_\+center}}
+\item 
+\mbox{\hyperlink{namespaceyolo__to__detr_acdd585810fcc444fd2f029ce69b595cf}{y\+\_\+center}}
+\item 
+\mbox{\hyperlink{namespaceyolo__to__detr_ac2acd0b2b77c06254f167bf21e058a8d}{bbox\+\_\+width}}
+\item 
+\mbox{\hyperlink{namespaceyolo__to__detr_a3878f588fab2477ae68dc97877f97ac0}{bbox\+\_\+height}}
+\item 
+\mbox{\hyperlink{namespaceyolo__to__detr_a14cac6c35ba573dd17c07a7a8380e47a}{x\+\_\+min}} = round((\mbox{\hyperlink{namespaceyolo__to__detr_a09d31fa4929dd3cac2e7d1068e8d1b43}{x\+\_\+center}} -\/ \mbox{\hyperlink{namespaceyolo__to__detr_ac2acd0b2b77c06254f167bf21e058a8d}{bbox\+\_\+width}} / 2) \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{namespaceyolo__to__detr_a3b86de4c14cb5ce941b4d6e8fbe30091}{width}})
+\item 
+\mbox{\hyperlink{namespaceyolo__to__detr_a82d511042e6508b38ab4b6162f2e63cb}{y\+\_\+min}} = round((\mbox{\hyperlink{namespaceyolo__to__detr_acdd585810fcc444fd2f029ce69b595cf}{y\+\_\+center}} -\/ \mbox{\hyperlink{namespaceyolo__to__detr_a3878f588fab2477ae68dc97877f97ac0}{bbox\+\_\+height}} / 2) \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{namespaceyolo__to__detr_afa8b3954fa841d75892cc65bd6fc5929}{height}})
+\item 
+\mbox{\hyperlink{namespaceyolo__to__detr_aa44821a68e44a3364213e65a0cb29e5c}{x\+\_\+max}} = round((\mbox{\hyperlink{namespaceyolo__to__detr_a09d31fa4929dd3cac2e7d1068e8d1b43}{x\+\_\+center}} + \mbox{\hyperlink{namespaceyolo__to__detr_ac2acd0b2b77c06254f167bf21e058a8d}{bbox\+\_\+width}} / 2) \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{namespaceyolo__to__detr_a3b86de4c14cb5ce941b4d6e8fbe30091}{width}})
+\item 
+\mbox{\hyperlink{namespaceyolo__to__detr_ab5f20be6ef345ac4c36348fea4d10ce0}{y\+\_\+max}} = round((\mbox{\hyperlink{namespaceyolo__to__detr_acdd585810fcc444fd2f029ce69b595cf}{y\+\_\+center}} + \mbox{\hyperlink{namespaceyolo__to__detr_a3878f588fab2477ae68dc97877f97ac0}{bbox\+\_\+height}} / 2) \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{namespaceyolo__to__detr_afa8b3954fa841d75892cc65bd6fc5929}{height}})
+\item 
+\mbox{\hyperlink{namespaceyolo__to__detr_a3c05cb57eb4bd211fbf3a61ac8f39c08}{detr\+\_\+json\+\_\+path}} = os.\+path.\+join(\mbox{\hyperlink{namespaceyolo__to__detr_a0570042c05a3ce5dcdfb3fc4aea55caf}{output\+\_\+annotations\+\_\+dir}}, f"{}instances\+\_\+\{split\}.json"{})
+\item 
+\mbox{\hyperlink{namespaceyolo__to__detr_ac46eb33c3f528159a82116a364115ae9}{f}}
+\item 
+\mbox{\hyperlink{namespaceyolo__to__detr_a61ffad598cc05cf49765d2599aab48be}{indent}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Variable Documentation}
+\Hypertarget{namespaceyolo__to__detr_a79bf7a4836b30f5bad8e095b9fe313a8}\index{yolo\_to\_detr@{yolo\_to\_detr}!annotation\_id@{annotation\_id}}
+\index{annotation\_id@{annotation\_id}!yolo\_to\_detr@{yolo\_to\_detr}}
+\doxysubsubsection{\texorpdfstring{annotation\_id}{annotation\_id}}
+{\footnotesize\ttfamily \label{namespaceyolo__to__detr_a79bf7a4836b30f5bad8e095b9fe313a8} 
+int yolo\+\_\+to\+\_\+detr.\+annotation\+\_\+id = 0}
+
+\Hypertarget{namespaceyolo__to__detr_a3878f588fab2477ae68dc97877f97ac0}\index{yolo\_to\_detr@{yolo\_to\_detr}!bbox\_height@{bbox\_height}}
+\index{bbox\_height@{bbox\_height}!yolo\_to\_detr@{yolo\_to\_detr}}
+\doxysubsubsection{\texorpdfstring{bbox\_height}{bbox\_height}}
+{\footnotesize\ttfamily \label{namespaceyolo__to__detr_a3878f588fab2477ae68dc97877f97ac0} 
+yolo\+\_\+to\+\_\+detr.\+bbox\+\_\+height}
+
+\Hypertarget{namespaceyolo__to__detr_ac2acd0b2b77c06254f167bf21e058a8d}\index{yolo\_to\_detr@{yolo\_to\_detr}!bbox\_width@{bbox\_width}}
+\index{bbox\_width@{bbox\_width}!yolo\_to\_detr@{yolo\_to\_detr}}
+\doxysubsubsection{\texorpdfstring{bbox\_width}{bbox\_width}}
+{\footnotesize\ttfamily \label{namespaceyolo__to__detr_ac2acd0b2b77c06254f167bf21e058a8d} 
+yolo\+\_\+to\+\_\+detr.\+bbox\+\_\+width}
+
+\Hypertarget{namespaceyolo__to__detr_a224257264ba857dca16060546803f091}\index{yolo\_to\_detr@{yolo\_to\_detr}!class\_dict@{class\_dict}}
+\index{class\_dict@{class\_dict}!yolo\_to\_detr@{yolo\_to\_detr}}
+\doxysubsubsection{\texorpdfstring{class\_dict}{class\_dict}}
+{\footnotesize\ttfamily \label{namespaceyolo__to__detr_a224257264ba857dca16060546803f091} 
+dict yolo\+\_\+to\+\_\+detr.\+class\+\_\+dict = \{i\+: name for i, name in enumerate(\mbox{\hyperlink{namespaceyolo__to__detr_aaab6308b8f9b0deedfcaac56198503bd}{class\+\_\+list}})\}}
+
+\Hypertarget{namespaceyolo__to__detr_a6c7fadf38f457bb1c1bb3c1b99a7eb72}\index{yolo\_to\_detr@{yolo\_to\_detr}!class\_file@{class\_file}}
+\index{class\_file@{class\_file}!yolo\_to\_detr@{yolo\_to\_detr}}
+\doxysubsubsection{\texorpdfstring{class\_file}{class\_file}}
+{\footnotesize\ttfamily \label{namespaceyolo__to__detr_a6c7fadf38f457bb1c1bb3c1b99a7eb72} 
+str yolo\+\_\+to\+\_\+detr.\+class\+\_\+file = r"{}\+D\+:\textbackslash{}\+Shreyan\textbackslash{}\+Development\textbackslash{}\+Cervi\+AI\+\_\+detr\textbackslash{}classes.\+txt"{}}
+
+\Hypertarget{namespaceyolo__to__detr_ad450950836b143115f8d9ddd75586c99}\index{yolo\_to\_detr@{yolo\_to\_detr}!class\_id@{class\_id}}
+\index{class\_id@{class\_id}!yolo\_to\_detr@{yolo\_to\_detr}}
+\doxysubsubsection{\texorpdfstring{class\_id}{class\_id}}
+{\footnotesize\ttfamily \label{namespaceyolo__to__detr_ad450950836b143115f8d9ddd75586c99} 
+yolo\+\_\+to\+\_\+detr.\+class\+\_\+id = int(\mbox{\hyperlink{namespaceyolo__to__detr_a56e81825e5c60f700b9e4126cbc535f4}{parts}}\mbox{[}0\mbox{]})}
+
+\Hypertarget{namespaceyolo__to__detr_aaab6308b8f9b0deedfcaac56198503bd}\index{yolo\_to\_detr@{yolo\_to\_detr}!class\_list@{class\_list}}
+\index{class\_list@{class\_list}!yolo\_to\_detr@{yolo\_to\_detr}}
+\doxysubsubsection{\texorpdfstring{class\_list}{class\_list}}
+{\footnotesize\ttfamily \label{namespaceyolo__to__detr_aaab6308b8f9b0deedfcaac56198503bd} 
+list yolo\+\_\+to\+\_\+detr.\+class\+\_\+list = \mbox{[}line.\+strip() for line in f.\+readlines()\mbox{]}}
+
+\Hypertarget{namespaceyolo__to__detr_a68a9e733e59de2a0f31d3d55b05baa82}\index{yolo\_to\_detr@{yolo\_to\_detr}!data\_dir@{data\_dir}}
+\index{data\_dir@{data\_dir}!yolo\_to\_detr@{yolo\_to\_detr}}
+\doxysubsubsection{\texorpdfstring{data\_dir}{data\_dir}}
+{\footnotesize\ttfamily \label{namespaceyolo__to__detr_a68a9e733e59de2a0f31d3d55b05baa82} 
+str yolo\+\_\+to\+\_\+detr.\+data\+\_\+dir = r"{}\+D\+:\textbackslash{}\+Shreyan\textbackslash{}\+Development\textbackslash{}\+Train\textbackslash{}\+Data\textbackslash{}cat"{}}
+
+\Hypertarget{namespaceyolo__to__detr_afebcd9f488b42103414ac6ec314441e3}\index{yolo\_to\_detr@{yolo\_to\_detr}!desc@{desc}}
+\index{desc@{desc}!yolo\_to\_detr@{yolo\_to\_detr}}
+\doxysubsubsection{\texorpdfstring{desc}{desc}}
+{\footnotesize\ttfamily \label{namespaceyolo__to__detr_afebcd9f488b42103414ac6ec314441e3} 
+yolo\+\_\+to\+\_\+detr.\+desc}
+
+\Hypertarget{namespaceyolo__to__detr_a45e84675d5725164f6341196bf6213d2}\index{yolo\_to\_detr@{yolo\_to\_detr}!detr\_format@{detr\_format}}
+\index{detr\_format@{detr\_format}!yolo\_to\_detr@{yolo\_to\_detr}}
+\doxysubsubsection{\texorpdfstring{detr\_format}{detr\_format}}
+{\footnotesize\ttfamily \label{namespaceyolo__to__detr_a45e84675d5725164f6341196bf6213d2} 
+yolo\+\_\+to\+\_\+detr.\+detr\+\_\+format}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ =\ \ \{}
+\DoxyCodeLine{00002\ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}info"{}}:\ \{}
+\DoxyCodeLine{00003\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}description"{}}:\ \textcolor{stringliteral}{"{}Converted\ YOLO\ dataset\ for\ Deformable\ DETR"{}},}
+\DoxyCodeLine{00004\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}version"{}}:\ \textcolor{stringliteral}{"{}1.0"{}},}
+\DoxyCodeLine{00005\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}year"{}}:\ 2025,}
+\DoxyCodeLine{00006\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}contributor"{}}:\ \textcolor{stringliteral}{"{}Shreyan"{}},}
+\DoxyCodeLine{00007\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}date\_created"{}}:\ \textcolor{stringliteral}{"{}2025-\/02-\/28"{}}}
+\DoxyCodeLine{00008\ \ \ \ \ \ \ \ \ \},}
+\DoxyCodeLine{00009\ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}licenses"{}}:\ [],}
+\DoxyCodeLine{00010\ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}images"{}}:\ [],}
+\DoxyCodeLine{00011\ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}annotations"{}}:\ [],}
+\DoxyCodeLine{00012\ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}categories"{}}:\ [\{\textcolor{stringliteral}{"{}id"{}}:\ i\ +\ 1,\ \textcolor{stringliteral}{"{}name"{}}:\ name,\ \textcolor{stringliteral}{"{}supercategory"{}}:\ \textcolor{stringliteral}{"{}object"{}}\}\ \textcolor{keywordflow}{for}\ i,\ name\ \textcolor{keywordflow}{in}\ class\_dict.items()]}
+\DoxyCodeLine{00013\ \ \ \ \ \}}
+
+\end{DoxyCode}
+\Hypertarget{namespaceyolo__to__detr_a3c05cb57eb4bd211fbf3a61ac8f39c08}\index{yolo\_to\_detr@{yolo\_to\_detr}!detr\_json\_path@{detr\_json\_path}}
+\index{detr\_json\_path@{detr\_json\_path}!yolo\_to\_detr@{yolo\_to\_detr}}
+\doxysubsubsection{\texorpdfstring{detr\_json\_path}{detr\_json\_path}}
+{\footnotesize\ttfamily \label{namespaceyolo__to__detr_a3c05cb57eb4bd211fbf3a61ac8f39c08} 
+yolo\+\_\+to\+\_\+detr.\+detr\+\_\+json\+\_\+path = os.\+path.\+join(\mbox{\hyperlink{namespaceyolo__to__detr_a0570042c05a3ce5dcdfb3fc4aea55caf}{output\+\_\+annotations\+\_\+dir}}, f"{}instances\+\_\+\{split\}.json"{})}
+
+\Hypertarget{namespaceyolo__to__detr_a2dffd6bedc0cd390eb2b552f4ab2415f}\index{yolo\_to\_detr@{yolo\_to\_detr}!exist\_ok@{exist\_ok}}
+\index{exist\_ok@{exist\_ok}!yolo\_to\_detr@{yolo\_to\_detr}}
+\doxysubsubsection{\texorpdfstring{exist\_ok}{exist\_ok}}
+{\footnotesize\ttfamily \label{namespaceyolo__to__detr_a2dffd6bedc0cd390eb2b552f4ab2415f} 
+yolo\+\_\+to\+\_\+detr.\+exist\+\_\+ok}
+
+\Hypertarget{namespaceyolo__to__detr_ac46eb33c3f528159a82116a364115ae9}\index{yolo\_to\_detr@{yolo\_to\_detr}!f@{f}}
+\index{f@{f}!yolo\_to\_detr@{yolo\_to\_detr}}
+\doxysubsubsection{\texorpdfstring{f}{f}}
+{\footnotesize\ttfamily \label{namespaceyolo__to__detr_ac46eb33c3f528159a82116a364115ae9} 
+yolo\+\_\+to\+\_\+detr.\+f}
+
+\Hypertarget{namespaceyolo__to__detr_afa8b3954fa841d75892cc65bd6fc5929}\index{yolo\_to\_detr@{yolo\_to\_detr}!height@{height}}
+\index{height@{height}!yolo\_to\_detr@{yolo\_to\_detr}}
+\doxysubsubsection{\texorpdfstring{height}{height}}
+{\footnotesize\ttfamily \label{namespaceyolo__to__detr_afa8b3954fa841d75892cc65bd6fc5929} 
+yolo\+\_\+to\+\_\+detr.\+height}
+
+\Hypertarget{namespaceyolo__to__detr_a5f1a5fcb10a2b75d10677c081228974f}\index{yolo\_to\_detr@{yolo\_to\_detr}!image@{image}}
+\index{image@{image}!yolo\_to\_detr@{yolo\_to\_detr}}
+\doxysubsubsection{\texorpdfstring{image}{image}}
+{\footnotesize\ttfamily \label{namespaceyolo__to__detr_a5f1a5fcb10a2b75d10677c081228974f} 
+yolo\+\_\+to\+\_\+detr.\+image = cv2.\+imread(\mbox{\hyperlink{namespaceyolo__to__detr_a14cbfb618a0a412040b057b22651a1f3}{image\+\_\+path}}, cv2.\+IMREAD\+\_\+\+UNCHANGED)}
+
+\Hypertarget{namespaceyolo__to__detr_a215ad096d35bee182894cac9dd72ec8d}\index{yolo\_to\_detr@{yolo\_to\_detr}!image\_id@{image\_id}}
+\index{image\_id@{image\_id}!yolo\_to\_detr@{yolo\_to\_detr}}
+\doxysubsubsection{\texorpdfstring{image\_id}{image\_id}}
+{\footnotesize\ttfamily \label{namespaceyolo__to__detr_a215ad096d35bee182894cac9dd72ec8d} 
+int yolo\+\_\+to\+\_\+detr.\+image\+\_\+id = 0}
+
+\Hypertarget{namespaceyolo__to__detr_a14cbfb618a0a412040b057b22651a1f3}\index{yolo\_to\_detr@{yolo\_to\_detr}!image\_path@{image\_path}}
+\index{image\_path@{image\_path}!yolo\_to\_detr@{yolo\_to\_detr}}
+\doxysubsubsection{\texorpdfstring{image\_path}{image\_path}}
+{\footnotesize\ttfamily \label{namespaceyolo__to__detr_a14cbfb618a0a412040b057b22651a1f3} 
+yolo\+\_\+to\+\_\+detr.\+image\+\_\+path = os.\+path.\+join(\mbox{\hyperlink{namespaceyolo__to__detr_acfd48b0e84c0790498fc366d10a3822e}{images\+\_\+dir}}, filename)}
+
+\Hypertarget{namespaceyolo__to__detr_acfd48b0e84c0790498fc366d10a3822e}\index{yolo\_to\_detr@{yolo\_to\_detr}!images\_dir@{images\_dir}}
+\index{images\_dir@{images\_dir}!yolo\_to\_detr@{yolo\_to\_detr}}
+\doxysubsubsection{\texorpdfstring{images\_dir}{images\_dir}}
+{\footnotesize\ttfamily \label{namespaceyolo__to__detr_acfd48b0e84c0790498fc366d10a3822e} 
+yolo\+\_\+to\+\_\+detr.\+images\+\_\+dir = os.\+path.\+join(\mbox{\hyperlink{namespaceyolo__to__detr_a68a9e733e59de2a0f31d3d55b05baa82}{data\+\_\+dir}}, split, "{}images"{})}
+
+\Hypertarget{namespaceyolo__to__detr_a61ffad598cc05cf49765d2599aab48be}\index{yolo\_to\_detr@{yolo\_to\_detr}!indent@{indent}}
+\index{indent@{indent}!yolo\_to\_detr@{yolo\_to\_detr}}
+\doxysubsubsection{\texorpdfstring{indent}{indent}}
+{\footnotesize\ttfamily \label{namespaceyolo__to__detr_a61ffad598cc05cf49765d2599aab48be} 
+yolo\+\_\+to\+\_\+detr.\+indent}
+
+\Hypertarget{namespaceyolo__to__detr_a2f6b44c3d56a08ec79a7671fad7130b7}\index{yolo\_to\_detr@{yolo\_to\_detr}!label\_path@{label\_path}}
+\index{label\_path@{label\_path}!yolo\_to\_detr@{yolo\_to\_detr}}
+\doxysubsubsection{\texorpdfstring{label\_path}{label\_path}}
+{\footnotesize\ttfamily \label{namespaceyolo__to__detr_a2f6b44c3d56a08ec79a7671fad7130b7} 
+yolo\+\_\+to\+\_\+detr.\+label\+\_\+path = os.\+path.\+join(\mbox{\hyperlink{namespaceyolo__to__detr_aa0a33c78fc6c7405576584a00ca15a53}{labels\+\_\+dir}}, filename.\+replace("{}.tif"{}, "{}.txt"{}))}
+
+\Hypertarget{namespaceyolo__to__detr_aa0a33c78fc6c7405576584a00ca15a53}\index{yolo\_to\_detr@{yolo\_to\_detr}!labels\_dir@{labels\_dir}}
+\index{labels\_dir@{labels\_dir}!yolo\_to\_detr@{yolo\_to\_detr}}
+\doxysubsubsection{\texorpdfstring{labels\_dir}{labels\_dir}}
+{\footnotesize\ttfamily \label{namespaceyolo__to__detr_aa0a33c78fc6c7405576584a00ca15a53} 
+yolo\+\_\+to\+\_\+detr.\+labels\+\_\+dir = os.\+path.\+join(\mbox{\hyperlink{namespaceyolo__to__detr_a68a9e733e59de2a0f31d3d55b05baa82}{data\+\_\+dir}}, split, "{}labels"{})}
+
+\Hypertarget{namespaceyolo__to__detr_ab519cb7ed03a0407d291307a6144efad}\index{yolo\_to\_detr@{yolo\_to\_detr}!lines@{lines}}
+\index{lines@{lines}!yolo\_to\_detr@{yolo\_to\_detr}}
+\doxysubsubsection{\texorpdfstring{lines}{lines}}
+{\footnotesize\ttfamily \label{namespaceyolo__to__detr_ab519cb7ed03a0407d291307a6144efad} 
+list yolo\+\_\+to\+\_\+detr.\+lines = \mbox{[}line.\+strip() for line in f.\+readlines() if line.\+strip()\mbox{]}}
+
+\Hypertarget{namespaceyolo__to__detr_a14d051d2cb1196e51790336f4dad50b8}\index{yolo\_to\_detr@{yolo\_to\_detr}!new\_filename@{new\_filename}}
+\index{new\_filename@{new\_filename}!yolo\_to\_detr@{yolo\_to\_detr}}
+\doxysubsubsection{\texorpdfstring{new\_filename}{new\_filename}}
+{\footnotesize\ttfamily \label{namespaceyolo__to__detr_a14d051d2cb1196e51790336f4dad50b8} 
+yolo\+\_\+to\+\_\+detr.\+new\+\_\+filename = filename.\+replace("{}.tif"{}, "{}.jpg"{})}
+
+\Hypertarget{namespaceyolo__to__detr_a64905b80da65d25097bd2a64b0c874a6}\index{yolo\_to\_detr@{yolo\_to\_detr}!new\_image\_path@{new\_image\_path}}
+\index{new\_image\_path@{new\_image\_path}!yolo\_to\_detr@{yolo\_to\_detr}}
+\doxysubsubsection{\texorpdfstring{new\_image\_path}{new\_image\_path}}
+{\footnotesize\ttfamily \label{namespaceyolo__to__detr_a64905b80da65d25097bd2a64b0c874a6} 
+yolo\+\_\+to\+\_\+detr.\+new\+\_\+image\+\_\+path = os.\+path.\+join(\mbox{\hyperlink{namespaceyolo__to__detr_a513a009a8efa47c68cc29aa07c466048}{output\+\_\+images\+\_\+dir}}, \mbox{\hyperlink{namespaceyolo__to__detr_a14d051d2cb1196e51790336f4dad50b8}{new\+\_\+filename}})}
+
+\Hypertarget{namespaceyolo__to__detr_a0570042c05a3ce5dcdfb3fc4aea55caf}\index{yolo\_to\_detr@{yolo\_to\_detr}!output\_annotations\_dir@{output\_annotations\_dir}}
+\index{output\_annotations\_dir@{output\_annotations\_dir}!yolo\_to\_detr@{yolo\_to\_detr}}
+\doxysubsubsection{\texorpdfstring{output\_annotations\_dir}{output\_annotations\_dir}}
+{\footnotesize\ttfamily \label{namespaceyolo__to__detr_a0570042c05a3ce5dcdfb3fc4aea55caf} 
+yolo\+\_\+to\+\_\+detr.\+output\+\_\+annotations\+\_\+dir = os.\+path.\+join(\mbox{\hyperlink{namespaceyolo__to__detr_a336c7a2f552689b1be9fe03fd1bac90f}{output\+\_\+dir}}, split, "{}annotations"{})}
+
+\Hypertarget{namespaceyolo__to__detr_a336c7a2f552689b1be9fe03fd1bac90f}\index{yolo\_to\_detr@{yolo\_to\_detr}!output\_dir@{output\_dir}}
+\index{output\_dir@{output\_dir}!yolo\_to\_detr@{yolo\_to\_detr}}
+\doxysubsubsection{\texorpdfstring{output\_dir}{output\_dir}}
+{\footnotesize\ttfamily \label{namespaceyolo__to__detr_a336c7a2f552689b1be9fe03fd1bac90f} 
+str yolo\+\_\+to\+\_\+detr.\+output\+\_\+dir = r"{}\+D\+:\textbackslash{}\+Shreyan\textbackslash{}\+Development\textbackslash{}\+Train\textbackslash{}\+Data\textbackslash{}cat\+\_\+detr"{}}
+
+\Hypertarget{namespaceyolo__to__detr_a513a009a8efa47c68cc29aa07c466048}\index{yolo\_to\_detr@{yolo\_to\_detr}!output\_images\_dir@{output\_images\_dir}}
+\index{output\_images\_dir@{output\_images\_dir}!yolo\_to\_detr@{yolo\_to\_detr}}
+\doxysubsubsection{\texorpdfstring{output\_images\_dir}{output\_images\_dir}}
+{\footnotesize\ttfamily \label{namespaceyolo__to__detr_a513a009a8efa47c68cc29aa07c466048} 
+yolo\+\_\+to\+\_\+detr.\+output\+\_\+images\+\_\+dir = os.\+path.\+join(\mbox{\hyperlink{namespaceyolo__to__detr_a336c7a2f552689b1be9fe03fd1bac90f}{output\+\_\+dir}}, split, "{}images"{})}
+
+\Hypertarget{namespaceyolo__to__detr_a56e81825e5c60f700b9e4126cbc535f4}\index{yolo\_to\_detr@{yolo\_to\_detr}!parts@{parts}}
+\index{parts@{parts}!yolo\_to\_detr@{yolo\_to\_detr}}
+\doxysubsubsection{\texorpdfstring{parts}{parts}}
+{\footnotesize\ttfamily \label{namespaceyolo__to__detr_a56e81825e5c60f700b9e4126cbc535f4} 
+yolo\+\_\+to\+\_\+detr.\+parts = line.\+split()}
+
+\Hypertarget{namespaceyolo__to__detr_a3b86de4c14cb5ce941b4d6e8fbe30091}\index{yolo\_to\_detr@{yolo\_to\_detr}!width@{width}}
+\index{width@{width}!yolo\_to\_detr@{yolo\_to\_detr}}
+\doxysubsubsection{\texorpdfstring{width}{width}}
+{\footnotesize\ttfamily \label{namespaceyolo__to__detr_a3b86de4c14cb5ce941b4d6e8fbe30091} 
+yolo\+\_\+to\+\_\+detr.\+width}
+
+\Hypertarget{namespaceyolo__to__detr_a09d31fa4929dd3cac2e7d1068e8d1b43}\index{yolo\_to\_detr@{yolo\_to\_detr}!x\_center@{x\_center}}
+\index{x\_center@{x\_center}!yolo\_to\_detr@{yolo\_to\_detr}}
+\doxysubsubsection{\texorpdfstring{x\_center}{x\_center}}
+{\footnotesize\ttfamily \label{namespaceyolo__to__detr_a09d31fa4929dd3cac2e7d1068e8d1b43} 
+yolo\+\_\+to\+\_\+detr.\+x\+\_\+center}
+
+\Hypertarget{namespaceyolo__to__detr_aa44821a68e44a3364213e65a0cb29e5c}\index{yolo\_to\_detr@{yolo\_to\_detr}!x\_max@{x\_max}}
+\index{x\_max@{x\_max}!yolo\_to\_detr@{yolo\_to\_detr}}
+\doxysubsubsection{\texorpdfstring{x\_max}{x\_max}}
+{\footnotesize\ttfamily \label{namespaceyolo__to__detr_aa44821a68e44a3364213e65a0cb29e5c} 
+yolo\+\_\+to\+\_\+detr.\+x\+\_\+max = round((\mbox{\hyperlink{namespaceyolo__to__detr_a09d31fa4929dd3cac2e7d1068e8d1b43}{x\+\_\+center}} + \mbox{\hyperlink{namespaceyolo__to__detr_ac2acd0b2b77c06254f167bf21e058a8d}{bbox\+\_\+width}} / 2) \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{namespaceyolo__to__detr_a3b86de4c14cb5ce941b4d6e8fbe30091}{width}})}
+
+\Hypertarget{namespaceyolo__to__detr_a14cac6c35ba573dd17c07a7a8380e47a}\index{yolo\_to\_detr@{yolo\_to\_detr}!x\_min@{x\_min}}
+\index{x\_min@{x\_min}!yolo\_to\_detr@{yolo\_to\_detr}}
+\doxysubsubsection{\texorpdfstring{x\_min}{x\_min}}
+{\footnotesize\ttfamily \label{namespaceyolo__to__detr_a14cac6c35ba573dd17c07a7a8380e47a} 
+yolo\+\_\+to\+\_\+detr.\+x\+\_\+min = round((\mbox{\hyperlink{namespaceyolo__to__detr_a09d31fa4929dd3cac2e7d1068e8d1b43}{x\+\_\+center}} -\/ \mbox{\hyperlink{namespaceyolo__to__detr_ac2acd0b2b77c06254f167bf21e058a8d}{bbox\+\_\+width}} / 2) \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{namespaceyolo__to__detr_a3b86de4c14cb5ce941b4d6e8fbe30091}{width}})}
+
+\Hypertarget{namespaceyolo__to__detr_acdd585810fcc444fd2f029ce69b595cf}\index{yolo\_to\_detr@{yolo\_to\_detr}!y\_center@{y\_center}}
+\index{y\_center@{y\_center}!yolo\_to\_detr@{yolo\_to\_detr}}
+\doxysubsubsection{\texorpdfstring{y\_center}{y\_center}}
+{\footnotesize\ttfamily \label{namespaceyolo__to__detr_acdd585810fcc444fd2f029ce69b595cf} 
+yolo\+\_\+to\+\_\+detr.\+y\+\_\+center}
+
+\Hypertarget{namespaceyolo__to__detr_ab5f20be6ef345ac4c36348fea4d10ce0}\index{yolo\_to\_detr@{yolo\_to\_detr}!y\_max@{y\_max}}
+\index{y\_max@{y\_max}!yolo\_to\_detr@{yolo\_to\_detr}}
+\doxysubsubsection{\texorpdfstring{y\_max}{y\_max}}
+{\footnotesize\ttfamily \label{namespaceyolo__to__detr_ab5f20be6ef345ac4c36348fea4d10ce0} 
+yolo\+\_\+to\+\_\+detr.\+y\+\_\+max = round((\mbox{\hyperlink{namespaceyolo__to__detr_acdd585810fcc444fd2f029ce69b595cf}{y\+\_\+center}} + \mbox{\hyperlink{namespaceyolo__to__detr_a3878f588fab2477ae68dc97877f97ac0}{bbox\+\_\+height}} / 2) \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{namespaceyolo__to__detr_afa8b3954fa841d75892cc65bd6fc5929}{height}})}
+
+\Hypertarget{namespaceyolo__to__detr_a82d511042e6508b38ab4b6162f2e63cb}\index{yolo\_to\_detr@{yolo\_to\_detr}!y\_min@{y\_min}}
+\index{y\_min@{y\_min}!yolo\_to\_detr@{yolo\_to\_detr}}
+\doxysubsubsection{\texorpdfstring{y\_min}{y\_min}}
+{\footnotesize\ttfamily \label{namespaceyolo__to__detr_a82d511042e6508b38ab4b6162f2e63cb} 
+yolo\+\_\+to\+\_\+detr.\+y\+\_\+min = round((\mbox{\hyperlink{namespaceyolo__to__detr_acdd585810fcc444fd2f029ce69b595cf}{y\+\_\+center}} -\/ \mbox{\hyperlink{namespaceyolo__to__detr_a3878f588fab2477ae68dc97877f97ac0}{bbox\+\_\+height}} / 2) \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{namespaceyolo__to__detr_afa8b3954fa841d75892cc65bd6fc5929}{height}})}
+

@@ -1,0 +1,82 @@
+\doxysection{torchvision\+\_\+down.\+transforms.\+transforms.\+Compose Class Reference}
+\hypertarget{classtorchvision__down_1_1transforms_1_1transforms_1_1_compose}{}\label{classtorchvision__down_1_1transforms_1_1transforms_1_1_compose}\index{torchvision\_down.transforms.transforms.Compose@{torchvision\_down.transforms.transforms.Compose}}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1transforms_1_1transforms_1_1_compose_a90930d20a139766578f8d7b4af43d721}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, \mbox{\hyperlink{classtorchvision__down_1_1transforms_1_1transforms_1_1_compose_ab430bb53616201aadf43c0e9d764a142}{transforms}})
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1transforms_1_1transforms_1_1_compose_a74fa8610618b2e8846683a2f0a68bbe2}{\+\_\+\+\_\+call\+\_\+\+\_\+}} (self, img)
+\item 
+str \mbox{\hyperlink{classtorchvision__down_1_1transforms_1_1transforms_1_1_compose_a4a9942e80f19d7527f7c93ab0d1ea47a}{\+\_\+\+\_\+repr\+\_\+\+\_\+}} (self)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1transforms_1_1transforms_1_1_compose_ab430bb53616201aadf43c0e9d764a142}{transforms}} = transforms
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}Composes several transforms together. This transform does not support torchscript.
+Please, see the note below.
+
+Args:
+    transforms (list of ``Transform`` objects): list of transforms to compose.
+
+Example:
+    >>> transforms.Compose([
+    >>>     transforms.CenterCrop(10),
+    >>>     transforms.PILToTensor(),
+    >>>     transforms.ConvertImageDtype(torch.float),
+    >>> ])
+
+.. note::
+    In order to script the transformations, please use ``torch.nn.Sequential`` as below.
+
+    >>> transforms = torch.nn.Sequential(
+    >>>     transforms.CenterCrop(10),
+    >>>     transforms.Normalize((0.485, 0.456, 0.406), (0.229, 0.224, 0.225)),
+    >>> )
+    >>> scripted_transforms = torch.jit.script(transforms)
+
+    Make sure to use only scriptable transformations, i.e. that work with ``torch.Tensor``, does not require
+    `lambda` functions or ``PIL.Image``.
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classtorchvision__down_1_1transforms_1_1transforms_1_1_compose_a90930d20a139766578f8d7b4af43d721}\index{torchvision\_down.transforms.transforms.Compose@{torchvision\_down.transforms.transforms.Compose}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!torchvision\_down.transforms.transforms.Compose@{torchvision\_down.transforms.transforms.Compose}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1transforms_1_1transforms_1_1_compose_a90930d20a139766578f8d7b4af43d721} 
+torchvision\+\_\+down.\+transforms.\+transforms.\+Compose.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{transforms}{}\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classtorchvision__down_1_1transforms_1_1transforms_1_1_compose_a74fa8610618b2e8846683a2f0a68bbe2}\index{torchvision\_down.transforms.transforms.Compose@{torchvision\_down.transforms.transforms.Compose}!\_\_call\_\_@{\_\_call\_\_}}
+\index{\_\_call\_\_@{\_\_call\_\_}!torchvision\_down.transforms.transforms.Compose@{torchvision\_down.transforms.transforms.Compose}}
+\doxysubsubsection{\texorpdfstring{\_\_call\_\_()}{\_\_call\_\_()}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1transforms_1_1transforms_1_1_compose_a74fa8610618b2e8846683a2f0a68bbe2} 
+torchvision\+\_\+down.\+transforms.\+transforms.\+Compose.\+\_\+\+\_\+call\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{img}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classtorchvision__down_1_1transforms_1_1transforms_1_1_compose_a4a9942e80f19d7527f7c93ab0d1ea47a}\index{torchvision\_down.transforms.transforms.Compose@{torchvision\_down.transforms.transforms.Compose}!\_\_repr\_\_@{\_\_repr\_\_}}
+\index{\_\_repr\_\_@{\_\_repr\_\_}!torchvision\_down.transforms.transforms.Compose@{torchvision\_down.transforms.transforms.Compose}}
+\doxysubsubsection{\texorpdfstring{\_\_repr\_\_()}{\_\_repr\_\_()}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1transforms_1_1transforms_1_1_compose_a4a9942e80f19d7527f7c93ab0d1ea47a} 
+ str torchvision\+\_\+down.\+transforms.\+transforms.\+Compose.\+\_\+\+\_\+repr\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classtorchvision__down_1_1transforms_1_1transforms_1_1_compose_ab430bb53616201aadf43c0e9d764a142}\index{torchvision\_down.transforms.transforms.Compose@{torchvision\_down.transforms.transforms.Compose}!transforms@{transforms}}
+\index{transforms@{transforms}!torchvision\_down.transforms.transforms.Compose@{torchvision\_down.transforms.transforms.Compose}}
+\doxysubsubsection{\texorpdfstring{transforms}{transforms}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1transforms_1_1transforms_1_1_compose_ab430bb53616201aadf43c0e9d764a142} 
+torchvision\+\_\+down.\+transforms.\+transforms.\+Compose.\+transforms = transforms}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Cervi\+AI/torchvision\+\_\+down/transforms/\mbox{\hyperlink{transforms_8py}{transforms.\+py}}\end{DoxyCompactItemize}

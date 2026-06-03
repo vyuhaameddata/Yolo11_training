@@ -1,0 +1,111 @@
+\doxysection{torchvision\+\_\+down.\+models.\+quantization.\+shufflenetv2.\+Quantizable\+Shuffle\+Net\+V2 Class Reference}
+\hypertarget{classtorchvision__down_1_1models_1_1quantization_1_1shufflenetv2_1_1_quantizable_shuffle_net_v2}{}\label{classtorchvision__down_1_1models_1_1quantization_1_1shufflenetv2_1_1_quantizable_shuffle_net_v2}\index{torchvision\_down.models.quantization.shufflenetv2.QuantizableShuffleNetV2@{torchvision\_down.models.quantization.shufflenetv2.QuantizableShuffleNetV2}}
+Inheritance diagram for torchvision\+\_\+down.\+models.\+quantization.\+shufflenetv2.\+Quantizable\+Shuffle\+Net\+V2\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{classtorchvision__down_1_1models_1_1quantization_1_1shufflenetv2_1_1_quantizable_shuffle_net_v2}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+None \mbox{\hyperlink{classtorchvision__down_1_1models_1_1quantization_1_1shufflenetv2_1_1_quantizable_shuffle_net_v2_ac6430d316633339be03e626be4a9cccc}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, \texorpdfstring{$\ast$}{*}Any args, \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}Any kwargs)
+\item 
+Tensor \mbox{\hyperlink{classtorchvision__down_1_1models_1_1quantization_1_1shufflenetv2_1_1_quantizable_shuffle_net_v2_a5bc7fb2e78dfa67673d14870f63b417f}{forward}} (self, Tensor x)
+\item 
+None \mbox{\hyperlink{classtorchvision__down_1_1models_1_1quantization_1_1shufflenetv2_1_1_quantizable_shuffle_net_v2_a676aae1e1c8e5e709e0a3d24676c9eaf}{fuse\+\_\+model}} (self, Optional\mbox{[}bool\mbox{]} is\+\_\+qat=None)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{classtorchvision__down_1_1models_1_1shufflenetv2_1_1_shuffle_net_v2}{torchvision\+\_\+down.\+models.\+shufflenetv2.\+Shuffle\+Net\+V2}}}
+\begin{DoxyCompactItemize}
+\item 
+None \mbox{\hyperlink{classtorchvision__down_1_1models_1_1shufflenetv2_1_1_shuffle_net_v2_a61a8ceacc239f9ac25696fb41ec8b95c}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, List\mbox{[}int\mbox{]} stages\+\_\+repeats, List\mbox{[}int\mbox{]} stages\+\_\+out\+\_\+channels, int num\+\_\+classes=1000, Callable\mbox{[}..., nn.\+Module\mbox{]} inverted\+\_\+residual=\mbox{\hyperlink{classtorchvision__down_1_1models_1_1shufflenetv2_1_1_inverted_residual}{Inverted\+Residual}})
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1models_1_1quantization_1_1shufflenetv2_1_1_quantizable_shuffle_net_v2_a6e2fa6d89144aff0d03509ac1a085349}{quant}} = torch.\+ao.\+quantization.\+Quant\+Stub()
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1models_1_1quantization_1_1shufflenetv2_1_1_quantizable_shuffle_net_v2_a39d9f85eed0cabd19ae812e10337a23a}{dequant}} = torch.\+ao.\+quantization.\+De\+Quant\+Stub()
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes inherited from \mbox{\hyperlink{classtorchvision__down_1_1models_1_1shufflenetv2_1_1_shuffle_net_v2}{torchvision\+\_\+down.\+models.\+shufflenetv2.\+Shuffle\+Net\+V2}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1models_1_1shufflenetv2_1_1_shuffle_net_v2_a83044209155bd557bed2cdcecd32414d}{conv1}}
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1models_1_1shufflenetv2_1_1_shuffle_net_v2_a1a6127353c113f33972cbca710d3d238}{maxpool}} = nn.\+Max\+Pool2d(kernel\+\_\+size=3, stride=2, padding=1)
+\item 
+nn.\+Sequential \mbox{\hyperlink{classtorchvision__down_1_1models_1_1shufflenetv2_1_1_shuffle_net_v2_ac6859ee0cc3ccde621df8027667f4584}{stage2}}
+\item 
+nn.\+Sequential \mbox{\hyperlink{classtorchvision__down_1_1models_1_1shufflenetv2_1_1_shuffle_net_v2_a9f45e9f9227d3cd6a25af3be74d77799}{stage3}}
+\item 
+nn.\+Sequential \mbox{\hyperlink{classtorchvision__down_1_1models_1_1shufflenetv2_1_1_shuffle_net_v2_a687654f207b5a52df91ef05a6177a21d}{stage4}}
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1models_1_1shufflenetv2_1_1_shuffle_net_v2_a0c2b9743ffb588ef875315df3e78b808}{conv5}}
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1models_1_1shufflenetv2_1_1_shuffle_net_v2_ab46f8855deff0dc64bd45b9393cdfd11}{fc}} = nn.\+Linear(output\+\_\+channels, num\+\_\+classes)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Additional Inherited Members}
+\doxysubsection*{Protected Member Functions inherited from \mbox{\hyperlink{classtorchvision__down_1_1models_1_1shufflenetv2_1_1_shuffle_net_v2}{torchvision\+\_\+down.\+models.\+shufflenetv2.\+Shuffle\+Net\+V2}}}
+\begin{DoxyCompactItemize}
+\item 
+Tensor \mbox{\hyperlink{classtorchvision__down_1_1models_1_1shufflenetv2_1_1_shuffle_net_v2_a63c41f7117b7d5fcd627164d179ea287}{\+\_\+forward\+\_\+impl}} (self, Tensor x)
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes inherited from \mbox{\hyperlink{classtorchvision__down_1_1models_1_1shufflenetv2_1_1_shuffle_net_v2}{torchvision\+\_\+down.\+models.\+shufflenetv2.\+Shuffle\+Net\+V2}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1models_1_1shufflenetv2_1_1_shuffle_net_v2_a53cb758c44f2ee10000324f7d16945dd}{\+\_\+stage\+\_\+out\+\_\+channels}} = stages\+\_\+out\+\_\+channels
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classtorchvision__down_1_1models_1_1quantization_1_1shufflenetv2_1_1_quantizable_shuffle_net_v2_ac6430d316633339be03e626be4a9cccc}\index{torchvision\_down.models.quantization.shufflenetv2.QuantizableShuffleNetV2@{torchvision\_down.models.quantization.shufflenetv2.QuantizableShuffleNetV2}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!torchvision\_down.models.quantization.shufflenetv2.QuantizableShuffleNetV2@{torchvision\_down.models.quantization.shufflenetv2.QuantizableShuffleNetV2}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1models_1_1quantization_1_1shufflenetv2_1_1_quantizable_shuffle_net_v2_ac6430d316633339be03e626be4a9cccc} 
+ None torchvision\+\_\+down.\+models.\+quantization.\+shufflenetv2.\+Quantizable\+Shuffle\+Net\+V2.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{\texorpdfstring{$\ast$}{*}Any}]{args}{, }\item[{\texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}Any}]{kwargs}{}\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classtorchvision__down_1_1models_1_1quantization_1_1shufflenetv2_1_1_quantizable_shuffle_net_v2_a5bc7fb2e78dfa67673d14870f63b417f}\index{torchvision\_down.models.quantization.shufflenetv2.QuantizableShuffleNetV2@{torchvision\_down.models.quantization.shufflenetv2.QuantizableShuffleNetV2}!forward@{forward}}
+\index{forward@{forward}!torchvision\_down.models.quantization.shufflenetv2.QuantizableShuffleNetV2@{torchvision\_down.models.quantization.shufflenetv2.QuantizableShuffleNetV2}}
+\doxysubsubsection{\texorpdfstring{forward()}{forward()}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1models_1_1quantization_1_1shufflenetv2_1_1_quantizable_shuffle_net_v2_a5bc7fb2e78dfa67673d14870f63b417f} 
+ Tensor torchvision\+\_\+down.\+models.\+quantization.\+shufflenetv2.\+Quantizable\+Shuffle\+Net\+V2.\+forward (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{Tensor}]{x}{}\end{DoxyParamCaption})}
+
+
+
+Reimplemented from \mbox{\hyperlink{classtorchvision__down_1_1models_1_1shufflenetv2_1_1_shuffle_net_v2_a9fa9bb2180d2230f4129f122fe78ce64}{torchvision\+\_\+down.\+models.\+shufflenetv2.\+Shuffle\+Net\+V2}}.
+
+\Hypertarget{classtorchvision__down_1_1models_1_1quantization_1_1shufflenetv2_1_1_quantizable_shuffle_net_v2_a676aae1e1c8e5e709e0a3d24676c9eaf}\index{torchvision\_down.models.quantization.shufflenetv2.QuantizableShuffleNetV2@{torchvision\_down.models.quantization.shufflenetv2.QuantizableShuffleNetV2}!fuse\_model@{fuse\_model}}
+\index{fuse\_model@{fuse\_model}!torchvision\_down.models.quantization.shufflenetv2.QuantizableShuffleNetV2@{torchvision\_down.models.quantization.shufflenetv2.QuantizableShuffleNetV2}}
+\doxysubsubsection{\texorpdfstring{fuse\_model()}{fuse\_model()}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1models_1_1quantization_1_1shufflenetv2_1_1_quantizable_shuffle_net_v2_a676aae1e1c8e5e709e0a3d24676c9eaf} 
+ None torchvision\+\_\+down.\+models.\+quantization.\+shufflenetv2.\+Quantizable\+Shuffle\+Net\+V2.\+fuse\+\_\+model (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{Optional\mbox{[}bool\mbox{]} }]{is\+\_\+qat}{ = {\ttfamily None}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Fuse conv/bn/relu modules in shufflenetv2 model
+
+    Fuse conv+bn+relu/ conv+relu/conv+bn modules to prepare for quantization.
+    Model is modified in place.  Note that this operation does not change numerics
+    and the model after modification is in floating point
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classtorchvision__down_1_1models_1_1quantization_1_1shufflenetv2_1_1_quantizable_shuffle_net_v2_a39d9f85eed0cabd19ae812e10337a23a}\index{torchvision\_down.models.quantization.shufflenetv2.QuantizableShuffleNetV2@{torchvision\_down.models.quantization.shufflenetv2.QuantizableShuffleNetV2}!dequant@{dequant}}
+\index{dequant@{dequant}!torchvision\_down.models.quantization.shufflenetv2.QuantizableShuffleNetV2@{torchvision\_down.models.quantization.shufflenetv2.QuantizableShuffleNetV2}}
+\doxysubsubsection{\texorpdfstring{dequant}{dequant}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1models_1_1quantization_1_1shufflenetv2_1_1_quantizable_shuffle_net_v2_a39d9f85eed0cabd19ae812e10337a23a} 
+torchvision\+\_\+down.\+models.\+quantization.\+shufflenetv2.\+Quantizable\+Shuffle\+Net\+V2.\+dequant = torch.\+ao.\+quantization.\+De\+Quant\+Stub()}
+
+\Hypertarget{classtorchvision__down_1_1models_1_1quantization_1_1shufflenetv2_1_1_quantizable_shuffle_net_v2_a6e2fa6d89144aff0d03509ac1a085349}\index{torchvision\_down.models.quantization.shufflenetv2.QuantizableShuffleNetV2@{torchvision\_down.models.quantization.shufflenetv2.QuantizableShuffleNetV2}!quant@{quant}}
+\index{quant@{quant}!torchvision\_down.models.quantization.shufflenetv2.QuantizableShuffleNetV2@{torchvision\_down.models.quantization.shufflenetv2.QuantizableShuffleNetV2}}
+\doxysubsubsection{\texorpdfstring{quant}{quant}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1models_1_1quantization_1_1shufflenetv2_1_1_quantizable_shuffle_net_v2_a6e2fa6d89144aff0d03509ac1a085349} 
+torchvision\+\_\+down.\+models.\+quantization.\+shufflenetv2.\+Quantizable\+Shuffle\+Net\+V2.\+quant = torch.\+ao.\+quantization.\+Quant\+Stub()}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Cervi\+AI/torchvision\+\_\+down/models/quantization/\mbox{\hyperlink{quantization_2shufflenetv2_8py}{shufflenetv2.\+py}}\end{DoxyCompactItemize}

@@ -1,0 +1,141 @@
+\doxysection{torchvision\+\_\+down.\+transforms.\+transforms.\+Random\+Resized\+Crop Class Reference}
+\hypertarget{classtorchvision__down_1_1transforms_1_1transforms_1_1_random_resized_crop}{}\label{classtorchvision__down_1_1transforms_1_1transforms_1_1_random_resized_crop}\index{torchvision\_down.transforms.transforms.RandomResizedCrop@{torchvision\_down.transforms.transforms.RandomResizedCrop}}
+Inheritance diagram for torchvision\+\_\+down.\+transforms.\+transforms.\+Random\+Resized\+Crop\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{classtorchvision__down_1_1transforms_1_1transforms_1_1_random_resized_crop}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1transforms_1_1transforms_1_1_random_resized_crop_a8b91a18aa475a5958e826e6868b8879a}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, \mbox{\hyperlink{classtorchvision__down_1_1transforms_1_1transforms_1_1_random_resized_crop_abff773bfe82c08f188a7f463dce8ea4f}{size}}, \mbox{\hyperlink{classtorchvision__down_1_1transforms_1_1transforms_1_1_random_resized_crop_a6cda2009653c548af193e70299d9eca8}{scale}}=(0.\+08, 1.\+0), \mbox{\hyperlink{classtorchvision__down_1_1transforms_1_1transforms_1_1_random_resized_crop_a0a3b794ff4dd77e50840857fd0d9ec6c}{ratio}}=(3.\+0/4.\+0, 4.\+0/3.\+0), \mbox{\hyperlink{classtorchvision__down_1_1transforms_1_1transforms_1_1_random_resized_crop_a4f03053e9a342fd69e8377b07a3d5dbe}{interpolation}}=\mbox{\hyperlink{classtorchvision__down_1_1transforms_1_1functional_1_1_interpolation_mode_a38fd90165d745724a2f2373aa0879c87}{Interpolation\+Mode.\+BILINEAR}})
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1transforms_1_1transforms_1_1_random_resized_crop_ac8504844bddbc8f180ca9e7fa481ca7a}{forward}} (self, img)
+\item 
+str \mbox{\hyperlink{classtorchvision__down_1_1transforms_1_1transforms_1_1_random_resized_crop_adfe6c750d85fbed6f5e82a215e8b1e45}{\+\_\+\+\_\+repr\+\_\+\+\_\+}} (self)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+Tuple\mbox{[}int, int, int, int\mbox{]} \mbox{\hyperlink{classtorchvision__down_1_1transforms_1_1transforms_1_1_random_resized_crop_a80c85cf51b09efaea551239cafb20ede}{get\+\_\+params}} (Tensor img, List\mbox{[}float\mbox{]} \mbox{\hyperlink{classtorchvision__down_1_1transforms_1_1transforms_1_1_random_resized_crop_a6cda2009653c548af193e70299d9eca8}{scale}}, List\mbox{[}float\mbox{]} \mbox{\hyperlink{classtorchvision__down_1_1transforms_1_1transforms_1_1_random_resized_crop_a0a3b794ff4dd77e50840857fd0d9ec6c}{ratio}})
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1transforms_1_1transforms_1_1_random_resized_crop_abff773bfe82c08f188a7f463dce8ea4f}{size}} = \mbox{\hyperlink{namespacetorchvision__down_1_1transforms_1_1transforms_a846a850c6e655e35dfd8dbfbc09e212c}{\+\_\+setup\+\_\+size}}(size, error\+\_\+msg="{}Please provide only two dimensions (h, w) for size."{})
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1transforms_1_1transforms_1_1_random_resized_crop_a4f03053e9a342fd69e8377b07a3d5dbe}{interpolation}} = interpolation
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1transforms_1_1transforms_1_1_random_resized_crop_a6cda2009653c548af193e70299d9eca8}{scale}} = scale
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1transforms_1_1transforms_1_1_random_resized_crop_a0a3b794ff4dd77e50840857fd0d9ec6c}{ratio}} = ratio
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}Crop a random portion of image and resize it to a given size.
+
+If the image is torch Tensor, it is expected
+to have [..., H, W] shape, where ... means an arbitrary number of leading dimensions
+
+A crop of the original image is made: the crop has a random area (H * W)
+and a random aspect ratio. This crop is finally resized to the given
+size. This is popularly used to train the Inception networks.
+
+Args:
+    size (int or sequence): expected output size of the crop, for each edge. If size is an
+        int instead of sequence like (h, w), a square output size ``(size, size)`` is
+        made. If provided a sequence of length 1, it will be interpreted as (size[0], size[0]).
+
+        .. note::
+            In torchscript mode size as single int is not supported, use a sequence of length 1: ``[size, ]``.
+    scale (tuple of float): Specifies the lower and upper bounds for the random area of the crop,
+        before resizing. The scale is defined with respect to the area of the original image.
+    ratio (tuple of float): lower and upper bounds for the random aspect ratio of the crop, before
+        resizing.
+    interpolation (InterpolationMode): Desired interpolation enum defined by
+        :class:`torchvision.transforms.InterpolationMode`. Default is ``InterpolationMode.BILINEAR``.
+        If input is Tensor, only ``InterpolationMode.NEAREST``, ``InterpolationMode.BILINEAR`` and
+        ``InterpolationMode.BICUBIC`` are supported.
+        For backward compatibility integer values (e.g. ``PIL.Image.NEAREST``) are still acceptable.
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classtorchvision__down_1_1transforms_1_1transforms_1_1_random_resized_crop_a8b91a18aa475a5958e826e6868b8879a}\index{torchvision\_down.transforms.transforms.RandomResizedCrop@{torchvision\_down.transforms.transforms.RandomResizedCrop}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!torchvision\_down.transforms.transforms.RandomResizedCrop@{torchvision\_down.transforms.transforms.RandomResizedCrop}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1transforms_1_1transforms_1_1_random_resized_crop_a8b91a18aa475a5958e826e6868b8879a} 
+torchvision\+\_\+down.\+transforms.\+transforms.\+Random\+Resized\+Crop.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{size}{, }\item[{}]{scale}{ = {\ttfamily (0.08,~1.0)}, }\item[{}]{ratio}{ = {\ttfamily (3.0~/~4.0,~4.0~/~3.0)}, }\item[{}]{interpolation}{ = {\ttfamily \mbox{\hyperlink{classtorchvision__down_1_1transforms_1_1functional_1_1_interpolation_mode_a38fd90165d745724a2f2373aa0879c87}{Interpolation\+Mode.\+BILINEAR}}}}\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classtorchvision__down_1_1transforms_1_1transforms_1_1_random_resized_crop_adfe6c750d85fbed6f5e82a215e8b1e45}\index{torchvision\_down.transforms.transforms.RandomResizedCrop@{torchvision\_down.transforms.transforms.RandomResizedCrop}!\_\_repr\_\_@{\_\_repr\_\_}}
+\index{\_\_repr\_\_@{\_\_repr\_\_}!torchvision\_down.transforms.transforms.RandomResizedCrop@{torchvision\_down.transforms.transforms.RandomResizedCrop}}
+\doxysubsubsection{\texorpdfstring{\_\_repr\_\_()}{\_\_repr\_\_()}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1transforms_1_1transforms_1_1_random_resized_crop_adfe6c750d85fbed6f5e82a215e8b1e45} 
+ str torchvision\+\_\+down.\+transforms.\+transforms.\+Random\+Resized\+Crop.\+\_\+\+\_\+repr\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classtorchvision__down_1_1transforms_1_1transforms_1_1_random_resized_crop_ac8504844bddbc8f180ca9e7fa481ca7a}\index{torchvision\_down.transforms.transforms.RandomResizedCrop@{torchvision\_down.transforms.transforms.RandomResizedCrop}!forward@{forward}}
+\index{forward@{forward}!torchvision\_down.transforms.transforms.RandomResizedCrop@{torchvision\_down.transforms.transforms.RandomResizedCrop}}
+\doxysubsubsection{\texorpdfstring{forward()}{forward()}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1transforms_1_1transforms_1_1_random_resized_crop_ac8504844bddbc8f180ca9e7fa481ca7a} 
+torchvision\+\_\+down.\+transforms.\+transforms.\+Random\+Resized\+Crop.\+forward (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{img}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Args:
+    img (PIL Image or Tensor): Image to be cropped and resized.
+
+Returns:
+    PIL Image or Tensor: Randomly cropped and resized image.
+\end{DoxyVerb}
+ \Hypertarget{classtorchvision__down_1_1transforms_1_1transforms_1_1_random_resized_crop_a80c85cf51b09efaea551239cafb20ede}\index{torchvision\_down.transforms.transforms.RandomResizedCrop@{torchvision\_down.transforms.transforms.RandomResizedCrop}!get\_params@{get\_params}}
+\index{get\_params@{get\_params}!torchvision\_down.transforms.transforms.RandomResizedCrop@{torchvision\_down.transforms.transforms.RandomResizedCrop}}
+\doxysubsubsection{\texorpdfstring{get\_params()}{get\_params()}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1transforms_1_1transforms_1_1_random_resized_crop_a80c85cf51b09efaea551239cafb20ede} 
+ Tuple\mbox{[}int, int, int, int\mbox{]} torchvision\+\_\+down.\+transforms.\+transforms.\+Random\+Resized\+Crop.\+get\+\_\+params (\begin{DoxyParamCaption}\item[{Tensor}]{img}{, }\item[{List\mbox{[}float\mbox{]}}]{scale}{, }\item[{List\mbox{[}float\mbox{]}}]{ratio}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\begin{DoxyVerb}Get parameters for ``crop`` for a random sized crop.
+
+Args:
+    img (PIL Image or Tensor): Input image.
+    scale (list): range of scale of the origin size cropped
+    ratio (list): range of aspect ratio of the origin aspect ratio cropped
+
+Returns:
+    tuple: params (i, j, h, w) to be passed to ``crop`` for a random
+    sized crop.
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classtorchvision__down_1_1transforms_1_1transforms_1_1_random_resized_crop_a4f03053e9a342fd69e8377b07a3d5dbe}\index{torchvision\_down.transforms.transforms.RandomResizedCrop@{torchvision\_down.transforms.transforms.RandomResizedCrop}!interpolation@{interpolation}}
+\index{interpolation@{interpolation}!torchvision\_down.transforms.transforms.RandomResizedCrop@{torchvision\_down.transforms.transforms.RandomResizedCrop}}
+\doxysubsubsection{\texorpdfstring{interpolation}{interpolation}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1transforms_1_1transforms_1_1_random_resized_crop_a4f03053e9a342fd69e8377b07a3d5dbe} 
+torchvision\+\_\+down.\+transforms.\+transforms.\+Random\+Resized\+Crop.\+interpolation = interpolation}
+
+\Hypertarget{classtorchvision__down_1_1transforms_1_1transforms_1_1_random_resized_crop_a0a3b794ff4dd77e50840857fd0d9ec6c}\index{torchvision\_down.transforms.transforms.RandomResizedCrop@{torchvision\_down.transforms.transforms.RandomResizedCrop}!ratio@{ratio}}
+\index{ratio@{ratio}!torchvision\_down.transforms.transforms.RandomResizedCrop@{torchvision\_down.transforms.transforms.RandomResizedCrop}}
+\doxysubsubsection{\texorpdfstring{ratio}{ratio}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1transforms_1_1transforms_1_1_random_resized_crop_a0a3b794ff4dd77e50840857fd0d9ec6c} 
+torchvision\+\_\+down.\+transforms.\+transforms.\+Random\+Resized\+Crop.\+ratio = ratio}
+
+\Hypertarget{classtorchvision__down_1_1transforms_1_1transforms_1_1_random_resized_crop_a6cda2009653c548af193e70299d9eca8}\index{torchvision\_down.transforms.transforms.RandomResizedCrop@{torchvision\_down.transforms.transforms.RandomResizedCrop}!scale@{scale}}
+\index{scale@{scale}!torchvision\_down.transforms.transforms.RandomResizedCrop@{torchvision\_down.transforms.transforms.RandomResizedCrop}}
+\doxysubsubsection{\texorpdfstring{scale}{scale}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1transforms_1_1transforms_1_1_random_resized_crop_a6cda2009653c548af193e70299d9eca8} 
+torchvision\+\_\+down.\+transforms.\+transforms.\+Random\+Resized\+Crop.\+scale = scale}
+
+\Hypertarget{classtorchvision__down_1_1transforms_1_1transforms_1_1_random_resized_crop_abff773bfe82c08f188a7f463dce8ea4f}\index{torchvision\_down.transforms.transforms.RandomResizedCrop@{torchvision\_down.transforms.transforms.RandomResizedCrop}!size@{size}}
+\index{size@{size}!torchvision\_down.transforms.transforms.RandomResizedCrop@{torchvision\_down.transforms.transforms.RandomResizedCrop}}
+\doxysubsubsection{\texorpdfstring{size}{size}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1transforms_1_1transforms_1_1_random_resized_crop_abff773bfe82c08f188a7f463dce8ea4f} 
+torchvision\+\_\+down.\+transforms.\+transforms.\+Random\+Resized\+Crop.\+size = \mbox{\hyperlink{namespacetorchvision__down_1_1transforms_1_1transforms_a846a850c6e655e35dfd8dbfbc09e212c}{\+\_\+setup\+\_\+size}}(size, error\+\_\+msg="{}Please provide only two dimensions (h, w) for size."{})}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Cervi\+AI/torchvision\+\_\+down/transforms/\mbox{\hyperlink{transforms_8py}{transforms.\+py}}\end{DoxyCompactItemize}

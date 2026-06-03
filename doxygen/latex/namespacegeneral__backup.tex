@@ -1,0 +1,433 @@
+\doxysection{general\+\_\+backup Namespace Reference}
+\hypertarget{namespacegeneral__backup}{}\label{namespacegeneral__backup}\index{general\_backup@{general\_backup}}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{namespacegeneral__backup_acdf02b5581aac08384a71cf13431159d}{set\+\_\+logging}} (rank=-\/1)
+\item 
+\mbox{\hyperlink{namespacegeneral__backup_af44429d6b37bfc97b26b2d4b3bf6e4cd}{init\+\_\+seeds}} (seed=0)
+\item 
+\mbox{\hyperlink{namespacegeneral__backup_a337586e532e19a8d1b206b2ea07f0f51}{get\+\_\+latest\+\_\+run}} (search\+\_\+dir=\textquotesingle{}.\textquotesingle{})
+\item 
+\mbox{\hyperlink{namespacegeneral__backup_ad0d0bd9c5771e8f1a4507085343a8e56}{isdocker}} ()
+\item 
+\mbox{\hyperlink{namespacegeneral__backup_a64c0e687977c302127135ddc018a0cf0}{emojis}} (str=\textquotesingle{}\textquotesingle{})
+\item 
+\mbox{\hyperlink{namespacegeneral__backup_a834cf4fa645a392eb192d4ea0c8b47ec}{check\+\_\+online}} ()
+\item 
+\mbox{\hyperlink{namespacegeneral__backup_a4527c1efcb47a925ed889cf828a65523}{check\+\_\+git\+\_\+status}} ()
+\item 
+\mbox{\hyperlink{namespacegeneral__backup_a850b518a789c1112c6f5ee59e96e3ab9}{check\+\_\+requirements}} (requirements=\textquotesingle{}requirements.\+txt\textquotesingle{}, exclude=())
+\item 
+\mbox{\hyperlink{namespacegeneral__backup_a7078e05c54d0b5019641c371c971b438}{check\+\_\+img\+\_\+size}} (img\+\_\+size, s=32)
+\item 
+\mbox{\hyperlink{namespacegeneral__backup_afb3390c8c2cc16b1ca7b3a2683259207}{check\+\_\+imshow}} ()
+\item 
+\mbox{\hyperlink{namespacegeneral__backup_acec5f0f9dae18529fc07d22fb2b168da}{check\+\_\+file}} (file)
+\item 
+\mbox{\hyperlink{namespacegeneral__backup_a7f9ed573b832125ab94d8f86894a5dcd}{check\+\_\+dataset}} (dict)
+\item 
+\mbox{\hyperlink{namespacegeneral__backup_ad8c5ace2fc7c8396b7cadd24cd1937ad}{make\+\_\+divisible}} (x, divisor)
+\item 
+\mbox{\hyperlink{namespacegeneral__backup_ac15bfaebf93b6dcc24c60cf638827426}{clean\+\_\+str}} (s)
+\item 
+\mbox{\hyperlink{namespacegeneral__backup_a8db7c7f0d2abec4aaf7ccb08aa6ed6af}{one\+\_\+cycle}} (y1=0.\+0, y2=1.\+0, steps=100)
+\item 
+\mbox{\hyperlink{namespacegeneral__backup_a27e2dccb63b41eb04c6ae3097ec095f5}{colorstr}} (\texorpdfstring{$\ast$}{*}input)
+\item 
+\mbox{\hyperlink{namespacegeneral__backup_a0ac8edd7888302d32a42ad470917d244}{labels\+\_\+to\+\_\+class\+\_\+weights}} (labels, nc=80)
+\item 
+\mbox{\hyperlink{namespacegeneral__backup_a61b3a26760b2e2dcbe88087ac127a4f9}{labels\+\_\+to\+\_\+image\+\_\+weights}} (labels, nc=80, class\+\_\+weights=np.\+ones(80))
+\item 
+\mbox{\hyperlink{namespacegeneral__backup_a3c4a31137506e7892478cc344a764cb7}{coco80\+\_\+to\+\_\+coco91\+\_\+class}} ()
+\item 
+\mbox{\hyperlink{namespacegeneral__backup_a6fbed2d7a0d6e3d46052a5fbe19b8057}{xyxy2xywh}} (x)
+\item 
+\mbox{\hyperlink{namespacegeneral__backup_a617f081e93d1bc4f53f0bf72409c682c}{xywh2xyxy}} (x)
+\item 
+\mbox{\hyperlink{namespacegeneral__backup_aaa407c57ff532ba1de0e2e769ba5b973}{xywhn2xyxy}} (x, w=640, h=640, padw=0, padh=0)
+\item 
+\mbox{\hyperlink{namespacegeneral__backup_a51a2b5d5a824c69a054ed72e39c6998e}{xyn2xy}} (x, w=640, h=640, padw=0, padh=0)
+\item 
+\mbox{\hyperlink{namespacegeneral__backup_ae7534782f0f6130022307206de39e528}{segment2box}} (segment, width=640, height=640)
+\item 
+\mbox{\hyperlink{namespacegeneral__backup_a5dfa47af5f522d05ff024b2807a06001}{segments2boxes}} (segments)
+\item 
+\mbox{\hyperlink{namespacegeneral__backup_afae211d791aee6a84983855809b14d92}{resample\+\_\+segments}} (segments, n=1000)
+\item 
+\mbox{\hyperlink{namespacegeneral__backup_a6e7e5bbdc9b051b0d140b37cfb743699}{scale\+\_\+coords}} (img1\+\_\+shape, coords, img0\+\_\+shape, ratio\+\_\+pad=None)
+\item 
+\mbox{\hyperlink{namespacegeneral__backup_a592b6a9a890c3020ffafcf265feeebd3}{clip\+\_\+coords}} (boxes, img\+\_\+shape)
+\item 
+\mbox{\hyperlink{namespacegeneral__backup_a1e74c699f12fa94af635140104e4505b}{bbox\+\_\+iou}} (box1, box2, x1y1x2y2=True, GIoU=False, DIoU=False, CIoU=False, eps=1e-\/7)
+\item 
+\mbox{\hyperlink{namespacegeneral__backup_a9458d343e1bf81f78580008ee067ffe5}{bbox\+\_\+alpha\+\_\+iou}} (box1, box2, x1y1x2y2=False, GIoU=False, DIoU=False, CIoU=False, alpha=2, eps=1e-\/9)
+\item 
+\mbox{\hyperlink{namespacegeneral__backup_a25b00cf523f73a838fbe3c3a31839028}{box\+\_\+iou}} (box1, box2)
+\item 
+\mbox{\hyperlink{namespacegeneral__backup_ab3ebff8b6e4bf726f9a8aca5a23b4f29}{wh\+\_\+iou}} (wh1, wh2)
+\item 
+\mbox{\hyperlink{namespacegeneral__backup_a668a6299fd4283faffe22286a98a2052}{box\+\_\+giou}} (box1, box2)
+\item 
+\mbox{\hyperlink{namespacegeneral__backup_a2ffce4878d65ca41e59fd1f54ff11142}{box\+\_\+ciou}} (box1, box2, float eps=1e-\/7)
+\item 
+\mbox{\hyperlink{namespacegeneral__backup_a809fcf94a29e1be588aaa83fc62a7f41}{box\+\_\+diou}} (box1, box2, float eps=1e-\/7)
+\item 
+\mbox{\hyperlink{namespacegeneral__backup_aba50589638362939c9cb5bd780334916}{non\+\_\+max\+\_\+suppression}} (prediction, conf\+\_\+thres=0.\+25, iou\+\_\+thres=0.\+45, classes=None, agnostic=False, multi\+\_\+label=False, labels=())
+\item 
+\mbox{\hyperlink{namespacegeneral__backup_a10e5dd3d0c51346f86a303e64e193d6a}{non\+\_\+max\+\_\+suppression\+\_\+kpt}} (prediction, conf\+\_\+thres=0.\+25, iou\+\_\+thres=0.\+45, classes=None, agnostic=False, multi\+\_\+label=False, labels=(), kpt\+\_\+label=False, nc=None, nkpt=None)
+\item 
+\mbox{\hyperlink{namespacegeneral__backup_ac258bb1af6f8cc4b86245a55270efd61}{strip\+\_\+optimizer}} (f=\textquotesingle{}best.\+pt\textquotesingle{}, s=\textquotesingle{}\textquotesingle{})
+\item 
+\mbox{\hyperlink{namespacegeneral__backup_ae73d0c8ad0907ed3aaa6dce57230e513}{print\+\_\+mutation}} (hyp, results, yaml\+\_\+file=\textquotesingle{}hyp\+\_\+evolved.\+yaml\textquotesingle{}, bucket=\textquotesingle{}\textquotesingle{})
+\item 
+\mbox{\hyperlink{namespacegeneral__backup_a259718ebcfea80fd0d24b109e4834ed3}{apply\+\_\+classifier}} (x, model, img, im0)
+\item 
+\mbox{\hyperlink{namespacegeneral__backup_aa597257270fa6c6d6ee44f665e937115}{increment\+\_\+path}} (path, exist\+\_\+ok=True, sep=\textquotesingle{}\textquotesingle{})
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{namespacegeneral__backup_a85c62a3d7f46002c625ecaac5a920edf}{linewidth}}
+\item 
+\mbox{\hyperlink{namespacegeneral__backup_a1afe0040d7c98c68b80d18bf16960fe4}{precision}}
+\item 
+\mbox{\hyperlink{namespacegeneral__backup_afbf0fdb258db5829840e1d7c510c4b46}{profile}}
+\item 
+\mbox{\hyperlink{namespacegeneral__backup_ac759c90e1fdafc7b2c3d8a75ea6fe4a6}{formatter}}
+\item 
+\mbox{\hyperlink{namespacegeneral__backup_a26feb536f349b77f5cf8829588d8a6fa}{max\+\_\+columns}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{namespacegeneral__backup_a259718ebcfea80fd0d24b109e4834ed3}\index{general\_backup@{general\_backup}!apply\_classifier@{apply\_classifier}}
+\index{apply\_classifier@{apply\_classifier}!general\_backup@{general\_backup}}
+\doxysubsubsection{\texorpdfstring{apply\_classifier()}{apply\_classifier()}}
+{\footnotesize\ttfamily \label{namespacegeneral__backup_a259718ebcfea80fd0d24b109e4834ed3} 
+general\+\_\+backup.\+apply\+\_\+classifier (\begin{DoxyParamCaption}\item[{}]{x}{, }\item[{}]{model}{, }\item[{}]{img}{, }\item[{}]{im0}{}\end{DoxyParamCaption})}
+
+\Hypertarget{namespacegeneral__backup_a9458d343e1bf81f78580008ee067ffe5}\index{general\_backup@{general\_backup}!bbox\_alpha\_iou@{bbox\_alpha\_iou}}
+\index{bbox\_alpha\_iou@{bbox\_alpha\_iou}!general\_backup@{general\_backup}}
+\doxysubsubsection{\texorpdfstring{bbox\_alpha\_iou()}{bbox\_alpha\_iou()}}
+{\footnotesize\ttfamily \label{namespacegeneral__backup_a9458d343e1bf81f78580008ee067ffe5} 
+general\+\_\+backup.\+bbox\+\_\+alpha\+\_\+iou (\begin{DoxyParamCaption}\item[{}]{box1}{, }\item[{}]{box2}{, }\item[{}]{x1y1x2y2}{ = {\ttfamily False}, }\item[{}]{GIoU}{ = {\ttfamily False}, }\item[{}]{DIoU}{ = {\ttfamily False}, }\item[{}]{CIoU}{ = {\ttfamily False}, }\item[{}]{alpha}{ = {\ttfamily 2}, }\item[{}]{eps}{ = {\ttfamily 1e-\/9}}\end{DoxyParamCaption})}
+
+\Hypertarget{namespacegeneral__backup_a1e74c699f12fa94af635140104e4505b}\index{general\_backup@{general\_backup}!bbox\_iou@{bbox\_iou}}
+\index{bbox\_iou@{bbox\_iou}!general\_backup@{general\_backup}}
+\doxysubsubsection{\texorpdfstring{bbox\_iou()}{bbox\_iou()}}
+{\footnotesize\ttfamily \label{namespacegeneral__backup_a1e74c699f12fa94af635140104e4505b} 
+general\+\_\+backup.\+bbox\+\_\+iou (\begin{DoxyParamCaption}\item[{}]{box1}{, }\item[{}]{box2}{, }\item[{}]{x1y1x2y2}{ = {\ttfamily True}, }\item[{}]{GIoU}{ = {\ttfamily False}, }\item[{}]{DIoU}{ = {\ttfamily False}, }\item[{}]{CIoU}{ = {\ttfamily False}, }\item[{}]{eps}{ = {\ttfamily 1e-\/7}}\end{DoxyParamCaption})}
+
+\Hypertarget{namespacegeneral__backup_a2ffce4878d65ca41e59fd1f54ff11142}\index{general\_backup@{general\_backup}!box\_ciou@{box\_ciou}}
+\index{box\_ciou@{box\_ciou}!general\_backup@{general\_backup}}
+\doxysubsubsection{\texorpdfstring{box\_ciou()}{box\_ciou()}}
+{\footnotesize\ttfamily \label{namespacegeneral__backup_a2ffce4878d65ca41e59fd1f54ff11142} 
+general\+\_\+backup.\+box\+\_\+ciou (\begin{DoxyParamCaption}\item[{}]{box1}{, }\item[{}]{box2}{, }\item[{float }]{eps}{ = {\ttfamily 1e-\/7}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Return complete intersection-over-union (Jaccard index) between two sets of boxes.
+Both sets of boxes are expected to be in ``(x1, y1, x2, y2)`` format with
+``0 <= x1 < x2`` and ``0 <= y1 < y2``.
+Args:
+    boxes1 (Tensor[N, 4]): first set of boxes
+    boxes2 (Tensor[M, 4]): second set of boxes
+    eps (float, optional): small number to prevent division by zero. Default: 1e-7
+Returns:
+    Tensor[N, M]: the NxM matrix containing the pairwise complete IoU values
+    for every element in boxes1 and boxes2
+\end{DoxyVerb}
+ \Hypertarget{namespacegeneral__backup_a809fcf94a29e1be588aaa83fc62a7f41}\index{general\_backup@{general\_backup}!box\_diou@{box\_diou}}
+\index{box\_diou@{box\_diou}!general\_backup@{general\_backup}}
+\doxysubsubsection{\texorpdfstring{box\_diou()}{box\_diou()}}
+{\footnotesize\ttfamily \label{namespacegeneral__backup_a809fcf94a29e1be588aaa83fc62a7f41} 
+general\+\_\+backup.\+box\+\_\+diou (\begin{DoxyParamCaption}\item[{}]{box1}{, }\item[{}]{box2}{, }\item[{float }]{eps}{ = {\ttfamily 1e-\/7}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Return distance intersection-over-union (Jaccard index) between two sets of boxes.
+Both sets of boxes are expected to be in ``(x1, y1, x2, y2)`` format with
+``0 <= x1 < x2`` and ``0 <= y1 < y2``.
+Args:
+    boxes1 (Tensor[N, 4]): first set of boxes
+    boxes2 (Tensor[M, 4]): second set of boxes
+    eps (float, optional): small number to prevent division by zero. Default: 1e-7
+Returns:
+    Tensor[N, M]: the NxM matrix containing the pairwise distance IoU values
+    for every element in boxes1 and boxes2
+\end{DoxyVerb}
+ \Hypertarget{namespacegeneral__backup_a668a6299fd4283faffe22286a98a2052}\index{general\_backup@{general\_backup}!box\_giou@{box\_giou}}
+\index{box\_giou@{box\_giou}!general\_backup@{general\_backup}}
+\doxysubsubsection{\texorpdfstring{box\_giou()}{box\_giou()}}
+{\footnotesize\ttfamily \label{namespacegeneral__backup_a668a6299fd4283faffe22286a98a2052} 
+general\+\_\+backup.\+box\+\_\+giou (\begin{DoxyParamCaption}\item[{}]{box1}{, }\item[{}]{box2}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Return generalized intersection-over-union (Jaccard index) between two sets of boxes.
+Both sets of boxes are expected to be in ``(x1, y1, x2, y2)`` format with
+``0 <= x1 < x2`` and ``0 <= y1 < y2``.
+Args:
+    boxes1 (Tensor[N, 4]): first set of boxes
+    boxes2 (Tensor[M, 4]): second set of boxes
+Returns:
+    Tensor[N, M]: the NxM matrix containing the pairwise generalized IoU values
+    for every element in boxes1 and boxes2
+\end{DoxyVerb}
+ \Hypertarget{namespacegeneral__backup_a25b00cf523f73a838fbe3c3a31839028}\index{general\_backup@{general\_backup}!box\_iou@{box\_iou}}
+\index{box\_iou@{box\_iou}!general\_backup@{general\_backup}}
+\doxysubsubsection{\texorpdfstring{box\_iou()}{box\_iou()}}
+{\footnotesize\ttfamily \label{namespacegeneral__backup_a25b00cf523f73a838fbe3c3a31839028} 
+general\+\_\+backup.\+box\+\_\+iou (\begin{DoxyParamCaption}\item[{}]{box1}{, }\item[{}]{box2}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Return intersection-over-union (Jaccard index) of boxes.
+Both sets of boxes are expected to be in (x1, y1, x2, y2) format.
+Arguments:
+    box1 (Tensor[N, 4])
+    box2 (Tensor[M, 4])
+Returns:
+    iou (Tensor[N, M]): the NxM matrix containing the pairwise
+        IoU values for every element in boxes1 and boxes2
+\end{DoxyVerb}
+ \Hypertarget{namespacegeneral__backup_a7f9ed573b832125ab94d8f86894a5dcd}\index{general\_backup@{general\_backup}!check\_dataset@{check\_dataset}}
+\index{check\_dataset@{check\_dataset}!general\_backup@{general\_backup}}
+\doxysubsubsection{\texorpdfstring{check\_dataset()}{check\_dataset()}}
+{\footnotesize\ttfamily \label{namespacegeneral__backup_a7f9ed573b832125ab94d8f86894a5dcd} 
+general\+\_\+backup.\+check\+\_\+dataset (\begin{DoxyParamCaption}\item[{}]{dict}{}\end{DoxyParamCaption})}
+
+\Hypertarget{namespacegeneral__backup_acec5f0f9dae18529fc07d22fb2b168da}\index{general\_backup@{general\_backup}!check\_file@{check\_file}}
+\index{check\_file@{check\_file}!general\_backup@{general\_backup}}
+\doxysubsubsection{\texorpdfstring{check\_file()}{check\_file()}}
+{\footnotesize\ttfamily \label{namespacegeneral__backup_acec5f0f9dae18529fc07d22fb2b168da} 
+general\+\_\+backup.\+check\+\_\+file (\begin{DoxyParamCaption}\item[{}]{file}{}\end{DoxyParamCaption})}
+
+\Hypertarget{namespacegeneral__backup_a4527c1efcb47a925ed889cf828a65523}\index{general\_backup@{general\_backup}!check\_git\_status@{check\_git\_status}}
+\index{check\_git\_status@{check\_git\_status}!general\_backup@{general\_backup}}
+\doxysubsubsection{\texorpdfstring{check\_git\_status()}{check\_git\_status()}}
+{\footnotesize\ttfamily \label{namespacegeneral__backup_a4527c1efcb47a925ed889cf828a65523} 
+general\+\_\+backup.\+check\+\_\+git\+\_\+status (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+\Hypertarget{namespacegeneral__backup_a7078e05c54d0b5019641c371c971b438}\index{general\_backup@{general\_backup}!check\_img\_size@{check\_img\_size}}
+\index{check\_img\_size@{check\_img\_size}!general\_backup@{general\_backup}}
+\doxysubsubsection{\texorpdfstring{check\_img\_size()}{check\_img\_size()}}
+{\footnotesize\ttfamily \label{namespacegeneral__backup_a7078e05c54d0b5019641c371c971b438} 
+general\+\_\+backup.\+check\+\_\+img\+\_\+size (\begin{DoxyParamCaption}\item[{}]{img\+\_\+size}{, }\item[{}]{s}{ = {\ttfamily 32}}\end{DoxyParamCaption})}
+
+\Hypertarget{namespacegeneral__backup_afb3390c8c2cc16b1ca7b3a2683259207}\index{general\_backup@{general\_backup}!check\_imshow@{check\_imshow}}
+\index{check\_imshow@{check\_imshow}!general\_backup@{general\_backup}}
+\doxysubsubsection{\texorpdfstring{check\_imshow()}{check\_imshow()}}
+{\footnotesize\ttfamily \label{namespacegeneral__backup_afb3390c8c2cc16b1ca7b3a2683259207} 
+general\+\_\+backup.\+check\+\_\+imshow (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+\Hypertarget{namespacegeneral__backup_a834cf4fa645a392eb192d4ea0c8b47ec}\index{general\_backup@{general\_backup}!check\_online@{check\_online}}
+\index{check\_online@{check\_online}!general\_backup@{general\_backup}}
+\doxysubsubsection{\texorpdfstring{check\_online()}{check\_online()}}
+{\footnotesize\ttfamily \label{namespacegeneral__backup_a834cf4fa645a392eb192d4ea0c8b47ec} 
+general\+\_\+backup.\+check\+\_\+online (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+\Hypertarget{namespacegeneral__backup_a850b518a789c1112c6f5ee59e96e3ab9}\index{general\_backup@{general\_backup}!check\_requirements@{check\_requirements}}
+\index{check\_requirements@{check\_requirements}!general\_backup@{general\_backup}}
+\doxysubsubsection{\texorpdfstring{check\_requirements()}{check\_requirements()}}
+{\footnotesize\ttfamily \label{namespacegeneral__backup_a850b518a789c1112c6f5ee59e96e3ab9} 
+general\+\_\+backup.\+check\+\_\+requirements (\begin{DoxyParamCaption}\item[{}]{requirements}{ = {\ttfamily \textquotesingle{}requirements.txt\textquotesingle{}}, }\item[{}]{exclude}{ = {\ttfamily ()}}\end{DoxyParamCaption})}
+
+\Hypertarget{namespacegeneral__backup_ac15bfaebf93b6dcc24c60cf638827426}\index{general\_backup@{general\_backup}!clean\_str@{clean\_str}}
+\index{clean\_str@{clean\_str}!general\_backup@{general\_backup}}
+\doxysubsubsection{\texorpdfstring{clean\_str()}{clean\_str()}}
+{\footnotesize\ttfamily \label{namespacegeneral__backup_ac15bfaebf93b6dcc24c60cf638827426} 
+general\+\_\+backup.\+clean\+\_\+str (\begin{DoxyParamCaption}\item[{}]{s}{}\end{DoxyParamCaption})}
+
+\Hypertarget{namespacegeneral__backup_a592b6a9a890c3020ffafcf265feeebd3}\index{general\_backup@{general\_backup}!clip\_coords@{clip\_coords}}
+\index{clip\_coords@{clip\_coords}!general\_backup@{general\_backup}}
+\doxysubsubsection{\texorpdfstring{clip\_coords()}{clip\_coords()}}
+{\footnotesize\ttfamily \label{namespacegeneral__backup_a592b6a9a890c3020ffafcf265feeebd3} 
+general\+\_\+backup.\+clip\+\_\+coords (\begin{DoxyParamCaption}\item[{}]{boxes}{, }\item[{}]{img\+\_\+shape}{}\end{DoxyParamCaption})}
+
+\Hypertarget{namespacegeneral__backup_a3c4a31137506e7892478cc344a764cb7}\index{general\_backup@{general\_backup}!coco80\_to\_coco91\_class@{coco80\_to\_coco91\_class}}
+\index{coco80\_to\_coco91\_class@{coco80\_to\_coco91\_class}!general\_backup@{general\_backup}}
+\doxysubsubsection{\texorpdfstring{coco80\_to\_coco91\_class()}{coco80\_to\_coco91\_class()}}
+{\footnotesize\ttfamily \label{namespacegeneral__backup_a3c4a31137506e7892478cc344a764cb7} 
+general\+\_\+backup.\+coco80\+\_\+to\+\_\+coco91\+\_\+class (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+\Hypertarget{namespacegeneral__backup_a27e2dccb63b41eb04c6ae3097ec095f5}\index{general\_backup@{general\_backup}!colorstr@{colorstr}}
+\index{colorstr@{colorstr}!general\_backup@{general\_backup}}
+\doxysubsubsection{\texorpdfstring{colorstr()}{colorstr()}}
+{\footnotesize\ttfamily \label{namespacegeneral__backup_a27e2dccb63b41eb04c6ae3097ec095f5} 
+general\+\_\+backup.\+colorstr (\begin{DoxyParamCaption}\item[{\texorpdfstring{$\ast$}{*}}]{input}{}\end{DoxyParamCaption})}
+
+\Hypertarget{namespacegeneral__backup_a64c0e687977c302127135ddc018a0cf0}\index{general\_backup@{general\_backup}!emojis@{emojis}}
+\index{emojis@{emojis}!general\_backup@{general\_backup}}
+\doxysubsubsection{\texorpdfstring{emojis()}{emojis()}}
+{\footnotesize\ttfamily \label{namespacegeneral__backup_a64c0e687977c302127135ddc018a0cf0} 
+general\+\_\+backup.\+emojis (\begin{DoxyParamCaption}\item[{}]{str}{ = {\ttfamily \textquotesingle{}\textquotesingle{}}}\end{DoxyParamCaption})}
+
+\Hypertarget{namespacegeneral__backup_a337586e532e19a8d1b206b2ea07f0f51}\index{general\_backup@{general\_backup}!get\_latest\_run@{get\_latest\_run}}
+\index{get\_latest\_run@{get\_latest\_run}!general\_backup@{general\_backup}}
+\doxysubsubsection{\texorpdfstring{get\_latest\_run()}{get\_latest\_run()}}
+{\footnotesize\ttfamily \label{namespacegeneral__backup_a337586e532e19a8d1b206b2ea07f0f51} 
+general\+\_\+backup.\+get\+\_\+latest\+\_\+run (\begin{DoxyParamCaption}\item[{}]{search\+\_\+dir}{ = {\ttfamily \textquotesingle{}.\textquotesingle{}}}\end{DoxyParamCaption})}
+
+\Hypertarget{namespacegeneral__backup_aa597257270fa6c6d6ee44f665e937115}\index{general\_backup@{general\_backup}!increment\_path@{increment\_path}}
+\index{increment\_path@{increment\_path}!general\_backup@{general\_backup}}
+\doxysubsubsection{\texorpdfstring{increment\_path()}{increment\_path()}}
+{\footnotesize\ttfamily \label{namespacegeneral__backup_aa597257270fa6c6d6ee44f665e937115} 
+general\+\_\+backup.\+increment\+\_\+path (\begin{DoxyParamCaption}\item[{}]{path}{, }\item[{}]{exist\+\_\+ok}{ = {\ttfamily True}, }\item[{}]{sep}{ = {\ttfamily \textquotesingle{}\textquotesingle{}}}\end{DoxyParamCaption})}
+
+\Hypertarget{namespacegeneral__backup_af44429d6b37bfc97b26b2d4b3bf6e4cd}\index{general\_backup@{general\_backup}!init\_seeds@{init\_seeds}}
+\index{init\_seeds@{init\_seeds}!general\_backup@{general\_backup}}
+\doxysubsubsection{\texorpdfstring{init\_seeds()}{init\_seeds()}}
+{\footnotesize\ttfamily \label{namespacegeneral__backup_af44429d6b37bfc97b26b2d4b3bf6e4cd} 
+general\+\_\+backup.\+init\+\_\+seeds (\begin{DoxyParamCaption}\item[{}]{seed}{ = {\ttfamily 0}}\end{DoxyParamCaption})}
+
+\Hypertarget{namespacegeneral__backup_ad0d0bd9c5771e8f1a4507085343a8e56}\index{general\_backup@{general\_backup}!isdocker@{isdocker}}
+\index{isdocker@{isdocker}!general\_backup@{general\_backup}}
+\doxysubsubsection{\texorpdfstring{isdocker()}{isdocker()}}
+{\footnotesize\ttfamily \label{namespacegeneral__backup_ad0d0bd9c5771e8f1a4507085343a8e56} 
+general\+\_\+backup.\+isdocker (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+\Hypertarget{namespacegeneral__backup_a0ac8edd7888302d32a42ad470917d244}\index{general\_backup@{general\_backup}!labels\_to\_class\_weights@{labels\_to\_class\_weights}}
+\index{labels\_to\_class\_weights@{labels\_to\_class\_weights}!general\_backup@{general\_backup}}
+\doxysubsubsection{\texorpdfstring{labels\_to\_class\_weights()}{labels\_to\_class\_weights()}}
+{\footnotesize\ttfamily \label{namespacegeneral__backup_a0ac8edd7888302d32a42ad470917d244} 
+general\+\_\+backup.\+labels\+\_\+to\+\_\+class\+\_\+weights (\begin{DoxyParamCaption}\item[{}]{labels}{, }\item[{}]{nc}{ = {\ttfamily 80}}\end{DoxyParamCaption})}
+
+\Hypertarget{namespacegeneral__backup_a61b3a26760b2e2dcbe88087ac127a4f9}\index{general\_backup@{general\_backup}!labels\_to\_image\_weights@{labels\_to\_image\_weights}}
+\index{labels\_to\_image\_weights@{labels\_to\_image\_weights}!general\_backup@{general\_backup}}
+\doxysubsubsection{\texorpdfstring{labels\_to\_image\_weights()}{labels\_to\_image\_weights()}}
+{\footnotesize\ttfamily \label{namespacegeneral__backup_a61b3a26760b2e2dcbe88087ac127a4f9} 
+general\+\_\+backup.\+labels\+\_\+to\+\_\+image\+\_\+weights (\begin{DoxyParamCaption}\item[{}]{labels}{, }\item[{}]{nc}{ = {\ttfamily 80}, }\item[{}]{class\+\_\+weights}{ = {\ttfamily np.ones(80)}}\end{DoxyParamCaption})}
+
+\Hypertarget{namespacegeneral__backup_ad8c5ace2fc7c8396b7cadd24cd1937ad}\index{general\_backup@{general\_backup}!make\_divisible@{make\_divisible}}
+\index{make\_divisible@{make\_divisible}!general\_backup@{general\_backup}}
+\doxysubsubsection{\texorpdfstring{make\_divisible()}{make\_divisible()}}
+{\footnotesize\ttfamily \label{namespacegeneral__backup_ad8c5ace2fc7c8396b7cadd24cd1937ad} 
+general\+\_\+backup.\+make\+\_\+divisible (\begin{DoxyParamCaption}\item[{}]{x}{, }\item[{}]{divisor}{}\end{DoxyParamCaption})}
+
+\Hypertarget{namespacegeneral__backup_aba50589638362939c9cb5bd780334916}\index{general\_backup@{general\_backup}!non\_max\_suppression@{non\_max\_suppression}}
+\index{non\_max\_suppression@{non\_max\_suppression}!general\_backup@{general\_backup}}
+\doxysubsubsection{\texorpdfstring{non\_max\_suppression()}{non\_max\_suppression()}}
+{\footnotesize\ttfamily \label{namespacegeneral__backup_aba50589638362939c9cb5bd780334916} 
+general\+\_\+backup.\+non\+\_\+max\+\_\+suppression (\begin{DoxyParamCaption}\item[{}]{prediction}{, }\item[{}]{conf\+\_\+thres}{ = {\ttfamily 0.25}, }\item[{}]{iou\+\_\+thres}{ = {\ttfamily 0.45}, }\item[{}]{classes}{ = {\ttfamily None}, }\item[{}]{agnostic}{ = {\ttfamily False}, }\item[{}]{multi\+\_\+label}{ = {\ttfamily False}, }\item[{}]{labels}{ = {\ttfamily ()}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Runs Non-Maximum Suppression (NMS) on inference results
+
+Returns:
+     list of detections, on (n,6) tensor per image [xyxy, conf, cls]
+\end{DoxyVerb}
+ \Hypertarget{namespacegeneral__backup_a10e5dd3d0c51346f86a303e64e193d6a}\index{general\_backup@{general\_backup}!non\_max\_suppression\_kpt@{non\_max\_suppression\_kpt}}
+\index{non\_max\_suppression\_kpt@{non\_max\_suppression\_kpt}!general\_backup@{general\_backup}}
+\doxysubsubsection{\texorpdfstring{non\_max\_suppression\_kpt()}{non\_max\_suppression\_kpt()}}
+{\footnotesize\ttfamily \label{namespacegeneral__backup_a10e5dd3d0c51346f86a303e64e193d6a} 
+general\+\_\+backup.\+non\+\_\+max\+\_\+suppression\+\_\+kpt (\begin{DoxyParamCaption}\item[{}]{prediction}{, }\item[{}]{conf\+\_\+thres}{ = {\ttfamily 0.25}, }\item[{}]{iou\+\_\+thres}{ = {\ttfamily 0.45}, }\item[{}]{classes}{ = {\ttfamily None}, }\item[{}]{agnostic}{ = {\ttfamily False}, }\item[{}]{multi\+\_\+label}{ = {\ttfamily False}, }\item[{}]{labels}{ = {\ttfamily ()}, }\item[{}]{kpt\+\_\+label}{ = {\ttfamily False}, }\item[{}]{nc}{ = {\ttfamily None}, }\item[{}]{nkpt}{ = {\ttfamily None}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Runs Non-Maximum Suppression (NMS) on inference results
+
+Returns:
+     list of detections, on (n,6) tensor per image [xyxy, conf, cls]
+\end{DoxyVerb}
+ \Hypertarget{namespacegeneral__backup_a8db7c7f0d2abec4aaf7ccb08aa6ed6af}\index{general\_backup@{general\_backup}!one\_cycle@{one\_cycle}}
+\index{one\_cycle@{one\_cycle}!general\_backup@{general\_backup}}
+\doxysubsubsection{\texorpdfstring{one\_cycle()}{one\_cycle()}}
+{\footnotesize\ttfamily \label{namespacegeneral__backup_a8db7c7f0d2abec4aaf7ccb08aa6ed6af} 
+general\+\_\+backup.\+one\+\_\+cycle (\begin{DoxyParamCaption}\item[{}]{y1}{ = {\ttfamily 0.0}, }\item[{}]{y2}{ = {\ttfamily 1.0}, }\item[{}]{steps}{ = {\ttfamily 100}}\end{DoxyParamCaption})}
+
+\Hypertarget{namespacegeneral__backup_ae73d0c8ad0907ed3aaa6dce57230e513}\index{general\_backup@{general\_backup}!print\_mutation@{print\_mutation}}
+\index{print\_mutation@{print\_mutation}!general\_backup@{general\_backup}}
+\doxysubsubsection{\texorpdfstring{print\_mutation()}{print\_mutation()}}
+{\footnotesize\ttfamily \label{namespacegeneral__backup_ae73d0c8ad0907ed3aaa6dce57230e513} 
+general\+\_\+backup.\+print\+\_\+mutation (\begin{DoxyParamCaption}\item[{}]{hyp}{, }\item[{}]{results}{, }\item[{}]{yaml\+\_\+file}{ = {\ttfamily \textquotesingle{}hyp\+\_\+evolved.yaml\textquotesingle{}}, }\item[{}]{bucket}{ = {\ttfamily \textquotesingle{}\textquotesingle{}}}\end{DoxyParamCaption})}
+
+\Hypertarget{namespacegeneral__backup_afae211d791aee6a84983855809b14d92}\index{general\_backup@{general\_backup}!resample\_segments@{resample\_segments}}
+\index{resample\_segments@{resample\_segments}!general\_backup@{general\_backup}}
+\doxysubsubsection{\texorpdfstring{resample\_segments()}{resample\_segments()}}
+{\footnotesize\ttfamily \label{namespacegeneral__backup_afae211d791aee6a84983855809b14d92} 
+general\+\_\+backup.\+resample\+\_\+segments (\begin{DoxyParamCaption}\item[{}]{segments}{, }\item[{}]{n}{ = {\ttfamily 1000}}\end{DoxyParamCaption})}
+
+\Hypertarget{namespacegeneral__backup_a6e7e5bbdc9b051b0d140b37cfb743699}\index{general\_backup@{general\_backup}!scale\_coords@{scale\_coords}}
+\index{scale\_coords@{scale\_coords}!general\_backup@{general\_backup}}
+\doxysubsubsection{\texorpdfstring{scale\_coords()}{scale\_coords()}}
+{\footnotesize\ttfamily \label{namespacegeneral__backup_a6e7e5bbdc9b051b0d140b37cfb743699} 
+general\+\_\+backup.\+scale\+\_\+coords (\begin{DoxyParamCaption}\item[{}]{img1\+\_\+shape}{, }\item[{}]{coords}{, }\item[{}]{img0\+\_\+shape}{, }\item[{}]{ratio\+\_\+pad}{ = {\ttfamily None}}\end{DoxyParamCaption})}
+
+\Hypertarget{namespacegeneral__backup_ae7534782f0f6130022307206de39e528}\index{general\_backup@{general\_backup}!segment2box@{segment2box}}
+\index{segment2box@{segment2box}!general\_backup@{general\_backup}}
+\doxysubsubsection{\texorpdfstring{segment2box()}{segment2box()}}
+{\footnotesize\ttfamily \label{namespacegeneral__backup_ae7534782f0f6130022307206de39e528} 
+general\+\_\+backup.\+segment2box (\begin{DoxyParamCaption}\item[{}]{segment}{, }\item[{}]{width}{ = {\ttfamily 640}, }\item[{}]{height}{ = {\ttfamily 640}}\end{DoxyParamCaption})}
+
+\Hypertarget{namespacegeneral__backup_a5dfa47af5f522d05ff024b2807a06001}\index{general\_backup@{general\_backup}!segments2boxes@{segments2boxes}}
+\index{segments2boxes@{segments2boxes}!general\_backup@{general\_backup}}
+\doxysubsubsection{\texorpdfstring{segments2boxes()}{segments2boxes()}}
+{\footnotesize\ttfamily \label{namespacegeneral__backup_a5dfa47af5f522d05ff024b2807a06001} 
+general\+\_\+backup.\+segments2boxes (\begin{DoxyParamCaption}\item[{}]{segments}{}\end{DoxyParamCaption})}
+
+\Hypertarget{namespacegeneral__backup_acdf02b5581aac08384a71cf13431159d}\index{general\_backup@{general\_backup}!set\_logging@{set\_logging}}
+\index{set\_logging@{set\_logging}!general\_backup@{general\_backup}}
+\doxysubsubsection{\texorpdfstring{set\_logging()}{set\_logging()}}
+{\footnotesize\ttfamily \label{namespacegeneral__backup_acdf02b5581aac08384a71cf13431159d} 
+general\+\_\+backup.\+set\+\_\+logging (\begin{DoxyParamCaption}\item[{}]{rank}{ = {\ttfamily -\/1}}\end{DoxyParamCaption})}
+
+\Hypertarget{namespacegeneral__backup_ac258bb1af6f8cc4b86245a55270efd61}\index{general\_backup@{general\_backup}!strip\_optimizer@{strip\_optimizer}}
+\index{strip\_optimizer@{strip\_optimizer}!general\_backup@{general\_backup}}
+\doxysubsubsection{\texorpdfstring{strip\_optimizer()}{strip\_optimizer()}}
+{\footnotesize\ttfamily \label{namespacegeneral__backup_ac258bb1af6f8cc4b86245a55270efd61} 
+general\+\_\+backup.\+strip\+\_\+optimizer (\begin{DoxyParamCaption}\item[{}]{f}{ = {\ttfamily \textquotesingle{}best.pt\textquotesingle{}}, }\item[{}]{s}{ = {\ttfamily \textquotesingle{}\textquotesingle{}}}\end{DoxyParamCaption})}
+
+\Hypertarget{namespacegeneral__backup_ab3ebff8b6e4bf726f9a8aca5a23b4f29}\index{general\_backup@{general\_backup}!wh\_iou@{wh\_iou}}
+\index{wh\_iou@{wh\_iou}!general\_backup@{general\_backup}}
+\doxysubsubsection{\texorpdfstring{wh\_iou()}{wh\_iou()}}
+{\footnotesize\ttfamily \label{namespacegeneral__backup_ab3ebff8b6e4bf726f9a8aca5a23b4f29} 
+general\+\_\+backup.\+wh\+\_\+iou (\begin{DoxyParamCaption}\item[{}]{wh1}{, }\item[{}]{wh2}{}\end{DoxyParamCaption})}
+
+\Hypertarget{namespacegeneral__backup_a51a2b5d5a824c69a054ed72e39c6998e}\index{general\_backup@{general\_backup}!xyn2xy@{xyn2xy}}
+\index{xyn2xy@{xyn2xy}!general\_backup@{general\_backup}}
+\doxysubsubsection{\texorpdfstring{xyn2xy()}{xyn2xy()}}
+{\footnotesize\ttfamily \label{namespacegeneral__backup_a51a2b5d5a824c69a054ed72e39c6998e} 
+general\+\_\+backup.\+xyn2xy (\begin{DoxyParamCaption}\item[{}]{x}{, }\item[{}]{w}{ = {\ttfamily 640}, }\item[{}]{h}{ = {\ttfamily 640}, }\item[{}]{padw}{ = {\ttfamily 0}, }\item[{}]{padh}{ = {\ttfamily 0}}\end{DoxyParamCaption})}
+
+\Hypertarget{namespacegeneral__backup_a617f081e93d1bc4f53f0bf72409c682c}\index{general\_backup@{general\_backup}!xywh2xyxy@{xywh2xyxy}}
+\index{xywh2xyxy@{xywh2xyxy}!general\_backup@{general\_backup}}
+\doxysubsubsection{\texorpdfstring{xywh2xyxy()}{xywh2xyxy()}}
+{\footnotesize\ttfamily \label{namespacegeneral__backup_a617f081e93d1bc4f53f0bf72409c682c} 
+general\+\_\+backup.\+xywh2xyxy (\begin{DoxyParamCaption}\item[{}]{x}{}\end{DoxyParamCaption})}
+
+\Hypertarget{namespacegeneral__backup_aaa407c57ff532ba1de0e2e769ba5b973}\index{general\_backup@{general\_backup}!xywhn2xyxy@{xywhn2xyxy}}
+\index{xywhn2xyxy@{xywhn2xyxy}!general\_backup@{general\_backup}}
+\doxysubsubsection{\texorpdfstring{xywhn2xyxy()}{xywhn2xyxy()}}
+{\footnotesize\ttfamily \label{namespacegeneral__backup_aaa407c57ff532ba1de0e2e769ba5b973} 
+general\+\_\+backup.\+xywhn2xyxy (\begin{DoxyParamCaption}\item[{}]{x}{, }\item[{}]{w}{ = {\ttfamily 640}, }\item[{}]{h}{ = {\ttfamily 640}, }\item[{}]{padw}{ = {\ttfamily 0}, }\item[{}]{padh}{ = {\ttfamily 0}}\end{DoxyParamCaption})}
+
+\Hypertarget{namespacegeneral__backup_a6fbed2d7a0d6e3d46052a5fbe19b8057}\index{general\_backup@{general\_backup}!xyxy2xywh@{xyxy2xywh}}
+\index{xyxy2xywh@{xyxy2xywh}!general\_backup@{general\_backup}}
+\doxysubsubsection{\texorpdfstring{xyxy2xywh()}{xyxy2xywh()}}
+{\footnotesize\ttfamily \label{namespacegeneral__backup_a6fbed2d7a0d6e3d46052a5fbe19b8057} 
+general\+\_\+backup.\+xyxy2xywh (\begin{DoxyParamCaption}\item[{}]{x}{}\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Variable Documentation}
+\Hypertarget{namespacegeneral__backup_ac759c90e1fdafc7b2c3d8a75ea6fe4a6}\index{general\_backup@{general\_backup}!formatter@{formatter}}
+\index{formatter@{formatter}!general\_backup@{general\_backup}}
+\doxysubsubsection{\texorpdfstring{formatter}{formatter}}
+{\footnotesize\ttfamily \label{namespacegeneral__backup_ac759c90e1fdafc7b2c3d8a75ea6fe4a6} 
+general\+\_\+backup.\+formatter}
+
+\Hypertarget{namespacegeneral__backup_a85c62a3d7f46002c625ecaac5a920edf}\index{general\_backup@{general\_backup}!linewidth@{linewidth}}
+\index{linewidth@{linewidth}!general\_backup@{general\_backup}}
+\doxysubsubsection{\texorpdfstring{linewidth}{linewidth}}
+{\footnotesize\ttfamily \label{namespacegeneral__backup_a85c62a3d7f46002c625ecaac5a920edf} 
+general\+\_\+backup.\+linewidth}
+
+\Hypertarget{namespacegeneral__backup_a26feb536f349b77f5cf8829588d8a6fa}\index{general\_backup@{general\_backup}!max\_columns@{max\_columns}}
+\index{max\_columns@{max\_columns}!general\_backup@{general\_backup}}
+\doxysubsubsection{\texorpdfstring{max\_columns}{max\_columns}}
+{\footnotesize\ttfamily \label{namespacegeneral__backup_a26feb536f349b77f5cf8829588d8a6fa} 
+general\+\_\+backup.\+max\+\_\+columns}
+
+\Hypertarget{namespacegeneral__backup_a1afe0040d7c98c68b80d18bf16960fe4}\index{general\_backup@{general\_backup}!precision@{precision}}
+\index{precision@{precision}!general\_backup@{general\_backup}}
+\doxysubsubsection{\texorpdfstring{precision}{precision}}
+{\footnotesize\ttfamily \label{namespacegeneral__backup_a1afe0040d7c98c68b80d18bf16960fe4} 
+general\+\_\+backup.\+precision}
+
+\Hypertarget{namespacegeneral__backup_afbf0fdb258db5829840e1d7c510c4b46}\index{general\_backup@{general\_backup}!profile@{profile}}
+\index{profile@{profile}!general\_backup@{general\_backup}}
+\doxysubsubsection{\texorpdfstring{profile}{profile}}
+{\footnotesize\ttfamily \label{namespacegeneral__backup_afbf0fdb258db5829840e1d7c510c4b46} 
+general\+\_\+backup.\+profile}
+

@@ -1,0 +1,96 @@
+\doxysection{yolo\+\_\+detect Namespace Reference}
+\hypertarget{namespaceyolo__detect}{}\label{namespaceyolo__detect}\index{yolo\_detect@{yolo\_detect}}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{namespaceyolo__detect_a9f6a7b6c8e0d5fb0e5a708b3b2c4c5b3}{run\+\_\+detection}} (folder)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+str \mbox{\hyperlink{namespaceyolo__detect_aa0997c7ce79df1fac5f4de0fdb0b706e}{source\+\_\+dir}} = r"{}\+D\+:\textbackslash{}\+Shreyan\textbackslash{}\+Development\textbackslash{}\+Train\textbackslash{}tiles"{}
+\item 
+str \mbox{\hyperlink{namespaceyolo__detect_a89859100f6f95b12ecca005a874b10b6}{output\+\_\+dir}} = r"{}\+D\+:\textbackslash{}\+Shreyan\textbackslash{}\+Development\textbackslash{}\+Train\textbackslash{}tiles\textbackslash{}detect"{}
+\item 
+str \mbox{\hyperlink{namespaceyolo__detect_a9b517a4f3742da82eec9199d65762745}{weights\+\_\+path}} = "{}cell.\+pt"{}
+\item 
+float \mbox{\hyperlink{namespaceyolo__detect_ac4024c7f633461800fdbc29e16f714ee}{conf\+\_\+thres}} = 0.\+75
+\item 
+int \mbox{\hyperlink{namespaceyolo__detect_ad40132aa62a7a94541d74cf4582ce73f}{device}} = 0
+\item 
+list \mbox{\hyperlink{namespaceyolo__detect_aa682305e9d6b33a1bccdc37fdc30b7ff}{subdirs}} = \mbox{[}d for d in os.\+listdir(\mbox{\hyperlink{namespaceyolo__detect_aa0997c7ce79df1fac5f4de0fdb0b706e}{source\+\_\+dir}}) if os.\+path.\+isdir(os.\+path.\+join(\mbox{\hyperlink{namespaceyolo__detect_aa0997c7ce79df1fac5f4de0fdb0b706e}{source\+\_\+dir}}, d))\mbox{]}
+\item 
+\mbox{\hyperlink{namespaceyolo__detect_a8c7b766fc4d3489cf3e4418ba9265ed7}{num\+\_\+workers}} = min(7, len(\mbox{\hyperlink{namespaceyolo__detect_aa682305e9d6b33a1bccdc37fdc30b7ff}{subdirs}}))
+\item 
+\mbox{\hyperlink{namespaceyolo__detect_ae90309af9e96a7cd924910605f2c7737}{max\+\_\+workers}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}Created on jan 2025
+
+@author: Shreyan
+
+function : running yolo detection on all tiles in a directory
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Function Documentation}
+\Hypertarget{namespaceyolo__detect_a9f6a7b6c8e0d5fb0e5a708b3b2c4c5b3}\index{yolo\_detect@{yolo\_detect}!run\_detection@{run\_detection}}
+\index{run\_detection@{run\_detection}!yolo\_detect@{yolo\_detect}}
+\doxysubsubsection{\texorpdfstring{run\_detection()}{run\_detection()}}
+{\footnotesize\ttfamily \label{namespaceyolo__detect_a9f6a7b6c8e0d5fb0e5a708b3b2c4c5b3} 
+yolo\+\_\+detect.\+run\+\_\+detection (\begin{DoxyParamCaption}\item[{}]{folder}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Runs YOLOv7 detection for a given folder.\end{DoxyVerb}
+ 
+
+\doxysubsection{Variable Documentation}
+\Hypertarget{namespaceyolo__detect_ac4024c7f633461800fdbc29e16f714ee}\index{yolo\_detect@{yolo\_detect}!conf\_thres@{conf\_thres}}
+\index{conf\_thres@{conf\_thres}!yolo\_detect@{yolo\_detect}}
+\doxysubsubsection{\texorpdfstring{conf\_thres}{conf\_thres}}
+{\footnotesize\ttfamily \label{namespaceyolo__detect_ac4024c7f633461800fdbc29e16f714ee} 
+float yolo\+\_\+detect.\+conf\+\_\+thres = 0.\+75}
+
+\Hypertarget{namespaceyolo__detect_ad40132aa62a7a94541d74cf4582ce73f}\index{yolo\_detect@{yolo\_detect}!device@{device}}
+\index{device@{device}!yolo\_detect@{yolo\_detect}}
+\doxysubsubsection{\texorpdfstring{device}{device}}
+{\footnotesize\ttfamily \label{namespaceyolo__detect_ad40132aa62a7a94541d74cf4582ce73f} 
+int yolo\+\_\+detect.\+device = 0}
+
+\Hypertarget{namespaceyolo__detect_ae90309af9e96a7cd924910605f2c7737}\index{yolo\_detect@{yolo\_detect}!max\_workers@{max\_workers}}
+\index{max\_workers@{max\_workers}!yolo\_detect@{yolo\_detect}}
+\doxysubsubsection{\texorpdfstring{max\_workers}{max\_workers}}
+{\footnotesize\ttfamily \label{namespaceyolo__detect_ae90309af9e96a7cd924910605f2c7737} 
+yolo\+\_\+detect.\+max\+\_\+workers}
+
+\Hypertarget{namespaceyolo__detect_a8c7b766fc4d3489cf3e4418ba9265ed7}\index{yolo\_detect@{yolo\_detect}!num\_workers@{num\_workers}}
+\index{num\_workers@{num\_workers}!yolo\_detect@{yolo\_detect}}
+\doxysubsubsection{\texorpdfstring{num\_workers}{num\_workers}}
+{\footnotesize\ttfamily \label{namespaceyolo__detect_a8c7b766fc4d3489cf3e4418ba9265ed7} 
+yolo\+\_\+detect.\+num\+\_\+workers = min(7, len(\mbox{\hyperlink{namespaceyolo__detect_aa682305e9d6b33a1bccdc37fdc30b7ff}{subdirs}}))}
+
+\Hypertarget{namespaceyolo__detect_a89859100f6f95b12ecca005a874b10b6}\index{yolo\_detect@{yolo\_detect}!output\_dir@{output\_dir}}
+\index{output\_dir@{output\_dir}!yolo\_detect@{yolo\_detect}}
+\doxysubsubsection{\texorpdfstring{output\_dir}{output\_dir}}
+{\footnotesize\ttfamily \label{namespaceyolo__detect_a89859100f6f95b12ecca005a874b10b6} 
+str yolo\+\_\+detect.\+output\+\_\+dir = r"{}\+D\+:\textbackslash{}\+Shreyan\textbackslash{}\+Development\textbackslash{}\+Train\textbackslash{}tiles\textbackslash{}detect"{}}
+
+\Hypertarget{namespaceyolo__detect_aa0997c7ce79df1fac5f4de0fdb0b706e}\index{yolo\_detect@{yolo\_detect}!source\_dir@{source\_dir}}
+\index{source\_dir@{source\_dir}!yolo\_detect@{yolo\_detect}}
+\doxysubsubsection{\texorpdfstring{source\_dir}{source\_dir}}
+{\footnotesize\ttfamily \label{namespaceyolo__detect_aa0997c7ce79df1fac5f4de0fdb0b706e} 
+str yolo\+\_\+detect.\+source\+\_\+dir = r"{}\+D\+:\textbackslash{}\+Shreyan\textbackslash{}\+Development\textbackslash{}\+Train\textbackslash{}tiles"{}}
+
+\Hypertarget{namespaceyolo__detect_aa682305e9d6b33a1bccdc37fdc30b7ff}\index{yolo\_detect@{yolo\_detect}!subdirs@{subdirs}}
+\index{subdirs@{subdirs}!yolo\_detect@{yolo\_detect}}
+\doxysubsubsection{\texorpdfstring{subdirs}{subdirs}}
+{\footnotesize\ttfamily \label{namespaceyolo__detect_aa682305e9d6b33a1bccdc37fdc30b7ff} 
+list yolo\+\_\+detect.\+subdirs = \mbox{[}d for d in os.\+listdir(\mbox{\hyperlink{namespaceyolo__detect_aa0997c7ce79df1fac5f4de0fdb0b706e}{source\+\_\+dir}}) if os.\+path.\+isdir(os.\+path.\+join(\mbox{\hyperlink{namespaceyolo__detect_aa0997c7ce79df1fac5f4de0fdb0b706e}{source\+\_\+dir}}, d))\mbox{]}}
+
+\Hypertarget{namespaceyolo__detect_a9b517a4f3742da82eec9199d65762745}\index{yolo\_detect@{yolo\_detect}!weights\_path@{weights\_path}}
+\index{weights\_path@{weights\_path}!yolo\_detect@{yolo\_detect}}
+\doxysubsubsection{\texorpdfstring{weights\_path}{weights\_path}}
+{\footnotesize\ttfamily \label{namespaceyolo__detect_a9b517a4f3742da82eec9199d65762745} 
+str yolo\+\_\+detect.\+weights\+\_\+path = "{}cell.\+pt"{}}
+

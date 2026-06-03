@@ -1,0 +1,81 @@
+\doxysection{torchvision\+\_\+down.\+models.\+convnext.\+CNBlock Class Reference}
+\hypertarget{classtorchvision__down_1_1models_1_1convnext_1_1_c_n_block}{}\label{classtorchvision__down_1_1models_1_1convnext_1_1_c_n_block}\index{torchvision\_down.models.convnext.CNBlock@{torchvision\_down.models.convnext.CNBlock}}
+Inheritance diagram for torchvision\+\_\+down.\+models.\+convnext.\+CNBlock\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classtorchvision__down_1_1models_1_1convnext_1_1_c_n_block}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+None \mbox{\hyperlink{classtorchvision__down_1_1models_1_1convnext_1_1_c_n_block_af3cb752f714c0cedd93578470ff7ba3f}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, dim, float \mbox{\hyperlink{classtorchvision__down_1_1models_1_1convnext_1_1_c_n_block_a92652ba679f583f74bc6a43b2fa416f4}{layer\+\_\+scale}}, float stochastic\+\_\+depth\+\_\+prob, Optional\mbox{[}Callable\mbox{[}..., nn.\+Module\mbox{]}\mbox{]} norm\+\_\+layer=None)
+\item 
+Tensor \mbox{\hyperlink{classtorchvision__down_1_1models_1_1convnext_1_1_c_n_block_a74f596d3ebdc7fad49e2de5491a6bd1a}{forward}} (self, Tensor input)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1models_1_1convnext_1_1_c_n_block_a0742a43e957dfe0772e64b730a1bad7a}{block}}
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1models_1_1convnext_1_1_c_n_block_a92652ba679f583f74bc6a43b2fa416f4}{layer\+\_\+scale}} = nn.\+Parameter(torch.\+ones(dim, 1, 1) \texorpdfstring{$\ast$}{*} layer\+\_\+scale)
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1models_1_1convnext_1_1_c_n_block_a19c4a2d853c199374193a99521fac63e}{stochastic\+\_\+depth}} = \mbox{\hyperlink{classtorchvision__down_1_1ops_1_1stochastic__depth_1_1_stochastic_depth}{Stochastic\+Depth}}(stochastic\+\_\+depth\+\_\+prob, "{}row"{})
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classtorchvision__down_1_1models_1_1convnext_1_1_c_n_block_af3cb752f714c0cedd93578470ff7ba3f}\index{torchvision\_down.models.convnext.CNBlock@{torchvision\_down.models.convnext.CNBlock}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!torchvision\_down.models.convnext.CNBlock@{torchvision\_down.models.convnext.CNBlock}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1models_1_1convnext_1_1_c_n_block_af3cb752f714c0cedd93578470ff7ba3f} 
+ None torchvision\+\_\+down.\+models.\+convnext.\+CNBlock.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{dim}{, }\item[{float}]{layer\+\_\+scale}{, }\item[{float}]{stochastic\+\_\+depth\+\_\+prob}{, }\item[{Optional\mbox{[}Callable\mbox{[}..., nn.\+Module\mbox{]}\mbox{]} }]{norm\+\_\+layer}{ = {\ttfamily None}}\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classtorchvision__down_1_1models_1_1convnext_1_1_c_n_block_a74f596d3ebdc7fad49e2de5491a6bd1a}\index{torchvision\_down.models.convnext.CNBlock@{torchvision\_down.models.convnext.CNBlock}!forward@{forward}}
+\index{forward@{forward}!torchvision\_down.models.convnext.CNBlock@{torchvision\_down.models.convnext.CNBlock}}
+\doxysubsubsection{\texorpdfstring{forward()}{forward()}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1models_1_1convnext_1_1_c_n_block_a74f596d3ebdc7fad49e2de5491a6bd1a} 
+ Tensor torchvision\+\_\+down.\+models.\+convnext.\+CNBlock.\+forward (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{Tensor}]{input}{}\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classtorchvision__down_1_1models_1_1convnext_1_1_c_n_block_a0742a43e957dfe0772e64b730a1bad7a}\index{torchvision\_down.models.convnext.CNBlock@{torchvision\_down.models.convnext.CNBlock}!block@{block}}
+\index{block@{block}!torchvision\_down.models.convnext.CNBlock@{torchvision\_down.models.convnext.CNBlock}}
+\doxysubsubsection{\texorpdfstring{block}{block}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1models_1_1convnext_1_1_c_n_block_a0742a43e957dfe0772e64b730a1bad7a} 
+torchvision\+\_\+down.\+models.\+convnext.\+CNBlock.\+block}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \ nn.Sequential(}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ nn.Conv2d(dim,\ dim,\ kernel\_size=7,\ padding=3,\ groups=dim,\ bias=\textcolor{keyword}{True}),}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ Permute([0,\ 2,\ 3,\ 1]),}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ norm\_layer(dim),}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ nn.Linear(in\_features=dim,\ out\_features=4\ *\ dim,\ bias=\textcolor{keyword}{True}),}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ nn.GELU(),}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ nn.Linear(in\_features=4\ *\ dim,\ out\_features=dim,\ bias=\textcolor{keyword}{True}),}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ Permute([0,\ 3,\ 1,\ 2]),}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ )}
+
+\end{DoxyCode}
+\Hypertarget{classtorchvision__down_1_1models_1_1convnext_1_1_c_n_block_a92652ba679f583f74bc6a43b2fa416f4}\index{torchvision\_down.models.convnext.CNBlock@{torchvision\_down.models.convnext.CNBlock}!layer\_scale@{layer\_scale}}
+\index{layer\_scale@{layer\_scale}!torchvision\_down.models.convnext.CNBlock@{torchvision\_down.models.convnext.CNBlock}}
+\doxysubsubsection{\texorpdfstring{layer\_scale}{layer\_scale}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1models_1_1convnext_1_1_c_n_block_a92652ba679f583f74bc6a43b2fa416f4} 
+torchvision\+\_\+down.\+models.\+convnext.\+CNBlock.\+layer\+\_\+scale = nn.\+Parameter(torch.\+ones(dim, 1, 1) \texorpdfstring{$\ast$}{*} layer\+\_\+scale)}
+
+\Hypertarget{classtorchvision__down_1_1models_1_1convnext_1_1_c_n_block_a19c4a2d853c199374193a99521fac63e}\index{torchvision\_down.models.convnext.CNBlock@{torchvision\_down.models.convnext.CNBlock}!stochastic\_depth@{stochastic\_depth}}
+\index{stochastic\_depth@{stochastic\_depth}!torchvision\_down.models.convnext.CNBlock@{torchvision\_down.models.convnext.CNBlock}}
+\doxysubsubsection{\texorpdfstring{stochastic\_depth}{stochastic\_depth}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1models_1_1convnext_1_1_c_n_block_a19c4a2d853c199374193a99521fac63e} 
+torchvision\+\_\+down.\+models.\+convnext.\+CNBlock.\+stochastic\+\_\+depth = \mbox{\hyperlink{classtorchvision__down_1_1ops_1_1stochastic__depth_1_1_stochastic_depth}{Stochastic\+Depth}}(stochastic\+\_\+depth\+\_\+prob, "{}row"{})}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Cervi\+AI/torchvision\+\_\+down/models/\mbox{\hyperlink{convnext_8py}{convnext.\+py}}\end{DoxyCompactItemize}

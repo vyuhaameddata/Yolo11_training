@@ -1,0 +1,194 @@
+\doxysection{models.\+yolo.\+IDetect Class Reference}
+\hypertarget{classmodels_1_1yolo_1_1_i_detect}{}\label{classmodels_1_1yolo_1_1_i_detect}\index{models.yolo.IDetect@{models.yolo.IDetect}}
+Inheritance diagram for models.\+yolo.\+IDetect\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classmodels_1_1yolo_1_1_i_detect}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classmodels_1_1yolo_1_1_i_detect_aad4a87ed51bc22ce8f29b3414eb2f657}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, \mbox{\hyperlink{classmodels_1_1yolo_1_1_i_detect_aee7490722a0a27a364d3b368d7d0dd4c}{nc}}=80, anchors=(), ch=())
+\item 
+\mbox{\hyperlink{classmodels_1_1yolo_1_1_i_detect_aa348448815a451c45d17ddcfc5923699}{forward}} (self, x)
+\item 
+\mbox{\hyperlink{classmodels_1_1yolo_1_1_i_detect_a15203812d5b62a785d6731375ea29d40}{fuseforward}} (self, x)
+\item 
+\mbox{\hyperlink{classmodels_1_1yolo_1_1_i_detect_acf444cc33ff30387c4be4f04a1542a33}{fuse}} (self)
+\item 
+\mbox{\hyperlink{classmodels_1_1yolo_1_1_i_detect_a342e3b5d051ce617192daa1235025fbe}{convert}} (self, z)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classmodels_1_1yolo_1_1_i_detect_aee7490722a0a27a364d3b368d7d0dd4c}{nc}} = nc
+\item 
+int \mbox{\hyperlink{classmodels_1_1yolo_1_1_i_detect_a2554889ecf00bba2b20b031cfae6ca8b}{no}} = \mbox{\hyperlink{classmodels_1_1yolo_1_1_i_detect_aee7490722a0a27a364d3b368d7d0dd4c}{nc}} + 5
+\item 
+\mbox{\hyperlink{classmodels_1_1yolo_1_1_i_detect_af433162da69314242987acfe573e89e0}{nl}} = len(anchors)
+\item 
+int \mbox{\hyperlink{classmodels_1_1yolo_1_1_i_detect_aab8d17d7d0051c401295c975792a45e0}{na}} = len(anchors\mbox{[}0\mbox{]}) // 2
+\item 
+list \mbox{\hyperlink{classmodels_1_1yolo_1_1_i_detect_a30ccf424eb40170495194dc63a68bf0f}{grid}} = \mbox{[}torch.\+zeros(1)\mbox{]} \texorpdfstring{$\ast$}{*} self.\+nl
+\item 
+\mbox{\hyperlink{classmodels_1_1yolo_1_1_i_detect_aed341faa1059e32e44572f728d060f07}{m}} = nn.\+Module\+List(nn.\+Conv2d(x, self.\+no \texorpdfstring{$\ast$}{*} self.\+na, 1) for x in ch)
+\item 
+\mbox{\hyperlink{classmodels_1_1yolo_1_1_i_detect_a2385596714ea55735487dfc18943a870}{ia}} = nn.\+Module\+List(\mbox{\hyperlink{classmodels_1_1common_1_1_implicit_a}{ImplicitA}}(x) for x in ch)
+\item 
+\mbox{\hyperlink{classmodels_1_1yolo_1_1_i_detect_ad6303ec1e0bed893bd1e73aa47ab4221}{im}} = nn.\+Module\+List(\mbox{\hyperlink{classmodels_1_1common_1_1_implicit_m}{ImplicitM}}(self.\+no \texorpdfstring{$\ast$}{*} self.\+na) for \+\_\+ in ch)
+\item 
+\# inference \mbox{\hyperlink{classmodels_1_1yolo_1_1_i_detect_adb6fa5c720c2c68cf27e600927e311f8}{training}} = x\mbox{[}i\mbox{]}.view(bs, self.\+na, self.\+no, ny, nx).permute(0, 1, 3, 4, 2).contiguous()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classmodels_1_1yolo_1_1_i_detect_abb869e66636a0b20ef3bc16e0aed1cac}{stride}} = None
+\item 
+bool \mbox{\hyperlink{classmodels_1_1yolo_1_1_i_detect_abbed188eeb9f8da2871a4178b41a7399}{export}} = False
+\item 
+bool \mbox{\hyperlink{classmodels_1_1yolo_1_1_i_detect_ae3008270d322c80c1f230de76578d294}{end2end}} = False
+\item 
+bool \mbox{\hyperlink{classmodels_1_1yolo_1_1_i_detect_aa7206d44486e0c65ba416b0578e14330}{include\+\_\+nms}} = False
+\item 
+bool \mbox{\hyperlink{classmodels_1_1yolo_1_1_i_detect_ad6540737757fba036eea6b439716ebbc}{concat}} = False
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classmodels_1_1yolo_1_1_i_detect_a86878806f9efc3b5e5e28c042a4e53b4}{\+\_\+make\+\_\+grid}} (nx=20, ny=20)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classmodels_1_1yolo_1_1_i_detect_aad4a87ed51bc22ce8f29b3414eb2f657}\index{models.yolo.IDetect@{models.yolo.IDetect}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!models.yolo.IDetect@{models.yolo.IDetect}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily \label{classmodels_1_1yolo_1_1_i_detect_aad4a87ed51bc22ce8f29b3414eb2f657} 
+models.\+yolo.\+IDetect.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{nc}{ = {\ttfamily 80}, }\item[{}]{anchors}{ = {\ttfamily ()}, }\item[{}]{ch}{ = {\ttfamily ()}}\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classmodels_1_1yolo_1_1_i_detect_a86878806f9efc3b5e5e28c042a4e53b4}\index{models.yolo.IDetect@{models.yolo.IDetect}!\_make\_grid@{\_make\_grid}}
+\index{\_make\_grid@{\_make\_grid}!models.yolo.IDetect@{models.yolo.IDetect}}
+\doxysubsubsection{\texorpdfstring{\_make\_grid()}{\_make\_grid()}}
+{\footnotesize\ttfamily \label{classmodels_1_1yolo_1_1_i_detect_a86878806f9efc3b5e5e28c042a4e53b4} 
+models.\+yolo.\+IDetect.\+\_\+make\+\_\+grid (\begin{DoxyParamCaption}\item[{}]{nx}{ = {\ttfamily 20}, }\item[{}]{ny}{ = {\ttfamily 20}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}
+
+\Hypertarget{classmodels_1_1yolo_1_1_i_detect_a342e3b5d051ce617192daa1235025fbe}\index{models.yolo.IDetect@{models.yolo.IDetect}!convert@{convert}}
+\index{convert@{convert}!models.yolo.IDetect@{models.yolo.IDetect}}
+\doxysubsubsection{\texorpdfstring{convert()}{convert()}}
+{\footnotesize\ttfamily \label{classmodels_1_1yolo_1_1_i_detect_a342e3b5d051ce617192daa1235025fbe} 
+models.\+yolo.\+IDetect.\+convert (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{z}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classmodels_1_1yolo_1_1_i_detect_aa348448815a451c45d17ddcfc5923699}\index{models.yolo.IDetect@{models.yolo.IDetect}!forward@{forward}}
+\index{forward@{forward}!models.yolo.IDetect@{models.yolo.IDetect}}
+\doxysubsubsection{\texorpdfstring{forward()}{forward()}}
+{\footnotesize\ttfamily \label{classmodels_1_1yolo_1_1_i_detect_aa348448815a451c45d17ddcfc5923699} 
+models.\+yolo.\+IDetect.\+forward (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{x}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classmodels_1_1yolo_1_1_i_detect_acf444cc33ff30387c4be4f04a1542a33}\index{models.yolo.IDetect@{models.yolo.IDetect}!fuse@{fuse}}
+\index{fuse@{fuse}!models.yolo.IDetect@{models.yolo.IDetect}}
+\doxysubsubsection{\texorpdfstring{fuse()}{fuse()}}
+{\footnotesize\ttfamily \label{classmodels_1_1yolo_1_1_i_detect_acf444cc33ff30387c4be4f04a1542a33} 
+models.\+yolo.\+IDetect.\+fuse (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classmodels_1_1yolo_1_1_i_detect_a15203812d5b62a785d6731375ea29d40}\index{models.yolo.IDetect@{models.yolo.IDetect}!fuseforward@{fuseforward}}
+\index{fuseforward@{fuseforward}!models.yolo.IDetect@{models.yolo.IDetect}}
+\doxysubsubsection{\texorpdfstring{fuseforward()}{fuseforward()}}
+{\footnotesize\ttfamily \label{classmodels_1_1yolo_1_1_i_detect_a15203812d5b62a785d6731375ea29d40} 
+models.\+yolo.\+IDetect.\+fuseforward (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{x}{}\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classmodels_1_1yolo_1_1_i_detect_ad6540737757fba036eea6b439716ebbc}\index{models.yolo.IDetect@{models.yolo.IDetect}!concat@{concat}}
+\index{concat@{concat}!models.yolo.IDetect@{models.yolo.IDetect}}
+\doxysubsubsection{\texorpdfstring{concat}{concat}}
+{\footnotesize\ttfamily \label{classmodels_1_1yolo_1_1_i_detect_ad6540737757fba036eea6b439716ebbc} 
+bool models.\+yolo.\+IDetect.\+concat = False\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classmodels_1_1yolo_1_1_i_detect_ae3008270d322c80c1f230de76578d294}\index{models.yolo.IDetect@{models.yolo.IDetect}!end2end@{end2end}}
+\index{end2end@{end2end}!models.yolo.IDetect@{models.yolo.IDetect}}
+\doxysubsubsection{\texorpdfstring{end2end}{end2end}}
+{\footnotesize\ttfamily \label{classmodels_1_1yolo_1_1_i_detect_ae3008270d322c80c1f230de76578d294} 
+bool models.\+yolo.\+IDetect.\+end2end = False\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classmodels_1_1yolo_1_1_i_detect_abbed188eeb9f8da2871a4178b41a7399}\index{models.yolo.IDetect@{models.yolo.IDetect}!export@{export}}
+\index{export@{export}!models.yolo.IDetect@{models.yolo.IDetect}}
+\doxysubsubsection{\texorpdfstring{export}{export}}
+{\footnotesize\ttfamily \label{classmodels_1_1yolo_1_1_i_detect_abbed188eeb9f8da2871a4178b41a7399} 
+bool models.\+yolo.\+IDetect.\+export = False\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classmodels_1_1yolo_1_1_i_detect_a30ccf424eb40170495194dc63a68bf0f}\index{models.yolo.IDetect@{models.yolo.IDetect}!grid@{grid}}
+\index{grid@{grid}!models.yolo.IDetect@{models.yolo.IDetect}}
+\doxysubsubsection{\texorpdfstring{grid}{grid}}
+{\footnotesize\ttfamily \label{classmodels_1_1yolo_1_1_i_detect_a30ccf424eb40170495194dc63a68bf0f} 
+list models.\+yolo.\+IDetect.\+grid = \mbox{[}torch.\+zeros(1)\mbox{]} \texorpdfstring{$\ast$}{*} self.\+nl}
+
+\Hypertarget{classmodels_1_1yolo_1_1_i_detect_a2385596714ea55735487dfc18943a870}\index{models.yolo.IDetect@{models.yolo.IDetect}!ia@{ia}}
+\index{ia@{ia}!models.yolo.IDetect@{models.yolo.IDetect}}
+\doxysubsubsection{\texorpdfstring{ia}{ia}}
+{\footnotesize\ttfamily \label{classmodels_1_1yolo_1_1_i_detect_a2385596714ea55735487dfc18943a870} 
+models.\+yolo.\+IDetect.\+ia = nn.\+Module\+List(\mbox{\hyperlink{classmodels_1_1common_1_1_implicit_a}{ImplicitA}}(x) for x in ch)}
+
+\Hypertarget{classmodels_1_1yolo_1_1_i_detect_ad6303ec1e0bed893bd1e73aa47ab4221}\index{models.yolo.IDetect@{models.yolo.IDetect}!im@{im}}
+\index{im@{im}!models.yolo.IDetect@{models.yolo.IDetect}}
+\doxysubsubsection{\texorpdfstring{im}{im}}
+{\footnotesize\ttfamily \label{classmodels_1_1yolo_1_1_i_detect_ad6303ec1e0bed893bd1e73aa47ab4221} 
+models.\+yolo.\+IDetect.\+im = nn.\+Module\+List(\mbox{\hyperlink{classmodels_1_1common_1_1_implicit_m}{ImplicitM}}(self.\+no \texorpdfstring{$\ast$}{*} self.\+na) for \+\_\+ in ch)}
+
+\Hypertarget{classmodels_1_1yolo_1_1_i_detect_aa7206d44486e0c65ba416b0578e14330}\index{models.yolo.IDetect@{models.yolo.IDetect}!include\_nms@{include\_nms}}
+\index{include\_nms@{include\_nms}!models.yolo.IDetect@{models.yolo.IDetect}}
+\doxysubsubsection{\texorpdfstring{include\_nms}{include\_nms}}
+{\footnotesize\ttfamily \label{classmodels_1_1yolo_1_1_i_detect_aa7206d44486e0c65ba416b0578e14330} 
+bool models.\+yolo.\+IDetect.\+include\+\_\+nms = False\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classmodels_1_1yolo_1_1_i_detect_aed341faa1059e32e44572f728d060f07}\index{models.yolo.IDetect@{models.yolo.IDetect}!m@{m}}
+\index{m@{m}!models.yolo.IDetect@{models.yolo.IDetect}}
+\doxysubsubsection{\texorpdfstring{m}{m}}
+{\footnotesize\ttfamily \label{classmodels_1_1yolo_1_1_i_detect_aed341faa1059e32e44572f728d060f07} 
+models.\+yolo.\+IDetect.\+m = nn.\+Module\+List(nn.\+Conv2d(x, self.\+no \texorpdfstring{$\ast$}{*} self.\+na, 1) for x in ch)}
+
+\Hypertarget{classmodels_1_1yolo_1_1_i_detect_aab8d17d7d0051c401295c975792a45e0}\index{models.yolo.IDetect@{models.yolo.IDetect}!na@{na}}
+\index{na@{na}!models.yolo.IDetect@{models.yolo.IDetect}}
+\doxysubsubsection{\texorpdfstring{na}{na}}
+{\footnotesize\ttfamily \label{classmodels_1_1yolo_1_1_i_detect_aab8d17d7d0051c401295c975792a45e0} 
+int models.\+yolo.\+IDetect.\+na = len(anchors\mbox{[}0\mbox{]}) // 2}
+
+\Hypertarget{classmodels_1_1yolo_1_1_i_detect_aee7490722a0a27a364d3b368d7d0dd4c}\index{models.yolo.IDetect@{models.yolo.IDetect}!nc@{nc}}
+\index{nc@{nc}!models.yolo.IDetect@{models.yolo.IDetect}}
+\doxysubsubsection{\texorpdfstring{nc}{nc}}
+{\footnotesize\ttfamily \label{classmodels_1_1yolo_1_1_i_detect_aee7490722a0a27a364d3b368d7d0dd4c} 
+models.\+yolo.\+IDetect.\+nc = nc}
+
+\Hypertarget{classmodels_1_1yolo_1_1_i_detect_af433162da69314242987acfe573e89e0}\index{models.yolo.IDetect@{models.yolo.IDetect}!nl@{nl}}
+\index{nl@{nl}!models.yolo.IDetect@{models.yolo.IDetect}}
+\doxysubsubsection{\texorpdfstring{nl}{nl}}
+{\footnotesize\ttfamily \label{classmodels_1_1yolo_1_1_i_detect_af433162da69314242987acfe573e89e0} 
+models.\+yolo.\+IDetect.\+nl = len(anchors)}
+
+\Hypertarget{classmodels_1_1yolo_1_1_i_detect_a2554889ecf00bba2b20b031cfae6ca8b}\index{models.yolo.IDetect@{models.yolo.IDetect}!no@{no}}
+\index{no@{no}!models.yolo.IDetect@{models.yolo.IDetect}}
+\doxysubsubsection{\texorpdfstring{no}{no}}
+{\footnotesize\ttfamily \label{classmodels_1_1yolo_1_1_i_detect_a2554889ecf00bba2b20b031cfae6ca8b} 
+models.\+yolo.\+IDetect.\+no = \mbox{\hyperlink{classmodels_1_1yolo_1_1_i_detect_aee7490722a0a27a364d3b368d7d0dd4c}{nc}} + 5}
+
+\Hypertarget{classmodels_1_1yolo_1_1_i_detect_abb869e66636a0b20ef3bc16e0aed1cac}\index{models.yolo.IDetect@{models.yolo.IDetect}!stride@{stride}}
+\index{stride@{stride}!models.yolo.IDetect@{models.yolo.IDetect}}
+\doxysubsubsection{\texorpdfstring{stride}{stride}}
+{\footnotesize\ttfamily \label{classmodels_1_1yolo_1_1_i_detect_abb869e66636a0b20ef3bc16e0aed1cac} 
+models.\+yolo.\+IDetect.\+stride = None\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classmodels_1_1yolo_1_1_i_detect_adb6fa5c720c2c68cf27e600927e311f8}\index{models.yolo.IDetect@{models.yolo.IDetect}!training@{training}}
+\index{training@{training}!models.yolo.IDetect@{models.yolo.IDetect}}
+\doxysubsubsection{\texorpdfstring{training}{training}}
+{\footnotesize\ttfamily \label{classmodels_1_1yolo_1_1_i_detect_adb6fa5c720c2c68cf27e600927e311f8} 
+\# inference models.\+yolo.\+IDetect.\+training = x\mbox{[}i\mbox{]}.view(bs, self.\+na, self.\+no, ny, nx).permute(0, 1, 3, 4, 2).contiguous()}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Cervi\+AI/models/\mbox{\hyperlink{yolo_8py}{yolo.\+py}}\end{DoxyCompactItemize}

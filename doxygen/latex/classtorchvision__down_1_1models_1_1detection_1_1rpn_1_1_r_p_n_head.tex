@@ -1,0 +1,77 @@
+\doxysection{torchvision\+\_\+down.\+models.\+detection.\+rpn.\+RPNHead Class Reference}
+\hypertarget{classtorchvision__down_1_1models_1_1detection_1_1rpn_1_1_r_p_n_head}{}\label{classtorchvision__down_1_1models_1_1detection_1_1rpn_1_1_r_p_n_head}\index{torchvision\_down.models.detection.rpn.RPNHead@{torchvision\_down.models.detection.rpn.RPNHead}}
+Inheritance diagram for torchvision\+\_\+down.\+models.\+detection.\+rpn.\+RPNHead\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classtorchvision__down_1_1models_1_1detection_1_1rpn_1_1_r_p_n_head}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+None \mbox{\hyperlink{classtorchvision__down_1_1models_1_1detection_1_1rpn_1_1_r_p_n_head_a898c069d44da117478328478039dc65c}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, int in\+\_\+channels, int num\+\_\+anchors)
+\item 
+Tuple\mbox{[}List\mbox{[}Tensor\mbox{]}, List\mbox{[}Tensor\mbox{]}\mbox{]} \mbox{\hyperlink{classtorchvision__down_1_1models_1_1detection_1_1rpn_1_1_r_p_n_head_a02dc98d475b4464dea25e144be5b73a6}{forward}} (self, List\mbox{[}Tensor\mbox{]} x)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1models_1_1detection_1_1rpn_1_1_r_p_n_head_a495102f464a72c73eea5caaf7cb8da94}{conv}} = nn.\+Conv2d(in\+\_\+channels, in\+\_\+channels, kernel\+\_\+size=3, stride=1, padding=1)
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1models_1_1detection_1_1rpn_1_1_r_p_n_head_a9a3ce8c33d9ce4b846d74809cf82911d}{cls\+\_\+logits}} = nn.\+Conv2d(in\+\_\+channels, num\+\_\+anchors, kernel\+\_\+size=1, stride=1)
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1models_1_1detection_1_1rpn_1_1_r_p_n_head_a68efd3a154608ca03748605f3e281453}{bbox\+\_\+pred}} = nn.\+Conv2d(in\+\_\+channels, num\+\_\+anchors \texorpdfstring{$\ast$}{*} 4, kernel\+\_\+size=1, stride=1)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}Adds a simple RPN Head with classification and regression heads
+
+Args:
+    in_channels (int): number of channels of the input feature
+    num_anchors (int): number of anchors to be predicted
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classtorchvision__down_1_1models_1_1detection_1_1rpn_1_1_r_p_n_head_a898c069d44da117478328478039dc65c}\index{torchvision\_down.models.detection.rpn.RPNHead@{torchvision\_down.models.detection.rpn.RPNHead}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!torchvision\_down.models.detection.rpn.RPNHead@{torchvision\_down.models.detection.rpn.RPNHead}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1models_1_1detection_1_1rpn_1_1_r_p_n_head_a898c069d44da117478328478039dc65c} 
+ None torchvision\+\_\+down.\+models.\+detection.\+rpn.\+RPNHead.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{int}]{in\+\_\+channels}{, }\item[{int}]{num\+\_\+anchors}{}\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classtorchvision__down_1_1models_1_1detection_1_1rpn_1_1_r_p_n_head_a02dc98d475b4464dea25e144be5b73a6}\index{torchvision\_down.models.detection.rpn.RPNHead@{torchvision\_down.models.detection.rpn.RPNHead}!forward@{forward}}
+\index{forward@{forward}!torchvision\_down.models.detection.rpn.RPNHead@{torchvision\_down.models.detection.rpn.RPNHead}}
+\doxysubsubsection{\texorpdfstring{forward()}{forward()}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1models_1_1detection_1_1rpn_1_1_r_p_n_head_a02dc98d475b4464dea25e144be5b73a6} 
+ Tuple\mbox{[}List\mbox{[}Tensor\mbox{]}, List\mbox{[}Tensor\mbox{]}\mbox{]} torchvision\+\_\+down.\+models.\+detection.\+rpn.\+RPNHead.\+forward (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{List\mbox{[}Tensor\mbox{]}}]{x}{}\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classtorchvision__down_1_1models_1_1detection_1_1rpn_1_1_r_p_n_head_a68efd3a154608ca03748605f3e281453}\index{torchvision\_down.models.detection.rpn.RPNHead@{torchvision\_down.models.detection.rpn.RPNHead}!bbox\_pred@{bbox\_pred}}
+\index{bbox\_pred@{bbox\_pred}!torchvision\_down.models.detection.rpn.RPNHead@{torchvision\_down.models.detection.rpn.RPNHead}}
+\doxysubsubsection{\texorpdfstring{bbox\_pred}{bbox\_pred}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1models_1_1detection_1_1rpn_1_1_r_p_n_head_a68efd3a154608ca03748605f3e281453} 
+torchvision\+\_\+down.\+models.\+detection.\+rpn.\+RPNHead.\+bbox\+\_\+pred = nn.\+Conv2d(in\+\_\+channels, num\+\_\+anchors \texorpdfstring{$\ast$}{*} 4, kernel\+\_\+size=1, stride=1)}
+
+\Hypertarget{classtorchvision__down_1_1models_1_1detection_1_1rpn_1_1_r_p_n_head_a9a3ce8c33d9ce4b846d74809cf82911d}\index{torchvision\_down.models.detection.rpn.RPNHead@{torchvision\_down.models.detection.rpn.RPNHead}!cls\_logits@{cls\_logits}}
+\index{cls\_logits@{cls\_logits}!torchvision\_down.models.detection.rpn.RPNHead@{torchvision\_down.models.detection.rpn.RPNHead}}
+\doxysubsubsection{\texorpdfstring{cls\_logits}{cls\_logits}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1models_1_1detection_1_1rpn_1_1_r_p_n_head_a9a3ce8c33d9ce4b846d74809cf82911d} 
+torchvision\+\_\+down.\+models.\+detection.\+rpn.\+RPNHead.\+cls\+\_\+logits = nn.\+Conv2d(in\+\_\+channels, num\+\_\+anchors, kernel\+\_\+size=1, stride=1)}
+
+\Hypertarget{classtorchvision__down_1_1models_1_1detection_1_1rpn_1_1_r_p_n_head_a495102f464a72c73eea5caaf7cb8da94}\index{torchvision\_down.models.detection.rpn.RPNHead@{torchvision\_down.models.detection.rpn.RPNHead}!conv@{conv}}
+\index{conv@{conv}!torchvision\_down.models.detection.rpn.RPNHead@{torchvision\_down.models.detection.rpn.RPNHead}}
+\doxysubsubsection{\texorpdfstring{conv}{conv}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1models_1_1detection_1_1rpn_1_1_r_p_n_head_a495102f464a72c73eea5caaf7cb8da94} 
+torchvision\+\_\+down.\+models.\+detection.\+rpn.\+RPNHead.\+conv = nn.\+Conv2d(in\+\_\+channels, in\+\_\+channels, kernel\+\_\+size=3, stride=1, padding=1)}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Cervi\+AI/torchvision\+\_\+down/models/detection/\mbox{\hyperlink{rpn_8py}{rpn.\+py}}\end{DoxyCompactItemize}

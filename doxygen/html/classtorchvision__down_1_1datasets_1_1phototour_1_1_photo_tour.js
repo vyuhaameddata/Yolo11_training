@@ -1,0 +1,28 @@
+var classtorchvision__down_1_1datasets_1_1phototour_1_1_photo_tour =
+[
+    [ "__init__", "classtorchvision__down_1_1datasets_1_1phototour_1_1_photo_tour.html#a5ea369b8ea9e411a83bb21af01092a77", null ],
+    [ "__getitem__", "classtorchvision__down_1_1datasets_1_1phototour_1_1_photo_tour.html#a32f37dc80e38dc9e6c832a8f374baf48", null ],
+    [ "__len__", "classtorchvision__down_1_1datasets_1_1phototour_1_1_photo_tour.html#a11739ed0c3aea996a8c4f9feb9ae6263", null ],
+    [ "_check_datafile_exists", "classtorchvision__down_1_1datasets_1_1phototour_1_1_photo_tour.html#ade2e03d2baa76d000308ce888e6703f1", null ],
+    [ "_check_downloaded", "classtorchvision__down_1_1datasets_1_1phototour_1_1_photo_tour.html#a8d7e40bc1b2adce25b890753d1904154", null ],
+    [ "cache", "classtorchvision__down_1_1datasets_1_1phototour_1_1_photo_tour.html#ae847f50afb3cbab0741971d5318a3833", null ],
+    [ "download", "classtorchvision__down_1_1datasets_1_1phototour_1_1_photo_tour.html#ab6f6fbd0727239709b8c85dfdef4407f", null ],
+    [ "extra_repr", "classtorchvision__down_1_1datasets_1_1phototour_1_1_photo_tour.html#a4832d88e98c85fca44169cf3140b7c9c", null ],
+    [ "data", "classtorchvision__down_1_1datasets_1_1phototour_1_1_photo_tour.html#a7677d6fde2825ce457fd837d0a89a7ee", null ],
+    [ "data_dir", "classtorchvision__down_1_1datasets_1_1phototour_1_1_photo_tour.html#a1d2ab265a43d6bf4cb28e7479bbda130", null ],
+    [ "data_down", "classtorchvision__down_1_1datasets_1_1phototour_1_1_photo_tour.html#ada06bc0f13e867ec1036c3324ce13b6d", null ],
+    [ "data_file", "classtorchvision__down_1_1datasets_1_1phototour_1_1_photo_tour.html#ab76782cbc2f3c8b4ec916dd8760a4fe0", null ],
+    [ "image_ext", "classtorchvision__down_1_1datasets_1_1phototour_1_1_photo_tour.html#ae44db867e3b5532d29e7cf52fc12b8aa", null ],
+    [ "info_file", "classtorchvision__down_1_1datasets_1_1phototour_1_1_photo_tour.html#a0e0faddf05141ff950f1a5ec61e99832", null ],
+    [ "labels", "classtorchvision__down_1_1datasets_1_1phototour_1_1_photo_tour.html#ac7be7f56d51fc3d73c7a584a65c5c8f1", null ],
+    [ "lens", "classtorchvision__down_1_1datasets_1_1phototour_1_1_photo_tour.html#abac80a8aa7812302aae0e422473a62f9", null ],
+    [ "matches", "classtorchvision__down_1_1datasets_1_1phototour_1_1_photo_tour.html#abc8fbb17b7e505c07c9f14f8351e0424", null ],
+    [ "matches_files", "classtorchvision__down_1_1datasets_1_1phototour_1_1_photo_tour.html#a9e749285cba140a239fa89eecba53eaf", null ],
+    [ "mean", "classtorchvision__down_1_1datasets_1_1phototour_1_1_photo_tour.html#a39036936b55fa7fd3378690963b1fec5", null ],
+    [ "means", "classtorchvision__down_1_1datasets_1_1phototour_1_1_photo_tour.html#a0123025cbb2171bcff55872dc253d67c", null ],
+    [ "name", "classtorchvision__down_1_1datasets_1_1phototour_1_1_photo_tour.html#adf90ad0957231e4e10960046724dc283", null ],
+    [ "std", "classtorchvision__down_1_1datasets_1_1phototour_1_1_photo_tour.html#a9f7e566bbc2888d26803af7ceb275f10", null ],
+    [ "stds", "classtorchvision__down_1_1datasets_1_1phototour_1_1_photo_tour.html#a50b2acf27829e30a3666bad7a8a13805", null ],
+    [ "train", "classtorchvision__down_1_1datasets_1_1phototour_1_1_photo_tour.html#a292f342cbcdec6662c41097a78ae27d1", null ],
+    [ "urls", "classtorchvision__down_1_1datasets_1_1phototour_1_1_photo_tour.html#a3a8ac562e54d59f37ee84bb3d8b7feb5", null ]
+];

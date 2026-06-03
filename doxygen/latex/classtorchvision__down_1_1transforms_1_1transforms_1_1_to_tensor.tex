@@ -1,0 +1,64 @@
+\doxysection{torchvision\+\_\+down.\+transforms.\+transforms.\+To\+Tensor Class Reference}
+\hypertarget{classtorchvision__down_1_1transforms_1_1transforms_1_1_to_tensor}{}\label{classtorchvision__down_1_1transforms_1_1transforms_1_1_to_tensor}\index{torchvision\_down.transforms.transforms.ToTensor@{torchvision\_down.transforms.transforms.ToTensor}}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+None \mbox{\hyperlink{classtorchvision__down_1_1transforms_1_1transforms_1_1_to_tensor_aab128cc4f6e55174f345683436d0bf23}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self)
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1transforms_1_1transforms_1_1_to_tensor_a26f51388d46b0e5c6e24133972755f4b}{\+\_\+\+\_\+call\+\_\+\+\_\+}} (self, pic)
+\item 
+str \mbox{\hyperlink{classtorchvision__down_1_1transforms_1_1transforms_1_1_to_tensor_a34033eae41990914258fe292da2f295c}{\+\_\+\+\_\+repr\+\_\+\+\_\+}} (self)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}Convert a ``PIL Image`` or ``numpy.ndarray`` to tensor. This transform does not support torchscript.
+
+Converts a PIL Image or numpy.ndarray (H x W x C) in the range
+[0, 255] to a torch.FloatTensor of shape (C x H x W) in the range [0.0, 1.0]
+if the PIL Image belongs to one of the modes (L, LA, P, I, F, RGB, YCbCr, RGBA, CMYK, 1)
+or if the numpy.ndarray has dtype = np.uint8
+
+In the other cases, tensors are returned without scaling.
+
+.. note::
+    Because the input image is scaled to [0.0, 1.0], this transformation should not be used when
+    transforming target image masks. See the `references`_ for implementing the transforms for image masks.
+
+.. _references: https://github.com/pytorch/vision/tree/main/references/segmentation
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classtorchvision__down_1_1transforms_1_1transforms_1_1_to_tensor_aab128cc4f6e55174f345683436d0bf23}\index{torchvision\_down.transforms.transforms.ToTensor@{torchvision\_down.transforms.transforms.ToTensor}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!torchvision\_down.transforms.transforms.ToTensor@{torchvision\_down.transforms.transforms.ToTensor}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1transforms_1_1transforms_1_1_to_tensor_aab128cc4f6e55174f345683436d0bf23} 
+ None torchvision\+\_\+down.\+transforms.\+transforms.\+To\+Tensor.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classtorchvision__down_1_1transforms_1_1transforms_1_1_to_tensor_a26f51388d46b0e5c6e24133972755f4b}\index{torchvision\_down.transforms.transforms.ToTensor@{torchvision\_down.transforms.transforms.ToTensor}!\_\_call\_\_@{\_\_call\_\_}}
+\index{\_\_call\_\_@{\_\_call\_\_}!torchvision\_down.transforms.transforms.ToTensor@{torchvision\_down.transforms.transforms.ToTensor}}
+\doxysubsubsection{\texorpdfstring{\_\_call\_\_()}{\_\_call\_\_()}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1transforms_1_1transforms_1_1_to_tensor_a26f51388d46b0e5c6e24133972755f4b} 
+torchvision\+\_\+down.\+transforms.\+transforms.\+To\+Tensor.\+\_\+\+\_\+call\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{pic}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Args:
+    pic (PIL Image or numpy.ndarray): Image to be converted to tensor.
+
+Returns:
+    Tensor: Converted image.
+\end{DoxyVerb}
+ \Hypertarget{classtorchvision__down_1_1transforms_1_1transforms_1_1_to_tensor_a34033eae41990914258fe292da2f295c}\index{torchvision\_down.transforms.transforms.ToTensor@{torchvision\_down.transforms.transforms.ToTensor}!\_\_repr\_\_@{\_\_repr\_\_}}
+\index{\_\_repr\_\_@{\_\_repr\_\_}!torchvision\_down.transforms.transforms.ToTensor@{torchvision\_down.transforms.transforms.ToTensor}}
+\doxysubsubsection{\texorpdfstring{\_\_repr\_\_()}{\_\_repr\_\_()}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1transforms_1_1transforms_1_1_to_tensor_a34033eae41990914258fe292da2f295c} 
+ str torchvision\+\_\+down.\+transforms.\+transforms.\+To\+Tensor.\+\_\+\+\_\+repr\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Cervi\+AI/torchvision\+\_\+down/transforms/\mbox{\hyperlink{transforms_8py}{transforms.\+py}}\end{DoxyCompactItemize}

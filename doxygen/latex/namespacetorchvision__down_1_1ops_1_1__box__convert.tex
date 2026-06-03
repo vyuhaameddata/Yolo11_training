@@ -1,0 +1,77 @@
+\doxysection{torchvision\+\_\+down.\+ops.\+\_\+box\+\_\+convert Namespace Reference}
+\hypertarget{namespacetorchvision__down_1_1ops_1_1__box__convert}{}\label{namespacetorchvision__down_1_1ops_1_1__box__convert}\index{torchvision\_down.ops.\_box\_convert@{torchvision\_down.ops.\_box\_convert}}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+Tensor \mbox{\hyperlink{namespacetorchvision__down_1_1ops_1_1__box__convert_a84ddd97cb98c8d88c0db826b9f4f7d0b}{\+\_\+box\+\_\+cxcywh\+\_\+to\+\_\+xyxy}} (Tensor boxes)
+\item 
+Tensor \mbox{\hyperlink{namespacetorchvision__down_1_1ops_1_1__box__convert_a326373397d6e5ff2d33d81daa76352b1}{\+\_\+box\+\_\+xyxy\+\_\+to\+\_\+cxcywh}} (Tensor boxes)
+\item 
+Tensor \mbox{\hyperlink{namespacetorchvision__down_1_1ops_1_1__box__convert_abdd3a88470b18578c25a8638cbb59c75}{\+\_\+box\+\_\+xywh\+\_\+to\+\_\+xyxy}} (Tensor boxes)
+\item 
+Tensor \mbox{\hyperlink{namespacetorchvision__down_1_1ops_1_1__box__convert_a7481e18d848658c1a742c0eaa79e8b04}{\+\_\+box\+\_\+xyxy\+\_\+to\+\_\+xywh}} (Tensor boxes)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{namespacetorchvision__down_1_1ops_1_1__box__convert_a84ddd97cb98c8d88c0db826b9f4f7d0b}\index{torchvision\_down.ops.\_box\_convert@{torchvision\_down.ops.\_box\_convert}!\_box\_cxcywh\_to\_xyxy@{\_box\_cxcywh\_to\_xyxy}}
+\index{\_box\_cxcywh\_to\_xyxy@{\_box\_cxcywh\_to\_xyxy}!torchvision\_down.ops.\_box\_convert@{torchvision\_down.ops.\_box\_convert}}
+\doxysubsubsection{\texorpdfstring{\_box\_cxcywh\_to\_xyxy()}{\_box\_cxcywh\_to\_xyxy()}}
+{\footnotesize\ttfamily \label{namespacetorchvision__down_1_1ops_1_1__box__convert_a84ddd97cb98c8d88c0db826b9f4f7d0b} 
+ Tensor torchvision\+\_\+down.\+ops.\+\_\+box\+\_\+convert.\+\_\+box\+\_\+cxcywh\+\_\+to\+\_\+xyxy (\begin{DoxyParamCaption}\item[{Tensor}]{boxes}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\begin{DoxyVerb}Converts bounding boxes from (cx, cy, w, h) format to (x1, y1, x2, y2) format.
+(cx, cy) refers to center of bounding box
+(w, h) are width and height of bounding box
+Args:
+    boxes (Tensor[N, 4]): boxes in (cx, cy, w, h) format which will be converted.
+
+Returns:
+    boxes (Tensor(N, 4)): boxes in (x1, y1, x2, y2) format.
+\end{DoxyVerb}
+ \Hypertarget{namespacetorchvision__down_1_1ops_1_1__box__convert_abdd3a88470b18578c25a8638cbb59c75}\index{torchvision\_down.ops.\_box\_convert@{torchvision\_down.ops.\_box\_convert}!\_box\_xywh\_to\_xyxy@{\_box\_xywh\_to\_xyxy}}
+\index{\_box\_xywh\_to\_xyxy@{\_box\_xywh\_to\_xyxy}!torchvision\_down.ops.\_box\_convert@{torchvision\_down.ops.\_box\_convert}}
+\doxysubsubsection{\texorpdfstring{\_box\_xywh\_to\_xyxy()}{\_box\_xywh\_to\_xyxy()}}
+{\footnotesize\ttfamily \label{namespacetorchvision__down_1_1ops_1_1__box__convert_abdd3a88470b18578c25a8638cbb59c75} 
+ Tensor torchvision\+\_\+down.\+ops.\+\_\+box\+\_\+convert.\+\_\+box\+\_\+xywh\+\_\+to\+\_\+xyxy (\begin{DoxyParamCaption}\item[{Tensor}]{boxes}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\begin{DoxyVerb}Converts bounding boxes from (x, y, w, h) format to (x1, y1, x2, y2) format.
+(x, y) refers to top left of bouding box.
+(w, h) refers to width and height of box.
+Args:
+    boxes (Tensor[N, 4]): boxes in (x, y, w, h) which will be converted.
+
+Returns:
+    boxes (Tensor[N, 4]): boxes in (x1, y1, x2, y2) format.
+\end{DoxyVerb}
+ \Hypertarget{namespacetorchvision__down_1_1ops_1_1__box__convert_a326373397d6e5ff2d33d81daa76352b1}\index{torchvision\_down.ops.\_box\_convert@{torchvision\_down.ops.\_box\_convert}!\_box\_xyxy\_to\_cxcywh@{\_box\_xyxy\_to\_cxcywh}}
+\index{\_box\_xyxy\_to\_cxcywh@{\_box\_xyxy\_to\_cxcywh}!torchvision\_down.ops.\_box\_convert@{torchvision\_down.ops.\_box\_convert}}
+\doxysubsubsection{\texorpdfstring{\_box\_xyxy\_to\_cxcywh()}{\_box\_xyxy\_to\_cxcywh()}}
+{\footnotesize\ttfamily \label{namespacetorchvision__down_1_1ops_1_1__box__convert_a326373397d6e5ff2d33d81daa76352b1} 
+ Tensor torchvision\+\_\+down.\+ops.\+\_\+box\+\_\+convert.\+\_\+box\+\_\+xyxy\+\_\+to\+\_\+cxcywh (\begin{DoxyParamCaption}\item[{Tensor}]{boxes}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\begin{DoxyVerb}Converts bounding boxes from (x1, y1, x2, y2) format to (cx, cy, w, h) format.
+(x1, y1) refer to top left of bounding box
+(x2, y2) refer to bottom right of bounding box
+Args:
+    boxes (Tensor[N, 4]): boxes in (x1, y1, x2, y2) format which will be converted.
+
+Returns:
+    boxes (Tensor(N, 4)): boxes in (cx, cy, w, h) format.
+\end{DoxyVerb}
+ \Hypertarget{namespacetorchvision__down_1_1ops_1_1__box__convert_a7481e18d848658c1a742c0eaa79e8b04}\index{torchvision\_down.ops.\_box\_convert@{torchvision\_down.ops.\_box\_convert}!\_box\_xyxy\_to\_xywh@{\_box\_xyxy\_to\_xywh}}
+\index{\_box\_xyxy\_to\_xywh@{\_box\_xyxy\_to\_xywh}!torchvision\_down.ops.\_box\_convert@{torchvision\_down.ops.\_box\_convert}}
+\doxysubsubsection{\texorpdfstring{\_box\_xyxy\_to\_xywh()}{\_box\_xyxy\_to\_xywh()}}
+{\footnotesize\ttfamily \label{namespacetorchvision__down_1_1ops_1_1__box__convert_a7481e18d848658c1a742c0eaa79e8b04} 
+ Tensor torchvision\+\_\+down.\+ops.\+\_\+box\+\_\+convert.\+\_\+box\+\_\+xyxy\+\_\+to\+\_\+xywh (\begin{DoxyParamCaption}\item[{Tensor}]{boxes}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\begin{DoxyVerb}Converts bounding boxes from (x1, y1, x2, y2) format to (x, y, w, h) format.
+(x1, y1) refer to top left of bounding box
+(x2, y2) refer to bottom right of bounding box
+Args:
+    boxes (Tensor[N, 4]): boxes in (x1, y1, x2, y2) which will be converted.
+
+Returns:
+    boxes (Tensor[N, 4]): boxes in (x, y, w, h) format.
+\end{DoxyVerb}
+ 

@@ -1,0 +1,77 @@
+\doxysection{torchvision\+\_\+down.\+models.\+vision\+\_\+transformer.\+MLPBlock Class Reference}
+\hypertarget{classtorchvision__down_1_1models_1_1vision__transformer_1_1_m_l_p_block}{}\label{classtorchvision__down_1_1models_1_1vision__transformer_1_1_m_l_p_block}\index{torchvision\_down.models.vision\_transformer.MLPBlock@{torchvision\_down.models.vision\_transformer.MLPBlock}}
+Inheritance diagram for torchvision\+\_\+down.\+models.\+vision\+\_\+transformer.\+MLPBlock\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classtorchvision__down_1_1models_1_1vision__transformer_1_1_m_l_p_block}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1models_1_1vision__transformer_1_1_m_l_p_block_a6653cde8100088de1b934e9c454f32ca}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, int in\+\_\+dim, int mlp\+\_\+dim, float dropout)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1models_1_1vision__transformer_1_1_m_l_p_block_a23546284ac45bcd4add3ccd97b117d38}{linear\+\_\+1}} = nn.\+Linear(in\+\_\+dim, mlp\+\_\+dim)
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1models_1_1vision__transformer_1_1_m_l_p_block_a5b19c263d4e73c54f160f730fb55f6d3}{act}} = nn.\+GELU()
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1models_1_1vision__transformer_1_1_m_l_p_block_a70f9f19e18e348e409096295ec8c49b8}{dropout\+\_\+1}} = nn.\+Dropout(dropout)
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1models_1_1vision__transformer_1_1_m_l_p_block_aa03a191ab98ca0237ffc91b9c736cee1}{linear\+\_\+2}} = nn.\+Linear(mlp\+\_\+dim, in\+\_\+dim)
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1models_1_1vision__transformer_1_1_m_l_p_block_a7f43816416585a577241f8b7ea900ad8}{dropout\+\_\+2}} = nn.\+Dropout(dropout)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}Transformer MLP block.\end{DoxyVerb}
+ 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classtorchvision__down_1_1models_1_1vision__transformer_1_1_m_l_p_block_a6653cde8100088de1b934e9c454f32ca}\index{torchvision\_down.models.vision\_transformer.MLPBlock@{torchvision\_down.models.vision\_transformer.MLPBlock}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!torchvision\_down.models.vision\_transformer.MLPBlock@{torchvision\_down.models.vision\_transformer.MLPBlock}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1models_1_1vision__transformer_1_1_m_l_p_block_a6653cde8100088de1b934e9c454f32ca} 
+torchvision\+\_\+down.\+models.\+vision\+\_\+transformer.\+MLPBlock.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{int}]{in\+\_\+dim}{, }\item[{int}]{mlp\+\_\+dim}{, }\item[{float}]{dropout}{}\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classtorchvision__down_1_1models_1_1vision__transformer_1_1_m_l_p_block_a5b19c263d4e73c54f160f730fb55f6d3}\index{torchvision\_down.models.vision\_transformer.MLPBlock@{torchvision\_down.models.vision\_transformer.MLPBlock}!act@{act}}
+\index{act@{act}!torchvision\_down.models.vision\_transformer.MLPBlock@{torchvision\_down.models.vision\_transformer.MLPBlock}}
+\doxysubsubsection{\texorpdfstring{act}{act}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1models_1_1vision__transformer_1_1_m_l_p_block_a5b19c263d4e73c54f160f730fb55f6d3} 
+torchvision\+\_\+down.\+models.\+vision\+\_\+transformer.\+MLPBlock.\+act = nn.\+GELU()}
+
+\Hypertarget{classtorchvision__down_1_1models_1_1vision__transformer_1_1_m_l_p_block_a70f9f19e18e348e409096295ec8c49b8}\index{torchvision\_down.models.vision\_transformer.MLPBlock@{torchvision\_down.models.vision\_transformer.MLPBlock}!dropout\_1@{dropout\_1}}
+\index{dropout\_1@{dropout\_1}!torchvision\_down.models.vision\_transformer.MLPBlock@{torchvision\_down.models.vision\_transformer.MLPBlock}}
+\doxysubsubsection{\texorpdfstring{dropout\_1}{dropout\_1}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1models_1_1vision__transformer_1_1_m_l_p_block_a70f9f19e18e348e409096295ec8c49b8} 
+torchvision\+\_\+down.\+models.\+vision\+\_\+transformer.\+MLPBlock.\+dropout\+\_\+1 = nn.\+Dropout(dropout)}
+
+\Hypertarget{classtorchvision__down_1_1models_1_1vision__transformer_1_1_m_l_p_block_a7f43816416585a577241f8b7ea900ad8}\index{torchvision\_down.models.vision\_transformer.MLPBlock@{torchvision\_down.models.vision\_transformer.MLPBlock}!dropout\_2@{dropout\_2}}
+\index{dropout\_2@{dropout\_2}!torchvision\_down.models.vision\_transformer.MLPBlock@{torchvision\_down.models.vision\_transformer.MLPBlock}}
+\doxysubsubsection{\texorpdfstring{dropout\_2}{dropout\_2}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1models_1_1vision__transformer_1_1_m_l_p_block_a7f43816416585a577241f8b7ea900ad8} 
+torchvision\+\_\+down.\+models.\+vision\+\_\+transformer.\+MLPBlock.\+dropout\+\_\+2 = nn.\+Dropout(dropout)}
+
+\Hypertarget{classtorchvision__down_1_1models_1_1vision__transformer_1_1_m_l_p_block_a23546284ac45bcd4add3ccd97b117d38}\index{torchvision\_down.models.vision\_transformer.MLPBlock@{torchvision\_down.models.vision\_transformer.MLPBlock}!linear\_1@{linear\_1}}
+\index{linear\_1@{linear\_1}!torchvision\_down.models.vision\_transformer.MLPBlock@{torchvision\_down.models.vision\_transformer.MLPBlock}}
+\doxysubsubsection{\texorpdfstring{linear\_1}{linear\_1}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1models_1_1vision__transformer_1_1_m_l_p_block_a23546284ac45bcd4add3ccd97b117d38} 
+torchvision\+\_\+down.\+models.\+vision\+\_\+transformer.\+MLPBlock.\+linear\+\_\+1 = nn.\+Linear(in\+\_\+dim, mlp\+\_\+dim)}
+
+\Hypertarget{classtorchvision__down_1_1models_1_1vision__transformer_1_1_m_l_p_block_aa03a191ab98ca0237ffc91b9c736cee1}\index{torchvision\_down.models.vision\_transformer.MLPBlock@{torchvision\_down.models.vision\_transformer.MLPBlock}!linear\_2@{linear\_2}}
+\index{linear\_2@{linear\_2}!torchvision\_down.models.vision\_transformer.MLPBlock@{torchvision\_down.models.vision\_transformer.MLPBlock}}
+\doxysubsubsection{\texorpdfstring{linear\_2}{linear\_2}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1models_1_1vision__transformer_1_1_m_l_p_block_aa03a191ab98ca0237ffc91b9c736cee1} 
+torchvision\+\_\+down.\+models.\+vision\+\_\+transformer.\+MLPBlock.\+linear\+\_\+2 = nn.\+Linear(mlp\+\_\+dim, in\+\_\+dim)}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Cervi\+AI/torchvision\+\_\+down/models/\mbox{\hyperlink{vision__transformer_8py}{vision\+\_\+transformer.\+py}}\end{DoxyCompactItemize}

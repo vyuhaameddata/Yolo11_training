@@ -1,0 +1,51 @@
+\doxysection{models.\+common.\+Rep\+Res\+CSPA Class Reference}
+\hypertarget{classmodels_1_1common_1_1_rep_res_c_s_p_a}{}\label{classmodels_1_1common_1_1_rep_res_c_s_p_a}\index{models.common.RepResCSPA@{models.common.RepResCSPA}}
+Inheritance diagram for models.\+common.\+Rep\+Res\+CSPA\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=4.000000cm]{classmodels_1_1common_1_1_rep_res_c_s_p_a}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classmodels_1_1common_1_1_rep_res_c_s_p_a_a9c99fa6856e25527264791b4ff2852ee}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, c1, c2, n=1, shortcut=True, g=1, e=0.\+5)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{classmodels_1_1common_1_1_res_c_s_p_a}{models.\+common.\+Res\+CSPA}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classmodels_1_1common_1_1_res_c_s_p_a_ab49c71bc2a1c598143559404343c4614}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, c1, c2, n=1, shortcut=True, g=1, e=0.\+5)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{classmodels_1_1common_1_1_bottleneck_c_s_p_a}{models.\+common.\+Bottleneck\+CSPA}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classmodels_1_1common_1_1_bottleneck_c_s_p_a_a553eed2c37b5a8c6c3c0190f7b081728}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, c1, c2, n=1, shortcut=True, g=1, e=0.\+5)
+\item 
+\mbox{\hyperlink{classmodels_1_1common_1_1_bottleneck_c_s_p_a_a00f5b182811108e1f767ac9b9ae3ada3}{forward}} (self, x)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Additional Inherited Members}
+\doxysubsection*{Public Attributes inherited from \mbox{\hyperlink{classmodels_1_1common_1_1_bottleneck_c_s_p_a}{models.\+common.\+Bottleneck\+CSPA}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classmodels_1_1common_1_1_bottleneck_c_s_p_a_a4631267fe88591dabd761a4183309e41}{cv1}} = \mbox{\hyperlink{classmodels_1_1common_1_1_conv}{Conv}}(c1, c\+\_\+, 1, 1)
+\item 
+\mbox{\hyperlink{classmodels_1_1common_1_1_bottleneck_c_s_p_a_a8996b31b7862926bcc20aa0203cfc53e}{cv2}} = \mbox{\hyperlink{classmodels_1_1common_1_1_conv}{Conv}}(c1, c\+\_\+, 1, 1)
+\item 
+\mbox{\hyperlink{classmodels_1_1common_1_1_bottleneck_c_s_p_a_ad16ee4c269a5a739c5ea44eedd8a54f4}{cv3}} = \mbox{\hyperlink{classmodels_1_1common_1_1_conv}{Conv}}(2 \texorpdfstring{$\ast$}{*} c\+\_\+, c2, 1, 1)
+\item 
+\mbox{\hyperlink{classmodels_1_1common_1_1_bottleneck_c_s_p_a_aa9237d9e7b7f8d6a000b043f6ee213bd}{m}} = nn.\+Sequential(\texorpdfstring{$\ast$}{*}\mbox{[}\mbox{\hyperlink{classmodels_1_1common_1_1_bottleneck}{Bottleneck}}(c\+\_\+, c\+\_\+, shortcut, g, e=1.\+0) for \+\_\+ in range(n)\mbox{]})
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classmodels_1_1common_1_1_rep_res_c_s_p_a_a9c99fa6856e25527264791b4ff2852ee}\index{models.common.RepResCSPA@{models.common.RepResCSPA}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!models.common.RepResCSPA@{models.common.RepResCSPA}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily \label{classmodels_1_1common_1_1_rep_res_c_s_p_a_a9c99fa6856e25527264791b4ff2852ee} 
+models.\+common.\+Rep\+Res\+CSPA.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{c1}{, }\item[{}]{c2}{, }\item[{}]{n}{ = {\ttfamily 1}, }\item[{}]{shortcut}{ = {\ttfamily True}, }\item[{}]{g}{ = {\ttfamily 1}, }\item[{}]{e}{ = {\ttfamily 0.5}}\end{DoxyParamCaption})}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Cervi\+AI/models/\mbox{\hyperlink{common_8py}{common.\+py}}\end{DoxyCompactItemize}

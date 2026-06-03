@@ -1,0 +1,305 @@
+\doxysection{torchvision\+\_\+down.\+datasets.\+stl10.\+STL10 Class Reference}
+\hypertarget{classtorchvision__down_1_1datasets_1_1stl10_1_1_s_t_l10}{}\label{classtorchvision__down_1_1datasets_1_1stl10_1_1_s_t_l10}\index{torchvision\_down.datasets.stl10.STL10@{torchvision\_down.datasets.stl10.STL10}}
+Inheritance diagram for torchvision\+\_\+down.\+datasets.\+stl10.\+STL10\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{classtorchvision__down_1_1datasets_1_1stl10_1_1_s_t_l10}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+None \mbox{\hyperlink{classtorchvision__down_1_1datasets_1_1stl10_1_1_s_t_l10_a820c3595015bbd2366598616f5f14c73}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, str \mbox{\hyperlink{classtorchvision__down_1_1datasets_1_1stl10_1_1_s_t_l10}{root}}, str \mbox{\hyperlink{classtorchvision__down_1_1datasets_1_1stl10_1_1_s_t_l10_aa54cdfdfa9c70dffb14ae4cd5936e843}{split}}="{}train"{}, Optional\mbox{[}int\mbox{]} \mbox{\hyperlink{classtorchvision__down_1_1datasets_1_1stl10_1_1_s_t_l10_a248abd577b4cd4e8bc4ebc188eec7aa4}{folds}}=None, Optional\mbox{[}Callable\mbox{]} \mbox{\hyperlink{classtorchvision__down_1_1datasets_1_1vision_1_1_vision_dataset_ade1b4bca7d4f998bc3061e0400769de8}{transform}}=None, Optional\mbox{[}Callable\mbox{]} \mbox{\hyperlink{classtorchvision__down_1_1datasets_1_1vision_1_1_vision_dataset_a01f7d1bb7220bbfa4234ef140d021cc6}{target\+\_\+transform}}=None, bool \mbox{\hyperlink{classtorchvision__down_1_1datasets_1_1stl10_1_1_s_t_l10_ae43901a4262ea193e9d54d1edf435b5d}{download}}=False)
+\item 
+Tuple\mbox{[}Any, Any\mbox{]} \mbox{\hyperlink{classtorchvision__down_1_1datasets_1_1stl10_1_1_s_t_l10_af45cab66c2b2418bb715b693fe84c9c4}{\+\_\+\+\_\+getitem\+\_\+\+\_\+}} (self, int index)
+\item 
+int \mbox{\hyperlink{classtorchvision__down_1_1datasets_1_1stl10_1_1_s_t_l10_af6523781faf6e064b74d147eea1eeb4d}{\+\_\+\+\_\+len\+\_\+\+\_\+}} (self)
+\item 
+None \mbox{\hyperlink{classtorchvision__down_1_1datasets_1_1stl10_1_1_s_t_l10_ae43901a4262ea193e9d54d1edf435b5d}{download}} (self)
+\item 
+str \mbox{\hyperlink{classtorchvision__down_1_1datasets_1_1stl10_1_1_s_t_l10_adcb4201e6096455966c2ef227e06827b}{extra\+\_\+repr}} (self)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{classtorchvision__down_1_1datasets_1_1vision_1_1_vision_dataset}{torchvision\+\_\+down.\+datasets.\+vision.\+Vision\+Dataset}}}
+\begin{DoxyCompactItemize}
+\item 
+None \mbox{\hyperlink{classtorchvision__down_1_1datasets_1_1vision_1_1_vision_dataset_a4fe475e0f96592c04a6d97bcd953aca8}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, str \mbox{\hyperlink{classtorchvision__down_1_1datasets_1_1vision_1_1_vision_dataset_af52cf192ec18d3421afe216bf9b881d6}{root}}, Optional\mbox{[}Callable\mbox{]} \mbox{\hyperlink{classtorchvision__down_1_1datasets_1_1vision_1_1_vision_dataset_a7963601da311133da990b66cb616cc83}{transforms}}=None, Optional\mbox{[}Callable\mbox{]} \mbox{\hyperlink{classtorchvision__down_1_1datasets_1_1vision_1_1_vision_dataset_ade1b4bca7d4f998bc3061e0400769de8}{transform}}=None, Optional\mbox{[}Callable\mbox{]} \mbox{\hyperlink{classtorchvision__down_1_1datasets_1_1vision_1_1_vision_dataset_a01f7d1bb7220bbfa4234ef140d021cc6}{target\+\_\+transform}}=None)
+\item 
+Any \mbox{\hyperlink{classtorchvision__down_1_1datasets_1_1vision_1_1_vision_dataset_aa96f56b711d61433df225154b9837daa}{\+\_\+\+\_\+getitem\+\_\+\+\_\+}} (self, int index)
+\item 
+int \mbox{\hyperlink{classtorchvision__down_1_1datasets_1_1vision_1_1_vision_dataset_abb1561c74b600d1d424cfa010f009a92}{\+\_\+\+\_\+len\+\_\+\+\_\+}} (self)
+\item 
+str \mbox{\hyperlink{classtorchvision__down_1_1datasets_1_1vision_1_1_vision_dataset_a40d28a5833742c49a70872e87edb1ef9}{\+\_\+\+\_\+repr\+\_\+\+\_\+}} (self)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+str \mbox{\hyperlink{classtorchvision__down_1_1datasets_1_1stl10_1_1_s_t_l10_aa54cdfdfa9c70dffb14ae4cd5936e843}{split}} = verify\+\_\+str\+\_\+arg(split, "{}split"{}, self.\+splits)
+\item 
+Optional\mbox{[}int\mbox{]} \mbox{\hyperlink{classtorchvision__down_1_1datasets_1_1stl10_1_1_s_t_l10_a248abd577b4cd4e8bc4ebc188eec7aa4}{folds}} = self.\+\_\+verify\+\_\+folds(folds)
+\item 
+Optional\mbox{[}np.\+ndarray\mbox{]} \mbox{\hyperlink{classtorchvision__down_1_1datasets_1_1stl10_1_1_s_t_l10_a2093d383ac86f2f5f8953da328dd9850}{labels}}
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1datasets_1_1stl10_1_1_s_t_l10_ab42d2e74bdee462aea3b4cfefc390a09}{data}} = "{}train"{}\+:
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1datasets_1_1stl10_1_1_s_t_l10_a551f7ab5743c88acfa4120cd927b6275}{classes}} = f.\+read().splitlines()
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes inherited from \mbox{\hyperlink{classtorchvision__down_1_1datasets_1_1vision_1_1_vision_dataset}{torchvision\+\_\+down.\+datasets.\+vision.\+Vision\+Dataset}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1datasets_1_1vision_1_1_vision_dataset_af52cf192ec18d3421afe216bf9b881d6}{root}} = root
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1datasets_1_1vision_1_1_vision_dataset_ade1b4bca7d4f998bc3061e0400769de8}{transform}} = transform
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1datasets_1_1vision_1_1_vision_dataset_a01f7d1bb7220bbfa4234ef140d021cc6}{target\+\_\+transform}} = target\+\_\+transform
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1datasets_1_1vision_1_1_vision_dataset_a7963601da311133da990b66cb616cc83}{transforms}} = transforms
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+str \mbox{\hyperlink{classtorchvision__down_1_1datasets_1_1stl10_1_1_s_t_l10_a7bde504bc2b495e882e3d368dce6f156}{base\+\_\+folder}} = "{}stl10\+\_\+binary"{}
+\item 
+str \mbox{\hyperlink{classtorchvision__down_1_1datasets_1_1stl10_1_1_s_t_l10_ad4ca12bd08ecfd254fee504e5f3cbd55}{url}} = "{}http\+://ai.\+stanford.\+edu/\texorpdfstring{$\sim$}{\string~}acoates/stl10/stl10\+\_\+binary.\+tar.\+gz"{}
+\item 
+str \mbox{\hyperlink{classtorchvision__down_1_1datasets_1_1stl10_1_1_s_t_l10_a22c0d202b8344e6f6e4a897b3ad61b25}{filename}} = "{}stl10\+\_\+binary.\+tar.\+gz"{}
+\item 
+str \mbox{\hyperlink{classtorchvision__down_1_1datasets_1_1stl10_1_1_s_t_l10_ade5cb93a3dbe772056ac6e816e2b62c8}{tgz\+\_\+md5}} = "{}91f7769df0f17e558f3565bffb0c7dfb"{}
+\item 
+str \mbox{\hyperlink{classtorchvision__down_1_1datasets_1_1stl10_1_1_s_t_l10_a7f083f69e9303bd95be419237d50a267}{class\+\_\+names\+\_\+file}} = "{}class\+\_\+names.\+txt"{}
+\item 
+str \mbox{\hyperlink{classtorchvision__down_1_1datasets_1_1stl10_1_1_s_t_l10_a7547f0b46f9656661c46ebe58ad2e8ef}{folds\+\_\+list\+\_\+file}} = "{}fold\+\_\+indices.\+txt"{}
+\item 
+list \mbox{\hyperlink{classtorchvision__down_1_1datasets_1_1stl10_1_1_s_t_l10_a088401e95aae57fe72a4c1de22a24128}{train\+\_\+list}}
+\item 
+list \mbox{\hyperlink{classtorchvision__down_1_1datasets_1_1stl10_1_1_s_t_l10_a3ff83caa557f3f68ed9c6d20f54680bc}{test\+\_\+list}} = \mbox{[}\mbox{[}"{}test\+\_\+\+X.\+bin"{}, "{}7f263ba9f9e0b06b93213547f721ac82"{}\mbox{]}, \mbox{[}"{}test\+\_\+y.\+bin"{}, "{}36f9794fa4beb8a2c72628de14fa638e"{}\mbox{]}\mbox{]}
+\item 
+tuple \mbox{\hyperlink{classtorchvision__down_1_1datasets_1_1stl10_1_1_s_t_l10_a0b80dc3349eac859e0d51e94af577e08}{splits}} = ("{}train"{}, "{}train+unlabeled"{}, "{}unlabeled"{}, "{}test"{})
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+Optional\mbox{[}int\mbox{]} \mbox{\hyperlink{classtorchvision__down_1_1datasets_1_1stl10_1_1_s_t_l10_a522971aeea438c6a254478374fdff151}{\+\_\+verify\+\_\+folds}} (self, Optional\mbox{[}int\mbox{]} \mbox{\hyperlink{classtorchvision__down_1_1datasets_1_1stl10_1_1_s_t_l10_a248abd577b4cd4e8bc4ebc188eec7aa4}{folds}})
+\item 
+bool \mbox{\hyperlink{classtorchvision__down_1_1datasets_1_1stl10_1_1_s_t_l10_a7b8b3a3e5cc248d0a1f1339f1eff8941}{\+\_\+check\+\_\+integrity}} (self)
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions inherited from \mbox{\hyperlink{classtorchvision__down_1_1datasets_1_1vision_1_1_vision_dataset}{torchvision\+\_\+down.\+datasets.\+vision.\+Vision\+Dataset}}}
+\begin{DoxyCompactItemize}
+\item 
+List\mbox{[}str\mbox{]} \mbox{\hyperlink{classtorchvision__down_1_1datasets_1_1vision_1_1_vision_dataset_a9f1a9fad1ab8a0b963cdc3522a271689}{\+\_\+format\+\_\+transform\+\_\+repr}} (self, Callable \mbox{\hyperlink{classtorchvision__down_1_1datasets_1_1vision_1_1_vision_dataset_ade1b4bca7d4f998bc3061e0400769de8}{transform}}, str head)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+Tuple\mbox{[}np.\+ndarray, Optional\mbox{[}np.\+ndarray\mbox{]}\mbox{]} \mbox{\hyperlink{classtorchvision__down_1_1datasets_1_1stl10_1_1_s_t_l10_a8e357a53a8c5238acf763afb756b3e07}{\+\_\+\+\_\+loadfile}} (self, str data\+\_\+file, Optional\mbox{[}str\mbox{]} labels\+\_\+file=None)
+\item 
+None \mbox{\hyperlink{classtorchvision__down_1_1datasets_1_1stl10_1_1_s_t_l10_a2b3518ac2bbc42e824ae1b71ad8e8688}{\+\_\+\+\_\+load\+\_\+folds}} (self, Optional\mbox{[}int\mbox{]} \mbox{\hyperlink{classtorchvision__down_1_1datasets_1_1stl10_1_1_s_t_l10_a248abd577b4cd4e8bc4ebc188eec7aa4}{folds}})
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1datasets_1_1stl10_1_1_s_t_l10_a84b1626787997d3fa53b521fc8d3c056}{\+\_\+\+\_\+dict\+\_\+\+\_\+}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Additional Inherited Members}
+\doxysubsection*{Static Protected Attributes inherited from \mbox{\hyperlink{classtorchvision__down_1_1datasets_1_1vision_1_1_vision_dataset}{torchvision\+\_\+down.\+datasets.\+vision.\+Vision\+Dataset}}}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{classtorchvision__down_1_1datasets_1_1vision_1_1_vision_dataset_a2eb99b64ccfc03378be35d0ff88e71b4}{\+\_\+repr\+\_\+indent}} = 4
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}`STL10 <https://cs.stanford.edu/~acoates/stl10/>`_ Dataset.
+
+Args:
+    root (string): Root directory of dataset where directory
+        ``stl10_binary`` exists.
+    split (string): One of {'train', 'test', 'unlabeled', 'train+unlabeled'}.
+        Accordingly dataset is selected.
+    folds (int, optional): One of {0-9} or None.
+        For training, loads one of the 10 pre-defined folds of 1k samples for the
+        standard evaluation procedure. If no value is passed, loads the 5k samples.
+    transform (callable, optional): A function/transform that  takes in an PIL image
+        and returns a transformed version. E.g, ``transforms.RandomCrop``
+    target_transform (callable, optional): A function/transform that takes in the
+        target and transforms it.
+    download (bool, optional): If true, downloads the dataset from the internet and
+        puts it in root directory. If dataset is already downloaded, it is not
+        downloaded again.
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classtorchvision__down_1_1datasets_1_1stl10_1_1_s_t_l10_a820c3595015bbd2366598616f5f14c73}\index{torchvision\_down.datasets.stl10.STL10@{torchvision\_down.datasets.stl10.STL10}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!torchvision\_down.datasets.stl10.STL10@{torchvision\_down.datasets.stl10.STL10}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1datasets_1_1stl10_1_1_s_t_l10_a820c3595015bbd2366598616f5f14c73} 
+ None torchvision\+\_\+down.\+datasets.\+stl10.\+STL10.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{str}]{root}{, }\item[{str }]{split}{ = {\ttfamily "{}train"{}}, }\item[{Optional\mbox{[}int\mbox{]} }]{folds}{ = {\ttfamily None}, }\item[{Optional\mbox{[}Callable\mbox{]} }]{transform}{ = {\ttfamily None}, }\item[{Optional\mbox{[}Callable\mbox{]} }]{target\+\_\+transform}{ = {\ttfamily None}, }\item[{bool }]{download}{ = {\ttfamily False}}\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classtorchvision__down_1_1datasets_1_1stl10_1_1_s_t_l10_af45cab66c2b2418bb715b693fe84c9c4}\index{torchvision\_down.datasets.stl10.STL10@{torchvision\_down.datasets.stl10.STL10}!\_\_getitem\_\_@{\_\_getitem\_\_}}
+\index{\_\_getitem\_\_@{\_\_getitem\_\_}!torchvision\_down.datasets.stl10.STL10@{torchvision\_down.datasets.stl10.STL10}}
+\doxysubsubsection{\texorpdfstring{\_\_getitem\_\_()}{\_\_getitem\_\_()}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1datasets_1_1stl10_1_1_s_t_l10_af45cab66c2b2418bb715b693fe84c9c4} 
+ Tuple\mbox{[}Any, Any\mbox{]} torchvision\+\_\+down.\+datasets.\+stl10.\+STL10.\+\_\+\+\_\+getitem\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{int}]{index}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Args:
+    index (int): Index
+
+Returns:
+    tuple: (image, target) where target is index of the target class.
+\end{DoxyVerb}
+ \Hypertarget{classtorchvision__down_1_1datasets_1_1stl10_1_1_s_t_l10_af6523781faf6e064b74d147eea1eeb4d}\index{torchvision\_down.datasets.stl10.STL10@{torchvision\_down.datasets.stl10.STL10}!\_\_len\_\_@{\_\_len\_\_}}
+\index{\_\_len\_\_@{\_\_len\_\_}!torchvision\_down.datasets.stl10.STL10@{torchvision\_down.datasets.stl10.STL10}}
+\doxysubsubsection{\texorpdfstring{\_\_len\_\_()}{\_\_len\_\_()}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1datasets_1_1stl10_1_1_s_t_l10_af6523781faf6e064b74d147eea1eeb4d} 
+ int torchvision\+\_\+down.\+datasets.\+stl10.\+STL10.\+\_\+\+\_\+len\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classtorchvision__down_1_1datasets_1_1stl10_1_1_s_t_l10_a2b3518ac2bbc42e824ae1b71ad8e8688}\index{torchvision\_down.datasets.stl10.STL10@{torchvision\_down.datasets.stl10.STL10}!\_\_load\_folds@{\_\_load\_folds}}
+\index{\_\_load\_folds@{\_\_load\_folds}!torchvision\_down.datasets.stl10.STL10@{torchvision\_down.datasets.stl10.STL10}}
+\doxysubsubsection{\texorpdfstring{\_\_load\_folds()}{\_\_load\_folds()}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1datasets_1_1stl10_1_1_s_t_l10_a2b3518ac2bbc42e824ae1b71ad8e8688} 
+ None torchvision\+\_\+down.\+datasets.\+stl10.\+STL10.\+\_\+\+\_\+load\+\_\+folds (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{Optional\mbox{[}int\mbox{]}}]{folds}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{classtorchvision__down_1_1datasets_1_1stl10_1_1_s_t_l10_a8e357a53a8c5238acf763afb756b3e07}\index{torchvision\_down.datasets.stl10.STL10@{torchvision\_down.datasets.stl10.STL10}!\_\_loadfile@{\_\_loadfile}}
+\index{\_\_loadfile@{\_\_loadfile}!torchvision\_down.datasets.stl10.STL10@{torchvision\_down.datasets.stl10.STL10}}
+\doxysubsubsection{\texorpdfstring{\_\_loadfile()}{\_\_loadfile()}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1datasets_1_1stl10_1_1_s_t_l10_a8e357a53a8c5238acf763afb756b3e07} 
+ Tuple\mbox{[}np.\+ndarray, Optional\mbox{[}np.\+ndarray\mbox{]}\mbox{]} torchvision\+\_\+down.\+datasets.\+stl10.\+STL10.\+\_\+\+\_\+loadfile (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{str}]{data\+\_\+file}{, }\item[{Optional\mbox{[}str\mbox{]} }]{labels\+\_\+file}{ = {\ttfamily None}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{classtorchvision__down_1_1datasets_1_1stl10_1_1_s_t_l10_a7b8b3a3e5cc248d0a1f1339f1eff8941}\index{torchvision\_down.datasets.stl10.STL10@{torchvision\_down.datasets.stl10.STL10}!\_check\_integrity@{\_check\_integrity}}
+\index{\_check\_integrity@{\_check\_integrity}!torchvision\_down.datasets.stl10.STL10@{torchvision\_down.datasets.stl10.STL10}}
+\doxysubsubsection{\texorpdfstring{\_check\_integrity()}{\_check\_integrity()}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1datasets_1_1stl10_1_1_s_t_l10_a7b8b3a3e5cc248d0a1f1339f1eff8941} 
+ bool torchvision\+\_\+down.\+datasets.\+stl10.\+STL10.\+\_\+check\+\_\+integrity (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classtorchvision__down_1_1datasets_1_1stl10_1_1_s_t_l10_a522971aeea438c6a254478374fdff151}\index{torchvision\_down.datasets.stl10.STL10@{torchvision\_down.datasets.stl10.STL10}!\_verify\_folds@{\_verify\_folds}}
+\index{\_verify\_folds@{\_verify\_folds}!torchvision\_down.datasets.stl10.STL10@{torchvision\_down.datasets.stl10.STL10}}
+\doxysubsubsection{\texorpdfstring{\_verify\_folds()}{\_verify\_folds()}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1datasets_1_1stl10_1_1_s_t_l10_a522971aeea438c6a254478374fdff151} 
+ Optional\mbox{[}int\mbox{]} torchvision\+\_\+down.\+datasets.\+stl10.\+STL10.\+\_\+verify\+\_\+folds (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{Optional\mbox{[}int\mbox{]}}]{folds}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classtorchvision__down_1_1datasets_1_1stl10_1_1_s_t_l10_ae43901a4262ea193e9d54d1edf435b5d}\index{torchvision\_down.datasets.stl10.STL10@{torchvision\_down.datasets.stl10.STL10}!download@{download}}
+\index{download@{download}!torchvision\_down.datasets.stl10.STL10@{torchvision\_down.datasets.stl10.STL10}}
+\doxysubsubsection{\texorpdfstring{download()}{download()}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1datasets_1_1stl10_1_1_s_t_l10_ae43901a4262ea193e9d54d1edf435b5d} 
+ None torchvision\+\_\+down.\+datasets.\+stl10.\+STL10.\+download (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classtorchvision__down_1_1datasets_1_1stl10_1_1_s_t_l10_adcb4201e6096455966c2ef227e06827b}\index{torchvision\_down.datasets.stl10.STL10@{torchvision\_down.datasets.stl10.STL10}!extra\_repr@{extra\_repr}}
+\index{extra\_repr@{extra\_repr}!torchvision\_down.datasets.stl10.STL10@{torchvision\_down.datasets.stl10.STL10}}
+\doxysubsubsection{\texorpdfstring{extra\_repr()}{extra\_repr()}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1datasets_1_1stl10_1_1_s_t_l10_adcb4201e6096455966c2ef227e06827b} 
+ str torchvision\+\_\+down.\+datasets.\+stl10.\+STL10.\+extra\+\_\+repr (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+
+
+Reimplemented from \mbox{\hyperlink{classtorchvision__down_1_1datasets_1_1vision_1_1_vision_dataset_a99093b3e6dd75e1ed1c49eed7ac2df00}{torchvision\+\_\+down.\+datasets.\+vision.\+Vision\+Dataset}}.
+
+
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classtorchvision__down_1_1datasets_1_1stl10_1_1_s_t_l10_a84b1626787997d3fa53b521fc8d3c056}\index{torchvision\_down.datasets.stl10.STL10@{torchvision\_down.datasets.stl10.STL10}!\_\_dict\_\_@{\_\_dict\_\_}}
+\index{\_\_dict\_\_@{\_\_dict\_\_}!torchvision\_down.datasets.stl10.STL10@{torchvision\_down.datasets.stl10.STL10}}
+\doxysubsubsection{\texorpdfstring{\_\_dict\_\_}{\_\_dict\_\_}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1datasets_1_1stl10_1_1_s_t_l10_a84b1626787997d3fa53b521fc8d3c056} 
+torchvision\+\_\+down.\+datasets.\+stl10.\+STL10.\+\_\+\+\_\+dict\+\_\+\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{classtorchvision__down_1_1datasets_1_1stl10_1_1_s_t_l10_a7bde504bc2b495e882e3d368dce6f156}\index{torchvision\_down.datasets.stl10.STL10@{torchvision\_down.datasets.stl10.STL10}!base\_folder@{base\_folder}}
+\index{base\_folder@{base\_folder}!torchvision\_down.datasets.stl10.STL10@{torchvision\_down.datasets.stl10.STL10}}
+\doxysubsubsection{\texorpdfstring{base\_folder}{base\_folder}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1datasets_1_1stl10_1_1_s_t_l10_a7bde504bc2b495e882e3d368dce6f156} 
+str torchvision\+\_\+down.\+datasets.\+stl10.\+STL10.\+base\+\_\+folder = "{}stl10\+\_\+binary"{}\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classtorchvision__down_1_1datasets_1_1stl10_1_1_s_t_l10_a7f083f69e9303bd95be419237d50a267}\index{torchvision\_down.datasets.stl10.STL10@{torchvision\_down.datasets.stl10.STL10}!class\_names\_file@{class\_names\_file}}
+\index{class\_names\_file@{class\_names\_file}!torchvision\_down.datasets.stl10.STL10@{torchvision\_down.datasets.stl10.STL10}}
+\doxysubsubsection{\texorpdfstring{class\_names\_file}{class\_names\_file}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1datasets_1_1stl10_1_1_s_t_l10_a7f083f69e9303bd95be419237d50a267} 
+str torchvision\+\_\+down.\+datasets.\+stl10.\+STL10.\+class\+\_\+names\+\_\+file = "{}class\+\_\+names.\+txt"{}\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classtorchvision__down_1_1datasets_1_1stl10_1_1_s_t_l10_a551f7ab5743c88acfa4120cd927b6275}\index{torchvision\_down.datasets.stl10.STL10@{torchvision\_down.datasets.stl10.STL10}!classes@{classes}}
+\index{classes@{classes}!torchvision\_down.datasets.stl10.STL10@{torchvision\_down.datasets.stl10.STL10}}
+\doxysubsubsection{\texorpdfstring{classes}{classes}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1datasets_1_1stl10_1_1_s_t_l10_a551f7ab5743c88acfa4120cd927b6275} 
+torchvision\+\_\+down.\+datasets.\+stl10.\+STL10.\+classes = f.\+read().splitlines()}
+
+\Hypertarget{classtorchvision__down_1_1datasets_1_1stl10_1_1_s_t_l10_ab42d2e74bdee462aea3b4cfefc390a09}\index{torchvision\_down.datasets.stl10.STL10@{torchvision\_down.datasets.stl10.STL10}!data@{data}}
+\index{data@{data}!torchvision\_down.datasets.stl10.STL10@{torchvision\_down.datasets.stl10.STL10}}
+\doxysubsubsection{\texorpdfstring{data}{data}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1datasets_1_1stl10_1_1_s_t_l10_ab42d2e74bdee462aea3b4cfefc390a09} 
+torchvision\+\_\+down.\+datasets.\+stl10.\+STL10.\+data = "{}train"{}\+:}
+
+\Hypertarget{classtorchvision__down_1_1datasets_1_1stl10_1_1_s_t_l10_a22c0d202b8344e6f6e4a897b3ad61b25}\index{torchvision\_down.datasets.stl10.STL10@{torchvision\_down.datasets.stl10.STL10}!filename@{filename}}
+\index{filename@{filename}!torchvision\_down.datasets.stl10.STL10@{torchvision\_down.datasets.stl10.STL10}}
+\doxysubsubsection{\texorpdfstring{filename}{filename}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1datasets_1_1stl10_1_1_s_t_l10_a22c0d202b8344e6f6e4a897b3ad61b25} 
+str torchvision\+\_\+down.\+datasets.\+stl10.\+STL10.\+filename = "{}stl10\+\_\+binary.\+tar.\+gz"{}\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classtorchvision__down_1_1datasets_1_1stl10_1_1_s_t_l10_a248abd577b4cd4e8bc4ebc188eec7aa4}\index{torchvision\_down.datasets.stl10.STL10@{torchvision\_down.datasets.stl10.STL10}!folds@{folds}}
+\index{folds@{folds}!torchvision\_down.datasets.stl10.STL10@{torchvision\_down.datasets.stl10.STL10}}
+\doxysubsubsection{\texorpdfstring{folds}{folds}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1datasets_1_1stl10_1_1_s_t_l10_a248abd577b4cd4e8bc4ebc188eec7aa4} 
+Optional\mbox{[}int\mbox{]} torchvision\+\_\+down.\+datasets.\+stl10.\+STL10.\+folds = self.\+\_\+verify\+\_\+folds(folds)}
+
+\Hypertarget{classtorchvision__down_1_1datasets_1_1stl10_1_1_s_t_l10_a7547f0b46f9656661c46ebe58ad2e8ef}\index{torchvision\_down.datasets.stl10.STL10@{torchvision\_down.datasets.stl10.STL10}!folds\_list\_file@{folds\_list\_file}}
+\index{folds\_list\_file@{folds\_list\_file}!torchvision\_down.datasets.stl10.STL10@{torchvision\_down.datasets.stl10.STL10}}
+\doxysubsubsection{\texorpdfstring{folds\_list\_file}{folds\_list\_file}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1datasets_1_1stl10_1_1_s_t_l10_a7547f0b46f9656661c46ebe58ad2e8ef} 
+str torchvision\+\_\+down.\+datasets.\+stl10.\+STL10.\+folds\+\_\+list\+\_\+file = "{}fold\+\_\+indices.\+txt"{}\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classtorchvision__down_1_1datasets_1_1stl10_1_1_s_t_l10_a2093d383ac86f2f5f8953da328dd9850}\index{torchvision\_down.datasets.stl10.STL10@{torchvision\_down.datasets.stl10.STL10}!labels@{labels}}
+\index{labels@{labels}!torchvision\_down.datasets.stl10.STL10@{torchvision\_down.datasets.stl10.STL10}}
+\doxysubsubsection{\texorpdfstring{labels}{labels}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1datasets_1_1stl10_1_1_s_t_l10_a2093d383ac86f2f5f8953da328dd9850} 
+Optional\mbox{[}np.\+ndarray\mbox{]} torchvision\+\_\+down.\+datasets.\+stl10.\+STL10.\+labels}
+
+\Hypertarget{classtorchvision__down_1_1datasets_1_1stl10_1_1_s_t_l10_aa54cdfdfa9c70dffb14ae4cd5936e843}\index{torchvision\_down.datasets.stl10.STL10@{torchvision\_down.datasets.stl10.STL10}!split@{split}}
+\index{split@{split}!torchvision\_down.datasets.stl10.STL10@{torchvision\_down.datasets.stl10.STL10}}
+\doxysubsubsection{\texorpdfstring{split}{split}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1datasets_1_1stl10_1_1_s_t_l10_aa54cdfdfa9c70dffb14ae4cd5936e843} 
+str torchvision\+\_\+down.\+datasets.\+stl10.\+STL10.\+split = verify\+\_\+str\+\_\+arg(split, "{}split"{}, self.\+splits)}
+
+\Hypertarget{classtorchvision__down_1_1datasets_1_1stl10_1_1_s_t_l10_a0b80dc3349eac859e0d51e94af577e08}\index{torchvision\_down.datasets.stl10.STL10@{torchvision\_down.datasets.stl10.STL10}!splits@{splits}}
+\index{splits@{splits}!torchvision\_down.datasets.stl10.STL10@{torchvision\_down.datasets.stl10.STL10}}
+\doxysubsubsection{\texorpdfstring{splits}{splits}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1datasets_1_1stl10_1_1_s_t_l10_a0b80dc3349eac859e0d51e94af577e08} 
+tuple torchvision\+\_\+down.\+datasets.\+stl10.\+STL10.\+splits = ("{}train"{}, "{}train+unlabeled"{}, "{}unlabeled"{}, "{}test"{})\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classtorchvision__down_1_1datasets_1_1stl10_1_1_s_t_l10_a3ff83caa557f3f68ed9c6d20f54680bc}\index{torchvision\_down.datasets.stl10.STL10@{torchvision\_down.datasets.stl10.STL10}!test\_list@{test\_list}}
+\index{test\_list@{test\_list}!torchvision\_down.datasets.stl10.STL10@{torchvision\_down.datasets.stl10.STL10}}
+\doxysubsubsection{\texorpdfstring{test\_list}{test\_list}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1datasets_1_1stl10_1_1_s_t_l10_a3ff83caa557f3f68ed9c6d20f54680bc} 
+list torchvision\+\_\+down.\+datasets.\+stl10.\+STL10.\+test\+\_\+list = \mbox{[}\mbox{[}"{}test\+\_\+\+X.\+bin"{}, "{}7f263ba9f9e0b06b93213547f721ac82"{}\mbox{]}, \mbox{[}"{}test\+\_\+y.\+bin"{}, "{}36f9794fa4beb8a2c72628de14fa638e"{}\mbox{]}\mbox{]}\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classtorchvision__down_1_1datasets_1_1stl10_1_1_s_t_l10_ade5cb93a3dbe772056ac6e816e2b62c8}\index{torchvision\_down.datasets.stl10.STL10@{torchvision\_down.datasets.stl10.STL10}!tgz\_md5@{tgz\_md5}}
+\index{tgz\_md5@{tgz\_md5}!torchvision\_down.datasets.stl10.STL10@{torchvision\_down.datasets.stl10.STL10}}
+\doxysubsubsection{\texorpdfstring{tgz\_md5}{tgz\_md5}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1datasets_1_1stl10_1_1_s_t_l10_ade5cb93a3dbe772056ac6e816e2b62c8} 
+str torchvision\+\_\+down.\+datasets.\+stl10.\+STL10.\+tgz\+\_\+md5 = "{}91f7769df0f17e558f3565bffb0c7dfb"{}\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classtorchvision__down_1_1datasets_1_1stl10_1_1_s_t_l10_a088401e95aae57fe72a4c1de22a24128}\index{torchvision\_down.datasets.stl10.STL10@{torchvision\_down.datasets.stl10.STL10}!train\_list@{train\_list}}
+\index{train\_list@{train\_list}!torchvision\_down.datasets.stl10.STL10@{torchvision\_down.datasets.stl10.STL10}}
+\doxysubsubsection{\texorpdfstring{train\_list}{train\_list}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1datasets_1_1stl10_1_1_s_t_l10_a088401e95aae57fe72a4c1de22a24128} 
+list torchvision\+\_\+down.\+datasets.\+stl10.\+STL10.\+train\+\_\+list\hspace{0.3cm}{\ttfamily [static]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \ [}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ [\textcolor{stringliteral}{"{}train\_X.bin"{}},\ \textcolor{stringliteral}{"{}918c2871b30a85fa023e0c44e0bee87f"{}}],}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ [\textcolor{stringliteral}{"{}train\_y.bin"{}},\ \textcolor{stringliteral}{"{}5a34089d4802c674881badbb80307741"{}}],}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ [\textcolor{stringliteral}{"{}unlabeled\_X.bin"{}},\ \textcolor{stringliteral}{"{}5242ba1fed5e4be9e1e742405eb56ca4"{}}],}
+\DoxyCodeLine{\ \ \ \ ]}
+
+\end{DoxyCode}
+\Hypertarget{classtorchvision__down_1_1datasets_1_1stl10_1_1_s_t_l10_ad4ca12bd08ecfd254fee504e5f3cbd55}\index{torchvision\_down.datasets.stl10.STL10@{torchvision\_down.datasets.stl10.STL10}!url@{url}}
+\index{url@{url}!torchvision\_down.datasets.stl10.STL10@{torchvision\_down.datasets.stl10.STL10}}
+\doxysubsubsection{\texorpdfstring{url}{url}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1datasets_1_1stl10_1_1_s_t_l10_ad4ca12bd08ecfd254fee504e5f3cbd55} 
+torchvision\+\_\+down.\+datasets.\+stl10.\+STL10.\+url = "{}http\+://ai.\+stanford.\+edu/\texorpdfstring{$\sim$}{\string~}acoates/stl10/stl10\+\_\+binary.\+tar.\+gz"{}\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Cervi\+AI/torchvision\+\_\+down/datasets/\mbox{\hyperlink{stl10_8py}{stl10.\+py}}\end{DoxyCompactItemize}

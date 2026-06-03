@@ -1,0 +1,42 @@
+\doxysection{torchvision\+\_\+down.\+ops.\+giou\+\_\+loss Namespace Reference}
+\hypertarget{namespacetorchvision__down_1_1ops_1_1giou__loss}{}\label{namespacetorchvision__down_1_1ops_1_1giou__loss}\index{torchvision\_down.ops.giou\_loss@{torchvision\_down.ops.giou\_loss}}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+torch.\+Tensor \mbox{\hyperlink{namespacetorchvision__down_1_1ops_1_1giou__loss_a88a70293cda86a64c74e787ad8b3245d}{generalized\+\_\+box\+\_\+iou\+\_\+loss}} (torch.\+Tensor boxes1, torch.\+Tensor boxes2, str reduction="{}none"{}, float eps=1e-\/7)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{namespacetorchvision__down_1_1ops_1_1giou__loss_a88a70293cda86a64c74e787ad8b3245d}\index{torchvision\_down.ops.giou\_loss@{torchvision\_down.ops.giou\_loss}!generalized\_box\_iou\_loss@{generalized\_box\_iou\_loss}}
+\index{generalized\_box\_iou\_loss@{generalized\_box\_iou\_loss}!torchvision\_down.ops.giou\_loss@{torchvision\_down.ops.giou\_loss}}
+\doxysubsubsection{\texorpdfstring{generalized\_box\_iou\_loss()}{generalized\_box\_iou\_loss()}}
+{\footnotesize\ttfamily \label{namespacetorchvision__down_1_1ops_1_1giou__loss_a88a70293cda86a64c74e787ad8b3245d} 
+ torch.\+Tensor torchvision\+\_\+down.\+ops.\+giou\+\_\+loss.\+generalized\+\_\+box\+\_\+iou\+\_\+loss (\begin{DoxyParamCaption}\item[{torch.\+Tensor}]{boxes1}{, }\item[{torch.\+Tensor}]{boxes2}{, }\item[{str }]{reduction}{ = {\ttfamily "{}none"{}}, }\item[{float }]{eps}{ = {\ttfamily 1e-\/7}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Original implementation from
+https://github.com/facebookresearch/fvcore/blob/bfff2ef/fvcore/nn/giou_loss.py
+
+Gradient-friendly IoU loss with an additional penalty that is non-zero when the
+boxes do not overlap and scales with the size of their smallest enclosing box.
+This loss is symmetric, so the boxes1 and boxes2 arguments are interchangeable.
+
+Both sets of boxes are expected to be in ``(x1, y1, x2, y2)`` format with
+``0 <= x1 < x2`` and ``0 <= y1 < y2``, and The two boxes should have the
+same dimensions.
+
+Args:
+    boxes1 (Tensor[N, 4] or Tensor[4]): first set of boxes
+    boxes2 (Tensor[N, 4] or Tensor[4]): second set of boxes
+    reduction (string, optional): Specifies the reduction to apply to the output:
+        ``'none'`` | ``'mean'`` | ``'sum'``. ``'none'``: No reduction will be
+        applied to the output. ``'mean'``: The output will be averaged.
+        ``'sum'``: The output will be summed. Default: ``'none'``
+    eps (float, optional): small number to prevent division by zero. Default: 1e-7
+
+Reference:
+    Hamid Rezatofighi et. al: Generalized Intersection over Union:
+    A Metric and A Loss for Bounding Box Regression:
+    https://arxiv.org/abs/1902.09630
+\end{DoxyVerb}
+ 

@@ -1,0 +1,266 @@
+\doxysection{WSD\+\_\+ver 1\+\_\+speed Namespace Reference}
+\hypertarget{namespace_w_s_d__ver_011__speed}{}\label{namespace_w_s_d__ver_011__speed}\index{WSD\_ver 1\_speed@{WSD\_ver 1\_speed}}
+\doxysubsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{class_w_s_d__ver_011__speed_1_1_global_vars}{Global\+Vars}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{namespace_w_s_d__ver_011__speed_a75a3e53c86bc17a3e9a5d10df16d4ff1}{view\+\_\+bounding\+\_\+boxes\+\_\+on\+\_\+wsi}} (wsi\+\_\+path, bounding\+\_\+boxes, \mbox{\hyperlink{namespace_w_s_d__ver_011__speed_a12991b9758faa3825d6c70c760d6e80a}{tile\+\_\+size}}=1024)
+\item 
+\mbox{\hyperlink{namespace_w_s_d__ver_011__speed_ada39796fbcf26d5c44b3e5a91863811b}{write\+\_\+ndpa}} (\mbox{\hyperlink{namespace_w_s_d__ver_011__speed_a12991b9758faa3825d6c70c760d6e80a}{tile\+\_\+size}}=1024, \mbox{\hyperlink{namespace_w_s_d__ver_011__speed_aaa202274ee154fb170a0037316133874}{overlap}}=128)
+\item 
+\mbox{\hyperlink{namespace_w_s_d__ver_011__speed_ab8f7e6d5f06b6bb0980673320aec405a}{get\+\_\+referance}} (wsi\+\_\+path)
+\item 
+\mbox{\hyperlink{namespace_w_s_d__ver_011__speed_af0b4146c401a7c8cb33dfe8a87a51987}{update\+\_\+annote\+\_\+id}} (annotations)
+\item 
+\mbox{\hyperlink{namespace_w_s_d__ver_011__speed_aeb0e1552ab220fa8b58715d972d9b342}{run\+\_\+predict\+\_\+wsi\+\_\+multithread}} (path, model, \mbox{\hyperlink{namespace_w_s_d__ver_011__speed_aaa202274ee154fb170a0037316133874}{overlap}}, \mbox{\hyperlink{namespace_w_s_d__ver_011__speed_a12991b9758faa3825d6c70c760d6e80a}{tile\+\_\+size}}=1024, batch\+\_\+size=12)
+\item 
+\mbox{\hyperlink{namespace_w_s_d__ver_011__speed_a3653ee27f0981f4c501b645bdd43e9fe}{prune\+\_\+list}} (box\+\_\+list)
+\item 
+\mbox{\hyperlink{namespace_w_s_d__ver_011__speed_a5928112b85a7555e24c6aa3b33e9f952}{replace\+\_\+bigger\+\_\+box}} (boxA, boxB)
+\item 
+\mbox{\hyperlink{namespace_w_s_d__ver_011__speed_aff87d0d667529939edcd9883f4825a2a}{bb\+\_\+intersection\+\_\+over\+\_\+union}} (boxA, boxB)
+\item 
+\mbox{\hyperlink{namespace_w_s_d__ver_011__speed_a6c60414e497bcf9f5be604b49657db79}{rerun\+\_\+predict\+\_\+pool}} (wsi\+\_\+path, model, pred\+\_\+list, \mbox{\hyperlink{namespace_w_s_d__ver_011__speed_a12991b9758faa3825d6c70c760d6e80a}{tile\+\_\+size}}=1024, batch\+\_\+size=12)
+\item 
+\mbox{\hyperlink{namespace_w_s_d__ver_011__speed_a0f41a050e92edd3d5b439ecb481c06e2}{divide\+\_\+chunks}} (Anotelist, batch\+\_\+size)
+\item 
+\mbox{\hyperlink{namespace_w_s_d__ver_011__speed_ac1d45d7a7faf688e3fb830e6af70bd8e}{read\+\_\+tiles\+\_\+parallel}} (slide\+\_\+path, pred\+\_\+list, \mbox{\hyperlink{namespace_w_s_d__ver_011__speed_a12991b9758faa3825d6c70c760d6e80a}{tile\+\_\+size}})
+\item 
+\mbox{\hyperlink{namespace_w_s_d__ver_011__speed_abb9114ad7002e71cc4cc7d462280417d}{process}} (wsi\+\_\+path, pred, \mbox{\hyperlink{namespace_w_s_d__ver_011__speed_a12991b9758faa3825d6c70c760d6e80a}{tile\+\_\+size}})
+\item 
+\mbox{\hyperlink{namespace_w_s_d__ver_011__speed_a3312419685eeae3691a412b7fa6b5ad8}{fetch\+\_\+batch}} (image)
+\item 
+\mbox{\hyperlink{namespace_w_s_d__ver_011__speed_adffb52cd292bf09b4c3500e4d7f91985}{get\+\_\+cat\+\_\+model}} ()
+\item 
+\mbox{\hyperlink{namespace_w_s_d__ver_011__speed_a85dc1d1946f27c9a600227c798c4b42b}{write\+\_\+xml}} (annotations, start\+\_\+id, anote\+\_\+list, X\+\_\+\+Reference, Y\+\_\+\+Reference, nm\+\_\+p)
+\item 
+\mbox{\hyperlink{namespace_w_s_d__ver_011__speed_a301246ec6b8926c4eee6e26197544eaf}{write\+\_\+annotation}} (annotations, \+\_\+id, x1, y1, x2, y2, cls, conf, X\+\_\+\+Reference, Y\+\_\+\+Reference, nm\+\_\+p=221)
+\item 
+\mbox{\hyperlink{namespace_w_s_d__ver_011__speed_ac9f9fe6dad25eefadb94341ab5c29217}{dump\+\_\+results}} (gt\+\_\+xml\+\_\+path, predicts\+\_\+xml\+\_\+path)
+\item 
+\mbox{\hyperlink{namespace_w_s_d__ver_011__speed_a41756a026e09cdd34d9c65b816df4dc5}{get\+\_\+box\+\_\+list}} (xml\+\_\+path, nm\+\_\+p=221)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{namespace_w_s_d__ver_011__speed_aaa9b4608baad5568475c0559f0a5a9f9}{current\+\_\+dir}} = os.\+path.\+dirname(sys.\+executable)
+\item 
+str \mbox{\hyperlink{namespace_w_s_d__ver_011__speed_a66c448e34a9a94e2fde18a5f4534779e}{url}} = "{}https\+://github.\+com/openslide/openslide-\/winbuild/releases/download/v20230414/openslide-\/win64-\/20230414.zip"{}
+\item 
+str \mbox{\hyperlink{namespace_w_s_d__ver_011__speed_a505e7b336fda29c0fdf9188f7cbfaecb}{filename}} = "{}openslide-\/win64-\/20230414.zip"{}
+\item 
+\mbox{\hyperlink{namespace_w_s_d__ver_011__speed_afb314a16c552e91e536429c2d3a18f7b}{response}} = requests.\+get(\mbox{\hyperlink{namespace_w_s_d__ver_011__speed_a66c448e34a9a94e2fde18a5f4534779e}{url}}, stream=True)
+\item 
+\mbox{\hyperlink{namespace_w_s_d__ver_011__speed_ac5a8d9d26be0388ebc7641320fa8c50e}{chunk\+\_\+size}}
+\item 
+\mbox{\hyperlink{namespace_w_s_d__ver_011__speed_af33aa691eabaab85abc793de052360c9}{OPENSLIDE\+\_\+\+PATH}} = os.\+path.\+join(\mbox{\hyperlink{namespace_w_s_d__ver_011__speed_aaa9b4608baad5568475c0559f0a5a9f9}{current\+\_\+dir}}, \textquotesingle{}openslide-\/win64-\/20230414\textquotesingle{}, \textquotesingle{}bin\textquotesingle{})
+\item 
+str \mbox{\hyperlink{namespace_w_s_d__ver_011__speed_a3618ba3102b676ed076dc712870be677}{folder\+\_\+path}} = r\textquotesingle{}D\+:\textbackslash{}\+Shreyan\textbackslash{}\+Test\textbackslash{}compare\textbackslash{}new\textquotesingle{}
+\item 
+\mbox{\hyperlink{namespace_w_s_d__ver_011__speed_acf3fe4e5d03799ad9f7f7dd16ee489fa}{global\+Vars}} = \mbox{\hyperlink{class_w_s_d__ver_011__speed_1_1_global_vars}{Global\+Vars}}(\mbox{\hyperlink{namespace_w_s_d__ver_011__speed_a3618ba3102b676ed076dc712870be677}{folder\+\_\+path}})
+\item 
+\mbox{\hyperlink{namespace_w_s_d__ver_011__speed_a53d3e0c23be7ca6d65ceb9f1d9162ba3}{start}} = time.\+time()
+\item 
+\mbox{\hyperlink{namespace_w_s_d__ver_011__speed_a12991b9758faa3825d6c70c760d6e80a}{tile\+\_\+size}}
+\item 
+\mbox{\hyperlink{namespace_w_s_d__ver_011__speed_aaa202274ee154fb170a0037316133874}{overlap}}
+\item 
+\mbox{\hyperlink{namespace_w_s_d__ver_011__speed_ad61368f07dfe2b74e8cbe6683acd4758}{end}} = time.\+time()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{namespace_w_s_d__ver_011__speed_aff87d0d667529939edcd9883f4825a2a}\index{WSD\_ver 1\_speed@{WSD\_ver 1\_speed}!bb\_intersection\_over\_union@{bb\_intersection\_over\_union}}
+\index{bb\_intersection\_over\_union@{bb\_intersection\_over\_union}!WSD\_ver 1\_speed@{WSD\_ver 1\_speed}}
+\doxysubsubsection{\texorpdfstring{bb\_intersection\_over\_union()}{bb\_intersection\_over\_union()}}
+{\footnotesize\ttfamily \label{namespace_w_s_d__ver_011__speed_aff87d0d667529939edcd9883f4825a2a} 
+WSD\+\_\+ver 1\+\_\+speed.\+bb\+\_\+intersection\+\_\+over\+\_\+union (\begin{DoxyParamCaption}\item[{}]{boxA}{, }\item[{}]{boxB}{}\end{DoxyParamCaption})}
+
+\Hypertarget{namespace_w_s_d__ver_011__speed_a0f41a050e92edd3d5b439ecb481c06e2}\index{WSD\_ver 1\_speed@{WSD\_ver 1\_speed}!divide\_chunks@{divide\_chunks}}
+\index{divide\_chunks@{divide\_chunks}!WSD\_ver 1\_speed@{WSD\_ver 1\_speed}}
+\doxysubsubsection{\texorpdfstring{divide\_chunks()}{divide\_chunks()}}
+{\footnotesize\ttfamily \label{namespace_w_s_d__ver_011__speed_a0f41a050e92edd3d5b439ecb481c06e2} 
+WSD\+\_\+ver 1\+\_\+speed.\+divide\+\_\+chunks (\begin{DoxyParamCaption}\item[{}]{Anotelist}{, }\item[{}]{batch\+\_\+size}{}\end{DoxyParamCaption})}
+
+\Hypertarget{namespace_w_s_d__ver_011__speed_ac9f9fe6dad25eefadb94341ab5c29217}\index{WSD\_ver 1\_speed@{WSD\_ver 1\_speed}!dump\_results@{dump\_results}}
+\index{dump\_results@{dump\_results}!WSD\_ver 1\_speed@{WSD\_ver 1\_speed}}
+\doxysubsubsection{\texorpdfstring{dump\_results()}{dump\_results()}}
+{\footnotesize\ttfamily \label{namespace_w_s_d__ver_011__speed_ac9f9fe6dad25eefadb94341ab5c29217} 
+WSD\+\_\+ver 1\+\_\+speed.\+dump\+\_\+results (\begin{DoxyParamCaption}\item[{}]{gt\+\_\+xml\+\_\+path}{, }\item[{}]{predicts\+\_\+xml\+\_\+path}{}\end{DoxyParamCaption})}
+
+\Hypertarget{namespace_w_s_d__ver_011__speed_a3312419685eeae3691a412b7fa6b5ad8}\index{WSD\_ver 1\_speed@{WSD\_ver 1\_speed}!fetch\_batch@{fetch\_batch}}
+\index{fetch\_batch@{fetch\_batch}!WSD\_ver 1\_speed@{WSD\_ver 1\_speed}}
+\doxysubsubsection{\texorpdfstring{fetch\_batch()}{fetch\_batch()}}
+{\footnotesize\ttfamily \label{namespace_w_s_d__ver_011__speed_a3312419685eeae3691a412b7fa6b5ad8} 
+WSD\+\_\+ver 1\+\_\+speed.\+fetch\+\_\+batch (\begin{DoxyParamCaption}\item[{}]{image}{}\end{DoxyParamCaption})}
+
+\Hypertarget{namespace_w_s_d__ver_011__speed_a41756a026e09cdd34d9c65b816df4dc5}\index{WSD\_ver 1\_speed@{WSD\_ver 1\_speed}!get\_box\_list@{get\_box\_list}}
+\index{get\_box\_list@{get\_box\_list}!WSD\_ver 1\_speed@{WSD\_ver 1\_speed}}
+\doxysubsubsection{\texorpdfstring{get\_box\_list()}{get\_box\_list()}}
+{\footnotesize\ttfamily \label{namespace_w_s_d__ver_011__speed_a41756a026e09cdd34d9c65b816df4dc5} 
+WSD\+\_\+ver 1\+\_\+speed.\+get\+\_\+box\+\_\+list (\begin{DoxyParamCaption}\item[{}]{xml\+\_\+path}{, }\item[{}]{nm\+\_\+p}{ = {\ttfamily 221}}\end{DoxyParamCaption})}
+
+\Hypertarget{namespace_w_s_d__ver_011__speed_adffb52cd292bf09b4c3500e4d7f91985}\index{WSD\_ver 1\_speed@{WSD\_ver 1\_speed}!get\_cat\_model@{get\_cat\_model}}
+\index{get\_cat\_model@{get\_cat\_model}!WSD\_ver 1\_speed@{WSD\_ver 1\_speed}}
+\doxysubsubsection{\texorpdfstring{get\_cat\_model()}{get\_cat\_model()}}
+{\footnotesize\ttfamily \label{namespace_w_s_d__ver_011__speed_adffb52cd292bf09b4c3500e4d7f91985} 
+WSD\+\_\+ver 1\+\_\+speed.\+get\+\_\+cat\+\_\+model (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+\Hypertarget{namespace_w_s_d__ver_011__speed_ab8f7e6d5f06b6bb0980673320aec405a}\index{WSD\_ver 1\_speed@{WSD\_ver 1\_speed}!get\_referance@{get\_referance}}
+\index{get\_referance@{get\_referance}!WSD\_ver 1\_speed@{WSD\_ver 1\_speed}}
+\doxysubsubsection{\texorpdfstring{get\_referance()}{get\_referance()}}
+{\footnotesize\ttfamily \label{namespace_w_s_d__ver_011__speed_ab8f7e6d5f06b6bb0980673320aec405a} 
+WSD\+\_\+ver 1\+\_\+speed.\+get\+\_\+referance (\begin{DoxyParamCaption}\item[{}]{wsi\+\_\+path}{}\end{DoxyParamCaption})}
+
+\Hypertarget{namespace_w_s_d__ver_011__speed_abb9114ad7002e71cc4cc7d462280417d}\index{WSD\_ver 1\_speed@{WSD\_ver 1\_speed}!process@{process}}
+\index{process@{process}!WSD\_ver 1\_speed@{WSD\_ver 1\_speed}}
+\doxysubsubsection{\texorpdfstring{process()}{process()}}
+{\footnotesize\ttfamily \label{namespace_w_s_d__ver_011__speed_abb9114ad7002e71cc4cc7d462280417d} 
+WSD\+\_\+ver 1\+\_\+speed.\+process (\begin{DoxyParamCaption}\item[{}]{wsi\+\_\+path}{, }\item[{}]{pred}{, }\item[{}]{tile\+\_\+size}{}\end{DoxyParamCaption})}
+
+\Hypertarget{namespace_w_s_d__ver_011__speed_a3653ee27f0981f4c501b645bdd43e9fe}\index{WSD\_ver 1\_speed@{WSD\_ver 1\_speed}!prune\_list@{prune\_list}}
+\index{prune\_list@{prune\_list}!WSD\_ver 1\_speed@{WSD\_ver 1\_speed}}
+\doxysubsubsection{\texorpdfstring{prune\_list()}{prune\_list()}}
+{\footnotesize\ttfamily \label{namespace_w_s_d__ver_011__speed_a3653ee27f0981f4c501b645bdd43e9fe} 
+WSD\+\_\+ver 1\+\_\+speed.\+prune\+\_\+list (\begin{DoxyParamCaption}\item[{}]{box\+\_\+list}{}\end{DoxyParamCaption})}
+
+\Hypertarget{namespace_w_s_d__ver_011__speed_ac1d45d7a7faf688e3fb830e6af70bd8e}\index{WSD\_ver 1\_speed@{WSD\_ver 1\_speed}!read\_tiles\_parallel@{read\_tiles\_parallel}}
+\index{read\_tiles\_parallel@{read\_tiles\_parallel}!WSD\_ver 1\_speed@{WSD\_ver 1\_speed}}
+\doxysubsubsection{\texorpdfstring{read\_tiles\_parallel()}{read\_tiles\_parallel()}}
+{\footnotesize\ttfamily \label{namespace_w_s_d__ver_011__speed_ac1d45d7a7faf688e3fb830e6af70bd8e} 
+WSD\+\_\+ver 1\+\_\+speed.\+read\+\_\+tiles\+\_\+parallel (\begin{DoxyParamCaption}\item[{}]{slide\+\_\+path}{, }\item[{}]{pred\+\_\+list}{, }\item[{}]{tile\+\_\+size}{}\end{DoxyParamCaption})}
+
+\Hypertarget{namespace_w_s_d__ver_011__speed_a5928112b85a7555e24c6aa3b33e9f952}\index{WSD\_ver 1\_speed@{WSD\_ver 1\_speed}!replace\_bigger\_box@{replace\_bigger\_box}}
+\index{replace\_bigger\_box@{replace\_bigger\_box}!WSD\_ver 1\_speed@{WSD\_ver 1\_speed}}
+\doxysubsubsection{\texorpdfstring{replace\_bigger\_box()}{replace\_bigger\_box()}}
+{\footnotesize\ttfamily \label{namespace_w_s_d__ver_011__speed_a5928112b85a7555e24c6aa3b33e9f952} 
+WSD\+\_\+ver 1\+\_\+speed.\+replace\+\_\+bigger\+\_\+box (\begin{DoxyParamCaption}\item[{}]{boxA}{, }\item[{}]{boxB}{}\end{DoxyParamCaption})}
+
+\Hypertarget{namespace_w_s_d__ver_011__speed_a6c60414e497bcf9f5be604b49657db79}\index{WSD\_ver 1\_speed@{WSD\_ver 1\_speed}!rerun\_predict\_pool@{rerun\_predict\_pool}}
+\index{rerun\_predict\_pool@{rerun\_predict\_pool}!WSD\_ver 1\_speed@{WSD\_ver 1\_speed}}
+\doxysubsubsection{\texorpdfstring{rerun\_predict\_pool()}{rerun\_predict\_pool()}}
+{\footnotesize\ttfamily \label{namespace_w_s_d__ver_011__speed_a6c60414e497bcf9f5be604b49657db79} 
+WSD\+\_\+ver 1\+\_\+speed.\+rerun\+\_\+predict\+\_\+pool (\begin{DoxyParamCaption}\item[{}]{wsi\+\_\+path}{, }\item[{}]{model}{, }\item[{}]{pred\+\_\+list}{, }\item[{}]{tile\+\_\+size}{ = {\ttfamily 1024}, }\item[{}]{batch\+\_\+size}{ = {\ttfamily 12}}\end{DoxyParamCaption})}
+
+\Hypertarget{namespace_w_s_d__ver_011__speed_aeb0e1552ab220fa8b58715d972d9b342}\index{WSD\_ver 1\_speed@{WSD\_ver 1\_speed}!run\_predict\_wsi\_multithread@{run\_predict\_wsi\_multithread}}
+\index{run\_predict\_wsi\_multithread@{run\_predict\_wsi\_multithread}!WSD\_ver 1\_speed@{WSD\_ver 1\_speed}}
+\doxysubsubsection{\texorpdfstring{run\_predict\_wsi\_multithread()}{run\_predict\_wsi\_multithread()}}
+{\footnotesize\ttfamily \label{namespace_w_s_d__ver_011__speed_aeb0e1552ab220fa8b58715d972d9b342} 
+WSD\+\_\+ver 1\+\_\+speed.\+run\+\_\+predict\+\_\+wsi\+\_\+multithread (\begin{DoxyParamCaption}\item[{}]{path}{, }\item[{}]{model}{, }\item[{}]{overlap}{, }\item[{}]{tile\+\_\+size}{ = {\ttfamily 1024}, }\item[{}]{batch\+\_\+size}{ = {\ttfamily 12}}\end{DoxyParamCaption})}
+
+\Hypertarget{namespace_w_s_d__ver_011__speed_af0b4146c401a7c8cb33dfe8a87a51987}\index{WSD\_ver 1\_speed@{WSD\_ver 1\_speed}!update\_annote\_id@{update\_annote\_id}}
+\index{update\_annote\_id@{update\_annote\_id}!WSD\_ver 1\_speed@{WSD\_ver 1\_speed}}
+\doxysubsubsection{\texorpdfstring{update\_annote\_id()}{update\_annote\_id()}}
+{\footnotesize\ttfamily \label{namespace_w_s_d__ver_011__speed_af0b4146c401a7c8cb33dfe8a87a51987} 
+WSD\+\_\+ver 1\+\_\+speed.\+update\+\_\+annote\+\_\+id (\begin{DoxyParamCaption}\item[{}]{annotations}{}\end{DoxyParamCaption})}
+
+\Hypertarget{namespace_w_s_d__ver_011__speed_a75a3e53c86bc17a3e9a5d10df16d4ff1}\index{WSD\_ver 1\_speed@{WSD\_ver 1\_speed}!view\_bounding\_boxes\_on\_wsi@{view\_bounding\_boxes\_on\_wsi}}
+\index{view\_bounding\_boxes\_on\_wsi@{view\_bounding\_boxes\_on\_wsi}!WSD\_ver 1\_speed@{WSD\_ver 1\_speed}}
+\doxysubsubsection{\texorpdfstring{view\_bounding\_boxes\_on\_wsi()}{view\_bounding\_boxes\_on\_wsi()}}
+{\footnotesize\ttfamily \label{namespace_w_s_d__ver_011__speed_a75a3e53c86bc17a3e9a5d10df16d4ff1} 
+WSD\+\_\+ver 1\+\_\+speed.\+view\+\_\+bounding\+\_\+boxes\+\_\+on\+\_\+wsi (\begin{DoxyParamCaption}\item[{}]{wsi\+\_\+path}{, }\item[{}]{bounding\+\_\+boxes}{, }\item[{}]{tile\+\_\+size}{ = {\ttfamily 1024}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}View bounding boxes on the original Whole Slide Image (WSI) without saving or additional processing.
+
+Parameters:
+- wsi_path (str): Path to the WSI file.
+- bounding_boxes (list): List of bounding boxes in the format [[x1, y1, x2, y2, label, conf], ...].
+- tile_size (int): The size of the tile to extract from the WSI.
+\end{DoxyVerb}
+ \Hypertarget{namespace_w_s_d__ver_011__speed_a301246ec6b8926c4eee6e26197544eaf}\index{WSD\_ver 1\_speed@{WSD\_ver 1\_speed}!write\_annotation@{write\_annotation}}
+\index{write\_annotation@{write\_annotation}!WSD\_ver 1\_speed@{WSD\_ver 1\_speed}}
+\doxysubsubsection{\texorpdfstring{write\_annotation()}{write\_annotation()}}
+{\footnotesize\ttfamily \label{namespace_w_s_d__ver_011__speed_a301246ec6b8926c4eee6e26197544eaf} 
+WSD\+\_\+ver 1\+\_\+speed.\+write\+\_\+annotation (\begin{DoxyParamCaption}\item[{}]{annotations}{, }\item[{}]{\+\_\+id}{, }\item[{}]{x1}{, }\item[{}]{y1}{, }\item[{}]{x2}{, }\item[{}]{y2}{, }\item[{}]{cls}{, }\item[{}]{conf}{, }\item[{}]{X\+\_\+\+Reference}{, }\item[{}]{Y\+\_\+\+Reference}{, }\item[{}]{nm\+\_\+p}{ = {\ttfamily 221}}\end{DoxyParamCaption})}
+
+\Hypertarget{namespace_w_s_d__ver_011__speed_ada39796fbcf26d5c44b3e5a91863811b}\index{WSD\_ver 1\_speed@{WSD\_ver 1\_speed}!write\_ndpa@{write\_ndpa}}
+\index{write\_ndpa@{write\_ndpa}!WSD\_ver 1\_speed@{WSD\_ver 1\_speed}}
+\doxysubsubsection{\texorpdfstring{write\_ndpa()}{write\_ndpa()}}
+{\footnotesize\ttfamily \label{namespace_w_s_d__ver_011__speed_ada39796fbcf26d5c44b3e5a91863811b} 
+WSD\+\_\+ver 1\+\_\+speed.\+write\+\_\+ndpa (\begin{DoxyParamCaption}\item[{}]{tile\+\_\+size}{ = {\ttfamily 1024}, }\item[{}]{overlap}{ = {\ttfamily 128}}\end{DoxyParamCaption})}
+
+\Hypertarget{namespace_w_s_d__ver_011__speed_a85dc1d1946f27c9a600227c798c4b42b}\index{WSD\_ver 1\_speed@{WSD\_ver 1\_speed}!write\_xml@{write\_xml}}
+\index{write\_xml@{write\_xml}!WSD\_ver 1\_speed@{WSD\_ver 1\_speed}}
+\doxysubsubsection{\texorpdfstring{write\_xml()}{write\_xml()}}
+{\footnotesize\ttfamily \label{namespace_w_s_d__ver_011__speed_a85dc1d1946f27c9a600227c798c4b42b} 
+WSD\+\_\+ver 1\+\_\+speed.\+write\+\_\+xml (\begin{DoxyParamCaption}\item[{}]{annotations}{, }\item[{}]{start\+\_\+id}{, }\item[{}]{anote\+\_\+list}{, }\item[{}]{X\+\_\+\+Reference}{, }\item[{}]{Y\+\_\+\+Reference}{, }\item[{}]{nm\+\_\+p}{}\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Variable Documentation}
+\Hypertarget{namespace_w_s_d__ver_011__speed_ac5a8d9d26be0388ebc7641320fa8c50e}\index{WSD\_ver 1\_speed@{WSD\_ver 1\_speed}!chunk\_size@{chunk\_size}}
+\index{chunk\_size@{chunk\_size}!WSD\_ver 1\_speed@{WSD\_ver 1\_speed}}
+\doxysubsubsection{\texorpdfstring{chunk\_size}{chunk\_size}}
+{\footnotesize\ttfamily \label{namespace_w_s_d__ver_011__speed_ac5a8d9d26be0388ebc7641320fa8c50e} 
+WSD\+\_\+ver 1\+\_\+speed.\+chunk\+\_\+size}
+
+\Hypertarget{namespace_w_s_d__ver_011__speed_aaa9b4608baad5568475c0559f0a5a9f9}\index{WSD\_ver 1\_speed@{WSD\_ver 1\_speed}!current\_dir@{current\_dir}}
+\index{current\_dir@{current\_dir}!WSD\_ver 1\_speed@{WSD\_ver 1\_speed}}
+\doxysubsubsection{\texorpdfstring{current\_dir}{current\_dir}}
+{\footnotesize\ttfamily \label{namespace_w_s_d__ver_011__speed_aaa9b4608baad5568475c0559f0a5a9f9} 
+WSD\+\_\+ver 1\+\_\+speed.\+current\+\_\+dir = os.\+path.\+dirname(sys.\+executable)}
+
+\Hypertarget{namespace_w_s_d__ver_011__speed_ad61368f07dfe2b74e8cbe6683acd4758}\index{WSD\_ver 1\_speed@{WSD\_ver 1\_speed}!end@{end}}
+\index{end@{end}!WSD\_ver 1\_speed@{WSD\_ver 1\_speed}}
+\doxysubsubsection{\texorpdfstring{end}{end}}
+{\footnotesize\ttfamily \label{namespace_w_s_d__ver_011__speed_ad61368f07dfe2b74e8cbe6683acd4758} 
+WSD\+\_\+ver 1\+\_\+speed.\+end = time.\+time()}
+
+\Hypertarget{namespace_w_s_d__ver_011__speed_a505e7b336fda29c0fdf9188f7cbfaecb}\index{WSD\_ver 1\_speed@{WSD\_ver 1\_speed}!filename@{filename}}
+\index{filename@{filename}!WSD\_ver 1\_speed@{WSD\_ver 1\_speed}}
+\doxysubsubsection{\texorpdfstring{filename}{filename}}
+{\footnotesize\ttfamily \label{namespace_w_s_d__ver_011__speed_a505e7b336fda29c0fdf9188f7cbfaecb} 
+str WSD\+\_\+ver 1\+\_\+speed.\+filename = "{}openslide-\/win64-\/20230414.zip"{}}
+
+\Hypertarget{namespace_w_s_d__ver_011__speed_a3618ba3102b676ed076dc712870be677}\index{WSD\_ver 1\_speed@{WSD\_ver 1\_speed}!folder\_path@{folder\_path}}
+\index{folder\_path@{folder\_path}!WSD\_ver 1\_speed@{WSD\_ver 1\_speed}}
+\doxysubsubsection{\texorpdfstring{folder\_path}{folder\_path}}
+{\footnotesize\ttfamily \label{namespace_w_s_d__ver_011__speed_a3618ba3102b676ed076dc712870be677} 
+str WSD\+\_\+ver 1\+\_\+speed.\+folder\+\_\+path = r\textquotesingle{}D\+:\textbackslash{}\+Shreyan\textbackslash{}\+Test\textbackslash{}compare\textbackslash{}new\textquotesingle{}}
+
+\Hypertarget{namespace_w_s_d__ver_011__speed_acf3fe4e5d03799ad9f7f7dd16ee489fa}\index{WSD\_ver 1\_speed@{WSD\_ver 1\_speed}!globalVars@{globalVars}}
+\index{globalVars@{globalVars}!WSD\_ver 1\_speed@{WSD\_ver 1\_speed}}
+\doxysubsubsection{\texorpdfstring{globalVars}{globalVars}}
+{\footnotesize\ttfamily \label{namespace_w_s_d__ver_011__speed_acf3fe4e5d03799ad9f7f7dd16ee489fa} 
+WSD\+\_\+ver 1\+\_\+speed.\+global\+Vars = \mbox{\hyperlink{class_w_s_d__ver_011__speed_1_1_global_vars}{Global\+Vars}}(\mbox{\hyperlink{namespace_w_s_d__ver_011__speed_a3618ba3102b676ed076dc712870be677}{folder\+\_\+path}})}
+
+\Hypertarget{namespace_w_s_d__ver_011__speed_af33aa691eabaab85abc793de052360c9}\index{WSD\_ver 1\_speed@{WSD\_ver 1\_speed}!OPENSLIDE\_PATH@{OPENSLIDE\_PATH}}
+\index{OPENSLIDE\_PATH@{OPENSLIDE\_PATH}!WSD\_ver 1\_speed@{WSD\_ver 1\_speed}}
+\doxysubsubsection{\texorpdfstring{OPENSLIDE\_PATH}{OPENSLIDE\_PATH}}
+{\footnotesize\ttfamily \label{namespace_w_s_d__ver_011__speed_af33aa691eabaab85abc793de052360c9} 
+WSD\+\_\+ver 1\+\_\+speed.\+OPENSLIDE\+\_\+\+PATH = os.\+path.\+join(\mbox{\hyperlink{namespace_w_s_d__ver_011__speed_aaa9b4608baad5568475c0559f0a5a9f9}{current\+\_\+dir}}, \textquotesingle{}openslide-\/win64-\/20230414\textquotesingle{}, \textquotesingle{}bin\textquotesingle{})}
+
+\Hypertarget{namespace_w_s_d__ver_011__speed_aaa202274ee154fb170a0037316133874}\index{WSD\_ver 1\_speed@{WSD\_ver 1\_speed}!overlap@{overlap}}
+\index{overlap@{overlap}!WSD\_ver 1\_speed@{WSD\_ver 1\_speed}}
+\doxysubsubsection{\texorpdfstring{overlap}{overlap}}
+{\footnotesize\ttfamily \label{namespace_w_s_d__ver_011__speed_aaa202274ee154fb170a0037316133874} 
+WSD\+\_\+ver 1\+\_\+speed.\+overlap}
+
+\Hypertarget{namespace_w_s_d__ver_011__speed_afb314a16c552e91e536429c2d3a18f7b}\index{WSD\_ver 1\_speed@{WSD\_ver 1\_speed}!response@{response}}
+\index{response@{response}!WSD\_ver 1\_speed@{WSD\_ver 1\_speed}}
+\doxysubsubsection{\texorpdfstring{response}{response}}
+{\footnotesize\ttfamily \label{namespace_w_s_d__ver_011__speed_afb314a16c552e91e536429c2d3a18f7b} 
+WSD\+\_\+ver 1\+\_\+speed.\+response = requests.\+get(\mbox{\hyperlink{namespace_w_s_d__ver_011__speed_a66c448e34a9a94e2fde18a5f4534779e}{url}}, stream=True)}
+
+\Hypertarget{namespace_w_s_d__ver_011__speed_a53d3e0c23be7ca6d65ceb9f1d9162ba3}\index{WSD\_ver 1\_speed@{WSD\_ver 1\_speed}!start@{start}}
+\index{start@{start}!WSD\_ver 1\_speed@{WSD\_ver 1\_speed}}
+\doxysubsubsection{\texorpdfstring{start}{start}}
+{\footnotesize\ttfamily \label{namespace_w_s_d__ver_011__speed_a53d3e0c23be7ca6d65ceb9f1d9162ba3} 
+WSD\+\_\+ver 1\+\_\+speed.\+start = time.\+time()}
+
+\Hypertarget{namespace_w_s_d__ver_011__speed_a12991b9758faa3825d6c70c760d6e80a}\index{WSD\_ver 1\_speed@{WSD\_ver 1\_speed}!tile\_size@{tile\_size}}
+\index{tile\_size@{tile\_size}!WSD\_ver 1\_speed@{WSD\_ver 1\_speed}}
+\doxysubsubsection{\texorpdfstring{tile\_size}{tile\_size}}
+{\footnotesize\ttfamily \label{namespace_w_s_d__ver_011__speed_a12991b9758faa3825d6c70c760d6e80a} 
+WSD\+\_\+ver 1\+\_\+speed.\+tile\+\_\+size}
+
+\Hypertarget{namespace_w_s_d__ver_011__speed_a66c448e34a9a94e2fde18a5f4534779e}\index{WSD\_ver 1\_speed@{WSD\_ver 1\_speed}!url@{url}}
+\index{url@{url}!WSD\_ver 1\_speed@{WSD\_ver 1\_speed}}
+\doxysubsubsection{\texorpdfstring{url}{url}}
+{\footnotesize\ttfamily \label{namespace_w_s_d__ver_011__speed_a66c448e34a9a94e2fde18a5f4534779e} 
+str WSD\+\_\+ver 1\+\_\+speed.\+url = "{}https\+://github.\+com/openslide/openslide-\/winbuild/releases/download/v20230414/openslide-\/win64-\/20230414.zip"{}}
+

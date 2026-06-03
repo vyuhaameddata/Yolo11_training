@@ -1,0 +1,82 @@
+\doxysection{torchvision\+\_\+down.\+transforms.\+\_\+transforms\+\_\+video.\+Normalize\+Video Class Reference}
+\hypertarget{classtorchvision__down_1_1transforms_1_1__transforms__video_1_1_normalize_video}{}\label{classtorchvision__down_1_1transforms_1_1__transforms__video_1_1_normalize_video}\index{torchvision\_down.transforms.\_transforms\_video.NormalizeVideo@{torchvision\_down.transforms.\_transforms\_video.NormalizeVideo}}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1transforms_1_1__transforms__video_1_1_normalize_video_a5b0dfac6dc0d0f73e9ffa3857058b5bc}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, \mbox{\hyperlink{classtorchvision__down_1_1transforms_1_1__transforms__video_1_1_normalize_video_a6af247ec1ff7cf8a08263ff420f0fb59}{mean}}, \mbox{\hyperlink{classtorchvision__down_1_1transforms_1_1__transforms__video_1_1_normalize_video_a9475e7296d97c7e9c726e34e8d7b5d98}{std}}, \mbox{\hyperlink{classtorchvision__down_1_1transforms_1_1__transforms__video_1_1_normalize_video_a69655075ea589941516ef362c2c5ed19}{inplace}}=False)
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1transforms_1_1__transforms__video_1_1_normalize_video_a109721386442a6cbc65bdd0297e0190c}{\+\_\+\+\_\+call\+\_\+\+\_\+}} (self, clip)
+\item 
+str \mbox{\hyperlink{classtorchvision__down_1_1transforms_1_1__transforms__video_1_1_normalize_video_ada5fb1fad9bbc3a31789f990056c1472}{\+\_\+\+\_\+repr\+\_\+\+\_\+}} (self)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1transforms_1_1__transforms__video_1_1_normalize_video_a6af247ec1ff7cf8a08263ff420f0fb59}{mean}} = mean
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1transforms_1_1__transforms__video_1_1_normalize_video_a9475e7296d97c7e9c726e34e8d7b5d98}{std}} = std
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1transforms_1_1__transforms__video_1_1_normalize_video_a69655075ea589941516ef362c2c5ed19}{inplace}} = inplace
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}Normalize the video clip by mean subtraction and division by standard deviation
+Args:
+    mean (3-tuple): pixel RGB mean
+    std (3-tuple): pixel RGB standard deviation
+    inplace (boolean): whether do in-place normalization
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classtorchvision__down_1_1transforms_1_1__transforms__video_1_1_normalize_video_a5b0dfac6dc0d0f73e9ffa3857058b5bc}\index{torchvision\_down.transforms.\_transforms\_video.NormalizeVideo@{torchvision\_down.transforms.\_transforms\_video.NormalizeVideo}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!torchvision\_down.transforms.\_transforms\_video.NormalizeVideo@{torchvision\_down.transforms.\_transforms\_video.NormalizeVideo}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1transforms_1_1__transforms__video_1_1_normalize_video_a5b0dfac6dc0d0f73e9ffa3857058b5bc} 
+torchvision\+\_\+down.\+transforms.\+\_\+transforms\+\_\+video.\+Normalize\+Video.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{mean}{, }\item[{}]{std}{, }\item[{}]{inplace}{ = {\ttfamily False}}\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classtorchvision__down_1_1transforms_1_1__transforms__video_1_1_normalize_video_a109721386442a6cbc65bdd0297e0190c}\index{torchvision\_down.transforms.\_transforms\_video.NormalizeVideo@{torchvision\_down.transforms.\_transforms\_video.NormalizeVideo}!\_\_call\_\_@{\_\_call\_\_}}
+\index{\_\_call\_\_@{\_\_call\_\_}!torchvision\_down.transforms.\_transforms\_video.NormalizeVideo@{torchvision\_down.transforms.\_transforms\_video.NormalizeVideo}}
+\doxysubsubsection{\texorpdfstring{\_\_call\_\_()}{\_\_call\_\_()}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1transforms_1_1__transforms__video_1_1_normalize_video_a109721386442a6cbc65bdd0297e0190c} 
+torchvision\+\_\+down.\+transforms.\+\_\+transforms\+\_\+video.\+Normalize\+Video.\+\_\+\+\_\+call\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{clip}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Args:
+    clip (torch.tensor): video clip to be normalized. Size is (C, T, H, W)
+\end{DoxyVerb}
+ \Hypertarget{classtorchvision__down_1_1transforms_1_1__transforms__video_1_1_normalize_video_ada5fb1fad9bbc3a31789f990056c1472}\index{torchvision\_down.transforms.\_transforms\_video.NormalizeVideo@{torchvision\_down.transforms.\_transforms\_video.NormalizeVideo}!\_\_repr\_\_@{\_\_repr\_\_}}
+\index{\_\_repr\_\_@{\_\_repr\_\_}!torchvision\_down.transforms.\_transforms\_video.NormalizeVideo@{torchvision\_down.transforms.\_transforms\_video.NormalizeVideo}}
+\doxysubsubsection{\texorpdfstring{\_\_repr\_\_()}{\_\_repr\_\_()}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1transforms_1_1__transforms__video_1_1_normalize_video_ada5fb1fad9bbc3a31789f990056c1472} 
+ str torchvision\+\_\+down.\+transforms.\+\_\+transforms\+\_\+video.\+Normalize\+Video.\+\_\+\+\_\+repr\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classtorchvision__down_1_1transforms_1_1__transforms__video_1_1_normalize_video_a69655075ea589941516ef362c2c5ed19}\index{torchvision\_down.transforms.\_transforms\_video.NormalizeVideo@{torchvision\_down.transforms.\_transforms\_video.NormalizeVideo}!inplace@{inplace}}
+\index{inplace@{inplace}!torchvision\_down.transforms.\_transforms\_video.NormalizeVideo@{torchvision\_down.transforms.\_transforms\_video.NormalizeVideo}}
+\doxysubsubsection{\texorpdfstring{inplace}{inplace}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1transforms_1_1__transforms__video_1_1_normalize_video_a69655075ea589941516ef362c2c5ed19} 
+torchvision\+\_\+down.\+transforms.\+\_\+transforms\+\_\+video.\+Normalize\+Video.\+inplace = inplace}
+
+\Hypertarget{classtorchvision__down_1_1transforms_1_1__transforms__video_1_1_normalize_video_a6af247ec1ff7cf8a08263ff420f0fb59}\index{torchvision\_down.transforms.\_transforms\_video.NormalizeVideo@{torchvision\_down.transforms.\_transforms\_video.NormalizeVideo}!mean@{mean}}
+\index{mean@{mean}!torchvision\_down.transforms.\_transforms\_video.NormalizeVideo@{torchvision\_down.transforms.\_transforms\_video.NormalizeVideo}}
+\doxysubsubsection{\texorpdfstring{mean}{mean}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1transforms_1_1__transforms__video_1_1_normalize_video_a6af247ec1ff7cf8a08263ff420f0fb59} 
+torchvision\+\_\+down.\+transforms.\+\_\+transforms\+\_\+video.\+Normalize\+Video.\+mean = mean}
+
+\Hypertarget{classtorchvision__down_1_1transforms_1_1__transforms__video_1_1_normalize_video_a9475e7296d97c7e9c726e34e8d7b5d98}\index{torchvision\_down.transforms.\_transforms\_video.NormalizeVideo@{torchvision\_down.transforms.\_transforms\_video.NormalizeVideo}!std@{std}}
+\index{std@{std}!torchvision\_down.transforms.\_transforms\_video.NormalizeVideo@{torchvision\_down.transforms.\_transforms\_video.NormalizeVideo}}
+\doxysubsubsection{\texorpdfstring{std}{std}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1transforms_1_1__transforms__video_1_1_normalize_video_a9475e7296d97c7e9c726e34e8d7b5d98} 
+torchvision\+\_\+down.\+transforms.\+\_\+transforms\+\_\+video.\+Normalize\+Video.\+std = std}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Cervi\+AI/torchvision\+\_\+down/transforms/\mbox{\hyperlink{__transforms__video_8py}{\+\_\+transforms\+\_\+video.\+py}}\end{DoxyCompactItemize}

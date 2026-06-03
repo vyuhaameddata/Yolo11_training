@@ -1,0 +1,77 @@
+\doxysection{torchvision\+\_\+down.\+transforms.\+transforms.\+Random\+Equalize Class Reference}
+\hypertarget{classtorchvision__down_1_1transforms_1_1transforms_1_1_random_equalize}{}\label{classtorchvision__down_1_1transforms_1_1transforms_1_1_random_equalize}\index{torchvision\_down.transforms.transforms.RandomEqualize@{torchvision\_down.transforms.transforms.RandomEqualize}}
+Inheritance diagram for torchvision\+\_\+down.\+transforms.\+transforms.\+Random\+Equalize\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classtorchvision__down_1_1transforms_1_1transforms_1_1_random_equalize}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1transforms_1_1transforms_1_1_random_equalize_a777a0279ea093c07bdb7db0cbb83057b}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, \mbox{\hyperlink{classtorchvision__down_1_1transforms_1_1transforms_1_1_random_equalize_a9b92dacefeef60249b05012f59cda124}{p}}=0.\+5)
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1transforms_1_1transforms_1_1_random_equalize_a94e20f7a656c3353efb2ae54145aa0d1}{forward}} (self, img)
+\item 
+str \mbox{\hyperlink{classtorchvision__down_1_1transforms_1_1transforms_1_1_random_equalize_a0b1cc06965f22c78581f518c17dfaa14}{\+\_\+\+\_\+repr\+\_\+\+\_\+}} (self)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1transforms_1_1transforms_1_1_random_equalize_a9b92dacefeef60249b05012f59cda124}{p}} = p
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}Equalize the histogram of the given image randomly with a given probability.
+If the image is torch Tensor, it is expected
+to have [..., 1 or 3, H, W] shape, where ... means an arbitrary number of leading dimensions.
+If img is PIL Image, it is expected to be in mode "P", "L" or "RGB".
+
+Args:
+    p (float): probability of the image being equalized. Default value is 0.5
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classtorchvision__down_1_1transforms_1_1transforms_1_1_random_equalize_a777a0279ea093c07bdb7db0cbb83057b}\index{torchvision\_down.transforms.transforms.RandomEqualize@{torchvision\_down.transforms.transforms.RandomEqualize}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!torchvision\_down.transforms.transforms.RandomEqualize@{torchvision\_down.transforms.transforms.RandomEqualize}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1transforms_1_1transforms_1_1_random_equalize_a777a0279ea093c07bdb7db0cbb83057b} 
+torchvision\+\_\+down.\+transforms.\+transforms.\+Random\+Equalize.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{p}{ = {\ttfamily 0.5}}\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classtorchvision__down_1_1transforms_1_1transforms_1_1_random_equalize_a0b1cc06965f22c78581f518c17dfaa14}\index{torchvision\_down.transforms.transforms.RandomEqualize@{torchvision\_down.transforms.transforms.RandomEqualize}!\_\_repr\_\_@{\_\_repr\_\_}}
+\index{\_\_repr\_\_@{\_\_repr\_\_}!torchvision\_down.transforms.transforms.RandomEqualize@{torchvision\_down.transforms.transforms.RandomEqualize}}
+\doxysubsubsection{\texorpdfstring{\_\_repr\_\_()}{\_\_repr\_\_()}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1transforms_1_1transforms_1_1_random_equalize_a0b1cc06965f22c78581f518c17dfaa14} 
+ str torchvision\+\_\+down.\+transforms.\+transforms.\+Random\+Equalize.\+\_\+\+\_\+repr\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classtorchvision__down_1_1transforms_1_1transforms_1_1_random_equalize_a94e20f7a656c3353efb2ae54145aa0d1}\index{torchvision\_down.transforms.transforms.RandomEqualize@{torchvision\_down.transforms.transforms.RandomEqualize}!forward@{forward}}
+\index{forward@{forward}!torchvision\_down.transforms.transforms.RandomEqualize@{torchvision\_down.transforms.transforms.RandomEqualize}}
+\doxysubsubsection{\texorpdfstring{forward()}{forward()}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1transforms_1_1transforms_1_1_random_equalize_a94e20f7a656c3353efb2ae54145aa0d1} 
+torchvision\+\_\+down.\+transforms.\+transforms.\+Random\+Equalize.\+forward (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{img}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Args:
+    img (PIL Image or Tensor): Image to be equalized.
+
+Returns:
+    PIL Image or Tensor: Randomly equalized image.
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classtorchvision__down_1_1transforms_1_1transforms_1_1_random_equalize_a9b92dacefeef60249b05012f59cda124}\index{torchvision\_down.transforms.transforms.RandomEqualize@{torchvision\_down.transforms.transforms.RandomEqualize}!p@{p}}
+\index{p@{p}!torchvision\_down.transforms.transforms.RandomEqualize@{torchvision\_down.transforms.transforms.RandomEqualize}}
+\doxysubsubsection{\texorpdfstring{p}{p}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1transforms_1_1transforms_1_1_random_equalize_a9b92dacefeef60249b05012f59cda124} 
+torchvision\+\_\+down.\+transforms.\+transforms.\+Random\+Equalize.\+p = p}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Cervi\+AI/torchvision\+\_\+down/transforms/\mbox{\hyperlink{transforms_8py}{transforms.\+py}}\end{DoxyCompactItemize}

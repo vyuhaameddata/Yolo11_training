@@ -1,0 +1,139 @@
+\doxysection{torchvision\+\_\+down.\+models.\+detection.\+ssd Namespace Reference}
+\hypertarget{namespacetorchvision__down_1_1models_1_1detection_1_1ssd}{}\label{namespacetorchvision__down_1_1models_1_1detection_1_1ssd}\index{torchvision\_down.models.detection.ssd@{torchvision\_down.models.detection.ssd}}
+\doxysubsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classtorchvision__down_1_1models_1_1detection_1_1ssd_1_1_s_s_d}{SSD}}
+\item 
+class \mbox{\hyperlink{classtorchvision__down_1_1models_1_1detection_1_1ssd_1_1_s_s_d_classification_head}{SSDClassification\+Head}}
+\item 
+class \mbox{\hyperlink{classtorchvision__down_1_1models_1_1detection_1_1ssd_1_1_s_s_d_feature_extractor_v_g_g}{SSDFeature\+Extractor\+VGG}}
+\item 
+class \mbox{\hyperlink{classtorchvision__down_1_1models_1_1detection_1_1ssd_1_1_s_s_d_head}{SSDHead}}
+\item 
+class \mbox{\hyperlink{classtorchvision__down_1_1models_1_1detection_1_1ssd_1_1_s_s_d_regression_head}{SSDRegression\+Head}}
+\item 
+class \mbox{\hyperlink{classtorchvision__down_1_1models_1_1detection_1_1ssd_1_1_s_s_d_scoring_head}{SSDScoring\+Head}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{namespacetorchvision__down_1_1models_1_1detection_1_1ssd_a04d52591b5bc715113aa9cfc76374dde}{\+\_\+xavier\+\_\+init}} (nn.\+Module conv)
+\item 
+\mbox{\hyperlink{namespacetorchvision__down_1_1models_1_1detection_1_1ssd_a45af53baf3ff287d2af0e62f35322175}{\+\_\+vgg\+\_\+extractor}} (\mbox{\hyperlink{classtorchvision__down_1_1models_1_1vgg_1_1_v_g_g}{vgg.\+VGG}} backbone, bool highres, int trainable\+\_\+layers)
+\item 
+\mbox{\hyperlink{namespacetorchvision__down_1_1models_1_1detection_1_1ssd_a36987a30a2de6763ae99359a162f4d15}{ssd300\+\_\+vgg16}} (bool pretrained=False, bool progress=True, int num\+\_\+classes=91, bool pretrained\+\_\+backbone=True, Optional\mbox{[}int\mbox{]} trainable\+\_\+backbone\+\_\+layers=None, \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}Any kwargs)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+list \mbox{\hyperlink{namespacetorchvision__down_1_1models_1_1detection_1_1ssd_a22253f2c0fdd2dc7447378076bf342a9}{\+\_\+\+\_\+all\+\_\+\+\_\+}} = \mbox{[}"{}SSD"{}, "{}ssd300\+\_\+vgg16"{}\mbox{]}
+\item 
+dict \mbox{\hyperlink{namespacetorchvision__down_1_1models_1_1detection_1_1ssd_a67c67c8a5d5490b5b87134b93bf5668c}{model\+\_\+urls}}
+\item 
+dict \mbox{\hyperlink{namespacetorchvision__down_1_1models_1_1detection_1_1ssd_a54a0d90f97b514e9da142d76f9c2ab68}{backbone\+\_\+urls}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{namespacetorchvision__down_1_1models_1_1detection_1_1ssd_a45af53baf3ff287d2af0e62f35322175}\index{torchvision\_down.models.detection.ssd@{torchvision\_down.models.detection.ssd}!\_vgg\_extractor@{\_vgg\_extractor}}
+\index{\_vgg\_extractor@{\_vgg\_extractor}!torchvision\_down.models.detection.ssd@{torchvision\_down.models.detection.ssd}}
+\doxysubsubsection{\texorpdfstring{\_vgg\_extractor()}{\_vgg\_extractor()}}
+{\footnotesize\ttfamily \label{namespacetorchvision__down_1_1models_1_1detection_1_1ssd_a45af53baf3ff287d2af0e62f35322175} 
+torchvision\+\_\+down.\+models.\+detection.\+ssd.\+\_\+vgg\+\_\+extractor (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classtorchvision__down_1_1models_1_1vgg_1_1_v_g_g}{vgg.\+VGG}}}]{backbone}{, }\item[{bool}]{highres}{, }\item[{int}]{trainable\+\_\+layers}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{namespacetorchvision__down_1_1models_1_1detection_1_1ssd_a04d52591b5bc715113aa9cfc76374dde}\index{torchvision\_down.models.detection.ssd@{torchvision\_down.models.detection.ssd}!\_xavier\_init@{\_xavier\_init}}
+\index{\_xavier\_init@{\_xavier\_init}!torchvision\_down.models.detection.ssd@{torchvision\_down.models.detection.ssd}}
+\doxysubsubsection{\texorpdfstring{\_xavier\_init()}{\_xavier\_init()}}
+{\footnotesize\ttfamily \label{namespacetorchvision__down_1_1models_1_1detection_1_1ssd_a04d52591b5bc715113aa9cfc76374dde} 
+torchvision\+\_\+down.\+models.\+detection.\+ssd.\+\_\+xavier\+\_\+init (\begin{DoxyParamCaption}\item[{nn.\+Module}]{conv}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{namespacetorchvision__down_1_1models_1_1detection_1_1ssd_a36987a30a2de6763ae99359a162f4d15}\index{torchvision\_down.models.detection.ssd@{torchvision\_down.models.detection.ssd}!ssd300\_vgg16@{ssd300\_vgg16}}
+\index{ssd300\_vgg16@{ssd300\_vgg16}!torchvision\_down.models.detection.ssd@{torchvision\_down.models.detection.ssd}}
+\doxysubsubsection{\texorpdfstring{ssd300\_vgg16()}{ssd300\_vgg16()}}
+{\footnotesize\ttfamily \label{namespacetorchvision__down_1_1models_1_1detection_1_1ssd_a36987a30a2de6763ae99359a162f4d15} 
+torchvision\+\_\+down.\+models.\+detection.\+ssd.\+ssd300\+\_\+vgg16 (\begin{DoxyParamCaption}\item[{bool }]{pretrained}{ = {\ttfamily False}, }\item[{bool }]{progress}{ = {\ttfamily True}, }\item[{int }]{num\+\_\+classes}{ = {\ttfamily 91}, }\item[{bool }]{pretrained\+\_\+backbone}{ = {\ttfamily True}, }\item[{Optional\mbox{[}int\mbox{]} }]{trainable\+\_\+backbone\+\_\+layers}{ = {\ttfamily None}, }\item[{\texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}Any}]{kwargs}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Constructs an SSD model with input size 300x300 and a VGG16 backbone.
+
+Reference: `"SSD: Single Shot MultiBox Detector" <https://arxiv.org/abs/1512.02325>`_.
+
+The input to the model is expected to be a list of tensors, each of shape [C, H, W], one for each
+image, and should be in 0-1 range. Different images can have different sizes but they will be resized
+to a fixed size before passing it to the backbone.
+
+The behavior of the model changes depending if it is in training or evaluation mode.
+
+During training, the model expects both the input tensors, as well as a targets (list of dictionary),
+containing:
+
+    - boxes (``FloatTensor[N, 4]``): the ground-truth boxes in ``[x1, y1, x2, y2]`` format, with
+      ``0 <= x1 < x2 <= W`` and ``0 <= y1 < y2 <= H``.
+    - labels (Int64Tensor[N]): the class label for each ground-truth box
+
+The model returns a Dict[Tensor] during training, containing the classification and regression
+losses.
+
+During inference, the model requires only the input tensors, and returns the post-processed
+predictions as a List[Dict[Tensor]], one for each input image. The fields of the Dict are as
+follows, where ``N`` is the number of detections:
+
+    - boxes (``FloatTensor[N, 4]``): the predicted boxes in ``[x1, y1, x2, y2]`` format, with
+      ``0 <= x1 < x2 <= W`` and ``0 <= y1 < y2 <= H``.
+    - labels (Int64Tensor[N]): the predicted labels for each detection
+    - scores (Tensor[N]): the scores for each detection
+
+Example:
+
+    >>> model = torchvision.models.detection.ssd300_vgg16(pretrained=True)
+    >>> model.eval()
+    >>> x = [torch.rand(3, 300, 300), torch.rand(3, 500, 400)]
+    >>> predictions = model(x)
+
+Args:
+    pretrained (bool): If True, returns a model pre-trained on COCO train2017
+    progress (bool): If True, displays a progress bar of the download to stderr
+    num_classes (int): number of output classes of the model (including the background)
+    pretrained_backbone (bool): If True, returns a model with backbone pre-trained on Imagenet
+    trainable_backbone_layers (int): number of trainable (not frozen) resnet layers starting from final block.
+        Valid values are between 0 and 5, with 5 meaning all backbone layers are trainable. If ``None`` is
+        passed (the default) this value is set to 4.
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Variable Documentation}
+\Hypertarget{namespacetorchvision__down_1_1models_1_1detection_1_1ssd_a22253f2c0fdd2dc7447378076bf342a9}\index{torchvision\_down.models.detection.ssd@{torchvision\_down.models.detection.ssd}!\_\_all\_\_@{\_\_all\_\_}}
+\index{\_\_all\_\_@{\_\_all\_\_}!torchvision\_down.models.detection.ssd@{torchvision\_down.models.detection.ssd}}
+\doxysubsubsection{\texorpdfstring{\_\_all\_\_}{\_\_all\_\_}}
+{\footnotesize\ttfamily \label{namespacetorchvision__down_1_1models_1_1detection_1_1ssd_a22253f2c0fdd2dc7447378076bf342a9} 
+list torchvision\+\_\+down.\+models.\+detection.\+ssd.\+\_\+\+\_\+all\+\_\+\+\_\+ = \mbox{[}"{}SSD"{}, "{}ssd300\+\_\+vgg16"{}\mbox{]}\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{namespacetorchvision__down_1_1models_1_1detection_1_1ssd_a54a0d90f97b514e9da142d76f9c2ab68}\index{torchvision\_down.models.detection.ssd@{torchvision\_down.models.detection.ssd}!backbone\_urls@{backbone\_urls}}
+\index{backbone\_urls@{backbone\_urls}!torchvision\_down.models.detection.ssd@{torchvision\_down.models.detection.ssd}}
+\doxysubsubsection{\texorpdfstring{backbone\_urls}{backbone\_urls}}
+{\footnotesize\ttfamily \label{namespacetorchvision__down_1_1models_1_1detection_1_1ssd_a54a0d90f97b514e9da142d76f9c2ab68} 
+dict torchvision\+\_\+down.\+models.\+detection.\+ssd.\+backbone\+\_\+urls}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ =\ \ \{}
+\DoxyCodeLine{00002\ \ \ \ \ \textcolor{comment}{\#\ We\ port\ the\ features\ of\ a\ VGG16\ backbone\ trained\ by\ amdegroot\ because\ unlike\ the\ one\ on\ TorchVision,\ it\ uses\ the}}
+\DoxyCodeLine{00003\ \ \ \ \ \textcolor{comment}{\#\ same\ input\ standardization\ method\ as\ the\ paper.\ Ref:\ https://s3.amazonaws.com/amdegroot-\/models/vgg16\_reducedfc.pth}}
+\DoxyCodeLine{00004\ \ \ \ \ \textcolor{comment}{\#\ Only\ the\ \`{}features`\ weights\ have\ proper\ values,\ those\ on\ the\ \`{}classifier`\ module\ are\ filled\ with\ nans.}}
+\DoxyCodeLine{00005\ \ \ \ \ \textcolor{stringliteral}{"{}vgg16\_features"{}}:\ \textcolor{stringliteral}{"{}https://download.pytorch.org/models/vgg16\_features-\/amdegroot-\/88682ab5.pth"{}}}
+\DoxyCodeLine{00006\ \}}
+
+\end{DoxyCode}
+\Hypertarget{namespacetorchvision__down_1_1models_1_1detection_1_1ssd_a67c67c8a5d5490b5b87134b93bf5668c}\index{torchvision\_down.models.detection.ssd@{torchvision\_down.models.detection.ssd}!model\_urls@{model\_urls}}
+\index{model\_urls@{model\_urls}!torchvision\_down.models.detection.ssd@{torchvision\_down.models.detection.ssd}}
+\doxysubsubsection{\texorpdfstring{model\_urls}{model\_urls}}
+{\footnotesize\ttfamily \label{namespacetorchvision__down_1_1models_1_1detection_1_1ssd_a67c67c8a5d5490b5b87134b93bf5668c} 
+dict torchvision\+\_\+down.\+models.\+detection.\+ssd.\+model\+\_\+urls}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ =\ \ \{}
+\DoxyCodeLine{00002\ \ \ \ \ \textcolor{stringliteral}{"{}ssd300\_vgg16\_coco"{}}:\ \textcolor{stringliteral}{"{}https://download.pytorch.org/models/ssd300\_vgg16\_coco-\/b556d3b4.pth"{}},}
+\DoxyCodeLine{00003\ \}}
+
+\end{DoxyCode}

@@ -1,0 +1,151 @@
+\doxysection{torchvision\+\_\+down.\+ops.\+deform\+\_\+conv.\+Deform\+Conv2d Class Reference}
+\hypertarget{classtorchvision__down_1_1ops_1_1deform__conv_1_1_deform_conv2d}{}\label{classtorchvision__down_1_1ops_1_1deform__conv_1_1_deform_conv2d}\index{torchvision\_down.ops.deform\_conv.DeformConv2d@{torchvision\_down.ops.deform\_conv.DeformConv2d}}
+Inheritance diagram for torchvision\+\_\+down.\+ops.\+deform\+\_\+conv.\+Deform\+Conv2d\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classtorchvision__down_1_1ops_1_1deform__conv_1_1_deform_conv2d}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1ops_1_1deform__conv_1_1_deform_conv2d_a72a9d590c099930dff81699b8991d80f}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, int \mbox{\hyperlink{classtorchvision__down_1_1ops_1_1deform__conv_1_1_deform_conv2d_a3a51c48460538f11e0fd6a21a5451577}{in\+\_\+channels}}, int \mbox{\hyperlink{classtorchvision__down_1_1ops_1_1deform__conv_1_1_deform_conv2d_ad987f0765c5d0fab1ed151047634a2c0}{out\+\_\+channels}}, int \mbox{\hyperlink{classtorchvision__down_1_1ops_1_1deform__conv_1_1_deform_conv2d_a470c8ee95317acc50e991698f28584f1}{kernel\+\_\+size}}, int \mbox{\hyperlink{classtorchvision__down_1_1ops_1_1deform__conv_1_1_deform_conv2d_a01fe9cb699da924a840bbb64c313615d}{stride}}=1, int \mbox{\hyperlink{classtorchvision__down_1_1ops_1_1deform__conv_1_1_deform_conv2d_aa0a5b3e390705cd092aa93d24abe58ac}{padding}}=0, int \mbox{\hyperlink{classtorchvision__down_1_1ops_1_1deform__conv_1_1_deform_conv2d_a1963d6ebfc9764f10de928b0eb2bc5f9}{dilation}}=1, int \mbox{\hyperlink{classtorchvision__down_1_1ops_1_1deform__conv_1_1_deform_conv2d_ae28586ad172155d5138a962939a5af1c}{groups}}=1, bool \mbox{\hyperlink{classtorchvision__down_1_1ops_1_1deform__conv_1_1_deform_conv2d_a702ee9439e735e00001421fecf29ff01}{bias}}=True)
+\item 
+None \mbox{\hyperlink{classtorchvision__down_1_1ops_1_1deform__conv_1_1_deform_conv2d_a819a6b3aeba186d59c1a008d34a3c85d}{reset\+\_\+parameters}} (self)
+\item 
+Tensor \mbox{\hyperlink{classtorchvision__down_1_1ops_1_1deform__conv_1_1_deform_conv2d_a3262021517ff5d50f041a4981f5c9883}{forward}} (self, Tensor input, Tensor offset, Optional\mbox{[}Tensor\mbox{]} mask=None)
+\item 
+str \mbox{\hyperlink{classtorchvision__down_1_1ops_1_1deform__conv_1_1_deform_conv2d_ad59ec34238303ae3e462dc670acfca41}{\+\_\+\+\_\+repr\+\_\+\+\_\+}} (self)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1ops_1_1deform__conv_1_1_deform_conv2d_a3a51c48460538f11e0fd6a21a5451577}{in\+\_\+channels}} = in\+\_\+channels
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1ops_1_1deform__conv_1_1_deform_conv2d_ad987f0765c5d0fab1ed151047634a2c0}{out\+\_\+channels}} = out\+\_\+channels
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1ops_1_1deform__conv_1_1_deform_conv2d_a470c8ee95317acc50e991698f28584f1}{kernel\+\_\+size}} = \+\_\+pair(kernel\+\_\+size)
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1ops_1_1deform__conv_1_1_deform_conv2d_a01fe9cb699da924a840bbb64c313615d}{stride}} = \+\_\+pair(stride)
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1ops_1_1deform__conv_1_1_deform_conv2d_aa0a5b3e390705cd092aa93d24abe58ac}{padding}} = \+\_\+pair(padding)
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1ops_1_1deform__conv_1_1_deform_conv2d_a1963d6ebfc9764f10de928b0eb2bc5f9}{dilation}} = \+\_\+pair(dilation)
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1ops_1_1deform__conv_1_1_deform_conv2d_ae28586ad172155d5138a962939a5af1c}{groups}} = groups
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1ops_1_1deform__conv_1_1_deform_conv2d_aceb08195b1cf8d047acf92e5e81b55ae}{weight}}
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1ops_1_1deform__conv_1_1_deform_conv2d_a702ee9439e735e00001421fecf29ff01}{bias}} = Parameter(torch.\+empty(\mbox{\hyperlink{classtorchvision__down_1_1ops_1_1deform__conv_1_1_deform_conv2d_ad987f0765c5d0fab1ed151047634a2c0}{out\+\_\+channels}}))
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}See :func:`deform_conv2d`.
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classtorchvision__down_1_1ops_1_1deform__conv_1_1_deform_conv2d_a72a9d590c099930dff81699b8991d80f}\index{torchvision\_down.ops.deform\_conv.DeformConv2d@{torchvision\_down.ops.deform\_conv.DeformConv2d}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!torchvision\_down.ops.deform\_conv.DeformConv2d@{torchvision\_down.ops.deform\_conv.DeformConv2d}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1ops_1_1deform__conv_1_1_deform_conv2d_a72a9d590c099930dff81699b8991d80f} 
+torchvision\+\_\+down.\+ops.\+deform\+\_\+conv.\+Deform\+Conv2d.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{int}]{in\+\_\+channels}{, }\item[{int}]{out\+\_\+channels}{, }\item[{int}]{kernel\+\_\+size}{, }\item[{int }]{stride}{ = {\ttfamily 1}, }\item[{int }]{padding}{ = {\ttfamily 0}, }\item[{int }]{dilation}{ = {\ttfamily 1}, }\item[{int }]{groups}{ = {\ttfamily 1}, }\item[{bool }]{bias}{ = {\ttfamily True}}\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classtorchvision__down_1_1ops_1_1deform__conv_1_1_deform_conv2d_ad59ec34238303ae3e462dc670acfca41}\index{torchvision\_down.ops.deform\_conv.DeformConv2d@{torchvision\_down.ops.deform\_conv.DeformConv2d}!\_\_repr\_\_@{\_\_repr\_\_}}
+\index{\_\_repr\_\_@{\_\_repr\_\_}!torchvision\_down.ops.deform\_conv.DeformConv2d@{torchvision\_down.ops.deform\_conv.DeformConv2d}}
+\doxysubsubsection{\texorpdfstring{\_\_repr\_\_()}{\_\_repr\_\_()}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1ops_1_1deform__conv_1_1_deform_conv2d_ad59ec34238303ae3e462dc670acfca41} 
+ str torchvision\+\_\+down.\+ops.\+deform\+\_\+conv.\+Deform\+Conv2d.\+\_\+\+\_\+repr\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classtorchvision__down_1_1ops_1_1deform__conv_1_1_deform_conv2d_a3262021517ff5d50f041a4981f5c9883}\index{torchvision\_down.ops.deform\_conv.DeformConv2d@{torchvision\_down.ops.deform\_conv.DeformConv2d}!forward@{forward}}
+\index{forward@{forward}!torchvision\_down.ops.deform\_conv.DeformConv2d@{torchvision\_down.ops.deform\_conv.DeformConv2d}}
+\doxysubsubsection{\texorpdfstring{forward()}{forward()}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1ops_1_1deform__conv_1_1_deform_conv2d_a3262021517ff5d50f041a4981f5c9883} 
+ Tensor torchvision\+\_\+down.\+ops.\+deform\+\_\+conv.\+Deform\+Conv2d.\+forward (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{Tensor}]{input}{, }\item[{Tensor}]{offset}{, }\item[{Optional\mbox{[}Tensor\mbox{]} }]{mask}{ = {\ttfamily None}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Args:
+    input (Tensor[batch_size, in_channels, in_height, in_width]): input tensor
+    offset (Tensor[batch_size, 2 * offset_groups * kernel_height * kernel_width, out_height, out_width]):
+        offsets to be applied for each position in the convolution kernel.
+    mask (Tensor[batch_size, offset_groups * kernel_height * kernel_width, out_height, out_width]):
+        masks to be applied for each position in the convolution kernel.
+\end{DoxyVerb}
+ \Hypertarget{classtorchvision__down_1_1ops_1_1deform__conv_1_1_deform_conv2d_a819a6b3aeba186d59c1a008d34a3c85d}\index{torchvision\_down.ops.deform\_conv.DeformConv2d@{torchvision\_down.ops.deform\_conv.DeformConv2d}!reset\_parameters@{reset\_parameters}}
+\index{reset\_parameters@{reset\_parameters}!torchvision\_down.ops.deform\_conv.DeformConv2d@{torchvision\_down.ops.deform\_conv.DeformConv2d}}
+\doxysubsubsection{\texorpdfstring{reset\_parameters()}{reset\_parameters()}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1ops_1_1deform__conv_1_1_deform_conv2d_a819a6b3aeba186d59c1a008d34a3c85d} 
+ None torchvision\+\_\+down.\+ops.\+deform\+\_\+conv.\+Deform\+Conv2d.\+reset\+\_\+parameters (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classtorchvision__down_1_1ops_1_1deform__conv_1_1_deform_conv2d_a702ee9439e735e00001421fecf29ff01}\index{torchvision\_down.ops.deform\_conv.DeformConv2d@{torchvision\_down.ops.deform\_conv.DeformConv2d}!bias@{bias}}
+\index{bias@{bias}!torchvision\_down.ops.deform\_conv.DeformConv2d@{torchvision\_down.ops.deform\_conv.DeformConv2d}}
+\doxysubsubsection{\texorpdfstring{bias}{bias}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1ops_1_1deform__conv_1_1_deform_conv2d_a702ee9439e735e00001421fecf29ff01} 
+torchvision\+\_\+down.\+ops.\+deform\+\_\+conv.\+Deform\+Conv2d.\+bias = Parameter(torch.\+empty(\mbox{\hyperlink{classtorchvision__down_1_1ops_1_1deform__conv_1_1_deform_conv2d_ad987f0765c5d0fab1ed151047634a2c0}{out\+\_\+channels}}))}
+
+\Hypertarget{classtorchvision__down_1_1ops_1_1deform__conv_1_1_deform_conv2d_a1963d6ebfc9764f10de928b0eb2bc5f9}\index{torchvision\_down.ops.deform\_conv.DeformConv2d@{torchvision\_down.ops.deform\_conv.DeformConv2d}!dilation@{dilation}}
+\index{dilation@{dilation}!torchvision\_down.ops.deform\_conv.DeformConv2d@{torchvision\_down.ops.deform\_conv.DeformConv2d}}
+\doxysubsubsection{\texorpdfstring{dilation}{dilation}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1ops_1_1deform__conv_1_1_deform_conv2d_a1963d6ebfc9764f10de928b0eb2bc5f9} 
+torchvision\+\_\+down.\+ops.\+deform\+\_\+conv.\+Deform\+Conv2d.\+dilation = \+\_\+pair(dilation)}
+
+\Hypertarget{classtorchvision__down_1_1ops_1_1deform__conv_1_1_deform_conv2d_ae28586ad172155d5138a962939a5af1c}\index{torchvision\_down.ops.deform\_conv.DeformConv2d@{torchvision\_down.ops.deform\_conv.DeformConv2d}!groups@{groups}}
+\index{groups@{groups}!torchvision\_down.ops.deform\_conv.DeformConv2d@{torchvision\_down.ops.deform\_conv.DeformConv2d}}
+\doxysubsubsection{\texorpdfstring{groups}{groups}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1ops_1_1deform__conv_1_1_deform_conv2d_ae28586ad172155d5138a962939a5af1c} 
+torchvision\+\_\+down.\+ops.\+deform\+\_\+conv.\+Deform\+Conv2d.\+groups = groups}
+
+\Hypertarget{classtorchvision__down_1_1ops_1_1deform__conv_1_1_deform_conv2d_a3a51c48460538f11e0fd6a21a5451577}\index{torchvision\_down.ops.deform\_conv.DeformConv2d@{torchvision\_down.ops.deform\_conv.DeformConv2d}!in\_channels@{in\_channels}}
+\index{in\_channels@{in\_channels}!torchvision\_down.ops.deform\_conv.DeformConv2d@{torchvision\_down.ops.deform\_conv.DeformConv2d}}
+\doxysubsubsection{\texorpdfstring{in\_channels}{in\_channels}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1ops_1_1deform__conv_1_1_deform_conv2d_a3a51c48460538f11e0fd6a21a5451577} 
+torchvision\+\_\+down.\+ops.\+deform\+\_\+conv.\+Deform\+Conv2d.\+in\+\_\+channels = in\+\_\+channels}
+
+\Hypertarget{classtorchvision__down_1_1ops_1_1deform__conv_1_1_deform_conv2d_a470c8ee95317acc50e991698f28584f1}\index{torchvision\_down.ops.deform\_conv.DeformConv2d@{torchvision\_down.ops.deform\_conv.DeformConv2d}!kernel\_size@{kernel\_size}}
+\index{kernel\_size@{kernel\_size}!torchvision\_down.ops.deform\_conv.DeformConv2d@{torchvision\_down.ops.deform\_conv.DeformConv2d}}
+\doxysubsubsection{\texorpdfstring{kernel\_size}{kernel\_size}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1ops_1_1deform__conv_1_1_deform_conv2d_a470c8ee95317acc50e991698f28584f1} 
+torchvision\+\_\+down.\+ops.\+deform\+\_\+conv.\+Deform\+Conv2d.\+kernel\+\_\+size = \+\_\+pair(kernel\+\_\+size)}
+
+\Hypertarget{classtorchvision__down_1_1ops_1_1deform__conv_1_1_deform_conv2d_ad987f0765c5d0fab1ed151047634a2c0}\index{torchvision\_down.ops.deform\_conv.DeformConv2d@{torchvision\_down.ops.deform\_conv.DeformConv2d}!out\_channels@{out\_channels}}
+\index{out\_channels@{out\_channels}!torchvision\_down.ops.deform\_conv.DeformConv2d@{torchvision\_down.ops.deform\_conv.DeformConv2d}}
+\doxysubsubsection{\texorpdfstring{out\_channels}{out\_channels}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1ops_1_1deform__conv_1_1_deform_conv2d_ad987f0765c5d0fab1ed151047634a2c0} 
+torchvision\+\_\+down.\+ops.\+deform\+\_\+conv.\+Deform\+Conv2d.\+out\+\_\+channels = out\+\_\+channels}
+
+\Hypertarget{classtorchvision__down_1_1ops_1_1deform__conv_1_1_deform_conv2d_aa0a5b3e390705cd092aa93d24abe58ac}\index{torchvision\_down.ops.deform\_conv.DeformConv2d@{torchvision\_down.ops.deform\_conv.DeformConv2d}!padding@{padding}}
+\index{padding@{padding}!torchvision\_down.ops.deform\_conv.DeformConv2d@{torchvision\_down.ops.deform\_conv.DeformConv2d}}
+\doxysubsubsection{\texorpdfstring{padding}{padding}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1ops_1_1deform__conv_1_1_deform_conv2d_aa0a5b3e390705cd092aa93d24abe58ac} 
+torchvision\+\_\+down.\+ops.\+deform\+\_\+conv.\+Deform\+Conv2d.\+padding = \+\_\+pair(padding)}
+
+\Hypertarget{classtorchvision__down_1_1ops_1_1deform__conv_1_1_deform_conv2d_a01fe9cb699da924a840bbb64c313615d}\index{torchvision\_down.ops.deform\_conv.DeformConv2d@{torchvision\_down.ops.deform\_conv.DeformConv2d}!stride@{stride}}
+\index{stride@{stride}!torchvision\_down.ops.deform\_conv.DeformConv2d@{torchvision\_down.ops.deform\_conv.DeformConv2d}}
+\doxysubsubsection{\texorpdfstring{stride}{stride}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1ops_1_1deform__conv_1_1_deform_conv2d_a01fe9cb699da924a840bbb64c313615d} 
+torchvision\+\_\+down.\+ops.\+deform\+\_\+conv.\+Deform\+Conv2d.\+stride = \+\_\+pair(stride)}
+
+\Hypertarget{classtorchvision__down_1_1ops_1_1deform__conv_1_1_deform_conv2d_aceb08195b1cf8d047acf92e5e81b55ae}\index{torchvision\_down.ops.deform\_conv.DeformConv2d@{torchvision\_down.ops.deform\_conv.DeformConv2d}!weight@{weight}}
+\index{weight@{weight}!torchvision\_down.ops.deform\_conv.DeformConv2d@{torchvision\_down.ops.deform\_conv.DeformConv2d}}
+\doxysubsubsection{\texorpdfstring{weight}{weight}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1ops_1_1deform__conv_1_1_deform_conv2d_aceb08195b1cf8d047acf92e5e81b55ae} 
+torchvision\+\_\+down.\+ops.\+deform\+\_\+conv.\+Deform\+Conv2d.\+weight}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \ Parameter(}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ torch.empty(out\_channels,\ in\_channels\ //\ groups,\ self.kernel\_size[0],\ self.kernel\_size[1])}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ )}
+
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Cervi\+AI/torchvision\+\_\+down/ops/\mbox{\hyperlink{deform__conv_8py}{deform\+\_\+conv.\+py}}\end{DoxyCompactItemize}

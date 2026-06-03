@@ -1,0 +1,27 @@
+var classtorchvision__down_1_1datasets_1_1stl10_1_1_s_t_l10 =
+[
+    [ "__init__", "classtorchvision__down_1_1datasets_1_1stl10_1_1_s_t_l10.html#a820c3595015bbd2366598616f5f14c73", null ],
+    [ "__getitem__", "classtorchvision__down_1_1datasets_1_1stl10_1_1_s_t_l10.html#af45cab66c2b2418bb715b693fe84c9c4", null ],
+    [ "__len__", "classtorchvision__down_1_1datasets_1_1stl10_1_1_s_t_l10.html#af6523781faf6e064b74d147eea1eeb4d", null ],
+    [ "__load_folds", "classtorchvision__down_1_1datasets_1_1stl10_1_1_s_t_l10.html#a2b3518ac2bbc42e824ae1b71ad8e8688", null ],
+    [ "__loadfile", "classtorchvision__down_1_1datasets_1_1stl10_1_1_s_t_l10.html#a8e357a53a8c5238acf763afb756b3e07", null ],
+    [ "_check_integrity", "classtorchvision__down_1_1datasets_1_1stl10_1_1_s_t_l10.html#a7b8b3a3e5cc248d0a1f1339f1eff8941", null ],
+    [ "_verify_folds", "classtorchvision__down_1_1datasets_1_1stl10_1_1_s_t_l10.html#a522971aeea438c6a254478374fdff151", null ],
+    [ "download", "classtorchvision__down_1_1datasets_1_1stl10_1_1_s_t_l10.html#ae43901a4262ea193e9d54d1edf435b5d", null ],
+    [ "extra_repr", "classtorchvision__down_1_1datasets_1_1stl10_1_1_s_t_l10.html#adcb4201e6096455966c2ef227e06827b", null ],
+    [ "__dict__", "classtorchvision__down_1_1datasets_1_1stl10_1_1_s_t_l10.html#a84b1626787997d3fa53b521fc8d3c056", null ],
+    [ "base_folder", "classtorchvision__down_1_1datasets_1_1stl10_1_1_s_t_l10.html#a7bde504bc2b495e882e3d368dce6f156", null ],
+    [ "class_names_file", "classtorchvision__down_1_1datasets_1_1stl10_1_1_s_t_l10.html#a7f083f69e9303bd95be419237d50a267", null ],
+    [ "classes", "classtorchvision__down_1_1datasets_1_1stl10_1_1_s_t_l10.html#a551f7ab5743c88acfa4120cd927b6275", null ],
+    [ "data", "classtorchvision__down_1_1datasets_1_1stl10_1_1_s_t_l10.html#ab42d2e74bdee462aea3b4cfefc390a09", null ],
+    [ "filename", "classtorchvision__down_1_1datasets_1_1stl10_1_1_s_t_l10.html#a22c0d202b8344e6f6e4a897b3ad61b25", null ],
+    [ "folds", "classtorchvision__down_1_1datasets_1_1stl10_1_1_s_t_l10.html#a248abd577b4cd4e8bc4ebc188eec7aa4", null ],
+    [ "folds_list_file", "classtorchvision__down_1_1datasets_1_1stl10_1_1_s_t_l10.html#a7547f0b46f9656661c46ebe58ad2e8ef", null ],
+    [ "labels", "classtorchvision__down_1_1datasets_1_1stl10_1_1_s_t_l10.html#a2093d383ac86f2f5f8953da328dd9850", null ],
+    [ "split", "classtorchvision__down_1_1datasets_1_1stl10_1_1_s_t_l10.html#aa54cdfdfa9c70dffb14ae4cd5936e843", null ],
+    [ "splits", "classtorchvision__down_1_1datasets_1_1stl10_1_1_s_t_l10.html#a0b80dc3349eac859e0d51e94af577e08", null ],
+    [ "test_list", "classtorchvision__down_1_1datasets_1_1stl10_1_1_s_t_l10.html#a3ff83caa557f3f68ed9c6d20f54680bc", null ],
+    [ "tgz_md5", "classtorchvision__down_1_1datasets_1_1stl10_1_1_s_t_l10.html#ade5cb93a3dbe772056ac6e816e2b62c8", null ],
+    [ "train_list", "classtorchvision__down_1_1datasets_1_1stl10_1_1_s_t_l10.html#a088401e95aae57fe72a4c1de22a24128", null ],
+    [ "url", "classtorchvision__down_1_1datasets_1_1stl10_1_1_s_t_l10.html#ad4ca12bd08ecfd254fee504e5f3cbd55", null ]
+];

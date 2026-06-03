@@ -1,0 +1,126 @@
+\doxysection{utils.\+loss.\+Compute\+Loss Class Reference}
+\hypertarget{classutils_1_1loss_1_1_compute_loss}{}\label{classutils_1_1loss_1_1_compute_loss}\index{utils.loss.ComputeLoss@{utils.loss.ComputeLoss}}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classutils_1_1loss_1_1_compute_loss_acff5e3a7b96e911d3d85d5c2333b9166}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, model, \mbox{\hyperlink{classutils_1_1loss_1_1_compute_loss_a67a233ad04ee309398c6be7bf68416b1}{autobalance}}=False)
+\item 
+\mbox{\hyperlink{classutils_1_1loss_1_1_compute_loss_ae8d082cae3704a3d44d4e1e6c318099a}{\+\_\+\+\_\+call\+\_\+\+\_\+}} (self, p, targets)
+\item 
+\mbox{\hyperlink{classutils_1_1loss_1_1_compute_loss_a99b0beed148ea4d89ea7f9ee3cd9ca87}{build\+\_\+targets}} (self, p, targets)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classutils_1_1loss_1_1_compute_loss_a6d1514e51e674b321e114b5c8d37c25e}{cp}}
+\item 
+\mbox{\hyperlink{classutils_1_1loss_1_1_compute_loss_a761537e15e4dfb27ae5a95dc11c76c5f}{cn}} = \mbox{\hyperlink{namespaceutils_1_1loss_a105ea4a900c8f9ac9cc05c3dad8a5237}{smooth\+\_\+\+BCE}}(eps=h.\+get(\textquotesingle{}label\+\_\+smoothing\textquotesingle{}, 0.\+0))
+\item 
+dict \mbox{\hyperlink{classutils_1_1loss_1_1_compute_loss_a3f4d1cf6e6b414aaa4bca630e609dc15}{balance}} = \{3\+: \mbox{[}4.\+0, 1.\+0, 0.\+4\mbox{]}\}.get(det.\+nl, \mbox{[}4.\+0, 1.\+0, 0.\+25, 0.\+06, .\+02\mbox{]})
+\item 
+int \mbox{\hyperlink{classutils_1_1loss_1_1_compute_loss_a3a75cb4b29039fb9b01f5e475961c591}{ssi}} = list(det.\+stride).index(16) if \mbox{\hyperlink{classutils_1_1loss_1_1_compute_loss_a67a233ad04ee309398c6be7bf68416b1}{autobalance}} else 0
+\item 
+\mbox{\hyperlink{classutils_1_1loss_1_1_compute_loss_a4a1068c79cbb09a043b2e0fbce4e0652}{BCEcls}}
+\item 
+\mbox{\hyperlink{classutils_1_1loss_1_1_compute_loss_a1684b5face58b852bcf259c31a77f0d3}{BCEobj}}
+\item 
+\mbox{\hyperlink{classutils_1_1loss_1_1_compute_loss_a12c6f937e052c8a232b6f37b0d0736eb}{gr}}
+\item 
+\mbox{\hyperlink{classutils_1_1loss_1_1_compute_loss_a7ea7999088a6b3efd18c839362f47780}{hyp}}
+\item 
+\mbox{\hyperlink{classutils_1_1loss_1_1_compute_loss_a67a233ad04ee309398c6be7bf68416b1}{autobalance}} = \mbox{\hyperlink{classutils_1_1loss_1_1_compute_loss_a4a1068c79cbb09a043b2e0fbce4e0652}{BCEcls}}, \mbox{\hyperlink{classutils_1_1loss_1_1_compute_loss_a1684b5face58b852bcf259c31a77f0d3}{BCEobj}}, model.\+gr, h, autobalance
+\item 
+\mbox{\hyperlink{classutils_1_1loss_1_1_compute_loss_a9d2620ee5aa6814bae93983a11ed439c}{nl}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classutils_1_1loss_1_1_compute_loss_acff5e3a7b96e911d3d85d5c2333b9166}\index{utils.loss.ComputeLoss@{utils.loss.ComputeLoss}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!utils.loss.ComputeLoss@{utils.loss.ComputeLoss}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily \label{classutils_1_1loss_1_1_compute_loss_acff5e3a7b96e911d3d85d5c2333b9166} 
+utils.\+loss.\+Compute\+Loss.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{model}{, }\item[{}]{autobalance}{ = {\ttfamily False}}\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classutils_1_1loss_1_1_compute_loss_ae8d082cae3704a3d44d4e1e6c318099a}\index{utils.loss.ComputeLoss@{utils.loss.ComputeLoss}!\_\_call\_\_@{\_\_call\_\_}}
+\index{\_\_call\_\_@{\_\_call\_\_}!utils.loss.ComputeLoss@{utils.loss.ComputeLoss}}
+\doxysubsubsection{\texorpdfstring{\_\_call\_\_()}{\_\_call\_\_()}}
+{\footnotesize\ttfamily \label{classutils_1_1loss_1_1_compute_loss_ae8d082cae3704a3d44d4e1e6c318099a} 
+utils.\+loss.\+Compute\+Loss.\+\_\+\+\_\+call\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{p}{, }\item[{}]{targets}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classutils_1_1loss_1_1_compute_loss_a99b0beed148ea4d89ea7f9ee3cd9ca87}\index{utils.loss.ComputeLoss@{utils.loss.ComputeLoss}!build\_targets@{build\_targets}}
+\index{build\_targets@{build\_targets}!utils.loss.ComputeLoss@{utils.loss.ComputeLoss}}
+\doxysubsubsection{\texorpdfstring{build\_targets()}{build\_targets()}}
+{\footnotesize\ttfamily \label{classutils_1_1loss_1_1_compute_loss_a99b0beed148ea4d89ea7f9ee3cd9ca87} 
+utils.\+loss.\+Compute\+Loss.\+build\+\_\+targets (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{p}{, }\item[{}]{targets}{}\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classutils_1_1loss_1_1_compute_loss_a67a233ad04ee309398c6be7bf68416b1}\index{utils.loss.ComputeLoss@{utils.loss.ComputeLoss}!autobalance@{autobalance}}
+\index{autobalance@{autobalance}!utils.loss.ComputeLoss@{utils.loss.ComputeLoss}}
+\doxysubsubsection{\texorpdfstring{autobalance}{autobalance}}
+{\footnotesize\ttfamily \label{classutils_1_1loss_1_1_compute_loss_a67a233ad04ee309398c6be7bf68416b1} 
+utils.\+loss.\+Compute\+Loss.\+autobalance = \mbox{\hyperlink{classutils_1_1loss_1_1_compute_loss_a4a1068c79cbb09a043b2e0fbce4e0652}{BCEcls}}, \mbox{\hyperlink{classutils_1_1loss_1_1_compute_loss_a1684b5face58b852bcf259c31a77f0d3}{BCEobj}}, model.\+gr, h, autobalance}
+
+\Hypertarget{classutils_1_1loss_1_1_compute_loss_a3f4d1cf6e6b414aaa4bca630e609dc15}\index{utils.loss.ComputeLoss@{utils.loss.ComputeLoss}!balance@{balance}}
+\index{balance@{balance}!utils.loss.ComputeLoss@{utils.loss.ComputeLoss}}
+\doxysubsubsection{\texorpdfstring{balance}{balance}}
+{\footnotesize\ttfamily \label{classutils_1_1loss_1_1_compute_loss_a3f4d1cf6e6b414aaa4bca630e609dc15} 
+dict utils.\+loss.\+Compute\+Loss.\+balance = \{3\+: \mbox{[}4.\+0, 1.\+0, 0.\+4\mbox{]}\}.get(det.\+nl, \mbox{[}4.\+0, 1.\+0, 0.\+25, 0.\+06, .\+02\mbox{]})}
+
+\Hypertarget{classutils_1_1loss_1_1_compute_loss_a4a1068c79cbb09a043b2e0fbce4e0652}\index{utils.loss.ComputeLoss@{utils.loss.ComputeLoss}!BCEcls@{BCEcls}}
+\index{BCEcls@{BCEcls}!utils.loss.ComputeLoss@{utils.loss.ComputeLoss}}
+\doxysubsubsection{\texorpdfstring{BCEcls}{BCEcls}}
+{\footnotesize\ttfamily \label{classutils_1_1loss_1_1_compute_loss_a4a1068c79cbb09a043b2e0fbce4e0652} 
+utils.\+loss.\+Compute\+Loss.\+BCEcls}
+
+\Hypertarget{classutils_1_1loss_1_1_compute_loss_a1684b5face58b852bcf259c31a77f0d3}\index{utils.loss.ComputeLoss@{utils.loss.ComputeLoss}!BCEobj@{BCEobj}}
+\index{BCEobj@{BCEobj}!utils.loss.ComputeLoss@{utils.loss.ComputeLoss}}
+\doxysubsubsection{\texorpdfstring{BCEobj}{BCEobj}}
+{\footnotesize\ttfamily \label{classutils_1_1loss_1_1_compute_loss_a1684b5face58b852bcf259c31a77f0d3} 
+utils.\+loss.\+Compute\+Loss.\+BCEobj}
+
+\Hypertarget{classutils_1_1loss_1_1_compute_loss_a761537e15e4dfb27ae5a95dc11c76c5f}\index{utils.loss.ComputeLoss@{utils.loss.ComputeLoss}!cn@{cn}}
+\index{cn@{cn}!utils.loss.ComputeLoss@{utils.loss.ComputeLoss}}
+\doxysubsubsection{\texorpdfstring{cn}{cn}}
+{\footnotesize\ttfamily \label{classutils_1_1loss_1_1_compute_loss_a761537e15e4dfb27ae5a95dc11c76c5f} 
+utils.\+loss.\+Compute\+Loss.\+cn = \mbox{\hyperlink{namespaceutils_1_1loss_a105ea4a900c8f9ac9cc05c3dad8a5237}{smooth\+\_\+\+BCE}}(eps=h.\+get(\textquotesingle{}label\+\_\+smoothing\textquotesingle{}, 0.\+0))}
+
+\Hypertarget{classutils_1_1loss_1_1_compute_loss_a6d1514e51e674b321e114b5c8d37c25e}\index{utils.loss.ComputeLoss@{utils.loss.ComputeLoss}!cp@{cp}}
+\index{cp@{cp}!utils.loss.ComputeLoss@{utils.loss.ComputeLoss}}
+\doxysubsubsection{\texorpdfstring{cp}{cp}}
+{\footnotesize\ttfamily \label{classutils_1_1loss_1_1_compute_loss_a6d1514e51e674b321e114b5c8d37c25e} 
+utils.\+loss.\+Compute\+Loss.\+cp}
+
+\Hypertarget{classutils_1_1loss_1_1_compute_loss_a12c6f937e052c8a232b6f37b0d0736eb}\index{utils.loss.ComputeLoss@{utils.loss.ComputeLoss}!gr@{gr}}
+\index{gr@{gr}!utils.loss.ComputeLoss@{utils.loss.ComputeLoss}}
+\doxysubsubsection{\texorpdfstring{gr}{gr}}
+{\footnotesize\ttfamily \label{classutils_1_1loss_1_1_compute_loss_a12c6f937e052c8a232b6f37b0d0736eb} 
+utils.\+loss.\+Compute\+Loss.\+gr}
+
+\Hypertarget{classutils_1_1loss_1_1_compute_loss_a7ea7999088a6b3efd18c839362f47780}\index{utils.loss.ComputeLoss@{utils.loss.ComputeLoss}!hyp@{hyp}}
+\index{hyp@{hyp}!utils.loss.ComputeLoss@{utils.loss.ComputeLoss}}
+\doxysubsubsection{\texorpdfstring{hyp}{hyp}}
+{\footnotesize\ttfamily \label{classutils_1_1loss_1_1_compute_loss_a7ea7999088a6b3efd18c839362f47780} 
+utils.\+loss.\+Compute\+Loss.\+hyp}
+
+\Hypertarget{classutils_1_1loss_1_1_compute_loss_a9d2620ee5aa6814bae93983a11ed439c}\index{utils.loss.ComputeLoss@{utils.loss.ComputeLoss}!nl@{nl}}
+\index{nl@{nl}!utils.loss.ComputeLoss@{utils.loss.ComputeLoss}}
+\doxysubsubsection{\texorpdfstring{nl}{nl}}
+{\footnotesize\ttfamily \label{classutils_1_1loss_1_1_compute_loss_a9d2620ee5aa6814bae93983a11ed439c} 
+utils.\+loss.\+Compute\+Loss.\+nl}
+
+\Hypertarget{classutils_1_1loss_1_1_compute_loss_a3a75cb4b29039fb9b01f5e475961c591}\index{utils.loss.ComputeLoss@{utils.loss.ComputeLoss}!ssi@{ssi}}
+\index{ssi@{ssi}!utils.loss.ComputeLoss@{utils.loss.ComputeLoss}}
+\doxysubsubsection{\texorpdfstring{ssi}{ssi}}
+{\footnotesize\ttfamily \label{classutils_1_1loss_1_1_compute_loss_a3a75cb4b29039fb9b01f5e475961c591} 
+int utils.\+loss.\+Compute\+Loss.\+ssi = list(det.\+stride).index(16) if \mbox{\hyperlink{classutils_1_1loss_1_1_compute_loss_a67a233ad04ee309398c6be7bf68416b1}{autobalance}} else 0}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Cervi\+AI/utils/\mbox{\hyperlink{loss_8py}{loss.\+py}}\end{DoxyCompactItemize}

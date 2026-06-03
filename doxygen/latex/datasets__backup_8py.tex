@@ -1,0 +1,98 @@
+\doxysection{Cervi\+AI/utils/backup dump/datasets\+\_\+backup.py File Reference}
+\hypertarget{datasets__backup_8py}{}\label{datasets__backup_8py}\index{CerviAI/utils/backup dump/datasets\_backup.py@{CerviAI/utils/backup dump/datasets\_backup.py}}
+\doxysubsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classdatasets__backup_1_1load__custom}{datasets\+\_\+backup.\+load\+\_\+custom}}
+\item 
+class \mbox{\hyperlink{classdatasets__backup_1_1_infinite_data_loader}{datasets\+\_\+backup.\+Infinite\+Data\+Loader}}
+\item 
+class \mbox{\hyperlink{classdatasets__backup_1_1___repeat_sampler}{datasets\+\_\+backup.\+\_\+\+Repeat\+Sampler}}
+\item 
+class \mbox{\hyperlink{classdatasets__backup_1_1_load_images}{datasets\+\_\+backup.\+Load\+Images}}
+\item 
+class \mbox{\hyperlink{classdatasets__backup_1_1_load_webcam}{datasets\+\_\+backup.\+Load\+Webcam}}
+\item 
+class \mbox{\hyperlink{classdatasets__backup_1_1_load_streams}{datasets\+\_\+backup.\+Load\+Streams}}
+\item 
+class \mbox{\hyperlink{classdatasets__backup_1_1_load_images_and_labels}{datasets\+\_\+backup.\+Load\+Images\+And\+Labels}}
+\item 
+class \mbox{\hyperlink{classdatasets__backup_1_1_albumentations}{datasets\+\_\+backup.\+Albumentations}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+namespace \mbox{\hyperlink{namespacedatasets__backup}{datasets\+\_\+backup}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{namespacedatasets__backup_a87d7aa3e7c7af4746fdcad093105c5ad}{datasets\+\_\+backup.\+get\+\_\+hash}} (files)
+\item 
+\mbox{\hyperlink{namespacedatasets__backup_a33b8f6aafbb5c1016dd5b39663365727}{datasets\+\_\+backup.\+exif\+\_\+size}} (img)
+\item 
+\mbox{\hyperlink{namespacedatasets__backup_ae0d9945a9ac94d129de241a9c3fe41df}{datasets\+\_\+backup.\+create\+\_\+dataloader\+\_\+custom}} (path, imgsz, stride, opt, batch\+\_\+size, tile\+\_\+size, overlap, hyp=None, augment=False, rect=False, pad=0.\+0, rank=-\/1, world\+\_\+size=1, workers=4, image\+\_\+weights=False, quad=False)
+\item 
+\mbox{\hyperlink{namespacedatasets__backup_af41a6d42621b1f41bb1ef085f75dfeb8}{datasets\+\_\+backup.\+load\+\_\+tile}} (self, index)
+\item 
+\mbox{\hyperlink{namespacedatasets__backup_a57621b0d1168c2d6d79294df48f1a6ec}{datasets\+\_\+backup.\+create\+\_\+dataloader}} (path, imgsz, batch\+\_\+size, stride, opt, hyp=None, augment=False, cache=False, pad=0.\+0, rect=False, rank=-\/1, world\+\_\+size=1, workers=8, image\+\_\+weights=False, quad=False, prefix=\textquotesingle{}\textquotesingle{})
+\item 
+\mbox{\hyperlink{namespacedatasets__backup_a6de0d1802106fd14c5465e65168522a2}{datasets\+\_\+backup.\+img2label\+\_\+paths}} (img\+\_\+paths)
+\item 
+\mbox{\hyperlink{namespacedatasets__backup_a47a18f93aad88b0bbcdf92c80af97e56}{datasets\+\_\+backup.\+load\+\_\+image}} (self, index)
+\item 
+\mbox{\hyperlink{namespacedatasets__backup_ab7b2183a1169284c2f0cfe8d25dd1dac}{datasets\+\_\+backup.\+augment\+\_\+hsv}} (img, hgain=0.\+5, sgain=0.\+5, vgain=0.\+5)
+\item 
+\mbox{\hyperlink{namespacedatasets__backup_abf603dbc59a2a64fc7f9d157fa12dcba}{datasets\+\_\+backup.\+hist\+\_\+equalize}} (img, clahe=True, bgr=False)
+\item 
+\mbox{\hyperlink{namespacedatasets__backup_a4550a9fbac810fa33a2acbcdd3d30af0}{datasets\+\_\+backup.\+load\+\_\+mosaic}} (self, index)
+\item 
+\mbox{\hyperlink{namespacedatasets__backup_a1d713807b6e4092034d295b2f3a7294f}{datasets\+\_\+backup.\+load\+\_\+mosaic9}} (self, index)
+\item 
+\mbox{\hyperlink{namespacedatasets__backup_a33f99dea76f50f9d4fe6e93469b3dc05}{datasets\+\_\+backup.\+load\+\_\+samples}} (self, index)
+\item 
+\mbox{\hyperlink{namespacedatasets__backup_a82cc64a9ce4c4678ddb1976654d62ccc}{datasets\+\_\+backup.\+copy\+\_\+paste}} (img, labels, segments, probability=0.\+5)
+\item 
+\mbox{\hyperlink{namespacedatasets__backup_afd54d5a6555d260ae6fac76ea3b28fb5}{datasets\+\_\+backup.\+remove\+\_\+background}} (img, labels, segments)
+\item 
+\mbox{\hyperlink{namespacedatasets__backup_a140bbaf716f96b0750a5ad06b7810934}{datasets\+\_\+backup.\+sample\+\_\+segments}} (img, labels, segments, probability=0.\+5)
+\item 
+\mbox{\hyperlink{namespacedatasets__backup_aa2018b514428a1ac9a5d3a9eb19af5dc}{datasets\+\_\+backup.\+replicate}} (img, labels)
+\item 
+\mbox{\hyperlink{namespacedatasets__backup_a0596b4696d4ea40df38f7ab0e6629260}{datasets\+\_\+backup.\+letterbox}} (img, new\+\_\+shape=(640, 640), color=(114, 114, 114), auto=True, scale\+Fill=False, scaleup=True, stride=32)
+\item 
+\mbox{\hyperlink{namespacedatasets__backup_a8b35738c917c5ef4a564dab105385826}{datasets\+\_\+backup.\+random\+\_\+perspective}} (img, targets=(), segments=(), degrees=10, translate=.\+1, scale=.\+1, shear=10, perspective=0.\+0, border=(0, 0))
+\item 
+\mbox{\hyperlink{namespacedatasets__backup_a4c9bc83be2e45025f31b4fcad9e9e761}{datasets\+\_\+backup.\+box\+\_\+candidates}} (box1, box2, wh\+\_\+thr=2, ar\+\_\+thr=20, area\+\_\+thr=0.\+1, eps=1e-\/16)
+\item 
+\mbox{\hyperlink{namespacedatasets__backup_a7262894c0d00ba3f4ab74cfa85eec77f}{datasets\+\_\+backup.\+bbox\+\_\+ioa}} (box1, box2)
+\item 
+\mbox{\hyperlink{namespacedatasets__backup_a6d059c9a636ee9e48fd476ab8419ab4c}{datasets\+\_\+backup.\+cutout}} (image, labels)
+\item 
+\mbox{\hyperlink{namespacedatasets__backup_a5c52bf188a328d4ffec47b57169f1aa1}{datasets\+\_\+backup.\+pastein}} (image, labels, sample\+\_\+labels, sample\+\_\+images, sample\+\_\+masks)
+\item 
+\mbox{\hyperlink{namespacedatasets__backup_a4fb433a51d0a4ca26a58da5c77c54f8c}{datasets\+\_\+backup.\+create\+\_\+folder}} (path=\textquotesingle{}./new\textquotesingle{})
+\item 
+\mbox{\hyperlink{namespacedatasets__backup_aa03811ec7e3c38dc661f5d9de833b59b}{datasets\+\_\+backup.\+flatten\+\_\+recursive}} (path=\textquotesingle{}../coco\textquotesingle{})
+\item 
+\mbox{\hyperlink{namespacedatasets__backup_a65e3a281443fb06cd1ae40daeb643ca1}{datasets\+\_\+backup.\+extract\+\_\+boxes}} (path=\textquotesingle{}../coco/\textquotesingle{})
+\item 
+\mbox{\hyperlink{namespacedatasets__backup_a78ba37186994803226f51178c1d2c04e}{datasets\+\_\+backup.\+autosplit}} (path=\textquotesingle{}../coco\textquotesingle{}, weights=(0.\+9, 0.\+1, 0.\+0), annotated\+\_\+only=False)
+\item 
+\mbox{\hyperlink{namespacedatasets__backup_a751c226be335a39dc458c75fedcce5f2}{datasets\+\_\+backup.\+load\+\_\+segmentations}} (self, index)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+str \mbox{\hyperlink{namespacedatasets__backup_a065ed432e430116c49f047cec0ed7224}{datasets\+\_\+backup.\+current\+\_\+dir}} = r\textquotesingle{}D\+:\textbackslash{}\+Shreyan\textbackslash{}labsys\textbackslash{}yolov7\textquotesingle{}
+\item 
+\mbox{\hyperlink{namespacedatasets__backup_acb7de9ff648a104215c92237cf25ce3b}{datasets\+\_\+backup.\+OPENSLIDE\+\_\+\+PATH}} = os.\+path.\+join(\mbox{\hyperlink{namespacedatasets__backup_a065ed432e430116c49f047cec0ed7224}{current\+\_\+dir}}, \textquotesingle{}openslide-\/win64-\/20230414\textquotesingle{}, \textquotesingle{}bin\textquotesingle{})
+\item 
+str \mbox{\hyperlink{namespacedatasets__backup_a04f89666746dfd0e46a0fbbabfba887f}{datasets\+\_\+backup.\+help\+\_\+url}} = \textquotesingle{}https\+://github.\+com/ultralytics/yolov5/wiki/Train-\/Custom-\/Data\textquotesingle{}
+\item 
+list \mbox{\hyperlink{namespacedatasets__backup_aff8784ff0bac9de2bad35fb8480b86da}{datasets\+\_\+backup.\+img\+\_\+formats}} = \mbox{[}\textquotesingle{}bmp\textquotesingle{}, \textquotesingle{}jpg\textquotesingle{}, \textquotesingle{}jpeg\textquotesingle{}, \textquotesingle{}png\textquotesingle{}, \textquotesingle{}tif\textquotesingle{}, \textquotesingle{}tiff\textquotesingle{}, \textquotesingle{}dng\textquotesingle{}, \textquotesingle{}webp\textquotesingle{}, \textquotesingle{}mpo\textquotesingle{}\mbox{]}
+\item 
+list \mbox{\hyperlink{namespacedatasets__backup_a9b2cd8c833750573817fb9582b21a27f}{datasets\+\_\+backup.\+vid\+\_\+formats}} = \mbox{[}\textquotesingle{}mov\textquotesingle{}, \textquotesingle{}avi\textquotesingle{}, \textquotesingle{}mp4\textquotesingle{}, \textquotesingle{}mpg\textquotesingle{}, \textquotesingle{}mpeg\textquotesingle{}, \textquotesingle{}m4v\textquotesingle{}, \textquotesingle{}wmv\textquotesingle{}, \textquotesingle{}mkv\textquotesingle{}\mbox{]}
+\item 
+\mbox{\hyperlink{namespacedatasets__backup_a2b29d3982bd240b9e5d9f570266ae96c}{datasets\+\_\+backup.\+logger}} = logging.\+get\+Logger(\+\_\+\+\_\+name\+\_\+\+\_\+)
+\end{DoxyCompactItemize}

@@ -1,0 +1,238 @@
+\doxysection{torchvision\+\_\+down.\+datasets.\+svhn.\+SVHN Class Reference}
+\hypertarget{classtorchvision__down_1_1datasets_1_1svhn_1_1_s_v_h_n}{}\label{classtorchvision__down_1_1datasets_1_1svhn_1_1_s_v_h_n}\index{torchvision\_down.datasets.svhn.SVHN@{torchvision\_down.datasets.svhn.SVHN}}
+Inheritance diagram for torchvision\+\_\+down.\+datasets.\+svhn.\+SVHN\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{classtorchvision__down_1_1datasets_1_1svhn_1_1_s_v_h_n}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+None \mbox{\hyperlink{classtorchvision__down_1_1datasets_1_1svhn_1_1_s_v_h_n_a3d460d30d223e7a64bf5bc056ae63524}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, str \mbox{\hyperlink{classtorchvision__down_1_1datasets_1_1svhn_1_1_s_v_h_n}{root}}, str \mbox{\hyperlink{classtorchvision__down_1_1datasets_1_1svhn_1_1_s_v_h_n_a43f72dee4c7e879a3bc37ef4266e7b08}{split}}="{}train"{}, Optional\mbox{[}Callable\mbox{]} \mbox{\hyperlink{classtorchvision__down_1_1datasets_1_1vision_1_1_vision_dataset_ade1b4bca7d4f998bc3061e0400769de8}{transform}}=None, Optional\mbox{[}Callable\mbox{]} \mbox{\hyperlink{classtorchvision__down_1_1datasets_1_1vision_1_1_vision_dataset_a01f7d1bb7220bbfa4234ef140d021cc6}{target\+\_\+transform}}=None, bool \mbox{\hyperlink{classtorchvision__down_1_1datasets_1_1svhn_1_1_s_v_h_n_a305eaba16444190a6249281e101cabe4}{download}}=False)
+\item 
+Tuple\mbox{[}Any, Any\mbox{]} \mbox{\hyperlink{classtorchvision__down_1_1datasets_1_1svhn_1_1_s_v_h_n_a39993cfe39a4f32461e919ce38b23a87}{\+\_\+\+\_\+getitem\+\_\+\+\_\+}} (self, int index)
+\item 
+int \mbox{\hyperlink{classtorchvision__down_1_1datasets_1_1svhn_1_1_s_v_h_n_a2343b8b41e8318c090a9d414880896a4}{\+\_\+\+\_\+len\+\_\+\+\_\+}} (self)
+\item 
+None \mbox{\hyperlink{classtorchvision__down_1_1datasets_1_1svhn_1_1_s_v_h_n_a305eaba16444190a6249281e101cabe4}{download}} (self)
+\item 
+str \mbox{\hyperlink{classtorchvision__down_1_1datasets_1_1svhn_1_1_s_v_h_n_a24c261ec72255eaf14c80133fa1a6960}{extra\+\_\+repr}} (self)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{classtorchvision__down_1_1datasets_1_1vision_1_1_vision_dataset}{torchvision\+\_\+down.\+datasets.\+vision.\+Vision\+Dataset}}}
+\begin{DoxyCompactItemize}
+\item 
+None \mbox{\hyperlink{classtorchvision__down_1_1datasets_1_1vision_1_1_vision_dataset_a4fe475e0f96592c04a6d97bcd953aca8}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, str \mbox{\hyperlink{classtorchvision__down_1_1datasets_1_1vision_1_1_vision_dataset_af52cf192ec18d3421afe216bf9b881d6}{root}}, Optional\mbox{[}Callable\mbox{]} \mbox{\hyperlink{classtorchvision__down_1_1datasets_1_1vision_1_1_vision_dataset_a7963601da311133da990b66cb616cc83}{transforms}}=None, Optional\mbox{[}Callable\mbox{]} \mbox{\hyperlink{classtorchvision__down_1_1datasets_1_1vision_1_1_vision_dataset_ade1b4bca7d4f998bc3061e0400769de8}{transform}}=None, Optional\mbox{[}Callable\mbox{]} \mbox{\hyperlink{classtorchvision__down_1_1datasets_1_1vision_1_1_vision_dataset_a01f7d1bb7220bbfa4234ef140d021cc6}{target\+\_\+transform}}=None)
+\item 
+Any \mbox{\hyperlink{classtorchvision__down_1_1datasets_1_1vision_1_1_vision_dataset_aa96f56b711d61433df225154b9837daa}{\+\_\+\+\_\+getitem\+\_\+\+\_\+}} (self, int index)
+\item 
+int \mbox{\hyperlink{classtorchvision__down_1_1datasets_1_1vision_1_1_vision_dataset_abb1561c74b600d1d424cfa010f009a92}{\+\_\+\+\_\+len\+\_\+\+\_\+}} (self)
+\item 
+str \mbox{\hyperlink{classtorchvision__down_1_1datasets_1_1vision_1_1_vision_dataset_a40d28a5833742c49a70872e87edb1ef9}{\+\_\+\+\_\+repr\+\_\+\+\_\+}} (self)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1datasets_1_1svhn_1_1_s_v_h_n_a43f72dee4c7e879a3bc37ef4266e7b08}{split}} = verify\+\_\+str\+\_\+arg(split, "{}split"{}, tuple(self.\+split\+\_\+list.\+keys()))
+\item 
+dict \mbox{\hyperlink{classtorchvision__down_1_1datasets_1_1svhn_1_1_s_v_h_n_a8f4e382d7368d4eecb756a4842afe9d2}{url}} = self.\+split\+\_\+list\mbox{[}\mbox{\hyperlink{classtorchvision__down_1_1datasets_1_1svhn_1_1_s_v_h_n_a43f72dee4c7e879a3bc37ef4266e7b08}{split}}\mbox{]}\mbox{[}0\mbox{]}
+\item 
+dict \mbox{\hyperlink{classtorchvision__down_1_1datasets_1_1svhn_1_1_s_v_h_n_a358fd99d3ccdf50761ed410fb6348e88}{filename}} = self.\+split\+\_\+list\mbox{[}\mbox{\hyperlink{classtorchvision__down_1_1datasets_1_1svhn_1_1_s_v_h_n_a43f72dee4c7e879a3bc37ef4266e7b08}{split}}\mbox{]}\mbox{[}1\mbox{]}
+\item 
+dict \mbox{\hyperlink{classtorchvision__down_1_1datasets_1_1svhn_1_1_s_v_h_n_a8896c5cfe790576768524236579c6b5e}{file\+\_\+md5}} = self.\+split\+\_\+list\mbox{[}\mbox{\hyperlink{classtorchvision__down_1_1datasets_1_1svhn_1_1_s_v_h_n_a43f72dee4c7e879a3bc37ef4266e7b08}{split}}\mbox{]}\mbox{[}2\mbox{]}
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1datasets_1_1svhn_1_1_s_v_h_n_a887df530114751f1325908e4c43bd0c2}{data}} = loaded\+\_\+mat\mbox{[}"{}X"{}\mbox{]}
+\item 
+int \mbox{\hyperlink{classtorchvision__down_1_1datasets_1_1svhn_1_1_s_v_h_n_aa75d8f61609440063e97ff63cbf676a7}{labels}} = loaded\+\_\+mat\mbox{[}"{}y"{}\mbox{]}.astype(np.\+int64).squeeze()
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes inherited from \mbox{\hyperlink{classtorchvision__down_1_1datasets_1_1vision_1_1_vision_dataset}{torchvision\+\_\+down.\+datasets.\+vision.\+Vision\+Dataset}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1datasets_1_1vision_1_1_vision_dataset_af52cf192ec18d3421afe216bf9b881d6}{root}} = root
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1datasets_1_1vision_1_1_vision_dataset_ade1b4bca7d4f998bc3061e0400769de8}{transform}} = transform
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1datasets_1_1vision_1_1_vision_dataset_a01f7d1bb7220bbfa4234ef140d021cc6}{target\+\_\+transform}} = target\+\_\+transform
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1datasets_1_1vision_1_1_vision_dataset_a7963601da311133da990b66cb616cc83}{transforms}} = transforms
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+dict \mbox{\hyperlink{classtorchvision__down_1_1datasets_1_1svhn_1_1_s_v_h_n_aa12f27195b63180ef26f4f4943987ebe}{split\+\_\+list}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{classtorchvision__down_1_1datasets_1_1svhn_1_1_s_v_h_n_a327db13b546c0cc6583711c44671f21b}{\+\_\+check\+\_\+integrity}} (self)
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions inherited from \mbox{\hyperlink{classtorchvision__down_1_1datasets_1_1vision_1_1_vision_dataset}{torchvision\+\_\+down.\+datasets.\+vision.\+Vision\+Dataset}}}
+\begin{DoxyCompactItemize}
+\item 
+List\mbox{[}str\mbox{]} \mbox{\hyperlink{classtorchvision__down_1_1datasets_1_1vision_1_1_vision_dataset_a9f1a9fad1ab8a0b963cdc3522a271689}{\+\_\+format\+\_\+transform\+\_\+repr}} (self, Callable \mbox{\hyperlink{classtorchvision__down_1_1datasets_1_1vision_1_1_vision_dataset_ade1b4bca7d4f998bc3061e0400769de8}{transform}}, str head)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1datasets_1_1svhn_1_1_s_v_h_n_a3172a9cd4a27c42d0e0390987b111bde}{\+\_\+\+\_\+dict\+\_\+\+\_\+}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Additional Inherited Members}
+\doxysubsection*{Static Protected Attributes inherited from \mbox{\hyperlink{classtorchvision__down_1_1datasets_1_1vision_1_1_vision_dataset}{torchvision\+\_\+down.\+datasets.\+vision.\+Vision\+Dataset}}}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{classtorchvision__down_1_1datasets_1_1vision_1_1_vision_dataset_a2eb99b64ccfc03378be35d0ff88e71b4}{\+\_\+repr\+\_\+indent}} = 4
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}`SVHN <http://ufldl.stanford.edu/housenumbers/>`_ Dataset.
+Note: The SVHN dataset assigns the label `10` to the digit `0`. However, in this Dataset,
+we assign the label `0` to the digit `0` to be compatible with PyTorch loss functions which
+expect the class labels to be in the range `[0, C-1]`
+
+.. warning::
+
+    This class needs `scipy <https://docs.scipy.org/doc/>`_ to load data from `.mat` format.
+
+Args:
+    root (string): Root directory of dataset where directory
+        ``SVHN`` exists.
+    split (string): One of {'train', 'test', 'extra'}.
+        Accordingly dataset is selected. 'extra' is Extra training set.
+    transform (callable, optional): A function/transform that  takes in an PIL image
+        and returns a transformed version. E.g, ``transforms.RandomCrop``
+    target_transform (callable, optional): A function/transform that takes in the
+        target and transforms it.
+    download (bool, optional): If true, downloads the dataset from the internet and
+        puts it in root directory. If dataset is already downloaded, it is not
+        downloaded again.
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classtorchvision__down_1_1datasets_1_1svhn_1_1_s_v_h_n_a3d460d30d223e7a64bf5bc056ae63524}\index{torchvision\_down.datasets.svhn.SVHN@{torchvision\_down.datasets.svhn.SVHN}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!torchvision\_down.datasets.svhn.SVHN@{torchvision\_down.datasets.svhn.SVHN}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1datasets_1_1svhn_1_1_s_v_h_n_a3d460d30d223e7a64bf5bc056ae63524} 
+ None torchvision\+\_\+down.\+datasets.\+svhn.\+SVHN.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{str}]{root}{, }\item[{str }]{split}{ = {\ttfamily "{}train"{}}, }\item[{Optional\mbox{[}Callable\mbox{]} }]{transform}{ = {\ttfamily None}, }\item[{Optional\mbox{[}Callable\mbox{]} }]{target\+\_\+transform}{ = {\ttfamily None}, }\item[{bool }]{download}{ = {\ttfamily False}}\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classtorchvision__down_1_1datasets_1_1svhn_1_1_s_v_h_n_a39993cfe39a4f32461e919ce38b23a87}\index{torchvision\_down.datasets.svhn.SVHN@{torchvision\_down.datasets.svhn.SVHN}!\_\_getitem\_\_@{\_\_getitem\_\_}}
+\index{\_\_getitem\_\_@{\_\_getitem\_\_}!torchvision\_down.datasets.svhn.SVHN@{torchvision\_down.datasets.svhn.SVHN}}
+\doxysubsubsection{\texorpdfstring{\_\_getitem\_\_()}{\_\_getitem\_\_()}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1datasets_1_1svhn_1_1_s_v_h_n_a39993cfe39a4f32461e919ce38b23a87} 
+ Tuple\mbox{[}Any, Any\mbox{]} torchvision\+\_\+down.\+datasets.\+svhn.\+SVHN.\+\_\+\+\_\+getitem\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{int}]{index}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Args:
+    index (int): Index
+
+Returns:
+    tuple: (image, target) where target is index of the target class.
+\end{DoxyVerb}
+ \Hypertarget{classtorchvision__down_1_1datasets_1_1svhn_1_1_s_v_h_n_a2343b8b41e8318c090a9d414880896a4}\index{torchvision\_down.datasets.svhn.SVHN@{torchvision\_down.datasets.svhn.SVHN}!\_\_len\_\_@{\_\_len\_\_}}
+\index{\_\_len\_\_@{\_\_len\_\_}!torchvision\_down.datasets.svhn.SVHN@{torchvision\_down.datasets.svhn.SVHN}}
+\doxysubsubsection{\texorpdfstring{\_\_len\_\_()}{\_\_len\_\_()}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1datasets_1_1svhn_1_1_s_v_h_n_a2343b8b41e8318c090a9d414880896a4} 
+ int torchvision\+\_\+down.\+datasets.\+svhn.\+SVHN.\+\_\+\+\_\+len\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classtorchvision__down_1_1datasets_1_1svhn_1_1_s_v_h_n_a327db13b546c0cc6583711c44671f21b}\index{torchvision\_down.datasets.svhn.SVHN@{torchvision\_down.datasets.svhn.SVHN}!\_check\_integrity@{\_check\_integrity}}
+\index{\_check\_integrity@{\_check\_integrity}!torchvision\_down.datasets.svhn.SVHN@{torchvision\_down.datasets.svhn.SVHN}}
+\doxysubsubsection{\texorpdfstring{\_check\_integrity()}{\_check\_integrity()}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1datasets_1_1svhn_1_1_s_v_h_n_a327db13b546c0cc6583711c44671f21b} 
+ bool torchvision\+\_\+down.\+datasets.\+svhn.\+SVHN.\+\_\+check\+\_\+integrity (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classtorchvision__down_1_1datasets_1_1svhn_1_1_s_v_h_n_a305eaba16444190a6249281e101cabe4}\index{torchvision\_down.datasets.svhn.SVHN@{torchvision\_down.datasets.svhn.SVHN}!download@{download}}
+\index{download@{download}!torchvision\_down.datasets.svhn.SVHN@{torchvision\_down.datasets.svhn.SVHN}}
+\doxysubsubsection{\texorpdfstring{download()}{download()}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1datasets_1_1svhn_1_1_s_v_h_n_a305eaba16444190a6249281e101cabe4} 
+ None torchvision\+\_\+down.\+datasets.\+svhn.\+SVHN.\+download (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classtorchvision__down_1_1datasets_1_1svhn_1_1_s_v_h_n_a24c261ec72255eaf14c80133fa1a6960}\index{torchvision\_down.datasets.svhn.SVHN@{torchvision\_down.datasets.svhn.SVHN}!extra\_repr@{extra\_repr}}
+\index{extra\_repr@{extra\_repr}!torchvision\_down.datasets.svhn.SVHN@{torchvision\_down.datasets.svhn.SVHN}}
+\doxysubsubsection{\texorpdfstring{extra\_repr()}{extra\_repr()}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1datasets_1_1svhn_1_1_s_v_h_n_a24c261ec72255eaf14c80133fa1a6960} 
+ str torchvision\+\_\+down.\+datasets.\+svhn.\+SVHN.\+extra\+\_\+repr (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+
+
+Reimplemented from \mbox{\hyperlink{classtorchvision__down_1_1datasets_1_1vision_1_1_vision_dataset_a99093b3e6dd75e1ed1c49eed7ac2df00}{torchvision\+\_\+down.\+datasets.\+vision.\+Vision\+Dataset}}.
+
+
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classtorchvision__down_1_1datasets_1_1svhn_1_1_s_v_h_n_a3172a9cd4a27c42d0e0390987b111bde}\index{torchvision\_down.datasets.svhn.SVHN@{torchvision\_down.datasets.svhn.SVHN}!\_\_dict\_\_@{\_\_dict\_\_}}
+\index{\_\_dict\_\_@{\_\_dict\_\_}!torchvision\_down.datasets.svhn.SVHN@{torchvision\_down.datasets.svhn.SVHN}}
+\doxysubsubsection{\texorpdfstring{\_\_dict\_\_}{\_\_dict\_\_}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1datasets_1_1svhn_1_1_s_v_h_n_a3172a9cd4a27c42d0e0390987b111bde} 
+torchvision\+\_\+down.\+datasets.\+svhn.\+SVHN.\+\_\+\+\_\+dict\+\_\+\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{classtorchvision__down_1_1datasets_1_1svhn_1_1_s_v_h_n_a887df530114751f1325908e4c43bd0c2}\index{torchvision\_down.datasets.svhn.SVHN@{torchvision\_down.datasets.svhn.SVHN}!data@{data}}
+\index{data@{data}!torchvision\_down.datasets.svhn.SVHN@{torchvision\_down.datasets.svhn.SVHN}}
+\doxysubsubsection{\texorpdfstring{data}{data}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1datasets_1_1svhn_1_1_s_v_h_n_a887df530114751f1325908e4c43bd0c2} 
+torchvision\+\_\+down.\+datasets.\+svhn.\+SVHN.\+data = loaded\+\_\+mat\mbox{[}"{}X"{}\mbox{]}}
+
+\Hypertarget{classtorchvision__down_1_1datasets_1_1svhn_1_1_s_v_h_n_a8896c5cfe790576768524236579c6b5e}\index{torchvision\_down.datasets.svhn.SVHN@{torchvision\_down.datasets.svhn.SVHN}!file\_md5@{file\_md5}}
+\index{file\_md5@{file\_md5}!torchvision\_down.datasets.svhn.SVHN@{torchvision\_down.datasets.svhn.SVHN}}
+\doxysubsubsection{\texorpdfstring{file\_md5}{file\_md5}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1datasets_1_1svhn_1_1_s_v_h_n_a8896c5cfe790576768524236579c6b5e} 
+dict torchvision\+\_\+down.\+datasets.\+svhn.\+SVHN.\+file\+\_\+md5 = self.\+split\+\_\+list\mbox{[}\mbox{\hyperlink{classtorchvision__down_1_1datasets_1_1svhn_1_1_s_v_h_n_a43f72dee4c7e879a3bc37ef4266e7b08}{split}}\mbox{]}\mbox{[}2\mbox{]}}
+
+\Hypertarget{classtorchvision__down_1_1datasets_1_1svhn_1_1_s_v_h_n_a358fd99d3ccdf50761ed410fb6348e88}\index{torchvision\_down.datasets.svhn.SVHN@{torchvision\_down.datasets.svhn.SVHN}!filename@{filename}}
+\index{filename@{filename}!torchvision\_down.datasets.svhn.SVHN@{torchvision\_down.datasets.svhn.SVHN}}
+\doxysubsubsection{\texorpdfstring{filename}{filename}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1datasets_1_1svhn_1_1_s_v_h_n_a358fd99d3ccdf50761ed410fb6348e88} 
+torchvision\+\_\+down.\+datasets.\+svhn.\+SVHN.\+filename = self.\+split\+\_\+list\mbox{[}\mbox{\hyperlink{classtorchvision__down_1_1datasets_1_1svhn_1_1_s_v_h_n_a43f72dee4c7e879a3bc37ef4266e7b08}{split}}\mbox{]}\mbox{[}1\mbox{]}}
+
+\Hypertarget{classtorchvision__down_1_1datasets_1_1svhn_1_1_s_v_h_n_aa75d8f61609440063e97ff63cbf676a7}\index{torchvision\_down.datasets.svhn.SVHN@{torchvision\_down.datasets.svhn.SVHN}!labels@{labels}}
+\index{labels@{labels}!torchvision\_down.datasets.svhn.SVHN@{torchvision\_down.datasets.svhn.SVHN}}
+\doxysubsubsection{\texorpdfstring{labels}{labels}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1datasets_1_1svhn_1_1_s_v_h_n_aa75d8f61609440063e97ff63cbf676a7} 
+torchvision\+\_\+down.\+datasets.\+svhn.\+SVHN.\+labels = loaded\+\_\+mat\mbox{[}"{}y"{}\mbox{]}.astype(np.\+int64).squeeze()}
+
+\Hypertarget{classtorchvision__down_1_1datasets_1_1svhn_1_1_s_v_h_n_a43f72dee4c7e879a3bc37ef4266e7b08}\index{torchvision\_down.datasets.svhn.SVHN@{torchvision\_down.datasets.svhn.SVHN}!split@{split}}
+\index{split@{split}!torchvision\_down.datasets.svhn.SVHN@{torchvision\_down.datasets.svhn.SVHN}}
+\doxysubsubsection{\texorpdfstring{split}{split}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1datasets_1_1svhn_1_1_s_v_h_n_a43f72dee4c7e879a3bc37ef4266e7b08} 
+torchvision\+\_\+down.\+datasets.\+svhn.\+SVHN.\+split = verify\+\_\+str\+\_\+arg(split, "{}split"{}, tuple(self.\+split\+\_\+list.\+keys()))}
+
+\Hypertarget{classtorchvision__down_1_1datasets_1_1svhn_1_1_s_v_h_n_aa12f27195b63180ef26f4f4943987ebe}\index{torchvision\_down.datasets.svhn.SVHN@{torchvision\_down.datasets.svhn.SVHN}!split\_list@{split\_list}}
+\index{split\_list@{split\_list}!torchvision\_down.datasets.svhn.SVHN@{torchvision\_down.datasets.svhn.SVHN}}
+\doxysubsubsection{\texorpdfstring{split\_list}{split\_list}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1datasets_1_1svhn_1_1_s_v_h_n_aa12f27195b63180ef26f4f4943987ebe} 
+dict torchvision\+\_\+down.\+datasets.\+svhn.\+SVHN.\+split\+\_\+list\hspace{0.3cm}{\ttfamily [static]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}train"{}}:\ [}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}http://ufldl.stanford.edu/housenumbers/train\_32x32.mat"{}},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}train\_32x32.mat"{}},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}e26dedcc434d2e4c54c9b2d4a06d8373"{}},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ ],}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}test"{}}:\ [}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}http://ufldl.stanford.edu/housenumbers/test\_32x32.mat"{}},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}test\_32x32.mat"{}},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}eb5a983be6a315427106f1b164d9cef3"{}},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ ],}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}extra"{}}:\ [}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}http://ufldl.stanford.edu/housenumbers/extra\_32x32.mat"{}},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}extra\_32x32.mat"{}},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}a93ce644f1a588dc4d68dda5feec44a7"{}},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ ],}
+\DoxyCodeLine{\ \ \ \ \}}
+
+\end{DoxyCode}
+\Hypertarget{classtorchvision__down_1_1datasets_1_1svhn_1_1_s_v_h_n_a8f4e382d7368d4eecb756a4842afe9d2}\index{torchvision\_down.datasets.svhn.SVHN@{torchvision\_down.datasets.svhn.SVHN}!url@{url}}
+\index{url@{url}!torchvision\_down.datasets.svhn.SVHN@{torchvision\_down.datasets.svhn.SVHN}}
+\doxysubsubsection{\texorpdfstring{url}{url}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1datasets_1_1svhn_1_1_s_v_h_n_a8f4e382d7368d4eecb756a4842afe9d2} 
+torchvision\+\_\+down.\+datasets.\+svhn.\+SVHN.\+url = self.\+split\+\_\+list\mbox{[}\mbox{\hyperlink{classtorchvision__down_1_1datasets_1_1svhn_1_1_s_v_h_n_a43f72dee4c7e879a3bc37ef4266e7b08}{split}}\mbox{]}\mbox{[}0\mbox{]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Cervi\+AI/torchvision\+\_\+down/datasets/\mbox{\hyperlink{svhn_8py}{svhn.\+py}}\end{DoxyCompactItemize}

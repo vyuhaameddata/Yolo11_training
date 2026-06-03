@@ -1,0 +1,93 @@
+\doxysection{torchvision\+\_\+down.\+models.\+quantization.\+inception Namespace Reference}
+\hypertarget{namespacetorchvision__down_1_1models_1_1quantization_1_1inception}{}\label{namespacetorchvision__down_1_1models_1_1quantization_1_1inception}\index{torchvision\_down.models.quantization.inception@{torchvision\_down.models.quantization.inception}}
+\doxysubsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classtorchvision__down_1_1models_1_1quantization_1_1inception_1_1_quantizable_basic_conv2d}{Quantizable\+Basic\+Conv2d}}
+\item 
+class \mbox{\hyperlink{classtorchvision__down_1_1models_1_1quantization_1_1inception_1_1_quantizable_inception3}{Quantizable\+Inception3}}
+\item 
+class \mbox{\hyperlink{classtorchvision__down_1_1models_1_1quantization_1_1inception_1_1_quantizable_inception_a}{Quantizable\+InceptionA}}
+\item 
+class \mbox{\hyperlink{classtorchvision__down_1_1models_1_1quantization_1_1inception_1_1_quantizable_inception_aux}{Quantizable\+Inception\+Aux}}
+\item 
+class \mbox{\hyperlink{classtorchvision__down_1_1models_1_1quantization_1_1inception_1_1_quantizable_inception_b}{Quantizable\+InceptionB}}
+\item 
+class \mbox{\hyperlink{classtorchvision__down_1_1models_1_1quantization_1_1inception_1_1_quantizable_inception_c}{Quantizable\+InceptionC}}
+\item 
+class \mbox{\hyperlink{classtorchvision__down_1_1models_1_1quantization_1_1inception_1_1_quantizable_inception_d}{Quantizable\+InceptionD}}
+\item 
+class \mbox{\hyperlink{classtorchvision__down_1_1models_1_1quantization_1_1inception_1_1_quantizable_inception_e}{Quantizable\+InceptionE}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1models_1_1quantization_1_1inception_1_1_quantizable_inception3}{Quantizable\+Inception3}} \mbox{\hyperlink{namespacetorchvision__down_1_1models_1_1quantization_1_1inception_aa872f791870f69c9671ba7a25fbca7b8}{inception\+\_\+v3}} (bool pretrained=False, bool progress=True, bool quantize=False, \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}Any kwargs)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+list \mbox{\hyperlink{namespacetorchvision__down_1_1models_1_1quantization_1_1inception_a95a71d5139a69c9ea0a8e57aafb42f88}{\+\_\+\+\_\+all\+\_\+\+\_\+}}
+\item 
+dict \mbox{\hyperlink{namespacetorchvision__down_1_1models_1_1quantization_1_1inception_a6a92326c7da5160058404f9ba6f2784d}{quant\+\_\+model\+\_\+urls}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{namespacetorchvision__down_1_1models_1_1quantization_1_1inception_aa872f791870f69c9671ba7a25fbca7b8}\index{torchvision\_down.models.quantization.inception@{torchvision\_down.models.quantization.inception}!inception\_v3@{inception\_v3}}
+\index{inception\_v3@{inception\_v3}!torchvision\_down.models.quantization.inception@{torchvision\_down.models.quantization.inception}}
+\doxysubsubsection{\texorpdfstring{inception\_v3()}{inception\_v3()}}
+{\footnotesize\ttfamily \label{namespacetorchvision__down_1_1models_1_1quantization_1_1inception_aa872f791870f69c9671ba7a25fbca7b8} 
+ \mbox{\hyperlink{classtorchvision__down_1_1models_1_1quantization_1_1inception_1_1_quantizable_inception3}{Quantizable\+Inception3}} torchvision\+\_\+down.\+models.\+quantization.\+inception.\+inception\+\_\+v3 (\begin{DoxyParamCaption}\item[{bool }]{pretrained}{ = {\ttfamily False}, }\item[{bool }]{progress}{ = {\ttfamily True}, }\item[{bool }]{quantize}{ = {\ttfamily False}, }\item[{\texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}Any}]{kwargs}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Inception v3 model architecture from
+`"Rethinking the Inception Architecture for Computer Vision" <http://arxiv.org/abs/1512.00567>`_.
+
+.. note::
+**Important**: In contrast to the other models the inception_v3 expects tensors with a size of
+N x 3 x 299 x 299, so ensure your images are sized accordingly.
+
+Note that quantize = True returns a quantized model with 8 bit
+weights. Quantized models only support inference and run on CPUs.
+GPU inference is not yet supported
+
+Args:
+pretrained (bool): If True, returns a model pre-trained on ImageNet
+progress (bool): If True, displays a progress bar of the download to stderr
+quantize (bool): If True, return a quantized version of the model
+aux_logits (bool): If True, add an auxiliary branch that can improve training.
+Default: *True*
+transform_input (bool): If True, preprocesses the input according to the method with which it
+was trained on ImageNet. Default: True if ``pretrained=True``, else False.
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Variable Documentation}
+\Hypertarget{namespacetorchvision__down_1_1models_1_1quantization_1_1inception_a95a71d5139a69c9ea0a8e57aafb42f88}\index{torchvision\_down.models.quantization.inception@{torchvision\_down.models.quantization.inception}!\_\_all\_\_@{\_\_all\_\_}}
+\index{\_\_all\_\_@{\_\_all\_\_}!torchvision\_down.models.quantization.inception@{torchvision\_down.models.quantization.inception}}
+\doxysubsubsection{\texorpdfstring{\_\_all\_\_}{\_\_all\_\_}}
+{\footnotesize\ttfamily \label{namespacetorchvision__down_1_1models_1_1quantization_1_1inception_a95a71d5139a69c9ea0a8e57aafb42f88} 
+list torchvision\+\_\+down.\+models.\+quantization.\+inception.\+\_\+\+\_\+all\+\_\+\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ =\ \ [}
+\DoxyCodeLine{00002\ \ \ \ \ \textcolor{stringliteral}{"{}QuantizableInception3"{}},}
+\DoxyCodeLine{00003\ \ \ \ \ \textcolor{stringliteral}{"{}inception\_v3"{}},}
+\DoxyCodeLine{00004\ ]}
+
+\end{DoxyCode}
+\Hypertarget{namespacetorchvision__down_1_1models_1_1quantization_1_1inception_a6a92326c7da5160058404f9ba6f2784d}\index{torchvision\_down.models.quantization.inception@{torchvision\_down.models.quantization.inception}!quant\_model\_urls@{quant\_model\_urls}}
+\index{quant\_model\_urls@{quant\_model\_urls}!torchvision\_down.models.quantization.inception@{torchvision\_down.models.quantization.inception}}
+\doxysubsubsection{\texorpdfstring{quant\_model\_urls}{quant\_model\_urls}}
+{\footnotesize\ttfamily \label{namespacetorchvision__down_1_1models_1_1quantization_1_1inception_a6a92326c7da5160058404f9ba6f2784d} 
+dict torchvision\+\_\+down.\+models.\+quantization.\+inception.\+quant\+\_\+model\+\_\+urls}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ =\ \ \{}
+\DoxyCodeLine{00002\ \ \ \ \ \textcolor{comment}{\#\ fp32\ weights\ ported\ from\ TensorFlow,\ quantized\ in\ PyTorch}}
+\DoxyCodeLine{00003\ \ \ \ \ \textcolor{stringliteral}{"{}inception\_v3\_google\_fbgemm"{}}:\ \textcolor{stringliteral}{"{}https://download.pytorch.org/models/quantized/inception\_v3\_google\_fbgemm-\/71447a44.pth"{}}}
+\DoxyCodeLine{00004\ \}}
+
+\end{DoxyCode}

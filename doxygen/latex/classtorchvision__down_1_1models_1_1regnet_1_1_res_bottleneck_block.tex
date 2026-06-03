@@ -1,0 +1,86 @@
+\doxysection{torchvision\+\_\+down.\+models.\+regnet.\+Res\+Bottleneck\+Block Class Reference}
+\hypertarget{classtorchvision__down_1_1models_1_1regnet_1_1_res_bottleneck_block}{}\label{classtorchvision__down_1_1models_1_1regnet_1_1_res_bottleneck_block}\index{torchvision\_down.models.regnet.ResBottleneckBlock@{torchvision\_down.models.regnet.ResBottleneckBlock}}
+Inheritance diagram for torchvision\+\_\+down.\+models.\+regnet.\+Res\+Bottleneck\+Block\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classtorchvision__down_1_1models_1_1regnet_1_1_res_bottleneck_block}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+None \mbox{\hyperlink{classtorchvision__down_1_1models_1_1regnet_1_1_res_bottleneck_block_a14d0cfad125848f564626484fae78464}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, int width\+\_\+in, int width\+\_\+out, int stride, Callable\mbox{[}..., nn.\+Module\mbox{]} norm\+\_\+layer, Callable\mbox{[}..., nn.\+Module\mbox{]} activation\+\_\+layer, int group\+\_\+width=1, float bottleneck\+\_\+multiplier=1.\+0, Optional\mbox{[}float\mbox{]} se\+\_\+ratio=None)
+\item 
+Tensor \mbox{\hyperlink{classtorchvision__down_1_1models_1_1regnet_1_1_res_bottleneck_block_aa0fb6e1df0e1d1fb943d1d4b165a6803}{forward}} (self, Tensor x)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1models_1_1regnet_1_1_res_bottleneck_block_a3e49289420c4d2dca773794af7cd5f38}{proj}} = None
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1models_1_1regnet_1_1_res_bottleneck_block_a02103d6b65e9ddaa2ab8d14a9593a489}{f}}
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1models_1_1regnet_1_1_res_bottleneck_block_ae82da02d2f38a54f4773fd83bfcd1d5d}{activation}} = activation\+\_\+layer(inplace=True)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}Residual bottleneck block: x + F(x), F = bottleneck transform.\end{DoxyVerb}
+ 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classtorchvision__down_1_1models_1_1regnet_1_1_res_bottleneck_block_a14d0cfad125848f564626484fae78464}\index{torchvision\_down.models.regnet.ResBottleneckBlock@{torchvision\_down.models.regnet.ResBottleneckBlock}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!torchvision\_down.models.regnet.ResBottleneckBlock@{torchvision\_down.models.regnet.ResBottleneckBlock}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1models_1_1regnet_1_1_res_bottleneck_block_a14d0cfad125848f564626484fae78464} 
+ None torchvision\+\_\+down.\+models.\+regnet.\+Res\+Bottleneck\+Block.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{int}]{width\+\_\+in}{, }\item[{int}]{width\+\_\+out}{, }\item[{int}]{stride}{, }\item[{Callable\mbox{[}..., nn.\+Module\mbox{]}}]{norm\+\_\+layer}{, }\item[{Callable\mbox{[}..., nn.\+Module\mbox{]}}]{activation\+\_\+layer}{, }\item[{int }]{group\+\_\+width}{ = {\ttfamily 1}, }\item[{float }]{bottleneck\+\_\+multiplier}{ = {\ttfamily 1.0}, }\item[{Optional\mbox{[}float\mbox{]} }]{se\+\_\+ratio}{ = {\ttfamily None}}\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classtorchvision__down_1_1models_1_1regnet_1_1_res_bottleneck_block_aa0fb6e1df0e1d1fb943d1d4b165a6803}\index{torchvision\_down.models.regnet.ResBottleneckBlock@{torchvision\_down.models.regnet.ResBottleneckBlock}!forward@{forward}}
+\index{forward@{forward}!torchvision\_down.models.regnet.ResBottleneckBlock@{torchvision\_down.models.regnet.ResBottleneckBlock}}
+\doxysubsubsection{\texorpdfstring{forward()}{forward()}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1models_1_1regnet_1_1_res_bottleneck_block_aa0fb6e1df0e1d1fb943d1d4b165a6803} 
+ Tensor torchvision\+\_\+down.\+models.\+regnet.\+Res\+Bottleneck\+Block.\+forward (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{Tensor}]{x}{}\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classtorchvision__down_1_1models_1_1regnet_1_1_res_bottleneck_block_ae82da02d2f38a54f4773fd83bfcd1d5d}\index{torchvision\_down.models.regnet.ResBottleneckBlock@{torchvision\_down.models.regnet.ResBottleneckBlock}!activation@{activation}}
+\index{activation@{activation}!torchvision\_down.models.regnet.ResBottleneckBlock@{torchvision\_down.models.regnet.ResBottleneckBlock}}
+\doxysubsubsection{\texorpdfstring{activation}{activation}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1models_1_1regnet_1_1_res_bottleneck_block_ae82da02d2f38a54f4773fd83bfcd1d5d} 
+torchvision\+\_\+down.\+models.\+regnet.\+Res\+Bottleneck\+Block.\+activation = activation\+\_\+layer(inplace=True)}
+
+\Hypertarget{classtorchvision__down_1_1models_1_1regnet_1_1_res_bottleneck_block_a02103d6b65e9ddaa2ab8d14a9593a489}\index{torchvision\_down.models.regnet.ResBottleneckBlock@{torchvision\_down.models.regnet.ResBottleneckBlock}!f@{f}}
+\index{f@{f}!torchvision\_down.models.regnet.ResBottleneckBlock@{torchvision\_down.models.regnet.ResBottleneckBlock}}
+\doxysubsubsection{\texorpdfstring{f}{f}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1models_1_1regnet_1_1_res_bottleneck_block_a02103d6b65e9ddaa2ab8d14a9593a489} 
+torchvision\+\_\+down.\+models.\+regnet.\+Res\+Bottleneck\+Block.\+f}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \ BottleneckTransform(}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ width\_in,}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ width\_out,}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ stride,}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ norm\_layer,}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ activation\_layer,}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ group\_width,}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ bottleneck\_multiplier,}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ se\_ratio,}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ )}
+
+\end{DoxyCode}
+\Hypertarget{classtorchvision__down_1_1models_1_1regnet_1_1_res_bottleneck_block_a3e49289420c4d2dca773794af7cd5f38}\index{torchvision\_down.models.regnet.ResBottleneckBlock@{torchvision\_down.models.regnet.ResBottleneckBlock}!proj@{proj}}
+\index{proj@{proj}!torchvision\_down.models.regnet.ResBottleneckBlock@{torchvision\_down.models.regnet.ResBottleneckBlock}}
+\doxysubsubsection{\texorpdfstring{proj}{proj}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1models_1_1regnet_1_1_res_bottleneck_block_a3e49289420c4d2dca773794af7cd5f38} 
+torchvision\+\_\+down.\+models.\+regnet.\+Res\+Bottleneck\+Block.\+proj = None}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Cervi\+AI/torchvision\+\_\+down/models/\mbox{\hyperlink{regnet_8py}{regnet.\+py}}\end{DoxyCompactItemize}

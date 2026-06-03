@@ -1,0 +1,109 @@
+\doxysection{torchvision\+\_\+down.\+models.\+optical\+\_\+flow.\+raft.\+Bottleneck\+Block Class Reference}
+\hypertarget{classtorchvision__down_1_1models_1_1optical__flow_1_1raft_1_1_bottleneck_block}{}\label{classtorchvision__down_1_1models_1_1optical__flow_1_1raft_1_1_bottleneck_block}\index{torchvision\_down.models.optical\_flow.raft.BottleneckBlock@{torchvision\_down.models.optical\_flow.raft.BottleneckBlock}}
+Inheritance diagram for torchvision\+\_\+down.\+models.\+optical\+\_\+flow.\+raft.\+Bottleneck\+Block\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classtorchvision__down_1_1models_1_1optical__flow_1_1raft_1_1_bottleneck_block}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1models_1_1optical__flow_1_1raft_1_1_bottleneck_block_a4d4bc69418f46fcdf5c6f099c784695d}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, in\+\_\+channels, out\+\_\+channels, \texorpdfstring{$\ast$}{*}, norm\+\_\+layer, stride=1)
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1models_1_1optical__flow_1_1raft_1_1_bottleneck_block_ac750384957684dc0f561979ee59d7c23}{forward}} (self, x)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1models_1_1optical__flow_1_1raft_1_1_bottleneck_block_a8e49b11e6280f08bc349328d2db46ad6}{convnormrelu1}}
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1models_1_1optical__flow_1_1raft_1_1_bottleneck_block_ae9c2233fb13d34961b965c735e2de7c1}{convnormrelu2}}
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1models_1_1optical__flow_1_1raft_1_1_bottleneck_block_ab61ab3a7952e1dd64fcb4f79199bbecb}{convnormrelu3}}
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1models_1_1optical__flow_1_1raft_1_1_bottleneck_block_ab82cb7f1972d3237d527fd913c1c463a}{relu}} = nn.\+Re\+LU(inplace=True)
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1models_1_1optical__flow_1_1raft_1_1_bottleneck_block_acf35f92c9a99cab5bc3f962d0c6daa14}{downsample}} = nn.\+Identity()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}Slightly modified BottleNeck block (extra relu and biases)\end{DoxyVerb}
+ 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classtorchvision__down_1_1models_1_1optical__flow_1_1raft_1_1_bottleneck_block_a4d4bc69418f46fcdf5c6f099c784695d}\index{torchvision\_down.models.optical\_flow.raft.BottleneckBlock@{torchvision\_down.models.optical\_flow.raft.BottleneckBlock}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!torchvision\_down.models.optical\_flow.raft.BottleneckBlock@{torchvision\_down.models.optical\_flow.raft.BottleneckBlock}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1models_1_1optical__flow_1_1raft_1_1_bottleneck_block_a4d4bc69418f46fcdf5c6f099c784695d} 
+torchvision\+\_\+down.\+models.\+optical\+\_\+flow.\+raft.\+Bottleneck\+Block.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{in\+\_\+channels}{, }\item[{}]{out\+\_\+channels}{, }\item[{\texorpdfstring{$\ast$}{*}}]{}{, }\item[{}]{norm\+\_\+layer}{, }\item[{}]{stride}{ = {\ttfamily 1}}\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classtorchvision__down_1_1models_1_1optical__flow_1_1raft_1_1_bottleneck_block_ac750384957684dc0f561979ee59d7c23}\index{torchvision\_down.models.optical\_flow.raft.BottleneckBlock@{torchvision\_down.models.optical\_flow.raft.BottleneckBlock}!forward@{forward}}
+\index{forward@{forward}!torchvision\_down.models.optical\_flow.raft.BottleneckBlock@{torchvision\_down.models.optical\_flow.raft.BottleneckBlock}}
+\doxysubsubsection{\texorpdfstring{forward()}{forward()}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1models_1_1optical__flow_1_1raft_1_1_bottleneck_block_ac750384957684dc0f561979ee59d7c23} 
+torchvision\+\_\+down.\+models.\+optical\+\_\+flow.\+raft.\+Bottleneck\+Block.\+forward (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{x}{}\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classtorchvision__down_1_1models_1_1optical__flow_1_1raft_1_1_bottleneck_block_a8e49b11e6280f08bc349328d2db46ad6}\index{torchvision\_down.models.optical\_flow.raft.BottleneckBlock@{torchvision\_down.models.optical\_flow.raft.BottleneckBlock}!convnormrelu1@{convnormrelu1}}
+\index{convnormrelu1@{convnormrelu1}!torchvision\_down.models.optical\_flow.raft.BottleneckBlock@{torchvision\_down.models.optical\_flow.raft.BottleneckBlock}}
+\doxysubsubsection{\texorpdfstring{convnormrelu1}{convnormrelu1}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1models_1_1optical__flow_1_1raft_1_1_bottleneck_block_a8e49b11e6280f08bc349328d2db46ad6} 
+torchvision\+\_\+down.\+models.\+optical\+\_\+flow.\+raft.\+Bottleneck\+Block.\+convnormrelu1}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \ ConvNormActivation(}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ in\_channels,\ out\_channels\ //\ 4,\ norm\_layer=norm\_layer,\ kernel\_size=1,\ bias=\textcolor{keyword}{True}}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ )}
+
+\end{DoxyCode}
+\Hypertarget{classtorchvision__down_1_1models_1_1optical__flow_1_1raft_1_1_bottleneck_block_ae9c2233fb13d34961b965c735e2de7c1}\index{torchvision\_down.models.optical\_flow.raft.BottleneckBlock@{torchvision\_down.models.optical\_flow.raft.BottleneckBlock}!convnormrelu2@{convnormrelu2}}
+\index{convnormrelu2@{convnormrelu2}!torchvision\_down.models.optical\_flow.raft.BottleneckBlock@{torchvision\_down.models.optical\_flow.raft.BottleneckBlock}}
+\doxysubsubsection{\texorpdfstring{convnormrelu2}{convnormrelu2}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1models_1_1optical__flow_1_1raft_1_1_bottleneck_block_ae9c2233fb13d34961b965c735e2de7c1} 
+torchvision\+\_\+down.\+models.\+optical\+\_\+flow.\+raft.\+Bottleneck\+Block.\+convnormrelu2}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \ ConvNormActivation(}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ out\_channels\ //\ 4,\ out\_channels\ //\ 4,\ norm\_layer=norm\_layer,\ kernel\_size=3,\ stride=stride,\ bias=\textcolor{keyword}{True}}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ )}
+
+\end{DoxyCode}
+\Hypertarget{classtorchvision__down_1_1models_1_1optical__flow_1_1raft_1_1_bottleneck_block_ab61ab3a7952e1dd64fcb4f79199bbecb}\index{torchvision\_down.models.optical\_flow.raft.BottleneckBlock@{torchvision\_down.models.optical\_flow.raft.BottleneckBlock}!convnormrelu3@{convnormrelu3}}
+\index{convnormrelu3@{convnormrelu3}!torchvision\_down.models.optical\_flow.raft.BottleneckBlock@{torchvision\_down.models.optical\_flow.raft.BottleneckBlock}}
+\doxysubsubsection{\texorpdfstring{convnormrelu3}{convnormrelu3}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1models_1_1optical__flow_1_1raft_1_1_bottleneck_block_ab61ab3a7952e1dd64fcb4f79199bbecb} 
+torchvision\+\_\+down.\+models.\+optical\+\_\+flow.\+raft.\+Bottleneck\+Block.\+convnormrelu3}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \ ConvNormActivation(}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ out\_channels\ //\ 4,\ out\_channels,\ norm\_layer=norm\_layer,\ kernel\_size=1,\ bias=\textcolor{keyword}{True}}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ )}
+
+\end{DoxyCode}
+\Hypertarget{classtorchvision__down_1_1models_1_1optical__flow_1_1raft_1_1_bottleneck_block_acf35f92c9a99cab5bc3f962d0c6daa14}\index{torchvision\_down.models.optical\_flow.raft.BottleneckBlock@{torchvision\_down.models.optical\_flow.raft.BottleneckBlock}!downsample@{downsample}}
+\index{downsample@{downsample}!torchvision\_down.models.optical\_flow.raft.BottleneckBlock@{torchvision\_down.models.optical\_flow.raft.BottleneckBlock}}
+\doxysubsubsection{\texorpdfstring{downsample}{downsample}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1models_1_1optical__flow_1_1raft_1_1_bottleneck_block_acf35f92c9a99cab5bc3f962d0c6daa14} 
+torchvision\+\_\+down.\+models.\+optical\+\_\+flow.\+raft.\+Bottleneck\+Block.\+downsample = nn.\+Identity()}
+
+\Hypertarget{classtorchvision__down_1_1models_1_1optical__flow_1_1raft_1_1_bottleneck_block_ab82cb7f1972d3237d527fd913c1c463a}\index{torchvision\_down.models.optical\_flow.raft.BottleneckBlock@{torchvision\_down.models.optical\_flow.raft.BottleneckBlock}!relu@{relu}}
+\index{relu@{relu}!torchvision\_down.models.optical\_flow.raft.BottleneckBlock@{torchvision\_down.models.optical\_flow.raft.BottleneckBlock}}
+\doxysubsubsection{\texorpdfstring{relu}{relu}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1models_1_1optical__flow_1_1raft_1_1_bottleneck_block_ab82cb7f1972d3237d527fd913c1c463a} 
+torchvision\+\_\+down.\+models.\+optical\+\_\+flow.\+raft.\+Bottleneck\+Block.\+relu = nn.\+Re\+LU(inplace=True)}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Cervi\+AI/torchvision\+\_\+down/models/optical\+\_\+flow/\mbox{\hyperlink{raft_8py}{raft.\+py}}\end{DoxyCompactItemize}

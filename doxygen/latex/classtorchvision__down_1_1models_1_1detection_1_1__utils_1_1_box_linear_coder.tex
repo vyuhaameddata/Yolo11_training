@@ -1,0 +1,83 @@
+\doxysection{torchvision\+\_\+down.\+models.\+detection.\+\_\+utils.\+Box\+Linear\+Coder Class Reference}
+\hypertarget{classtorchvision__down_1_1models_1_1detection_1_1__utils_1_1_box_linear_coder}{}\label{classtorchvision__down_1_1models_1_1detection_1_1__utils_1_1_box_linear_coder}\index{torchvision\_down.models.detection.\_utils.BoxLinearCoder@{torchvision\_down.models.detection.\_utils.BoxLinearCoder}}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+None \mbox{\hyperlink{classtorchvision__down_1_1models_1_1detection_1_1__utils_1_1_box_linear_coder_a9bd118a5d6f5e9c24c4c6f70509adb21}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, bool \mbox{\hyperlink{classtorchvision__down_1_1models_1_1detection_1_1__utils_1_1_box_linear_coder_a90c22752b72fa924607de1a02601522a}{normalize\+\_\+by\+\_\+size}}=True)
+\item 
+Tensor \mbox{\hyperlink{classtorchvision__down_1_1models_1_1detection_1_1__utils_1_1_box_linear_coder_a69960495484e4ead45c8a2a5732cdb74}{encode\+\_\+single}} (self, Tensor reference\+\_\+boxes, Tensor proposals)
+\item 
+Tensor \mbox{\hyperlink{classtorchvision__down_1_1models_1_1detection_1_1__utils_1_1_box_linear_coder_ab18b8fe7332e14fa72cdfa5b5fad90eb}{decode\+\_\+single}} (self, Tensor rel\+\_\+codes, Tensor boxes)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1models_1_1detection_1_1__utils_1_1_box_linear_coder_a90c22752b72fa924607de1a02601522a}{normalize\+\_\+by\+\_\+size}} = normalize\+\_\+by\+\_\+size
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}The linear box-to-box transform defined in FCOS. The transformation is parameterized
+by the distance from the center of (square) src box to 4 edges of the target box.
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classtorchvision__down_1_1models_1_1detection_1_1__utils_1_1_box_linear_coder_a9bd118a5d6f5e9c24c4c6f70509adb21}\index{torchvision\_down.models.detection.\_utils.BoxLinearCoder@{torchvision\_down.models.detection.\_utils.BoxLinearCoder}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!torchvision\_down.models.detection.\_utils.BoxLinearCoder@{torchvision\_down.models.detection.\_utils.BoxLinearCoder}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1models_1_1detection_1_1__utils_1_1_box_linear_coder_a9bd118a5d6f5e9c24c4c6f70509adb21} 
+ None torchvision\+\_\+down.\+models.\+detection.\+\_\+utils.\+Box\+Linear\+Coder.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{bool }]{normalize\+\_\+by\+\_\+size}{ = {\ttfamily True}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Args:
+    normalize_by_size (bool): normalize deltas by the size of src (anchor) boxes.
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classtorchvision__down_1_1models_1_1detection_1_1__utils_1_1_box_linear_coder_ab18b8fe7332e14fa72cdfa5b5fad90eb}\index{torchvision\_down.models.detection.\_utils.BoxLinearCoder@{torchvision\_down.models.detection.\_utils.BoxLinearCoder}!decode\_single@{decode\_single}}
+\index{decode\_single@{decode\_single}!torchvision\_down.models.detection.\_utils.BoxLinearCoder@{torchvision\_down.models.detection.\_utils.BoxLinearCoder}}
+\doxysubsubsection{\texorpdfstring{decode\_single()}{decode\_single()}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1models_1_1detection_1_1__utils_1_1_box_linear_coder_ab18b8fe7332e14fa72cdfa5b5fad90eb} 
+ Tensor torchvision\+\_\+down.\+models.\+detection.\+\_\+utils.\+Box\+Linear\+Coder.\+decode\+\_\+single (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{Tensor}]{rel\+\_\+codes}{, }\item[{Tensor}]{boxes}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}From a set of original boxes and encoded relative box offsets,
+get the decoded boxes.
+
+Args:
+    rel_codes (Tensor): encoded boxes
+    boxes (Tensor): reference boxes.
+
+Returns:
+    Tensor: the predicted boxes with the encoded relative box offsets.
+\end{DoxyVerb}
+ \Hypertarget{classtorchvision__down_1_1models_1_1detection_1_1__utils_1_1_box_linear_coder_a69960495484e4ead45c8a2a5732cdb74}\index{torchvision\_down.models.detection.\_utils.BoxLinearCoder@{torchvision\_down.models.detection.\_utils.BoxLinearCoder}!encode\_single@{encode\_single}}
+\index{encode\_single@{encode\_single}!torchvision\_down.models.detection.\_utils.BoxLinearCoder@{torchvision\_down.models.detection.\_utils.BoxLinearCoder}}
+\doxysubsubsection{\texorpdfstring{encode\_single()}{encode\_single()}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1models_1_1detection_1_1__utils_1_1_box_linear_coder_a69960495484e4ead45c8a2a5732cdb74} 
+ Tensor torchvision\+\_\+down.\+models.\+detection.\+\_\+utils.\+Box\+Linear\+Coder.\+encode\+\_\+single (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{Tensor}]{reference\+\_\+boxes}{, }\item[{Tensor}]{proposals}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Encode a set of proposals with respect to some reference boxes
+
+Args:
+    reference_boxes (Tensor): reference boxes
+    proposals (Tensor): boxes to be encoded
+
+Returns:
+    Tensor: the encoded relative box offsets that can be used to
+    decode the boxes.
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classtorchvision__down_1_1models_1_1detection_1_1__utils_1_1_box_linear_coder_a90c22752b72fa924607de1a02601522a}\index{torchvision\_down.models.detection.\_utils.BoxLinearCoder@{torchvision\_down.models.detection.\_utils.BoxLinearCoder}!normalize\_by\_size@{normalize\_by\_size}}
+\index{normalize\_by\_size@{normalize\_by\_size}!torchvision\_down.models.detection.\_utils.BoxLinearCoder@{torchvision\_down.models.detection.\_utils.BoxLinearCoder}}
+\doxysubsubsection{\texorpdfstring{normalize\_by\_size}{normalize\_by\_size}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1models_1_1detection_1_1__utils_1_1_box_linear_coder_a90c22752b72fa924607de1a02601522a} 
+torchvision\+\_\+down.\+models.\+detection.\+\_\+utils.\+Box\+Linear\+Coder.\+normalize\+\_\+by\+\_\+size = normalize\+\_\+by\+\_\+size}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Cervi\+AI/torchvision\+\_\+down/models/detection/\mbox{\hyperlink{models_2detection_2__utils_8py}{\+\_\+utils.\+py}}\end{DoxyCompactItemize}

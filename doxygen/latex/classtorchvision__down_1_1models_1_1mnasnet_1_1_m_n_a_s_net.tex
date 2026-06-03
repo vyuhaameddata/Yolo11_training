@@ -1,0 +1,111 @@
+\doxysection{torchvision\+\_\+down.\+models.\+mnasnet.\+MNASNet Class Reference}
+\hypertarget{classtorchvision__down_1_1models_1_1mnasnet_1_1_m_n_a_s_net}{}\label{classtorchvision__down_1_1models_1_1mnasnet_1_1_m_n_a_s_net}\index{torchvision\_down.models.mnasnet.MNASNet@{torchvision\_down.models.mnasnet.MNASNet}}
+Inheritance diagram for torchvision\+\_\+down.\+models.\+mnasnet.\+MNASNet\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classtorchvision__down_1_1models_1_1mnasnet_1_1_m_n_a_s_net}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+None \mbox{\hyperlink{classtorchvision__down_1_1models_1_1mnasnet_1_1_m_n_a_s_net_a9e1e222b1e0e87705491ab1940e83211}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, float \mbox{\hyperlink{classtorchvision__down_1_1models_1_1mnasnet_1_1_m_n_a_s_net_a25a81cf609d441c417a60efb57b5075f}{alpha}}, int \mbox{\hyperlink{classtorchvision__down_1_1models_1_1mnasnet_1_1_m_n_a_s_net_a3b7821946932c246ffa47744f0bf0dce}{num\+\_\+classes}}=1000, float dropout=0.\+2)
+\item 
+Tensor \mbox{\hyperlink{classtorchvision__down_1_1models_1_1mnasnet_1_1_m_n_a_s_net_ae338af3d026ff324f6a1af1ee9da32f3}{forward}} (self, Tensor x)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1models_1_1mnasnet_1_1_m_n_a_s_net_a25a81cf609d441c417a60efb57b5075f}{alpha}} = alpha
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1models_1_1mnasnet_1_1_m_n_a_s_net_a3b7821946932c246ffa47744f0bf0dce}{num\+\_\+classes}} = num\+\_\+classes
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1models_1_1mnasnet_1_1_m_n_a_s_net_ad4d1f71d44cf388efd078499c7c524e9}{layers}} = nn.\+Sequential(\texorpdfstring{$\ast$}{*}layers)
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1models_1_1mnasnet_1_1_m_n_a_s_net_a02dadc19935e9f3b5a524c115ac96d9c}{classifier}} = nn.\+Sequential(nn.\+Dropout(p=dropout, inplace=True), nn.\+Linear(1280, \mbox{\hyperlink{classtorchvision__down_1_1models_1_1mnasnet_1_1_m_n_a_s_net_a3b7821946932c246ffa47744f0bf0dce}{num\+\_\+classes}}))
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+None \mbox{\hyperlink{classtorchvision__down_1_1models_1_1mnasnet_1_1_m_n_a_s_net_a542ab91d09e797f93fa6173d6b7551f0}{\+\_\+load\+\_\+from\+\_\+state\+\_\+dict}} (self, Dict state\+\_\+dict, str prefix, Dict local\+\_\+metadata, bool strict, List\mbox{[}str\mbox{]} missing\+\_\+keys, List\mbox{[}str\mbox{]} unexpected\+\_\+keys, List\mbox{[}str\mbox{]} error\+\_\+msgs)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{classtorchvision__down_1_1models_1_1mnasnet_1_1_m_n_a_s_net_a6268e2204509d3f20c0365a227e20945}{\+\_\+version}} = 2
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}MNASNet, as described in https://arxiv.org/pdf/1807.11626.pdf. This
+implements the B1 variant of the model.
+>>> model = MNASNet(1.0, num_classes=1000)
+>>> x = torch.rand(1, 3, 224, 224)
+>>> y = model(x)
+>>> y.dim()
+2
+>>> y.nelement()
+1000
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classtorchvision__down_1_1models_1_1mnasnet_1_1_m_n_a_s_net_a9e1e222b1e0e87705491ab1940e83211}\index{torchvision\_down.models.mnasnet.MNASNet@{torchvision\_down.models.mnasnet.MNASNet}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!torchvision\_down.models.mnasnet.MNASNet@{torchvision\_down.models.mnasnet.MNASNet}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1models_1_1mnasnet_1_1_m_n_a_s_net_a9e1e222b1e0e87705491ab1940e83211} 
+ None torchvision\+\_\+down.\+models.\+mnasnet.\+MNASNet.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{float}]{alpha}{, }\item[{int }]{num\+\_\+classes}{ = {\ttfamily 1000}, }\item[{float }]{dropout}{ = {\ttfamily 0.2}}\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classtorchvision__down_1_1models_1_1mnasnet_1_1_m_n_a_s_net_a542ab91d09e797f93fa6173d6b7551f0}\index{torchvision\_down.models.mnasnet.MNASNet@{torchvision\_down.models.mnasnet.MNASNet}!\_load\_from\_state\_dict@{\_load\_from\_state\_dict}}
+\index{\_load\_from\_state\_dict@{\_load\_from\_state\_dict}!torchvision\_down.models.mnasnet.MNASNet@{torchvision\_down.models.mnasnet.MNASNet}}
+\doxysubsubsection{\texorpdfstring{\_load\_from\_state\_dict()}{\_load\_from\_state\_dict()}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1models_1_1mnasnet_1_1_m_n_a_s_net_a542ab91d09e797f93fa6173d6b7551f0} 
+ None torchvision\+\_\+down.\+models.\+mnasnet.\+MNASNet.\+\_\+load\+\_\+from\+\_\+state\+\_\+dict (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{Dict}]{state\+\_\+dict}{, }\item[{str}]{prefix}{, }\item[{Dict}]{local\+\_\+metadata}{, }\item[{bool}]{strict}{, }\item[{List\mbox{[}str\mbox{]}}]{missing\+\_\+keys}{, }\item[{List\mbox{[}str\mbox{]}}]{unexpected\+\_\+keys}{, }\item[{List\mbox{[}str\mbox{]}}]{error\+\_\+msgs}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classtorchvision__down_1_1models_1_1mnasnet_1_1_m_n_a_s_net_ae338af3d026ff324f6a1af1ee9da32f3}\index{torchvision\_down.models.mnasnet.MNASNet@{torchvision\_down.models.mnasnet.MNASNet}!forward@{forward}}
+\index{forward@{forward}!torchvision\_down.models.mnasnet.MNASNet@{torchvision\_down.models.mnasnet.MNASNet}}
+\doxysubsubsection{\texorpdfstring{forward()}{forward()}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1models_1_1mnasnet_1_1_m_n_a_s_net_ae338af3d026ff324f6a1af1ee9da32f3} 
+ Tensor torchvision\+\_\+down.\+models.\+mnasnet.\+MNASNet.\+forward (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{Tensor}]{x}{}\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classtorchvision__down_1_1models_1_1mnasnet_1_1_m_n_a_s_net_a6268e2204509d3f20c0365a227e20945}\index{torchvision\_down.models.mnasnet.MNASNet@{torchvision\_down.models.mnasnet.MNASNet}!\_version@{\_version}}
+\index{\_version@{\_version}!torchvision\_down.models.mnasnet.MNASNet@{torchvision\_down.models.mnasnet.MNASNet}}
+\doxysubsubsection{\texorpdfstring{\_version}{\_version}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1models_1_1mnasnet_1_1_m_n_a_s_net_a6268e2204509d3f20c0365a227e20945} 
+int torchvision\+\_\+down.\+models.\+mnasnet.\+MNASNet.\+\_\+version = 2\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}
+
+\Hypertarget{classtorchvision__down_1_1models_1_1mnasnet_1_1_m_n_a_s_net_a25a81cf609d441c417a60efb57b5075f}\index{torchvision\_down.models.mnasnet.MNASNet@{torchvision\_down.models.mnasnet.MNASNet}!alpha@{alpha}}
+\index{alpha@{alpha}!torchvision\_down.models.mnasnet.MNASNet@{torchvision\_down.models.mnasnet.MNASNet}}
+\doxysubsubsection{\texorpdfstring{alpha}{alpha}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1models_1_1mnasnet_1_1_m_n_a_s_net_a25a81cf609d441c417a60efb57b5075f} 
+torchvision\+\_\+down.\+models.\+mnasnet.\+MNASNet.\+alpha = alpha}
+
+\Hypertarget{classtorchvision__down_1_1models_1_1mnasnet_1_1_m_n_a_s_net_a02dadc19935e9f3b5a524c115ac96d9c}\index{torchvision\_down.models.mnasnet.MNASNet@{torchvision\_down.models.mnasnet.MNASNet}!classifier@{classifier}}
+\index{classifier@{classifier}!torchvision\_down.models.mnasnet.MNASNet@{torchvision\_down.models.mnasnet.MNASNet}}
+\doxysubsubsection{\texorpdfstring{classifier}{classifier}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1models_1_1mnasnet_1_1_m_n_a_s_net_a02dadc19935e9f3b5a524c115ac96d9c} 
+torchvision\+\_\+down.\+models.\+mnasnet.\+MNASNet.\+classifier = nn.\+Sequential(nn.\+Dropout(p=dropout, inplace=True), nn.\+Linear(1280, \mbox{\hyperlink{classtorchvision__down_1_1models_1_1mnasnet_1_1_m_n_a_s_net_a3b7821946932c246ffa47744f0bf0dce}{num\+\_\+classes}}))}
+
+\Hypertarget{classtorchvision__down_1_1models_1_1mnasnet_1_1_m_n_a_s_net_ad4d1f71d44cf388efd078499c7c524e9}\index{torchvision\_down.models.mnasnet.MNASNet@{torchvision\_down.models.mnasnet.MNASNet}!layers@{layers}}
+\index{layers@{layers}!torchvision\_down.models.mnasnet.MNASNet@{torchvision\_down.models.mnasnet.MNASNet}}
+\doxysubsubsection{\texorpdfstring{layers}{layers}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1models_1_1mnasnet_1_1_m_n_a_s_net_ad4d1f71d44cf388efd078499c7c524e9} 
+torchvision\+\_\+down.\+models.\+mnasnet.\+MNASNet.\+layers = nn.\+Sequential(\texorpdfstring{$\ast$}{*}layers)}
+
+\Hypertarget{classtorchvision__down_1_1models_1_1mnasnet_1_1_m_n_a_s_net_a3b7821946932c246ffa47744f0bf0dce}\index{torchvision\_down.models.mnasnet.MNASNet@{torchvision\_down.models.mnasnet.MNASNet}!num\_classes@{num\_classes}}
+\index{num\_classes@{num\_classes}!torchvision\_down.models.mnasnet.MNASNet@{torchvision\_down.models.mnasnet.MNASNet}}
+\doxysubsubsection{\texorpdfstring{num\_classes}{num\_classes}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1models_1_1mnasnet_1_1_m_n_a_s_net_a3b7821946932c246ffa47744f0bf0dce} 
+torchvision\+\_\+down.\+models.\+mnasnet.\+MNASNet.\+num\+\_\+classes = num\+\_\+classes}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Cervi\+AI/torchvision\+\_\+down/models/\mbox{\hyperlink{mnasnet_8py}{mnasnet.\+py}}\end{DoxyCompactItemize}

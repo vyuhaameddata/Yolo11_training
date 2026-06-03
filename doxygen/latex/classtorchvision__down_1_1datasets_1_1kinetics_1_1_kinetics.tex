@@ -1,0 +1,323 @@
+\doxysection{torchvision\+\_\+down.\+datasets.\+kinetics.\+Kinetics Class Reference}
+\hypertarget{classtorchvision__down_1_1datasets_1_1kinetics_1_1_kinetics}{}\label{classtorchvision__down_1_1datasets_1_1kinetics_1_1_kinetics}\index{torchvision\_down.datasets.kinetics.Kinetics@{torchvision\_down.datasets.kinetics.Kinetics}}
+Inheritance diagram for torchvision\+\_\+down.\+datasets.\+kinetics.\+Kinetics\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=4.000000cm]{classtorchvision__down_1_1datasets_1_1kinetics_1_1_kinetics}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+None \mbox{\hyperlink{classtorchvision__down_1_1datasets_1_1kinetics_1_1_kinetics_af1f5487f17f57f5ecc7eb0f443ff13b5}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, str \mbox{\hyperlink{classtorchvision__down_1_1datasets_1_1kinetics_1_1_kinetics}{root}}, int frames\+\_\+per\+\_\+clip, str \mbox{\hyperlink{classtorchvision__down_1_1datasets_1_1kinetics_1_1_kinetics_af2925db6165b2d524331a76d352dc732}{num\+\_\+classes}}="{}400"{}, str \mbox{\hyperlink{classtorchvision__down_1_1datasets_1_1kinetics_1_1_kinetics_a63d959a9bf9f153d01ebcac898712cd6}{split}}="{}train"{}, Optional\mbox{[}int\mbox{]} frame\+\_\+rate=None, int step\+\_\+between\+\_\+clips=1, Optional\mbox{[}Callable\mbox{]} \mbox{\hyperlink{classtorchvision__down_1_1datasets_1_1kinetics_1_1_kinetics}{transform}}=None, Tuple\mbox{[}str,...\mbox{]} \mbox{\hyperlink{classtorchvision__down_1_1datasets_1_1kinetics_1_1_kinetics_ae8638920b7c2fbfe05d6daac8afee981}{extensions}}=("{}avi"{}, "{}mp4"{}), bool download=False, int \mbox{\hyperlink{classtorchvision__down_1_1datasets_1_1kinetics_1_1_kinetics_acc99e1fcd7079bcd5d0a8d58c357a743}{num\+\_\+download\+\_\+workers}}=1, int num\+\_\+workers=1, Optional\mbox{[}Dict\mbox{[}str, Any\mbox{]}\mbox{]} \+\_\+precomputed\+\_\+metadata=None, int \+\_\+video\+\_\+width=0, int \+\_\+video\+\_\+height=0, int \+\_\+video\+\_\+min\+\_\+dimension=0, int \+\_\+audio\+\_\+samples=0, int \+\_\+audio\+\_\+channels=0, bool \mbox{\hyperlink{classtorchvision__down_1_1datasets_1_1kinetics_1_1_kinetics_a47552627c61b6eae0c39c68828664301}{\+\_\+legacy}}=False)
+\item 
+None \mbox{\hyperlink{classtorchvision__down_1_1datasets_1_1kinetics_1_1_kinetics_a51e2d9044656710f44c99a457ccb738c}{download\+\_\+and\+\_\+process\+\_\+videos}} (self)
+\item 
+Dict\mbox{[}str, Any\mbox{]} \mbox{\hyperlink{classtorchvision__down_1_1datasets_1_1kinetics_1_1_kinetics_ad927498dae75e12c5f55e776050fa5ac}{metadata}} (self)
+\item 
+int \mbox{\hyperlink{classtorchvision__down_1_1datasets_1_1kinetics_1_1_kinetics_aadaa3965517ffc2af036f7bd69e17cfb}{\+\_\+\+\_\+len\+\_\+\+\_\+}} (self)
+\item 
+Tuple\mbox{[}Tensor, Tensor, int\mbox{]} \mbox{\hyperlink{classtorchvision__down_1_1datasets_1_1kinetics_1_1_kinetics_a6530bb896fb3e97a87f05e87f775998a}{\+\_\+\+\_\+getitem\+\_\+\+\_\+}} (self, int idx)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{classtorchvision__down_1_1datasets_1_1vision_1_1_vision_dataset}{torchvision\+\_\+down.\+datasets.\+vision.\+Vision\+Dataset}}}
+\begin{DoxyCompactItemize}
+\item 
+None \mbox{\hyperlink{classtorchvision__down_1_1datasets_1_1vision_1_1_vision_dataset_a4fe475e0f96592c04a6d97bcd953aca8}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, str \mbox{\hyperlink{classtorchvision__down_1_1datasets_1_1vision_1_1_vision_dataset_af52cf192ec18d3421afe216bf9b881d6}{root}}, Optional\mbox{[}Callable\mbox{]} \mbox{\hyperlink{classtorchvision__down_1_1datasets_1_1vision_1_1_vision_dataset_a7963601da311133da990b66cb616cc83}{transforms}}=None, Optional\mbox{[}Callable\mbox{]} \mbox{\hyperlink{classtorchvision__down_1_1datasets_1_1vision_1_1_vision_dataset_ade1b4bca7d4f998bc3061e0400769de8}{transform}}=None, Optional\mbox{[}Callable\mbox{]} \mbox{\hyperlink{classtorchvision__down_1_1datasets_1_1vision_1_1_vision_dataset_a01f7d1bb7220bbfa4234ef140d021cc6}{target\+\_\+transform}}=None)
+\item 
+Any \mbox{\hyperlink{classtorchvision__down_1_1datasets_1_1vision_1_1_vision_dataset_aa96f56b711d61433df225154b9837daa}{\+\_\+\+\_\+getitem\+\_\+\+\_\+}} (self, int index)
+\item 
+int \mbox{\hyperlink{classtorchvision__down_1_1datasets_1_1vision_1_1_vision_dataset_abb1561c74b600d1d424cfa010f009a92}{\+\_\+\+\_\+len\+\_\+\+\_\+}} (self)
+\item 
+str \mbox{\hyperlink{classtorchvision__down_1_1datasets_1_1vision_1_1_vision_dataset_a40d28a5833742c49a70872e87edb1ef9}{\+\_\+\+\_\+repr\+\_\+\+\_\+}} (self)
+\item 
+str \mbox{\hyperlink{classtorchvision__down_1_1datasets_1_1vision_1_1_vision_dataset_a99093b3e6dd75e1ed1c49eed7ac2df00}{extra\+\_\+repr}} (self)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1datasets_1_1kinetics_1_1_kinetics_af2925db6165b2d524331a76d352dc732}{num\+\_\+classes}} = verify\+\_\+str\+\_\+arg(num\+\_\+classes, arg="{}num\+\_\+classes"{}, valid\+\_\+values=\mbox{[}"{}400"{}, "{}600"{}, "{}700"{}\mbox{]})
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1datasets_1_1kinetics_1_1_kinetics_ae8638920b7c2fbfe05d6daac8afee981}{extensions}} = extensions
+\item 
+int \mbox{\hyperlink{classtorchvision__down_1_1datasets_1_1kinetics_1_1_kinetics_acc99e1fcd7079bcd5d0a8d58c357a743}{num\+\_\+download\+\_\+workers}} = num\+\_\+download\+\_\+workers
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1datasets_1_1kinetics_1_1_kinetics_a23a1d3cf0e492f2b6506bb877d468733}{split\+\_\+folder}} = \mbox{\hyperlink{classtorchvision__down_1_1datasets_1_1kinetics_1_1_kinetics}{root}}
+\item 
+str \mbox{\hyperlink{classtorchvision__down_1_1datasets_1_1kinetics_1_1_kinetics_a63d959a9bf9f153d01ebcac898712cd6}{split}} = "{}unknown"{}
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1datasets_1_1kinetics_1_1_kinetics_ad80ee0158e1efa58bc2de90adcb11f5b}{classes}}
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1datasets_1_1kinetics_1_1_kinetics_a2d18b991d32dc0a4d144dbb5c33a5caf}{samples}} = make\+\_\+dataset(self.\+split\+\_\+folder, class\+\_\+to\+\_\+idx, \mbox{\hyperlink{classtorchvision__down_1_1datasets_1_1kinetics_1_1_kinetics_ae8638920b7c2fbfe05d6daac8afee981}{extensions}}, is\+\_\+valid\+\_\+file=None)
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1datasets_1_1kinetics_1_1_kinetics_a5ee8251097439e4dd119f995e38c2c65}{video\+\_\+clips}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes inherited from \mbox{\hyperlink{classtorchvision__down_1_1datasets_1_1vision_1_1_vision_dataset}{torchvision\+\_\+down.\+datasets.\+vision.\+Vision\+Dataset}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1datasets_1_1vision_1_1_vision_dataset_af52cf192ec18d3421afe216bf9b881d6}{root}} = root
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1datasets_1_1vision_1_1_vision_dataset_ade1b4bca7d4f998bc3061e0400769de8}{transform}} = transform
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1datasets_1_1vision_1_1_vision_dataset_a01f7d1bb7220bbfa4234ef140d021cc6}{target\+\_\+transform}} = target\+\_\+transform
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1datasets_1_1vision_1_1_vision_dataset_a7963601da311133da990b66cb616cc83}{transforms}} = transforms
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+None \mbox{\hyperlink{classtorchvision__down_1_1datasets_1_1kinetics_1_1_kinetics_a45122ba47e54587cdf18ea4515cb37d0}{\+\_\+download\+\_\+videos}} (self)
+\item 
+None \mbox{\hyperlink{classtorchvision__down_1_1datasets_1_1kinetics_1_1_kinetics_ab2be8adc27a575cc8fd727806679d317}{\+\_\+make\+\_\+ds\+\_\+structure}} (self)
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions inherited from \mbox{\hyperlink{classtorchvision__down_1_1datasets_1_1vision_1_1_vision_dataset}{torchvision\+\_\+down.\+datasets.\+vision.\+Vision\+Dataset}}}
+\begin{DoxyCompactItemize}
+\item 
+List\mbox{[}str\mbox{]} \mbox{\hyperlink{classtorchvision__down_1_1datasets_1_1vision_1_1_vision_dataset_a9f1a9fad1ab8a0b963cdc3522a271689}{\+\_\+format\+\_\+transform\+\_\+repr}} (self, Callable \mbox{\hyperlink{classtorchvision__down_1_1datasets_1_1vision_1_1_vision_dataset_ade1b4bca7d4f998bc3061e0400769de8}{transform}}, str head)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1datasets_1_1kinetics_1_1_kinetics_a47552627c61b6eae0c39c68828664301}{\+\_\+legacy}} = \+\_\+legacy
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+dict \mbox{\hyperlink{classtorchvision__down_1_1datasets_1_1kinetics_1_1_kinetics_aa3f915fcbccd7e6e709d451cbc875149}{\+\_\+\+TAR\+\_\+\+URLS}}
+\item 
+dict \mbox{\hyperlink{classtorchvision__down_1_1datasets_1_1kinetics_1_1_kinetics_add995f1260f64355de40a0f95cd2eced}{\+\_\+\+ANNOTATION\+\_\+\+URLS}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Protected Attributes inherited from \mbox{\hyperlink{classtorchvision__down_1_1datasets_1_1vision_1_1_vision_dataset}{torchvision\+\_\+down.\+datasets.\+vision.\+Vision\+Dataset}}}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{classtorchvision__down_1_1datasets_1_1vision_1_1_vision_dataset_a2eb99b64ccfc03378be35d0ff88e71b4}{\+\_\+repr\+\_\+indent}} = 4
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}`Generic Kinetics <https://deepmind.com/research/open-source/open-source-datasets/kinetics/>`_
+dataset.
+
+Kinetics-400/600/700 are action recognition video datasets.
+This dataset consider every video as a collection of video clips of fixed size, specified
+by ``frames_per_clip``, where the step in frames between each clip is given by
+``step_between_clips``.
+
+To give an example, for 2 videos with 10 and 15 frames respectively, if ``frames_per_clip=5``
+and ``step_between_clips=5``, the dataset size will be (2 + 3) = 5, where the first two
+elements will come from video 1, and the next three elements from video 2.
+Note that we drop clips which do not have exactly ``frames_per_clip`` elements, so not all
+frames in a video might be present.
+
+Args:
+    root (string): Root directory of the Kinetics Dataset.
+        Directory should be structured as follows:
+        .. code::
+
+            root/
+            ├── split
+            │   ├──  class1
+            │   │   ├──  clip1.mp4
+            │   │   ├──  clip2.mp4
+            │   │   ├──  clip3.mp4
+            │   │   ├──  ...
+            │   ├──  class2
+            │   │   ├──   clipx.mp4
+            │   │    └── ...
+
+        Note: split is appended automatically using the split argument.
+    frames_per_clip (int): number of frames in a clip
+    num_classes (int): select between Kinetics-400 (default), Kinetics-600, and Kinetics-700
+    split (str): split of the dataset to consider; supports ``"train"`` (default) ``"val"``
+    frame_rate (float): If omitted, interpolate different frame rate for each clip.
+    step_between_clips (int): number of frames between each clip
+    transform (callable, optional): A function/transform that  takes in a TxHxWxC video
+        and returns a transformed version.
+    download (bool): Download the official version of the dataset to root folder.
+    num_workers (int): Use multiple workers for VideoClips creation
+    num_download_workers (int): Use multiprocessing in order to speed up download.
+
+Returns:
+    tuple: A 3-tuple with the following entries:
+
+        - video (Tensor[T, C, H, W]): the `T` video frames in torch.uint8 tensor
+        - audio(Tensor[K, L]): the audio frames, where `K` is the number of channels
+          and `L` is the number of points in torch.float tensor
+        - label (int): class of the video clip
+
+Raises:
+    RuntimeError: If ``download is True`` and the video archives are already extracted.
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classtorchvision__down_1_1datasets_1_1kinetics_1_1_kinetics_af1f5487f17f57f5ecc7eb0f443ff13b5}\index{torchvision\_down.datasets.kinetics.Kinetics@{torchvision\_down.datasets.kinetics.Kinetics}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!torchvision\_down.datasets.kinetics.Kinetics@{torchvision\_down.datasets.kinetics.Kinetics}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1datasets_1_1kinetics_1_1_kinetics_af1f5487f17f57f5ecc7eb0f443ff13b5} 
+ None torchvision\+\_\+down.\+datasets.\+kinetics.\+Kinetics.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{str}]{root}{, }\item[{int}]{frames\+\_\+per\+\_\+clip}{, }\item[{str }]{num\+\_\+classes}{ = {\ttfamily "{}400"{}}, }\item[{str }]{split}{ = {\ttfamily "{}train"{}}, }\item[{Optional\mbox{[}int\mbox{]} }]{frame\+\_\+rate}{ = {\ttfamily None}, }\item[{int }]{step\+\_\+between\+\_\+clips}{ = {\ttfamily 1}, }\item[{Optional\mbox{[}Callable\mbox{]} }]{transform}{ = {\ttfamily None}, }\item[{Tuple\mbox{[}str, ...\mbox{]} }]{extensions}{ = {\ttfamily ("{}avi"{},~"{}mp4"{})}, }\item[{bool }]{download}{ = {\ttfamily False}, }\item[{int }]{num\+\_\+download\+\_\+workers}{ = {\ttfamily 1}, }\item[{int }]{num\+\_\+workers}{ = {\ttfamily 1}, }\item[{Optional\mbox{[}Dict\mbox{[}str, Any\mbox{]}\mbox{]} }]{\+\_\+precomputed\+\_\+metadata}{ = {\ttfamily None}, }\item[{int }]{\+\_\+video\+\_\+width}{ = {\ttfamily 0}, }\item[{int }]{\+\_\+video\+\_\+height}{ = {\ttfamily 0}, }\item[{int }]{\+\_\+video\+\_\+min\+\_\+dimension}{ = {\ttfamily 0}, }\item[{int }]{\+\_\+audio\+\_\+samples}{ = {\ttfamily 0}, }\item[{int }]{\+\_\+audio\+\_\+channels}{ = {\ttfamily 0}, }\item[{bool }]{\+\_\+legacy}{ = {\ttfamily False}}\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classtorchvision__down_1_1datasets_1_1kinetics_1_1_kinetics_a6530bb896fb3e97a87f05e87f775998a}\index{torchvision\_down.datasets.kinetics.Kinetics@{torchvision\_down.datasets.kinetics.Kinetics}!\_\_getitem\_\_@{\_\_getitem\_\_}}
+\index{\_\_getitem\_\_@{\_\_getitem\_\_}!torchvision\_down.datasets.kinetics.Kinetics@{torchvision\_down.datasets.kinetics.Kinetics}}
+\doxysubsubsection{\texorpdfstring{\_\_getitem\_\_()}{\_\_getitem\_\_()}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1datasets_1_1kinetics_1_1_kinetics_a6530bb896fb3e97a87f05e87f775998a} 
+ Tuple\mbox{[}Tensor, Tensor, int\mbox{]} torchvision\+\_\+down.\+datasets.\+kinetics.\+Kinetics.\+\_\+\+\_\+getitem\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{int}]{idx}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classtorchvision__down_1_1datasets_1_1kinetics_1_1_kinetics_aadaa3965517ffc2af036f7bd69e17cfb}\index{torchvision\_down.datasets.kinetics.Kinetics@{torchvision\_down.datasets.kinetics.Kinetics}!\_\_len\_\_@{\_\_len\_\_}}
+\index{\_\_len\_\_@{\_\_len\_\_}!torchvision\_down.datasets.kinetics.Kinetics@{torchvision\_down.datasets.kinetics.Kinetics}}
+\doxysubsubsection{\texorpdfstring{\_\_len\_\_()}{\_\_len\_\_()}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1datasets_1_1kinetics_1_1_kinetics_aadaa3965517ffc2af036f7bd69e17cfb} 
+ int torchvision\+\_\+down.\+datasets.\+kinetics.\+Kinetics.\+\_\+\+\_\+len\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classtorchvision__down_1_1datasets_1_1kinetics_1_1_kinetics_a45122ba47e54587cdf18ea4515cb37d0}\index{torchvision\_down.datasets.kinetics.Kinetics@{torchvision\_down.datasets.kinetics.Kinetics}!\_download\_videos@{\_download\_videos}}
+\index{\_download\_videos@{\_download\_videos}!torchvision\_down.datasets.kinetics.Kinetics@{torchvision\_down.datasets.kinetics.Kinetics}}
+\doxysubsubsection{\texorpdfstring{\_download\_videos()}{\_download\_videos()}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1datasets_1_1kinetics_1_1_kinetics_a45122ba47e54587cdf18ea4515cb37d0} 
+ None torchvision\+\_\+down.\+datasets.\+kinetics.\+Kinetics.\+\_\+download\+\_\+videos (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\begin{DoxyVerb}download tarballs containing the video to "tars" folder and extract them into the _split_ folder where
+split is one of the official dataset splits.
+
+Raises:
+    RuntimeError: if download folder exists, break to prevent downloading entire dataset again.
+\end{DoxyVerb}
+ \Hypertarget{classtorchvision__down_1_1datasets_1_1kinetics_1_1_kinetics_ab2be8adc27a575cc8fd727806679d317}\index{torchvision\_down.datasets.kinetics.Kinetics@{torchvision\_down.datasets.kinetics.Kinetics}!\_make\_ds\_structure@{\_make\_ds\_structure}}
+\index{\_make\_ds\_structure@{\_make\_ds\_structure}!torchvision\_down.datasets.kinetics.Kinetics@{torchvision\_down.datasets.kinetics.Kinetics}}
+\doxysubsubsection{\texorpdfstring{\_make\_ds\_structure()}{\_make\_ds\_structure()}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1datasets_1_1kinetics_1_1_kinetics_ab2be8adc27a575cc8fd727806679d317} 
+ None torchvision\+\_\+down.\+datasets.\+kinetics.\+Kinetics.\+\_\+make\+\_\+ds\+\_\+structure (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\begin{DoxyVerb}move videos from
+split_folder/
+    ├── clip1.avi
+    ├── clip2.avi
+
+to the correct format as described below:
+split_folder/
+    ├── class1
+    │   ├── clip1.avi
+\end{DoxyVerb}
+ \Hypertarget{classtorchvision__down_1_1datasets_1_1kinetics_1_1_kinetics_a51e2d9044656710f44c99a457ccb738c}\index{torchvision\_down.datasets.kinetics.Kinetics@{torchvision\_down.datasets.kinetics.Kinetics}!download\_and\_process\_videos@{download\_and\_process\_videos}}
+\index{download\_and\_process\_videos@{download\_and\_process\_videos}!torchvision\_down.datasets.kinetics.Kinetics@{torchvision\_down.datasets.kinetics.Kinetics}}
+\doxysubsubsection{\texorpdfstring{download\_and\_process\_videos()}{download\_and\_process\_videos()}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1datasets_1_1kinetics_1_1_kinetics_a51e2d9044656710f44c99a457ccb738c} 
+ None torchvision\+\_\+down.\+datasets.\+kinetics.\+Kinetics.\+download\+\_\+and\+\_\+process\+\_\+videos (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Downloads all the videos to the _root_ folder in the expected format.\end{DoxyVerb}
+ \Hypertarget{classtorchvision__down_1_1datasets_1_1kinetics_1_1_kinetics_ad927498dae75e12c5f55e776050fa5ac}\index{torchvision\_down.datasets.kinetics.Kinetics@{torchvision\_down.datasets.kinetics.Kinetics}!metadata@{metadata}}
+\index{metadata@{metadata}!torchvision\_down.datasets.kinetics.Kinetics@{torchvision\_down.datasets.kinetics.Kinetics}}
+\doxysubsubsection{\texorpdfstring{metadata()}{metadata()}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1datasets_1_1kinetics_1_1_kinetics_ad927498dae75e12c5f55e776050fa5ac} 
+ Dict\mbox{[}str, Any\mbox{]} torchvision\+\_\+down.\+datasets.\+kinetics.\+Kinetics.\+metadata (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classtorchvision__down_1_1datasets_1_1kinetics_1_1_kinetics_add995f1260f64355de40a0f95cd2eced}\index{torchvision\_down.datasets.kinetics.Kinetics@{torchvision\_down.datasets.kinetics.Kinetics}!\_ANNOTATION\_URLS@{\_ANNOTATION\_URLS}}
+\index{\_ANNOTATION\_URLS@{\_ANNOTATION\_URLS}!torchvision\_down.datasets.kinetics.Kinetics@{torchvision\_down.datasets.kinetics.Kinetics}}
+\doxysubsubsection{\texorpdfstring{\_ANNOTATION\_URLS}{\_ANNOTATION\_URLS}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1datasets_1_1kinetics_1_1_kinetics_add995f1260f64355de40a0f95cd2eced} 
+dict torchvision\+\_\+down.\+datasets.\+kinetics.\+Kinetics.\+\_\+\+ANNOTATION\+\_\+\+URLS\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}400"{}}:\ \textcolor{stringliteral}{"{}https://s3.amazonaws.com/kinetics/400/annotations/\{split\}.csv"{}},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}600"{}}:\ \textcolor{stringliteral}{"{}https://s3.amazonaws.com/kinetics/600/annotations/\{split\}.txt"{}},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}700"{}}:\ \textcolor{stringliteral}{"{}https://s3.amazonaws.com/kinetics/700\_2020/annotations/\{split\}.csv"{}},}
+\DoxyCodeLine{\ \ \ \ \}}
+
+\end{DoxyCode}
+\Hypertarget{classtorchvision__down_1_1datasets_1_1kinetics_1_1_kinetics_a47552627c61b6eae0c39c68828664301}\index{torchvision\_down.datasets.kinetics.Kinetics@{torchvision\_down.datasets.kinetics.Kinetics}!\_legacy@{\_legacy}}
+\index{\_legacy@{\_legacy}!torchvision\_down.datasets.kinetics.Kinetics@{torchvision\_down.datasets.kinetics.Kinetics}}
+\doxysubsubsection{\texorpdfstring{\_legacy}{\_legacy}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1datasets_1_1kinetics_1_1_kinetics_a47552627c61b6eae0c39c68828664301} 
+torchvision\+\_\+down.\+datasets.\+kinetics.\+Kinetics.\+\_\+legacy = \+\_\+legacy\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classtorchvision__down_1_1datasets_1_1kinetics_1_1_kinetics_aa3f915fcbccd7e6e709d451cbc875149}\index{torchvision\_down.datasets.kinetics.Kinetics@{torchvision\_down.datasets.kinetics.Kinetics}!\_TAR\_URLS@{\_TAR\_URLS}}
+\index{\_TAR\_URLS@{\_TAR\_URLS}!torchvision\_down.datasets.kinetics.Kinetics@{torchvision\_down.datasets.kinetics.Kinetics}}
+\doxysubsubsection{\texorpdfstring{\_TAR\_URLS}{\_TAR\_URLS}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1datasets_1_1kinetics_1_1_kinetics_aa3f915fcbccd7e6e709d451cbc875149} 
+dict torchvision\+\_\+down.\+datasets.\+kinetics.\+Kinetics.\+\_\+\+TAR\+\_\+\+URLS\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}400"{}}:\ \textcolor{stringliteral}{"{}https://s3.amazonaws.com/kinetics/400/\{split\}/k400\_\{split\}\_path.txt"{}},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}600"{}}:\ \textcolor{stringliteral}{"{}https://s3.amazonaws.com/kinetics/600/\{split\}/k600\_\{split\}\_path.txt"{}},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}700"{}}:\ \textcolor{stringliteral}{"{}https://s3.amazonaws.com/kinetics/700\_2020/\{split\}/k700\_2020\_\{split\}\_path.txt"{}},}
+\DoxyCodeLine{\ \ \ \ \}}
+
+\end{DoxyCode}
+\Hypertarget{classtorchvision__down_1_1datasets_1_1kinetics_1_1_kinetics_ad80ee0158e1efa58bc2de90adcb11f5b}\index{torchvision\_down.datasets.kinetics.Kinetics@{torchvision\_down.datasets.kinetics.Kinetics}!classes@{classes}}
+\index{classes@{classes}!torchvision\_down.datasets.kinetics.Kinetics@{torchvision\_down.datasets.kinetics.Kinetics}}
+\doxysubsubsection{\texorpdfstring{classes}{classes}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1datasets_1_1kinetics_1_1_kinetics_ad80ee0158e1efa58bc2de90adcb11f5b} 
+torchvision\+\_\+down.\+datasets.\+kinetics.\+Kinetics.\+classes}
+
+\Hypertarget{classtorchvision__down_1_1datasets_1_1kinetics_1_1_kinetics_ae8638920b7c2fbfe05d6daac8afee981}\index{torchvision\_down.datasets.kinetics.Kinetics@{torchvision\_down.datasets.kinetics.Kinetics}!extensions@{extensions}}
+\index{extensions@{extensions}!torchvision\_down.datasets.kinetics.Kinetics@{torchvision\_down.datasets.kinetics.Kinetics}}
+\doxysubsubsection{\texorpdfstring{extensions}{extensions}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1datasets_1_1kinetics_1_1_kinetics_ae8638920b7c2fbfe05d6daac8afee981} 
+torchvision\+\_\+down.\+datasets.\+kinetics.\+Kinetics.\+extensions = extensions}
+
+\Hypertarget{classtorchvision__down_1_1datasets_1_1kinetics_1_1_kinetics_af2925db6165b2d524331a76d352dc732}\index{torchvision\_down.datasets.kinetics.Kinetics@{torchvision\_down.datasets.kinetics.Kinetics}!num\_classes@{num\_classes}}
+\index{num\_classes@{num\_classes}!torchvision\_down.datasets.kinetics.Kinetics@{torchvision\_down.datasets.kinetics.Kinetics}}
+\doxysubsubsection{\texorpdfstring{num\_classes}{num\_classes}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1datasets_1_1kinetics_1_1_kinetics_af2925db6165b2d524331a76d352dc732} 
+torchvision\+\_\+down.\+datasets.\+kinetics.\+Kinetics.\+num\+\_\+classes = verify\+\_\+str\+\_\+arg(num\+\_\+classes, arg="{}num\+\_\+classes"{}, valid\+\_\+values=\mbox{[}"{}400"{}, "{}600"{}, "{}700"{}\mbox{]})}
+
+\Hypertarget{classtorchvision__down_1_1datasets_1_1kinetics_1_1_kinetics_acc99e1fcd7079bcd5d0a8d58c357a743}\index{torchvision\_down.datasets.kinetics.Kinetics@{torchvision\_down.datasets.kinetics.Kinetics}!num\_download\_workers@{num\_download\_workers}}
+\index{num\_download\_workers@{num\_download\_workers}!torchvision\_down.datasets.kinetics.Kinetics@{torchvision\_down.datasets.kinetics.Kinetics}}
+\doxysubsubsection{\texorpdfstring{num\_download\_workers}{num\_download\_workers}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1datasets_1_1kinetics_1_1_kinetics_acc99e1fcd7079bcd5d0a8d58c357a743} 
+int torchvision\+\_\+down.\+datasets.\+kinetics.\+Kinetics.\+num\+\_\+download\+\_\+workers = num\+\_\+download\+\_\+workers}
+
+\Hypertarget{classtorchvision__down_1_1datasets_1_1kinetics_1_1_kinetics_a2d18b991d32dc0a4d144dbb5c33a5caf}\index{torchvision\_down.datasets.kinetics.Kinetics@{torchvision\_down.datasets.kinetics.Kinetics}!samples@{samples}}
+\index{samples@{samples}!torchvision\_down.datasets.kinetics.Kinetics@{torchvision\_down.datasets.kinetics.Kinetics}}
+\doxysubsubsection{\texorpdfstring{samples}{samples}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1datasets_1_1kinetics_1_1_kinetics_a2d18b991d32dc0a4d144dbb5c33a5caf} 
+torchvision\+\_\+down.\+datasets.\+kinetics.\+Kinetics.\+samples = make\+\_\+dataset(self.\+split\+\_\+folder, class\+\_\+to\+\_\+idx, \mbox{\hyperlink{classtorchvision__down_1_1datasets_1_1kinetics_1_1_kinetics_ae8638920b7c2fbfe05d6daac8afee981}{extensions}}, is\+\_\+valid\+\_\+file=None)}
+
+\Hypertarget{classtorchvision__down_1_1datasets_1_1kinetics_1_1_kinetics_a63d959a9bf9f153d01ebcac898712cd6}\index{torchvision\_down.datasets.kinetics.Kinetics@{torchvision\_down.datasets.kinetics.Kinetics}!split@{split}}
+\index{split@{split}!torchvision\_down.datasets.kinetics.Kinetics@{torchvision\_down.datasets.kinetics.Kinetics}}
+\doxysubsubsection{\texorpdfstring{split}{split}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1datasets_1_1kinetics_1_1_kinetics_a63d959a9bf9f153d01ebcac898712cd6} 
+str torchvision\+\_\+down.\+datasets.\+kinetics.\+Kinetics.\+split = "{}unknown"{}}
+
+\Hypertarget{classtorchvision__down_1_1datasets_1_1kinetics_1_1_kinetics_a23a1d3cf0e492f2b6506bb877d468733}\index{torchvision\_down.datasets.kinetics.Kinetics@{torchvision\_down.datasets.kinetics.Kinetics}!split\_folder@{split\_folder}}
+\index{split\_folder@{split\_folder}!torchvision\_down.datasets.kinetics.Kinetics@{torchvision\_down.datasets.kinetics.Kinetics}}
+\doxysubsubsection{\texorpdfstring{split\_folder}{split\_folder}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1datasets_1_1kinetics_1_1_kinetics_a23a1d3cf0e492f2b6506bb877d468733} 
+torchvision\+\_\+down.\+datasets.\+kinetics.\+Kinetics.\+split\+\_\+folder = \mbox{\hyperlink{classtorchvision__down_1_1datasets_1_1kinetics_1_1_kinetics}{root}}}
+
+\Hypertarget{classtorchvision__down_1_1datasets_1_1kinetics_1_1_kinetics_a5ee8251097439e4dd119f995e38c2c65}\index{torchvision\_down.datasets.kinetics.Kinetics@{torchvision\_down.datasets.kinetics.Kinetics}!video\_clips@{video\_clips}}
+\index{video\_clips@{video\_clips}!torchvision\_down.datasets.kinetics.Kinetics@{torchvision\_down.datasets.kinetics.Kinetics}}
+\doxysubsubsection{\texorpdfstring{video\_clips}{video\_clips}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1datasets_1_1kinetics_1_1_kinetics_a5ee8251097439e4dd119f995e38c2c65} 
+torchvision\+\_\+down.\+datasets.\+kinetics.\+Kinetics.\+video\+\_\+clips}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \ VideoClips(}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ video\_list,}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ frames\_per\_clip,}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ step\_between\_clips,}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ frame\_rate,}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \_precomputed\_metadata,}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ num\_workers=num\_workers,}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \_video\_width=\_video\_width,}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \_video\_height=\_video\_height,}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \_video\_min\_dimension=\_video\_min\_dimension,}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \_audio\_samples=\_audio\_samples,}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \_audio\_channels=\_audio\_channels,}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ )}
+
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Cervi\+AI/torchvision\+\_\+down/datasets/\mbox{\hyperlink{kinetics_8py}{kinetics.\+py}}\end{DoxyCompactItemize}

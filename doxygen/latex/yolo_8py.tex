@@ -1,0 +1,60 @@
+\doxysection{Cervi\+AI/models/yolo.py File Reference}
+\hypertarget{yolo_8py}{}\label{yolo_8py}\index{CerviAI/models/yolo.py@{CerviAI/models/yolo.py}}
+\doxysubsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classmodels_1_1yolo_1_1_detect}{models.\+yolo.\+Detect}}
+\item 
+class \mbox{\hyperlink{classmodels_1_1yolo_1_1_i_detect}{models.\+yolo.\+IDetect}}
+\item 
+class \mbox{\hyperlink{classmodels_1_1yolo_1_1_i_keypoint}{models.\+yolo.\+IKeypoint}}
+\item 
+class \mbox{\hyperlink{classmodels_1_1yolo_1_1_i_aux_detect}{models.\+yolo.\+IAux\+Detect}}
+\item 
+class \mbox{\hyperlink{classmodels_1_1yolo_1_1_i_bin}{models.\+yolo.\+IBin}}
+\item 
+class \mbox{\hyperlink{classmodels_1_1yolo_1_1_model}{models.\+yolo.\+Model}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+namespace \mbox{\hyperlink{namespacemodels}{models}}
+\item 
+namespace \mbox{\hyperlink{namespacemodels_1_1yolo}{models.\+yolo}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{namespacemodels_1_1yolo_aefa1f74c6cef6b61406774143aabec60}{models.\+yolo.\+parse\+\_\+model}} (d, ch)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{namespacemodels_1_1yolo_aa37790b53209e7fbdfcec06087652dbb}{models.\+yolo.\+logger}} = logging.\+get\+Logger(\+\_\+\+\_\+name\+\_\+\+\_\+)
+\item 
+\mbox{\hyperlink{namespacemodels_1_1yolo_ae38f82df39e05ba0d62b15fd284ccfc2}{models.\+yolo.\+thop}} = None
+\item 
+\mbox{\hyperlink{namespacemodels_1_1yolo_adb0e30ce0bd9c584c9af2fb61fd4d272}{models.\+yolo.\+parser}} = argparse.\+Argument\+Parser()
+\item 
+\mbox{\hyperlink{namespacemodels_1_1yolo_abe03f158928f030b05b7a9e0485ffdd1}{models.\+yolo.\+type}}
+\item 
+\mbox{\hyperlink{namespacemodels_1_1yolo_a07bf90234e815429482e9ab37fd8790b}{models.\+yolo.\+str}}
+\item 
+\mbox{\hyperlink{namespacemodels_1_1yolo_a3d29639c2e0f5a994f0b7bbdb5590d5d}{models.\+yolo.\+default}}
+\item 
+\mbox{\hyperlink{namespacemodels_1_1yolo_aaf8ba83b08d6b00c774cd4afe7a51c8f}{models.\+yolo.\+help}}
+\item 
+\mbox{\hyperlink{namespacemodels_1_1yolo_a268aa218ba8d1d33b370723cf6e4d508}{models.\+yolo.\+action}}
+\item 
+\mbox{\hyperlink{namespacemodels_1_1yolo_a40977ff2098d87652f0cd28d6f7d32db}{models.\+yolo.\+opt}} = parser.\+parse\+\_\+args()
+\item 
+\mbox{\hyperlink{namespacemodels_1_1yolo_a8c1d0198d6f446d8ac2d5d0c971fc191}{models.\+yolo.\+cfg}}
+\item 
+\mbox{\hyperlink{namespacemodels_1_1yolo_a9ff3f97b0dbcc18c34b88ea841425845}{models.\+yolo.\+device}} = select\+\_\+device(opt.\+device)
+\item 
+\mbox{\hyperlink{namespacemodels_1_1yolo_a9dbfb6dd8085fd58603217b6ba4cf73b}{models.\+yolo.\+model}} = \mbox{\hyperlink{classmodels_1_1yolo_1_1_model}{Model}}(opt.\+cfg).to(\mbox{\hyperlink{namespacemodels_1_1yolo_a9ff3f97b0dbcc18c34b88ea841425845}{device}})
+\item 
+\mbox{\hyperlink{namespacemodels_1_1yolo_a3b55ad0184aded03943c897097cab923}{models.\+yolo.\+img}} = torch.\+rand(1, 3, 640, 640).to(\mbox{\hyperlink{namespacemodels_1_1yolo_a9ff3f97b0dbcc18c34b88ea841425845}{device}})
+\item 
+\mbox{\hyperlink{namespacemodels_1_1yolo_a7a1c730f259e7fd9cb76a7526da1bd8e}{models.\+yolo.\+y}} = \mbox{\hyperlink{namespacemodels_1_1yolo_a9dbfb6dd8085fd58603217b6ba4cf73b}{model}}(\mbox{\hyperlink{namespacemodels_1_1yolo_a3b55ad0184aded03943c897097cab923}{img}}, profile=True)
+\end{DoxyCompactItemize}

@@ -1,0 +1,52 @@
+\doxysection{Cervi\+AI/torchvision\+\_\+down/io/\+\_\+video\+\_\+opt.py File Reference}
+\hypertarget{__video__opt_8py}{}\label{__video__opt_8py}\index{CerviAI/torchvision\_down/io/\_video\_opt.py@{CerviAI/torchvision\_down/io/\_video\_opt.py}}
+\doxysubsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classtorchvision__down_1_1io_1_1__video__opt_1_1_timebase}{torchvision\+\_\+down.\+io.\+\_\+video\+\_\+opt.\+Timebase}}
+\item 
+class \mbox{\hyperlink{classtorchvision__down_1_1io_1_1__video__opt_1_1_video_meta_data}{torchvision\+\_\+down.\+io.\+\_\+video\+\_\+opt.\+Video\+Meta\+Data}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+namespace \mbox{\hyperlink{namespacetorchvision__down}{torchvision\+\_\+down}}
+\item 
+namespace \mbox{\hyperlink{namespacetorchvision__down_1_1io}{torchvision\+\_\+down.\+io}}
+\item 
+namespace \mbox{\hyperlink{namespacetorchvision__down_1_1io_1_1__video__opt}{torchvision\+\_\+down.\+io.\+\_\+video\+\_\+opt}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+None \mbox{\hyperlink{namespacetorchvision__down_1_1io_1_1__video__opt_a8e470bec745bf18217d1e50d726810e8}{torchvision\+\_\+down.\+io.\+\_\+video\+\_\+opt.\+\_\+validate\+\_\+pts}} (Tuple\mbox{[}int, int\mbox{]} pts\+\_\+range)
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1io_1_1__video__opt_1_1_video_meta_data}{Video\+Meta\+Data}} \mbox{\hyperlink{namespacetorchvision__down_1_1io_1_1__video__opt_a8020419295618d03d8ba6cc5e17bd03c}{torchvision\+\_\+down.\+io.\+\_\+video\+\_\+opt.\+\_\+fill\+\_\+info}} (torch.\+Tensor vtimebase, torch.\+Tensor vfps, torch.\+Tensor vduration, torch.\+Tensor atimebase, torch.\+Tensor asample\+\_\+rate, torch.\+Tensor aduration)
+\item 
+torch.\+Tensor \mbox{\hyperlink{namespacetorchvision__down_1_1io_1_1__video__opt_ab8eb2f2d61fdb25c327ba6d26c192b40}{torchvision\+\_\+down.\+io.\+\_\+video\+\_\+opt.\+\_\+align\+\_\+audio\+\_\+frames}} (torch.\+Tensor aframes, torch.\+Tensor aframe\+\_\+pts, Tuple\mbox{[}int, int\mbox{]} audio\+\_\+pts\+\_\+range)
+\item 
+Tuple\mbox{[}torch.\+Tensor, torch.\+Tensor, \mbox{\hyperlink{classtorchvision__down_1_1io_1_1__video__opt_1_1_video_meta_data}{Video\+Meta\+Data}}\mbox{]} \mbox{\hyperlink{namespacetorchvision__down_1_1io_1_1__video__opt_ae42d23948552d40c7d1709a72deff65e}{torchvision\+\_\+down.\+io.\+\_\+video\+\_\+opt.\+\_\+read\+\_\+video\+\_\+from\+\_\+file}} (str filename, float seek\+\_\+frame\+\_\+margin=0.\+25, bool read\+\_\+video\+\_\+stream=True, int video\+\_\+width=0, int video\+\_\+height=0, int video\+\_\+min\+\_\+dimension=0, int video\+\_\+max\+\_\+dimension=0, Tuple\mbox{[}int, int\mbox{]} video\+\_\+pts\+\_\+range=(0, -\/1), Fraction video\+\_\+timebase=\mbox{\hyperlink{namespacetorchvision__down_1_1io_1_1__video__opt_a9070495f1d3ca2a856c7485c8146934d}{default\+\_\+timebase}}, bool read\+\_\+audio\+\_\+stream=True, int audio\+\_\+samples=0, int audio\+\_\+channels=0, Tuple\mbox{[}int, int\mbox{]} audio\+\_\+pts\+\_\+range=(0, -\/1), Fraction audio\+\_\+timebase=\mbox{\hyperlink{namespacetorchvision__down_1_1io_1_1__video__opt_a9070495f1d3ca2a856c7485c8146934d}{default\+\_\+timebase}})
+\item 
+Tuple\mbox{[}List\mbox{[}int\mbox{]}, List\mbox{[}int\mbox{]}, \mbox{\hyperlink{classtorchvision__down_1_1io_1_1__video__opt_1_1_video_meta_data}{Video\+Meta\+Data}}\mbox{]} \mbox{\hyperlink{namespacetorchvision__down_1_1io_1_1__video__opt_a39d83f94c06cb827bd6c74e57ecb0731}{torchvision\+\_\+down.\+io.\+\_\+video\+\_\+opt.\+\_\+read\+\_\+video\+\_\+timestamps\+\_\+from\+\_\+file}} (str filename)
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1io_1_1__video__opt_1_1_video_meta_data}{Video\+Meta\+Data}} \mbox{\hyperlink{namespacetorchvision__down_1_1io_1_1__video__opt_ab9b955e5dcf5b91d5e69063e3f8726cf}{torchvision\+\_\+down.\+io.\+\_\+video\+\_\+opt.\+\_\+probe\+\_\+video\+\_\+from\+\_\+file}} (str filename)
+\item 
+Tuple\mbox{[}torch.\+Tensor, torch.\+Tensor\mbox{]} \mbox{\hyperlink{namespacetorchvision__down_1_1io_1_1__video__opt_abcc6bca8995455873e292af91aaca8b3}{torchvision\+\_\+down.\+io.\+\_\+video\+\_\+opt.\+\_\+read\+\_\+video\+\_\+from\+\_\+memory}} (torch.\+Tensor video\+\_\+data, float seek\+\_\+frame\+\_\+margin=0.\+25, int read\+\_\+video\+\_\+stream=1, int video\+\_\+width=0, int video\+\_\+height=0, int video\+\_\+min\+\_\+dimension=0, int video\+\_\+max\+\_\+dimension=0, Tuple\mbox{[}int, int\mbox{]} video\+\_\+pts\+\_\+range=(0, -\/1), int video\+\_\+timebase\+\_\+numerator=0, int video\+\_\+timebase\+\_\+denominator=1, int read\+\_\+audio\+\_\+stream=1, int audio\+\_\+samples=0, int audio\+\_\+channels=0, Tuple\mbox{[}int, int\mbox{]} audio\+\_\+pts\+\_\+range=(0, -\/1), int audio\+\_\+timebase\+\_\+numerator=0, int audio\+\_\+timebase\+\_\+denominator=1)
+\item 
+Tuple\mbox{[}List\mbox{[}int\mbox{]}, List\mbox{[}int\mbox{]}, \mbox{\hyperlink{classtorchvision__down_1_1io_1_1__video__opt_1_1_video_meta_data}{Video\+Meta\+Data}}\mbox{]} \mbox{\hyperlink{namespacetorchvision__down_1_1io_1_1__video__opt_a69986533369888b5c992ca4c78d16798}{torchvision\+\_\+down.\+io.\+\_\+video\+\_\+opt.\+\_\+read\+\_\+video\+\_\+timestamps\+\_\+from\+\_\+memory}} (torch.\+Tensor video\+\_\+data)
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1io_1_1__video__opt_1_1_video_meta_data}{Video\+Meta\+Data}} \mbox{\hyperlink{namespacetorchvision__down_1_1io_1_1__video__opt_a25598826121ab0dbeb40caafde8f9ce7}{torchvision\+\_\+down.\+io.\+\_\+video\+\_\+opt.\+\_\+probe\+\_\+video\+\_\+from\+\_\+memory}} (torch.\+Tensor video\+\_\+data)
+\item 
+Tuple\mbox{[}Union\mbox{[}float, Fraction\mbox{]}, Union\mbox{[}float, Fraction\mbox{]}, str\mbox{]} \mbox{\hyperlink{namespacetorchvision__down_1_1io_1_1__video__opt_a8bf0e37c491131ce0198dd5ee34ec0e0}{torchvision\+\_\+down.\+io.\+\_\+video\+\_\+opt.\+\_\+convert\+\_\+to\+\_\+sec}} (Union\mbox{[}float, Fraction\mbox{]} start\+\_\+pts, Union\mbox{[}float, Fraction\mbox{]} end\+\_\+pts, str pts\+\_\+unit, Fraction time\+\_\+base)
+\item 
+Tuple\mbox{[}torch.\+Tensor, torch.\+Tensor, Dict\mbox{[}str, float\mbox{]}\mbox{]} \mbox{\hyperlink{namespacetorchvision__down_1_1io_1_1__video__opt_afc57b3ed92b2dc6861ba0d6f9b493739}{torchvision\+\_\+down.\+io.\+\_\+video\+\_\+opt.\+\_\+read\+\_\+video}} (str filename, Union\mbox{[}float, Fraction\mbox{]} start\+\_\+pts=0, Optional\mbox{[}Union\mbox{[}float, Fraction\mbox{]}\mbox{]} end\+\_\+pts=None, str pts\+\_\+unit="{}pts"{})
+\item 
+Tuple\mbox{[}Union\mbox{[}List\mbox{[}int\mbox{]}, List\mbox{[}Fraction\mbox{]}\mbox{]}, Optional\mbox{[}float\mbox{]}\mbox{]} \mbox{\hyperlink{namespacetorchvision__down_1_1io_1_1__video__opt_a899703449adc94466e5b7af45f8ed57a}{torchvision\+\_\+down.\+io.\+\_\+video\+\_\+opt.\+\_\+read\+\_\+video\+\_\+timestamps}} (str filename, str pts\+\_\+unit="{}pts"{})
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{namespacetorchvision__down_1_1io_1_1__video__opt_a65643c9b7f02b088e8fbe73b062f4c8f}{torchvision\+\_\+down.\+io.\+\_\+video\+\_\+opt.\+\_\+\+HAS\+\_\+\+VIDEO\+\_\+\+OPT}} = True
+\item 
+\mbox{\hyperlink{namespacetorchvision__down_1_1io_1_1__video__opt_a9070495f1d3ca2a856c7485c8146934d}{torchvision\+\_\+down.\+io.\+\_\+video\+\_\+opt.\+default\+\_\+timebase}} = Fraction(0, 1)
+\end{DoxyCompactItemize}

@@ -1,0 +1,114 @@
+\doxysection{torchvision\+\_\+down.\+datasets.\+imagenet Namespace Reference}
+\hypertarget{namespacetorchvision__down_1_1datasets_1_1imagenet}{}\label{namespacetorchvision__down_1_1datasets_1_1imagenet}\index{torchvision\_down.datasets.imagenet@{torchvision\_down.datasets.imagenet}}
+\doxysubsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classtorchvision__down_1_1datasets_1_1imagenet_1_1_image_net}{Image\+Net}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+Tuple\mbox{[}Dict\mbox{[}str, str\mbox{]}, List\mbox{[}str\mbox{]}\mbox{]} \mbox{\hyperlink{namespacetorchvision__down_1_1datasets_1_1imagenet_aa27ac56ce5e34c9055393dfe66c15ce7}{load\+\_\+meta\+\_\+file}} (str root, Optional\mbox{[}str\mbox{]} file=None)
+\item 
+None \mbox{\hyperlink{namespacetorchvision__down_1_1datasets_1_1imagenet_ab910ad69fce98bc33bbba43e5210b1b8}{\+\_\+verify\+\_\+archive}} (str root, str file, str md5)
+\item 
+None \mbox{\hyperlink{namespacetorchvision__down_1_1datasets_1_1imagenet_abddb8042ddfe3fa02c8fdd5af66dfea9}{parse\+\_\+devkit\+\_\+archive}} (str root, Optional\mbox{[}str\mbox{]} file=None)
+\item 
+None \mbox{\hyperlink{namespacetorchvision__down_1_1datasets_1_1imagenet_a539f5f5af7ebf81884c459a5b64bb5d9}{parse\+\_\+train\+\_\+archive}} (str root, Optional\mbox{[}str\mbox{]} file=None, str folder="{}train"{})
+\item 
+None \mbox{\hyperlink{namespacetorchvision__down_1_1datasets_1_1imagenet_ae402ebe4dbd44be0c9fdda82610cee1b}{parse\+\_\+val\+\_\+archive}} (str root, Optional\mbox{[}str\mbox{]} file=None, Optional\mbox{[}List\mbox{[}str\mbox{]}\mbox{]} wnids=None, str folder="{}val"{})
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+dict \mbox{\hyperlink{namespacetorchvision__down_1_1datasets_1_1imagenet_a02d01a44f15e1b38ad4c1fe1cb1caffe}{ARCHIVE\+\_\+\+META}}
+\item 
+str \mbox{\hyperlink{namespacetorchvision__down_1_1datasets_1_1imagenet_afbca374715f1def05f405f1be5418958}{META\+\_\+\+FILE}} = "{}meta.\+bin"{}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{namespacetorchvision__down_1_1datasets_1_1imagenet_ab910ad69fce98bc33bbba43e5210b1b8}\index{torchvision\_down.datasets.imagenet@{torchvision\_down.datasets.imagenet}!\_verify\_archive@{\_verify\_archive}}
+\index{\_verify\_archive@{\_verify\_archive}!torchvision\_down.datasets.imagenet@{torchvision\_down.datasets.imagenet}}
+\doxysubsubsection{\texorpdfstring{\_verify\_archive()}{\_verify\_archive()}}
+{\footnotesize\ttfamily \label{namespacetorchvision__down_1_1datasets_1_1imagenet_ab910ad69fce98bc33bbba43e5210b1b8} 
+ None torchvision\+\_\+down.\+datasets.\+imagenet.\+\_\+verify\+\_\+archive (\begin{DoxyParamCaption}\item[{str}]{root}{, }\item[{str}]{file}{, }\item[{str}]{md5}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{namespacetorchvision__down_1_1datasets_1_1imagenet_aa27ac56ce5e34c9055393dfe66c15ce7}\index{torchvision\_down.datasets.imagenet@{torchvision\_down.datasets.imagenet}!load\_meta\_file@{load\_meta\_file}}
+\index{load\_meta\_file@{load\_meta\_file}!torchvision\_down.datasets.imagenet@{torchvision\_down.datasets.imagenet}}
+\doxysubsubsection{\texorpdfstring{load\_meta\_file()}{load\_meta\_file()}}
+{\footnotesize\ttfamily \label{namespacetorchvision__down_1_1datasets_1_1imagenet_aa27ac56ce5e34c9055393dfe66c15ce7} 
+ Tuple\mbox{[}Dict\mbox{[}str, str\mbox{]}, List\mbox{[}str\mbox{]}\mbox{]} torchvision\+\_\+down.\+datasets.\+imagenet.\+load\+\_\+meta\+\_\+file (\begin{DoxyParamCaption}\item[{str}]{root}{, }\item[{Optional\mbox{[}str\mbox{]} }]{file}{ = {\ttfamily None}}\end{DoxyParamCaption})}
+
+\Hypertarget{namespacetorchvision__down_1_1datasets_1_1imagenet_abddb8042ddfe3fa02c8fdd5af66dfea9}\index{torchvision\_down.datasets.imagenet@{torchvision\_down.datasets.imagenet}!parse\_devkit\_archive@{parse\_devkit\_archive}}
+\index{parse\_devkit\_archive@{parse\_devkit\_archive}!torchvision\_down.datasets.imagenet@{torchvision\_down.datasets.imagenet}}
+\doxysubsubsection{\texorpdfstring{parse\_devkit\_archive()}{parse\_devkit\_archive()}}
+{\footnotesize\ttfamily \label{namespacetorchvision__down_1_1datasets_1_1imagenet_abddb8042ddfe3fa02c8fdd5af66dfea9} 
+ None torchvision\+\_\+down.\+datasets.\+imagenet.\+parse\+\_\+devkit\+\_\+archive (\begin{DoxyParamCaption}\item[{str}]{root}{, }\item[{Optional\mbox{[}str\mbox{]} }]{file}{ = {\ttfamily None}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Parse the devkit archive of the ImageNet2012 classification dataset and save
+the meta information in a binary file.
+
+Args:
+    root (str): Root directory containing the devkit archive
+    file (str, optional): Name of devkit archive. Defaults to
+        'ILSVRC2012_devkit_t12.tar.gz'
+\end{DoxyVerb}
+ \Hypertarget{namespacetorchvision__down_1_1datasets_1_1imagenet_a539f5f5af7ebf81884c459a5b64bb5d9}\index{torchvision\_down.datasets.imagenet@{torchvision\_down.datasets.imagenet}!parse\_train\_archive@{parse\_train\_archive}}
+\index{parse\_train\_archive@{parse\_train\_archive}!torchvision\_down.datasets.imagenet@{torchvision\_down.datasets.imagenet}}
+\doxysubsubsection{\texorpdfstring{parse\_train\_archive()}{parse\_train\_archive()}}
+{\footnotesize\ttfamily \label{namespacetorchvision__down_1_1datasets_1_1imagenet_a539f5f5af7ebf81884c459a5b64bb5d9} 
+ None torchvision\+\_\+down.\+datasets.\+imagenet.\+parse\+\_\+train\+\_\+archive (\begin{DoxyParamCaption}\item[{str}]{root}{, }\item[{Optional\mbox{[}str\mbox{]} }]{file}{ = {\ttfamily None}, }\item[{str }]{folder}{ = {\ttfamily "{}train"{}}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Parse the train images archive of the ImageNet2012 classification dataset and
+prepare it for usage with the ImageNet dataset.
+
+Args:
+    root (str): Root directory containing the train images archive
+    file (str, optional): Name of train images archive. Defaults to
+        'ILSVRC2012_img_train.tar'
+    folder (str, optional): Optional name for train images folder. Defaults to
+        'train'
+\end{DoxyVerb}
+ \Hypertarget{namespacetorchvision__down_1_1datasets_1_1imagenet_ae402ebe4dbd44be0c9fdda82610cee1b}\index{torchvision\_down.datasets.imagenet@{torchvision\_down.datasets.imagenet}!parse\_val\_archive@{parse\_val\_archive}}
+\index{parse\_val\_archive@{parse\_val\_archive}!torchvision\_down.datasets.imagenet@{torchvision\_down.datasets.imagenet}}
+\doxysubsubsection{\texorpdfstring{parse\_val\_archive()}{parse\_val\_archive()}}
+{\footnotesize\ttfamily \label{namespacetorchvision__down_1_1datasets_1_1imagenet_ae402ebe4dbd44be0c9fdda82610cee1b} 
+ None torchvision\+\_\+down.\+datasets.\+imagenet.\+parse\+\_\+val\+\_\+archive (\begin{DoxyParamCaption}\item[{str}]{root}{, }\item[{Optional\mbox{[}str\mbox{]} }]{file}{ = {\ttfamily None}, }\item[{Optional\mbox{[}List\mbox{[}str\mbox{]}\mbox{]} }]{wnids}{ = {\ttfamily None}, }\item[{str }]{folder}{ = {\ttfamily "{}val"{}}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Parse the validation images archive of the ImageNet2012 classification dataset
+and prepare it for usage with the ImageNet dataset.
+
+Args:
+    root (str): Root directory containing the validation images archive
+    file (str, optional): Name of validation images archive. Defaults to
+        'ILSVRC2012_img_val.tar'
+    wnids (list, optional): List of WordNet IDs of the validation images. If None
+        is given, the IDs are loaded from the meta file in the root directory
+    folder (str, optional): Optional name for validation images folder. Defaults to
+        'val'
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Variable Documentation}
+\Hypertarget{namespacetorchvision__down_1_1datasets_1_1imagenet_a02d01a44f15e1b38ad4c1fe1cb1caffe}\index{torchvision\_down.datasets.imagenet@{torchvision\_down.datasets.imagenet}!ARCHIVE\_META@{ARCHIVE\_META}}
+\index{ARCHIVE\_META@{ARCHIVE\_META}!torchvision\_down.datasets.imagenet@{torchvision\_down.datasets.imagenet}}
+\doxysubsubsection{\texorpdfstring{ARCHIVE\_META}{ARCHIVE\_META}}
+{\footnotesize\ttfamily \label{namespacetorchvision__down_1_1datasets_1_1imagenet_a02d01a44f15e1b38ad4c1fe1cb1caffe} 
+dict torchvision\+\_\+down.\+datasets.\+imagenet.\+ARCHIVE\+\_\+\+META}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ =\ \ \{}
+\DoxyCodeLine{00002\ \ \ \ \ \textcolor{stringliteral}{"{}train"{}}:\ (\textcolor{stringliteral}{"{}ILSVRC2012\_img\_train.tar"{}},\ \textcolor{stringliteral}{"{}1d675b47d978889d74fa0da5fadfb00e"{}}),}
+\DoxyCodeLine{00003\ \ \ \ \ \textcolor{stringliteral}{"{}val"{}}:\ (\textcolor{stringliteral}{"{}ILSVRC2012\_img\_val.tar"{}},\ \textcolor{stringliteral}{"{}29b22e2961454d5413ddabcf34fc5622"{}}),}
+\DoxyCodeLine{00004\ \ \ \ \ \textcolor{stringliteral}{"{}devkit"{}}:\ (\textcolor{stringliteral}{"{}ILSVRC2012\_devkit\_t12.tar.gz"{}},\ \textcolor{stringliteral}{"{}fa75699e90414af021442c21a62c3abf"{}}),}
+\DoxyCodeLine{00005\ \}}
+
+\end{DoxyCode}
+\Hypertarget{namespacetorchvision__down_1_1datasets_1_1imagenet_afbca374715f1def05f405f1be5418958}\index{torchvision\_down.datasets.imagenet@{torchvision\_down.datasets.imagenet}!META\_FILE@{META\_FILE}}
+\index{META\_FILE@{META\_FILE}!torchvision\_down.datasets.imagenet@{torchvision\_down.datasets.imagenet}}
+\doxysubsubsection{\texorpdfstring{META\_FILE}{META\_FILE}}
+{\footnotesize\ttfamily \label{namespacetorchvision__down_1_1datasets_1_1imagenet_afbca374715f1def05f405f1be5418958} 
+str torchvision\+\_\+down.\+datasets.\+imagenet.\+META\+\_\+\+FILE = "{}meta.\+bin"{}}
+

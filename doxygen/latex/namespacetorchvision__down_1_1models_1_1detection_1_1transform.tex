@@ -1,0 +1,53 @@
+\doxysection{torchvision\+\_\+down.\+models.\+detection.\+transform Namespace Reference}
+\hypertarget{namespacetorchvision__down_1_1models_1_1detection_1_1transform}{}\label{namespacetorchvision__down_1_1models_1_1detection_1_1transform}\index{torchvision\_down.models.detection.transform@{torchvision\_down.models.detection.transform}}
+\doxysubsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classtorchvision__down_1_1models_1_1detection_1_1transform_1_1_generalized_r_c_n_n_transform}{Generalized\+RCNNTransform}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+Tensor \mbox{\hyperlink{namespacetorchvision__down_1_1models_1_1detection_1_1transform_ab287f6c088f372b8b5e65e4dcc356de4}{\+\_\+get\+\_\+shape\+\_\+onnx}} (Tensor image)
+\item 
+float \mbox{\hyperlink{namespacetorchvision__down_1_1models_1_1detection_1_1transform_ac67f58eeaeeb2f1d89d239ae7a1e8eec}{\+\_\+fake\+\_\+cast\+\_\+onnx}} (Tensor v)
+\item 
+Tuple\mbox{[}Tensor, Optional\mbox{[}Dict\mbox{[}str, Tensor\mbox{]}\mbox{]}\mbox{]} \mbox{\hyperlink{namespacetorchvision__down_1_1models_1_1detection_1_1transform_ae8f0dc4abb826cd365229ada9f280b9e}{\+\_\+resize\+\_\+image\+\_\+and\+\_\+masks}} (Tensor image, float self\+\_\+min\+\_\+size, float self\+\_\+max\+\_\+size, Optional\mbox{[}Dict\mbox{[}str, Tensor\mbox{]}\mbox{]} target=None, Optional\mbox{[}Tuple\mbox{[}int, int\mbox{]}\mbox{]} fixed\+\_\+size=None)
+\item 
+Tensor \mbox{\hyperlink{namespacetorchvision__down_1_1models_1_1detection_1_1transform_aad075f856559d0238b08ac211772177a}{resize\+\_\+keypoints}} (Tensor keypoints, List\mbox{[}int\mbox{]} original\+\_\+size, List\mbox{[}int\mbox{]} new\+\_\+size)
+\item 
+Tensor \mbox{\hyperlink{namespacetorchvision__down_1_1models_1_1detection_1_1transform_a33bc1580c5b16a8b8a5ec6758472bace}{resize\+\_\+boxes}} (Tensor boxes, List\mbox{[}int\mbox{]} original\+\_\+size, List\mbox{[}int\mbox{]} new\+\_\+size)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{namespacetorchvision__down_1_1models_1_1detection_1_1transform_ac67f58eeaeeb2f1d89d239ae7a1e8eec}\index{torchvision\_down.models.detection.transform@{torchvision\_down.models.detection.transform}!\_fake\_cast\_onnx@{\_fake\_cast\_onnx}}
+\index{\_fake\_cast\_onnx@{\_fake\_cast\_onnx}!torchvision\_down.models.detection.transform@{torchvision\_down.models.detection.transform}}
+\doxysubsubsection{\texorpdfstring{\_fake\_cast\_onnx()}{\_fake\_cast\_onnx()}}
+{\footnotesize\ttfamily \label{namespacetorchvision__down_1_1models_1_1detection_1_1transform_ac67f58eeaeeb2f1d89d239ae7a1e8eec} 
+ float torchvision\+\_\+down.\+models.\+detection.\+transform.\+\_\+fake\+\_\+cast\+\_\+onnx (\begin{DoxyParamCaption}\item[{Tensor}]{v}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{namespacetorchvision__down_1_1models_1_1detection_1_1transform_ab287f6c088f372b8b5e65e4dcc356de4}\index{torchvision\_down.models.detection.transform@{torchvision\_down.models.detection.transform}!\_get\_shape\_onnx@{\_get\_shape\_onnx}}
+\index{\_get\_shape\_onnx@{\_get\_shape\_onnx}!torchvision\_down.models.detection.transform@{torchvision\_down.models.detection.transform}}
+\doxysubsubsection{\texorpdfstring{\_get\_shape\_onnx()}{\_get\_shape\_onnx()}}
+{\footnotesize\ttfamily \label{namespacetorchvision__down_1_1models_1_1detection_1_1transform_ab287f6c088f372b8b5e65e4dcc356de4} 
+ Tensor torchvision\+\_\+down.\+models.\+detection.\+transform.\+\_\+get\+\_\+shape\+\_\+onnx (\begin{DoxyParamCaption}\item[{Tensor}]{image}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{namespacetorchvision__down_1_1models_1_1detection_1_1transform_ae8f0dc4abb826cd365229ada9f280b9e}\index{torchvision\_down.models.detection.transform@{torchvision\_down.models.detection.transform}!\_resize\_image\_and\_masks@{\_resize\_image\_and\_masks}}
+\index{\_resize\_image\_and\_masks@{\_resize\_image\_and\_masks}!torchvision\_down.models.detection.transform@{torchvision\_down.models.detection.transform}}
+\doxysubsubsection{\texorpdfstring{\_resize\_image\_and\_masks()}{\_resize\_image\_and\_masks()}}
+{\footnotesize\ttfamily \label{namespacetorchvision__down_1_1models_1_1detection_1_1transform_ae8f0dc4abb826cd365229ada9f280b9e} 
+ Tuple\mbox{[}Tensor, Optional\mbox{[}Dict\mbox{[}str, Tensor\mbox{]}\mbox{]}\mbox{]} torchvision\+\_\+down.\+models.\+detection.\+transform.\+\_\+resize\+\_\+image\+\_\+and\+\_\+masks (\begin{DoxyParamCaption}\item[{Tensor}]{image}{, }\item[{float}]{self\+\_\+min\+\_\+size}{, }\item[{float}]{self\+\_\+max\+\_\+size}{, }\item[{Optional\mbox{[}Dict\mbox{[}str, Tensor\mbox{]}\mbox{]} }]{target}{ = {\ttfamily None}, }\item[{Optional\mbox{[}Tuple\mbox{[}int, int\mbox{]}\mbox{]} }]{fixed\+\_\+size}{ = {\ttfamily None}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{namespacetorchvision__down_1_1models_1_1detection_1_1transform_a33bc1580c5b16a8b8a5ec6758472bace}\index{torchvision\_down.models.detection.transform@{torchvision\_down.models.detection.transform}!resize\_boxes@{resize\_boxes}}
+\index{resize\_boxes@{resize\_boxes}!torchvision\_down.models.detection.transform@{torchvision\_down.models.detection.transform}}
+\doxysubsubsection{\texorpdfstring{resize\_boxes()}{resize\_boxes()}}
+{\footnotesize\ttfamily \label{namespacetorchvision__down_1_1models_1_1detection_1_1transform_a33bc1580c5b16a8b8a5ec6758472bace} 
+ Tensor torchvision\+\_\+down.\+models.\+detection.\+transform.\+resize\+\_\+boxes (\begin{DoxyParamCaption}\item[{Tensor}]{boxes}{, }\item[{List\mbox{[}int\mbox{]}}]{original\+\_\+size}{, }\item[{List\mbox{[}int\mbox{]}}]{new\+\_\+size}{}\end{DoxyParamCaption})}
+
+\Hypertarget{namespacetorchvision__down_1_1models_1_1detection_1_1transform_aad075f856559d0238b08ac211772177a}\index{torchvision\_down.models.detection.transform@{torchvision\_down.models.detection.transform}!resize\_keypoints@{resize\_keypoints}}
+\index{resize\_keypoints@{resize\_keypoints}!torchvision\_down.models.detection.transform@{torchvision\_down.models.detection.transform}}
+\doxysubsubsection{\texorpdfstring{resize\_keypoints()}{resize\_keypoints()}}
+{\footnotesize\ttfamily \label{namespacetorchvision__down_1_1models_1_1detection_1_1transform_aad075f856559d0238b08ac211772177a} 
+ Tensor torchvision\+\_\+down.\+models.\+detection.\+transform.\+resize\+\_\+keypoints (\begin{DoxyParamCaption}\item[{Tensor}]{keypoints}{, }\item[{List\mbox{[}int\mbox{]}}]{original\+\_\+size}{, }\item[{List\mbox{[}int\mbox{]}}]{new\+\_\+size}{}\end{DoxyParamCaption})}
+

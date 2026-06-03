@@ -1,0 +1,35 @@
+\doxysection{Cervi\+AI/torchvision\+\_\+down/ops/poolers.py File Reference}
+\hypertarget{poolers_8py}{}\label{poolers_8py}\index{CerviAI/torchvision\_down/ops/poolers.py@{CerviAI/torchvision\_down/ops/poolers.py}}
+\doxysubsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classtorchvision__down_1_1ops_1_1poolers_1_1_level_mapper}{torchvision\+\_\+down.\+ops.\+poolers.\+Level\+Mapper}}
+\item 
+class \mbox{\hyperlink{classtorchvision__down_1_1ops_1_1poolers_1_1_multi_scale_ro_i_align}{torchvision\+\_\+down.\+ops.\+poolers.\+Multi\+Scale\+Ro\+IAlign}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+namespace \mbox{\hyperlink{namespacetorchvision__down}{torchvision\+\_\+down}}
+\item 
+namespace \mbox{\hyperlink{namespacetorchvision__down_1_1ops}{torchvision\+\_\+down.\+ops}}
+\item 
+namespace \mbox{\hyperlink{namespacetorchvision__down_1_1ops_1_1poolers}{torchvision\+\_\+down.\+ops.\+poolers}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+Tensor \mbox{\hyperlink{namespacetorchvision__down_1_1ops_1_1poolers_a51a8a61f986c575afc337b623fe464ff}{torchvision\+\_\+down.\+ops.\+poolers.\+\_\+onnx\+\_\+merge\+\_\+levels}} (Tensor levels, List\mbox{[}Tensor\mbox{]} unmerged\+\_\+results)
+\item 
+\mbox{\hyperlink{namespacetorchvision__down_1_1ops_1_1poolers_acc12d6282779e06cddbb79d6ae1469e8}{torchvision\+\_\+down.\+ops.\+poolers.\+init\+Level\+Mapper}} (int k\+\_\+min, int k\+\_\+max, int canonical\+\_\+scale=224, int canonical\+\_\+level=4, float eps=1e-\/6)
+\item 
+Tensor \mbox{\hyperlink{namespacetorchvision__down_1_1ops_1_1poolers_af846124541b717d6238dd2977b8811b0}{torchvision\+\_\+down.\+ops.\+poolers.\+\_\+convert\+\_\+to\+\_\+roi\+\_\+format}} (List\mbox{[}Tensor\mbox{]} boxes)
+\item 
+float \mbox{\hyperlink{namespacetorchvision__down_1_1ops_1_1poolers_a821cdb43597157e324af2f1862292026}{torchvision\+\_\+down.\+ops.\+poolers.\+\_\+infer\+\_\+scale}} (Tensor feature, List\mbox{[}int\mbox{]} original\+\_\+size)
+\item 
+Tuple\mbox{[}List\mbox{[}float\mbox{]}, \mbox{\hyperlink{classtorchvision__down_1_1ops_1_1poolers_1_1_level_mapper}{Level\+Mapper}}\mbox{]} \mbox{\hyperlink{namespacetorchvision__down_1_1ops_1_1poolers_ae3ea63edaec69244decbdad59fd06f28}{torchvision\+\_\+down.\+ops.\+poolers.\+\_\+setup\+\_\+scales}} (List\mbox{[}Tensor\mbox{]} features, List\mbox{[}Tuple\mbox{[}int, int\mbox{]}\mbox{]} image\+\_\+shapes, int canonical\+\_\+scale, int canonical\+\_\+level)
+\item 
+List\mbox{[}Tensor\mbox{]} \mbox{\hyperlink{namespacetorchvision__down_1_1ops_1_1poolers_a9b1c94e3036144b4b01c2a4ef9ef21bc}{torchvision\+\_\+down.\+ops.\+poolers.\+\_\+filter\+\_\+input}} (Dict\mbox{[}str, Tensor\mbox{]} x, List\mbox{[}str\mbox{]} featmap\+\_\+names)
+\item 
+Tensor \mbox{\hyperlink{namespacetorchvision__down_1_1ops_1_1poolers_a4e845d8dd942d8cfa041ed9acf5aa28f}{torchvision\+\_\+down.\+ops.\+poolers.\+\_\+multiscale\+\_\+roi\+\_\+align}} (List\mbox{[}Tensor\mbox{]} x\+\_\+filtered, List\mbox{[}Tensor\mbox{]} boxes, List\mbox{[}int\mbox{]} output\+\_\+size, int sampling\+\_\+ratio, Optional\mbox{[}List\mbox{[}float\mbox{]}\mbox{]} scales, Optional\mbox{[}\mbox{\hyperlink{classtorchvision__down_1_1ops_1_1poolers_1_1_level_mapper}{Level\+Mapper}}\mbox{]} mapper)
+\end{DoxyCompactItemize}

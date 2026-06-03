@@ -1,0 +1,202 @@
+\doxysection{torchvision\+\_\+down.\+datasets.\+ucf101.\+UCF101 Class Reference}
+\hypertarget{classtorchvision__down_1_1datasets_1_1ucf101_1_1_u_c_f101}{}\label{classtorchvision__down_1_1datasets_1_1ucf101_1_1_u_c_f101}\index{torchvision\_down.datasets.ucf101.UCF101@{torchvision\_down.datasets.ucf101.UCF101}}
+Inheritance diagram for torchvision\+\_\+down.\+datasets.\+ucf101.\+UCF101\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{classtorchvision__down_1_1datasets_1_1ucf101_1_1_u_c_f101}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+None \mbox{\hyperlink{classtorchvision__down_1_1datasets_1_1ucf101_1_1_u_c_f101_a00786172e97433efff4bebeb6abb3c50}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, str \mbox{\hyperlink{classtorchvision__down_1_1datasets_1_1vision_1_1_vision_dataset_af52cf192ec18d3421afe216bf9b881d6}{root}}, str annotation\+\_\+path, int frames\+\_\+per\+\_\+clip, int step\+\_\+between\+\_\+clips=1, Optional\mbox{[}int\mbox{]} frame\+\_\+rate=None, int \mbox{\hyperlink{classtorchvision__down_1_1datasets_1_1ucf101_1_1_u_c_f101_af8566a660f95e824bf8161f9a28a67d1}{fold}}=1, bool \mbox{\hyperlink{classtorchvision__down_1_1datasets_1_1ucf101_1_1_u_c_f101_a946aebad367853ca5b7f5b817e23fe2d}{train}}=True, Optional\mbox{[}Callable\mbox{]} \mbox{\hyperlink{classtorchvision__down_1_1datasets_1_1ucf101_1_1_u_c_f101}{transform}}=None, Optional\mbox{[}Dict\mbox{[}str, Any\mbox{]}\mbox{]} \+\_\+precomputed\+\_\+metadata=None, int num\+\_\+workers=1, int \+\_\+video\+\_\+width=0, int \+\_\+video\+\_\+height=0, int \+\_\+video\+\_\+min\+\_\+dimension=0, int \+\_\+audio\+\_\+samples=0)
+\item 
+Dict\mbox{[}str, Any\mbox{]} \mbox{\hyperlink{classtorchvision__down_1_1datasets_1_1ucf101_1_1_u_c_f101_ab77bc5e4327bc1a8518e677d450d7b63}{metadata}} (self)
+\item 
+int \mbox{\hyperlink{classtorchvision__down_1_1datasets_1_1ucf101_1_1_u_c_f101_a29e56b45a633f3883a42a6c98fca44a0}{\+\_\+\+\_\+len\+\_\+\+\_\+}} (self)
+\item 
+Tuple\mbox{[}Tensor, Tensor, int\mbox{]} \mbox{\hyperlink{classtorchvision__down_1_1datasets_1_1ucf101_1_1_u_c_f101_a10cb933ada07e9cdfa65107f6334577a}{\+\_\+\+\_\+getitem\+\_\+\+\_\+}} (self, int idx)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{classtorchvision__down_1_1datasets_1_1vision_1_1_vision_dataset}{torchvision\+\_\+down.\+datasets.\+vision.\+Vision\+Dataset}}}
+\begin{DoxyCompactItemize}
+\item 
+None \mbox{\hyperlink{classtorchvision__down_1_1datasets_1_1vision_1_1_vision_dataset_a4fe475e0f96592c04a6d97bcd953aca8}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, str \mbox{\hyperlink{classtorchvision__down_1_1datasets_1_1vision_1_1_vision_dataset_af52cf192ec18d3421afe216bf9b881d6}{root}}, Optional\mbox{[}Callable\mbox{]} \mbox{\hyperlink{classtorchvision__down_1_1datasets_1_1vision_1_1_vision_dataset_a7963601da311133da990b66cb616cc83}{transforms}}=None, Optional\mbox{[}Callable\mbox{]} \mbox{\hyperlink{classtorchvision__down_1_1datasets_1_1vision_1_1_vision_dataset_ade1b4bca7d4f998bc3061e0400769de8}{transform}}=None, Optional\mbox{[}Callable\mbox{]} \mbox{\hyperlink{classtorchvision__down_1_1datasets_1_1vision_1_1_vision_dataset_a01f7d1bb7220bbfa4234ef140d021cc6}{target\+\_\+transform}}=None)
+\item 
+Any \mbox{\hyperlink{classtorchvision__down_1_1datasets_1_1vision_1_1_vision_dataset_aa96f56b711d61433df225154b9837daa}{\+\_\+\+\_\+getitem\+\_\+\+\_\+}} (self, int index)
+\item 
+int \mbox{\hyperlink{classtorchvision__down_1_1datasets_1_1vision_1_1_vision_dataset_abb1561c74b600d1d424cfa010f009a92}{\+\_\+\+\_\+len\+\_\+\+\_\+}} (self)
+\item 
+str \mbox{\hyperlink{classtorchvision__down_1_1datasets_1_1vision_1_1_vision_dataset_a40d28a5833742c49a70872e87edb1ef9}{\+\_\+\+\_\+repr\+\_\+\+\_\+}} (self)
+\item 
+str \mbox{\hyperlink{classtorchvision__down_1_1datasets_1_1vision_1_1_vision_dataset_a99093b3e6dd75e1ed1c49eed7ac2df00}{extra\+\_\+repr}} (self)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1datasets_1_1ucf101_1_1_u_c_f101_af8566a660f95e824bf8161f9a28a67d1}{fold}} = fold
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1datasets_1_1ucf101_1_1_u_c_f101_a946aebad367853ca5b7f5b817e23fe2d}{train}} = train
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1datasets_1_1ucf101_1_1_u_c_f101_aaaa1398e57dd518705d1e36a73660e10}{classes}}
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1datasets_1_1ucf101_1_1_u_c_f101_a8d14471fc07f007f8da31b6847cd4b18}{samples}} = make\+\_\+dataset(self.\+root, class\+\_\+to\+\_\+idx, extensions, is\+\_\+valid\+\_\+file=None)
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1datasets_1_1ucf101_1_1_u_c_f101_a0cc8115187fbfe475a663dfbd3ba7c5f}{full\+\_\+video\+\_\+clips}} = \mbox{\hyperlink{classtorchvision__down_1_1datasets_1_1ucf101_1_1_u_c_f101_a79146568b89d596befcf7ec9877d1aa8}{video\+\_\+clips}}
+\item 
+List\mbox{[}int\mbox{]} \mbox{\hyperlink{classtorchvision__down_1_1datasets_1_1ucf101_1_1_u_c_f101_a6efaca76e9d06ce294314068472927fb}{indices}} = self.\+\_\+select\+\_\+fold(video\+\_\+list, annotation\+\_\+path, \mbox{\hyperlink{classtorchvision__down_1_1datasets_1_1ucf101_1_1_u_c_f101_af8566a660f95e824bf8161f9a28a67d1}{fold}}, \mbox{\hyperlink{classtorchvision__down_1_1datasets_1_1ucf101_1_1_u_c_f101_a946aebad367853ca5b7f5b817e23fe2d}{train}})
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1datasets_1_1ucf101_1_1_u_c_f101_a79146568b89d596befcf7ec9877d1aa8}{video\+\_\+clips}} = video\+\_\+clips.\+subset(self.\+indices)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes inherited from \mbox{\hyperlink{classtorchvision__down_1_1datasets_1_1vision_1_1_vision_dataset}{torchvision\+\_\+down.\+datasets.\+vision.\+Vision\+Dataset}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1datasets_1_1vision_1_1_vision_dataset_af52cf192ec18d3421afe216bf9b881d6}{root}} = root
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1datasets_1_1vision_1_1_vision_dataset_ade1b4bca7d4f998bc3061e0400769de8}{transform}} = transform
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1datasets_1_1vision_1_1_vision_dataset_a01f7d1bb7220bbfa4234ef140d021cc6}{target\+\_\+transform}} = target\+\_\+transform
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1datasets_1_1vision_1_1_vision_dataset_a7963601da311133da990b66cb616cc83}{transforms}} = transforms
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+List\mbox{[}int\mbox{]} \mbox{\hyperlink{classtorchvision__down_1_1datasets_1_1ucf101_1_1_u_c_f101_a70410ab314ab82a27692503750af41b9}{\+\_\+select\+\_\+fold}} (self, List\mbox{[}str\mbox{]} video\+\_\+list, str annotation\+\_\+path, int \mbox{\hyperlink{classtorchvision__down_1_1datasets_1_1ucf101_1_1_u_c_f101_af8566a660f95e824bf8161f9a28a67d1}{fold}}, bool \mbox{\hyperlink{classtorchvision__down_1_1datasets_1_1ucf101_1_1_u_c_f101_a946aebad367853ca5b7f5b817e23fe2d}{train}})
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions inherited from \mbox{\hyperlink{classtorchvision__down_1_1datasets_1_1vision_1_1_vision_dataset}{torchvision\+\_\+down.\+datasets.\+vision.\+Vision\+Dataset}}}
+\begin{DoxyCompactItemize}
+\item 
+List\mbox{[}str\mbox{]} \mbox{\hyperlink{classtorchvision__down_1_1datasets_1_1vision_1_1_vision_dataset_a9f1a9fad1ab8a0b963cdc3522a271689}{\+\_\+format\+\_\+transform\+\_\+repr}} (self, Callable \mbox{\hyperlink{classtorchvision__down_1_1datasets_1_1vision_1_1_vision_dataset_ade1b4bca7d4f998bc3061e0400769de8}{transform}}, str head)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Additional Inherited Members}
+\doxysubsection*{Static Protected Attributes inherited from \mbox{\hyperlink{classtorchvision__down_1_1datasets_1_1vision_1_1_vision_dataset}{torchvision\+\_\+down.\+datasets.\+vision.\+Vision\+Dataset}}}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{classtorchvision__down_1_1datasets_1_1vision_1_1_vision_dataset_a2eb99b64ccfc03378be35d0ff88e71b4}{\+\_\+repr\+\_\+indent}} = 4
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}`UCF101 <https://www.crcv.ucf.edu/data/UCF101.php>`_ dataset.
+
+UCF101 is an action recognition video dataset.
+This dataset consider every video as a collection of video clips of fixed size, specified
+by ``frames_per_clip``, where the step in frames between each clip is given by
+``step_between_clips``. The dataset itself can be downloaded from the dataset website;
+annotations that ``annotation_path`` should be pointing to can be downloaded from `here
+<https://www.crcv.ucf.edu/data/UCF101/UCF101TrainTestSplits-RecognitionTask.zip>`.
+
+To give an example, for 2 videos with 10 and 15 frames respectively, if ``frames_per_clip=5``
+and ``step_between_clips=5``, the dataset size will be (2 + 3) = 5, where the first two
+elements will come from video 1, and the next three elements from video 2.
+Note that we drop clips which do not have exactly ``frames_per_clip`` elements, so not all
+frames in a video might be present.
+
+Internally, it uses a VideoClips object to handle clip creation.
+
+Args:
+    root (string): Root directory of the UCF101 Dataset.
+    annotation_path (str): path to the folder containing the split files;
+        see docstring above for download instructions of these files
+    frames_per_clip (int): number of frames in a clip.
+    step_between_clips (int, optional): number of frames between each clip.
+    fold (int, optional): which fold to use. Should be between 1 and 3.
+    train (bool, optional): if ``True``, creates a dataset from the train split,
+        otherwise from the ``test`` split.
+    transform (callable, optional): A function/transform that  takes in a TxHxWxC video
+        and returns a transformed version.
+
+Returns:
+    tuple: A 3-tuple with the following entries:
+
+        - video (Tensor[T, H, W, C]): the `T` video frames
+        -  audio(Tensor[K, L]): the audio frames, where `K` is the number of channels
+           and `L` is the number of points
+        - label (int): class of the video clip
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classtorchvision__down_1_1datasets_1_1ucf101_1_1_u_c_f101_a00786172e97433efff4bebeb6abb3c50}\index{torchvision\_down.datasets.ucf101.UCF101@{torchvision\_down.datasets.ucf101.UCF101}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!torchvision\_down.datasets.ucf101.UCF101@{torchvision\_down.datasets.ucf101.UCF101}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1datasets_1_1ucf101_1_1_u_c_f101_a00786172e97433efff4bebeb6abb3c50} 
+ None torchvision\+\_\+down.\+datasets.\+ucf101.\+UCF101.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{str}]{root}{, }\item[{str}]{annotation\+\_\+path}{, }\item[{int}]{frames\+\_\+per\+\_\+clip}{, }\item[{int }]{step\+\_\+between\+\_\+clips}{ = {\ttfamily 1}, }\item[{Optional\mbox{[}int\mbox{]} }]{frame\+\_\+rate}{ = {\ttfamily None}, }\item[{int }]{fold}{ = {\ttfamily 1}, }\item[{bool }]{train}{ = {\ttfamily True}, }\item[{Optional\mbox{[}Callable\mbox{]} }]{transform}{ = {\ttfamily None}, }\item[{Optional\mbox{[}Dict\mbox{[}str, Any\mbox{]}\mbox{]} }]{\+\_\+precomputed\+\_\+metadata}{ = {\ttfamily None}, }\item[{int }]{num\+\_\+workers}{ = {\ttfamily 1}, }\item[{int }]{\+\_\+video\+\_\+width}{ = {\ttfamily 0}, }\item[{int }]{\+\_\+video\+\_\+height}{ = {\ttfamily 0}, }\item[{int }]{\+\_\+video\+\_\+min\+\_\+dimension}{ = {\ttfamily 0}, }\item[{int }]{\+\_\+audio\+\_\+samples}{ = {\ttfamily 0}}\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classtorchvision__down_1_1datasets_1_1ucf101_1_1_u_c_f101_a10cb933ada07e9cdfa65107f6334577a}\index{torchvision\_down.datasets.ucf101.UCF101@{torchvision\_down.datasets.ucf101.UCF101}!\_\_getitem\_\_@{\_\_getitem\_\_}}
+\index{\_\_getitem\_\_@{\_\_getitem\_\_}!torchvision\_down.datasets.ucf101.UCF101@{torchvision\_down.datasets.ucf101.UCF101}}
+\doxysubsubsection{\texorpdfstring{\_\_getitem\_\_()}{\_\_getitem\_\_()}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1datasets_1_1ucf101_1_1_u_c_f101_a10cb933ada07e9cdfa65107f6334577a} 
+ Tuple\mbox{[}Tensor, Tensor, int\mbox{]} torchvision\+\_\+down.\+datasets.\+ucf101.\+UCF101.\+\_\+\+\_\+getitem\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{int}]{idx}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classtorchvision__down_1_1datasets_1_1ucf101_1_1_u_c_f101_a29e56b45a633f3883a42a6c98fca44a0}\index{torchvision\_down.datasets.ucf101.UCF101@{torchvision\_down.datasets.ucf101.UCF101}!\_\_len\_\_@{\_\_len\_\_}}
+\index{\_\_len\_\_@{\_\_len\_\_}!torchvision\_down.datasets.ucf101.UCF101@{torchvision\_down.datasets.ucf101.UCF101}}
+\doxysubsubsection{\texorpdfstring{\_\_len\_\_()}{\_\_len\_\_()}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1datasets_1_1ucf101_1_1_u_c_f101_a29e56b45a633f3883a42a6c98fca44a0} 
+ int torchvision\+\_\+down.\+datasets.\+ucf101.\+UCF101.\+\_\+\+\_\+len\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classtorchvision__down_1_1datasets_1_1ucf101_1_1_u_c_f101_a70410ab314ab82a27692503750af41b9}\index{torchvision\_down.datasets.ucf101.UCF101@{torchvision\_down.datasets.ucf101.UCF101}!\_select\_fold@{\_select\_fold}}
+\index{\_select\_fold@{\_select\_fold}!torchvision\_down.datasets.ucf101.UCF101@{torchvision\_down.datasets.ucf101.UCF101}}
+\doxysubsubsection{\texorpdfstring{\_select\_fold()}{\_select\_fold()}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1datasets_1_1ucf101_1_1_u_c_f101_a70410ab314ab82a27692503750af41b9} 
+ List\mbox{[}int\mbox{]} torchvision\+\_\+down.\+datasets.\+ucf101.\+UCF101.\+\_\+select\+\_\+fold (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{List\mbox{[}str\mbox{]}}]{video\+\_\+list}{, }\item[{str}]{annotation\+\_\+path}{, }\item[{int}]{fold}{, }\item[{bool}]{train}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classtorchvision__down_1_1datasets_1_1ucf101_1_1_u_c_f101_ab77bc5e4327bc1a8518e677d450d7b63}\index{torchvision\_down.datasets.ucf101.UCF101@{torchvision\_down.datasets.ucf101.UCF101}!metadata@{metadata}}
+\index{metadata@{metadata}!torchvision\_down.datasets.ucf101.UCF101@{torchvision\_down.datasets.ucf101.UCF101}}
+\doxysubsubsection{\texorpdfstring{metadata()}{metadata()}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1datasets_1_1ucf101_1_1_u_c_f101_ab77bc5e4327bc1a8518e677d450d7b63} 
+ Dict\mbox{[}str, Any\mbox{]} torchvision\+\_\+down.\+datasets.\+ucf101.\+UCF101.\+metadata (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classtorchvision__down_1_1datasets_1_1ucf101_1_1_u_c_f101_aaaa1398e57dd518705d1e36a73660e10}\index{torchvision\_down.datasets.ucf101.UCF101@{torchvision\_down.datasets.ucf101.UCF101}!classes@{classes}}
+\index{classes@{classes}!torchvision\_down.datasets.ucf101.UCF101@{torchvision\_down.datasets.ucf101.UCF101}}
+\doxysubsubsection{\texorpdfstring{classes}{classes}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1datasets_1_1ucf101_1_1_u_c_f101_aaaa1398e57dd518705d1e36a73660e10} 
+torchvision\+\_\+down.\+datasets.\+ucf101.\+UCF101.\+classes}
+
+\Hypertarget{classtorchvision__down_1_1datasets_1_1ucf101_1_1_u_c_f101_af8566a660f95e824bf8161f9a28a67d1}\index{torchvision\_down.datasets.ucf101.UCF101@{torchvision\_down.datasets.ucf101.UCF101}!fold@{fold}}
+\index{fold@{fold}!torchvision\_down.datasets.ucf101.UCF101@{torchvision\_down.datasets.ucf101.UCF101}}
+\doxysubsubsection{\texorpdfstring{fold}{fold}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1datasets_1_1ucf101_1_1_u_c_f101_af8566a660f95e824bf8161f9a28a67d1} 
+torchvision\+\_\+down.\+datasets.\+ucf101.\+UCF101.\+fold = fold}
+
+\Hypertarget{classtorchvision__down_1_1datasets_1_1ucf101_1_1_u_c_f101_a0cc8115187fbfe475a663dfbd3ba7c5f}\index{torchvision\_down.datasets.ucf101.UCF101@{torchvision\_down.datasets.ucf101.UCF101}!full\_video\_clips@{full\_video\_clips}}
+\index{full\_video\_clips@{full\_video\_clips}!torchvision\_down.datasets.ucf101.UCF101@{torchvision\_down.datasets.ucf101.UCF101}}
+\doxysubsubsection{\texorpdfstring{full\_video\_clips}{full\_video\_clips}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1datasets_1_1ucf101_1_1_u_c_f101_a0cc8115187fbfe475a663dfbd3ba7c5f} 
+torchvision\+\_\+down.\+datasets.\+ucf101.\+UCF101.\+full\+\_\+video\+\_\+clips = \mbox{\hyperlink{classtorchvision__down_1_1datasets_1_1ucf101_1_1_u_c_f101_a79146568b89d596befcf7ec9877d1aa8}{video\+\_\+clips}}}
+
+\Hypertarget{classtorchvision__down_1_1datasets_1_1ucf101_1_1_u_c_f101_a6efaca76e9d06ce294314068472927fb}\index{torchvision\_down.datasets.ucf101.UCF101@{torchvision\_down.datasets.ucf101.UCF101}!indices@{indices}}
+\index{indices@{indices}!torchvision\_down.datasets.ucf101.UCF101@{torchvision\_down.datasets.ucf101.UCF101}}
+\doxysubsubsection{\texorpdfstring{indices}{indices}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1datasets_1_1ucf101_1_1_u_c_f101_a6efaca76e9d06ce294314068472927fb} 
+List\mbox{[}int\mbox{]} torchvision\+\_\+down.\+datasets.\+ucf101.\+UCF101.\+indices = self.\+\_\+select\+\_\+fold(video\+\_\+list, annotation\+\_\+path, \mbox{\hyperlink{classtorchvision__down_1_1datasets_1_1ucf101_1_1_u_c_f101_af8566a660f95e824bf8161f9a28a67d1}{fold}}, \mbox{\hyperlink{classtorchvision__down_1_1datasets_1_1ucf101_1_1_u_c_f101_a946aebad367853ca5b7f5b817e23fe2d}{train}})}
+
+\Hypertarget{classtorchvision__down_1_1datasets_1_1ucf101_1_1_u_c_f101_a8d14471fc07f007f8da31b6847cd4b18}\index{torchvision\_down.datasets.ucf101.UCF101@{torchvision\_down.datasets.ucf101.UCF101}!samples@{samples}}
+\index{samples@{samples}!torchvision\_down.datasets.ucf101.UCF101@{torchvision\_down.datasets.ucf101.UCF101}}
+\doxysubsubsection{\texorpdfstring{samples}{samples}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1datasets_1_1ucf101_1_1_u_c_f101_a8d14471fc07f007f8da31b6847cd4b18} 
+torchvision\+\_\+down.\+datasets.\+ucf101.\+UCF101.\+samples = make\+\_\+dataset(self.\+root, class\+\_\+to\+\_\+idx, extensions, is\+\_\+valid\+\_\+file=None)}
+
+\Hypertarget{classtorchvision__down_1_1datasets_1_1ucf101_1_1_u_c_f101_a946aebad367853ca5b7f5b817e23fe2d}\index{torchvision\_down.datasets.ucf101.UCF101@{torchvision\_down.datasets.ucf101.UCF101}!train@{train}}
+\index{train@{train}!torchvision\_down.datasets.ucf101.UCF101@{torchvision\_down.datasets.ucf101.UCF101}}
+\doxysubsubsection{\texorpdfstring{train}{train}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1datasets_1_1ucf101_1_1_u_c_f101_a946aebad367853ca5b7f5b817e23fe2d} 
+torchvision\+\_\+down.\+datasets.\+ucf101.\+UCF101.\+train = train}
+
+\Hypertarget{classtorchvision__down_1_1datasets_1_1ucf101_1_1_u_c_f101_a79146568b89d596befcf7ec9877d1aa8}\index{torchvision\_down.datasets.ucf101.UCF101@{torchvision\_down.datasets.ucf101.UCF101}!video\_clips@{video\_clips}}
+\index{video\_clips@{video\_clips}!torchvision\_down.datasets.ucf101.UCF101@{torchvision\_down.datasets.ucf101.UCF101}}
+\doxysubsubsection{\texorpdfstring{video\_clips}{video\_clips}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1datasets_1_1ucf101_1_1_u_c_f101_a79146568b89d596befcf7ec9877d1aa8} 
+torchvision\+\_\+down.\+datasets.\+ucf101.\+UCF101.\+video\+\_\+clips = video\+\_\+clips.\+subset(self.\+indices)}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Cervi\+AI/torchvision\+\_\+down/datasets/\mbox{\hyperlink{ucf101_8py}{ucf101.\+py}}\end{DoxyCompactItemize}

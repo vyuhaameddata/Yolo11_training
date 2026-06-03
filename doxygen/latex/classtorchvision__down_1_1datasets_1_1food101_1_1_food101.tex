@@ -1,0 +1,223 @@
+\doxysection{torchvision\+\_\+down.\+datasets.\+food101.\+Food101 Class Reference}
+\hypertarget{classtorchvision__down_1_1datasets_1_1food101_1_1_food101}{}\label{classtorchvision__down_1_1datasets_1_1food101_1_1_food101}\index{torchvision\_down.datasets.food101.Food101@{torchvision\_down.datasets.food101.Food101}}
+Inheritance diagram for torchvision\+\_\+down.\+datasets.\+food101.\+Food101\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{classtorchvision__down_1_1datasets_1_1food101_1_1_food101}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+None \mbox{\hyperlink{classtorchvision__down_1_1datasets_1_1food101_1_1_food101_a9bad77c97a6b50ffa6090f5d64a9c9cf}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, str \mbox{\hyperlink{classtorchvision__down_1_1datasets_1_1vision_1_1_vision_dataset_af52cf192ec18d3421afe216bf9b881d6}{root}}, str split="{}train"{}, Optional\mbox{[}Callable\mbox{]} \mbox{\hyperlink{classtorchvision__down_1_1datasets_1_1food101_1_1_food101}{transform}}=None, Optional\mbox{[}Callable\mbox{]} \mbox{\hyperlink{classtorchvision__down_1_1datasets_1_1food101_1_1_food101}{target\+\_\+transform}}=None, bool download=False)
+\item 
+int \mbox{\hyperlink{classtorchvision__down_1_1datasets_1_1food101_1_1_food101_a85917f46a09366b9ab98556805140e00}{\+\_\+\+\_\+len\+\_\+\+\_\+}} (self)
+\item 
+Tuple\mbox{[}Any, Any\mbox{]} \mbox{\hyperlink{classtorchvision__down_1_1datasets_1_1food101_1_1_food101_a5a788741f1f2efe5386270ecd3cca3d6}{\+\_\+\+\_\+getitem\+\_\+\+\_\+}} (self, idx)
+\item 
+str \mbox{\hyperlink{classtorchvision__down_1_1datasets_1_1food101_1_1_food101_ada9c75d3655edcc427dc724bf76ea829}{extra\+\_\+repr}} (self)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{classtorchvision__down_1_1datasets_1_1vision_1_1_vision_dataset}{torchvision\+\_\+down.\+datasets.\+vision.\+Vision\+Dataset}}}
+\begin{DoxyCompactItemize}
+\item 
+None \mbox{\hyperlink{classtorchvision__down_1_1datasets_1_1vision_1_1_vision_dataset_a4fe475e0f96592c04a6d97bcd953aca8}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, str \mbox{\hyperlink{classtorchvision__down_1_1datasets_1_1vision_1_1_vision_dataset_af52cf192ec18d3421afe216bf9b881d6}{root}}, Optional\mbox{[}Callable\mbox{]} \mbox{\hyperlink{classtorchvision__down_1_1datasets_1_1vision_1_1_vision_dataset_a7963601da311133da990b66cb616cc83}{transforms}}=None, Optional\mbox{[}Callable\mbox{]} \mbox{\hyperlink{classtorchvision__down_1_1datasets_1_1vision_1_1_vision_dataset_ade1b4bca7d4f998bc3061e0400769de8}{transform}}=None, Optional\mbox{[}Callable\mbox{]} \mbox{\hyperlink{classtorchvision__down_1_1datasets_1_1vision_1_1_vision_dataset_a01f7d1bb7220bbfa4234ef140d021cc6}{target\+\_\+transform}}=None)
+\item 
+Any \mbox{\hyperlink{classtorchvision__down_1_1datasets_1_1vision_1_1_vision_dataset_aa96f56b711d61433df225154b9837daa}{\+\_\+\+\_\+getitem\+\_\+\+\_\+}} (self, int index)
+\item 
+int \mbox{\hyperlink{classtorchvision__down_1_1datasets_1_1vision_1_1_vision_dataset_abb1561c74b600d1d424cfa010f009a92}{\+\_\+\+\_\+len\+\_\+\+\_\+}} (self)
+\item 
+str \mbox{\hyperlink{classtorchvision__down_1_1datasets_1_1vision_1_1_vision_dataset_a40d28a5833742c49a70872e87edb1ef9}{\+\_\+\+\_\+repr\+\_\+\+\_\+}} (self)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1datasets_1_1food101_1_1_food101_a2229ba75d86ea70516a67c00edaadb56}{classes}} = sorted(metadata.\+keys())
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1datasets_1_1food101_1_1_food101_a12ba8af3cc39903cfc2dc26a3a805b57}{class\+\_\+to\+\_\+idx}} = dict(zip(self.\+classes, range(len(self.\+classes))))
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes inherited from \mbox{\hyperlink{classtorchvision__down_1_1datasets_1_1vision_1_1_vision_dataset}{torchvision\+\_\+down.\+datasets.\+vision.\+Vision\+Dataset}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1datasets_1_1vision_1_1_vision_dataset_af52cf192ec18d3421afe216bf9b881d6}{root}} = root
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1datasets_1_1vision_1_1_vision_dataset_ade1b4bca7d4f998bc3061e0400769de8}{transform}} = transform
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1datasets_1_1vision_1_1_vision_dataset_a01f7d1bb7220bbfa4234ef140d021cc6}{target\+\_\+transform}} = target\+\_\+transform
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1datasets_1_1vision_1_1_vision_dataset_a7963601da311133da990b66cb616cc83}{transforms}} = transforms
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{classtorchvision__down_1_1datasets_1_1food101_1_1_food101_ae981eba898b349c2ea1c85d29af5845d}{\+\_\+check\+\_\+exists}} (self)
+\item 
+None \mbox{\hyperlink{classtorchvision__down_1_1datasets_1_1food101_1_1_food101_a1cdee7cea1e6ba7ae932246113ec668a}{\+\_\+download}} (self)
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions inherited from \mbox{\hyperlink{classtorchvision__down_1_1datasets_1_1vision_1_1_vision_dataset}{torchvision\+\_\+down.\+datasets.\+vision.\+Vision\+Dataset}}}
+\begin{DoxyCompactItemize}
+\item 
+List\mbox{[}str\mbox{]} \mbox{\hyperlink{classtorchvision__down_1_1datasets_1_1vision_1_1_vision_dataset_a9f1a9fad1ab8a0b963cdc3522a271689}{\+\_\+format\+\_\+transform\+\_\+repr}} (self, Callable \mbox{\hyperlink{classtorchvision__down_1_1datasets_1_1vision_1_1_vision_dataset_ade1b4bca7d4f998bc3061e0400769de8}{transform}}, str head)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1datasets_1_1food101_1_1_food101_a367faea929747b1088d8aadd307050b5}{\+\_\+split}} = verify\+\_\+str\+\_\+arg(split, "{}split"{}, ("{}train"{}, "{}test"{}))
+\item 
+str \mbox{\hyperlink{classtorchvision__down_1_1datasets_1_1food101_1_1_food101_aa3e9e4ba8517f6667dbb7f542e78dd20}{\+\_\+base\+\_\+folder}} = Path(self.\+root) / "{}food-\/101"{}
+\item 
+str \mbox{\hyperlink{classtorchvision__down_1_1datasets_1_1food101_1_1_food101_a17c7b8d18cfa2c6fd0dca9d664653cf0}{\+\_\+meta\+\_\+folder}} = self.\+\_\+base\+\_\+folder / "{}meta"{}
+\item 
+str \mbox{\hyperlink{classtorchvision__down_1_1datasets_1_1food101_1_1_food101_a564419e78e49db33ad675d33cc4b0789}{\+\_\+images\+\_\+folder}} = self.\+\_\+base\+\_\+folder / "{}images"{}
+\item 
+list \mbox{\hyperlink{classtorchvision__down_1_1datasets_1_1food101_1_1_food101_a8e1bffd0a8b2b3dce4e409cfdac87970}{\+\_\+labels}} = \mbox{[}$\,$\mbox{]}
+\item 
+list \mbox{\hyperlink{classtorchvision__down_1_1datasets_1_1food101_1_1_food101_aa432e7b23d21c58e926470c11579ac15}{\+\_\+image\+\_\+files}} = \mbox{[}$\,$\mbox{]}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+str \mbox{\hyperlink{classtorchvision__down_1_1datasets_1_1food101_1_1_food101_a0b6a4cf534d461bf0a0c4e1ca3dd6d13}{\+\_\+\+URL}} = "{}http\+://data.\+vision.\+ee.\+ethz.\+ch/cvl/food-\/101.tar.\+gz"{}
+\item 
+str \mbox{\hyperlink{classtorchvision__down_1_1datasets_1_1food101_1_1_food101_a56fe0b535c73d41330dec4d2e4c7da17}{\+\_\+\+MD5}} = "{}85eeb15f3717b99a5da872d97d918f87"{}
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Protected Attributes inherited from \mbox{\hyperlink{classtorchvision__down_1_1datasets_1_1vision_1_1_vision_dataset}{torchvision\+\_\+down.\+datasets.\+vision.\+Vision\+Dataset}}}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{classtorchvision__down_1_1datasets_1_1vision_1_1_vision_dataset_a2eb99b64ccfc03378be35d0ff88e71b4}{\+\_\+repr\+\_\+indent}} = 4
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}`The Food-101 Data Set <https://data.vision.ee.ethz.ch/cvl/datasets_extra/food-101/>`_.
+
+The Food-101 is a challenging data set of 101 food categories, with 101'000 images.
+For each class, 250 manually reviewed test images are provided as well as 750 training images.
+On purpose, the training images were not cleaned, and thus still contain some amount of noise.
+This comes mostly in the form of intense colors and sometimes wrong labels. All images were
+rescaled to have a maximum side length of 512 pixels.
+
+
+Args:
+    root (string): Root directory of the dataset.
+    split (string, optional): The dataset split, supports ``"train"`` (default) and ``"test"``.
+    transform (callable, optional): A function/transform that  takes in an PIL image and returns a transformed
+        version. E.g, ``transforms.RandomCrop``.
+    target_transform (callable, optional): A function/transform that takes in the target and transforms it.
+    download (bool, optional): If True, downloads the dataset from the internet and
+        puts it in root directory. If dataset is already downloaded, it is not
+        downloaded again. Default is False.
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classtorchvision__down_1_1datasets_1_1food101_1_1_food101_a9bad77c97a6b50ffa6090f5d64a9c9cf}\index{torchvision\_down.datasets.food101.Food101@{torchvision\_down.datasets.food101.Food101}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!torchvision\_down.datasets.food101.Food101@{torchvision\_down.datasets.food101.Food101}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1datasets_1_1food101_1_1_food101_a9bad77c97a6b50ffa6090f5d64a9c9cf} 
+ None torchvision\+\_\+down.\+datasets.\+food101.\+Food101.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{str}]{root}{, }\item[{str }]{split}{ = {\ttfamily "{}train"{}}, }\item[{Optional\mbox{[}Callable\mbox{]} }]{transform}{ = {\ttfamily None}, }\item[{Optional\mbox{[}Callable\mbox{]} }]{target\+\_\+transform}{ = {\ttfamily None}, }\item[{bool }]{download}{ = {\ttfamily False}}\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classtorchvision__down_1_1datasets_1_1food101_1_1_food101_a5a788741f1f2efe5386270ecd3cca3d6}\index{torchvision\_down.datasets.food101.Food101@{torchvision\_down.datasets.food101.Food101}!\_\_getitem\_\_@{\_\_getitem\_\_}}
+\index{\_\_getitem\_\_@{\_\_getitem\_\_}!torchvision\_down.datasets.food101.Food101@{torchvision\_down.datasets.food101.Food101}}
+\doxysubsubsection{\texorpdfstring{\_\_getitem\_\_()}{\_\_getitem\_\_()}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1datasets_1_1food101_1_1_food101_a5a788741f1f2efe5386270ecd3cca3d6} 
+ Tuple\mbox{[}Any, Any\mbox{]} torchvision\+\_\+down.\+datasets.\+food101.\+Food101.\+\_\+\+\_\+getitem\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{idx}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classtorchvision__down_1_1datasets_1_1food101_1_1_food101_a85917f46a09366b9ab98556805140e00}\index{torchvision\_down.datasets.food101.Food101@{torchvision\_down.datasets.food101.Food101}!\_\_len\_\_@{\_\_len\_\_}}
+\index{\_\_len\_\_@{\_\_len\_\_}!torchvision\_down.datasets.food101.Food101@{torchvision\_down.datasets.food101.Food101}}
+\doxysubsubsection{\texorpdfstring{\_\_len\_\_()}{\_\_len\_\_()}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1datasets_1_1food101_1_1_food101_a85917f46a09366b9ab98556805140e00} 
+ int torchvision\+\_\+down.\+datasets.\+food101.\+Food101.\+\_\+\+\_\+len\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classtorchvision__down_1_1datasets_1_1food101_1_1_food101_ae981eba898b349c2ea1c85d29af5845d}\index{torchvision\_down.datasets.food101.Food101@{torchvision\_down.datasets.food101.Food101}!\_check\_exists@{\_check\_exists}}
+\index{\_check\_exists@{\_check\_exists}!torchvision\_down.datasets.food101.Food101@{torchvision\_down.datasets.food101.Food101}}
+\doxysubsubsection{\texorpdfstring{\_check\_exists()}{\_check\_exists()}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1datasets_1_1food101_1_1_food101_ae981eba898b349c2ea1c85d29af5845d} 
+ bool torchvision\+\_\+down.\+datasets.\+food101.\+Food101.\+\_\+check\+\_\+exists (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classtorchvision__down_1_1datasets_1_1food101_1_1_food101_a1cdee7cea1e6ba7ae932246113ec668a}\index{torchvision\_down.datasets.food101.Food101@{torchvision\_down.datasets.food101.Food101}!\_download@{\_download}}
+\index{\_download@{\_download}!torchvision\_down.datasets.food101.Food101@{torchvision\_down.datasets.food101.Food101}}
+\doxysubsubsection{\texorpdfstring{\_download()}{\_download()}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1datasets_1_1food101_1_1_food101_a1cdee7cea1e6ba7ae932246113ec668a} 
+ None torchvision\+\_\+down.\+datasets.\+food101.\+Food101.\+\_\+download (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classtorchvision__down_1_1datasets_1_1food101_1_1_food101_ada9c75d3655edcc427dc724bf76ea829}\index{torchvision\_down.datasets.food101.Food101@{torchvision\_down.datasets.food101.Food101}!extra\_repr@{extra\_repr}}
+\index{extra\_repr@{extra\_repr}!torchvision\_down.datasets.food101.Food101@{torchvision\_down.datasets.food101.Food101}}
+\doxysubsubsection{\texorpdfstring{extra\_repr()}{extra\_repr()}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1datasets_1_1food101_1_1_food101_ada9c75d3655edcc427dc724bf76ea829} 
+ str torchvision\+\_\+down.\+datasets.\+food101.\+Food101.\+extra\+\_\+repr (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+
+
+Reimplemented from \mbox{\hyperlink{classtorchvision__down_1_1datasets_1_1vision_1_1_vision_dataset_a99093b3e6dd75e1ed1c49eed7ac2df00}{torchvision\+\_\+down.\+datasets.\+vision.\+Vision\+Dataset}}.
+
+
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classtorchvision__down_1_1datasets_1_1food101_1_1_food101_aa3e9e4ba8517f6667dbb7f542e78dd20}\index{torchvision\_down.datasets.food101.Food101@{torchvision\_down.datasets.food101.Food101}!\_base\_folder@{\_base\_folder}}
+\index{\_base\_folder@{\_base\_folder}!torchvision\_down.datasets.food101.Food101@{torchvision\_down.datasets.food101.Food101}}
+\doxysubsubsection{\texorpdfstring{\_base\_folder}{\_base\_folder}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1datasets_1_1food101_1_1_food101_aa3e9e4ba8517f6667dbb7f542e78dd20} 
+str torchvision\+\_\+down.\+datasets.\+food101.\+Food101.\+\_\+base\+\_\+folder = Path(self.\+root) / "{}food-\/101"{}\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classtorchvision__down_1_1datasets_1_1food101_1_1_food101_aa432e7b23d21c58e926470c11579ac15}\index{torchvision\_down.datasets.food101.Food101@{torchvision\_down.datasets.food101.Food101}!\_image\_files@{\_image\_files}}
+\index{\_image\_files@{\_image\_files}!torchvision\_down.datasets.food101.Food101@{torchvision\_down.datasets.food101.Food101}}
+\doxysubsubsection{\texorpdfstring{\_image\_files}{\_image\_files}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1datasets_1_1food101_1_1_food101_aa432e7b23d21c58e926470c11579ac15} 
+torchvision\+\_\+down.\+datasets.\+food101.\+Food101.\+\_\+image\+\_\+files = \mbox{[}$\,$\mbox{]}\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classtorchvision__down_1_1datasets_1_1food101_1_1_food101_a564419e78e49db33ad675d33cc4b0789}\index{torchvision\_down.datasets.food101.Food101@{torchvision\_down.datasets.food101.Food101}!\_images\_folder@{\_images\_folder}}
+\index{\_images\_folder@{\_images\_folder}!torchvision\_down.datasets.food101.Food101@{torchvision\_down.datasets.food101.Food101}}
+\doxysubsubsection{\texorpdfstring{\_images\_folder}{\_images\_folder}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1datasets_1_1food101_1_1_food101_a564419e78e49db33ad675d33cc4b0789} 
+torchvision\+\_\+down.\+datasets.\+food101.\+Food101.\+\_\+images\+\_\+folder = self.\+\_\+base\+\_\+folder / "{}images"{}\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classtorchvision__down_1_1datasets_1_1food101_1_1_food101_a8e1bffd0a8b2b3dce4e409cfdac87970}\index{torchvision\_down.datasets.food101.Food101@{torchvision\_down.datasets.food101.Food101}!\_labels@{\_labels}}
+\index{\_labels@{\_labels}!torchvision\_down.datasets.food101.Food101@{torchvision\_down.datasets.food101.Food101}}
+\doxysubsubsection{\texorpdfstring{\_labels}{\_labels}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1datasets_1_1food101_1_1_food101_a8e1bffd0a8b2b3dce4e409cfdac87970} 
+list torchvision\+\_\+down.\+datasets.\+food101.\+Food101.\+\_\+labels = \mbox{[}$\,$\mbox{]}\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classtorchvision__down_1_1datasets_1_1food101_1_1_food101_a56fe0b535c73d41330dec4d2e4c7da17}\index{torchvision\_down.datasets.food101.Food101@{torchvision\_down.datasets.food101.Food101}!\_MD5@{\_MD5}}
+\index{\_MD5@{\_MD5}!torchvision\_down.datasets.food101.Food101@{torchvision\_down.datasets.food101.Food101}}
+\doxysubsubsection{\texorpdfstring{\_MD5}{\_MD5}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1datasets_1_1food101_1_1_food101_a56fe0b535c73d41330dec4d2e4c7da17} 
+str torchvision\+\_\+down.\+datasets.\+food101.\+Food101.\+\_\+\+MD5 = "{}85eeb15f3717b99a5da872d97d918f87"{}\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}
+
+\Hypertarget{classtorchvision__down_1_1datasets_1_1food101_1_1_food101_a17c7b8d18cfa2c6fd0dca9d664653cf0}\index{torchvision\_down.datasets.food101.Food101@{torchvision\_down.datasets.food101.Food101}!\_meta\_folder@{\_meta\_folder}}
+\index{\_meta\_folder@{\_meta\_folder}!torchvision\_down.datasets.food101.Food101@{torchvision\_down.datasets.food101.Food101}}
+\doxysubsubsection{\texorpdfstring{\_meta\_folder}{\_meta\_folder}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1datasets_1_1food101_1_1_food101_a17c7b8d18cfa2c6fd0dca9d664653cf0} 
+torchvision\+\_\+down.\+datasets.\+food101.\+Food101.\+\_\+meta\+\_\+folder = self.\+\_\+base\+\_\+folder / "{}meta"{}\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classtorchvision__down_1_1datasets_1_1food101_1_1_food101_a367faea929747b1088d8aadd307050b5}\index{torchvision\_down.datasets.food101.Food101@{torchvision\_down.datasets.food101.Food101}!\_split@{\_split}}
+\index{\_split@{\_split}!torchvision\_down.datasets.food101.Food101@{torchvision\_down.datasets.food101.Food101}}
+\doxysubsubsection{\texorpdfstring{\_split}{\_split}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1datasets_1_1food101_1_1_food101_a367faea929747b1088d8aadd307050b5} 
+torchvision\+\_\+down.\+datasets.\+food101.\+Food101.\+\_\+split = verify\+\_\+str\+\_\+arg(split, "{}split"{}, ("{}train"{}, "{}test"{}))\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classtorchvision__down_1_1datasets_1_1food101_1_1_food101_a0b6a4cf534d461bf0a0c4e1ca3dd6d13}\index{torchvision\_down.datasets.food101.Food101@{torchvision\_down.datasets.food101.Food101}!\_URL@{\_URL}}
+\index{\_URL@{\_URL}!torchvision\_down.datasets.food101.Food101@{torchvision\_down.datasets.food101.Food101}}
+\doxysubsubsection{\texorpdfstring{\_URL}{\_URL}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1datasets_1_1food101_1_1_food101_a0b6a4cf534d461bf0a0c4e1ca3dd6d13} 
+torchvision\+\_\+down.\+datasets.\+food101.\+Food101.\+\_\+\+URL = "{}http\+://data.\+vision.\+ee.\+ethz.\+ch/cvl/food-\/101.tar.\+gz"{}\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}
+
+\Hypertarget{classtorchvision__down_1_1datasets_1_1food101_1_1_food101_a12ba8af3cc39903cfc2dc26a3a805b57}\index{torchvision\_down.datasets.food101.Food101@{torchvision\_down.datasets.food101.Food101}!class\_to\_idx@{class\_to\_idx}}
+\index{class\_to\_idx@{class\_to\_idx}!torchvision\_down.datasets.food101.Food101@{torchvision\_down.datasets.food101.Food101}}
+\doxysubsubsection{\texorpdfstring{class\_to\_idx}{class\_to\_idx}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1datasets_1_1food101_1_1_food101_a12ba8af3cc39903cfc2dc26a3a805b57} 
+torchvision\+\_\+down.\+datasets.\+food101.\+Food101.\+class\+\_\+to\+\_\+idx = dict(zip(self.\+classes, range(len(self.\+classes))))}
+
+\Hypertarget{classtorchvision__down_1_1datasets_1_1food101_1_1_food101_a2229ba75d86ea70516a67c00edaadb56}\index{torchvision\_down.datasets.food101.Food101@{torchvision\_down.datasets.food101.Food101}!classes@{classes}}
+\index{classes@{classes}!torchvision\_down.datasets.food101.Food101@{torchvision\_down.datasets.food101.Food101}}
+\doxysubsubsection{\texorpdfstring{classes}{classes}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1datasets_1_1food101_1_1_food101_a2229ba75d86ea70516a67c00edaadb56} 
+torchvision\+\_\+down.\+datasets.\+food101.\+Food101.\+classes = sorted(metadata.\+keys())}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Cervi\+AI/torchvision\+\_\+down/datasets/\mbox{\hyperlink{food101_8py}{food101.\+py}}\end{DoxyCompactItemize}

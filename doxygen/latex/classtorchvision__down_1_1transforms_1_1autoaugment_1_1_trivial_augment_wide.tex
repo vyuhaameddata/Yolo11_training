@@ -1,0 +1,109 @@
+\doxysection{torchvision\+\_\+down.\+transforms.\+autoaugment.\+Trivial\+Augment\+Wide Class Reference}
+\hypertarget{classtorchvision__down_1_1transforms_1_1autoaugment_1_1_trivial_augment_wide}{}\label{classtorchvision__down_1_1transforms_1_1autoaugment_1_1_trivial_augment_wide}\index{torchvision\_down.transforms.autoaugment.TrivialAugmentWide@{torchvision\_down.transforms.autoaugment.TrivialAugmentWide}}
+Inheritance diagram for torchvision\+\_\+down.\+transforms.\+autoaugment.\+Trivial\+Augment\+Wide\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classtorchvision__down_1_1transforms_1_1autoaugment_1_1_trivial_augment_wide}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+None \mbox{\hyperlink{classtorchvision__down_1_1transforms_1_1autoaugment_1_1_trivial_augment_wide_a298d75921557581226eb8de06ef07f74}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, int \mbox{\hyperlink{classtorchvision__down_1_1transforms_1_1autoaugment_1_1_trivial_augment_wide_a1195541dfdd19c1ac347ae4f56375432}{num\+\_\+magnitude\+\_\+bins}}=31, \mbox{\hyperlink{classtorchvision__down_1_1transforms_1_1functional_1_1_interpolation_mode}{Interpolation\+Mode}} \mbox{\hyperlink{classtorchvision__down_1_1transforms_1_1autoaugment_1_1_trivial_augment_wide_ac08e136fe14187b03197e7357b26281f}{interpolation}}=\mbox{\hyperlink{classtorchvision__down_1_1transforms_1_1functional_1_1_interpolation_mode_a6a6bb34c2976ea38186bca5ec09649c1}{Interpolation\+Mode.\+NEAREST}}, Optional\mbox{[}List\mbox{[}float\mbox{]}\mbox{]} \mbox{\hyperlink{classtorchvision__down_1_1transforms_1_1autoaugment_1_1_trivial_augment_wide_ac8f0537ec95b4865bf04c96358440f78}{fill}}=None)
+\item 
+Tensor \mbox{\hyperlink{classtorchvision__down_1_1transforms_1_1autoaugment_1_1_trivial_augment_wide_a281cf11c1e5b111a8866ea6ab7651ea8}{forward}} (self, Tensor img)
+\item 
+str \mbox{\hyperlink{classtorchvision__down_1_1transforms_1_1autoaugment_1_1_trivial_augment_wide_aebf10b32c5599002cb9764c9ff0c4e25}{\+\_\+\+\_\+repr\+\_\+\+\_\+}} (self)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1transforms_1_1autoaugment_1_1_trivial_augment_wide_a1195541dfdd19c1ac347ae4f56375432}{num\+\_\+magnitude\+\_\+bins}} = num\+\_\+magnitude\+\_\+bins
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1transforms_1_1autoaugment_1_1_trivial_augment_wide_ac08e136fe14187b03197e7357b26281f}{interpolation}} = interpolation
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1transforms_1_1autoaugment_1_1_trivial_augment_wide_ac8f0537ec95b4865bf04c96358440f78}{fill}} = fill
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+Dict\mbox{[}str, Tuple\mbox{[}Tensor, bool\mbox{]}\mbox{]} \mbox{\hyperlink{classtorchvision__down_1_1transforms_1_1autoaugment_1_1_trivial_augment_wide_ad4a16610c200785ce5a3a34efe4af6bc}{\+\_\+augmentation\+\_\+space}} (self, int num\+\_\+bins)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}Dataset-independent data-augmentation with TrivialAugment Wide, as described in
+`"TrivialAugment: Tuning-free Yet State-of-the-Art Data Augmentation" <https://arxiv.org/abs/2103.10158>`_.
+If the image is torch Tensor, it should be of type torch.uint8, and it is expected
+to have [..., 1 or 3, H, W] shape, where ... means an arbitrary number of leading dimensions.
+If img is PIL Image, it is expected to be in mode "L" or "RGB".
+
+Args:
+    num_magnitude_bins (int): The number of different magnitude values.
+    interpolation (InterpolationMode): Desired interpolation enum defined by
+        :class:`torchvision.transforms.InterpolationMode`. Default is ``InterpolationMode.NEAREST``.
+        If input is Tensor, only ``InterpolationMode.NEAREST``, ``InterpolationMode.BILINEAR`` are supported.
+    fill (sequence or number, optional): Pixel fill value for the area outside the transformed
+        image. If given a number, the value is used for all bands respectively.
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classtorchvision__down_1_1transforms_1_1autoaugment_1_1_trivial_augment_wide_a298d75921557581226eb8de06ef07f74}\index{torchvision\_down.transforms.autoaugment.TrivialAugmentWide@{torchvision\_down.transforms.autoaugment.TrivialAugmentWide}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!torchvision\_down.transforms.autoaugment.TrivialAugmentWide@{torchvision\_down.transforms.autoaugment.TrivialAugmentWide}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1transforms_1_1autoaugment_1_1_trivial_augment_wide_a298d75921557581226eb8de06ef07f74} 
+ None torchvision\+\_\+down.\+transforms.\+autoaugment.\+Trivial\+Augment\+Wide.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{int }]{num\+\_\+magnitude\+\_\+bins}{ = {\ttfamily 31}, }\item[{\mbox{\hyperlink{classtorchvision__down_1_1transforms_1_1functional_1_1_interpolation_mode}{Interpolation\+Mode}} }]{interpolation}{ = {\ttfamily \mbox{\hyperlink{classtorchvision__down_1_1transforms_1_1functional_1_1_interpolation_mode_a6a6bb34c2976ea38186bca5ec09649c1}{Interpolation\+Mode.\+NEAREST}}}, }\item[{Optional\mbox{[}List\mbox{[}float\mbox{]}\mbox{]} }]{fill}{ = {\ttfamily None}}\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classtorchvision__down_1_1transforms_1_1autoaugment_1_1_trivial_augment_wide_aebf10b32c5599002cb9764c9ff0c4e25}\index{torchvision\_down.transforms.autoaugment.TrivialAugmentWide@{torchvision\_down.transforms.autoaugment.TrivialAugmentWide}!\_\_repr\_\_@{\_\_repr\_\_}}
+\index{\_\_repr\_\_@{\_\_repr\_\_}!torchvision\_down.transforms.autoaugment.TrivialAugmentWide@{torchvision\_down.transforms.autoaugment.TrivialAugmentWide}}
+\doxysubsubsection{\texorpdfstring{\_\_repr\_\_()}{\_\_repr\_\_()}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1transforms_1_1autoaugment_1_1_trivial_augment_wide_aebf10b32c5599002cb9764c9ff0c4e25} 
+ str torchvision\+\_\+down.\+transforms.\+autoaugment.\+Trivial\+Augment\+Wide.\+\_\+\+\_\+repr\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classtorchvision__down_1_1transforms_1_1autoaugment_1_1_trivial_augment_wide_ad4a16610c200785ce5a3a34efe4af6bc}\index{torchvision\_down.transforms.autoaugment.TrivialAugmentWide@{torchvision\_down.transforms.autoaugment.TrivialAugmentWide}!\_augmentation\_space@{\_augmentation\_space}}
+\index{\_augmentation\_space@{\_augmentation\_space}!torchvision\_down.transforms.autoaugment.TrivialAugmentWide@{torchvision\_down.transforms.autoaugment.TrivialAugmentWide}}
+\doxysubsubsection{\texorpdfstring{\_augmentation\_space()}{\_augmentation\_space()}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1transforms_1_1autoaugment_1_1_trivial_augment_wide_ad4a16610c200785ce5a3a34efe4af6bc} 
+ Dict\mbox{[}str, Tuple\mbox{[}Tensor, bool\mbox{]}\mbox{]} torchvision\+\_\+down.\+transforms.\+autoaugment.\+Trivial\+Augment\+Wide.\+\_\+augmentation\+\_\+space (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{int}]{num\+\_\+bins}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classtorchvision__down_1_1transforms_1_1autoaugment_1_1_trivial_augment_wide_a281cf11c1e5b111a8866ea6ab7651ea8}\index{torchvision\_down.transforms.autoaugment.TrivialAugmentWide@{torchvision\_down.transforms.autoaugment.TrivialAugmentWide}!forward@{forward}}
+\index{forward@{forward}!torchvision\_down.transforms.autoaugment.TrivialAugmentWide@{torchvision\_down.transforms.autoaugment.TrivialAugmentWide}}
+\doxysubsubsection{\texorpdfstring{forward()}{forward()}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1transforms_1_1autoaugment_1_1_trivial_augment_wide_a281cf11c1e5b111a8866ea6ab7651ea8} 
+ Tensor torchvision\+\_\+down.\+transforms.\+autoaugment.\+Trivial\+Augment\+Wide.\+forward (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{Tensor}]{img}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}    img (PIL Image or Tensor): Image to be transformed.
+
+Returns:
+    PIL Image or Tensor: Transformed image.
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classtorchvision__down_1_1transforms_1_1autoaugment_1_1_trivial_augment_wide_ac8f0537ec95b4865bf04c96358440f78}\index{torchvision\_down.transforms.autoaugment.TrivialAugmentWide@{torchvision\_down.transforms.autoaugment.TrivialAugmentWide}!fill@{fill}}
+\index{fill@{fill}!torchvision\_down.transforms.autoaugment.TrivialAugmentWide@{torchvision\_down.transforms.autoaugment.TrivialAugmentWide}}
+\doxysubsubsection{\texorpdfstring{fill}{fill}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1transforms_1_1autoaugment_1_1_trivial_augment_wide_ac8f0537ec95b4865bf04c96358440f78} 
+torchvision\+\_\+down.\+transforms.\+autoaugment.\+Trivial\+Augment\+Wide.\+fill = fill}
+
+\Hypertarget{classtorchvision__down_1_1transforms_1_1autoaugment_1_1_trivial_augment_wide_ac08e136fe14187b03197e7357b26281f}\index{torchvision\_down.transforms.autoaugment.TrivialAugmentWide@{torchvision\_down.transforms.autoaugment.TrivialAugmentWide}!interpolation@{interpolation}}
+\index{interpolation@{interpolation}!torchvision\_down.transforms.autoaugment.TrivialAugmentWide@{torchvision\_down.transforms.autoaugment.TrivialAugmentWide}}
+\doxysubsubsection{\texorpdfstring{interpolation}{interpolation}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1transforms_1_1autoaugment_1_1_trivial_augment_wide_ac08e136fe14187b03197e7357b26281f} 
+torchvision\+\_\+down.\+transforms.\+autoaugment.\+Trivial\+Augment\+Wide.\+interpolation = interpolation}
+
+\Hypertarget{classtorchvision__down_1_1transforms_1_1autoaugment_1_1_trivial_augment_wide_a1195541dfdd19c1ac347ae4f56375432}\index{torchvision\_down.transforms.autoaugment.TrivialAugmentWide@{torchvision\_down.transforms.autoaugment.TrivialAugmentWide}!num\_magnitude\_bins@{num\_magnitude\_bins}}
+\index{num\_magnitude\_bins@{num\_magnitude\_bins}!torchvision\_down.transforms.autoaugment.TrivialAugmentWide@{torchvision\_down.transforms.autoaugment.TrivialAugmentWide}}
+\doxysubsubsection{\texorpdfstring{num\_magnitude\_bins}{num\_magnitude\_bins}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1transforms_1_1autoaugment_1_1_trivial_augment_wide_a1195541dfdd19c1ac347ae4f56375432} 
+torchvision\+\_\+down.\+transforms.\+autoaugment.\+Trivial\+Augment\+Wide.\+num\+\_\+magnitude\+\_\+bins = num\+\_\+magnitude\+\_\+bins}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Cervi\+AI/torchvision\+\_\+down/transforms/\mbox{\hyperlink{autoaugment_8py}{autoaugment.\+py}}\end{DoxyCompactItemize}

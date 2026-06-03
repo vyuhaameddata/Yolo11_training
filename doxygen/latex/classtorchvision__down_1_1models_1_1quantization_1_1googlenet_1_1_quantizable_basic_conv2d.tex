@@ -1,0 +1,76 @@
+\doxysection{torchvision\+\_\+down.\+models.\+quantization.\+googlenet.\+Quantizable\+Basic\+Conv2d Class Reference}
+\hypertarget{classtorchvision__down_1_1models_1_1quantization_1_1googlenet_1_1_quantizable_basic_conv2d}{}\label{classtorchvision__down_1_1models_1_1quantization_1_1googlenet_1_1_quantizable_basic_conv2d}\index{torchvision\_down.models.quantization.googlenet.QuantizableBasicConv2d@{torchvision\_down.models.quantization.googlenet.QuantizableBasicConv2d}}
+Inheritance diagram for torchvision\+\_\+down.\+models.\+quantization.\+googlenet.\+Quantizable\+Basic\+Conv2d\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{classtorchvision__down_1_1models_1_1quantization_1_1googlenet_1_1_quantizable_basic_conv2d}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+None \mbox{\hyperlink{classtorchvision__down_1_1models_1_1quantization_1_1googlenet_1_1_quantizable_basic_conv2d_a61df6be414fc1b47c528808c7e132ef1}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, \texorpdfstring{$\ast$}{*}Any args, \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}Any kwargs)
+\item 
+Tensor \mbox{\hyperlink{classtorchvision__down_1_1models_1_1quantization_1_1googlenet_1_1_quantizable_basic_conv2d_ac61e285247758845613c9c30e2976866}{forward}} (self, Tensor x)
+\item 
+None \mbox{\hyperlink{classtorchvision__down_1_1models_1_1quantization_1_1googlenet_1_1_quantizable_basic_conv2d_a939a5b78ca9934f0a9fb02c1158eb665}{fuse\+\_\+model}} (self, Optional\mbox{[}bool\mbox{]} is\+\_\+qat=None)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{classtorchvision__down_1_1models_1_1googlenet_1_1_basic_conv2d}{torchvision\+\_\+down.\+models.\+googlenet.\+Basic\+Conv2d}}}
+\begin{DoxyCompactItemize}
+\item 
+None \mbox{\hyperlink{classtorchvision__down_1_1models_1_1googlenet_1_1_basic_conv2d_a82a3ecf40d7655a7f5f12e5b9555542f}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, int in\+\_\+channels, int out\+\_\+channels, \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}Any kwargs)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1models_1_1quantization_1_1googlenet_1_1_quantizable_basic_conv2d_a96423ff5fc073bc2d92b9931f9136356}{relu}} = nn.\+Re\+LU()
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes inherited from \mbox{\hyperlink{classtorchvision__down_1_1models_1_1googlenet_1_1_basic_conv2d}{torchvision\+\_\+down.\+models.\+googlenet.\+Basic\+Conv2d}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1models_1_1googlenet_1_1_basic_conv2d_a48f6c46276c576fc85ea36335a61869f}{conv}} = nn.\+Conv2d(in\+\_\+channels, out\+\_\+channels, bias=False, \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}kwargs)
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1models_1_1googlenet_1_1_basic_conv2d_a550332ecaf3a4be28e9f607a65fd6909}{bn}} = nn.\+Batch\+Norm2d(out\+\_\+channels, eps=0.\+001)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classtorchvision__down_1_1models_1_1quantization_1_1googlenet_1_1_quantizable_basic_conv2d_a61df6be414fc1b47c528808c7e132ef1}\index{torchvision\_down.models.quantization.googlenet.QuantizableBasicConv2d@{torchvision\_down.models.quantization.googlenet.QuantizableBasicConv2d}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!torchvision\_down.models.quantization.googlenet.QuantizableBasicConv2d@{torchvision\_down.models.quantization.googlenet.QuantizableBasicConv2d}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1models_1_1quantization_1_1googlenet_1_1_quantizable_basic_conv2d_a61df6be414fc1b47c528808c7e132ef1} 
+ None torchvision\+\_\+down.\+models.\+quantization.\+googlenet.\+Quantizable\+Basic\+Conv2d.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{\texorpdfstring{$\ast$}{*}Any}]{args}{, }\item[{\texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}Any}]{kwargs}{}\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classtorchvision__down_1_1models_1_1quantization_1_1googlenet_1_1_quantizable_basic_conv2d_ac61e285247758845613c9c30e2976866}\index{torchvision\_down.models.quantization.googlenet.QuantizableBasicConv2d@{torchvision\_down.models.quantization.googlenet.QuantizableBasicConv2d}!forward@{forward}}
+\index{forward@{forward}!torchvision\_down.models.quantization.googlenet.QuantizableBasicConv2d@{torchvision\_down.models.quantization.googlenet.QuantizableBasicConv2d}}
+\doxysubsubsection{\texorpdfstring{forward()}{forward()}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1models_1_1quantization_1_1googlenet_1_1_quantizable_basic_conv2d_ac61e285247758845613c9c30e2976866} 
+ Tensor torchvision\+\_\+down.\+models.\+quantization.\+googlenet.\+Quantizable\+Basic\+Conv2d.\+forward (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{Tensor}]{x}{}\end{DoxyParamCaption})}
+
+
+
+Reimplemented from \mbox{\hyperlink{classtorchvision__down_1_1models_1_1googlenet_1_1_basic_conv2d_a90913c94f84675ff1198c1f7b4d25fc3}{torchvision\+\_\+down.\+models.\+googlenet.\+Basic\+Conv2d}}.
+
+\Hypertarget{classtorchvision__down_1_1models_1_1quantization_1_1googlenet_1_1_quantizable_basic_conv2d_a939a5b78ca9934f0a9fb02c1158eb665}\index{torchvision\_down.models.quantization.googlenet.QuantizableBasicConv2d@{torchvision\_down.models.quantization.googlenet.QuantizableBasicConv2d}!fuse\_model@{fuse\_model}}
+\index{fuse\_model@{fuse\_model}!torchvision\_down.models.quantization.googlenet.QuantizableBasicConv2d@{torchvision\_down.models.quantization.googlenet.QuantizableBasicConv2d}}
+\doxysubsubsection{\texorpdfstring{fuse\_model()}{fuse\_model()}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1models_1_1quantization_1_1googlenet_1_1_quantizable_basic_conv2d_a939a5b78ca9934f0a9fb02c1158eb665} 
+ None torchvision\+\_\+down.\+models.\+quantization.\+googlenet.\+Quantizable\+Basic\+Conv2d.\+fuse\+\_\+model (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{Optional\mbox{[}bool\mbox{]} }]{is\+\_\+qat}{ = {\ttfamily None}}\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classtorchvision__down_1_1models_1_1quantization_1_1googlenet_1_1_quantizable_basic_conv2d_a96423ff5fc073bc2d92b9931f9136356}\index{torchvision\_down.models.quantization.googlenet.QuantizableBasicConv2d@{torchvision\_down.models.quantization.googlenet.QuantizableBasicConv2d}!relu@{relu}}
+\index{relu@{relu}!torchvision\_down.models.quantization.googlenet.QuantizableBasicConv2d@{torchvision\_down.models.quantization.googlenet.QuantizableBasicConv2d}}
+\doxysubsubsection{\texorpdfstring{relu}{relu}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1models_1_1quantization_1_1googlenet_1_1_quantizable_basic_conv2d_a96423ff5fc073bc2d92b9931f9136356} 
+torchvision\+\_\+down.\+models.\+quantization.\+googlenet.\+Quantizable\+Basic\+Conv2d.\+relu = nn.\+Re\+LU()}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Cervi\+AI/torchvision\+\_\+down/models/quantization/\mbox{\hyperlink{quantization_2googlenet_8py}{googlenet.\+py}}\end{DoxyCompactItemize}

@@ -1,0 +1,153 @@
+\doxysection{torchvision\+\_\+down.\+models.\+vision\+\_\+transformer Namespace Reference}
+\hypertarget{namespacetorchvision__down_1_1models_1_1vision__transformer}{}\label{namespacetorchvision__down_1_1models_1_1vision__transformer}\index{torchvision\_down.models.vision\_transformer@{torchvision\_down.models.vision\_transformer}}
+\doxysubsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classtorchvision__down_1_1models_1_1vision__transformer_1_1_conv_stem_config}{Conv\+Stem\+Config}}
+\item 
+class \mbox{\hyperlink{classtorchvision__down_1_1models_1_1vision__transformer_1_1_encoder}{Encoder}}
+\item 
+class \mbox{\hyperlink{classtorchvision__down_1_1models_1_1vision__transformer_1_1_encoder_block}{Encoder\+Block}}
+\item 
+class \mbox{\hyperlink{classtorchvision__down_1_1models_1_1vision__transformer_1_1_m_l_p_block}{MLPBlock}}
+\item 
+class \mbox{\hyperlink{classtorchvision__down_1_1models_1_1vision__transformer_1_1_vision_transformer}{Vision\+Transformer}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1models_1_1vision__transformer_1_1_vision_transformer}{Vision\+Transformer}} \mbox{\hyperlink{namespacetorchvision__down_1_1models_1_1vision__transformer_a856a65729f120e3e74a2180bf72211ce}{\+\_\+vision\+\_\+transformer}} (str arch, int patch\+\_\+size, int num\+\_\+layers, int num\+\_\+heads, int hidden\+\_\+dim, int mlp\+\_\+dim, bool pretrained, bool progress, \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}Any kwargs)
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1models_1_1vision__transformer_1_1_vision_transformer}{Vision\+Transformer}} \mbox{\hyperlink{namespacetorchvision__down_1_1models_1_1vision__transformer_a37fe1da68981edd906a680fda8f291c6}{vit\+\_\+b\+\_\+16}} (bool pretrained=False, bool progress=True, \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}Any kwargs)
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1models_1_1vision__transformer_1_1_vision_transformer}{Vision\+Transformer}} \mbox{\hyperlink{namespacetorchvision__down_1_1models_1_1vision__transformer_a9a91c0e406c0f05ac6f41e3dd802856b}{vit\+\_\+b\+\_\+32}} (bool pretrained=False, bool progress=True, \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}Any kwargs)
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1models_1_1vision__transformer_1_1_vision_transformer}{Vision\+Transformer}} \mbox{\hyperlink{namespacetorchvision__down_1_1models_1_1vision__transformer_af7a2012701e35f6fdf4d93bec116c4fd}{vit\+\_\+l\+\_\+16}} (bool pretrained=False, bool progress=True, \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}Any kwargs)
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1models_1_1vision__transformer_1_1_vision_transformer}{Vision\+Transformer}} \mbox{\hyperlink{namespacetorchvision__down_1_1models_1_1vision__transformer_aa38c040b595b073ab5231e00f9b1cfd0}{vit\+\_\+l\+\_\+32}} (bool pretrained=False, bool progress=True, \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}Any kwargs)
+\item 
+"{}Ordered\+Dict\mbox{[}str, torch.\+Tensor\mbox{]}"{} \mbox{\hyperlink{namespacetorchvision__down_1_1models_1_1vision__transformer_a878c8ee4bec51703556c417863fa6274}{interpolate\+\_\+embeddings}} (int image\+\_\+size, int patch\+\_\+size, "{}Ordered\+Dict\mbox{[}str, torch.\+Tensor\mbox{]}"{} model\+\_\+state, str interpolation\+\_\+mode="{}bicubic"{}, bool reset\+\_\+heads=False)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+list \mbox{\hyperlink{namespacetorchvision__down_1_1models_1_1vision__transformer_a8e41778edc1d894b805e6c18439c8288}{\+\_\+\+\_\+all\+\_\+\+\_\+}}
+\item 
+dict \mbox{\hyperlink{namespacetorchvision__down_1_1models_1_1vision__transformer_a6847e44ec038df3a53f7f985d6dbca36}{model\+\_\+urls}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{namespacetorchvision__down_1_1models_1_1vision__transformer_a856a65729f120e3e74a2180bf72211ce}\index{torchvision\_down.models.vision\_transformer@{torchvision\_down.models.vision\_transformer}!\_vision\_transformer@{\_vision\_transformer}}
+\index{\_vision\_transformer@{\_vision\_transformer}!torchvision\_down.models.vision\_transformer@{torchvision\_down.models.vision\_transformer}}
+\doxysubsubsection{\texorpdfstring{\_vision\_transformer()}{\_vision\_transformer()}}
+{\footnotesize\ttfamily \label{namespacetorchvision__down_1_1models_1_1vision__transformer_a856a65729f120e3e74a2180bf72211ce} 
+ \mbox{\hyperlink{classtorchvision__down_1_1models_1_1vision__transformer_1_1_vision_transformer}{Vision\+Transformer}} torchvision\+\_\+down.\+models.\+vision\+\_\+transformer.\+\_\+vision\+\_\+transformer (\begin{DoxyParamCaption}\item[{str}]{arch}{, }\item[{int}]{patch\+\_\+size}{, }\item[{int}]{num\+\_\+layers}{, }\item[{int}]{num\+\_\+heads}{, }\item[{int}]{hidden\+\_\+dim}{, }\item[{int}]{mlp\+\_\+dim}{, }\item[{bool}]{pretrained}{, }\item[{bool}]{progress}{, }\item[{\texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}Any}]{kwargs}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{namespacetorchvision__down_1_1models_1_1vision__transformer_a878c8ee4bec51703556c417863fa6274}\index{torchvision\_down.models.vision\_transformer@{torchvision\_down.models.vision\_transformer}!interpolate\_embeddings@{interpolate\_embeddings}}
+\index{interpolate\_embeddings@{interpolate\_embeddings}!torchvision\_down.models.vision\_transformer@{torchvision\_down.models.vision\_transformer}}
+\doxysubsubsection{\texorpdfstring{interpolate\_embeddings()}{interpolate\_embeddings()}}
+{\footnotesize\ttfamily \label{namespacetorchvision__down_1_1models_1_1vision__transformer_a878c8ee4bec51703556c417863fa6274} 
+ "{}Ordered\+Dict\mbox{[}str, torch.\+Tensor\mbox{]}"{} torchvision\+\_\+down.\+models.\+vision\+\_\+transformer.\+interpolate\+\_\+embeddings (\begin{DoxyParamCaption}\item[{int}]{image\+\_\+size}{, }\item[{int}]{patch\+\_\+size}{, }\item[{"{}Ordered\+Dict\mbox{[}str, torch.\+Tensor\mbox{]}"{}}]{model\+\_\+state}{, }\item[{str }]{interpolation\+\_\+mode}{ = {\ttfamily "{}bicubic"{}}, }\item[{bool }]{reset\+\_\+heads}{ = {\ttfamily False}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}This function helps interpolating positional embeddings during checkpoint loading,
+especially when you want to apply a pre-trained model on images with different resolution.
+
+Args:
+    image_size (int): Image size of the new model.
+    patch_size (int): Patch size of the new model.
+    model_state (OrderedDict[str, torch.Tensor]): State dict of the pre-trained model.
+    interpolation_mode (str): The algorithm used for upsampling. Default: bicubic.
+    reset_heads (bool): If true, not copying the state of heads. Default: False.
+
+Returns:
+    OrderedDict[str, torch.Tensor]: A state dict which can be loaded into the new model.
+\end{DoxyVerb}
+ \Hypertarget{namespacetorchvision__down_1_1models_1_1vision__transformer_a37fe1da68981edd906a680fda8f291c6}\index{torchvision\_down.models.vision\_transformer@{torchvision\_down.models.vision\_transformer}!vit\_b\_16@{vit\_b\_16}}
+\index{vit\_b\_16@{vit\_b\_16}!torchvision\_down.models.vision\_transformer@{torchvision\_down.models.vision\_transformer}}
+\doxysubsubsection{\texorpdfstring{vit\_b\_16()}{vit\_b\_16()}}
+{\footnotesize\ttfamily \label{namespacetorchvision__down_1_1models_1_1vision__transformer_a37fe1da68981edd906a680fda8f291c6} 
+ \mbox{\hyperlink{classtorchvision__down_1_1models_1_1vision__transformer_1_1_vision_transformer}{Vision\+Transformer}} torchvision\+\_\+down.\+models.\+vision\+\_\+transformer.\+vit\+\_\+b\+\_\+16 (\begin{DoxyParamCaption}\item[{bool }]{pretrained}{ = {\ttfamily False}, }\item[{bool }]{progress}{ = {\ttfamily True}, }\item[{\texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}Any}]{kwargs}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Constructs a vit_b_16 architecture from
+`"An Image is Worth 16x16 Words: Transformers for Image Recognition at Scale" <https://arxiv.org/abs/2010.11929>`_.
+
+Args:
+    pretrained (bool): If True, returns a model pre-trained on ImageNet
+    progress (bool): If True, displays a progress bar of the download to stderr
+\end{DoxyVerb}
+ \Hypertarget{namespacetorchvision__down_1_1models_1_1vision__transformer_a9a91c0e406c0f05ac6f41e3dd802856b}\index{torchvision\_down.models.vision\_transformer@{torchvision\_down.models.vision\_transformer}!vit\_b\_32@{vit\_b\_32}}
+\index{vit\_b\_32@{vit\_b\_32}!torchvision\_down.models.vision\_transformer@{torchvision\_down.models.vision\_transformer}}
+\doxysubsubsection{\texorpdfstring{vit\_b\_32()}{vit\_b\_32()}}
+{\footnotesize\ttfamily \label{namespacetorchvision__down_1_1models_1_1vision__transformer_a9a91c0e406c0f05ac6f41e3dd802856b} 
+ \mbox{\hyperlink{classtorchvision__down_1_1models_1_1vision__transformer_1_1_vision_transformer}{Vision\+Transformer}} torchvision\+\_\+down.\+models.\+vision\+\_\+transformer.\+vit\+\_\+b\+\_\+32 (\begin{DoxyParamCaption}\item[{bool }]{pretrained}{ = {\ttfamily False}, }\item[{bool }]{progress}{ = {\ttfamily True}, }\item[{\texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}Any}]{kwargs}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Constructs a vit_b_32 architecture from
+`"An Image is Worth 16x16 Words: Transformers for Image Recognition at Scale" <https://arxiv.org/abs/2010.11929>`_.
+
+Args:
+    pretrained (bool): If True, returns a model pre-trained on ImageNet
+    progress (bool): If True, displays a progress bar of the download to stderr
+\end{DoxyVerb}
+ \Hypertarget{namespacetorchvision__down_1_1models_1_1vision__transformer_af7a2012701e35f6fdf4d93bec116c4fd}\index{torchvision\_down.models.vision\_transformer@{torchvision\_down.models.vision\_transformer}!vit\_l\_16@{vit\_l\_16}}
+\index{vit\_l\_16@{vit\_l\_16}!torchvision\_down.models.vision\_transformer@{torchvision\_down.models.vision\_transformer}}
+\doxysubsubsection{\texorpdfstring{vit\_l\_16()}{vit\_l\_16()}}
+{\footnotesize\ttfamily \label{namespacetorchvision__down_1_1models_1_1vision__transformer_af7a2012701e35f6fdf4d93bec116c4fd} 
+ \mbox{\hyperlink{classtorchvision__down_1_1models_1_1vision__transformer_1_1_vision_transformer}{Vision\+Transformer}} torchvision\+\_\+down.\+models.\+vision\+\_\+transformer.\+vit\+\_\+l\+\_\+16 (\begin{DoxyParamCaption}\item[{bool }]{pretrained}{ = {\ttfamily False}, }\item[{bool }]{progress}{ = {\ttfamily True}, }\item[{\texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}Any}]{kwargs}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Constructs a vit_l_16 architecture from
+`"An Image is Worth 16x16 Words: Transformers for Image Recognition at Scale" <https://arxiv.org/abs/2010.11929>`_.
+
+Args:
+    pretrained (bool): If True, returns a model pre-trained on ImageNet
+    progress (bool): If True, displays a progress bar of the download to stderr
+\end{DoxyVerb}
+ \Hypertarget{namespacetorchvision__down_1_1models_1_1vision__transformer_aa38c040b595b073ab5231e00f9b1cfd0}\index{torchvision\_down.models.vision\_transformer@{torchvision\_down.models.vision\_transformer}!vit\_l\_32@{vit\_l\_32}}
+\index{vit\_l\_32@{vit\_l\_32}!torchvision\_down.models.vision\_transformer@{torchvision\_down.models.vision\_transformer}}
+\doxysubsubsection{\texorpdfstring{vit\_l\_32()}{vit\_l\_32()}}
+{\footnotesize\ttfamily \label{namespacetorchvision__down_1_1models_1_1vision__transformer_aa38c040b595b073ab5231e00f9b1cfd0} 
+ \mbox{\hyperlink{classtorchvision__down_1_1models_1_1vision__transformer_1_1_vision_transformer}{Vision\+Transformer}} torchvision\+\_\+down.\+models.\+vision\+\_\+transformer.\+vit\+\_\+l\+\_\+32 (\begin{DoxyParamCaption}\item[{bool }]{pretrained}{ = {\ttfamily False}, }\item[{bool }]{progress}{ = {\ttfamily True}, }\item[{\texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}Any}]{kwargs}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Constructs a vit_l_32 architecture from
+`"An Image is Worth 16x16 Words: Transformers for Image Recognition at Scale" <https://arxiv.org/abs/2010.11929>`_.
+
+Args:
+    pretrained (bool): If True, returns a model pre-trained on ImageNet
+    progress (bool): If True, displays a progress bar of the download to stderr
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Variable Documentation}
+\Hypertarget{namespacetorchvision__down_1_1models_1_1vision__transformer_a8e41778edc1d894b805e6c18439c8288}\index{torchvision\_down.models.vision\_transformer@{torchvision\_down.models.vision\_transformer}!\_\_all\_\_@{\_\_all\_\_}}
+\index{\_\_all\_\_@{\_\_all\_\_}!torchvision\_down.models.vision\_transformer@{torchvision\_down.models.vision\_transformer}}
+\doxysubsubsection{\texorpdfstring{\_\_all\_\_}{\_\_all\_\_}}
+{\footnotesize\ttfamily \label{namespacetorchvision__down_1_1models_1_1vision__transformer_a8e41778edc1d894b805e6c18439c8288} 
+list torchvision\+\_\+down.\+models.\+vision\+\_\+transformer.\+\_\+\+\_\+all\+\_\+\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ =\ \ [}
+\DoxyCodeLine{00002\ \ \ \ \ \textcolor{stringliteral}{"{}VisionTransformer"{}},}
+\DoxyCodeLine{00003\ \ \ \ \ \textcolor{stringliteral}{"{}vit\_b\_16"{}},}
+\DoxyCodeLine{00004\ \ \ \ \ \textcolor{stringliteral}{"{}vit\_b\_32"{}},}
+\DoxyCodeLine{00005\ \ \ \ \ \textcolor{stringliteral}{"{}vit\_l\_16"{}},}
+\DoxyCodeLine{00006\ \ \ \ \ \textcolor{stringliteral}{"{}vit\_l\_32"{}},}
+\DoxyCodeLine{00007\ ]}
+
+\end{DoxyCode}
+\Hypertarget{namespacetorchvision__down_1_1models_1_1vision__transformer_a6847e44ec038df3a53f7f985d6dbca36}\index{torchvision\_down.models.vision\_transformer@{torchvision\_down.models.vision\_transformer}!model\_urls@{model\_urls}}
+\index{model\_urls@{model\_urls}!torchvision\_down.models.vision\_transformer@{torchvision\_down.models.vision\_transformer}}
+\doxysubsubsection{\texorpdfstring{model\_urls}{model\_urls}}
+{\footnotesize\ttfamily \label{namespacetorchvision__down_1_1models_1_1vision__transformer_a6847e44ec038df3a53f7f985d6dbca36} 
+dict torchvision\+\_\+down.\+models.\+vision\+\_\+transformer.\+model\+\_\+urls}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ =\ \ \{}
+\DoxyCodeLine{00002\ \ \ \ \ \textcolor{stringliteral}{"{}vit\_b\_16"{}}:\ \textcolor{stringliteral}{"{}https://download.pytorch.org/models/vit\_b\_16-\/c867db91.pth"{}},}
+\DoxyCodeLine{00003\ \ \ \ \ \textcolor{stringliteral}{"{}vit\_b\_32"{}}:\ \textcolor{stringliteral}{"{}https://download.pytorch.org/models/vit\_b\_32-\/d86f8d99.pth"{}},}
+\DoxyCodeLine{00004\ \ \ \ \ \textcolor{stringliteral}{"{}vit\_l\_16"{}}:\ \textcolor{stringliteral}{"{}https://download.pytorch.org/models/vit\_l\_16-\/852ce7e3.pth"{}},}
+\DoxyCodeLine{00005\ \ \ \ \ \textcolor{stringliteral}{"{}vit\_l\_32"{}}:\ \textcolor{stringliteral}{"{}https://download.pytorch.org/models/vit\_l\_32-\/c7638314.pth"{}},}
+\DoxyCodeLine{00006\ \}}
+
+\end{DoxyCode}

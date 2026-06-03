@@ -1,0 +1,191 @@
+\doxysection{models.\+common.\+Rep\+Conv Class Reference}
+\hypertarget{classmodels_1_1common_1_1_rep_conv}{}\label{classmodels_1_1common_1_1_rep_conv}\index{models.common.RepConv@{models.common.RepConv}}
+Inheritance diagram for models.\+common.\+Rep\+Conv\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classmodels_1_1common_1_1_rep_conv}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classmodels_1_1common_1_1_rep_conv_a2448818889779e9b97d2f19375d8b2e5}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, c1, c2, k=3, s=1, p=None, g=1, \mbox{\hyperlink{classmodels_1_1common_1_1_rep_conv_a7287592228cd401a823e68e9bb7bdc86}{act}}=True, \mbox{\hyperlink{classmodels_1_1common_1_1_rep_conv_afdb4dce34f358c0103616bcec7a4c6bd}{deploy}}=False)
+\item 
+\mbox{\hyperlink{classmodels_1_1common_1_1_rep_conv_ad3d082b04f736806aa67e74ec0617cb3}{forward}} (self, inputs)
+\item 
+\mbox{\hyperlink{classmodels_1_1common_1_1_rep_conv_a8468241aef09b94b54d945b535edca7d}{get\+\_\+equivalent\+\_\+kernel\+\_\+bias}} (self)
+\item 
+\mbox{\hyperlink{classmodels_1_1common_1_1_rep_conv_a723bf477a3c5bfa75f9f73de237c793f}{repvgg\+\_\+convert}} (self)
+\item 
+\mbox{\hyperlink{classmodels_1_1common_1_1_rep_conv_af8ce7dde8fd097205f9af84d2ea04800}{fuse\+\_\+conv\+\_\+bn}} (self, conv, bn)
+\item 
+\mbox{\hyperlink{classmodels_1_1common_1_1_rep_conv_a8822ccc17bed80ddc622ce3c77971c88}{fuse\+\_\+repvgg\+\_\+block}} (self)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{classmodels_1_1common_1_1_rep_conv_afdb4dce34f358c0103616bcec7a4c6bd}{deploy}} = deploy
+\item 
+\mbox{\hyperlink{classmodels_1_1common_1_1_rep_conv_a68d05b3d7f2e72a4915ac8c169a37298}{groups}} = g
+\item 
+\mbox{\hyperlink{classmodels_1_1common_1_1_rep_conv_a2893c485638f8bdff880a6fc612591f0}{in\+\_\+channels}} = c1
+\item 
+\mbox{\hyperlink{classmodels_1_1common_1_1_rep_conv_a2b3b69592383a726df83834517a5d27c}{out\+\_\+channels}} = c2
+\item 
+bool \mbox{\hyperlink{classmodels_1_1common_1_1_rep_conv_a7287592228cd401a823e68e9bb7bdc86}{act}} = nn.\+Si\+LU() if act is True else (act if isinstance(act, nn.\+Module) else nn.\+Identity())
+\item 
+\mbox{\hyperlink{classmodels_1_1common_1_1_rep_conv_ab8f5b72213ae12c966122913c2241ee1}{rbr\+\_\+reparam}} = nn.\+Conv2d(c1, c2, k, s, \mbox{\hyperlink{namespacemodels_1_1common_a756e6f5a297832de6af58fbf20a1a72c}{autopad}}(k, p), \mbox{\hyperlink{classmodels_1_1common_1_1_rep_conv_a68d05b3d7f2e72a4915ac8c169a37298}{groups}}=g, bias=True)
+\item 
+tuple \mbox{\hyperlink{classmodels_1_1common_1_1_rep_conv_abfbde819791ceb156d6b6f0f1afc5e5b}{rbr\+\_\+identity}} = (nn.\+Batch\+Norm2d(num\+\_\+features=c1) if c2 == c1 and s == 1 else None)
+\item 
+\mbox{\hyperlink{classmodels_1_1common_1_1_rep_conv_ab1229a5c6612b457ccd4b15f88d5410d}{rbr\+\_\+dense}}
+\item 
+\mbox{\hyperlink{classmodels_1_1common_1_1_rep_conv_a323ced0c71d1251dcf59d89dd9b76815}{rbr\+\_\+1x1}}
+\item 
+\mbox{\hyperlink{classmodels_1_1common_1_1_rep_conv_a2b4e065301d9b05026d0384139ca7845}{id\+\_\+tensor}} = torch.\+from\+\_\+numpy(kernel\+\_\+value).to(branch.\+weight.\+device)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classmodels_1_1common_1_1_rep_conv_a3d27616cb40ca4f06df2286b16064ed5}{\+\_\+pad\+\_\+1x1\+\_\+to\+\_\+3x3\+\_\+tensor}} (self, kernel1x1)
+\item 
+\mbox{\hyperlink{classmodels_1_1common_1_1_rep_conv_aa046c103af424c87a4a0b1dc3fc2cf86}{\+\_\+fuse\+\_\+bn\+\_\+tensor}} (self, branch)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classmodels_1_1common_1_1_rep_conv_a2448818889779e9b97d2f19375d8b2e5}\index{models.common.RepConv@{models.common.RepConv}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!models.common.RepConv@{models.common.RepConv}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily \label{classmodels_1_1common_1_1_rep_conv_a2448818889779e9b97d2f19375d8b2e5} 
+models.\+common.\+Rep\+Conv.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{c1}{, }\item[{}]{c2}{, }\item[{}]{k}{ = {\ttfamily 3}, }\item[{}]{s}{ = {\ttfamily 1}, }\item[{}]{p}{ = {\ttfamily None}, }\item[{}]{g}{ = {\ttfamily 1}, }\item[{}]{act}{ = {\ttfamily True}, }\item[{}]{deploy}{ = {\ttfamily False}}\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classmodels_1_1common_1_1_rep_conv_aa046c103af424c87a4a0b1dc3fc2cf86}\index{models.common.RepConv@{models.common.RepConv}!\_fuse\_bn\_tensor@{\_fuse\_bn\_tensor}}
+\index{\_fuse\_bn\_tensor@{\_fuse\_bn\_tensor}!models.common.RepConv@{models.common.RepConv}}
+\doxysubsubsection{\texorpdfstring{\_fuse\_bn\_tensor()}{\_fuse\_bn\_tensor()}}
+{\footnotesize\ttfamily \label{classmodels_1_1common_1_1_rep_conv_aa046c103af424c87a4a0b1dc3fc2cf86} 
+models.\+common.\+Rep\+Conv.\+\_\+fuse\+\_\+bn\+\_\+tensor (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{branch}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classmodels_1_1common_1_1_rep_conv_a3d27616cb40ca4f06df2286b16064ed5}\index{models.common.RepConv@{models.common.RepConv}!\_pad\_1x1\_to\_3x3\_tensor@{\_pad\_1x1\_to\_3x3\_tensor}}
+\index{\_pad\_1x1\_to\_3x3\_tensor@{\_pad\_1x1\_to\_3x3\_tensor}!models.common.RepConv@{models.common.RepConv}}
+\doxysubsubsection{\texorpdfstring{\_pad\_1x1\_to\_3x3\_tensor()}{\_pad\_1x1\_to\_3x3\_tensor()}}
+{\footnotesize\ttfamily \label{classmodels_1_1common_1_1_rep_conv_a3d27616cb40ca4f06df2286b16064ed5} 
+models.\+common.\+Rep\+Conv.\+\_\+pad\+\_\+1x1\+\_\+to\+\_\+3x3\+\_\+tensor (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{kernel1x1}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classmodels_1_1common_1_1_rep_conv_ad3d082b04f736806aa67e74ec0617cb3}\index{models.common.RepConv@{models.common.RepConv}!forward@{forward}}
+\index{forward@{forward}!models.common.RepConv@{models.common.RepConv}}
+\doxysubsubsection{\texorpdfstring{forward()}{forward()}}
+{\footnotesize\ttfamily \label{classmodels_1_1common_1_1_rep_conv_ad3d082b04f736806aa67e74ec0617cb3} 
+models.\+common.\+Rep\+Conv.\+forward (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{inputs}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classmodels_1_1common_1_1_rep_conv_af8ce7dde8fd097205f9af84d2ea04800}\index{models.common.RepConv@{models.common.RepConv}!fuse\_conv\_bn@{fuse\_conv\_bn}}
+\index{fuse\_conv\_bn@{fuse\_conv\_bn}!models.common.RepConv@{models.common.RepConv}}
+\doxysubsubsection{\texorpdfstring{fuse\_conv\_bn()}{fuse\_conv\_bn()}}
+{\footnotesize\ttfamily \label{classmodels_1_1common_1_1_rep_conv_af8ce7dde8fd097205f9af84d2ea04800} 
+models.\+common.\+Rep\+Conv.\+fuse\+\_\+conv\+\_\+bn (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{conv}{, }\item[{}]{bn}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classmodels_1_1common_1_1_rep_conv_a8822ccc17bed80ddc622ce3c77971c88}\index{models.common.RepConv@{models.common.RepConv}!fuse\_repvgg\_block@{fuse\_repvgg\_block}}
+\index{fuse\_repvgg\_block@{fuse\_repvgg\_block}!models.common.RepConv@{models.common.RepConv}}
+\doxysubsubsection{\texorpdfstring{fuse\_repvgg\_block()}{fuse\_repvgg\_block()}}
+{\footnotesize\ttfamily \label{classmodels_1_1common_1_1_rep_conv_a8822ccc17bed80ddc622ce3c77971c88} 
+models.\+common.\+Rep\+Conv.\+fuse\+\_\+repvgg\+\_\+block (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classmodels_1_1common_1_1_rep_conv_a8468241aef09b94b54d945b535edca7d}\index{models.common.RepConv@{models.common.RepConv}!get\_equivalent\_kernel\_bias@{get\_equivalent\_kernel\_bias}}
+\index{get\_equivalent\_kernel\_bias@{get\_equivalent\_kernel\_bias}!models.common.RepConv@{models.common.RepConv}}
+\doxysubsubsection{\texorpdfstring{get\_equivalent\_kernel\_bias()}{get\_equivalent\_kernel\_bias()}}
+{\footnotesize\ttfamily \label{classmodels_1_1common_1_1_rep_conv_a8468241aef09b94b54d945b535edca7d} 
+models.\+common.\+Rep\+Conv.\+get\+\_\+equivalent\+\_\+kernel\+\_\+bias (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classmodels_1_1common_1_1_rep_conv_a723bf477a3c5bfa75f9f73de237c793f}\index{models.common.RepConv@{models.common.RepConv}!repvgg\_convert@{repvgg\_convert}}
+\index{repvgg\_convert@{repvgg\_convert}!models.common.RepConv@{models.common.RepConv}}
+\doxysubsubsection{\texorpdfstring{repvgg\_convert()}{repvgg\_convert()}}
+{\footnotesize\ttfamily \label{classmodels_1_1common_1_1_rep_conv_a723bf477a3c5bfa75f9f73de237c793f} 
+models.\+common.\+Rep\+Conv.\+repvgg\+\_\+convert (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classmodels_1_1common_1_1_rep_conv_a7287592228cd401a823e68e9bb7bdc86}\index{models.common.RepConv@{models.common.RepConv}!act@{act}}
+\index{act@{act}!models.common.RepConv@{models.common.RepConv}}
+\doxysubsubsection{\texorpdfstring{act}{act}}
+{\footnotesize\ttfamily \label{classmodels_1_1common_1_1_rep_conv_a7287592228cd401a823e68e9bb7bdc86} 
+bool models.\+common.\+Rep\+Conv.\+act = nn.\+Si\+LU() if act is True else (act if isinstance(act, nn.\+Module) else nn.\+Identity())}
+
+\Hypertarget{classmodels_1_1common_1_1_rep_conv_afdb4dce34f358c0103616bcec7a4c6bd}\index{models.common.RepConv@{models.common.RepConv}!deploy@{deploy}}
+\index{deploy@{deploy}!models.common.RepConv@{models.common.RepConv}}
+\doxysubsubsection{\texorpdfstring{deploy}{deploy}}
+{\footnotesize\ttfamily \label{classmodels_1_1common_1_1_rep_conv_afdb4dce34f358c0103616bcec7a4c6bd} 
+bool models.\+common.\+Rep\+Conv.\+deploy = deploy}
+
+\Hypertarget{classmodels_1_1common_1_1_rep_conv_a68d05b3d7f2e72a4915ac8c169a37298}\index{models.common.RepConv@{models.common.RepConv}!groups@{groups}}
+\index{groups@{groups}!models.common.RepConv@{models.common.RepConv}}
+\doxysubsubsection{\texorpdfstring{groups}{groups}}
+{\footnotesize\ttfamily \label{classmodels_1_1common_1_1_rep_conv_a68d05b3d7f2e72a4915ac8c169a37298} 
+models.\+common.\+Rep\+Conv.\+groups = g}
+
+\Hypertarget{classmodels_1_1common_1_1_rep_conv_a2b4e065301d9b05026d0384139ca7845}\index{models.common.RepConv@{models.common.RepConv}!id\_tensor@{id\_tensor}}
+\index{id\_tensor@{id\_tensor}!models.common.RepConv@{models.common.RepConv}}
+\doxysubsubsection{\texorpdfstring{id\_tensor}{id\_tensor}}
+{\footnotesize\ttfamily \label{classmodels_1_1common_1_1_rep_conv_a2b4e065301d9b05026d0384139ca7845} 
+models.\+common.\+Rep\+Conv.\+id\+\_\+tensor = torch.\+from\+\_\+numpy(kernel\+\_\+value).to(branch.\+weight.\+device)}
+
+\Hypertarget{classmodels_1_1common_1_1_rep_conv_a2893c485638f8bdff880a6fc612591f0}\index{models.common.RepConv@{models.common.RepConv}!in\_channels@{in\_channels}}
+\index{in\_channels@{in\_channels}!models.common.RepConv@{models.common.RepConv}}
+\doxysubsubsection{\texorpdfstring{in\_channels}{in\_channels}}
+{\footnotesize\ttfamily \label{classmodels_1_1common_1_1_rep_conv_a2893c485638f8bdff880a6fc612591f0} 
+models.\+common.\+Rep\+Conv.\+in\+\_\+channels = c1}
+
+\Hypertarget{classmodels_1_1common_1_1_rep_conv_a2b3b69592383a726df83834517a5d27c}\index{models.common.RepConv@{models.common.RepConv}!out\_channels@{out\_channels}}
+\index{out\_channels@{out\_channels}!models.common.RepConv@{models.common.RepConv}}
+\doxysubsubsection{\texorpdfstring{out\_channels}{out\_channels}}
+{\footnotesize\ttfamily \label{classmodels_1_1common_1_1_rep_conv_a2b3b69592383a726df83834517a5d27c} 
+models.\+common.\+Rep\+Conv.\+out\+\_\+channels = c2}
+
+\Hypertarget{classmodels_1_1common_1_1_rep_conv_a323ced0c71d1251dcf59d89dd9b76815}\index{models.common.RepConv@{models.common.RepConv}!rbr\_1x1@{rbr\_1x1}}
+\index{rbr\_1x1@{rbr\_1x1}!models.common.RepConv@{models.common.RepConv}}
+\doxysubsubsection{\texorpdfstring{rbr\_1x1}{rbr\_1x1}}
+{\footnotesize\ttfamily \label{classmodels_1_1common_1_1_rep_conv_a323ced0c71d1251dcf59d89dd9b76815} 
+models.\+common.\+Rep\+Conv.\+rbr\+\_\+1x1}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \ nn.Sequential(}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ nn.Conv2d(\ c1,\ c2,\ 1,\ s,\ padding\_11,\ groups=g,\ bias=\textcolor{keyword}{False}),}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ nn.BatchNorm2d(num\_features=c2),}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ )}
+
+\end{DoxyCode}
+\Hypertarget{classmodels_1_1common_1_1_rep_conv_ab1229a5c6612b457ccd4b15f88d5410d}\index{models.common.RepConv@{models.common.RepConv}!rbr\_dense@{rbr\_dense}}
+\index{rbr\_dense@{rbr\_dense}!models.common.RepConv@{models.common.RepConv}}
+\doxysubsubsection{\texorpdfstring{rbr\_dense}{rbr\_dense}}
+{\footnotesize\ttfamily \label{classmodels_1_1common_1_1_rep_conv_ab1229a5c6612b457ccd4b15f88d5410d} 
+models.\+common.\+Rep\+Conv.\+rbr\+\_\+dense}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \ nn.Sequential(}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ nn.Conv2d(c1,\ c2,\ k,\ s,\ autopad(k,\ p),\ groups=g,\ bias=\textcolor{keyword}{False}),}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ nn.BatchNorm2d(num\_features=c2),}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ )}
+
+\end{DoxyCode}
+\Hypertarget{classmodels_1_1common_1_1_rep_conv_abfbde819791ceb156d6b6f0f1afc5e5b}\index{models.common.RepConv@{models.common.RepConv}!rbr\_identity@{rbr\_identity}}
+\index{rbr\_identity@{rbr\_identity}!models.common.RepConv@{models.common.RepConv}}
+\doxysubsubsection{\texorpdfstring{rbr\_identity}{rbr\_identity}}
+{\footnotesize\ttfamily \label{classmodels_1_1common_1_1_rep_conv_abfbde819791ceb156d6b6f0f1afc5e5b} 
+models.\+common.\+Rep\+Conv.\+rbr\+\_\+identity = (nn.\+Batch\+Norm2d(num\+\_\+features=c1) if c2 == c1 and s == 1 else None)}
+
+\Hypertarget{classmodels_1_1common_1_1_rep_conv_ab8f5b72213ae12c966122913c2241ee1}\index{models.common.RepConv@{models.common.RepConv}!rbr\_reparam@{rbr\_reparam}}
+\index{rbr\_reparam@{rbr\_reparam}!models.common.RepConv@{models.common.RepConv}}
+\doxysubsubsection{\texorpdfstring{rbr\_reparam}{rbr\_reparam}}
+{\footnotesize\ttfamily \label{classmodels_1_1common_1_1_rep_conv_ab8f5b72213ae12c966122913c2241ee1} 
+models.\+common.\+Rep\+Conv.\+rbr\+\_\+reparam = nn.\+Conv2d(c1, c2, k, s, \mbox{\hyperlink{namespacemodels_1_1common_a756e6f5a297832de6af58fbf20a1a72c}{autopad}}(k, p), \mbox{\hyperlink{classmodels_1_1common_1_1_rep_conv_a68d05b3d7f2e72a4915ac8c169a37298}{groups}}=g, bias=True)}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Cervi\+AI/models/\mbox{\hyperlink{common_8py}{common.\+py}}\end{DoxyCompactItemize}

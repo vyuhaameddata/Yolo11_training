@@ -1,0 +1,86 @@
+\doxysection{torchvision\+\_\+down.\+models.\+convnext.\+Conv\+Ne\+Xt Class Reference}
+\hypertarget{classtorchvision__down_1_1models_1_1convnext_1_1_conv_ne_xt}{}\label{classtorchvision__down_1_1models_1_1convnext_1_1_conv_ne_xt}\index{torchvision\_down.models.convnext.ConvNeXt@{torchvision\_down.models.convnext.ConvNeXt}}
+Inheritance diagram for torchvision\+\_\+down.\+models.\+convnext.\+Conv\+Ne\+Xt\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classtorchvision__down_1_1models_1_1convnext_1_1_conv_ne_xt}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+None \mbox{\hyperlink{classtorchvision__down_1_1models_1_1convnext_1_1_conv_ne_xt_a82b62868006f8ddce6a85626a4a35896}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, List\mbox{[}\mbox{\hyperlink{classtorchvision__down_1_1models_1_1convnext_1_1_c_n_block_config}{CNBlock\+Config}}\mbox{]} block\+\_\+setting, float stochastic\+\_\+depth\+\_\+prob=0.\+0, float layer\+\_\+scale=1e-\/6, int num\+\_\+classes=1000, Optional\mbox{[}Callable\mbox{[}..., nn.\+Module\mbox{]}\mbox{]} block=None, Optional\mbox{[}Callable\mbox{[}..., nn.\+Module\mbox{]}\mbox{]} norm\+\_\+layer=None, \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}Any kwargs)
+\item 
+Tensor \mbox{\hyperlink{classtorchvision__down_1_1models_1_1convnext_1_1_conv_ne_xt_aa51da943072a077b40434618a3ac3fc1}{forward}} (self, Tensor x)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1models_1_1convnext_1_1_conv_ne_xt_a0e70720845e1ee5bb833686dcc85620e}{features}} = nn.\+Sequential(\texorpdfstring{$\ast$}{*}layers)
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1models_1_1convnext_1_1_conv_ne_xt_a8cc3f89b76b8a499aee51a45fd613186}{avgpool}} = nn.\+Adaptive\+Avg\+Pool2d(1)
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1models_1_1convnext_1_1_conv_ne_xt_a7d012ff1bad0ef74328709d15145b324}{classifier}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+Tensor \mbox{\hyperlink{classtorchvision__down_1_1models_1_1convnext_1_1_conv_ne_xt_addf49caee24c0ffd6e41cd6fe387df51}{\+\_\+forward\+\_\+impl}} (self, Tensor x)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classtorchvision__down_1_1models_1_1convnext_1_1_conv_ne_xt_a82b62868006f8ddce6a85626a4a35896}\index{torchvision\_down.models.convnext.ConvNeXt@{torchvision\_down.models.convnext.ConvNeXt}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!torchvision\_down.models.convnext.ConvNeXt@{torchvision\_down.models.convnext.ConvNeXt}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1models_1_1convnext_1_1_conv_ne_xt_a82b62868006f8ddce6a85626a4a35896} 
+ None torchvision\+\_\+down.\+models.\+convnext.\+Conv\+Ne\+Xt.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{List\mbox{[}\mbox{\hyperlink{classtorchvision__down_1_1models_1_1convnext_1_1_c_n_block_config}{CNBlock\+Config}}\mbox{]}}]{block\+\_\+setting}{, }\item[{float }]{stochastic\+\_\+depth\+\_\+prob}{ = {\ttfamily 0.0}, }\item[{float }]{layer\+\_\+scale}{ = {\ttfamily 1e-\/6}, }\item[{int }]{num\+\_\+classes}{ = {\ttfamily 1000}, }\item[{Optional\mbox{[}Callable\mbox{[}..., nn.\+Module\mbox{]}\mbox{]} }]{block}{ = {\ttfamily None}, }\item[{Optional\mbox{[}Callable\mbox{[}..., nn.\+Module\mbox{]}\mbox{]} }]{norm\+\_\+layer}{ = {\ttfamily None}, }\item[{\texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}Any}]{kwargs}{}\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classtorchvision__down_1_1models_1_1convnext_1_1_conv_ne_xt_addf49caee24c0ffd6e41cd6fe387df51}\index{torchvision\_down.models.convnext.ConvNeXt@{torchvision\_down.models.convnext.ConvNeXt}!\_forward\_impl@{\_forward\_impl}}
+\index{\_forward\_impl@{\_forward\_impl}!torchvision\_down.models.convnext.ConvNeXt@{torchvision\_down.models.convnext.ConvNeXt}}
+\doxysubsubsection{\texorpdfstring{\_forward\_impl()}{\_forward\_impl()}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1models_1_1convnext_1_1_conv_ne_xt_addf49caee24c0ffd6e41cd6fe387df51} 
+ Tensor torchvision\+\_\+down.\+models.\+convnext.\+Conv\+Ne\+Xt.\+\_\+forward\+\_\+impl (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{Tensor}]{x}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classtorchvision__down_1_1models_1_1convnext_1_1_conv_ne_xt_aa51da943072a077b40434618a3ac3fc1}\index{torchvision\_down.models.convnext.ConvNeXt@{torchvision\_down.models.convnext.ConvNeXt}!forward@{forward}}
+\index{forward@{forward}!torchvision\_down.models.convnext.ConvNeXt@{torchvision\_down.models.convnext.ConvNeXt}}
+\doxysubsubsection{\texorpdfstring{forward()}{forward()}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1models_1_1convnext_1_1_conv_ne_xt_aa51da943072a077b40434618a3ac3fc1} 
+ Tensor torchvision\+\_\+down.\+models.\+convnext.\+Conv\+Ne\+Xt.\+forward (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{Tensor}]{x}{}\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classtorchvision__down_1_1models_1_1convnext_1_1_conv_ne_xt_a8cc3f89b76b8a499aee51a45fd613186}\index{torchvision\_down.models.convnext.ConvNeXt@{torchvision\_down.models.convnext.ConvNeXt}!avgpool@{avgpool}}
+\index{avgpool@{avgpool}!torchvision\_down.models.convnext.ConvNeXt@{torchvision\_down.models.convnext.ConvNeXt}}
+\doxysubsubsection{\texorpdfstring{avgpool}{avgpool}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1models_1_1convnext_1_1_conv_ne_xt_a8cc3f89b76b8a499aee51a45fd613186} 
+torchvision\+\_\+down.\+models.\+convnext.\+Conv\+Ne\+Xt.\+avgpool = nn.\+Adaptive\+Avg\+Pool2d(1)}
+
+\Hypertarget{classtorchvision__down_1_1models_1_1convnext_1_1_conv_ne_xt_a7d012ff1bad0ef74328709d15145b324}\index{torchvision\_down.models.convnext.ConvNeXt@{torchvision\_down.models.convnext.ConvNeXt}!classifier@{classifier}}
+\index{classifier@{classifier}!torchvision\_down.models.convnext.ConvNeXt@{torchvision\_down.models.convnext.ConvNeXt}}
+\doxysubsubsection{\texorpdfstring{classifier}{classifier}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1models_1_1convnext_1_1_conv_ne_xt_a7d012ff1bad0ef74328709d15145b324} 
+torchvision\+\_\+down.\+models.\+convnext.\+Conv\+Ne\+Xt.\+classifier}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \ nn.Sequential(}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ norm\_layer(lastconv\_output\_channels),\ nn.Flatten(1),\ nn.Linear(lastconv\_output\_channels,\ num\_classes)}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ )}
+
+\end{DoxyCode}
+\Hypertarget{classtorchvision__down_1_1models_1_1convnext_1_1_conv_ne_xt_a0e70720845e1ee5bb833686dcc85620e}\index{torchvision\_down.models.convnext.ConvNeXt@{torchvision\_down.models.convnext.ConvNeXt}!features@{features}}
+\index{features@{features}!torchvision\_down.models.convnext.ConvNeXt@{torchvision\_down.models.convnext.ConvNeXt}}
+\doxysubsubsection{\texorpdfstring{features}{features}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1models_1_1convnext_1_1_conv_ne_xt_a0e70720845e1ee5bb833686dcc85620e} 
+torchvision\+\_\+down.\+models.\+convnext.\+Conv\+Ne\+Xt.\+features = nn.\+Sequential(\texorpdfstring{$\ast$}{*}layers)}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Cervi\+AI/torchvision\+\_\+down/models/\mbox{\hyperlink{convnext_8py}{convnext.\+py}}\end{DoxyCompactItemize}

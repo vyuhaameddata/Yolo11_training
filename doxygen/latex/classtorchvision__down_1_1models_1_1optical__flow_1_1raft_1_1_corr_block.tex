@@ -1,0 +1,113 @@
+\doxysection{torchvision\+\_\+down.\+models.\+optical\+\_\+flow.\+raft.\+Corr\+Block Class Reference}
+\hypertarget{classtorchvision__down_1_1models_1_1optical__flow_1_1raft_1_1_corr_block}{}\label{classtorchvision__down_1_1models_1_1optical__flow_1_1raft_1_1_corr_block}\index{torchvision\_down.models.optical\_flow.raft.CorrBlock@{torchvision\_down.models.optical\_flow.raft.CorrBlock}}
+Inheritance diagram for torchvision\+\_\+down.\+models.\+optical\+\_\+flow.\+raft.\+Corr\+Block\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classtorchvision__down_1_1models_1_1optical__flow_1_1raft_1_1_corr_block}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1models_1_1optical__flow_1_1raft_1_1_corr_block_a43d351b41e77a5da926959820b637351}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, \texorpdfstring{$\ast$}{*}, int \mbox{\hyperlink{classtorchvision__down_1_1models_1_1optical__flow_1_1raft_1_1_corr_block_a4be310a5579a15a29e1d9af91c5feae4}{num\+\_\+levels}}=4, int \mbox{\hyperlink{classtorchvision__down_1_1models_1_1optical__flow_1_1raft_1_1_corr_block_a7e72c581c8b82350280819a3bb44e518}{radius}}=4)
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1models_1_1optical__flow_1_1raft_1_1_corr_block_a8914b4b6f9371f802f8d1c93c4f3006e}{build\+\_\+pyramid}} (self, fmap1, fmap2)
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1models_1_1optical__flow_1_1raft_1_1_corr_block_a35fe95a50374293d1af9b09e1ce8226f}{index\+\_\+pyramid}} (self, centroids\+\_\+coords)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1models_1_1optical__flow_1_1raft_1_1_corr_block_a4be310a5579a15a29e1d9af91c5feae4}{num\+\_\+levels}} = num\+\_\+levels
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1models_1_1optical__flow_1_1raft_1_1_corr_block_a7e72c581c8b82350280819a3bb44e518}{radius}} = radius
+\item 
+list \mbox{\hyperlink{classtorchvision__down_1_1models_1_1optical__flow_1_1raft_1_1_corr_block_a2e873e4bb8a2989529b87918503e1cb5}{corr\+\_\+pyramid}} = \mbox{[}torch.\+tensor(0)\mbox{]}
+\item 
+int \mbox{\hyperlink{classtorchvision__down_1_1models_1_1optical__flow_1_1raft_1_1_corr_block_af7ef7d1bf70d61728657ee5a37c08966}{out\+\_\+channels}} = \mbox{\hyperlink{classtorchvision__down_1_1models_1_1optical__flow_1_1raft_1_1_corr_block_a4be310a5579a15a29e1d9af91c5feae4}{num\+\_\+levels}} \texorpdfstring{$\ast$}{*} (2 \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{classtorchvision__down_1_1models_1_1optical__flow_1_1raft_1_1_corr_block_a7e72c581c8b82350280819a3bb44e518}{radius}} + 1) \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*} 2
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1models_1_1optical__flow_1_1raft_1_1_corr_block_a174252de2cf3c3fb1ae5f9f811f9ddb3}{\+\_\+compute\+\_\+corr\+\_\+volume}} (self, fmap1, fmap2)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}The correlation block.
+
+Creates a correlation pyramid with ``num_levels`` levels from the outputs of the feature encoder,
+and then indexes from this pyramid to create correlation features.
+The "indexing" of a given centroid pixel x' is done by concatenating its surrounding neighbors that
+are within a ``radius``, according to the infinity norm (see paper section 3.2).
+Note: typo in the paper, it should be infinity norm, not 1-norm.
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classtorchvision__down_1_1models_1_1optical__flow_1_1raft_1_1_corr_block_a43d351b41e77a5da926959820b637351}\index{torchvision\_down.models.optical\_flow.raft.CorrBlock@{torchvision\_down.models.optical\_flow.raft.CorrBlock}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!torchvision\_down.models.optical\_flow.raft.CorrBlock@{torchvision\_down.models.optical\_flow.raft.CorrBlock}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1models_1_1optical__flow_1_1raft_1_1_corr_block_a43d351b41e77a5da926959820b637351} 
+torchvision\+\_\+down.\+models.\+optical\+\_\+flow.\+raft.\+Corr\+Block.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{\texorpdfstring{$\ast$}{*}}]{}{, }\item[{int }]{num\+\_\+levels}{ = {\ttfamily 4}, }\item[{int }]{radius}{ = {\ttfamily 4}}\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classtorchvision__down_1_1models_1_1optical__flow_1_1raft_1_1_corr_block_a174252de2cf3c3fb1ae5f9f811f9ddb3}\index{torchvision\_down.models.optical\_flow.raft.CorrBlock@{torchvision\_down.models.optical\_flow.raft.CorrBlock}!\_compute\_corr\_volume@{\_compute\_corr\_volume}}
+\index{\_compute\_corr\_volume@{\_compute\_corr\_volume}!torchvision\_down.models.optical\_flow.raft.CorrBlock@{torchvision\_down.models.optical\_flow.raft.CorrBlock}}
+\doxysubsubsection{\texorpdfstring{\_compute\_corr\_volume()}{\_compute\_corr\_volume()}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1models_1_1optical__flow_1_1raft_1_1_corr_block_a174252de2cf3c3fb1ae5f9f811f9ddb3} 
+torchvision\+\_\+down.\+models.\+optical\+\_\+flow.\+raft.\+Corr\+Block.\+\_\+compute\+\_\+corr\+\_\+volume (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{fmap1}{, }\item[{}]{fmap2}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classtorchvision__down_1_1models_1_1optical__flow_1_1raft_1_1_corr_block_a8914b4b6f9371f802f8d1c93c4f3006e}\index{torchvision\_down.models.optical\_flow.raft.CorrBlock@{torchvision\_down.models.optical\_flow.raft.CorrBlock}!build\_pyramid@{build\_pyramid}}
+\index{build\_pyramid@{build\_pyramid}!torchvision\_down.models.optical\_flow.raft.CorrBlock@{torchvision\_down.models.optical\_flow.raft.CorrBlock}}
+\doxysubsubsection{\texorpdfstring{build\_pyramid()}{build\_pyramid()}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1models_1_1optical__flow_1_1raft_1_1_corr_block_a8914b4b6f9371f802f8d1c93c4f3006e} 
+torchvision\+\_\+down.\+models.\+optical\+\_\+flow.\+raft.\+Corr\+Block.\+build\+\_\+pyramid (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{fmap1}{, }\item[{}]{fmap2}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Build the correlation pyramid from two feature maps.
+
+The correlation volume is first computed as the dot product of each pair (pixel_in_fmap1, pixel_in_fmap2)
+The last 2 dimensions of the correlation volume are then pooled num_levels times at different resolutions
+to build the correlation pyramid.
+\end{DoxyVerb}
+ \Hypertarget{classtorchvision__down_1_1models_1_1optical__flow_1_1raft_1_1_corr_block_a35fe95a50374293d1af9b09e1ce8226f}\index{torchvision\_down.models.optical\_flow.raft.CorrBlock@{torchvision\_down.models.optical\_flow.raft.CorrBlock}!index\_pyramid@{index\_pyramid}}
+\index{index\_pyramid@{index\_pyramid}!torchvision\_down.models.optical\_flow.raft.CorrBlock@{torchvision\_down.models.optical\_flow.raft.CorrBlock}}
+\doxysubsubsection{\texorpdfstring{index\_pyramid()}{index\_pyramid()}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1models_1_1optical__flow_1_1raft_1_1_corr_block_a35fe95a50374293d1af9b09e1ce8226f} 
+torchvision\+\_\+down.\+models.\+optical\+\_\+flow.\+raft.\+Corr\+Block.\+index\+\_\+pyramid (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{centroids\+\_\+coords}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Return correlation features by indexing from the pyramid.\end{DoxyVerb}
+ 
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classtorchvision__down_1_1models_1_1optical__flow_1_1raft_1_1_corr_block_a2e873e4bb8a2989529b87918503e1cb5}\index{torchvision\_down.models.optical\_flow.raft.CorrBlock@{torchvision\_down.models.optical\_flow.raft.CorrBlock}!corr\_pyramid@{corr\_pyramid}}
+\index{corr\_pyramid@{corr\_pyramid}!torchvision\_down.models.optical\_flow.raft.CorrBlock@{torchvision\_down.models.optical\_flow.raft.CorrBlock}}
+\doxysubsubsection{\texorpdfstring{corr\_pyramid}{corr\_pyramid}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1models_1_1optical__flow_1_1raft_1_1_corr_block_a2e873e4bb8a2989529b87918503e1cb5} 
+list torchvision\+\_\+down.\+models.\+optical\+\_\+flow.\+raft.\+Corr\+Block.\+corr\+\_\+pyramid = \mbox{[}torch.\+tensor(0)\mbox{]}}
+
+\Hypertarget{classtorchvision__down_1_1models_1_1optical__flow_1_1raft_1_1_corr_block_a4be310a5579a15a29e1d9af91c5feae4}\index{torchvision\_down.models.optical\_flow.raft.CorrBlock@{torchvision\_down.models.optical\_flow.raft.CorrBlock}!num\_levels@{num\_levels}}
+\index{num\_levels@{num\_levels}!torchvision\_down.models.optical\_flow.raft.CorrBlock@{torchvision\_down.models.optical\_flow.raft.CorrBlock}}
+\doxysubsubsection{\texorpdfstring{num\_levels}{num\_levels}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1models_1_1optical__flow_1_1raft_1_1_corr_block_a4be310a5579a15a29e1d9af91c5feae4} 
+torchvision\+\_\+down.\+models.\+optical\+\_\+flow.\+raft.\+Corr\+Block.\+num\+\_\+levels = num\+\_\+levels}
+
+\Hypertarget{classtorchvision__down_1_1models_1_1optical__flow_1_1raft_1_1_corr_block_af7ef7d1bf70d61728657ee5a37c08966}\index{torchvision\_down.models.optical\_flow.raft.CorrBlock@{torchvision\_down.models.optical\_flow.raft.CorrBlock}!out\_channels@{out\_channels}}
+\index{out\_channels@{out\_channels}!torchvision\_down.models.optical\_flow.raft.CorrBlock@{torchvision\_down.models.optical\_flow.raft.CorrBlock}}
+\doxysubsubsection{\texorpdfstring{out\_channels}{out\_channels}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1models_1_1optical__flow_1_1raft_1_1_corr_block_af7ef7d1bf70d61728657ee5a37c08966} 
+int torchvision\+\_\+down.\+models.\+optical\+\_\+flow.\+raft.\+Corr\+Block.\+out\+\_\+channels = \mbox{\hyperlink{classtorchvision__down_1_1models_1_1optical__flow_1_1raft_1_1_corr_block_a4be310a5579a15a29e1d9af91c5feae4}{num\+\_\+levels}} \texorpdfstring{$\ast$}{*} (2 \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{classtorchvision__down_1_1models_1_1optical__flow_1_1raft_1_1_corr_block_a7e72c581c8b82350280819a3bb44e518}{radius}} + 1) \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*} 2}
+
+\Hypertarget{classtorchvision__down_1_1models_1_1optical__flow_1_1raft_1_1_corr_block_a7e72c581c8b82350280819a3bb44e518}\index{torchvision\_down.models.optical\_flow.raft.CorrBlock@{torchvision\_down.models.optical\_flow.raft.CorrBlock}!radius@{radius}}
+\index{radius@{radius}!torchvision\_down.models.optical\_flow.raft.CorrBlock@{torchvision\_down.models.optical\_flow.raft.CorrBlock}}
+\doxysubsubsection{\texorpdfstring{radius}{radius}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1models_1_1optical__flow_1_1raft_1_1_corr_block_a7e72c581c8b82350280819a3bb44e518} 
+torchvision\+\_\+down.\+models.\+optical\+\_\+flow.\+raft.\+Corr\+Block.\+radius = radius}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Cervi\+AI/torchvision\+\_\+down/models/optical\+\_\+flow/\mbox{\hyperlink{raft_8py}{raft.\+py}}\end{DoxyCompactItemize}

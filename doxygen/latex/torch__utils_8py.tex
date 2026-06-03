@@ -1,0 +1,66 @@
+\doxysection{Cervi\+AI/utils/torch\+\_\+utils.py File Reference}
+\hypertarget{torch__utils_8py}{}\label{torch__utils_8py}\index{CerviAI/utils/torch\_utils.py@{CerviAI/utils/torch\_utils.py}}
+\doxysubsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classutils_1_1torch__utils_1_1_model_e_m_a}{utils.\+torch\+\_\+utils.\+Model\+EMA}}
+\item 
+class \mbox{\hyperlink{classutils_1_1torch__utils_1_1_batch_norm_xd}{utils.\+torch\+\_\+utils.\+Batch\+Norm\+Xd}}
+\item 
+class \mbox{\hyperlink{classutils_1_1torch__utils_1_1_traced_model}{utils.\+torch\+\_\+utils.\+Traced\+Model}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+namespace \mbox{\hyperlink{namespaceutils}{utils}}
+\item 
+namespace \mbox{\hyperlink{namespaceutils_1_1torch__utils}{utils.\+torch\+\_\+utils}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{namespaceutils_1_1torch__utils_a4bde0a04cf1360cc587360009d51653b}{utils.\+torch\+\_\+utils.\+torch\+\_\+distributed\+\_\+zero\+\_\+first}} (int local\+\_\+rank)
+\item 
+\mbox{\hyperlink{namespaceutils_1_1torch__utils_a16f2c8d0258b4267deb64ec0180d21a4}{utils.\+torch\+\_\+utils.\+init\+\_\+torch\+\_\+seeds}} (seed=0)
+\item 
+\mbox{\hyperlink{namespaceutils_1_1torch__utils_afdfa6bb74de71a659031e12d4de58af2}{utils.\+torch\+\_\+utils.\+date\+\_\+modified}} (path=\+\_\+\+\_\+file\+\_\+\+\_\+)
+\item 
+\mbox{\hyperlink{namespaceutils_1_1torch__utils_a048ae2045ea4e55d244e46b5259b3e2c}{utils.\+torch\+\_\+utils.\+git\+\_\+describe}} (path=Path(\+\_\+\+\_\+file\+\_\+\+\_\+).parent)
+\item 
+\mbox{\hyperlink{namespaceutils_1_1torch__utils_a56b83ed23d33c568233e68256d200636}{utils.\+torch\+\_\+utils.\+select\+\_\+device}} (device=\textquotesingle{}\textquotesingle{}, batch\+\_\+size=None)
+\item 
+\mbox{\hyperlink{namespaceutils_1_1torch__utils_a11d053b2fefd041f9318dbf1c88f5e40}{utils.\+torch\+\_\+utils.\+time\+\_\+synchronized}} ()
+\item 
+\mbox{\hyperlink{namespaceutils_1_1torch__utils_a98f2afda92116de895c8161f79268867}{utils.\+torch\+\_\+utils.\+profile}} (x, ops, n=100, device=None)
+\item 
+\mbox{\hyperlink{namespaceutils_1_1torch__utils_a82ce1df6cd0d3b6d6f74ae2b11d1c76c}{utils.\+torch\+\_\+utils.\+is\+\_\+parallel}} (model)
+\item 
+\mbox{\hyperlink{namespaceutils_1_1torch__utils_a1655c34f01b066f53d8cb21df34d65ef}{utils.\+torch\+\_\+utils.\+intersect\+\_\+dicts}} (da, db, exclude=())
+\item 
+\mbox{\hyperlink{namespaceutils_1_1torch__utils_a054a2cb76c2def88877e7f9b14d04dc3}{utils.\+torch\+\_\+utils.\+initialize\+\_\+weights}} (model)
+\item 
+\mbox{\hyperlink{namespaceutils_1_1torch__utils_a7c12a9444daa8efcd340f091a7a1e62e}{utils.\+torch\+\_\+utils.\+find\+\_\+modules}} (model, mclass=nn.\+Conv2d)
+\item 
+\mbox{\hyperlink{namespaceutils_1_1torch__utils_acadf18716d33e04abbeb936e3961818e}{utils.\+torch\+\_\+utils.\+sparsity}} (model)
+\item 
+\mbox{\hyperlink{namespaceutils_1_1torch__utils_a7c61e514e5280bbe0828434fa149fc55}{utils.\+torch\+\_\+utils.\+prune}} (model, amount=0.\+3)
+\item 
+\mbox{\hyperlink{namespaceutils_1_1torch__utils_a47786566d98be89ac7d7c640921fa42c}{utils.\+torch\+\_\+utils.\+fuse\+\_\+conv\+\_\+and\+\_\+bn}} (conv, bn)
+\item 
+\mbox{\hyperlink{namespaceutils_1_1torch__utils_afd0042e00ec28ee7791eadd118b9f68c}{utils.\+torch\+\_\+utils.\+model\+\_\+info}} (model, verbose=False, img\+\_\+size=640)
+\item 
+\mbox{\hyperlink{namespaceutils_1_1torch__utils_ae96a2725bd3d39956151d30ae0244e35}{utils.\+torch\+\_\+utils.\+load\+\_\+classifier}} (name=\textquotesingle{}resnet101\textquotesingle{}, n=2)
+\item 
+\mbox{\hyperlink{namespaceutils_1_1torch__utils_af498e4842dd961c38444f645e38b552b}{utils.\+torch\+\_\+utils.\+scale\+\_\+img}} (img, ratio=1.\+0, same\+\_\+shape=False, gs=32)
+\item 
+\mbox{\hyperlink{namespaceutils_1_1torch__utils_af9e05f408848d0912fc3dd3d86959778}{utils.\+torch\+\_\+utils.\+copy\+\_\+attr}} (a, b, include=(), exclude=())
+\item 
+\mbox{\hyperlink{namespaceutils_1_1torch__utils_ad01e2a24e2450c944730c5c7b86628c4}{utils.\+torch\+\_\+utils.\+revert\+\_\+sync\+\_\+batchnorm}} (module)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{namespaceutils_1_1torch__utils_ad74401a9fbe9c48fe7152252835f17d6}{utils.\+torch\+\_\+utils.\+thop}} = None
+\item 
+\mbox{\hyperlink{namespaceutils_1_1torch__utils_a2be133e6df6a1bd9244f73f717ac2898}{utils.\+torch\+\_\+utils.\+logger}} = logging.\+get\+Logger(\+\_\+\+\_\+name\+\_\+\+\_\+)
+\end{DoxyCompactItemize}

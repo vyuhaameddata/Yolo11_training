@@ -1,0 +1,106 @@
+\doxysection{torchvision\+\_\+down.\+transforms.\+\_\+functional\+\_\+video Namespace Reference}
+\hypertarget{namespacetorchvision__down_1_1transforms_1_1__functional__video}{}\label{namespacetorchvision__down_1_1transforms_1_1__functional__video}\index{torchvision\_down.transforms.\_functional\_video@{torchvision\_down.transforms.\_functional\_video}}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{namespacetorchvision__down_1_1transforms_1_1__functional__video_a6078b50e79fa7f2e96cd65196e44f16c}{\+\_\+is\+\_\+tensor\+\_\+video\+\_\+clip}} (clip)
+\item 
+\mbox{\hyperlink{namespacetorchvision__down_1_1transforms_1_1__functional__video_a44b11a444b22965715dfc17497104e4f}{crop}} (clip, i, j, h, w)
+\item 
+\mbox{\hyperlink{namespacetorchvision__down_1_1transforms_1_1__functional__video_a46f3c7089251e3a1d79fdb62897b03a1}{resize}} (clip, target\+\_\+size, interpolation\+\_\+mode)
+\item 
+\mbox{\hyperlink{namespacetorchvision__down_1_1transforms_1_1__functional__video_ab6bb616be8f4535e69630fef8630c1b6}{resized\+\_\+crop}} (clip, i, j, h, w, size, interpolation\+\_\+mode="{}bilinear"{})
+\item 
+\mbox{\hyperlink{namespacetorchvision__down_1_1transforms_1_1__functional__video_a3668c8248c192429d024dd01cc8834b0}{center\+\_\+crop}} (clip, crop\+\_\+size)
+\item 
+\mbox{\hyperlink{namespacetorchvision__down_1_1transforms_1_1__functional__video_aebb4d326ca89b58d0a866d06921ff1ba}{to\+\_\+tensor}} (clip)
+\item 
+\mbox{\hyperlink{namespacetorchvision__down_1_1transforms_1_1__functional__video_a74bf0e1c84c9dc787bdf7f7dbb5fd6f5}{normalize}} (clip, mean, std, inplace=False)
+\item 
+\mbox{\hyperlink{namespacetorchvision__down_1_1transforms_1_1__functional__video_ad7806ae4234e6794af857b0b43052e7f}{hflip}} (clip)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{namespacetorchvision__down_1_1transforms_1_1__functional__video_a6078b50e79fa7f2e96cd65196e44f16c}\index{torchvision\_down.transforms.\_functional\_video@{torchvision\_down.transforms.\_functional\_video}!\_is\_tensor\_video\_clip@{\_is\_tensor\_video\_clip}}
+\index{\_is\_tensor\_video\_clip@{\_is\_tensor\_video\_clip}!torchvision\_down.transforms.\_functional\_video@{torchvision\_down.transforms.\_functional\_video}}
+\doxysubsubsection{\texorpdfstring{\_is\_tensor\_video\_clip()}{\_is\_tensor\_video\_clip()}}
+{\footnotesize\ttfamily \label{namespacetorchvision__down_1_1transforms_1_1__functional__video_a6078b50e79fa7f2e96cd65196e44f16c} 
+torchvision\+\_\+down.\+transforms.\+\_\+functional\+\_\+video.\+\_\+is\+\_\+tensor\+\_\+video\+\_\+clip (\begin{DoxyParamCaption}\item[{}]{clip}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{namespacetorchvision__down_1_1transforms_1_1__functional__video_a3668c8248c192429d024dd01cc8834b0}\index{torchvision\_down.transforms.\_functional\_video@{torchvision\_down.transforms.\_functional\_video}!center\_crop@{center\_crop}}
+\index{center\_crop@{center\_crop}!torchvision\_down.transforms.\_functional\_video@{torchvision\_down.transforms.\_functional\_video}}
+\doxysubsubsection{\texorpdfstring{center\_crop()}{center\_crop()}}
+{\footnotesize\ttfamily \label{namespacetorchvision__down_1_1transforms_1_1__functional__video_a3668c8248c192429d024dd01cc8834b0} 
+torchvision\+\_\+down.\+transforms.\+\_\+functional\+\_\+video.\+center\+\_\+crop (\begin{DoxyParamCaption}\item[{}]{clip}{, }\item[{}]{crop\+\_\+size}{}\end{DoxyParamCaption})}
+
+\Hypertarget{namespacetorchvision__down_1_1transforms_1_1__functional__video_a44b11a444b22965715dfc17497104e4f}\index{torchvision\_down.transforms.\_functional\_video@{torchvision\_down.transforms.\_functional\_video}!crop@{crop}}
+\index{crop@{crop}!torchvision\_down.transforms.\_functional\_video@{torchvision\_down.transforms.\_functional\_video}}
+\doxysubsubsection{\texorpdfstring{crop()}{crop()}}
+{\footnotesize\ttfamily \label{namespacetorchvision__down_1_1transforms_1_1__functional__video_a44b11a444b22965715dfc17497104e4f} 
+torchvision\+\_\+down.\+transforms.\+\_\+functional\+\_\+video.\+crop (\begin{DoxyParamCaption}\item[{}]{clip}{, }\item[{}]{i}{, }\item[{}]{j}{, }\item[{}]{h}{, }\item[{}]{w}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Args:
+    clip (torch.tensor): Video clip to be cropped. Size is (C, T, H, W)
+\end{DoxyVerb}
+ \Hypertarget{namespacetorchvision__down_1_1transforms_1_1__functional__video_ad7806ae4234e6794af857b0b43052e7f}\index{torchvision\_down.transforms.\_functional\_video@{torchvision\_down.transforms.\_functional\_video}!hflip@{hflip}}
+\index{hflip@{hflip}!torchvision\_down.transforms.\_functional\_video@{torchvision\_down.transforms.\_functional\_video}}
+\doxysubsubsection{\texorpdfstring{hflip()}{hflip()}}
+{\footnotesize\ttfamily \label{namespacetorchvision__down_1_1transforms_1_1__functional__video_ad7806ae4234e6794af857b0b43052e7f} 
+torchvision\+\_\+down.\+transforms.\+\_\+functional\+\_\+video.\+hflip (\begin{DoxyParamCaption}\item[{}]{clip}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Args:
+    clip (torch.tensor): Video clip to be normalized. Size is (C, T, H, W)
+Returns:
+    flipped clip (torch.tensor): Size is (C, T, H, W)
+\end{DoxyVerb}
+ \Hypertarget{namespacetorchvision__down_1_1transforms_1_1__functional__video_a74bf0e1c84c9dc787bdf7f7dbb5fd6f5}\index{torchvision\_down.transforms.\_functional\_video@{torchvision\_down.transforms.\_functional\_video}!normalize@{normalize}}
+\index{normalize@{normalize}!torchvision\_down.transforms.\_functional\_video@{torchvision\_down.transforms.\_functional\_video}}
+\doxysubsubsection{\texorpdfstring{normalize()}{normalize()}}
+{\footnotesize\ttfamily \label{namespacetorchvision__down_1_1transforms_1_1__functional__video_a74bf0e1c84c9dc787bdf7f7dbb5fd6f5} 
+torchvision\+\_\+down.\+transforms.\+\_\+functional\+\_\+video.\+normalize (\begin{DoxyParamCaption}\item[{}]{clip}{, }\item[{}]{mean}{, }\item[{}]{std}{, }\item[{}]{inplace}{ = {\ttfamily False}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Args:
+    clip (torch.tensor): Video clip to be normalized. Size is (C, T, H, W)
+    mean (tuple): pixel RGB mean. Size is (3)
+    std (tuple): pixel standard deviation. Size is (3)
+Returns:
+    normalized clip (torch.tensor): Size is (C, T, H, W)
+\end{DoxyVerb}
+ \Hypertarget{namespacetorchvision__down_1_1transforms_1_1__functional__video_a46f3c7089251e3a1d79fdb62897b03a1}\index{torchvision\_down.transforms.\_functional\_video@{torchvision\_down.transforms.\_functional\_video}!resize@{resize}}
+\index{resize@{resize}!torchvision\_down.transforms.\_functional\_video@{torchvision\_down.transforms.\_functional\_video}}
+\doxysubsubsection{\texorpdfstring{resize()}{resize()}}
+{\footnotesize\ttfamily \label{namespacetorchvision__down_1_1transforms_1_1__functional__video_a46f3c7089251e3a1d79fdb62897b03a1} 
+torchvision\+\_\+down.\+transforms.\+\_\+functional\+\_\+video.\+resize (\begin{DoxyParamCaption}\item[{}]{clip}{, }\item[{}]{target\+\_\+size}{, }\item[{}]{interpolation\+\_\+mode}{}\end{DoxyParamCaption})}
+
+\Hypertarget{namespacetorchvision__down_1_1transforms_1_1__functional__video_ab6bb616be8f4535e69630fef8630c1b6}\index{torchvision\_down.transforms.\_functional\_video@{torchvision\_down.transforms.\_functional\_video}!resized\_crop@{resized\_crop}}
+\index{resized\_crop@{resized\_crop}!torchvision\_down.transforms.\_functional\_video@{torchvision\_down.transforms.\_functional\_video}}
+\doxysubsubsection{\texorpdfstring{resized\_crop()}{resized\_crop()}}
+{\footnotesize\ttfamily \label{namespacetorchvision__down_1_1transforms_1_1__functional__video_ab6bb616be8f4535e69630fef8630c1b6} 
+torchvision\+\_\+down.\+transforms.\+\_\+functional\+\_\+video.\+resized\+\_\+crop (\begin{DoxyParamCaption}\item[{}]{clip}{, }\item[{}]{i}{, }\item[{}]{j}{, }\item[{}]{h}{, }\item[{}]{w}{, }\item[{}]{size}{, }\item[{}]{interpolation\+\_\+mode}{ = {\ttfamily "{}bilinear"{}}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Do spatial cropping and resizing to the video clip
+Args:
+    clip (torch.tensor): Video clip to be cropped. Size is (C, T, H, W)
+    i (int): i in (i,j) i.e coordinates of the upper left corner.
+    j (int): j in (i,j) i.e coordinates of the upper left corner.
+    h (int): Height of the cropped region.
+    w (int): Width of the cropped region.
+    size (tuple(int, int)): height and width of resized clip
+Returns:
+    clip (torch.tensor): Resized and cropped clip. Size is (C, T, H, W)
+\end{DoxyVerb}
+ \Hypertarget{namespacetorchvision__down_1_1transforms_1_1__functional__video_aebb4d326ca89b58d0a866d06921ff1ba}\index{torchvision\_down.transforms.\_functional\_video@{torchvision\_down.transforms.\_functional\_video}!to\_tensor@{to\_tensor}}
+\index{to\_tensor@{to\_tensor}!torchvision\_down.transforms.\_functional\_video@{torchvision\_down.transforms.\_functional\_video}}
+\doxysubsubsection{\texorpdfstring{to\_tensor()}{to\_tensor()}}
+{\footnotesize\ttfamily \label{namespacetorchvision__down_1_1transforms_1_1__functional__video_aebb4d326ca89b58d0a866d06921ff1ba} 
+torchvision\+\_\+down.\+transforms.\+\_\+functional\+\_\+video.\+to\+\_\+tensor (\begin{DoxyParamCaption}\item[{}]{clip}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Convert tensor data type from uint8 to float, divide value by 255.0 and
+permute the dimensions of clip tensor
+Args:
+    clip (torch.tensor, dtype=torch.uint8): Size is (T, H, W, C)
+Return:
+    clip (torch.tensor, dtype=torch.float): Size is (C, T, H, W)
+\end{DoxyVerb}
+ 

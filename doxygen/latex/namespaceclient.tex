@@ -1,0 +1,291 @@
+\doxysection{client Namespace Reference}
+\hypertarget{namespaceclient}{}\label{namespaceclient}\index{client@{client}}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+list \mbox{\hyperlink{namespaceclient_a8797ddc8f52db353fe30a98081d25d32}{INPUT\+\_\+\+NAMES}} = \mbox{[}"{}images"{}\mbox{]}
+\item 
+list \mbox{\hyperlink{namespaceclient_ac42b1dd09bd60e334fa9ead3e1a8ed8b}{OUTPUT\+\_\+\+NAMES}} = \mbox{[}"{}num\+\_\+dets"{}, "{}det\+\_\+boxes"{}, "{}det\+\_\+scores"{}, "{}det\+\_\+classes"{}\mbox{]}
+\item 
+\mbox{\hyperlink{namespaceclient_a76c71d249cc5b42de3ae3eb67742607a}{parser}} = argparse.\+Argument\+Parser()
+\item 
+\mbox{\hyperlink{namespaceclient_acb7f4d834db743a1b65285ac7f438c03}{choices}}
+\item 
+\mbox{\hyperlink{namespaceclient_ab339adf31e2cf2c8376e5d3e41d296be}{default}}
+\item 
+\mbox{\hyperlink{namespaceclient_a36966f52562fb56e91039a4fd0b9af17}{help}}
+\item 
+\mbox{\hyperlink{namespaceclient_a7d68e84d994a93afc03f4d1701f954b5}{type}}
+\item 
+\mbox{\hyperlink{namespaceclient_a861b6f6dedb7c37d37949c64f93211ff}{nargs}}
+\item 
+\mbox{\hyperlink{namespaceclient_a8bfa6e863e1c9b065343f07eb612ce24}{required}}
+\item 
+\mbox{\hyperlink{namespaceclient_a6f995cd0a493c01e4e407e418d8f67e6}{action}}
+\item 
+\mbox{\hyperlink{namespaceclient_a4463f1b86bbf849f2be5b097dcede960}{FLAGS}} = parser.\+parse\+\_\+args()
+\item 
+\mbox{\hyperlink{namespaceclient_abace3107889e860e90e7192fd0203208}{triton\+\_\+client}}
+\item 
+\mbox{\hyperlink{namespaceclient_ac2306bac4b22b8e27c4f1345debb62fe}{metadata}} = triton\+\_\+client.\+get\+\_\+model\+\_\+metadata(FLAGS.\+model)
+\item 
+\mbox{\hyperlink{namespaceclient_af9ccc706e30d04abe789b91604aff93f}{config}} = triton\+\_\+client.\+get\+\_\+model\+\_\+config(FLAGS.\+model)
+\item 
+list \mbox{\hyperlink{namespaceclient_a8a579a76bb32d74dd49c038a0b5174a6}{inputs}} = \mbox{[}$\,$\mbox{]}
+\item 
+list \mbox{\hyperlink{namespaceclient_a46bbd0e6d9ec88097eb159d94057ec23}{outputs}} = \mbox{[}$\,$\mbox{]}
+\item 
+\mbox{\hyperlink{namespaceclient_afca2ea70bddff6e4464acdb400c2a38d}{results}}
+\item 
+\mbox{\hyperlink{namespaceclient_a15fe1396a073320f45d8088baed55483}{statistics}} = triton\+\_\+client.\+get\+\_\+inference\+\_\+statistics(model\+\_\+name=FLAGS.\+model)
+\item 
+\mbox{\hyperlink{namespaceclient_a474fedfa912258c334db1d96f4a98fbe}{result}} = results.\+as\+\_\+numpy(output)
+\item 
+\mbox{\hyperlink{namespaceclient_a546cde2c69adf6ec01cca631d27f8fd1}{input\+\_\+image}} = cv2.\+imread(str(FLAGS.\+input))
+\item 
+\mbox{\hyperlink{namespaceclient_a8c20beda6091c6770fdc2df538301d3d}{input\+\_\+image\+\_\+buffer}} = preprocess(\mbox{\hyperlink{namespaceclient_a546cde2c69adf6ec01cca631d27f8fd1}{input\+\_\+image}}, \mbox{[}FLAGS.\+width, FLAGS.\+height\mbox{]})
+\item 
+\mbox{\hyperlink{namespaceclient_a9fcb92dbf6454769577448ff97e82049}{num\+\_\+dets}} = results.\+as\+\_\+numpy(\mbox{\hyperlink{namespaceclient_ac42b1dd09bd60e334fa9ead3e1a8ed8b}{OUTPUT\+\_\+\+NAMES}}\mbox{[}0\mbox{]})
+\item 
+\mbox{\hyperlink{namespaceclient_a57bf25af301acf39e0e55194c4fa840a}{det\+\_\+boxes}} = results.\+as\+\_\+numpy(\mbox{\hyperlink{namespaceclient_ac42b1dd09bd60e334fa9ead3e1a8ed8b}{OUTPUT\+\_\+\+NAMES}}\mbox{[}1\mbox{]})
+\item 
+\mbox{\hyperlink{namespaceclient_a4b56132f892e6fec9f83a31e9fc30abd}{det\+\_\+scores}} = results.\+as\+\_\+numpy(\mbox{\hyperlink{namespaceclient_ac42b1dd09bd60e334fa9ead3e1a8ed8b}{OUTPUT\+\_\+\+NAMES}}\mbox{[}2\mbox{]})
+\item 
+\mbox{\hyperlink{namespaceclient_a27257dedf7c139964b5d3e54ed59b9e0}{det\+\_\+classes}} = results.\+as\+\_\+numpy(\mbox{\hyperlink{namespaceclient_ac42b1dd09bd60e334fa9ead3e1a8ed8b}{OUTPUT\+\_\+\+NAMES}}\mbox{[}3\mbox{]})
+\item 
+\mbox{\hyperlink{namespaceclient_ab8a39ce5923de191062918a0ed11d1d4}{detected\+\_\+objects}} = postprocess(\mbox{\hyperlink{namespaceclient_a9fcb92dbf6454769577448ff97e82049}{num\+\_\+dets}}, \mbox{\hyperlink{namespaceclient_a57bf25af301acf39e0e55194c4fa840a}{det\+\_\+boxes}}, \mbox{\hyperlink{namespaceclient_a4b56132f892e6fec9f83a31e9fc30abd}{det\+\_\+scores}}, \mbox{\hyperlink{namespaceclient_a27257dedf7c139964b5d3e54ed59b9e0}{det\+\_\+classes}}, input\+\_\+image.\+shape\mbox{[}1\mbox{]}, input\+\_\+image.\+shape\mbox{[}0\mbox{]}, \mbox{[}FLAGS.\+width, FLAGS.\+height\mbox{]})
+\item 
+\mbox{\hyperlink{namespaceclient_a97b0161e3b302d7cb5a45f45ffd3df56}{size}} = get\+\_\+text\+\_\+size(\mbox{\hyperlink{namespaceclient_a546cde2c69adf6ec01cca631d27f8fd1}{input\+\_\+image}}, f"{}\{\mbox{\hyperlink{classlabels_1_1_c_o_c_o_labels}{COCOLabels}}(box.\+class\+ID).name\}\+: \{box.\+confidence\+:.\+2f\}"{}, normalised\+\_\+scaling=0.\+6)
+\item 
+\mbox{\hyperlink{namespaceclient_ad2a5137fe14fbe0c7e9eb0db0619cece}{cap}} = cv2.\+Video\+Capture(FLAGS.\+input)
+\item 
+int \mbox{\hyperlink{namespaceclient_a0203108c22f2a4e7959910c984eb674b}{counter}} = 0
+\item 
+\mbox{\hyperlink{namespaceclient_a4885dd03fb52df422dae8f3ef2c7ada5}{out}} = None
+\item 
+\mbox{\hyperlink{namespaceclient_ab0ff754cf654b9e412cc19ca51f17d27}{ret}}
+\item 
+\mbox{\hyperlink{namespaceclient_acb3ad6b6e6c1866f0507927f3eb6b4a0}{frame}} = render\+\_\+box(frame, box.\+box(), color=tuple(RAND\+\_\+\+COLORS\mbox{[}box.\+class\+ID \% 64\mbox{]}.tolist()))
+\item 
+\mbox{\hyperlink{namespaceclient_abe48e08ce255d7e613dd74b62c84b5cf}{fourcc}} = cv2.\+Video\+Writer\+\_\+fourcc(\textquotesingle{}M\textquotesingle{}, \textquotesingle{}P\textquotesingle{}, \textquotesingle{}4\textquotesingle{}, \textquotesingle{}V\textquotesingle{})
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Variable Documentation}
+\Hypertarget{namespaceclient_a6f995cd0a493c01e4e407e418d8f67e6}\index{client@{client}!action@{action}}
+\index{action@{action}!client@{client}}
+\doxysubsubsection{\texorpdfstring{action}{action}}
+{\footnotesize\ttfamily \label{namespaceclient_a6f995cd0a493c01e4e407e418d8f67e6} 
+client.\+action}
+
+\Hypertarget{namespaceclient_ad2a5137fe14fbe0c7e9eb0db0619cece}\index{client@{client}!cap@{cap}}
+\index{cap@{cap}!client@{client}}
+\doxysubsubsection{\texorpdfstring{cap}{cap}}
+{\footnotesize\ttfamily \label{namespaceclient_ad2a5137fe14fbe0c7e9eb0db0619cece} 
+client.\+cap = cv2.\+Video\+Capture(FLAGS.\+input)}
+
+\Hypertarget{namespaceclient_acb7f4d834db743a1b65285ac7f438c03}\index{client@{client}!choices@{choices}}
+\index{choices@{choices}!client@{client}}
+\doxysubsubsection{\texorpdfstring{choices}{choices}}
+{\footnotesize\ttfamily \label{namespaceclient_acb7f4d834db743a1b65285ac7f438c03} 
+client.\+choices}
+
+\Hypertarget{namespaceclient_af9ccc706e30d04abe789b91604aff93f}\index{client@{client}!config@{config}}
+\index{config@{config}!client@{client}}
+\doxysubsubsection{\texorpdfstring{config}{config}}
+{\footnotesize\ttfamily \label{namespaceclient_af9ccc706e30d04abe789b91604aff93f} 
+client.\+config = triton\+\_\+client.\+get\+\_\+model\+\_\+config(FLAGS.\+model)}
+
+\Hypertarget{namespaceclient_a0203108c22f2a4e7959910c984eb674b}\index{client@{client}!counter@{counter}}
+\index{counter@{counter}!client@{client}}
+\doxysubsubsection{\texorpdfstring{counter}{counter}}
+{\footnotesize\ttfamily \label{namespaceclient_a0203108c22f2a4e7959910c984eb674b} 
+int client.\+counter = 0}
+
+\Hypertarget{namespaceclient_ab339adf31e2cf2c8376e5d3e41d296be}\index{client@{client}!default@{default}}
+\index{default@{default}!client@{client}}
+\doxysubsubsection{\texorpdfstring{default}{default}}
+{\footnotesize\ttfamily \label{namespaceclient_ab339adf31e2cf2c8376e5d3e41d296be} 
+client.\+default}
+
+\Hypertarget{namespaceclient_a57bf25af301acf39e0e55194c4fa840a}\index{client@{client}!det\_boxes@{det\_boxes}}
+\index{det\_boxes@{det\_boxes}!client@{client}}
+\doxysubsubsection{\texorpdfstring{det\_boxes}{det\_boxes}}
+{\footnotesize\ttfamily \label{namespaceclient_a57bf25af301acf39e0e55194c4fa840a} 
+client.\+det\+\_\+boxes = results.\+as\+\_\+numpy(\mbox{\hyperlink{namespaceclient_ac42b1dd09bd60e334fa9ead3e1a8ed8b}{OUTPUT\+\_\+\+NAMES}}\mbox{[}1\mbox{]})}
+
+\Hypertarget{namespaceclient_a27257dedf7c139964b5d3e54ed59b9e0}\index{client@{client}!det\_classes@{det\_classes}}
+\index{det\_classes@{det\_classes}!client@{client}}
+\doxysubsubsection{\texorpdfstring{det\_classes}{det\_classes}}
+{\footnotesize\ttfamily \label{namespaceclient_a27257dedf7c139964b5d3e54ed59b9e0} 
+client.\+det\+\_\+classes = results.\+as\+\_\+numpy(\mbox{\hyperlink{namespaceclient_ac42b1dd09bd60e334fa9ead3e1a8ed8b}{OUTPUT\+\_\+\+NAMES}}\mbox{[}3\mbox{]})}
+
+\Hypertarget{namespaceclient_a4b56132f892e6fec9f83a31e9fc30abd}\index{client@{client}!det\_scores@{det\_scores}}
+\index{det\_scores@{det\_scores}!client@{client}}
+\doxysubsubsection{\texorpdfstring{det\_scores}{det\_scores}}
+{\footnotesize\ttfamily \label{namespaceclient_a4b56132f892e6fec9f83a31e9fc30abd} 
+client.\+det\+\_\+scores = results.\+as\+\_\+numpy(\mbox{\hyperlink{namespaceclient_ac42b1dd09bd60e334fa9ead3e1a8ed8b}{OUTPUT\+\_\+\+NAMES}}\mbox{[}2\mbox{]})}
+
+\Hypertarget{namespaceclient_ab8a39ce5923de191062918a0ed11d1d4}\index{client@{client}!detected\_objects@{detected\_objects}}
+\index{detected\_objects@{detected\_objects}!client@{client}}
+\doxysubsubsection{\texorpdfstring{detected\_objects}{detected\_objects}}
+{\footnotesize\ttfamily \label{namespaceclient_ab8a39ce5923de191062918a0ed11d1d4} 
+client.\+detected\+\_\+objects = postprocess(\mbox{\hyperlink{namespaceclient_a9fcb92dbf6454769577448ff97e82049}{num\+\_\+dets}}, \mbox{\hyperlink{namespaceclient_a57bf25af301acf39e0e55194c4fa840a}{det\+\_\+boxes}}, \mbox{\hyperlink{namespaceclient_a4b56132f892e6fec9f83a31e9fc30abd}{det\+\_\+scores}}, \mbox{\hyperlink{namespaceclient_a27257dedf7c139964b5d3e54ed59b9e0}{det\+\_\+classes}}, input\+\_\+image.\+shape\mbox{[}1\mbox{]}, input\+\_\+image.\+shape\mbox{[}0\mbox{]}, \mbox{[}FLAGS.\+width, FLAGS.\+height\mbox{]})}
+
+\Hypertarget{namespaceclient_a4463f1b86bbf849f2be5b097dcede960}\index{client@{client}!FLAGS@{FLAGS}}
+\index{FLAGS@{FLAGS}!client@{client}}
+\doxysubsubsection{\texorpdfstring{FLAGS}{FLAGS}}
+{\footnotesize\ttfamily \label{namespaceclient_a4463f1b86bbf849f2be5b097dcede960} 
+client.\+FLAGS = parser.\+parse\+\_\+args()}
+
+\Hypertarget{namespaceclient_abe48e08ce255d7e613dd74b62c84b5cf}\index{client@{client}!fourcc@{fourcc}}
+\index{fourcc@{fourcc}!client@{client}}
+\doxysubsubsection{\texorpdfstring{fourcc}{fourcc}}
+{\footnotesize\ttfamily \label{namespaceclient_abe48e08ce255d7e613dd74b62c84b5cf} 
+client.\+fourcc = cv2.\+Video\+Writer\+\_\+fourcc(\textquotesingle{}M\textquotesingle{}, \textquotesingle{}P\textquotesingle{}, \textquotesingle{}4\textquotesingle{}, \textquotesingle{}V\textquotesingle{})}
+
+\Hypertarget{namespaceclient_acb3ad6b6e6c1866f0507927f3eb6b4a0}\index{client@{client}!frame@{frame}}
+\index{frame@{frame}!client@{client}}
+\doxysubsubsection{\texorpdfstring{frame}{frame}}
+{\footnotesize\ttfamily \label{namespaceclient_acb3ad6b6e6c1866f0507927f3eb6b4a0} 
+client.\+frame = render\+\_\+box(frame, box.\+box(), color=tuple(RAND\+\_\+\+COLORS\mbox{[}box.\+class\+ID \% 64\mbox{]}.tolist()))}
+
+\Hypertarget{namespaceclient_a36966f52562fb56e91039a4fd0b9af17}\index{client@{client}!help@{help}}
+\index{help@{help}!client@{client}}
+\doxysubsubsection{\texorpdfstring{help}{help}}
+{\footnotesize\ttfamily \label{namespaceclient_a36966f52562fb56e91039a4fd0b9af17} 
+client.\+help}
+
+\Hypertarget{namespaceclient_a546cde2c69adf6ec01cca631d27f8fd1}\index{client@{client}!input\_image@{input\_image}}
+\index{input\_image@{input\_image}!client@{client}}
+\doxysubsubsection{\texorpdfstring{input\_image}{input\_image}}
+{\footnotesize\ttfamily \label{namespaceclient_a546cde2c69adf6ec01cca631d27f8fd1} 
+client.\+input\+\_\+image = cv2.\+imread(str(FLAGS.\+input))}
+
+\Hypertarget{namespaceclient_a8c20beda6091c6770fdc2df538301d3d}\index{client@{client}!input\_image\_buffer@{input\_image\_buffer}}
+\index{input\_image\_buffer@{input\_image\_buffer}!client@{client}}
+\doxysubsubsection{\texorpdfstring{input\_image\_buffer}{input\_image\_buffer}}
+{\footnotesize\ttfamily \label{namespaceclient_a8c20beda6091c6770fdc2df538301d3d} 
+client.\+input\+\_\+image\+\_\+buffer = preprocess(\mbox{\hyperlink{namespaceclient_a546cde2c69adf6ec01cca631d27f8fd1}{input\+\_\+image}}, \mbox{[}FLAGS.\+width, FLAGS.\+height\mbox{]})}
+
+\Hypertarget{namespaceclient_a8797ddc8f52db353fe30a98081d25d32}\index{client@{client}!INPUT\_NAMES@{INPUT\_NAMES}}
+\index{INPUT\_NAMES@{INPUT\_NAMES}!client@{client}}
+\doxysubsubsection{\texorpdfstring{INPUT\_NAMES}{INPUT\_NAMES}}
+{\footnotesize\ttfamily \label{namespaceclient_a8797ddc8f52db353fe30a98081d25d32} 
+list client.\+INPUT\+\_\+\+NAMES = \mbox{[}"{}images"{}\mbox{]}}
+
+\Hypertarget{namespaceclient_a8a579a76bb32d74dd49c038a0b5174a6}\index{client@{client}!inputs@{inputs}}
+\index{inputs@{inputs}!client@{client}}
+\doxysubsubsection{\texorpdfstring{inputs}{inputs}}
+{\footnotesize\ttfamily \label{namespaceclient_a8a579a76bb32d74dd49c038a0b5174a6} 
+list client.\+inputs = \mbox{[}$\,$\mbox{]}}
+
+\Hypertarget{namespaceclient_ac2306bac4b22b8e27c4f1345debb62fe}\index{client@{client}!metadata@{metadata}}
+\index{metadata@{metadata}!client@{client}}
+\doxysubsubsection{\texorpdfstring{metadata}{metadata}}
+{\footnotesize\ttfamily \label{namespaceclient_ac2306bac4b22b8e27c4f1345debb62fe} 
+client.\+metadata = triton\+\_\+client.\+get\+\_\+model\+\_\+metadata(FLAGS.\+model)}
+
+\Hypertarget{namespaceclient_a861b6f6dedb7c37d37949c64f93211ff}\index{client@{client}!nargs@{nargs}}
+\index{nargs@{nargs}!client@{client}}
+\doxysubsubsection{\texorpdfstring{nargs}{nargs}}
+{\footnotesize\ttfamily \label{namespaceclient_a861b6f6dedb7c37d37949c64f93211ff} 
+client.\+nargs}
+
+\Hypertarget{namespaceclient_a9fcb92dbf6454769577448ff97e82049}\index{client@{client}!num\_dets@{num\_dets}}
+\index{num\_dets@{num\_dets}!client@{client}}
+\doxysubsubsection{\texorpdfstring{num\_dets}{num\_dets}}
+{\footnotesize\ttfamily \label{namespaceclient_a9fcb92dbf6454769577448ff97e82049} 
+client.\+num\+\_\+dets = results.\+as\+\_\+numpy(\mbox{\hyperlink{namespaceclient_ac42b1dd09bd60e334fa9ead3e1a8ed8b}{OUTPUT\+\_\+\+NAMES}}\mbox{[}0\mbox{]})}
+
+\Hypertarget{namespaceclient_a4885dd03fb52df422dae8f3ef2c7ada5}\index{client@{client}!out@{out}}
+\index{out@{out}!client@{client}}
+\doxysubsubsection{\texorpdfstring{out}{out}}
+{\footnotesize\ttfamily \label{namespaceclient_a4885dd03fb52df422dae8f3ef2c7ada5} 
+client.\+out = None}
+
+\Hypertarget{namespaceclient_ac42b1dd09bd60e334fa9ead3e1a8ed8b}\index{client@{client}!OUTPUT\_NAMES@{OUTPUT\_NAMES}}
+\index{OUTPUT\_NAMES@{OUTPUT\_NAMES}!client@{client}}
+\doxysubsubsection{\texorpdfstring{OUTPUT\_NAMES}{OUTPUT\_NAMES}}
+{\footnotesize\ttfamily \label{namespaceclient_ac42b1dd09bd60e334fa9ead3e1a8ed8b} 
+list client.\+OUTPUT\+\_\+\+NAMES = \mbox{[}"{}num\+\_\+dets"{}, "{}det\+\_\+boxes"{}, "{}det\+\_\+scores"{}, "{}det\+\_\+classes"{}\mbox{]}}
+
+\Hypertarget{namespaceclient_a46bbd0e6d9ec88097eb159d94057ec23}\index{client@{client}!outputs@{outputs}}
+\index{outputs@{outputs}!client@{client}}
+\doxysubsubsection{\texorpdfstring{outputs}{outputs}}
+{\footnotesize\ttfamily \label{namespaceclient_a46bbd0e6d9ec88097eb159d94057ec23} 
+list client.\+outputs = \mbox{[}$\,$\mbox{]}}
+
+\Hypertarget{namespaceclient_a76c71d249cc5b42de3ae3eb67742607a}\index{client@{client}!parser@{parser}}
+\index{parser@{parser}!client@{client}}
+\doxysubsubsection{\texorpdfstring{parser}{parser}}
+{\footnotesize\ttfamily \label{namespaceclient_a76c71d249cc5b42de3ae3eb67742607a} 
+client.\+parser = argparse.\+Argument\+Parser()}
+
+\Hypertarget{namespaceclient_a8bfa6e863e1c9b065343f07eb612ce24}\index{client@{client}!required@{required}}
+\index{required@{required}!client@{client}}
+\doxysubsubsection{\texorpdfstring{required}{required}}
+{\footnotesize\ttfamily \label{namespaceclient_a8bfa6e863e1c9b065343f07eb612ce24} 
+client.\+required}
+
+\Hypertarget{namespaceclient_a474fedfa912258c334db1d96f4a98fbe}\index{client@{client}!result@{result}}
+\index{result@{result}!client@{client}}
+\doxysubsubsection{\texorpdfstring{result}{result}}
+{\footnotesize\ttfamily \label{namespaceclient_a474fedfa912258c334db1d96f4a98fbe} 
+client.\+result = results.\+as\+\_\+numpy(output)}
+
+\Hypertarget{namespaceclient_afca2ea70bddff6e4464acdb400c2a38d}\index{client@{client}!results@{results}}
+\index{results@{results}!client@{client}}
+\doxysubsubsection{\texorpdfstring{results}{results}}
+{\footnotesize\ttfamily \label{namespaceclient_afca2ea70bddff6e4464acdb400c2a38d} 
+client.\+results}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ =\ \ triton\_client.infer(model\_name=FLAGS.model,}
+\DoxyCodeLine{00002\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ inputs=inputs,}
+\DoxyCodeLine{00003\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ outputs=outputs,}
+\DoxyCodeLine{00004\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ client\_timeout=FLAGS.client\_timeout)}
+
+\end{DoxyCode}
+\Hypertarget{namespaceclient_ab0ff754cf654b9e412cc19ca51f17d27}\index{client@{client}!ret@{ret}}
+\index{ret@{ret}!client@{client}}
+\doxysubsubsection{\texorpdfstring{ret}{ret}}
+{\footnotesize\ttfamily \label{namespaceclient_ab0ff754cf654b9e412cc19ca51f17d27} 
+client.\+ret}
+
+\Hypertarget{namespaceclient_a97b0161e3b302d7cb5a45f45ffd3df56}\index{client@{client}!size@{size}}
+\index{size@{size}!client@{client}}
+\doxysubsubsection{\texorpdfstring{size}{size}}
+{\footnotesize\ttfamily \label{namespaceclient_a97b0161e3b302d7cb5a45f45ffd3df56} 
+client.\+size = get\+\_\+text\+\_\+size(\mbox{\hyperlink{namespaceclient_a546cde2c69adf6ec01cca631d27f8fd1}{input\+\_\+image}}, f"{}\{\mbox{\hyperlink{classlabels_1_1_c_o_c_o_labels}{COCOLabels}}(box.\+class\+ID).name\}\+: \{box.\+confidence\+:.\+2f\}"{}, normalised\+\_\+scaling=0.\+6)}
+
+\Hypertarget{namespaceclient_a15fe1396a073320f45d8088baed55483}\index{client@{client}!statistics@{statistics}}
+\index{statistics@{statistics}!client@{client}}
+\doxysubsubsection{\texorpdfstring{statistics}{statistics}}
+{\footnotesize\ttfamily \label{namespaceclient_a15fe1396a073320f45d8088baed55483} 
+client.\+statistics = triton\+\_\+client.\+get\+\_\+inference\+\_\+statistics(model\+\_\+name=FLAGS.\+model)}
+
+\Hypertarget{namespaceclient_abace3107889e860e90e7192fd0203208}\index{client@{client}!triton\_client@{triton\_client}}
+\index{triton\_client@{triton\_client}!client@{client}}
+\doxysubsubsection{\texorpdfstring{triton\_client}{triton\_client}}
+{\footnotesize\ttfamily \label{namespaceclient_abace3107889e860e90e7192fd0203208} 
+client.\+triton\+\_\+client}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ =\ \ grpcclient.InferenceServerClient(}
+\DoxyCodeLine{00002\ \ \ \ \ \ \ \ \ \ \ \ \ url=FLAGS.url,}
+\DoxyCodeLine{00003\ \ \ \ \ \ \ \ \ \ \ \ \ verbose=FLAGS.verbose,}
+\DoxyCodeLine{00004\ \ \ \ \ \ \ \ \ \ \ \ \ ssl=FLAGS.ssl,}
+\DoxyCodeLine{00005\ \ \ \ \ \ \ \ \ \ \ \ \ root\_certificates=FLAGS.root\_certificates,}
+\DoxyCodeLine{00006\ \ \ \ \ \ \ \ \ \ \ \ \ private\_key=FLAGS.private\_key,}
+\DoxyCodeLine{00007\ \ \ \ \ \ \ \ \ \ \ \ \ certificate\_chain=FLAGS.certificate\_chain)}
+
+\end{DoxyCode}
+\Hypertarget{namespaceclient_a7d68e84d994a93afc03f4d1701f954b5}\index{client@{client}!type@{type}}
+\index{type@{type}!client@{client}}
+\doxysubsubsection{\texorpdfstring{type}{type}}
+{\footnotesize\ttfamily \label{namespaceclient_a7d68e84d994a93afc03f4d1701f954b5} 
+client.\+type}
+

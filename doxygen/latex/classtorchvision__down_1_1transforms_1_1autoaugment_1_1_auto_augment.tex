@@ -1,0 +1,142 @@
+\doxysection{torchvision\+\_\+down.\+transforms.\+autoaugment.\+Auto\+Augment Class Reference}
+\hypertarget{classtorchvision__down_1_1transforms_1_1autoaugment_1_1_auto_augment}{}\label{classtorchvision__down_1_1transforms_1_1autoaugment_1_1_auto_augment}\index{torchvision\_down.transforms.autoaugment.AutoAugment@{torchvision\_down.transforms.autoaugment.AutoAugment}}
+Inheritance diagram for torchvision\+\_\+down.\+transforms.\+autoaugment.\+Auto\+Augment\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classtorchvision__down_1_1transforms_1_1autoaugment_1_1_auto_augment}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+None \mbox{\hyperlink{classtorchvision__down_1_1transforms_1_1autoaugment_1_1_auto_augment_a49cb0569635e19e53ede1a21e8b584f2}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, \mbox{\hyperlink{classtorchvision__down_1_1transforms_1_1autoaugment_1_1_auto_augment_policy}{Auto\+Augment\+Policy}} \mbox{\hyperlink{classtorchvision__down_1_1transforms_1_1autoaugment_1_1_auto_augment_adb53773d797a020bb60116bd8640b8ff}{policy}}=\mbox{\hyperlink{classtorchvision__down_1_1transforms_1_1autoaugment_1_1_auto_augment_policy_ad4667063f7f2d45e9056a2bde81390f7}{Auto\+Augment\+Policy.\+IMAGENET}}, \mbox{\hyperlink{classtorchvision__down_1_1transforms_1_1functional_1_1_interpolation_mode}{Interpolation\+Mode}} \mbox{\hyperlink{classtorchvision__down_1_1transforms_1_1autoaugment_1_1_auto_augment_aaa36241f4d32721b1ad830fee16cddaf}{interpolation}}=\mbox{\hyperlink{classtorchvision__down_1_1transforms_1_1functional_1_1_interpolation_mode_a6a6bb34c2976ea38186bca5ec09649c1}{Interpolation\+Mode.\+NEAREST}}, Optional\mbox{[}List\mbox{[}float\mbox{]}\mbox{]} \mbox{\hyperlink{classtorchvision__down_1_1transforms_1_1autoaugment_1_1_auto_augment_af5832b3c03659911cd430b47fd4ed674}{fill}}=None)
+\item 
+Tensor \mbox{\hyperlink{classtorchvision__down_1_1transforms_1_1autoaugment_1_1_auto_augment_a7de018684ece4399037af34d922f97c0}{forward}} (self, Tensor img)
+\item 
+str \mbox{\hyperlink{classtorchvision__down_1_1transforms_1_1autoaugment_1_1_auto_augment_a634df3245a56678fed9a265de42085a9}{\+\_\+\+\_\+repr\+\_\+\+\_\+}} (self)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+Tuple\mbox{[}int, Tensor, Tensor\mbox{]} \mbox{\hyperlink{classtorchvision__down_1_1transforms_1_1autoaugment_1_1_auto_augment_aaac18071eacf74aaab65ddfd73e35f63}{get\+\_\+params}} (int transform\+\_\+num)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1transforms_1_1autoaugment_1_1_auto_augment_adb53773d797a020bb60116bd8640b8ff}{policy}} = policy
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1transforms_1_1autoaugment_1_1_auto_augment_aaa36241f4d32721b1ad830fee16cddaf}{interpolation}} = interpolation
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1transforms_1_1autoaugment_1_1_auto_augment_af5832b3c03659911cd430b47fd4ed674}{fill}} = fill
+\item 
+List\mbox{[}Tuple\mbox{[}Tuple\mbox{[}str, float, Optional\mbox{[}int\mbox{]}\mbox{]}, Tuple\mbox{[}str, float, Optional\mbox{[}int\mbox{]}\mbox{]}\mbox{]}\mbox{]} \mbox{\hyperlink{classtorchvision__down_1_1transforms_1_1autoaugment_1_1_auto_augment_afd66311c297bab856eec8a1c4552a378}{policies}} = self.\+\_\+get\+\_\+policies(\mbox{\hyperlink{classtorchvision__down_1_1transforms_1_1autoaugment_1_1_auto_augment_adb53773d797a020bb60116bd8640b8ff}{policy}})
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+List\mbox{[}Tuple\mbox{[}Tuple\mbox{[}str, float, Optional\mbox{[}int\mbox{]}\mbox{]}, Tuple\mbox{[}str, float, Optional\mbox{[}int\mbox{]}\mbox{]}\mbox{]}\mbox{]} \mbox{\hyperlink{classtorchvision__down_1_1transforms_1_1autoaugment_1_1_auto_augment_a18e9f601f8dcfec4f8eb90743cd133d4}{\+\_\+get\+\_\+policies}} (self, \mbox{\hyperlink{classtorchvision__down_1_1transforms_1_1autoaugment_1_1_auto_augment_policy}{Auto\+Augment\+Policy}} \mbox{\hyperlink{classtorchvision__down_1_1transforms_1_1autoaugment_1_1_auto_augment_adb53773d797a020bb60116bd8640b8ff}{policy}})
+\item 
+Dict\mbox{[}str, Tuple\mbox{[}Tensor, bool\mbox{]}\mbox{]} \mbox{\hyperlink{classtorchvision__down_1_1transforms_1_1autoaugment_1_1_auto_augment_adbf3d4a70de01f84c36dc7c8ebdbe7da}{\+\_\+augmentation\+\_\+space}} (self, int num\+\_\+bins, List\mbox{[}int\mbox{]} image\+\_\+size)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}AutoAugment data augmentation method based on
+`"AutoAugment: Learning Augmentation Strategies from Data" <https://arxiv.org/pdf/1805.09501.pdf>`_.
+If the image is torch Tensor, it should be of type torch.uint8, and it is expected
+to have [..., 1 or 3, H, W] shape, where ... means an arbitrary number of leading dimensions.
+If img is PIL Image, it is expected to be in mode "L" or "RGB".
+
+Args:
+    policy (AutoAugmentPolicy): Desired policy enum defined by
+        :class:`torchvision.transforms.autoaugment.AutoAugmentPolicy`. Default is ``AutoAugmentPolicy.IMAGENET``.
+    interpolation (InterpolationMode): Desired interpolation enum defined by
+        :class:`torchvision.transforms.InterpolationMode`. Default is ``InterpolationMode.NEAREST``.
+        If input is Tensor, only ``InterpolationMode.NEAREST``, ``InterpolationMode.BILINEAR`` are supported.
+    fill (sequence or number, optional): Pixel fill value for the area outside the transformed
+        image. If given a number, the value is used for all bands respectively.
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classtorchvision__down_1_1transforms_1_1autoaugment_1_1_auto_augment_a49cb0569635e19e53ede1a21e8b584f2}\index{torchvision\_down.transforms.autoaugment.AutoAugment@{torchvision\_down.transforms.autoaugment.AutoAugment}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!torchvision\_down.transforms.autoaugment.AutoAugment@{torchvision\_down.transforms.autoaugment.AutoAugment}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1transforms_1_1autoaugment_1_1_auto_augment_a49cb0569635e19e53ede1a21e8b584f2} 
+ None torchvision\+\_\+down.\+transforms.\+autoaugment.\+Auto\+Augment.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{\mbox{\hyperlink{classtorchvision__down_1_1transforms_1_1autoaugment_1_1_auto_augment_policy}{Auto\+Augment\+Policy}} }]{policy}{ = {\ttfamily \mbox{\hyperlink{classtorchvision__down_1_1transforms_1_1autoaugment_1_1_auto_augment_policy_ad4667063f7f2d45e9056a2bde81390f7}{Auto\+Augment\+Policy.\+IMAGENET}}}, }\item[{\mbox{\hyperlink{classtorchvision__down_1_1transforms_1_1functional_1_1_interpolation_mode}{Interpolation\+Mode}} }]{interpolation}{ = {\ttfamily \mbox{\hyperlink{classtorchvision__down_1_1transforms_1_1functional_1_1_interpolation_mode_a6a6bb34c2976ea38186bca5ec09649c1}{Interpolation\+Mode.\+NEAREST}}}, }\item[{Optional\mbox{[}List\mbox{[}float\mbox{]}\mbox{]} }]{fill}{ = {\ttfamily None}}\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classtorchvision__down_1_1transforms_1_1autoaugment_1_1_auto_augment_a634df3245a56678fed9a265de42085a9}\index{torchvision\_down.transforms.autoaugment.AutoAugment@{torchvision\_down.transforms.autoaugment.AutoAugment}!\_\_repr\_\_@{\_\_repr\_\_}}
+\index{\_\_repr\_\_@{\_\_repr\_\_}!torchvision\_down.transforms.autoaugment.AutoAugment@{torchvision\_down.transforms.autoaugment.AutoAugment}}
+\doxysubsubsection{\texorpdfstring{\_\_repr\_\_()}{\_\_repr\_\_()}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1transforms_1_1autoaugment_1_1_auto_augment_a634df3245a56678fed9a265de42085a9} 
+ str torchvision\+\_\+down.\+transforms.\+autoaugment.\+Auto\+Augment.\+\_\+\+\_\+repr\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classtorchvision__down_1_1transforms_1_1autoaugment_1_1_auto_augment_adbf3d4a70de01f84c36dc7c8ebdbe7da}\index{torchvision\_down.transforms.autoaugment.AutoAugment@{torchvision\_down.transforms.autoaugment.AutoAugment}!\_augmentation\_space@{\_augmentation\_space}}
+\index{\_augmentation\_space@{\_augmentation\_space}!torchvision\_down.transforms.autoaugment.AutoAugment@{torchvision\_down.transforms.autoaugment.AutoAugment}}
+\doxysubsubsection{\texorpdfstring{\_augmentation\_space()}{\_augmentation\_space()}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1transforms_1_1autoaugment_1_1_auto_augment_adbf3d4a70de01f84c36dc7c8ebdbe7da} 
+ Dict\mbox{[}str, Tuple\mbox{[}Tensor, bool\mbox{]}\mbox{]} torchvision\+\_\+down.\+transforms.\+autoaugment.\+Auto\+Augment.\+\_\+augmentation\+\_\+space (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{int}]{num\+\_\+bins}{, }\item[{List\mbox{[}int\mbox{]}}]{image\+\_\+size}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classtorchvision__down_1_1transforms_1_1autoaugment_1_1_auto_augment_a18e9f601f8dcfec4f8eb90743cd133d4}\index{torchvision\_down.transforms.autoaugment.AutoAugment@{torchvision\_down.transforms.autoaugment.AutoAugment}!\_get\_policies@{\_get\_policies}}
+\index{\_get\_policies@{\_get\_policies}!torchvision\_down.transforms.autoaugment.AutoAugment@{torchvision\_down.transforms.autoaugment.AutoAugment}}
+\doxysubsubsection{\texorpdfstring{\_get\_policies()}{\_get\_policies()}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1transforms_1_1autoaugment_1_1_auto_augment_a18e9f601f8dcfec4f8eb90743cd133d4} 
+ List\mbox{[}Tuple\mbox{[}Tuple\mbox{[}str, float, Optional\mbox{[}int\mbox{]}\mbox{]}, Tuple\mbox{[}str, float, Optional\mbox{[}int\mbox{]}\mbox{]}\mbox{]}\mbox{]} torchvision\+\_\+down.\+transforms.\+autoaugment.\+Auto\+Augment.\+\_\+get\+\_\+policies (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{\mbox{\hyperlink{classtorchvision__down_1_1transforms_1_1autoaugment_1_1_auto_augment_policy}{Auto\+Augment\+Policy}}     }]{policy}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classtorchvision__down_1_1transforms_1_1autoaugment_1_1_auto_augment_a7de018684ece4399037af34d922f97c0}\index{torchvision\_down.transforms.autoaugment.AutoAugment@{torchvision\_down.transforms.autoaugment.AutoAugment}!forward@{forward}}
+\index{forward@{forward}!torchvision\_down.transforms.autoaugment.AutoAugment@{torchvision\_down.transforms.autoaugment.AutoAugment}}
+\doxysubsubsection{\texorpdfstring{forward()}{forward()}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1transforms_1_1autoaugment_1_1_auto_augment_a7de018684ece4399037af34d922f97c0} 
+ Tensor torchvision\+\_\+down.\+transforms.\+autoaugment.\+Auto\+Augment.\+forward (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{Tensor}]{img}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}    img (PIL Image or Tensor): Image to be transformed.
+
+Returns:
+    PIL Image or Tensor: AutoAugmented image.
+\end{DoxyVerb}
+ \Hypertarget{classtorchvision__down_1_1transforms_1_1autoaugment_1_1_auto_augment_aaac18071eacf74aaab65ddfd73e35f63}\index{torchvision\_down.transforms.autoaugment.AutoAugment@{torchvision\_down.transforms.autoaugment.AutoAugment}!get\_params@{get\_params}}
+\index{get\_params@{get\_params}!torchvision\_down.transforms.autoaugment.AutoAugment@{torchvision\_down.transforms.autoaugment.AutoAugment}}
+\doxysubsubsection{\texorpdfstring{get\_params()}{get\_params()}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1transforms_1_1autoaugment_1_1_auto_augment_aaac18071eacf74aaab65ddfd73e35f63} 
+ Tuple\mbox{[}int, Tensor, Tensor\mbox{]} torchvision\+\_\+down.\+transforms.\+autoaugment.\+Auto\+Augment.\+get\+\_\+params (\begin{DoxyParamCaption}\item[{int}]{transform\+\_\+num}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\begin{DoxyVerb}Get parameters for autoaugment transformation
+
+Returns:
+    params required by the autoaugment transformation
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classtorchvision__down_1_1transforms_1_1autoaugment_1_1_auto_augment_af5832b3c03659911cd430b47fd4ed674}\index{torchvision\_down.transforms.autoaugment.AutoAugment@{torchvision\_down.transforms.autoaugment.AutoAugment}!fill@{fill}}
+\index{fill@{fill}!torchvision\_down.transforms.autoaugment.AutoAugment@{torchvision\_down.transforms.autoaugment.AutoAugment}}
+\doxysubsubsection{\texorpdfstring{fill}{fill}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1transforms_1_1autoaugment_1_1_auto_augment_af5832b3c03659911cd430b47fd4ed674} 
+torchvision\+\_\+down.\+transforms.\+autoaugment.\+Auto\+Augment.\+fill = fill}
+
+\Hypertarget{classtorchvision__down_1_1transforms_1_1autoaugment_1_1_auto_augment_aaa36241f4d32721b1ad830fee16cddaf}\index{torchvision\_down.transforms.autoaugment.AutoAugment@{torchvision\_down.transforms.autoaugment.AutoAugment}!interpolation@{interpolation}}
+\index{interpolation@{interpolation}!torchvision\_down.transforms.autoaugment.AutoAugment@{torchvision\_down.transforms.autoaugment.AutoAugment}}
+\doxysubsubsection{\texorpdfstring{interpolation}{interpolation}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1transforms_1_1autoaugment_1_1_auto_augment_aaa36241f4d32721b1ad830fee16cddaf} 
+torchvision\+\_\+down.\+transforms.\+autoaugment.\+Auto\+Augment.\+interpolation = interpolation}
+
+\Hypertarget{classtorchvision__down_1_1transforms_1_1autoaugment_1_1_auto_augment_afd66311c297bab856eec8a1c4552a378}\index{torchvision\_down.transforms.autoaugment.AutoAugment@{torchvision\_down.transforms.autoaugment.AutoAugment}!policies@{policies}}
+\index{policies@{policies}!torchvision\_down.transforms.autoaugment.AutoAugment@{torchvision\_down.transforms.autoaugment.AutoAugment}}
+\doxysubsubsection{\texorpdfstring{policies}{policies}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1transforms_1_1autoaugment_1_1_auto_augment_afd66311c297bab856eec8a1c4552a378} 
+List\mbox{[}Tuple\mbox{[}Tuple\mbox{[}str, float, Optional\mbox{[}int\mbox{]}\mbox{]}, Tuple\mbox{[}str, float, Optional\mbox{[}int\mbox{]}\mbox{]}\mbox{]}\mbox{]} torchvision\+\_\+down.\+transforms.\+autoaugment.\+Auto\+Augment.\+policies = self.\+\_\+get\+\_\+policies(\mbox{\hyperlink{classtorchvision__down_1_1transforms_1_1autoaugment_1_1_auto_augment_adb53773d797a020bb60116bd8640b8ff}{policy}})}
+
+\Hypertarget{classtorchvision__down_1_1transforms_1_1autoaugment_1_1_auto_augment_adb53773d797a020bb60116bd8640b8ff}\index{torchvision\_down.transforms.autoaugment.AutoAugment@{torchvision\_down.transforms.autoaugment.AutoAugment}!policy@{policy}}
+\index{policy@{policy}!torchvision\_down.transforms.autoaugment.AutoAugment@{torchvision\_down.transforms.autoaugment.AutoAugment}}
+\doxysubsubsection{\texorpdfstring{policy}{policy}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1transforms_1_1autoaugment_1_1_auto_augment_adb53773d797a020bb60116bd8640b8ff} 
+torchvision\+\_\+down.\+transforms.\+autoaugment.\+Auto\+Augment.\+policy = policy}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Cervi\+AI/torchvision\+\_\+down/transforms/\mbox{\hyperlink{autoaugment_8py}{autoaugment.\+py}}\end{DoxyCompactItemize}

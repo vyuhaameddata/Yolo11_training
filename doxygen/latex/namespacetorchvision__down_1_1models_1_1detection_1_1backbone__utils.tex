@@ -1,0 +1,88 @@
+\doxysection{torchvision\+\_\+down.\+models.\+detection.\+backbone\+\_\+utils Namespace Reference}
+\hypertarget{namespacetorchvision__down_1_1models_1_1detection_1_1backbone__utils}{}\label{namespacetorchvision__down_1_1models_1_1detection_1_1backbone__utils}\index{torchvision\_down.models.detection.backbone\_utils@{torchvision\_down.models.detection.backbone\_utils}}
+\doxysubsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classtorchvision__down_1_1models_1_1detection_1_1backbone__utils_1_1_backbone_with_f_p_n}{Backbone\+With\+FPN}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1models_1_1detection_1_1backbone__utils_1_1_backbone_with_f_p_n}{Backbone\+With\+FPN}} \mbox{\hyperlink{namespacetorchvision__down_1_1models_1_1detection_1_1backbone__utils_a9657e10e157a02c158c6ee5e065c96e4}{resnet\+\_\+fpn\+\_\+backbone}} (str backbone\+\_\+name, bool pretrained, Callable\mbox{[}..., nn.\+Module\mbox{]} norm\+\_\+layer=misc\+\_\+nn\+\_\+ops.\+Frozen\+Batch\+Norm2d, int trainable\+\_\+layers=3, Optional\mbox{[}List\mbox{[}int\mbox{]}\mbox{]} returned\+\_\+layers=None, Optional\mbox{[}Extra\+FPNBlock\mbox{]} extra\+\_\+blocks=None)
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1models_1_1detection_1_1backbone__utils_1_1_backbone_with_f_p_n}{Backbone\+With\+FPN}} \mbox{\hyperlink{namespacetorchvision__down_1_1models_1_1detection_1_1backbone__utils_a0011ef788d291bb97e7346a952bf429e}{\+\_\+resnet\+\_\+fpn\+\_\+extractor}} (\mbox{\hyperlink{classtorchvision__down_1_1models_1_1resnet_1_1_res_net}{resnet.\+Res\+Net}} backbone, int trainable\+\_\+layers, Optional\mbox{[}List\mbox{[}int\mbox{]}\mbox{]} returned\+\_\+layers=None, Optional\mbox{[}Extra\+FPNBlock\mbox{]} extra\+\_\+blocks=None)
+\item 
+int \mbox{\hyperlink{namespacetorchvision__down_1_1models_1_1detection_1_1backbone__utils_af5a76a6de0a8a24c11dace1fb52b8e96}{\+\_\+validate\+\_\+trainable\+\_\+layers}} (bool pretrained, Optional\mbox{[}int\mbox{]} trainable\+\_\+backbone\+\_\+layers, int max\+\_\+value, int default\+\_\+value)
+\item 
+nn.\+Module \mbox{\hyperlink{namespacetorchvision__down_1_1models_1_1detection_1_1backbone__utils_aafecd7a5fab9c7283f806499bed569ec}{mobilenet\+\_\+backbone}} (str backbone\+\_\+name, bool pretrained, bool fpn, Callable\mbox{[}..., nn.\+Module\mbox{]} norm\+\_\+layer=misc\+\_\+nn\+\_\+ops.\+Frozen\+Batch\+Norm2d, int trainable\+\_\+layers=2, Optional\mbox{[}List\mbox{[}int\mbox{]}\mbox{]} returned\+\_\+layers=None, Optional\mbox{[}Extra\+FPNBlock\mbox{]} extra\+\_\+blocks=None)
+\item 
+nn.\+Module \mbox{\hyperlink{namespacetorchvision__down_1_1models_1_1detection_1_1backbone__utils_aa8031ffdfd4adf9cf88c27f94f3dc032}{\+\_\+mobilenet\+\_\+extractor}} (Union\mbox{[}\mbox{\hyperlink{classtorchvision__down_1_1models_1_1mobilenetv2_1_1_mobile_net_v2}{mobilenet.\+Mobile\+Net\+V2}}, \mbox{\hyperlink{classtorchvision__down_1_1models_1_1mobilenetv3_1_1_mobile_net_v3}{mobilenet.\+Mobile\+Net\+V3}}\mbox{]} backbone, bool fpn, int trainable\+\_\+layers, Optional\mbox{[}List\mbox{[}int\mbox{]}\mbox{]} returned\+\_\+layers=None, Optional\mbox{[}Extra\+FPNBlock\mbox{]} extra\+\_\+blocks=None)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{namespacetorchvision__down_1_1models_1_1detection_1_1backbone__utils_aa8031ffdfd4adf9cf88c27f94f3dc032}\index{torchvision\_down.models.detection.backbone\_utils@{torchvision\_down.models.detection.backbone\_utils}!\_mobilenet\_extractor@{\_mobilenet\_extractor}}
+\index{\_mobilenet\_extractor@{\_mobilenet\_extractor}!torchvision\_down.models.detection.backbone\_utils@{torchvision\_down.models.detection.backbone\_utils}}
+\doxysubsubsection{\texorpdfstring{\_mobilenet\_extractor()}{\_mobilenet\_extractor()}}
+{\footnotesize\ttfamily \label{namespacetorchvision__down_1_1models_1_1detection_1_1backbone__utils_aa8031ffdfd4adf9cf88c27f94f3dc032} 
+ nn.\+Module torchvision\+\_\+down.\+models.\+detection.\+backbone\+\_\+utils.\+\_\+mobilenet\+\_\+extractor (\begin{DoxyParamCaption}\item[{Union\mbox{[}\mbox{\hyperlink{classtorchvision__down_1_1models_1_1mobilenetv2_1_1_mobile_net_v2}{mobilenet.\+Mobile\+Net\+V2}}, \mbox{\hyperlink{classtorchvision__down_1_1models_1_1mobilenetv3_1_1_mobile_net_v3}{mobilenet.\+Mobile\+Net\+V3}}\mbox{]}}]{backbone}{, }\item[{bool}]{fpn}{, }\item[{int}]{trainable\+\_\+layers}{, }\item[{Optional\mbox{[}List\mbox{[}int\mbox{]}\mbox{]} }]{returned\+\_\+layers}{ = {\ttfamily None}, }\item[{Optional\mbox{[}Extra\+FPNBlock\mbox{]} }]{extra\+\_\+blocks}{ = {\ttfamily None}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{namespacetorchvision__down_1_1models_1_1detection_1_1backbone__utils_a0011ef788d291bb97e7346a952bf429e}\index{torchvision\_down.models.detection.backbone\_utils@{torchvision\_down.models.detection.backbone\_utils}!\_resnet\_fpn\_extractor@{\_resnet\_fpn\_extractor}}
+\index{\_resnet\_fpn\_extractor@{\_resnet\_fpn\_extractor}!torchvision\_down.models.detection.backbone\_utils@{torchvision\_down.models.detection.backbone\_utils}}
+\doxysubsubsection{\texorpdfstring{\_resnet\_fpn\_extractor()}{\_resnet\_fpn\_extractor()}}
+{\footnotesize\ttfamily \label{namespacetorchvision__down_1_1models_1_1detection_1_1backbone__utils_a0011ef788d291bb97e7346a952bf429e} 
+ \mbox{\hyperlink{classtorchvision__down_1_1models_1_1detection_1_1backbone__utils_1_1_backbone_with_f_p_n}{Backbone\+With\+FPN}} torchvision\+\_\+down.\+models.\+detection.\+backbone\+\_\+utils.\+\_\+resnet\+\_\+fpn\+\_\+extractor (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classtorchvision__down_1_1models_1_1resnet_1_1_res_net}{resnet.\+Res\+Net}}}]{backbone}{, }\item[{int}]{trainable\+\_\+layers}{, }\item[{Optional\mbox{[}List\mbox{[}int\mbox{]}\mbox{]} }]{returned\+\_\+layers}{ = {\ttfamily None}, }\item[{Optional\mbox{[}Extra\+FPNBlock\mbox{]} }]{extra\+\_\+blocks}{ = {\ttfamily None}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{namespacetorchvision__down_1_1models_1_1detection_1_1backbone__utils_af5a76a6de0a8a24c11dace1fb52b8e96}\index{torchvision\_down.models.detection.backbone\_utils@{torchvision\_down.models.detection.backbone\_utils}!\_validate\_trainable\_layers@{\_validate\_trainable\_layers}}
+\index{\_validate\_trainable\_layers@{\_validate\_trainable\_layers}!torchvision\_down.models.detection.backbone\_utils@{torchvision\_down.models.detection.backbone\_utils}}
+\doxysubsubsection{\texorpdfstring{\_validate\_trainable\_layers()}{\_validate\_trainable\_layers()}}
+{\footnotesize\ttfamily \label{namespacetorchvision__down_1_1models_1_1detection_1_1backbone__utils_af5a76a6de0a8a24c11dace1fb52b8e96} 
+ int torchvision\+\_\+down.\+models.\+detection.\+backbone\+\_\+utils.\+\_\+validate\+\_\+trainable\+\_\+layers (\begin{DoxyParamCaption}\item[{bool}]{pretrained}{, }\item[{Optional\mbox{[}int\mbox{]}}]{trainable\+\_\+backbone\+\_\+layers}{, }\item[{int}]{max\+\_\+value}{, }\item[{int}]{default\+\_\+value}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{namespacetorchvision__down_1_1models_1_1detection_1_1backbone__utils_aafecd7a5fab9c7283f806499bed569ec}\index{torchvision\_down.models.detection.backbone\_utils@{torchvision\_down.models.detection.backbone\_utils}!mobilenet\_backbone@{mobilenet\_backbone}}
+\index{mobilenet\_backbone@{mobilenet\_backbone}!torchvision\_down.models.detection.backbone\_utils@{torchvision\_down.models.detection.backbone\_utils}}
+\doxysubsubsection{\texorpdfstring{mobilenet\_backbone()}{mobilenet\_backbone()}}
+{\footnotesize\ttfamily \label{namespacetorchvision__down_1_1models_1_1detection_1_1backbone__utils_aafecd7a5fab9c7283f806499bed569ec} 
+ nn.\+Module torchvision\+\_\+down.\+models.\+detection.\+backbone\+\_\+utils.\+mobilenet\+\_\+backbone (\begin{DoxyParamCaption}\item[{str}]{backbone\+\_\+name}{, }\item[{bool}]{pretrained}{, }\item[{bool}]{fpn}{, }\item[{Callable\mbox{[}..., nn.\+Module\mbox{]} }]{norm\+\_\+layer}{ = {\ttfamily misc\+\_\+nn\+\_\+ops.FrozenBatchNorm2d}, }\item[{int }]{trainable\+\_\+layers}{ = {\ttfamily 2}, }\item[{Optional\mbox{[}List\mbox{[}int\mbox{]}\mbox{]} }]{returned\+\_\+layers}{ = {\ttfamily None}, }\item[{Optional\mbox{[}Extra\+FPNBlock\mbox{]} }]{extra\+\_\+blocks}{ = {\ttfamily None}}\end{DoxyParamCaption})}
+
+\Hypertarget{namespacetorchvision__down_1_1models_1_1detection_1_1backbone__utils_a9657e10e157a02c158c6ee5e065c96e4}\index{torchvision\_down.models.detection.backbone\_utils@{torchvision\_down.models.detection.backbone\_utils}!resnet\_fpn\_backbone@{resnet\_fpn\_backbone}}
+\index{resnet\_fpn\_backbone@{resnet\_fpn\_backbone}!torchvision\_down.models.detection.backbone\_utils@{torchvision\_down.models.detection.backbone\_utils}}
+\doxysubsubsection{\texorpdfstring{resnet\_fpn\_backbone()}{resnet\_fpn\_backbone()}}
+{\footnotesize\ttfamily \label{namespacetorchvision__down_1_1models_1_1detection_1_1backbone__utils_a9657e10e157a02c158c6ee5e065c96e4} 
+ \mbox{\hyperlink{classtorchvision__down_1_1models_1_1detection_1_1backbone__utils_1_1_backbone_with_f_p_n}{Backbone\+With\+FPN}} torchvision\+\_\+down.\+models.\+detection.\+backbone\+\_\+utils.\+resnet\+\_\+fpn\+\_\+backbone (\begin{DoxyParamCaption}\item[{str}]{backbone\+\_\+name}{, }\item[{bool}]{pretrained}{, }\item[{Callable\mbox{[}..., nn.\+Module\mbox{]} }]{norm\+\_\+layer}{ = {\ttfamily misc\+\_\+nn\+\_\+ops.FrozenBatchNorm2d}, }\item[{int }]{trainable\+\_\+layers}{ = {\ttfamily 3}, }\item[{Optional\mbox{[}List\mbox{[}int\mbox{]}\mbox{]} }]{returned\+\_\+layers}{ = {\ttfamily None}, }\item[{Optional\mbox{[}Extra\+FPNBlock\mbox{]} }]{extra\+\_\+blocks}{ = {\ttfamily None}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Constructs a specified ResNet backbone with FPN on top. Freezes the specified number of layers in the backbone.
+
+Examples::
+
+    >>> from torchvision.models.detection.backbone_utils import resnet_fpn_backbone
+    >>> backbone = resnet_fpn_backbone('resnet50', pretrained=True, trainable_layers=3)
+    >>> # get some dummy image
+    >>> x = torch.rand(1,3,64,64)
+    >>> # compute the output
+    >>> output = backbone(x)
+    >>> print([(k, v.shape) for k, v in output.items()])
+    >>> # returns
+    >>>   [('0', torch.Size([1, 256, 16, 16])),
+    >>>    ('1', torch.Size([1, 256, 8, 8])),
+    >>>    ('2', torch.Size([1, 256, 4, 4])),
+    >>>    ('3', torch.Size([1, 256, 2, 2])),
+    >>>    ('pool', torch.Size([1, 256, 1, 1]))]
+
+Args:
+    backbone_name (string): resnet architecture. Possible values are 'resnet18', 'resnet34', 'resnet50',
+         'resnet101', 'resnet152', 'resnext50_32x4d', 'resnext101_32x8d', 'wide_resnet50_2', 'wide_resnet101_2'
+    pretrained (bool): If True, returns a model with backbone pre-trained on Imagenet
+    norm_layer (callable): it is recommended to use the default value. For details visit:
+        (https://github.com/facebookresearch/maskrcnn-benchmark/issues/267)
+    trainable_layers (int): number of trainable (not frozen) resnet layers starting from final block.
+        Valid values are between 0 and 5, with 5 meaning all backbone layers are trainable.
+    returned_layers (list of int): The layers of the network to return. Each entry must be in ``[1, 4]``.
+        By default all layers are returned.
+    extra_blocks (ExtraFPNBlock or None): if provided, extra operations will
+        be performed. It is expected to take the fpn features, the original
+        features and the names of the original features as input, and returns
+        a new list of feature maps and their corresponding names. By
+        default a ``LastLevelMaxPool`` is used.
+\end{DoxyVerb}
+ 

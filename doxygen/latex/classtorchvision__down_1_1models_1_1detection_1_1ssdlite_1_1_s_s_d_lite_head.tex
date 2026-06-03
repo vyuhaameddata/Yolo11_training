@@ -1,0 +1,60 @@
+\doxysection{torchvision\+\_\+down.\+models.\+detection.\+ssdlite.\+SSDLite\+Head Class Reference}
+\hypertarget{classtorchvision__down_1_1models_1_1detection_1_1ssdlite_1_1_s_s_d_lite_head}{}\label{classtorchvision__down_1_1models_1_1detection_1_1ssdlite_1_1_s_s_d_lite_head}\index{torchvision\_down.models.detection.ssdlite.SSDLiteHead@{torchvision\_down.models.detection.ssdlite.SSDLiteHead}}
+Inheritance diagram for torchvision\+\_\+down.\+models.\+detection.\+ssdlite.\+SSDLite\+Head\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classtorchvision__down_1_1models_1_1detection_1_1ssdlite_1_1_s_s_d_lite_head}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1models_1_1detection_1_1ssdlite_1_1_s_s_d_lite_head_a7f8c3a4e20a7d537170290c69451fc3c}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, List\mbox{[}int\mbox{]} in\+\_\+channels, List\mbox{[}int\mbox{]} num\+\_\+anchors, int num\+\_\+classes, Callable\mbox{[}..., nn.\+Module\mbox{]} norm\+\_\+layer)
+\item 
+Dict\mbox{[}str, Tensor\mbox{]} \mbox{\hyperlink{classtorchvision__down_1_1models_1_1detection_1_1ssdlite_1_1_s_s_d_lite_head_a1a99032df311f3adac44f573d2bfbb5e}{forward}} (self, List\mbox{[}Tensor\mbox{]} x)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1models_1_1detection_1_1ssdlite_1_1_s_s_d_lite_head_aca72b54239d86fdf2748fd087e6dd631}{classification\+\_\+head}} = \mbox{\hyperlink{classtorchvision__down_1_1models_1_1detection_1_1ssdlite_1_1_s_s_d_lite_classification_head}{SSDLite\+Classification\+Head}}(in\+\_\+channels, num\+\_\+anchors, num\+\_\+classes, norm\+\_\+layer)
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1models_1_1detection_1_1ssdlite_1_1_s_s_d_lite_head_ade214383138a115d2a3aeaa74de061ed}{regression\+\_\+head}} = \mbox{\hyperlink{classtorchvision__down_1_1models_1_1detection_1_1ssdlite_1_1_s_s_d_lite_regression_head}{SSDLite\+Regression\+Head}}(in\+\_\+channels, num\+\_\+anchors, norm\+\_\+layer)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classtorchvision__down_1_1models_1_1detection_1_1ssdlite_1_1_s_s_d_lite_head_a7f8c3a4e20a7d537170290c69451fc3c}\index{torchvision\_down.models.detection.ssdlite.SSDLiteHead@{torchvision\_down.models.detection.ssdlite.SSDLiteHead}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!torchvision\_down.models.detection.ssdlite.SSDLiteHead@{torchvision\_down.models.detection.ssdlite.SSDLiteHead}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1models_1_1detection_1_1ssdlite_1_1_s_s_d_lite_head_a7f8c3a4e20a7d537170290c69451fc3c} 
+torchvision\+\_\+down.\+models.\+detection.\+ssdlite.\+SSDLite\+Head.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{List\mbox{[}int\mbox{]}}]{in\+\_\+channels}{, }\item[{List\mbox{[}int\mbox{]}}]{num\+\_\+anchors}{, }\item[{int}]{num\+\_\+classes}{, }\item[{Callable\mbox{[}..., nn.\+Module\mbox{]}     }]{norm\+\_\+layer}{}\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classtorchvision__down_1_1models_1_1detection_1_1ssdlite_1_1_s_s_d_lite_head_a1a99032df311f3adac44f573d2bfbb5e}\index{torchvision\_down.models.detection.ssdlite.SSDLiteHead@{torchvision\_down.models.detection.ssdlite.SSDLiteHead}!forward@{forward}}
+\index{forward@{forward}!torchvision\_down.models.detection.ssdlite.SSDLiteHead@{torchvision\_down.models.detection.ssdlite.SSDLiteHead}}
+\doxysubsubsection{\texorpdfstring{forward()}{forward()}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1models_1_1detection_1_1ssdlite_1_1_s_s_d_lite_head_a1a99032df311f3adac44f573d2bfbb5e} 
+ Dict\mbox{[}str, Tensor\mbox{]} torchvision\+\_\+down.\+models.\+detection.\+ssdlite.\+SSDLite\+Head.\+forward (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{List\mbox{[}Tensor\mbox{]}}]{x}{}\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classtorchvision__down_1_1models_1_1detection_1_1ssdlite_1_1_s_s_d_lite_head_aca72b54239d86fdf2748fd087e6dd631}\index{torchvision\_down.models.detection.ssdlite.SSDLiteHead@{torchvision\_down.models.detection.ssdlite.SSDLiteHead}!classification\_head@{classification\_head}}
+\index{classification\_head@{classification\_head}!torchvision\_down.models.detection.ssdlite.SSDLiteHead@{torchvision\_down.models.detection.ssdlite.SSDLiteHead}}
+\doxysubsubsection{\texorpdfstring{classification\_head}{classification\_head}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1models_1_1detection_1_1ssdlite_1_1_s_s_d_lite_head_aca72b54239d86fdf2748fd087e6dd631} 
+torchvision\+\_\+down.\+models.\+detection.\+ssdlite.\+SSDLite\+Head.\+classification\+\_\+head = \mbox{\hyperlink{classtorchvision__down_1_1models_1_1detection_1_1ssdlite_1_1_s_s_d_lite_classification_head}{SSDLite\+Classification\+Head}}(in\+\_\+channels, num\+\_\+anchors, num\+\_\+classes, norm\+\_\+layer)}
+
+\Hypertarget{classtorchvision__down_1_1models_1_1detection_1_1ssdlite_1_1_s_s_d_lite_head_ade214383138a115d2a3aeaa74de061ed}\index{torchvision\_down.models.detection.ssdlite.SSDLiteHead@{torchvision\_down.models.detection.ssdlite.SSDLiteHead}!regression\_head@{regression\_head}}
+\index{regression\_head@{regression\_head}!torchvision\_down.models.detection.ssdlite.SSDLiteHead@{torchvision\_down.models.detection.ssdlite.SSDLiteHead}}
+\doxysubsubsection{\texorpdfstring{regression\_head}{regression\_head}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1models_1_1detection_1_1ssdlite_1_1_s_s_d_lite_head_ade214383138a115d2a3aeaa74de061ed} 
+torchvision\+\_\+down.\+models.\+detection.\+ssdlite.\+SSDLite\+Head.\+regression\+\_\+head = \mbox{\hyperlink{classtorchvision__down_1_1models_1_1detection_1_1ssdlite_1_1_s_s_d_lite_regression_head}{SSDLite\+Regression\+Head}}(in\+\_\+channels, num\+\_\+anchors, norm\+\_\+layer)}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Cervi\+AI/torchvision\+\_\+down/models/detection/\mbox{\hyperlink{ssdlite_8py}{ssdlite.\+py}}\end{DoxyCompactItemize}

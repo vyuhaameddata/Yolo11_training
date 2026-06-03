@@ -1,0 +1,79 @@
+\doxysection{torchvision\+\_\+down.\+datasets.\+samplers.\+clip\+\_\+sampler.\+Uniform\+Clip\+Sampler Class Reference}
+\hypertarget{classtorchvision__down_1_1datasets_1_1samplers_1_1clip__sampler_1_1_uniform_clip_sampler}{}\label{classtorchvision__down_1_1datasets_1_1samplers_1_1clip__sampler_1_1_uniform_clip_sampler}\index{torchvision\_down.datasets.samplers.clip\_sampler.UniformClipSampler@{torchvision\_down.datasets.samplers.clip\_sampler.UniformClipSampler}}
+Inheritance diagram for torchvision\+\_\+down.\+datasets.\+samplers.\+clip\+\_\+sampler.\+Uniform\+Clip\+Sampler\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classtorchvision__down_1_1datasets_1_1samplers_1_1clip__sampler_1_1_uniform_clip_sampler}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+None \mbox{\hyperlink{classtorchvision__down_1_1datasets_1_1samplers_1_1clip__sampler_1_1_uniform_clip_sampler_a8ebc96a1fd6bc3c1c69e1baa8a00566b}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, Video\+Clips \mbox{\hyperlink{classtorchvision__down_1_1datasets_1_1samplers_1_1clip__sampler_1_1_uniform_clip_sampler_a26c1b8a1ced7cb0abaff2071fd31cc05}{video\+\_\+clips}}, int \mbox{\hyperlink{classtorchvision__down_1_1datasets_1_1samplers_1_1clip__sampler_1_1_uniform_clip_sampler_a101f57d1f4766fe03147cedf0a3f7c85}{num\+\_\+clips\+\_\+per\+\_\+video}})
+\item 
+Iterator\mbox{[}int\mbox{]} \mbox{\hyperlink{classtorchvision__down_1_1datasets_1_1samplers_1_1clip__sampler_1_1_uniform_clip_sampler_aecb28809e16bc5dbf9292938bf9fe93e}{\+\_\+\+\_\+iter\+\_\+\+\_\+}} (self)
+\item 
+int \mbox{\hyperlink{classtorchvision__down_1_1datasets_1_1samplers_1_1clip__sampler_1_1_uniform_clip_sampler_ae24e204d3b546b3a55082692e17372f0}{\+\_\+\+\_\+len\+\_\+\+\_\+}} (self)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1datasets_1_1samplers_1_1clip__sampler_1_1_uniform_clip_sampler_a26c1b8a1ced7cb0abaff2071fd31cc05}{video\+\_\+clips}} = video\+\_\+clips
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1datasets_1_1samplers_1_1clip__sampler_1_1_uniform_clip_sampler_a101f57d1f4766fe03147cedf0a3f7c85}{num\+\_\+clips\+\_\+per\+\_\+video}} = num\+\_\+clips\+\_\+per\+\_\+video
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}Sample `num_video_clips_per_video` clips for each video, equally spaced.
+When number of unique clips in the video is fewer than num_video_clips_per_video,
+repeat the clips until `num_video_clips_per_video` clips are collected
+
+Args:
+    video_clips (VideoClips): video clips to sample from
+    num_clips_per_video (int): number of clips to be sampled per video
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classtorchvision__down_1_1datasets_1_1samplers_1_1clip__sampler_1_1_uniform_clip_sampler_a8ebc96a1fd6bc3c1c69e1baa8a00566b}\index{torchvision\_down.datasets.samplers.clip\_sampler.UniformClipSampler@{torchvision\_down.datasets.samplers.clip\_sampler.UniformClipSampler}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!torchvision\_down.datasets.samplers.clip\_sampler.UniformClipSampler@{torchvision\_down.datasets.samplers.clip\_sampler.UniformClipSampler}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1datasets_1_1samplers_1_1clip__sampler_1_1_uniform_clip_sampler_a8ebc96a1fd6bc3c1c69e1baa8a00566b} 
+ None torchvision\+\_\+down.\+datasets.\+samplers.\+clip\+\_\+sampler.\+Uniform\+Clip\+Sampler.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{Video\+Clips}]{video\+\_\+clips}{, }\item[{int}]{num\+\_\+clips\+\_\+per\+\_\+video}{}\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classtorchvision__down_1_1datasets_1_1samplers_1_1clip__sampler_1_1_uniform_clip_sampler_aecb28809e16bc5dbf9292938bf9fe93e}\index{torchvision\_down.datasets.samplers.clip\_sampler.UniformClipSampler@{torchvision\_down.datasets.samplers.clip\_sampler.UniformClipSampler}!\_\_iter\_\_@{\_\_iter\_\_}}
+\index{\_\_iter\_\_@{\_\_iter\_\_}!torchvision\_down.datasets.samplers.clip\_sampler.UniformClipSampler@{torchvision\_down.datasets.samplers.clip\_sampler.UniformClipSampler}}
+\doxysubsubsection{\texorpdfstring{\_\_iter\_\_()}{\_\_iter\_\_()}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1datasets_1_1samplers_1_1clip__sampler_1_1_uniform_clip_sampler_aecb28809e16bc5dbf9292938bf9fe93e} 
+ Iterator\mbox{[}int\mbox{]} torchvision\+\_\+down.\+datasets.\+samplers.\+clip\+\_\+sampler.\+Uniform\+Clip\+Sampler.\+\_\+\+\_\+iter\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classtorchvision__down_1_1datasets_1_1samplers_1_1clip__sampler_1_1_uniform_clip_sampler_ae24e204d3b546b3a55082692e17372f0}\index{torchvision\_down.datasets.samplers.clip\_sampler.UniformClipSampler@{torchvision\_down.datasets.samplers.clip\_sampler.UniformClipSampler}!\_\_len\_\_@{\_\_len\_\_}}
+\index{\_\_len\_\_@{\_\_len\_\_}!torchvision\_down.datasets.samplers.clip\_sampler.UniformClipSampler@{torchvision\_down.datasets.samplers.clip\_sampler.UniformClipSampler}}
+\doxysubsubsection{\texorpdfstring{\_\_len\_\_()}{\_\_len\_\_()}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1datasets_1_1samplers_1_1clip__sampler_1_1_uniform_clip_sampler_ae24e204d3b546b3a55082692e17372f0} 
+ int torchvision\+\_\+down.\+datasets.\+samplers.\+clip\+\_\+sampler.\+Uniform\+Clip\+Sampler.\+\_\+\+\_\+len\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classtorchvision__down_1_1datasets_1_1samplers_1_1clip__sampler_1_1_uniform_clip_sampler_a101f57d1f4766fe03147cedf0a3f7c85}\index{torchvision\_down.datasets.samplers.clip\_sampler.UniformClipSampler@{torchvision\_down.datasets.samplers.clip\_sampler.UniformClipSampler}!num\_clips\_per\_video@{num\_clips\_per\_video}}
+\index{num\_clips\_per\_video@{num\_clips\_per\_video}!torchvision\_down.datasets.samplers.clip\_sampler.UniformClipSampler@{torchvision\_down.datasets.samplers.clip\_sampler.UniformClipSampler}}
+\doxysubsubsection{\texorpdfstring{num\_clips\_per\_video}{num\_clips\_per\_video}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1datasets_1_1samplers_1_1clip__sampler_1_1_uniform_clip_sampler_a101f57d1f4766fe03147cedf0a3f7c85} 
+torchvision\+\_\+down.\+datasets.\+samplers.\+clip\+\_\+sampler.\+Uniform\+Clip\+Sampler.\+num\+\_\+clips\+\_\+per\+\_\+video = num\+\_\+clips\+\_\+per\+\_\+video}
+
+\Hypertarget{classtorchvision__down_1_1datasets_1_1samplers_1_1clip__sampler_1_1_uniform_clip_sampler_a26c1b8a1ced7cb0abaff2071fd31cc05}\index{torchvision\_down.datasets.samplers.clip\_sampler.UniformClipSampler@{torchvision\_down.datasets.samplers.clip\_sampler.UniformClipSampler}!video\_clips@{video\_clips}}
+\index{video\_clips@{video\_clips}!torchvision\_down.datasets.samplers.clip\_sampler.UniformClipSampler@{torchvision\_down.datasets.samplers.clip\_sampler.UniformClipSampler}}
+\doxysubsubsection{\texorpdfstring{video\_clips}{video\_clips}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1datasets_1_1samplers_1_1clip__sampler_1_1_uniform_clip_sampler_a26c1b8a1ced7cb0abaff2071fd31cc05} 
+torchvision\+\_\+down.\+datasets.\+samplers.\+clip\+\_\+sampler.\+Uniform\+Clip\+Sampler.\+video\+\_\+clips = video\+\_\+clips}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Cervi\+AI/torchvision\+\_\+down/datasets/samplers/\mbox{\hyperlink{clip__sampler_8py}{clip\+\_\+sampler.\+py}}\end{DoxyCompactItemize}

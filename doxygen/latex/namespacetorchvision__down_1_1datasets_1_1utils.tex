@@ -1,0 +1,342 @@
+\doxysection{torchvision\+\_\+down.\+datasets.\+utils Namespace Reference}
+\hypertarget{namespacetorchvision__down_1_1datasets_1_1utils}{}\label{namespacetorchvision__down_1_1datasets_1_1utils}\index{torchvision\_down.datasets.utils@{torchvision\_down.datasets.utils}}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+None \mbox{\hyperlink{namespacetorchvision__down_1_1datasets_1_1utils_ab84706e711da768af3ceaf1eaae602cf}{\+\_\+urlretrieve}} (str url, str filename, int chunk\+\_\+size=1024)
+\item 
+Callable\mbox{[}\mbox{[}int, int, int\mbox{]}, None\mbox{]} \mbox{\hyperlink{namespacetorchvision__down_1_1datasets_1_1utils_afcdf59042bbe0fd5a7114e9aacfeed58}{gen\+\_\+bar\+\_\+updater}} ()
+\item 
+str \mbox{\hyperlink{namespacetorchvision__down_1_1datasets_1_1utils_a41550e44773595fae83a251e10e6cc7a}{calculate\+\_\+md5}} (str fpath, int chunk\+\_\+size=1024 \texorpdfstring{$\ast$}{*}1024)
+\item 
+bool \mbox{\hyperlink{namespacetorchvision__down_1_1datasets_1_1utils_acecc94e29f7aec60775e198d962f9974}{check\+\_\+md5}} (str fpath, str md5, \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}Any kwargs)
+\item 
+bool \mbox{\hyperlink{namespacetorchvision__down_1_1datasets_1_1utils_a5e6713a653e271d81107fcadddc36925}{check\+\_\+integrity}} (str fpath, Optional\mbox{[}str\mbox{]} md5=None)
+\item 
+str \mbox{\hyperlink{namespacetorchvision__down_1_1datasets_1_1utils_a9c035a65d4af34620693f8658e74ef02}{\+\_\+get\+\_\+redirect\+\_\+url}} (str url, int max\+\_\+hops=3)
+\item 
+Optional\mbox{[}str\mbox{]} \mbox{\hyperlink{namespacetorchvision__down_1_1datasets_1_1utils_af829169e04a8cedf457eb78dd20eebae}{\+\_\+get\+\_\+google\+\_\+drive\+\_\+file\+\_\+id}} (str url)
+\item 
+None \mbox{\hyperlink{namespacetorchvision__down_1_1datasets_1_1utils_a8479fcb1ce192b40a2f1956b0a13943e}{download\+\_\+url}} (str url, str root, Optional\mbox{[}str\mbox{]} filename=None, Optional\mbox{[}str\mbox{]} md5=None, int max\+\_\+redirect\+\_\+hops=3)
+\item 
+List\mbox{[}str\mbox{]} \mbox{\hyperlink{namespacetorchvision__down_1_1datasets_1_1utils_aee33c5b2f82fac1bfdbb316359c37478}{list\+\_\+dir}} (str root, bool prefix=False)
+\item 
+List\mbox{[}str\mbox{]} \mbox{\hyperlink{namespacetorchvision__down_1_1datasets_1_1utils_a1f00429a54e888d32459f2f6406ade67}{list\+\_\+files}} (str root, str suffix, bool prefix=False)
+\item 
+bool \mbox{\hyperlink{namespacetorchvision__down_1_1datasets_1_1utils_a2bcc41090078c4d4fda555e8dde10613}{\+\_\+quota\+\_\+exceeded}} (bytes first\+\_\+chunk)
+\item 
+\mbox{\hyperlink{namespacetorchvision__down_1_1datasets_1_1utils_af224738eb49a86280846a280fd28bcf3}{download\+\_\+file\+\_\+from\+\_\+google\+\_\+drive}} (str file\+\_\+id, str root, Optional\mbox{[}str\mbox{]} filename=None, Optional\mbox{[}str\mbox{]} md5=None)
+\item 
+Optional\mbox{[}str\mbox{]} \mbox{\hyperlink{namespacetorchvision__down_1_1datasets_1_1utils_aaf000a5e4ae16a1472e9e808709d6ab0}{\+\_\+get\+\_\+confirm\+\_\+token}} (requests.\+models.\+Response response)
+\item 
+None \mbox{\hyperlink{namespacetorchvision__down_1_1datasets_1_1utils_add77df490708b699c7542e1b4286106a}{\+\_\+save\+\_\+response\+\_\+content}} (Iterator\mbox{[}bytes\mbox{]} response\+\_\+gen, str destination)
+\item 
+None \mbox{\hyperlink{namespacetorchvision__down_1_1datasets_1_1utils_a41dccaa683595219aec28120bb6b861e}{\+\_\+extract\+\_\+tar}} (str from\+\_\+path, str to\+\_\+path, Optional\mbox{[}str\mbox{]} compression)
+\item 
+None \mbox{\hyperlink{namespacetorchvision__down_1_1datasets_1_1utils_a6a650ece5d0438c4a64f46f164e89821}{\+\_\+extract\+\_\+zip}} (str from\+\_\+path, str to\+\_\+path, Optional\mbox{[}str\mbox{]} compression)
+\item 
+Tuple\mbox{[}str, Optional\mbox{[}str\mbox{]}, Optional\mbox{[}str\mbox{]}\mbox{]} \mbox{\hyperlink{namespacetorchvision__down_1_1datasets_1_1utils_af1dab29a93ddbd1e4724234d8be3d8fc}{\+\_\+detect\+\_\+file\+\_\+type}} (str file)
+\item 
+str \mbox{\hyperlink{namespacetorchvision__down_1_1datasets_1_1utils_a950dd0b4eb33cf38d671ab32727b4eba}{\+\_\+decompress}} (str from\+\_\+path, Optional\mbox{[}str\mbox{]} to\+\_\+path=None, bool remove\+\_\+finished=False)
+\item 
+str \mbox{\hyperlink{namespacetorchvision__down_1_1datasets_1_1utils_a9500e1f64a71c9338498014cbbcda2a8}{extract\+\_\+archive}} (str from\+\_\+path, Optional\mbox{[}str\mbox{]} to\+\_\+path=None, bool remove\+\_\+finished=False)
+\item 
+None \mbox{\hyperlink{namespacetorchvision__down_1_1datasets_1_1utils_a09ba13fb7d76630c30a0f5472db5adf4}{download\+\_\+and\+\_\+extract\+\_\+archive}} (str url, str download\+\_\+root, Optional\mbox{[}str\mbox{]} extract\+\_\+root=None, Optional\mbox{[}str\mbox{]} filename=None, Optional\mbox{[}str\mbox{]} md5=None, bool remove\+\_\+finished=False)
+\item 
+str \mbox{\hyperlink{namespacetorchvision__down_1_1datasets_1_1utils_ab477f18de62ca77fdd402e6bcf65f09b}{iterable\+\_\+to\+\_\+str}} (Iterable iterable)
+\item 
+\mbox{\hyperlink{namespacetorchvision__down_1_1datasets_1_1utils_acf63b3454d17d18c38c5d85e72fdac0e}{T}} \mbox{\hyperlink{namespacetorchvision__down_1_1datasets_1_1utils_abcf5d9cfc0236d3f7e59d0cd8d61f934}{verify\+\_\+str\+\_\+arg}} (\mbox{\hyperlink{namespacetorchvision__down_1_1datasets_1_1utils_acf63b3454d17d18c38c5d85e72fdac0e}{T}} value, Optional\mbox{[}str\mbox{]} arg=None, Iterable\mbox{[}\mbox{\hyperlink{namespacetorchvision__down_1_1datasets_1_1utils_acf63b3454d17d18c38c5d85e72fdac0e}{T}}\mbox{]} valid\+\_\+values=None, Optional\mbox{[}str\mbox{]} custom\+\_\+msg=None)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+str \mbox{\hyperlink{namespacetorchvision__down_1_1datasets_1_1utils_a298cdaea608926d6cbeca478d5c2d5d6}{USER\+\_\+\+AGENT}} = "{}pytorch/vision"{}
+\item 
+dict \mbox{\hyperlink{namespacetorchvision__down_1_1datasets_1_1utils_a3f804efbb7a27a9a4728799e555275b5}{\+\_\+\+ZIP\+\_\+\+COMPRESSION\+\_\+\+MAP}}
+\item 
+dict \mbox{\hyperlink{namespacetorchvision__down_1_1datasets_1_1utils_ab134b1ba24d4785d711a5c1fd97155b2}{\+\_\+\+ARCHIVE\+\_\+\+EXTRACTORS}}
+\item 
+dict \mbox{\hyperlink{namespacetorchvision__down_1_1datasets_1_1utils_a8ba30318f9eae89926232b3955495492}{\+\_\+\+COMPRESSED\+\_\+\+FILE\+\_\+\+OPENERS}}
+\item 
+dict \mbox{\hyperlink{namespacetorchvision__down_1_1datasets_1_1utils_aaab72d1d50e56b672a599ef33869a8f4}{\+\_\+\+FILE\+\_\+\+TYPE\+\_\+\+ALIASES}}
+\item 
+\mbox{\hyperlink{namespacetorchvision__down_1_1datasets_1_1utils_acf63b3454d17d18c38c5d85e72fdac0e}{T}} = Type\+Var("{}T"{}, str, bytes)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{namespacetorchvision__down_1_1datasets_1_1utils_a950dd0b4eb33cf38d671ab32727b4eba}\index{torchvision\_down.datasets.utils@{torchvision\_down.datasets.utils}!\_decompress@{\_decompress}}
+\index{\_decompress@{\_decompress}!torchvision\_down.datasets.utils@{torchvision\_down.datasets.utils}}
+\doxysubsubsection{\texorpdfstring{\_decompress()}{\_decompress()}}
+{\footnotesize\ttfamily \label{namespacetorchvision__down_1_1datasets_1_1utils_a950dd0b4eb33cf38d671ab32727b4eba} 
+ str torchvision\+\_\+down.\+datasets.\+utils.\+\_\+decompress (\begin{DoxyParamCaption}\item[{str}]{from\+\_\+path}{, }\item[{Optional\mbox{[}str\mbox{]} }]{to\+\_\+path}{ = {\ttfamily None}, }\item[{bool }]{remove\+\_\+finished}{ = {\ttfamily False}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\begin{DoxyVerb}Decompress a file.
+
+The compression is automatically detected from the file name.
+
+Args:
+from_path (str): Path to the file to be decompressed.
+to_path (str): Path to the decompressed file. If omitted, ``from_path`` without compression extension is used.
+remove_finished (bool): If ``True``, remove the file after the extraction.
+
+Returns:
+(str): Path to the decompressed file.
+\end{DoxyVerb}
+ \Hypertarget{namespacetorchvision__down_1_1datasets_1_1utils_af1dab29a93ddbd1e4724234d8be3d8fc}\index{torchvision\_down.datasets.utils@{torchvision\_down.datasets.utils}!\_detect\_file\_type@{\_detect\_file\_type}}
+\index{\_detect\_file\_type@{\_detect\_file\_type}!torchvision\_down.datasets.utils@{torchvision\_down.datasets.utils}}
+\doxysubsubsection{\texorpdfstring{\_detect\_file\_type()}{\_detect\_file\_type()}}
+{\footnotesize\ttfamily \label{namespacetorchvision__down_1_1datasets_1_1utils_af1dab29a93ddbd1e4724234d8be3d8fc} 
+ Tuple\mbox{[}str, Optional\mbox{[}str\mbox{]}, Optional\mbox{[}str\mbox{]}\mbox{]} torchvision\+\_\+down.\+datasets.\+utils.\+\_\+detect\+\_\+file\+\_\+type (\begin{DoxyParamCaption}\item[{str}]{file}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\begin{DoxyVerb}Detect the archive type and/or compression of a file.
+
+Args:
+    file (str): the filename
+
+Returns:
+    (tuple): tuple of suffix, archive type, and compression
+
+Raises:
+    RuntimeError: if file has no suffix or suffix is not supported
+\end{DoxyVerb}
+ \Hypertarget{namespacetorchvision__down_1_1datasets_1_1utils_a41dccaa683595219aec28120bb6b861e}\index{torchvision\_down.datasets.utils@{torchvision\_down.datasets.utils}!\_extract\_tar@{\_extract\_tar}}
+\index{\_extract\_tar@{\_extract\_tar}!torchvision\_down.datasets.utils@{torchvision\_down.datasets.utils}}
+\doxysubsubsection{\texorpdfstring{\_extract\_tar()}{\_extract\_tar()}}
+{\footnotesize\ttfamily \label{namespacetorchvision__down_1_1datasets_1_1utils_a41dccaa683595219aec28120bb6b861e} 
+ None torchvision\+\_\+down.\+datasets.\+utils.\+\_\+extract\+\_\+tar (\begin{DoxyParamCaption}\item[{str}]{from\+\_\+path}{, }\item[{str}]{to\+\_\+path}{, }\item[{Optional\mbox{[}str\mbox{]}}]{compression}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{namespacetorchvision__down_1_1datasets_1_1utils_a6a650ece5d0438c4a64f46f164e89821}\index{torchvision\_down.datasets.utils@{torchvision\_down.datasets.utils}!\_extract\_zip@{\_extract\_zip}}
+\index{\_extract\_zip@{\_extract\_zip}!torchvision\_down.datasets.utils@{torchvision\_down.datasets.utils}}
+\doxysubsubsection{\texorpdfstring{\_extract\_zip()}{\_extract\_zip()}}
+{\footnotesize\ttfamily \label{namespacetorchvision__down_1_1datasets_1_1utils_a6a650ece5d0438c4a64f46f164e89821} 
+ None torchvision\+\_\+down.\+datasets.\+utils.\+\_\+extract\+\_\+zip (\begin{DoxyParamCaption}\item[{str}]{from\+\_\+path}{, }\item[{str}]{to\+\_\+path}{, }\item[{Optional\mbox{[}str\mbox{]}}]{compression}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{namespacetorchvision__down_1_1datasets_1_1utils_aaf000a5e4ae16a1472e9e808709d6ab0}\index{torchvision\_down.datasets.utils@{torchvision\_down.datasets.utils}!\_get\_confirm\_token@{\_get\_confirm\_token}}
+\index{\_get\_confirm\_token@{\_get\_confirm\_token}!torchvision\_down.datasets.utils@{torchvision\_down.datasets.utils}}
+\doxysubsubsection{\texorpdfstring{\_get\_confirm\_token()}{\_get\_confirm\_token()}}
+{\footnotesize\ttfamily \label{namespacetorchvision__down_1_1datasets_1_1utils_aaf000a5e4ae16a1472e9e808709d6ab0} 
+ Optional\mbox{[}str\mbox{]} torchvision\+\_\+down.\+datasets.\+utils.\+\_\+get\+\_\+confirm\+\_\+token (\begin{DoxyParamCaption}\item[{requests.\+models.\+Response}]{response}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{namespacetorchvision__down_1_1datasets_1_1utils_af829169e04a8cedf457eb78dd20eebae}\index{torchvision\_down.datasets.utils@{torchvision\_down.datasets.utils}!\_get\_google\_drive\_file\_id@{\_get\_google\_drive\_file\_id}}
+\index{\_get\_google\_drive\_file\_id@{\_get\_google\_drive\_file\_id}!torchvision\_down.datasets.utils@{torchvision\_down.datasets.utils}}
+\doxysubsubsection{\texorpdfstring{\_get\_google\_drive\_file\_id()}{\_get\_google\_drive\_file\_id()}}
+{\footnotesize\ttfamily \label{namespacetorchvision__down_1_1datasets_1_1utils_af829169e04a8cedf457eb78dd20eebae} 
+ Optional\mbox{[}str\mbox{]} torchvision\+\_\+down.\+datasets.\+utils.\+\_\+get\+\_\+google\+\_\+drive\+\_\+file\+\_\+id (\begin{DoxyParamCaption}\item[{str}]{url}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{namespacetorchvision__down_1_1datasets_1_1utils_a9c035a65d4af34620693f8658e74ef02}\index{torchvision\_down.datasets.utils@{torchvision\_down.datasets.utils}!\_get\_redirect\_url@{\_get\_redirect\_url}}
+\index{\_get\_redirect\_url@{\_get\_redirect\_url}!torchvision\_down.datasets.utils@{torchvision\_down.datasets.utils}}
+\doxysubsubsection{\texorpdfstring{\_get\_redirect\_url()}{\_get\_redirect\_url()}}
+{\footnotesize\ttfamily \label{namespacetorchvision__down_1_1datasets_1_1utils_a9c035a65d4af34620693f8658e74ef02} 
+ str torchvision\+\_\+down.\+datasets.\+utils.\+\_\+get\+\_\+redirect\+\_\+url (\begin{DoxyParamCaption}\item[{str}]{url}{, }\item[{int }]{max\+\_\+hops}{ = {\ttfamily 3}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{namespacetorchvision__down_1_1datasets_1_1utils_a2bcc41090078c4d4fda555e8dde10613}\index{torchvision\_down.datasets.utils@{torchvision\_down.datasets.utils}!\_quota\_exceeded@{\_quota\_exceeded}}
+\index{\_quota\_exceeded@{\_quota\_exceeded}!torchvision\_down.datasets.utils@{torchvision\_down.datasets.utils}}
+\doxysubsubsection{\texorpdfstring{\_quota\_exceeded()}{\_quota\_exceeded()}}
+{\footnotesize\ttfamily \label{namespacetorchvision__down_1_1datasets_1_1utils_a2bcc41090078c4d4fda555e8dde10613} 
+ bool torchvision\+\_\+down.\+datasets.\+utils.\+\_\+quota\+\_\+exceeded (\begin{DoxyParamCaption}\item[{bytes}]{first\+\_\+chunk}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{namespacetorchvision__down_1_1datasets_1_1utils_add77df490708b699c7542e1b4286106a}\index{torchvision\_down.datasets.utils@{torchvision\_down.datasets.utils}!\_save\_response\_content@{\_save\_response\_content}}
+\index{\_save\_response\_content@{\_save\_response\_content}!torchvision\_down.datasets.utils@{torchvision\_down.datasets.utils}}
+\doxysubsubsection{\texorpdfstring{\_save\_response\_content()}{\_save\_response\_content()}}
+{\footnotesize\ttfamily \label{namespacetorchvision__down_1_1datasets_1_1utils_add77df490708b699c7542e1b4286106a} 
+ None torchvision\+\_\+down.\+datasets.\+utils.\+\_\+save\+\_\+response\+\_\+content (\begin{DoxyParamCaption}\item[{Iterator\mbox{[}bytes\mbox{]}}]{response\+\_\+gen}{, }\item[{str}]{destination}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{namespacetorchvision__down_1_1datasets_1_1utils_ab84706e711da768af3ceaf1eaae602cf}\index{torchvision\_down.datasets.utils@{torchvision\_down.datasets.utils}!\_urlretrieve@{\_urlretrieve}}
+\index{\_urlretrieve@{\_urlretrieve}!torchvision\_down.datasets.utils@{torchvision\_down.datasets.utils}}
+\doxysubsubsection{\texorpdfstring{\_urlretrieve()}{\_urlretrieve()}}
+{\footnotesize\ttfamily \label{namespacetorchvision__down_1_1datasets_1_1utils_ab84706e711da768af3ceaf1eaae602cf} 
+ None torchvision\+\_\+down.\+datasets.\+utils.\+\_\+urlretrieve (\begin{DoxyParamCaption}\item[{str}]{url}{, }\item[{str}]{filename}{, }\item[{int }]{chunk\+\_\+size}{ = {\ttfamily 1024}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{namespacetorchvision__down_1_1datasets_1_1utils_a41550e44773595fae83a251e10e6cc7a}\index{torchvision\_down.datasets.utils@{torchvision\_down.datasets.utils}!calculate\_md5@{calculate\_md5}}
+\index{calculate\_md5@{calculate\_md5}!torchvision\_down.datasets.utils@{torchvision\_down.datasets.utils}}
+\doxysubsubsection{\texorpdfstring{calculate\_md5()}{calculate\_md5()}}
+{\footnotesize\ttfamily \label{namespacetorchvision__down_1_1datasets_1_1utils_a41550e44773595fae83a251e10e6cc7a} 
+ str torchvision\+\_\+down.\+datasets.\+utils.\+calculate\+\_\+md5 (\begin{DoxyParamCaption}\item[{str}]{fpath}{, }\item[{int }]{chunk\+\_\+size}{ = {\ttfamily 1024~\texorpdfstring{$\ast$}{*}~1024}}\end{DoxyParamCaption})}
+
+\Hypertarget{namespacetorchvision__down_1_1datasets_1_1utils_a5e6713a653e271d81107fcadddc36925}\index{torchvision\_down.datasets.utils@{torchvision\_down.datasets.utils}!check\_integrity@{check\_integrity}}
+\index{check\_integrity@{check\_integrity}!torchvision\_down.datasets.utils@{torchvision\_down.datasets.utils}}
+\doxysubsubsection{\texorpdfstring{check\_integrity()}{check\_integrity()}}
+{\footnotesize\ttfamily \label{namespacetorchvision__down_1_1datasets_1_1utils_a5e6713a653e271d81107fcadddc36925} 
+ bool torchvision\+\_\+down.\+datasets.\+utils.\+check\+\_\+integrity (\begin{DoxyParamCaption}\item[{str}]{fpath}{, }\item[{Optional\mbox{[}str\mbox{]} }]{md5}{ = {\ttfamily None}}\end{DoxyParamCaption})}
+
+\Hypertarget{namespacetorchvision__down_1_1datasets_1_1utils_acecc94e29f7aec60775e198d962f9974}\index{torchvision\_down.datasets.utils@{torchvision\_down.datasets.utils}!check\_md5@{check\_md5}}
+\index{check\_md5@{check\_md5}!torchvision\_down.datasets.utils@{torchvision\_down.datasets.utils}}
+\doxysubsubsection{\texorpdfstring{check\_md5()}{check\_md5()}}
+{\footnotesize\ttfamily \label{namespacetorchvision__down_1_1datasets_1_1utils_acecc94e29f7aec60775e198d962f9974} 
+ bool torchvision\+\_\+down.\+datasets.\+utils.\+check\+\_\+md5 (\begin{DoxyParamCaption}\item[{str}]{fpath}{, }\item[{str}]{md5}{, }\item[{\texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}Any}]{kwargs}{}\end{DoxyParamCaption})}
+
+\Hypertarget{namespacetorchvision__down_1_1datasets_1_1utils_a09ba13fb7d76630c30a0f5472db5adf4}\index{torchvision\_down.datasets.utils@{torchvision\_down.datasets.utils}!download\_and\_extract\_archive@{download\_and\_extract\_archive}}
+\index{download\_and\_extract\_archive@{download\_and\_extract\_archive}!torchvision\_down.datasets.utils@{torchvision\_down.datasets.utils}}
+\doxysubsubsection{\texorpdfstring{download\_and\_extract\_archive()}{download\_and\_extract\_archive()}}
+{\footnotesize\ttfamily \label{namespacetorchvision__down_1_1datasets_1_1utils_a09ba13fb7d76630c30a0f5472db5adf4} 
+ None torchvision\+\_\+down.\+datasets.\+utils.\+download\+\_\+and\+\_\+extract\+\_\+archive (\begin{DoxyParamCaption}\item[{str}]{url}{, }\item[{str}]{download\+\_\+root}{, }\item[{Optional\mbox{[}str\mbox{]} }]{extract\+\_\+root}{ = {\ttfamily None}, }\item[{Optional\mbox{[}str\mbox{]} }]{filename}{ = {\ttfamily None}, }\item[{Optional\mbox{[}str\mbox{]} }]{md5}{ = {\ttfamily None}, }\item[{bool }]{remove\+\_\+finished}{ = {\ttfamily False}}\end{DoxyParamCaption})}
+
+\Hypertarget{namespacetorchvision__down_1_1datasets_1_1utils_af224738eb49a86280846a280fd28bcf3}\index{torchvision\_down.datasets.utils@{torchvision\_down.datasets.utils}!download\_file\_from\_google\_drive@{download\_file\_from\_google\_drive}}
+\index{download\_file\_from\_google\_drive@{download\_file\_from\_google\_drive}!torchvision\_down.datasets.utils@{torchvision\_down.datasets.utils}}
+\doxysubsubsection{\texorpdfstring{download\_file\_from\_google\_drive()}{download\_file\_from\_google\_drive()}}
+{\footnotesize\ttfamily \label{namespacetorchvision__down_1_1datasets_1_1utils_af224738eb49a86280846a280fd28bcf3} 
+torchvision\+\_\+down.\+datasets.\+utils.\+download\+\_\+file\+\_\+from\+\_\+google\+\_\+drive (\begin{DoxyParamCaption}\item[{str}]{file\+\_\+id}{, }\item[{str}]{root}{, }\item[{Optional\mbox{[}str\mbox{]} }]{filename}{ = {\ttfamily None}, }\item[{Optional\mbox{[}str\mbox{]} }]{md5}{ = {\ttfamily None}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Download a Google Drive file from  and place it in root.
+
+Args:
+    file_id (str): id of file to be downloaded
+    root (str): Directory to place downloaded file in
+    filename (str, optional): Name to save the file under. If None, use the id of the file.
+    md5 (str, optional): MD5 checksum of the download. If None, do not check
+\end{DoxyVerb}
+ \Hypertarget{namespacetorchvision__down_1_1datasets_1_1utils_a8479fcb1ce192b40a2f1956b0a13943e}\index{torchvision\_down.datasets.utils@{torchvision\_down.datasets.utils}!download\_url@{download\_url}}
+\index{download\_url@{download\_url}!torchvision\_down.datasets.utils@{torchvision\_down.datasets.utils}}
+\doxysubsubsection{\texorpdfstring{download\_url()}{download\_url()}}
+{\footnotesize\ttfamily \label{namespacetorchvision__down_1_1datasets_1_1utils_a8479fcb1ce192b40a2f1956b0a13943e} 
+ None torchvision\+\_\+down.\+datasets.\+utils.\+download\+\_\+url (\begin{DoxyParamCaption}\item[{str}]{url}{, }\item[{str}]{root}{, }\item[{Optional\mbox{[}str\mbox{]} }]{filename}{ = {\ttfamily None}, }\item[{Optional\mbox{[}str\mbox{]} }]{md5}{ = {\ttfamily None}, }\item[{int }]{max\+\_\+redirect\+\_\+hops}{ = {\ttfamily 3}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Download a file from a url and place it in root.
+
+Args:
+    url (str): URL to download file from
+    root (str): Directory to place downloaded file in
+    filename (str, optional): Name to save the file under. If None, use the basename of the URL
+    md5 (str, optional): MD5 checksum of the download. If None, do not check
+    max_redirect_hops (int, optional): Maximum number of redirect hops allowed
+\end{DoxyVerb}
+ \Hypertarget{namespacetorchvision__down_1_1datasets_1_1utils_a9500e1f64a71c9338498014cbbcda2a8}\index{torchvision\_down.datasets.utils@{torchvision\_down.datasets.utils}!extract\_archive@{extract\_archive}}
+\index{extract\_archive@{extract\_archive}!torchvision\_down.datasets.utils@{torchvision\_down.datasets.utils}}
+\doxysubsubsection{\texorpdfstring{extract\_archive()}{extract\_archive()}}
+{\footnotesize\ttfamily \label{namespacetorchvision__down_1_1datasets_1_1utils_a9500e1f64a71c9338498014cbbcda2a8} 
+ str torchvision\+\_\+down.\+datasets.\+utils.\+extract\+\_\+archive (\begin{DoxyParamCaption}\item[{str}]{from\+\_\+path}{, }\item[{Optional\mbox{[}str\mbox{]} }]{to\+\_\+path}{ = {\ttfamily None}, }\item[{bool }]{remove\+\_\+finished}{ = {\ttfamily False}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Extract an archive.
+
+The archive type and a possible compression is automatically detected from the file name. If the file is compressed
+but not an archive the call is dispatched to :func:`decompress`.
+
+Args:
+    from_path (str): Path to the file to be extracted.
+    to_path (str): Path to the directory the file will be extracted to. If omitted, the directory of the file is
+        used.
+    remove_finished (bool): If ``True``, remove the file after the extraction.
+
+Returns:
+    (str): Path to the directory the file was extracted to.
+\end{DoxyVerb}
+ \Hypertarget{namespacetorchvision__down_1_1datasets_1_1utils_afcdf59042bbe0fd5a7114e9aacfeed58}\index{torchvision\_down.datasets.utils@{torchvision\_down.datasets.utils}!gen\_bar\_updater@{gen\_bar\_updater}}
+\index{gen\_bar\_updater@{gen\_bar\_updater}!torchvision\_down.datasets.utils@{torchvision\_down.datasets.utils}}
+\doxysubsubsection{\texorpdfstring{gen\_bar\_updater()}{gen\_bar\_updater()}}
+{\footnotesize\ttfamily \label{namespacetorchvision__down_1_1datasets_1_1utils_afcdf59042bbe0fd5a7114e9aacfeed58} 
+ Callable\mbox{[}\mbox{[}int, int, int\mbox{]}, None\mbox{]} torchvision\+\_\+down.\+datasets.\+utils.\+gen\+\_\+bar\+\_\+updater (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+\Hypertarget{namespacetorchvision__down_1_1datasets_1_1utils_ab477f18de62ca77fdd402e6bcf65f09b}\index{torchvision\_down.datasets.utils@{torchvision\_down.datasets.utils}!iterable\_to\_str@{iterable\_to\_str}}
+\index{iterable\_to\_str@{iterable\_to\_str}!torchvision\_down.datasets.utils@{torchvision\_down.datasets.utils}}
+\doxysubsubsection{\texorpdfstring{iterable\_to\_str()}{iterable\_to\_str()}}
+{\footnotesize\ttfamily \label{namespacetorchvision__down_1_1datasets_1_1utils_ab477f18de62ca77fdd402e6bcf65f09b} 
+ str torchvision\+\_\+down.\+datasets.\+utils.\+iterable\+\_\+to\+\_\+str (\begin{DoxyParamCaption}\item[{Iterable}]{iterable}{}\end{DoxyParamCaption})}
+
+\Hypertarget{namespacetorchvision__down_1_1datasets_1_1utils_aee33c5b2f82fac1bfdbb316359c37478}\index{torchvision\_down.datasets.utils@{torchvision\_down.datasets.utils}!list\_dir@{list\_dir}}
+\index{list\_dir@{list\_dir}!torchvision\_down.datasets.utils@{torchvision\_down.datasets.utils}}
+\doxysubsubsection{\texorpdfstring{list\_dir()}{list\_dir()}}
+{\footnotesize\ttfamily \label{namespacetorchvision__down_1_1datasets_1_1utils_aee33c5b2f82fac1bfdbb316359c37478} 
+ List\mbox{[}str\mbox{]} torchvision\+\_\+down.\+datasets.\+utils.\+list\+\_\+dir (\begin{DoxyParamCaption}\item[{str}]{root}{, }\item[{bool }]{prefix}{ = {\ttfamily False}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}List all directories at a given root
+
+Args:
+    root (str): Path to directory whose folders need to be listed
+    prefix (bool, optional): If true, prepends the path to each result, otherwise
+        only returns the name of the directories found
+\end{DoxyVerb}
+ \Hypertarget{namespacetorchvision__down_1_1datasets_1_1utils_a1f00429a54e888d32459f2f6406ade67}\index{torchvision\_down.datasets.utils@{torchvision\_down.datasets.utils}!list\_files@{list\_files}}
+\index{list\_files@{list\_files}!torchvision\_down.datasets.utils@{torchvision\_down.datasets.utils}}
+\doxysubsubsection{\texorpdfstring{list\_files()}{list\_files()}}
+{\footnotesize\ttfamily \label{namespacetorchvision__down_1_1datasets_1_1utils_a1f00429a54e888d32459f2f6406ade67} 
+ List\mbox{[}str\mbox{]} torchvision\+\_\+down.\+datasets.\+utils.\+list\+\_\+files (\begin{DoxyParamCaption}\item[{str}]{root}{, }\item[{str}]{suffix}{, }\item[{bool }]{prefix}{ = {\ttfamily False}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}List all files ending with a suffix at a given root
+
+Args:
+    root (str): Path to directory whose folders need to be listed
+    suffix (str or tuple): Suffix of the files to match, e.g. '.png' or ('.jpg', '.png').
+        It uses the Python "str.endswith" method and is passed directly
+    prefix (bool, optional): If true, prepends the path to each result, otherwise
+        only returns the name of the files found
+\end{DoxyVerb}
+ \Hypertarget{namespacetorchvision__down_1_1datasets_1_1utils_abcf5d9cfc0236d3f7e59d0cd8d61f934}\index{torchvision\_down.datasets.utils@{torchvision\_down.datasets.utils}!verify\_str\_arg@{verify\_str\_arg}}
+\index{verify\_str\_arg@{verify\_str\_arg}!torchvision\_down.datasets.utils@{torchvision\_down.datasets.utils}}
+\doxysubsubsection{\texorpdfstring{verify\_str\_arg()}{verify\_str\_arg()}}
+{\footnotesize\ttfamily \label{namespacetorchvision__down_1_1datasets_1_1utils_abcf5d9cfc0236d3f7e59d0cd8d61f934} 
+ \mbox{\hyperlink{namespacetorchvision__down_1_1datasets_1_1utils_acf63b3454d17d18c38c5d85e72fdac0e}{T}} torchvision\+\_\+down.\+datasets.\+utils.\+verify\+\_\+str\+\_\+arg (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespacetorchvision__down_1_1datasets_1_1utils_acf63b3454d17d18c38c5d85e72fdac0e}{T}}}]{value}{, }\item[{Optional\mbox{[}str\mbox{]} }]{arg}{ = {\ttfamily None}, }\item[{Iterable\mbox{[}\mbox{\hyperlink{namespacetorchvision__down_1_1datasets_1_1utils_acf63b3454d17d18c38c5d85e72fdac0e}{T}}\mbox{]} }]{valid\+\_\+values}{ = {\ttfamily None}, }\item[{Optional\mbox{[}str\mbox{]} }]{custom\+\_\+msg}{ = {\ttfamily None}}\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Variable Documentation}
+\Hypertarget{namespacetorchvision__down_1_1datasets_1_1utils_ab134b1ba24d4785d711a5c1fd97155b2}\index{torchvision\_down.datasets.utils@{torchvision\_down.datasets.utils}!\_ARCHIVE\_EXTRACTORS@{\_ARCHIVE\_EXTRACTORS}}
+\index{\_ARCHIVE\_EXTRACTORS@{\_ARCHIVE\_EXTRACTORS}!torchvision\_down.datasets.utils@{torchvision\_down.datasets.utils}}
+\doxysubsubsection{\texorpdfstring{\_ARCHIVE\_EXTRACTORS}{\_ARCHIVE\_EXTRACTORS}}
+{\footnotesize\ttfamily \label{namespacetorchvision__down_1_1datasets_1_1utils_ab134b1ba24d4785d711a5c1fd97155b2} 
+dict torchvision\+\_\+down.\+datasets.\+utils.\+\_\+\+ARCHIVE\+\_\+\+EXTRACTORS\hspace{0.3cm}{\ttfamily [protected]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ =\ \ \{}
+\DoxyCodeLine{00002\ \ \ \ \ \textcolor{stringliteral}{"{}.tar"{}}:\ \_extract\_tar,}
+\DoxyCodeLine{00003\ \ \ \ \ \textcolor{stringliteral}{"{}.zip"{}}:\ \_extract\_zip,}
+\DoxyCodeLine{00004\ \}}
+
+\end{DoxyCode}
+\Hypertarget{namespacetorchvision__down_1_1datasets_1_1utils_a8ba30318f9eae89926232b3955495492}\index{torchvision\_down.datasets.utils@{torchvision\_down.datasets.utils}!\_COMPRESSED\_FILE\_OPENERS@{\_COMPRESSED\_FILE\_OPENERS}}
+\index{\_COMPRESSED\_FILE\_OPENERS@{\_COMPRESSED\_FILE\_OPENERS}!torchvision\_down.datasets.utils@{torchvision\_down.datasets.utils}}
+\doxysubsubsection{\texorpdfstring{\_COMPRESSED\_FILE\_OPENERS}{\_COMPRESSED\_FILE\_OPENERS}}
+{\footnotesize\ttfamily \label{namespacetorchvision__down_1_1datasets_1_1utils_a8ba30318f9eae89926232b3955495492} 
+dict torchvision\+\_\+down.\+datasets.\+utils.\+\_\+\+COMPRESSED\+\_\+\+FILE\+\_\+\+OPENERS\hspace{0.3cm}{\ttfamily [protected]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ =\ \ \{}
+\DoxyCodeLine{00002\ \ \ \ \ \textcolor{stringliteral}{"{}.bz2"{}}:\ bz2.open,}
+\DoxyCodeLine{00003\ \ \ \ \ \textcolor{stringliteral}{"{}.gz"{}}:\ gzip.open,}
+\DoxyCodeLine{00004\ \ \ \ \ \textcolor{stringliteral}{"{}.xz"{}}:\ lzma.open,}
+\DoxyCodeLine{00005\ \}}
+
+\end{DoxyCode}
+\Hypertarget{namespacetorchvision__down_1_1datasets_1_1utils_aaab72d1d50e56b672a599ef33869a8f4}\index{torchvision\_down.datasets.utils@{torchvision\_down.datasets.utils}!\_FILE\_TYPE\_ALIASES@{\_FILE\_TYPE\_ALIASES}}
+\index{\_FILE\_TYPE\_ALIASES@{\_FILE\_TYPE\_ALIASES}!torchvision\_down.datasets.utils@{torchvision\_down.datasets.utils}}
+\doxysubsubsection{\texorpdfstring{\_FILE\_TYPE\_ALIASES}{\_FILE\_TYPE\_ALIASES}}
+{\footnotesize\ttfamily \label{namespacetorchvision__down_1_1datasets_1_1utils_aaab72d1d50e56b672a599ef33869a8f4} 
+dict torchvision\+\_\+down.\+datasets.\+utils.\+\_\+\+FILE\+\_\+\+TYPE\+\_\+\+ALIASES\hspace{0.3cm}{\ttfamily [protected]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ =\ \ \{}
+\DoxyCodeLine{00002\ \ \ \ \ \textcolor{stringliteral}{"{}.tbz"{}}:\ (\textcolor{stringliteral}{"{}.tar"{}},\ \textcolor{stringliteral}{"{}.bz2"{}}),}
+\DoxyCodeLine{00003\ \ \ \ \ \textcolor{stringliteral}{"{}.tbz2"{}}:\ (\textcolor{stringliteral}{"{}.tar"{}},\ \textcolor{stringliteral}{"{}.bz2"{}}),}
+\DoxyCodeLine{00004\ \ \ \ \ \textcolor{stringliteral}{"{}.tgz"{}}:\ (\textcolor{stringliteral}{"{}.tar"{}},\ \textcolor{stringliteral}{"{}.gz"{}}),}
+\DoxyCodeLine{00005\ \}}
+
+\end{DoxyCode}
+\Hypertarget{namespacetorchvision__down_1_1datasets_1_1utils_a3f804efbb7a27a9a4728799e555275b5}\index{torchvision\_down.datasets.utils@{torchvision\_down.datasets.utils}!\_ZIP\_COMPRESSION\_MAP@{\_ZIP\_COMPRESSION\_MAP}}
+\index{\_ZIP\_COMPRESSION\_MAP@{\_ZIP\_COMPRESSION\_MAP}!torchvision\_down.datasets.utils@{torchvision\_down.datasets.utils}}
+\doxysubsubsection{\texorpdfstring{\_ZIP\_COMPRESSION\_MAP}{\_ZIP\_COMPRESSION\_MAP}}
+{\footnotesize\ttfamily \label{namespacetorchvision__down_1_1datasets_1_1utils_a3f804efbb7a27a9a4728799e555275b5} 
+dict torchvision\+\_\+down.\+datasets.\+utils.\+\_\+\+ZIP\+\_\+\+COMPRESSION\+\_\+\+MAP\hspace{0.3cm}{\ttfamily [protected]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ =\ \ \{}
+\DoxyCodeLine{00002\ \ \ \ \ \textcolor{stringliteral}{"{}.bz2"{}}:\ zipfile.ZIP\_BZIP2,}
+\DoxyCodeLine{00003\ \ \ \ \ \textcolor{stringliteral}{"{}.xz"{}}:\ zipfile.ZIP\_LZMA,}
+\DoxyCodeLine{00004\ \}}
+
+\end{DoxyCode}
+\Hypertarget{namespacetorchvision__down_1_1datasets_1_1utils_acf63b3454d17d18c38c5d85e72fdac0e}\index{torchvision\_down.datasets.utils@{torchvision\_down.datasets.utils}!T@{T}}
+\index{T@{T}!torchvision\_down.datasets.utils@{torchvision\_down.datasets.utils}}
+\doxysubsubsection{\texorpdfstring{T}{T}}
+{\footnotesize\ttfamily \label{namespacetorchvision__down_1_1datasets_1_1utils_acf63b3454d17d18c38c5d85e72fdac0e} 
+torchvision\+\_\+down.\+datasets.\+utils.\+T = Type\+Var("{}T"{}, str, bytes)}
+
+\Hypertarget{namespacetorchvision__down_1_1datasets_1_1utils_a298cdaea608926d6cbeca478d5c2d5d6}\index{torchvision\_down.datasets.utils@{torchvision\_down.datasets.utils}!USER\_AGENT@{USER\_AGENT}}
+\index{USER\_AGENT@{USER\_AGENT}!torchvision\_down.datasets.utils@{torchvision\_down.datasets.utils}}
+\doxysubsubsection{\texorpdfstring{USER\_AGENT}{USER\_AGENT}}
+{\footnotesize\ttfamily \label{namespacetorchvision__down_1_1datasets_1_1utils_a298cdaea608926d6cbeca478d5c2d5d6} 
+str torchvision\+\_\+down.\+datasets.\+utils.\+USER\+\_\+\+AGENT = "{}pytorch/vision"{}}
+

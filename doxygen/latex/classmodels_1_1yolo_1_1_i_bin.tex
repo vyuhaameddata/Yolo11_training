@@ -1,0 +1,176 @@
+\doxysection{models.\+yolo.\+IBin Class Reference}
+\hypertarget{classmodels_1_1yolo_1_1_i_bin}{}\label{classmodels_1_1yolo_1_1_i_bin}\index{models.yolo.IBin@{models.yolo.IBin}}
+Inheritance diagram for models.\+yolo.\+IBin\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classmodels_1_1yolo_1_1_i_bin}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classmodels_1_1yolo_1_1_i_bin_a445b3a74ddb2cd3e73c5bb8cec130415}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, \mbox{\hyperlink{classmodels_1_1yolo_1_1_i_bin_ab667b927cb25c0b6d8881cc281b48860}{nc}}=80, anchors=(), ch=(), \mbox{\hyperlink{classmodels_1_1yolo_1_1_i_bin_a19f139015ec963a2618975a9d27319e5}{bin\+\_\+count}}=21)
+\item 
+\mbox{\hyperlink{classmodels_1_1yolo_1_1_i_bin_aa156d00f039cbc596fc21f43b2c667c4}{forward}} (self, x)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classmodels_1_1yolo_1_1_i_bin_ab667b927cb25c0b6d8881cc281b48860}{nc}} = nc
+\item 
+\mbox{\hyperlink{classmodels_1_1yolo_1_1_i_bin_a19f139015ec963a2618975a9d27319e5}{bin\+\_\+count}} = bin\+\_\+count
+\item 
+\mbox{\hyperlink{classmodels_1_1yolo_1_1_i_bin_a547e261b9e7712ef3143f8d0c78d4c06}{w\+\_\+bin\+\_\+sigmoid}} = \mbox{\hyperlink{classutils_1_1loss_1_1_sigmoid_bin}{Sigmoid\+Bin}}(\mbox{\hyperlink{classmodels_1_1yolo_1_1_i_bin_a19f139015ec963a2618975a9d27319e5}{bin\+\_\+count}}=self.\+bin\+\_\+count, min=0.\+0, max=4.\+0)
+\item 
+\mbox{\hyperlink{classmodels_1_1yolo_1_1_i_bin_a5665afc76ebe5cbc9de07711a10cd572}{h\+\_\+bin\+\_\+sigmoid}} = \mbox{\hyperlink{classutils_1_1loss_1_1_sigmoid_bin}{Sigmoid\+Bin}}(\mbox{\hyperlink{classmodels_1_1yolo_1_1_i_bin_a19f139015ec963a2618975a9d27319e5}{bin\+\_\+count}}=self.\+bin\+\_\+count, min=0.\+0, max=4.\+0)
+\item 
+int \mbox{\hyperlink{classmodels_1_1yolo_1_1_i_bin_a44318830bcde6050a600edd8fbc6b504}{no}}
+\item 
+\mbox{\hyperlink{classmodels_1_1yolo_1_1_i_bin_a01b1a4e9bdc3a121e4d055adc87546ed}{nl}} = len(anchors)
+\item 
+int \mbox{\hyperlink{classmodels_1_1yolo_1_1_i_bin_a85a4a831f315a6f67915de2afb9d924e}{na}} = len(anchors\mbox{[}0\mbox{]}) // 2
+\item 
+list \mbox{\hyperlink{classmodels_1_1yolo_1_1_i_bin_ab20a83db5dee217cafcae583c45f3758}{grid}} = \mbox{[}torch.\+zeros(1)\mbox{]} \texorpdfstring{$\ast$}{*} self.\+nl
+\item 
+\mbox{\hyperlink{classmodels_1_1yolo_1_1_i_bin_a6c84309476954f361d073ee1b87f0614}{m}} = nn.\+Module\+List(nn.\+Conv2d(x, self.\+no \texorpdfstring{$\ast$}{*} self.\+na, 1) for x in ch)
+\item 
+\mbox{\hyperlink{classmodels_1_1yolo_1_1_i_bin_a530373fbe05be93a3429852258aa5c62}{ia}} = nn.\+Module\+List(\mbox{\hyperlink{classmodels_1_1common_1_1_implicit_a}{ImplicitA}}(x) for x in ch)
+\item 
+\mbox{\hyperlink{classmodels_1_1yolo_1_1_i_bin_a75f71414017eb98595815e2d3c322abe}{im}} = nn.\+Module\+List(\mbox{\hyperlink{classmodels_1_1common_1_1_implicit_m}{ImplicitM}}(self.\+no \texorpdfstring{$\ast$}{*} self.\+na) for \+\_\+ in ch)
+\item 
+\# inference \mbox{\hyperlink{classmodels_1_1yolo_1_1_i_bin_a0f4db10cb701f3d234ae1f642ad22ee7}{training}} = x\mbox{[}i\mbox{]}.view(bs, self.\+na, self.\+no, ny, nx).permute(0, 1, 3, 4, 2).contiguous()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classmodels_1_1yolo_1_1_i_bin_aecffe31b50c25ae3a3d6c33dd03d95bc}{stride}} = None
+\item 
+bool \mbox{\hyperlink{classmodels_1_1yolo_1_1_i_bin_a42c0898317acb50c1765f04383ef28e0}{export}} = False
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classmodels_1_1yolo_1_1_i_bin_afd82c08c69094210f1c95ea7554d05dc}{\+\_\+make\+\_\+grid}} (nx=20, ny=20)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classmodels_1_1yolo_1_1_i_bin_a445b3a74ddb2cd3e73c5bb8cec130415}\index{models.yolo.IBin@{models.yolo.IBin}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!models.yolo.IBin@{models.yolo.IBin}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily \label{classmodels_1_1yolo_1_1_i_bin_a445b3a74ddb2cd3e73c5bb8cec130415} 
+models.\+yolo.\+IBin.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{nc}{ = {\ttfamily 80}, }\item[{}]{anchors}{ = {\ttfamily ()}, }\item[{}]{ch}{ = {\ttfamily ()}, }\item[{}]{bin\+\_\+count}{ = {\ttfamily 21}}\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classmodels_1_1yolo_1_1_i_bin_afd82c08c69094210f1c95ea7554d05dc}\index{models.yolo.IBin@{models.yolo.IBin}!\_make\_grid@{\_make\_grid}}
+\index{\_make\_grid@{\_make\_grid}!models.yolo.IBin@{models.yolo.IBin}}
+\doxysubsubsection{\texorpdfstring{\_make\_grid()}{\_make\_grid()}}
+{\footnotesize\ttfamily \label{classmodels_1_1yolo_1_1_i_bin_afd82c08c69094210f1c95ea7554d05dc} 
+models.\+yolo.\+IBin.\+\_\+make\+\_\+grid (\begin{DoxyParamCaption}\item[{}]{nx}{ = {\ttfamily 20}, }\item[{}]{ny}{ = {\ttfamily 20}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}
+
+\Hypertarget{classmodels_1_1yolo_1_1_i_bin_aa156d00f039cbc596fc21f43b2c667c4}\index{models.yolo.IBin@{models.yolo.IBin}!forward@{forward}}
+\index{forward@{forward}!models.yolo.IBin@{models.yolo.IBin}}
+\doxysubsubsection{\texorpdfstring{forward()}{forward()}}
+{\footnotesize\ttfamily \label{classmodels_1_1yolo_1_1_i_bin_aa156d00f039cbc596fc21f43b2c667c4} 
+models.\+yolo.\+IBin.\+forward (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{x}{}\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classmodels_1_1yolo_1_1_i_bin_a19f139015ec963a2618975a9d27319e5}\index{models.yolo.IBin@{models.yolo.IBin}!bin\_count@{bin\_count}}
+\index{bin\_count@{bin\_count}!models.yolo.IBin@{models.yolo.IBin}}
+\doxysubsubsection{\texorpdfstring{bin\_count}{bin\_count}}
+{\footnotesize\ttfamily \label{classmodels_1_1yolo_1_1_i_bin_a19f139015ec963a2618975a9d27319e5} 
+models.\+yolo.\+IBin.\+bin\+\_\+count = bin\+\_\+count}
+
+\Hypertarget{classmodels_1_1yolo_1_1_i_bin_a42c0898317acb50c1765f04383ef28e0}\index{models.yolo.IBin@{models.yolo.IBin}!export@{export}}
+\index{export@{export}!models.yolo.IBin@{models.yolo.IBin}}
+\doxysubsubsection{\texorpdfstring{export}{export}}
+{\footnotesize\ttfamily \label{classmodels_1_1yolo_1_1_i_bin_a42c0898317acb50c1765f04383ef28e0} 
+bool models.\+yolo.\+IBin.\+export = False\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classmodels_1_1yolo_1_1_i_bin_ab20a83db5dee217cafcae583c45f3758}\index{models.yolo.IBin@{models.yolo.IBin}!grid@{grid}}
+\index{grid@{grid}!models.yolo.IBin@{models.yolo.IBin}}
+\doxysubsubsection{\texorpdfstring{grid}{grid}}
+{\footnotesize\ttfamily \label{classmodels_1_1yolo_1_1_i_bin_ab20a83db5dee217cafcae583c45f3758} 
+list models.\+yolo.\+IBin.\+grid = \mbox{[}torch.\+zeros(1)\mbox{]} \texorpdfstring{$\ast$}{*} self.\+nl}
+
+\Hypertarget{classmodels_1_1yolo_1_1_i_bin_a5665afc76ebe5cbc9de07711a10cd572}\index{models.yolo.IBin@{models.yolo.IBin}!h\_bin\_sigmoid@{h\_bin\_sigmoid}}
+\index{h\_bin\_sigmoid@{h\_bin\_sigmoid}!models.yolo.IBin@{models.yolo.IBin}}
+\doxysubsubsection{\texorpdfstring{h\_bin\_sigmoid}{h\_bin\_sigmoid}}
+{\footnotesize\ttfamily \label{classmodels_1_1yolo_1_1_i_bin_a5665afc76ebe5cbc9de07711a10cd572} 
+models.\+yolo.\+IBin.\+h\+\_\+bin\+\_\+sigmoid = \mbox{\hyperlink{classutils_1_1loss_1_1_sigmoid_bin}{Sigmoid\+Bin}}(\mbox{\hyperlink{classmodels_1_1yolo_1_1_i_bin_a19f139015ec963a2618975a9d27319e5}{bin\+\_\+count}}=self.\+bin\+\_\+count, min=0.\+0, max=4.\+0)}
+
+\Hypertarget{classmodels_1_1yolo_1_1_i_bin_a530373fbe05be93a3429852258aa5c62}\index{models.yolo.IBin@{models.yolo.IBin}!ia@{ia}}
+\index{ia@{ia}!models.yolo.IBin@{models.yolo.IBin}}
+\doxysubsubsection{\texorpdfstring{ia}{ia}}
+{\footnotesize\ttfamily \label{classmodels_1_1yolo_1_1_i_bin_a530373fbe05be93a3429852258aa5c62} 
+models.\+yolo.\+IBin.\+ia = nn.\+Module\+List(\mbox{\hyperlink{classmodels_1_1common_1_1_implicit_a}{ImplicitA}}(x) for x in ch)}
+
+\Hypertarget{classmodels_1_1yolo_1_1_i_bin_a75f71414017eb98595815e2d3c322abe}\index{models.yolo.IBin@{models.yolo.IBin}!im@{im}}
+\index{im@{im}!models.yolo.IBin@{models.yolo.IBin}}
+\doxysubsubsection{\texorpdfstring{im}{im}}
+{\footnotesize\ttfamily \label{classmodels_1_1yolo_1_1_i_bin_a75f71414017eb98595815e2d3c322abe} 
+models.\+yolo.\+IBin.\+im = nn.\+Module\+List(\mbox{\hyperlink{classmodels_1_1common_1_1_implicit_m}{ImplicitM}}(self.\+no \texorpdfstring{$\ast$}{*} self.\+na) for \+\_\+ in ch)}
+
+\Hypertarget{classmodels_1_1yolo_1_1_i_bin_a6c84309476954f361d073ee1b87f0614}\index{models.yolo.IBin@{models.yolo.IBin}!m@{m}}
+\index{m@{m}!models.yolo.IBin@{models.yolo.IBin}}
+\doxysubsubsection{\texorpdfstring{m}{m}}
+{\footnotesize\ttfamily \label{classmodels_1_1yolo_1_1_i_bin_a6c84309476954f361d073ee1b87f0614} 
+models.\+yolo.\+IBin.\+m = nn.\+Module\+List(nn.\+Conv2d(x, self.\+no \texorpdfstring{$\ast$}{*} self.\+na, 1) for x in ch)}
+
+\Hypertarget{classmodels_1_1yolo_1_1_i_bin_a85a4a831f315a6f67915de2afb9d924e}\index{models.yolo.IBin@{models.yolo.IBin}!na@{na}}
+\index{na@{na}!models.yolo.IBin@{models.yolo.IBin}}
+\doxysubsubsection{\texorpdfstring{na}{na}}
+{\footnotesize\ttfamily \label{classmodels_1_1yolo_1_1_i_bin_a85a4a831f315a6f67915de2afb9d924e} 
+int models.\+yolo.\+IBin.\+na = len(anchors\mbox{[}0\mbox{]}) // 2}
+
+\Hypertarget{classmodels_1_1yolo_1_1_i_bin_ab667b927cb25c0b6d8881cc281b48860}\index{models.yolo.IBin@{models.yolo.IBin}!nc@{nc}}
+\index{nc@{nc}!models.yolo.IBin@{models.yolo.IBin}}
+\doxysubsubsection{\texorpdfstring{nc}{nc}}
+{\footnotesize\ttfamily \label{classmodels_1_1yolo_1_1_i_bin_ab667b927cb25c0b6d8881cc281b48860} 
+models.\+yolo.\+IBin.\+nc = nc}
+
+\Hypertarget{classmodels_1_1yolo_1_1_i_bin_a01b1a4e9bdc3a121e4d055adc87546ed}\index{models.yolo.IBin@{models.yolo.IBin}!nl@{nl}}
+\index{nl@{nl}!models.yolo.IBin@{models.yolo.IBin}}
+\doxysubsubsection{\texorpdfstring{nl}{nl}}
+{\footnotesize\ttfamily \label{classmodels_1_1yolo_1_1_i_bin_a01b1a4e9bdc3a121e4d055adc87546ed} 
+models.\+yolo.\+IBin.\+nl = len(anchors)}
+
+\Hypertarget{classmodels_1_1yolo_1_1_i_bin_a44318830bcde6050a600edd8fbc6b504}\index{models.yolo.IBin@{models.yolo.IBin}!no@{no}}
+\index{no@{no}!models.yolo.IBin@{models.yolo.IBin}}
+\doxysubsubsection{\texorpdfstring{no}{no}}
+{\footnotesize\ttfamily \label{classmodels_1_1yolo_1_1_i_bin_a44318830bcde6050a600edd8fbc6b504} 
+int models.\+yolo.\+IBin.\+no}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \ nc\ +\ 3\ +\ \(\backslash\)}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ self.w\_bin\_sigmoid.get\_length()\ +\ self.h\_bin\_sigmoid.get\_length()}
+
+\end{DoxyCode}
+\Hypertarget{classmodels_1_1yolo_1_1_i_bin_aecffe31b50c25ae3a3d6c33dd03d95bc}\index{models.yolo.IBin@{models.yolo.IBin}!stride@{stride}}
+\index{stride@{stride}!models.yolo.IBin@{models.yolo.IBin}}
+\doxysubsubsection{\texorpdfstring{stride}{stride}}
+{\footnotesize\ttfamily \label{classmodels_1_1yolo_1_1_i_bin_aecffe31b50c25ae3a3d6c33dd03d95bc} 
+models.\+yolo.\+IBin.\+stride = None\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classmodels_1_1yolo_1_1_i_bin_a0f4db10cb701f3d234ae1f642ad22ee7}\index{models.yolo.IBin@{models.yolo.IBin}!training@{training}}
+\index{training@{training}!models.yolo.IBin@{models.yolo.IBin}}
+\doxysubsubsection{\texorpdfstring{training}{training}}
+{\footnotesize\ttfamily \label{classmodels_1_1yolo_1_1_i_bin_a0f4db10cb701f3d234ae1f642ad22ee7} 
+\# inference models.\+yolo.\+IBin.\+training = x\mbox{[}i\mbox{]}.view(bs, self.\+na, self.\+no, ny, nx).permute(0, 1, 3, 4, 2).contiguous()}
+
+\Hypertarget{classmodels_1_1yolo_1_1_i_bin_a547e261b9e7712ef3143f8d0c78d4c06}\index{models.yolo.IBin@{models.yolo.IBin}!w\_bin\_sigmoid@{w\_bin\_sigmoid}}
+\index{w\_bin\_sigmoid@{w\_bin\_sigmoid}!models.yolo.IBin@{models.yolo.IBin}}
+\doxysubsubsection{\texorpdfstring{w\_bin\_sigmoid}{w\_bin\_sigmoid}}
+{\footnotesize\ttfamily \label{classmodels_1_1yolo_1_1_i_bin_a547e261b9e7712ef3143f8d0c78d4c06} 
+models.\+yolo.\+IBin.\+w\+\_\+bin\+\_\+sigmoid = \mbox{\hyperlink{classutils_1_1loss_1_1_sigmoid_bin}{Sigmoid\+Bin}}(\mbox{\hyperlink{classmodels_1_1yolo_1_1_i_bin_a19f139015ec963a2618975a9d27319e5}{bin\+\_\+count}}=self.\+bin\+\_\+count, min=0.\+0, max=4.\+0)}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Cervi\+AI/models/\mbox{\hyperlink{yolo_8py}{yolo.\+py}}\end{DoxyCompactItemize}

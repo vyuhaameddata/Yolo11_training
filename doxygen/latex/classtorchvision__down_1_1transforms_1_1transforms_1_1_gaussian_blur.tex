@@ -1,0 +1,111 @@
+\doxysection{torchvision\+\_\+down.\+transforms.\+transforms.\+Gaussian\+Blur Class Reference}
+\hypertarget{classtorchvision__down_1_1transforms_1_1transforms_1_1_gaussian_blur}{}\label{classtorchvision__down_1_1transforms_1_1transforms_1_1_gaussian_blur}\index{torchvision\_down.transforms.transforms.GaussianBlur@{torchvision\_down.transforms.transforms.GaussianBlur}}
+Inheritance diagram for torchvision\+\_\+down.\+transforms.\+transforms.\+Gaussian\+Blur\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classtorchvision__down_1_1transforms_1_1transforms_1_1_gaussian_blur}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1transforms_1_1transforms_1_1_gaussian_blur_ace6509c2e4e0c10f3433fb0ec14cf872}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, \mbox{\hyperlink{classtorchvision__down_1_1transforms_1_1transforms_1_1_gaussian_blur_add8edac3d3b2e03e71561dd4d2b90eb3}{kernel\+\_\+size}}, \mbox{\hyperlink{classtorchvision__down_1_1transforms_1_1transforms_1_1_gaussian_blur_a786db67f1f8f84fab454f8cafd2c267e}{sigma}}=(0.\+1, 2.\+0))
+\item 
+Tensor \mbox{\hyperlink{classtorchvision__down_1_1transforms_1_1transforms_1_1_gaussian_blur_abe5cc91a3bc23dd018ab92b181daf596}{forward}} (self, Tensor img)
+\item 
+str \mbox{\hyperlink{classtorchvision__down_1_1transforms_1_1transforms_1_1_gaussian_blur_aec2b1d239a13156caf0308c5e5d97370}{\+\_\+\+\_\+repr\+\_\+\+\_\+}} (self)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+float \mbox{\hyperlink{classtorchvision__down_1_1transforms_1_1transforms_1_1_gaussian_blur_a36a989076b0d04118d3b7762e2c957cd}{get\+\_\+params}} (float sigma\+\_\+min, float sigma\+\_\+max)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1transforms_1_1transforms_1_1_gaussian_blur_add8edac3d3b2e03e71561dd4d2b90eb3}{kernel\+\_\+size}} = \mbox{\hyperlink{namespacetorchvision__down_1_1transforms_1_1transforms_a846a850c6e655e35dfd8dbfbc09e212c}{\+\_\+setup\+\_\+size}}(kernel\+\_\+size, "{}Kernel size should be a tuple/list of two integers"{})
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1transforms_1_1transforms_1_1_gaussian_blur_a786db67f1f8f84fab454f8cafd2c267e}{sigma}} = sigma
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}Blurs image with randomly chosen Gaussian blur.
+If the image is torch Tensor, it is expected
+to have [..., C, H, W] shape, where ... means an arbitrary number of leading dimensions.
+
+Args:
+    kernel_size (int or sequence): Size of the Gaussian kernel.
+    sigma (float or tuple of float (min, max)): Standard deviation to be used for
+        creating kernel to perform blurring. If float, sigma is fixed. If it is tuple
+        of float (min, max), sigma is chosen uniformly at random to lie in the
+        given range.
+
+Returns:
+    PIL Image or Tensor: Gaussian blurred version of the input image.
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classtorchvision__down_1_1transforms_1_1transforms_1_1_gaussian_blur_ace6509c2e4e0c10f3433fb0ec14cf872}\index{torchvision\_down.transforms.transforms.GaussianBlur@{torchvision\_down.transforms.transforms.GaussianBlur}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!torchvision\_down.transforms.transforms.GaussianBlur@{torchvision\_down.transforms.transforms.GaussianBlur}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1transforms_1_1transforms_1_1_gaussian_blur_ace6509c2e4e0c10f3433fb0ec14cf872} 
+torchvision\+\_\+down.\+transforms.\+transforms.\+Gaussian\+Blur.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{kernel\+\_\+size}{, }\item[{}]{sigma}{ = {\ttfamily (0.1,~2.0)}}\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classtorchvision__down_1_1transforms_1_1transforms_1_1_gaussian_blur_aec2b1d239a13156caf0308c5e5d97370}\index{torchvision\_down.transforms.transforms.GaussianBlur@{torchvision\_down.transforms.transforms.GaussianBlur}!\_\_repr\_\_@{\_\_repr\_\_}}
+\index{\_\_repr\_\_@{\_\_repr\_\_}!torchvision\_down.transforms.transforms.GaussianBlur@{torchvision\_down.transforms.transforms.GaussianBlur}}
+\doxysubsubsection{\texorpdfstring{\_\_repr\_\_()}{\_\_repr\_\_()}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1transforms_1_1transforms_1_1_gaussian_blur_aec2b1d239a13156caf0308c5e5d97370} 
+ str torchvision\+\_\+down.\+transforms.\+transforms.\+Gaussian\+Blur.\+\_\+\+\_\+repr\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classtorchvision__down_1_1transforms_1_1transforms_1_1_gaussian_blur_abe5cc91a3bc23dd018ab92b181daf596}\index{torchvision\_down.transforms.transforms.GaussianBlur@{torchvision\_down.transforms.transforms.GaussianBlur}!forward@{forward}}
+\index{forward@{forward}!torchvision\_down.transforms.transforms.GaussianBlur@{torchvision\_down.transforms.transforms.GaussianBlur}}
+\doxysubsubsection{\texorpdfstring{forward()}{forward()}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1transforms_1_1transforms_1_1_gaussian_blur_abe5cc91a3bc23dd018ab92b181daf596} 
+ Tensor torchvision\+\_\+down.\+transforms.\+transforms.\+Gaussian\+Blur.\+forward (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{Tensor}]{img}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Args:
+    img (PIL Image or Tensor): image to be blurred.
+
+Returns:
+    PIL Image or Tensor: Gaussian blurred image
+\end{DoxyVerb}
+ \Hypertarget{classtorchvision__down_1_1transforms_1_1transforms_1_1_gaussian_blur_a36a989076b0d04118d3b7762e2c957cd}\index{torchvision\_down.transforms.transforms.GaussianBlur@{torchvision\_down.transforms.transforms.GaussianBlur}!get\_params@{get\_params}}
+\index{get\_params@{get\_params}!torchvision\_down.transforms.transforms.GaussianBlur@{torchvision\_down.transforms.transforms.GaussianBlur}}
+\doxysubsubsection{\texorpdfstring{get\_params()}{get\_params()}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1transforms_1_1transforms_1_1_gaussian_blur_a36a989076b0d04118d3b7762e2c957cd} 
+ float torchvision\+\_\+down.\+transforms.\+transforms.\+Gaussian\+Blur.\+get\+\_\+params (\begin{DoxyParamCaption}\item[{float}]{sigma\+\_\+min}{, }\item[{float}]{sigma\+\_\+max}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\begin{DoxyVerb}Choose sigma for random gaussian blurring.
+
+Args:
+    sigma_min (float): Minimum standard deviation that can be chosen for blurring kernel.
+    sigma_max (float): Maximum standard deviation that can be chosen for blurring kernel.
+
+Returns:
+    float: Standard deviation to be passed to calculate kernel for gaussian blurring.
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classtorchvision__down_1_1transforms_1_1transforms_1_1_gaussian_blur_add8edac3d3b2e03e71561dd4d2b90eb3}\index{torchvision\_down.transforms.transforms.GaussianBlur@{torchvision\_down.transforms.transforms.GaussianBlur}!kernel\_size@{kernel\_size}}
+\index{kernel\_size@{kernel\_size}!torchvision\_down.transforms.transforms.GaussianBlur@{torchvision\_down.transforms.transforms.GaussianBlur}}
+\doxysubsubsection{\texorpdfstring{kernel\_size}{kernel\_size}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1transforms_1_1transforms_1_1_gaussian_blur_add8edac3d3b2e03e71561dd4d2b90eb3} 
+torchvision\+\_\+down.\+transforms.\+transforms.\+Gaussian\+Blur.\+kernel\+\_\+size = \mbox{\hyperlink{namespacetorchvision__down_1_1transforms_1_1transforms_a846a850c6e655e35dfd8dbfbc09e212c}{\+\_\+setup\+\_\+size}}(kernel\+\_\+size, "{}Kernel size should be a tuple/list of two integers"{})}
+
+\Hypertarget{classtorchvision__down_1_1transforms_1_1transforms_1_1_gaussian_blur_a786db67f1f8f84fab454f8cafd2c267e}\index{torchvision\_down.transforms.transforms.GaussianBlur@{torchvision\_down.transforms.transforms.GaussianBlur}!sigma@{sigma}}
+\index{sigma@{sigma}!torchvision\_down.transforms.transforms.GaussianBlur@{torchvision\_down.transforms.transforms.GaussianBlur}}
+\doxysubsubsection{\texorpdfstring{sigma}{sigma}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1transforms_1_1transforms_1_1_gaussian_blur_a786db67f1f8f84fab454f8cafd2c267e} 
+torchvision\+\_\+down.\+transforms.\+transforms.\+Gaussian\+Blur.\+sigma = sigma}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Cervi\+AI/torchvision\+\_\+down/transforms/\mbox{\hyperlink{transforms_8py}{transforms.\+py}}\end{DoxyCompactItemize}

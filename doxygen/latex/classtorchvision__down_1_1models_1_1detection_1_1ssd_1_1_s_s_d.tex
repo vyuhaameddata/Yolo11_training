@@ -1,0 +1,256 @@
+\doxysection{torchvision\+\_\+down.\+models.\+detection.\+ssd.\+SSD Class Reference}
+\hypertarget{classtorchvision__down_1_1models_1_1detection_1_1ssd_1_1_s_s_d}{}\label{classtorchvision__down_1_1models_1_1detection_1_1ssd_1_1_s_s_d}\index{torchvision\_down.models.detection.ssd.SSD@{torchvision\_down.models.detection.ssd.SSD}}
+Inheritance diagram for torchvision\+\_\+down.\+models.\+detection.\+ssd.\+SSD\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classtorchvision__down_1_1models_1_1detection_1_1ssd_1_1_s_s_d}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1models_1_1detection_1_1ssd_1_1_s_s_d_a06200d8672abd695bce356c1c2ae9241}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, nn.\+Module \mbox{\hyperlink{classtorchvision__down_1_1models_1_1detection_1_1ssd_1_1_s_s_d_a7a82cf5f2c5a1cd331f4f6def54ef7b1}{backbone}}, \mbox{\hyperlink{classtorchvision__down_1_1models_1_1detection_1_1anchor__utils_1_1_default_box_generator}{Default\+Box\+Generator}} \mbox{\hyperlink{classtorchvision__down_1_1models_1_1detection_1_1ssd_1_1_s_s_d_a6dbf01b3c810bf921990613295c751e6}{anchor\+\_\+generator}}, Tuple\mbox{[}int, int\mbox{]} size, int num\+\_\+classes, Optional\mbox{[}List\mbox{[}float\mbox{]}\mbox{]} image\+\_\+mean=None, Optional\mbox{[}List\mbox{[}float\mbox{]}\mbox{]} image\+\_\+std=None, Optional\mbox{[}nn.\+Module\mbox{]} \mbox{\hyperlink{classtorchvision__down_1_1models_1_1detection_1_1ssd_1_1_s_s_d_aefcbf2286681a64efe9e34c827fd49e3}{head}}=None, float \mbox{\hyperlink{classtorchvision__down_1_1models_1_1detection_1_1ssd_1_1_s_s_d_adf271cb7f9b3f1abad80dc6a743109c7}{score\+\_\+thresh}}=0.\+01, float \mbox{\hyperlink{classtorchvision__down_1_1models_1_1detection_1_1ssd_1_1_s_s_d_af1d44d4479d0eb83744359003ab3e7b9}{nms\+\_\+thresh}}=0.\+45, int \mbox{\hyperlink{classtorchvision__down_1_1models_1_1detection_1_1ssd_1_1_s_s_d_ad435676fb7215d8956b037fe710e44c7}{detections\+\_\+per\+\_\+img}}=200, float iou\+\_\+thresh=0.\+5, int \mbox{\hyperlink{classtorchvision__down_1_1models_1_1detection_1_1ssd_1_1_s_s_d_ae9b1810390ee643076d8ccc8582f5aea}{topk\+\_\+candidates}}=400, float positive\+\_\+fraction=0.\+25)
+\item 
+Tuple\mbox{[}Dict\mbox{[}str, Tensor\mbox{]}, List\mbox{[}Dict\mbox{[}str, Tensor\mbox{]}\mbox{]}\mbox{]} \mbox{\hyperlink{classtorchvision__down_1_1models_1_1detection_1_1ssd_1_1_s_s_d_a6e7ecbe70f0858fb21a4132fd262005b}{eager\+\_\+outputs}} (self, Dict\mbox{[}str, Tensor\mbox{]} losses, List\mbox{[}Dict\mbox{[}str, Tensor\mbox{]}\mbox{]} detections)
+\item 
+Dict\mbox{[}str, Tensor\mbox{]} \mbox{\hyperlink{classtorchvision__down_1_1models_1_1detection_1_1ssd_1_1_s_s_d_ad11c0c1c18d5d8bbd623b7ddee7f85a8}{compute\+\_\+loss}} (self, List\mbox{[}Dict\mbox{[}str, Tensor\mbox{]}\mbox{]} targets, Dict\mbox{[}str, Tensor\mbox{]} head\+\_\+outputs, List\mbox{[}Tensor\mbox{]} anchors, List\mbox{[}Tensor\mbox{]} matched\+\_\+idxs)
+\item 
+Tuple\mbox{[}Dict\mbox{[}str, Tensor\mbox{]}, List\mbox{[}Dict\mbox{[}str, Tensor\mbox{]}\mbox{]}\mbox{]} \mbox{\hyperlink{classtorchvision__down_1_1models_1_1detection_1_1ssd_1_1_s_s_d_a38ff6389bdecb58d56be29ab369f04cb}{forward}} (self, List\mbox{[}Tensor\mbox{]} images, Optional\mbox{[}List\mbox{[}Dict\mbox{[}str, Tensor\mbox{]}\mbox{]}\mbox{]} targets=None)
+\item 
+List\mbox{[}Dict\mbox{[}str, Tensor\mbox{]}\mbox{]} \mbox{\hyperlink{classtorchvision__down_1_1models_1_1detection_1_1ssd_1_1_s_s_d_aa0846a134617e6bb9c10bc41db8c5852}{postprocess\+\_\+detections}} (self, Dict\mbox{[}str, Tensor\mbox{]} head\+\_\+outputs, List\mbox{[}Tensor\mbox{]} image\+\_\+anchors, List\mbox{[}Tuple\mbox{[}int, int\mbox{]}\mbox{]} image\+\_\+shapes)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1models_1_1detection_1_1ssd_1_1_s_s_d_a7a82cf5f2c5a1cd331f4f6def54ef7b1}{backbone}} = backbone
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1models_1_1detection_1_1ssd_1_1_s_s_d_a6dbf01b3c810bf921990613295c751e6}{anchor\+\_\+generator}} = anchor\+\_\+generator
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1models_1_1detection_1_1ssd_1_1_s_s_d_ad299a47c59204027d2a4abff09287bf2}{box\+\_\+coder}} = det\+\_\+utils.\+Box\+Coder(weights=(10.\+0, 10.\+0, 5.\+0, 5.\+0))
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1models_1_1detection_1_1ssd_1_1_s_s_d_aefcbf2286681a64efe9e34c827fd49e3}{head}} = head
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1models_1_1detection_1_1ssd_1_1_s_s_d_a65576cb9f3ccfb417764c6f1b00132ee}{proposal\+\_\+matcher}} = det\+\_\+utils.\+SSDMatcher(iou\+\_\+thresh)
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1models_1_1detection_1_1ssd_1_1_s_s_d_af6c2332ce40521b9680efd3b41c50b53}{transform}}
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1models_1_1detection_1_1ssd_1_1_s_s_d_adf271cb7f9b3f1abad80dc6a743109c7}{score\+\_\+thresh}} = score\+\_\+thresh
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1models_1_1detection_1_1ssd_1_1_s_s_d_af1d44d4479d0eb83744359003ab3e7b9}{nms\+\_\+thresh}} = nms\+\_\+thresh
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1models_1_1detection_1_1ssd_1_1_s_s_d_ad435676fb7215d8956b037fe710e44c7}{detections\+\_\+per\+\_\+img}} = detections\+\_\+per\+\_\+img
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1models_1_1detection_1_1ssd_1_1_s_s_d_ae9b1810390ee643076d8ccc8582f5aea}{topk\+\_\+candidates}} = topk\+\_\+candidates
+\item 
+tuple \mbox{\hyperlink{classtorchvision__down_1_1models_1_1detection_1_1ssd_1_1_s_s_d_aa41ae13a9d17aa886113267185b84310}{neg\+\_\+to\+\_\+pos\+\_\+ratio}} = (1.\+0 -\/ positive\+\_\+fraction) / positive\+\_\+fraction
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1models_1_1detection_1_1ssd_1_1_s_s_d_a90065804d6585eb5e6170beceeeb1643}{training}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{classtorchvision__down_1_1models_1_1detection_1_1ssd_1_1_s_s_d_a1cd60fb8f38a1a341e37c4af4bfb6020}{\+\_\+has\+\_\+warned}} = False
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+dict \mbox{\hyperlink{classtorchvision__down_1_1models_1_1detection_1_1ssd_1_1_s_s_d_a06cc82d5fae30653909ad6317ff37df4}{\+\_\+\+\_\+annotations\+\_\+\+\_\+}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}Implements SSD architecture from `"SSD: Single Shot MultiBox Detector" <https://arxiv.org/abs/1512.02325>`_.
+
+The input to the model is expected to be a list of tensors, each of shape [C, H, W], one for each
+image, and should be in 0-1 range. Different images can have different sizes but they will be resized
+to a fixed size before passing it to the backbone.
+
+The behavior of the model changes depending if it is in training or evaluation mode.
+
+During training, the model expects both the input tensors, as well as a targets (list of dictionary),
+containing:
+    - boxes (``FloatTensor[N, 4]``): the ground-truth boxes in ``[x1, y1, x2, y2]`` format, with
+      ``0 <= x1 < x2 <= W`` and ``0 <= y1 < y2 <= H``.
+    - labels (Int64Tensor[N]): the class label for each ground-truth box
+
+The model returns a Dict[Tensor] during training, containing the classification and regression
+losses.
+
+During inference, the model requires only the input tensors, and returns the post-processed
+predictions as a List[Dict[Tensor]], one for each input image. The fields of the Dict are as
+follows, where ``N`` is the number of detections:
+
+    - boxes (``FloatTensor[N, 4]``): the predicted boxes in ``[x1, y1, x2, y2]`` format, with
+      ``0 <= x1 < x2 <= W`` and ``0 <= y1 < y2 <= H``.
+    - labels (Int64Tensor[N]): the predicted labels for each detection
+    - scores (Tensor[N]): the scores for each detection
+
+Args:
+    backbone (nn.Module): the network used to compute the features for the model.
+        It should contain an out_channels attribute with the list of the output channels of
+        each feature map. The backbone should return a single Tensor or an OrderedDict[Tensor].
+    anchor_generator (DefaultBoxGenerator): module that generates the default boxes for a
+        set of feature maps.
+    size (Tuple[int, int]): the width and height to which images will be rescaled before feeding them
+        to the backbone.
+    num_classes (int): number of output classes of the model (including the background).
+    image_mean (Tuple[float, float, float]): mean values used for input normalization.
+        They are generally the mean values of the dataset on which the backbone has been trained
+        on
+    image_std (Tuple[float, float, float]): std values used for input normalization.
+        They are generally the std values of the dataset on which the backbone has been trained on
+    head (nn.Module, optional): Module run on top of the backbone features. Defaults to a module containing
+        a classification and regression module.
+    score_thresh (float): Score threshold used for postprocessing the detections.
+    nms_thresh (float): NMS threshold used for postprocessing the detections.
+    detections_per_img (int): Number of best detections to keep after NMS.
+    iou_thresh (float): minimum IoU between the anchor and the GT box so that they can be
+        considered as positive during training.
+    topk_candidates (int): Number of best detections to keep before NMS.
+    positive_fraction (float): a number between 0 and 1 which indicates the proportion of positive
+        proposals used during the training of the classification head. It is used to estimate the negative to
+        positive ratio.
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classtorchvision__down_1_1models_1_1detection_1_1ssd_1_1_s_s_d_a06200d8672abd695bce356c1c2ae9241}\index{torchvision\_down.models.detection.ssd.SSD@{torchvision\_down.models.detection.ssd.SSD}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!torchvision\_down.models.detection.ssd.SSD@{torchvision\_down.models.detection.ssd.SSD}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1models_1_1detection_1_1ssd_1_1_s_s_d_a06200d8672abd695bce356c1c2ae9241} 
+torchvision\+\_\+down.\+models.\+detection.\+ssd.\+SSD.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{nn.\+Module}]{backbone}{, }\item[{\mbox{\hyperlink{classtorchvision__down_1_1models_1_1detection_1_1anchor__utils_1_1_default_box_generator}{Default\+Box\+Generator}}}]{anchor\+\_\+generator}{, }\item[{Tuple\mbox{[}int, int\mbox{]}}]{size}{, }\item[{int}]{num\+\_\+classes}{, }\item[{Optional\mbox{[}List\mbox{[}float\mbox{]}\mbox{]} }]{image\+\_\+mean}{ = {\ttfamily None}, }\item[{Optional\mbox{[}List\mbox{[}float\mbox{]}\mbox{]} }]{image\+\_\+std}{ = {\ttfamily None}, }\item[{Optional\mbox{[}nn.\+Module\mbox{]} }]{head}{ = {\ttfamily None}, }\item[{float }]{score\+\_\+thresh}{ = {\ttfamily 0.01}, }\item[{float }]{nms\+\_\+thresh}{ = {\ttfamily 0.45}, }\item[{int }]{detections\+\_\+per\+\_\+img}{ = {\ttfamily 200}, }\item[{float }]{iou\+\_\+thresh}{ = {\ttfamily 0.5}, }\item[{int }]{topk\+\_\+candidates}{ = {\ttfamily 400}, }\item[{float }]{positive\+\_\+fraction}{ = {\ttfamily 0.25}}\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classtorchvision__down_1_1models_1_1detection_1_1ssd_1_1_s_s_d_ad11c0c1c18d5d8bbd623b7ddee7f85a8}\index{torchvision\_down.models.detection.ssd.SSD@{torchvision\_down.models.detection.ssd.SSD}!compute\_loss@{compute\_loss}}
+\index{compute\_loss@{compute\_loss}!torchvision\_down.models.detection.ssd.SSD@{torchvision\_down.models.detection.ssd.SSD}}
+\doxysubsubsection{\texorpdfstring{compute\_loss()}{compute\_loss()}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1models_1_1detection_1_1ssd_1_1_s_s_d_ad11c0c1c18d5d8bbd623b7ddee7f85a8} 
+ Dict\mbox{[}str, Tensor\mbox{]} torchvision\+\_\+down.\+models.\+detection.\+ssd.\+SSD.\+compute\+\_\+loss (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{List\mbox{[}Dict\mbox{[}str, Tensor\mbox{]}\mbox{]}}]{targets}{, }\item[{Dict\mbox{[}str, Tensor\mbox{]}}]{head\+\_\+outputs}{, }\item[{List\mbox{[}Tensor\mbox{]}}]{anchors}{, }\item[{List\mbox{[}Tensor\mbox{]}}]{matched\+\_\+idxs}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classtorchvision__down_1_1models_1_1detection_1_1ssd_1_1_s_s_d_a6e7ecbe70f0858fb21a4132fd262005b}\index{torchvision\_down.models.detection.ssd.SSD@{torchvision\_down.models.detection.ssd.SSD}!eager\_outputs@{eager\_outputs}}
+\index{eager\_outputs@{eager\_outputs}!torchvision\_down.models.detection.ssd.SSD@{torchvision\_down.models.detection.ssd.SSD}}
+\doxysubsubsection{\texorpdfstring{eager\_outputs()}{eager\_outputs()}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1models_1_1detection_1_1ssd_1_1_s_s_d_a6e7ecbe70f0858fb21a4132fd262005b} 
+ Tuple\mbox{[}Dict\mbox{[}str, Tensor\mbox{]}, List\mbox{[}Dict\mbox{[}str, Tensor\mbox{]}\mbox{]}\mbox{]} torchvision\+\_\+down.\+models.\+detection.\+ssd.\+SSD.\+eager\+\_\+outputs (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{Dict\mbox{[}str, Tensor\mbox{]}}]{losses}{, }\item[{List\mbox{[}Dict\mbox{[}str, Tensor\mbox{]}\mbox{]}     }]{detections}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classtorchvision__down_1_1models_1_1detection_1_1ssd_1_1_s_s_d_a38ff6389bdecb58d56be29ab369f04cb}\index{torchvision\_down.models.detection.ssd.SSD@{torchvision\_down.models.detection.ssd.SSD}!forward@{forward}}
+\index{forward@{forward}!torchvision\_down.models.detection.ssd.SSD@{torchvision\_down.models.detection.ssd.SSD}}
+\doxysubsubsection{\texorpdfstring{forward()}{forward()}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1models_1_1detection_1_1ssd_1_1_s_s_d_a38ff6389bdecb58d56be29ab369f04cb} 
+ Tuple\mbox{[}Dict\mbox{[}str, Tensor\mbox{]}, List\mbox{[}Dict\mbox{[}str, Tensor\mbox{]}\mbox{]}\mbox{]} torchvision\+\_\+down.\+models.\+detection.\+ssd.\+SSD.\+forward (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{List\mbox{[}Tensor\mbox{]}}]{images}{, }\item[{Optional\mbox{[}List\mbox{[}Dict\mbox{[}str, Tensor\mbox{]}\mbox{]}\mbox{]} }]{targets}{ = {\ttfamily None}}\end{DoxyParamCaption})}
+
+\Hypertarget{classtorchvision__down_1_1models_1_1detection_1_1ssd_1_1_s_s_d_aa0846a134617e6bb9c10bc41db8c5852}\index{torchvision\_down.models.detection.ssd.SSD@{torchvision\_down.models.detection.ssd.SSD}!postprocess\_detections@{postprocess\_detections}}
+\index{postprocess\_detections@{postprocess\_detections}!torchvision\_down.models.detection.ssd.SSD@{torchvision\_down.models.detection.ssd.SSD}}
+\doxysubsubsection{\texorpdfstring{postprocess\_detections()}{postprocess\_detections()}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1models_1_1detection_1_1ssd_1_1_s_s_d_aa0846a134617e6bb9c10bc41db8c5852} 
+ List\mbox{[}Dict\mbox{[}str, Tensor\mbox{]}\mbox{]} torchvision\+\_\+down.\+models.\+detection.\+ssd.\+SSD.\+postprocess\+\_\+detections (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{Dict\mbox{[}str, Tensor\mbox{]}}]{head\+\_\+outputs}{, }\item[{List\mbox{[}Tensor\mbox{]}}]{image\+\_\+anchors}{, }\item[{List\mbox{[}Tuple\mbox{[}int, int\mbox{]}\mbox{]}     }]{image\+\_\+shapes}{}\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classtorchvision__down_1_1models_1_1detection_1_1ssd_1_1_s_s_d_a06cc82d5fae30653909ad6317ff37df4}\index{torchvision\_down.models.detection.ssd.SSD@{torchvision\_down.models.detection.ssd.SSD}!\_\_annotations\_\_@{\_\_annotations\_\_}}
+\index{\_\_annotations\_\_@{\_\_annotations\_\_}!torchvision\_down.models.detection.ssd.SSD@{torchvision\_down.models.detection.ssd.SSD}}
+\doxysubsubsection{\texorpdfstring{\_\_annotations\_\_}{\_\_annotations\_\_}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1models_1_1detection_1_1ssd_1_1_s_s_d_a06cc82d5fae30653909ad6317ff37df4} 
+dict torchvision\+\_\+down.\+models.\+detection.\+ssd.\+SSD.\+\_\+\+\_\+annotations\+\_\+\+\_\+\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}box\_coder"{}}:\ det\_utils.BoxCoder,}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}proposal\_matcher"{}}:\ det\_utils.Matcher,}
+\DoxyCodeLine{\ \ \ \ \}}
+
+\end{DoxyCode}
+\Hypertarget{classtorchvision__down_1_1models_1_1detection_1_1ssd_1_1_s_s_d_a1cd60fb8f38a1a341e37c4af4bfb6020}\index{torchvision\_down.models.detection.ssd.SSD@{torchvision\_down.models.detection.ssd.SSD}!\_has\_warned@{\_has\_warned}}
+\index{\_has\_warned@{\_has\_warned}!torchvision\_down.models.detection.ssd.SSD@{torchvision\_down.models.detection.ssd.SSD}}
+\doxysubsubsection{\texorpdfstring{\_has\_warned}{\_has\_warned}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1models_1_1detection_1_1ssd_1_1_s_s_d_a1cd60fb8f38a1a341e37c4af4bfb6020} 
+bool torchvision\+\_\+down.\+models.\+detection.\+ssd.\+SSD.\+\_\+has\+\_\+warned = False\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classtorchvision__down_1_1models_1_1detection_1_1ssd_1_1_s_s_d_a6dbf01b3c810bf921990613295c751e6}\index{torchvision\_down.models.detection.ssd.SSD@{torchvision\_down.models.detection.ssd.SSD}!anchor\_generator@{anchor\_generator}}
+\index{anchor\_generator@{anchor\_generator}!torchvision\_down.models.detection.ssd.SSD@{torchvision\_down.models.detection.ssd.SSD}}
+\doxysubsubsection{\texorpdfstring{anchor\_generator}{anchor\_generator}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1models_1_1detection_1_1ssd_1_1_s_s_d_a6dbf01b3c810bf921990613295c751e6} 
+torchvision\+\_\+down.\+models.\+detection.\+ssd.\+SSD.\+anchor\+\_\+generator = anchor\+\_\+generator}
+
+\Hypertarget{classtorchvision__down_1_1models_1_1detection_1_1ssd_1_1_s_s_d_a7a82cf5f2c5a1cd331f4f6def54ef7b1}\index{torchvision\_down.models.detection.ssd.SSD@{torchvision\_down.models.detection.ssd.SSD}!backbone@{backbone}}
+\index{backbone@{backbone}!torchvision\_down.models.detection.ssd.SSD@{torchvision\_down.models.detection.ssd.SSD}}
+\doxysubsubsection{\texorpdfstring{backbone}{backbone}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1models_1_1detection_1_1ssd_1_1_s_s_d_a7a82cf5f2c5a1cd331f4f6def54ef7b1} 
+torchvision\+\_\+down.\+models.\+detection.\+ssd.\+SSD.\+backbone = backbone}
+
+\Hypertarget{classtorchvision__down_1_1models_1_1detection_1_1ssd_1_1_s_s_d_ad299a47c59204027d2a4abff09287bf2}\index{torchvision\_down.models.detection.ssd.SSD@{torchvision\_down.models.detection.ssd.SSD}!box\_coder@{box\_coder}}
+\index{box\_coder@{box\_coder}!torchvision\_down.models.detection.ssd.SSD@{torchvision\_down.models.detection.ssd.SSD}}
+\doxysubsubsection{\texorpdfstring{box\_coder}{box\_coder}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1models_1_1detection_1_1ssd_1_1_s_s_d_ad299a47c59204027d2a4abff09287bf2} 
+torchvision\+\_\+down.\+models.\+detection.\+ssd.\+SSD.\+box\+\_\+coder = det\+\_\+utils.\+Box\+Coder(weights=(10.\+0, 10.\+0, 5.\+0, 5.\+0))}
+
+\Hypertarget{classtorchvision__down_1_1models_1_1detection_1_1ssd_1_1_s_s_d_ad435676fb7215d8956b037fe710e44c7}\index{torchvision\_down.models.detection.ssd.SSD@{torchvision\_down.models.detection.ssd.SSD}!detections\_per\_img@{detections\_per\_img}}
+\index{detections\_per\_img@{detections\_per\_img}!torchvision\_down.models.detection.ssd.SSD@{torchvision\_down.models.detection.ssd.SSD}}
+\doxysubsubsection{\texorpdfstring{detections\_per\_img}{detections\_per\_img}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1models_1_1detection_1_1ssd_1_1_s_s_d_ad435676fb7215d8956b037fe710e44c7} 
+torchvision\+\_\+down.\+models.\+detection.\+ssd.\+SSD.\+detections\+\_\+per\+\_\+img = detections\+\_\+per\+\_\+img}
+
+\Hypertarget{classtorchvision__down_1_1models_1_1detection_1_1ssd_1_1_s_s_d_aefcbf2286681a64efe9e34c827fd49e3}\index{torchvision\_down.models.detection.ssd.SSD@{torchvision\_down.models.detection.ssd.SSD}!head@{head}}
+\index{head@{head}!torchvision\_down.models.detection.ssd.SSD@{torchvision\_down.models.detection.ssd.SSD}}
+\doxysubsubsection{\texorpdfstring{head}{head}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1models_1_1detection_1_1ssd_1_1_s_s_d_aefcbf2286681a64efe9e34c827fd49e3} 
+torchvision\+\_\+down.\+models.\+detection.\+ssd.\+SSD.\+head = head}
+
+\Hypertarget{classtorchvision__down_1_1models_1_1detection_1_1ssd_1_1_s_s_d_aa41ae13a9d17aa886113267185b84310}\index{torchvision\_down.models.detection.ssd.SSD@{torchvision\_down.models.detection.ssd.SSD}!neg\_to\_pos\_ratio@{neg\_to\_pos\_ratio}}
+\index{neg\_to\_pos\_ratio@{neg\_to\_pos\_ratio}!torchvision\_down.models.detection.ssd.SSD@{torchvision\_down.models.detection.ssd.SSD}}
+\doxysubsubsection{\texorpdfstring{neg\_to\_pos\_ratio}{neg\_to\_pos\_ratio}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1models_1_1detection_1_1ssd_1_1_s_s_d_aa41ae13a9d17aa886113267185b84310} 
+tuple torchvision\+\_\+down.\+models.\+detection.\+ssd.\+SSD.\+neg\+\_\+to\+\_\+pos\+\_\+ratio = (1.\+0 -\/ positive\+\_\+fraction) / positive\+\_\+fraction}
+
+\Hypertarget{classtorchvision__down_1_1models_1_1detection_1_1ssd_1_1_s_s_d_af1d44d4479d0eb83744359003ab3e7b9}\index{torchvision\_down.models.detection.ssd.SSD@{torchvision\_down.models.detection.ssd.SSD}!nms\_thresh@{nms\_thresh}}
+\index{nms\_thresh@{nms\_thresh}!torchvision\_down.models.detection.ssd.SSD@{torchvision\_down.models.detection.ssd.SSD}}
+\doxysubsubsection{\texorpdfstring{nms\_thresh}{nms\_thresh}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1models_1_1detection_1_1ssd_1_1_s_s_d_af1d44d4479d0eb83744359003ab3e7b9} 
+torchvision\+\_\+down.\+models.\+detection.\+ssd.\+SSD.\+nms\+\_\+thresh = nms\+\_\+thresh}
+
+\Hypertarget{classtorchvision__down_1_1models_1_1detection_1_1ssd_1_1_s_s_d_a65576cb9f3ccfb417764c6f1b00132ee}\index{torchvision\_down.models.detection.ssd.SSD@{torchvision\_down.models.detection.ssd.SSD}!proposal\_matcher@{proposal\_matcher}}
+\index{proposal\_matcher@{proposal\_matcher}!torchvision\_down.models.detection.ssd.SSD@{torchvision\_down.models.detection.ssd.SSD}}
+\doxysubsubsection{\texorpdfstring{proposal\_matcher}{proposal\_matcher}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1models_1_1detection_1_1ssd_1_1_s_s_d_a65576cb9f3ccfb417764c6f1b00132ee} 
+torchvision\+\_\+down.\+models.\+detection.\+ssd.\+SSD.\+proposal\+\_\+matcher = det\+\_\+utils.\+SSDMatcher(iou\+\_\+thresh)}
+
+\Hypertarget{classtorchvision__down_1_1models_1_1detection_1_1ssd_1_1_s_s_d_adf271cb7f9b3f1abad80dc6a743109c7}\index{torchvision\_down.models.detection.ssd.SSD@{torchvision\_down.models.detection.ssd.SSD}!score\_thresh@{score\_thresh}}
+\index{score\_thresh@{score\_thresh}!torchvision\_down.models.detection.ssd.SSD@{torchvision\_down.models.detection.ssd.SSD}}
+\doxysubsubsection{\texorpdfstring{score\_thresh}{score\_thresh}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1models_1_1detection_1_1ssd_1_1_s_s_d_adf271cb7f9b3f1abad80dc6a743109c7} 
+torchvision\+\_\+down.\+models.\+detection.\+ssd.\+SSD.\+score\+\_\+thresh = score\+\_\+thresh}
+
+\Hypertarget{classtorchvision__down_1_1models_1_1detection_1_1ssd_1_1_s_s_d_ae9b1810390ee643076d8ccc8582f5aea}\index{torchvision\_down.models.detection.ssd.SSD@{torchvision\_down.models.detection.ssd.SSD}!topk\_candidates@{topk\_candidates}}
+\index{topk\_candidates@{topk\_candidates}!torchvision\_down.models.detection.ssd.SSD@{torchvision\_down.models.detection.ssd.SSD}}
+\doxysubsubsection{\texorpdfstring{topk\_candidates}{topk\_candidates}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1models_1_1detection_1_1ssd_1_1_s_s_d_ae9b1810390ee643076d8ccc8582f5aea} 
+torchvision\+\_\+down.\+models.\+detection.\+ssd.\+SSD.\+topk\+\_\+candidates = topk\+\_\+candidates}
+
+\Hypertarget{classtorchvision__down_1_1models_1_1detection_1_1ssd_1_1_s_s_d_a90065804d6585eb5e6170beceeeb1643}\index{torchvision\_down.models.detection.ssd.SSD@{torchvision\_down.models.detection.ssd.SSD}!training@{training}}
+\index{training@{training}!torchvision\_down.models.detection.ssd.SSD@{torchvision\_down.models.detection.ssd.SSD}}
+\doxysubsubsection{\texorpdfstring{training}{training}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1models_1_1detection_1_1ssd_1_1_s_s_d_a90065804d6585eb5e6170beceeeb1643} 
+torchvision\+\_\+down.\+models.\+detection.\+ssd.\+SSD.\+training}
+
+\Hypertarget{classtorchvision__down_1_1models_1_1detection_1_1ssd_1_1_s_s_d_af6c2332ce40521b9680efd3b41c50b53}\index{torchvision\_down.models.detection.ssd.SSD@{torchvision\_down.models.detection.ssd.SSD}!transform@{transform}}
+\index{transform@{transform}!torchvision\_down.models.detection.ssd.SSD@{torchvision\_down.models.detection.ssd.SSD}}
+\doxysubsubsection{\texorpdfstring{transform}{transform}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1models_1_1detection_1_1ssd_1_1_s_s_d_af6c2332ce40521b9680efd3b41c50b53} 
+torchvision\+\_\+down.\+models.\+detection.\+ssd.\+SSD.\+transform}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \ GeneralizedRCNNTransform(}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ min(size),\ max(size),\ image\_mean,\ image\_std,\ size\_divisible=1,\ fixed\_size=size}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ )}
+
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Cervi\+AI/torchvision\+\_\+down/models/detection/\mbox{\hyperlink{ssd_8py}{ssd.\+py}}\end{DoxyCompactItemize}

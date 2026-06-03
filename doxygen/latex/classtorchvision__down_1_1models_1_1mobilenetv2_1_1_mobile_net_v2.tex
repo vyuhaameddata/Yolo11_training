@@ -1,0 +1,103 @@
+\doxysection{torchvision\+\_\+down.\+models.\+mobilenetv2.\+Mobile\+Net\+V2 Class Reference}
+\hypertarget{classtorchvision__down_1_1models_1_1mobilenetv2_1_1_mobile_net_v2}{}\label{classtorchvision__down_1_1models_1_1mobilenetv2_1_1_mobile_net_v2}\index{torchvision\_down.models.mobilenetv2.MobileNetV2@{torchvision\_down.models.mobilenetv2.MobileNetV2}}
+Inheritance diagram for torchvision\+\_\+down.\+models.\+mobilenetv2.\+Mobile\+Net\+V2\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{classtorchvision__down_1_1models_1_1mobilenetv2_1_1_mobile_net_v2}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+None \mbox{\hyperlink{classtorchvision__down_1_1models_1_1mobilenetv2_1_1_mobile_net_v2_a9e86da4ddebb76dc0a83648e53cc82c9}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, int num\+\_\+classes=1000, float width\+\_\+mult=1.\+0, Optional\mbox{[}List\mbox{[}List\mbox{[}int\mbox{]}\mbox{]}\mbox{]} inverted\+\_\+residual\+\_\+setting=None, int round\+\_\+nearest=8, Optional\mbox{[}Callable\mbox{[}..., nn.\+Module\mbox{]}\mbox{]} block=None, Optional\mbox{[}Callable\mbox{[}..., nn.\+Module\mbox{]}\mbox{]} norm\+\_\+layer=None, float dropout=0.\+2)
+\item 
+Tensor \mbox{\hyperlink{classtorchvision__down_1_1models_1_1mobilenetv2_1_1_mobile_net_v2_a47dda19635d587140a21ab554363d9c8}{forward}} (self, Tensor x)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1models_1_1mobilenetv2_1_1_mobile_net_v2_ad14342626609be2601e04d837979ccec}{last\+\_\+channel}} = \+\_\+make\+\_\+divisible(last\+\_\+channel \texorpdfstring{$\ast$}{*} max(1.\+0, width\+\_\+mult), round\+\_\+nearest)
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1models_1_1mobilenetv2_1_1_mobile_net_v2_a96d112714a5a029c633918918b0720ee}{features}} = nn.\+Sequential(\texorpdfstring{$\ast$}{*}features)
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1models_1_1mobilenetv2_1_1_mobile_net_v2_a27e54e0c08930b31aa2b925f03c439aa}{classifier}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+Tensor \mbox{\hyperlink{classtorchvision__down_1_1models_1_1mobilenetv2_1_1_mobile_net_v2_a4d6c96492a73b44f0b3f9770fb5608ed}{\+\_\+forward\+\_\+impl}} (self, Tensor x)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classtorchvision__down_1_1models_1_1mobilenetv2_1_1_mobile_net_v2_a9e86da4ddebb76dc0a83648e53cc82c9}\index{torchvision\_down.models.mobilenetv2.MobileNetV2@{torchvision\_down.models.mobilenetv2.MobileNetV2}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!torchvision\_down.models.mobilenetv2.MobileNetV2@{torchvision\_down.models.mobilenetv2.MobileNetV2}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1models_1_1mobilenetv2_1_1_mobile_net_v2_a9e86da4ddebb76dc0a83648e53cc82c9} 
+ None torchvision\+\_\+down.\+models.\+mobilenetv2.\+Mobile\+Net\+V2.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{int }]{num\+\_\+classes}{ = {\ttfamily 1000}, }\item[{float }]{width\+\_\+mult}{ = {\ttfamily 1.0}, }\item[{Optional\mbox{[}List\mbox{[}List\mbox{[}int\mbox{]}\mbox{]}\mbox{]} }]{inverted\+\_\+residual\+\_\+setting}{ = {\ttfamily None}, }\item[{int }]{round\+\_\+nearest}{ = {\ttfamily 8}, }\item[{Optional\mbox{[}Callable\mbox{[}..., nn.\+Module\mbox{]}\mbox{]} }]{block}{ = {\ttfamily None}, }\item[{Optional\mbox{[}Callable\mbox{[}..., nn.\+Module\mbox{]}\mbox{]} }]{norm\+\_\+layer}{ = {\ttfamily None}, }\item[{float }]{dropout}{ = {\ttfamily 0.2}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}MobileNet V2 main class
+
+Args:
+    num_classes (int): Number of classes
+    width_mult (float): Width multiplier - adjusts number of channels in each layer by this amount
+    inverted_residual_setting: Network structure
+    round_nearest (int): Round the number of channels in each layer to be a multiple of this number
+    Set to 1 to turn off rounding
+    block: Module specifying inverted residual building block for mobilenet
+    norm_layer: Module specifying the normalization layer to use
+    dropout (float): The droupout probability
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classtorchvision__down_1_1models_1_1mobilenetv2_1_1_mobile_net_v2_a4d6c96492a73b44f0b3f9770fb5608ed}\index{torchvision\_down.models.mobilenetv2.MobileNetV2@{torchvision\_down.models.mobilenetv2.MobileNetV2}!\_forward\_impl@{\_forward\_impl}}
+\index{\_forward\_impl@{\_forward\_impl}!torchvision\_down.models.mobilenetv2.MobileNetV2@{torchvision\_down.models.mobilenetv2.MobileNetV2}}
+\doxysubsubsection{\texorpdfstring{\_forward\_impl()}{\_forward\_impl()}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1models_1_1mobilenetv2_1_1_mobile_net_v2_a4d6c96492a73b44f0b3f9770fb5608ed} 
+ Tensor torchvision\+\_\+down.\+models.\+mobilenetv2.\+Mobile\+Net\+V2.\+\_\+forward\+\_\+impl (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{Tensor}]{x}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classtorchvision__down_1_1models_1_1mobilenetv2_1_1_mobile_net_v2_a47dda19635d587140a21ab554363d9c8}\index{torchvision\_down.models.mobilenetv2.MobileNetV2@{torchvision\_down.models.mobilenetv2.MobileNetV2}!forward@{forward}}
+\index{forward@{forward}!torchvision\_down.models.mobilenetv2.MobileNetV2@{torchvision\_down.models.mobilenetv2.MobileNetV2}}
+\doxysubsubsection{\texorpdfstring{forward()}{forward()}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1models_1_1mobilenetv2_1_1_mobile_net_v2_a47dda19635d587140a21ab554363d9c8} 
+ Tensor torchvision\+\_\+down.\+models.\+mobilenetv2.\+Mobile\+Net\+V2.\+forward (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{Tensor}]{x}{}\end{DoxyParamCaption})}
+
+
+
+Reimplemented in \mbox{\hyperlink{classtorchvision__down_1_1models_1_1quantization_1_1mobilenetv2_1_1_quantizable_mobile_net_v2_a1df96b66b04d5041290c3f8634f592b7}{torchvision\+\_\+down.\+models.\+quantization.\+mobilenetv2.\+Quantizable\+Mobile\+Net\+V2}}.
+
+
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classtorchvision__down_1_1models_1_1mobilenetv2_1_1_mobile_net_v2_a27e54e0c08930b31aa2b925f03c439aa}\index{torchvision\_down.models.mobilenetv2.MobileNetV2@{torchvision\_down.models.mobilenetv2.MobileNetV2}!classifier@{classifier}}
+\index{classifier@{classifier}!torchvision\_down.models.mobilenetv2.MobileNetV2@{torchvision\_down.models.mobilenetv2.MobileNetV2}}
+\doxysubsubsection{\texorpdfstring{classifier}{classifier}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1models_1_1mobilenetv2_1_1_mobile_net_v2_a27e54e0c08930b31aa2b925f03c439aa} 
+torchvision\+\_\+down.\+models.\+mobilenetv2.\+Mobile\+Net\+V2.\+classifier}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \ nn.Sequential(}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ nn.Dropout(p=dropout),}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ nn.Linear(self.last\_channel,\ num\_classes),}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ )}
+
+\end{DoxyCode}
+\Hypertarget{classtorchvision__down_1_1models_1_1mobilenetv2_1_1_mobile_net_v2_a96d112714a5a029c633918918b0720ee}\index{torchvision\_down.models.mobilenetv2.MobileNetV2@{torchvision\_down.models.mobilenetv2.MobileNetV2}!features@{features}}
+\index{features@{features}!torchvision\_down.models.mobilenetv2.MobileNetV2@{torchvision\_down.models.mobilenetv2.MobileNetV2}}
+\doxysubsubsection{\texorpdfstring{features}{features}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1models_1_1mobilenetv2_1_1_mobile_net_v2_a96d112714a5a029c633918918b0720ee} 
+torchvision\+\_\+down.\+models.\+mobilenetv2.\+Mobile\+Net\+V2.\+features = nn.\+Sequential(\texorpdfstring{$\ast$}{*}features)}
+
+\Hypertarget{classtorchvision__down_1_1models_1_1mobilenetv2_1_1_mobile_net_v2_ad14342626609be2601e04d837979ccec}\index{torchvision\_down.models.mobilenetv2.MobileNetV2@{torchvision\_down.models.mobilenetv2.MobileNetV2}!last\_channel@{last\_channel}}
+\index{last\_channel@{last\_channel}!torchvision\_down.models.mobilenetv2.MobileNetV2@{torchvision\_down.models.mobilenetv2.MobileNetV2}}
+\doxysubsubsection{\texorpdfstring{last\_channel}{last\_channel}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1models_1_1mobilenetv2_1_1_mobile_net_v2_ad14342626609be2601e04d837979ccec} 
+torchvision\+\_\+down.\+models.\+mobilenetv2.\+Mobile\+Net\+V2.\+last\+\_\+channel = \+\_\+make\+\_\+divisible(last\+\_\+channel \texorpdfstring{$\ast$}{*} max(1.\+0, width\+\_\+mult), round\+\_\+nearest)}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Cervi\+AI/torchvision\+\_\+down/models/\mbox{\hyperlink{mobilenetv2_8py}{mobilenetv2.\+py}}\end{DoxyCompactItemize}

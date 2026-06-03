@@ -1,0 +1,47 @@
+\doxysection{torchvision\+\_\+down.\+ops.\+feature\+\_\+pyramid\+\_\+network.\+Extra\+FPNBlock Class Reference}
+\hypertarget{classtorchvision__down_1_1ops_1_1feature__pyramid__network_1_1_extra_f_p_n_block}{}\label{classtorchvision__down_1_1ops_1_1feature__pyramid__network_1_1_extra_f_p_n_block}\index{torchvision\_down.ops.feature\_pyramid\_network.ExtraFPNBlock@{torchvision\_down.ops.feature\_pyramid\_network.ExtraFPNBlock}}
+Inheritance diagram for torchvision\+\_\+down.\+ops.\+feature\+\_\+pyramid\+\_\+network.\+Extra\+FPNBlock\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.115869cm]{classtorchvision__down_1_1ops_1_1feature__pyramid__network_1_1_extra_f_p_n_block}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+Tuple\mbox{[}List\mbox{[}Tensor\mbox{]}, List\mbox{[}str\mbox{]}\mbox{]} \mbox{\hyperlink{classtorchvision__down_1_1ops_1_1feature__pyramid__network_1_1_extra_f_p_n_block_a6293e8d7f6271e32a1328a1bbb90098f}{forward}} (self, List\mbox{[}Tensor\mbox{]} results, List\mbox{[}Tensor\mbox{]} x, List\mbox{[}str\mbox{]} names)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}Base class for the extra block in the FPN.
+
+Args:
+    results (List[Tensor]): the result of the FPN
+    x (List[Tensor]): the original feature maps
+    names (List[str]): the names for each one of the
+        original feature maps
+
+Returns:
+    results (List[Tensor]): the extended set of results
+        of the FPN
+    names (List[str]): the extended set of names for the results
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classtorchvision__down_1_1ops_1_1feature__pyramid__network_1_1_extra_f_p_n_block_a6293e8d7f6271e32a1328a1bbb90098f}\index{torchvision\_down.ops.feature\_pyramid\_network.ExtraFPNBlock@{torchvision\_down.ops.feature\_pyramid\_network.ExtraFPNBlock}!forward@{forward}}
+\index{forward@{forward}!torchvision\_down.ops.feature\_pyramid\_network.ExtraFPNBlock@{torchvision\_down.ops.feature\_pyramid\_network.ExtraFPNBlock}}
+\doxysubsubsection{\texorpdfstring{forward()}{forward()}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1ops_1_1feature__pyramid__network_1_1_extra_f_p_n_block_a6293e8d7f6271e32a1328a1bbb90098f} 
+ Tuple\mbox{[}List\mbox{[}Tensor\mbox{]}, List\mbox{[}str\mbox{]}\mbox{]} torchvision\+\_\+down.\+ops.\+feature\+\_\+pyramid\+\_\+network.\+Extra\+FPNBlock.\+forward (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{List\mbox{[}Tensor\mbox{]}}]{results}{, }\item[{List\mbox{[}Tensor\mbox{]}}]{x}{, }\item[{List\mbox{[}str\mbox{]}}]{names}{}\end{DoxyParamCaption})}
+
+
+
+Reimplemented in \mbox{\hyperlink{classtorchvision__down_1_1ops_1_1feature__pyramid__network_1_1_last_level_max_pool_af9e4ba8a472508fd4c73f27ba4c162b8}{torchvision\+\_\+down.\+ops.\+feature\+\_\+pyramid\+\_\+network.\+Last\+Level\+Max\+Pool}}, and \mbox{\hyperlink{classtorchvision__down_1_1ops_1_1feature__pyramid__network_1_1_last_level_p6_p7_a4c5944ae711eda06fd01199c0a9ccb24}{torchvision\+\_\+down.\+ops.\+feature\+\_\+pyramid\+\_\+network.\+Last\+Level\+P6\+P7}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Cervi\+AI/torchvision\+\_\+down/ops/\mbox{\hyperlink{feature__pyramid__network_8py}{feature\+\_\+pyramid\+\_\+network.\+py}}\end{DoxyCompactItemize}

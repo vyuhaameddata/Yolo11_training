@@ -1,0 +1,105 @@
+\doxysection{torchvision\+\_\+down.\+models.\+inception Namespace Reference}
+\hypertarget{namespacetorchvision__down_1_1models_1_1inception}{}\label{namespacetorchvision__down_1_1models_1_1inception}\index{torchvision\_down.models.inception@{torchvision\_down.models.inception}}
+\doxysubsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classtorchvision__down_1_1models_1_1inception_1_1_basic_conv2d}{Basic\+Conv2d}}
+\item 
+class \mbox{\hyperlink{classtorchvision__down_1_1models_1_1inception_1_1_inception3}{Inception3}}
+\item 
+class \mbox{\hyperlink{classtorchvision__down_1_1models_1_1inception_1_1_inception_a}{InceptionA}}
+\item 
+class \mbox{\hyperlink{classtorchvision__down_1_1models_1_1inception_1_1_inception_aux}{Inception\+Aux}}
+\item 
+class \mbox{\hyperlink{classtorchvision__down_1_1models_1_1inception_1_1_inception_b}{InceptionB}}
+\item 
+class \mbox{\hyperlink{classtorchvision__down_1_1models_1_1inception_1_1_inception_c}{InceptionC}}
+\item 
+class \mbox{\hyperlink{classtorchvision__down_1_1models_1_1inception_1_1_inception_d}{InceptionD}}
+\item 
+class \mbox{\hyperlink{classtorchvision__down_1_1models_1_1inception_1_1_inception_e}{InceptionE}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1models_1_1inception_1_1_inception3}{Inception3}} \mbox{\hyperlink{namespacetorchvision__down_1_1models_1_1inception_ac9fb9334e99729e975e227805c3d8c5a}{inception\+\_\+v3}} (bool pretrained=False, bool progress=True, \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}Any kwargs)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+list \mbox{\hyperlink{namespacetorchvision__down_1_1models_1_1inception_a656337df1d6841adfe33e2d6be7e5537}{\+\_\+\+\_\+all\+\_\+\+\_\+}} = \mbox{[}"{}Inception3"{}, "{}inception\+\_\+v3"{}, "{}Inception\+Outputs"{}, "{}\+\_\+\+Inception\+Outputs"{}\mbox{]}
+\item 
+dict \mbox{\hyperlink{namespacetorchvision__down_1_1models_1_1inception_ae4e9ac82e7363a4e6aefca81d5c833fa}{model\+\_\+urls}}
+\item 
+\mbox{\hyperlink{namespacetorchvision__down_1_1models_1_1inception_a3227f0fc73283263bb2e351014afe293}{Inception\+Outputs}} = namedtuple("{}Inception\+Outputs"{}, \mbox{[}"{}logits"{}, "{}aux\+\_\+logits"{}\mbox{]})
+\item 
+\mbox{\hyperlink{namespacetorchvision__down_1_1models_1_1inception_a101e9fc62ba657d94593b900e1210645}{\+\_\+\+\_\+annotations\+\_\+\+\_\+}}
+\item 
+\mbox{\hyperlink{namespacetorchvision__down_1_1models_1_1inception_a1fa2fed989ba7aec865b4331e1289fdb}{\+\_\+\+Inception\+Outputs}} = \mbox{\hyperlink{namespacetorchvision__down_1_1models_1_1inception_a3227f0fc73283263bb2e351014afe293}{Inception\+Outputs}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{namespacetorchvision__down_1_1models_1_1inception_ac9fb9334e99729e975e227805c3d8c5a}\index{torchvision\_down.models.inception@{torchvision\_down.models.inception}!inception\_v3@{inception\_v3}}
+\index{inception\_v3@{inception\_v3}!torchvision\_down.models.inception@{torchvision\_down.models.inception}}
+\doxysubsubsection{\texorpdfstring{inception\_v3()}{inception\_v3()}}
+{\footnotesize\ttfamily \label{namespacetorchvision__down_1_1models_1_1inception_ac9fb9334e99729e975e227805c3d8c5a} 
+ \mbox{\hyperlink{classtorchvision__down_1_1models_1_1inception_1_1_inception3}{Inception3}} torchvision\+\_\+down.\+models.\+inception.\+inception\+\_\+v3 (\begin{DoxyParamCaption}\item[{bool }]{pretrained}{ = {\ttfamily False}, }\item[{bool }]{progress}{ = {\ttfamily True}, }\item[{\texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}Any}]{kwargs}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Inception v3 model architecture from
+`"Rethinking the Inception Architecture for Computer Vision" <http://arxiv.org/abs/1512.00567>`_.
+The required minimum input size of the model is 75x75.
+
+.. note::
+**Important**: In contrast to the other models the inception_v3 expects tensors with a size of
+N x 3 x 299 x 299, so ensure your images are sized accordingly.
+
+Args:
+pretrained (bool): If True, returns a model pre-trained on ImageNet
+progress (bool): If True, displays a progress bar of the download to stderr
+aux_logits (bool): If True, add an auxiliary branch that can improve training.
+    Default: *True*
+transform_input (bool): If True, preprocesses the input according to the method with which it
+    was trained on ImageNet. Default: True if ``pretrained=True``, else False.
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Variable Documentation}
+\Hypertarget{namespacetorchvision__down_1_1models_1_1inception_a656337df1d6841adfe33e2d6be7e5537}\index{torchvision\_down.models.inception@{torchvision\_down.models.inception}!\_\_all\_\_@{\_\_all\_\_}}
+\index{\_\_all\_\_@{\_\_all\_\_}!torchvision\_down.models.inception@{torchvision\_down.models.inception}}
+\doxysubsubsection{\texorpdfstring{\_\_all\_\_}{\_\_all\_\_}}
+{\footnotesize\ttfamily \label{namespacetorchvision__down_1_1models_1_1inception_a656337df1d6841adfe33e2d6be7e5537} 
+list torchvision\+\_\+down.\+models.\+inception.\+\_\+\+\_\+all\+\_\+\+\_\+ = \mbox{[}"{}Inception3"{}, "{}inception\+\_\+v3"{}, "{}Inception\+Outputs"{}, "{}\+\_\+\+Inception\+Outputs"{}\mbox{]}\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{namespacetorchvision__down_1_1models_1_1inception_a101e9fc62ba657d94593b900e1210645}\index{torchvision\_down.models.inception@{torchvision\_down.models.inception}!\_\_annotations\_\_@{\_\_annotations\_\_}}
+\index{\_\_annotations\_\_@{\_\_annotations\_\_}!torchvision\_down.models.inception@{torchvision\_down.models.inception}}
+\doxysubsubsection{\texorpdfstring{\_\_annotations\_\_}{\_\_annotations\_\_}}
+{\footnotesize\ttfamily \label{namespacetorchvision__down_1_1models_1_1inception_a101e9fc62ba657d94593b900e1210645} 
+torchvision\+\_\+down.\+models.\+inception.\+\_\+\+\_\+annotations\+\_\+\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{namespacetorchvision__down_1_1models_1_1inception_a1fa2fed989ba7aec865b4331e1289fdb}\index{torchvision\_down.models.inception@{torchvision\_down.models.inception}!\_InceptionOutputs@{\_InceptionOutputs}}
+\index{\_InceptionOutputs@{\_InceptionOutputs}!torchvision\_down.models.inception@{torchvision\_down.models.inception}}
+\doxysubsubsection{\texorpdfstring{\_InceptionOutputs}{\_InceptionOutputs}}
+{\footnotesize\ttfamily \label{namespacetorchvision__down_1_1models_1_1inception_a1fa2fed989ba7aec865b4331e1289fdb} 
+torchvision\+\_\+down.\+models.\+inception.\+\_\+\+Inception\+Outputs = \mbox{\hyperlink{namespacetorchvision__down_1_1models_1_1inception_a3227f0fc73283263bb2e351014afe293}{Inception\+Outputs}}\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{namespacetorchvision__down_1_1models_1_1inception_a3227f0fc73283263bb2e351014afe293}\index{torchvision\_down.models.inception@{torchvision\_down.models.inception}!InceptionOutputs@{InceptionOutputs}}
+\index{InceptionOutputs@{InceptionOutputs}!torchvision\_down.models.inception@{torchvision\_down.models.inception}}
+\doxysubsubsection{\texorpdfstring{InceptionOutputs}{InceptionOutputs}}
+{\footnotesize\ttfamily \label{namespacetorchvision__down_1_1models_1_1inception_a3227f0fc73283263bb2e351014afe293} 
+torchvision\+\_\+down.\+models.\+inception.\+Inception\+Outputs = namedtuple("{}Inception\+Outputs"{}, \mbox{[}"{}logits"{}, "{}aux\+\_\+logits"{}\mbox{]})}
+
+\Hypertarget{namespacetorchvision__down_1_1models_1_1inception_ae4e9ac82e7363a4e6aefca81d5c833fa}\index{torchvision\_down.models.inception@{torchvision\_down.models.inception}!model\_urls@{model\_urls}}
+\index{model\_urls@{model\_urls}!torchvision\_down.models.inception@{torchvision\_down.models.inception}}
+\doxysubsubsection{\texorpdfstring{model\_urls}{model\_urls}}
+{\footnotesize\ttfamily \label{namespacetorchvision__down_1_1models_1_1inception_ae4e9ac82e7363a4e6aefca81d5c833fa} 
+dict torchvision\+\_\+down.\+models.\+inception.\+model\+\_\+urls}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ =\ \ \{}
+\DoxyCodeLine{00002\ \ \ \ \ \textcolor{comment}{\#\ Inception\ v3\ ported\ from\ TensorFlow}}
+\DoxyCodeLine{00003\ \ \ \ \ \textcolor{stringliteral}{"{}inception\_v3\_google"{}}:\ \textcolor{stringliteral}{"{}https://download.pytorch.org/models/inception\_v3\_google-\/0cc3c7bd.pth"{}},}
+\DoxyCodeLine{00004\ \}}
+
+\end{DoxyCode}

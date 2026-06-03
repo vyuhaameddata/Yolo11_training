@@ -1,0 +1,111 @@
+\doxysection{torchvision\+\_\+down.\+datasets.\+lsun.\+LSUNClass Class Reference}
+\hypertarget{classtorchvision__down_1_1datasets_1_1lsun_1_1_l_s_u_n_class}{}\label{classtorchvision__down_1_1datasets_1_1lsun_1_1_l_s_u_n_class}\index{torchvision\_down.datasets.lsun.LSUNClass@{torchvision\_down.datasets.lsun.LSUNClass}}
+Inheritance diagram for torchvision\+\_\+down.\+datasets.\+lsun.\+LSUNClass\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{classtorchvision__down_1_1datasets_1_1lsun_1_1_l_s_u_n_class}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+None \mbox{\hyperlink{classtorchvision__down_1_1datasets_1_1lsun_1_1_l_s_u_n_class_a00fe04b304ea6b00abf09fef9aaa2b30}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, str \mbox{\hyperlink{classtorchvision__down_1_1datasets_1_1vision_1_1_vision_dataset_af52cf192ec18d3421afe216bf9b881d6}{root}}, Optional\mbox{[}Callable\mbox{]} \mbox{\hyperlink{classtorchvision__down_1_1datasets_1_1vision_1_1_vision_dataset_ade1b4bca7d4f998bc3061e0400769de8}{transform}}=None, Optional\mbox{[}Callable\mbox{]} \mbox{\hyperlink{classtorchvision__down_1_1datasets_1_1vision_1_1_vision_dataset_a01f7d1bb7220bbfa4234ef140d021cc6}{target\+\_\+transform}}=None)
+\item 
+Tuple\mbox{[}Any, Any\mbox{]} \mbox{\hyperlink{classtorchvision__down_1_1datasets_1_1lsun_1_1_l_s_u_n_class_aaf40d311e7b859071a3918dc9f1a81f9}{\+\_\+\+\_\+getitem\+\_\+\+\_\+}} (self, int index)
+\item 
+int \mbox{\hyperlink{classtorchvision__down_1_1datasets_1_1lsun_1_1_l_s_u_n_class_a72426262bcd550937e3541659e8fc3e0}{\+\_\+\+\_\+len\+\_\+\+\_\+}} (self)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{classtorchvision__down_1_1datasets_1_1vision_1_1_vision_dataset}{torchvision\+\_\+down.\+datasets.\+vision.\+Vision\+Dataset}}}
+\begin{DoxyCompactItemize}
+\item 
+None \mbox{\hyperlink{classtorchvision__down_1_1datasets_1_1vision_1_1_vision_dataset_a4fe475e0f96592c04a6d97bcd953aca8}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, str \mbox{\hyperlink{classtorchvision__down_1_1datasets_1_1vision_1_1_vision_dataset_af52cf192ec18d3421afe216bf9b881d6}{root}}, Optional\mbox{[}Callable\mbox{]} \mbox{\hyperlink{classtorchvision__down_1_1datasets_1_1vision_1_1_vision_dataset_a7963601da311133da990b66cb616cc83}{transforms}}=None, Optional\mbox{[}Callable\mbox{]} \mbox{\hyperlink{classtorchvision__down_1_1datasets_1_1vision_1_1_vision_dataset_ade1b4bca7d4f998bc3061e0400769de8}{transform}}=None, Optional\mbox{[}Callable\mbox{]} \mbox{\hyperlink{classtorchvision__down_1_1datasets_1_1vision_1_1_vision_dataset_a01f7d1bb7220bbfa4234ef140d021cc6}{target\+\_\+transform}}=None)
+\item 
+Any \mbox{\hyperlink{classtorchvision__down_1_1datasets_1_1vision_1_1_vision_dataset_aa96f56b711d61433df225154b9837daa}{\+\_\+\+\_\+getitem\+\_\+\+\_\+}} (self, int index)
+\item 
+int \mbox{\hyperlink{classtorchvision__down_1_1datasets_1_1vision_1_1_vision_dataset_abb1561c74b600d1d424cfa010f009a92}{\+\_\+\+\_\+len\+\_\+\+\_\+}} (self)
+\item 
+str \mbox{\hyperlink{classtorchvision__down_1_1datasets_1_1vision_1_1_vision_dataset_a40d28a5833742c49a70872e87edb1ef9}{\+\_\+\+\_\+repr\+\_\+\+\_\+}} (self)
+\item 
+str \mbox{\hyperlink{classtorchvision__down_1_1datasets_1_1vision_1_1_vision_dataset_a99093b3e6dd75e1ed1c49eed7ac2df00}{extra\+\_\+repr}} (self)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1datasets_1_1lsun_1_1_l_s_u_n_class_a45f92735f6a82a55994dee05ec5756af}{env}} = lmdb.\+open(\mbox{\hyperlink{classtorchvision__down_1_1datasets_1_1vision_1_1_vision_dataset_af52cf192ec18d3421afe216bf9b881d6}{root}}, max\+\_\+readers=1, readonly=True, lock=False, readahead=False, meminit=False)
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1datasets_1_1lsun_1_1_l_s_u_n_class_a90ce51b9d223a5fb118825afd05be169}{length}} = txn.\+stat()\mbox{[}"{}entries"{}\mbox{]}
+\item 
+list \mbox{\hyperlink{classtorchvision__down_1_1datasets_1_1lsun_1_1_l_s_u_n_class_af1bff41b82766543461281a242894612}{keys}} = pickle.\+load(open(cache\+\_\+file, "{}rb"{}))
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes inherited from \mbox{\hyperlink{classtorchvision__down_1_1datasets_1_1vision_1_1_vision_dataset}{torchvision\+\_\+down.\+datasets.\+vision.\+Vision\+Dataset}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1datasets_1_1vision_1_1_vision_dataset_af52cf192ec18d3421afe216bf9b881d6}{root}} = root
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1datasets_1_1vision_1_1_vision_dataset_ade1b4bca7d4f998bc3061e0400769de8}{transform}} = transform
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1datasets_1_1vision_1_1_vision_dataset_a01f7d1bb7220bbfa4234ef140d021cc6}{target\+\_\+transform}} = target\+\_\+transform
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1datasets_1_1vision_1_1_vision_dataset_a7963601da311133da990b66cb616cc83}{transforms}} = transforms
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Additional Inherited Members}
+\doxysubsection*{Protected Member Functions inherited from \mbox{\hyperlink{classtorchvision__down_1_1datasets_1_1vision_1_1_vision_dataset}{torchvision\+\_\+down.\+datasets.\+vision.\+Vision\+Dataset}}}
+\begin{DoxyCompactItemize}
+\item 
+List\mbox{[}str\mbox{]} \mbox{\hyperlink{classtorchvision__down_1_1datasets_1_1vision_1_1_vision_dataset_a9f1a9fad1ab8a0b963cdc3522a271689}{\+\_\+format\+\_\+transform\+\_\+repr}} (self, Callable \mbox{\hyperlink{classtorchvision__down_1_1datasets_1_1vision_1_1_vision_dataset_ade1b4bca7d4f998bc3061e0400769de8}{transform}}, str head)
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Protected Attributes inherited from \mbox{\hyperlink{classtorchvision__down_1_1datasets_1_1vision_1_1_vision_dataset}{torchvision\+\_\+down.\+datasets.\+vision.\+Vision\+Dataset}}}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{classtorchvision__down_1_1datasets_1_1vision_1_1_vision_dataset_a2eb99b64ccfc03378be35d0ff88e71b4}{\+\_\+repr\+\_\+indent}} = 4
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classtorchvision__down_1_1datasets_1_1lsun_1_1_l_s_u_n_class_a00fe04b304ea6b00abf09fef9aaa2b30}\index{torchvision\_down.datasets.lsun.LSUNClass@{torchvision\_down.datasets.lsun.LSUNClass}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!torchvision\_down.datasets.lsun.LSUNClass@{torchvision\_down.datasets.lsun.LSUNClass}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1datasets_1_1lsun_1_1_l_s_u_n_class_a00fe04b304ea6b00abf09fef9aaa2b30} 
+ None torchvision\+\_\+down.\+datasets.\+lsun.\+LSUNClass.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{str}]{root}{, }\item[{Optional\mbox{[}Callable\mbox{]} }]{transform}{ = {\ttfamily None}, }\item[{Optional\mbox{[}Callable\mbox{]} }]{target\+\_\+transform}{ = {\ttfamily None}}\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classtorchvision__down_1_1datasets_1_1lsun_1_1_l_s_u_n_class_aaf40d311e7b859071a3918dc9f1a81f9}\index{torchvision\_down.datasets.lsun.LSUNClass@{torchvision\_down.datasets.lsun.LSUNClass}!\_\_getitem\_\_@{\_\_getitem\_\_}}
+\index{\_\_getitem\_\_@{\_\_getitem\_\_}!torchvision\_down.datasets.lsun.LSUNClass@{torchvision\_down.datasets.lsun.LSUNClass}}
+\doxysubsubsection{\texorpdfstring{\_\_getitem\_\_()}{\_\_getitem\_\_()}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1datasets_1_1lsun_1_1_l_s_u_n_class_aaf40d311e7b859071a3918dc9f1a81f9} 
+ Tuple\mbox{[}Any, Any\mbox{]} torchvision\+\_\+down.\+datasets.\+lsun.\+LSUNClass.\+\_\+\+\_\+getitem\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{int}]{index}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classtorchvision__down_1_1datasets_1_1lsun_1_1_l_s_u_n_class_a72426262bcd550937e3541659e8fc3e0}\index{torchvision\_down.datasets.lsun.LSUNClass@{torchvision\_down.datasets.lsun.LSUNClass}!\_\_len\_\_@{\_\_len\_\_}}
+\index{\_\_len\_\_@{\_\_len\_\_}!torchvision\_down.datasets.lsun.LSUNClass@{torchvision\_down.datasets.lsun.LSUNClass}}
+\doxysubsubsection{\texorpdfstring{\_\_len\_\_()}{\_\_len\_\_()}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1datasets_1_1lsun_1_1_l_s_u_n_class_a72426262bcd550937e3541659e8fc3e0} 
+ int torchvision\+\_\+down.\+datasets.\+lsun.\+LSUNClass.\+\_\+\+\_\+len\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classtorchvision__down_1_1datasets_1_1lsun_1_1_l_s_u_n_class_a45f92735f6a82a55994dee05ec5756af}\index{torchvision\_down.datasets.lsun.LSUNClass@{torchvision\_down.datasets.lsun.LSUNClass}!env@{env}}
+\index{env@{env}!torchvision\_down.datasets.lsun.LSUNClass@{torchvision\_down.datasets.lsun.LSUNClass}}
+\doxysubsubsection{\texorpdfstring{env}{env}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1datasets_1_1lsun_1_1_l_s_u_n_class_a45f92735f6a82a55994dee05ec5756af} 
+torchvision\+\_\+down.\+datasets.\+lsun.\+LSUNClass.\+env = lmdb.\+open(\mbox{\hyperlink{classtorchvision__down_1_1datasets_1_1vision_1_1_vision_dataset_af52cf192ec18d3421afe216bf9b881d6}{root}}, max\+\_\+readers=1, readonly=True, lock=False, readahead=False, meminit=False)}
+
+\Hypertarget{classtorchvision__down_1_1datasets_1_1lsun_1_1_l_s_u_n_class_af1bff41b82766543461281a242894612}\index{torchvision\_down.datasets.lsun.LSUNClass@{torchvision\_down.datasets.lsun.LSUNClass}!keys@{keys}}
+\index{keys@{keys}!torchvision\_down.datasets.lsun.LSUNClass@{torchvision\_down.datasets.lsun.LSUNClass}}
+\doxysubsubsection{\texorpdfstring{keys}{keys}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1datasets_1_1lsun_1_1_l_s_u_n_class_af1bff41b82766543461281a242894612} 
+torchvision\+\_\+down.\+datasets.\+lsun.\+LSUNClass.\+keys = pickle.\+load(open(cache\+\_\+file, "{}rb"{}))}
+
+\Hypertarget{classtorchvision__down_1_1datasets_1_1lsun_1_1_l_s_u_n_class_a90ce51b9d223a5fb118825afd05be169}\index{torchvision\_down.datasets.lsun.LSUNClass@{torchvision\_down.datasets.lsun.LSUNClass}!length@{length}}
+\index{length@{length}!torchvision\_down.datasets.lsun.LSUNClass@{torchvision\_down.datasets.lsun.LSUNClass}}
+\doxysubsubsection{\texorpdfstring{length}{length}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1datasets_1_1lsun_1_1_l_s_u_n_class_a90ce51b9d223a5fb118825afd05be169} 
+torchvision\+\_\+down.\+datasets.\+lsun.\+LSUNClass.\+length = txn.\+stat()\mbox{[}"{}entries"{}\mbox{]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Cervi\+AI/torchvision\+\_\+down/datasets/\mbox{\hyperlink{lsun_8py}{lsun.\+py}}\end{DoxyCompactItemize}

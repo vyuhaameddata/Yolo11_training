@@ -1,0 +1,282 @@
+\doxysection{torchvision\+\_\+down.\+models.\+detection.\+fcos.\+FCOS Class Reference}
+\hypertarget{classtorchvision__down_1_1models_1_1detection_1_1fcos_1_1_f_c_o_s}{}\label{classtorchvision__down_1_1models_1_1detection_1_1fcos_1_1_f_c_o_s}\index{torchvision\_down.models.detection.fcos.FCOS@{torchvision\_down.models.detection.fcos.FCOS}}
+Inheritance diagram for torchvision\+\_\+down.\+models.\+detection.\+fcos.\+FCOS\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classtorchvision__down_1_1models_1_1detection_1_1fcos_1_1_f_c_o_s}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1models_1_1detection_1_1fcos_1_1_f_c_o_s_a250394a80d47aececc3dce1d70b7cbee}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, nn.\+Module \mbox{\hyperlink{classtorchvision__down_1_1models_1_1detection_1_1fcos_1_1_f_c_o_s_ae8c2e976f90aacff6d934ed25b291279}{backbone}}, int num\+\_\+classes, int min\+\_\+size=800, int max\+\_\+size=1333, Optional\mbox{[}List\mbox{[}float\mbox{]}\mbox{]} image\+\_\+mean=None, Optional\mbox{[}List\mbox{[}float\mbox{]}\mbox{]} image\+\_\+std=None, Optional\mbox{[}\mbox{\hyperlink{classtorchvision__down_1_1models_1_1detection_1_1anchor__utils_1_1_anchor_generator}{Anchor\+Generator}}\mbox{]} \mbox{\hyperlink{classtorchvision__down_1_1models_1_1detection_1_1fcos_1_1_f_c_o_s_a59cb08041710f8e7250e6d0f06797fdb}{anchor\+\_\+generator}}=None, Optional\mbox{[}nn.\+Module\mbox{]} \mbox{\hyperlink{classtorchvision__down_1_1models_1_1detection_1_1fcos_1_1_f_c_o_s_a0851d916e295d0d95ac8fbe10b845cc5}{head}}=None, float \mbox{\hyperlink{classtorchvision__down_1_1models_1_1detection_1_1fcos_1_1_f_c_o_s_a28ff5b20cf6eba755bfa0a95eac994c3}{center\+\_\+sampling\+\_\+radius}}=1.\+5, float \mbox{\hyperlink{classtorchvision__down_1_1models_1_1detection_1_1fcos_1_1_f_c_o_s_afeb46be7d17d508c8ec12c908189a58d}{score\+\_\+thresh}}=0.\+2, float \mbox{\hyperlink{classtorchvision__down_1_1models_1_1detection_1_1fcos_1_1_f_c_o_s_a58242a5286408890c27636927e40edf4}{nms\+\_\+thresh}}=0.\+6, int \mbox{\hyperlink{classtorchvision__down_1_1models_1_1detection_1_1fcos_1_1_f_c_o_s_ad2b01ee27f2e991b9930cd2fcf66fc02}{detections\+\_\+per\+\_\+img}}=100, int \mbox{\hyperlink{classtorchvision__down_1_1models_1_1detection_1_1fcos_1_1_f_c_o_s_a1baeb3e57338fdafd9ef7641e5be30de}{topk\+\_\+candidates}}=1000)
+\item 
+Tuple\mbox{[}Dict\mbox{[}str, Tensor\mbox{]}, List\mbox{[}Dict\mbox{[}str, Tensor\mbox{]}\mbox{]}\mbox{]} \mbox{\hyperlink{classtorchvision__down_1_1models_1_1detection_1_1fcos_1_1_f_c_o_s_a269eab31fb3df9c3c4183c5b60777c32}{eager\+\_\+outputs}} (self, Dict\mbox{[}str, Tensor\mbox{]} losses, List\mbox{[}Dict\mbox{[}str, Tensor\mbox{]}\mbox{]} detections)
+\item 
+Dict\mbox{[}str, Tensor\mbox{]} \mbox{\hyperlink{classtorchvision__down_1_1models_1_1detection_1_1fcos_1_1_f_c_o_s_ad13f6e6ae824be533a8f37e8a4800cbd}{compute\+\_\+loss}} (self, List\mbox{[}Dict\mbox{[}str, Tensor\mbox{]}\mbox{]} targets, Dict\mbox{[}str, Tensor\mbox{]} head\+\_\+outputs, List\mbox{[}Tensor\mbox{]} anchors, List\mbox{[}int\mbox{]} num\+\_\+anchors\+\_\+per\+\_\+level)
+\item 
+List\mbox{[}Dict\mbox{[}str, Tensor\mbox{]}\mbox{]} \mbox{\hyperlink{classtorchvision__down_1_1models_1_1detection_1_1fcos_1_1_f_c_o_s_ab8e0d62a9b07a075bbec87159bbcd63e}{postprocess\+\_\+detections}} (self, Dict\mbox{[}str, List\mbox{[}Tensor\mbox{]}\mbox{]} head\+\_\+outputs, List\mbox{[}List\mbox{[}Tensor\mbox{]}\mbox{]} anchors, List\mbox{[}Tuple\mbox{[}int, int\mbox{]}\mbox{]} image\+\_\+shapes)
+\item 
+Tuple\mbox{[}Dict\mbox{[}str, Tensor\mbox{]}, List\mbox{[}Dict\mbox{[}str, Tensor\mbox{]}\mbox{]}\mbox{]} \mbox{\hyperlink{classtorchvision__down_1_1models_1_1detection_1_1fcos_1_1_f_c_o_s_a88ec2dc9ede274a400e53f50f3c6aff0}{forward}} (self, List\mbox{[}Tensor\mbox{]} images, Optional\mbox{[}List\mbox{[}Dict\mbox{[}str, Tensor\mbox{]}\mbox{]}\mbox{]} targets=None)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1models_1_1detection_1_1fcos_1_1_f_c_o_s_ae8c2e976f90aacff6d934ed25b291279}{backbone}} = backbone
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1models_1_1detection_1_1fcos_1_1_f_c_o_s_a59cb08041710f8e7250e6d0f06797fdb}{anchor\+\_\+generator}} = anchor\+\_\+generator
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1models_1_1detection_1_1fcos_1_1_f_c_o_s_a0851d916e295d0d95ac8fbe10b845cc5}{head}} = head
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1models_1_1detection_1_1fcos_1_1_f_c_o_s_a8164d6ef5da054260748ca577eff723c}{box\+\_\+coder}} = det\+\_\+utils.\+Box\+Linear\+Coder(normalize\+\_\+by\+\_\+size=True)
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1models_1_1detection_1_1fcos_1_1_f_c_o_s_ab651bd9d416a048db9a4739ab7cc7694}{transform}} = \mbox{\hyperlink{classtorchvision__down_1_1models_1_1detection_1_1transform_1_1_generalized_r_c_n_n_transform}{Generalized\+RCNNTransform}}(min\+\_\+size, max\+\_\+size, image\+\_\+mean, image\+\_\+std)
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1models_1_1detection_1_1fcos_1_1_f_c_o_s_a28ff5b20cf6eba755bfa0a95eac994c3}{center\+\_\+sampling\+\_\+radius}} = center\+\_\+sampling\+\_\+radius
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1models_1_1detection_1_1fcos_1_1_f_c_o_s_afeb46be7d17d508c8ec12c908189a58d}{score\+\_\+thresh}} = score\+\_\+thresh
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1models_1_1detection_1_1fcos_1_1_f_c_o_s_a58242a5286408890c27636927e40edf4}{nms\+\_\+thresh}} = nms\+\_\+thresh
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1models_1_1detection_1_1fcos_1_1_f_c_o_s_ad2b01ee27f2e991b9930cd2fcf66fc02}{detections\+\_\+per\+\_\+img}} = detections\+\_\+per\+\_\+img
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1models_1_1detection_1_1fcos_1_1_f_c_o_s_a1baeb3e57338fdafd9ef7641e5be30de}{topk\+\_\+candidates}} = topk\+\_\+candidates
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1models_1_1detection_1_1fcos_1_1_f_c_o_s_acd9848fb57fe3eea116e86249e6553ce}{training}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{classtorchvision__down_1_1models_1_1detection_1_1fcos_1_1_f_c_o_s_a613086a85929ed454f518895ee20380d}{\+\_\+has\+\_\+warned}} = False
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+dict \mbox{\hyperlink{classtorchvision__down_1_1models_1_1detection_1_1fcos_1_1_f_c_o_s_acce7d8c1e873a00f27524c095bae6560}{\+\_\+\+\_\+annotations\+\_\+\+\_\+}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}Implements FCOS.
+
+The input to the model is expected to be a list of tensors, each of shape [C, H, W], one for each
+image, and should be in 0-1 range. Different images can have different sizes.
+
+The behavior of the model changes depending if it is in training or evaluation mode.
+
+During training, the model expects both the input tensors, as well as a targets (list of dictionary),
+containing:
+    - boxes (``FloatTensor[N, 4]``): the ground-truth boxes in ``[x1, y1, x2, y2]`` format, with
+      ``0 <= x1 < x2 <= W`` and ``0 <= y1 < y2 <= H``.
+    - labels (Int64Tensor[N]): the class label for each ground-truth box
+
+The model returns a Dict[Tensor] during training, containing the classification, regression
+and centerness losses.
+
+During inference, the model requires only the input tensors, and returns the post-processed
+predictions as a List[Dict[Tensor]], one for each input image. The fields of the Dict are as
+follows:
+    - boxes (``FloatTensor[N, 4]``): the predicted boxes in ``[x1, y1, x2, y2]`` format, with
+      ``0 <= x1 < x2 <= W`` and ``0 <= y1 < y2 <= H``.
+    - labels (Int64Tensor[N]): the predicted labels for each image
+    - scores (Tensor[N]): the scores for each prediction
+
+Args:
+    backbone (nn.Module): the network used to compute the features for the model.
+        It should contain an out_channels attribute, which indicates the number of output
+        channels that each feature map has (and it should be the same for all feature maps).
+        The backbone should return a single Tensor or an OrderedDict[Tensor].
+    num_classes (int): number of output classes of the model (including the background).
+    min_size (int): minimum size of the image to be rescaled before feeding it to the backbone
+    max_size (int): maximum size of the image to be rescaled before feeding it to the backbone
+    image_mean (Tuple[float, float, float]): mean values used for input normalization.
+        They are generally the mean values of the dataset on which the backbone has been trained
+        on
+    image_std (Tuple[float, float, float]): std values used for input normalization.
+        They are generally the std values of the dataset on which the backbone has been trained on
+    anchor_generator (AnchorGenerator): module that generates the anchors for a set of feature
+        maps. For FCOS, only set one anchor for per position of each level, the width and height equal to
+        the stride of feature map, and set aspect ratio = 1.0, so the center of anchor is equivalent to the point
+        in FCOS paper.
+    head (nn.Module): Module run on top of the feature pyramid.
+        Defaults to a module containing a classification and regression module.
+    center_sampling_radius (int): radius of the "center" of a groundtruth box,
+        within which all anchor points are labeled positive.
+    score_thresh (float): Score threshold used for postprocessing the detections.
+    nms_thresh (float): NMS threshold used for postprocessing the detections.
+    detections_per_img (int): Number of best detections to keep after NMS.
+    topk_candidates (int): Number of best detections to keep before NMS.
+
+Example:
+
+    >>> import torch
+    >>> import torchvision
+    >>> from torchvision.models.detection import FCOS
+    >>> from torchvision.models.detection.anchor_utils import AnchorGenerator
+    >>> # load a pre-trained model for classification and return
+    >>> # only the features
+    >>> backbone = torchvision.models.mobilenet_v2(pretrained=True).features
+    >>> # FCOS needs to know the number of
+    >>> # output channels in a backbone. For mobilenet_v2, it's 1280
+    >>> # so we need to add it here
+    >>> backbone.out_channels = 1280
+    >>>
+    >>> # let's make the network generate 5 x 3 anchors per spatial
+    >>> # location, with 5 different sizes and 3 different aspect
+    >>> # ratios. We have a Tuple[Tuple[int]] because each feature
+    >>> # map could potentially have different sizes and
+    >>> # aspect ratios
+    >>> anchor_generator = AnchorGenerator(
+    >>>     sizes=((8,), (16,), (32,), (64,), (128,)),
+    >>>     aspect_ratios=((1.0,),)
+    >>> )
+    >>>
+    >>> # put the pieces together inside a FCOS model
+    >>> model = FCOS(
+    >>>     backbone,
+    >>>     num_classes=80,
+    >>>     anchor_generator=anchor_generator,
+    >>> )
+    >>> model.eval()
+    >>> x = [torch.rand(3, 300, 400), torch.rand(3, 500, 400)]
+    >>> predictions = model(x)
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classtorchvision__down_1_1models_1_1detection_1_1fcos_1_1_f_c_o_s_a250394a80d47aececc3dce1d70b7cbee}\index{torchvision\_down.models.detection.fcos.FCOS@{torchvision\_down.models.detection.fcos.FCOS}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!torchvision\_down.models.detection.fcos.FCOS@{torchvision\_down.models.detection.fcos.FCOS}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1models_1_1detection_1_1fcos_1_1_f_c_o_s_a250394a80d47aececc3dce1d70b7cbee} 
+torchvision\+\_\+down.\+models.\+detection.\+fcos.\+FCOS.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{nn.\+Module}]{backbone}{, }\item[{int}]{num\+\_\+classes}{, }\item[{int }]{min\+\_\+size}{ = {\ttfamily 800}, }\item[{int }]{max\+\_\+size}{ = {\ttfamily 1333}, }\item[{Optional\mbox{[}List\mbox{[}float\mbox{]}\mbox{]} }]{image\+\_\+mean}{ = {\ttfamily None}, }\item[{Optional\mbox{[}List\mbox{[}float\mbox{]}\mbox{]} }]{image\+\_\+std}{ = {\ttfamily None}, }\item[{Optional\mbox{[}\mbox{\hyperlink{classtorchvision__down_1_1models_1_1detection_1_1anchor__utils_1_1_anchor_generator}{Anchor\+Generator}}\mbox{]} }]{anchor\+\_\+generator}{ = {\ttfamily None}, }\item[{Optional\mbox{[}nn.\+Module\mbox{]} }]{head}{ = {\ttfamily None}, }\item[{float }]{center\+\_\+sampling\+\_\+radius}{ = {\ttfamily 1.5}, }\item[{float }]{score\+\_\+thresh}{ = {\ttfamily 0.2}, }\item[{float }]{nms\+\_\+thresh}{ = {\ttfamily 0.6}, }\item[{int }]{detections\+\_\+per\+\_\+img}{ = {\ttfamily 100}, }\item[{int }]{topk\+\_\+candidates}{ = {\ttfamily 1000}}\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classtorchvision__down_1_1models_1_1detection_1_1fcos_1_1_f_c_o_s_ad13f6e6ae824be533a8f37e8a4800cbd}\index{torchvision\_down.models.detection.fcos.FCOS@{torchvision\_down.models.detection.fcos.FCOS}!compute\_loss@{compute\_loss}}
+\index{compute\_loss@{compute\_loss}!torchvision\_down.models.detection.fcos.FCOS@{torchvision\_down.models.detection.fcos.FCOS}}
+\doxysubsubsection{\texorpdfstring{compute\_loss()}{compute\_loss()}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1models_1_1detection_1_1fcos_1_1_f_c_o_s_ad13f6e6ae824be533a8f37e8a4800cbd} 
+ Dict\mbox{[}str, Tensor\mbox{]} torchvision\+\_\+down.\+models.\+detection.\+fcos.\+FCOS.\+compute\+\_\+loss (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{List\mbox{[}Dict\mbox{[}str, Tensor\mbox{]}\mbox{]}}]{targets}{, }\item[{Dict\mbox{[}str, Tensor\mbox{]}}]{head\+\_\+outputs}{, }\item[{List\mbox{[}Tensor\mbox{]}}]{anchors}{, }\item[{List\mbox{[}int\mbox{]}}]{num\+\_\+anchors\+\_\+per\+\_\+level}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classtorchvision__down_1_1models_1_1detection_1_1fcos_1_1_f_c_o_s_a269eab31fb3df9c3c4183c5b60777c32}\index{torchvision\_down.models.detection.fcos.FCOS@{torchvision\_down.models.detection.fcos.FCOS}!eager\_outputs@{eager\_outputs}}
+\index{eager\_outputs@{eager\_outputs}!torchvision\_down.models.detection.fcos.FCOS@{torchvision\_down.models.detection.fcos.FCOS}}
+\doxysubsubsection{\texorpdfstring{eager\_outputs()}{eager\_outputs()}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1models_1_1detection_1_1fcos_1_1_f_c_o_s_a269eab31fb3df9c3c4183c5b60777c32} 
+ Tuple\mbox{[}Dict\mbox{[}str, Tensor\mbox{]}, List\mbox{[}Dict\mbox{[}str, Tensor\mbox{]}\mbox{]}\mbox{]} torchvision\+\_\+down.\+models.\+detection.\+fcos.\+FCOS.\+eager\+\_\+outputs (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{Dict\mbox{[}str, Tensor\mbox{]}}]{losses}{, }\item[{List\mbox{[}Dict\mbox{[}str, Tensor\mbox{]}\mbox{]}     }]{detections}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classtorchvision__down_1_1models_1_1detection_1_1fcos_1_1_f_c_o_s_a88ec2dc9ede274a400e53f50f3c6aff0}\index{torchvision\_down.models.detection.fcos.FCOS@{torchvision\_down.models.detection.fcos.FCOS}!forward@{forward}}
+\index{forward@{forward}!torchvision\_down.models.detection.fcos.FCOS@{torchvision\_down.models.detection.fcos.FCOS}}
+\doxysubsubsection{\texorpdfstring{forward()}{forward()}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1models_1_1detection_1_1fcos_1_1_f_c_o_s_a88ec2dc9ede274a400e53f50f3c6aff0} 
+ Tuple\mbox{[}Dict\mbox{[}str, Tensor\mbox{]}, List\mbox{[}Dict\mbox{[}str, Tensor\mbox{]}\mbox{]}\mbox{]} torchvision\+\_\+down.\+models.\+detection.\+fcos.\+FCOS.\+forward (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{List\mbox{[}Tensor\mbox{]}}]{images}{, }\item[{Optional\mbox{[}List\mbox{[}Dict\mbox{[}str, Tensor\mbox{]}\mbox{]}\mbox{]} }]{targets}{ = {\ttfamily None}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Args:
+    images (list[Tensor]): images to be processed
+    targets (list[Dict[Tensor]]): ground-truth boxes present in the image (optional)
+
+Returns:
+    result (list[BoxList] or dict[Tensor]): the output from the model.
+        During training, it returns a dict[Tensor] which contains the losses.
+        During testing, it returns list[BoxList] contains additional fields
+        like `scores`, `labels` and `mask` (for Mask R-CNN models).
+\end{DoxyVerb}
+ \Hypertarget{classtorchvision__down_1_1models_1_1detection_1_1fcos_1_1_f_c_o_s_ab8e0d62a9b07a075bbec87159bbcd63e}\index{torchvision\_down.models.detection.fcos.FCOS@{torchvision\_down.models.detection.fcos.FCOS}!postprocess\_detections@{postprocess\_detections}}
+\index{postprocess\_detections@{postprocess\_detections}!torchvision\_down.models.detection.fcos.FCOS@{torchvision\_down.models.detection.fcos.FCOS}}
+\doxysubsubsection{\texorpdfstring{postprocess\_detections()}{postprocess\_detections()}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1models_1_1detection_1_1fcos_1_1_f_c_o_s_ab8e0d62a9b07a075bbec87159bbcd63e} 
+ List\mbox{[}Dict\mbox{[}str, Tensor\mbox{]}\mbox{]} torchvision\+\_\+down.\+models.\+detection.\+fcos.\+FCOS.\+postprocess\+\_\+detections (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{Dict\mbox{[}str, List\mbox{[}Tensor\mbox{]}\mbox{]}}]{head\+\_\+outputs}{, }\item[{List\mbox{[}List\mbox{[}Tensor\mbox{]}\mbox{]}}]{anchors}{, }\item[{List\mbox{[}Tuple\mbox{[}int, int\mbox{]}\mbox{]}     }]{image\+\_\+shapes}{}\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classtorchvision__down_1_1models_1_1detection_1_1fcos_1_1_f_c_o_s_acce7d8c1e873a00f27524c095bae6560}\index{torchvision\_down.models.detection.fcos.FCOS@{torchvision\_down.models.detection.fcos.FCOS}!\_\_annotations\_\_@{\_\_annotations\_\_}}
+\index{\_\_annotations\_\_@{\_\_annotations\_\_}!torchvision\_down.models.detection.fcos.FCOS@{torchvision\_down.models.detection.fcos.FCOS}}
+\doxysubsubsection{\texorpdfstring{\_\_annotations\_\_}{\_\_annotations\_\_}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1models_1_1detection_1_1fcos_1_1_f_c_o_s_acce7d8c1e873a00f27524c095bae6560} 
+dict torchvision\+\_\+down.\+models.\+detection.\+fcos.\+FCOS.\+\_\+\+\_\+annotations\+\_\+\+\_\+\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}box\_coder"{}}:\ det\_utils.BoxLinearCoder,}
+\DoxyCodeLine{\ \ \ \ \}}
+
+\end{DoxyCode}
+\Hypertarget{classtorchvision__down_1_1models_1_1detection_1_1fcos_1_1_f_c_o_s_a613086a85929ed454f518895ee20380d}\index{torchvision\_down.models.detection.fcos.FCOS@{torchvision\_down.models.detection.fcos.FCOS}!\_has\_warned@{\_has\_warned}}
+\index{\_has\_warned@{\_has\_warned}!torchvision\_down.models.detection.fcos.FCOS@{torchvision\_down.models.detection.fcos.FCOS}}
+\doxysubsubsection{\texorpdfstring{\_has\_warned}{\_has\_warned}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1models_1_1detection_1_1fcos_1_1_f_c_o_s_a613086a85929ed454f518895ee20380d} 
+bool torchvision\+\_\+down.\+models.\+detection.\+fcos.\+FCOS.\+\_\+has\+\_\+warned = False\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classtorchvision__down_1_1models_1_1detection_1_1fcos_1_1_f_c_o_s_a59cb08041710f8e7250e6d0f06797fdb}\index{torchvision\_down.models.detection.fcos.FCOS@{torchvision\_down.models.detection.fcos.FCOS}!anchor\_generator@{anchor\_generator}}
+\index{anchor\_generator@{anchor\_generator}!torchvision\_down.models.detection.fcos.FCOS@{torchvision\_down.models.detection.fcos.FCOS}}
+\doxysubsubsection{\texorpdfstring{anchor\_generator}{anchor\_generator}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1models_1_1detection_1_1fcos_1_1_f_c_o_s_a59cb08041710f8e7250e6d0f06797fdb} 
+torchvision\+\_\+down.\+models.\+detection.\+fcos.\+FCOS.\+anchor\+\_\+generator = anchor\+\_\+generator}
+
+\Hypertarget{classtorchvision__down_1_1models_1_1detection_1_1fcos_1_1_f_c_o_s_ae8c2e976f90aacff6d934ed25b291279}\index{torchvision\_down.models.detection.fcos.FCOS@{torchvision\_down.models.detection.fcos.FCOS}!backbone@{backbone}}
+\index{backbone@{backbone}!torchvision\_down.models.detection.fcos.FCOS@{torchvision\_down.models.detection.fcos.FCOS}}
+\doxysubsubsection{\texorpdfstring{backbone}{backbone}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1models_1_1detection_1_1fcos_1_1_f_c_o_s_ae8c2e976f90aacff6d934ed25b291279} 
+torchvision\+\_\+down.\+models.\+detection.\+fcos.\+FCOS.\+backbone = backbone}
+
+\Hypertarget{classtorchvision__down_1_1models_1_1detection_1_1fcos_1_1_f_c_o_s_a8164d6ef5da054260748ca577eff723c}\index{torchvision\_down.models.detection.fcos.FCOS@{torchvision\_down.models.detection.fcos.FCOS}!box\_coder@{box\_coder}}
+\index{box\_coder@{box\_coder}!torchvision\_down.models.detection.fcos.FCOS@{torchvision\_down.models.detection.fcos.FCOS}}
+\doxysubsubsection{\texorpdfstring{box\_coder}{box\_coder}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1models_1_1detection_1_1fcos_1_1_f_c_o_s_a8164d6ef5da054260748ca577eff723c} 
+torchvision\+\_\+down.\+models.\+detection.\+fcos.\+FCOS.\+box\+\_\+coder = det\+\_\+utils.\+Box\+Linear\+Coder(normalize\+\_\+by\+\_\+size=True)}
+
+\Hypertarget{classtorchvision__down_1_1models_1_1detection_1_1fcos_1_1_f_c_o_s_a28ff5b20cf6eba755bfa0a95eac994c3}\index{torchvision\_down.models.detection.fcos.FCOS@{torchvision\_down.models.detection.fcos.FCOS}!center\_sampling\_radius@{center\_sampling\_radius}}
+\index{center\_sampling\_radius@{center\_sampling\_radius}!torchvision\_down.models.detection.fcos.FCOS@{torchvision\_down.models.detection.fcos.FCOS}}
+\doxysubsubsection{\texorpdfstring{center\_sampling\_radius}{center\_sampling\_radius}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1models_1_1detection_1_1fcos_1_1_f_c_o_s_a28ff5b20cf6eba755bfa0a95eac994c3} 
+torchvision\+\_\+down.\+models.\+detection.\+fcos.\+FCOS.\+center\+\_\+sampling\+\_\+radius = center\+\_\+sampling\+\_\+radius}
+
+\Hypertarget{classtorchvision__down_1_1models_1_1detection_1_1fcos_1_1_f_c_o_s_ad2b01ee27f2e991b9930cd2fcf66fc02}\index{torchvision\_down.models.detection.fcos.FCOS@{torchvision\_down.models.detection.fcos.FCOS}!detections\_per\_img@{detections\_per\_img}}
+\index{detections\_per\_img@{detections\_per\_img}!torchvision\_down.models.detection.fcos.FCOS@{torchvision\_down.models.detection.fcos.FCOS}}
+\doxysubsubsection{\texorpdfstring{detections\_per\_img}{detections\_per\_img}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1models_1_1detection_1_1fcos_1_1_f_c_o_s_ad2b01ee27f2e991b9930cd2fcf66fc02} 
+torchvision\+\_\+down.\+models.\+detection.\+fcos.\+FCOS.\+detections\+\_\+per\+\_\+img = detections\+\_\+per\+\_\+img}
+
+\Hypertarget{classtorchvision__down_1_1models_1_1detection_1_1fcos_1_1_f_c_o_s_a0851d916e295d0d95ac8fbe10b845cc5}\index{torchvision\_down.models.detection.fcos.FCOS@{torchvision\_down.models.detection.fcos.FCOS}!head@{head}}
+\index{head@{head}!torchvision\_down.models.detection.fcos.FCOS@{torchvision\_down.models.detection.fcos.FCOS}}
+\doxysubsubsection{\texorpdfstring{head}{head}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1models_1_1detection_1_1fcos_1_1_f_c_o_s_a0851d916e295d0d95ac8fbe10b845cc5} 
+torchvision\+\_\+down.\+models.\+detection.\+fcos.\+FCOS.\+head = head}
+
+\Hypertarget{classtorchvision__down_1_1models_1_1detection_1_1fcos_1_1_f_c_o_s_a58242a5286408890c27636927e40edf4}\index{torchvision\_down.models.detection.fcos.FCOS@{torchvision\_down.models.detection.fcos.FCOS}!nms\_thresh@{nms\_thresh}}
+\index{nms\_thresh@{nms\_thresh}!torchvision\_down.models.detection.fcos.FCOS@{torchvision\_down.models.detection.fcos.FCOS}}
+\doxysubsubsection{\texorpdfstring{nms\_thresh}{nms\_thresh}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1models_1_1detection_1_1fcos_1_1_f_c_o_s_a58242a5286408890c27636927e40edf4} 
+torchvision\+\_\+down.\+models.\+detection.\+fcos.\+FCOS.\+nms\+\_\+thresh = nms\+\_\+thresh}
+
+\Hypertarget{classtorchvision__down_1_1models_1_1detection_1_1fcos_1_1_f_c_o_s_afeb46be7d17d508c8ec12c908189a58d}\index{torchvision\_down.models.detection.fcos.FCOS@{torchvision\_down.models.detection.fcos.FCOS}!score\_thresh@{score\_thresh}}
+\index{score\_thresh@{score\_thresh}!torchvision\_down.models.detection.fcos.FCOS@{torchvision\_down.models.detection.fcos.FCOS}}
+\doxysubsubsection{\texorpdfstring{score\_thresh}{score\_thresh}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1models_1_1detection_1_1fcos_1_1_f_c_o_s_afeb46be7d17d508c8ec12c908189a58d} 
+torchvision\+\_\+down.\+models.\+detection.\+fcos.\+FCOS.\+score\+\_\+thresh = score\+\_\+thresh}
+
+\Hypertarget{classtorchvision__down_1_1models_1_1detection_1_1fcos_1_1_f_c_o_s_a1baeb3e57338fdafd9ef7641e5be30de}\index{torchvision\_down.models.detection.fcos.FCOS@{torchvision\_down.models.detection.fcos.FCOS}!topk\_candidates@{topk\_candidates}}
+\index{topk\_candidates@{topk\_candidates}!torchvision\_down.models.detection.fcos.FCOS@{torchvision\_down.models.detection.fcos.FCOS}}
+\doxysubsubsection{\texorpdfstring{topk\_candidates}{topk\_candidates}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1models_1_1detection_1_1fcos_1_1_f_c_o_s_a1baeb3e57338fdafd9ef7641e5be30de} 
+torchvision\+\_\+down.\+models.\+detection.\+fcos.\+FCOS.\+topk\+\_\+candidates = topk\+\_\+candidates}
+
+\Hypertarget{classtorchvision__down_1_1models_1_1detection_1_1fcos_1_1_f_c_o_s_acd9848fb57fe3eea116e86249e6553ce}\index{torchvision\_down.models.detection.fcos.FCOS@{torchvision\_down.models.detection.fcos.FCOS}!training@{training}}
+\index{training@{training}!torchvision\_down.models.detection.fcos.FCOS@{torchvision\_down.models.detection.fcos.FCOS}}
+\doxysubsubsection{\texorpdfstring{training}{training}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1models_1_1detection_1_1fcos_1_1_f_c_o_s_acd9848fb57fe3eea116e86249e6553ce} 
+torchvision\+\_\+down.\+models.\+detection.\+fcos.\+FCOS.\+training}
+
+\Hypertarget{classtorchvision__down_1_1models_1_1detection_1_1fcos_1_1_f_c_o_s_ab651bd9d416a048db9a4739ab7cc7694}\index{torchvision\_down.models.detection.fcos.FCOS@{torchvision\_down.models.detection.fcos.FCOS}!transform@{transform}}
+\index{transform@{transform}!torchvision\_down.models.detection.fcos.FCOS@{torchvision\_down.models.detection.fcos.FCOS}}
+\doxysubsubsection{\texorpdfstring{transform}{transform}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1models_1_1detection_1_1fcos_1_1_f_c_o_s_ab651bd9d416a048db9a4739ab7cc7694} 
+torchvision\+\_\+down.\+models.\+detection.\+fcos.\+FCOS.\+transform = \mbox{\hyperlink{classtorchvision__down_1_1models_1_1detection_1_1transform_1_1_generalized_r_c_n_n_transform}{Generalized\+RCNNTransform}}(min\+\_\+size, max\+\_\+size, image\+\_\+mean, image\+\_\+std)}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Cervi\+AI/torchvision\+\_\+down/models/detection/\mbox{\hyperlink{fcos_8py}{fcos.\+py}}\end{DoxyCompactItemize}

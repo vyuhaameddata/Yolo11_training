@@ -1,0 +1,91 @@
+\doxysection{torchvision\+\_\+down.\+models.\+densenet.\+Dense\+Net Class Reference}
+\hypertarget{classtorchvision__down_1_1models_1_1densenet_1_1_dense_net}{}\label{classtorchvision__down_1_1models_1_1densenet_1_1_dense_net}\index{torchvision\_down.models.densenet.DenseNet@{torchvision\_down.models.densenet.DenseNet}}
+Inheritance diagram for torchvision\+\_\+down.\+models.\+densenet.\+Dense\+Net\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classtorchvision__down_1_1models_1_1densenet_1_1_dense_net}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+None \mbox{\hyperlink{classtorchvision__down_1_1models_1_1densenet_1_1_dense_net_afff6f054e3f99d772b54e5355ed650b0}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, int growth\+\_\+rate=32, Tuple\mbox{[}int, int, int, int\mbox{]} block\+\_\+config=(6, 12, 24, 16), int num\+\_\+init\+\_\+features=64, int bn\+\_\+size=4, float drop\+\_\+rate=0, int num\+\_\+classes=1000, bool memory\+\_\+efficient=False)
+\item 
+Tensor \mbox{\hyperlink{classtorchvision__down_1_1models_1_1densenet_1_1_dense_net_af3ad70368a289c00c54438e8a0987c9c}{forward}} (self, Tensor x)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1models_1_1densenet_1_1_dense_net_a953b8895e1d66698d3b55624e04be9fd}{features}}
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1models_1_1densenet_1_1_dense_net_ada2ffb39241fb89264e4125ad0a91175}{classifier}} = nn.\+Linear(num\+\_\+features, num\+\_\+classes)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}Densenet-BC model class, based on
+`"Densely Connected Convolutional Networks" <https://arxiv.org/pdf/1608.06993.pdf>`_.
+
+Args:
+    growth_rate (int) - how many filters to add each layer (`k` in paper)
+    block_config (list of 4 ints) - how many layers in each pooling block
+    num_init_features (int) - the number of filters to learn in the first convolution layer
+    bn_size (int) - multiplicative factor for number of bottle neck layers
+      (i.e. bn_size * k features in the bottleneck layer)
+    drop_rate (float) - dropout rate after each dense layer
+    num_classes (int) - number of classification classes
+    memory_efficient (bool) - If True, uses checkpointing. Much more memory efficient,
+      but slower. Default: *False*. See `"paper" <https://arxiv.org/pdf/1707.06990.pdf>`_.
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classtorchvision__down_1_1models_1_1densenet_1_1_dense_net_afff6f054e3f99d772b54e5355ed650b0}\index{torchvision\_down.models.densenet.DenseNet@{torchvision\_down.models.densenet.DenseNet}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!torchvision\_down.models.densenet.DenseNet@{torchvision\_down.models.densenet.DenseNet}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1models_1_1densenet_1_1_dense_net_afff6f054e3f99d772b54e5355ed650b0} 
+ None torchvision\+\_\+down.\+models.\+densenet.\+Dense\+Net.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{int }]{growth\+\_\+rate}{ = {\ttfamily 32}, }\item[{Tuple\mbox{[}int, int, int, int\mbox{]} }]{block\+\_\+config}{ = {\ttfamily (6,~12,~24,~16)}, }\item[{int }]{num\+\_\+init\+\_\+features}{ = {\ttfamily 64}, }\item[{int }]{bn\+\_\+size}{ = {\ttfamily 4}, }\item[{float }]{drop\+\_\+rate}{ = {\ttfamily 0}, }\item[{int }]{num\+\_\+classes}{ = {\ttfamily 1000}, }\item[{bool }]{memory\+\_\+efficient}{ = {\ttfamily False}}\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classtorchvision__down_1_1models_1_1densenet_1_1_dense_net_af3ad70368a289c00c54438e8a0987c9c}\index{torchvision\_down.models.densenet.DenseNet@{torchvision\_down.models.densenet.DenseNet}!forward@{forward}}
+\index{forward@{forward}!torchvision\_down.models.densenet.DenseNet@{torchvision\_down.models.densenet.DenseNet}}
+\doxysubsubsection{\texorpdfstring{forward()}{forward()}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1models_1_1densenet_1_1_dense_net_af3ad70368a289c00c54438e8a0987c9c} 
+ Tensor torchvision\+\_\+down.\+models.\+densenet.\+Dense\+Net.\+forward (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{Tensor}]{x}{}\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classtorchvision__down_1_1models_1_1densenet_1_1_dense_net_ada2ffb39241fb89264e4125ad0a91175}\index{torchvision\_down.models.densenet.DenseNet@{torchvision\_down.models.densenet.DenseNet}!classifier@{classifier}}
+\index{classifier@{classifier}!torchvision\_down.models.densenet.DenseNet@{torchvision\_down.models.densenet.DenseNet}}
+\doxysubsubsection{\texorpdfstring{classifier}{classifier}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1models_1_1densenet_1_1_dense_net_ada2ffb39241fb89264e4125ad0a91175} 
+torchvision\+\_\+down.\+models.\+densenet.\+Dense\+Net.\+classifier = nn.\+Linear(num\+\_\+features, num\+\_\+classes)}
+
+\Hypertarget{classtorchvision__down_1_1models_1_1densenet_1_1_dense_net_a953b8895e1d66698d3b55624e04be9fd}\index{torchvision\_down.models.densenet.DenseNet@{torchvision\_down.models.densenet.DenseNet}!features@{features}}
+\index{features@{features}!torchvision\_down.models.densenet.DenseNet@{torchvision\_down.models.densenet.DenseNet}}
+\doxysubsubsection{\texorpdfstring{features}{features}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1models_1_1densenet_1_1_dense_net_a953b8895e1d66698d3b55624e04be9fd} 
+torchvision\+\_\+down.\+models.\+densenet.\+Dense\+Net.\+features}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \ nn.Sequential(}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ OrderedDict(}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ [}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ (\textcolor{stringliteral}{"{}conv0"{}},\ nn.Conv2d(3,\ num\_init\_features,\ kernel\_size=7,\ stride=2,\ padding=3,\ bias=\textcolor{keyword}{False})),}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ (\textcolor{stringliteral}{"{}norm0"{}},\ nn.BatchNorm2d(num\_init\_features)),}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ (\textcolor{stringliteral}{"{}relu0"{}},\ nn.ReLU(inplace=\textcolor{keyword}{True})),}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ (\textcolor{stringliteral}{"{}pool0"{}},\ nn.MaxPool2d(kernel\_size=3,\ stride=2,\ padding=1)),}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ ]}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ )}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ )}
+
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Cervi\+AI/torchvision\+\_\+down/models/\mbox{\hyperlink{densenet_8py}{densenet.\+py}}\end{DoxyCompactItemize}

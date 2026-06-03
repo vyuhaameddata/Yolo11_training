@@ -1,0 +1,230 @@
+\doxysection{test\+\_\+play Namespace Reference}
+\hypertarget{namespacetest__play}{}\label{namespacetest__play}\index{test\_play@{test\_play}}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{namespacetest__play_a5bde1ff0608a510c6b9ff0bfbaa2cebd}{test}} (\mbox{\hyperlink{namespacetest__play_a7f0cd149f85b002dab0592baea31426e}{data}}, weights=None, batch\+\_\+size=32, imgsz=640, conf\+\_\+thres=0.\+001, iou\+\_\+thres=0.\+6, \mbox{\hyperlink{namespacetest__play_af8419ab285e7792d2a3b9241ef86460f}{save\+\_\+json}}=\mbox{\hyperlink{namespacetest__play_aca76d238086f94c8cf9456ef3231a576}{False}}, single\+\_\+cls=\mbox{\hyperlink{namespacetest__play_aca76d238086f94c8cf9456ef3231a576}{False}}, augment=\mbox{\hyperlink{namespacetest__play_aca76d238086f94c8cf9456ef3231a576}{False}}, verbose=\mbox{\hyperlink{namespacetest__play_aca76d238086f94c8cf9456ef3231a576}{False}}, model=None, dataloader=None, save\+\_\+dir=Path(\textquotesingle{}\textquotesingle{}), \mbox{\hyperlink{namespacetest__play_aae77279f693d7f84d5aa6bb270b7b058}{save\+\_\+txt}}=\mbox{\hyperlink{namespacetest__play_aca76d238086f94c8cf9456ef3231a576}{False}}, \mbox{\hyperlink{namespacetest__play_a313754ea7a3efe66b2a1d1908491ce1c}{save\+\_\+hybrid}}=\mbox{\hyperlink{namespacetest__play_aca76d238086f94c8cf9456ef3231a576}{False}}, \mbox{\hyperlink{namespacetest__play_a8c841a4671d208a9dc7115e6ce10c98c}{save\+\_\+conf}}=\mbox{\hyperlink{namespacetest__play_aca76d238086f94c8cf9456ef3231a576}{False}}, \mbox{\hyperlink{namespacetest__play_a52335abba7737b5435ab96142d1f72b8}{plots}}=True, wandb\+\_\+logger=None, compute\+\_\+loss=None, half\+\_\+precision=True, \mbox{\hyperlink{namespacetest__play_afd9b7fe0b176e097e9cdd64552c7af5d}{trace}}=\mbox{\hyperlink{namespacetest__play_aca76d238086f94c8cf9456ef3231a576}{False}}, is\+\_\+coco=\mbox{\hyperlink{namespacetest__play_aca76d238086f94c8cf9456ef3231a576}{False}}, \mbox{\hyperlink{namespacetest__play_a5f01a8219d2cc500a46c77d52602f414}{v5\+\_\+metric}}=\mbox{\hyperlink{namespacetest__play_aca76d238086f94c8cf9456ef3231a576}{False}})
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{namespacetest__play_acd293c4f74065c43440c9f31691de574}{parser}} = argparse.\+Argument\+Parser(prog=\textquotesingle{}test.\+py\textquotesingle{})
+\item 
+\mbox{\hyperlink{namespacetest__play_aeee8db3b21219475fb0c029b4fe11d29}{nargs}}
+\item 
+\mbox{\hyperlink{namespacetest__play_a2c25be774d9018604df715a4820a3d59}{type}}
+\item 
+\mbox{\hyperlink{namespacetest__play_a53b9fa5a462b820c62bbc3a963b7c1df}{str}}
+\item 
+\mbox{\hyperlink{namespacetest__play_a771a6ba96c05352457088f659ba6f3c0}{default}}
+\item 
+\mbox{\hyperlink{namespacetest__play_ace91ac9e5cfcc3f78f801c36f7a8ad34}{help}}
+\item 
+\mbox{\hyperlink{namespacetest__play_ae253f07ac9552bcff27579929e72deb9}{int}}
+\item 
+\mbox{\hyperlink{namespacetest__play_a0886701c20800a1f52f25be9b6f6a024}{float}}
+\item 
+\mbox{\hyperlink{namespacetest__play_a85e37c4743e78eb57293537551460e44}{action}}
+\item 
+\mbox{\hyperlink{namespacetest__play_a26a9dd283d66bc3466c5b56f7ebe810f}{opt}} = parser.\+parse\+\_\+args()
+\item 
+\mbox{\hyperlink{namespacetest__play_a7f0cd149f85b002dab0592baea31426e}{data}}
+\item 
+\mbox{\hyperlink{namespacetest__play_aae77279f693d7f84d5aa6bb270b7b058}{save\+\_\+txt}}
+\item 
+\mbox{\hyperlink{namespacetest__play_a313754ea7a3efe66b2a1d1908491ce1c}{save\+\_\+hybrid}}
+\item 
+\mbox{\hyperlink{namespacetest__play_a8c841a4671d208a9dc7115e6ce10c98c}{save\+\_\+conf}}
+\item 
+\mbox{\hyperlink{namespacetest__play_afd9b7fe0b176e097e9cdd64552c7af5d}{trace}}
+\item 
+\mbox{\hyperlink{namespacetest__play_a5f01a8219d2cc500a46c77d52602f414}{v5\+\_\+metric}}
+\item 
+\mbox{\hyperlink{namespacetest__play_af8419ab285e7792d2a3b9241ef86460f}{save\+\_\+json}}
+\item 
+\mbox{\hyperlink{namespacetest__play_aca76d238086f94c8cf9456ef3231a576}{False}}
+\item 
+\mbox{\hyperlink{namespacetest__play_a52335abba7737b5435ab96142d1f72b8}{plots}}
+\item 
+\mbox{\hyperlink{namespacetest__play_a396eb2c2eda90da2b7f8c14ed8e80a68}{x}} = list(range(256, 1536 + 128, 128))
+\item 
+\mbox{\hyperlink{namespacetest__play_a53b9fa5a462b820c62bbc3a963b7c1df}{str}} \mbox{\hyperlink{namespacetest__play_aea51265cc24a58d951381ff9f47299ea}{f}} = f\textquotesingle{}study\+\_\+\{Path(opt.\+data).stem\}\mbox{\hyperlink{namespacetest__play_a29007be8fc5c3ebb28e282b7c745c8bf}{\+\_\+}}\{Path(w).stem\}.txt\textquotesingle{}
+\item 
+list \mbox{\hyperlink{namespacetest__play_a8b05e40353958cc1699ba7062c5e80f2}{y}} = \mbox{[}$\,$\mbox{]}
+\item 
+\mbox{\hyperlink{namespacetest__play_afa3274ac0fef61567167666345f52601}{r}}
+\item 
+\mbox{\hyperlink{namespacetest__play_a29007be8fc5c3ebb28e282b7c745c8bf}{\+\_\+}}
+\item 
+\mbox{\hyperlink{namespacetest__play_a23d82bdf10ac75c4353b5562b56c1cb5}{t}}
+\item 
+\mbox{\hyperlink{namespacetest__play_ac7b22792b6fbdae33ca17f0603197e03}{fmt}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{namespacetest__play_a5bde1ff0608a510c6b9ff0bfbaa2cebd}\index{test\_play@{test\_play}!test@{test}}
+\index{test@{test}!test\_play@{test\_play}}
+\doxysubsubsection{\texorpdfstring{test()}{test()}}
+{\footnotesize\ttfamily \label{namespacetest__play_a5bde1ff0608a510c6b9ff0bfbaa2cebd} 
+test\+\_\+play.\+test (\begin{DoxyParamCaption}\item[{}]{data}{, }\item[{}]{weights}{ = {\ttfamily None}, }\item[{}]{batch\+\_\+size}{ = {\ttfamily 32}, }\item[{}]{imgsz}{ = {\ttfamily 640}, }\item[{}]{conf\+\_\+thres}{ = {\ttfamily 0.001}, }\item[{}]{iou\+\_\+thres}{ = {\ttfamily 0.6}, }\item[{}]{save\+\_\+json}{ = {\ttfamily \mbox{\hyperlink{namespacetest__play_aca76d238086f94c8cf9456ef3231a576}{False}}}, }\item[{}]{single\+\_\+cls}{ = {\ttfamily \mbox{\hyperlink{namespacetest__play_aca76d238086f94c8cf9456ef3231a576}{False}}}, }\item[{}]{augment}{ = {\ttfamily \mbox{\hyperlink{namespacetest__play_aca76d238086f94c8cf9456ef3231a576}{False}}}, }\item[{}]{verbose}{ = {\ttfamily \mbox{\hyperlink{namespacetest__play_aca76d238086f94c8cf9456ef3231a576}{False}}}, }\item[{}]{model}{ = {\ttfamily None}, }\item[{}]{dataloader}{ = {\ttfamily None}, }\item[{}]{save\+\_\+dir}{ = {\ttfamily Path(\textquotesingle{}\textquotesingle{})}, }\item[{}]{save\+\_\+txt}{ = {\ttfamily \mbox{\hyperlink{namespacetest__play_aca76d238086f94c8cf9456ef3231a576}{False}}}, }\item[{}]{save\+\_\+hybrid}{ = {\ttfamily \mbox{\hyperlink{namespacetest__play_aca76d238086f94c8cf9456ef3231a576}{False}}}, }\item[{}]{save\+\_\+conf}{ = {\ttfamily \mbox{\hyperlink{namespacetest__play_aca76d238086f94c8cf9456ef3231a576}{False}}}, }\item[{}]{plots}{ = {\ttfamily True}, }\item[{}]{wandb\+\_\+logger}{ = {\ttfamily None}, }\item[{}]{compute\+\_\+loss}{ = {\ttfamily None}, }\item[{}]{half\+\_\+precision}{ = {\ttfamily True}, }\item[{}]{trace}{ = {\ttfamily \mbox{\hyperlink{namespacetest__play_aca76d238086f94c8cf9456ef3231a576}{False}}}, }\item[{}]{is\+\_\+coco}{ = {\ttfamily \mbox{\hyperlink{namespacetest__play_aca76d238086f94c8cf9456ef3231a576}{False}}}, }\item[{}]{v5\+\_\+metric}{ = {\ttfamily \mbox{\hyperlink{namespacetest__play_aca76d238086f94c8cf9456ef3231a576}{False}}}}\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Variable Documentation}
+\Hypertarget{namespacetest__play_a29007be8fc5c3ebb28e282b7c745c8bf}\index{test\_play@{test\_play}!\_@{\_}}
+\index{\_@{\_}!test\_play@{test\_play}}
+\doxysubsubsection{\texorpdfstring{\_}{\_}}
+{\footnotesize\ttfamily \label{namespacetest__play_a29007be8fc5c3ebb28e282b7c745c8bf} 
+test\+\_\+play.\+\_\+\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{namespacetest__play_a85e37c4743e78eb57293537551460e44}\index{test\_play@{test\_play}!action@{action}}
+\index{action@{action}!test\_play@{test\_play}}
+\doxysubsubsection{\texorpdfstring{action}{action}}
+{\footnotesize\ttfamily \label{namespacetest__play_a85e37c4743e78eb57293537551460e44} 
+test\+\_\+play.\+action}
+
+\Hypertarget{namespacetest__play_a7f0cd149f85b002dab0592baea31426e}\index{test\_play@{test\_play}!data@{data}}
+\index{data@{data}!test\_play@{test\_play}}
+\doxysubsubsection{\texorpdfstring{data}{data}}
+{\footnotesize\ttfamily \label{namespacetest__play_a7f0cd149f85b002dab0592baea31426e} 
+test\+\_\+play.\+data}
+
+\Hypertarget{namespacetest__play_a771a6ba96c05352457088f659ba6f3c0}\index{test\_play@{test\_play}!default@{default}}
+\index{default@{default}!test\_play@{test\_play}}
+\doxysubsubsection{\texorpdfstring{default}{default}}
+{\footnotesize\ttfamily \label{namespacetest__play_a771a6ba96c05352457088f659ba6f3c0} 
+test\+\_\+play.\+default}
+
+\Hypertarget{namespacetest__play_aea51265cc24a58d951381ff9f47299ea}\index{test\_play@{test\_play}!f@{f}}
+\index{f@{f}!test\_play@{test\_play}}
+\doxysubsubsection{\texorpdfstring{f}{f}}
+{\footnotesize\ttfamily \label{namespacetest__play_aea51265cc24a58d951381ff9f47299ea} 
+test\+\_\+play.\+f = f\textquotesingle{}study\+\_\+\{Path(opt.\+data).stem\}\mbox{\hyperlink{namespacetest__play_a29007be8fc5c3ebb28e282b7c745c8bf}{\+\_\+}}\{Path(w).stem\}.txt\textquotesingle{}}
+
+\Hypertarget{namespacetest__play_aca76d238086f94c8cf9456ef3231a576}\index{test\_play@{test\_play}!False@{False}}
+\index{False@{False}!test\_play@{test\_play}}
+\doxysubsubsection{\texorpdfstring{False}{False}}
+{\footnotesize\ttfamily \label{namespacetest__play_aca76d238086f94c8cf9456ef3231a576} 
+test\+\_\+play.\+False}
+
+\Hypertarget{namespacetest__play_a0886701c20800a1f52f25be9b6f6a024}\index{test\_play@{test\_play}!float@{float}}
+\index{float@{float}!test\_play@{test\_play}}
+\doxysubsubsection{\texorpdfstring{float}{float}}
+{\footnotesize\ttfamily \label{namespacetest__play_a0886701c20800a1f52f25be9b6f6a024} 
+test\+\_\+play.\+float}
+
+\Hypertarget{namespacetest__play_ac7b22792b6fbdae33ca17f0603197e03}\index{test\_play@{test\_play}!fmt@{fmt}}
+\index{fmt@{fmt}!test\_play@{test\_play}}
+\doxysubsubsection{\texorpdfstring{fmt}{fmt}}
+{\footnotesize\ttfamily \label{namespacetest__play_ac7b22792b6fbdae33ca17f0603197e03} 
+test\+\_\+play.\+fmt}
+
+\Hypertarget{namespacetest__play_ace91ac9e5cfcc3f78f801c36f7a8ad34}\index{test\_play@{test\_play}!help@{help}}
+\index{help@{help}!test\_play@{test\_play}}
+\doxysubsubsection{\texorpdfstring{help}{help}}
+{\footnotesize\ttfamily \label{namespacetest__play_ace91ac9e5cfcc3f78f801c36f7a8ad34} 
+test\+\_\+play.\+help}
+
+\Hypertarget{namespacetest__play_ae253f07ac9552bcff27579929e72deb9}\index{test\_play@{test\_play}!int@{int}}
+\index{int@{int}!test\_play@{test\_play}}
+\doxysubsubsection{\texorpdfstring{int}{int}}
+{\footnotesize\ttfamily \label{namespacetest__play_ae253f07ac9552bcff27579929e72deb9} 
+test\+\_\+play.\+int}
+
+\Hypertarget{namespacetest__play_aeee8db3b21219475fb0c029b4fe11d29}\index{test\_play@{test\_play}!nargs@{nargs}}
+\index{nargs@{nargs}!test\_play@{test\_play}}
+\doxysubsubsection{\texorpdfstring{nargs}{nargs}}
+{\footnotesize\ttfamily \label{namespacetest__play_aeee8db3b21219475fb0c029b4fe11d29} 
+test\+\_\+play.\+nargs}
+
+\Hypertarget{namespacetest__play_a26a9dd283d66bc3466c5b56f7ebe810f}\index{test\_play@{test\_play}!opt@{opt}}
+\index{opt@{opt}!test\_play@{test\_play}}
+\doxysubsubsection{\texorpdfstring{opt}{opt}}
+{\footnotesize\ttfamily \label{namespacetest__play_a26a9dd283d66bc3466c5b56f7ebe810f} 
+test\+\_\+play.\+opt = parser.\+parse\+\_\+args()}
+
+\Hypertarget{namespacetest__play_acd293c4f74065c43440c9f31691de574}\index{test\_play@{test\_play}!parser@{parser}}
+\index{parser@{parser}!test\_play@{test\_play}}
+\doxysubsubsection{\texorpdfstring{parser}{parser}}
+{\footnotesize\ttfamily \label{namespacetest__play_acd293c4f74065c43440c9f31691de574} 
+test\+\_\+play.\+parser = argparse.\+Argument\+Parser(prog=\textquotesingle{}test.\+py\textquotesingle{})}
+
+\Hypertarget{namespacetest__play_a52335abba7737b5435ab96142d1f72b8}\index{test\_play@{test\_play}!plots@{plots}}
+\index{plots@{plots}!test\_play@{test\_play}}
+\doxysubsubsection{\texorpdfstring{plots}{plots}}
+{\footnotesize\ttfamily \label{namespacetest__play_a52335abba7737b5435ab96142d1f72b8} 
+test\+\_\+play.\+plots}
+
+\Hypertarget{namespacetest__play_afa3274ac0fef61567167666345f52601}\index{test\_play@{test\_play}!r@{r}}
+\index{r@{r}!test\_play@{test\_play}}
+\doxysubsubsection{\texorpdfstring{r}{r}}
+{\footnotesize\ttfamily \label{namespacetest__play_afa3274ac0fef61567167666345f52601} 
+test\+\_\+play.\+r}
+
+\Hypertarget{namespacetest__play_a8c841a4671d208a9dc7115e6ce10c98c}\index{test\_play@{test\_play}!save\_conf@{save\_conf}}
+\index{save\_conf@{save\_conf}!test\_play@{test\_play}}
+\doxysubsubsection{\texorpdfstring{save\_conf}{save\_conf}}
+{\footnotesize\ttfamily \label{namespacetest__play_a8c841a4671d208a9dc7115e6ce10c98c} 
+test\+\_\+play.\+save\+\_\+conf}
+
+\Hypertarget{namespacetest__play_a313754ea7a3efe66b2a1d1908491ce1c}\index{test\_play@{test\_play}!save\_hybrid@{save\_hybrid}}
+\index{save\_hybrid@{save\_hybrid}!test\_play@{test\_play}}
+\doxysubsubsection{\texorpdfstring{save\_hybrid}{save\_hybrid}}
+{\footnotesize\ttfamily \label{namespacetest__play_a313754ea7a3efe66b2a1d1908491ce1c} 
+test\+\_\+play.\+save\+\_\+hybrid}
+
+\Hypertarget{namespacetest__play_af8419ab285e7792d2a3b9241ef86460f}\index{test\_play@{test\_play}!save\_json@{save\_json}}
+\index{save\_json@{save\_json}!test\_play@{test\_play}}
+\doxysubsubsection{\texorpdfstring{save\_json}{save\_json}}
+{\footnotesize\ttfamily \label{namespacetest__play_af8419ab285e7792d2a3b9241ef86460f} 
+test\+\_\+play.\+save\+\_\+json}
+
+\Hypertarget{namespacetest__play_aae77279f693d7f84d5aa6bb270b7b058}\index{test\_play@{test\_play}!save\_txt@{save\_txt}}
+\index{save\_txt@{save\_txt}!test\_play@{test\_play}}
+\doxysubsubsection{\texorpdfstring{save\_txt}{save\_txt}}
+{\footnotesize\ttfamily \label{namespacetest__play_aae77279f693d7f84d5aa6bb270b7b058} 
+test\+\_\+play.\+save\+\_\+txt}
+
+\Hypertarget{namespacetest__play_a53b9fa5a462b820c62bbc3a963b7c1df}\index{test\_play@{test\_play}!str@{str}}
+\index{str@{str}!test\_play@{test\_play}}
+\doxysubsubsection{\texorpdfstring{str}{str}}
+{\footnotesize\ttfamily \label{namespacetest__play_a53b9fa5a462b820c62bbc3a963b7c1df} 
+test\+\_\+play.\+str}
+
+\Hypertarget{namespacetest__play_a23d82bdf10ac75c4353b5562b56c1cb5}\index{test\_play@{test\_play}!t@{t}}
+\index{t@{t}!test\_play@{test\_play}}
+\doxysubsubsection{\texorpdfstring{t}{t}}
+{\footnotesize\ttfamily \label{namespacetest__play_a23d82bdf10ac75c4353b5562b56c1cb5} 
+test\+\_\+play.\+t}
+
+\Hypertarget{namespacetest__play_afd9b7fe0b176e097e9cdd64552c7af5d}\index{test\_play@{test\_play}!trace@{trace}}
+\index{trace@{trace}!test\_play@{test\_play}}
+\doxysubsubsection{\texorpdfstring{trace}{trace}}
+{\footnotesize\ttfamily \label{namespacetest__play_afd9b7fe0b176e097e9cdd64552c7af5d} 
+test\+\_\+play.\+trace}
+
+\Hypertarget{namespacetest__play_a2c25be774d9018604df715a4820a3d59}\index{test\_play@{test\_play}!type@{type}}
+\index{type@{type}!test\_play@{test\_play}}
+\doxysubsubsection{\texorpdfstring{type}{type}}
+{\footnotesize\ttfamily \label{namespacetest__play_a2c25be774d9018604df715a4820a3d59} 
+test\+\_\+play.\+type}
+
+\Hypertarget{namespacetest__play_a5f01a8219d2cc500a46c77d52602f414}\index{test\_play@{test\_play}!v5\_metric@{v5\_metric}}
+\index{v5\_metric@{v5\_metric}!test\_play@{test\_play}}
+\doxysubsubsection{\texorpdfstring{v5\_metric}{v5\_metric}}
+{\footnotesize\ttfamily \label{namespacetest__play_a5f01a8219d2cc500a46c77d52602f414} 
+test\+\_\+play.\+v5\+\_\+metric}
+
+\Hypertarget{namespacetest__play_a396eb2c2eda90da2b7f8c14ed8e80a68}\index{test\_play@{test\_play}!x@{x}}
+\index{x@{x}!test\_play@{test\_play}}
+\doxysubsubsection{\texorpdfstring{x}{x}}
+{\footnotesize\ttfamily \label{namespacetest__play_a396eb2c2eda90da2b7f8c14ed8e80a68} 
+test\+\_\+play.\+x = list(range(256, 1536 + 128, 128))}
+
+\Hypertarget{namespacetest__play_a8b05e40353958cc1699ba7062c5e80f2}\index{test\_play@{test\_play}!y@{y}}
+\index{y@{y}!test\_play@{test\_play}}
+\doxysubsubsection{\texorpdfstring{y}{y}}
+{\footnotesize\ttfamily \label{namespacetest__play_a8b05e40353958cc1699ba7062c5e80f2} 
+test\+\_\+play.\+y = \mbox{[}$\,$\mbox{]}}
+

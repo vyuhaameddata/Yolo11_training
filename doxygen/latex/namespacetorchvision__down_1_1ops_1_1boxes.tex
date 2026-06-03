@@ -1,0 +1,241 @@
+\doxysection{torchvision\+\_\+down.\+ops.\+boxes Namespace Reference}
+\hypertarget{namespacetorchvision__down_1_1ops_1_1boxes}{}\label{namespacetorchvision__down_1_1ops_1_1boxes}\index{torchvision\_down.ops.boxes@{torchvision\_down.ops.boxes}}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+Tensor \mbox{\hyperlink{namespacetorchvision__down_1_1ops_1_1boxes_a43e9a41568fcd2c78e0ec35db1c487e2}{nms}} (Tensor boxes, Tensor scores, float iou\+\_\+threshold)
+\item 
+Tensor \mbox{\hyperlink{namespacetorchvision__down_1_1ops_1_1boxes_ab4d50f2a1b17d6ed10b8b17b143652d6}{batched\+\_\+nms}} (Tensor boxes, Tensor scores, Tensor idxs, float iou\+\_\+threshold)
+\item 
+Tensor \mbox{\hyperlink{namespacetorchvision__down_1_1ops_1_1boxes_aff53923c2c786d1fe9c66f17988d933d}{\+\_\+batched\+\_\+nms\+\_\+coordinate\+\_\+trick}} (Tensor boxes, Tensor scores, Tensor idxs, float iou\+\_\+threshold)
+\item 
+Tensor \mbox{\hyperlink{namespacetorchvision__down_1_1ops_1_1boxes_a687b283500ca2a31ce79010f36cec019}{\+\_\+batched\+\_\+nms\+\_\+vanilla}} (Tensor boxes, Tensor scores, Tensor idxs, float iou\+\_\+threshold)
+\item 
+Tensor \mbox{\hyperlink{namespacetorchvision__down_1_1ops_1_1boxes_a3de33e36ef3e94a572729b09d279f7e0}{remove\+\_\+small\+\_\+boxes}} (Tensor boxes, float min\+\_\+size)
+\item 
+Tensor \mbox{\hyperlink{namespacetorchvision__down_1_1ops_1_1boxes_a5465bfa524c5586b67238b0d43679bb1}{clip\+\_\+boxes\+\_\+to\+\_\+image}} (Tensor boxes, Tuple\mbox{[}int, int\mbox{]} size)
+\item 
+Tensor \mbox{\hyperlink{namespacetorchvision__down_1_1ops_1_1boxes_a19123390d42f59e43c330472bb685b6d}{box\+\_\+convert}} (Tensor boxes, str in\+\_\+fmt, str out\+\_\+fmt)
+\item 
+Tensor \mbox{\hyperlink{namespacetorchvision__down_1_1ops_1_1boxes_a528e310469595ff7be877673b0171d8a}{\+\_\+upcast}} (Tensor t)
+\item 
+Tensor \mbox{\hyperlink{namespacetorchvision__down_1_1ops_1_1boxes_a808e41549a24b741897d8d468c215e42}{box\+\_\+area}} (Tensor boxes)
+\item 
+Tuple\mbox{[}Tensor, Tensor\mbox{]} \mbox{\hyperlink{namespacetorchvision__down_1_1ops_1_1boxes_add1b29b0a15671370e060e037e6dbadd}{\+\_\+box\+\_\+inter\+\_\+union}} (Tensor boxes1, Tensor boxes2)
+\item 
+Tensor \mbox{\hyperlink{namespacetorchvision__down_1_1ops_1_1boxes_a4c9201ca995d8008d7fdb8bd5296fb72}{box\+\_\+iou}} (Tensor boxes1, Tensor boxes2)
+\item 
+Tensor \mbox{\hyperlink{namespacetorchvision__down_1_1ops_1_1boxes_aed00f18b2519eb73f622faec6c129791}{generalized\+\_\+box\+\_\+iou}} (Tensor boxes1, Tensor boxes2)
+\item 
+torch.\+Tensor \mbox{\hyperlink{namespacetorchvision__down_1_1ops_1_1boxes_abeaf0b2b91281dce0a3c81b4b9136393}{masks\+\_\+to\+\_\+boxes}} (torch.\+Tensor masks)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{namespacetorchvision__down_1_1ops_1_1boxes_aff53923c2c786d1fe9c66f17988d933d}\index{torchvision\_down.ops.boxes@{torchvision\_down.ops.boxes}!\_batched\_nms\_coordinate\_trick@{\_batched\_nms\_coordinate\_trick}}
+\index{\_batched\_nms\_coordinate\_trick@{\_batched\_nms\_coordinate\_trick}!torchvision\_down.ops.boxes@{torchvision\_down.ops.boxes}}
+\doxysubsubsection{\texorpdfstring{\_batched\_nms\_coordinate\_trick()}{\_batched\_nms\_coordinate\_trick()}}
+{\footnotesize\ttfamily \label{namespacetorchvision__down_1_1ops_1_1boxes_aff53923c2c786d1fe9c66f17988d933d} 
+ Tensor torchvision\+\_\+down.\+ops.\+boxes.\+\_\+batched\+\_\+nms\+\_\+coordinate\+\_\+trick (\begin{DoxyParamCaption}\item[{Tensor}]{boxes}{, }\item[{Tensor}]{scores}{, }\item[{Tensor}]{idxs}{, }\item[{float}]{iou\+\_\+threshold}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{namespacetorchvision__down_1_1ops_1_1boxes_a687b283500ca2a31ce79010f36cec019}\index{torchvision\_down.ops.boxes@{torchvision\_down.ops.boxes}!\_batched\_nms\_vanilla@{\_batched\_nms\_vanilla}}
+\index{\_batched\_nms\_vanilla@{\_batched\_nms\_vanilla}!torchvision\_down.ops.boxes@{torchvision\_down.ops.boxes}}
+\doxysubsubsection{\texorpdfstring{\_batched\_nms\_vanilla()}{\_batched\_nms\_vanilla()}}
+{\footnotesize\ttfamily \label{namespacetorchvision__down_1_1ops_1_1boxes_a687b283500ca2a31ce79010f36cec019} 
+ Tensor torchvision\+\_\+down.\+ops.\+boxes.\+\_\+batched\+\_\+nms\+\_\+vanilla (\begin{DoxyParamCaption}\item[{Tensor}]{boxes}{, }\item[{Tensor}]{scores}{, }\item[{Tensor}]{idxs}{, }\item[{float}]{iou\+\_\+threshold}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{namespacetorchvision__down_1_1ops_1_1boxes_add1b29b0a15671370e060e037e6dbadd}\index{torchvision\_down.ops.boxes@{torchvision\_down.ops.boxes}!\_box\_inter\_union@{\_box\_inter\_union}}
+\index{\_box\_inter\_union@{\_box\_inter\_union}!torchvision\_down.ops.boxes@{torchvision\_down.ops.boxes}}
+\doxysubsubsection{\texorpdfstring{\_box\_inter\_union()}{\_box\_inter\_union()}}
+{\footnotesize\ttfamily \label{namespacetorchvision__down_1_1ops_1_1boxes_add1b29b0a15671370e060e037e6dbadd} 
+ Tuple\mbox{[}Tensor, Tensor\mbox{]} torchvision\+\_\+down.\+ops.\+boxes.\+\_\+box\+\_\+inter\+\_\+union (\begin{DoxyParamCaption}\item[{Tensor}]{boxes1}{, }\item[{Tensor}]{boxes2}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{namespacetorchvision__down_1_1ops_1_1boxes_a528e310469595ff7be877673b0171d8a}\index{torchvision\_down.ops.boxes@{torchvision\_down.ops.boxes}!\_upcast@{\_upcast}}
+\index{\_upcast@{\_upcast}!torchvision\_down.ops.boxes@{torchvision\_down.ops.boxes}}
+\doxysubsubsection{\texorpdfstring{\_upcast()}{\_upcast()}}
+{\footnotesize\ttfamily \label{namespacetorchvision__down_1_1ops_1_1boxes_a528e310469595ff7be877673b0171d8a} 
+ Tensor torchvision\+\_\+down.\+ops.\+boxes.\+\_\+upcast (\begin{DoxyParamCaption}\item[{Tensor}]{t}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{namespacetorchvision__down_1_1ops_1_1boxes_ab4d50f2a1b17d6ed10b8b17b143652d6}\index{torchvision\_down.ops.boxes@{torchvision\_down.ops.boxes}!batched\_nms@{batched\_nms}}
+\index{batched\_nms@{batched\_nms}!torchvision\_down.ops.boxes@{torchvision\_down.ops.boxes}}
+\doxysubsubsection{\texorpdfstring{batched\_nms()}{batched\_nms()}}
+{\footnotesize\ttfamily \label{namespacetorchvision__down_1_1ops_1_1boxes_ab4d50f2a1b17d6ed10b8b17b143652d6} 
+ Tensor torchvision\+\_\+down.\+ops.\+boxes.\+batched\+\_\+nms (\begin{DoxyParamCaption}\item[{Tensor}]{boxes}{, }\item[{Tensor}]{scores}{, }\item[{Tensor}]{idxs}{, }\item[{float}]{iou\+\_\+threshold}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Performs non-maximum suppression in a batched fashion.
+
+Each index value correspond to a category, and NMS
+will not be applied between elements of different categories.
+
+Args:
+    boxes (Tensor[N, 4]): boxes where NMS will be performed. They
+        are expected to be in ``(x1, y1, x2, y2)`` format with ``0 <= x1 < x2`` and
+        ``0 <= y1 < y2``.
+    scores (Tensor[N]): scores for each one of the boxes
+    idxs (Tensor[N]): indices of the categories for each one of the boxes.
+    iou_threshold (float): discards all overlapping boxes with IoU > iou_threshold
+
+Returns:
+    Tensor: int64 tensor with the indices of the elements that have been kept by NMS, sorted
+    in decreasing order of scores
+\end{DoxyVerb}
+ \Hypertarget{namespacetorchvision__down_1_1ops_1_1boxes_a808e41549a24b741897d8d468c215e42}\index{torchvision\_down.ops.boxes@{torchvision\_down.ops.boxes}!box\_area@{box\_area}}
+\index{box\_area@{box\_area}!torchvision\_down.ops.boxes@{torchvision\_down.ops.boxes}}
+\doxysubsubsection{\texorpdfstring{box\_area()}{box\_area()}}
+{\footnotesize\ttfamily \label{namespacetorchvision__down_1_1ops_1_1boxes_a808e41549a24b741897d8d468c215e42} 
+ Tensor torchvision\+\_\+down.\+ops.\+boxes.\+box\+\_\+area (\begin{DoxyParamCaption}\item[{Tensor}]{boxes}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Computes the area of a set of bounding boxes, which are specified by their
+(x1, y1, x2, y2) coordinates.
+
+Args:
+    boxes (Tensor[N, 4]): boxes for which the area will be computed. They
+        are expected to be in (x1, y1, x2, y2) format with
+        ``0 <= x1 < x2`` and ``0 <= y1 < y2``.
+
+Returns:
+    Tensor[N]: the area for each box
+\end{DoxyVerb}
+ \Hypertarget{namespacetorchvision__down_1_1ops_1_1boxes_a19123390d42f59e43c330472bb685b6d}\index{torchvision\_down.ops.boxes@{torchvision\_down.ops.boxes}!box\_convert@{box\_convert}}
+\index{box\_convert@{box\_convert}!torchvision\_down.ops.boxes@{torchvision\_down.ops.boxes}}
+\doxysubsubsection{\texorpdfstring{box\_convert()}{box\_convert()}}
+{\footnotesize\ttfamily \label{namespacetorchvision__down_1_1ops_1_1boxes_a19123390d42f59e43c330472bb685b6d} 
+ Tensor torchvision\+\_\+down.\+ops.\+boxes.\+box\+\_\+convert (\begin{DoxyParamCaption}\item[{Tensor}]{boxes}{, }\item[{str}]{in\+\_\+fmt}{, }\item[{str}]{out\+\_\+fmt}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Converts boxes from given in_fmt to out_fmt.
+Supported in_fmt and out_fmt are:
+
+'xyxy': boxes are represented via corners, x1, y1 being top left and x2, y2 being bottom right.
+This is the format that torchvision utilities expect.
+
+'xywh' : boxes are represented via corner, width and height, x1, y2 being top left, w, h being width and height.
+
+'cxcywh' : boxes are represented via centre, width and height, cx, cy being center of box, w, h
+being width and height.
+
+Args:
+    boxes (Tensor[N, 4]): boxes which will be converted.
+    in_fmt (str): Input format of given boxes. Supported formats are ['xyxy', 'xywh', 'cxcywh'].
+    out_fmt (str): Output format of given boxes. Supported formats are ['xyxy', 'xywh', 'cxcywh']
+
+Returns:
+    Tensor[N, 4]: Boxes into converted format.
+\end{DoxyVerb}
+ \Hypertarget{namespacetorchvision__down_1_1ops_1_1boxes_a4c9201ca995d8008d7fdb8bd5296fb72}\index{torchvision\_down.ops.boxes@{torchvision\_down.ops.boxes}!box\_iou@{box\_iou}}
+\index{box\_iou@{box\_iou}!torchvision\_down.ops.boxes@{torchvision\_down.ops.boxes}}
+\doxysubsubsection{\texorpdfstring{box\_iou()}{box\_iou()}}
+{\footnotesize\ttfamily \label{namespacetorchvision__down_1_1ops_1_1boxes_a4c9201ca995d8008d7fdb8bd5296fb72} 
+ Tensor torchvision\+\_\+down.\+ops.\+boxes.\+box\+\_\+iou (\begin{DoxyParamCaption}\item[{Tensor}]{boxes1}{, }\item[{Tensor}]{boxes2}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Return intersection-over-union (Jaccard index) between two sets of boxes.
+
+Both sets of boxes are expected to be in ``(x1, y1, x2, y2)`` format with
+``0 <= x1 < x2`` and ``0 <= y1 < y2``.
+
+Args:
+    boxes1 (Tensor[N, 4]): first set of boxes
+    boxes2 (Tensor[M, 4]): second set of boxes
+
+Returns:
+    Tensor[N, M]: the NxM matrix containing the pairwise IoU values for every element in boxes1 and boxes2
+\end{DoxyVerb}
+ \Hypertarget{namespacetorchvision__down_1_1ops_1_1boxes_a5465bfa524c5586b67238b0d43679bb1}\index{torchvision\_down.ops.boxes@{torchvision\_down.ops.boxes}!clip\_boxes\_to\_image@{clip\_boxes\_to\_image}}
+\index{clip\_boxes\_to\_image@{clip\_boxes\_to\_image}!torchvision\_down.ops.boxes@{torchvision\_down.ops.boxes}}
+\doxysubsubsection{\texorpdfstring{clip\_boxes\_to\_image()}{clip\_boxes\_to\_image()}}
+{\footnotesize\ttfamily \label{namespacetorchvision__down_1_1ops_1_1boxes_a5465bfa524c5586b67238b0d43679bb1} 
+ Tensor torchvision\+\_\+down.\+ops.\+boxes.\+clip\+\_\+boxes\+\_\+to\+\_\+image (\begin{DoxyParamCaption}\item[{Tensor}]{boxes}{, }\item[{Tuple\mbox{[}int, int\mbox{]}}]{size}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Clip boxes so that they lie inside an image of size `size`.
+
+Args:
+    boxes (Tensor[N, 4]): boxes in ``(x1, y1, x2, y2)`` format
+        with ``0 <= x1 < x2`` and ``0 <= y1 < y2``.
+    size (Tuple[height, width]): size of the image
+
+Returns:
+    Tensor[N, 4]: clipped boxes
+\end{DoxyVerb}
+ \Hypertarget{namespacetorchvision__down_1_1ops_1_1boxes_aed00f18b2519eb73f622faec6c129791}\index{torchvision\_down.ops.boxes@{torchvision\_down.ops.boxes}!generalized\_box\_iou@{generalized\_box\_iou}}
+\index{generalized\_box\_iou@{generalized\_box\_iou}!torchvision\_down.ops.boxes@{torchvision\_down.ops.boxes}}
+\doxysubsubsection{\texorpdfstring{generalized\_box\_iou()}{generalized\_box\_iou()}}
+{\footnotesize\ttfamily \label{namespacetorchvision__down_1_1ops_1_1boxes_aed00f18b2519eb73f622faec6c129791} 
+ Tensor torchvision\+\_\+down.\+ops.\+boxes.\+generalized\+\_\+box\+\_\+iou (\begin{DoxyParamCaption}\item[{Tensor}]{boxes1}{, }\item[{Tensor}]{boxes2}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Return generalized intersection-over-union (Jaccard index) between two sets of boxes.
+
+Both sets of boxes are expected to be in ``(x1, y1, x2, y2)`` format with
+``0 <= x1 < x2`` and ``0 <= y1 < y2``.
+
+Args:
+    boxes1 (Tensor[N, 4]): first set of boxes
+    boxes2 (Tensor[M, 4]): second set of boxes
+
+Returns:
+    Tensor[N, M]: the NxM matrix containing the pairwise generalized IoU values
+    for every element in boxes1 and boxes2
+\end{DoxyVerb}
+ \Hypertarget{namespacetorchvision__down_1_1ops_1_1boxes_abeaf0b2b91281dce0a3c81b4b9136393}\index{torchvision\_down.ops.boxes@{torchvision\_down.ops.boxes}!masks\_to\_boxes@{masks\_to\_boxes}}
+\index{masks\_to\_boxes@{masks\_to\_boxes}!torchvision\_down.ops.boxes@{torchvision\_down.ops.boxes}}
+\doxysubsubsection{\texorpdfstring{masks\_to\_boxes()}{masks\_to\_boxes()}}
+{\footnotesize\ttfamily \label{namespacetorchvision__down_1_1ops_1_1boxes_abeaf0b2b91281dce0a3c81b4b9136393} 
+ torch.\+Tensor torchvision\+\_\+down.\+ops.\+boxes.\+masks\+\_\+to\+\_\+boxes (\begin{DoxyParamCaption}\item[{torch.\+Tensor}]{masks}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Compute the bounding boxes around the provided masks.
+
+Returns a [N, 4] tensor containing bounding boxes. The boxes are in ``(x1, y1, x2, y2)`` format with
+``0 <= x1 < x2`` and ``0 <= y1 < y2``.
+
+Args:
+    masks (Tensor[N, H, W]): masks to transform where N is the number of masks
+        and (H, W) are the spatial dimensions.
+
+Returns:
+    Tensor[N, 4]: bounding boxes
+\end{DoxyVerb}
+ \Hypertarget{namespacetorchvision__down_1_1ops_1_1boxes_a43e9a41568fcd2c78e0ec35db1c487e2}\index{torchvision\_down.ops.boxes@{torchvision\_down.ops.boxes}!nms@{nms}}
+\index{nms@{nms}!torchvision\_down.ops.boxes@{torchvision\_down.ops.boxes}}
+\doxysubsubsection{\texorpdfstring{nms()}{nms()}}
+{\footnotesize\ttfamily \label{namespacetorchvision__down_1_1ops_1_1boxes_a43e9a41568fcd2c78e0ec35db1c487e2} 
+ Tensor torchvision\+\_\+down.\+ops.\+boxes.\+nms (\begin{DoxyParamCaption}\item[{Tensor}]{boxes}{, }\item[{Tensor}]{scores}{, }\item[{float}]{iou\+\_\+threshold}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Performs non-maximum suppression (NMS) on the boxes according
+to their intersection-over-union (IoU).
+
+NMS iteratively removes lower scoring boxes which have an
+IoU greater than iou_threshold with another (higher scoring)
+box.
+
+If multiple boxes have the exact same score and satisfy the IoU
+criterion with respect to a reference box, the selected box is
+not guaranteed to be the same between CPU and GPU. This is similar
+to the behavior of argsort in PyTorch when repeated values are present.
+
+Args:
+    boxes (Tensor[N, 4])): boxes to perform NMS on. They
+        are expected to be in ``(x1, y1, x2, y2)`` format with ``0 <= x1 < x2`` and
+        ``0 <= y1 < y2``.
+    scores (Tensor[N]): scores for each one of the boxes
+    iou_threshold (float): discards all overlapping boxes with IoU > iou_threshold
+
+Returns:
+    Tensor: int64 tensor with the indices of the elements that have been kept
+    by NMS, sorted in decreasing order of scores
+\end{DoxyVerb}
+ \Hypertarget{namespacetorchvision__down_1_1ops_1_1boxes_a3de33e36ef3e94a572729b09d279f7e0}\index{torchvision\_down.ops.boxes@{torchvision\_down.ops.boxes}!remove\_small\_boxes@{remove\_small\_boxes}}
+\index{remove\_small\_boxes@{remove\_small\_boxes}!torchvision\_down.ops.boxes@{torchvision\_down.ops.boxes}}
+\doxysubsubsection{\texorpdfstring{remove\_small\_boxes()}{remove\_small\_boxes()}}
+{\footnotesize\ttfamily \label{namespacetorchvision__down_1_1ops_1_1boxes_a3de33e36ef3e94a572729b09d279f7e0} 
+ Tensor torchvision\+\_\+down.\+ops.\+boxes.\+remove\+\_\+small\+\_\+boxes (\begin{DoxyParamCaption}\item[{Tensor}]{boxes}{, }\item[{float}]{min\+\_\+size}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Remove boxes which contains at least one side smaller than min_size.
+
+Args:
+    boxes (Tensor[N, 4]): boxes in ``(x1, y1, x2, y2)`` format
+        with ``0 <= x1 < x2`` and ``0 <= y1 < y2``.
+    min_size (float): minimum size
+
+Returns:
+    Tensor[K]: indices of the boxes that have both sides
+    larger than min_size
+\end{DoxyVerb}
+ 

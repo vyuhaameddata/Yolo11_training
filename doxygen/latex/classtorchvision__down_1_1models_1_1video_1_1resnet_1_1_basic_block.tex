@@ -1,0 +1,102 @@
+\doxysection{torchvision\+\_\+down.\+models.\+video.\+resnet.\+Basic\+Block Class Reference}
+\hypertarget{classtorchvision__down_1_1models_1_1video_1_1resnet_1_1_basic_block}{}\label{classtorchvision__down_1_1models_1_1video_1_1resnet_1_1_basic_block}\index{torchvision\_down.models.video.resnet.BasicBlock@{torchvision\_down.models.video.resnet.BasicBlock}}
+Inheritance diagram for torchvision\+\_\+down.\+models.\+video.\+resnet.\+Basic\+Block\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classtorchvision__down_1_1models_1_1video_1_1resnet_1_1_basic_block}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+None \mbox{\hyperlink{classtorchvision__down_1_1models_1_1video_1_1resnet_1_1_basic_block_a76e467ad05ffeed3e2ba6d07dad437d2}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, int inplanes, int planes, Callable\mbox{[}..., nn.\+Module\mbox{]} conv\+\_\+builder, int \mbox{\hyperlink{classtorchvision__down_1_1models_1_1video_1_1resnet_1_1_basic_block_aa044dad2087078076c2d47b4cb25a558}{stride}}=1, Optional\mbox{[}nn.\+Module\mbox{]} \mbox{\hyperlink{classtorchvision__down_1_1models_1_1video_1_1resnet_1_1_basic_block_a397e1056375560ef89add86d797ddb88}{downsample}}=None)
+\item 
+Tensor \mbox{\hyperlink{classtorchvision__down_1_1models_1_1video_1_1resnet_1_1_basic_block_af12d0e8f2e7af21eab381d93c3801510}{forward}} (self, Tensor x)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1models_1_1video_1_1resnet_1_1_basic_block_a9aa0da04aa126d43b7028a1225aa1673}{conv1}}
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1models_1_1video_1_1resnet_1_1_basic_block_a20a649047e512a116ee8b27ce683fc11}{conv2}} = nn.\+Sequential(conv\+\_\+builder(planes, planes, midplanes), nn.\+Batch\+Norm3d(planes))
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1models_1_1video_1_1resnet_1_1_basic_block_a9e3e8ad363ce297a330e8298942aacd3}{relu}} = nn.\+Re\+LU(inplace=True)
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1models_1_1video_1_1resnet_1_1_basic_block_a397e1056375560ef89add86d797ddb88}{downsample}} = downsample
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1models_1_1video_1_1resnet_1_1_basic_block_aa044dad2087078076c2d47b4cb25a558}{stride}} = stride
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{classtorchvision__down_1_1models_1_1video_1_1resnet_1_1_basic_block_afc5d6b0a70eb0b09bce4f722e3a4d28b}{expansion}} = 1
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classtorchvision__down_1_1models_1_1video_1_1resnet_1_1_basic_block_a76e467ad05ffeed3e2ba6d07dad437d2}\index{torchvision\_down.models.video.resnet.BasicBlock@{torchvision\_down.models.video.resnet.BasicBlock}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!torchvision\_down.models.video.resnet.BasicBlock@{torchvision\_down.models.video.resnet.BasicBlock}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1models_1_1video_1_1resnet_1_1_basic_block_a76e467ad05ffeed3e2ba6d07dad437d2} 
+ None torchvision\+\_\+down.\+models.\+video.\+resnet.\+Basic\+Block.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{int}]{inplanes}{, }\item[{int}]{planes}{, }\item[{Callable\mbox{[}..., nn.\+Module\mbox{]}}]{conv\+\_\+builder}{, }\item[{int }]{stride}{ = {\ttfamily 1}, }\item[{Optional\mbox{[}nn.\+Module\mbox{]} }]{downsample}{ = {\ttfamily None}}\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classtorchvision__down_1_1models_1_1video_1_1resnet_1_1_basic_block_af12d0e8f2e7af21eab381d93c3801510}\index{torchvision\_down.models.video.resnet.BasicBlock@{torchvision\_down.models.video.resnet.BasicBlock}!forward@{forward}}
+\index{forward@{forward}!torchvision\_down.models.video.resnet.BasicBlock@{torchvision\_down.models.video.resnet.BasicBlock}}
+\doxysubsubsection{\texorpdfstring{forward()}{forward()}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1models_1_1video_1_1resnet_1_1_basic_block_af12d0e8f2e7af21eab381d93c3801510} 
+ Tensor torchvision\+\_\+down.\+models.\+video.\+resnet.\+Basic\+Block.\+forward (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{Tensor}]{x}{}\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classtorchvision__down_1_1models_1_1video_1_1resnet_1_1_basic_block_a9aa0da04aa126d43b7028a1225aa1673}\index{torchvision\_down.models.video.resnet.BasicBlock@{torchvision\_down.models.video.resnet.BasicBlock}!conv1@{conv1}}
+\index{conv1@{conv1}!torchvision\_down.models.video.resnet.BasicBlock@{torchvision\_down.models.video.resnet.BasicBlock}}
+\doxysubsubsection{\texorpdfstring{conv1}{conv1}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1models_1_1video_1_1resnet_1_1_basic_block_a9aa0da04aa126d43b7028a1225aa1673} 
+torchvision\+\_\+down.\+models.\+video.\+resnet.\+Basic\+Block.\+conv1}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \ nn.Sequential(}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ conv\_builder(inplanes,\ planes,\ midplanes,\ stride),\ nn.BatchNorm3d(planes),\ nn.ReLU(inplace=\textcolor{keyword}{True})}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ )}
+
+\end{DoxyCode}
+\Hypertarget{classtorchvision__down_1_1models_1_1video_1_1resnet_1_1_basic_block_a20a649047e512a116ee8b27ce683fc11}\index{torchvision\_down.models.video.resnet.BasicBlock@{torchvision\_down.models.video.resnet.BasicBlock}!conv2@{conv2}}
+\index{conv2@{conv2}!torchvision\_down.models.video.resnet.BasicBlock@{torchvision\_down.models.video.resnet.BasicBlock}}
+\doxysubsubsection{\texorpdfstring{conv2}{conv2}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1models_1_1video_1_1resnet_1_1_basic_block_a20a649047e512a116ee8b27ce683fc11} 
+torchvision\+\_\+down.\+models.\+video.\+resnet.\+Basic\+Block.\+conv2 = nn.\+Sequential(conv\+\_\+builder(planes, planes, midplanes), nn.\+Batch\+Norm3d(planes))}
+
+\Hypertarget{classtorchvision__down_1_1models_1_1video_1_1resnet_1_1_basic_block_a397e1056375560ef89add86d797ddb88}\index{torchvision\_down.models.video.resnet.BasicBlock@{torchvision\_down.models.video.resnet.BasicBlock}!downsample@{downsample}}
+\index{downsample@{downsample}!torchvision\_down.models.video.resnet.BasicBlock@{torchvision\_down.models.video.resnet.BasicBlock}}
+\doxysubsubsection{\texorpdfstring{downsample}{downsample}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1models_1_1video_1_1resnet_1_1_basic_block_a397e1056375560ef89add86d797ddb88} 
+torchvision\+\_\+down.\+models.\+video.\+resnet.\+Basic\+Block.\+downsample = downsample}
+
+\Hypertarget{classtorchvision__down_1_1models_1_1video_1_1resnet_1_1_basic_block_afc5d6b0a70eb0b09bce4f722e3a4d28b}\index{torchvision\_down.models.video.resnet.BasicBlock@{torchvision\_down.models.video.resnet.BasicBlock}!expansion@{expansion}}
+\index{expansion@{expansion}!torchvision\_down.models.video.resnet.BasicBlock@{torchvision\_down.models.video.resnet.BasicBlock}}
+\doxysubsubsection{\texorpdfstring{expansion}{expansion}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1models_1_1video_1_1resnet_1_1_basic_block_afc5d6b0a70eb0b09bce4f722e3a4d28b} 
+int torchvision\+\_\+down.\+models.\+video.\+resnet.\+Basic\+Block.\+expansion = 1\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classtorchvision__down_1_1models_1_1video_1_1resnet_1_1_basic_block_a9e3e8ad363ce297a330e8298942aacd3}\index{torchvision\_down.models.video.resnet.BasicBlock@{torchvision\_down.models.video.resnet.BasicBlock}!relu@{relu}}
+\index{relu@{relu}!torchvision\_down.models.video.resnet.BasicBlock@{torchvision\_down.models.video.resnet.BasicBlock}}
+\doxysubsubsection{\texorpdfstring{relu}{relu}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1models_1_1video_1_1resnet_1_1_basic_block_a9e3e8ad363ce297a330e8298942aacd3} 
+torchvision\+\_\+down.\+models.\+video.\+resnet.\+Basic\+Block.\+relu = nn.\+Re\+LU(inplace=True)}
+
+\Hypertarget{classtorchvision__down_1_1models_1_1video_1_1resnet_1_1_basic_block_aa044dad2087078076c2d47b4cb25a558}\index{torchvision\_down.models.video.resnet.BasicBlock@{torchvision\_down.models.video.resnet.BasicBlock}!stride@{stride}}
+\index{stride@{stride}!torchvision\_down.models.video.resnet.BasicBlock@{torchvision\_down.models.video.resnet.BasicBlock}}
+\doxysubsubsection{\texorpdfstring{stride}{stride}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1models_1_1video_1_1resnet_1_1_basic_block_aa044dad2087078076c2d47b4cb25a558} 
+torchvision\+\_\+down.\+models.\+video.\+resnet.\+Basic\+Block.\+stride = stride}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Cervi\+AI/torchvision\+\_\+down/models/video/\mbox{\hyperlink{video_2resnet_8py}{resnet.\+py}}\end{DoxyCompactItemize}

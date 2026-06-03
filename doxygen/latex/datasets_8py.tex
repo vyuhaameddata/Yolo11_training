@@ -1,0 +1,100 @@
+\doxysection{Cervi\+AI/utils/datasets.py File Reference}
+\hypertarget{datasets_8py}{}\label{datasets_8py}\index{CerviAI/utils/datasets.py@{CerviAI/utils/datasets.py}}
+\doxysubsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classutils_1_1datasets_1_1load__custom}{utils.\+datasets.\+load\+\_\+custom}}
+\item 
+class \mbox{\hyperlink{classutils_1_1datasets_1_1_infinite_data_loader}{utils.\+datasets.\+Infinite\+Data\+Loader}}
+\item 
+class \mbox{\hyperlink{classutils_1_1datasets_1_1___repeat_sampler}{utils.\+datasets.\+\_\+\+Repeat\+Sampler}}
+\item 
+class \mbox{\hyperlink{classutils_1_1datasets_1_1_load_images}{utils.\+datasets.\+Load\+Images}}
+\item 
+class \mbox{\hyperlink{classutils_1_1datasets_1_1_load_webcam}{utils.\+datasets.\+Load\+Webcam}}
+\item 
+class \mbox{\hyperlink{classutils_1_1datasets_1_1_load_streams}{utils.\+datasets.\+Load\+Streams}}
+\item 
+class \mbox{\hyperlink{classutils_1_1datasets_1_1_load_images_and_labels}{utils.\+datasets.\+Load\+Images\+And\+Labels}}
+\item 
+class \mbox{\hyperlink{classutils_1_1datasets_1_1_albumentations}{utils.\+datasets.\+Albumentations}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+namespace \mbox{\hyperlink{namespaceutils}{utils}}
+\item 
+namespace \mbox{\hyperlink{namespaceutils_1_1datasets}{utils.\+datasets}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{namespaceutils_1_1datasets_aabcd865429d5757a8da6ba105e54d5b7}{utils.\+datasets.\+get\+\_\+hash}} (files)
+\item 
+\mbox{\hyperlink{namespaceutils_1_1datasets_a523c48cbe560ef3075d85e9b37c5e3ef}{utils.\+datasets.\+exif\+\_\+size}} (img)
+\item 
+\mbox{\hyperlink{namespaceutils_1_1datasets_a54352651c9b9101599265aeaa2a797ca}{utils.\+datasets.\+create\+\_\+dataloader\+\_\+custom}} (path, imgsz, stride, opt, batch\+\_\+size, tile\+\_\+size, overlap, hyp=None, augment=False, rect=False, pad=0.\+0, rank=-\/1, world\+\_\+size=1, workers=4, image\+\_\+weights=False, quad=False)
+\item 
+\mbox{\hyperlink{namespaceutils_1_1datasets_acea3cd73bcd60215a36020c74c7934f6}{utils.\+datasets.\+load\+\_\+tile}} (self, index)
+\item 
+\mbox{\hyperlink{namespaceutils_1_1datasets_ac53d625f49a0c2352580ac7d405ad003}{utils.\+datasets.\+create\+\_\+dataloader}} (path, imgsz, batch\+\_\+size, stride, opt, hyp=None, augment=False, cache=False, pad=0.\+0, rect=False, rank=-\/1, world\+\_\+size=1, workers=8, image\+\_\+weights=False, quad=False, prefix=\textquotesingle{}\textquotesingle{})
+\item 
+\mbox{\hyperlink{namespaceutils_1_1datasets_a423a96d92e9b3d564266c96e7a27df08}{utils.\+datasets.\+img2label\+\_\+paths}} (img\+\_\+paths)
+\item 
+\mbox{\hyperlink{namespaceutils_1_1datasets_a0e71c62f838ea0fd0942673c8c5b0614}{utils.\+datasets.\+load\+\_\+image}} (self, index)
+\item 
+\mbox{\hyperlink{namespaceutils_1_1datasets_aabbae3dc3f7e4e8f0b153e8e85b1837f}{utils.\+datasets.\+augment\+\_\+hsv}} (img, hgain=0.\+5, sgain=0.\+5, vgain=0.\+5)
+\item 
+\mbox{\hyperlink{namespaceutils_1_1datasets_a2ef5970b3ac90c90785b6f44a9e1e20f}{utils.\+datasets.\+hist\+\_\+equalize}} (img, clahe=True, bgr=False)
+\item 
+\mbox{\hyperlink{namespaceutils_1_1datasets_ab466137c954372ad3dcb16545d9b7e4a}{utils.\+datasets.\+load\+\_\+mosaic}} (self, index)
+\item 
+\mbox{\hyperlink{namespaceutils_1_1datasets_a96b88619837b56d9cd8368aacc2f2d8e}{utils.\+datasets.\+load\+\_\+mosaic9}} (self, index)
+\item 
+\mbox{\hyperlink{namespaceutils_1_1datasets_a42a515ed7ed800b4527ce87643050792}{utils.\+datasets.\+load\+\_\+samples}} (self, index)
+\item 
+\mbox{\hyperlink{namespaceutils_1_1datasets_a4c64fd203394363dd6cdfd6ad8fd8a4c}{utils.\+datasets.\+copy\+\_\+paste}} (img, labels, segments, probability=0.\+5)
+\item 
+\mbox{\hyperlink{namespaceutils_1_1datasets_ae0cd2f2a97608ac4761c91207986c1a7}{utils.\+datasets.\+remove\+\_\+background}} (img, labels, segments)
+\item 
+\mbox{\hyperlink{namespaceutils_1_1datasets_a0fded6322fd6136faf9c7dd6423317b5}{utils.\+datasets.\+sample\+\_\+segments}} (img, labels, segments, probability=0.\+5)
+\item 
+\mbox{\hyperlink{namespaceutils_1_1datasets_a9f201a4bbfd052fbea57853859299b97}{utils.\+datasets.\+replicate}} (img, labels)
+\item 
+\mbox{\hyperlink{namespaceutils_1_1datasets_a32a876f05beeb35cfe138bc75b8f666c}{utils.\+datasets.\+letterbox}} (img, new\+\_\+shape=(640, 640), color=(114, 114, 114), auto=True, scale\+Fill=False, scaleup=True, stride=32)
+\item 
+\mbox{\hyperlink{namespaceutils_1_1datasets_a2ba2267a75e7ac1c2b61f42ec2ec2226}{utils.\+datasets.\+random\+\_\+perspective}} (img, targets=(), segments=(), degrees=10, translate=.\+1, scale=.\+1, shear=10, perspective=0.\+0, border=(0, 0))
+\item 
+\mbox{\hyperlink{namespaceutils_1_1datasets_ac237673018e59a7a41c909591437ceba}{utils.\+datasets.\+box\+\_\+candidates}} (box1, box2, wh\+\_\+thr=2, ar\+\_\+thr=20, area\+\_\+thr=0.\+1, eps=1e-\/16)
+\item 
+\mbox{\hyperlink{namespaceutils_1_1datasets_aa34d31412322e98a4848e624b6e920d1}{utils.\+datasets.\+bbox\+\_\+ioa}} (box1, box2)
+\item 
+\mbox{\hyperlink{namespaceutils_1_1datasets_a6b3906af88eedc0aa2c78f739d1abc7f}{utils.\+datasets.\+cutout}} (image, labels)
+\item 
+\mbox{\hyperlink{namespaceutils_1_1datasets_af01cf63bba5c4e93de7db77195e7b2e7}{utils.\+datasets.\+pastein}} (image, labels, sample\+\_\+labels, sample\+\_\+images, sample\+\_\+masks)
+\item 
+\mbox{\hyperlink{namespaceutils_1_1datasets_a805c131b56261125de62150fa99eaed9}{utils.\+datasets.\+create\+\_\+folder}} (path=\textquotesingle{}./new\textquotesingle{})
+\item 
+\mbox{\hyperlink{namespaceutils_1_1datasets_a2b910880870424b345392f131817e451}{utils.\+datasets.\+flatten\+\_\+recursive}} (path=\textquotesingle{}../coco\textquotesingle{})
+\item 
+\mbox{\hyperlink{namespaceutils_1_1datasets_a9f7ce1b83a7597c1bbd8202da93177ea}{utils.\+datasets.\+extract\+\_\+boxes}} (path=\textquotesingle{}../coco/\textquotesingle{})
+\item 
+\mbox{\hyperlink{namespaceutils_1_1datasets_aff067185990ca7110e16448bc3623598}{utils.\+datasets.\+autosplit}} (path=\textquotesingle{}../coco\textquotesingle{}, weights=(0.\+9, 0.\+1, 0.\+0), annotated\+\_\+only=False)
+\item 
+\mbox{\hyperlink{namespaceutils_1_1datasets_ab171d94b5fb43ee6542ff90c60d1ead2}{utils.\+datasets.\+load\+\_\+segmentations}} (self, index)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+str \mbox{\hyperlink{namespaceutils_1_1datasets_a8b6f326842b63fb85df7db7f11df7235}{utils.\+datasets.\+current\+\_\+dir}} = r\textquotesingle{}D\+:\textbackslash{}\+Shreyan\textbackslash{}\+Development\textbackslash{}\+Cervi\+AI\textquotesingle{}
+\item 
+\mbox{\hyperlink{namespaceutils_1_1datasets_a31bee3d51894e6977f5e53bff7d1b6c0}{utils.\+datasets.\+OPENSLIDE\+\_\+\+PATH}} = os.\+path.\+join(\mbox{\hyperlink{namespaceutils_1_1datasets_a8b6f326842b63fb85df7db7f11df7235}{current\+\_\+dir}}, \textquotesingle{}openslide-\/win64-\/20230414\textquotesingle{}, \textquotesingle{}bin\textquotesingle{})
+\item 
+str \mbox{\hyperlink{namespaceutils_1_1datasets_ab85414f6863ae4d76f53d7cb9b93938f}{utils.\+datasets.\+help\+\_\+url}} = \textquotesingle{}https\+://github.\+com/ultralytics/yolov5/wiki/Train-\/Custom-\/Data\textquotesingle{}
+\item 
+list \mbox{\hyperlink{namespaceutils_1_1datasets_a94983d3eb3bf0224bbc210dab69520fb}{utils.\+datasets.\+img\+\_\+formats}} = \mbox{[}\textquotesingle{}bmp\textquotesingle{}, \textquotesingle{}jpg\textquotesingle{}, \textquotesingle{}jpeg\textquotesingle{}, \textquotesingle{}png\textquotesingle{}, \textquotesingle{}tif\textquotesingle{}, \textquotesingle{}tiff\textquotesingle{}, \textquotesingle{}dng\textquotesingle{}, \textquotesingle{}webp\textquotesingle{}, \textquotesingle{}mpo\textquotesingle{}\mbox{]}
+\item 
+list \mbox{\hyperlink{namespaceutils_1_1datasets_a02de10326105d16ca1a996643ab9a46b}{utils.\+datasets.\+vid\+\_\+formats}} = \mbox{[}\textquotesingle{}mov\textquotesingle{}, \textquotesingle{}avi\textquotesingle{}, \textquotesingle{}mp4\textquotesingle{}, \textquotesingle{}mpg\textquotesingle{}, \textquotesingle{}mpeg\textquotesingle{}, \textquotesingle{}m4v\textquotesingle{}, \textquotesingle{}wmv\textquotesingle{}, \textquotesingle{}mkv\textquotesingle{}\mbox{]}
+\item 
+\mbox{\hyperlink{namespaceutils_1_1datasets_a57e3b1c3c2c79ccd3d7f925026204ac6}{utils.\+datasets.\+logger}} = logging.\+get\+Logger(\+\_\+\+\_\+name\+\_\+\+\_\+)
+\end{DoxyCompactItemize}

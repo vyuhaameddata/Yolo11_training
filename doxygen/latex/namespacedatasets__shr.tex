@@ -1,0 +1,304 @@
+\doxysection{datasets\+\_\+shr Namespace Reference}
+\hypertarget{namespacedatasets__shr}{}\label{namespacedatasets__shr}\index{datasets\_shr@{datasets\_shr}}
+\doxysubsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classdatasets__shr_1_1___repeat_sampler}{\+\_\+\+Repeat\+Sampler}}
+\item 
+class \mbox{\hyperlink{classdatasets__shr_1_1_albumentations}{Albumentations}}
+\item 
+class \mbox{\hyperlink{classdatasets__shr_1_1_infinite_data_loader}{Infinite\+Data\+Loader}}
+\item 
+class \mbox{\hyperlink{classdatasets__shr_1_1load__custom}{load\+\_\+custom}}
+\item 
+class \mbox{\hyperlink{classdatasets__shr_1_1_load_images}{Load\+Images}}
+\item 
+class \mbox{\hyperlink{classdatasets__shr_1_1_load_images_and_labels}{Load\+Images\+And\+Labels}}
+\item 
+class \mbox{\hyperlink{classdatasets__shr_1_1_load_streams}{Load\+Streams}}
+\item 
+class \mbox{\hyperlink{classdatasets__shr_1_1_load_webcam}{Load\+Webcam}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{namespacedatasets__shr_a4f39eeb43663992af596573da82d7421}{get\+\_\+hash}} (files)
+\item 
+\mbox{\hyperlink{namespacedatasets__shr_a9e7428effeefd596d850944947a20e01}{exif\+\_\+size}} (img)
+\item 
+\mbox{\hyperlink{namespacedatasets__shr_a942ba8393531e82d645d658145850ce6}{create\+\_\+dataloader\+\_\+custom}} (path, imgsz, stride, opt, batch\+\_\+size, tile\+\_\+size, overlap, hyp=None, augment=False, rect=False, pad=0.\+0, rank=-\/1, world\+\_\+size=1, workers=4, image\+\_\+weights=False, quad=False)
+\item 
+\mbox{\hyperlink{namespacedatasets__shr_a83c78f65992b7eea5763e2456a817471}{load\+\_\+tile}} (self, index)
+\item 
+\mbox{\hyperlink{namespacedatasets__shr_aa3a8e137e73dafc4700879e2a4b4ed53}{create\+\_\+dataloader}} (path, imgsz, batch\+\_\+size, stride, opt, hyp=None, augment=False, cache=False, pad=0.\+0, rect=False, rank=-\/1, world\+\_\+size=1, workers=8, image\+\_\+weights=False, quad=False, prefix=\textquotesingle{}\textquotesingle{})
+\item 
+\mbox{\hyperlink{namespacedatasets__shr_a676efda7af08c854a1238170635c34ac}{img2label\+\_\+paths}} (img\+\_\+paths)
+\item 
+\mbox{\hyperlink{namespacedatasets__shr_a42c8672ec736228f9d47fa27532c6225}{load\+\_\+image}} (self, index)
+\item 
+\mbox{\hyperlink{namespacedatasets__shr_aa24d1b63ca4ccd0d1cd9983f9c7a5821}{augment\+\_\+hsv}} (img, hgain=0.\+5, sgain=0.\+5, vgain=0.\+5)
+\item 
+\mbox{\hyperlink{namespacedatasets__shr_a42c21ef98fb2f4c8e47f8d5fcade0ca6}{hist\+\_\+equalize}} (img, clahe=True, bgr=False)
+\item 
+\mbox{\hyperlink{namespacedatasets__shr_a918b8ccff46b5e31f77b4be7d7493686}{load\+\_\+mosaic}} (self, index)
+\item 
+\mbox{\hyperlink{namespacedatasets__shr_ad0e561247f5f186e2bc9bb7436bb99dc}{load\+\_\+mosaic9}} (self, index)
+\item 
+\mbox{\hyperlink{namespacedatasets__shr_a05101eee1e9cb78a9f89fb1c8e384d70}{load\+\_\+samples}} (self, index)
+\item 
+\mbox{\hyperlink{namespacedatasets__shr_a5f9c653e3c61411c9a893fb3db24f363}{copy\+\_\+paste}} (img, labels, segments, probability=0.\+5)
+\item 
+\mbox{\hyperlink{namespacedatasets__shr_a68c7c40b9dd622ace72626a02301e6c8}{remove\+\_\+background}} (img, labels, segments)
+\item 
+\mbox{\hyperlink{namespacedatasets__shr_a635d24675d706bf4b239b0a3cbdb08be}{sample\+\_\+segments}} (img, labels, segments, probability=0.\+5)
+\item 
+\mbox{\hyperlink{namespacedatasets__shr_a93658baec1110fba47c80fccc0918ea6}{replicate}} (img, labels)
+\item 
+\mbox{\hyperlink{namespacedatasets__shr_a2b762300f3c443b42681d0139bc1193f}{letterbox}} (img, new\+\_\+shape=(640, 640), color=(114, 114, 114), auto=True, scale\+Fill=False, scaleup=True, stride=32)
+\item 
+\mbox{\hyperlink{namespacedatasets__shr_a7d0b502abd9a2f785dbedfa20d8ea219}{random\+\_\+perspective}} (img, targets=(), segments=(), degrees=10, translate=.\+1, scale=.\+1, shear=10, perspective=0.\+0, border=(0, 0))
+\item 
+\mbox{\hyperlink{namespacedatasets__shr_ab057c82802f7ce9dd1b176d09b88a7b8}{box\+\_\+candidates}} (box1, box2, wh\+\_\+thr=2, ar\+\_\+thr=20, area\+\_\+thr=0.\+1, eps=1e-\/16)
+\item 
+\mbox{\hyperlink{namespacedatasets__shr_aa0e80e574376e38f0b1aa9febab96e95}{bbox\+\_\+ioa}} (box1, box2)
+\item 
+\mbox{\hyperlink{namespacedatasets__shr_a095ba81db844aff7bab13ccefdf327c4}{cutout}} (image, labels)
+\item 
+\mbox{\hyperlink{namespacedatasets__shr_a56e44742bde63d449ef624ad7aa98661}{pastein}} (image, labels, sample\+\_\+labels, sample\+\_\+images, sample\+\_\+masks)
+\item 
+\mbox{\hyperlink{namespacedatasets__shr_a40ca993033c17cce34981ca54442839e}{create\+\_\+folder}} (path=\textquotesingle{}./new\textquotesingle{})
+\item 
+\mbox{\hyperlink{namespacedatasets__shr_a69a62bbd7a964e5174aabf1443b7d0c7}{flatten\+\_\+recursive}} (path=\textquotesingle{}../coco\textquotesingle{})
+\item 
+\mbox{\hyperlink{namespacedatasets__shr_a8b7e13616ec23078c138c6df3810300b}{extract\+\_\+boxes}} (path=\textquotesingle{}../coco/\textquotesingle{})
+\item 
+\mbox{\hyperlink{namespacedatasets__shr_af674e46ec561b9f9a03d4bf2d987091a}{autosplit}} (path=\textquotesingle{}../coco\textquotesingle{}, weights=(0.\+9, 0.\+1, 0.\+0), annotated\+\_\+only=False)
+\item 
+\mbox{\hyperlink{namespacedatasets__shr_a37aef90e4d9008026fc9184ff58951a6}{load\+\_\+segmentations}} (self, index)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+str \mbox{\hyperlink{namespacedatasets__shr_aedd536d5e071ed427945b839b40978dd}{current\+\_\+dir}} = r\textquotesingle{}D\+:\textbackslash{}\+Shreyan\textbackslash{}labsys\textbackslash{}yolov7\textquotesingle{}
+\item 
+\mbox{\hyperlink{namespacedatasets__shr_a290d09c30b37cf2c043a36e5212b50fe}{OPENSLIDE\+\_\+\+PATH}} = os.\+path.\+join(\mbox{\hyperlink{namespacedatasets__shr_aedd536d5e071ed427945b839b40978dd}{current\+\_\+dir}}, \textquotesingle{}openslide-\/win64-\/20230414\textquotesingle{}, \textquotesingle{}bin\textquotesingle{})
+\item 
+str \mbox{\hyperlink{namespacedatasets__shr_a697fe5e023ce377fd66a7a7562b19633}{help\+\_\+url}} = \textquotesingle{}https\+://github.\+com/ultralytics/yolov5/wiki/Train-\/Custom-\/Data\textquotesingle{}
+\item 
+list \mbox{\hyperlink{namespacedatasets__shr_aed65b0200553db9ff971f4c2ecea6e85}{img\+\_\+formats}} = \mbox{[}\textquotesingle{}bmp\textquotesingle{}, \textquotesingle{}jpg\textquotesingle{}, \textquotesingle{}jpeg\textquotesingle{}, \textquotesingle{}png\textquotesingle{}, \textquotesingle{}tif\textquotesingle{}, \textquotesingle{}tiff\textquotesingle{}, \textquotesingle{}dng\textquotesingle{}, \textquotesingle{}webp\textquotesingle{}, \textquotesingle{}mpo\textquotesingle{}\mbox{]}
+\item 
+list \mbox{\hyperlink{namespacedatasets__shr_a1a2896830c8b609c3156877369522224}{vid\+\_\+formats}} = \mbox{[}\textquotesingle{}mov\textquotesingle{}, \textquotesingle{}avi\textquotesingle{}, \textquotesingle{}mp4\textquotesingle{}, \textquotesingle{}mpg\textquotesingle{}, \textquotesingle{}mpeg\textquotesingle{}, \textquotesingle{}m4v\textquotesingle{}, \textquotesingle{}wmv\textquotesingle{}, \textquotesingle{}mkv\textquotesingle{}\mbox{]}
+\item 
+\mbox{\hyperlink{namespacedatasets__shr_a85396f88691c1f8c0133fe335cf2d5ca}{logger}} = logging.\+get\+Logger(\+\_\+\+\_\+name\+\_\+\+\_\+)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{namespacedatasets__shr_aa24d1b63ca4ccd0d1cd9983f9c7a5821}\index{datasets\_shr@{datasets\_shr}!augment\_hsv@{augment\_hsv}}
+\index{augment\_hsv@{augment\_hsv}!datasets\_shr@{datasets\_shr}}
+\doxysubsubsection{\texorpdfstring{augment\_hsv()}{augment\_hsv()}}
+{\footnotesize\ttfamily \label{namespacedatasets__shr_aa24d1b63ca4ccd0d1cd9983f9c7a5821} 
+datasets\+\_\+shr.\+augment\+\_\+hsv (\begin{DoxyParamCaption}\item[{}]{img}{, }\item[{}]{hgain}{ = {\ttfamily 0.5}, }\item[{}]{sgain}{ = {\ttfamily 0.5}, }\item[{}]{vgain}{ = {\ttfamily 0.5}}\end{DoxyParamCaption})}
+
+\Hypertarget{namespacedatasets__shr_af674e46ec561b9f9a03d4bf2d987091a}\index{datasets\_shr@{datasets\_shr}!autosplit@{autosplit}}
+\index{autosplit@{autosplit}!datasets\_shr@{datasets\_shr}}
+\doxysubsubsection{\texorpdfstring{autosplit()}{autosplit()}}
+{\footnotesize\ttfamily \label{namespacedatasets__shr_af674e46ec561b9f9a03d4bf2d987091a} 
+datasets\+\_\+shr.\+autosplit (\begin{DoxyParamCaption}\item[{}]{path}{ = {\ttfamily \textquotesingle{}../coco\textquotesingle{}}, }\item[{}]{weights}{ = {\ttfamily (0.9,~0.1,~0.0)}, }\item[{}]{annotated\+\_\+only}{ = {\ttfamily False}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb} Autosplit a dataset into train/val/test splits and save path/autosplit_*.txt files
+Usage: from utils.datasets import *; autosplit('../coco')
+Arguments
+    path:           Path to images directory
+    weights:        Train, val, test weights (list)
+    annotated_only: Only use images with an annotated txt file
+\end{DoxyVerb}
+ \Hypertarget{namespacedatasets__shr_aa0e80e574376e38f0b1aa9febab96e95}\index{datasets\_shr@{datasets\_shr}!bbox\_ioa@{bbox\_ioa}}
+\index{bbox\_ioa@{bbox\_ioa}!datasets\_shr@{datasets\_shr}}
+\doxysubsubsection{\texorpdfstring{bbox\_ioa()}{bbox\_ioa()}}
+{\footnotesize\ttfamily \label{namespacedatasets__shr_aa0e80e574376e38f0b1aa9febab96e95} 
+datasets\+\_\+shr.\+bbox\+\_\+ioa (\begin{DoxyParamCaption}\item[{}]{box1}{, }\item[{}]{box2}{}\end{DoxyParamCaption})}
+
+\Hypertarget{namespacedatasets__shr_ab057c82802f7ce9dd1b176d09b88a7b8}\index{datasets\_shr@{datasets\_shr}!box\_candidates@{box\_candidates}}
+\index{box\_candidates@{box\_candidates}!datasets\_shr@{datasets\_shr}}
+\doxysubsubsection{\texorpdfstring{box\_candidates()}{box\_candidates()}}
+{\footnotesize\ttfamily \label{namespacedatasets__shr_ab057c82802f7ce9dd1b176d09b88a7b8} 
+datasets\+\_\+shr.\+box\+\_\+candidates (\begin{DoxyParamCaption}\item[{}]{box1}{, }\item[{}]{box2}{, }\item[{}]{wh\+\_\+thr}{ = {\ttfamily 2}, }\item[{}]{ar\+\_\+thr}{ = {\ttfamily 20}, }\item[{}]{area\+\_\+thr}{ = {\ttfamily 0.1}, }\item[{}]{eps}{ = {\ttfamily 1e-\/16}}\end{DoxyParamCaption})}
+
+\Hypertarget{namespacedatasets__shr_a5f9c653e3c61411c9a893fb3db24f363}\index{datasets\_shr@{datasets\_shr}!copy\_paste@{copy\_paste}}
+\index{copy\_paste@{copy\_paste}!datasets\_shr@{datasets\_shr}}
+\doxysubsubsection{\texorpdfstring{copy\_paste()}{copy\_paste()}}
+{\footnotesize\ttfamily \label{namespacedatasets__shr_a5f9c653e3c61411c9a893fb3db24f363} 
+datasets\+\_\+shr.\+copy\+\_\+paste (\begin{DoxyParamCaption}\item[{}]{img}{, }\item[{}]{labels}{, }\item[{}]{segments}{, }\item[{}]{probability}{ = {\ttfamily 0.5}}\end{DoxyParamCaption})}
+
+\Hypertarget{namespacedatasets__shr_aa3a8e137e73dafc4700879e2a4b4ed53}\index{datasets\_shr@{datasets\_shr}!create\_dataloader@{create\_dataloader}}
+\index{create\_dataloader@{create\_dataloader}!datasets\_shr@{datasets\_shr}}
+\doxysubsubsection{\texorpdfstring{create\_dataloader()}{create\_dataloader()}}
+{\footnotesize\ttfamily \label{namespacedatasets__shr_aa3a8e137e73dafc4700879e2a4b4ed53} 
+datasets\+\_\+shr.\+create\+\_\+dataloader (\begin{DoxyParamCaption}\item[{}]{path}{, }\item[{}]{imgsz}{, }\item[{}]{batch\+\_\+size}{, }\item[{}]{stride}{, }\item[{}]{opt}{, }\item[{}]{hyp}{ = {\ttfamily None}, }\item[{}]{augment}{ = {\ttfamily False}, }\item[{}]{cache}{ = {\ttfamily False}, }\item[{}]{pad}{ = {\ttfamily 0.0}, }\item[{}]{rect}{ = {\ttfamily False}, }\item[{}]{rank}{ = {\ttfamily -\/1}, }\item[{}]{world\+\_\+size}{ = {\ttfamily 1}, }\item[{}]{workers}{ = {\ttfamily 8}, }\item[{}]{image\+\_\+weights}{ = {\ttfamily False}, }\item[{}]{quad}{ = {\ttfamily False}, }\item[{}]{prefix}{ = {\ttfamily \textquotesingle{}\textquotesingle{}}}\end{DoxyParamCaption})}
+
+\Hypertarget{namespacedatasets__shr_a942ba8393531e82d645d658145850ce6}\index{datasets\_shr@{datasets\_shr}!create\_dataloader\_custom@{create\_dataloader\_custom}}
+\index{create\_dataloader\_custom@{create\_dataloader\_custom}!datasets\_shr@{datasets\_shr}}
+\doxysubsubsection{\texorpdfstring{create\_dataloader\_custom()}{create\_dataloader\_custom()}}
+{\footnotesize\ttfamily \label{namespacedatasets__shr_a942ba8393531e82d645d658145850ce6} 
+datasets\+\_\+shr.\+create\+\_\+dataloader\+\_\+custom (\begin{DoxyParamCaption}\item[{}]{path}{, }\item[{}]{imgsz}{, }\item[{}]{stride}{, }\item[{}]{opt}{, }\item[{}]{batch\+\_\+size}{, }\item[{}]{tile\+\_\+size}{, }\item[{}]{overlap}{, }\item[{}]{hyp}{ = {\ttfamily None}, }\item[{}]{augment}{ = {\ttfamily False}, }\item[{}]{rect}{ = {\ttfamily False}, }\item[{}]{pad}{ = {\ttfamily 0.0}, }\item[{}]{rank}{ = {\ttfamily -\/1}, }\item[{}]{world\+\_\+size}{ = {\ttfamily 1}, }\item[{}]{workers}{ = {\ttfamily 4}, }\item[{}]{image\+\_\+weights}{ = {\ttfamily False}, }\item[{}]{quad}{ = {\ttfamily False}}\end{DoxyParamCaption})}
+
+\Hypertarget{namespacedatasets__shr_a40ca993033c17cce34981ca54442839e}\index{datasets\_shr@{datasets\_shr}!create\_folder@{create\_folder}}
+\index{create\_folder@{create\_folder}!datasets\_shr@{datasets\_shr}}
+\doxysubsubsection{\texorpdfstring{create\_folder()}{create\_folder()}}
+{\footnotesize\ttfamily \label{namespacedatasets__shr_a40ca993033c17cce34981ca54442839e} 
+datasets\+\_\+shr.\+create\+\_\+folder (\begin{DoxyParamCaption}\item[{}]{path}{ = {\ttfamily \textquotesingle{}./new\textquotesingle{}}}\end{DoxyParamCaption})}
+
+\Hypertarget{namespacedatasets__shr_a095ba81db844aff7bab13ccefdf327c4}\index{datasets\_shr@{datasets\_shr}!cutout@{cutout}}
+\index{cutout@{cutout}!datasets\_shr@{datasets\_shr}}
+\doxysubsubsection{\texorpdfstring{cutout()}{cutout()}}
+{\footnotesize\ttfamily \label{namespacedatasets__shr_a095ba81db844aff7bab13ccefdf327c4} 
+datasets\+\_\+shr.\+cutout (\begin{DoxyParamCaption}\item[{}]{image}{, }\item[{}]{labels}{}\end{DoxyParamCaption})}
+
+\Hypertarget{namespacedatasets__shr_a9e7428effeefd596d850944947a20e01}\index{datasets\_shr@{datasets\_shr}!exif\_size@{exif\_size}}
+\index{exif\_size@{exif\_size}!datasets\_shr@{datasets\_shr}}
+\doxysubsubsection{\texorpdfstring{exif\_size()}{exif\_size()}}
+{\footnotesize\ttfamily \label{namespacedatasets__shr_a9e7428effeefd596d850944947a20e01} 
+datasets\+\_\+shr.\+exif\+\_\+size (\begin{DoxyParamCaption}\item[{}]{img}{}\end{DoxyParamCaption})}
+
+\Hypertarget{namespacedatasets__shr_a8b7e13616ec23078c138c6df3810300b}\index{datasets\_shr@{datasets\_shr}!extract\_boxes@{extract\_boxes}}
+\index{extract\_boxes@{extract\_boxes}!datasets\_shr@{datasets\_shr}}
+\doxysubsubsection{\texorpdfstring{extract\_boxes()}{extract\_boxes()}}
+{\footnotesize\ttfamily \label{namespacedatasets__shr_a8b7e13616ec23078c138c6df3810300b} 
+datasets\+\_\+shr.\+extract\+\_\+boxes (\begin{DoxyParamCaption}\item[{}]{path}{ = {\ttfamily \textquotesingle{}../coco/\textquotesingle{}}}\end{DoxyParamCaption})}
+
+\Hypertarget{namespacedatasets__shr_a69a62bbd7a964e5174aabf1443b7d0c7}\index{datasets\_shr@{datasets\_shr}!flatten\_recursive@{flatten\_recursive}}
+\index{flatten\_recursive@{flatten\_recursive}!datasets\_shr@{datasets\_shr}}
+\doxysubsubsection{\texorpdfstring{flatten\_recursive()}{flatten\_recursive()}}
+{\footnotesize\ttfamily \label{namespacedatasets__shr_a69a62bbd7a964e5174aabf1443b7d0c7} 
+datasets\+\_\+shr.\+flatten\+\_\+recursive (\begin{DoxyParamCaption}\item[{}]{path}{ = {\ttfamily \textquotesingle{}../coco\textquotesingle{}}}\end{DoxyParamCaption})}
+
+\Hypertarget{namespacedatasets__shr_a4f39eeb43663992af596573da82d7421}\index{datasets\_shr@{datasets\_shr}!get\_hash@{get\_hash}}
+\index{get\_hash@{get\_hash}!datasets\_shr@{datasets\_shr}}
+\doxysubsubsection{\texorpdfstring{get\_hash()}{get\_hash()}}
+{\footnotesize\ttfamily \label{namespacedatasets__shr_a4f39eeb43663992af596573da82d7421} 
+datasets\+\_\+shr.\+get\+\_\+hash (\begin{DoxyParamCaption}\item[{}]{files}{}\end{DoxyParamCaption})}
+
+\Hypertarget{namespacedatasets__shr_a42c21ef98fb2f4c8e47f8d5fcade0ca6}\index{datasets\_shr@{datasets\_shr}!hist\_equalize@{hist\_equalize}}
+\index{hist\_equalize@{hist\_equalize}!datasets\_shr@{datasets\_shr}}
+\doxysubsubsection{\texorpdfstring{hist\_equalize()}{hist\_equalize()}}
+{\footnotesize\ttfamily \label{namespacedatasets__shr_a42c21ef98fb2f4c8e47f8d5fcade0ca6} 
+datasets\+\_\+shr.\+hist\+\_\+equalize (\begin{DoxyParamCaption}\item[{}]{img}{, }\item[{}]{clahe}{ = {\ttfamily True}, }\item[{}]{bgr}{ = {\ttfamily False}}\end{DoxyParamCaption})}
+
+\Hypertarget{namespacedatasets__shr_a676efda7af08c854a1238170635c34ac}\index{datasets\_shr@{datasets\_shr}!img2label\_paths@{img2label\_paths}}
+\index{img2label\_paths@{img2label\_paths}!datasets\_shr@{datasets\_shr}}
+\doxysubsubsection{\texorpdfstring{img2label\_paths()}{img2label\_paths()}}
+{\footnotesize\ttfamily \label{namespacedatasets__shr_a676efda7af08c854a1238170635c34ac} 
+datasets\+\_\+shr.\+img2label\+\_\+paths (\begin{DoxyParamCaption}\item[{}]{img\+\_\+paths}{}\end{DoxyParamCaption})}
+
+\Hypertarget{namespacedatasets__shr_a2b762300f3c443b42681d0139bc1193f}\index{datasets\_shr@{datasets\_shr}!letterbox@{letterbox}}
+\index{letterbox@{letterbox}!datasets\_shr@{datasets\_shr}}
+\doxysubsubsection{\texorpdfstring{letterbox()}{letterbox()}}
+{\footnotesize\ttfamily \label{namespacedatasets__shr_a2b762300f3c443b42681d0139bc1193f} 
+datasets\+\_\+shr.\+letterbox (\begin{DoxyParamCaption}\item[{}]{img}{, }\item[{}]{new\+\_\+shape}{ = {\ttfamily (640,~640)}, }\item[{}]{color}{ = {\ttfamily (114,~114,~114)}, }\item[{}]{auto}{ = {\ttfamily True}, }\item[{}]{scale\+Fill}{ = {\ttfamily False}, }\item[{}]{scaleup}{ = {\ttfamily True}, }\item[{}]{stride}{ = {\ttfamily 32}}\end{DoxyParamCaption})}
+
+\Hypertarget{namespacedatasets__shr_a42c8672ec736228f9d47fa27532c6225}\index{datasets\_shr@{datasets\_shr}!load\_image@{load\_image}}
+\index{load\_image@{load\_image}!datasets\_shr@{datasets\_shr}}
+\doxysubsubsection{\texorpdfstring{load\_image()}{load\_image()}}
+{\footnotesize\ttfamily \label{namespacedatasets__shr_a42c8672ec736228f9d47fa27532c6225} 
+datasets\+\_\+shr.\+load\+\_\+image (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{index}{}\end{DoxyParamCaption})}
+
+\Hypertarget{namespacedatasets__shr_a918b8ccff46b5e31f77b4be7d7493686}\index{datasets\_shr@{datasets\_shr}!load\_mosaic@{load\_mosaic}}
+\index{load\_mosaic@{load\_mosaic}!datasets\_shr@{datasets\_shr}}
+\doxysubsubsection{\texorpdfstring{load\_mosaic()}{load\_mosaic()}}
+{\footnotesize\ttfamily \label{namespacedatasets__shr_a918b8ccff46b5e31f77b4be7d7493686} 
+datasets\+\_\+shr.\+load\+\_\+mosaic (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{index}{}\end{DoxyParamCaption})}
+
+\Hypertarget{namespacedatasets__shr_ad0e561247f5f186e2bc9bb7436bb99dc}\index{datasets\_shr@{datasets\_shr}!load\_mosaic9@{load\_mosaic9}}
+\index{load\_mosaic9@{load\_mosaic9}!datasets\_shr@{datasets\_shr}}
+\doxysubsubsection{\texorpdfstring{load\_mosaic9()}{load\_mosaic9()}}
+{\footnotesize\ttfamily \label{namespacedatasets__shr_ad0e561247f5f186e2bc9bb7436bb99dc} 
+datasets\+\_\+shr.\+load\+\_\+mosaic9 (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{index}{}\end{DoxyParamCaption})}
+
+\Hypertarget{namespacedatasets__shr_a05101eee1e9cb78a9f89fb1c8e384d70}\index{datasets\_shr@{datasets\_shr}!load\_samples@{load\_samples}}
+\index{load\_samples@{load\_samples}!datasets\_shr@{datasets\_shr}}
+\doxysubsubsection{\texorpdfstring{load\_samples()}{load\_samples()}}
+{\footnotesize\ttfamily \label{namespacedatasets__shr_a05101eee1e9cb78a9f89fb1c8e384d70} 
+datasets\+\_\+shr.\+load\+\_\+samples (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{index}{}\end{DoxyParamCaption})}
+
+\Hypertarget{namespacedatasets__shr_a37aef90e4d9008026fc9184ff58951a6}\index{datasets\_shr@{datasets\_shr}!load\_segmentations@{load\_segmentations}}
+\index{load\_segmentations@{load\_segmentations}!datasets\_shr@{datasets\_shr}}
+\doxysubsubsection{\texorpdfstring{load\_segmentations()}{load\_segmentations()}}
+{\footnotesize\ttfamily \label{namespacedatasets__shr_a37aef90e4d9008026fc9184ff58951a6} 
+datasets\+\_\+shr.\+load\+\_\+segmentations (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{index}{}\end{DoxyParamCaption})}
+
+\Hypertarget{namespacedatasets__shr_a83c78f65992b7eea5763e2456a817471}\index{datasets\_shr@{datasets\_shr}!load\_tile@{load\_tile}}
+\index{load\_tile@{load\_tile}!datasets\_shr@{datasets\_shr}}
+\doxysubsubsection{\texorpdfstring{load\_tile()}{load\_tile()}}
+{\footnotesize\ttfamily \label{namespacedatasets__shr_a83c78f65992b7eea5763e2456a817471} 
+datasets\+\_\+shr.\+load\+\_\+tile (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{index}{}\end{DoxyParamCaption})}
+
+\Hypertarget{namespacedatasets__shr_a56e44742bde63d449ef624ad7aa98661}\index{datasets\_shr@{datasets\_shr}!pastein@{pastein}}
+\index{pastein@{pastein}!datasets\_shr@{datasets\_shr}}
+\doxysubsubsection{\texorpdfstring{pastein()}{pastein()}}
+{\footnotesize\ttfamily \label{namespacedatasets__shr_a56e44742bde63d449ef624ad7aa98661} 
+datasets\+\_\+shr.\+pastein (\begin{DoxyParamCaption}\item[{}]{image}{, }\item[{}]{labels}{, }\item[{}]{sample\+\_\+labels}{, }\item[{}]{sample\+\_\+images}{, }\item[{}]{sample\+\_\+masks}{}\end{DoxyParamCaption})}
+
+\Hypertarget{namespacedatasets__shr_a7d0b502abd9a2f785dbedfa20d8ea219}\index{datasets\_shr@{datasets\_shr}!random\_perspective@{random\_perspective}}
+\index{random\_perspective@{random\_perspective}!datasets\_shr@{datasets\_shr}}
+\doxysubsubsection{\texorpdfstring{random\_perspective()}{random\_perspective()}}
+{\footnotesize\ttfamily \label{namespacedatasets__shr_a7d0b502abd9a2f785dbedfa20d8ea219} 
+datasets\+\_\+shr.\+random\+\_\+perspective (\begin{DoxyParamCaption}\item[{}]{img}{, }\item[{}]{targets}{ = {\ttfamily ()}, }\item[{}]{segments}{ = {\ttfamily ()}, }\item[{}]{degrees}{ = {\ttfamily 10}, }\item[{}]{translate}{ = {\ttfamily .1}, }\item[{}]{scale}{ = {\ttfamily .1}, }\item[{}]{shear}{ = {\ttfamily 10}, }\item[{}]{perspective}{ = {\ttfamily 0.0}, }\item[{}]{border}{ = {\ttfamily (0,~0)}}\end{DoxyParamCaption})}
+
+\Hypertarget{namespacedatasets__shr_a68c7c40b9dd622ace72626a02301e6c8}\index{datasets\_shr@{datasets\_shr}!remove\_background@{remove\_background}}
+\index{remove\_background@{remove\_background}!datasets\_shr@{datasets\_shr}}
+\doxysubsubsection{\texorpdfstring{remove\_background()}{remove\_background()}}
+{\footnotesize\ttfamily \label{namespacedatasets__shr_a68c7c40b9dd622ace72626a02301e6c8} 
+datasets\+\_\+shr.\+remove\+\_\+background (\begin{DoxyParamCaption}\item[{}]{img}{, }\item[{}]{labels}{, }\item[{}]{segments}{}\end{DoxyParamCaption})}
+
+\Hypertarget{namespacedatasets__shr_a93658baec1110fba47c80fccc0918ea6}\index{datasets\_shr@{datasets\_shr}!replicate@{replicate}}
+\index{replicate@{replicate}!datasets\_shr@{datasets\_shr}}
+\doxysubsubsection{\texorpdfstring{replicate()}{replicate()}}
+{\footnotesize\ttfamily \label{namespacedatasets__shr_a93658baec1110fba47c80fccc0918ea6} 
+datasets\+\_\+shr.\+replicate (\begin{DoxyParamCaption}\item[{}]{img}{, }\item[{}]{labels}{}\end{DoxyParamCaption})}
+
+\Hypertarget{namespacedatasets__shr_a635d24675d706bf4b239b0a3cbdb08be}\index{datasets\_shr@{datasets\_shr}!sample\_segments@{sample\_segments}}
+\index{sample\_segments@{sample\_segments}!datasets\_shr@{datasets\_shr}}
+\doxysubsubsection{\texorpdfstring{sample\_segments()}{sample\_segments()}}
+{\footnotesize\ttfamily \label{namespacedatasets__shr_a635d24675d706bf4b239b0a3cbdb08be} 
+datasets\+\_\+shr.\+sample\+\_\+segments (\begin{DoxyParamCaption}\item[{}]{img}{, }\item[{}]{labels}{, }\item[{}]{segments}{, }\item[{}]{probability}{ = {\ttfamily 0.5}}\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Variable Documentation}
+\Hypertarget{namespacedatasets__shr_aedd536d5e071ed427945b839b40978dd}\index{datasets\_shr@{datasets\_shr}!current\_dir@{current\_dir}}
+\index{current\_dir@{current\_dir}!datasets\_shr@{datasets\_shr}}
+\doxysubsubsection{\texorpdfstring{current\_dir}{current\_dir}}
+{\footnotesize\ttfamily \label{namespacedatasets__shr_aedd536d5e071ed427945b839b40978dd} 
+str datasets\+\_\+shr.\+current\+\_\+dir = r\textquotesingle{}D\+:\textbackslash{}\+Shreyan\textbackslash{}labsys\textbackslash{}yolov7\textquotesingle{}}
+
+\Hypertarget{namespacedatasets__shr_a697fe5e023ce377fd66a7a7562b19633}\index{datasets\_shr@{datasets\_shr}!help\_url@{help\_url}}
+\index{help\_url@{help\_url}!datasets\_shr@{datasets\_shr}}
+\doxysubsubsection{\texorpdfstring{help\_url}{help\_url}}
+{\footnotesize\ttfamily \label{namespacedatasets__shr_a697fe5e023ce377fd66a7a7562b19633} 
+str datasets\+\_\+shr.\+help\+\_\+url = \textquotesingle{}https\+://github.\+com/ultralytics/yolov5/wiki/Train-\/Custom-\/Data\textquotesingle{}}
+
+\Hypertarget{namespacedatasets__shr_aed65b0200553db9ff971f4c2ecea6e85}\index{datasets\_shr@{datasets\_shr}!img\_formats@{img\_formats}}
+\index{img\_formats@{img\_formats}!datasets\_shr@{datasets\_shr}}
+\doxysubsubsection{\texorpdfstring{img\_formats}{img\_formats}}
+{\footnotesize\ttfamily \label{namespacedatasets__shr_aed65b0200553db9ff971f4c2ecea6e85} 
+list datasets\+\_\+shr.\+img\+\_\+formats = \mbox{[}\textquotesingle{}bmp\textquotesingle{}, \textquotesingle{}jpg\textquotesingle{}, \textquotesingle{}jpeg\textquotesingle{}, \textquotesingle{}png\textquotesingle{}, \textquotesingle{}tif\textquotesingle{}, \textquotesingle{}tiff\textquotesingle{}, \textquotesingle{}dng\textquotesingle{}, \textquotesingle{}webp\textquotesingle{}, \textquotesingle{}mpo\textquotesingle{}\mbox{]}}
+
+\Hypertarget{namespacedatasets__shr_a85396f88691c1f8c0133fe335cf2d5ca}\index{datasets\_shr@{datasets\_shr}!logger@{logger}}
+\index{logger@{logger}!datasets\_shr@{datasets\_shr}}
+\doxysubsubsection{\texorpdfstring{logger}{logger}}
+{\footnotesize\ttfamily \label{namespacedatasets__shr_a85396f88691c1f8c0133fe335cf2d5ca} 
+datasets\+\_\+shr.\+logger = logging.\+get\+Logger(\+\_\+\+\_\+name\+\_\+\+\_\+)}
+
+\Hypertarget{namespacedatasets__shr_a290d09c30b37cf2c043a36e5212b50fe}\index{datasets\_shr@{datasets\_shr}!OPENSLIDE\_PATH@{OPENSLIDE\_PATH}}
+\index{OPENSLIDE\_PATH@{OPENSLIDE\_PATH}!datasets\_shr@{datasets\_shr}}
+\doxysubsubsection{\texorpdfstring{OPENSLIDE\_PATH}{OPENSLIDE\_PATH}}
+{\footnotesize\ttfamily \label{namespacedatasets__shr_a290d09c30b37cf2c043a36e5212b50fe} 
+datasets\+\_\+shr.\+OPENSLIDE\+\_\+\+PATH = os.\+path.\+join(\mbox{\hyperlink{namespacedatasets__shr_aedd536d5e071ed427945b839b40978dd}{current\+\_\+dir}}, \textquotesingle{}openslide-\/win64-\/20230414\textquotesingle{}, \textquotesingle{}bin\textquotesingle{})}
+
+\Hypertarget{namespacedatasets__shr_a1a2896830c8b609c3156877369522224}\index{datasets\_shr@{datasets\_shr}!vid\_formats@{vid\_formats}}
+\index{vid\_formats@{vid\_formats}!datasets\_shr@{datasets\_shr}}
+\doxysubsubsection{\texorpdfstring{vid\_formats}{vid\_formats}}
+{\footnotesize\ttfamily \label{namespacedatasets__shr_a1a2896830c8b609c3156877369522224} 
+list datasets\+\_\+shr.\+vid\+\_\+formats = \mbox{[}\textquotesingle{}mov\textquotesingle{}, \textquotesingle{}avi\textquotesingle{}, \textquotesingle{}mp4\textquotesingle{}, \textquotesingle{}mpg\textquotesingle{}, \textquotesingle{}mpeg\textquotesingle{}, \textquotesingle{}m4v\textquotesingle{}, \textquotesingle{}wmv\textquotesingle{}, \textquotesingle{}mkv\textquotesingle{}\mbox{]}}
+

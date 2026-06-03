@@ -1,0 +1,82 @@
+\doxysection{models.\+common.\+Conv\+BN Class Reference}
+\hypertarget{classmodels_1_1common_1_1_conv_b_n}{}\label{classmodels_1_1common_1_1_conv_b_n}\index{models.common.ConvBN@{models.common.ConvBN}}
+Inheritance diagram for models.\+common.\+Conv\+BN\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classmodels_1_1common_1_1_conv_b_n}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classmodels_1_1common_1_1_conv_b_n_ab3faa9bc881fa9d9c3d4b4844aa9736c}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, in\+\_\+channels, out\+\_\+channels, kernel\+\_\+size, stride=1, padding=0, dilation=1, groups=1, deploy=False, \mbox{\hyperlink{classmodels_1_1common_1_1_conv_b_n_aa750b5a4e8647e4eb1d725d6fb4392f3}{nonlinear}}=None)
+\item 
+\mbox{\hyperlink{classmodels_1_1common_1_1_conv_b_n_afd33dfce86a7b60006cb95862a5760d6}{forward}} (self, x)
+\item 
+\mbox{\hyperlink{classmodels_1_1common_1_1_conv_b_n_aa6d3e2058999d24ea84c538ab5f40d62}{switch\+\_\+to\+\_\+deploy}} (self)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classmodels_1_1common_1_1_conv_b_n_aa750b5a4e8647e4eb1d725d6fb4392f3}{nonlinear}} = nn.\+Identity()
+\item 
+\mbox{\hyperlink{classmodels_1_1common_1_1_conv_b_n_a6dbde587989463f0fcf92b321d7fb835}{conv}}
+\item 
+\mbox{\hyperlink{classmodels_1_1common_1_1_conv_b_n_a7dc626525f97be17b8098e3e411519c8}{bn}} = nn.\+Batch\+Norm2d(num\+\_\+features=out\+\_\+channels)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classmodels_1_1common_1_1_conv_b_n_ab3faa9bc881fa9d9c3d4b4844aa9736c}\index{models.common.ConvBN@{models.common.ConvBN}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!models.common.ConvBN@{models.common.ConvBN}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily \label{classmodels_1_1common_1_1_conv_b_n_ab3faa9bc881fa9d9c3d4b4844aa9736c} 
+models.\+common.\+Conv\+BN.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{in\+\_\+channels}{, }\item[{}]{out\+\_\+channels}{, }\item[{}]{kernel\+\_\+size}{, }\item[{}]{stride}{ = {\ttfamily 1}, }\item[{}]{padding}{ = {\ttfamily 0}, }\item[{}]{dilation}{ = {\ttfamily 1}, }\item[{}]{groups}{ = {\ttfamily 1}, }\item[{}]{deploy}{ = {\ttfamily False}, }\item[{}]{nonlinear}{ = {\ttfamily None}}\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classmodels_1_1common_1_1_conv_b_n_afd33dfce86a7b60006cb95862a5760d6}\index{models.common.ConvBN@{models.common.ConvBN}!forward@{forward}}
+\index{forward@{forward}!models.common.ConvBN@{models.common.ConvBN}}
+\doxysubsubsection{\texorpdfstring{forward()}{forward()}}
+{\footnotesize\ttfamily \label{classmodels_1_1common_1_1_conv_b_n_afd33dfce86a7b60006cb95862a5760d6} 
+models.\+common.\+Conv\+BN.\+forward (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{x}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classmodels_1_1common_1_1_conv_b_n_aa6d3e2058999d24ea84c538ab5f40d62}\index{models.common.ConvBN@{models.common.ConvBN}!switch\_to\_deploy@{switch\_to\_deploy}}
+\index{switch\_to\_deploy@{switch\_to\_deploy}!models.common.ConvBN@{models.common.ConvBN}}
+\doxysubsubsection{\texorpdfstring{switch\_to\_deploy()}{switch\_to\_deploy()}}
+{\footnotesize\ttfamily \label{classmodels_1_1common_1_1_conv_b_n_aa6d3e2058999d24ea84c538ab5f40d62} 
+models.\+common.\+Conv\+BN.\+switch\+\_\+to\+\_\+deploy (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classmodels_1_1common_1_1_conv_b_n_a7dc626525f97be17b8098e3e411519c8}\index{models.common.ConvBN@{models.common.ConvBN}!bn@{bn}}
+\index{bn@{bn}!models.common.ConvBN@{models.common.ConvBN}}
+\doxysubsubsection{\texorpdfstring{bn}{bn}}
+{\footnotesize\ttfamily \label{classmodels_1_1common_1_1_conv_b_n_a7dc626525f97be17b8098e3e411519c8} 
+models.\+common.\+Conv\+BN.\+bn = nn.\+Batch\+Norm2d(num\+\_\+features=out\+\_\+channels)}
+
+\Hypertarget{classmodels_1_1common_1_1_conv_b_n_a6dbde587989463f0fcf92b321d7fb835}\index{models.common.ConvBN@{models.common.ConvBN}!conv@{conv}}
+\index{conv@{conv}!models.common.ConvBN@{models.common.ConvBN}}
+\doxysubsubsection{\texorpdfstring{conv}{conv}}
+{\footnotesize\ttfamily \label{classmodels_1_1common_1_1_conv_b_n_a6dbde587989463f0fcf92b321d7fb835} 
+models.\+common.\+Conv\+BN.\+conv}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \ nn.Conv2d(in\_channels=in\_channels,\ out\_channels=out\_channels,\ kernel\_size=kernel\_size,}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ stride=stride,\ padding=padding,\ dilation=dilation,\ groups=groups,\ bias=\textcolor{keyword}{True})}
+
+\end{DoxyCode}
+\Hypertarget{classmodels_1_1common_1_1_conv_b_n_aa750b5a4e8647e4eb1d725d6fb4392f3}\index{models.common.ConvBN@{models.common.ConvBN}!nonlinear@{nonlinear}}
+\index{nonlinear@{nonlinear}!models.common.ConvBN@{models.common.ConvBN}}
+\doxysubsubsection{\texorpdfstring{nonlinear}{nonlinear}}
+{\footnotesize\ttfamily \label{classmodels_1_1common_1_1_conv_b_n_aa750b5a4e8647e4eb1d725d6fb4392f3} 
+models.\+common.\+Conv\+BN.\+nonlinear = nn.\+Identity()}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Cervi\+AI/models/\mbox{\hyperlink{common_8py}{common.\+py}}\end{DoxyCompactItemize}

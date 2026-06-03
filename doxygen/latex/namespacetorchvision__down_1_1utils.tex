@@ -1,0 +1,243 @@
+\doxysection{torchvision\+\_\+down.\+utils Namespace Reference}
+\hypertarget{namespacetorchvision__down_1_1utils}{}\label{namespacetorchvision__down_1_1utils}\index{torchvision\_down.utils@{torchvision\_down.utils}}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+torch.\+Tensor \mbox{\hyperlink{namespacetorchvision__down_1_1utils_a128fa86087ef12c60f53990caeead49b}{make\+\_\+grid}} (Union\mbox{[}torch.\+Tensor, List\mbox{[}torch.\+Tensor\mbox{]}\mbox{]} tensor, int nrow=8, int padding=2, bool normalize=False, Optional\mbox{[}Tuple\mbox{[}int, int\mbox{]}\mbox{]} value\+\_\+range=None, bool scale\+\_\+each=False, float pad\+\_\+value=0.\+0, \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}kwargs)
+\item 
+None \mbox{\hyperlink{namespacetorchvision__down_1_1utils_ab79c61806dd31ab3fcdfca14689c5168}{save\+\_\+image}} (Union\mbox{[}torch.\+Tensor, List\mbox{[}torch.\+Tensor\mbox{]}\mbox{]} tensor, Union\mbox{[}str, pathlib.\+Path, Binary\+IO\mbox{]} fp, Optional\mbox{[}str\mbox{]} format=None, \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}kwargs)
+\item 
+torch.\+Tensor \mbox{\hyperlink{namespacetorchvision__down_1_1utils_a05ec4114c2714e82ce8229e3526c5887}{draw\+\_\+bounding\+\_\+boxes}} (torch.\+Tensor image, torch.\+Tensor boxes, Optional\mbox{[}List\mbox{[}str\mbox{]}\mbox{]} labels=None, Optional\mbox{[}Union\mbox{[}List\mbox{[}Union\mbox{[}str, Tuple\mbox{[}int, int, int\mbox{]}\mbox{]}\mbox{]}, str, Tuple\mbox{[}int, int, int\mbox{]}\mbox{]}\mbox{]} colors=None, Optional\mbox{[}bool\mbox{]} fill=False, int width=1, Optional\mbox{[}str\mbox{]} font=None, int font\+\_\+size=10)
+\item 
+torch.\+Tensor \mbox{\hyperlink{namespacetorchvision__down_1_1utils_a2152955ca8790e45865d8ee32ed33c30}{draw\+\_\+segmentation\+\_\+masks}} (torch.\+Tensor image, torch.\+Tensor masks, float alpha=0.\+8, Optional\mbox{[}Union\mbox{[}List\mbox{[}Union\mbox{[}str, Tuple\mbox{[}int, int, int\mbox{]}\mbox{]}\mbox{]}, str, Tuple\mbox{[}int, int, int\mbox{]}\mbox{]}\mbox{]} colors=None)
+\item 
+torch.\+Tensor \mbox{\hyperlink{namespacetorchvision__down_1_1utils_adcfae89d63819e50172dd81eeab68387}{draw\+\_\+keypoints}} (torch.\+Tensor image, torch.\+Tensor keypoints, Optional\mbox{[}List\mbox{[}Tuple\mbox{[}int, int\mbox{]}\mbox{]}\mbox{]} connectivity=None, Optional\mbox{[}Union\mbox{[}str, Tuple\mbox{[}int, int, int\mbox{]}\mbox{]}\mbox{]} colors=None, int radius=2, int width=3)
+\item 
+torch.\+Tensor \mbox{\hyperlink{namespacetorchvision__down_1_1utils_a611e173bad3b988956172095310a5a51}{flow\+\_\+to\+\_\+image}} (torch.\+Tensor flow)
+\item 
+torch.\+Tensor \mbox{\hyperlink{namespacetorchvision__down_1_1utils_a3e4552e010c274c6eb51c5a79761492e}{\+\_\+normalized\+\_\+flow\+\_\+to\+\_\+image}} (torch.\+Tensor normalized\+\_\+flow)
+\item 
+torch.\+Tensor \mbox{\hyperlink{namespacetorchvision__down_1_1utils_a7301846fe7d5bf60f4306d3bd9e69123}{\+\_\+make\+\_\+colorwheel}} ()
+\item 
+\mbox{\hyperlink{namespacetorchvision__down_1_1utils_ab69d9da1f756e7604d73e4b4a3d395d0}{\+\_\+generate\+\_\+color\+\_\+palette}} (int num\+\_\+objects)
+\item 
+None \mbox{\hyperlink{namespacetorchvision__down_1_1utils_a3dacb650ec5d254baf9979ea3cce5921}{\+\_\+log\+\_\+api\+\_\+usage\+\_\+once}} (Any obj)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+list \mbox{\hyperlink{namespacetorchvision__down_1_1utils_a828695a3122784edab3206ba27c387dc}{\+\_\+\+\_\+all\+\_\+\+\_\+}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{namespacetorchvision__down_1_1utils_ab69d9da1f756e7604d73e4b4a3d395d0}\index{torchvision\_down.utils@{torchvision\_down.utils}!\_generate\_color\_palette@{\_generate\_color\_palette}}
+\index{\_generate\_color\_palette@{\_generate\_color\_palette}!torchvision\_down.utils@{torchvision\_down.utils}}
+\doxysubsubsection{\texorpdfstring{\_generate\_color\_palette()}{\_generate\_color\_palette()}}
+{\footnotesize\ttfamily \label{namespacetorchvision__down_1_1utils_ab69d9da1f756e7604d73e4b4a3d395d0} 
+torchvision\+\_\+down.\+utils.\+\_\+generate\+\_\+color\+\_\+palette (\begin{DoxyParamCaption}\item[{int}]{num\+\_\+objects}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{namespacetorchvision__down_1_1utils_a3dacb650ec5d254baf9979ea3cce5921}\index{torchvision\_down.utils@{torchvision\_down.utils}!\_log\_api\_usage\_once@{\_log\_api\_usage\_once}}
+\index{\_log\_api\_usage\_once@{\_log\_api\_usage\_once}!torchvision\_down.utils@{torchvision\_down.utils}}
+\doxysubsubsection{\texorpdfstring{\_log\_api\_usage\_once()}{\_log\_api\_usage\_once()}}
+{\footnotesize\ttfamily \label{namespacetorchvision__down_1_1utils_a3dacb650ec5d254baf9979ea3cce5921} 
+ None torchvision\+\_\+down.\+utils.\+\_\+log\+\_\+api\+\_\+usage\+\_\+once (\begin{DoxyParamCaption}\item[{Any}]{obj}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\begin{DoxyVerb}Logs API usage(module and name) within an organization.
+In a large ecosystem, it's often useful to track the PyTorch and
+TorchVision APIs usage. This API provides the similar functionality to the
+logging module in the Python stdlib. It can be used for debugging purpose
+to log which methods are used and by default it is inactive, unless the user
+manually subscribes a logger via the `SetAPIUsageLogger method <https://github.com/pytorch/pytorch/blob/eb3b9fe719b21fae13c7a7cf3253f970290a573e/c10/util/Logging.cpp#L114>`_.
+Please note it is triggered only once for the same API call within a process.
+It does not collect any data from open-source users since it is no-op by default.
+For more information, please refer to
+* PyTorch note: https://pytorch.org/docs/stable/notes/large_scale_deployments.html#api-usage-logging;
+* Logging policy: https://github.com/pytorch/vision/issues/5052;
+
+Args:
+    obj (class instance or method): an object to extract info from.
+\end{DoxyVerb}
+ \Hypertarget{namespacetorchvision__down_1_1utils_a7301846fe7d5bf60f4306d3bd9e69123}\index{torchvision\_down.utils@{torchvision\_down.utils}!\_make\_colorwheel@{\_make\_colorwheel}}
+\index{\_make\_colorwheel@{\_make\_colorwheel}!torchvision\_down.utils@{torchvision\_down.utils}}
+\doxysubsubsection{\texorpdfstring{\_make\_colorwheel()}{\_make\_colorwheel()}}
+{\footnotesize\ttfamily \label{namespacetorchvision__down_1_1utils_a7301846fe7d5bf60f4306d3bd9e69123} 
+ torch.\+Tensor torchvision\+\_\+down.\+utils.\+\_\+make\+\_\+colorwheel (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\begin{DoxyVerb}Generates a color wheel for optical flow visualization as presented in:
+Baker et al. "A Database and Evaluation Methodology for Optical Flow" (ICCV, 2007)
+URL: http://vision.middlebury.edu/flow/flowEval-iccv07.pdf.
+
+Returns:
+    colorwheel (Tensor[55, 3]): Colorwheel Tensor.
+\end{DoxyVerb}
+ \Hypertarget{namespacetorchvision__down_1_1utils_a3e4552e010c274c6eb51c5a79761492e}\index{torchvision\_down.utils@{torchvision\_down.utils}!\_normalized\_flow\_to\_image@{\_normalized\_flow\_to\_image}}
+\index{\_normalized\_flow\_to\_image@{\_normalized\_flow\_to\_image}!torchvision\_down.utils@{torchvision\_down.utils}}
+\doxysubsubsection{\texorpdfstring{\_normalized\_flow\_to\_image()}{\_normalized\_flow\_to\_image()}}
+{\footnotesize\ttfamily \label{namespacetorchvision__down_1_1utils_a3e4552e010c274c6eb51c5a79761492e} 
+ torch.\+Tensor torchvision\+\_\+down.\+utils.\+\_\+normalized\+\_\+flow\+\_\+to\+\_\+image (\begin{DoxyParamCaption}\item[{torch.\+Tensor}]{normalized\+\_\+flow}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\begin{DoxyVerb}Converts a batch of normalized flow to an RGB image.
+
+Args:
+    normalized_flow (torch.Tensor): Normalized flow tensor of shape (N, 2, H, W)
+Returns:
+   img (Tensor(N, 3, H, W)): Flow visualization image of dtype uint8.
+\end{DoxyVerb}
+ \Hypertarget{namespacetorchvision__down_1_1utils_a05ec4114c2714e82ce8229e3526c5887}\index{torchvision\_down.utils@{torchvision\_down.utils}!draw\_bounding\_boxes@{draw\_bounding\_boxes}}
+\index{draw\_bounding\_boxes@{draw\_bounding\_boxes}!torchvision\_down.utils@{torchvision\_down.utils}}
+\doxysubsubsection{\texorpdfstring{draw\_bounding\_boxes()}{draw\_bounding\_boxes()}}
+{\footnotesize\ttfamily \label{namespacetorchvision__down_1_1utils_a05ec4114c2714e82ce8229e3526c5887} 
+ torch.\+Tensor torchvision\+\_\+down.\+utils.\+draw\+\_\+bounding\+\_\+boxes (\begin{DoxyParamCaption}\item[{torch.\+Tensor}]{image}{, }\item[{torch.\+Tensor}]{boxes}{, }\item[{Optional\mbox{[}List\mbox{[}str\mbox{]}\mbox{]} }]{labels}{ = {\ttfamily None}, }\item[{Optional\mbox{[}Union\mbox{[}List\mbox{[}Union\mbox{[}str, Tuple\mbox{[}int, int, int\mbox{]}\mbox{]}\mbox{]}, str, Tuple\mbox{[}int, int, int\mbox{]}\mbox{]}\mbox{]} }]{colors}{ = {\ttfamily None}, }\item[{Optional\mbox{[}bool\mbox{]} }]{fill}{ = {\ttfamily False}, }\item[{int }]{width}{ = {\ttfamily 1}, }\item[{Optional\mbox{[}str\mbox{]} }]{font}{ = {\ttfamily None}, }\item[{int }]{font\+\_\+size}{ = {\ttfamily 10}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Draws bounding boxes on given image.
+The values of the input image should be uint8 between 0 and 255.
+If fill is True, Resulting Tensor should be saved as PNG image.
+
+Args:
+    image (Tensor): Tensor of shape (C x H x W) and dtype uint8.
+    boxes (Tensor): Tensor of size (N, 4) containing bounding boxes in (xmin, ymin, xmax, ymax) format. Note that
+        the boxes are absolute coordinates with respect to the image. In other words: `0 <= xmin < xmax < W` and
+        `0 <= ymin < ymax < H`.
+    labels (List[str]): List containing the labels of bounding boxes.
+    colors (color or list of colors, optional): List containing the colors
+        of the boxes or single color for all boxes. The color can be represented as
+        PIL strings e.g. "red" or "#FF00FF", or as RGB tuples e.g. ``(240, 10, 157)``.
+        By default, random colors are generated for boxes.
+    fill (bool): If `True` fills the bounding box with specified color.
+    width (int): Width of bounding box.
+    font (str): A filename containing a TrueType font. If the file is not found in this filename, the loader may
+        also search in other directories, such as the `fonts/` directory on Windows or `/Library/Fonts/`,
+        `/System/Library/Fonts/` and `~/Library/Fonts/` on macOS.
+    font_size (int): The requested font size in points.
+
+Returns:
+    img (Tensor[C, H, W]): Image Tensor of dtype uint8 with bounding boxes plotted.
+\end{DoxyVerb}
+ \Hypertarget{namespacetorchvision__down_1_1utils_adcfae89d63819e50172dd81eeab68387}\index{torchvision\_down.utils@{torchvision\_down.utils}!draw\_keypoints@{draw\_keypoints}}
+\index{draw\_keypoints@{draw\_keypoints}!torchvision\_down.utils@{torchvision\_down.utils}}
+\doxysubsubsection{\texorpdfstring{draw\_keypoints()}{draw\_keypoints()}}
+{\footnotesize\ttfamily \label{namespacetorchvision__down_1_1utils_adcfae89d63819e50172dd81eeab68387} 
+ torch.\+Tensor torchvision\+\_\+down.\+utils.\+draw\+\_\+keypoints (\begin{DoxyParamCaption}\item[{torch.\+Tensor}]{image}{, }\item[{torch.\+Tensor}]{keypoints}{, }\item[{Optional\mbox{[}List\mbox{[}Tuple\mbox{[}int, int\mbox{]}\mbox{]}\mbox{]} }]{connectivity}{ = {\ttfamily None}, }\item[{Optional\mbox{[}Union\mbox{[}str, Tuple\mbox{[}int, int, int\mbox{]}\mbox{]}\mbox{]} }]{colors}{ = {\ttfamily None}, }\item[{int }]{radius}{ = {\ttfamily 2}, }\item[{int }]{width}{ = {\ttfamily 3}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Draws Keypoints on given RGB image.
+The values of the input image should be uint8 between 0 and 255.
+
+Args:
+    image (Tensor): Tensor of shape (3, H, W) and dtype uint8.
+    keypoints (Tensor): Tensor of shape (num_instances, K, 2) the K keypoints location for each of the N instances,
+        in the format [x, y].
+    connectivity (List[Tuple[int, int]]]): A List of tuple where,
+        each tuple contains pair of keypoints to be connected.
+    colors (str, Tuple): The color can be represented as
+        PIL strings e.g. "red" or "#FF00FF", or as RGB tuples e.g. ``(240, 10, 157)``.
+    radius (int): Integer denoting radius of keypoint.
+    width (int): Integer denoting width of line connecting keypoints.
+
+Returns:
+    img (Tensor[C, H, W]): Image Tensor of dtype uint8 with keypoints drawn.
+\end{DoxyVerb}
+ \Hypertarget{namespacetorchvision__down_1_1utils_a2152955ca8790e45865d8ee32ed33c30}\index{torchvision\_down.utils@{torchvision\_down.utils}!draw\_segmentation\_masks@{draw\_segmentation\_masks}}
+\index{draw\_segmentation\_masks@{draw\_segmentation\_masks}!torchvision\_down.utils@{torchvision\_down.utils}}
+\doxysubsubsection{\texorpdfstring{draw\_segmentation\_masks()}{draw\_segmentation\_masks()}}
+{\footnotesize\ttfamily \label{namespacetorchvision__down_1_1utils_a2152955ca8790e45865d8ee32ed33c30} 
+ torch.\+Tensor torchvision\+\_\+down.\+utils.\+draw\+\_\+segmentation\+\_\+masks (\begin{DoxyParamCaption}\item[{torch.\+Tensor}]{image}{, }\item[{torch.\+Tensor}]{masks}{, }\item[{float }]{alpha}{ = {\ttfamily 0.8}, }\item[{Optional\mbox{[}Union\mbox{[}List\mbox{[}Union\mbox{[}str, Tuple\mbox{[}int, int, int\mbox{]}\mbox{]}\mbox{]}, str, Tuple\mbox{[}int, int, int\mbox{]}\mbox{]}\mbox{]} }]{colors}{ = {\ttfamily None}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Draws segmentation masks on given RGB image.
+The values of the input image should be uint8 between 0 and 255.
+
+Args:
+    image (Tensor): Tensor of shape (3, H, W) and dtype uint8.
+    masks (Tensor): Tensor of shape (num_masks, H, W) or (H, W) and dtype bool.
+    alpha (float): Float number between 0 and 1 denoting the transparency of the masks.
+        0 means full transparency, 1 means no transparency.
+    colors (color or list of colors, optional): List containing the colors
+        of the masks or single color for all masks. The color can be represented as
+        PIL strings e.g. "red" or "#FF00FF", or as RGB tuples e.g. ``(240, 10, 157)``.
+        By default, random colors are generated for each mask.
+
+Returns:
+    img (Tensor[C, H, W]): Image Tensor, with segmentation masks drawn on top.
+\end{DoxyVerb}
+ \Hypertarget{namespacetorchvision__down_1_1utils_a611e173bad3b988956172095310a5a51}\index{torchvision\_down.utils@{torchvision\_down.utils}!flow\_to\_image@{flow\_to\_image}}
+\index{flow\_to\_image@{flow\_to\_image}!torchvision\_down.utils@{torchvision\_down.utils}}
+\doxysubsubsection{\texorpdfstring{flow\_to\_image()}{flow\_to\_image()}}
+{\footnotesize\ttfamily \label{namespacetorchvision__down_1_1utils_a611e173bad3b988956172095310a5a51} 
+ torch.\+Tensor torchvision\+\_\+down.\+utils.\+flow\+\_\+to\+\_\+image (\begin{DoxyParamCaption}\item[{torch.\+Tensor}]{flow}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Converts a flow to an RGB image.
+
+Args:
+    flow (Tensor): Flow of shape (N, 2, H, W) or (2, H, W) and dtype torch.float.
+
+Returns:
+    img (Tensor): Image Tensor of dtype uint8 where each color corresponds
+        to a given flow direction. Shape is (N, 3, H, W) or (3, H, W) depending on the input.
+\end{DoxyVerb}
+ \Hypertarget{namespacetorchvision__down_1_1utils_a128fa86087ef12c60f53990caeead49b}\index{torchvision\_down.utils@{torchvision\_down.utils}!make\_grid@{make\_grid}}
+\index{make\_grid@{make\_grid}!torchvision\_down.utils@{torchvision\_down.utils}}
+\doxysubsubsection{\texorpdfstring{make\_grid()}{make\_grid()}}
+{\footnotesize\ttfamily \label{namespacetorchvision__down_1_1utils_a128fa86087ef12c60f53990caeead49b} 
+ torch.\+Tensor torchvision\+\_\+down.\+utils.\+make\+\_\+grid (\begin{DoxyParamCaption}\item[{Union\mbox{[}torch.\+Tensor, List\mbox{[}torch.\+Tensor\mbox{]}\mbox{]}}]{tensor}{, }\item[{int }]{nrow}{ = {\ttfamily 8}, }\item[{int }]{padding}{ = {\ttfamily 2}, }\item[{bool }]{normalize}{ = {\ttfamily False}, }\item[{Optional\mbox{[}Tuple\mbox{[}int, int\mbox{]}\mbox{]} }]{value\+\_\+range}{ = {\ttfamily None}, }\item[{bool }]{scale\+\_\+each}{ = {\ttfamily False}, }\item[{float }]{pad\+\_\+value}{ = {\ttfamily 0.0}, }\item[{\texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}}]{kwargs}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Make a grid of images.
+
+Args:
+    tensor (Tensor or list): 4D mini-batch Tensor of shape (B x C x H x W)
+        or a list of images all of the same size.
+    nrow (int, optional): Number of images displayed in each row of the grid.
+        The final grid size is ``(B / nrow, nrow)``. Default: ``8``.
+    padding (int, optional): amount of padding. Default: ``2``.
+    normalize (bool, optional): If True, shift the image to the range (0, 1),
+        by the min and max values specified by ``value_range``. Default: ``False``.
+    value_range (tuple, optional): tuple (min, max) where min and max are numbers,
+        then these numbers are used to normalize the image. By default, min and max
+        are computed from the tensor.
+    range (tuple. optional):
+        .. warning::
+            This parameter was deprecated in ``0.12`` and will be removed in ``0.14``. Please use ``value_range``
+            instead.
+    scale_each (bool, optional): If ``True``, scale each image in the batch of
+        images separately rather than the (min, max) over all images. Default: ``False``.
+    pad_value (float, optional): Value for the padded pixels. Default: ``0``.
+
+Returns:
+    grid (Tensor): the tensor containing grid of images.
+\end{DoxyVerb}
+ \Hypertarget{namespacetorchvision__down_1_1utils_ab79c61806dd31ab3fcdfca14689c5168}\index{torchvision\_down.utils@{torchvision\_down.utils}!save\_image@{save\_image}}
+\index{save\_image@{save\_image}!torchvision\_down.utils@{torchvision\_down.utils}}
+\doxysubsubsection{\texorpdfstring{save\_image()}{save\_image()}}
+{\footnotesize\ttfamily \label{namespacetorchvision__down_1_1utils_ab79c61806dd31ab3fcdfca14689c5168} 
+ None torchvision\+\_\+down.\+utils.\+save\+\_\+image (\begin{DoxyParamCaption}\item[{Union\mbox{[}torch.\+Tensor, List\mbox{[}torch.\+Tensor\mbox{]}\mbox{]}}]{tensor}{, }\item[{Union\mbox{[}str, pathlib.\+Path, Binary\+IO\mbox{]}}]{fp}{, }\item[{Optional\mbox{[}str\mbox{]} }]{format}{ = {\ttfamily None}, }\item[{\texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}}]{kwargs}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Save a given Tensor into an image file.
+
+Args:
+    tensor (Tensor or list): Image to be saved. If given a mini-batch tensor,
+        saves the tensor as a grid of images by calling ``make_grid``.
+    fp (string or file object): A filename or a file object
+    format(Optional):  If omitted, the format to use is determined from the filename extension.
+        If a file object was used instead of a filename, this parameter should always be used.
+    **kwargs: Other arguments are documented in ``make_grid``.
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Variable Documentation}
+\Hypertarget{namespacetorchvision__down_1_1utils_a828695a3122784edab3206ba27c387dc}\index{torchvision\_down.utils@{torchvision\_down.utils}!\_\_all\_\_@{\_\_all\_\_}}
+\index{\_\_all\_\_@{\_\_all\_\_}!torchvision\_down.utils@{torchvision\_down.utils}}
+\doxysubsubsection{\texorpdfstring{\_\_all\_\_}{\_\_all\_\_}}
+{\footnotesize\ttfamily \label{namespacetorchvision__down_1_1utils_a828695a3122784edab3206ba27c387dc} 
+list torchvision\+\_\+down.\+utils.\+\_\+\+\_\+all\+\_\+\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ =\ \ [}
+\DoxyCodeLine{00002\ \ \ \ \ \textcolor{stringliteral}{"{}make\_grid"{}},}
+\DoxyCodeLine{00003\ \ \ \ \ \textcolor{stringliteral}{"{}save\_image"{}},}
+\DoxyCodeLine{00004\ \ \ \ \ \textcolor{stringliteral}{"{}draw\_bounding\_boxes"{}},}
+\DoxyCodeLine{00005\ \ \ \ \ \textcolor{stringliteral}{"{}draw\_segmentation\_masks"{}},}
+\DoxyCodeLine{00006\ \ \ \ \ \textcolor{stringliteral}{"{}draw\_keypoints"{}},}
+\DoxyCodeLine{00007\ \ \ \ \ \textcolor{stringliteral}{"{}flow\_to\_image"{}},}
+\DoxyCodeLine{00008\ ]}
+
+\end{DoxyCode}

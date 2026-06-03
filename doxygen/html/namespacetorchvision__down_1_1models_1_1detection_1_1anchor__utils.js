@@ -1,0 +1,5 @@
+var namespacetorchvision__down_1_1models_1_1detection_1_1anchor__utils =
+[
+    [ "AnchorGenerator", "classtorchvision__down_1_1models_1_1detection_1_1anchor__utils_1_1_anchor_generator.html", "classtorchvision__down_1_1models_1_1detection_1_1anchor__utils_1_1_anchor_generator" ],
+    [ "DefaultBoxGenerator", "classtorchvision__down_1_1models_1_1detection_1_1anchor__utils_1_1_default_box_generator.html", "classtorchvision__down_1_1models_1_1detection_1_1anchor__utils_1_1_default_box_generator" ]
+];

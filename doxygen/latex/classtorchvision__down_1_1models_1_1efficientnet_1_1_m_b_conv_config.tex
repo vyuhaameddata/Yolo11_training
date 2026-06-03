@@ -1,0 +1,105 @@
+\doxysection{torchvision\+\_\+down.\+models.\+efficientnet.\+MBConv\+Config Class Reference}
+\hypertarget{classtorchvision__down_1_1models_1_1efficientnet_1_1_m_b_conv_config}{}\label{classtorchvision__down_1_1models_1_1efficientnet_1_1_m_b_conv_config}\index{torchvision\_down.models.efficientnet.MBConvConfig@{torchvision\_down.models.efficientnet.MBConvConfig}}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+None \mbox{\hyperlink{classtorchvision__down_1_1models_1_1efficientnet_1_1_m_b_conv_config_a2f961840e9eafe7f31f5ec347c53300c}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, float \mbox{\hyperlink{classtorchvision__down_1_1models_1_1efficientnet_1_1_m_b_conv_config_afb7e70cc8667ca2c34e547c39e33f260}{expand\+\_\+ratio}}, int \mbox{\hyperlink{classtorchvision__down_1_1models_1_1efficientnet_1_1_m_b_conv_config_aa8b5010abadcfbba6608971fd9e527a4}{kernel}}, int \mbox{\hyperlink{classtorchvision__down_1_1models_1_1efficientnet_1_1_m_b_conv_config_a4bad3d9d532932f1bf7c8970a2053368}{stride}}, int \mbox{\hyperlink{classtorchvision__down_1_1models_1_1efficientnet_1_1_m_b_conv_config_a6f55c1f4732883d59a8a462bf109d715}{input\+\_\+channels}}, int \mbox{\hyperlink{classtorchvision__down_1_1models_1_1efficientnet_1_1_m_b_conv_config_af1500a877eadd79d0ccaff31b47aa36c}{out\+\_\+channels}}, int \mbox{\hyperlink{classtorchvision__down_1_1models_1_1efficientnet_1_1_m_b_conv_config_a3d2e4bfad3e31af81e2759fde54556b4}{num\+\_\+layers}}, float width\+\_\+mult, float depth\+\_\+mult)
+\item 
+str \mbox{\hyperlink{classtorchvision__down_1_1models_1_1efficientnet_1_1_m_b_conv_config_a00280bff97e7a02fba1684e1e551eb44}{\+\_\+\+\_\+repr\+\_\+\+\_\+}} (self)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{classtorchvision__down_1_1models_1_1efficientnet_1_1_m_b_conv_config_a7ab58a06e5ae3d1e9e4d8c5e39f255a0}{adjust\+\_\+channels}} (int channels, float width\+\_\+mult, Optional\mbox{[}int\mbox{]} min\+\_\+value=None)
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1models_1_1efficientnet_1_1_m_b_conv_config_a9a7c75b91abed288670d556b0c6db200}{adjust\+\_\+depth}} (int \mbox{\hyperlink{classtorchvision__down_1_1models_1_1efficientnet_1_1_m_b_conv_config_a3d2e4bfad3e31af81e2759fde54556b4}{num\+\_\+layers}}, float depth\+\_\+mult)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1models_1_1efficientnet_1_1_m_b_conv_config_afb7e70cc8667ca2c34e547c39e33f260}{expand\+\_\+ratio}} = expand\+\_\+ratio
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1models_1_1efficientnet_1_1_m_b_conv_config_aa8b5010abadcfbba6608971fd9e527a4}{kernel}} = kernel
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1models_1_1efficientnet_1_1_m_b_conv_config_a4bad3d9d532932f1bf7c8970a2053368}{stride}} = stride
+\item 
+int \mbox{\hyperlink{classtorchvision__down_1_1models_1_1efficientnet_1_1_m_b_conv_config_a6f55c1f4732883d59a8a462bf109d715}{input\+\_\+channels}} = self.\+adjust\+\_\+channels(input\+\_\+channels, width\+\_\+mult)
+\item 
+int \mbox{\hyperlink{classtorchvision__down_1_1models_1_1efficientnet_1_1_m_b_conv_config_af1500a877eadd79d0ccaff31b47aa36c}{out\+\_\+channels}} = self.\+adjust\+\_\+channels(out\+\_\+channels, width\+\_\+mult)
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1models_1_1efficientnet_1_1_m_b_conv_config_a3d2e4bfad3e31af81e2759fde54556b4}{num\+\_\+layers}} = self.\+adjust\+\_\+depth(num\+\_\+layers, depth\+\_\+mult)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classtorchvision__down_1_1models_1_1efficientnet_1_1_m_b_conv_config_a2f961840e9eafe7f31f5ec347c53300c}\index{torchvision\_down.models.efficientnet.MBConvConfig@{torchvision\_down.models.efficientnet.MBConvConfig}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!torchvision\_down.models.efficientnet.MBConvConfig@{torchvision\_down.models.efficientnet.MBConvConfig}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1models_1_1efficientnet_1_1_m_b_conv_config_a2f961840e9eafe7f31f5ec347c53300c} 
+ None torchvision\+\_\+down.\+models.\+efficientnet.\+MBConv\+Config.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{float}]{expand\+\_\+ratio}{, }\item[{int}]{kernel}{, }\item[{int}]{stride}{, }\item[{int}]{input\+\_\+channels}{, }\item[{int}]{out\+\_\+channels}{, }\item[{int}]{num\+\_\+layers}{, }\item[{float}]{width\+\_\+mult}{, }\item[{float}]{depth\+\_\+mult}{}\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classtorchvision__down_1_1models_1_1efficientnet_1_1_m_b_conv_config_a00280bff97e7a02fba1684e1e551eb44}\index{torchvision\_down.models.efficientnet.MBConvConfig@{torchvision\_down.models.efficientnet.MBConvConfig}!\_\_repr\_\_@{\_\_repr\_\_}}
+\index{\_\_repr\_\_@{\_\_repr\_\_}!torchvision\_down.models.efficientnet.MBConvConfig@{torchvision\_down.models.efficientnet.MBConvConfig}}
+\doxysubsubsection{\texorpdfstring{\_\_repr\_\_()}{\_\_repr\_\_()}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1models_1_1efficientnet_1_1_m_b_conv_config_a00280bff97e7a02fba1684e1e551eb44} 
+ str torchvision\+\_\+down.\+models.\+efficientnet.\+MBConv\+Config.\+\_\+\+\_\+repr\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classtorchvision__down_1_1models_1_1efficientnet_1_1_m_b_conv_config_a7ab58a06e5ae3d1e9e4d8c5e39f255a0}\index{torchvision\_down.models.efficientnet.MBConvConfig@{torchvision\_down.models.efficientnet.MBConvConfig}!adjust\_channels@{adjust\_channels}}
+\index{adjust\_channels@{adjust\_channels}!torchvision\_down.models.efficientnet.MBConvConfig@{torchvision\_down.models.efficientnet.MBConvConfig}}
+\doxysubsubsection{\texorpdfstring{adjust\_channels()}{adjust\_channels()}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1models_1_1efficientnet_1_1_m_b_conv_config_a7ab58a06e5ae3d1e9e4d8c5e39f255a0} 
+ int torchvision\+\_\+down.\+models.\+efficientnet.\+MBConv\+Config.\+adjust\+\_\+channels (\begin{DoxyParamCaption}\item[{int}]{channels}{, }\item[{float}]{width\+\_\+mult}{, }\item[{Optional\mbox{[}int\mbox{]} }]{min\+\_\+value}{ = {\ttfamily None}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classtorchvision__down_1_1models_1_1efficientnet_1_1_m_b_conv_config_a9a7c75b91abed288670d556b0c6db200}\index{torchvision\_down.models.efficientnet.MBConvConfig@{torchvision\_down.models.efficientnet.MBConvConfig}!adjust\_depth@{adjust\_depth}}
+\index{adjust\_depth@{adjust\_depth}!torchvision\_down.models.efficientnet.MBConvConfig@{torchvision\_down.models.efficientnet.MBConvConfig}}
+\doxysubsubsection{\texorpdfstring{adjust\_depth()}{adjust\_depth()}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1models_1_1efficientnet_1_1_m_b_conv_config_a9a7c75b91abed288670d556b0c6db200} 
+torchvision\+\_\+down.\+models.\+efficientnet.\+MBConv\+Config.\+adjust\+\_\+depth (\begin{DoxyParamCaption}\item[{int}]{num\+\_\+layers}{, }\item[{float}]{depth\+\_\+mult}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classtorchvision__down_1_1models_1_1efficientnet_1_1_m_b_conv_config_afb7e70cc8667ca2c34e547c39e33f260}\index{torchvision\_down.models.efficientnet.MBConvConfig@{torchvision\_down.models.efficientnet.MBConvConfig}!expand\_ratio@{expand\_ratio}}
+\index{expand\_ratio@{expand\_ratio}!torchvision\_down.models.efficientnet.MBConvConfig@{torchvision\_down.models.efficientnet.MBConvConfig}}
+\doxysubsubsection{\texorpdfstring{expand\_ratio}{expand\_ratio}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1models_1_1efficientnet_1_1_m_b_conv_config_afb7e70cc8667ca2c34e547c39e33f260} 
+torchvision\+\_\+down.\+models.\+efficientnet.\+MBConv\+Config.\+expand\+\_\+ratio = expand\+\_\+ratio}
+
+\Hypertarget{classtorchvision__down_1_1models_1_1efficientnet_1_1_m_b_conv_config_a6f55c1f4732883d59a8a462bf109d715}\index{torchvision\_down.models.efficientnet.MBConvConfig@{torchvision\_down.models.efficientnet.MBConvConfig}!input\_channels@{input\_channels}}
+\index{input\_channels@{input\_channels}!torchvision\_down.models.efficientnet.MBConvConfig@{torchvision\_down.models.efficientnet.MBConvConfig}}
+\doxysubsubsection{\texorpdfstring{input\_channels}{input\_channels}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1models_1_1efficientnet_1_1_m_b_conv_config_a6f55c1f4732883d59a8a462bf109d715} 
+int torchvision\+\_\+down.\+models.\+efficientnet.\+MBConv\+Config.\+input\+\_\+channels = self.\+adjust\+\_\+channels(input\+\_\+channels, width\+\_\+mult)}
+
+\Hypertarget{classtorchvision__down_1_1models_1_1efficientnet_1_1_m_b_conv_config_aa8b5010abadcfbba6608971fd9e527a4}\index{torchvision\_down.models.efficientnet.MBConvConfig@{torchvision\_down.models.efficientnet.MBConvConfig}!kernel@{kernel}}
+\index{kernel@{kernel}!torchvision\_down.models.efficientnet.MBConvConfig@{torchvision\_down.models.efficientnet.MBConvConfig}}
+\doxysubsubsection{\texorpdfstring{kernel}{kernel}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1models_1_1efficientnet_1_1_m_b_conv_config_aa8b5010abadcfbba6608971fd9e527a4} 
+torchvision\+\_\+down.\+models.\+efficientnet.\+MBConv\+Config.\+kernel = kernel}
+
+\Hypertarget{classtorchvision__down_1_1models_1_1efficientnet_1_1_m_b_conv_config_a3d2e4bfad3e31af81e2759fde54556b4}\index{torchvision\_down.models.efficientnet.MBConvConfig@{torchvision\_down.models.efficientnet.MBConvConfig}!num\_layers@{num\_layers}}
+\index{num\_layers@{num\_layers}!torchvision\_down.models.efficientnet.MBConvConfig@{torchvision\_down.models.efficientnet.MBConvConfig}}
+\doxysubsubsection{\texorpdfstring{num\_layers}{num\_layers}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1models_1_1efficientnet_1_1_m_b_conv_config_a3d2e4bfad3e31af81e2759fde54556b4} 
+torchvision\+\_\+down.\+models.\+efficientnet.\+MBConv\+Config.\+num\+\_\+layers = self.\+adjust\+\_\+depth(num\+\_\+layers, depth\+\_\+mult)}
+
+\Hypertarget{classtorchvision__down_1_1models_1_1efficientnet_1_1_m_b_conv_config_af1500a877eadd79d0ccaff31b47aa36c}\index{torchvision\_down.models.efficientnet.MBConvConfig@{torchvision\_down.models.efficientnet.MBConvConfig}!out\_channels@{out\_channels}}
+\index{out\_channels@{out\_channels}!torchvision\_down.models.efficientnet.MBConvConfig@{torchvision\_down.models.efficientnet.MBConvConfig}}
+\doxysubsubsection{\texorpdfstring{out\_channels}{out\_channels}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1models_1_1efficientnet_1_1_m_b_conv_config_af1500a877eadd79d0ccaff31b47aa36c} 
+int torchvision\+\_\+down.\+models.\+efficientnet.\+MBConv\+Config.\+out\+\_\+channels = self.\+adjust\+\_\+channels(out\+\_\+channels, width\+\_\+mult)}
+
+\Hypertarget{classtorchvision__down_1_1models_1_1efficientnet_1_1_m_b_conv_config_a4bad3d9d532932f1bf7c8970a2053368}\index{torchvision\_down.models.efficientnet.MBConvConfig@{torchvision\_down.models.efficientnet.MBConvConfig}!stride@{stride}}
+\index{stride@{stride}!torchvision\_down.models.efficientnet.MBConvConfig@{torchvision\_down.models.efficientnet.MBConvConfig}}
+\doxysubsubsection{\texorpdfstring{stride}{stride}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1models_1_1efficientnet_1_1_m_b_conv_config_a4bad3d9d532932f1bf7c8970a2053368} 
+torchvision\+\_\+down.\+models.\+efficientnet.\+MBConv\+Config.\+stride = stride}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Cervi\+AI/torchvision\+\_\+down/models/\mbox{\hyperlink{efficientnet_8py}{efficientnet.\+py}}\end{DoxyCompactItemize}

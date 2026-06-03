@@ -1,0 +1,148 @@
+\doxysection{torchvision\+\_\+down.\+models.\+densenet.\+\_\+\+Dense\+Layer Class Reference}
+\hypertarget{classtorchvision__down_1_1models_1_1densenet_1_1___dense_layer}{}\label{classtorchvision__down_1_1models_1_1densenet_1_1___dense_layer}\index{torchvision\_down.models.densenet.\_DenseLayer@{torchvision\_down.models.densenet.\_DenseLayer}}
+Inheritance diagram for torchvision\+\_\+down.\+models.\+densenet.\+\_\+\+Dense\+Layer\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classtorchvision__down_1_1models_1_1densenet_1_1___dense_layer}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+None \mbox{\hyperlink{classtorchvision__down_1_1models_1_1densenet_1_1___dense_layer_a57f1e85cdf1f2b3fada85034f4fa7bb8}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, int num\+\_\+input\+\_\+features, int growth\+\_\+rate, int bn\+\_\+size, float \mbox{\hyperlink{classtorchvision__down_1_1models_1_1densenet_1_1___dense_layer_ac03660114a7e221dee9a9a32d0976536}{drop\+\_\+rate}}, bool \mbox{\hyperlink{classtorchvision__down_1_1models_1_1densenet_1_1___dense_layer_acd0e2c25960b8e88d2289e0795f36736}{memory\+\_\+efficient}}=False)
+\item 
+Tensor \mbox{\hyperlink{classtorchvision__down_1_1models_1_1densenet_1_1___dense_layer_adf864318a2b4ec4c3322042edef79714}{bn\+\_\+function}} (self, List\mbox{[}Tensor\mbox{]} inputs)
+\item 
+bool \mbox{\hyperlink{classtorchvision__down_1_1models_1_1densenet_1_1___dense_layer_acda3d536a3e83b9be21000e5383ded82}{any\+\_\+requires\+\_\+grad}} (self, List\mbox{[}Tensor\mbox{]} input)
+\item 
+Tensor \mbox{\hyperlink{classtorchvision__down_1_1models_1_1densenet_1_1___dense_layer_a9d79dcb902a5d6601e73b869b58add33}{call\+\_\+checkpoint\+\_\+bottleneck}} (self, List\mbox{[}Tensor\mbox{]} input)
+\item 
+Tensor \mbox{\hyperlink{classtorchvision__down_1_1models_1_1densenet_1_1___dense_layer_ae665f7d876c26d3a37ae81a628de357a}{forward}} (self, List\mbox{[}Tensor\mbox{]} input)
+\item 
+Tensor \mbox{\hyperlink{classtorchvision__down_1_1models_1_1densenet_1_1___dense_layer_a366dc03f1614ee87cc97cdf7b208d022}{forward}} (self, Tensor input)
+\item 
+Tensor \mbox{\hyperlink{classtorchvision__down_1_1models_1_1densenet_1_1___dense_layer_a366dc03f1614ee87cc97cdf7b208d022}{forward}} (self, Tensor input)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+nn.\+Batch\+Norm2d \mbox{\hyperlink{classtorchvision__down_1_1models_1_1densenet_1_1___dense_layer_afc585d7d06e0a70233ecb5482e3e775f}{norm1}}
+\item 
+nn.\+Re\+LU \mbox{\hyperlink{classtorchvision__down_1_1models_1_1densenet_1_1___dense_layer_a1c03be5fdf7a19022ffe901a19eae144}{relu1}}
+\item 
+nn.\+Conv2d \mbox{\hyperlink{classtorchvision__down_1_1models_1_1densenet_1_1___dense_layer_adde7a9a94fc0af481ca830ca730aba99}{conv1}}
+\item 
+nn.\+Batch\+Norm2d \mbox{\hyperlink{classtorchvision__down_1_1models_1_1densenet_1_1___dense_layer_a7f8d3aa93376435020e70f82d381418a}{norm2}} = False)
+\item 
+nn.\+Re\+LU \mbox{\hyperlink{classtorchvision__down_1_1models_1_1densenet_1_1___dense_layer_abbfda089da097ee5cefec6b85ebf5378}{relu2}}
+\item 
+nn.\+Conv2d \mbox{\hyperlink{classtorchvision__down_1_1models_1_1densenet_1_1___dense_layer_ad11045dad571df2c358f49541e33a1f5}{conv2}} = True))
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1models_1_1densenet_1_1___dense_layer_ac03660114a7e221dee9a9a32d0976536}{drop\+\_\+rate}} = float(drop\+\_\+rate)
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1models_1_1densenet_1_1___dense_layer_acd0e2c25960b8e88d2289e0795f36736}{memory\+\_\+efficient}} = memory\+\_\+efficient
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classtorchvision__down_1_1models_1_1densenet_1_1___dense_layer_a57f1e85cdf1f2b3fada85034f4fa7bb8}\index{torchvision\_down.models.densenet.\_DenseLayer@{torchvision\_down.models.densenet.\_DenseLayer}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!torchvision\_down.models.densenet.\_DenseLayer@{torchvision\_down.models.densenet.\_DenseLayer}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1models_1_1densenet_1_1___dense_layer_a57f1e85cdf1f2b3fada85034f4fa7bb8} 
+ None torchvision\+\_\+down.\+models.\+densenet.\+\_\+\+Dense\+Layer.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{int}]{num\+\_\+input\+\_\+features}{, }\item[{int}]{growth\+\_\+rate}{, }\item[{int}]{bn\+\_\+size}{, }\item[{float}]{drop\+\_\+rate}{, }\item[{bool }]{memory\+\_\+efficient}{ = {\ttfamily False}}\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classtorchvision__down_1_1models_1_1densenet_1_1___dense_layer_acda3d536a3e83b9be21000e5383ded82}\index{torchvision\_down.models.densenet.\_DenseLayer@{torchvision\_down.models.densenet.\_DenseLayer}!any\_requires\_grad@{any\_requires\_grad}}
+\index{any\_requires\_grad@{any\_requires\_grad}!torchvision\_down.models.densenet.\_DenseLayer@{torchvision\_down.models.densenet.\_DenseLayer}}
+\doxysubsubsection{\texorpdfstring{any\_requires\_grad()}{any\_requires\_grad()}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1models_1_1densenet_1_1___dense_layer_acda3d536a3e83b9be21000e5383ded82} 
+ bool torchvision\+\_\+down.\+models.\+densenet.\+\_\+\+Dense\+Layer.\+any\+\_\+requires\+\_\+grad (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{List\mbox{[}Tensor\mbox{]}}]{input}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classtorchvision__down_1_1models_1_1densenet_1_1___dense_layer_adf864318a2b4ec4c3322042edef79714}\index{torchvision\_down.models.densenet.\_DenseLayer@{torchvision\_down.models.densenet.\_DenseLayer}!bn\_function@{bn\_function}}
+\index{bn\_function@{bn\_function}!torchvision\_down.models.densenet.\_DenseLayer@{torchvision\_down.models.densenet.\_DenseLayer}}
+\doxysubsubsection{\texorpdfstring{bn\_function()}{bn\_function()}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1models_1_1densenet_1_1___dense_layer_adf864318a2b4ec4c3322042edef79714} 
+ Tensor torchvision\+\_\+down.\+models.\+densenet.\+\_\+\+Dense\+Layer.\+bn\+\_\+function (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{List\mbox{[}Tensor\mbox{]}}]{inputs}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classtorchvision__down_1_1models_1_1densenet_1_1___dense_layer_a9d79dcb902a5d6601e73b869b58add33}\index{torchvision\_down.models.densenet.\_DenseLayer@{torchvision\_down.models.densenet.\_DenseLayer}!call\_checkpoint\_bottleneck@{call\_checkpoint\_bottleneck}}
+\index{call\_checkpoint\_bottleneck@{call\_checkpoint\_bottleneck}!torchvision\_down.models.densenet.\_DenseLayer@{torchvision\_down.models.densenet.\_DenseLayer}}
+\doxysubsubsection{\texorpdfstring{call\_checkpoint\_bottleneck()}{call\_checkpoint\_bottleneck()}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1models_1_1densenet_1_1___dense_layer_a9d79dcb902a5d6601e73b869b58add33} 
+ Tensor torchvision\+\_\+down.\+models.\+densenet.\+\_\+\+Dense\+Layer.\+call\+\_\+checkpoint\+\_\+bottleneck (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{List\mbox{[}Tensor\mbox{]}}]{input}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classtorchvision__down_1_1models_1_1densenet_1_1___dense_layer_ae665f7d876c26d3a37ae81a628de357a}\index{torchvision\_down.models.densenet.\_DenseLayer@{torchvision\_down.models.densenet.\_DenseLayer}!forward@{forward}}
+\index{forward@{forward}!torchvision\_down.models.densenet.\_DenseLayer@{torchvision\_down.models.densenet.\_DenseLayer}}
+\doxysubsubsection{\texorpdfstring{forward()}{forward()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1models_1_1densenet_1_1___dense_layer_ae665f7d876c26d3a37ae81a628de357a} 
+ Tensor torchvision\+\_\+down.\+models.\+densenet.\+\_\+\+Dense\+Layer.\+forward (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{List\mbox{[}Tensor\mbox{]}}]{input}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classtorchvision__down_1_1models_1_1densenet_1_1___dense_layer_a366dc03f1614ee87cc97cdf7b208d022}\index{torchvision\_down.models.densenet.\_DenseLayer@{torchvision\_down.models.densenet.\_DenseLayer}!forward@{forward}}
+\index{forward@{forward}!torchvision\_down.models.densenet.\_DenseLayer@{torchvision\_down.models.densenet.\_DenseLayer}}
+\doxysubsubsection{\texorpdfstring{forward()}{forward()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1models_1_1densenet_1_1___dense_layer_a366dc03f1614ee87cc97cdf7b208d022} 
+ Tensor torchvision\+\_\+down.\+models.\+densenet.\+\_\+\+Dense\+Layer.\+forward (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{Tensor}]{input}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classtorchvision__down_1_1models_1_1densenet_1_1___dense_layer_a366dc03f1614ee87cc97cdf7b208d022}\index{torchvision\_down.models.densenet.\_DenseLayer@{torchvision\_down.models.densenet.\_DenseLayer}!forward@{forward}}
+\index{forward@{forward}!torchvision\_down.models.densenet.\_DenseLayer@{torchvision\_down.models.densenet.\_DenseLayer}}
+\doxysubsubsection{\texorpdfstring{forward()}{forward()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1models_1_1densenet_1_1___dense_layer_a366dc03f1614ee87cc97cdf7b208d022} 
+ Tensor torchvision\+\_\+down.\+models.\+densenet.\+\_\+\+Dense\+Layer.\+forward (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{Tensor}]{input}{}\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classtorchvision__down_1_1models_1_1densenet_1_1___dense_layer_adde7a9a94fc0af481ca830ca730aba99}\index{torchvision\_down.models.densenet.\_DenseLayer@{torchvision\_down.models.densenet.\_DenseLayer}!conv1@{conv1}}
+\index{conv1@{conv1}!torchvision\_down.models.densenet.\_DenseLayer@{torchvision\_down.models.densenet.\_DenseLayer}}
+\doxysubsubsection{\texorpdfstring{conv1}{conv1}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1models_1_1densenet_1_1___dense_layer_adde7a9a94fc0af481ca830ca730aba99} 
+nn.\+Conv2d torchvision\+\_\+down.\+models.\+densenet.\+\_\+\+Dense\+Layer.\+conv1}
+
+\Hypertarget{classtorchvision__down_1_1models_1_1densenet_1_1___dense_layer_ad11045dad571df2c358f49541e33a1f5}\index{torchvision\_down.models.densenet.\_DenseLayer@{torchvision\_down.models.densenet.\_DenseLayer}!conv2@{conv2}}
+\index{conv2@{conv2}!torchvision\_down.models.densenet.\_DenseLayer@{torchvision\_down.models.densenet.\_DenseLayer}}
+\doxysubsubsection{\texorpdfstring{conv2}{conv2}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1models_1_1densenet_1_1___dense_layer_ad11045dad571df2c358f49541e33a1f5} 
+nn.\+Conv2d torchvision\+\_\+down.\+models.\+densenet.\+\_\+\+Dense\+Layer.\+conv2 = True))}
+
+\Hypertarget{classtorchvision__down_1_1models_1_1densenet_1_1___dense_layer_ac03660114a7e221dee9a9a32d0976536}\index{torchvision\_down.models.densenet.\_DenseLayer@{torchvision\_down.models.densenet.\_DenseLayer}!drop\_rate@{drop\_rate}}
+\index{drop\_rate@{drop\_rate}!torchvision\_down.models.densenet.\_DenseLayer@{torchvision\_down.models.densenet.\_DenseLayer}}
+\doxysubsubsection{\texorpdfstring{drop\_rate}{drop\_rate}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1models_1_1densenet_1_1___dense_layer_ac03660114a7e221dee9a9a32d0976536} 
+torchvision\+\_\+down.\+models.\+densenet.\+\_\+\+Dense\+Layer.\+drop\+\_\+rate = float(drop\+\_\+rate)}
+
+\Hypertarget{classtorchvision__down_1_1models_1_1densenet_1_1___dense_layer_acd0e2c25960b8e88d2289e0795f36736}\index{torchvision\_down.models.densenet.\_DenseLayer@{torchvision\_down.models.densenet.\_DenseLayer}!memory\_efficient@{memory\_efficient}}
+\index{memory\_efficient@{memory\_efficient}!torchvision\_down.models.densenet.\_DenseLayer@{torchvision\_down.models.densenet.\_DenseLayer}}
+\doxysubsubsection{\texorpdfstring{memory\_efficient}{memory\_efficient}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1models_1_1densenet_1_1___dense_layer_acd0e2c25960b8e88d2289e0795f36736} 
+torchvision\+\_\+down.\+models.\+densenet.\+\_\+\+Dense\+Layer.\+memory\+\_\+efficient = memory\+\_\+efficient}
+
+\Hypertarget{classtorchvision__down_1_1models_1_1densenet_1_1___dense_layer_afc585d7d06e0a70233ecb5482e3e775f}\index{torchvision\_down.models.densenet.\_DenseLayer@{torchvision\_down.models.densenet.\_DenseLayer}!norm1@{norm1}}
+\index{norm1@{norm1}!torchvision\_down.models.densenet.\_DenseLayer@{torchvision\_down.models.densenet.\_DenseLayer}}
+\doxysubsubsection{\texorpdfstring{norm1}{norm1}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1models_1_1densenet_1_1___dense_layer_afc585d7d06e0a70233ecb5482e3e775f} 
+nn.\+Batch\+Norm2d torchvision\+\_\+down.\+models.\+densenet.\+\_\+\+Dense\+Layer.\+norm1}
+
+\Hypertarget{classtorchvision__down_1_1models_1_1densenet_1_1___dense_layer_a7f8d3aa93376435020e70f82d381418a}\index{torchvision\_down.models.densenet.\_DenseLayer@{torchvision\_down.models.densenet.\_DenseLayer}!norm2@{norm2}}
+\index{norm2@{norm2}!torchvision\_down.models.densenet.\_DenseLayer@{torchvision\_down.models.densenet.\_DenseLayer}}
+\doxysubsubsection{\texorpdfstring{norm2}{norm2}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1models_1_1densenet_1_1___dense_layer_a7f8d3aa93376435020e70f82d381418a} 
+nn.\+Batch\+Norm2d torchvision\+\_\+down.\+models.\+densenet.\+\_\+\+Dense\+Layer.\+norm2 = False)}
+
+\Hypertarget{classtorchvision__down_1_1models_1_1densenet_1_1___dense_layer_a1c03be5fdf7a19022ffe901a19eae144}\index{torchvision\_down.models.densenet.\_DenseLayer@{torchvision\_down.models.densenet.\_DenseLayer}!relu1@{relu1}}
+\index{relu1@{relu1}!torchvision\_down.models.densenet.\_DenseLayer@{torchvision\_down.models.densenet.\_DenseLayer}}
+\doxysubsubsection{\texorpdfstring{relu1}{relu1}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1models_1_1densenet_1_1___dense_layer_a1c03be5fdf7a19022ffe901a19eae144} 
+nn.\+Re\+LU torchvision\+\_\+down.\+models.\+densenet.\+\_\+\+Dense\+Layer.\+relu1}
+
+\Hypertarget{classtorchvision__down_1_1models_1_1densenet_1_1___dense_layer_abbfda089da097ee5cefec6b85ebf5378}\index{torchvision\_down.models.densenet.\_DenseLayer@{torchvision\_down.models.densenet.\_DenseLayer}!relu2@{relu2}}
+\index{relu2@{relu2}!torchvision\_down.models.densenet.\_DenseLayer@{torchvision\_down.models.densenet.\_DenseLayer}}
+\doxysubsubsection{\texorpdfstring{relu2}{relu2}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1models_1_1densenet_1_1___dense_layer_abbfda089da097ee5cefec6b85ebf5378} 
+nn.\+Re\+LU torchvision\+\_\+down.\+models.\+densenet.\+\_\+\+Dense\+Layer.\+relu2}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Cervi\+AI/torchvision\+\_\+down/models/\mbox{\hyperlink{densenet_8py}{densenet.\+py}}\end{DoxyCompactItemize}

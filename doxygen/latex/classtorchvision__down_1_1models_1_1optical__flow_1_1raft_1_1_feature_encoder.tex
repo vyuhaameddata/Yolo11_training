@@ -1,0 +1,102 @@
+\doxysection{torchvision\+\_\+down.\+models.\+optical\+\_\+flow.\+raft.\+Feature\+Encoder Class Reference}
+\hypertarget{classtorchvision__down_1_1models_1_1optical__flow_1_1raft_1_1_feature_encoder}{}\label{classtorchvision__down_1_1models_1_1optical__flow_1_1raft_1_1_feature_encoder}\index{torchvision\_down.models.optical\_flow.raft.FeatureEncoder@{torchvision\_down.models.optical\_flow.raft.FeatureEncoder}}
+Inheritance diagram for torchvision\+\_\+down.\+models.\+optical\+\_\+flow.\+raft.\+Feature\+Encoder\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classtorchvision__down_1_1models_1_1optical__flow_1_1raft_1_1_feature_encoder}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1models_1_1optical__flow_1_1raft_1_1_feature_encoder_ac52ac16ebddfae7fa64409a5775a9b75}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, \texorpdfstring{$\ast$}{*}, block=\mbox{\hyperlink{classtorchvision__down_1_1models_1_1optical__flow_1_1raft_1_1_residual_block}{Residual\+Block}}, layers=(64, 64, 96, 128, 256), norm\+\_\+layer=nn.\+Batch\+Norm2d)
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1models_1_1optical__flow_1_1raft_1_1_feature_encoder_ab0f49a4f7ca3d9331a10e00901a80f27}{forward}} (self, x)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1models_1_1optical__flow_1_1raft_1_1_feature_encoder_a74b9bd1208cf333fabadc5bb67e497f9}{convnormrelu}} = \mbox{\hyperlink{classtorchvision__down_1_1ops_1_1misc_1_1_conv_norm_activation}{Conv\+Norm\+Activation}}(3, layers\mbox{[}0\mbox{]}, norm\+\_\+layer=norm\+\_\+layer, kernel\+\_\+size=7, stride=2, bias=True)
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1models_1_1optical__flow_1_1raft_1_1_feature_encoder_a7509eada0118218c53208dede336d886}{layer1}} = self.\+\_\+make\+\_\+2\+\_\+blocks(block, layers\mbox{[}0\mbox{]}, layers\mbox{[}1\mbox{]}, norm\+\_\+layer=norm\+\_\+layer, first\+\_\+stride=1)
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1models_1_1optical__flow_1_1raft_1_1_feature_encoder_a509c54b9e05ea4f15f9cf8cf411268ac}{layer2}} = self.\+\_\+make\+\_\+2\+\_\+blocks(block, layers\mbox{[}1\mbox{]}, layers\mbox{[}2\mbox{]}, norm\+\_\+layer=norm\+\_\+layer, first\+\_\+stride=2)
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1models_1_1optical__flow_1_1raft_1_1_feature_encoder_a4c7a751fe2aa8bfb37ff57d55f3099fa}{layer3}} = self.\+\_\+make\+\_\+2\+\_\+blocks(block, layers\mbox{[}2\mbox{]}, layers\mbox{[}3\mbox{]}, norm\+\_\+layer=norm\+\_\+layer, first\+\_\+stride=2)
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1models_1_1optical__flow_1_1raft_1_1_feature_encoder_a42837b5347f04304144d6708a28bca9c}{conv}} = nn.\+Conv2d(layers\mbox{[}3\mbox{]}, layers\mbox{[}4\mbox{]}, kernel\+\_\+size=1)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1models_1_1optical__flow_1_1raft_1_1_feature_encoder_a914a930f694c17bfc2b39797e02fb867}{\+\_\+make\+\_\+2\+\_\+blocks}} (self, block, in\+\_\+channels, out\+\_\+channels, norm\+\_\+layer, first\+\_\+stride)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}The feature encoder, used both as the actual feature encoder, and as the context encoder.
+
+It must downsample its input by 8.
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classtorchvision__down_1_1models_1_1optical__flow_1_1raft_1_1_feature_encoder_ac52ac16ebddfae7fa64409a5775a9b75}\index{torchvision\_down.models.optical\_flow.raft.FeatureEncoder@{torchvision\_down.models.optical\_flow.raft.FeatureEncoder}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!torchvision\_down.models.optical\_flow.raft.FeatureEncoder@{torchvision\_down.models.optical\_flow.raft.FeatureEncoder}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1models_1_1optical__flow_1_1raft_1_1_feature_encoder_ac52ac16ebddfae7fa64409a5775a9b75} 
+torchvision\+\_\+down.\+models.\+optical\+\_\+flow.\+raft.\+Feature\+Encoder.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{\texorpdfstring{$\ast$}{*}}]{}{, }\item[{}]{block}{ = {\ttfamily \mbox{\hyperlink{classtorchvision__down_1_1models_1_1optical__flow_1_1raft_1_1_residual_block}{Residual\+Block}}}, }\item[{}]{layers}{ = {\ttfamily (64,~64,~96,~128,~256)}, }\item[{}]{norm\+\_\+layer}{ = {\ttfamily nn.BatchNorm2d}}\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classtorchvision__down_1_1models_1_1optical__flow_1_1raft_1_1_feature_encoder_a914a930f694c17bfc2b39797e02fb867}\index{torchvision\_down.models.optical\_flow.raft.FeatureEncoder@{torchvision\_down.models.optical\_flow.raft.FeatureEncoder}!\_make\_2\_blocks@{\_make\_2\_blocks}}
+\index{\_make\_2\_blocks@{\_make\_2\_blocks}!torchvision\_down.models.optical\_flow.raft.FeatureEncoder@{torchvision\_down.models.optical\_flow.raft.FeatureEncoder}}
+\doxysubsubsection{\texorpdfstring{\_make\_2\_blocks()}{\_make\_2\_blocks()}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1models_1_1optical__flow_1_1raft_1_1_feature_encoder_a914a930f694c17bfc2b39797e02fb867} 
+torchvision\+\_\+down.\+models.\+optical\+\_\+flow.\+raft.\+Feature\+Encoder.\+\_\+make\+\_\+2\+\_\+blocks (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{block}{, }\item[{}]{in\+\_\+channels}{, }\item[{}]{out\+\_\+channels}{, }\item[{}]{norm\+\_\+layer}{, }\item[{}]{first\+\_\+stride}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classtorchvision__down_1_1models_1_1optical__flow_1_1raft_1_1_feature_encoder_ab0f49a4f7ca3d9331a10e00901a80f27}\index{torchvision\_down.models.optical\_flow.raft.FeatureEncoder@{torchvision\_down.models.optical\_flow.raft.FeatureEncoder}!forward@{forward}}
+\index{forward@{forward}!torchvision\_down.models.optical\_flow.raft.FeatureEncoder@{torchvision\_down.models.optical\_flow.raft.FeatureEncoder}}
+\doxysubsubsection{\texorpdfstring{forward()}{forward()}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1models_1_1optical__flow_1_1raft_1_1_feature_encoder_ab0f49a4f7ca3d9331a10e00901a80f27} 
+torchvision\+\_\+down.\+models.\+optical\+\_\+flow.\+raft.\+Feature\+Encoder.\+forward (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{x}{}\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classtorchvision__down_1_1models_1_1optical__flow_1_1raft_1_1_feature_encoder_a42837b5347f04304144d6708a28bca9c}\index{torchvision\_down.models.optical\_flow.raft.FeatureEncoder@{torchvision\_down.models.optical\_flow.raft.FeatureEncoder}!conv@{conv}}
+\index{conv@{conv}!torchvision\_down.models.optical\_flow.raft.FeatureEncoder@{torchvision\_down.models.optical\_flow.raft.FeatureEncoder}}
+\doxysubsubsection{\texorpdfstring{conv}{conv}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1models_1_1optical__flow_1_1raft_1_1_feature_encoder_a42837b5347f04304144d6708a28bca9c} 
+torchvision\+\_\+down.\+models.\+optical\+\_\+flow.\+raft.\+Feature\+Encoder.\+conv = nn.\+Conv2d(layers\mbox{[}3\mbox{]}, layers\mbox{[}4\mbox{]}, kernel\+\_\+size=1)}
+
+\Hypertarget{classtorchvision__down_1_1models_1_1optical__flow_1_1raft_1_1_feature_encoder_a74b9bd1208cf333fabadc5bb67e497f9}\index{torchvision\_down.models.optical\_flow.raft.FeatureEncoder@{torchvision\_down.models.optical\_flow.raft.FeatureEncoder}!convnormrelu@{convnormrelu}}
+\index{convnormrelu@{convnormrelu}!torchvision\_down.models.optical\_flow.raft.FeatureEncoder@{torchvision\_down.models.optical\_flow.raft.FeatureEncoder}}
+\doxysubsubsection{\texorpdfstring{convnormrelu}{convnormrelu}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1models_1_1optical__flow_1_1raft_1_1_feature_encoder_a74b9bd1208cf333fabadc5bb67e497f9} 
+torchvision\+\_\+down.\+models.\+optical\+\_\+flow.\+raft.\+Feature\+Encoder.\+convnormrelu = \mbox{\hyperlink{classtorchvision__down_1_1ops_1_1misc_1_1_conv_norm_activation}{Conv\+Norm\+Activation}}(3, layers\mbox{[}0\mbox{]}, norm\+\_\+layer=norm\+\_\+layer, kernel\+\_\+size=7, stride=2, bias=True)}
+
+\Hypertarget{classtorchvision__down_1_1models_1_1optical__flow_1_1raft_1_1_feature_encoder_a7509eada0118218c53208dede336d886}\index{torchvision\_down.models.optical\_flow.raft.FeatureEncoder@{torchvision\_down.models.optical\_flow.raft.FeatureEncoder}!layer1@{layer1}}
+\index{layer1@{layer1}!torchvision\_down.models.optical\_flow.raft.FeatureEncoder@{torchvision\_down.models.optical\_flow.raft.FeatureEncoder}}
+\doxysubsubsection{\texorpdfstring{layer1}{layer1}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1models_1_1optical__flow_1_1raft_1_1_feature_encoder_a7509eada0118218c53208dede336d886} 
+torchvision\+\_\+down.\+models.\+optical\+\_\+flow.\+raft.\+Feature\+Encoder.\+layer1 = self.\+\_\+make\+\_\+2\+\_\+blocks(block, layers\mbox{[}0\mbox{]}, layers\mbox{[}1\mbox{]}, norm\+\_\+layer=norm\+\_\+layer, first\+\_\+stride=1)}
+
+\Hypertarget{classtorchvision__down_1_1models_1_1optical__flow_1_1raft_1_1_feature_encoder_a509c54b9e05ea4f15f9cf8cf411268ac}\index{torchvision\_down.models.optical\_flow.raft.FeatureEncoder@{torchvision\_down.models.optical\_flow.raft.FeatureEncoder}!layer2@{layer2}}
+\index{layer2@{layer2}!torchvision\_down.models.optical\_flow.raft.FeatureEncoder@{torchvision\_down.models.optical\_flow.raft.FeatureEncoder}}
+\doxysubsubsection{\texorpdfstring{layer2}{layer2}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1models_1_1optical__flow_1_1raft_1_1_feature_encoder_a509c54b9e05ea4f15f9cf8cf411268ac} 
+torchvision\+\_\+down.\+models.\+optical\+\_\+flow.\+raft.\+Feature\+Encoder.\+layer2 = self.\+\_\+make\+\_\+2\+\_\+blocks(block, layers\mbox{[}1\mbox{]}, layers\mbox{[}2\mbox{]}, norm\+\_\+layer=norm\+\_\+layer, first\+\_\+stride=2)}
+
+\Hypertarget{classtorchvision__down_1_1models_1_1optical__flow_1_1raft_1_1_feature_encoder_a4c7a751fe2aa8bfb37ff57d55f3099fa}\index{torchvision\_down.models.optical\_flow.raft.FeatureEncoder@{torchvision\_down.models.optical\_flow.raft.FeatureEncoder}!layer3@{layer3}}
+\index{layer3@{layer3}!torchvision\_down.models.optical\_flow.raft.FeatureEncoder@{torchvision\_down.models.optical\_flow.raft.FeatureEncoder}}
+\doxysubsubsection{\texorpdfstring{layer3}{layer3}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1models_1_1optical__flow_1_1raft_1_1_feature_encoder_a4c7a751fe2aa8bfb37ff57d55f3099fa} 
+torchvision\+\_\+down.\+models.\+optical\+\_\+flow.\+raft.\+Feature\+Encoder.\+layer3 = self.\+\_\+make\+\_\+2\+\_\+blocks(block, layers\mbox{[}2\mbox{]}, layers\mbox{[}3\mbox{]}, norm\+\_\+layer=norm\+\_\+layer, first\+\_\+stride=2)}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Cervi\+AI/torchvision\+\_\+down/models/optical\+\_\+flow/\mbox{\hyperlink{raft_8py}{raft.\+py}}\end{DoxyCompactItemize}

@@ -1,0 +1,160 @@
+\doxysection{torchvision\+\_\+down.\+datasets.\+samplers.\+clip\+\_\+sampler.\+Distributed\+Sampler Class Reference}
+\hypertarget{classtorchvision__down_1_1datasets_1_1samplers_1_1clip__sampler_1_1_distributed_sampler}{}\label{classtorchvision__down_1_1datasets_1_1samplers_1_1clip__sampler_1_1_distributed_sampler}\index{torchvision\_down.datasets.samplers.clip\_sampler.DistributedSampler@{torchvision\_down.datasets.samplers.clip\_sampler.DistributedSampler}}
+Inheritance diagram for torchvision\+\_\+down.\+datasets.\+samplers.\+clip\+\_\+sampler.\+Distributed\+Sampler\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classtorchvision__down_1_1datasets_1_1samplers_1_1clip__sampler_1_1_distributed_sampler}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+None \mbox{\hyperlink{classtorchvision__down_1_1datasets_1_1samplers_1_1clip__sampler_1_1_distributed_sampler_aaba5c206a8fb69770372860121b9244c}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, Sized \mbox{\hyperlink{classtorchvision__down_1_1datasets_1_1samplers_1_1clip__sampler_1_1_distributed_sampler_ad7558897f21fe9a984c307f10d950dfa}{dataset}}, Optional\mbox{[}int\mbox{]} \mbox{\hyperlink{classtorchvision__down_1_1datasets_1_1samplers_1_1clip__sampler_1_1_distributed_sampler_a370a35d3b8e0aaad7d86d9b1e14d1a96}{num\+\_\+replicas}}=None, Optional\mbox{[}int\mbox{]} \mbox{\hyperlink{classtorchvision__down_1_1datasets_1_1samplers_1_1clip__sampler_1_1_distributed_sampler_a68dfea28fd5813af38caa011f4cb543d}{rank}}=None, bool \mbox{\hyperlink{classtorchvision__down_1_1datasets_1_1samplers_1_1clip__sampler_1_1_distributed_sampler_aaa01de1be25be09a78744575020a279e}{shuffle}}=False, int \mbox{\hyperlink{classtorchvision__down_1_1datasets_1_1samplers_1_1clip__sampler_1_1_distributed_sampler_a93665866b7fcd15d38183f996674cc01}{group\+\_\+size}}=1)
+\item 
+Iterator\mbox{[}int\mbox{]} \mbox{\hyperlink{classtorchvision__down_1_1datasets_1_1samplers_1_1clip__sampler_1_1_distributed_sampler_a5f7336aaf710aef889019fafa5174778}{\+\_\+\+\_\+iter\+\_\+\+\_\+}} (self)
+\item 
+int \mbox{\hyperlink{classtorchvision__down_1_1datasets_1_1samplers_1_1clip__sampler_1_1_distributed_sampler_aca3415bb99182f70d5b2dc3214fc146f}{\+\_\+\+\_\+len\+\_\+\+\_\+}} (self)
+\item 
+None \mbox{\hyperlink{classtorchvision__down_1_1datasets_1_1samplers_1_1clip__sampler_1_1_distributed_sampler_a6035c06053aae3fbfe8075b0ca16c119}{set\+\_\+epoch}} (self, int \mbox{\hyperlink{classtorchvision__down_1_1datasets_1_1samplers_1_1clip__sampler_1_1_distributed_sampler_a0713db70944debac9489f90ddc9921a5}{epoch}})
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1datasets_1_1samplers_1_1clip__sampler_1_1_distributed_sampler_ad7558897f21fe9a984c307f10d950dfa}{dataset}} = dataset
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1datasets_1_1samplers_1_1clip__sampler_1_1_distributed_sampler_a93665866b7fcd15d38183f996674cc01}{group\+\_\+size}} = group\+\_\+size
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1datasets_1_1samplers_1_1clip__sampler_1_1_distributed_sampler_a370a35d3b8e0aaad7d86d9b1e14d1a96}{num\+\_\+replicas}} = num\+\_\+replicas
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1datasets_1_1samplers_1_1clip__sampler_1_1_distributed_sampler_a68dfea28fd5813af38caa011f4cb543d}{rank}} = rank
+\item 
+int \mbox{\hyperlink{classtorchvision__down_1_1datasets_1_1samplers_1_1clip__sampler_1_1_distributed_sampler_a0713db70944debac9489f90ddc9921a5}{epoch}} = 0
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1datasets_1_1samplers_1_1clip__sampler_1_1_distributed_sampler_ab5224d651247d22446bbac30c2a2b25d}{num\+\_\+group\+\_\+samples}} = int(math.\+ceil(dataset\+\_\+group\+\_\+length \texorpdfstring{$\ast$}{*} 1.\+0 / self.\+num\+\_\+replicas))
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1datasets_1_1samplers_1_1clip__sampler_1_1_distributed_sampler_a0e1af6f31c55d194ab8b301f0b4dbbfb}{num\+\_\+samples}} = self.\+num\+\_\+group\+\_\+samples \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{classtorchvision__down_1_1datasets_1_1samplers_1_1clip__sampler_1_1_distributed_sampler_a93665866b7fcd15d38183f996674cc01}{group\+\_\+size}}
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1datasets_1_1samplers_1_1clip__sampler_1_1_distributed_sampler_aef61357db71ed25795a7fddba2eada8f}{total\+\_\+size}} = self.\+num\+\_\+samples \texorpdfstring{$\ast$}{*} self.\+num\+\_\+replicas
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1datasets_1_1samplers_1_1clip__sampler_1_1_distributed_sampler_aaa01de1be25be09a78744575020a279e}{shuffle}} = shuffle
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}Extension of DistributedSampler, as discussed in
+https://github.com/pytorch/pytorch/issues/23430
+
+Example:
+    dataset: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13]
+    num_replicas: 4
+    shuffle: False
+
+when group_size = 1
+        RANK    |  shard_dataset
+        =========================
+        rank_0  |  [0, 4, 8, 12]
+        rank_1  |  [1, 5, 9, 13]
+        rank_2  |  [2, 6, 10, 0]
+        rank_3  |  [3, 7, 11, 1]
+
+when group_size = 2
+
+        RANK    |  shard_dataset
+        =========================
+        rank_0  |  [0, 1, 8, 9]
+        rank_1  |  [2, 3, 10, 11]
+        rank_2  |  [4, 5, 12, 13]
+        rank_3  |  [6, 7, 0, 1]
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classtorchvision__down_1_1datasets_1_1samplers_1_1clip__sampler_1_1_distributed_sampler_aaba5c206a8fb69770372860121b9244c}\index{torchvision\_down.datasets.samplers.clip\_sampler.DistributedSampler@{torchvision\_down.datasets.samplers.clip\_sampler.DistributedSampler}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!torchvision\_down.datasets.samplers.clip\_sampler.DistributedSampler@{torchvision\_down.datasets.samplers.clip\_sampler.DistributedSampler}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1datasets_1_1samplers_1_1clip__sampler_1_1_distributed_sampler_aaba5c206a8fb69770372860121b9244c} 
+ None torchvision\+\_\+down.\+datasets.\+samplers.\+clip\+\_\+sampler.\+Distributed\+Sampler.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{Sized}]{dataset}{, }\item[{Optional\mbox{[}int\mbox{]} }]{num\+\_\+replicas}{ = {\ttfamily None}, }\item[{Optional\mbox{[}int\mbox{]} }]{rank}{ = {\ttfamily None}, }\item[{bool }]{shuffle}{ = {\ttfamily False}, }\item[{int }]{group\+\_\+size}{ = {\ttfamily 1}}\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classtorchvision__down_1_1datasets_1_1samplers_1_1clip__sampler_1_1_distributed_sampler_a5f7336aaf710aef889019fafa5174778}\index{torchvision\_down.datasets.samplers.clip\_sampler.DistributedSampler@{torchvision\_down.datasets.samplers.clip\_sampler.DistributedSampler}!\_\_iter\_\_@{\_\_iter\_\_}}
+\index{\_\_iter\_\_@{\_\_iter\_\_}!torchvision\_down.datasets.samplers.clip\_sampler.DistributedSampler@{torchvision\_down.datasets.samplers.clip\_sampler.DistributedSampler}}
+\doxysubsubsection{\texorpdfstring{\_\_iter\_\_()}{\_\_iter\_\_()}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1datasets_1_1samplers_1_1clip__sampler_1_1_distributed_sampler_a5f7336aaf710aef889019fafa5174778} 
+ Iterator\mbox{[}int\mbox{]} torchvision\+\_\+down.\+datasets.\+samplers.\+clip\+\_\+sampler.\+Distributed\+Sampler.\+\_\+\+\_\+iter\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classtorchvision__down_1_1datasets_1_1samplers_1_1clip__sampler_1_1_distributed_sampler_aca3415bb99182f70d5b2dc3214fc146f}\index{torchvision\_down.datasets.samplers.clip\_sampler.DistributedSampler@{torchvision\_down.datasets.samplers.clip\_sampler.DistributedSampler}!\_\_len\_\_@{\_\_len\_\_}}
+\index{\_\_len\_\_@{\_\_len\_\_}!torchvision\_down.datasets.samplers.clip\_sampler.DistributedSampler@{torchvision\_down.datasets.samplers.clip\_sampler.DistributedSampler}}
+\doxysubsubsection{\texorpdfstring{\_\_len\_\_()}{\_\_len\_\_()}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1datasets_1_1samplers_1_1clip__sampler_1_1_distributed_sampler_aca3415bb99182f70d5b2dc3214fc146f} 
+ int torchvision\+\_\+down.\+datasets.\+samplers.\+clip\+\_\+sampler.\+Distributed\+Sampler.\+\_\+\+\_\+len\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classtorchvision__down_1_1datasets_1_1samplers_1_1clip__sampler_1_1_distributed_sampler_a6035c06053aae3fbfe8075b0ca16c119}\index{torchvision\_down.datasets.samplers.clip\_sampler.DistributedSampler@{torchvision\_down.datasets.samplers.clip\_sampler.DistributedSampler}!set\_epoch@{set\_epoch}}
+\index{set\_epoch@{set\_epoch}!torchvision\_down.datasets.samplers.clip\_sampler.DistributedSampler@{torchvision\_down.datasets.samplers.clip\_sampler.DistributedSampler}}
+\doxysubsubsection{\texorpdfstring{set\_epoch()}{set\_epoch()}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1datasets_1_1samplers_1_1clip__sampler_1_1_distributed_sampler_a6035c06053aae3fbfe8075b0ca16c119} 
+ None torchvision\+\_\+down.\+datasets.\+samplers.\+clip\+\_\+sampler.\+Distributed\+Sampler.\+set\+\_\+epoch (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{int}]{epoch}{}\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classtorchvision__down_1_1datasets_1_1samplers_1_1clip__sampler_1_1_distributed_sampler_ad7558897f21fe9a984c307f10d950dfa}\index{torchvision\_down.datasets.samplers.clip\_sampler.DistributedSampler@{torchvision\_down.datasets.samplers.clip\_sampler.DistributedSampler}!dataset@{dataset}}
+\index{dataset@{dataset}!torchvision\_down.datasets.samplers.clip\_sampler.DistributedSampler@{torchvision\_down.datasets.samplers.clip\_sampler.DistributedSampler}}
+\doxysubsubsection{\texorpdfstring{dataset}{dataset}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1datasets_1_1samplers_1_1clip__sampler_1_1_distributed_sampler_ad7558897f21fe9a984c307f10d950dfa} 
+torchvision\+\_\+down.\+datasets.\+samplers.\+clip\+\_\+sampler.\+Distributed\+Sampler.\+dataset = dataset}
+
+\Hypertarget{classtorchvision__down_1_1datasets_1_1samplers_1_1clip__sampler_1_1_distributed_sampler_a0713db70944debac9489f90ddc9921a5}\index{torchvision\_down.datasets.samplers.clip\_sampler.DistributedSampler@{torchvision\_down.datasets.samplers.clip\_sampler.DistributedSampler}!epoch@{epoch}}
+\index{epoch@{epoch}!torchvision\_down.datasets.samplers.clip\_sampler.DistributedSampler@{torchvision\_down.datasets.samplers.clip\_sampler.DistributedSampler}}
+\doxysubsubsection{\texorpdfstring{epoch}{epoch}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1datasets_1_1samplers_1_1clip__sampler_1_1_distributed_sampler_a0713db70944debac9489f90ddc9921a5} 
+torchvision\+\_\+down.\+datasets.\+samplers.\+clip\+\_\+sampler.\+Distributed\+Sampler.\+epoch = 0}
+
+\Hypertarget{classtorchvision__down_1_1datasets_1_1samplers_1_1clip__sampler_1_1_distributed_sampler_a93665866b7fcd15d38183f996674cc01}\index{torchvision\_down.datasets.samplers.clip\_sampler.DistributedSampler@{torchvision\_down.datasets.samplers.clip\_sampler.DistributedSampler}!group\_size@{group\_size}}
+\index{group\_size@{group\_size}!torchvision\_down.datasets.samplers.clip\_sampler.DistributedSampler@{torchvision\_down.datasets.samplers.clip\_sampler.DistributedSampler}}
+\doxysubsubsection{\texorpdfstring{group\_size}{group\_size}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1datasets_1_1samplers_1_1clip__sampler_1_1_distributed_sampler_a93665866b7fcd15d38183f996674cc01} 
+torchvision\+\_\+down.\+datasets.\+samplers.\+clip\+\_\+sampler.\+Distributed\+Sampler.\+group\+\_\+size = group\+\_\+size}
+
+\Hypertarget{classtorchvision__down_1_1datasets_1_1samplers_1_1clip__sampler_1_1_distributed_sampler_ab5224d651247d22446bbac30c2a2b25d}\index{torchvision\_down.datasets.samplers.clip\_sampler.DistributedSampler@{torchvision\_down.datasets.samplers.clip\_sampler.DistributedSampler}!num\_group\_samples@{num\_group\_samples}}
+\index{num\_group\_samples@{num\_group\_samples}!torchvision\_down.datasets.samplers.clip\_sampler.DistributedSampler@{torchvision\_down.datasets.samplers.clip\_sampler.DistributedSampler}}
+\doxysubsubsection{\texorpdfstring{num\_group\_samples}{num\_group\_samples}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1datasets_1_1samplers_1_1clip__sampler_1_1_distributed_sampler_ab5224d651247d22446bbac30c2a2b25d} 
+torchvision\+\_\+down.\+datasets.\+samplers.\+clip\+\_\+sampler.\+Distributed\+Sampler.\+num\+\_\+group\+\_\+samples = int(math.\+ceil(dataset\+\_\+group\+\_\+length \texorpdfstring{$\ast$}{*} 1.\+0 / self.\+num\+\_\+replicas))}
+
+\Hypertarget{classtorchvision__down_1_1datasets_1_1samplers_1_1clip__sampler_1_1_distributed_sampler_a370a35d3b8e0aaad7d86d9b1e14d1a96}\index{torchvision\_down.datasets.samplers.clip\_sampler.DistributedSampler@{torchvision\_down.datasets.samplers.clip\_sampler.DistributedSampler}!num\_replicas@{num\_replicas}}
+\index{num\_replicas@{num\_replicas}!torchvision\_down.datasets.samplers.clip\_sampler.DistributedSampler@{torchvision\_down.datasets.samplers.clip\_sampler.DistributedSampler}}
+\doxysubsubsection{\texorpdfstring{num\_replicas}{num\_replicas}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1datasets_1_1samplers_1_1clip__sampler_1_1_distributed_sampler_a370a35d3b8e0aaad7d86d9b1e14d1a96} 
+torchvision\+\_\+down.\+datasets.\+samplers.\+clip\+\_\+sampler.\+Distributed\+Sampler.\+num\+\_\+replicas = num\+\_\+replicas}
+
+\Hypertarget{classtorchvision__down_1_1datasets_1_1samplers_1_1clip__sampler_1_1_distributed_sampler_a0e1af6f31c55d194ab8b301f0b4dbbfb}\index{torchvision\_down.datasets.samplers.clip\_sampler.DistributedSampler@{torchvision\_down.datasets.samplers.clip\_sampler.DistributedSampler}!num\_samples@{num\_samples}}
+\index{num\_samples@{num\_samples}!torchvision\_down.datasets.samplers.clip\_sampler.DistributedSampler@{torchvision\_down.datasets.samplers.clip\_sampler.DistributedSampler}}
+\doxysubsubsection{\texorpdfstring{num\_samples}{num\_samples}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1datasets_1_1samplers_1_1clip__sampler_1_1_distributed_sampler_a0e1af6f31c55d194ab8b301f0b4dbbfb} 
+torchvision\+\_\+down.\+datasets.\+samplers.\+clip\+\_\+sampler.\+Distributed\+Sampler.\+num\+\_\+samples = self.\+num\+\_\+group\+\_\+samples \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{classtorchvision__down_1_1datasets_1_1samplers_1_1clip__sampler_1_1_distributed_sampler_a93665866b7fcd15d38183f996674cc01}{group\+\_\+size}}}
+
+\Hypertarget{classtorchvision__down_1_1datasets_1_1samplers_1_1clip__sampler_1_1_distributed_sampler_a68dfea28fd5813af38caa011f4cb543d}\index{torchvision\_down.datasets.samplers.clip\_sampler.DistributedSampler@{torchvision\_down.datasets.samplers.clip\_sampler.DistributedSampler}!rank@{rank}}
+\index{rank@{rank}!torchvision\_down.datasets.samplers.clip\_sampler.DistributedSampler@{torchvision\_down.datasets.samplers.clip\_sampler.DistributedSampler}}
+\doxysubsubsection{\texorpdfstring{rank}{rank}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1datasets_1_1samplers_1_1clip__sampler_1_1_distributed_sampler_a68dfea28fd5813af38caa011f4cb543d} 
+torchvision\+\_\+down.\+datasets.\+samplers.\+clip\+\_\+sampler.\+Distributed\+Sampler.\+rank = rank}
+
+\Hypertarget{classtorchvision__down_1_1datasets_1_1samplers_1_1clip__sampler_1_1_distributed_sampler_aaa01de1be25be09a78744575020a279e}\index{torchvision\_down.datasets.samplers.clip\_sampler.DistributedSampler@{torchvision\_down.datasets.samplers.clip\_sampler.DistributedSampler}!shuffle@{shuffle}}
+\index{shuffle@{shuffle}!torchvision\_down.datasets.samplers.clip\_sampler.DistributedSampler@{torchvision\_down.datasets.samplers.clip\_sampler.DistributedSampler}}
+\doxysubsubsection{\texorpdfstring{shuffle}{shuffle}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1datasets_1_1samplers_1_1clip__sampler_1_1_distributed_sampler_aaa01de1be25be09a78744575020a279e} 
+torchvision\+\_\+down.\+datasets.\+samplers.\+clip\+\_\+sampler.\+Distributed\+Sampler.\+shuffle = shuffle}
+
+\Hypertarget{classtorchvision__down_1_1datasets_1_1samplers_1_1clip__sampler_1_1_distributed_sampler_aef61357db71ed25795a7fddba2eada8f}\index{torchvision\_down.datasets.samplers.clip\_sampler.DistributedSampler@{torchvision\_down.datasets.samplers.clip\_sampler.DistributedSampler}!total\_size@{total\_size}}
+\index{total\_size@{total\_size}!torchvision\_down.datasets.samplers.clip\_sampler.DistributedSampler@{torchvision\_down.datasets.samplers.clip\_sampler.DistributedSampler}}
+\doxysubsubsection{\texorpdfstring{total\_size}{total\_size}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1datasets_1_1samplers_1_1clip__sampler_1_1_distributed_sampler_aef61357db71ed25795a7fddba2eada8f} 
+torchvision\+\_\+down.\+datasets.\+samplers.\+clip\+\_\+sampler.\+Distributed\+Sampler.\+total\+\_\+size = self.\+num\+\_\+samples \texorpdfstring{$\ast$}{*} self.\+num\+\_\+replicas}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Cervi\+AI/torchvision\+\_\+down/datasets/samplers/\mbox{\hyperlink{clip__sampler_8py}{clip\+\_\+sampler.\+py}}\end{DoxyCompactItemize}

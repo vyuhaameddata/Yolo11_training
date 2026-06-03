@@ -1,0 +1,111 @@
+\doxysection{models.\+experimental.\+ONNX\+\_\+\+ORT Class Reference}
+\hypertarget{classmodels_1_1experimental_1_1_o_n_n_x___o_r_t}{}\label{classmodels_1_1experimental_1_1_o_n_n_x___o_r_t}\index{models.experimental.ONNX\_ORT@{models.experimental.ONNX\_ORT}}
+Inheritance diagram for models.\+experimental.\+ONNX\+\_\+\+ORT\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classmodels_1_1experimental_1_1_o_n_n_x___o_r_t}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classmodels_1_1experimental_1_1_o_n_n_x___o_r_t_a897a57b04796d9d0b4371cf1f4bbc73c}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, \mbox{\hyperlink{classmodels_1_1experimental_1_1_o_n_n_x___o_r_t_adfdb4eb11a2af64d60f9676579c38043}{max\+\_\+obj}}=100, iou\+\_\+thres=0.\+45, score\+\_\+thres=0.\+25, \mbox{\hyperlink{classmodels_1_1experimental_1_1_o_n_n_x___o_r_t_a3d8ffdd490f13cdab6c6ef564e03c0d2}{max\+\_\+wh}}=640, \mbox{\hyperlink{classmodels_1_1experimental_1_1_o_n_n_x___o_r_t_a9b988a7a11a1b656dfae4e682f9a0c6d}{device}}=None, \mbox{\hyperlink{classmodels_1_1experimental_1_1_o_n_n_x___o_r_t_ab69750ab487747b8766f4a6621354692}{n\+\_\+classes}}=80)
+\item 
+\mbox{\hyperlink{classmodels_1_1experimental_1_1_o_n_n_x___o_r_t_affd7ba0aafa24f2bd67b4b47ae4cf332}{forward}} (self, x)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classmodels_1_1experimental_1_1_o_n_n_x___o_r_t_a9b988a7a11a1b656dfae4e682f9a0c6d}{device}} = device if device else torch.\+device("{}cpu"{})
+\item 
+\mbox{\hyperlink{classmodels_1_1experimental_1_1_o_n_n_x___o_r_t_adfdb4eb11a2af64d60f9676579c38043}{max\+\_\+obj}} = torch.\+tensor(\mbox{[}max\+\_\+obj\mbox{]}).to(\mbox{\hyperlink{classmodels_1_1experimental_1_1_o_n_n_x___o_r_t_a9b988a7a11a1b656dfae4e682f9a0c6d}{device}})
+\item 
+\mbox{\hyperlink{classmodels_1_1experimental_1_1_o_n_n_x___o_r_t_a96a830feecada067fd23afdb32640017}{iou\+\_\+threshold}} = torch.\+tensor(\mbox{[}iou\+\_\+thres\mbox{]}).to(\mbox{\hyperlink{classmodels_1_1experimental_1_1_o_n_n_x___o_r_t_a9b988a7a11a1b656dfae4e682f9a0c6d}{device}})
+\item 
+\mbox{\hyperlink{classmodels_1_1experimental_1_1_o_n_n_x___o_r_t_af07f9a933cba2bc110af9ee2be05818c}{score\+\_\+threshold}} = torch.\+tensor(\mbox{[}score\+\_\+thres\mbox{]}).to(\mbox{\hyperlink{classmodels_1_1experimental_1_1_o_n_n_x___o_r_t_a9b988a7a11a1b656dfae4e682f9a0c6d}{device}})
+\item 
+\mbox{\hyperlink{classmodels_1_1experimental_1_1_o_n_n_x___o_r_t_a3d8ffdd490f13cdab6c6ef564e03c0d2}{max\+\_\+wh}} = max\+\_\+wh
+\item 
+\mbox{\hyperlink{classmodels_1_1experimental_1_1_o_n_n_x___o_r_t_ab1d8f55189cb4b730857b0c18d6ac081}{convert\+\_\+matrix}}
+\item 
+int \mbox{\hyperlink{classmodels_1_1experimental_1_1_o_n_n_x___o_r_t_ab69750ab487747b8766f4a6621354692}{n\+\_\+classes}} = n\+\_\+classes
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}onnx module with ONNX-Runtime NMS operation.\end{DoxyVerb}
+ 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classmodels_1_1experimental_1_1_o_n_n_x___o_r_t_a897a57b04796d9d0b4371cf1f4bbc73c}\index{models.experimental.ONNX\_ORT@{models.experimental.ONNX\_ORT}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!models.experimental.ONNX\_ORT@{models.experimental.ONNX\_ORT}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily \label{classmodels_1_1experimental_1_1_o_n_n_x___o_r_t_a897a57b04796d9d0b4371cf1f4bbc73c} 
+models.\+experimental.\+ONNX\+\_\+\+ORT.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{max\+\_\+obj}{ = {\ttfamily 100}, }\item[{}]{iou\+\_\+thres}{ = {\ttfamily 0.45}, }\item[{}]{score\+\_\+thres}{ = {\ttfamily 0.25}, }\item[{}]{max\+\_\+wh}{ = {\ttfamily 640}, }\item[{}]{device}{ = {\ttfamily None}, }\item[{}]{n\+\_\+classes}{ = {\ttfamily 80}}\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classmodels_1_1experimental_1_1_o_n_n_x___o_r_t_affd7ba0aafa24f2bd67b4b47ae4cf332}\index{models.experimental.ONNX\_ORT@{models.experimental.ONNX\_ORT}!forward@{forward}}
+\index{forward@{forward}!models.experimental.ONNX\_ORT@{models.experimental.ONNX\_ORT}}
+\doxysubsubsection{\texorpdfstring{forward()}{forward()}}
+{\footnotesize\ttfamily \label{classmodels_1_1experimental_1_1_o_n_n_x___o_r_t_affd7ba0aafa24f2bd67b4b47ae4cf332} 
+models.\+experimental.\+ONNX\+\_\+\+ORT.\+forward (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{x}{}\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classmodels_1_1experimental_1_1_o_n_n_x___o_r_t_ab1d8f55189cb4b730857b0c18d6ac081}\index{models.experimental.ONNX\_ORT@{models.experimental.ONNX\_ORT}!convert\_matrix@{convert\_matrix}}
+\index{convert\_matrix@{convert\_matrix}!models.experimental.ONNX\_ORT@{models.experimental.ONNX\_ORT}}
+\doxysubsubsection{\texorpdfstring{convert\_matrix}{convert\_matrix}}
+{\footnotesize\ttfamily \label{classmodels_1_1experimental_1_1_o_n_n_x___o_r_t_ab1d8f55189cb4b730857b0c18d6ac081} 
+models.\+experimental.\+ONNX\+\_\+\+ORT.\+convert\+\_\+matrix}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \ torch.tensor([[1,\ 0,\ 1,\ 0],\ [0,\ 1,\ 0,\ 1],\ [-\/0.5,\ 0,\ 0.5,\ 0],\ [0,\ -\/0.5,\ 0,\ 0.5]],}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ dtype=torch.float32,}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ device=self.device)}
+
+\end{DoxyCode}
+\Hypertarget{classmodels_1_1experimental_1_1_o_n_n_x___o_r_t_a9b988a7a11a1b656dfae4e682f9a0c6d}\index{models.experimental.ONNX\_ORT@{models.experimental.ONNX\_ORT}!device@{device}}
+\index{device@{device}!models.experimental.ONNX\_ORT@{models.experimental.ONNX\_ORT}}
+\doxysubsubsection{\texorpdfstring{device}{device}}
+{\footnotesize\ttfamily \label{classmodels_1_1experimental_1_1_o_n_n_x___o_r_t_a9b988a7a11a1b656dfae4e682f9a0c6d} 
+models.\+experimental.\+ONNX\+\_\+\+ORT.\+device = device if device else torch.\+device("{}cpu"{})}
+
+\Hypertarget{classmodels_1_1experimental_1_1_o_n_n_x___o_r_t_a96a830feecada067fd23afdb32640017}\index{models.experimental.ONNX\_ORT@{models.experimental.ONNX\_ORT}!iou\_threshold@{iou\_threshold}}
+\index{iou\_threshold@{iou\_threshold}!models.experimental.ONNX\_ORT@{models.experimental.ONNX\_ORT}}
+\doxysubsubsection{\texorpdfstring{iou\_threshold}{iou\_threshold}}
+{\footnotesize\ttfamily \label{classmodels_1_1experimental_1_1_o_n_n_x___o_r_t_a96a830feecada067fd23afdb32640017} 
+models.\+experimental.\+ONNX\+\_\+\+ORT.\+iou\+\_\+threshold = torch.\+tensor(\mbox{[}iou\+\_\+thres\mbox{]}).to(\mbox{\hyperlink{classmodels_1_1experimental_1_1_o_n_n_x___o_r_t_a9b988a7a11a1b656dfae4e682f9a0c6d}{device}})}
+
+\Hypertarget{classmodels_1_1experimental_1_1_o_n_n_x___o_r_t_adfdb4eb11a2af64d60f9676579c38043}\index{models.experimental.ONNX\_ORT@{models.experimental.ONNX\_ORT}!max\_obj@{max\_obj}}
+\index{max\_obj@{max\_obj}!models.experimental.ONNX\_ORT@{models.experimental.ONNX\_ORT}}
+\doxysubsubsection{\texorpdfstring{max\_obj}{max\_obj}}
+{\footnotesize\ttfamily \label{classmodels_1_1experimental_1_1_o_n_n_x___o_r_t_adfdb4eb11a2af64d60f9676579c38043} 
+models.\+experimental.\+ONNX\+\_\+\+ORT.\+max\+\_\+obj = torch.\+tensor(\mbox{[}max\+\_\+obj\mbox{]}).to(\mbox{\hyperlink{classmodels_1_1experimental_1_1_o_n_n_x___o_r_t_a9b988a7a11a1b656dfae4e682f9a0c6d}{device}})}
+
+\Hypertarget{classmodels_1_1experimental_1_1_o_n_n_x___o_r_t_a3d8ffdd490f13cdab6c6ef564e03c0d2}\index{models.experimental.ONNX\_ORT@{models.experimental.ONNX\_ORT}!max\_wh@{max\_wh}}
+\index{max\_wh@{max\_wh}!models.experimental.ONNX\_ORT@{models.experimental.ONNX\_ORT}}
+\doxysubsubsection{\texorpdfstring{max\_wh}{max\_wh}}
+{\footnotesize\ttfamily \label{classmodels_1_1experimental_1_1_o_n_n_x___o_r_t_a3d8ffdd490f13cdab6c6ef564e03c0d2} 
+models.\+experimental.\+ONNX\+\_\+\+ORT.\+max\+\_\+wh = max\+\_\+wh}
+
+\Hypertarget{classmodels_1_1experimental_1_1_o_n_n_x___o_r_t_ab69750ab487747b8766f4a6621354692}\index{models.experimental.ONNX\_ORT@{models.experimental.ONNX\_ORT}!n\_classes@{n\_classes}}
+\index{n\_classes@{n\_classes}!models.experimental.ONNX\_ORT@{models.experimental.ONNX\_ORT}}
+\doxysubsubsection{\texorpdfstring{n\_classes}{n\_classes}}
+{\footnotesize\ttfamily \label{classmodels_1_1experimental_1_1_o_n_n_x___o_r_t_ab69750ab487747b8766f4a6621354692} 
+int models.\+experimental.\+ONNX\+\_\+\+ORT.\+n\+\_\+classes = n\+\_\+classes}
+
+\Hypertarget{classmodels_1_1experimental_1_1_o_n_n_x___o_r_t_af07f9a933cba2bc110af9ee2be05818c}\index{models.experimental.ONNX\_ORT@{models.experimental.ONNX\_ORT}!score\_threshold@{score\_threshold}}
+\index{score\_threshold@{score\_threshold}!models.experimental.ONNX\_ORT@{models.experimental.ONNX\_ORT}}
+\doxysubsubsection{\texorpdfstring{score\_threshold}{score\_threshold}}
+{\footnotesize\ttfamily \label{classmodels_1_1experimental_1_1_o_n_n_x___o_r_t_af07f9a933cba2bc110af9ee2be05818c} 
+models.\+experimental.\+ONNX\+\_\+\+ORT.\+score\+\_\+threshold = torch.\+tensor(\mbox{[}score\+\_\+thres\mbox{]}).to(\mbox{\hyperlink{classmodels_1_1experimental_1_1_o_n_n_x___o_r_t_a9b988a7a11a1b656dfae4e682f9a0c6d}{device}})}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Cervi\+AI/models/\mbox{\hyperlink{experimental_8py}{experimental.\+py}}\end{DoxyCompactItemize}

@@ -1,0 +1,111 @@
+\doxysection{torchvision\+\_\+down.\+models.\+detection.\+keypoint\+\_\+rcnn Namespace Reference}
+\hypertarget{namespacetorchvision__down_1_1models_1_1detection_1_1keypoint__rcnn}{}\label{namespacetorchvision__down_1_1models_1_1detection_1_1keypoint__rcnn}\index{torchvision\_down.models.detection.keypoint\_rcnn@{torchvision\_down.models.detection.keypoint\_rcnn}}
+\doxysubsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classtorchvision__down_1_1models_1_1detection_1_1keypoint__rcnn_1_1_keypoint_r_c_n_n}{Keypoint\+RCNN}}
+\item 
+class \mbox{\hyperlink{classtorchvision__down_1_1models_1_1detection_1_1keypoint__rcnn_1_1_keypoint_r_c_n_n_heads}{Keypoint\+RCNNHeads}}
+\item 
+class \mbox{\hyperlink{classtorchvision__down_1_1models_1_1detection_1_1keypoint__rcnn_1_1_keypoint_r_c_n_n_predictor}{Keypoint\+RCNNPredictor}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{namespacetorchvision__down_1_1models_1_1detection_1_1keypoint__rcnn_aef44896f6a2efcf07185a9680db646ff}{keypointrcnn\+\_\+resnet50\+\_\+fpn}} (pretrained=False, progress=True, num\+\_\+classes=2, num\+\_\+keypoints=17, pretrained\+\_\+backbone=True, trainable\+\_\+backbone\+\_\+layers=None, \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}kwargs)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+list \mbox{\hyperlink{namespacetorchvision__down_1_1models_1_1detection_1_1keypoint__rcnn_acdc58a73de73a1c16dd67c5e35660fe9}{\+\_\+\+\_\+all\+\_\+\+\_\+}} = \mbox{[}"{}Keypoint\+RCNN"{}, "{}keypointrcnn\+\_\+resnet50\+\_\+fpn"{}\mbox{]}
+\item 
+dict \mbox{\hyperlink{namespacetorchvision__down_1_1models_1_1detection_1_1keypoint__rcnn_aca08ef1fe1ec373e5734c3183c0d3bf3}{model\+\_\+urls}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{namespacetorchvision__down_1_1models_1_1detection_1_1keypoint__rcnn_aef44896f6a2efcf07185a9680db646ff}\index{torchvision\_down.models.detection.keypoint\_rcnn@{torchvision\_down.models.detection.keypoint\_rcnn}!keypointrcnn\_resnet50\_fpn@{keypointrcnn\_resnet50\_fpn}}
+\index{keypointrcnn\_resnet50\_fpn@{keypointrcnn\_resnet50\_fpn}!torchvision\_down.models.detection.keypoint\_rcnn@{torchvision\_down.models.detection.keypoint\_rcnn}}
+\doxysubsubsection{\texorpdfstring{keypointrcnn\_resnet50\_fpn()}{keypointrcnn\_resnet50\_fpn()}}
+{\footnotesize\ttfamily \label{namespacetorchvision__down_1_1models_1_1detection_1_1keypoint__rcnn_aef44896f6a2efcf07185a9680db646ff} 
+torchvision\+\_\+down.\+models.\+detection.\+keypoint\+\_\+rcnn.\+keypointrcnn\+\_\+resnet50\+\_\+fpn (\begin{DoxyParamCaption}\item[{}]{pretrained}{ = {\ttfamily False}, }\item[{}]{progress}{ = {\ttfamily True}, }\item[{}]{num\+\_\+classes}{ = {\ttfamily 2}, }\item[{}]{num\+\_\+keypoints}{ = {\ttfamily 17}, }\item[{}]{pretrained\+\_\+backbone}{ = {\ttfamily True}, }\item[{}]{trainable\+\_\+backbone\+\_\+layers}{ = {\ttfamily None}, }\item[{\texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}}]{kwargs}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Constructs a Keypoint R-CNN model with a ResNet-50-FPN backbone.
+
+Reference: `"Mask R-CNN" <https://arxiv.org/abs/1703.06870>`_.
+
+The input to the model is expected to be a list of tensors, each of shape ``[C, H, W]``, one for each
+image, and should be in ``0-1`` range. Different images can have different sizes.
+
+The behavior of the model changes depending if it is in training or evaluation mode.
+
+During training, the model expects both the input tensors, as well as a targets (list of dictionary),
+containing:
+
+    - boxes (``FloatTensor[N, 4]``): the ground-truth boxes in ``[x1, y1, x2, y2]`` format, with
+      ``0 <= x1 < x2 <= W`` and ``0 <= y1 < y2 <= H``.
+    - labels (``Int64Tensor[N]``): the class label for each ground-truth box
+    - keypoints (``FloatTensor[N, K, 3]``): the ``K`` keypoints location for each of the ``N`` instances, in the
+      format ``[x, y, visibility]``, where ``visibility=0`` means that the keypoint is not visible.
+
+The model returns a ``Dict[Tensor]`` during training, containing the classification and regression
+losses for both the RPN and the R-CNN, and the keypoint loss.
+
+During inference, the model requires only the input tensors, and returns the post-processed
+predictions as a ``List[Dict[Tensor]]``, one for each input image. The fields of the ``Dict`` are as
+follows, where ``N`` is the number of detected instances:
+
+    - boxes (``FloatTensor[N, 4]``): the predicted boxes in ``[x1, y1, x2, y2]`` format, with
+      ``0 <= x1 < x2 <= W`` and ``0 <= y1 < y2 <= H``.
+    - labels (``Int64Tensor[N]``): the predicted labels for each instance
+    - scores (``Tensor[N]``): the scores or each instance
+    - keypoints (``FloatTensor[N, K, 3]``): the locations of the predicted keypoints, in ``[x, y, v]`` format.
+
+For more details on the output, you may refer to :ref:`instance_seg_output`.
+
+Keypoint R-CNN is exportable to ONNX for a fixed batch size with inputs images of fixed size.
+
+Example::
+
+    >>> model = torchvision.models.detection.keypointrcnn_resnet50_fpn(pretrained=True)
+    >>> model.eval()
+    >>> x = [torch.rand(3, 300, 400), torch.rand(3, 500, 400)]
+    >>> predictions = model(x)
+    >>>
+    >>> # optionally, if you want to export the model to ONNX:
+    >>> torch.onnx.export(model, x, "keypoint_rcnn.onnx", opset_version = 11)
+
+Args:
+    pretrained (bool): If True, returns a model pre-trained on COCO train2017
+    progress (bool): If True, displays a progress bar of the download to stderr
+    num_classes (int): number of output classes of the model (including the background)
+    num_keypoints (int): number of keypoints, default 17
+    pretrained_backbone (bool): If True, returns a model with backbone pre-trained on Imagenet
+    trainable_backbone_layers (int): number of trainable (not frozen) resnet layers starting from final block.
+        Valid values are between 0 and 5, with 5 meaning all backbone layers are trainable. If ``None`` is
+        passed (the default) this value is set to 3.
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Variable Documentation}
+\Hypertarget{namespacetorchvision__down_1_1models_1_1detection_1_1keypoint__rcnn_acdc58a73de73a1c16dd67c5e35660fe9}\index{torchvision\_down.models.detection.keypoint\_rcnn@{torchvision\_down.models.detection.keypoint\_rcnn}!\_\_all\_\_@{\_\_all\_\_}}
+\index{\_\_all\_\_@{\_\_all\_\_}!torchvision\_down.models.detection.keypoint\_rcnn@{torchvision\_down.models.detection.keypoint\_rcnn}}
+\doxysubsubsection{\texorpdfstring{\_\_all\_\_}{\_\_all\_\_}}
+{\footnotesize\ttfamily \label{namespacetorchvision__down_1_1models_1_1detection_1_1keypoint__rcnn_acdc58a73de73a1c16dd67c5e35660fe9} 
+list torchvision\+\_\+down.\+models.\+detection.\+keypoint\+\_\+rcnn.\+\_\+\+\_\+all\+\_\+\+\_\+ = \mbox{[}"{}Keypoint\+RCNN"{}, "{}keypointrcnn\+\_\+resnet50\+\_\+fpn"{}\mbox{]}\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{namespacetorchvision__down_1_1models_1_1detection_1_1keypoint__rcnn_aca08ef1fe1ec373e5734c3183c0d3bf3}\index{torchvision\_down.models.detection.keypoint\_rcnn@{torchvision\_down.models.detection.keypoint\_rcnn}!model\_urls@{model\_urls}}
+\index{model\_urls@{model\_urls}!torchvision\_down.models.detection.keypoint\_rcnn@{torchvision\_down.models.detection.keypoint\_rcnn}}
+\doxysubsubsection{\texorpdfstring{model\_urls}{model\_urls}}
+{\footnotesize\ttfamily \label{namespacetorchvision__down_1_1models_1_1detection_1_1keypoint__rcnn_aca08ef1fe1ec373e5734c3183c0d3bf3} 
+dict torchvision\+\_\+down.\+models.\+detection.\+keypoint\+\_\+rcnn.\+model\+\_\+urls}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ =\ \ \{}
+\DoxyCodeLine{00002\ \ \ \ \ \textcolor{comment}{\#\ legacy\ model\ for\ BC\ reasons,\ see\ https://github.com/pytorch/vision/issues/1606}}
+\DoxyCodeLine{00003\ \ \ \ \ \textcolor{stringliteral}{"{}keypointrcnn\_resnet50\_fpn\_coco\_legacy"{}}:\ \textcolor{stringliteral}{"{}https://download.pytorch.org/models/keypointrcnn\_resnet50\_fpn\_coco-\/9f466800.pth"{}},}
+\DoxyCodeLine{00004\ \ \ \ \ \textcolor{stringliteral}{"{}keypointrcnn\_resnet50\_fpn\_coco"{}}:\ \textcolor{stringliteral}{"{}https://download.pytorch.org/models/keypointrcnn\_resnet50\_fpn\_coco-\/fc266e95.pth"{}},}
+\DoxyCodeLine{00005\ \}}
+
+\end{DoxyCode}

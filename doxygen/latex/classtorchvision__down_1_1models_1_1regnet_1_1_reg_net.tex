@@ -1,0 +1,86 @@
+\doxysection{torchvision\+\_\+down.\+models.\+regnet.\+Reg\+Net Class Reference}
+\hypertarget{classtorchvision__down_1_1models_1_1regnet_1_1_reg_net}{}\label{classtorchvision__down_1_1models_1_1regnet_1_1_reg_net}\index{torchvision\_down.models.regnet.RegNet@{torchvision\_down.models.regnet.RegNet}}
+Inheritance diagram for torchvision\+\_\+down.\+models.\+regnet.\+Reg\+Net\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classtorchvision__down_1_1models_1_1regnet_1_1_reg_net}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+None \mbox{\hyperlink{classtorchvision__down_1_1models_1_1regnet_1_1_reg_net_add82bf17d29b9d6ffaa7ca4b95069f53}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, \mbox{\hyperlink{classtorchvision__down_1_1models_1_1regnet_1_1_block_params}{Block\+Params}} block\+\_\+params, int num\+\_\+classes=1000, int stem\+\_\+width=32, Optional\mbox{[}Callable\mbox{[}..., nn.\+Module\mbox{]}\mbox{]} stem\+\_\+type=None, Optional\mbox{[}Callable\mbox{[}..., nn.\+Module\mbox{]}\mbox{]} block\+\_\+type=None, Optional\mbox{[}Callable\mbox{[}..., nn.\+Module\mbox{]}\mbox{]} norm\+\_\+layer=None, Optional\mbox{[}Callable\mbox{[}..., nn.\+Module\mbox{]}\mbox{]} activation=None)
+\item 
+Tensor \mbox{\hyperlink{classtorchvision__down_1_1models_1_1regnet_1_1_reg_net_a152d1d014897e0dae556dc424ae41d3e}{forward}} (self, Tensor x)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1models_1_1regnet_1_1_reg_net_ab22f6aae8443713896196426e10cb611}{stem}}
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1models_1_1regnet_1_1_reg_net_aa80d58bb9071c9dedca8b98c505cf57d}{trunk\+\_\+output}} = nn.\+Sequential(Ordered\+Dict(blocks))
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1models_1_1regnet_1_1_reg_net_aa025631a1b8094984527b354507db75b}{avgpool}} = nn.\+Adaptive\+Avg\+Pool2d((1, 1))
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1models_1_1regnet_1_1_reg_net_a8a15a36a16df7888a576c91f5b44e90b}{fc}} = nn.\+Linear(in\+\_\+features=current\+\_\+width, out\+\_\+features=num\+\_\+classes)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classtorchvision__down_1_1models_1_1regnet_1_1_reg_net_add82bf17d29b9d6ffaa7ca4b95069f53}\index{torchvision\_down.models.regnet.RegNet@{torchvision\_down.models.regnet.RegNet}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!torchvision\_down.models.regnet.RegNet@{torchvision\_down.models.regnet.RegNet}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1models_1_1regnet_1_1_reg_net_add82bf17d29b9d6ffaa7ca4b95069f53} 
+ None torchvision\+\_\+down.\+models.\+regnet.\+Reg\+Net.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{\mbox{\hyperlink{classtorchvision__down_1_1models_1_1regnet_1_1_block_params}{Block\+Params}}}]{block\+\_\+params}{, }\item[{int }]{num\+\_\+classes}{ = {\ttfamily 1000}, }\item[{int }]{stem\+\_\+width}{ = {\ttfamily 32}, }\item[{Optional\mbox{[}Callable\mbox{[}..., nn.\+Module\mbox{]}\mbox{]} }]{stem\+\_\+type}{ = {\ttfamily None}, }\item[{Optional\mbox{[}Callable\mbox{[}..., nn.\+Module\mbox{]}\mbox{]} }]{block\+\_\+type}{ = {\ttfamily None}, }\item[{Optional\mbox{[}Callable\mbox{[}..., nn.\+Module\mbox{]}\mbox{]} }]{norm\+\_\+layer}{ = {\ttfamily None}, }\item[{Optional\mbox{[}Callable\mbox{[}..., nn.\+Module\mbox{]}\mbox{]} }]{activation}{ = {\ttfamily None}}\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classtorchvision__down_1_1models_1_1regnet_1_1_reg_net_a152d1d014897e0dae556dc424ae41d3e}\index{torchvision\_down.models.regnet.RegNet@{torchvision\_down.models.regnet.RegNet}!forward@{forward}}
+\index{forward@{forward}!torchvision\_down.models.regnet.RegNet@{torchvision\_down.models.regnet.RegNet}}
+\doxysubsubsection{\texorpdfstring{forward()}{forward()}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1models_1_1regnet_1_1_reg_net_a152d1d014897e0dae556dc424ae41d3e} 
+ Tensor torchvision\+\_\+down.\+models.\+regnet.\+Reg\+Net.\+forward (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{Tensor}]{x}{}\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classtorchvision__down_1_1models_1_1regnet_1_1_reg_net_aa025631a1b8094984527b354507db75b}\index{torchvision\_down.models.regnet.RegNet@{torchvision\_down.models.regnet.RegNet}!avgpool@{avgpool}}
+\index{avgpool@{avgpool}!torchvision\_down.models.regnet.RegNet@{torchvision\_down.models.regnet.RegNet}}
+\doxysubsubsection{\texorpdfstring{avgpool}{avgpool}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1models_1_1regnet_1_1_reg_net_aa025631a1b8094984527b354507db75b} 
+torchvision\+\_\+down.\+models.\+regnet.\+Reg\+Net.\+avgpool = nn.\+Adaptive\+Avg\+Pool2d((1, 1))}
+
+\Hypertarget{classtorchvision__down_1_1models_1_1regnet_1_1_reg_net_a8a15a36a16df7888a576c91f5b44e90b}\index{torchvision\_down.models.regnet.RegNet@{torchvision\_down.models.regnet.RegNet}!fc@{fc}}
+\index{fc@{fc}!torchvision\_down.models.regnet.RegNet@{torchvision\_down.models.regnet.RegNet}}
+\doxysubsubsection{\texorpdfstring{fc}{fc}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1models_1_1regnet_1_1_reg_net_a8a15a36a16df7888a576c91f5b44e90b} 
+torchvision\+\_\+down.\+models.\+regnet.\+Reg\+Net.\+fc = nn.\+Linear(in\+\_\+features=current\+\_\+width, out\+\_\+features=num\+\_\+classes)}
+
+\Hypertarget{classtorchvision__down_1_1models_1_1regnet_1_1_reg_net_ab22f6aae8443713896196426e10cb611}\index{torchvision\_down.models.regnet.RegNet@{torchvision\_down.models.regnet.RegNet}!stem@{stem}}
+\index{stem@{stem}!torchvision\_down.models.regnet.RegNet@{torchvision\_down.models.regnet.RegNet}}
+\doxysubsubsection{\texorpdfstring{stem}{stem}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1models_1_1regnet_1_1_reg_net_ab22f6aae8443713896196426e10cb611} 
+torchvision\+\_\+down.\+models.\+regnet.\+Reg\+Net.\+stem}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \ stem\_type(}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ 3,\ \ \textcolor{comment}{\#\ width\_in}}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ stem\_width,}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ norm\_layer,}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ activation,}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ )}
+
+\end{DoxyCode}
+\Hypertarget{classtorchvision__down_1_1models_1_1regnet_1_1_reg_net_aa80d58bb9071c9dedca8b98c505cf57d}\index{torchvision\_down.models.regnet.RegNet@{torchvision\_down.models.regnet.RegNet}!trunk\_output@{trunk\_output}}
+\index{trunk\_output@{trunk\_output}!torchvision\_down.models.regnet.RegNet@{torchvision\_down.models.regnet.RegNet}}
+\doxysubsubsection{\texorpdfstring{trunk\_output}{trunk\_output}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1models_1_1regnet_1_1_reg_net_aa80d58bb9071c9dedca8b98c505cf57d} 
+torchvision\+\_\+down.\+models.\+regnet.\+Reg\+Net.\+trunk\+\_\+output = nn.\+Sequential(Ordered\+Dict(blocks))}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Cervi\+AI/torchvision\+\_\+down/models/\mbox{\hyperlink{regnet_8py}{regnet.\+py}}\end{DoxyCompactItemize}

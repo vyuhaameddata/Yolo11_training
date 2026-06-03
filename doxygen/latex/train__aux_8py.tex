@@ -1,0 +1,109 @@
+\doxysection{Cervi\+AI/train\+\_\+aux.py File Reference}
+\hypertarget{train__aux_8py}{}\label{train__aux_8py}\index{CerviAI/train\_aux.py@{CerviAI/train\_aux.py}}
+\doxysubsubsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+namespace \mbox{\hyperlink{namespacetrain__aux}{train\+\_\+aux}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{namespacetrain__aux_a8213bdd4325db4d03b11bf88a347f046}{train\+\_\+aux.\+train}} (\mbox{\hyperlink{namespacetrain__aux_afc71e1473dca513bc1306147c09bf576}{hyp}}, \mbox{\hyperlink{namespacetrain__aux_a7dd83fe44aeb1c09b4db9a137936b973}{opt}}, \mbox{\hyperlink{namespacetrain__aux_afaba82a0a210b655e9a4feb125c03134}{device}}, \mbox{\hyperlink{namespacetrain__aux_ada4179391c2401f2ef33da59b2b51dba}{tb\+\_\+writer}}=\mbox{\hyperlink{namespacetrain__aux_afd5903ea84ecc62f64ba7d87c2f55111}{None}})
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{namespacetrain__aux_ad2f67ea5469f12cc9b730a52240e6584}{train\+\_\+aux.\+logger}} = logging.\+get\+Logger(\+\_\+\+\_\+name\+\_\+\+\_\+)
+\item 
+\mbox{\hyperlink{namespacetrain__aux_a1d1180ddd8d32e1f0aecd36783453fe0}{train\+\_\+aux.\+parser}} = argparse.\+Argument\+Parser()
+\item 
+\mbox{\hyperlink{namespacetrain__aux_a650da2257d34ad97879bde4b45a8ecc2}{train\+\_\+aux.\+type}}
+\item 
+\mbox{\hyperlink{namespacetrain__aux_abc9e79d894ba7d851759afd83036ff2e}{train\+\_\+aux.\+str}}
+\item 
+\mbox{\hyperlink{namespacetrain__aux_a5ed49552b576ef1ca6cd37a5edece07e}{train\+\_\+aux.\+default}}
+\item 
+\mbox{\hyperlink{namespacetrain__aux_a981dfa8ac953e1cb0fbe4b1b948fc4c8}{train\+\_\+aux.\+help}}
+\item 
+\mbox{\hyperlink{namespacetrain__aux_a184bc83c98a904c3607d0bd8ffe2a702}{train\+\_\+aux.\+int}}
+\item 
+\mbox{\hyperlink{namespacetrain__aux_a5c668eb81902bd59dac981c77c37cefe}{train\+\_\+aux.\+nargs}}
+\item 
+\mbox{\hyperlink{namespacetrain__aux_a21382b8822a355340a0f99b6aed8a13b}{train\+\_\+aux.\+action}}
+\item 
+\mbox{\hyperlink{namespacetrain__aux_a38324540b928f96ff5fcff023f03d60f}{train\+\_\+aux.\+const}}
+\item 
+\mbox{\hyperlink{namespacetrain__aux_ae31cded79dcce33cf203c96c7c8fd5e3}{train\+\_\+aux.\+True}}
+\item 
+\mbox{\hyperlink{namespacetrain__aux_a7fdd09338858f016ca881be169b441e4}{train\+\_\+aux.\+False}}
+\item 
+\mbox{\hyperlink{namespacetrain__aux_afd5903ea84ecc62f64ba7d87c2f55111}{train\+\_\+aux.\+None}}
+\item 
+\mbox{\hyperlink{namespacetrain__aux_ae15db257619752de596fd5dc3e0b5adf}{train\+\_\+aux.\+float}}
+\item 
+\mbox{\hyperlink{namespacetrain__aux_a7dd83fe44aeb1c09b4db9a137936b973}{train\+\_\+aux.\+opt}} = parser.\+parse\+\_\+args()
+\item 
+\mbox{\hyperlink{namespacetrain__aux_a85b296551916d2298d05b4f638672250}{train\+\_\+aux.\+world\+\_\+size}}
+\item 
+\mbox{\hyperlink{namespacetrain__aux_a2c3c9e415b1461624d24b4266ebe7aa0}{train\+\_\+aux.\+global\+\_\+rank}}
+\item 
+\mbox{\hyperlink{namespacetrain__aux_a9573704e2b24cb3bff02ceeea548e6c8}{train\+\_\+aux.\+wandb\+\_\+run}} = check\+\_\+wandb\+\_\+resume(\mbox{\hyperlink{namespacetrain__aux_a7dd83fe44aeb1c09b4db9a137936b973}{opt}})
+\item 
+\mbox{\hyperlink{namespacetrain__aux_a3f0faf4ebbefdb4bd2f829e9c55d1718}{train\+\_\+aux.\+ckpt}} = opt.\+resume if isinstance(opt.\+resume, \mbox{\hyperlink{namespacetrain__aux_abc9e79d894ba7d851759afd83036ff2e}{str}}) else get\+\_\+latest\+\_\+run()
+\item 
+\mbox{\hyperlink{namespacetrain__aux_ad2b9d196a1f588bfb6ec62efa5e65673}{train\+\_\+aux.\+apriori}} = opt.\+global\+\_\+rank, opt.\+local\+\_\+rank
+\item 
+\mbox{\hyperlink{namespacetrain__aux_a96b608c435dd983c7afb751aaf53933c}{train\+\_\+aux.\+local\+\_\+rank}}
+\item 
+\mbox{\hyperlink{namespacetrain__aux_afc71e1473dca513bc1306147c09bf576}{train\+\_\+aux.\+hyp}} = yaml.\+load(f, Loader=yaml.\+Safe\+Loader)
+\item 
+\mbox{\hyperlink{namespacetrain__aux_ac5b370460aa8bbd2d40985b96323d1b6}{train\+\_\+aux.\+name}}
+\item 
+\mbox{\hyperlink{namespacetrain__aux_ada506102149a08ae55e7ecbd5341fafa}{train\+\_\+aux.\+save\+\_\+dir}}
+\item 
+\mbox{\hyperlink{namespacetrain__aux_a43953805e35347315160d755bed7a0f3}{train\+\_\+aux.\+exist\+\_\+ok}}
+\item 
+\mbox{\hyperlink{namespacetrain__aux_a7d8bba0a385b73639c71ad401b586abe}{train\+\_\+aux.\+total\+\_\+batch\+\_\+size}}
+\item 
+\mbox{\hyperlink{namespacetrain__aux_afaba82a0a210b655e9a4feb125c03134}{train\+\_\+aux.\+device}} = select\+\_\+device(opt.\+device, \mbox{\hyperlink{namespacetrain__aux_aeb9db8ae465cf98587cb88473e874760}{batch\+\_\+size}}=opt.\+batch\+\_\+size)
+\item 
+\mbox{\hyperlink{namespacetrain__aux_a4b055514f27ebea23b9cb284cad7119e}{train\+\_\+aux.\+backend}}
+\item 
+\mbox{\hyperlink{namespacetrain__aux_a0e33ba7d77b48c844b5689826facf2fd}{train\+\_\+aux.\+init\+\_\+method}}
+\item 
+\mbox{\hyperlink{namespacetrain__aux_aeb9db8ae465cf98587cb88473e874760}{train\+\_\+aux.\+batch\+\_\+size}}
+\item 
+\mbox{\hyperlink{namespacetrain__aux_ada4179391c2401f2ef33da59b2b51dba}{train\+\_\+aux.\+tb\+\_\+writer}} = \mbox{\hyperlink{namespacetrain__aux_afd5903ea84ecc62f64ba7d87c2f55111}{None}}
+\item 
+\mbox{\hyperlink{namespacetrain__aux_adf5fc950f4621c38b6820468ca7a1816}{train\+\_\+aux.\+prefix}} = colorstr(\textquotesingle{}tensorboard\+: \textquotesingle{})
+\item 
+dict \mbox{\hyperlink{namespacetrain__aux_a8b086210a384f6513a6b3b2e5e707c10}{train\+\_\+aux.\+meta}}
+\item 
+\mbox{\hyperlink{namespacetrain__aux_a453a0ed6f972ecacbd3752981e80d142}{train\+\_\+aux.\+errors}}
+\item 
+\mbox{\hyperlink{namespacetrain__aux_a33e8c8b7e3c4bc891483b9f1e5bc4209}{train\+\_\+aux.\+nosave}}
+\item 
+\mbox{\hyperlink{namespacetrain__aux_abc9e79d894ba7d851759afd83036ff2e}{str}} \mbox{\hyperlink{namespacetrain__aux_ac5aa4141b96927527c124c2886b5eda6}{train\+\_\+aux.\+yaml\+\_\+file}} = Path(opt.\+save\+\_\+dir) / \textquotesingle{}hyp\+\_\+evolved.\+yaml\textquotesingle{}
+\item 
+\mbox{\hyperlink{namespacetrain__aux_abc9e79d894ba7d851759afd83036ff2e}{str}} \mbox{\hyperlink{namespacetrain__aux_a090ab3b7144fa961f0003cbc31a47220}{train\+\_\+aux.\+parent}} = \textquotesingle{}single\textquotesingle{}
+\item 
+\mbox{\hyperlink{namespacetrain__aux_a738dbd04413eefaf8eb09add9c7b6d13}{train\+\_\+aux.\+x}} = np.\+loadtxt(\textquotesingle{}evolve.\+txt\textquotesingle{}, ndmin=2)
+\item 
+\mbox{\hyperlink{namespacetrain__aux_a43865bb753f46d82db55675067151796}{train\+\_\+aux.\+n}} = min(5, len(\mbox{\hyperlink{namespacetrain__aux_a738dbd04413eefaf8eb09add9c7b6d13}{x}}))
+\item 
+\mbox{\hyperlink{namespacetrain__aux_ad06f3bc702af44ad3fb00667b780efb4}{train\+\_\+aux.\+w}} = fitness(\mbox{\hyperlink{namespacetrain__aux_a738dbd04413eefaf8eb09add9c7b6d13}{x}}) -\/ fitness(\mbox{\hyperlink{namespacetrain__aux_a738dbd04413eefaf8eb09add9c7b6d13}{x}}).min()
+\item 
+\mbox{\hyperlink{namespacetrain__aux_a79c2a61311d1887b998addf81531204e}{train\+\_\+aux.\+mp}}
+\item 
+\mbox{\hyperlink{namespacetrain__aux_a1f9f2eaf907e2a040fcadd5739611cd1}{train\+\_\+aux.\+s}}
+\item 
+\mbox{\hyperlink{namespacetrain__aux_a6c7d6241c8eab395e9b93b16599613e5}{train\+\_\+aux.\+npr}} = np.\+random
+\item 
+\mbox{\hyperlink{namespacetrain__aux_aba0685512e819fb5e109220f8c5419fa}{train\+\_\+aux.\+g}} = np.\+array(\mbox{[}\mbox{\hyperlink{namespacetrain__aux_a738dbd04413eefaf8eb09add9c7b6d13}{x}}\mbox{[}0\mbox{]} for \mbox{\hyperlink{namespacetrain__aux_a738dbd04413eefaf8eb09add9c7b6d13}{x}} in meta.\+values()\mbox{]})
+\item 
+\mbox{\hyperlink{namespacetrain__aux_a7848b8ee1aaf4d60df2fc86c60ba792b}{train\+\_\+aux.\+ng}} = len(\mbox{\hyperlink{namespacetrain__aux_a8b086210a384f6513a6b3b2e5e707c10}{meta}})
+\item 
+\mbox{\hyperlink{namespacetrain__aux_a90fd19485a737a5b8511d0ebb3971204}{train\+\_\+aux.\+v}} = np.\+ones(\mbox{\hyperlink{namespacetrain__aux_a7848b8ee1aaf4d60df2fc86c60ba792b}{ng}})
+\item 
+\mbox{\hyperlink{namespacetrain__aux_a8ebbf27f255ba55d25f26e21eb2e1f59}{train\+\_\+aux.\+results}} = \mbox{\hyperlink{namespacetrain__aux_a8213bdd4325db4d03b11bf88a347f046}{train}}(hyp.\+copy(), \mbox{\hyperlink{namespacetrain__aux_a7dd83fe44aeb1c09b4db9a137936b973}{opt}}, \mbox{\hyperlink{namespacetrain__aux_afaba82a0a210b655e9a4feb125c03134}{device}})
+\end{DoxyCompactItemize}

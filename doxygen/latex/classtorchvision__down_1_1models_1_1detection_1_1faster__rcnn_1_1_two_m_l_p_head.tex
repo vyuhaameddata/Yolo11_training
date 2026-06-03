@@ -1,0 +1,69 @@
+\doxysection{torchvision\+\_\+down.\+models.\+detection.\+faster\+\_\+rcnn.\+Two\+MLPHead Class Reference}
+\hypertarget{classtorchvision__down_1_1models_1_1detection_1_1faster__rcnn_1_1_two_m_l_p_head}{}\label{classtorchvision__down_1_1models_1_1detection_1_1faster__rcnn_1_1_two_m_l_p_head}\index{torchvision\_down.models.detection.faster\_rcnn.TwoMLPHead@{torchvision\_down.models.detection.faster\_rcnn.TwoMLPHead}}
+Inheritance diagram for torchvision\+\_\+down.\+models.\+detection.\+faster\+\_\+rcnn.\+Two\+MLPHead\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classtorchvision__down_1_1models_1_1detection_1_1faster__rcnn_1_1_two_m_l_p_head}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1models_1_1detection_1_1faster__rcnn_1_1_two_m_l_p_head_ae32bc75519567d1c71e81073f81cbf69}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, in\+\_\+channels, representation\+\_\+size)
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1models_1_1detection_1_1faster__rcnn_1_1_two_m_l_p_head_a7eb180c96a9dac08cfb8db393b0ac070}{forward}} (self, x)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1models_1_1detection_1_1faster__rcnn_1_1_two_m_l_p_head_a672e7bceb9b7a01773f85a0c601fdcf9}{fc6}} = nn.\+Linear(in\+\_\+channels, representation\+\_\+size)
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1models_1_1detection_1_1faster__rcnn_1_1_two_m_l_p_head_a5ba25bed9ad8bf9bf4bb03d836faebf8}{fc7}} = nn.\+Linear(representation\+\_\+size, representation\+\_\+size)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}Standard heads for FPN-based models
+
+Args:
+    in_channels (int): number of input channels
+    representation_size (int): size of the intermediate representation
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classtorchvision__down_1_1models_1_1detection_1_1faster__rcnn_1_1_two_m_l_p_head_ae32bc75519567d1c71e81073f81cbf69}\index{torchvision\_down.models.detection.faster\_rcnn.TwoMLPHead@{torchvision\_down.models.detection.faster\_rcnn.TwoMLPHead}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!torchvision\_down.models.detection.faster\_rcnn.TwoMLPHead@{torchvision\_down.models.detection.faster\_rcnn.TwoMLPHead}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1models_1_1detection_1_1faster__rcnn_1_1_two_m_l_p_head_ae32bc75519567d1c71e81073f81cbf69} 
+torchvision\+\_\+down.\+models.\+detection.\+faster\+\_\+rcnn.\+Two\+MLPHead.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{in\+\_\+channels}{, }\item[{}]{representation\+\_\+size}{}\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classtorchvision__down_1_1models_1_1detection_1_1faster__rcnn_1_1_two_m_l_p_head_a7eb180c96a9dac08cfb8db393b0ac070}\index{torchvision\_down.models.detection.faster\_rcnn.TwoMLPHead@{torchvision\_down.models.detection.faster\_rcnn.TwoMLPHead}!forward@{forward}}
+\index{forward@{forward}!torchvision\_down.models.detection.faster\_rcnn.TwoMLPHead@{torchvision\_down.models.detection.faster\_rcnn.TwoMLPHead}}
+\doxysubsubsection{\texorpdfstring{forward()}{forward()}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1models_1_1detection_1_1faster__rcnn_1_1_two_m_l_p_head_a7eb180c96a9dac08cfb8db393b0ac070} 
+torchvision\+\_\+down.\+models.\+detection.\+faster\+\_\+rcnn.\+Two\+MLPHead.\+forward (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{x}{}\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classtorchvision__down_1_1models_1_1detection_1_1faster__rcnn_1_1_two_m_l_p_head_a672e7bceb9b7a01773f85a0c601fdcf9}\index{torchvision\_down.models.detection.faster\_rcnn.TwoMLPHead@{torchvision\_down.models.detection.faster\_rcnn.TwoMLPHead}!fc6@{fc6}}
+\index{fc6@{fc6}!torchvision\_down.models.detection.faster\_rcnn.TwoMLPHead@{torchvision\_down.models.detection.faster\_rcnn.TwoMLPHead}}
+\doxysubsubsection{\texorpdfstring{fc6}{fc6}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1models_1_1detection_1_1faster__rcnn_1_1_two_m_l_p_head_a672e7bceb9b7a01773f85a0c601fdcf9} 
+torchvision\+\_\+down.\+models.\+detection.\+faster\+\_\+rcnn.\+Two\+MLPHead.\+fc6 = nn.\+Linear(in\+\_\+channels, representation\+\_\+size)}
+
+\Hypertarget{classtorchvision__down_1_1models_1_1detection_1_1faster__rcnn_1_1_two_m_l_p_head_a5ba25bed9ad8bf9bf4bb03d836faebf8}\index{torchvision\_down.models.detection.faster\_rcnn.TwoMLPHead@{torchvision\_down.models.detection.faster\_rcnn.TwoMLPHead}!fc7@{fc7}}
+\index{fc7@{fc7}!torchvision\_down.models.detection.faster\_rcnn.TwoMLPHead@{torchvision\_down.models.detection.faster\_rcnn.TwoMLPHead}}
+\doxysubsubsection{\texorpdfstring{fc7}{fc7}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1models_1_1detection_1_1faster__rcnn_1_1_two_m_l_p_head_a5ba25bed9ad8bf9bf4bb03d836faebf8} 
+torchvision\+\_\+down.\+models.\+detection.\+faster\+\_\+rcnn.\+Two\+MLPHead.\+fc7 = nn.\+Linear(representation\+\_\+size, representation\+\_\+size)}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Cervi\+AI/torchvision\+\_\+down/models/detection/\mbox{\hyperlink{faster__rcnn_8py}{faster\+\_\+rcnn.\+py}}\end{DoxyCompactItemize}

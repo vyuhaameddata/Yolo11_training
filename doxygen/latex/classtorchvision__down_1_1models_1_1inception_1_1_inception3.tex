@@ -1,0 +1,271 @@
+\doxysection{torchvision\+\_\+down.\+models.\+inception.\+Inception3 Class Reference}
+\hypertarget{classtorchvision__down_1_1models_1_1inception_1_1_inception3}{}\label{classtorchvision__down_1_1models_1_1inception_1_1_inception3}\index{torchvision\_down.models.inception.Inception3@{torchvision\_down.models.inception.Inception3}}
+Inheritance diagram for torchvision\+\_\+down.\+models.\+inception.\+Inception3\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classtorchvision__down_1_1models_1_1inception_1_1_inception3}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+None \mbox{\hyperlink{classtorchvision__down_1_1models_1_1inception_1_1_inception3_a841b64381ae4e0d5d60e836c06eab553}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, int num\+\_\+classes=1000, bool \mbox{\hyperlink{classtorchvision__down_1_1models_1_1inception_1_1_inception3_a7da6e1070147a16ec076ca095cd459ac}{aux\+\_\+logits}}=True, bool \mbox{\hyperlink{classtorchvision__down_1_1models_1_1inception_1_1_inception3_ada8d5c152a27fc99173c61ed97c79fd7}{transform\+\_\+input}}=False, Optional\mbox{[}List\mbox{[}Callable\mbox{[}..., nn.\+Module\mbox{]}\mbox{]}\mbox{]} inception\+\_\+blocks=None, Optional\mbox{[}bool\mbox{]} init\+\_\+weights=None, float \mbox{\hyperlink{classtorchvision__down_1_1models_1_1inception_1_1_inception3_a79f1c4f00171631da6d615ec899e7a60}{dropout}}=0.\+5)
+\item 
+\mbox{\hyperlink{namespacetorchvision__down_1_1models_1_1inception_a3227f0fc73283263bb2e351014afe293}{Inception\+Outputs}} \mbox{\hyperlink{classtorchvision__down_1_1models_1_1inception_1_1_inception3_afe65c82a6b3a4c284b65429ab3c5773a}{eager\+\_\+outputs}} (self, Tensor x, Optional\mbox{[}Tensor\mbox{]} aux)
+\item 
+\mbox{\hyperlink{namespacetorchvision__down_1_1models_1_1inception_a3227f0fc73283263bb2e351014afe293}{Inception\+Outputs}} \mbox{\hyperlink{classtorchvision__down_1_1models_1_1inception_1_1_inception3_adb49e5bd7c5ee123b612f4d51ec33190}{forward}} (self, Tensor x)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1models_1_1inception_1_1_inception3_a7da6e1070147a16ec076ca095cd459ac}{aux\+\_\+logits}} = aux\+\_\+logits
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1models_1_1inception_1_1_inception3_ada8d5c152a27fc99173c61ed97c79fd7}{transform\+\_\+input}} = transform\+\_\+input
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1models_1_1inception_1_1_inception3_a49651ac1fc25f5060595ff53e8b51235}{Conv2d\+\_\+1a\+\_\+3x3}} = conv\+\_\+block(3, 32, kernel\+\_\+size=3, stride=2)
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1models_1_1inception_1_1_inception3_aea5e06df2f04951fe49752714551cc53}{Conv2d\+\_\+2a\+\_\+3x3}} = conv\+\_\+block(32, 32, kernel\+\_\+size=3)
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1models_1_1inception_1_1_inception3_ace95812c096ad0acbe08cf6702a5c07c}{Conv2d\+\_\+2b\+\_\+3x3}} = conv\+\_\+block(32, 64, kernel\+\_\+size=3, padding=1)
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1models_1_1inception_1_1_inception3_a02736db7aa7a7c0f9013b84b0e39b9dd}{maxpool1}} = nn.\+Max\+Pool2d(kernel\+\_\+size=3, stride=2)
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1models_1_1inception_1_1_inception3_acea04188ac098b317e773cbf7b4cd5d0}{Conv2d\+\_\+3b\+\_\+1x1}} = conv\+\_\+block(64, 80, kernel\+\_\+size=1)
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1models_1_1inception_1_1_inception3_a84b418f94d47e7a8a86449fe9a31154d}{Conv2d\+\_\+4a\+\_\+3x3}} = conv\+\_\+block(80, 192, kernel\+\_\+size=3)
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1models_1_1inception_1_1_inception3_aa25268e5cf4d71832010c4b921a10220}{maxpool2}} = nn.\+Max\+Pool2d(kernel\+\_\+size=3, stride=2)
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1models_1_1inception_1_1_inception3_a470392cfaeb0c2d892a42f0356babaa3}{Mixed\+\_\+5b}} = inception\+\_\+a(192, pool\+\_\+features=32)
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1models_1_1inception_1_1_inception3_a66effae5a4c3b15de5ebe7d10a310d00}{Mixed\+\_\+5c}} = inception\+\_\+a(256, pool\+\_\+features=64)
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1models_1_1inception_1_1_inception3_a11057ad3b4330fa5f716d36e4860714b}{Mixed\+\_\+5d}} = inception\+\_\+a(288, pool\+\_\+features=64)
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1models_1_1inception_1_1_inception3_aac851bb64ae9028c4a3c891bf53db20d}{Mixed\+\_\+6a}} = inception\+\_\+b(288)
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1models_1_1inception_1_1_inception3_a48d44fe751ef2c0751dbf747b55de1a7}{Mixed\+\_\+6b}} = inception\+\_\+c(768, channels\+\_\+7x7=128)
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1models_1_1inception_1_1_inception3_a022aa77c7b5a6e0fe4a3e36de5d7322e}{Mixed\+\_\+6c}} = inception\+\_\+c(768, channels\+\_\+7x7=160)
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1models_1_1inception_1_1_inception3_abc04ef0d875e96575e66d8dafee70ad6}{Mixed\+\_\+6d}} = inception\+\_\+c(768, channels\+\_\+7x7=160)
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1models_1_1inception_1_1_inception3_af84512511a00e4291f556da175dd8a26}{Mixed\+\_\+6e}} = inception\+\_\+c(768, channels\+\_\+7x7=192)
+\item 
+Optional\mbox{[}nn.\+Module\mbox{]} \mbox{\hyperlink{classtorchvision__down_1_1models_1_1inception_1_1_inception3_a27560a6a12278b68b922952f503777a3}{Aux\+Logits}} = None
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1models_1_1inception_1_1_inception3_ab224212ba56fa8ef07d2ee805e95dee8}{Mixed\+\_\+7a}} = inception\+\_\+d(768)
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1models_1_1inception_1_1_inception3_a50d8bab28374f55d9404bd63c9a3b4b9}{Mixed\+\_\+7b}} = inception\+\_\+e(1280)
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1models_1_1inception_1_1_inception3_a05aa303bb848e28c9093e3b1fac6569c}{Mixed\+\_\+7c}} = inception\+\_\+e(2048)
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1models_1_1inception_1_1_inception3_ac0af0ab63aaae9b91367f9215b853663}{avgpool}} = nn.\+Adaptive\+Avg\+Pool2d((1, 1))
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1models_1_1inception_1_1_inception3_a79f1c4f00171631da6d615ec899e7a60}{dropout}} = nn.\+Dropout(p=dropout)
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1models_1_1inception_1_1_inception3_a699d47693db51ce2d8ed983c6967bdcc}{fc}} = nn.\+Linear(2048, num\+\_\+classes)
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1models_1_1inception_1_1_inception3_a8482e0f481244301161a16d27a2961ac}{training}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+Tensor \mbox{\hyperlink{classtorchvision__down_1_1models_1_1inception_1_1_inception3_a1d47676554433dbf623432eaa7f47ff6}{\+\_\+transform\+\_\+input}} (self, Tensor x)
+\item 
+Tuple\mbox{[}Tensor, Optional\mbox{[}Tensor\mbox{]}\mbox{]} \mbox{\hyperlink{classtorchvision__down_1_1models_1_1inception_1_1_inception3_a3f7610a5a1ed82ba1fd13da33b38d6a9}{\+\_\+forward}} (self, Tensor x)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classtorchvision__down_1_1models_1_1inception_1_1_inception3_a841b64381ae4e0d5d60e836c06eab553}\index{torchvision\_down.models.inception.Inception3@{torchvision\_down.models.inception.Inception3}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!torchvision\_down.models.inception.Inception3@{torchvision\_down.models.inception.Inception3}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1models_1_1inception_1_1_inception3_a841b64381ae4e0d5d60e836c06eab553} 
+ None torchvision\+\_\+down.\+models.\+inception.\+Inception3.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{int }]{num\+\_\+classes}{ = {\ttfamily 1000}, }\item[{bool }]{aux\+\_\+logits}{ = {\ttfamily True}, }\item[{bool }]{transform\+\_\+input}{ = {\ttfamily False}, }\item[{Optional\mbox{[}List\mbox{[}Callable\mbox{[}..., nn.\+Module\mbox{]}\mbox{]}\mbox{]} }]{inception\+\_\+blocks}{ = {\ttfamily None}, }\item[{Optional\mbox{[}bool\mbox{]} }]{init\+\_\+weights}{ = {\ttfamily None}, }\item[{float }]{dropout}{ = {\ttfamily 0.5}}\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classtorchvision__down_1_1models_1_1inception_1_1_inception3_a3f7610a5a1ed82ba1fd13da33b38d6a9}\index{torchvision\_down.models.inception.Inception3@{torchvision\_down.models.inception.Inception3}!\_forward@{\_forward}}
+\index{\_forward@{\_forward}!torchvision\_down.models.inception.Inception3@{torchvision\_down.models.inception.Inception3}}
+\doxysubsubsection{\texorpdfstring{\_forward()}{\_forward()}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1models_1_1inception_1_1_inception3_a3f7610a5a1ed82ba1fd13da33b38d6a9} 
+ Tuple\mbox{[}Tensor, Optional\mbox{[}Tensor\mbox{]}\mbox{]} torchvision\+\_\+down.\+models.\+inception.\+Inception3.\+\_\+forward (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{Tensor}]{x}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classtorchvision__down_1_1models_1_1inception_1_1_inception3_a1d47676554433dbf623432eaa7f47ff6}\index{torchvision\_down.models.inception.Inception3@{torchvision\_down.models.inception.Inception3}!\_transform\_input@{\_transform\_input}}
+\index{\_transform\_input@{\_transform\_input}!torchvision\_down.models.inception.Inception3@{torchvision\_down.models.inception.Inception3}}
+\doxysubsubsection{\texorpdfstring{\_transform\_input()}{\_transform\_input()}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1models_1_1inception_1_1_inception3_a1d47676554433dbf623432eaa7f47ff6} 
+ Tensor torchvision\+\_\+down.\+models.\+inception.\+Inception3.\+\_\+transform\+\_\+input (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{Tensor}]{x}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classtorchvision__down_1_1models_1_1inception_1_1_inception3_afe65c82a6b3a4c284b65429ab3c5773a}\index{torchvision\_down.models.inception.Inception3@{torchvision\_down.models.inception.Inception3}!eager\_outputs@{eager\_outputs}}
+\index{eager\_outputs@{eager\_outputs}!torchvision\_down.models.inception.Inception3@{torchvision\_down.models.inception.Inception3}}
+\doxysubsubsection{\texorpdfstring{eager\_outputs()}{eager\_outputs()}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1models_1_1inception_1_1_inception3_afe65c82a6b3a4c284b65429ab3c5773a} 
+ \mbox{\hyperlink{namespacetorchvision__down_1_1models_1_1inception_a3227f0fc73283263bb2e351014afe293}{Inception\+Outputs}} torchvision\+\_\+down.\+models.\+inception.\+Inception3.\+eager\+\_\+outputs (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{Tensor}]{x}{, }\item[{Optional\mbox{[}Tensor\mbox{]}}]{aux}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classtorchvision__down_1_1models_1_1inception_1_1_inception3_adb49e5bd7c5ee123b612f4d51ec33190}\index{torchvision\_down.models.inception.Inception3@{torchvision\_down.models.inception.Inception3}!forward@{forward}}
+\index{forward@{forward}!torchvision\_down.models.inception.Inception3@{torchvision\_down.models.inception.Inception3}}
+\doxysubsubsection{\texorpdfstring{forward()}{forward()}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1models_1_1inception_1_1_inception3_adb49e5bd7c5ee123b612f4d51ec33190} 
+ \mbox{\hyperlink{namespacetorchvision__down_1_1models_1_1inception_a3227f0fc73283263bb2e351014afe293}{Inception\+Outputs}} torchvision\+\_\+down.\+models.\+inception.\+Inception3.\+forward (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{Tensor}]{x}{}\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classtorchvision__down_1_1models_1_1inception_1_1_inception3_a7da6e1070147a16ec076ca095cd459ac}\index{torchvision\_down.models.inception.Inception3@{torchvision\_down.models.inception.Inception3}!aux\_logits@{aux\_logits}}
+\index{aux\_logits@{aux\_logits}!torchvision\_down.models.inception.Inception3@{torchvision\_down.models.inception.Inception3}}
+\doxysubsubsection{\texorpdfstring{aux\_logits}{aux\_logits}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1models_1_1inception_1_1_inception3_a7da6e1070147a16ec076ca095cd459ac} 
+torchvision\+\_\+down.\+models.\+inception.\+Inception3.\+aux\+\_\+logits = aux\+\_\+logits}
+
+\Hypertarget{classtorchvision__down_1_1models_1_1inception_1_1_inception3_a27560a6a12278b68b922952f503777a3}\index{torchvision\_down.models.inception.Inception3@{torchvision\_down.models.inception.Inception3}!AuxLogits@{AuxLogits}}
+\index{AuxLogits@{AuxLogits}!torchvision\_down.models.inception.Inception3@{torchvision\_down.models.inception.Inception3}}
+\doxysubsubsection{\texorpdfstring{AuxLogits}{AuxLogits}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1models_1_1inception_1_1_inception3_a27560a6a12278b68b922952f503777a3} 
+Optional\mbox{[}nn.\+Module\mbox{]} torchvision\+\_\+down.\+models.\+inception.\+Inception3.\+Aux\+Logits = None}
+
+\Hypertarget{classtorchvision__down_1_1models_1_1inception_1_1_inception3_ac0af0ab63aaae9b91367f9215b853663}\index{torchvision\_down.models.inception.Inception3@{torchvision\_down.models.inception.Inception3}!avgpool@{avgpool}}
+\index{avgpool@{avgpool}!torchvision\_down.models.inception.Inception3@{torchvision\_down.models.inception.Inception3}}
+\doxysubsubsection{\texorpdfstring{avgpool}{avgpool}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1models_1_1inception_1_1_inception3_ac0af0ab63aaae9b91367f9215b853663} 
+torchvision\+\_\+down.\+models.\+inception.\+Inception3.\+avgpool = nn.\+Adaptive\+Avg\+Pool2d((1, 1))}
+
+\Hypertarget{classtorchvision__down_1_1models_1_1inception_1_1_inception3_a49651ac1fc25f5060595ff53e8b51235}\index{torchvision\_down.models.inception.Inception3@{torchvision\_down.models.inception.Inception3}!Conv2d\_1a\_3x3@{Conv2d\_1a\_3x3}}
+\index{Conv2d\_1a\_3x3@{Conv2d\_1a\_3x3}!torchvision\_down.models.inception.Inception3@{torchvision\_down.models.inception.Inception3}}
+\doxysubsubsection{\texorpdfstring{Conv2d\_1a\_3x3}{Conv2d\_1a\_3x3}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1models_1_1inception_1_1_inception3_a49651ac1fc25f5060595ff53e8b51235} 
+torchvision\+\_\+down.\+models.\+inception.\+Inception3.\+Conv2d\+\_\+1a\+\_\+3x3 = conv\+\_\+block(3, 32, kernel\+\_\+size=3, stride=2)}
+
+\Hypertarget{classtorchvision__down_1_1models_1_1inception_1_1_inception3_aea5e06df2f04951fe49752714551cc53}\index{torchvision\_down.models.inception.Inception3@{torchvision\_down.models.inception.Inception3}!Conv2d\_2a\_3x3@{Conv2d\_2a\_3x3}}
+\index{Conv2d\_2a\_3x3@{Conv2d\_2a\_3x3}!torchvision\_down.models.inception.Inception3@{torchvision\_down.models.inception.Inception3}}
+\doxysubsubsection{\texorpdfstring{Conv2d\_2a\_3x3}{Conv2d\_2a\_3x3}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1models_1_1inception_1_1_inception3_aea5e06df2f04951fe49752714551cc53} 
+torchvision\+\_\+down.\+models.\+inception.\+Inception3.\+Conv2d\+\_\+2a\+\_\+3x3 = conv\+\_\+block(32, 32, kernel\+\_\+size=3)}
+
+\Hypertarget{classtorchvision__down_1_1models_1_1inception_1_1_inception3_ace95812c096ad0acbe08cf6702a5c07c}\index{torchvision\_down.models.inception.Inception3@{torchvision\_down.models.inception.Inception3}!Conv2d\_2b\_3x3@{Conv2d\_2b\_3x3}}
+\index{Conv2d\_2b\_3x3@{Conv2d\_2b\_3x3}!torchvision\_down.models.inception.Inception3@{torchvision\_down.models.inception.Inception3}}
+\doxysubsubsection{\texorpdfstring{Conv2d\_2b\_3x3}{Conv2d\_2b\_3x3}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1models_1_1inception_1_1_inception3_ace95812c096ad0acbe08cf6702a5c07c} 
+torchvision\+\_\+down.\+models.\+inception.\+Inception3.\+Conv2d\+\_\+2b\+\_\+3x3 = conv\+\_\+block(32, 64, kernel\+\_\+size=3, padding=1)}
+
+\Hypertarget{classtorchvision__down_1_1models_1_1inception_1_1_inception3_acea04188ac098b317e773cbf7b4cd5d0}\index{torchvision\_down.models.inception.Inception3@{torchvision\_down.models.inception.Inception3}!Conv2d\_3b\_1x1@{Conv2d\_3b\_1x1}}
+\index{Conv2d\_3b\_1x1@{Conv2d\_3b\_1x1}!torchvision\_down.models.inception.Inception3@{torchvision\_down.models.inception.Inception3}}
+\doxysubsubsection{\texorpdfstring{Conv2d\_3b\_1x1}{Conv2d\_3b\_1x1}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1models_1_1inception_1_1_inception3_acea04188ac098b317e773cbf7b4cd5d0} 
+torchvision\+\_\+down.\+models.\+inception.\+Inception3.\+Conv2d\+\_\+3b\+\_\+1x1 = conv\+\_\+block(64, 80, kernel\+\_\+size=1)}
+
+\Hypertarget{classtorchvision__down_1_1models_1_1inception_1_1_inception3_a84b418f94d47e7a8a86449fe9a31154d}\index{torchvision\_down.models.inception.Inception3@{torchvision\_down.models.inception.Inception3}!Conv2d\_4a\_3x3@{Conv2d\_4a\_3x3}}
+\index{Conv2d\_4a\_3x3@{Conv2d\_4a\_3x3}!torchvision\_down.models.inception.Inception3@{torchvision\_down.models.inception.Inception3}}
+\doxysubsubsection{\texorpdfstring{Conv2d\_4a\_3x3}{Conv2d\_4a\_3x3}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1models_1_1inception_1_1_inception3_a84b418f94d47e7a8a86449fe9a31154d} 
+torchvision\+\_\+down.\+models.\+inception.\+Inception3.\+Conv2d\+\_\+4a\+\_\+3x3 = conv\+\_\+block(80, 192, kernel\+\_\+size=3)}
+
+\Hypertarget{classtorchvision__down_1_1models_1_1inception_1_1_inception3_a79f1c4f00171631da6d615ec899e7a60}\index{torchvision\_down.models.inception.Inception3@{torchvision\_down.models.inception.Inception3}!dropout@{dropout}}
+\index{dropout@{dropout}!torchvision\_down.models.inception.Inception3@{torchvision\_down.models.inception.Inception3}}
+\doxysubsubsection{\texorpdfstring{dropout}{dropout}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1models_1_1inception_1_1_inception3_a79f1c4f00171631da6d615ec899e7a60} 
+torchvision\+\_\+down.\+models.\+inception.\+Inception3.\+dropout = nn.\+Dropout(p=dropout)}
+
+\Hypertarget{classtorchvision__down_1_1models_1_1inception_1_1_inception3_a699d47693db51ce2d8ed983c6967bdcc}\index{torchvision\_down.models.inception.Inception3@{torchvision\_down.models.inception.Inception3}!fc@{fc}}
+\index{fc@{fc}!torchvision\_down.models.inception.Inception3@{torchvision\_down.models.inception.Inception3}}
+\doxysubsubsection{\texorpdfstring{fc}{fc}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1models_1_1inception_1_1_inception3_a699d47693db51ce2d8ed983c6967bdcc} 
+torchvision\+\_\+down.\+models.\+inception.\+Inception3.\+fc = nn.\+Linear(2048, num\+\_\+classes)}
+
+\Hypertarget{classtorchvision__down_1_1models_1_1inception_1_1_inception3_a02736db7aa7a7c0f9013b84b0e39b9dd}\index{torchvision\_down.models.inception.Inception3@{torchvision\_down.models.inception.Inception3}!maxpool1@{maxpool1}}
+\index{maxpool1@{maxpool1}!torchvision\_down.models.inception.Inception3@{torchvision\_down.models.inception.Inception3}}
+\doxysubsubsection{\texorpdfstring{maxpool1}{maxpool1}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1models_1_1inception_1_1_inception3_a02736db7aa7a7c0f9013b84b0e39b9dd} 
+torchvision\+\_\+down.\+models.\+inception.\+Inception3.\+maxpool1 = nn.\+Max\+Pool2d(kernel\+\_\+size=3, stride=2)}
+
+\Hypertarget{classtorchvision__down_1_1models_1_1inception_1_1_inception3_aa25268e5cf4d71832010c4b921a10220}\index{torchvision\_down.models.inception.Inception3@{torchvision\_down.models.inception.Inception3}!maxpool2@{maxpool2}}
+\index{maxpool2@{maxpool2}!torchvision\_down.models.inception.Inception3@{torchvision\_down.models.inception.Inception3}}
+\doxysubsubsection{\texorpdfstring{maxpool2}{maxpool2}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1models_1_1inception_1_1_inception3_aa25268e5cf4d71832010c4b921a10220} 
+torchvision\+\_\+down.\+models.\+inception.\+Inception3.\+maxpool2 = nn.\+Max\+Pool2d(kernel\+\_\+size=3, stride=2)}
+
+\Hypertarget{classtorchvision__down_1_1models_1_1inception_1_1_inception3_a470392cfaeb0c2d892a42f0356babaa3}\index{torchvision\_down.models.inception.Inception3@{torchvision\_down.models.inception.Inception3}!Mixed\_5b@{Mixed\_5b}}
+\index{Mixed\_5b@{Mixed\_5b}!torchvision\_down.models.inception.Inception3@{torchvision\_down.models.inception.Inception3}}
+\doxysubsubsection{\texorpdfstring{Mixed\_5b}{Mixed\_5b}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1models_1_1inception_1_1_inception3_a470392cfaeb0c2d892a42f0356babaa3} 
+torchvision\+\_\+down.\+models.\+inception.\+Inception3.\+Mixed\+\_\+5b = inception\+\_\+a(192, pool\+\_\+features=32)}
+
+\Hypertarget{classtorchvision__down_1_1models_1_1inception_1_1_inception3_a66effae5a4c3b15de5ebe7d10a310d00}\index{torchvision\_down.models.inception.Inception3@{torchvision\_down.models.inception.Inception3}!Mixed\_5c@{Mixed\_5c}}
+\index{Mixed\_5c@{Mixed\_5c}!torchvision\_down.models.inception.Inception3@{torchvision\_down.models.inception.Inception3}}
+\doxysubsubsection{\texorpdfstring{Mixed\_5c}{Mixed\_5c}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1models_1_1inception_1_1_inception3_a66effae5a4c3b15de5ebe7d10a310d00} 
+torchvision\+\_\+down.\+models.\+inception.\+Inception3.\+Mixed\+\_\+5c = inception\+\_\+a(256, pool\+\_\+features=64)}
+
+\Hypertarget{classtorchvision__down_1_1models_1_1inception_1_1_inception3_a11057ad3b4330fa5f716d36e4860714b}\index{torchvision\_down.models.inception.Inception3@{torchvision\_down.models.inception.Inception3}!Mixed\_5d@{Mixed\_5d}}
+\index{Mixed\_5d@{Mixed\_5d}!torchvision\_down.models.inception.Inception3@{torchvision\_down.models.inception.Inception3}}
+\doxysubsubsection{\texorpdfstring{Mixed\_5d}{Mixed\_5d}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1models_1_1inception_1_1_inception3_a11057ad3b4330fa5f716d36e4860714b} 
+torchvision\+\_\+down.\+models.\+inception.\+Inception3.\+Mixed\+\_\+5d = inception\+\_\+a(288, pool\+\_\+features=64)}
+
+\Hypertarget{classtorchvision__down_1_1models_1_1inception_1_1_inception3_aac851bb64ae9028c4a3c891bf53db20d}\index{torchvision\_down.models.inception.Inception3@{torchvision\_down.models.inception.Inception3}!Mixed\_6a@{Mixed\_6a}}
+\index{Mixed\_6a@{Mixed\_6a}!torchvision\_down.models.inception.Inception3@{torchvision\_down.models.inception.Inception3}}
+\doxysubsubsection{\texorpdfstring{Mixed\_6a}{Mixed\_6a}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1models_1_1inception_1_1_inception3_aac851bb64ae9028c4a3c891bf53db20d} 
+torchvision\+\_\+down.\+models.\+inception.\+Inception3.\+Mixed\+\_\+6a = inception\+\_\+b(288)}
+
+\Hypertarget{classtorchvision__down_1_1models_1_1inception_1_1_inception3_a48d44fe751ef2c0751dbf747b55de1a7}\index{torchvision\_down.models.inception.Inception3@{torchvision\_down.models.inception.Inception3}!Mixed\_6b@{Mixed\_6b}}
+\index{Mixed\_6b@{Mixed\_6b}!torchvision\_down.models.inception.Inception3@{torchvision\_down.models.inception.Inception3}}
+\doxysubsubsection{\texorpdfstring{Mixed\_6b}{Mixed\_6b}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1models_1_1inception_1_1_inception3_a48d44fe751ef2c0751dbf747b55de1a7} 
+torchvision\+\_\+down.\+models.\+inception.\+Inception3.\+Mixed\+\_\+6b = inception\+\_\+c(768, channels\+\_\+7x7=128)}
+
+\Hypertarget{classtorchvision__down_1_1models_1_1inception_1_1_inception3_a022aa77c7b5a6e0fe4a3e36de5d7322e}\index{torchvision\_down.models.inception.Inception3@{torchvision\_down.models.inception.Inception3}!Mixed\_6c@{Mixed\_6c}}
+\index{Mixed\_6c@{Mixed\_6c}!torchvision\_down.models.inception.Inception3@{torchvision\_down.models.inception.Inception3}}
+\doxysubsubsection{\texorpdfstring{Mixed\_6c}{Mixed\_6c}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1models_1_1inception_1_1_inception3_a022aa77c7b5a6e0fe4a3e36de5d7322e} 
+torchvision\+\_\+down.\+models.\+inception.\+Inception3.\+Mixed\+\_\+6c = inception\+\_\+c(768, channels\+\_\+7x7=160)}
+
+\Hypertarget{classtorchvision__down_1_1models_1_1inception_1_1_inception3_abc04ef0d875e96575e66d8dafee70ad6}\index{torchvision\_down.models.inception.Inception3@{torchvision\_down.models.inception.Inception3}!Mixed\_6d@{Mixed\_6d}}
+\index{Mixed\_6d@{Mixed\_6d}!torchvision\_down.models.inception.Inception3@{torchvision\_down.models.inception.Inception3}}
+\doxysubsubsection{\texorpdfstring{Mixed\_6d}{Mixed\_6d}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1models_1_1inception_1_1_inception3_abc04ef0d875e96575e66d8dafee70ad6} 
+torchvision\+\_\+down.\+models.\+inception.\+Inception3.\+Mixed\+\_\+6d = inception\+\_\+c(768, channels\+\_\+7x7=160)}
+
+\Hypertarget{classtorchvision__down_1_1models_1_1inception_1_1_inception3_af84512511a00e4291f556da175dd8a26}\index{torchvision\_down.models.inception.Inception3@{torchvision\_down.models.inception.Inception3}!Mixed\_6e@{Mixed\_6e}}
+\index{Mixed\_6e@{Mixed\_6e}!torchvision\_down.models.inception.Inception3@{torchvision\_down.models.inception.Inception3}}
+\doxysubsubsection{\texorpdfstring{Mixed\_6e}{Mixed\_6e}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1models_1_1inception_1_1_inception3_af84512511a00e4291f556da175dd8a26} 
+torchvision\+\_\+down.\+models.\+inception.\+Inception3.\+Mixed\+\_\+6e = inception\+\_\+c(768, channels\+\_\+7x7=192)}
+
+\Hypertarget{classtorchvision__down_1_1models_1_1inception_1_1_inception3_ab224212ba56fa8ef07d2ee805e95dee8}\index{torchvision\_down.models.inception.Inception3@{torchvision\_down.models.inception.Inception3}!Mixed\_7a@{Mixed\_7a}}
+\index{Mixed\_7a@{Mixed\_7a}!torchvision\_down.models.inception.Inception3@{torchvision\_down.models.inception.Inception3}}
+\doxysubsubsection{\texorpdfstring{Mixed\_7a}{Mixed\_7a}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1models_1_1inception_1_1_inception3_ab224212ba56fa8ef07d2ee805e95dee8} 
+torchvision\+\_\+down.\+models.\+inception.\+Inception3.\+Mixed\+\_\+7a = inception\+\_\+d(768)}
+
+\Hypertarget{classtorchvision__down_1_1models_1_1inception_1_1_inception3_a50d8bab28374f55d9404bd63c9a3b4b9}\index{torchvision\_down.models.inception.Inception3@{torchvision\_down.models.inception.Inception3}!Mixed\_7b@{Mixed\_7b}}
+\index{Mixed\_7b@{Mixed\_7b}!torchvision\_down.models.inception.Inception3@{torchvision\_down.models.inception.Inception3}}
+\doxysubsubsection{\texorpdfstring{Mixed\_7b}{Mixed\_7b}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1models_1_1inception_1_1_inception3_a50d8bab28374f55d9404bd63c9a3b4b9} 
+torchvision\+\_\+down.\+models.\+inception.\+Inception3.\+Mixed\+\_\+7b = inception\+\_\+e(1280)}
+
+\Hypertarget{classtorchvision__down_1_1models_1_1inception_1_1_inception3_a05aa303bb848e28c9093e3b1fac6569c}\index{torchvision\_down.models.inception.Inception3@{torchvision\_down.models.inception.Inception3}!Mixed\_7c@{Mixed\_7c}}
+\index{Mixed\_7c@{Mixed\_7c}!torchvision\_down.models.inception.Inception3@{torchvision\_down.models.inception.Inception3}}
+\doxysubsubsection{\texorpdfstring{Mixed\_7c}{Mixed\_7c}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1models_1_1inception_1_1_inception3_a05aa303bb848e28c9093e3b1fac6569c} 
+torchvision\+\_\+down.\+models.\+inception.\+Inception3.\+Mixed\+\_\+7c = inception\+\_\+e(2048)}
+
+\Hypertarget{classtorchvision__down_1_1models_1_1inception_1_1_inception3_a8482e0f481244301161a16d27a2961ac}\index{torchvision\_down.models.inception.Inception3@{torchvision\_down.models.inception.Inception3}!training@{training}}
+\index{training@{training}!torchvision\_down.models.inception.Inception3@{torchvision\_down.models.inception.Inception3}}
+\doxysubsubsection{\texorpdfstring{training}{training}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1models_1_1inception_1_1_inception3_a8482e0f481244301161a16d27a2961ac} 
+torchvision\+\_\+down.\+models.\+inception.\+Inception3.\+training}
+
+\Hypertarget{classtorchvision__down_1_1models_1_1inception_1_1_inception3_ada8d5c152a27fc99173c61ed97c79fd7}\index{torchvision\_down.models.inception.Inception3@{torchvision\_down.models.inception.Inception3}!transform\_input@{transform\_input}}
+\index{transform\_input@{transform\_input}!torchvision\_down.models.inception.Inception3@{torchvision\_down.models.inception.Inception3}}
+\doxysubsubsection{\texorpdfstring{transform\_input}{transform\_input}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1models_1_1inception_1_1_inception3_ada8d5c152a27fc99173c61ed97c79fd7} 
+torchvision\+\_\+down.\+models.\+inception.\+Inception3.\+transform\+\_\+input = transform\+\_\+input}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Cervi\+AI/torchvision\+\_\+down/models/\mbox{\hyperlink{inception_8py}{inception.\+py}}\end{DoxyCompactItemize}

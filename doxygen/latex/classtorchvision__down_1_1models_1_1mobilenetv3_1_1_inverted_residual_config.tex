@@ -1,0 +1,105 @@
+\doxysection{torchvision\+\_\+down.\+models.\+mobilenetv3.\+Inverted\+Residual\+Config Class Reference}
+\hypertarget{classtorchvision__down_1_1models_1_1mobilenetv3_1_1_inverted_residual_config}{}\label{classtorchvision__down_1_1models_1_1mobilenetv3_1_1_inverted_residual_config}\index{torchvision\_down.models.mobilenetv3.InvertedResidualConfig@{torchvision\_down.models.mobilenetv3.InvertedResidualConfig}}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1models_1_1mobilenetv3_1_1_inverted_residual_config_a5f447488cd0b6d991a773ef7980412f5}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, int \mbox{\hyperlink{classtorchvision__down_1_1models_1_1mobilenetv3_1_1_inverted_residual_config_a5f96dc8c82fcc5b18065d07481c225d7}{input\+\_\+channels}}, int \mbox{\hyperlink{classtorchvision__down_1_1models_1_1mobilenetv3_1_1_inverted_residual_config_a55ebb4b20b9a9af6c632f8e58a6873d3}{kernel}}, int \mbox{\hyperlink{classtorchvision__down_1_1models_1_1mobilenetv3_1_1_inverted_residual_config_a57c6461b194bbc910c0f8df7ebbcc104}{expanded\+\_\+channels}}, int \mbox{\hyperlink{classtorchvision__down_1_1models_1_1mobilenetv3_1_1_inverted_residual_config_a3c26df3a7cf8a0e2a31df3e7012de103}{out\+\_\+channels}}, bool \mbox{\hyperlink{classtorchvision__down_1_1models_1_1mobilenetv3_1_1_inverted_residual_config_a6dbd5dcbf46823a75646057552fa24ec}{use\+\_\+se}}, str activation, int \mbox{\hyperlink{classtorchvision__down_1_1models_1_1mobilenetv3_1_1_inverted_residual_config_ad54f3262be9cdd80fb1e19ebbc85d737}{stride}}, int \mbox{\hyperlink{classtorchvision__down_1_1models_1_1mobilenetv3_1_1_inverted_residual_config_ae11e23bcc2b36efa216da8db7707d38f}{dilation}}, float width\+\_\+mult)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1models_1_1mobilenetv3_1_1_inverted_residual_config_a9374b01b49722c4bd6305273fe656d32}{adjust\+\_\+channels}} (int channels, float width\+\_\+mult)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1models_1_1mobilenetv3_1_1_inverted_residual_config_a5f96dc8c82fcc5b18065d07481c225d7}{input\+\_\+channels}} = self.\+adjust\+\_\+channels(input\+\_\+channels, width\+\_\+mult)
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1models_1_1mobilenetv3_1_1_inverted_residual_config_a55ebb4b20b9a9af6c632f8e58a6873d3}{kernel}} = kernel
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1models_1_1mobilenetv3_1_1_inverted_residual_config_a57c6461b194bbc910c0f8df7ebbcc104}{expanded\+\_\+channels}} = self.\+adjust\+\_\+channels(expanded\+\_\+channels, width\+\_\+mult)
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1models_1_1mobilenetv3_1_1_inverted_residual_config_a3c26df3a7cf8a0e2a31df3e7012de103}{out\+\_\+channels}} = self.\+adjust\+\_\+channels(out\+\_\+channels, width\+\_\+mult)
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1models_1_1mobilenetv3_1_1_inverted_residual_config_a6dbd5dcbf46823a75646057552fa24ec}{use\+\_\+se}} = use\+\_\+se
+\item 
+str \mbox{\hyperlink{classtorchvision__down_1_1models_1_1mobilenetv3_1_1_inverted_residual_config_a9d80dda0cdd72b82e479c20e92d6f234}{use\+\_\+hs}} = "{}HS"{}
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1models_1_1mobilenetv3_1_1_inverted_residual_config_ad54f3262be9cdd80fb1e19ebbc85d737}{stride}} = stride
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1models_1_1mobilenetv3_1_1_inverted_residual_config_ae11e23bcc2b36efa216da8db7707d38f}{dilation}} = dilation
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classtorchvision__down_1_1models_1_1mobilenetv3_1_1_inverted_residual_config_a5f447488cd0b6d991a773ef7980412f5}\index{torchvision\_down.models.mobilenetv3.InvertedResidualConfig@{torchvision\_down.models.mobilenetv3.InvertedResidualConfig}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!torchvision\_down.models.mobilenetv3.InvertedResidualConfig@{torchvision\_down.models.mobilenetv3.InvertedResidualConfig}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1models_1_1mobilenetv3_1_1_inverted_residual_config_a5f447488cd0b6d991a773ef7980412f5} 
+torchvision\+\_\+down.\+models.\+mobilenetv3.\+Inverted\+Residual\+Config.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{int}]{input\+\_\+channels}{, }\item[{int}]{kernel}{, }\item[{int}]{expanded\+\_\+channels}{, }\item[{int}]{out\+\_\+channels}{, }\item[{bool}]{use\+\_\+se}{, }\item[{str}]{activation}{, }\item[{int}]{stride}{, }\item[{int}]{dilation}{, }\item[{float}]{width\+\_\+mult}{}\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classtorchvision__down_1_1models_1_1mobilenetv3_1_1_inverted_residual_config_a9374b01b49722c4bd6305273fe656d32}\index{torchvision\_down.models.mobilenetv3.InvertedResidualConfig@{torchvision\_down.models.mobilenetv3.InvertedResidualConfig}!adjust\_channels@{adjust\_channels}}
+\index{adjust\_channels@{adjust\_channels}!torchvision\_down.models.mobilenetv3.InvertedResidualConfig@{torchvision\_down.models.mobilenetv3.InvertedResidualConfig}}
+\doxysubsubsection{\texorpdfstring{adjust\_channels()}{adjust\_channels()}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1models_1_1mobilenetv3_1_1_inverted_residual_config_a9374b01b49722c4bd6305273fe656d32} 
+torchvision\+\_\+down.\+models.\+mobilenetv3.\+Inverted\+Residual\+Config.\+adjust\+\_\+channels (\begin{DoxyParamCaption}\item[{int}]{channels}{, }\item[{float}]{width\+\_\+mult}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classtorchvision__down_1_1models_1_1mobilenetv3_1_1_inverted_residual_config_ae11e23bcc2b36efa216da8db7707d38f}\index{torchvision\_down.models.mobilenetv3.InvertedResidualConfig@{torchvision\_down.models.mobilenetv3.InvertedResidualConfig}!dilation@{dilation}}
+\index{dilation@{dilation}!torchvision\_down.models.mobilenetv3.InvertedResidualConfig@{torchvision\_down.models.mobilenetv3.InvertedResidualConfig}}
+\doxysubsubsection{\texorpdfstring{dilation}{dilation}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1models_1_1mobilenetv3_1_1_inverted_residual_config_ae11e23bcc2b36efa216da8db7707d38f} 
+torchvision\+\_\+down.\+models.\+mobilenetv3.\+Inverted\+Residual\+Config.\+dilation = dilation}
+
+\Hypertarget{classtorchvision__down_1_1models_1_1mobilenetv3_1_1_inverted_residual_config_a57c6461b194bbc910c0f8df7ebbcc104}\index{torchvision\_down.models.mobilenetv3.InvertedResidualConfig@{torchvision\_down.models.mobilenetv3.InvertedResidualConfig}!expanded\_channels@{expanded\_channels}}
+\index{expanded\_channels@{expanded\_channels}!torchvision\_down.models.mobilenetv3.InvertedResidualConfig@{torchvision\_down.models.mobilenetv3.InvertedResidualConfig}}
+\doxysubsubsection{\texorpdfstring{expanded\_channels}{expanded\_channels}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1models_1_1mobilenetv3_1_1_inverted_residual_config_a57c6461b194bbc910c0f8df7ebbcc104} 
+torchvision\+\_\+down.\+models.\+mobilenetv3.\+Inverted\+Residual\+Config.\+expanded\+\_\+channels = self.\+adjust\+\_\+channels(expanded\+\_\+channels, width\+\_\+mult)}
+
+\Hypertarget{classtorchvision__down_1_1models_1_1mobilenetv3_1_1_inverted_residual_config_a5f96dc8c82fcc5b18065d07481c225d7}\index{torchvision\_down.models.mobilenetv3.InvertedResidualConfig@{torchvision\_down.models.mobilenetv3.InvertedResidualConfig}!input\_channels@{input\_channels}}
+\index{input\_channels@{input\_channels}!torchvision\_down.models.mobilenetv3.InvertedResidualConfig@{torchvision\_down.models.mobilenetv3.InvertedResidualConfig}}
+\doxysubsubsection{\texorpdfstring{input\_channels}{input\_channels}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1models_1_1mobilenetv3_1_1_inverted_residual_config_a5f96dc8c82fcc5b18065d07481c225d7} 
+torchvision\+\_\+down.\+models.\+mobilenetv3.\+Inverted\+Residual\+Config.\+input\+\_\+channels = self.\+adjust\+\_\+channels(input\+\_\+channels, width\+\_\+mult)}
+
+\Hypertarget{classtorchvision__down_1_1models_1_1mobilenetv3_1_1_inverted_residual_config_a55ebb4b20b9a9af6c632f8e58a6873d3}\index{torchvision\_down.models.mobilenetv3.InvertedResidualConfig@{torchvision\_down.models.mobilenetv3.InvertedResidualConfig}!kernel@{kernel}}
+\index{kernel@{kernel}!torchvision\_down.models.mobilenetv3.InvertedResidualConfig@{torchvision\_down.models.mobilenetv3.InvertedResidualConfig}}
+\doxysubsubsection{\texorpdfstring{kernel}{kernel}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1models_1_1mobilenetv3_1_1_inverted_residual_config_a55ebb4b20b9a9af6c632f8e58a6873d3} 
+torchvision\+\_\+down.\+models.\+mobilenetv3.\+Inverted\+Residual\+Config.\+kernel = kernel}
+
+\Hypertarget{classtorchvision__down_1_1models_1_1mobilenetv3_1_1_inverted_residual_config_a3c26df3a7cf8a0e2a31df3e7012de103}\index{torchvision\_down.models.mobilenetv3.InvertedResidualConfig@{torchvision\_down.models.mobilenetv3.InvertedResidualConfig}!out\_channels@{out\_channels}}
+\index{out\_channels@{out\_channels}!torchvision\_down.models.mobilenetv3.InvertedResidualConfig@{torchvision\_down.models.mobilenetv3.InvertedResidualConfig}}
+\doxysubsubsection{\texorpdfstring{out\_channels}{out\_channels}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1models_1_1mobilenetv3_1_1_inverted_residual_config_a3c26df3a7cf8a0e2a31df3e7012de103} 
+torchvision\+\_\+down.\+models.\+mobilenetv3.\+Inverted\+Residual\+Config.\+out\+\_\+channels = self.\+adjust\+\_\+channels(out\+\_\+channels, width\+\_\+mult)}
+
+\Hypertarget{classtorchvision__down_1_1models_1_1mobilenetv3_1_1_inverted_residual_config_ad54f3262be9cdd80fb1e19ebbc85d737}\index{torchvision\_down.models.mobilenetv3.InvertedResidualConfig@{torchvision\_down.models.mobilenetv3.InvertedResidualConfig}!stride@{stride}}
+\index{stride@{stride}!torchvision\_down.models.mobilenetv3.InvertedResidualConfig@{torchvision\_down.models.mobilenetv3.InvertedResidualConfig}}
+\doxysubsubsection{\texorpdfstring{stride}{stride}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1models_1_1mobilenetv3_1_1_inverted_residual_config_ad54f3262be9cdd80fb1e19ebbc85d737} 
+torchvision\+\_\+down.\+models.\+mobilenetv3.\+Inverted\+Residual\+Config.\+stride = stride}
+
+\Hypertarget{classtorchvision__down_1_1models_1_1mobilenetv3_1_1_inverted_residual_config_a9d80dda0cdd72b82e479c20e92d6f234}\index{torchvision\_down.models.mobilenetv3.InvertedResidualConfig@{torchvision\_down.models.mobilenetv3.InvertedResidualConfig}!use\_hs@{use\_hs}}
+\index{use\_hs@{use\_hs}!torchvision\_down.models.mobilenetv3.InvertedResidualConfig@{torchvision\_down.models.mobilenetv3.InvertedResidualConfig}}
+\doxysubsubsection{\texorpdfstring{use\_hs}{use\_hs}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1models_1_1mobilenetv3_1_1_inverted_residual_config_a9d80dda0cdd72b82e479c20e92d6f234} 
+str torchvision\+\_\+down.\+models.\+mobilenetv3.\+Inverted\+Residual\+Config.\+use\+\_\+hs = "{}HS"{}}
+
+\Hypertarget{classtorchvision__down_1_1models_1_1mobilenetv3_1_1_inverted_residual_config_a6dbd5dcbf46823a75646057552fa24ec}\index{torchvision\_down.models.mobilenetv3.InvertedResidualConfig@{torchvision\_down.models.mobilenetv3.InvertedResidualConfig}!use\_se@{use\_se}}
+\index{use\_se@{use\_se}!torchvision\_down.models.mobilenetv3.InvertedResidualConfig@{torchvision\_down.models.mobilenetv3.InvertedResidualConfig}}
+\doxysubsubsection{\texorpdfstring{use\_se}{use\_se}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1models_1_1mobilenetv3_1_1_inverted_residual_config_a6dbd5dcbf46823a75646057552fa24ec} 
+torchvision\+\_\+down.\+models.\+mobilenetv3.\+Inverted\+Residual\+Config.\+use\+\_\+se = use\+\_\+se}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Cervi\+AI/torchvision\+\_\+down/models/\mbox{\hyperlink{mobilenetv3_8py}{mobilenetv3.\+py}}\end{DoxyCompactItemize}

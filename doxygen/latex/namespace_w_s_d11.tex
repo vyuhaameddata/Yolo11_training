@@ -1,0 +1,204 @@
+\doxysection{WSD11 Namespace Reference}
+\hypertarget{namespace_w_s_d11}{}\label{namespace_w_s_d11}\index{WSD11@{WSD11}}
+\doxysubsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{class_w_s_d11_1_1_global_vars}{Global\+Vars}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{namespace_w_s_d11_a268e56aa5eb3cfb8f40bf5ca433779a0}{write\+\_\+ndpa}} (\mbox{\hyperlink{namespace_w_s_d11_a0128fe372b18cc04ebc5cf7ff30417ca}{tile\+\_\+size}}=1024, \mbox{\hyperlink{namespace_w_s_d11_a13eb9343fdda30bdeed4a28f7d65eb65}{overlap}}=128)
+\item 
+\mbox{\hyperlink{namespace_w_s_d11_a1b0724512dcdab24e8125aa42521dd3c}{get\+\_\+referance}} (wsi\+\_\+path)
+\item 
+\mbox{\hyperlink{namespace_w_s_d11_abb7b90c1ce89e96f8f3cfeee2e71c93a}{update\+\_\+annote\+\_\+id}} (annotations)
+\item 
+\mbox{\hyperlink{namespace_w_s_d11_a0f0a09953be1f3a006276dee742c3b15}{run\+\_\+predict\+\_\+wsi\+\_\+multithread}} (path, model, \mbox{\hyperlink{namespace_w_s_d11_a13eb9343fdda30bdeed4a28f7d65eb65}{overlap}}, \mbox{\hyperlink{namespace_w_s_d11_a0128fe372b18cc04ebc5cf7ff30417ca}{tile\+\_\+size}}=1024, batch\+\_\+size=12)
+\item 
+\mbox{\hyperlink{namespace_w_s_d11_a7e074219f0c8d8ca64a6ee349de385e8}{prune\+\_\+list}} (box\+\_\+list)
+\item 
+\mbox{\hyperlink{namespace_w_s_d11_a11e4e8cc81c512ecdaf8a9325469a22a}{replace\+\_\+bigger\+\_\+box}} (boxA, boxB)
+\item 
+\mbox{\hyperlink{namespace_w_s_d11_aae47c14c78b1214acc6e6123b1d5d391}{bb\+\_\+intersection\+\_\+over\+\_\+union}} (boxA, boxB)
+\item 
+\mbox{\hyperlink{namespace_w_s_d11_aebd1e93d631d40b49f588a302c487c79}{rerun\+\_\+predict\+\_\+pool}} (wsi\+\_\+path, model, pred\+\_\+list, \mbox{\hyperlink{namespace_w_s_d11_a0128fe372b18cc04ebc5cf7ff30417ca}{tile\+\_\+size}}=1024, batch\+\_\+size=12)
+\item 
+\mbox{\hyperlink{namespace_w_s_d11_a33c33e34916ee673f7e9fb8074910397}{divide\+\_\+chunks}} (Anotelist, batch\+\_\+size)
+\item 
+\mbox{\hyperlink{namespace_w_s_d11_a713009b783b829cd62901dbd7854ddd7}{read\+\_\+tiles\+\_\+parallel}} (slide\+\_\+path, pred\+\_\+list, \mbox{\hyperlink{namespace_w_s_d11_a0128fe372b18cc04ebc5cf7ff30417ca}{tile\+\_\+size}})
+\item 
+\mbox{\hyperlink{namespace_w_s_d11_a6f7fdd5d618e7cb4f753c18bcd5aa4ce}{process}} (wsi\+\_\+path, pred, \mbox{\hyperlink{namespace_w_s_d11_a0128fe372b18cc04ebc5cf7ff30417ca}{tile\+\_\+size}})
+\item 
+\mbox{\hyperlink{namespace_w_s_d11_adffa93ef164c7860eada2ef35b2ff9ea}{fetch\+\_\+batch}} (image)
+\item 
+\mbox{\hyperlink{namespace_w_s_d11_acc4eb6359520b8ecbb426a96251d9a9f}{get\+\_\+cat\+\_\+model}} ()
+\item 
+\mbox{\hyperlink{namespace_w_s_d11_a70a82da27cb76741874c09432989e22b}{write\+\_\+xml}} (annotations, start\+\_\+id, anote\+\_\+list, X\+\_\+\+Reference, Y\+\_\+\+Reference, nm\+\_\+p)
+\item 
+\mbox{\hyperlink{namespace_w_s_d11_a566b048f5cbccaeb0b7f5430203d7366}{write\+\_\+annotation}} (annotations, \+\_\+id, x1, y1, x2, y2, cls, conf, X\+\_\+\+Reference, Y\+\_\+\+Reference, nm\+\_\+p=221)
+\item 
+\mbox{\hyperlink{namespace_w_s_d11_a2f128c84c27ae34744f5a3e57127da5f}{dump\+\_\+results}} (gt\+\_\+xml\+\_\+path, predicts\+\_\+xml\+\_\+path)
+\item 
+\mbox{\hyperlink{namespace_w_s_d11_a357d492c89c22240847927911be622f4}{get\+\_\+box\+\_\+list}} (xml\+\_\+path, nm\+\_\+p=221)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+str \mbox{\hyperlink{namespace_w_s_d11_a8c5c205170c6cf2c90d7dee2892c7ba0}{folder\+\_\+path}} = r\textquotesingle{}D\+:\textbackslash{}\+Shreyan\textbackslash{}\+Development\textbackslash{}\+Test\textbackslash{}dump\textquotesingle{}
+\item 
+\mbox{\hyperlink{namespace_w_s_d11_a44cbdda44ec9006146b0171c9af1dc5b}{global\+Vars}} = \mbox{\hyperlink{class_w_s_d11_1_1_global_vars}{Global\+Vars}}(\mbox{\hyperlink{namespace_w_s_d11_a8c5c205170c6cf2c90d7dee2892c7ba0}{folder\+\_\+path}})
+\item 
+\mbox{\hyperlink{namespace_w_s_d11_a7712fe583cfbd1d36262dfb5f30dc844}{start}} = time.\+time()
+\item 
+\mbox{\hyperlink{namespace_w_s_d11_a0128fe372b18cc04ebc5cf7ff30417ca}{tile\+\_\+size}}
+\item 
+\mbox{\hyperlink{namespace_w_s_d11_a13eb9343fdda30bdeed4a28f7d65eb65}{overlap}}
+\item 
+\mbox{\hyperlink{namespace_w_s_d11_ade67d646c59646f12dd6973da0609fcf}{end}} = time.\+time()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{namespace_w_s_d11_aae47c14c78b1214acc6e6123b1d5d391}\index{WSD11@{WSD11}!bb\_intersection\_over\_union@{bb\_intersection\_over\_union}}
+\index{bb\_intersection\_over\_union@{bb\_intersection\_over\_union}!WSD11@{WSD11}}
+\doxysubsubsection{\texorpdfstring{bb\_intersection\_over\_union()}{bb\_intersection\_over\_union()}}
+{\footnotesize\ttfamily \label{namespace_w_s_d11_aae47c14c78b1214acc6e6123b1d5d391} 
+WSD11.\+bb\+\_\+intersection\+\_\+over\+\_\+union (\begin{DoxyParamCaption}\item[{}]{boxA}{, }\item[{}]{boxB}{}\end{DoxyParamCaption})}
+
+\Hypertarget{namespace_w_s_d11_a33c33e34916ee673f7e9fb8074910397}\index{WSD11@{WSD11}!divide\_chunks@{divide\_chunks}}
+\index{divide\_chunks@{divide\_chunks}!WSD11@{WSD11}}
+\doxysubsubsection{\texorpdfstring{divide\_chunks()}{divide\_chunks()}}
+{\footnotesize\ttfamily \label{namespace_w_s_d11_a33c33e34916ee673f7e9fb8074910397} 
+WSD11.\+divide\+\_\+chunks (\begin{DoxyParamCaption}\item[{}]{Anotelist}{, }\item[{}]{batch\+\_\+size}{}\end{DoxyParamCaption})}
+
+\Hypertarget{namespace_w_s_d11_a2f128c84c27ae34744f5a3e57127da5f}\index{WSD11@{WSD11}!dump\_results@{dump\_results}}
+\index{dump\_results@{dump\_results}!WSD11@{WSD11}}
+\doxysubsubsection{\texorpdfstring{dump\_results()}{dump\_results()}}
+{\footnotesize\ttfamily \label{namespace_w_s_d11_a2f128c84c27ae34744f5a3e57127da5f} 
+WSD11.\+dump\+\_\+results (\begin{DoxyParamCaption}\item[{}]{gt\+\_\+xml\+\_\+path}{, }\item[{}]{predicts\+\_\+xml\+\_\+path}{}\end{DoxyParamCaption})}
+
+\Hypertarget{namespace_w_s_d11_adffa93ef164c7860eada2ef35b2ff9ea}\index{WSD11@{WSD11}!fetch\_batch@{fetch\_batch}}
+\index{fetch\_batch@{fetch\_batch}!WSD11@{WSD11}}
+\doxysubsubsection{\texorpdfstring{fetch\_batch()}{fetch\_batch()}}
+{\footnotesize\ttfamily \label{namespace_w_s_d11_adffa93ef164c7860eada2ef35b2ff9ea} 
+WSD11.\+fetch\+\_\+batch (\begin{DoxyParamCaption}\item[{}]{image}{}\end{DoxyParamCaption})}
+
+\Hypertarget{namespace_w_s_d11_a357d492c89c22240847927911be622f4}\index{WSD11@{WSD11}!get\_box\_list@{get\_box\_list}}
+\index{get\_box\_list@{get\_box\_list}!WSD11@{WSD11}}
+\doxysubsubsection{\texorpdfstring{get\_box\_list()}{get\_box\_list()}}
+{\footnotesize\ttfamily \label{namespace_w_s_d11_a357d492c89c22240847927911be622f4} 
+WSD11.\+get\+\_\+box\+\_\+list (\begin{DoxyParamCaption}\item[{}]{xml\+\_\+path}{, }\item[{}]{nm\+\_\+p}{ = {\ttfamily 221}}\end{DoxyParamCaption})}
+
+\Hypertarget{namespace_w_s_d11_acc4eb6359520b8ecbb426a96251d9a9f}\index{WSD11@{WSD11}!get\_cat\_model@{get\_cat\_model}}
+\index{get\_cat\_model@{get\_cat\_model}!WSD11@{WSD11}}
+\doxysubsubsection{\texorpdfstring{get\_cat\_model()}{get\_cat\_model()}}
+{\footnotesize\ttfamily \label{namespace_w_s_d11_acc4eb6359520b8ecbb426a96251d9a9f} 
+WSD11.\+get\+\_\+cat\+\_\+model (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+\Hypertarget{namespace_w_s_d11_a1b0724512dcdab24e8125aa42521dd3c}\index{WSD11@{WSD11}!get\_referance@{get\_referance}}
+\index{get\_referance@{get\_referance}!WSD11@{WSD11}}
+\doxysubsubsection{\texorpdfstring{get\_referance()}{get\_referance()}}
+{\footnotesize\ttfamily \label{namespace_w_s_d11_a1b0724512dcdab24e8125aa42521dd3c} 
+WSD11.\+get\+\_\+referance (\begin{DoxyParamCaption}\item[{}]{wsi\+\_\+path}{}\end{DoxyParamCaption})}
+
+\Hypertarget{namespace_w_s_d11_a6f7fdd5d618e7cb4f753c18bcd5aa4ce}\index{WSD11@{WSD11}!process@{process}}
+\index{process@{process}!WSD11@{WSD11}}
+\doxysubsubsection{\texorpdfstring{process()}{process()}}
+{\footnotesize\ttfamily \label{namespace_w_s_d11_a6f7fdd5d618e7cb4f753c18bcd5aa4ce} 
+WSD11.\+process (\begin{DoxyParamCaption}\item[{}]{wsi\+\_\+path}{, }\item[{}]{pred}{, }\item[{}]{tile\+\_\+size}{}\end{DoxyParamCaption})}
+
+\Hypertarget{namespace_w_s_d11_a7e074219f0c8d8ca64a6ee349de385e8}\index{WSD11@{WSD11}!prune\_list@{prune\_list}}
+\index{prune\_list@{prune\_list}!WSD11@{WSD11}}
+\doxysubsubsection{\texorpdfstring{prune\_list()}{prune\_list()}}
+{\footnotesize\ttfamily \label{namespace_w_s_d11_a7e074219f0c8d8ca64a6ee349de385e8} 
+WSD11.\+prune\+\_\+list (\begin{DoxyParamCaption}\item[{}]{box\+\_\+list}{}\end{DoxyParamCaption})}
+
+\Hypertarget{namespace_w_s_d11_a713009b783b829cd62901dbd7854ddd7}\index{WSD11@{WSD11}!read\_tiles\_parallel@{read\_tiles\_parallel}}
+\index{read\_tiles\_parallel@{read\_tiles\_parallel}!WSD11@{WSD11}}
+\doxysubsubsection{\texorpdfstring{read\_tiles\_parallel()}{read\_tiles\_parallel()}}
+{\footnotesize\ttfamily \label{namespace_w_s_d11_a713009b783b829cd62901dbd7854ddd7} 
+WSD11.\+read\+\_\+tiles\+\_\+parallel (\begin{DoxyParamCaption}\item[{}]{slide\+\_\+path}{, }\item[{}]{pred\+\_\+list}{, }\item[{}]{tile\+\_\+size}{}\end{DoxyParamCaption})}
+
+\Hypertarget{namespace_w_s_d11_a11e4e8cc81c512ecdaf8a9325469a22a}\index{WSD11@{WSD11}!replace\_bigger\_box@{replace\_bigger\_box}}
+\index{replace\_bigger\_box@{replace\_bigger\_box}!WSD11@{WSD11}}
+\doxysubsubsection{\texorpdfstring{replace\_bigger\_box()}{replace\_bigger\_box()}}
+{\footnotesize\ttfamily \label{namespace_w_s_d11_a11e4e8cc81c512ecdaf8a9325469a22a} 
+WSD11.\+replace\+\_\+bigger\+\_\+box (\begin{DoxyParamCaption}\item[{}]{boxA}{, }\item[{}]{boxB}{}\end{DoxyParamCaption})}
+
+\Hypertarget{namespace_w_s_d11_aebd1e93d631d40b49f588a302c487c79}\index{WSD11@{WSD11}!rerun\_predict\_pool@{rerun\_predict\_pool}}
+\index{rerun\_predict\_pool@{rerun\_predict\_pool}!WSD11@{WSD11}}
+\doxysubsubsection{\texorpdfstring{rerun\_predict\_pool()}{rerun\_predict\_pool()}}
+{\footnotesize\ttfamily \label{namespace_w_s_d11_aebd1e93d631d40b49f588a302c487c79} 
+WSD11.\+rerun\+\_\+predict\+\_\+pool (\begin{DoxyParamCaption}\item[{}]{wsi\+\_\+path}{, }\item[{}]{model}{, }\item[{}]{pred\+\_\+list}{, }\item[{}]{tile\+\_\+size}{ = {\ttfamily 1024}, }\item[{}]{batch\+\_\+size}{ = {\ttfamily 12}}\end{DoxyParamCaption})}
+
+\Hypertarget{namespace_w_s_d11_a0f0a09953be1f3a006276dee742c3b15}\index{WSD11@{WSD11}!run\_predict\_wsi\_multithread@{run\_predict\_wsi\_multithread}}
+\index{run\_predict\_wsi\_multithread@{run\_predict\_wsi\_multithread}!WSD11@{WSD11}}
+\doxysubsubsection{\texorpdfstring{run\_predict\_wsi\_multithread()}{run\_predict\_wsi\_multithread()}}
+{\footnotesize\ttfamily \label{namespace_w_s_d11_a0f0a09953be1f3a006276dee742c3b15} 
+WSD11.\+run\+\_\+predict\+\_\+wsi\+\_\+multithread (\begin{DoxyParamCaption}\item[{}]{path}{, }\item[{}]{model}{, }\item[{}]{overlap}{, }\item[{}]{tile\+\_\+size}{ = {\ttfamily 1024}, }\item[{}]{batch\+\_\+size}{ = {\ttfamily 12}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Run inference on WSI using YOLOv11 with multi-threading.\end{DoxyVerb}
+ \Hypertarget{namespace_w_s_d11_abb7b90c1ce89e96f8f3cfeee2e71c93a}\index{WSD11@{WSD11}!update\_annote\_id@{update\_annote\_id}}
+\index{update\_annote\_id@{update\_annote\_id}!WSD11@{WSD11}}
+\doxysubsubsection{\texorpdfstring{update\_annote\_id()}{update\_annote\_id()}}
+{\footnotesize\ttfamily \label{namespace_w_s_d11_abb7b90c1ce89e96f8f3cfeee2e71c93a} 
+WSD11.\+update\+\_\+annote\+\_\+id (\begin{DoxyParamCaption}\item[{}]{annotations}{}\end{DoxyParamCaption})}
+
+\Hypertarget{namespace_w_s_d11_a566b048f5cbccaeb0b7f5430203d7366}\index{WSD11@{WSD11}!write\_annotation@{write\_annotation}}
+\index{write\_annotation@{write\_annotation}!WSD11@{WSD11}}
+\doxysubsubsection{\texorpdfstring{write\_annotation()}{write\_annotation()}}
+{\footnotesize\ttfamily \label{namespace_w_s_d11_a566b048f5cbccaeb0b7f5430203d7366} 
+WSD11.\+write\+\_\+annotation (\begin{DoxyParamCaption}\item[{}]{annotations}{, }\item[{}]{\+\_\+id}{, }\item[{}]{x1}{, }\item[{}]{y1}{, }\item[{}]{x2}{, }\item[{}]{y2}{, }\item[{}]{cls}{, }\item[{}]{conf}{, }\item[{}]{X\+\_\+\+Reference}{, }\item[{}]{Y\+\_\+\+Reference}{, }\item[{}]{nm\+\_\+p}{ = {\ttfamily 221}}\end{DoxyParamCaption})}
+
+\Hypertarget{namespace_w_s_d11_a268e56aa5eb3cfb8f40bf5ca433779a0}\index{WSD11@{WSD11}!write\_ndpa@{write\_ndpa}}
+\index{write\_ndpa@{write\_ndpa}!WSD11@{WSD11}}
+\doxysubsubsection{\texorpdfstring{write\_ndpa()}{write\_ndpa()}}
+{\footnotesize\ttfamily \label{namespace_w_s_d11_a268e56aa5eb3cfb8f40bf5ca433779a0} 
+WSD11.\+write\+\_\+ndpa (\begin{DoxyParamCaption}\item[{}]{tile\+\_\+size}{ = {\ttfamily 1024}, }\item[{}]{overlap}{ = {\ttfamily 128}}\end{DoxyParamCaption})}
+
+\Hypertarget{namespace_w_s_d11_a70a82da27cb76741874c09432989e22b}\index{WSD11@{WSD11}!write\_xml@{write\_xml}}
+\index{write\_xml@{write\_xml}!WSD11@{WSD11}}
+\doxysubsubsection{\texorpdfstring{write\_xml()}{write\_xml()}}
+{\footnotesize\ttfamily \label{namespace_w_s_d11_a70a82da27cb76741874c09432989e22b} 
+WSD11.\+write\+\_\+xml (\begin{DoxyParamCaption}\item[{}]{annotations}{, }\item[{}]{start\+\_\+id}{, }\item[{}]{anote\+\_\+list}{, }\item[{}]{X\+\_\+\+Reference}{, }\item[{}]{Y\+\_\+\+Reference}{, }\item[{}]{nm\+\_\+p}{}\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Variable Documentation}
+\Hypertarget{namespace_w_s_d11_ade67d646c59646f12dd6973da0609fcf}\index{WSD11@{WSD11}!end@{end}}
+\index{end@{end}!WSD11@{WSD11}}
+\doxysubsubsection{\texorpdfstring{end}{end}}
+{\footnotesize\ttfamily \label{namespace_w_s_d11_ade67d646c59646f12dd6973da0609fcf} 
+WSD11.\+end = time.\+time()}
+
+\Hypertarget{namespace_w_s_d11_a8c5c205170c6cf2c90d7dee2892c7ba0}\index{WSD11@{WSD11}!folder\_path@{folder\_path}}
+\index{folder\_path@{folder\_path}!WSD11@{WSD11}}
+\doxysubsubsection{\texorpdfstring{folder\_path}{folder\_path}}
+{\footnotesize\ttfamily \label{namespace_w_s_d11_a8c5c205170c6cf2c90d7dee2892c7ba0} 
+str WSD11.\+folder\+\_\+path = r\textquotesingle{}D\+:\textbackslash{}\+Shreyan\textbackslash{}\+Development\textbackslash{}\+Test\textbackslash{}dump\textquotesingle{}}
+
+\Hypertarget{namespace_w_s_d11_a44cbdda44ec9006146b0171c9af1dc5b}\index{WSD11@{WSD11}!globalVars@{globalVars}}
+\index{globalVars@{globalVars}!WSD11@{WSD11}}
+\doxysubsubsection{\texorpdfstring{globalVars}{globalVars}}
+{\footnotesize\ttfamily \label{namespace_w_s_d11_a44cbdda44ec9006146b0171c9af1dc5b} 
+WSD11.\+global\+Vars = \mbox{\hyperlink{class_w_s_d11_1_1_global_vars}{Global\+Vars}}(\mbox{\hyperlink{namespace_w_s_d11_a8c5c205170c6cf2c90d7dee2892c7ba0}{folder\+\_\+path}})}
+
+\Hypertarget{namespace_w_s_d11_a13eb9343fdda30bdeed4a28f7d65eb65}\index{WSD11@{WSD11}!overlap@{overlap}}
+\index{overlap@{overlap}!WSD11@{WSD11}}
+\doxysubsubsection{\texorpdfstring{overlap}{overlap}}
+{\footnotesize\ttfamily \label{namespace_w_s_d11_a13eb9343fdda30bdeed4a28f7d65eb65} 
+WSD11.\+overlap}
+
+\Hypertarget{namespace_w_s_d11_a7712fe583cfbd1d36262dfb5f30dc844}\index{WSD11@{WSD11}!start@{start}}
+\index{start@{start}!WSD11@{WSD11}}
+\doxysubsubsection{\texorpdfstring{start}{start}}
+{\footnotesize\ttfamily \label{namespace_w_s_d11_a7712fe583cfbd1d36262dfb5f30dc844} 
+WSD11.\+start = time.\+time()}
+
+\Hypertarget{namespace_w_s_d11_a0128fe372b18cc04ebc5cf7ff30417ca}\index{WSD11@{WSD11}!tile\_size@{tile\_size}}
+\index{tile\_size@{tile\_size}!WSD11@{WSD11}}
+\doxysubsubsection{\texorpdfstring{tile\_size}{tile\_size}}
+{\footnotesize\ttfamily \label{namespace_w_s_d11_a0128fe372b18cc04ebc5cf7ff30417ca} 
+WSD11.\+tile\+\_\+size}
+

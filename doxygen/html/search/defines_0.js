@@ -1,0 +1,19 @@
+var searchData=
+[
+  ['openslide_5fcancel_5fprefetch_5fhint_0',['openslide_cancel_prefetch_hint',['../openslide_8h.html#a1bc6b374066a542bca96c29df209db18',1,'openslide.h']]],
+  ['openslide_5fdeprecated_1',['OPENSLIDE_DEPRECATED',['../openslide-features_8h.html#a1b9c4fcdae56e944be364c0f60f5b344',1,'openslide-features.h']]],
+  ['openslide_5fdeprecated_5ffor_2',['OPENSLIDE_DEPRECATED_FOR',['../openslide-features_8h.html#ab0fb87417740ccbd0177b541bb6e81c9',1,'openslide-features.h']]],
+  ['openslide_5fgive_5fprefetch_5fhint_3',['openslide_give_prefetch_hint',['../openslide_8h.html#a50d0481ad065f3979d394462d8490f17',1,'openslide.h']]],
+  ['openslide_5fproperty_5fname_5fbackground_5fcolor_4',['OPENSLIDE_PROPERTY_NAME_BACKGROUND_COLOR',['../openslide_8h.html#a9ab13d8e8d8e56334ab0bbad35c4cdb6',1,'openslide.h']]],
+  ['openslide_5fproperty_5fname_5fbounds_5fheight_5',['OPENSLIDE_PROPERTY_NAME_BOUNDS_HEIGHT',['../openslide_8h.html#a82b5a752ebb4a06af09afc2878b82f10',1,'openslide.h']]],
+  ['openslide_5fproperty_5fname_5fbounds_5fwidth_6',['OPENSLIDE_PROPERTY_NAME_BOUNDS_WIDTH',['../openslide_8h.html#ab6e3d883aaef3476c493d9ffe2b78bfc',1,'openslide.h']]],
+  ['openslide_5fproperty_5fname_5fbounds_5fx_7',['OPENSLIDE_PROPERTY_NAME_BOUNDS_X',['../openslide_8h.html#a1a1a367a8f5a2c7024d117c2e12e0cb3',1,'openslide.h']]],
+  ['openslide_5fproperty_5fname_5fbounds_5fy_8',['OPENSLIDE_PROPERTY_NAME_BOUNDS_Y',['../openslide_8h.html#a93a17952a08d69bd83970ba40ef6f077',1,'openslide.h']]],
+  ['openslide_5fproperty_5fname_5fcomment_9',['OPENSLIDE_PROPERTY_NAME_COMMENT',['../openslide_8h.html#acab4512e53b74cb5b70b652fa322236e',1,'openslide.h']]],
+  ['openslide_5fproperty_5fname_5fmpp_5fx_10',['OPENSLIDE_PROPERTY_NAME_MPP_X',['../openslide_8h.html#af0a3b3bf078d123379e3343e03ad4991',1,'openslide.h']]],
+  ['openslide_5fproperty_5fname_5fmpp_5fy_11',['OPENSLIDE_PROPERTY_NAME_MPP_Y',['../openslide_8h.html#a427734d2c8edece7a5f0a394175d524f',1,'openslide.h']]],
+  ['openslide_5fproperty_5fname_5fobjective_5fpower_12',['OPENSLIDE_PROPERTY_NAME_OBJECTIVE_POWER',['../openslide_8h.html#abca4825eafbf7d0098fa6d87e9435e75',1,'openslide.h']]],
+  ['openslide_5fproperty_5fname_5fquickhash1_13',['OPENSLIDE_PROPERTY_NAME_QUICKHASH1',['../openslide_8h.html#aa280780085714cf37802d8da311885de',1,'openslide.h']]],
+  ['openslide_5fproperty_5fname_5fvendor_14',['OPENSLIDE_PROPERTY_NAME_VENDOR',['../openslide_8h.html#a0fd5ca3fa8167972fb4344906928928c',1,'openslide.h']]],
+  ['openslide_5fpublic_15',['OPENSLIDE_PUBLIC',['../openslide-features_8h.html#a1680f062acc9c25b61c94eb433fdde72',1,'openslide-features.h']]]
+];

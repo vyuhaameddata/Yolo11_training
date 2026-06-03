@@ -1,0 +1,68 @@
+\doxysection{models.\+experimental.\+Mix\+Conv2d Class Reference}
+\hypertarget{classmodels_1_1experimental_1_1_mix_conv2d}{}\label{classmodels_1_1experimental_1_1_mix_conv2d}\index{models.experimental.MixConv2d@{models.experimental.MixConv2d}}
+Inheritance diagram for models.\+experimental.\+Mix\+Conv2d\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classmodels_1_1experimental_1_1_mix_conv2d}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classmodels_1_1experimental_1_1_mix_conv2d_a161b64fd480f477f92d536bcd5920601}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, c1, c2, k=(1, 3), s=1, equal\+\_\+ch=True)
+\item 
+\mbox{\hyperlink{classmodels_1_1experimental_1_1_mix_conv2d_aae2a1e5c914adf9741ba8f9230781b5b}{forward}} (self, x)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classmodels_1_1experimental_1_1_mix_conv2d_a8e34b49c9ee1b8b2e3962342f3db1b3a}{m}} = nn.\+Module\+List(\mbox{[}nn.\+Conv2d(c1, int(c\+\_\+\mbox{[}g\mbox{]}), k\mbox{[}g\mbox{]}, s, k\mbox{[}g\mbox{]} // 2, bias=False) for g in range(groups)\mbox{]})
+\item 
+\mbox{\hyperlink{classmodels_1_1experimental_1_1_mix_conv2d_a775e4c51a7ee7ea5c575799a8a4b3ab6}{bn}} = nn.\+Batch\+Norm2d(c2)
+\item 
+\mbox{\hyperlink{classmodels_1_1experimental_1_1_mix_conv2d_a0fc862f7d834961800f9584662cba3ba}{act}} = nn.\+Leaky\+Re\+LU(0.\+1, inplace=True)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classmodels_1_1experimental_1_1_mix_conv2d_a161b64fd480f477f92d536bcd5920601}\index{models.experimental.MixConv2d@{models.experimental.MixConv2d}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!models.experimental.MixConv2d@{models.experimental.MixConv2d}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily \label{classmodels_1_1experimental_1_1_mix_conv2d_a161b64fd480f477f92d536bcd5920601} 
+models.\+experimental.\+Mix\+Conv2d.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{c1}{, }\item[{}]{c2}{, }\item[{}]{k}{ = {\ttfamily (1,~3)}, }\item[{}]{s}{ = {\ttfamily 1}, }\item[{}]{equal\+\_\+ch}{ = {\ttfamily True}}\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classmodels_1_1experimental_1_1_mix_conv2d_aae2a1e5c914adf9741ba8f9230781b5b}\index{models.experimental.MixConv2d@{models.experimental.MixConv2d}!forward@{forward}}
+\index{forward@{forward}!models.experimental.MixConv2d@{models.experimental.MixConv2d}}
+\doxysubsubsection{\texorpdfstring{forward()}{forward()}}
+{\footnotesize\ttfamily \label{classmodels_1_1experimental_1_1_mix_conv2d_aae2a1e5c914adf9741ba8f9230781b5b} 
+models.\+experimental.\+Mix\+Conv2d.\+forward (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{x}{}\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classmodels_1_1experimental_1_1_mix_conv2d_a0fc862f7d834961800f9584662cba3ba}\index{models.experimental.MixConv2d@{models.experimental.MixConv2d}!act@{act}}
+\index{act@{act}!models.experimental.MixConv2d@{models.experimental.MixConv2d}}
+\doxysubsubsection{\texorpdfstring{act}{act}}
+{\footnotesize\ttfamily \label{classmodels_1_1experimental_1_1_mix_conv2d_a0fc862f7d834961800f9584662cba3ba} 
+models.\+experimental.\+Mix\+Conv2d.\+act = nn.\+Leaky\+Re\+LU(0.\+1, inplace=True)}
+
+\Hypertarget{classmodels_1_1experimental_1_1_mix_conv2d_a775e4c51a7ee7ea5c575799a8a4b3ab6}\index{models.experimental.MixConv2d@{models.experimental.MixConv2d}!bn@{bn}}
+\index{bn@{bn}!models.experimental.MixConv2d@{models.experimental.MixConv2d}}
+\doxysubsubsection{\texorpdfstring{bn}{bn}}
+{\footnotesize\ttfamily \label{classmodels_1_1experimental_1_1_mix_conv2d_a775e4c51a7ee7ea5c575799a8a4b3ab6} 
+models.\+experimental.\+Mix\+Conv2d.\+bn = nn.\+Batch\+Norm2d(c2)}
+
+\Hypertarget{classmodels_1_1experimental_1_1_mix_conv2d_a8e34b49c9ee1b8b2e3962342f3db1b3a}\index{models.experimental.MixConv2d@{models.experimental.MixConv2d}!m@{m}}
+\index{m@{m}!models.experimental.MixConv2d@{models.experimental.MixConv2d}}
+\doxysubsubsection{\texorpdfstring{m}{m}}
+{\footnotesize\ttfamily \label{classmodels_1_1experimental_1_1_mix_conv2d_a8e34b49c9ee1b8b2e3962342f3db1b3a} 
+models.\+experimental.\+Mix\+Conv2d.\+m = nn.\+Module\+List(\mbox{[}nn.\+Conv2d(c1, int(c\+\_\+\mbox{[}g\mbox{]}), k\mbox{[}g\mbox{]}, s, k\mbox{[}g\mbox{]} // 2, bias=False) for g in range(groups)\mbox{]})}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Cervi\+AI/models/\mbox{\hyperlink{experimental_8py}{experimental.\+py}}\end{DoxyCompactItemize}

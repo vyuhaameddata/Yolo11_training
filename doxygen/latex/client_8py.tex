@@ -1,0 +1,76 @@
+\doxysection{Cervi\+AI/deploy/triton-\/inference-\/server/client.py File Reference}
+\hypertarget{client_8py}{}\label{client_8py}\index{CerviAI/deploy/triton-\/inference-\/server/client.py@{CerviAI/deploy/triton-\/inference-\/server/client.py}}
+\doxysubsubsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+namespace \mbox{\hyperlink{namespaceclient}{client}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+list \mbox{\hyperlink{namespaceclient_a8797ddc8f52db353fe30a98081d25d32}{client.\+INPUT\+\_\+\+NAMES}} = \mbox{[}"{}images"{}\mbox{]}
+\item 
+list \mbox{\hyperlink{namespaceclient_ac42b1dd09bd60e334fa9ead3e1a8ed8b}{client.\+OUTPUT\+\_\+\+NAMES}} = \mbox{[}"{}num\+\_\+dets"{}, "{}det\+\_\+boxes"{}, "{}det\+\_\+scores"{}, "{}det\+\_\+classes"{}\mbox{]}
+\item 
+\mbox{\hyperlink{namespaceclient_a76c71d249cc5b42de3ae3eb67742607a}{client.\+parser}} = argparse.\+Argument\+Parser()
+\item 
+\mbox{\hyperlink{namespaceclient_acb7f4d834db743a1b65285ac7f438c03}{client.\+choices}}
+\item 
+\mbox{\hyperlink{namespaceclient_ab339adf31e2cf2c8376e5d3e41d296be}{client.\+default}}
+\item 
+\mbox{\hyperlink{namespaceclient_a36966f52562fb56e91039a4fd0b9af17}{client.\+help}}
+\item 
+\mbox{\hyperlink{namespaceclient_a7d68e84d994a93afc03f4d1701f954b5}{client.\+type}}
+\item 
+\mbox{\hyperlink{namespaceclient_a861b6f6dedb7c37d37949c64f93211ff}{client.\+nargs}}
+\item 
+\mbox{\hyperlink{namespaceclient_a8bfa6e863e1c9b065343f07eb612ce24}{client.\+required}}
+\item 
+\mbox{\hyperlink{namespaceclient_a6f995cd0a493c01e4e407e418d8f67e6}{client.\+action}}
+\item 
+\mbox{\hyperlink{namespaceclient_a4463f1b86bbf849f2be5b097dcede960}{client.\+FLAGS}} = parser.\+parse\+\_\+args()
+\item 
+\mbox{\hyperlink{namespaceclient_abace3107889e860e90e7192fd0203208}{client.\+triton\+\_\+client}}
+\item 
+\mbox{\hyperlink{namespaceclient_ac2306bac4b22b8e27c4f1345debb62fe}{client.\+metadata}} = triton\+\_\+client.\+get\+\_\+model\+\_\+metadata(FLAGS.\+model)
+\item 
+\mbox{\hyperlink{namespaceclient_af9ccc706e30d04abe789b91604aff93f}{client.\+config}} = triton\+\_\+client.\+get\+\_\+model\+\_\+config(FLAGS.\+model)
+\item 
+list \mbox{\hyperlink{namespaceclient_a8a579a76bb32d74dd49c038a0b5174a6}{client.\+inputs}} = \mbox{[}$\,$\mbox{]}
+\item 
+list \mbox{\hyperlink{namespaceclient_a46bbd0e6d9ec88097eb159d94057ec23}{client.\+outputs}} = \mbox{[}$\,$\mbox{]}
+\item 
+\mbox{\hyperlink{namespaceclient_afca2ea70bddff6e4464acdb400c2a38d}{client.\+results}}
+\item 
+\mbox{\hyperlink{namespaceclient_a15fe1396a073320f45d8088baed55483}{client.\+statistics}} = triton\+\_\+client.\+get\+\_\+inference\+\_\+statistics(model\+\_\+name=FLAGS.\+model)
+\item 
+\mbox{\hyperlink{namespaceclient_a474fedfa912258c334db1d96f4a98fbe}{client.\+result}} = results.\+as\+\_\+numpy(output)
+\item 
+\mbox{\hyperlink{namespaceclient_a546cde2c69adf6ec01cca631d27f8fd1}{client.\+input\+\_\+image}} = cv2.\+imread(str(FLAGS.\+input))
+\item 
+\mbox{\hyperlink{namespaceclient_a8c20beda6091c6770fdc2df538301d3d}{client.\+input\+\_\+image\+\_\+buffer}} = preprocess(\mbox{\hyperlink{namespaceclient_a546cde2c69adf6ec01cca631d27f8fd1}{input\+\_\+image}}, \mbox{[}FLAGS.\+width, FLAGS.\+height\mbox{]})
+\item 
+\mbox{\hyperlink{namespaceclient_a9fcb92dbf6454769577448ff97e82049}{client.\+num\+\_\+dets}} = results.\+as\+\_\+numpy(\mbox{\hyperlink{namespaceclient_ac42b1dd09bd60e334fa9ead3e1a8ed8b}{OUTPUT\+\_\+\+NAMES}}\mbox{[}0\mbox{]})
+\item 
+\mbox{\hyperlink{namespaceclient_a57bf25af301acf39e0e55194c4fa840a}{client.\+det\+\_\+boxes}} = results.\+as\+\_\+numpy(\mbox{\hyperlink{namespaceclient_ac42b1dd09bd60e334fa9ead3e1a8ed8b}{OUTPUT\+\_\+\+NAMES}}\mbox{[}1\mbox{]})
+\item 
+\mbox{\hyperlink{namespaceclient_a4b56132f892e6fec9f83a31e9fc30abd}{client.\+det\+\_\+scores}} = results.\+as\+\_\+numpy(\mbox{\hyperlink{namespaceclient_ac42b1dd09bd60e334fa9ead3e1a8ed8b}{OUTPUT\+\_\+\+NAMES}}\mbox{[}2\mbox{]})
+\item 
+\mbox{\hyperlink{namespaceclient_a27257dedf7c139964b5d3e54ed59b9e0}{client.\+det\+\_\+classes}} = results.\+as\+\_\+numpy(\mbox{\hyperlink{namespaceclient_ac42b1dd09bd60e334fa9ead3e1a8ed8b}{OUTPUT\+\_\+\+NAMES}}\mbox{[}3\mbox{]})
+\item 
+\mbox{\hyperlink{namespaceclient_ab8a39ce5923de191062918a0ed11d1d4}{client.\+detected\+\_\+objects}} = postprocess(\mbox{\hyperlink{namespaceclient_a9fcb92dbf6454769577448ff97e82049}{num\+\_\+dets}}, \mbox{\hyperlink{namespaceclient_a57bf25af301acf39e0e55194c4fa840a}{det\+\_\+boxes}}, \mbox{\hyperlink{namespaceclient_a4b56132f892e6fec9f83a31e9fc30abd}{det\+\_\+scores}}, \mbox{\hyperlink{namespaceclient_a27257dedf7c139964b5d3e54ed59b9e0}{det\+\_\+classes}}, input\+\_\+image.\+shape\mbox{[}1\mbox{]}, input\+\_\+image.\+shape\mbox{[}0\mbox{]}, \mbox{[}FLAGS.\+width, FLAGS.\+height\mbox{]})
+\item 
+\mbox{\hyperlink{namespaceclient_a97b0161e3b302d7cb5a45f45ffd3df56}{client.\+size}} = get\+\_\+text\+\_\+size(\mbox{\hyperlink{namespaceclient_a546cde2c69adf6ec01cca631d27f8fd1}{input\+\_\+image}}, f"{}\{\mbox{\hyperlink{classlabels_1_1_c_o_c_o_labels}{COCOLabels}}(box.\+class\+ID).name\}\+: \{box.\+confidence\+:.\+2f\}"{}, normalised\+\_\+scaling=0.\+6)
+\item 
+\mbox{\hyperlink{namespaceclient_ad2a5137fe14fbe0c7e9eb0db0619cece}{client.\+cap}} = cv2.\+Video\+Capture(FLAGS.\+input)
+\item 
+int \mbox{\hyperlink{namespaceclient_a0203108c22f2a4e7959910c984eb674b}{client.\+counter}} = 0
+\item 
+\mbox{\hyperlink{namespaceclient_a4885dd03fb52df422dae8f3ef2c7ada5}{client.\+out}} = None
+\item 
+\mbox{\hyperlink{namespaceclient_ab0ff754cf654b9e412cc19ca51f17d27}{client.\+ret}}
+\item 
+\mbox{\hyperlink{namespaceclient_acb3ad6b6e6c1866f0507927f3eb6b4a0}{client.\+frame}} = render\+\_\+box(frame, box.\+box(), color=tuple(RAND\+\_\+\+COLORS\mbox{[}box.\+class\+ID \% 64\mbox{]}.tolist()))
+\item 
+\mbox{\hyperlink{namespaceclient_abe48e08ce255d7e613dd74b62c84b5cf}{client.\+fourcc}} = cv2.\+Video\+Writer\+\_\+fourcc(\textquotesingle{}M\textquotesingle{}, \textquotesingle{}P\textquotesingle{}, \textquotesingle{}4\textquotesingle{}, \textquotesingle{}V\textquotesingle{})
+\end{DoxyCompactItemize}

@@ -1,0 +1,265 @@
+\doxysection{torchvision\+\_\+down.\+datasets.\+cityscapes.\+Cityscapes Class Reference}
+\hypertarget{classtorchvision__down_1_1datasets_1_1cityscapes_1_1_cityscapes}{}\label{classtorchvision__down_1_1datasets_1_1cityscapes_1_1_cityscapes}\index{torchvision\_down.datasets.cityscapes.Cityscapes@{torchvision\_down.datasets.cityscapes.Cityscapes}}
+Inheritance diagram for torchvision\+\_\+down.\+datasets.\+cityscapes.\+Cityscapes\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{classtorchvision__down_1_1datasets_1_1cityscapes_1_1_cityscapes}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+None \mbox{\hyperlink{classtorchvision__down_1_1datasets_1_1cityscapes_1_1_cityscapes_a116a92806bdcebd3ca03517b61581022}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, str \mbox{\hyperlink{classtorchvision__down_1_1datasets_1_1vision_1_1_vision_dataset_af52cf192ec18d3421afe216bf9b881d6}{root}}, str \mbox{\hyperlink{classtorchvision__down_1_1datasets_1_1cityscapes_1_1_cityscapes_a0712fb33a5e3a52bdb6db166efac4044}{split}}="{}train"{}, str \mbox{\hyperlink{classtorchvision__down_1_1datasets_1_1cityscapes_1_1_cityscapes_a73ea3dfce8d7b15d88783082c8a63b28}{mode}}="{}fine"{}, Union\mbox{[}List\mbox{[}str\mbox{]}, str\mbox{]} \mbox{\hyperlink{classtorchvision__down_1_1datasets_1_1cityscapes_1_1_cityscapes_a97c60e3969136ac5c2f453df46cdda01}{target\+\_\+type}}="{}instance"{}, Optional\mbox{[}Callable\mbox{]} \mbox{\hyperlink{classtorchvision__down_1_1datasets_1_1vision_1_1_vision_dataset_ade1b4bca7d4f998bc3061e0400769de8}{transform}}=None, Optional\mbox{[}Callable\mbox{]} \mbox{\hyperlink{classtorchvision__down_1_1datasets_1_1vision_1_1_vision_dataset_a01f7d1bb7220bbfa4234ef140d021cc6}{target\+\_\+transform}}=None, Optional\mbox{[}Callable\mbox{]} \mbox{\hyperlink{classtorchvision__down_1_1datasets_1_1vision_1_1_vision_dataset_a7963601da311133da990b66cb616cc83}{transforms}}=None)
+\item 
+Tuple\mbox{[}Any, Any\mbox{]} \mbox{\hyperlink{classtorchvision__down_1_1datasets_1_1cityscapes_1_1_cityscapes_aff72631f1e3bbca45147e28421524ecb}{\+\_\+\+\_\+getitem\+\_\+\+\_\+}} (self, int index)
+\item 
+int \mbox{\hyperlink{classtorchvision__down_1_1datasets_1_1cityscapes_1_1_cityscapes_ab2e76f3c8a19348149c336aa5335dc93}{\+\_\+\+\_\+len\+\_\+\+\_\+}} (self)
+\item 
+str \mbox{\hyperlink{classtorchvision__down_1_1datasets_1_1cityscapes_1_1_cityscapes_ae7a715c180e9b59c487d2ec670d68424}{extra\+\_\+repr}} (self)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{classtorchvision__down_1_1datasets_1_1vision_1_1_vision_dataset}{torchvision\+\_\+down.\+datasets.\+vision.\+Vision\+Dataset}}}
+\begin{DoxyCompactItemize}
+\item 
+None \mbox{\hyperlink{classtorchvision__down_1_1datasets_1_1vision_1_1_vision_dataset_a4fe475e0f96592c04a6d97bcd953aca8}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, str \mbox{\hyperlink{classtorchvision__down_1_1datasets_1_1vision_1_1_vision_dataset_af52cf192ec18d3421afe216bf9b881d6}{root}}, Optional\mbox{[}Callable\mbox{]} \mbox{\hyperlink{classtorchvision__down_1_1datasets_1_1vision_1_1_vision_dataset_a7963601da311133da990b66cb616cc83}{transforms}}=None, Optional\mbox{[}Callable\mbox{]} \mbox{\hyperlink{classtorchvision__down_1_1datasets_1_1vision_1_1_vision_dataset_ade1b4bca7d4f998bc3061e0400769de8}{transform}}=None, Optional\mbox{[}Callable\mbox{]} \mbox{\hyperlink{classtorchvision__down_1_1datasets_1_1vision_1_1_vision_dataset_a01f7d1bb7220bbfa4234ef140d021cc6}{target\+\_\+transform}}=None)
+\item 
+Any \mbox{\hyperlink{classtorchvision__down_1_1datasets_1_1vision_1_1_vision_dataset_aa96f56b711d61433df225154b9837daa}{\+\_\+\+\_\+getitem\+\_\+\+\_\+}} (self, int index)
+\item 
+int \mbox{\hyperlink{classtorchvision__down_1_1datasets_1_1vision_1_1_vision_dataset_abb1561c74b600d1d424cfa010f009a92}{\+\_\+\+\_\+len\+\_\+\+\_\+}} (self)
+\item 
+str \mbox{\hyperlink{classtorchvision__down_1_1datasets_1_1vision_1_1_vision_dataset_a40d28a5833742c49a70872e87edb1ef9}{\+\_\+\+\_\+repr\+\_\+\+\_\+}} (self)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+str \mbox{\hyperlink{classtorchvision__down_1_1datasets_1_1cityscapes_1_1_cityscapes_a73ea3dfce8d7b15d88783082c8a63b28}{mode}} = "{}fine"{} else "{}gt\+Coarse"{}
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1datasets_1_1cityscapes_1_1_cityscapes_a88a9373e784b7fab69d4c1185acf0856}{images\+\_\+dir}} = os.\+path.\+join(self.\+root, "{}left\+Img8bit"{}, \mbox{\hyperlink{classtorchvision__down_1_1datasets_1_1cityscapes_1_1_cityscapes_a0712fb33a5e3a52bdb6db166efac4044}{split}})
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1datasets_1_1cityscapes_1_1_cityscapes_a8b19816c8bf93b835301e300a84099b0}{targets\+\_\+dir}} = os.\+path.\+join(self.\+root, self.\+mode, \mbox{\hyperlink{classtorchvision__down_1_1datasets_1_1cityscapes_1_1_cityscapes_a0712fb33a5e3a52bdb6db166efac4044}{split}})
+\item 
+list \mbox{\hyperlink{classtorchvision__down_1_1datasets_1_1cityscapes_1_1_cityscapes_a97c60e3969136ac5c2f453df46cdda01}{target\+\_\+type}} = target\+\_\+type
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1datasets_1_1cityscapes_1_1_cityscapes_a0712fb33a5e3a52bdb6db166efac4044}{split}} = split
+\item 
+list \mbox{\hyperlink{classtorchvision__down_1_1datasets_1_1cityscapes_1_1_cityscapes_afb9e1aa559486f463ca94242ba07e7ac}{images}} = \mbox{[}$\,$\mbox{]}
+\item 
+list \mbox{\hyperlink{classtorchvision__down_1_1datasets_1_1cityscapes_1_1_cityscapes_a54d80aa31ad86724945c437ef79a7de5}{targets}} = \mbox{[}$\,$\mbox{]}
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes inherited from \mbox{\hyperlink{classtorchvision__down_1_1datasets_1_1vision_1_1_vision_dataset}{torchvision\+\_\+down.\+datasets.\+vision.\+Vision\+Dataset}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1datasets_1_1vision_1_1_vision_dataset_af52cf192ec18d3421afe216bf9b881d6}{root}} = root
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1datasets_1_1vision_1_1_vision_dataset_ade1b4bca7d4f998bc3061e0400769de8}{transform}} = transform
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1datasets_1_1vision_1_1_vision_dataset_a01f7d1bb7220bbfa4234ef140d021cc6}{target\+\_\+transform}} = target\+\_\+transform
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1datasets_1_1vision_1_1_vision_dataset_a7963601da311133da990b66cb616cc83}{transforms}} = transforms
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1datasets_1_1cityscapes_1_1_cityscapes_a0d53823ac5211e222d4f2ef26b8f1323}{Cityscapes\+Class}}
+\item 
+list \mbox{\hyperlink{classtorchvision__down_1_1datasets_1_1cityscapes_1_1_cityscapes_a2f086f636d9b0293b93350d44ca81c81}{classes}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+Dict\mbox{[}str, Any\mbox{]} \mbox{\hyperlink{classtorchvision__down_1_1datasets_1_1cityscapes_1_1_cityscapes_adc29c7c1535240dfc305e87a6e4d4221}{\+\_\+load\+\_\+json}} (self, str path)
+\item 
+str \mbox{\hyperlink{classtorchvision__down_1_1datasets_1_1cityscapes_1_1_cityscapes_af4e6ab3f279fa1b054b2ac7563154496}{\+\_\+get\+\_\+target\+\_\+suffix}} (self, str \mbox{\hyperlink{classtorchvision__down_1_1datasets_1_1cityscapes_1_1_cityscapes_a73ea3dfce8d7b15d88783082c8a63b28}{mode}}, str \mbox{\hyperlink{classtorchvision__down_1_1datasets_1_1cityscapes_1_1_cityscapes_a97c60e3969136ac5c2f453df46cdda01}{target\+\_\+type}})
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions inherited from \mbox{\hyperlink{classtorchvision__down_1_1datasets_1_1vision_1_1_vision_dataset}{torchvision\+\_\+down.\+datasets.\+vision.\+Vision\+Dataset}}}
+\begin{DoxyCompactItemize}
+\item 
+List\mbox{[}str\mbox{]} \mbox{\hyperlink{classtorchvision__down_1_1datasets_1_1vision_1_1_vision_dataset_a9f1a9fad1ab8a0b963cdc3522a271689}{\+\_\+format\+\_\+transform\+\_\+repr}} (self, Callable \mbox{\hyperlink{classtorchvision__down_1_1datasets_1_1vision_1_1_vision_dataset_ade1b4bca7d4f998bc3061e0400769de8}{transform}}, str head)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1datasets_1_1cityscapes_1_1_cityscapes_abd19882c39f9e6023211573a8f5e8ac5}{\+\_\+\+\_\+dict\+\_\+\+\_\+}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Additional Inherited Members}
+\doxysubsection*{Static Protected Attributes inherited from \mbox{\hyperlink{classtorchvision__down_1_1datasets_1_1vision_1_1_vision_dataset}{torchvision\+\_\+down.\+datasets.\+vision.\+Vision\+Dataset}}}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{classtorchvision__down_1_1datasets_1_1vision_1_1_vision_dataset_a2eb99b64ccfc03378be35d0ff88e71b4}{\+\_\+repr\+\_\+indent}} = 4
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}`Cityscapes <http://www.cityscapes-dataset.com/>`_ Dataset.
+
+Args:
+    root (string): Root directory of dataset where directory ``leftImg8bit``
+        and ``gtFine`` or ``gtCoarse`` are located.
+    split (string, optional): The image split to use, ``train``, ``test`` or ``val`` if mode="fine"
+        otherwise ``train``, ``train_extra`` or ``val``
+    mode (string, optional): The quality mode to use, ``fine`` or ``coarse``
+    target_type (string or list, optional): Type of target to use, ``instance``, ``semantic``, ``polygon``
+        or ``color``. Can also be a list to output a tuple with all specified target types.
+    transform (callable, optional): A function/transform that takes in a PIL image
+        and returns a transformed version. E.g, ``transforms.RandomCrop``
+    target_transform (callable, optional): A function/transform that takes in the
+        target and transforms it.
+    transforms (callable, optional): A function/transform that takes input sample and its target as entry
+        and returns a transformed version.
+
+Examples:
+
+    Get semantic segmentation target
+
+    .. code-block:: python
+
+        dataset = Cityscapes('./data/cityscapes', split='train', mode='fine',
+                             target_type='semantic')
+
+        img, smnt = dataset[0]
+
+    Get multiple targets
+
+    .. code-block:: python
+
+        dataset = Cityscapes('./data/cityscapes', split='train', mode='fine',
+                             target_type=['instance', 'color', 'polygon'])
+
+        img, (inst, col, poly) = dataset[0]
+
+    Validate on the "coarse" set
+
+    .. code-block:: python
+
+        dataset = Cityscapes('./data/cityscapes', split='val', mode='coarse',
+                             target_type='semantic')
+
+        img, smnt = dataset[0]
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classtorchvision__down_1_1datasets_1_1cityscapes_1_1_cityscapes_a116a92806bdcebd3ca03517b61581022}\index{torchvision\_down.datasets.cityscapes.Cityscapes@{torchvision\_down.datasets.cityscapes.Cityscapes}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!torchvision\_down.datasets.cityscapes.Cityscapes@{torchvision\_down.datasets.cityscapes.Cityscapes}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1datasets_1_1cityscapes_1_1_cityscapes_a116a92806bdcebd3ca03517b61581022} 
+ None torchvision\+\_\+down.\+datasets.\+cityscapes.\+Cityscapes.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{str}]{root}{, }\item[{str }]{split}{ = {\ttfamily "{}train"{}}, }\item[{str }]{mode}{ = {\ttfamily "{}fine"{}}, }\item[{Union\mbox{[}List\mbox{[}str\mbox{]}, str\mbox{]} }]{target\+\_\+type}{ = {\ttfamily "{}instance"{}}, }\item[{Optional\mbox{[}Callable\mbox{]} }]{transform}{ = {\ttfamily None}, }\item[{Optional\mbox{[}Callable\mbox{]} }]{target\+\_\+transform}{ = {\ttfamily None}, }\item[{Optional\mbox{[}Callable\mbox{]} }]{transforms}{ = {\ttfamily None}}\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classtorchvision__down_1_1datasets_1_1cityscapes_1_1_cityscapes_aff72631f1e3bbca45147e28421524ecb}\index{torchvision\_down.datasets.cityscapes.Cityscapes@{torchvision\_down.datasets.cityscapes.Cityscapes}!\_\_getitem\_\_@{\_\_getitem\_\_}}
+\index{\_\_getitem\_\_@{\_\_getitem\_\_}!torchvision\_down.datasets.cityscapes.Cityscapes@{torchvision\_down.datasets.cityscapes.Cityscapes}}
+\doxysubsubsection{\texorpdfstring{\_\_getitem\_\_()}{\_\_getitem\_\_()}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1datasets_1_1cityscapes_1_1_cityscapes_aff72631f1e3bbca45147e28421524ecb} 
+ Tuple\mbox{[}Any, Any\mbox{]} torchvision\+\_\+down.\+datasets.\+cityscapes.\+Cityscapes.\+\_\+\+\_\+getitem\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{int}]{index}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Args:
+    index (int): Index
+Returns:
+    tuple: (image, target) where target is a tuple of all target types if target_type is a list with more
+    than one item. Otherwise target is a json object if target_type="polygon", else the image segmentation.
+\end{DoxyVerb}
+ \Hypertarget{classtorchvision__down_1_1datasets_1_1cityscapes_1_1_cityscapes_ab2e76f3c8a19348149c336aa5335dc93}\index{torchvision\_down.datasets.cityscapes.Cityscapes@{torchvision\_down.datasets.cityscapes.Cityscapes}!\_\_len\_\_@{\_\_len\_\_}}
+\index{\_\_len\_\_@{\_\_len\_\_}!torchvision\_down.datasets.cityscapes.Cityscapes@{torchvision\_down.datasets.cityscapes.Cityscapes}}
+\doxysubsubsection{\texorpdfstring{\_\_len\_\_()}{\_\_len\_\_()}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1datasets_1_1cityscapes_1_1_cityscapes_ab2e76f3c8a19348149c336aa5335dc93} 
+ int torchvision\+\_\+down.\+datasets.\+cityscapes.\+Cityscapes.\+\_\+\+\_\+len\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classtorchvision__down_1_1datasets_1_1cityscapes_1_1_cityscapes_af4e6ab3f279fa1b054b2ac7563154496}\index{torchvision\_down.datasets.cityscapes.Cityscapes@{torchvision\_down.datasets.cityscapes.Cityscapes}!\_get\_target\_suffix@{\_get\_target\_suffix}}
+\index{\_get\_target\_suffix@{\_get\_target\_suffix}!torchvision\_down.datasets.cityscapes.Cityscapes@{torchvision\_down.datasets.cityscapes.Cityscapes}}
+\doxysubsubsection{\texorpdfstring{\_get\_target\_suffix()}{\_get\_target\_suffix()}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1datasets_1_1cityscapes_1_1_cityscapes_af4e6ab3f279fa1b054b2ac7563154496} 
+ str torchvision\+\_\+down.\+datasets.\+cityscapes.\+Cityscapes.\+\_\+get\+\_\+target\+\_\+suffix (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{str}]{mode}{, }\item[{str}]{target\+\_\+type}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classtorchvision__down_1_1datasets_1_1cityscapes_1_1_cityscapes_adc29c7c1535240dfc305e87a6e4d4221}\index{torchvision\_down.datasets.cityscapes.Cityscapes@{torchvision\_down.datasets.cityscapes.Cityscapes}!\_load\_json@{\_load\_json}}
+\index{\_load\_json@{\_load\_json}!torchvision\_down.datasets.cityscapes.Cityscapes@{torchvision\_down.datasets.cityscapes.Cityscapes}}
+\doxysubsubsection{\texorpdfstring{\_load\_json()}{\_load\_json()}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1datasets_1_1cityscapes_1_1_cityscapes_adc29c7c1535240dfc305e87a6e4d4221} 
+ Dict\mbox{[}str, Any\mbox{]} torchvision\+\_\+down.\+datasets.\+cityscapes.\+Cityscapes.\+\_\+load\+\_\+json (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{str}]{path}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classtorchvision__down_1_1datasets_1_1cityscapes_1_1_cityscapes_ae7a715c180e9b59c487d2ec670d68424}\index{torchvision\_down.datasets.cityscapes.Cityscapes@{torchvision\_down.datasets.cityscapes.Cityscapes}!extra\_repr@{extra\_repr}}
+\index{extra\_repr@{extra\_repr}!torchvision\_down.datasets.cityscapes.Cityscapes@{torchvision\_down.datasets.cityscapes.Cityscapes}}
+\doxysubsubsection{\texorpdfstring{extra\_repr()}{extra\_repr()}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1datasets_1_1cityscapes_1_1_cityscapes_ae7a715c180e9b59c487d2ec670d68424} 
+ str torchvision\+\_\+down.\+datasets.\+cityscapes.\+Cityscapes.\+extra\+\_\+repr (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+
+
+Reimplemented from \mbox{\hyperlink{classtorchvision__down_1_1datasets_1_1vision_1_1_vision_dataset_a99093b3e6dd75e1ed1c49eed7ac2df00}{torchvision\+\_\+down.\+datasets.\+vision.\+Vision\+Dataset}}.
+
+
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classtorchvision__down_1_1datasets_1_1cityscapes_1_1_cityscapes_abd19882c39f9e6023211573a8f5e8ac5}\index{torchvision\_down.datasets.cityscapes.Cityscapes@{torchvision\_down.datasets.cityscapes.Cityscapes}!\_\_dict\_\_@{\_\_dict\_\_}}
+\index{\_\_dict\_\_@{\_\_dict\_\_}!torchvision\_down.datasets.cityscapes.Cityscapes@{torchvision\_down.datasets.cityscapes.Cityscapes}}
+\doxysubsubsection{\texorpdfstring{\_\_dict\_\_}{\_\_dict\_\_}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1datasets_1_1cityscapes_1_1_cityscapes_abd19882c39f9e6023211573a8f5e8ac5} 
+torchvision\+\_\+down.\+datasets.\+cityscapes.\+Cityscapes.\+\_\+\+\_\+dict\+\_\+\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{classtorchvision__down_1_1datasets_1_1cityscapes_1_1_cityscapes_a0d53823ac5211e222d4f2ef26b8f1323}\index{torchvision\_down.datasets.cityscapes.Cityscapes@{torchvision\_down.datasets.cityscapes.Cityscapes}!CityscapesClass@{CityscapesClass}}
+\index{CityscapesClass@{CityscapesClass}!torchvision\_down.datasets.cityscapes.Cityscapes@{torchvision\_down.datasets.cityscapes.Cityscapes}}
+\doxysubsubsection{\texorpdfstring{CityscapesClass}{CityscapesClass}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1datasets_1_1cityscapes_1_1_cityscapes_a0d53823ac5211e222d4f2ef26b8f1323} 
+torchvision\+\_\+down.\+datasets.\+cityscapes.\+Cityscapes.\+Cityscapes\+Class\hspace{0.3cm}{\ttfamily [static]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \ namedtuple(}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}CityscapesClass"{}},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ [\textcolor{stringliteral}{"{}name"{}},\ \textcolor{stringliteral}{"{}id"{}},\ \textcolor{stringliteral}{"{}train\_id"{}},\ \textcolor{stringliteral}{"{}category"{}},\ \textcolor{stringliteral}{"{}category\_id"{}},\ \textcolor{stringliteral}{"{}has\_instances"{}},\ \textcolor{stringliteral}{"{}ignore\_in\_eval"{}},\ \textcolor{stringliteral}{"{}color"{}}],}
+\DoxyCodeLine{\ \ \ \ )}
+
+\end{DoxyCode}
+\Hypertarget{classtorchvision__down_1_1datasets_1_1cityscapes_1_1_cityscapes_a2f086f636d9b0293b93350d44ca81c81}\index{torchvision\_down.datasets.cityscapes.Cityscapes@{torchvision\_down.datasets.cityscapes.Cityscapes}!classes@{classes}}
+\index{classes@{classes}!torchvision\_down.datasets.cityscapes.Cityscapes@{torchvision\_down.datasets.cityscapes.Cityscapes}}
+\doxysubsubsection{\texorpdfstring{classes}{classes}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1datasets_1_1cityscapes_1_1_cityscapes_a2f086f636d9b0293b93350d44ca81c81} 
+list torchvision\+\_\+down.\+datasets.\+cityscapes.\+Cityscapes.\+classes\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classtorchvision__down_1_1datasets_1_1cityscapes_1_1_cityscapes_afb9e1aa559486f463ca94242ba07e7ac}\index{torchvision\_down.datasets.cityscapes.Cityscapes@{torchvision\_down.datasets.cityscapes.Cityscapes}!images@{images}}
+\index{images@{images}!torchvision\_down.datasets.cityscapes.Cityscapes@{torchvision\_down.datasets.cityscapes.Cityscapes}}
+\doxysubsubsection{\texorpdfstring{images}{images}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1datasets_1_1cityscapes_1_1_cityscapes_afb9e1aa559486f463ca94242ba07e7ac} 
+torchvision\+\_\+down.\+datasets.\+cityscapes.\+Cityscapes.\+images = \mbox{[}$\,$\mbox{]}}
+
+\Hypertarget{classtorchvision__down_1_1datasets_1_1cityscapes_1_1_cityscapes_a88a9373e784b7fab69d4c1185acf0856}\index{torchvision\_down.datasets.cityscapes.Cityscapes@{torchvision\_down.datasets.cityscapes.Cityscapes}!images\_dir@{images\_dir}}
+\index{images\_dir@{images\_dir}!torchvision\_down.datasets.cityscapes.Cityscapes@{torchvision\_down.datasets.cityscapes.Cityscapes}}
+\doxysubsubsection{\texorpdfstring{images\_dir}{images\_dir}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1datasets_1_1cityscapes_1_1_cityscapes_a88a9373e784b7fab69d4c1185acf0856} 
+torchvision\+\_\+down.\+datasets.\+cityscapes.\+Cityscapes.\+images\+\_\+dir = os.\+path.\+join(self.\+root, "{}left\+Img8bit"{}, \mbox{\hyperlink{classtorchvision__down_1_1datasets_1_1cityscapes_1_1_cityscapes_a0712fb33a5e3a52bdb6db166efac4044}{split}})}
+
+\Hypertarget{classtorchvision__down_1_1datasets_1_1cityscapes_1_1_cityscapes_a73ea3dfce8d7b15d88783082c8a63b28}\index{torchvision\_down.datasets.cityscapes.Cityscapes@{torchvision\_down.datasets.cityscapes.Cityscapes}!mode@{mode}}
+\index{mode@{mode}!torchvision\_down.datasets.cityscapes.Cityscapes@{torchvision\_down.datasets.cityscapes.Cityscapes}}
+\doxysubsubsection{\texorpdfstring{mode}{mode}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1datasets_1_1cityscapes_1_1_cityscapes_a73ea3dfce8d7b15d88783082c8a63b28} 
+str torchvision\+\_\+down.\+datasets.\+cityscapes.\+Cityscapes.\+mode = "{}fine"{} else "{}gt\+Coarse"{}}
+
+\Hypertarget{classtorchvision__down_1_1datasets_1_1cityscapes_1_1_cityscapes_a0712fb33a5e3a52bdb6db166efac4044}\index{torchvision\_down.datasets.cityscapes.Cityscapes@{torchvision\_down.datasets.cityscapes.Cityscapes}!split@{split}}
+\index{split@{split}!torchvision\_down.datasets.cityscapes.Cityscapes@{torchvision\_down.datasets.cityscapes.Cityscapes}}
+\doxysubsubsection{\texorpdfstring{split}{split}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1datasets_1_1cityscapes_1_1_cityscapes_a0712fb33a5e3a52bdb6db166efac4044} 
+torchvision\+\_\+down.\+datasets.\+cityscapes.\+Cityscapes.\+split = split}
+
+\Hypertarget{classtorchvision__down_1_1datasets_1_1cityscapes_1_1_cityscapes_a97c60e3969136ac5c2f453df46cdda01}\index{torchvision\_down.datasets.cityscapes.Cityscapes@{torchvision\_down.datasets.cityscapes.Cityscapes}!target\_type@{target\_type}}
+\index{target\_type@{target\_type}!torchvision\_down.datasets.cityscapes.Cityscapes@{torchvision\_down.datasets.cityscapes.Cityscapes}}
+\doxysubsubsection{\texorpdfstring{target\_type}{target\_type}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1datasets_1_1cityscapes_1_1_cityscapes_a97c60e3969136ac5c2f453df46cdda01} 
+torchvision\+\_\+down.\+datasets.\+cityscapes.\+Cityscapes.\+target\+\_\+type = target\+\_\+type}
+
+\Hypertarget{classtorchvision__down_1_1datasets_1_1cityscapes_1_1_cityscapes_a54d80aa31ad86724945c437ef79a7de5}\index{torchvision\_down.datasets.cityscapes.Cityscapes@{torchvision\_down.datasets.cityscapes.Cityscapes}!targets@{targets}}
+\index{targets@{targets}!torchvision\_down.datasets.cityscapes.Cityscapes@{torchvision\_down.datasets.cityscapes.Cityscapes}}
+\doxysubsubsection{\texorpdfstring{targets}{targets}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1datasets_1_1cityscapes_1_1_cityscapes_a54d80aa31ad86724945c437ef79a7de5} 
+list torchvision\+\_\+down.\+datasets.\+cityscapes.\+Cityscapes.\+targets = \mbox{[}$\,$\mbox{]}}
+
+\Hypertarget{classtorchvision__down_1_1datasets_1_1cityscapes_1_1_cityscapes_a8b19816c8bf93b835301e300a84099b0}\index{torchvision\_down.datasets.cityscapes.Cityscapes@{torchvision\_down.datasets.cityscapes.Cityscapes}!targets\_dir@{targets\_dir}}
+\index{targets\_dir@{targets\_dir}!torchvision\_down.datasets.cityscapes.Cityscapes@{torchvision\_down.datasets.cityscapes.Cityscapes}}
+\doxysubsubsection{\texorpdfstring{targets\_dir}{targets\_dir}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1datasets_1_1cityscapes_1_1_cityscapes_a8b19816c8bf93b835301e300a84099b0} 
+torchvision\+\_\+down.\+datasets.\+cityscapes.\+Cityscapes.\+targets\+\_\+dir = os.\+path.\+join(self.\+root, self.\+mode, \mbox{\hyperlink{classtorchvision__down_1_1datasets_1_1cityscapes_1_1_cityscapes_a0712fb33a5e3a52bdb6db166efac4044}{split}})}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Cervi\+AI/torchvision\+\_\+down/datasets/\mbox{\hyperlink{cityscapes_8py}{cityscapes.\+py}}\end{DoxyCompactItemize}

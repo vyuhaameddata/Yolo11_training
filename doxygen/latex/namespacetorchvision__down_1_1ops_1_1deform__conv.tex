@@ -1,0 +1,60 @@
+\doxysection{torchvision\+\_\+down.\+ops.\+deform\+\_\+conv Namespace Reference}
+\hypertarget{namespacetorchvision__down_1_1ops_1_1deform__conv}{}\label{namespacetorchvision__down_1_1ops_1_1deform__conv}\index{torchvision\_down.ops.deform\_conv@{torchvision\_down.ops.deform\_conv}}
+\doxysubsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classtorchvision__down_1_1ops_1_1deform__conv_1_1_deform_conv2d}{Deform\+Conv2d}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+Tensor \mbox{\hyperlink{namespacetorchvision__down_1_1ops_1_1deform__conv_ae6210312edd572ca73743fb606f4b30e}{deform\+\_\+conv2d}} (Tensor input, Tensor offset, Tensor weight, Optional\mbox{[}Tensor\mbox{]} bias=None, Tuple\mbox{[}int, int\mbox{]} stride=(1, 1), Tuple\mbox{[}int, int\mbox{]} padding=(0, 0), Tuple\mbox{[}int, int\mbox{]} dilation=(1, 1), Optional\mbox{[}Tensor\mbox{]} mask=None)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{namespacetorchvision__down_1_1ops_1_1deform__conv_ae6210312edd572ca73743fb606f4b30e}\index{torchvision\_down.ops.deform\_conv@{torchvision\_down.ops.deform\_conv}!deform\_conv2d@{deform\_conv2d}}
+\index{deform\_conv2d@{deform\_conv2d}!torchvision\_down.ops.deform\_conv@{torchvision\_down.ops.deform\_conv}}
+\doxysubsubsection{\texorpdfstring{deform\_conv2d()}{deform\_conv2d()}}
+{\footnotesize\ttfamily \label{namespacetorchvision__down_1_1ops_1_1deform__conv_ae6210312edd572ca73743fb606f4b30e} 
+ Tensor torchvision\+\_\+down.\+ops.\+deform\+\_\+conv.\+deform\+\_\+conv2d (\begin{DoxyParamCaption}\item[{Tensor}]{input}{, }\item[{Tensor}]{offset}{, }\item[{Tensor}]{weight}{, }\item[{Optional\mbox{[}Tensor\mbox{]} }]{bias}{ = {\ttfamily None}, }\item[{Tuple\mbox{[}int, int\mbox{]} }]{stride}{ = {\ttfamily (1,~1)}, }\item[{Tuple\mbox{[}int, int\mbox{]} }]{padding}{ = {\ttfamily (0,~0)}, }\item[{Tuple\mbox{[}int, int\mbox{]} }]{dilation}{ = {\ttfamily (1,~1)}, }\item[{Optional\mbox{[}Tensor\mbox{]} }]{mask}{ = {\ttfamily None}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}    Performs Deformable Convolution v2, described in
+    `Deformable ConvNets v2: More Deformable, Better Results
+    <https://arxiv.org/abs/1811.11168>`__ if :attr:`mask` is not ``None`` and
+    Performs Deformable Convolution, described in
+    `Deformable Convolutional Networks
+    <https://arxiv.org/abs/1703.06211>`__ if :attr:`mask` is ``None``.
+
+    Args:
+        input (Tensor[batch_size, in_channels, in_height, in_width]): input tensor
+        offset (Tensor[batch_size, 2 * offset_groups * kernel_height * kernel_width, out_height, out_width]):
+            offsets to be applied for each position in the convolution kernel.
+        weight (Tensor[out_channels, in_channels // groups, kernel_height, kernel_width]): convolution weights,
+            split into groups of size (in_channels // groups)
+        bias (Tensor[out_channels]): optional bias of shape (out_channels,). Default: None
+        stride (int or Tuple[int, int]): distance between convolution centers. Default: 1
+        padding (int or Tuple[int, int]): height/width of padding of zeroes around
+            each image. Default: 0
+        dilation (int or Tuple[int, int]): the spacing between kernel elements. Default: 1
+        mask (Tensor[batch_size, offset_groups * kernel_height * kernel_width, out_height, out_width]):
+            masks to be applied for each position in the convolution kernel. Default: None
+
+    Returns:
+        Tensor[batch_sz, out_channels, out_h, out_w]: result of convolution
+
+    Examples::
+        >>> input = torch.rand(4, 3, 10, 10)
+        >>> kh, kw = 3, 3
+        >>> weight = torch.rand(5, 3, kh, kw)
+        >>> # offset and mask should have the same spatial size as the output
+        >>> # of the convolution. In this case, for an input of 10, stride of 1
+        >>> # and kernel size of 3, without padding, the output size is 8
+        >>> offset = torch.rand(4, 2 * kh * kw, 8, 8)
+        >>> mask = torch.rand(4, kh * kw, 8, 8)
+        >>> out = deform_conv2d(input, offset, weight, mask=mask)
+        >>> print(out.shape)
+        >>> # returns
+        >>>  torch.Size([4, 5, 8, 8])
+\end{DoxyVerb}
+ 

@@ -1,0 +1,86 @@
+\doxysection{torchvision\+\_\+down.\+transforms.\+transforms.\+Random\+Adjust\+Sharpness Class Reference}
+\hypertarget{classtorchvision__down_1_1transforms_1_1transforms_1_1_random_adjust_sharpness}{}\label{classtorchvision__down_1_1transforms_1_1transforms_1_1_random_adjust_sharpness}\index{torchvision\_down.transforms.transforms.RandomAdjustSharpness@{torchvision\_down.transforms.transforms.RandomAdjustSharpness}}
+Inheritance diagram for torchvision\+\_\+down.\+transforms.\+transforms.\+Random\+Adjust\+Sharpness\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classtorchvision__down_1_1transforms_1_1transforms_1_1_random_adjust_sharpness}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1transforms_1_1transforms_1_1_random_adjust_sharpness_a2d2450013baee9ae1e98e5f4e9e27116}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, \mbox{\hyperlink{classtorchvision__down_1_1transforms_1_1transforms_1_1_random_adjust_sharpness_a3eedd874f33771bbbaed3011a3f7c071}{sharpness\+\_\+factor}}, \mbox{\hyperlink{classtorchvision__down_1_1transforms_1_1transforms_1_1_random_adjust_sharpness_a8f199597ab67de5ffdb68326e655e100}{p}}=0.\+5)
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1transforms_1_1transforms_1_1_random_adjust_sharpness_a125ac1d0f9583cca4957a1f7bc153883}{forward}} (self, img)
+\item 
+str \mbox{\hyperlink{classtorchvision__down_1_1transforms_1_1transforms_1_1_random_adjust_sharpness_a829177ecb0e0a318b8996a94a7cd94d0}{\+\_\+\+\_\+repr\+\_\+\+\_\+}} (self)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1transforms_1_1transforms_1_1_random_adjust_sharpness_a3eedd874f33771bbbaed3011a3f7c071}{sharpness\+\_\+factor}} = sharpness\+\_\+factor
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1transforms_1_1transforms_1_1_random_adjust_sharpness_a8f199597ab67de5ffdb68326e655e100}{p}} = p
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}Adjust the sharpness of the image randomly with a given probability. If the image is torch Tensor,
+it is expected to have [..., 1 or 3, H, W] shape, where ... means an arbitrary number of leading dimensions.
+
+Args:
+    sharpness_factor (float):  How much to adjust the sharpness. Can be
+        any non negative number. 0 gives a blurred image, 1 gives the
+        original image while 2 increases the sharpness by a factor of 2.
+    p (float): probability of the image being color inverted. Default value is 0.5
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classtorchvision__down_1_1transforms_1_1transforms_1_1_random_adjust_sharpness_a2d2450013baee9ae1e98e5f4e9e27116}\index{torchvision\_down.transforms.transforms.RandomAdjustSharpness@{torchvision\_down.transforms.transforms.RandomAdjustSharpness}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!torchvision\_down.transforms.transforms.RandomAdjustSharpness@{torchvision\_down.transforms.transforms.RandomAdjustSharpness}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1transforms_1_1transforms_1_1_random_adjust_sharpness_a2d2450013baee9ae1e98e5f4e9e27116} 
+torchvision\+\_\+down.\+transforms.\+transforms.\+Random\+Adjust\+Sharpness.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{sharpness\+\_\+factor}{, }\item[{}]{p}{ = {\ttfamily 0.5}}\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classtorchvision__down_1_1transforms_1_1transforms_1_1_random_adjust_sharpness_a829177ecb0e0a318b8996a94a7cd94d0}\index{torchvision\_down.transforms.transforms.RandomAdjustSharpness@{torchvision\_down.transforms.transforms.RandomAdjustSharpness}!\_\_repr\_\_@{\_\_repr\_\_}}
+\index{\_\_repr\_\_@{\_\_repr\_\_}!torchvision\_down.transforms.transforms.RandomAdjustSharpness@{torchvision\_down.transforms.transforms.RandomAdjustSharpness}}
+\doxysubsubsection{\texorpdfstring{\_\_repr\_\_()}{\_\_repr\_\_()}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1transforms_1_1transforms_1_1_random_adjust_sharpness_a829177ecb0e0a318b8996a94a7cd94d0} 
+ str torchvision\+\_\+down.\+transforms.\+transforms.\+Random\+Adjust\+Sharpness.\+\_\+\+\_\+repr\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classtorchvision__down_1_1transforms_1_1transforms_1_1_random_adjust_sharpness_a125ac1d0f9583cca4957a1f7bc153883}\index{torchvision\_down.transforms.transforms.RandomAdjustSharpness@{torchvision\_down.transforms.transforms.RandomAdjustSharpness}!forward@{forward}}
+\index{forward@{forward}!torchvision\_down.transforms.transforms.RandomAdjustSharpness@{torchvision\_down.transforms.transforms.RandomAdjustSharpness}}
+\doxysubsubsection{\texorpdfstring{forward()}{forward()}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1transforms_1_1transforms_1_1_random_adjust_sharpness_a125ac1d0f9583cca4957a1f7bc153883} 
+torchvision\+\_\+down.\+transforms.\+transforms.\+Random\+Adjust\+Sharpness.\+forward (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{img}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Args:
+    img (PIL Image or Tensor): Image to be sharpened.
+
+Returns:
+    PIL Image or Tensor: Randomly sharpened image.
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classtorchvision__down_1_1transforms_1_1transforms_1_1_random_adjust_sharpness_a8f199597ab67de5ffdb68326e655e100}\index{torchvision\_down.transforms.transforms.RandomAdjustSharpness@{torchvision\_down.transforms.transforms.RandomAdjustSharpness}!p@{p}}
+\index{p@{p}!torchvision\_down.transforms.transforms.RandomAdjustSharpness@{torchvision\_down.transforms.transforms.RandomAdjustSharpness}}
+\doxysubsubsection{\texorpdfstring{p}{p}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1transforms_1_1transforms_1_1_random_adjust_sharpness_a8f199597ab67de5ffdb68326e655e100} 
+torchvision\+\_\+down.\+transforms.\+transforms.\+Random\+Adjust\+Sharpness.\+p = p}
+
+\Hypertarget{classtorchvision__down_1_1transforms_1_1transforms_1_1_random_adjust_sharpness_a3eedd874f33771bbbaed3011a3f7c071}\index{torchvision\_down.transforms.transforms.RandomAdjustSharpness@{torchvision\_down.transforms.transforms.RandomAdjustSharpness}!sharpness\_factor@{sharpness\_factor}}
+\index{sharpness\_factor@{sharpness\_factor}!torchvision\_down.transforms.transforms.RandomAdjustSharpness@{torchvision\_down.transforms.transforms.RandomAdjustSharpness}}
+\doxysubsubsection{\texorpdfstring{sharpness\_factor}{sharpness\_factor}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1transforms_1_1transforms_1_1_random_adjust_sharpness_a3eedd874f33771bbbaed3011a3f7c071} 
+torchvision\+\_\+down.\+transforms.\+transforms.\+Random\+Adjust\+Sharpness.\+sharpness\+\_\+factor = sharpness\+\_\+factor}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Cervi\+AI/torchvision\+\_\+down/transforms/\mbox{\hyperlink{transforms_8py}{transforms.\+py}}\end{DoxyCompactItemize}

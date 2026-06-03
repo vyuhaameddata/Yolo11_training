@@ -1,0 +1,27 @@
+var _w_s_d11_8py =
+[
+    [ "WSD11.GlobalVars", "class_w_s_d11_1_1_global_vars.html", "class_w_s_d11_1_1_global_vars" ],
+    [ "WSD11.bb_intersection_over_union", "namespace_w_s_d11.html#aae47c14c78b1214acc6e6123b1d5d391", null ],
+    [ "WSD11.divide_chunks", "namespace_w_s_d11.html#a33c33e34916ee673f7e9fb8074910397", null ],
+    [ "WSD11.dump_results", "namespace_w_s_d11.html#a2f128c84c27ae34744f5a3e57127da5f", null ],
+    [ "WSD11.fetch_batch", "namespace_w_s_d11.html#adffa93ef164c7860eada2ef35b2ff9ea", null ],
+    [ "WSD11.get_box_list", "namespace_w_s_d11.html#a357d492c89c22240847927911be622f4", null ],
+    [ "WSD11.get_cat_model", "namespace_w_s_d11.html#acc4eb6359520b8ecbb426a96251d9a9f", null ],
+    [ "WSD11.get_referance", "namespace_w_s_d11.html#a1b0724512dcdab24e8125aa42521dd3c", null ],
+    [ "WSD11.process", "namespace_w_s_d11.html#a6f7fdd5d618e7cb4f753c18bcd5aa4ce", null ],
+    [ "WSD11.prune_list", "namespace_w_s_d11.html#a7e074219f0c8d8ca64a6ee349de385e8", null ],
+    [ "WSD11.read_tiles_parallel", "namespace_w_s_d11.html#a713009b783b829cd62901dbd7854ddd7", null ],
+    [ "WSD11.replace_bigger_box", "namespace_w_s_d11.html#a11e4e8cc81c512ecdaf8a9325469a22a", null ],
+    [ "WSD11.rerun_predict_pool", "namespace_w_s_d11.html#aebd1e93d631d40b49f588a302c487c79", null ],
+    [ "WSD11.run_predict_wsi_multithread", "namespace_w_s_d11.html#a0f0a09953be1f3a006276dee742c3b15", null ],
+    [ "WSD11.update_annote_id", "namespace_w_s_d11.html#abb7b90c1ce89e96f8f3cfeee2e71c93a", null ],
+    [ "WSD11.write_annotation", "namespace_w_s_d11.html#a566b048f5cbccaeb0b7f5430203d7366", null ],
+    [ "WSD11.write_ndpa", "namespace_w_s_d11.html#a268e56aa5eb3cfb8f40bf5ca433779a0", null ],
+    [ "WSD11.write_xml", "namespace_w_s_d11.html#a70a82da27cb76741874c09432989e22b", null ],
+    [ "WSD11.end", "namespace_w_s_d11.html#ade67d646c59646f12dd6973da0609fcf", null ],
+    [ "WSD11.folder_path", "namespace_w_s_d11.html#a8c5c205170c6cf2c90d7dee2892c7ba0", null ],
+    [ "WSD11.globalVars", "namespace_w_s_d11.html#a44cbdda44ec9006146b0171c9af1dc5b", null ],
+    [ "WSD11.overlap", "namespace_w_s_d11.html#a13eb9343fdda30bdeed4a28f7d65eb65", null ],
+    [ "WSD11.start", "namespace_w_s_d11.html#a7712fe583cfbd1d36262dfb5f30dc844", null ],
+    [ "WSD11.tile_size", "namespace_w_s_d11.html#a0128fe372b18cc04ebc5cf7ff30417ca", null ]
+];

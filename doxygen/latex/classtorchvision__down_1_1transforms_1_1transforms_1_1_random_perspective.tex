@@ -1,0 +1,130 @@
+\doxysection{torchvision\+\_\+down.\+transforms.\+transforms.\+Random\+Perspective Class Reference}
+\hypertarget{classtorchvision__down_1_1transforms_1_1transforms_1_1_random_perspective}{}\label{classtorchvision__down_1_1transforms_1_1transforms_1_1_random_perspective}\index{torchvision\_down.transforms.transforms.RandomPerspective@{torchvision\_down.transforms.transforms.RandomPerspective}}
+Inheritance diagram for torchvision\+\_\+down.\+transforms.\+transforms.\+Random\+Perspective\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classtorchvision__down_1_1transforms_1_1transforms_1_1_random_perspective}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1transforms_1_1transforms_1_1_random_perspective_aa502e3aeb0652659b2c847cce7909390}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, \mbox{\hyperlink{classtorchvision__down_1_1transforms_1_1transforms_1_1_random_perspective_a1fee016050eb53ef815a855fb9d5326c}{distortion\+\_\+scale}}=0.\+5, \mbox{\hyperlink{classtorchvision__down_1_1transforms_1_1transforms_1_1_random_perspective_a1ccbfd725a75ab34bc74f596a7797394}{p}}=0.\+5, \mbox{\hyperlink{classtorchvision__down_1_1transforms_1_1transforms_1_1_random_perspective_abf33b044e169a326a0245afa8d036101}{interpolation}}=\mbox{\hyperlink{classtorchvision__down_1_1transforms_1_1functional_1_1_interpolation_mode_a38fd90165d745724a2f2373aa0879c87}{Interpolation\+Mode.\+BILINEAR}}, \mbox{\hyperlink{classtorchvision__down_1_1transforms_1_1transforms_1_1_random_perspective_a871ddeba42970b74d1cafc91a5a9bf13}{fill}}=0)
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1transforms_1_1transforms_1_1_random_perspective_ae3e5aea9f3a1a3b8a4b8043d08d4f9d0}{forward}} (self, img)
+\item 
+str \mbox{\hyperlink{classtorchvision__down_1_1transforms_1_1transforms_1_1_random_perspective_a829e7c73bfdf6ac0d5796c508471275d}{\+\_\+\+\_\+repr\+\_\+\+\_\+}} (self)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+Tuple\mbox{[}List\mbox{[}List\mbox{[}int\mbox{]}\mbox{]}, List\mbox{[}List\mbox{[}int\mbox{]}\mbox{]}\mbox{]} \mbox{\hyperlink{classtorchvision__down_1_1transforms_1_1transforms_1_1_random_perspective_a5eb4f059a7178eefcb0bf97bc562a17b}{get\+\_\+params}} (int width, int height, float \mbox{\hyperlink{classtorchvision__down_1_1transforms_1_1transforms_1_1_random_perspective_a1fee016050eb53ef815a855fb9d5326c}{distortion\+\_\+scale}})
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1transforms_1_1transforms_1_1_random_perspective_a1ccbfd725a75ab34bc74f596a7797394}{p}} = p
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1transforms_1_1transforms_1_1_random_perspective_abf33b044e169a326a0245afa8d036101}{interpolation}} = interpolation
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1transforms_1_1transforms_1_1_random_perspective_a1fee016050eb53ef815a855fb9d5326c}{distortion\+\_\+scale}} = distortion\+\_\+scale
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1transforms_1_1transforms_1_1_random_perspective_a871ddeba42970b74d1cafc91a5a9bf13}{fill}} = fill
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}Performs a random perspective transformation of the given image with a given probability.
+If the image is torch Tensor, it is expected
+to have [..., H, W] shape, where ... means an arbitrary number of leading dimensions.
+
+Args:
+    distortion_scale (float): argument to control the degree of distortion and ranges from 0 to 1.
+        Default is 0.5.
+    p (float): probability of the image being transformed. Default is 0.5.
+    interpolation (InterpolationMode): Desired interpolation enum defined by
+        :class:`torchvision.transforms.InterpolationMode`. Default is ``InterpolationMode.BILINEAR``.
+        If input is Tensor, only ``InterpolationMode.NEAREST``, ``InterpolationMode.BILINEAR`` are supported.
+        For backward compatibility integer values (e.g. ``PIL.Image.NEAREST``) are still acceptable.
+    fill (sequence or number): Pixel fill value for the area outside the transformed
+        image. Default is ``0``. If given a number, the value is used for all bands respectively.
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classtorchvision__down_1_1transforms_1_1transforms_1_1_random_perspective_aa502e3aeb0652659b2c847cce7909390}\index{torchvision\_down.transforms.transforms.RandomPerspective@{torchvision\_down.transforms.transforms.RandomPerspective}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!torchvision\_down.transforms.transforms.RandomPerspective@{torchvision\_down.transforms.transforms.RandomPerspective}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1transforms_1_1transforms_1_1_random_perspective_aa502e3aeb0652659b2c847cce7909390} 
+torchvision\+\_\+down.\+transforms.\+transforms.\+Random\+Perspective.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{distortion\+\_\+scale}{ = {\ttfamily 0.5}, }\item[{}]{p}{ = {\ttfamily 0.5}, }\item[{}]{interpolation}{ = {\ttfamily \mbox{\hyperlink{classtorchvision__down_1_1transforms_1_1functional_1_1_interpolation_mode_a38fd90165d745724a2f2373aa0879c87}{Interpolation\+Mode.\+BILINEAR}}}, }\item[{}]{fill}{ = {\ttfamily 0}}\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classtorchvision__down_1_1transforms_1_1transforms_1_1_random_perspective_a829e7c73bfdf6ac0d5796c508471275d}\index{torchvision\_down.transforms.transforms.RandomPerspective@{torchvision\_down.transforms.transforms.RandomPerspective}!\_\_repr\_\_@{\_\_repr\_\_}}
+\index{\_\_repr\_\_@{\_\_repr\_\_}!torchvision\_down.transforms.transforms.RandomPerspective@{torchvision\_down.transforms.transforms.RandomPerspective}}
+\doxysubsubsection{\texorpdfstring{\_\_repr\_\_()}{\_\_repr\_\_()}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1transforms_1_1transforms_1_1_random_perspective_a829e7c73bfdf6ac0d5796c508471275d} 
+ str torchvision\+\_\+down.\+transforms.\+transforms.\+Random\+Perspective.\+\_\+\+\_\+repr\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classtorchvision__down_1_1transforms_1_1transforms_1_1_random_perspective_ae3e5aea9f3a1a3b8a4b8043d08d4f9d0}\index{torchvision\_down.transforms.transforms.RandomPerspective@{torchvision\_down.transforms.transforms.RandomPerspective}!forward@{forward}}
+\index{forward@{forward}!torchvision\_down.transforms.transforms.RandomPerspective@{torchvision\_down.transforms.transforms.RandomPerspective}}
+\doxysubsubsection{\texorpdfstring{forward()}{forward()}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1transforms_1_1transforms_1_1_random_perspective_ae3e5aea9f3a1a3b8a4b8043d08d4f9d0} 
+torchvision\+\_\+down.\+transforms.\+transforms.\+Random\+Perspective.\+forward (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{img}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Args:
+    img (PIL Image or Tensor): Image to be Perspectively transformed.
+
+Returns:
+    PIL Image or Tensor: Randomly transformed image.
+\end{DoxyVerb}
+ \Hypertarget{classtorchvision__down_1_1transforms_1_1transforms_1_1_random_perspective_a5eb4f059a7178eefcb0bf97bc562a17b}\index{torchvision\_down.transforms.transforms.RandomPerspective@{torchvision\_down.transforms.transforms.RandomPerspective}!get\_params@{get\_params}}
+\index{get\_params@{get\_params}!torchvision\_down.transforms.transforms.RandomPerspective@{torchvision\_down.transforms.transforms.RandomPerspective}}
+\doxysubsubsection{\texorpdfstring{get\_params()}{get\_params()}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1transforms_1_1transforms_1_1_random_perspective_a5eb4f059a7178eefcb0bf97bc562a17b} 
+ Tuple\mbox{[}List\mbox{[}List\mbox{[}int\mbox{]}\mbox{]}, List\mbox{[}List\mbox{[}int\mbox{]}\mbox{]}\mbox{]} torchvision\+\_\+down.\+transforms.\+transforms.\+Random\+Perspective.\+get\+\_\+params (\begin{DoxyParamCaption}\item[{int}]{width}{, }\item[{int}]{height}{, }\item[{float}]{distortion\+\_\+scale}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\begin{DoxyVerb}Get parameters for ``perspective`` for a random perspective transform.
+
+Args:
+    width (int): width of the image.
+    height (int): height of the image.
+    distortion_scale (float): argument to control the degree of distortion and ranges from 0 to 1.
+
+Returns:
+    List containing [top-left, top-right, bottom-right, bottom-left] of the original image,
+    List containing [top-left, top-right, bottom-right, bottom-left] of the transformed image.
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classtorchvision__down_1_1transforms_1_1transforms_1_1_random_perspective_a1fee016050eb53ef815a855fb9d5326c}\index{torchvision\_down.transforms.transforms.RandomPerspective@{torchvision\_down.transforms.transforms.RandomPerspective}!distortion\_scale@{distortion\_scale}}
+\index{distortion\_scale@{distortion\_scale}!torchvision\_down.transforms.transforms.RandomPerspective@{torchvision\_down.transforms.transforms.RandomPerspective}}
+\doxysubsubsection{\texorpdfstring{distortion\_scale}{distortion\_scale}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1transforms_1_1transforms_1_1_random_perspective_a1fee016050eb53ef815a855fb9d5326c} 
+torchvision\+\_\+down.\+transforms.\+transforms.\+Random\+Perspective.\+distortion\+\_\+scale = distortion\+\_\+scale}
+
+\Hypertarget{classtorchvision__down_1_1transforms_1_1transforms_1_1_random_perspective_a871ddeba42970b74d1cafc91a5a9bf13}\index{torchvision\_down.transforms.transforms.RandomPerspective@{torchvision\_down.transforms.transforms.RandomPerspective}!fill@{fill}}
+\index{fill@{fill}!torchvision\_down.transforms.transforms.RandomPerspective@{torchvision\_down.transforms.transforms.RandomPerspective}}
+\doxysubsubsection{\texorpdfstring{fill}{fill}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1transforms_1_1transforms_1_1_random_perspective_a871ddeba42970b74d1cafc91a5a9bf13} 
+torchvision\+\_\+down.\+transforms.\+transforms.\+Random\+Perspective.\+fill = fill}
+
+\Hypertarget{classtorchvision__down_1_1transforms_1_1transforms_1_1_random_perspective_abf33b044e169a326a0245afa8d036101}\index{torchvision\_down.transforms.transforms.RandomPerspective@{torchvision\_down.transforms.transforms.RandomPerspective}!interpolation@{interpolation}}
+\index{interpolation@{interpolation}!torchvision\_down.transforms.transforms.RandomPerspective@{torchvision\_down.transforms.transforms.RandomPerspective}}
+\doxysubsubsection{\texorpdfstring{interpolation}{interpolation}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1transforms_1_1transforms_1_1_random_perspective_abf33b044e169a326a0245afa8d036101} 
+torchvision\+\_\+down.\+transforms.\+transforms.\+Random\+Perspective.\+interpolation = interpolation}
+
+\Hypertarget{classtorchvision__down_1_1transforms_1_1transforms_1_1_random_perspective_a1ccbfd725a75ab34bc74f596a7797394}\index{torchvision\_down.transforms.transforms.RandomPerspective@{torchvision\_down.transforms.transforms.RandomPerspective}!p@{p}}
+\index{p@{p}!torchvision\_down.transforms.transforms.RandomPerspective@{torchvision\_down.transforms.transforms.RandomPerspective}}
+\doxysubsubsection{\texorpdfstring{p}{p}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1transforms_1_1transforms_1_1_random_perspective_a1ccbfd725a75ab34bc74f596a7797394} 
+torchvision\+\_\+down.\+transforms.\+transforms.\+Random\+Perspective.\+p = p}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Cervi\+AI/torchvision\+\_\+down/transforms/\mbox{\hyperlink{transforms_8py}{transforms.\+py}}\end{DoxyCompactItemize}

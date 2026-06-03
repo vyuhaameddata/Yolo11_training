@@ -1,0 +1,75 @@
+\doxysection{torchvision\+\_\+down.\+models.\+detection.\+\_\+utils Namespace Reference}
+\hypertarget{namespacetorchvision__down_1_1models_1_1detection_1_1__utils}{}\label{namespacetorchvision__down_1_1models_1_1detection_1_1__utils}\index{torchvision\_down.models.detection.\_utils@{torchvision\_down.models.detection.\_utils}}
+\doxysubsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classtorchvision__down_1_1models_1_1detection_1_1__utils_1_1_balanced_positive_negative_sampler}{Balanced\+Positive\+Negative\+Sampler}}
+\item 
+class \mbox{\hyperlink{classtorchvision__down_1_1models_1_1detection_1_1__utils_1_1_box_coder}{Box\+Coder}}
+\item 
+class \mbox{\hyperlink{classtorchvision__down_1_1models_1_1detection_1_1__utils_1_1_box_linear_coder}{Box\+Linear\+Coder}}
+\item 
+class \mbox{\hyperlink{classtorchvision__down_1_1models_1_1detection_1_1__utils_1_1_matcher}{Matcher}}
+\item 
+class \mbox{\hyperlink{classtorchvision__down_1_1models_1_1detection_1_1__utils_1_1_s_s_d_matcher}{SSDMatcher}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+Tensor \mbox{\hyperlink{namespacetorchvision__down_1_1models_1_1detection_1_1__utils_aeba2bc49ce5847d1dfbeb3f8a595bbc0}{encode\+\_\+boxes}} (Tensor reference\+\_\+boxes, Tensor proposals, Tensor weights)
+\item 
+None \mbox{\hyperlink{namespacetorchvision__down_1_1models_1_1detection_1_1__utils_ada7d5103b20a0d34a430a4207795569b}{overwrite\+\_\+eps}} (nn.\+Module model, float eps)
+\item 
+List\mbox{[}int\mbox{]} \mbox{\hyperlink{namespacetorchvision__down_1_1models_1_1detection_1_1__utils_a9a077be586c69a5506b05a54e443f139}{retrieve\+\_\+out\+\_\+channels}} (nn.\+Module model, Tuple\mbox{[}int, int\mbox{]} size)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{namespacetorchvision__down_1_1models_1_1detection_1_1__utils_aeba2bc49ce5847d1dfbeb3f8a595bbc0}\index{torchvision\_down.models.detection.\_utils@{torchvision\_down.models.detection.\_utils}!encode\_boxes@{encode\_boxes}}
+\index{encode\_boxes@{encode\_boxes}!torchvision\_down.models.detection.\_utils@{torchvision\_down.models.detection.\_utils}}
+\doxysubsubsection{\texorpdfstring{encode\_boxes()}{encode\_boxes()}}
+{\footnotesize\ttfamily \label{namespacetorchvision__down_1_1models_1_1detection_1_1__utils_aeba2bc49ce5847d1dfbeb3f8a595bbc0} 
+ Tensor torchvision\+\_\+down.\+models.\+detection.\+\_\+utils.\+encode\+\_\+boxes (\begin{DoxyParamCaption}\item[{Tensor}]{reference\+\_\+boxes}{, }\item[{Tensor}]{proposals}{, }\item[{Tensor}]{weights}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Encode a set of proposals with respect to some
+reference boxes
+
+Args:
+    reference_boxes (Tensor): reference boxes
+    proposals (Tensor): boxes to be encoded
+    weights (Tensor[4]): the weights for ``(x, y, w, h)``
+\end{DoxyVerb}
+ \Hypertarget{namespacetorchvision__down_1_1models_1_1detection_1_1__utils_ada7d5103b20a0d34a430a4207795569b}\index{torchvision\_down.models.detection.\_utils@{torchvision\_down.models.detection.\_utils}!overwrite\_eps@{overwrite\_eps}}
+\index{overwrite\_eps@{overwrite\_eps}!torchvision\_down.models.detection.\_utils@{torchvision\_down.models.detection.\_utils}}
+\doxysubsubsection{\texorpdfstring{overwrite\_eps()}{overwrite\_eps()}}
+{\footnotesize\ttfamily \label{namespacetorchvision__down_1_1models_1_1detection_1_1__utils_ada7d5103b20a0d34a430a4207795569b} 
+ None torchvision\+\_\+down.\+models.\+detection.\+\_\+utils.\+overwrite\+\_\+eps (\begin{DoxyParamCaption}\item[{nn.\+Module}]{model}{, }\item[{float}]{eps}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}This method overwrites the default eps values of all the
+FrozenBatchNorm2d layers of the model with the provided value.
+This is necessary to address the BC-breaking change introduced
+by the bug-fix at pytorch/vision#2933. The overwrite is applied
+only when the pretrained weights are loaded to maintain compatibility
+with previous versions.
+
+Args:
+    model (nn.Module): The model on which we perform the overwrite.
+    eps (float): The new value of eps.
+\end{DoxyVerb}
+ \Hypertarget{namespacetorchvision__down_1_1models_1_1detection_1_1__utils_a9a077be586c69a5506b05a54e443f139}\index{torchvision\_down.models.detection.\_utils@{torchvision\_down.models.detection.\_utils}!retrieve\_out\_channels@{retrieve\_out\_channels}}
+\index{retrieve\_out\_channels@{retrieve\_out\_channels}!torchvision\_down.models.detection.\_utils@{torchvision\_down.models.detection.\_utils}}
+\doxysubsubsection{\texorpdfstring{retrieve\_out\_channels()}{retrieve\_out\_channels()}}
+{\footnotesize\ttfamily \label{namespacetorchvision__down_1_1models_1_1detection_1_1__utils_a9a077be586c69a5506b05a54e443f139} 
+ List\mbox{[}int\mbox{]} torchvision\+\_\+down.\+models.\+detection.\+\_\+utils.\+retrieve\+\_\+out\+\_\+channels (\begin{DoxyParamCaption}\item[{nn.\+Module}]{model}{, }\item[{Tuple\mbox{[}int, int\mbox{]}}]{size}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}This method retrieves the number of output channels of a specific model.
+
+Args:
+    model (nn.Module): The model for which we estimate the out_channels.
+        It should return a single Tensor or an OrderedDict[Tensor].
+    size (Tuple[int, int]): The size (wxh) of the input.
+
+Returns:
+    out_channels (List[int]): A list of the output channels of the model.
+\end{DoxyVerb}
+ 

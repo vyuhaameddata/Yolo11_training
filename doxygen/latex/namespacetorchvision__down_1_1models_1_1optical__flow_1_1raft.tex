@@ -1,0 +1,137 @@
+\doxysection{torchvision\+\_\+down.\+models.\+optical\+\_\+flow.\+raft Namespace Reference}
+\hypertarget{namespacetorchvision__down_1_1models_1_1optical__flow_1_1raft}{}\label{namespacetorchvision__down_1_1models_1_1optical__flow_1_1raft}\index{torchvision\_down.models.optical\_flow.raft@{torchvision\_down.models.optical\_flow.raft}}
+\doxysubsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classtorchvision__down_1_1models_1_1optical__flow_1_1raft_1_1_bottleneck_block}{Bottleneck\+Block}}
+\item 
+class \mbox{\hyperlink{classtorchvision__down_1_1models_1_1optical__flow_1_1raft_1_1_conv_g_r_u}{Conv\+GRU}}
+\item 
+class \mbox{\hyperlink{classtorchvision__down_1_1models_1_1optical__flow_1_1raft_1_1_corr_block}{Corr\+Block}}
+\item 
+class \mbox{\hyperlink{classtorchvision__down_1_1models_1_1optical__flow_1_1raft_1_1_feature_encoder}{Feature\+Encoder}}
+\item 
+class \mbox{\hyperlink{classtorchvision__down_1_1models_1_1optical__flow_1_1raft_1_1_flow_head}{Flow\+Head}}
+\item 
+class \mbox{\hyperlink{classtorchvision__down_1_1models_1_1optical__flow_1_1raft_1_1_mask_predictor}{Mask\+Predictor}}
+\item 
+class \mbox{\hyperlink{classtorchvision__down_1_1models_1_1optical__flow_1_1raft_1_1_motion_encoder}{Motion\+Encoder}}
+\item 
+class \mbox{\hyperlink{classtorchvision__down_1_1models_1_1optical__flow_1_1raft_1_1_r_a_f_t}{RAFT}}
+\item 
+class \mbox{\hyperlink{classtorchvision__down_1_1models_1_1optical__flow_1_1raft_1_1_recurrent_block}{Recurrent\+Block}}
+\item 
+class \mbox{\hyperlink{classtorchvision__down_1_1models_1_1optical__flow_1_1raft_1_1_residual_block}{Residual\+Block}}
+\item 
+class \mbox{\hyperlink{classtorchvision__down_1_1models_1_1optical__flow_1_1raft_1_1_update_block}{Update\+Block}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{namespacetorchvision__down_1_1models_1_1optical__flow_1_1raft_a70551d7e433d1fdb44ea011071f0b4c3}{\+\_\+pass\+\_\+through\+\_\+h}} (h, \+\_\+)
+\item 
+\mbox{\hyperlink{namespacetorchvision__down_1_1models_1_1optical__flow_1_1raft_a76443b159bedd87cab536d059026caa7}{\+\_\+raft}} (\texorpdfstring{$\ast$}{*}, arch=None, pretrained=False, progress=False, feature\+\_\+encoder\+\_\+layers, feature\+\_\+encoder\+\_\+block, feature\+\_\+encoder\+\_\+norm\+\_\+layer, context\+\_\+encoder\+\_\+layers, context\+\_\+encoder\+\_\+block, context\+\_\+encoder\+\_\+norm\+\_\+layer, corr\+\_\+block\+\_\+num\+\_\+levels, corr\+\_\+block\+\_\+radius, motion\+\_\+encoder\+\_\+corr\+\_\+layers, motion\+\_\+encoder\+\_\+flow\+\_\+layers, motion\+\_\+encoder\+\_\+out\+\_\+channels, recurrent\+\_\+block\+\_\+hidden\+\_\+state\+\_\+size, recurrent\+\_\+block\+\_\+kernel\+\_\+size, recurrent\+\_\+block\+\_\+padding, flow\+\_\+head\+\_\+hidden\+\_\+size, use\+\_\+mask\+\_\+predictor, \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}kwargs)
+\item 
+\mbox{\hyperlink{namespacetorchvision__down_1_1models_1_1optical__flow_1_1raft_a4b96f753176d7d45449271c2f4c3cd74}{raft\+\_\+large}} (\texorpdfstring{$\ast$}{*}, pretrained=False, progress=True, \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}kwargs)
+\item 
+\mbox{\hyperlink{namespacetorchvision__down_1_1models_1_1optical__flow_1_1raft_a44619c38f86d596195d2a9b873915fb0}{raft\+\_\+small}} (\texorpdfstring{$\ast$}{*}, pretrained=False, progress=True, \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}kwargs)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+tuple \mbox{\hyperlink{namespacetorchvision__down_1_1models_1_1optical__flow_1_1raft_aa9720c24a1dfe534c79261a073072cd4}{\+\_\+\+\_\+all\+\_\+\+\_\+}}
+\item 
+dict \mbox{\hyperlink{namespacetorchvision__down_1_1models_1_1optical__flow_1_1raft_a801a250510c0dabc5bfe2c60c26c38ce}{\+\_\+\+MODELS\+\_\+\+URLS}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{namespacetorchvision__down_1_1models_1_1optical__flow_1_1raft_a70551d7e433d1fdb44ea011071f0b4c3}\index{torchvision\_down.models.optical\_flow.raft@{torchvision\_down.models.optical\_flow.raft}!\_pass\_through\_h@{\_pass\_through\_h}}
+\index{\_pass\_through\_h@{\_pass\_through\_h}!torchvision\_down.models.optical\_flow.raft@{torchvision\_down.models.optical\_flow.raft}}
+\doxysubsubsection{\texorpdfstring{\_pass\_through\_h()}{\_pass\_through\_h()}}
+{\footnotesize\ttfamily \label{namespacetorchvision__down_1_1models_1_1optical__flow_1_1raft_a70551d7e433d1fdb44ea011071f0b4c3} 
+torchvision\+\_\+down.\+models.\+optical\+\_\+flow.\+raft.\+\_\+pass\+\_\+through\+\_\+h (\begin{DoxyParamCaption}\item[{}]{h}{, }\item[{}]{\+\_\+}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{namespacetorchvision__down_1_1models_1_1optical__flow_1_1raft_a76443b159bedd87cab536d059026caa7}\index{torchvision\_down.models.optical\_flow.raft@{torchvision\_down.models.optical\_flow.raft}!\_raft@{\_raft}}
+\index{\_raft@{\_raft}!torchvision\_down.models.optical\_flow.raft@{torchvision\_down.models.optical\_flow.raft}}
+\doxysubsubsection{\texorpdfstring{\_raft()}{\_raft()}}
+{\footnotesize\ttfamily \label{namespacetorchvision__down_1_1models_1_1optical__flow_1_1raft_a76443b159bedd87cab536d059026caa7} 
+torchvision\+\_\+down.\+models.\+optical\+\_\+flow.\+raft.\+\_\+raft (\begin{DoxyParamCaption}\item[{\texorpdfstring{$\ast$}{*}}]{}{, }\item[{}]{arch}{ = {\ttfamily None}, }\item[{}]{pretrained}{ = {\ttfamily False}, }\item[{}]{progress}{ = {\ttfamily False}, }\item[{}]{feature\+\_\+encoder\+\_\+layers}{, }\item[{}]{feature\+\_\+encoder\+\_\+block}{, }\item[{}]{feature\+\_\+encoder\+\_\+norm\+\_\+layer}{, }\item[{}]{context\+\_\+encoder\+\_\+layers}{, }\item[{}]{context\+\_\+encoder\+\_\+block}{, }\item[{}]{context\+\_\+encoder\+\_\+norm\+\_\+layer}{, }\item[{}]{corr\+\_\+block\+\_\+num\+\_\+levels}{, }\item[{}]{corr\+\_\+block\+\_\+radius}{, }\item[{}]{motion\+\_\+encoder\+\_\+corr\+\_\+layers}{, }\item[{}]{motion\+\_\+encoder\+\_\+flow\+\_\+layers}{, }\item[{}]{motion\+\_\+encoder\+\_\+out\+\_\+channels}{, }\item[{}]{recurrent\+\_\+block\+\_\+hidden\+\_\+state\+\_\+size}{, }\item[{}]{recurrent\+\_\+block\+\_\+kernel\+\_\+size}{, }\item[{}]{recurrent\+\_\+block\+\_\+padding}{, }\item[{}]{flow\+\_\+head\+\_\+hidden\+\_\+size}{, }\item[{}]{use\+\_\+mask\+\_\+predictor}{, }\item[{\texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}}]{kwargs}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{namespacetorchvision__down_1_1models_1_1optical__flow_1_1raft_a4b96f753176d7d45449271c2f4c3cd74}\index{torchvision\_down.models.optical\_flow.raft@{torchvision\_down.models.optical\_flow.raft}!raft\_large@{raft\_large}}
+\index{raft\_large@{raft\_large}!torchvision\_down.models.optical\_flow.raft@{torchvision\_down.models.optical\_flow.raft}}
+\doxysubsubsection{\texorpdfstring{raft\_large()}{raft\_large()}}
+{\footnotesize\ttfamily \label{namespacetorchvision__down_1_1models_1_1optical__flow_1_1raft_a4b96f753176d7d45449271c2f4c3cd74} 
+torchvision\+\_\+down.\+models.\+optical\+\_\+flow.\+raft.\+raft\+\_\+large (\begin{DoxyParamCaption}\item[{\texorpdfstring{$\ast$}{*}}]{}{, }\item[{}]{pretrained}{ = {\ttfamily False}, }\item[{}]{progress}{ = {\ttfamily True}, }\item[{\texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}}]{kwargs}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}RAFT model from
+`RAFT: Recurrent All Pairs Field Transforms for Optical Flow <https://arxiv.org/abs/2003.12039>`_.
+
+Please see the example below for a tutorial on how to use this model.
+
+Args:
+    pretrained (bool): Whether to use weights that have been pre-trained on
+        :class:`~torchvsion.datasets.FlyingChairs` + :class:`~torchvsion.datasets.FlyingThings3D`
+        with two fine-tuning steps:
+
+        - one on :class:`~torchvsion.datasets.Sintel` + :class:`~torchvsion.datasets.FlyingThings3D`
+        - one on :class:`~torchvsion.datasets.KittiFlow`.
+
+        This corresponds to the ``C+T+S/K`` strategy in the paper.
+
+    progress (bool): If True, displays a progress bar of the download to stderr.
+
+Returns:
+    nn.Module: The model.
+\end{DoxyVerb}
+ \Hypertarget{namespacetorchvision__down_1_1models_1_1optical__flow_1_1raft_a44619c38f86d596195d2a9b873915fb0}\index{torchvision\_down.models.optical\_flow.raft@{torchvision\_down.models.optical\_flow.raft}!raft\_small@{raft\_small}}
+\index{raft\_small@{raft\_small}!torchvision\_down.models.optical\_flow.raft@{torchvision\_down.models.optical\_flow.raft}}
+\doxysubsubsection{\texorpdfstring{raft\_small()}{raft\_small()}}
+{\footnotesize\ttfamily \label{namespacetorchvision__down_1_1models_1_1optical__flow_1_1raft_a44619c38f86d596195d2a9b873915fb0} 
+torchvision\+\_\+down.\+models.\+optical\+\_\+flow.\+raft.\+raft\+\_\+small (\begin{DoxyParamCaption}\item[{\texorpdfstring{$\ast$}{*}}]{}{, }\item[{}]{pretrained}{ = {\ttfamily False}, }\item[{}]{progress}{ = {\ttfamily True}, }\item[{\texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}}]{kwargs}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}RAFT "small" model from
+`RAFT: Recurrent All Pairs Field Transforms for Optical Flow <https://arxiv.org/abs/2003.12039>`_.
+
+Please see the example below for a tutorial on how to use this model.
+
+Args:
+    pretrained (bool): Whether to use weights that have been pre-trained on
+        :class:`~torchvsion.datasets.FlyingChairs` + :class:`~torchvsion.datasets.FlyingThings3D`.
+    progress (bool): If True, displays a progress bar of the download to stderr
+
+Returns:
+    nn.Module: The model.
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Variable Documentation}
+\Hypertarget{namespacetorchvision__down_1_1models_1_1optical__flow_1_1raft_aa9720c24a1dfe534c79261a073072cd4}\index{torchvision\_down.models.optical\_flow.raft@{torchvision\_down.models.optical\_flow.raft}!\_\_all\_\_@{\_\_all\_\_}}
+\index{\_\_all\_\_@{\_\_all\_\_}!torchvision\_down.models.optical\_flow.raft@{torchvision\_down.models.optical\_flow.raft}}
+\doxysubsubsection{\texorpdfstring{\_\_all\_\_}{\_\_all\_\_}}
+{\footnotesize\ttfamily \label{namespacetorchvision__down_1_1models_1_1optical__flow_1_1raft_aa9720c24a1dfe534c79261a073072cd4} 
+tuple torchvision\+\_\+down.\+models.\+optical\+\_\+flow.\+raft.\+\_\+\+\_\+all\+\_\+\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ =\ \ (}
+\DoxyCodeLine{00002\ \ \ \ \ \textcolor{stringliteral}{"{}RAFT"{}},}
+\DoxyCodeLine{00003\ \ \ \ \ \textcolor{stringliteral}{"{}raft\_large"{}},}
+\DoxyCodeLine{00004\ \ \ \ \ \textcolor{stringliteral}{"{}raft\_small"{}},}
+\DoxyCodeLine{00005\ )}
+
+\end{DoxyCode}
+\Hypertarget{namespacetorchvision__down_1_1models_1_1optical__flow_1_1raft_a801a250510c0dabc5bfe2c60c26c38ce}\index{torchvision\_down.models.optical\_flow.raft@{torchvision\_down.models.optical\_flow.raft}!\_MODELS\_URLS@{\_MODELS\_URLS}}
+\index{\_MODELS\_URLS@{\_MODELS\_URLS}!torchvision\_down.models.optical\_flow.raft@{torchvision\_down.models.optical\_flow.raft}}
+\doxysubsubsection{\texorpdfstring{\_MODELS\_URLS}{\_MODELS\_URLS}}
+{\footnotesize\ttfamily \label{namespacetorchvision__down_1_1models_1_1optical__flow_1_1raft_a801a250510c0dabc5bfe2c60c26c38ce} 
+dict torchvision\+\_\+down.\+models.\+optical\+\_\+flow.\+raft.\+\_\+\+MODELS\+\_\+\+URLS\hspace{0.3cm}{\ttfamily [protected]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ =\ \ \{}
+\DoxyCodeLine{00002\ \ \ \ \ \textcolor{stringliteral}{"{}raft\_large"{}}:\ \textcolor{stringliteral}{"{}https://download.pytorch.org/models/raft\_large\_C\_T\_SKHT\_V2-\/ff5fadd5.pth"{}},}
+\DoxyCodeLine{00003\ \ \ \ \ \textcolor{stringliteral}{"{}raft\_small"{}}:\ \textcolor{stringliteral}{"{}https://download.pytorch.org/models/raft\_small\_C\_T\_V2-\/01064c6d.pth"{}},}
+\DoxyCodeLine{00004\ \}}
+
+\end{DoxyCode}

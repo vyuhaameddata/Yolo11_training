@@ -1,0 +1,38 @@
+\doxysection{torchvision\+\_\+down.\+ops.\+stochastic\+\_\+depth Namespace Reference}
+\hypertarget{namespacetorchvision__down_1_1ops_1_1stochastic__depth}{}\label{namespacetorchvision__down_1_1ops_1_1stochastic__depth}\index{torchvision\_down.ops.stochastic\_depth@{torchvision\_down.ops.stochastic\_depth}}
+\doxysubsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classtorchvision__down_1_1ops_1_1stochastic__depth_1_1_stochastic_depth}{Stochastic\+Depth}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+Tensor \mbox{\hyperlink{namespacetorchvision__down_1_1ops_1_1stochastic__depth_a6ecba2bc81232b351f6211a709273075}{stochastic\+\_\+depth}} (Tensor input, float p, str mode, bool training=True)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{namespacetorchvision__down_1_1ops_1_1stochastic__depth_a6ecba2bc81232b351f6211a709273075}\index{torchvision\_down.ops.stochastic\_depth@{torchvision\_down.ops.stochastic\_depth}!stochastic\_depth@{stochastic\_depth}}
+\index{stochastic\_depth@{stochastic\_depth}!torchvision\_down.ops.stochastic\_depth@{torchvision\_down.ops.stochastic\_depth}}
+\doxysubsubsection{\texorpdfstring{stochastic\_depth()}{stochastic\_depth()}}
+{\footnotesize\ttfamily \label{namespacetorchvision__down_1_1ops_1_1stochastic__depth_a6ecba2bc81232b351f6211a709273075} 
+ Tensor torchvision\+\_\+down.\+ops.\+stochastic\+\_\+depth.\+stochastic\+\_\+depth (\begin{DoxyParamCaption}\item[{Tensor}]{input}{, }\item[{float}]{p}{, }\item[{str}]{mode}{, }\item[{bool }]{training}{ = {\ttfamily True}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Implements the Stochastic Depth from `"Deep Networks with Stochastic Depth"
+<https://arxiv.org/abs/1603.09382>`_ used for randomly dropping residual
+branches of residual architectures.
+
+Args:
+    input (Tensor[N, ...]): The input tensor or arbitrary dimensions with the first one
+                being its batch i.e. a batch with ``N`` rows.
+    p (float): probability of the input to be zeroed.
+    mode (str): ``"batch"`` or ``"row"``.
+                ``"batch"`` randomly zeroes the entire input, ``"row"`` zeroes
+                randomly selected rows from the batch.
+    training: apply stochastic depth if is ``True``. Default: ``True``
+
+Returns:
+    Tensor[N, ...]: The randomly zeroed tensor.
+\end{DoxyVerb}
+ 

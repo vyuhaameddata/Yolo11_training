@@ -1,0 +1,6 @@
+var namespacetorchvision__down_1_1datasets_1_1samplers_1_1clip__sampler =
+[
+    [ "DistributedSampler", "classtorchvision__down_1_1datasets_1_1samplers_1_1clip__sampler_1_1_distributed_sampler.html", "classtorchvision__down_1_1datasets_1_1samplers_1_1clip__sampler_1_1_distributed_sampler" ],
+    [ "RandomClipSampler", "classtorchvision__down_1_1datasets_1_1samplers_1_1clip__sampler_1_1_random_clip_sampler.html", "classtorchvision__down_1_1datasets_1_1samplers_1_1clip__sampler_1_1_random_clip_sampler" ],
+    [ "UniformClipSampler", "classtorchvision__down_1_1datasets_1_1samplers_1_1clip__sampler_1_1_uniform_clip_sampler.html", "classtorchvision__down_1_1datasets_1_1samplers_1_1clip__sampler_1_1_uniform_clip_sampler" ]
+];

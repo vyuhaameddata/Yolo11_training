@@ -1,0 +1,70 @@
+\doxysection{torchvision\+\_\+down.\+models.\+detection.\+faster\+\_\+rcnn.\+Fast\+RCNNPredictor Class Reference}
+\hypertarget{classtorchvision__down_1_1models_1_1detection_1_1faster__rcnn_1_1_fast_r_c_n_n_predictor}{}\label{classtorchvision__down_1_1models_1_1detection_1_1faster__rcnn_1_1_fast_r_c_n_n_predictor}\index{torchvision\_down.models.detection.faster\_rcnn.FastRCNNPredictor@{torchvision\_down.models.detection.faster\_rcnn.FastRCNNPredictor}}
+Inheritance diagram for torchvision\+\_\+down.\+models.\+detection.\+faster\+\_\+rcnn.\+Fast\+RCNNPredictor\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classtorchvision__down_1_1models_1_1detection_1_1faster__rcnn_1_1_fast_r_c_n_n_predictor}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1models_1_1detection_1_1faster__rcnn_1_1_fast_r_c_n_n_predictor_a54fb2ab2d219365d97bf6af5944607cc}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, in\+\_\+channels, num\+\_\+classes)
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1models_1_1detection_1_1faster__rcnn_1_1_fast_r_c_n_n_predictor_a36c4ed1cbab850f9222bd2a0e12869f0}{forward}} (self, x)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1models_1_1detection_1_1faster__rcnn_1_1_fast_r_c_n_n_predictor_a4e45deaf48245f4d7d067569a71e6354}{cls\+\_\+score}} = nn.\+Linear(in\+\_\+channels, num\+\_\+classes)
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1models_1_1detection_1_1faster__rcnn_1_1_fast_r_c_n_n_predictor_a4c8b91f3a8dd783a781da792bb443641}{bbox\+\_\+pred}} = nn.\+Linear(in\+\_\+channels, num\+\_\+classes \texorpdfstring{$\ast$}{*} 4)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}Standard classification + bounding box regression layers
+for Fast R-CNN.
+
+Args:
+    in_channels (int): number of input channels
+    num_classes (int): number of output classes (including background)
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classtorchvision__down_1_1models_1_1detection_1_1faster__rcnn_1_1_fast_r_c_n_n_predictor_a54fb2ab2d219365d97bf6af5944607cc}\index{torchvision\_down.models.detection.faster\_rcnn.FastRCNNPredictor@{torchvision\_down.models.detection.faster\_rcnn.FastRCNNPredictor}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!torchvision\_down.models.detection.faster\_rcnn.FastRCNNPredictor@{torchvision\_down.models.detection.faster\_rcnn.FastRCNNPredictor}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1models_1_1detection_1_1faster__rcnn_1_1_fast_r_c_n_n_predictor_a54fb2ab2d219365d97bf6af5944607cc} 
+torchvision\+\_\+down.\+models.\+detection.\+faster\+\_\+rcnn.\+Fast\+RCNNPredictor.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{in\+\_\+channels}{, }\item[{}]{num\+\_\+classes}{}\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classtorchvision__down_1_1models_1_1detection_1_1faster__rcnn_1_1_fast_r_c_n_n_predictor_a36c4ed1cbab850f9222bd2a0e12869f0}\index{torchvision\_down.models.detection.faster\_rcnn.FastRCNNPredictor@{torchvision\_down.models.detection.faster\_rcnn.FastRCNNPredictor}!forward@{forward}}
+\index{forward@{forward}!torchvision\_down.models.detection.faster\_rcnn.FastRCNNPredictor@{torchvision\_down.models.detection.faster\_rcnn.FastRCNNPredictor}}
+\doxysubsubsection{\texorpdfstring{forward()}{forward()}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1models_1_1detection_1_1faster__rcnn_1_1_fast_r_c_n_n_predictor_a36c4ed1cbab850f9222bd2a0e12869f0} 
+torchvision\+\_\+down.\+models.\+detection.\+faster\+\_\+rcnn.\+Fast\+RCNNPredictor.\+forward (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{x}{}\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classtorchvision__down_1_1models_1_1detection_1_1faster__rcnn_1_1_fast_r_c_n_n_predictor_a4c8b91f3a8dd783a781da792bb443641}\index{torchvision\_down.models.detection.faster\_rcnn.FastRCNNPredictor@{torchvision\_down.models.detection.faster\_rcnn.FastRCNNPredictor}!bbox\_pred@{bbox\_pred}}
+\index{bbox\_pred@{bbox\_pred}!torchvision\_down.models.detection.faster\_rcnn.FastRCNNPredictor@{torchvision\_down.models.detection.faster\_rcnn.FastRCNNPredictor}}
+\doxysubsubsection{\texorpdfstring{bbox\_pred}{bbox\_pred}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1models_1_1detection_1_1faster__rcnn_1_1_fast_r_c_n_n_predictor_a4c8b91f3a8dd783a781da792bb443641} 
+torchvision\+\_\+down.\+models.\+detection.\+faster\+\_\+rcnn.\+Fast\+RCNNPredictor.\+bbox\+\_\+pred = nn.\+Linear(in\+\_\+channels, num\+\_\+classes \texorpdfstring{$\ast$}{*} 4)}
+
+\Hypertarget{classtorchvision__down_1_1models_1_1detection_1_1faster__rcnn_1_1_fast_r_c_n_n_predictor_a4e45deaf48245f4d7d067569a71e6354}\index{torchvision\_down.models.detection.faster\_rcnn.FastRCNNPredictor@{torchvision\_down.models.detection.faster\_rcnn.FastRCNNPredictor}!cls\_score@{cls\_score}}
+\index{cls\_score@{cls\_score}!torchvision\_down.models.detection.faster\_rcnn.FastRCNNPredictor@{torchvision\_down.models.detection.faster\_rcnn.FastRCNNPredictor}}
+\doxysubsubsection{\texorpdfstring{cls\_score}{cls\_score}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1models_1_1detection_1_1faster__rcnn_1_1_fast_r_c_n_n_predictor_a4e45deaf48245f4d7d067569a71e6354} 
+torchvision\+\_\+down.\+models.\+detection.\+faster\+\_\+rcnn.\+Fast\+RCNNPredictor.\+cls\+\_\+score = nn.\+Linear(in\+\_\+channels, num\+\_\+classes)}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Cervi\+AI/torchvision\+\_\+down/models/detection/\mbox{\hyperlink{faster__rcnn_8py}{faster\+\_\+rcnn.\+py}}\end{DoxyCompactItemize}

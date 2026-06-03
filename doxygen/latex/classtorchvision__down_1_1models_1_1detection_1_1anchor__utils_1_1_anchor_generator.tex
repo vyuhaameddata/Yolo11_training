@@ -1,0 +1,146 @@
+\doxysection{torchvision\+\_\+down.\+models.\+detection.\+anchor\+\_\+utils.\+Anchor\+Generator Class Reference}
+\hypertarget{classtorchvision__down_1_1models_1_1detection_1_1anchor__utils_1_1_anchor_generator}{}\label{classtorchvision__down_1_1models_1_1detection_1_1anchor__utils_1_1_anchor_generator}\index{torchvision\_down.models.detection.anchor\_utils.AnchorGenerator@{torchvision\_down.models.detection.anchor\_utils.AnchorGenerator}}
+Inheritance diagram for torchvision\+\_\+down.\+models.\+detection.\+anchor\+\_\+utils.\+Anchor\+Generator\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classtorchvision__down_1_1models_1_1detection_1_1anchor__utils_1_1_anchor_generator}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1models_1_1detection_1_1anchor__utils_1_1_anchor_generator_afd6e0423b00cb9bfe53e0ab6fd7dc1d9}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, \mbox{\hyperlink{classtorchvision__down_1_1models_1_1detection_1_1anchor__utils_1_1_anchor_generator_ab88139aca4bbf6df04e1417efd585789}{sizes}}=((128, 256, 512),), \mbox{\hyperlink{classtorchvision__down_1_1models_1_1detection_1_1anchor__utils_1_1_anchor_generator_a4a1313bef6c827884fcd041f533099f3}{aspect\+\_\+ratios}}=((0.\+5, 1.\+0, 2.\+0),))
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1models_1_1detection_1_1anchor__utils_1_1_anchor_generator_ad6b06d5d648dfa0f9b17b1995465fd69}{generate\+\_\+anchors}} (self, List\mbox{[}int\mbox{]} scales, List\mbox{[}float\mbox{]} \mbox{\hyperlink{classtorchvision__down_1_1models_1_1detection_1_1anchor__utils_1_1_anchor_generator_a4a1313bef6c827884fcd041f533099f3}{aspect\+\_\+ratios}}, torch.\+dtype dtype=torch.\+float32, torch.\+device device=torch.\+device("{}cpu"{}))
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1models_1_1detection_1_1anchor__utils_1_1_anchor_generator_af239e739e2b43161c7c7724ebcb4ea78}{set\+\_\+cell\+\_\+anchors}} (self, torch.\+dtype dtype, torch.\+device device)
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1models_1_1detection_1_1anchor__utils_1_1_anchor_generator_a6591e894f7b244b525b8281bcecf02bc}{num\+\_\+anchors\+\_\+per\+\_\+location}} (self)
+\item 
+List\mbox{[}Tensor\mbox{]} \mbox{\hyperlink{classtorchvision__down_1_1models_1_1detection_1_1anchor__utils_1_1_anchor_generator_ac6187b717d1197930b8280265106c669}{grid\+\_\+anchors}} (self, List\mbox{[}List\mbox{[}int\mbox{]}\mbox{]} grid\+\_\+sizes, List\mbox{[}List\mbox{[}Tensor\mbox{]}\mbox{]} strides)
+\item 
+List\mbox{[}Tensor\mbox{]} \mbox{\hyperlink{classtorchvision__down_1_1models_1_1detection_1_1anchor__utils_1_1_anchor_generator_a086594a65e4da956a2b89c0d506e8d71}{forward}} (self, \mbox{\hyperlink{classtorchvision__down_1_1models_1_1detection_1_1image__list_1_1_image_list}{Image\+List}} image\+\_\+list, List\mbox{[}Tensor\mbox{]} feature\+\_\+maps)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1models_1_1detection_1_1anchor__utils_1_1_anchor_generator_ab88139aca4bbf6df04e1417efd585789}{sizes}} = sizes
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1models_1_1detection_1_1anchor__utils_1_1_anchor_generator_a4a1313bef6c827884fcd041f533099f3}{aspect\+\_\+ratios}} = aspect\+\_\+ratios
+\item 
+list \mbox{\hyperlink{classtorchvision__down_1_1models_1_1detection_1_1anchor__utils_1_1_anchor_generator_a58e6f0a7431d5f9090974c7583e61d00}{cell\+\_\+anchors}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+dict \mbox{\hyperlink{classtorchvision__down_1_1models_1_1detection_1_1anchor__utils_1_1_anchor_generator_a7a7f762f912aa036c272b460f3c23212}{\+\_\+\+\_\+annotations\+\_\+\+\_\+}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}Module that generates anchors for a set of feature maps and
+image sizes.
+
+The module support computing anchors at multiple sizes and aspect ratios
+per feature map. This module assumes aspect ratio = height / width for
+each anchor.
+
+sizes and aspect_ratios should have the same number of elements, and it should
+correspond to the number of feature maps.
+
+sizes[i] and aspect_ratios[i] can have an arbitrary number of elements,
+and AnchorGenerator will output a set of sizes[i] * aspect_ratios[i] anchors
+per spatial location for feature map i.
+
+Args:
+    sizes (Tuple[Tuple[int]]):
+    aspect_ratios (Tuple[Tuple[float]]):
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classtorchvision__down_1_1models_1_1detection_1_1anchor__utils_1_1_anchor_generator_afd6e0423b00cb9bfe53e0ab6fd7dc1d9}\index{torchvision\_down.models.detection.anchor\_utils.AnchorGenerator@{torchvision\_down.models.detection.anchor\_utils.AnchorGenerator}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!torchvision\_down.models.detection.anchor\_utils.AnchorGenerator@{torchvision\_down.models.detection.anchor\_utils.AnchorGenerator}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1models_1_1detection_1_1anchor__utils_1_1_anchor_generator_afd6e0423b00cb9bfe53e0ab6fd7dc1d9} 
+torchvision\+\_\+down.\+models.\+detection.\+anchor\+\_\+utils.\+Anchor\+Generator.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{sizes}{ = {\ttfamily ((128,~256,~512),)}, }\item[{}]{aspect\+\_\+ratios}{ = {\ttfamily ((0.5,~1.0,~2.0),)}}\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classtorchvision__down_1_1models_1_1detection_1_1anchor__utils_1_1_anchor_generator_a086594a65e4da956a2b89c0d506e8d71}\index{torchvision\_down.models.detection.anchor\_utils.AnchorGenerator@{torchvision\_down.models.detection.anchor\_utils.AnchorGenerator}!forward@{forward}}
+\index{forward@{forward}!torchvision\_down.models.detection.anchor\_utils.AnchorGenerator@{torchvision\_down.models.detection.anchor\_utils.AnchorGenerator}}
+\doxysubsubsection{\texorpdfstring{forward()}{forward()}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1models_1_1detection_1_1anchor__utils_1_1_anchor_generator_a086594a65e4da956a2b89c0d506e8d71} 
+ List\mbox{[}Tensor\mbox{]} torchvision\+\_\+down.\+models.\+detection.\+anchor\+\_\+utils.\+Anchor\+Generator.\+forward (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{\mbox{\hyperlink{classtorchvision__down_1_1models_1_1detection_1_1image__list_1_1_image_list}{Image\+List}}}]{image\+\_\+list}{, }\item[{List\mbox{[}Tensor\mbox{]}}]{feature\+\_\+maps}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classtorchvision__down_1_1models_1_1detection_1_1anchor__utils_1_1_anchor_generator_ad6b06d5d648dfa0f9b17b1995465fd69}\index{torchvision\_down.models.detection.anchor\_utils.AnchorGenerator@{torchvision\_down.models.detection.anchor\_utils.AnchorGenerator}!generate\_anchors@{generate\_anchors}}
+\index{generate\_anchors@{generate\_anchors}!torchvision\_down.models.detection.anchor\_utils.AnchorGenerator@{torchvision\_down.models.detection.anchor\_utils.AnchorGenerator}}
+\doxysubsubsection{\texorpdfstring{generate\_anchors()}{generate\_anchors()}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1models_1_1detection_1_1anchor__utils_1_1_anchor_generator_ad6b06d5d648dfa0f9b17b1995465fd69} 
+torchvision\+\_\+down.\+models.\+detection.\+anchor\+\_\+utils.\+Anchor\+Generator.\+generate\+\_\+anchors (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{List\mbox{[}int\mbox{]}}]{scales}{, }\item[{List\mbox{[}float\mbox{]}}]{aspect\+\_\+ratios}{, }\item[{torch.\+dtype }]{dtype}{ = {\ttfamily torch.float32}, }\item[{torch.\+device }]{device}{ = {\ttfamily torch.device("{}cpu"{})}}\end{DoxyParamCaption})}
+
+\Hypertarget{classtorchvision__down_1_1models_1_1detection_1_1anchor__utils_1_1_anchor_generator_ac6187b717d1197930b8280265106c669}\index{torchvision\_down.models.detection.anchor\_utils.AnchorGenerator@{torchvision\_down.models.detection.anchor\_utils.AnchorGenerator}!grid\_anchors@{grid\_anchors}}
+\index{grid\_anchors@{grid\_anchors}!torchvision\_down.models.detection.anchor\_utils.AnchorGenerator@{torchvision\_down.models.detection.anchor\_utils.AnchorGenerator}}
+\doxysubsubsection{\texorpdfstring{grid\_anchors()}{grid\_anchors()}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1models_1_1detection_1_1anchor__utils_1_1_anchor_generator_ac6187b717d1197930b8280265106c669} 
+ List\mbox{[}Tensor\mbox{]} torchvision\+\_\+down.\+models.\+detection.\+anchor\+\_\+utils.\+Anchor\+Generator.\+grid\+\_\+anchors (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{List\mbox{[}List\mbox{[}int\mbox{]}\mbox{]}}]{grid\+\_\+sizes}{, }\item[{List\mbox{[}List\mbox{[}Tensor\mbox{]}\mbox{]}}]{strides}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classtorchvision__down_1_1models_1_1detection_1_1anchor__utils_1_1_anchor_generator_a6591e894f7b244b525b8281bcecf02bc}\index{torchvision\_down.models.detection.anchor\_utils.AnchorGenerator@{torchvision\_down.models.detection.anchor\_utils.AnchorGenerator}!num\_anchors\_per\_location@{num\_anchors\_per\_location}}
+\index{num\_anchors\_per\_location@{num\_anchors\_per\_location}!torchvision\_down.models.detection.anchor\_utils.AnchorGenerator@{torchvision\_down.models.detection.anchor\_utils.AnchorGenerator}}
+\doxysubsubsection{\texorpdfstring{num\_anchors\_per\_location()}{num\_anchors\_per\_location()}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1models_1_1detection_1_1anchor__utils_1_1_anchor_generator_a6591e894f7b244b525b8281bcecf02bc} 
+torchvision\+\_\+down.\+models.\+detection.\+anchor\+\_\+utils.\+Anchor\+Generator.\+num\+\_\+anchors\+\_\+per\+\_\+location (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classtorchvision__down_1_1models_1_1detection_1_1anchor__utils_1_1_anchor_generator_af239e739e2b43161c7c7724ebcb4ea78}\index{torchvision\_down.models.detection.anchor\_utils.AnchorGenerator@{torchvision\_down.models.detection.anchor\_utils.AnchorGenerator}!set\_cell\_anchors@{set\_cell\_anchors}}
+\index{set\_cell\_anchors@{set\_cell\_anchors}!torchvision\_down.models.detection.anchor\_utils.AnchorGenerator@{torchvision\_down.models.detection.anchor\_utils.AnchorGenerator}}
+\doxysubsubsection{\texorpdfstring{set\_cell\_anchors()}{set\_cell\_anchors()}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1models_1_1detection_1_1anchor__utils_1_1_anchor_generator_af239e739e2b43161c7c7724ebcb4ea78} 
+torchvision\+\_\+down.\+models.\+detection.\+anchor\+\_\+utils.\+Anchor\+Generator.\+set\+\_\+cell\+\_\+anchors (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{torch.\+dtype}]{dtype}{, }\item[{torch.\+device}]{device}{}\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classtorchvision__down_1_1models_1_1detection_1_1anchor__utils_1_1_anchor_generator_a7a7f762f912aa036c272b460f3c23212}\index{torchvision\_down.models.detection.anchor\_utils.AnchorGenerator@{torchvision\_down.models.detection.anchor\_utils.AnchorGenerator}!\_\_annotations\_\_@{\_\_annotations\_\_}}
+\index{\_\_annotations\_\_@{\_\_annotations\_\_}!torchvision\_down.models.detection.anchor\_utils.AnchorGenerator@{torchvision\_down.models.detection.anchor\_utils.AnchorGenerator}}
+\doxysubsubsection{\texorpdfstring{\_\_annotations\_\_}{\_\_annotations\_\_}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1models_1_1detection_1_1anchor__utils_1_1_anchor_generator_a7a7f762f912aa036c272b460f3c23212} 
+dict torchvision\+\_\+down.\+models.\+detection.\+anchor\+\_\+utils.\+Anchor\+Generator.\+\_\+\+\_\+annotations\+\_\+\+\_\+\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}cell\_anchors"{}}:\ List[torch.Tensor],}
+\DoxyCodeLine{\ \ \ \ \}}
+
+\end{DoxyCode}
+\Hypertarget{classtorchvision__down_1_1models_1_1detection_1_1anchor__utils_1_1_anchor_generator_a4a1313bef6c827884fcd041f533099f3}\index{torchvision\_down.models.detection.anchor\_utils.AnchorGenerator@{torchvision\_down.models.detection.anchor\_utils.AnchorGenerator}!aspect\_ratios@{aspect\_ratios}}
+\index{aspect\_ratios@{aspect\_ratios}!torchvision\_down.models.detection.anchor\_utils.AnchorGenerator@{torchvision\_down.models.detection.anchor\_utils.AnchorGenerator}}
+\doxysubsubsection{\texorpdfstring{aspect\_ratios}{aspect\_ratios}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1models_1_1detection_1_1anchor__utils_1_1_anchor_generator_a4a1313bef6c827884fcd041f533099f3} 
+torchvision\+\_\+down.\+models.\+detection.\+anchor\+\_\+utils.\+Anchor\+Generator.\+aspect\+\_\+ratios = aspect\+\_\+ratios}
+
+\Hypertarget{classtorchvision__down_1_1models_1_1detection_1_1anchor__utils_1_1_anchor_generator_a58e6f0a7431d5f9090974c7583e61d00}\index{torchvision\_down.models.detection.anchor\_utils.AnchorGenerator@{torchvision\_down.models.detection.anchor\_utils.AnchorGenerator}!cell\_anchors@{cell\_anchors}}
+\index{cell\_anchors@{cell\_anchors}!torchvision\_down.models.detection.anchor\_utils.AnchorGenerator@{torchvision\_down.models.detection.anchor\_utils.AnchorGenerator}}
+\doxysubsubsection{\texorpdfstring{cell\_anchors}{cell\_anchors}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1models_1_1detection_1_1anchor__utils_1_1_anchor_generator_a58e6f0a7431d5f9090974c7583e61d00} 
+list torchvision\+\_\+down.\+models.\+detection.\+anchor\+\_\+utils.\+Anchor\+Generator.\+cell\+\_\+anchors}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \ [}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ self.generate\_anchors(size,\ aspect\_ratio)\ \textcolor{keywordflow}{for}\ size,\ aspect\_ratio\ \textcolor{keywordflow}{in}\ zip(sizes,\ aspect\_ratios)}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ ]}
+
+\end{DoxyCode}
+\Hypertarget{classtorchvision__down_1_1models_1_1detection_1_1anchor__utils_1_1_anchor_generator_ab88139aca4bbf6df04e1417efd585789}\index{torchvision\_down.models.detection.anchor\_utils.AnchorGenerator@{torchvision\_down.models.detection.anchor\_utils.AnchorGenerator}!sizes@{sizes}}
+\index{sizes@{sizes}!torchvision\_down.models.detection.anchor\_utils.AnchorGenerator@{torchvision\_down.models.detection.anchor\_utils.AnchorGenerator}}
+\doxysubsubsection{\texorpdfstring{sizes}{sizes}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1models_1_1detection_1_1anchor__utils_1_1_anchor_generator_ab88139aca4bbf6df04e1417efd585789} 
+torchvision\+\_\+down.\+models.\+detection.\+anchor\+\_\+utils.\+Anchor\+Generator.\+sizes = sizes}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Cervi\+AI/torchvision\+\_\+down/models/detection/\mbox{\hyperlink{anchor__utils_8py}{anchor\+\_\+utils.\+py}}\end{DoxyCompactItemize}

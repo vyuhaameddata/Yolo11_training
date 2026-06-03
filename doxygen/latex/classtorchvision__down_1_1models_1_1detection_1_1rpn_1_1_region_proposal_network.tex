@@ -1,0 +1,273 @@
+\doxysection{torchvision\+\_\+down.\+models.\+detection.\+rpn.\+Region\+Proposal\+Network Class Reference}
+\hypertarget{classtorchvision__down_1_1models_1_1detection_1_1rpn_1_1_region_proposal_network}{}\label{classtorchvision__down_1_1models_1_1detection_1_1rpn_1_1_region_proposal_network}\index{torchvision\_down.models.detection.rpn.RegionProposalNetwork@{torchvision\_down.models.detection.rpn.RegionProposalNetwork}}
+Inheritance diagram for torchvision\+\_\+down.\+models.\+detection.\+rpn.\+Region\+Proposal\+Network\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classtorchvision__down_1_1models_1_1detection_1_1rpn_1_1_region_proposal_network}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+None \mbox{\hyperlink{classtorchvision__down_1_1models_1_1detection_1_1rpn_1_1_region_proposal_network_a17b30c477a6eba4ed481263a8f28c9ed}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, \mbox{\hyperlink{classtorchvision__down_1_1models_1_1detection_1_1anchor__utils_1_1_anchor_generator}{Anchor\+Generator}} \mbox{\hyperlink{classtorchvision__down_1_1models_1_1detection_1_1rpn_1_1_region_proposal_network_a9765e130240256f0179f73684495d401}{anchor\+\_\+generator}}, nn.\+Module \mbox{\hyperlink{classtorchvision__down_1_1models_1_1detection_1_1rpn_1_1_region_proposal_network_a4bcddf55350e55a63670d780f59ce263}{head}}, float fg\+\_\+iou\+\_\+thresh, float bg\+\_\+iou\+\_\+thresh, int batch\+\_\+size\+\_\+per\+\_\+image, float positive\+\_\+fraction, Dict\mbox{[}str, int\mbox{]} \mbox{\hyperlink{classtorchvision__down_1_1models_1_1detection_1_1rpn_1_1_region_proposal_network_ae6cfdf956ebf2edf917ce22b2f4b90d7}{pre\+\_\+nms\+\_\+top\+\_\+n}}, Dict\mbox{[}str, int\mbox{]} \mbox{\hyperlink{classtorchvision__down_1_1models_1_1detection_1_1rpn_1_1_region_proposal_network_a44a2ca595ba3023a8bd50b0c87783f0c}{post\+\_\+nms\+\_\+top\+\_\+n}}, float \mbox{\hyperlink{classtorchvision__down_1_1models_1_1detection_1_1rpn_1_1_region_proposal_network_a6f64e6a191bb79925268feae115c4f12}{nms\+\_\+thresh}}, float \mbox{\hyperlink{classtorchvision__down_1_1models_1_1detection_1_1rpn_1_1_region_proposal_network_a4fc38bb7a3053438842a18c749b5cc68}{score\+\_\+thresh}}=0.\+0)
+\item 
+int \mbox{\hyperlink{classtorchvision__down_1_1models_1_1detection_1_1rpn_1_1_region_proposal_network_ae6cfdf956ebf2edf917ce22b2f4b90d7}{pre\+\_\+nms\+\_\+top\+\_\+n}} (self)
+\item 
+int \mbox{\hyperlink{classtorchvision__down_1_1models_1_1detection_1_1rpn_1_1_region_proposal_network_a44a2ca595ba3023a8bd50b0c87783f0c}{post\+\_\+nms\+\_\+top\+\_\+n}} (self)
+\item 
+Tuple\mbox{[}List\mbox{[}Tensor\mbox{]}, List\mbox{[}Tensor\mbox{]}\mbox{]} \mbox{\hyperlink{classtorchvision__down_1_1models_1_1detection_1_1rpn_1_1_region_proposal_network_a6a0950b1f3b06faa6ad2912c2090823f}{assign\+\_\+targets\+\_\+to\+\_\+anchors}} (self, List\mbox{[}Tensor\mbox{]} anchors, List\mbox{[}Dict\mbox{[}str, Tensor\mbox{]}\mbox{]} targets)
+\item 
+Tuple\mbox{[}List\mbox{[}Tensor\mbox{]}, List\mbox{[}Tensor\mbox{]}\mbox{]} \mbox{\hyperlink{classtorchvision__down_1_1models_1_1detection_1_1rpn_1_1_region_proposal_network_ae516b322cf6d70239d51e55996cadbe4}{filter\+\_\+proposals}} (self, Tensor proposals, Tensor objectness, List\mbox{[}Tuple\mbox{[}int, int\mbox{]}\mbox{]} image\+\_\+shapes, List\mbox{[}int\mbox{]} num\+\_\+anchors\+\_\+per\+\_\+level)
+\item 
+Tuple\mbox{[}Tensor, Tensor\mbox{]} \mbox{\hyperlink{classtorchvision__down_1_1models_1_1detection_1_1rpn_1_1_region_proposal_network_ab8dbdf5e30f226de80c22c0b9e969849}{compute\+\_\+loss}} (self, Tensor objectness, Tensor pred\+\_\+bbox\+\_\+deltas, List\mbox{[}Tensor\mbox{]} labels, List\mbox{[}Tensor\mbox{]} regression\+\_\+targets)
+\item 
+Tuple\mbox{[}List\mbox{[}Tensor\mbox{]}, Dict\mbox{[}str, Tensor\mbox{]}\mbox{]} \mbox{\hyperlink{classtorchvision__down_1_1models_1_1detection_1_1rpn_1_1_region_proposal_network_a18446b911b19165ec53c5cc9b980dc80}{forward}} (self, \mbox{\hyperlink{classtorchvision__down_1_1models_1_1detection_1_1image__list_1_1_image_list}{Image\+List}} images, Dict\mbox{[}str, Tensor\mbox{]} features, Optional\mbox{[}List\mbox{[}Dict\mbox{[}str, Tensor\mbox{]}\mbox{]}\mbox{]} targets=None)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1models_1_1detection_1_1rpn_1_1_region_proposal_network_a9765e130240256f0179f73684495d401}{anchor\+\_\+generator}} = anchor\+\_\+generator
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1models_1_1detection_1_1rpn_1_1_region_proposal_network_a4bcddf55350e55a63670d780f59ce263}{head}} = head
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1models_1_1detection_1_1rpn_1_1_region_proposal_network_a1176640ade36a4e2495562b33946d16a}{box\+\_\+coder}} = det\+\_\+utils.\+Box\+Coder(weights=(1.\+0, 1.\+0, 1.\+0, 1.\+0))
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1models_1_1detection_1_1rpn_1_1_region_proposal_network_a1ab03d1349eaba985935a45ec897cd72}{box\+\_\+similarity}} = box\+\_\+ops.\+box\+\_\+iou
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1models_1_1detection_1_1rpn_1_1_region_proposal_network_af8ca2edd0a44b935bc404220d859f0f4}{proposal\+\_\+matcher}}
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1models_1_1detection_1_1rpn_1_1_region_proposal_network_a733e86180cc46fcbbcfad2eadecc2f8e}{fg\+\_\+bg\+\_\+sampler}} = det\+\_\+utils.\+Balanced\+Positive\+Negative\+Sampler(batch\+\_\+size\+\_\+per\+\_\+image, positive\+\_\+fraction)
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1models_1_1detection_1_1rpn_1_1_region_proposal_network_a6f64e6a191bb79925268feae115c4f12}{nms\+\_\+thresh}} = nms\+\_\+thresh
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1models_1_1detection_1_1rpn_1_1_region_proposal_network_a4fc38bb7a3053438842a18c749b5cc68}{score\+\_\+thresh}} = score\+\_\+thresh
+\item 
+int \mbox{\hyperlink{classtorchvision__down_1_1models_1_1detection_1_1rpn_1_1_region_proposal_network_a7f1e60681968d42a4c82808faf3eba0b}{min\+\_\+size}} = 1e-\/3
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1models_1_1detection_1_1rpn_1_1_region_proposal_network_a9a3f2e7a5eda7f9e85ccd57a614efcf3}{training}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+Tensor \mbox{\hyperlink{classtorchvision__down_1_1models_1_1detection_1_1rpn_1_1_region_proposal_network_a7b9bf74f418fc896856282bd8114c72c}{\+\_\+get\+\_\+top\+\_\+n\+\_\+idx}} (self, Tensor objectness, List\mbox{[}int\mbox{]} num\+\_\+anchors\+\_\+per\+\_\+level)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{classtorchvision__down_1_1models_1_1detection_1_1rpn_1_1_region_proposal_network_a122aafd49bea5670e331ffff701f5ab7}{\+\_\+pre\+\_\+nms\+\_\+top\+\_\+n}} = \mbox{\hyperlink{classtorchvision__down_1_1models_1_1detection_1_1rpn_1_1_region_proposal_network_ae6cfdf956ebf2edf917ce22b2f4b90d7}{pre\+\_\+nms\+\_\+top\+\_\+n}}
+\item 
+int \mbox{\hyperlink{classtorchvision__down_1_1models_1_1detection_1_1rpn_1_1_region_proposal_network_aef629580156542a8cdff0e3b438544ae}{\+\_\+post\+\_\+nms\+\_\+top\+\_\+n}} = \mbox{\hyperlink{classtorchvision__down_1_1models_1_1detection_1_1rpn_1_1_region_proposal_network_a44a2ca595ba3023a8bd50b0c87783f0c}{post\+\_\+nms\+\_\+top\+\_\+n}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+dict \mbox{\hyperlink{classtorchvision__down_1_1models_1_1detection_1_1rpn_1_1_region_proposal_network_a55212905aeeb1371ac2e1a3840ca76e4}{\+\_\+\+\_\+annotations\+\_\+\+\_\+}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}Implements Region Proposal Network (RPN).
+
+Args:
+    anchor_generator (AnchorGenerator): module that generates the anchors for a set of feature
+        maps.
+    head (nn.Module): module that computes the objectness and regression deltas
+    fg_iou_thresh (float): minimum IoU between the anchor and the GT box so that they can be
+        considered as positive during training of the RPN.
+    bg_iou_thresh (float): maximum IoU between the anchor and the GT box so that they can be
+        considered as negative during training of the RPN.
+    batch_size_per_image (int): number of anchors that are sampled during training of the RPN
+        for computing the loss
+    positive_fraction (float): proportion of positive anchors in a mini-batch during training
+        of the RPN
+    pre_nms_top_n (Dict[str, int]): number of proposals to keep before applying NMS. It should
+        contain two fields: training and testing, to allow for different values depending
+        on training or evaluation
+    post_nms_top_n (Dict[str, int]): number of proposals to keep after applying NMS. It should
+        contain two fields: training and testing, to allow for different values depending
+        on training or evaluation
+    nms_thresh (float): NMS threshold used for postprocessing the RPN proposals
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classtorchvision__down_1_1models_1_1detection_1_1rpn_1_1_region_proposal_network_a17b30c477a6eba4ed481263a8f28c9ed}\index{torchvision\_down.models.detection.rpn.RegionProposalNetwork@{torchvision\_down.models.detection.rpn.RegionProposalNetwork}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!torchvision\_down.models.detection.rpn.RegionProposalNetwork@{torchvision\_down.models.detection.rpn.RegionProposalNetwork}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1models_1_1detection_1_1rpn_1_1_region_proposal_network_a17b30c477a6eba4ed481263a8f28c9ed} 
+ None torchvision\+\_\+down.\+models.\+detection.\+rpn.\+Region\+Proposal\+Network.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{\mbox{\hyperlink{classtorchvision__down_1_1models_1_1detection_1_1anchor__utils_1_1_anchor_generator}{Anchor\+Generator}}}]{anchor\+\_\+generator}{, }\item[{nn.\+Module}]{head}{, }\item[{float}]{fg\+\_\+iou\+\_\+thresh}{, }\item[{float}]{bg\+\_\+iou\+\_\+thresh}{, }\item[{int}]{batch\+\_\+size\+\_\+per\+\_\+image}{, }\item[{float}]{positive\+\_\+fraction}{, }\item[{Dict\mbox{[}str, int\mbox{]}}]{pre\+\_\+nms\+\_\+top\+\_\+n}{, }\item[{Dict\mbox{[}str, int\mbox{]}}]{post\+\_\+nms\+\_\+top\+\_\+n}{, }\item[{float}]{nms\+\_\+thresh}{, }\item[{float }]{score\+\_\+thresh}{ = {\ttfamily 0.0}}\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classtorchvision__down_1_1models_1_1detection_1_1rpn_1_1_region_proposal_network_a7b9bf74f418fc896856282bd8114c72c}\index{torchvision\_down.models.detection.rpn.RegionProposalNetwork@{torchvision\_down.models.detection.rpn.RegionProposalNetwork}!\_get\_top\_n\_idx@{\_get\_top\_n\_idx}}
+\index{\_get\_top\_n\_idx@{\_get\_top\_n\_idx}!torchvision\_down.models.detection.rpn.RegionProposalNetwork@{torchvision\_down.models.detection.rpn.RegionProposalNetwork}}
+\doxysubsubsection{\texorpdfstring{\_get\_top\_n\_idx()}{\_get\_top\_n\_idx()}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1models_1_1detection_1_1rpn_1_1_region_proposal_network_a7b9bf74f418fc896856282bd8114c72c} 
+ Tensor torchvision\+\_\+down.\+models.\+detection.\+rpn.\+Region\+Proposal\+Network.\+\_\+get\+\_\+top\+\_\+n\+\_\+idx (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{Tensor}]{objectness}{, }\item[{List\mbox{[}int\mbox{]}}]{num\+\_\+anchors\+\_\+per\+\_\+level}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classtorchvision__down_1_1models_1_1detection_1_1rpn_1_1_region_proposal_network_a6a0950b1f3b06faa6ad2912c2090823f}\index{torchvision\_down.models.detection.rpn.RegionProposalNetwork@{torchvision\_down.models.detection.rpn.RegionProposalNetwork}!assign\_targets\_to\_anchors@{assign\_targets\_to\_anchors}}
+\index{assign\_targets\_to\_anchors@{assign\_targets\_to\_anchors}!torchvision\_down.models.detection.rpn.RegionProposalNetwork@{torchvision\_down.models.detection.rpn.RegionProposalNetwork}}
+\doxysubsubsection{\texorpdfstring{assign\_targets\_to\_anchors()}{assign\_targets\_to\_anchors()}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1models_1_1detection_1_1rpn_1_1_region_proposal_network_a6a0950b1f3b06faa6ad2912c2090823f} 
+ Tuple\mbox{[}List\mbox{[}Tensor\mbox{]}, List\mbox{[}Tensor\mbox{]}\mbox{]} torchvision\+\_\+down.\+models.\+detection.\+rpn.\+Region\+Proposal\+Network.\+assign\+\_\+targets\+\_\+to\+\_\+anchors (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{List\mbox{[}Tensor\mbox{]}}]{anchors}{, }\item[{List\mbox{[}Dict\mbox{[}str, Tensor\mbox{]}\mbox{]}     }]{targets}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classtorchvision__down_1_1models_1_1detection_1_1rpn_1_1_region_proposal_network_ab8dbdf5e30f226de80c22c0b9e969849}\index{torchvision\_down.models.detection.rpn.RegionProposalNetwork@{torchvision\_down.models.detection.rpn.RegionProposalNetwork}!compute\_loss@{compute\_loss}}
+\index{compute\_loss@{compute\_loss}!torchvision\_down.models.detection.rpn.RegionProposalNetwork@{torchvision\_down.models.detection.rpn.RegionProposalNetwork}}
+\doxysubsubsection{\texorpdfstring{compute\_loss()}{compute\_loss()}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1models_1_1detection_1_1rpn_1_1_region_proposal_network_ab8dbdf5e30f226de80c22c0b9e969849} 
+ Tuple\mbox{[}Tensor, Tensor\mbox{]} torchvision\+\_\+down.\+models.\+detection.\+rpn.\+Region\+Proposal\+Network.\+compute\+\_\+loss (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{Tensor}]{objectness}{, }\item[{Tensor}]{pred\+\_\+bbox\+\_\+deltas}{, }\item[{List\mbox{[}Tensor\mbox{]}}]{labels}{, }\item[{List\mbox{[}Tensor\mbox{]}     }]{regression\+\_\+targets}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Args:
+    objectness (Tensor)
+    pred_bbox_deltas (Tensor)
+    labels (List[Tensor])
+    regression_targets (List[Tensor])
+
+Returns:
+    objectness_loss (Tensor)
+    box_loss (Tensor)
+\end{DoxyVerb}
+ \Hypertarget{classtorchvision__down_1_1models_1_1detection_1_1rpn_1_1_region_proposal_network_ae516b322cf6d70239d51e55996cadbe4}\index{torchvision\_down.models.detection.rpn.RegionProposalNetwork@{torchvision\_down.models.detection.rpn.RegionProposalNetwork}!filter\_proposals@{filter\_proposals}}
+\index{filter\_proposals@{filter\_proposals}!torchvision\_down.models.detection.rpn.RegionProposalNetwork@{torchvision\_down.models.detection.rpn.RegionProposalNetwork}}
+\doxysubsubsection{\texorpdfstring{filter\_proposals()}{filter\_proposals()}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1models_1_1detection_1_1rpn_1_1_region_proposal_network_ae516b322cf6d70239d51e55996cadbe4} 
+ Tuple\mbox{[}List\mbox{[}Tensor\mbox{]}, List\mbox{[}Tensor\mbox{]}\mbox{]} torchvision\+\_\+down.\+models.\+detection.\+rpn.\+Region\+Proposal\+Network.\+filter\+\_\+proposals (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{Tensor}]{proposals}{, }\item[{Tensor}]{objectness}{, }\item[{List\mbox{[}Tuple\mbox{[}int, int\mbox{]}\mbox{]}}]{image\+\_\+shapes}{, }\item[{List\mbox{[}int\mbox{]}}]{num\+\_\+anchors\+\_\+per\+\_\+level}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classtorchvision__down_1_1models_1_1detection_1_1rpn_1_1_region_proposal_network_a18446b911b19165ec53c5cc9b980dc80}\index{torchvision\_down.models.detection.rpn.RegionProposalNetwork@{torchvision\_down.models.detection.rpn.RegionProposalNetwork}!forward@{forward}}
+\index{forward@{forward}!torchvision\_down.models.detection.rpn.RegionProposalNetwork@{torchvision\_down.models.detection.rpn.RegionProposalNetwork}}
+\doxysubsubsection{\texorpdfstring{forward()}{forward()}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1models_1_1detection_1_1rpn_1_1_region_proposal_network_a18446b911b19165ec53c5cc9b980dc80} 
+ Tuple\mbox{[}List\mbox{[}Tensor\mbox{]}, Dict\mbox{[}str, Tensor\mbox{]}\mbox{]} torchvision\+\_\+down.\+models.\+detection.\+rpn.\+Region\+Proposal\+Network.\+forward (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{\mbox{\hyperlink{classtorchvision__down_1_1models_1_1detection_1_1image__list_1_1_image_list}{Image\+List}}}]{images}{, }\item[{Dict\mbox{[}str, Tensor\mbox{]}}]{features}{, }\item[{Optional\mbox{[}List\mbox{[}Dict\mbox{[}str, Tensor\mbox{]}\mbox{]}\mbox{]} }]{targets}{ = {\ttfamily None}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Args:
+    images (ImageList): images for which we want to compute the predictions
+    features (Dict[str, Tensor]): features computed from the images that are
+        used for computing the predictions. Each tensor in the list
+        correspond to different feature levels
+    targets (List[Dict[str, Tensor]]): ground-truth boxes present in the image (optional).
+        If provided, each element in the dict should contain a field `boxes`,
+        with the locations of the ground-truth boxes.
+
+Returns:
+    boxes (List[Tensor]): the predicted boxes from the RPN, one Tensor per
+        image.
+    losses (Dict[str, Tensor]): the losses for the model during training. During
+        testing, it is an empty dict.
+\end{DoxyVerb}
+ \Hypertarget{classtorchvision__down_1_1models_1_1detection_1_1rpn_1_1_region_proposal_network_a44a2ca595ba3023a8bd50b0c87783f0c}\index{torchvision\_down.models.detection.rpn.RegionProposalNetwork@{torchvision\_down.models.detection.rpn.RegionProposalNetwork}!post\_nms\_top\_n@{post\_nms\_top\_n}}
+\index{post\_nms\_top\_n@{post\_nms\_top\_n}!torchvision\_down.models.detection.rpn.RegionProposalNetwork@{torchvision\_down.models.detection.rpn.RegionProposalNetwork}}
+\doxysubsubsection{\texorpdfstring{post\_nms\_top\_n()}{post\_nms\_top\_n()}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1models_1_1detection_1_1rpn_1_1_region_proposal_network_a44a2ca595ba3023a8bd50b0c87783f0c} 
+ int torchvision\+\_\+down.\+models.\+detection.\+rpn.\+Region\+Proposal\+Network.\+post\+\_\+nms\+\_\+top\+\_\+n (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classtorchvision__down_1_1models_1_1detection_1_1rpn_1_1_region_proposal_network_ae6cfdf956ebf2edf917ce22b2f4b90d7}\index{torchvision\_down.models.detection.rpn.RegionProposalNetwork@{torchvision\_down.models.detection.rpn.RegionProposalNetwork}!pre\_nms\_top\_n@{pre\_nms\_top\_n}}
+\index{pre\_nms\_top\_n@{pre\_nms\_top\_n}!torchvision\_down.models.detection.rpn.RegionProposalNetwork@{torchvision\_down.models.detection.rpn.RegionProposalNetwork}}
+\doxysubsubsection{\texorpdfstring{pre\_nms\_top\_n()}{pre\_nms\_top\_n()}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1models_1_1detection_1_1rpn_1_1_region_proposal_network_ae6cfdf956ebf2edf917ce22b2f4b90d7} 
+ int torchvision\+\_\+down.\+models.\+detection.\+rpn.\+Region\+Proposal\+Network.\+pre\+\_\+nms\+\_\+top\+\_\+n (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classtorchvision__down_1_1models_1_1detection_1_1rpn_1_1_region_proposal_network_a55212905aeeb1371ac2e1a3840ca76e4}\index{torchvision\_down.models.detection.rpn.RegionProposalNetwork@{torchvision\_down.models.detection.rpn.RegionProposalNetwork}!\_\_annotations\_\_@{\_\_annotations\_\_}}
+\index{\_\_annotations\_\_@{\_\_annotations\_\_}!torchvision\_down.models.detection.rpn.RegionProposalNetwork@{torchvision\_down.models.detection.rpn.RegionProposalNetwork}}
+\doxysubsubsection{\texorpdfstring{\_\_annotations\_\_}{\_\_annotations\_\_}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1models_1_1detection_1_1rpn_1_1_region_proposal_network_a55212905aeeb1371ac2e1a3840ca76e4} 
+dict torchvision\+\_\+down.\+models.\+detection.\+rpn.\+Region\+Proposal\+Network.\+\_\+\+\_\+annotations\+\_\+\+\_\+\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}box\_coder"{}}:\ det\_utils.BoxCoder,}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}proposal\_matcher"{}}:\ det\_utils.Matcher,}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}fg\_bg\_sampler"{}}:\ det\_utils.BalancedPositiveNegativeSampler,}
+\DoxyCodeLine{\ \ \ \ \}}
+
+\end{DoxyCode}
+\Hypertarget{classtorchvision__down_1_1models_1_1detection_1_1rpn_1_1_region_proposal_network_aef629580156542a8cdff0e3b438544ae}\index{torchvision\_down.models.detection.rpn.RegionProposalNetwork@{torchvision\_down.models.detection.rpn.RegionProposalNetwork}!\_post\_nms\_top\_n@{\_post\_nms\_top\_n}}
+\index{\_post\_nms\_top\_n@{\_post\_nms\_top\_n}!torchvision\_down.models.detection.rpn.RegionProposalNetwork@{torchvision\_down.models.detection.rpn.RegionProposalNetwork}}
+\doxysubsubsection{\texorpdfstring{\_post\_nms\_top\_n}{\_post\_nms\_top\_n}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1models_1_1detection_1_1rpn_1_1_region_proposal_network_aef629580156542a8cdff0e3b438544ae} 
+int torchvision\+\_\+down.\+models.\+detection.\+rpn.\+Region\+Proposal\+Network.\+\_\+post\+\_\+nms\+\_\+top\+\_\+n = \mbox{\hyperlink{classtorchvision__down_1_1models_1_1detection_1_1rpn_1_1_region_proposal_network_a44a2ca595ba3023a8bd50b0c87783f0c}{post\+\_\+nms\+\_\+top\+\_\+n}}\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classtorchvision__down_1_1models_1_1detection_1_1rpn_1_1_region_proposal_network_a122aafd49bea5670e331ffff701f5ab7}\index{torchvision\_down.models.detection.rpn.RegionProposalNetwork@{torchvision\_down.models.detection.rpn.RegionProposalNetwork}!\_pre\_nms\_top\_n@{\_pre\_nms\_top\_n}}
+\index{\_pre\_nms\_top\_n@{\_pre\_nms\_top\_n}!torchvision\_down.models.detection.rpn.RegionProposalNetwork@{torchvision\_down.models.detection.rpn.RegionProposalNetwork}}
+\doxysubsubsection{\texorpdfstring{\_pre\_nms\_top\_n}{\_pre\_nms\_top\_n}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1models_1_1detection_1_1rpn_1_1_region_proposal_network_a122aafd49bea5670e331ffff701f5ab7} 
+int torchvision\+\_\+down.\+models.\+detection.\+rpn.\+Region\+Proposal\+Network.\+\_\+pre\+\_\+nms\+\_\+top\+\_\+n = \mbox{\hyperlink{classtorchvision__down_1_1models_1_1detection_1_1rpn_1_1_region_proposal_network_ae6cfdf956ebf2edf917ce22b2f4b90d7}{pre\+\_\+nms\+\_\+top\+\_\+n}}\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classtorchvision__down_1_1models_1_1detection_1_1rpn_1_1_region_proposal_network_a9765e130240256f0179f73684495d401}\index{torchvision\_down.models.detection.rpn.RegionProposalNetwork@{torchvision\_down.models.detection.rpn.RegionProposalNetwork}!anchor\_generator@{anchor\_generator}}
+\index{anchor\_generator@{anchor\_generator}!torchvision\_down.models.detection.rpn.RegionProposalNetwork@{torchvision\_down.models.detection.rpn.RegionProposalNetwork}}
+\doxysubsubsection{\texorpdfstring{anchor\_generator}{anchor\_generator}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1models_1_1detection_1_1rpn_1_1_region_proposal_network_a9765e130240256f0179f73684495d401} 
+torchvision\+\_\+down.\+models.\+detection.\+rpn.\+Region\+Proposal\+Network.\+anchor\+\_\+generator = anchor\+\_\+generator}
+
+\Hypertarget{classtorchvision__down_1_1models_1_1detection_1_1rpn_1_1_region_proposal_network_a1176640ade36a4e2495562b33946d16a}\index{torchvision\_down.models.detection.rpn.RegionProposalNetwork@{torchvision\_down.models.detection.rpn.RegionProposalNetwork}!box\_coder@{box\_coder}}
+\index{box\_coder@{box\_coder}!torchvision\_down.models.detection.rpn.RegionProposalNetwork@{torchvision\_down.models.detection.rpn.RegionProposalNetwork}}
+\doxysubsubsection{\texorpdfstring{box\_coder}{box\_coder}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1models_1_1detection_1_1rpn_1_1_region_proposal_network_a1176640ade36a4e2495562b33946d16a} 
+torchvision\+\_\+down.\+models.\+detection.\+rpn.\+Region\+Proposal\+Network.\+box\+\_\+coder = det\+\_\+utils.\+Box\+Coder(weights=(1.\+0, 1.\+0, 1.\+0, 1.\+0))}
+
+\Hypertarget{classtorchvision__down_1_1models_1_1detection_1_1rpn_1_1_region_proposal_network_a1ab03d1349eaba985935a45ec897cd72}\index{torchvision\_down.models.detection.rpn.RegionProposalNetwork@{torchvision\_down.models.detection.rpn.RegionProposalNetwork}!box\_similarity@{box\_similarity}}
+\index{box\_similarity@{box\_similarity}!torchvision\_down.models.detection.rpn.RegionProposalNetwork@{torchvision\_down.models.detection.rpn.RegionProposalNetwork}}
+\doxysubsubsection{\texorpdfstring{box\_similarity}{box\_similarity}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1models_1_1detection_1_1rpn_1_1_region_proposal_network_a1ab03d1349eaba985935a45ec897cd72} 
+torchvision\+\_\+down.\+models.\+detection.\+rpn.\+Region\+Proposal\+Network.\+box\+\_\+similarity = box\+\_\+ops.\+box\+\_\+iou}
+
+\Hypertarget{classtorchvision__down_1_1models_1_1detection_1_1rpn_1_1_region_proposal_network_a733e86180cc46fcbbcfad2eadecc2f8e}\index{torchvision\_down.models.detection.rpn.RegionProposalNetwork@{torchvision\_down.models.detection.rpn.RegionProposalNetwork}!fg\_bg\_sampler@{fg\_bg\_sampler}}
+\index{fg\_bg\_sampler@{fg\_bg\_sampler}!torchvision\_down.models.detection.rpn.RegionProposalNetwork@{torchvision\_down.models.detection.rpn.RegionProposalNetwork}}
+\doxysubsubsection{\texorpdfstring{fg\_bg\_sampler}{fg\_bg\_sampler}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1models_1_1detection_1_1rpn_1_1_region_proposal_network_a733e86180cc46fcbbcfad2eadecc2f8e} 
+torchvision\+\_\+down.\+models.\+detection.\+rpn.\+Region\+Proposal\+Network.\+fg\+\_\+bg\+\_\+sampler = det\+\_\+utils.\+Balanced\+Positive\+Negative\+Sampler(batch\+\_\+size\+\_\+per\+\_\+image, positive\+\_\+fraction)}
+
+\Hypertarget{classtorchvision__down_1_1models_1_1detection_1_1rpn_1_1_region_proposal_network_a4bcddf55350e55a63670d780f59ce263}\index{torchvision\_down.models.detection.rpn.RegionProposalNetwork@{torchvision\_down.models.detection.rpn.RegionProposalNetwork}!head@{head}}
+\index{head@{head}!torchvision\_down.models.detection.rpn.RegionProposalNetwork@{torchvision\_down.models.detection.rpn.RegionProposalNetwork}}
+\doxysubsubsection{\texorpdfstring{head}{head}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1models_1_1detection_1_1rpn_1_1_region_proposal_network_a4bcddf55350e55a63670d780f59ce263} 
+torchvision\+\_\+down.\+models.\+detection.\+rpn.\+Region\+Proposal\+Network.\+head = head}
+
+\Hypertarget{classtorchvision__down_1_1models_1_1detection_1_1rpn_1_1_region_proposal_network_a7f1e60681968d42a4c82808faf3eba0b}\index{torchvision\_down.models.detection.rpn.RegionProposalNetwork@{torchvision\_down.models.detection.rpn.RegionProposalNetwork}!min\_size@{min\_size}}
+\index{min\_size@{min\_size}!torchvision\_down.models.detection.rpn.RegionProposalNetwork@{torchvision\_down.models.detection.rpn.RegionProposalNetwork}}
+\doxysubsubsection{\texorpdfstring{min\_size}{min\_size}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1models_1_1detection_1_1rpn_1_1_region_proposal_network_a7f1e60681968d42a4c82808faf3eba0b} 
+int torchvision\+\_\+down.\+models.\+detection.\+rpn.\+Region\+Proposal\+Network.\+min\+\_\+size = 1e-\/3}
+
+\Hypertarget{classtorchvision__down_1_1models_1_1detection_1_1rpn_1_1_region_proposal_network_a6f64e6a191bb79925268feae115c4f12}\index{torchvision\_down.models.detection.rpn.RegionProposalNetwork@{torchvision\_down.models.detection.rpn.RegionProposalNetwork}!nms\_thresh@{nms\_thresh}}
+\index{nms\_thresh@{nms\_thresh}!torchvision\_down.models.detection.rpn.RegionProposalNetwork@{torchvision\_down.models.detection.rpn.RegionProposalNetwork}}
+\doxysubsubsection{\texorpdfstring{nms\_thresh}{nms\_thresh}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1models_1_1detection_1_1rpn_1_1_region_proposal_network_a6f64e6a191bb79925268feae115c4f12} 
+torchvision\+\_\+down.\+models.\+detection.\+rpn.\+Region\+Proposal\+Network.\+nms\+\_\+thresh = nms\+\_\+thresh}
+
+\Hypertarget{classtorchvision__down_1_1models_1_1detection_1_1rpn_1_1_region_proposal_network_af8ca2edd0a44b935bc404220d859f0f4}\index{torchvision\_down.models.detection.rpn.RegionProposalNetwork@{torchvision\_down.models.detection.rpn.RegionProposalNetwork}!proposal\_matcher@{proposal\_matcher}}
+\index{proposal\_matcher@{proposal\_matcher}!torchvision\_down.models.detection.rpn.RegionProposalNetwork@{torchvision\_down.models.detection.rpn.RegionProposalNetwork}}
+\doxysubsubsection{\texorpdfstring{proposal\_matcher}{proposal\_matcher}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1models_1_1detection_1_1rpn_1_1_region_proposal_network_af8ca2edd0a44b935bc404220d859f0f4} 
+torchvision\+\_\+down.\+models.\+detection.\+rpn.\+Region\+Proposal\+Network.\+proposal\+\_\+matcher}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \ det\_utils.Matcher(}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ fg\_iou\_thresh,}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ bg\_iou\_thresh,}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ allow\_low\_quality\_matches=\textcolor{keyword}{True},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ )}
+
+\end{DoxyCode}
+\Hypertarget{classtorchvision__down_1_1models_1_1detection_1_1rpn_1_1_region_proposal_network_a4fc38bb7a3053438842a18c749b5cc68}\index{torchvision\_down.models.detection.rpn.RegionProposalNetwork@{torchvision\_down.models.detection.rpn.RegionProposalNetwork}!score\_thresh@{score\_thresh}}
+\index{score\_thresh@{score\_thresh}!torchvision\_down.models.detection.rpn.RegionProposalNetwork@{torchvision\_down.models.detection.rpn.RegionProposalNetwork}}
+\doxysubsubsection{\texorpdfstring{score\_thresh}{score\_thresh}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1models_1_1detection_1_1rpn_1_1_region_proposal_network_a4fc38bb7a3053438842a18c749b5cc68} 
+torchvision\+\_\+down.\+models.\+detection.\+rpn.\+Region\+Proposal\+Network.\+score\+\_\+thresh = score\+\_\+thresh}
+
+\Hypertarget{classtorchvision__down_1_1models_1_1detection_1_1rpn_1_1_region_proposal_network_a9a3f2e7a5eda7f9e85ccd57a614efcf3}\index{torchvision\_down.models.detection.rpn.RegionProposalNetwork@{torchvision\_down.models.detection.rpn.RegionProposalNetwork}!training@{training}}
+\index{training@{training}!torchvision\_down.models.detection.rpn.RegionProposalNetwork@{torchvision\_down.models.detection.rpn.RegionProposalNetwork}}
+\doxysubsubsection{\texorpdfstring{training}{training}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1models_1_1detection_1_1rpn_1_1_region_proposal_network_a9a3f2e7a5eda7f9e85ccd57a614efcf3} 
+torchvision\+\_\+down.\+models.\+detection.\+rpn.\+Region\+Proposal\+Network.\+training}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Cervi\+AI/torchvision\+\_\+down/models/detection/\mbox{\hyperlink{rpn_8py}{rpn.\+py}}\end{DoxyCompactItemize}

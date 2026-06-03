@@ -1,0 +1,104 @@
+\doxysection{torchvision\+\_\+down.\+models.\+quantization.\+resnet Namespace Reference}
+\hypertarget{namespacetorchvision__down_1_1models_1_1quantization_1_1resnet}{}\label{namespacetorchvision__down_1_1models_1_1quantization_1_1resnet}\index{torchvision\_down.models.quantization.resnet@{torchvision\_down.models.quantization.resnet}}
+\doxysubsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classtorchvision__down_1_1models_1_1quantization_1_1resnet_1_1_quantizable_basic_block}{Quantizable\+Basic\+Block}}
+\item 
+class \mbox{\hyperlink{classtorchvision__down_1_1models_1_1quantization_1_1resnet_1_1_quantizable_bottleneck}{Quantizable\+Bottleneck}}
+\item 
+class \mbox{\hyperlink{classtorchvision__down_1_1models_1_1quantization_1_1resnet_1_1_quantizable_res_net}{Quantizable\+Res\+Net}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1models_1_1quantization_1_1resnet_1_1_quantizable_res_net}{Quantizable\+Res\+Net}} \mbox{\hyperlink{namespacetorchvision__down_1_1models_1_1quantization_1_1resnet_acb6a7ba6cb269e0da13c0093d54ec6a5}{\+\_\+resnet}} (str arch, Type\mbox{[}Union\mbox{[}\mbox{\hyperlink{classtorchvision__down_1_1models_1_1quantization_1_1resnet_1_1_quantizable_basic_block}{Quantizable\+Basic\+Block}}, \mbox{\hyperlink{classtorchvision__down_1_1models_1_1quantization_1_1resnet_1_1_quantizable_bottleneck}{Quantizable\+Bottleneck}}\mbox{]}\mbox{]} block, List\mbox{[}int\mbox{]} layers, bool pretrained, bool progress, bool quantize, \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}Any kwargs)
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1models_1_1quantization_1_1resnet_1_1_quantizable_res_net}{Quantizable\+Res\+Net}} \mbox{\hyperlink{namespacetorchvision__down_1_1models_1_1quantization_1_1resnet_a2be3f75e4ffeef14515989f44df01c75}{resnet18}} (bool pretrained=False, bool progress=True, bool quantize=False, \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}Any kwargs)
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1models_1_1quantization_1_1resnet_1_1_quantizable_res_net}{Quantizable\+Res\+Net}} \mbox{\hyperlink{namespacetorchvision__down_1_1models_1_1quantization_1_1resnet_a238b2b1b5b281027d1ebfbbb607195d5}{resnet50}} (bool pretrained=False, bool progress=True, bool quantize=False, \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}Any kwargs)
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1models_1_1quantization_1_1resnet_1_1_quantizable_res_net}{Quantizable\+Res\+Net}} \mbox{\hyperlink{namespacetorchvision__down_1_1models_1_1quantization_1_1resnet_a67c82cacb16b4cd75d051e87dbcffab0}{resnext101\+\_\+32x8d}} (bool pretrained=False, bool progress=True, bool quantize=False, \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}Any kwargs)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+list \mbox{\hyperlink{namespacetorchvision__down_1_1models_1_1quantization_1_1resnet_ab668fa1351c912f79fc04b3ce49a1929}{\+\_\+\+\_\+all\+\_\+\+\_\+}} = \mbox{[}"{}Quantizable\+Res\+Net"{}, "{}resnet18"{}, "{}resnet50"{}, "{}resnext101\+\_\+32x8d"{}\mbox{]}
+\item 
+dict \mbox{\hyperlink{namespacetorchvision__down_1_1models_1_1quantization_1_1resnet_a9b6151e4a37c544a484792905f95da51}{quant\+\_\+model\+\_\+urls}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{namespacetorchvision__down_1_1models_1_1quantization_1_1resnet_acb6a7ba6cb269e0da13c0093d54ec6a5}\index{torchvision\_down.models.quantization.resnet@{torchvision\_down.models.quantization.resnet}!\_resnet@{\_resnet}}
+\index{\_resnet@{\_resnet}!torchvision\_down.models.quantization.resnet@{torchvision\_down.models.quantization.resnet}}
+\doxysubsubsection{\texorpdfstring{\_resnet()}{\_resnet()}}
+{\footnotesize\ttfamily \label{namespacetorchvision__down_1_1models_1_1quantization_1_1resnet_acb6a7ba6cb269e0da13c0093d54ec6a5} 
+ \mbox{\hyperlink{classtorchvision__down_1_1models_1_1quantization_1_1resnet_1_1_quantizable_res_net}{Quantizable\+Res\+Net}} torchvision\+\_\+down.\+models.\+quantization.\+resnet.\+\_\+resnet (\begin{DoxyParamCaption}\item[{str}]{arch}{, }\item[{Type\mbox{[}Union\mbox{[}\mbox{\hyperlink{classtorchvision__down_1_1models_1_1quantization_1_1resnet_1_1_quantizable_basic_block}{Quantizable\+Basic\+Block}}, \mbox{\hyperlink{classtorchvision__down_1_1models_1_1quantization_1_1resnet_1_1_quantizable_bottleneck}{Quantizable\+Bottleneck}}\mbox{]}\mbox{]}}]{block}{, }\item[{List\mbox{[}int\mbox{]}}]{layers}{, }\item[{bool}]{pretrained}{, }\item[{bool}]{progress}{, }\item[{bool}]{quantize}{, }\item[{\texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}Any}]{kwargs}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{namespacetorchvision__down_1_1models_1_1quantization_1_1resnet_a2be3f75e4ffeef14515989f44df01c75}\index{torchvision\_down.models.quantization.resnet@{torchvision\_down.models.quantization.resnet}!resnet18@{resnet18}}
+\index{resnet18@{resnet18}!torchvision\_down.models.quantization.resnet@{torchvision\_down.models.quantization.resnet}}
+\doxysubsubsection{\texorpdfstring{resnet18()}{resnet18()}}
+{\footnotesize\ttfamily \label{namespacetorchvision__down_1_1models_1_1quantization_1_1resnet_a2be3f75e4ffeef14515989f44df01c75} 
+ \mbox{\hyperlink{classtorchvision__down_1_1models_1_1quantization_1_1resnet_1_1_quantizable_res_net}{Quantizable\+Res\+Net}} torchvision\+\_\+down.\+models.\+quantization.\+resnet.\+resnet18 (\begin{DoxyParamCaption}\item[{bool }]{pretrained}{ = {\ttfamily False}, }\item[{bool }]{progress}{ = {\ttfamily True}, }\item[{bool }]{quantize}{ = {\ttfamily False}, }\item[{\texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}Any}]{kwargs}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}ResNet-18 model from
+`"Deep Residual Learning for Image Recognition" <https://arxiv.org/pdf/1512.03385.pdf>`_
+
+Args:
+pretrained (bool): If True, returns a model pre-trained on ImageNet
+progress (bool): If True, displays a progress bar of the download to stderr
+quantize (bool): If True, return a quantized version of the model
+\end{DoxyVerb}
+ \Hypertarget{namespacetorchvision__down_1_1models_1_1quantization_1_1resnet_a238b2b1b5b281027d1ebfbbb607195d5}\index{torchvision\_down.models.quantization.resnet@{torchvision\_down.models.quantization.resnet}!resnet50@{resnet50}}
+\index{resnet50@{resnet50}!torchvision\_down.models.quantization.resnet@{torchvision\_down.models.quantization.resnet}}
+\doxysubsubsection{\texorpdfstring{resnet50()}{resnet50()}}
+{\footnotesize\ttfamily \label{namespacetorchvision__down_1_1models_1_1quantization_1_1resnet_a238b2b1b5b281027d1ebfbbb607195d5} 
+ \mbox{\hyperlink{classtorchvision__down_1_1models_1_1quantization_1_1resnet_1_1_quantizable_res_net}{Quantizable\+Res\+Net}} torchvision\+\_\+down.\+models.\+quantization.\+resnet.\+resnet50 (\begin{DoxyParamCaption}\item[{bool }]{pretrained}{ = {\ttfamily False}, }\item[{bool }]{progress}{ = {\ttfamily True}, }\item[{bool }]{quantize}{ = {\ttfamily False}, }\item[{\texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}Any}]{kwargs}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}ResNet-50 model from
+`"Deep Residual Learning for Image Recognition" <https://arxiv.org/pdf/1512.03385.pdf>`_
+
+Args:
+pretrained (bool): If True, returns a model pre-trained on ImageNet
+progress (bool): If True, displays a progress bar of the download to stderr
+quantize (bool): If True, return a quantized version of the model
+\end{DoxyVerb}
+ \Hypertarget{namespacetorchvision__down_1_1models_1_1quantization_1_1resnet_a67c82cacb16b4cd75d051e87dbcffab0}\index{torchvision\_down.models.quantization.resnet@{torchvision\_down.models.quantization.resnet}!resnext101\_32x8d@{resnext101\_32x8d}}
+\index{resnext101\_32x8d@{resnext101\_32x8d}!torchvision\_down.models.quantization.resnet@{torchvision\_down.models.quantization.resnet}}
+\doxysubsubsection{\texorpdfstring{resnext101\_32x8d()}{resnext101\_32x8d()}}
+{\footnotesize\ttfamily \label{namespacetorchvision__down_1_1models_1_1quantization_1_1resnet_a67c82cacb16b4cd75d051e87dbcffab0} 
+ \mbox{\hyperlink{classtorchvision__down_1_1models_1_1quantization_1_1resnet_1_1_quantizable_res_net}{Quantizable\+Res\+Net}} torchvision\+\_\+down.\+models.\+quantization.\+resnet.\+resnext101\+\_\+32x8d (\begin{DoxyParamCaption}\item[{bool }]{pretrained}{ = {\ttfamily False}, }\item[{bool }]{progress}{ = {\ttfamily True}, }\item[{bool }]{quantize}{ = {\ttfamily False}, }\item[{\texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}Any}]{kwargs}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}ResNeXt-101 32x8d model from
+`"Aggregated Residual Transformation for Deep Neural Networks" <https://arxiv.org/pdf/1611.05431.pdf>`_
+
+Args:
+pretrained (bool): If True, returns a model pre-trained on ImageNet
+progress (bool): If True, displays a progress bar of the download to stderr
+quantize (bool): If True, return a quantized version of the model
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Variable Documentation}
+\Hypertarget{namespacetorchvision__down_1_1models_1_1quantization_1_1resnet_ab668fa1351c912f79fc04b3ce49a1929}\index{torchvision\_down.models.quantization.resnet@{torchvision\_down.models.quantization.resnet}!\_\_all\_\_@{\_\_all\_\_}}
+\index{\_\_all\_\_@{\_\_all\_\_}!torchvision\_down.models.quantization.resnet@{torchvision\_down.models.quantization.resnet}}
+\doxysubsubsection{\texorpdfstring{\_\_all\_\_}{\_\_all\_\_}}
+{\footnotesize\ttfamily \label{namespacetorchvision__down_1_1models_1_1quantization_1_1resnet_ab668fa1351c912f79fc04b3ce49a1929} 
+list torchvision\+\_\+down.\+models.\+quantization.\+resnet.\+\_\+\+\_\+all\+\_\+\+\_\+ = \mbox{[}"{}Quantizable\+Res\+Net"{}, "{}resnet18"{}, "{}resnet50"{}, "{}resnext101\+\_\+32x8d"{}\mbox{]}\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{namespacetorchvision__down_1_1models_1_1quantization_1_1resnet_a9b6151e4a37c544a484792905f95da51}\index{torchvision\_down.models.quantization.resnet@{torchvision\_down.models.quantization.resnet}!quant\_model\_urls@{quant\_model\_urls}}
+\index{quant\_model\_urls@{quant\_model\_urls}!torchvision\_down.models.quantization.resnet@{torchvision\_down.models.quantization.resnet}}
+\doxysubsubsection{\texorpdfstring{quant\_model\_urls}{quant\_model\_urls}}
+{\footnotesize\ttfamily \label{namespacetorchvision__down_1_1models_1_1quantization_1_1resnet_a9b6151e4a37c544a484792905f95da51} 
+dict torchvision\+\_\+down.\+models.\+quantization.\+resnet.\+quant\+\_\+model\+\_\+urls}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ =\ \ \{}
+\DoxyCodeLine{00002\ \ \ \ \ \textcolor{stringliteral}{"{}resnet18\_fbgemm"{}}:\ \textcolor{stringliteral}{"{}https://download.pytorch.org/models/quantized/resnet18\_fbgemm\_16fa66dd.pth"{}},}
+\DoxyCodeLine{00003\ \ \ \ \ \textcolor{stringliteral}{"{}resnet50\_fbgemm"{}}:\ \textcolor{stringliteral}{"{}https://download.pytorch.org/models/quantized/resnet50\_fbgemm\_bf931d71.pth"{}},}
+\DoxyCodeLine{00004\ \ \ \ \ \textcolor{stringliteral}{"{}resnext101\_32x8d\_fbgemm"{}}:\ \textcolor{stringliteral}{"{}https://download.pytorch.org/models/quantized/resnext101\_32x8\_fbgemm\_09835ccf.pth"{}},}
+\DoxyCodeLine{00005\ \}}
+
+\end{DoxyCode}

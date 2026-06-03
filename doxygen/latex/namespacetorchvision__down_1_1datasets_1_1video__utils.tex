@@ -1,0 +1,69 @@
+\doxysection{torchvision\+\_\+down.\+datasets.\+video\+\_\+utils Namespace Reference}
+\hypertarget{namespacetorchvision__down_1_1datasets_1_1video__utils}{}\label{namespacetorchvision__down_1_1datasets_1_1video__utils}\index{torchvision\_down.datasets.video\_utils@{torchvision\_down.datasets.video\_utils}}
+\doxysubsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classtorchvision__down_1_1datasets_1_1video__utils_1_1___video_timestamps_dataset}{\+\_\+\+Video\+Timestamps\+Dataset}}
+\item 
+class \mbox{\hyperlink{classtorchvision__down_1_1datasets_1_1video__utils_1_1_video_clips}{Video\+Clips}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{namespacetorchvision__down_1_1datasets_1_1video__utils_aa8b357ff568c70b1fdb014bab3a73dd7}{pts\+\_\+convert}} (int pts, Fraction timebase\+\_\+from, Fraction timebase\+\_\+to, Callable round\+\_\+func=math.\+floor)
+\item 
+torch.\+Tensor \mbox{\hyperlink{namespacetorchvision__down_1_1datasets_1_1video__utils_aebe62522e30e0d981952ebc0ad8995ac}{unfold}} (torch.\+Tensor tensor, int size, int step, int dilation=1)
+\item 
+\mbox{\hyperlink{namespacetorchvision__down_1_1datasets_1_1video__utils_a78668fc1e4404709c1b6ff3e8a552562}{T}} \mbox{\hyperlink{namespacetorchvision__down_1_1datasets_1_1video__utils_a8d2dca8bfb70b589096748e994b52124}{\+\_\+collate\+\_\+fn}} (\mbox{\hyperlink{namespacetorchvision__down_1_1datasets_1_1video__utils_a78668fc1e4404709c1b6ff3e8a552562}{T}} x)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{namespacetorchvision__down_1_1datasets_1_1video__utils_a78668fc1e4404709c1b6ff3e8a552562}{T}} = Type\+Var("{}T"{})
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{namespacetorchvision__down_1_1datasets_1_1video__utils_a8d2dca8bfb70b589096748e994b52124}\index{torchvision\_down.datasets.video\_utils@{torchvision\_down.datasets.video\_utils}!\_collate\_fn@{\_collate\_fn}}
+\index{\_collate\_fn@{\_collate\_fn}!torchvision\_down.datasets.video\_utils@{torchvision\_down.datasets.video\_utils}}
+\doxysubsubsection{\texorpdfstring{\_collate\_fn()}{\_collate\_fn()}}
+{\footnotesize\ttfamily \label{namespacetorchvision__down_1_1datasets_1_1video__utils_a8d2dca8bfb70b589096748e994b52124} 
+ \mbox{\hyperlink{namespacetorchvision__down_1_1datasets_1_1video__utils_a78668fc1e4404709c1b6ff3e8a552562}{T}} torchvision\+\_\+down.\+datasets.\+video\+\_\+utils.\+\_\+collate\+\_\+fn (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespacetorchvision__down_1_1datasets_1_1video__utils_a78668fc1e4404709c1b6ff3e8a552562}{T}}}]{x}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\begin{DoxyVerb}Dummy collate function to be used with _VideoTimestampsDataset
+\end{DoxyVerb}
+ \Hypertarget{namespacetorchvision__down_1_1datasets_1_1video__utils_aa8b357ff568c70b1fdb014bab3a73dd7}\index{torchvision\_down.datasets.video\_utils@{torchvision\_down.datasets.video\_utils}!pts\_convert@{pts\_convert}}
+\index{pts\_convert@{pts\_convert}!torchvision\_down.datasets.video\_utils@{torchvision\_down.datasets.video\_utils}}
+\doxysubsubsection{\texorpdfstring{pts\_convert()}{pts\_convert()}}
+{\footnotesize\ttfamily \label{namespacetorchvision__down_1_1datasets_1_1video__utils_aa8b357ff568c70b1fdb014bab3a73dd7} 
+ int torchvision\+\_\+down.\+datasets.\+video\+\_\+utils.\+pts\+\_\+convert (\begin{DoxyParamCaption}\item[{int}]{pts}{, }\item[{Fraction}]{timebase\+\_\+from}{, }\item[{Fraction}]{timebase\+\_\+to}{, }\item[{Callable }]{round\+\_\+func}{ = {\ttfamily math.floor}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}convert pts between different time bases
+Args:
+    pts: presentation timestamp, float
+    timebase_from: original timebase. Fraction
+    timebase_to: new timebase. Fraction
+    round_func: rounding function.
+\end{DoxyVerb}
+ \Hypertarget{namespacetorchvision__down_1_1datasets_1_1video__utils_aebe62522e30e0d981952ebc0ad8995ac}\index{torchvision\_down.datasets.video\_utils@{torchvision\_down.datasets.video\_utils}!unfold@{unfold}}
+\index{unfold@{unfold}!torchvision\_down.datasets.video\_utils@{torchvision\_down.datasets.video\_utils}}
+\doxysubsubsection{\texorpdfstring{unfold()}{unfold()}}
+{\footnotesize\ttfamily \label{namespacetorchvision__down_1_1datasets_1_1video__utils_aebe62522e30e0d981952ebc0ad8995ac} 
+ torch.\+Tensor torchvision\+\_\+down.\+datasets.\+video\+\_\+utils.\+unfold (\begin{DoxyParamCaption}\item[{torch.\+Tensor}]{tensor}{, }\item[{int}]{size}{, }\item[{int}]{step}{, }\item[{int }]{dilation}{ = {\ttfamily 1}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}similar to tensor.unfold, but with the dilation
+and specialized for 1d tensors
+
+Returns all consecutive windows of `size` elements, with
+`step` between windows. The distance between each element
+in a window is given by `dilation`.
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Variable Documentation}
+\Hypertarget{namespacetorchvision__down_1_1datasets_1_1video__utils_a78668fc1e4404709c1b6ff3e8a552562}\index{torchvision\_down.datasets.video\_utils@{torchvision\_down.datasets.video\_utils}!T@{T}}
+\index{T@{T}!torchvision\_down.datasets.video\_utils@{torchvision\_down.datasets.video\_utils}}
+\doxysubsubsection{\texorpdfstring{T}{T}}
+{\footnotesize\ttfamily \label{namespacetorchvision__down_1_1datasets_1_1video__utils_a78668fc1e4404709c1b6ff3e8a552562} 
+torchvision\+\_\+down.\+datasets.\+video\+\_\+utils.\+T = Type\+Var("{}T"{})}
+

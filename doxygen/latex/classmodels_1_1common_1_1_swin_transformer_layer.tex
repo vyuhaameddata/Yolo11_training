@@ -1,0 +1,139 @@
+\doxysection{models.\+common.\+Swin\+Transformer\+Layer Class Reference}
+\hypertarget{classmodels_1_1common_1_1_swin_transformer_layer}{}\label{classmodels_1_1common_1_1_swin_transformer_layer}\index{models.common.SwinTransformerLayer@{models.common.SwinTransformerLayer}}
+Inheritance diagram for models.\+common.\+Swin\+Transformer\+Layer\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classmodels_1_1common_1_1_swin_transformer_layer}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classmodels_1_1common_1_1_swin_transformer_layer_a56519a69dd50032e0348006c97c130b1}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, \mbox{\hyperlink{classmodels_1_1common_1_1_swin_transformer_layer_a6f6e04ac02a625cf761f9fc7fb2db047}{dim}}, \mbox{\hyperlink{classmodels_1_1common_1_1_swin_transformer_layer_a7f9443a7402aa132e88e281680b50add}{num\+\_\+heads}}, \mbox{\hyperlink{classmodels_1_1common_1_1_swin_transformer_layer_ad2307a5e405567b6c9802e75c087bde9}{window\+\_\+size}}=8, \mbox{\hyperlink{classmodels_1_1common_1_1_swin_transformer_layer_ae359a12a4be7be87a421565426cc4bfe}{shift\+\_\+size}}=0, \mbox{\hyperlink{classmodels_1_1common_1_1_swin_transformer_layer_a750e49e2e06c40137a22a95cdafd29bc}{mlp\+\_\+ratio}}=4., qkv\+\_\+bias=True, qk\+\_\+scale=None, drop=0., attn\+\_\+drop=0., \mbox{\hyperlink{classmodels_1_1common_1_1_swin_transformer_layer_ad18f02579e6080b2bf8629143ea00013}{drop\+\_\+path}}=0., act\+\_\+layer=nn.\+Si\+LU, norm\+\_\+layer=nn.\+Layer\+Norm)
+\item 
+\mbox{\hyperlink{classmodels_1_1common_1_1_swin_transformer_layer_a52691940f80a6c81201e869a43766e8a}{create\+\_\+mask}} (self, H, W)
+\item 
+\mbox{\hyperlink{classmodels_1_1common_1_1_swin_transformer_layer_a8551389cccac44d634a6c7ac4c487267}{forward}} (self, x)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classmodels_1_1common_1_1_swin_transformer_layer_a6f6e04ac02a625cf761f9fc7fb2db047}{dim}} = dim
+\item 
+\mbox{\hyperlink{classmodels_1_1common_1_1_swin_transformer_layer_a7f9443a7402aa132e88e281680b50add}{num\+\_\+heads}} = num\+\_\+heads
+\item 
+\mbox{\hyperlink{classmodels_1_1common_1_1_swin_transformer_layer_ad2307a5e405567b6c9802e75c087bde9}{window\+\_\+size}} = window\+\_\+size
+\item 
+\mbox{\hyperlink{classmodels_1_1common_1_1_swin_transformer_layer_ae359a12a4be7be87a421565426cc4bfe}{shift\+\_\+size}} = shift\+\_\+size
+\item 
+\mbox{\hyperlink{classmodels_1_1common_1_1_swin_transformer_layer_a750e49e2e06c40137a22a95cdafd29bc}{mlp\+\_\+ratio}} = mlp\+\_\+ratio
+\item 
+\mbox{\hyperlink{classmodels_1_1common_1_1_swin_transformer_layer_aad45374b94de6a279e43dcade1cfbcd0}{norm1}} = norm\+\_\+layer(\mbox{\hyperlink{classmodels_1_1common_1_1_swin_transformer_layer_a6f6e04ac02a625cf761f9fc7fb2db047}{dim}})
+\item 
+\mbox{\hyperlink{classmodels_1_1common_1_1_swin_transformer_layer_a1231170bee31aeedc84723886da1093d}{attn}}
+\item 
+int \mbox{\hyperlink{classmodels_1_1common_1_1_swin_transformer_layer_ad18f02579e6080b2bf8629143ea00013}{drop\+\_\+path}} = Drop\+Path(drop\+\_\+path) if drop\+\_\+path $>$ 0. else nn.\+Identity()
+\item 
+\mbox{\hyperlink{classmodels_1_1common_1_1_swin_transformer_layer_a383aaddc08f072dca9e394e5167c73c4}{norm2}} = norm\+\_\+layer(\mbox{\hyperlink{classmodels_1_1common_1_1_swin_transformer_layer_a6f6e04ac02a625cf761f9fc7fb2db047}{dim}})
+\item 
+\mbox{\hyperlink{classmodels_1_1common_1_1_swin_transformer_layer_ac8414cbe269cace01654ed7426a83870}{mlp}} = \mbox{\hyperlink{classmodels_1_1common_1_1_mlp}{Mlp}}(in\+\_\+features=\mbox{\hyperlink{classmodels_1_1common_1_1_swin_transformer_layer_a6f6e04ac02a625cf761f9fc7fb2db047}{dim}}, hidden\+\_\+features=mlp\+\_\+hidden\+\_\+dim, act\+\_\+layer=act\+\_\+layer, drop=drop)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classmodels_1_1common_1_1_swin_transformer_layer_a56519a69dd50032e0348006c97c130b1}\index{models.common.SwinTransformerLayer@{models.common.SwinTransformerLayer}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!models.common.SwinTransformerLayer@{models.common.SwinTransformerLayer}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily \label{classmodels_1_1common_1_1_swin_transformer_layer_a56519a69dd50032e0348006c97c130b1} 
+models.\+common.\+Swin\+Transformer\+Layer.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{dim}{, }\item[{}]{num\+\_\+heads}{, }\item[{}]{window\+\_\+size}{ = {\ttfamily 8}, }\item[{}]{shift\+\_\+size}{ = {\ttfamily 0}, }\item[{}]{mlp\+\_\+ratio}{ = {\ttfamily 4.}, }\item[{}]{qkv\+\_\+bias}{ = {\ttfamily True}, }\item[{}]{qk\+\_\+scale}{ = {\ttfamily None}, }\item[{}]{drop}{ = {\ttfamily 0.}, }\item[{}]{attn\+\_\+drop}{ = {\ttfamily 0.}, }\item[{}]{drop\+\_\+path}{ = {\ttfamily 0.}, }\item[{}]{act\+\_\+layer}{ = {\ttfamily nn.SiLU}, }\item[{}]{norm\+\_\+layer}{ = {\ttfamily nn.LayerNorm}}\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classmodels_1_1common_1_1_swin_transformer_layer_a52691940f80a6c81201e869a43766e8a}\index{models.common.SwinTransformerLayer@{models.common.SwinTransformerLayer}!create\_mask@{create\_mask}}
+\index{create\_mask@{create\_mask}!models.common.SwinTransformerLayer@{models.common.SwinTransformerLayer}}
+\doxysubsubsection{\texorpdfstring{create\_mask()}{create\_mask()}}
+{\footnotesize\ttfamily \label{classmodels_1_1common_1_1_swin_transformer_layer_a52691940f80a6c81201e869a43766e8a} 
+models.\+common.\+Swin\+Transformer\+Layer.\+create\+\_\+mask (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{H}{, }\item[{}]{W}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classmodels_1_1common_1_1_swin_transformer_layer_a8551389cccac44d634a6c7ac4c487267}\index{models.common.SwinTransformerLayer@{models.common.SwinTransformerLayer}!forward@{forward}}
+\index{forward@{forward}!models.common.SwinTransformerLayer@{models.common.SwinTransformerLayer}}
+\doxysubsubsection{\texorpdfstring{forward()}{forward()}}
+{\footnotesize\ttfamily \label{classmodels_1_1common_1_1_swin_transformer_layer_a8551389cccac44d634a6c7ac4c487267} 
+models.\+common.\+Swin\+Transformer\+Layer.\+forward (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{x}{}\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classmodels_1_1common_1_1_swin_transformer_layer_a1231170bee31aeedc84723886da1093d}\index{models.common.SwinTransformerLayer@{models.common.SwinTransformerLayer}!attn@{attn}}
+\index{attn@{attn}!models.common.SwinTransformerLayer@{models.common.SwinTransformerLayer}}
+\doxysubsubsection{\texorpdfstring{attn}{attn}}
+{\footnotesize\ttfamily \label{classmodels_1_1common_1_1_swin_transformer_layer_a1231170bee31aeedc84723886da1093d} 
+models.\+common.\+Swin\+Transformer\+Layer.\+attn}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \ WindowAttention(}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ dim,\ window\_size=(self.window\_size,\ self.window\_size),\ num\_heads=num\_heads,}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ qkv\_bias=qkv\_bias,\ qk\_scale=qk\_scale,\ attn\_drop=attn\_drop,\ proj\_drop=drop)}
+
+\end{DoxyCode}
+\Hypertarget{classmodels_1_1common_1_1_swin_transformer_layer_a6f6e04ac02a625cf761f9fc7fb2db047}\index{models.common.SwinTransformerLayer@{models.common.SwinTransformerLayer}!dim@{dim}}
+\index{dim@{dim}!models.common.SwinTransformerLayer@{models.common.SwinTransformerLayer}}
+\doxysubsubsection{\texorpdfstring{dim}{dim}}
+{\footnotesize\ttfamily \label{classmodels_1_1common_1_1_swin_transformer_layer_a6f6e04ac02a625cf761f9fc7fb2db047} 
+models.\+common.\+Swin\+Transformer\+Layer.\+dim = dim}
+
+\Hypertarget{classmodels_1_1common_1_1_swin_transformer_layer_ad18f02579e6080b2bf8629143ea00013}\index{models.common.SwinTransformerLayer@{models.common.SwinTransformerLayer}!drop\_path@{drop\_path}}
+\index{drop\_path@{drop\_path}!models.common.SwinTransformerLayer@{models.common.SwinTransformerLayer}}
+\doxysubsubsection{\texorpdfstring{drop\_path}{drop\_path}}
+{\footnotesize\ttfamily \label{classmodels_1_1common_1_1_swin_transformer_layer_ad18f02579e6080b2bf8629143ea00013} 
+int models.\+common.\+Swin\+Transformer\+Layer.\+drop\+\_\+path = Drop\+Path(drop\+\_\+path) if drop\+\_\+path $>$ 0. else nn.\+Identity()}
+
+\Hypertarget{classmodels_1_1common_1_1_swin_transformer_layer_ac8414cbe269cace01654ed7426a83870}\index{models.common.SwinTransformerLayer@{models.common.SwinTransformerLayer}!mlp@{mlp}}
+\index{mlp@{mlp}!models.common.SwinTransformerLayer@{models.common.SwinTransformerLayer}}
+\doxysubsubsection{\texorpdfstring{mlp}{mlp}}
+{\footnotesize\ttfamily \label{classmodels_1_1common_1_1_swin_transformer_layer_ac8414cbe269cace01654ed7426a83870} 
+models.\+common.\+Swin\+Transformer\+Layer.\+mlp = \mbox{\hyperlink{classmodels_1_1common_1_1_mlp}{Mlp}}(in\+\_\+features=\mbox{\hyperlink{classmodels_1_1common_1_1_swin_transformer_layer_a6f6e04ac02a625cf761f9fc7fb2db047}{dim}}, hidden\+\_\+features=mlp\+\_\+hidden\+\_\+dim, act\+\_\+layer=act\+\_\+layer, drop=drop)}
+
+\Hypertarget{classmodels_1_1common_1_1_swin_transformer_layer_a750e49e2e06c40137a22a95cdafd29bc}\index{models.common.SwinTransformerLayer@{models.common.SwinTransformerLayer}!mlp\_ratio@{mlp\_ratio}}
+\index{mlp\_ratio@{mlp\_ratio}!models.common.SwinTransformerLayer@{models.common.SwinTransformerLayer}}
+\doxysubsubsection{\texorpdfstring{mlp\_ratio}{mlp\_ratio}}
+{\footnotesize\ttfamily \label{classmodels_1_1common_1_1_swin_transformer_layer_a750e49e2e06c40137a22a95cdafd29bc} 
+models.\+common.\+Swin\+Transformer\+Layer.\+mlp\+\_\+ratio = mlp\+\_\+ratio}
+
+\Hypertarget{classmodels_1_1common_1_1_swin_transformer_layer_aad45374b94de6a279e43dcade1cfbcd0}\index{models.common.SwinTransformerLayer@{models.common.SwinTransformerLayer}!norm1@{norm1}}
+\index{norm1@{norm1}!models.common.SwinTransformerLayer@{models.common.SwinTransformerLayer}}
+\doxysubsubsection{\texorpdfstring{norm1}{norm1}}
+{\footnotesize\ttfamily \label{classmodels_1_1common_1_1_swin_transformer_layer_aad45374b94de6a279e43dcade1cfbcd0} 
+models.\+common.\+Swin\+Transformer\+Layer.\+norm1 = norm\+\_\+layer(\mbox{\hyperlink{classmodels_1_1common_1_1_swin_transformer_layer_a6f6e04ac02a625cf761f9fc7fb2db047}{dim}})}
+
+\Hypertarget{classmodels_1_1common_1_1_swin_transformer_layer_a383aaddc08f072dca9e394e5167c73c4}\index{models.common.SwinTransformerLayer@{models.common.SwinTransformerLayer}!norm2@{norm2}}
+\index{norm2@{norm2}!models.common.SwinTransformerLayer@{models.common.SwinTransformerLayer}}
+\doxysubsubsection{\texorpdfstring{norm2}{norm2}}
+{\footnotesize\ttfamily \label{classmodels_1_1common_1_1_swin_transformer_layer_a383aaddc08f072dca9e394e5167c73c4} 
+models.\+common.\+Swin\+Transformer\+Layer.\+norm2 = norm\+\_\+layer(\mbox{\hyperlink{classmodels_1_1common_1_1_swin_transformer_layer_a6f6e04ac02a625cf761f9fc7fb2db047}{dim}})}
+
+\Hypertarget{classmodels_1_1common_1_1_swin_transformer_layer_a7f9443a7402aa132e88e281680b50add}\index{models.common.SwinTransformerLayer@{models.common.SwinTransformerLayer}!num\_heads@{num\_heads}}
+\index{num\_heads@{num\_heads}!models.common.SwinTransformerLayer@{models.common.SwinTransformerLayer}}
+\doxysubsubsection{\texorpdfstring{num\_heads}{num\_heads}}
+{\footnotesize\ttfamily \label{classmodels_1_1common_1_1_swin_transformer_layer_a7f9443a7402aa132e88e281680b50add} 
+models.\+common.\+Swin\+Transformer\+Layer.\+num\+\_\+heads = num\+\_\+heads}
+
+\Hypertarget{classmodels_1_1common_1_1_swin_transformer_layer_ae359a12a4be7be87a421565426cc4bfe}\index{models.common.SwinTransformerLayer@{models.common.SwinTransformerLayer}!shift\_size@{shift\_size}}
+\index{shift\_size@{shift\_size}!models.common.SwinTransformerLayer@{models.common.SwinTransformerLayer}}
+\doxysubsubsection{\texorpdfstring{shift\_size}{shift\_size}}
+{\footnotesize\ttfamily \label{classmodels_1_1common_1_1_swin_transformer_layer_ae359a12a4be7be87a421565426cc4bfe} 
+models.\+common.\+Swin\+Transformer\+Layer.\+shift\+\_\+size = shift\+\_\+size}
+
+\Hypertarget{classmodels_1_1common_1_1_swin_transformer_layer_ad2307a5e405567b6c9802e75c087bde9}\index{models.common.SwinTransformerLayer@{models.common.SwinTransformerLayer}!window\_size@{window\_size}}
+\index{window\_size@{window\_size}!models.common.SwinTransformerLayer@{models.common.SwinTransformerLayer}}
+\doxysubsubsection{\texorpdfstring{window\_size}{window\_size}}
+{\footnotesize\ttfamily \label{classmodels_1_1common_1_1_swin_transformer_layer_ad2307a5e405567b6c9802e75c087bde9} 
+models.\+common.\+Swin\+Transformer\+Layer.\+window\+\_\+size = window\+\_\+size}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Cervi\+AI/models/\mbox{\hyperlink{common_8py}{common.\+py}}\end{DoxyCompactItemize}

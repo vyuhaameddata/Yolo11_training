@@ -1,0 +1,59 @@
+\doxysection{torchvision\+\_\+down.\+models.\+feature\+\_\+extraction.\+Leaf\+Module\+Aware\+Tracer Class Reference}
+\hypertarget{classtorchvision__down_1_1models_1_1feature__extraction_1_1_leaf_module_aware_tracer}{}\label{classtorchvision__down_1_1models_1_1feature__extraction_1_1_leaf_module_aware_tracer}\index{torchvision\_down.models.feature\_extraction.LeafModuleAwareTracer@{torchvision\_down.models.feature\_extraction.LeafModuleAwareTracer}}
+Inheritance diagram for torchvision\+\_\+down.\+models.\+feature\+\_\+extraction.\+Leaf\+Module\+Aware\+Tracer\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{classtorchvision__down_1_1models_1_1feature__extraction_1_1_leaf_module_aware_tracer}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1models_1_1feature__extraction_1_1_leaf_module_aware_tracer_a47e3ba700c717ae3bf86f855a326e8de}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, \texorpdfstring{$\ast$}{*}args, \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}kwargs)
+\item 
+bool \mbox{\hyperlink{classtorchvision__down_1_1models_1_1feature__extraction_1_1_leaf_module_aware_tracer_ac4aed6a98a748a8937f52a27cd5e273f}{is\+\_\+leaf\+\_\+module}} (self, nn.\+Module m, str module\+\_\+qualname)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+dict \mbox{\hyperlink{classtorchvision__down_1_1models_1_1feature__extraction_1_1_leaf_module_aware_tracer_a8026c24b1c475f69649c2e20aaa577e3}{leaf\+\_\+modules}} = \{\}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}An fx.Tracer that allows the user to specify a set of leaf modules, ie.
+modules that are not to be traced through. The resulting graph ends up
+having single nodes referencing calls to the leaf modules' forward methods.
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classtorchvision__down_1_1models_1_1feature__extraction_1_1_leaf_module_aware_tracer_a47e3ba700c717ae3bf86f855a326e8de}\index{torchvision\_down.models.feature\_extraction.LeafModuleAwareTracer@{torchvision\_down.models.feature\_extraction.LeafModuleAwareTracer}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!torchvision\_down.models.feature\_extraction.LeafModuleAwareTracer@{torchvision\_down.models.feature\_extraction.LeafModuleAwareTracer}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1models_1_1feature__extraction_1_1_leaf_module_aware_tracer_a47e3ba700c717ae3bf86f855a326e8de} 
+torchvision\+\_\+down.\+models.\+feature\+\_\+extraction.\+Leaf\+Module\+Aware\+Tracer.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{\texorpdfstring{$\ast$}{*}}]{args}{, }\item[{\texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}}]{kwargs}{}\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classtorchvision__down_1_1models_1_1feature__extraction_1_1_leaf_module_aware_tracer_ac4aed6a98a748a8937f52a27cd5e273f}\index{torchvision\_down.models.feature\_extraction.LeafModuleAwareTracer@{torchvision\_down.models.feature\_extraction.LeafModuleAwareTracer}!is\_leaf\_module@{is\_leaf\_module}}
+\index{is\_leaf\_module@{is\_leaf\_module}!torchvision\_down.models.feature\_extraction.LeafModuleAwareTracer@{torchvision\_down.models.feature\_extraction.LeafModuleAwareTracer}}
+\doxysubsubsection{\texorpdfstring{is\_leaf\_module()}{is\_leaf\_module()}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1models_1_1feature__extraction_1_1_leaf_module_aware_tracer_ac4aed6a98a748a8937f52a27cd5e273f} 
+ bool torchvision\+\_\+down.\+models.\+feature\+\_\+extraction.\+Leaf\+Module\+Aware\+Tracer.\+is\+\_\+leaf\+\_\+module (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{nn.\+Module}]{m}{, }\item[{str}]{module\+\_\+qualname}{}\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classtorchvision__down_1_1models_1_1feature__extraction_1_1_leaf_module_aware_tracer_a8026c24b1c475f69649c2e20aaa577e3}\index{torchvision\_down.models.feature\_extraction.LeafModuleAwareTracer@{torchvision\_down.models.feature\_extraction.LeafModuleAwareTracer}!leaf\_modules@{leaf\_modules}}
+\index{leaf\_modules@{leaf\_modules}!torchvision\_down.models.feature\_extraction.LeafModuleAwareTracer@{torchvision\_down.models.feature\_extraction.LeafModuleAwareTracer}}
+\doxysubsubsection{\texorpdfstring{leaf\_modules}{leaf\_modules}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1models_1_1feature__extraction_1_1_leaf_module_aware_tracer_a8026c24b1c475f69649c2e20aaa577e3} 
+torchvision\+\_\+down.\+models.\+feature\+\_\+extraction.\+Leaf\+Module\+Aware\+Tracer.\+leaf\+\_\+modules = \{\}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Cervi\+AI/torchvision\+\_\+down/models/\mbox{\hyperlink{feature__extraction_8py}{feature\+\_\+extraction.\+py}}\end{DoxyCompactItemize}

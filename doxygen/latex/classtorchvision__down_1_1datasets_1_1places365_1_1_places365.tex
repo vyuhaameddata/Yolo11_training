@@ -1,0 +1,347 @@
+\doxysection{torchvision\+\_\+down.\+datasets.\+places365.\+Places365 Class Reference}
+\hypertarget{classtorchvision__down_1_1datasets_1_1places365_1_1_places365}{}\label{classtorchvision__down_1_1datasets_1_1places365_1_1_places365}\index{torchvision\_down.datasets.places365.Places365@{torchvision\_down.datasets.places365.Places365}}
+Inheritance diagram for torchvision\+\_\+down.\+datasets.\+places365.\+Places365\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{classtorchvision__down_1_1datasets_1_1places365_1_1_places365}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+None \mbox{\hyperlink{classtorchvision__down_1_1datasets_1_1places365_1_1_places365_a48d439273e3dd97fde48b615a44504c3}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, str \mbox{\hyperlink{classtorchvision__down_1_1datasets_1_1places365_1_1_places365}{root}}, str \mbox{\hyperlink{classtorchvision__down_1_1datasets_1_1places365_1_1_places365_a13f2cea3907dfc6dccb04885bffc4ab0}{split}}="{}train-\/standard"{}, bool \mbox{\hyperlink{classtorchvision__down_1_1datasets_1_1places365_1_1_places365_abf523b063b2d7e1c3693ecb6f776da83}{small}}=False, bool download=False, Optional\mbox{[}Callable\mbox{]} \mbox{\hyperlink{classtorchvision__down_1_1datasets_1_1vision_1_1_vision_dataset_ade1b4bca7d4f998bc3061e0400769de8}{transform}}=None, Optional\mbox{[}Callable\mbox{]} \mbox{\hyperlink{classtorchvision__down_1_1datasets_1_1vision_1_1_vision_dataset_a01f7d1bb7220bbfa4234ef140d021cc6}{target\+\_\+transform}}=None, Callable\mbox{[}\mbox{[}str\mbox{]}, Any\mbox{]} \mbox{\hyperlink{classtorchvision__down_1_1datasets_1_1places365_1_1_places365_a5050d334920ad8291a76aa43b8e0a210}{loader}}=default\+\_\+loader)
+\item 
+Tuple\mbox{[}Any, Any\mbox{]} \mbox{\hyperlink{classtorchvision__down_1_1datasets_1_1places365_1_1_places365_a64b12c5513f64d5bc637b3b2cd4deac7}{\+\_\+\+\_\+getitem\+\_\+\+\_\+}} (self, int index)
+\item 
+int \mbox{\hyperlink{classtorchvision__down_1_1datasets_1_1places365_1_1_places365_a4adfd79ca2c132cf7ce22b4f8c5979cb}{\+\_\+\+\_\+len\+\_\+\+\_\+}} (self)
+\item 
+str \mbox{\hyperlink{classtorchvision__down_1_1datasets_1_1places365_1_1_places365_a2b8f4b77974f82d95a3ff440c8cecc32}{variant}} (self)
+\item 
+str \mbox{\hyperlink{classtorchvision__down_1_1datasets_1_1places365_1_1_places365_af81802506bce390e37318e1ca7c671e7}{images\+\_\+dir}} (self)
+\item 
+Tuple\mbox{[}List\mbox{[}str\mbox{]}, Dict\mbox{[}str, int\mbox{]}\mbox{]} \mbox{\hyperlink{classtorchvision__down_1_1datasets_1_1places365_1_1_places365_ab26e9cdb22fc8b49594d9d7b25c2245a}{load\+\_\+categories}} (self, bool download=True)
+\item 
+Tuple\mbox{[}List\mbox{[}Tuple\mbox{[}str, int\mbox{]}\mbox{]}, List\mbox{[}int\mbox{]}\mbox{]} \mbox{\hyperlink{classtorchvision__down_1_1datasets_1_1places365_1_1_places365_a5837898addd2f65a6d7daeca34c2f143}{load\+\_\+file\+\_\+list}} (self, bool download=True)
+\item 
+None \mbox{\hyperlink{classtorchvision__down_1_1datasets_1_1places365_1_1_places365_a15d73889cdc95377fe5e236de9a4c154}{download\+\_\+devkit}} (self)
+\item 
+None \mbox{\hyperlink{classtorchvision__down_1_1datasets_1_1places365_1_1_places365_abe62328be1229f466c3bf4744756db37}{download\+\_\+images}} (self)
+\item 
+str \mbox{\hyperlink{classtorchvision__down_1_1datasets_1_1places365_1_1_places365_a384d432eb115628ad8d7b53c554b548e}{extra\+\_\+repr}} (self)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{classtorchvision__down_1_1datasets_1_1vision_1_1_vision_dataset}{torchvision\+\_\+down.\+datasets.\+vision.\+Vision\+Dataset}}}
+\begin{DoxyCompactItemize}
+\item 
+None \mbox{\hyperlink{classtorchvision__down_1_1datasets_1_1vision_1_1_vision_dataset_a4fe475e0f96592c04a6d97bcd953aca8}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, str \mbox{\hyperlink{classtorchvision__down_1_1datasets_1_1vision_1_1_vision_dataset_af52cf192ec18d3421afe216bf9b881d6}{root}}, Optional\mbox{[}Callable\mbox{]} \mbox{\hyperlink{classtorchvision__down_1_1datasets_1_1vision_1_1_vision_dataset_a7963601da311133da990b66cb616cc83}{transforms}}=None, Optional\mbox{[}Callable\mbox{]} \mbox{\hyperlink{classtorchvision__down_1_1datasets_1_1vision_1_1_vision_dataset_ade1b4bca7d4f998bc3061e0400769de8}{transform}}=None, Optional\mbox{[}Callable\mbox{]} \mbox{\hyperlink{classtorchvision__down_1_1datasets_1_1vision_1_1_vision_dataset_a01f7d1bb7220bbfa4234ef140d021cc6}{target\+\_\+transform}}=None)
+\item 
+Any \mbox{\hyperlink{classtorchvision__down_1_1datasets_1_1vision_1_1_vision_dataset_aa96f56b711d61433df225154b9837daa}{\+\_\+\+\_\+getitem\+\_\+\+\_\+}} (self, int index)
+\item 
+int \mbox{\hyperlink{classtorchvision__down_1_1datasets_1_1vision_1_1_vision_dataset_abb1561c74b600d1d424cfa010f009a92}{\+\_\+\+\_\+len\+\_\+\+\_\+}} (self)
+\item 
+str \mbox{\hyperlink{classtorchvision__down_1_1datasets_1_1vision_1_1_vision_dataset_a40d28a5833742c49a70872e87edb1ef9}{\+\_\+\+\_\+repr\+\_\+\+\_\+}} (self)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+str \mbox{\hyperlink{classtorchvision__down_1_1datasets_1_1places365_1_1_places365_a13f2cea3907dfc6dccb04885bffc4ab0}{split}} = self.\+\_\+verify\+\_\+split(split)
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1datasets_1_1places365_1_1_places365_abf523b063b2d7e1c3693ecb6f776da83}{small}} = small
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1datasets_1_1places365_1_1_places365_a5050d334920ad8291a76aa43b8e0a210}{loader}} = loader
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1datasets_1_1places365_1_1_places365_a33a5795981900da183c782058c98ffd0}{classes}}
+\item 
+Tuple\mbox{[}List\mbox{[}str\mbox{]}, Dict\mbox{[}str, int\mbox{]}\mbox{]} \mbox{\hyperlink{classtorchvision__down_1_1datasets_1_1places365_1_1_places365_afc461c74dfcca17ef5225c446dc2a3c1}{class\+\_\+to\+\_\+idx}} = self.\+load\+\_\+categories(download)
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1datasets_1_1places365_1_1_places365_a0ef5bf38b012b98076c970d52e6a3ae2}{imgs}}
+\item 
+Tuple\mbox{[}List\mbox{[}Tuple\mbox{[}str, int\mbox{]}\mbox{]}, List\mbox{[}int\mbox{]}\mbox{]} \mbox{\hyperlink{classtorchvision__down_1_1datasets_1_1places365_1_1_places365_a87a586a3a03d4c0190dbbb6472a22f13}{targets}} = self.\+load\+\_\+file\+\_\+list(download)
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1datasets_1_1places365_1_1_places365_a6b9c3388695435f6edb4b2a1f7697ee9}{images\+\_\+dir}} = md5)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes inherited from \mbox{\hyperlink{classtorchvision__down_1_1datasets_1_1vision_1_1_vision_dataset}{torchvision\+\_\+down.\+datasets.\+vision.\+Vision\+Dataset}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1datasets_1_1vision_1_1_vision_dataset_af52cf192ec18d3421afe216bf9b881d6}{root}} = root
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1datasets_1_1vision_1_1_vision_dataset_ade1b4bca7d4f998bc3061e0400769de8}{transform}} = transform
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1datasets_1_1vision_1_1_vision_dataset_a01f7d1bb7220bbfa4234ef140d021cc6}{target\+\_\+transform}} = target\+\_\+transform
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1datasets_1_1vision_1_1_vision_dataset_a7963601da311133da990b66cb616cc83}{transforms}} = transforms
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+str \mbox{\hyperlink{classtorchvision__down_1_1datasets_1_1places365_1_1_places365_a03cf711fbd3878be9729e2cedc8335ba}{\+\_\+verify\+\_\+split}} (self, str \mbox{\hyperlink{classtorchvision__down_1_1datasets_1_1places365_1_1_places365_a13f2cea3907dfc6dccb04885bffc4ab0}{split}})
+\item 
+bool \mbox{\hyperlink{classtorchvision__down_1_1datasets_1_1places365_1_1_places365_a15276fc585306252eeec167175eb2cbe}{\+\_\+check\+\_\+integrity}} (self, str file, str md5, bool download)
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions inherited from \mbox{\hyperlink{classtorchvision__down_1_1datasets_1_1vision_1_1_vision_dataset}{torchvision\+\_\+down.\+datasets.\+vision.\+Vision\+Dataset}}}
+\begin{DoxyCompactItemize}
+\item 
+List\mbox{[}str\mbox{]} \mbox{\hyperlink{classtorchvision__down_1_1datasets_1_1vision_1_1_vision_dataset_a9f1a9fad1ab8a0b963cdc3522a271689}{\+\_\+format\+\_\+transform\+\_\+repr}} (self, Callable \mbox{\hyperlink{classtorchvision__down_1_1datasets_1_1vision_1_1_vision_dataset_ade1b4bca7d4f998bc3061e0400769de8}{transform}}, str head)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+tuple \mbox{\hyperlink{classtorchvision__down_1_1datasets_1_1places365_1_1_places365_acc0827b4c1ac725d4efb4832aa4acaf8}{\+\_\+\+SPLITS}} = ("{}train-\/standard"{}, "{}train-\/challenge"{}, "{}val"{})
+\item 
+str \mbox{\hyperlink{classtorchvision__down_1_1datasets_1_1places365_1_1_places365_a7cf1ef5d6081e4653fe7dd1ccd2eb9e8}{\+\_\+\+BASE\+\_\+\+URL}} = "{}http\+://data.\+csail.\+mit.\+edu/places/places365/"{}
+\item 
+dict \mbox{\hyperlink{classtorchvision__down_1_1datasets_1_1places365_1_1_places365_ac4e52a2448ac940c88fee2783b23c4d2}{\+\_\+\+DEVKIT\+\_\+\+META}}
+\item 
+tuple \mbox{\hyperlink{classtorchvision__down_1_1datasets_1_1places365_1_1_places365_aab49d79ce8b6a076f91078610a9704bb}{\+\_\+\+CATEGORIES\+\_\+\+META}} = ("{}categories\+\_\+places365.\+txt"{}, "{}06c963b85866bd0649f97cb43dd16673"{})
+\item 
+dict \mbox{\hyperlink{classtorchvision__down_1_1datasets_1_1places365_1_1_places365_a49d547dc64c4fa8cb6644ecf2fae96ae}{\+\_\+\+FILE\+\_\+\+LIST\+\_\+\+META}}
+\item 
+dict \mbox{\hyperlink{classtorchvision__down_1_1datasets_1_1places365_1_1_places365_ae33f80c2049ecee387bff8b5f487823e}{\+\_\+\+IMAGES\+\_\+\+META}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Protected Attributes inherited from \mbox{\hyperlink{classtorchvision__down_1_1datasets_1_1vision_1_1_vision_dataset}{torchvision\+\_\+down.\+datasets.\+vision.\+Vision\+Dataset}}}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{classtorchvision__down_1_1datasets_1_1vision_1_1_vision_dataset_a2eb99b64ccfc03378be35d0ff88e71b4}{\+\_\+repr\+\_\+indent}} = 4
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1datasets_1_1places365_1_1_places365_a4b0b53001f9c8a0de7e103060e907a25}{\+\_\+\+\_\+dict\+\_\+\+\_\+}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}`Places365 <http://places2.csail.mit.edu/index.html>`_ classification dataset.
+
+Args:
+    root (string): Root directory of the Places365 dataset.
+    split (string, optional): The dataset split. Can be one of ``train-standard`` (default), ``train-challenge``,
+        ``val``.
+    small (bool, optional): If ``True``, uses the small images, i. e. resized to 256 x 256 pixels, instead of the
+        high resolution ones.
+    download (bool, optional): If ``True``, downloads the dataset components and places them in ``root``. Already
+        downloaded archives are not downloaded again.
+    transform (callable, optional): A function/transform that  takes in an PIL image
+        and returns a transformed version. E.g, ``transforms.RandomCrop``
+    target_transform (callable, optional): A function/transform that takes in the
+        target and transforms it.
+    loader (callable, optional): A function to load an image given its path.
+
+ Attributes:
+    classes (list): List of the class names.
+    class_to_idx (dict): Dict with items (class_name, class_index).
+    imgs (list): List of (image path, class_index) tuples
+    targets (list): The class_index value for each image in the dataset
+
+Raises:
+    RuntimeError: If ``download is False`` and the meta files, i. e. the devkit, are not present or corrupted.
+    RuntimeError: If ``download is True`` and the image archive is already extracted.
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classtorchvision__down_1_1datasets_1_1places365_1_1_places365_a48d439273e3dd97fde48b615a44504c3}\index{torchvision\_down.datasets.places365.Places365@{torchvision\_down.datasets.places365.Places365}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!torchvision\_down.datasets.places365.Places365@{torchvision\_down.datasets.places365.Places365}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1datasets_1_1places365_1_1_places365_a48d439273e3dd97fde48b615a44504c3} 
+ None torchvision\+\_\+down.\+datasets.\+places365.\+Places365.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{str}]{root}{, }\item[{str }]{split}{ = {\ttfamily "{}train-\/standard"{}}, }\item[{bool }]{small}{ = {\ttfamily False}, }\item[{bool }]{download}{ = {\ttfamily False}, }\item[{Optional\mbox{[}Callable\mbox{]} }]{transform}{ = {\ttfamily None}, }\item[{Optional\mbox{[}Callable\mbox{]} }]{target\+\_\+transform}{ = {\ttfamily None}, }\item[{Callable\mbox{[}\mbox{[}str\mbox{]}, Any\mbox{]} }]{loader}{ = {\ttfamily default\+\_\+loader}}\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classtorchvision__down_1_1datasets_1_1places365_1_1_places365_a64b12c5513f64d5bc637b3b2cd4deac7}\index{torchvision\_down.datasets.places365.Places365@{torchvision\_down.datasets.places365.Places365}!\_\_getitem\_\_@{\_\_getitem\_\_}}
+\index{\_\_getitem\_\_@{\_\_getitem\_\_}!torchvision\_down.datasets.places365.Places365@{torchvision\_down.datasets.places365.Places365}}
+\doxysubsubsection{\texorpdfstring{\_\_getitem\_\_()}{\_\_getitem\_\_()}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1datasets_1_1places365_1_1_places365_a64b12c5513f64d5bc637b3b2cd4deac7} 
+ Tuple\mbox{[}Any, Any\mbox{]} torchvision\+\_\+down.\+datasets.\+places365.\+Places365.\+\_\+\+\_\+getitem\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{int}]{index}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classtorchvision__down_1_1datasets_1_1places365_1_1_places365_a4adfd79ca2c132cf7ce22b4f8c5979cb}\index{torchvision\_down.datasets.places365.Places365@{torchvision\_down.datasets.places365.Places365}!\_\_len\_\_@{\_\_len\_\_}}
+\index{\_\_len\_\_@{\_\_len\_\_}!torchvision\_down.datasets.places365.Places365@{torchvision\_down.datasets.places365.Places365}}
+\doxysubsubsection{\texorpdfstring{\_\_len\_\_()}{\_\_len\_\_()}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1datasets_1_1places365_1_1_places365_a4adfd79ca2c132cf7ce22b4f8c5979cb} 
+ int torchvision\+\_\+down.\+datasets.\+places365.\+Places365.\+\_\+\+\_\+len\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classtorchvision__down_1_1datasets_1_1places365_1_1_places365_a15276fc585306252eeec167175eb2cbe}\index{torchvision\_down.datasets.places365.Places365@{torchvision\_down.datasets.places365.Places365}!\_check\_integrity@{\_check\_integrity}}
+\index{\_check\_integrity@{\_check\_integrity}!torchvision\_down.datasets.places365.Places365@{torchvision\_down.datasets.places365.Places365}}
+\doxysubsubsection{\texorpdfstring{\_check\_integrity()}{\_check\_integrity()}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1datasets_1_1places365_1_1_places365_a15276fc585306252eeec167175eb2cbe} 
+ bool torchvision\+\_\+down.\+datasets.\+places365.\+Places365.\+\_\+check\+\_\+integrity (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{str}]{file}{, }\item[{str}]{md5}{, }\item[{bool}]{download}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classtorchvision__down_1_1datasets_1_1places365_1_1_places365_a03cf711fbd3878be9729e2cedc8335ba}\index{torchvision\_down.datasets.places365.Places365@{torchvision\_down.datasets.places365.Places365}!\_verify\_split@{\_verify\_split}}
+\index{\_verify\_split@{\_verify\_split}!torchvision\_down.datasets.places365.Places365@{torchvision\_down.datasets.places365.Places365}}
+\doxysubsubsection{\texorpdfstring{\_verify\_split()}{\_verify\_split()}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1datasets_1_1places365_1_1_places365_a03cf711fbd3878be9729e2cedc8335ba} 
+ str torchvision\+\_\+down.\+datasets.\+places365.\+Places365.\+\_\+verify\+\_\+split (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{str}]{split}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classtorchvision__down_1_1datasets_1_1places365_1_1_places365_a15d73889cdc95377fe5e236de9a4c154}\index{torchvision\_down.datasets.places365.Places365@{torchvision\_down.datasets.places365.Places365}!download\_devkit@{download\_devkit}}
+\index{download\_devkit@{download\_devkit}!torchvision\_down.datasets.places365.Places365@{torchvision\_down.datasets.places365.Places365}}
+\doxysubsubsection{\texorpdfstring{download\_devkit()}{download\_devkit()}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1datasets_1_1places365_1_1_places365_a15d73889cdc95377fe5e236de9a4c154} 
+ None torchvision\+\_\+down.\+datasets.\+places365.\+Places365.\+download\+\_\+devkit (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classtorchvision__down_1_1datasets_1_1places365_1_1_places365_abe62328be1229f466c3bf4744756db37}\index{torchvision\_down.datasets.places365.Places365@{torchvision\_down.datasets.places365.Places365}!download\_images@{download\_images}}
+\index{download\_images@{download\_images}!torchvision\_down.datasets.places365.Places365@{torchvision\_down.datasets.places365.Places365}}
+\doxysubsubsection{\texorpdfstring{download\_images()}{download\_images()}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1datasets_1_1places365_1_1_places365_abe62328be1229f466c3bf4744756db37} 
+ None torchvision\+\_\+down.\+datasets.\+places365.\+Places365.\+download\+\_\+images (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classtorchvision__down_1_1datasets_1_1places365_1_1_places365_a384d432eb115628ad8d7b53c554b548e}\index{torchvision\_down.datasets.places365.Places365@{torchvision\_down.datasets.places365.Places365}!extra\_repr@{extra\_repr}}
+\index{extra\_repr@{extra\_repr}!torchvision\_down.datasets.places365.Places365@{torchvision\_down.datasets.places365.Places365}}
+\doxysubsubsection{\texorpdfstring{extra\_repr()}{extra\_repr()}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1datasets_1_1places365_1_1_places365_a384d432eb115628ad8d7b53c554b548e} 
+ str torchvision\+\_\+down.\+datasets.\+places365.\+Places365.\+extra\+\_\+repr (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+
+
+Reimplemented from \mbox{\hyperlink{classtorchvision__down_1_1datasets_1_1vision_1_1_vision_dataset_a99093b3e6dd75e1ed1c49eed7ac2df00}{torchvision\+\_\+down.\+datasets.\+vision.\+Vision\+Dataset}}.
+
+\Hypertarget{classtorchvision__down_1_1datasets_1_1places365_1_1_places365_af81802506bce390e37318e1ca7c671e7}\index{torchvision\_down.datasets.places365.Places365@{torchvision\_down.datasets.places365.Places365}!images\_dir@{images\_dir}}
+\index{images\_dir@{images\_dir}!torchvision\_down.datasets.places365.Places365@{torchvision\_down.datasets.places365.Places365}}
+\doxysubsubsection{\texorpdfstring{images\_dir()}{images\_dir()}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1datasets_1_1places365_1_1_places365_af81802506bce390e37318e1ca7c671e7} 
+ str torchvision\+\_\+down.\+datasets.\+places365.\+Places365.\+images\+\_\+dir (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classtorchvision__down_1_1datasets_1_1places365_1_1_places365_ab26e9cdb22fc8b49594d9d7b25c2245a}\index{torchvision\_down.datasets.places365.Places365@{torchvision\_down.datasets.places365.Places365}!load\_categories@{load\_categories}}
+\index{load\_categories@{load\_categories}!torchvision\_down.datasets.places365.Places365@{torchvision\_down.datasets.places365.Places365}}
+\doxysubsubsection{\texorpdfstring{load\_categories()}{load\_categories()}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1datasets_1_1places365_1_1_places365_ab26e9cdb22fc8b49594d9d7b25c2245a} 
+ Tuple\mbox{[}List\mbox{[}str\mbox{]}, Dict\mbox{[}str, int\mbox{]}\mbox{]} torchvision\+\_\+down.\+datasets.\+places365.\+Places365.\+load\+\_\+categories (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{bool }]{download}{ = {\ttfamily True}}\end{DoxyParamCaption})}
+
+\Hypertarget{classtorchvision__down_1_1datasets_1_1places365_1_1_places365_a5837898addd2f65a6d7daeca34c2f143}\index{torchvision\_down.datasets.places365.Places365@{torchvision\_down.datasets.places365.Places365}!load\_file\_list@{load\_file\_list}}
+\index{load\_file\_list@{load\_file\_list}!torchvision\_down.datasets.places365.Places365@{torchvision\_down.datasets.places365.Places365}}
+\doxysubsubsection{\texorpdfstring{load\_file\_list()}{load\_file\_list()}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1datasets_1_1places365_1_1_places365_a5837898addd2f65a6d7daeca34c2f143} 
+ Tuple\mbox{[}List\mbox{[}Tuple\mbox{[}str, int\mbox{]}\mbox{]}, List\mbox{[}int\mbox{]}\mbox{]} torchvision\+\_\+down.\+datasets.\+places365.\+Places365.\+load\+\_\+file\+\_\+list (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{bool }]{download}{ = {\ttfamily True}}\end{DoxyParamCaption})}
+
+\Hypertarget{classtorchvision__down_1_1datasets_1_1places365_1_1_places365_a2b8f4b77974f82d95a3ff440c8cecc32}\index{torchvision\_down.datasets.places365.Places365@{torchvision\_down.datasets.places365.Places365}!variant@{variant}}
+\index{variant@{variant}!torchvision\_down.datasets.places365.Places365@{torchvision\_down.datasets.places365.Places365}}
+\doxysubsubsection{\texorpdfstring{variant()}{variant()}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1datasets_1_1places365_1_1_places365_a2b8f4b77974f82d95a3ff440c8cecc32} 
+ str torchvision\+\_\+down.\+datasets.\+places365.\+Places365.\+variant (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classtorchvision__down_1_1datasets_1_1places365_1_1_places365_a4b0b53001f9c8a0de7e103060e907a25}\index{torchvision\_down.datasets.places365.Places365@{torchvision\_down.datasets.places365.Places365}!\_\_dict\_\_@{\_\_dict\_\_}}
+\index{\_\_dict\_\_@{\_\_dict\_\_}!torchvision\_down.datasets.places365.Places365@{torchvision\_down.datasets.places365.Places365}}
+\doxysubsubsection{\texorpdfstring{\_\_dict\_\_}{\_\_dict\_\_}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1datasets_1_1places365_1_1_places365_a4b0b53001f9c8a0de7e103060e907a25} 
+torchvision\+\_\+down.\+datasets.\+places365.\+Places365.\+\_\+\+\_\+dict\+\_\+\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{classtorchvision__down_1_1datasets_1_1places365_1_1_places365_a7cf1ef5d6081e4653fe7dd1ccd2eb9e8}\index{torchvision\_down.datasets.places365.Places365@{torchvision\_down.datasets.places365.Places365}!\_BASE\_URL@{\_BASE\_URL}}
+\index{\_BASE\_URL@{\_BASE\_URL}!torchvision\_down.datasets.places365.Places365@{torchvision\_down.datasets.places365.Places365}}
+\doxysubsubsection{\texorpdfstring{\_BASE\_URL}{\_BASE\_URL}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1datasets_1_1places365_1_1_places365_a7cf1ef5d6081e4653fe7dd1ccd2eb9e8} 
+torchvision\+\_\+down.\+datasets.\+places365.\+Places365.\+\_\+\+BASE\+\_\+\+URL = "{}http\+://data.\+csail.\+mit.\+edu/places/places365/"{}\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}
+
+\Hypertarget{classtorchvision__down_1_1datasets_1_1places365_1_1_places365_aab49d79ce8b6a076f91078610a9704bb}\index{torchvision\_down.datasets.places365.Places365@{torchvision\_down.datasets.places365.Places365}!\_CATEGORIES\_META@{\_CATEGORIES\_META}}
+\index{\_CATEGORIES\_META@{\_CATEGORIES\_META}!torchvision\_down.datasets.places365.Places365@{torchvision\_down.datasets.places365.Places365}}
+\doxysubsubsection{\texorpdfstring{\_CATEGORIES\_META}{\_CATEGORIES\_META}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1datasets_1_1places365_1_1_places365_aab49d79ce8b6a076f91078610a9704bb} 
+tuple torchvision\+\_\+down.\+datasets.\+places365.\+Places365.\+\_\+\+CATEGORIES\+\_\+\+META = ("{}categories\+\_\+places365.\+txt"{}, "{}06c963b85866bd0649f97cb43dd16673"{})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}
+
+\Hypertarget{classtorchvision__down_1_1datasets_1_1places365_1_1_places365_ac4e52a2448ac940c88fee2783b23c4d2}\index{torchvision\_down.datasets.places365.Places365@{torchvision\_down.datasets.places365.Places365}!\_DEVKIT\_META@{\_DEVKIT\_META}}
+\index{\_DEVKIT\_META@{\_DEVKIT\_META}!torchvision\_down.datasets.places365.Places365@{torchvision\_down.datasets.places365.Places365}}
+\doxysubsubsection{\texorpdfstring{\_DEVKIT\_META}{\_DEVKIT\_META}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1datasets_1_1places365_1_1_places365_ac4e52a2448ac940c88fee2783b23c4d2} 
+dict torchvision\+\_\+down.\+datasets.\+places365.\+Places365.\+\_\+\+DEVKIT\+\_\+\+META\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}standard"{}}:\ (\textcolor{stringliteral}{"{}filelist\_places365-\/standard.tar"{}},\ \textcolor{stringliteral}{"{}35a0585fee1fa656440f3ab298f8479c"{}}),}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}challenge"{}}:\ (\textcolor{stringliteral}{"{}filelist\_places365-\/challenge.tar"{}},\ \textcolor{stringliteral}{"{}70a8307e459c3de41690a7c76c931734"{}}),}
+\DoxyCodeLine{\ \ \ \ \}}
+
+\end{DoxyCode}
+\Hypertarget{classtorchvision__down_1_1datasets_1_1places365_1_1_places365_a49d547dc64c4fa8cb6644ecf2fae96ae}\index{torchvision\_down.datasets.places365.Places365@{torchvision\_down.datasets.places365.Places365}!\_FILE\_LIST\_META@{\_FILE\_LIST\_META}}
+\index{\_FILE\_LIST\_META@{\_FILE\_LIST\_META}!torchvision\_down.datasets.places365.Places365@{torchvision\_down.datasets.places365.Places365}}
+\doxysubsubsection{\texorpdfstring{\_FILE\_LIST\_META}{\_FILE\_LIST\_META}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1datasets_1_1places365_1_1_places365_a49d547dc64c4fa8cb6644ecf2fae96ae} 
+dict torchvision\+\_\+down.\+datasets.\+places365.\+Places365.\+\_\+\+FILE\+\_\+\+LIST\+\_\+\+META\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}train-\/standard"{}}:\ (\textcolor{stringliteral}{"{}places365\_train\_standard.txt"{}},\ \textcolor{stringliteral}{"{}30f37515461640559006b8329efbed1a"{}}),}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}train-\/challenge"{}}:\ (\textcolor{stringliteral}{"{}places365\_train\_challenge.txt"{}},\ \textcolor{stringliteral}{"{}b2931dc997b8c33c27e7329c073a6b57"{}}),}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}val"{}}:\ (\textcolor{stringliteral}{"{}places365\_val.txt"{}},\ \textcolor{stringliteral}{"{}e9f2fd57bfd9d07630173f4e8708e4b1"{}}),}
+\DoxyCodeLine{\ \ \ \ \}}
+
+\end{DoxyCode}
+\Hypertarget{classtorchvision__down_1_1datasets_1_1places365_1_1_places365_ae33f80c2049ecee387bff8b5f487823e}\index{torchvision\_down.datasets.places365.Places365@{torchvision\_down.datasets.places365.Places365}!\_IMAGES\_META@{\_IMAGES\_META}}
+\index{\_IMAGES\_META@{\_IMAGES\_META}!torchvision\_down.datasets.places365.Places365@{torchvision\_down.datasets.places365.Places365}}
+\doxysubsubsection{\texorpdfstring{\_IMAGES\_META}{\_IMAGES\_META}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1datasets_1_1places365_1_1_places365_ae33f80c2049ecee387bff8b5f487823e} 
+dict torchvision\+\_\+down.\+datasets.\+places365.\+Places365.\+\_\+\+IMAGES\+\_\+\+META\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ (\textcolor{stringliteral}{"{}train-\/standard"{}},\ \textcolor{keyword}{False}):\ (\textcolor{stringliteral}{"{}train\_large\_places365standard.tar"{}},\ \textcolor{stringliteral}{"{}67e186b496a84c929568076ed01a8aa1"{}}),}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ (\textcolor{stringliteral}{"{}train-\/challenge"{}},\ \textcolor{keyword}{False}):\ (\textcolor{stringliteral}{"{}train\_large\_places365challenge.tar"{}},\ \textcolor{stringliteral}{"{}605f18e68e510c82b958664ea134545f"{}}),}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ (\textcolor{stringliteral}{"{}val"{}},\ \textcolor{keyword}{False}):\ (\textcolor{stringliteral}{"{}val\_large.tar"{}},\ \textcolor{stringliteral}{"{}9b71c4993ad89d2d8bcbdc4aef38042f"{}}),}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ (\textcolor{stringliteral}{"{}train-\/standard"{}},\ \textcolor{keyword}{True}):\ (\textcolor{stringliteral}{"{}train\_256\_places365standard.tar"{}},\ \textcolor{stringliteral}{"{}53ca1c756c3d1e7809517cc47c5561c5"{}}),}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ (\textcolor{stringliteral}{"{}train-\/challenge"{}},\ \textcolor{keyword}{True}):\ (\textcolor{stringliteral}{"{}train\_256\_places365challenge.tar"{}},\ \textcolor{stringliteral}{"{}741915038a5e3471ec7332404dfb64ef"{}}),}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ (\textcolor{stringliteral}{"{}val"{}},\ \textcolor{keyword}{True}):\ (\textcolor{stringliteral}{"{}val\_256.tar"{}},\ \textcolor{stringliteral}{"{}e27b17d8d44f4af9a78502beb927f808"{}}),}
+\DoxyCodeLine{\ \ \ \ \}}
+
+\end{DoxyCode}
+\Hypertarget{classtorchvision__down_1_1datasets_1_1places365_1_1_places365_acc0827b4c1ac725d4efb4832aa4acaf8}\index{torchvision\_down.datasets.places365.Places365@{torchvision\_down.datasets.places365.Places365}!\_SPLITS@{\_SPLITS}}
+\index{\_SPLITS@{\_SPLITS}!torchvision\_down.datasets.places365.Places365@{torchvision\_down.datasets.places365.Places365}}
+\doxysubsubsection{\texorpdfstring{\_SPLITS}{\_SPLITS}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1datasets_1_1places365_1_1_places365_acc0827b4c1ac725d4efb4832aa4acaf8} 
+torchvision\+\_\+down.\+datasets.\+places365.\+Places365.\+\_\+\+SPLITS = ("{}train-\/standard"{}, "{}train-\/challenge"{}, "{}val"{})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}
+
+\Hypertarget{classtorchvision__down_1_1datasets_1_1places365_1_1_places365_afc461c74dfcca17ef5225c446dc2a3c1}\index{torchvision\_down.datasets.places365.Places365@{torchvision\_down.datasets.places365.Places365}!class\_to\_idx@{class\_to\_idx}}
+\index{class\_to\_idx@{class\_to\_idx}!torchvision\_down.datasets.places365.Places365@{torchvision\_down.datasets.places365.Places365}}
+\doxysubsubsection{\texorpdfstring{class\_to\_idx}{class\_to\_idx}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1datasets_1_1places365_1_1_places365_afc461c74dfcca17ef5225c446dc2a3c1} 
+Tuple\mbox{[}List\mbox{[}str\mbox{]}, Dict\mbox{[}str, int\mbox{]}\mbox{]} torchvision\+\_\+down.\+datasets.\+places365.\+Places365.\+class\+\_\+to\+\_\+idx = self.\+load\+\_\+categories(download)}
+
+\Hypertarget{classtorchvision__down_1_1datasets_1_1places365_1_1_places365_a33a5795981900da183c782058c98ffd0}\index{torchvision\_down.datasets.places365.Places365@{torchvision\_down.datasets.places365.Places365}!classes@{classes}}
+\index{classes@{classes}!torchvision\_down.datasets.places365.Places365@{torchvision\_down.datasets.places365.Places365}}
+\doxysubsubsection{\texorpdfstring{classes}{classes}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1datasets_1_1places365_1_1_places365_a33a5795981900da183c782058c98ffd0} 
+torchvision\+\_\+down.\+datasets.\+places365.\+Places365.\+classes}
+
+\Hypertarget{classtorchvision__down_1_1datasets_1_1places365_1_1_places365_a6b9c3388695435f6edb4b2a1f7697ee9}\index{torchvision\_down.datasets.places365.Places365@{torchvision\_down.datasets.places365.Places365}!images\_dir@{images\_dir}}
+\index{images\_dir@{images\_dir}!torchvision\_down.datasets.places365.Places365@{torchvision\_down.datasets.places365.Places365}}
+\doxysubsubsection{\texorpdfstring{images\_dir}{images\_dir}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1datasets_1_1places365_1_1_places365_a6b9c3388695435f6edb4b2a1f7697ee9} 
+torchvision\+\_\+down.\+datasets.\+places365.\+Places365.\+images\+\_\+dir = md5)}
+
+\Hypertarget{classtorchvision__down_1_1datasets_1_1places365_1_1_places365_a0ef5bf38b012b98076c970d52e6a3ae2}\index{torchvision\_down.datasets.places365.Places365@{torchvision\_down.datasets.places365.Places365}!imgs@{imgs}}
+\index{imgs@{imgs}!torchvision\_down.datasets.places365.Places365@{torchvision\_down.datasets.places365.Places365}}
+\doxysubsubsection{\texorpdfstring{imgs}{imgs}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1datasets_1_1places365_1_1_places365_a0ef5bf38b012b98076c970d52e6a3ae2} 
+torchvision\+\_\+down.\+datasets.\+places365.\+Places365.\+imgs}
+
+\Hypertarget{classtorchvision__down_1_1datasets_1_1places365_1_1_places365_a5050d334920ad8291a76aa43b8e0a210}\index{torchvision\_down.datasets.places365.Places365@{torchvision\_down.datasets.places365.Places365}!loader@{loader}}
+\index{loader@{loader}!torchvision\_down.datasets.places365.Places365@{torchvision\_down.datasets.places365.Places365}}
+\doxysubsubsection{\texorpdfstring{loader}{loader}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1datasets_1_1places365_1_1_places365_a5050d334920ad8291a76aa43b8e0a210} 
+torchvision\+\_\+down.\+datasets.\+places365.\+Places365.\+loader = loader}
+
+\Hypertarget{classtorchvision__down_1_1datasets_1_1places365_1_1_places365_abf523b063b2d7e1c3693ecb6f776da83}\index{torchvision\_down.datasets.places365.Places365@{torchvision\_down.datasets.places365.Places365}!small@{small}}
+\index{small@{small}!torchvision\_down.datasets.places365.Places365@{torchvision\_down.datasets.places365.Places365}}
+\doxysubsubsection{\texorpdfstring{small}{small}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1datasets_1_1places365_1_1_places365_abf523b063b2d7e1c3693ecb6f776da83} 
+torchvision\+\_\+down.\+datasets.\+places365.\+Places365.\+small = small}
+
+\Hypertarget{classtorchvision__down_1_1datasets_1_1places365_1_1_places365_a13f2cea3907dfc6dccb04885bffc4ab0}\index{torchvision\_down.datasets.places365.Places365@{torchvision\_down.datasets.places365.Places365}!split@{split}}
+\index{split@{split}!torchvision\_down.datasets.places365.Places365@{torchvision\_down.datasets.places365.Places365}}
+\doxysubsubsection{\texorpdfstring{split}{split}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1datasets_1_1places365_1_1_places365_a13f2cea3907dfc6dccb04885bffc4ab0} 
+str torchvision\+\_\+down.\+datasets.\+places365.\+Places365.\+split = self.\+\_\+verify\+\_\+split(split)}
+
+\Hypertarget{classtorchvision__down_1_1datasets_1_1places365_1_1_places365_a87a586a3a03d4c0190dbbb6472a22f13}\index{torchvision\_down.datasets.places365.Places365@{torchvision\_down.datasets.places365.Places365}!targets@{targets}}
+\index{targets@{targets}!torchvision\_down.datasets.places365.Places365@{torchvision\_down.datasets.places365.Places365}}
+\doxysubsubsection{\texorpdfstring{targets}{targets}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1datasets_1_1places365_1_1_places365_a87a586a3a03d4c0190dbbb6472a22f13} 
+Tuple\mbox{[}List\mbox{[}Tuple\mbox{[}str, int\mbox{]}\mbox{]}, List\mbox{[}int\mbox{]}\mbox{]} torchvision\+\_\+down.\+datasets.\+places365.\+Places365.\+targets = self.\+load\+\_\+file\+\_\+list(download)}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Cervi\+AI/torchvision\+\_\+down/datasets/\mbox{\hyperlink{places365_8py}{places365.\+py}}\end{DoxyCompactItemize}

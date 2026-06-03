@@ -1,0 +1,251 @@
+\doxysection{WSDcell Namespace Reference}
+\hypertarget{namespace_w_s_dcell}{}\label{namespace_w_s_dcell}\index{WSDcell@{WSDcell}}
+\doxysubsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{class_w_s_dcell_1_1_global_vars}{Global\+Vars}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{namespace_w_s_dcell_a8a83d8271bf479afc2469d3fbab424e0}{write\+\_\+ndpa}} (\mbox{\hyperlink{namespace_w_s_dcell_a753842eccfb8ce745b1c4d8632038cf6}{tile\+\_\+size}}=1024, \mbox{\hyperlink{namespace_w_s_dcell_af9d8b501ea39a93f475afe9aada232b2}{overlap}}=128)
+\item 
+\mbox{\hyperlink{namespace_w_s_dcell_a2d45ad7f1358687d5c0c822dcf835c58}{get\+\_\+referance}} (wsi\+\_\+path)
+\item 
+\mbox{\hyperlink{namespace_w_s_dcell_a181f4d327d4600790a2a6ff9fc14dd93}{update\+\_\+annote\+\_\+id}} (annotations)
+\item 
+\mbox{\hyperlink{namespace_w_s_dcell_a32a025db2987587641100e06ecf8e04a}{run\+\_\+predict\+\_\+wsi\+\_\+multithread}} (path, model, \mbox{\hyperlink{namespace_w_s_dcell_af9d8b501ea39a93f475afe9aada232b2}{overlap}}, \mbox{\hyperlink{namespace_w_s_dcell_a753842eccfb8ce745b1c4d8632038cf6}{tile\+\_\+size}}=1024, batch\+\_\+size=12)
+\item 
+\mbox{\hyperlink{namespace_w_s_dcell_ad30bbc986409928efdec7d40f77bd759}{prune\+\_\+list}} (box\+\_\+list)
+\item 
+\mbox{\hyperlink{namespace_w_s_dcell_a0c54cac6e535a21f56db053b8fd00f2f}{replace\+\_\+bigger\+\_\+box}} (boxA, boxB)
+\item 
+\mbox{\hyperlink{namespace_w_s_dcell_abf840ce38ae19a371e7ffce829dcd692}{bb\+\_\+intersection\+\_\+over\+\_\+union}} (boxA, boxB)
+\item 
+\mbox{\hyperlink{namespace_w_s_dcell_af1b30189e9c8ec5d3556b92c6fdf9de1}{rerun\+\_\+predict\+\_\+pool}} (wsi\+\_\+path, model, pred\+\_\+list, \mbox{\hyperlink{namespace_w_s_dcell_a753842eccfb8ce745b1c4d8632038cf6}{tile\+\_\+size}}=1024, batch\+\_\+size=12)
+\item 
+\mbox{\hyperlink{namespace_w_s_dcell_a551528cdcc8efb31c1b08853307b0d2a}{divide\+\_\+chunks}} (Anotelist, batch\+\_\+size)
+\item 
+\mbox{\hyperlink{namespace_w_s_dcell_a27f485f0c317a1ff1d3597febe510b2f}{read\+\_\+tiles\+\_\+parallel}} (slide\+\_\+path, pred\+\_\+list, \mbox{\hyperlink{namespace_w_s_dcell_a753842eccfb8ce745b1c4d8632038cf6}{tile\+\_\+size}})
+\item 
+\mbox{\hyperlink{namespace_w_s_dcell_a001eb801073e69ab3c95aae843a33815}{process}} (wsi\+\_\+path, pred, \mbox{\hyperlink{namespace_w_s_dcell_a753842eccfb8ce745b1c4d8632038cf6}{tile\+\_\+size}})
+\item 
+\mbox{\hyperlink{namespace_w_s_dcell_a9612c32edc3668ba86f10757c745b054}{fetch\+\_\+batch}} (image)
+\item 
+\mbox{\hyperlink{namespace_w_s_dcell_a93dfcc62019eb5cd3846df47d022abfe}{get\+\_\+cat\+\_\+model}} ()
+\item 
+\mbox{\hyperlink{namespace_w_s_dcell_a33f63cde5f6832f99631685b80007f12}{write\+\_\+xml}} (annotations, start\+\_\+id, anote\+\_\+list, X\+\_\+\+Reference, Y\+\_\+\+Reference, nm\+\_\+p)
+\item 
+\mbox{\hyperlink{namespace_w_s_dcell_af42a87effb44d235c814de4bd2b7ae02}{write\+\_\+annotation}} (annotations, \+\_\+id, x1, y1, x2, y2, cls, conf, X\+\_\+\+Reference, Y\+\_\+\+Reference, nm\+\_\+p=221)
+\item 
+\mbox{\hyperlink{namespace_w_s_dcell_acf3ae77d65c875c2e0891ebac4030866}{dump\+\_\+results}} (gt\+\_\+xml\+\_\+path, predicts\+\_\+xml\+\_\+path)
+\item 
+\mbox{\hyperlink{namespace_w_s_dcell_a5a84a981e8865856d405741abc9e2bbe}{get\+\_\+box\+\_\+list}} (xml\+\_\+path, nm\+\_\+p=221)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{namespace_w_s_dcell_a84fcc3525dd5b94d6f2d058fed5b6ad7}{current\+\_\+dir}} = os.\+path.\+dirname(sys.\+executable)
+\item 
+str \mbox{\hyperlink{namespace_w_s_dcell_a834ee26682108c2709101b70aa3ee1f3}{url}} = "{}https\+://github.\+com/openslide/openslide-\/winbuild/releases/download/v20230414/openslide-\/win64-\/20230414.zip"{}
+\item 
+str \mbox{\hyperlink{namespace_w_s_dcell_ac5dffb048aeb58500db46ab3db2ebd6a}{filename}} = "{}openslide-\/win64-\/20230414.zip"{}
+\item 
+\mbox{\hyperlink{namespace_w_s_dcell_ab058acfc3a27def495e42e87ba915d2b}{response}} = requests.\+get(\mbox{\hyperlink{namespace_w_s_dcell_a834ee26682108c2709101b70aa3ee1f3}{url}}, stream=True)
+\item 
+\mbox{\hyperlink{namespace_w_s_dcell_aa04a57ec411540d39f59f29df28b161d}{chunk\+\_\+size}}
+\item 
+\mbox{\hyperlink{namespace_w_s_dcell_a5d8c77534772b2a6785ae2e981b3b318}{OPENSLIDE\+\_\+\+PATH}} = os.\+path.\+join(\mbox{\hyperlink{namespace_w_s_dcell_a84fcc3525dd5b94d6f2d058fed5b6ad7}{current\+\_\+dir}}, \textquotesingle{}openslide-\/win64-\/20230414\textquotesingle{}, \textquotesingle{}bin\textquotesingle{})
+\item 
+str \mbox{\hyperlink{namespace_w_s_dcell_a11ad6b09e18376abeda9445b9da235ac}{folder\+\_\+path}} = r\textquotesingle{}D\+:\textbackslash{}\+Shreyan\textbackslash{}\+Development\textbackslash{}\+Test\textquotesingle{}
+\item 
+\mbox{\hyperlink{namespace_w_s_dcell_a6eda938edf0f4a2606a7459f17a1a3f7}{global\+Vars}} = \mbox{\hyperlink{class_w_s_dcell_1_1_global_vars}{Global\+Vars}}(\mbox{\hyperlink{namespace_w_s_dcell_a11ad6b09e18376abeda9445b9da235ac}{folder\+\_\+path}})
+\item 
+\mbox{\hyperlink{namespace_w_s_dcell_a7766274f6a041f00ddace082910277d0}{start}} = time.\+time()
+\item 
+\mbox{\hyperlink{namespace_w_s_dcell_a753842eccfb8ce745b1c4d8632038cf6}{tile\+\_\+size}}
+\item 
+\mbox{\hyperlink{namespace_w_s_dcell_af9d8b501ea39a93f475afe9aada232b2}{overlap}}
+\item 
+\mbox{\hyperlink{namespace_w_s_dcell_a760f3289583a76dbad20c071f2fe2337}{end}} = time.\+time()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{namespace_w_s_dcell_abf840ce38ae19a371e7ffce829dcd692}\index{WSDcell@{WSDcell}!bb\_intersection\_over\_union@{bb\_intersection\_over\_union}}
+\index{bb\_intersection\_over\_union@{bb\_intersection\_over\_union}!WSDcell@{WSDcell}}
+\doxysubsubsection{\texorpdfstring{bb\_intersection\_over\_union()}{bb\_intersection\_over\_union()}}
+{\footnotesize\ttfamily \label{namespace_w_s_dcell_abf840ce38ae19a371e7ffce829dcd692} 
+WSDcell.\+bb\+\_\+intersection\+\_\+over\+\_\+union (\begin{DoxyParamCaption}\item[{}]{boxA}{, }\item[{}]{boxB}{}\end{DoxyParamCaption})}
+
+\Hypertarget{namespace_w_s_dcell_a551528cdcc8efb31c1b08853307b0d2a}\index{WSDcell@{WSDcell}!divide\_chunks@{divide\_chunks}}
+\index{divide\_chunks@{divide\_chunks}!WSDcell@{WSDcell}}
+\doxysubsubsection{\texorpdfstring{divide\_chunks()}{divide\_chunks()}}
+{\footnotesize\ttfamily \label{namespace_w_s_dcell_a551528cdcc8efb31c1b08853307b0d2a} 
+WSDcell.\+divide\+\_\+chunks (\begin{DoxyParamCaption}\item[{}]{Anotelist}{, }\item[{}]{batch\+\_\+size}{}\end{DoxyParamCaption})}
+
+\Hypertarget{namespace_w_s_dcell_acf3ae77d65c875c2e0891ebac4030866}\index{WSDcell@{WSDcell}!dump\_results@{dump\_results}}
+\index{dump\_results@{dump\_results}!WSDcell@{WSDcell}}
+\doxysubsubsection{\texorpdfstring{dump\_results()}{dump\_results()}}
+{\footnotesize\ttfamily \label{namespace_w_s_dcell_acf3ae77d65c875c2e0891ebac4030866} 
+WSDcell.\+dump\+\_\+results (\begin{DoxyParamCaption}\item[{}]{gt\+\_\+xml\+\_\+path}{, }\item[{}]{predicts\+\_\+xml\+\_\+path}{}\end{DoxyParamCaption})}
+
+\Hypertarget{namespace_w_s_dcell_a9612c32edc3668ba86f10757c745b054}\index{WSDcell@{WSDcell}!fetch\_batch@{fetch\_batch}}
+\index{fetch\_batch@{fetch\_batch}!WSDcell@{WSDcell}}
+\doxysubsubsection{\texorpdfstring{fetch\_batch()}{fetch\_batch()}}
+{\footnotesize\ttfamily \label{namespace_w_s_dcell_a9612c32edc3668ba86f10757c745b054} 
+WSDcell.\+fetch\+\_\+batch (\begin{DoxyParamCaption}\item[{}]{image}{}\end{DoxyParamCaption})}
+
+\Hypertarget{namespace_w_s_dcell_a5a84a981e8865856d405741abc9e2bbe}\index{WSDcell@{WSDcell}!get\_box\_list@{get\_box\_list}}
+\index{get\_box\_list@{get\_box\_list}!WSDcell@{WSDcell}}
+\doxysubsubsection{\texorpdfstring{get\_box\_list()}{get\_box\_list()}}
+{\footnotesize\ttfamily \label{namespace_w_s_dcell_a5a84a981e8865856d405741abc9e2bbe} 
+WSDcell.\+get\+\_\+box\+\_\+list (\begin{DoxyParamCaption}\item[{}]{xml\+\_\+path}{, }\item[{}]{nm\+\_\+p}{ = {\ttfamily 221}}\end{DoxyParamCaption})}
+
+\Hypertarget{namespace_w_s_dcell_a93dfcc62019eb5cd3846df47d022abfe}\index{WSDcell@{WSDcell}!get\_cat\_model@{get\_cat\_model}}
+\index{get\_cat\_model@{get\_cat\_model}!WSDcell@{WSDcell}}
+\doxysubsubsection{\texorpdfstring{get\_cat\_model()}{get\_cat\_model()}}
+{\footnotesize\ttfamily \label{namespace_w_s_dcell_a93dfcc62019eb5cd3846df47d022abfe} 
+WSDcell.\+get\+\_\+cat\+\_\+model (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+\Hypertarget{namespace_w_s_dcell_a2d45ad7f1358687d5c0c822dcf835c58}\index{WSDcell@{WSDcell}!get\_referance@{get\_referance}}
+\index{get\_referance@{get\_referance}!WSDcell@{WSDcell}}
+\doxysubsubsection{\texorpdfstring{get\_referance()}{get\_referance()}}
+{\footnotesize\ttfamily \label{namespace_w_s_dcell_a2d45ad7f1358687d5c0c822dcf835c58} 
+WSDcell.\+get\+\_\+referance (\begin{DoxyParamCaption}\item[{}]{wsi\+\_\+path}{}\end{DoxyParamCaption})}
+
+\Hypertarget{namespace_w_s_dcell_a001eb801073e69ab3c95aae843a33815}\index{WSDcell@{WSDcell}!process@{process}}
+\index{process@{process}!WSDcell@{WSDcell}}
+\doxysubsubsection{\texorpdfstring{process()}{process()}}
+{\footnotesize\ttfamily \label{namespace_w_s_dcell_a001eb801073e69ab3c95aae843a33815} 
+WSDcell.\+process (\begin{DoxyParamCaption}\item[{}]{wsi\+\_\+path}{, }\item[{}]{pred}{, }\item[{}]{tile\+\_\+size}{}\end{DoxyParamCaption})}
+
+\Hypertarget{namespace_w_s_dcell_ad30bbc986409928efdec7d40f77bd759}\index{WSDcell@{WSDcell}!prune\_list@{prune\_list}}
+\index{prune\_list@{prune\_list}!WSDcell@{WSDcell}}
+\doxysubsubsection{\texorpdfstring{prune\_list()}{prune\_list()}}
+{\footnotesize\ttfamily \label{namespace_w_s_dcell_ad30bbc986409928efdec7d40f77bd759} 
+WSDcell.\+prune\+\_\+list (\begin{DoxyParamCaption}\item[{}]{box\+\_\+list}{}\end{DoxyParamCaption})}
+
+\Hypertarget{namespace_w_s_dcell_a27f485f0c317a1ff1d3597febe510b2f}\index{WSDcell@{WSDcell}!read\_tiles\_parallel@{read\_tiles\_parallel}}
+\index{read\_tiles\_parallel@{read\_tiles\_parallel}!WSDcell@{WSDcell}}
+\doxysubsubsection{\texorpdfstring{read\_tiles\_parallel()}{read\_tiles\_parallel()}}
+{\footnotesize\ttfamily \label{namespace_w_s_dcell_a27f485f0c317a1ff1d3597febe510b2f} 
+WSDcell.\+read\+\_\+tiles\+\_\+parallel (\begin{DoxyParamCaption}\item[{}]{slide\+\_\+path}{, }\item[{}]{pred\+\_\+list}{, }\item[{}]{tile\+\_\+size}{}\end{DoxyParamCaption})}
+
+\Hypertarget{namespace_w_s_dcell_a0c54cac6e535a21f56db053b8fd00f2f}\index{WSDcell@{WSDcell}!replace\_bigger\_box@{replace\_bigger\_box}}
+\index{replace\_bigger\_box@{replace\_bigger\_box}!WSDcell@{WSDcell}}
+\doxysubsubsection{\texorpdfstring{replace\_bigger\_box()}{replace\_bigger\_box()}}
+{\footnotesize\ttfamily \label{namespace_w_s_dcell_a0c54cac6e535a21f56db053b8fd00f2f} 
+WSDcell.\+replace\+\_\+bigger\+\_\+box (\begin{DoxyParamCaption}\item[{}]{boxA}{, }\item[{}]{boxB}{}\end{DoxyParamCaption})}
+
+\Hypertarget{namespace_w_s_dcell_af1b30189e9c8ec5d3556b92c6fdf9de1}\index{WSDcell@{WSDcell}!rerun\_predict\_pool@{rerun\_predict\_pool}}
+\index{rerun\_predict\_pool@{rerun\_predict\_pool}!WSDcell@{WSDcell}}
+\doxysubsubsection{\texorpdfstring{rerun\_predict\_pool()}{rerun\_predict\_pool()}}
+{\footnotesize\ttfamily \label{namespace_w_s_dcell_af1b30189e9c8ec5d3556b92c6fdf9de1} 
+WSDcell.\+rerun\+\_\+predict\+\_\+pool (\begin{DoxyParamCaption}\item[{}]{wsi\+\_\+path}{, }\item[{}]{model}{, }\item[{}]{pred\+\_\+list}{, }\item[{}]{tile\+\_\+size}{ = {\ttfamily 1024}, }\item[{}]{batch\+\_\+size}{ = {\ttfamily 12}}\end{DoxyParamCaption})}
+
+\Hypertarget{namespace_w_s_dcell_a32a025db2987587641100e06ecf8e04a}\index{WSDcell@{WSDcell}!run\_predict\_wsi\_multithread@{run\_predict\_wsi\_multithread}}
+\index{run\_predict\_wsi\_multithread@{run\_predict\_wsi\_multithread}!WSDcell@{WSDcell}}
+\doxysubsubsection{\texorpdfstring{run\_predict\_wsi\_multithread()}{run\_predict\_wsi\_multithread()}}
+{\footnotesize\ttfamily \label{namespace_w_s_dcell_a32a025db2987587641100e06ecf8e04a} 
+WSDcell.\+run\+\_\+predict\+\_\+wsi\+\_\+multithread (\begin{DoxyParamCaption}\item[{}]{path}{, }\item[{}]{model}{, }\item[{}]{overlap}{, }\item[{}]{tile\+\_\+size}{ = {\ttfamily 1024}, }\item[{}]{batch\+\_\+size}{ = {\ttfamily 12}}\end{DoxyParamCaption})}
+
+\Hypertarget{namespace_w_s_dcell_a181f4d327d4600790a2a6ff9fc14dd93}\index{WSDcell@{WSDcell}!update\_annote\_id@{update\_annote\_id}}
+\index{update\_annote\_id@{update\_annote\_id}!WSDcell@{WSDcell}}
+\doxysubsubsection{\texorpdfstring{update\_annote\_id()}{update\_annote\_id()}}
+{\footnotesize\ttfamily \label{namespace_w_s_dcell_a181f4d327d4600790a2a6ff9fc14dd93} 
+WSDcell.\+update\+\_\+annote\+\_\+id (\begin{DoxyParamCaption}\item[{}]{annotations}{}\end{DoxyParamCaption})}
+
+\Hypertarget{namespace_w_s_dcell_af42a87effb44d235c814de4bd2b7ae02}\index{WSDcell@{WSDcell}!write\_annotation@{write\_annotation}}
+\index{write\_annotation@{write\_annotation}!WSDcell@{WSDcell}}
+\doxysubsubsection{\texorpdfstring{write\_annotation()}{write\_annotation()}}
+{\footnotesize\ttfamily \label{namespace_w_s_dcell_af42a87effb44d235c814de4bd2b7ae02} 
+WSDcell.\+write\+\_\+annotation (\begin{DoxyParamCaption}\item[{}]{annotations}{, }\item[{}]{\+\_\+id}{, }\item[{}]{x1}{, }\item[{}]{y1}{, }\item[{}]{x2}{, }\item[{}]{y2}{, }\item[{}]{cls}{, }\item[{}]{conf}{, }\item[{}]{X\+\_\+\+Reference}{, }\item[{}]{Y\+\_\+\+Reference}{, }\item[{}]{nm\+\_\+p}{ = {\ttfamily 221}}\end{DoxyParamCaption})}
+
+\Hypertarget{namespace_w_s_dcell_a8a83d8271bf479afc2469d3fbab424e0}\index{WSDcell@{WSDcell}!write\_ndpa@{write\_ndpa}}
+\index{write\_ndpa@{write\_ndpa}!WSDcell@{WSDcell}}
+\doxysubsubsection{\texorpdfstring{write\_ndpa()}{write\_ndpa()}}
+{\footnotesize\ttfamily \label{namespace_w_s_dcell_a8a83d8271bf479afc2469d3fbab424e0} 
+WSDcell.\+write\+\_\+ndpa (\begin{DoxyParamCaption}\item[{}]{tile\+\_\+size}{ = {\ttfamily 1024}, }\item[{}]{overlap}{ = {\ttfamily 128}}\end{DoxyParamCaption})}
+
+\Hypertarget{namespace_w_s_dcell_a33f63cde5f6832f99631685b80007f12}\index{WSDcell@{WSDcell}!write\_xml@{write\_xml}}
+\index{write\_xml@{write\_xml}!WSDcell@{WSDcell}}
+\doxysubsubsection{\texorpdfstring{write\_xml()}{write\_xml()}}
+{\footnotesize\ttfamily \label{namespace_w_s_dcell_a33f63cde5f6832f99631685b80007f12} 
+WSDcell.\+write\+\_\+xml (\begin{DoxyParamCaption}\item[{}]{annotations}{, }\item[{}]{start\+\_\+id}{, }\item[{}]{anote\+\_\+list}{, }\item[{}]{X\+\_\+\+Reference}{, }\item[{}]{Y\+\_\+\+Reference}{, }\item[{}]{nm\+\_\+p}{}\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Variable Documentation}
+\Hypertarget{namespace_w_s_dcell_aa04a57ec411540d39f59f29df28b161d}\index{WSDcell@{WSDcell}!chunk\_size@{chunk\_size}}
+\index{chunk\_size@{chunk\_size}!WSDcell@{WSDcell}}
+\doxysubsubsection{\texorpdfstring{chunk\_size}{chunk\_size}}
+{\footnotesize\ttfamily \label{namespace_w_s_dcell_aa04a57ec411540d39f59f29df28b161d} 
+WSDcell.\+chunk\+\_\+size}
+
+\Hypertarget{namespace_w_s_dcell_a84fcc3525dd5b94d6f2d058fed5b6ad7}\index{WSDcell@{WSDcell}!current\_dir@{current\_dir}}
+\index{current\_dir@{current\_dir}!WSDcell@{WSDcell}}
+\doxysubsubsection{\texorpdfstring{current\_dir}{current\_dir}}
+{\footnotesize\ttfamily \label{namespace_w_s_dcell_a84fcc3525dd5b94d6f2d058fed5b6ad7} 
+WSDcell.\+current\+\_\+dir = os.\+path.\+dirname(sys.\+executable)}
+
+\Hypertarget{namespace_w_s_dcell_a760f3289583a76dbad20c071f2fe2337}\index{WSDcell@{WSDcell}!end@{end}}
+\index{end@{end}!WSDcell@{WSDcell}}
+\doxysubsubsection{\texorpdfstring{end}{end}}
+{\footnotesize\ttfamily \label{namespace_w_s_dcell_a760f3289583a76dbad20c071f2fe2337} 
+WSDcell.\+end = time.\+time()}
+
+\Hypertarget{namespace_w_s_dcell_ac5dffb048aeb58500db46ab3db2ebd6a}\index{WSDcell@{WSDcell}!filename@{filename}}
+\index{filename@{filename}!WSDcell@{WSDcell}}
+\doxysubsubsection{\texorpdfstring{filename}{filename}}
+{\footnotesize\ttfamily \label{namespace_w_s_dcell_ac5dffb048aeb58500db46ab3db2ebd6a} 
+str WSDcell.\+filename = "{}openslide-\/win64-\/20230414.zip"{}}
+
+\Hypertarget{namespace_w_s_dcell_a11ad6b09e18376abeda9445b9da235ac}\index{WSDcell@{WSDcell}!folder\_path@{folder\_path}}
+\index{folder\_path@{folder\_path}!WSDcell@{WSDcell}}
+\doxysubsubsection{\texorpdfstring{folder\_path}{folder\_path}}
+{\footnotesize\ttfamily \label{namespace_w_s_dcell_a11ad6b09e18376abeda9445b9da235ac} 
+str WSDcell.\+folder\+\_\+path = r\textquotesingle{}D\+:\textbackslash{}\+Shreyan\textbackslash{}\+Development\textbackslash{}\+Test\textquotesingle{}}
+
+\Hypertarget{namespace_w_s_dcell_a6eda938edf0f4a2606a7459f17a1a3f7}\index{WSDcell@{WSDcell}!globalVars@{globalVars}}
+\index{globalVars@{globalVars}!WSDcell@{WSDcell}}
+\doxysubsubsection{\texorpdfstring{globalVars}{globalVars}}
+{\footnotesize\ttfamily \label{namespace_w_s_dcell_a6eda938edf0f4a2606a7459f17a1a3f7} 
+WSDcell.\+global\+Vars = \mbox{\hyperlink{class_w_s_dcell_1_1_global_vars}{Global\+Vars}}(\mbox{\hyperlink{namespace_w_s_dcell_a11ad6b09e18376abeda9445b9da235ac}{folder\+\_\+path}})}
+
+\Hypertarget{namespace_w_s_dcell_a5d8c77534772b2a6785ae2e981b3b318}\index{WSDcell@{WSDcell}!OPENSLIDE\_PATH@{OPENSLIDE\_PATH}}
+\index{OPENSLIDE\_PATH@{OPENSLIDE\_PATH}!WSDcell@{WSDcell}}
+\doxysubsubsection{\texorpdfstring{OPENSLIDE\_PATH}{OPENSLIDE\_PATH}}
+{\footnotesize\ttfamily \label{namespace_w_s_dcell_a5d8c77534772b2a6785ae2e981b3b318} 
+WSDcell.\+OPENSLIDE\+\_\+\+PATH = os.\+path.\+join(\mbox{\hyperlink{namespace_w_s_dcell_a84fcc3525dd5b94d6f2d058fed5b6ad7}{current\+\_\+dir}}, \textquotesingle{}openslide-\/win64-\/20230414\textquotesingle{}, \textquotesingle{}bin\textquotesingle{})}
+
+\Hypertarget{namespace_w_s_dcell_af9d8b501ea39a93f475afe9aada232b2}\index{WSDcell@{WSDcell}!overlap@{overlap}}
+\index{overlap@{overlap}!WSDcell@{WSDcell}}
+\doxysubsubsection{\texorpdfstring{overlap}{overlap}}
+{\footnotesize\ttfamily \label{namespace_w_s_dcell_af9d8b501ea39a93f475afe9aada232b2} 
+WSDcell.\+overlap}
+
+\Hypertarget{namespace_w_s_dcell_ab058acfc3a27def495e42e87ba915d2b}\index{WSDcell@{WSDcell}!response@{response}}
+\index{response@{response}!WSDcell@{WSDcell}}
+\doxysubsubsection{\texorpdfstring{response}{response}}
+{\footnotesize\ttfamily \label{namespace_w_s_dcell_ab058acfc3a27def495e42e87ba915d2b} 
+WSDcell.\+response = requests.\+get(\mbox{\hyperlink{namespace_w_s_dcell_a834ee26682108c2709101b70aa3ee1f3}{url}}, stream=True)}
+
+\Hypertarget{namespace_w_s_dcell_a7766274f6a041f00ddace082910277d0}\index{WSDcell@{WSDcell}!start@{start}}
+\index{start@{start}!WSDcell@{WSDcell}}
+\doxysubsubsection{\texorpdfstring{start}{start}}
+{\footnotesize\ttfamily \label{namespace_w_s_dcell_a7766274f6a041f00ddace082910277d0} 
+WSDcell.\+start = time.\+time()}
+
+\Hypertarget{namespace_w_s_dcell_a753842eccfb8ce745b1c4d8632038cf6}\index{WSDcell@{WSDcell}!tile\_size@{tile\_size}}
+\index{tile\_size@{tile\_size}!WSDcell@{WSDcell}}
+\doxysubsubsection{\texorpdfstring{tile\_size}{tile\_size}}
+{\footnotesize\ttfamily \label{namespace_w_s_dcell_a753842eccfb8ce745b1c4d8632038cf6} 
+WSDcell.\+tile\+\_\+size}
+
+\Hypertarget{namespace_w_s_dcell_a834ee26682108c2709101b70aa3ee1f3}\index{WSDcell@{WSDcell}!url@{url}}
+\index{url@{url}!WSDcell@{WSDcell}}
+\doxysubsubsection{\texorpdfstring{url}{url}}
+{\footnotesize\ttfamily \label{namespace_w_s_dcell_a834ee26682108c2709101b70aa3ee1f3} 
+str WSDcell.\+url = "{}https\+://github.\+com/openslide/openslide-\/winbuild/releases/download/v20230414/openslide-\/win64-\/20230414.zip"{}}
+

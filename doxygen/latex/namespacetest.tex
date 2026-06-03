@@ -1,0 +1,246 @@
+\doxysection{test Namespace Reference}
+\hypertarget{namespacetest}{}\label{namespacetest}\index{test@{test}}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{namespacetest_adccbc6024e205de9cae820fbd0b9ca4e}{test}} (\mbox{\hyperlink{namespacetest_aa6c44496d6660b944cf7c0292405fc14}{data}}, weights=None, batch\+\_\+size=32, imgsz=640, conf\+\_\+thres=0.\+001, iou\+\_\+thres=0.\+6, \mbox{\hyperlink{namespacetest_af127d6f6808cfb62c70b0f9548ba29e9}{save\+\_\+json}}=\mbox{\hyperlink{namespacetest_ac65bccd63c3214d52723379a438fa57b}{False}}, single\+\_\+cls=\mbox{\hyperlink{namespacetest_ac65bccd63c3214d52723379a438fa57b}{False}}, augment=\mbox{\hyperlink{namespacetest_ac65bccd63c3214d52723379a438fa57b}{False}}, verbose=\mbox{\hyperlink{namespacetest_ac65bccd63c3214d52723379a438fa57b}{False}}, model=None, dataloader=None, save\+\_\+dir=Path(\textquotesingle{}\textquotesingle{}), \mbox{\hyperlink{namespacetest_ac218a3516763b412159e38a34363c84c}{save\+\_\+txt}}=\mbox{\hyperlink{namespacetest_ac65bccd63c3214d52723379a438fa57b}{False}}, \mbox{\hyperlink{namespacetest_a4b6112091df46157f76069511cdab0e9}{save\+\_\+hybrid}}=\mbox{\hyperlink{namespacetest_ac65bccd63c3214d52723379a438fa57b}{False}}, \mbox{\hyperlink{namespacetest_acf360226e8e5d10240a175d82d2567ed}{save\+\_\+conf}}=\mbox{\hyperlink{namespacetest_ac65bccd63c3214d52723379a438fa57b}{False}}, \mbox{\hyperlink{namespacetest_a552b73a48f79d53085d6b7fc74caf040}{plots}}=True, wandb\+\_\+logger=None, compute\+\_\+loss=None, half\+\_\+precision=True, \mbox{\hyperlink{namespacetest_a9b16356eaf703e500858a84536d936d3}{trace}}=\mbox{\hyperlink{namespacetest_ac65bccd63c3214d52723379a438fa57b}{False}}, is\+\_\+coco=\mbox{\hyperlink{namespacetest_ac65bccd63c3214d52723379a438fa57b}{False}}, \mbox{\hyperlink{namespacetest_a1010e982497b5f591c635b0afaf369ba}{v5\+\_\+metric}}=\mbox{\hyperlink{namespacetest_ac65bccd63c3214d52723379a438fa57b}{False}})
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{namespacetest_a5868a2908793ccf384abecffb2e10f9f}{parser}} = argparse.\+Argument\+Parser(prog=\textquotesingle{}test.\+py\textquotesingle{})
+\item 
+\mbox{\hyperlink{namespacetest_a3866ac553b94fad00fcaa45112956658}{nargs}}
+\item 
+\mbox{\hyperlink{namespacetest_aa5babada9ae94655f1c280efba7fc6f9}{type}}
+\item 
+\mbox{\hyperlink{namespacetest_a25d1c08ead5d6fa93dd0f4422aff1228}{str}}
+\item 
+\mbox{\hyperlink{namespacetest_ab495196548118a10835355cbbcb6c34c}{default}}
+\item 
+\mbox{\hyperlink{namespacetest_ae07aa539fc28078762bd459af906f5e0}{help}}
+\item 
+\mbox{\hyperlink{namespacetest_a02f234a0e0ba9fa6dab66f15e9047217}{int}}
+\item 
+\mbox{\hyperlink{namespacetest_a69f5981c5fb049c70656dc44e15dd740}{float}}
+\item 
+\mbox{\hyperlink{namespacetest_afd7cbaa24b9a76b11854a2d239deb753}{action}}
+\item 
+\mbox{\hyperlink{namespacetest_a29371b4d5d71e6aa165cdf0927c07350}{opt}} = parser.\+parse\+\_\+args()
+\item 
+\mbox{\hyperlink{namespacetest_aa6c44496d6660b944cf7c0292405fc14}{data}}
+\item 
+\mbox{\hyperlink{namespacetest_a290418c0f05d95983896f552d82362f6}{start}} = time.\+time()
+\item 
+\mbox{\hyperlink{namespacetest_ac218a3516763b412159e38a34363c84c}{save\+\_\+txt}}
+\item 
+\mbox{\hyperlink{namespacetest_a4b6112091df46157f76069511cdab0e9}{save\+\_\+hybrid}}
+\item 
+\mbox{\hyperlink{namespacetest_acf360226e8e5d10240a175d82d2567ed}{save\+\_\+conf}}
+\item 
+\mbox{\hyperlink{namespacetest_a9b16356eaf703e500858a84536d936d3}{trace}}
+\item 
+\mbox{\hyperlink{namespacetest_a1010e982497b5f591c635b0afaf369ba}{v5\+\_\+metric}}
+\item 
+\mbox{\hyperlink{namespacetest_af127d6f6808cfb62c70b0f9548ba29e9}{save\+\_\+json}}
+\item 
+\mbox{\hyperlink{namespacetest_ac65bccd63c3214d52723379a438fa57b}{False}}
+\item 
+\mbox{\hyperlink{namespacetest_a552b73a48f79d53085d6b7fc74caf040}{plots}}
+\item 
+\mbox{\hyperlink{namespacetest_accf9c2b29590b2e2d68bb2614364444e}{x}} = list(range(256, 1536 + 128, 128))
+\item 
+\mbox{\hyperlink{namespacetest_a25d1c08ead5d6fa93dd0f4422aff1228}{str}} \mbox{\hyperlink{namespacetest_a5001a75284dab653378def774d4f4c56}{f}} = f\textquotesingle{}study\+\_\+\{Path(opt.\+data).stem\}\mbox{\hyperlink{namespacetest_a693cfa63e0c191a98241f1dfdd8f901e}{\+\_\+}}\{Path(w).stem\}.txt\textquotesingle{}
+\item 
+list \mbox{\hyperlink{namespacetest_a8e35cd41a1bbd5493b663b19c9df1d1d}{y}} = \mbox{[}$\,$\mbox{]}
+\item 
+\mbox{\hyperlink{namespacetest_ac1f92ca15306aee561188e0f37aabc66}{r}}
+\item 
+\mbox{\hyperlink{namespacetest_a693cfa63e0c191a98241f1dfdd8f901e}{\+\_\+}}
+\item 
+\mbox{\hyperlink{namespacetest_ae9ebdaf735944736b55d720cfe9c3e02}{t}}
+\item 
+\mbox{\hyperlink{namespacetest_a48b29b871466edf4bc50da6a8f354636}{fmt}}
+\item 
+\mbox{\hyperlink{namespacetest_a385f0c0aa41b9094f6f4c978546c60a8}{end}} = time.\+time()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{namespacetest_adccbc6024e205de9cae820fbd0b9ca4e}\index{test@{test}!test@{test}}
+\index{test@{test}!test@{test}}
+\doxysubsubsection{\texorpdfstring{test()}{test()}}
+{\footnotesize\ttfamily \label{namespacetest_adccbc6024e205de9cae820fbd0b9ca4e} 
+test.\+test (\begin{DoxyParamCaption}\item[{}]{data}{, }\item[{}]{weights}{ = {\ttfamily None}, }\item[{}]{batch\+\_\+size}{ = {\ttfamily 32}, }\item[{}]{imgsz}{ = {\ttfamily 640}, }\item[{}]{conf\+\_\+thres}{ = {\ttfamily 0.001}, }\item[{}]{iou\+\_\+thres}{ = {\ttfamily 0.6}, }\item[{}]{save\+\_\+json}{ = {\ttfamily \mbox{\hyperlink{namespacetest_ac65bccd63c3214d52723379a438fa57b}{False}}}, }\item[{}]{single\+\_\+cls}{ = {\ttfamily \mbox{\hyperlink{namespacetest_ac65bccd63c3214d52723379a438fa57b}{False}}}, }\item[{}]{augment}{ = {\ttfamily \mbox{\hyperlink{namespacetest_ac65bccd63c3214d52723379a438fa57b}{False}}}, }\item[{}]{verbose}{ = {\ttfamily \mbox{\hyperlink{namespacetest_ac65bccd63c3214d52723379a438fa57b}{False}}}, }\item[{}]{model}{ = {\ttfamily None}, }\item[{}]{dataloader}{ = {\ttfamily None}, }\item[{}]{save\+\_\+dir}{ = {\ttfamily Path(\textquotesingle{}\textquotesingle{})}, }\item[{}]{save\+\_\+txt}{ = {\ttfamily \mbox{\hyperlink{namespacetest_ac65bccd63c3214d52723379a438fa57b}{False}}}, }\item[{}]{save\+\_\+hybrid}{ = {\ttfamily \mbox{\hyperlink{namespacetest_ac65bccd63c3214d52723379a438fa57b}{False}}}, }\item[{}]{save\+\_\+conf}{ = {\ttfamily \mbox{\hyperlink{namespacetest_ac65bccd63c3214d52723379a438fa57b}{False}}}, }\item[{}]{plots}{ = {\ttfamily True}, }\item[{}]{wandb\+\_\+logger}{ = {\ttfamily None}, }\item[{}]{compute\+\_\+loss}{ = {\ttfamily None}, }\item[{}]{half\+\_\+precision}{ = {\ttfamily True}, }\item[{}]{trace}{ = {\ttfamily \mbox{\hyperlink{namespacetest_ac65bccd63c3214d52723379a438fa57b}{False}}}, }\item[{}]{is\+\_\+coco}{ = {\ttfamily \mbox{\hyperlink{namespacetest_ac65bccd63c3214d52723379a438fa57b}{False}}}, }\item[{}]{v5\+\_\+metric}{ = {\ttfamily \mbox{\hyperlink{namespacetest_ac65bccd63c3214d52723379a438fa57b}{False}}}}\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Variable Documentation}
+\Hypertarget{namespacetest_a693cfa63e0c191a98241f1dfdd8f901e}\index{test@{test}!\_@{\_}}
+\index{\_@{\_}!test@{test}}
+\doxysubsubsection{\texorpdfstring{\_}{\_}}
+{\footnotesize\ttfamily \label{namespacetest_a693cfa63e0c191a98241f1dfdd8f901e} 
+test.\+\_\+\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{namespacetest_afd7cbaa24b9a76b11854a2d239deb753}\index{test@{test}!action@{action}}
+\index{action@{action}!test@{test}}
+\doxysubsubsection{\texorpdfstring{action}{action}}
+{\footnotesize\ttfamily \label{namespacetest_afd7cbaa24b9a76b11854a2d239deb753} 
+test.\+action}
+
+\Hypertarget{namespacetest_aa6c44496d6660b944cf7c0292405fc14}\index{test@{test}!data@{data}}
+\index{data@{data}!test@{test}}
+\doxysubsubsection{\texorpdfstring{data}{data}}
+{\footnotesize\ttfamily \label{namespacetest_aa6c44496d6660b944cf7c0292405fc14} 
+test.\+data}
+
+\Hypertarget{namespacetest_ab495196548118a10835355cbbcb6c34c}\index{test@{test}!default@{default}}
+\index{default@{default}!test@{test}}
+\doxysubsubsection{\texorpdfstring{default}{default}}
+{\footnotesize\ttfamily \label{namespacetest_ab495196548118a10835355cbbcb6c34c} 
+test.\+default}
+
+\Hypertarget{namespacetest_a385f0c0aa41b9094f6f4c978546c60a8}\index{test@{test}!end@{end}}
+\index{end@{end}!test@{test}}
+\doxysubsubsection{\texorpdfstring{end}{end}}
+{\footnotesize\ttfamily \label{namespacetest_a385f0c0aa41b9094f6f4c978546c60a8} 
+test.\+end = time.\+time()}
+
+\Hypertarget{namespacetest_a5001a75284dab653378def774d4f4c56}\index{test@{test}!f@{f}}
+\index{f@{f}!test@{test}}
+\doxysubsubsection{\texorpdfstring{f}{f}}
+{\footnotesize\ttfamily \label{namespacetest_a5001a75284dab653378def774d4f4c56} 
+test.\+f = f\textquotesingle{}study\+\_\+\{Path(opt.\+data).stem\}\mbox{\hyperlink{namespacetest_a693cfa63e0c191a98241f1dfdd8f901e}{\+\_\+}}\{Path(w).stem\}.txt\textquotesingle{}}
+
+\Hypertarget{namespacetest_ac65bccd63c3214d52723379a438fa57b}\index{test@{test}!False@{False}}
+\index{False@{False}!test@{test}}
+\doxysubsubsection{\texorpdfstring{False}{False}}
+{\footnotesize\ttfamily \label{namespacetest_ac65bccd63c3214d52723379a438fa57b} 
+test.\+False}
+
+\Hypertarget{namespacetest_a69f5981c5fb049c70656dc44e15dd740}\index{test@{test}!float@{float}}
+\index{float@{float}!test@{test}}
+\doxysubsubsection{\texorpdfstring{float}{float}}
+{\footnotesize\ttfamily \label{namespacetest_a69f5981c5fb049c70656dc44e15dd740} 
+test.\+float}
+
+\Hypertarget{namespacetest_a48b29b871466edf4bc50da6a8f354636}\index{test@{test}!fmt@{fmt}}
+\index{fmt@{fmt}!test@{test}}
+\doxysubsubsection{\texorpdfstring{fmt}{fmt}}
+{\footnotesize\ttfamily \label{namespacetest_a48b29b871466edf4bc50da6a8f354636} 
+test.\+fmt}
+
+\Hypertarget{namespacetest_ae07aa539fc28078762bd459af906f5e0}\index{test@{test}!help@{help}}
+\index{help@{help}!test@{test}}
+\doxysubsubsection{\texorpdfstring{help}{help}}
+{\footnotesize\ttfamily \label{namespacetest_ae07aa539fc28078762bd459af906f5e0} 
+test.\+help}
+
+\Hypertarget{namespacetest_a02f234a0e0ba9fa6dab66f15e9047217}\index{test@{test}!int@{int}}
+\index{int@{int}!test@{test}}
+\doxysubsubsection{\texorpdfstring{int}{int}}
+{\footnotesize\ttfamily \label{namespacetest_a02f234a0e0ba9fa6dab66f15e9047217} 
+test.\+int}
+
+\Hypertarget{namespacetest_a3866ac553b94fad00fcaa45112956658}\index{test@{test}!nargs@{nargs}}
+\index{nargs@{nargs}!test@{test}}
+\doxysubsubsection{\texorpdfstring{nargs}{nargs}}
+{\footnotesize\ttfamily \label{namespacetest_a3866ac553b94fad00fcaa45112956658} 
+test.\+nargs}
+
+\Hypertarget{namespacetest_a29371b4d5d71e6aa165cdf0927c07350}\index{test@{test}!opt@{opt}}
+\index{opt@{opt}!test@{test}}
+\doxysubsubsection{\texorpdfstring{opt}{opt}}
+{\footnotesize\ttfamily \label{namespacetest_a29371b4d5d71e6aa165cdf0927c07350} 
+test.\+opt = parser.\+parse\+\_\+args()}
+
+\Hypertarget{namespacetest_a5868a2908793ccf384abecffb2e10f9f}\index{test@{test}!parser@{parser}}
+\index{parser@{parser}!test@{test}}
+\doxysubsubsection{\texorpdfstring{parser}{parser}}
+{\footnotesize\ttfamily \label{namespacetest_a5868a2908793ccf384abecffb2e10f9f} 
+test.\+parser = argparse.\+Argument\+Parser(prog=\textquotesingle{}test.\+py\textquotesingle{})}
+
+\Hypertarget{namespacetest_a552b73a48f79d53085d6b7fc74caf040}\index{test@{test}!plots@{plots}}
+\index{plots@{plots}!test@{test}}
+\doxysubsubsection{\texorpdfstring{plots}{plots}}
+{\footnotesize\ttfamily \label{namespacetest_a552b73a48f79d53085d6b7fc74caf040} 
+test.\+plots}
+
+\Hypertarget{namespacetest_ac1f92ca15306aee561188e0f37aabc66}\index{test@{test}!r@{r}}
+\index{r@{r}!test@{test}}
+\doxysubsubsection{\texorpdfstring{r}{r}}
+{\footnotesize\ttfamily \label{namespacetest_ac1f92ca15306aee561188e0f37aabc66} 
+test.\+r}
+
+\Hypertarget{namespacetest_acf360226e8e5d10240a175d82d2567ed}\index{test@{test}!save\_conf@{save\_conf}}
+\index{save\_conf@{save\_conf}!test@{test}}
+\doxysubsubsection{\texorpdfstring{save\_conf}{save\_conf}}
+{\footnotesize\ttfamily \label{namespacetest_acf360226e8e5d10240a175d82d2567ed} 
+test.\+save\+\_\+conf}
+
+\Hypertarget{namespacetest_a4b6112091df46157f76069511cdab0e9}\index{test@{test}!save\_hybrid@{save\_hybrid}}
+\index{save\_hybrid@{save\_hybrid}!test@{test}}
+\doxysubsubsection{\texorpdfstring{save\_hybrid}{save\_hybrid}}
+{\footnotesize\ttfamily \label{namespacetest_a4b6112091df46157f76069511cdab0e9} 
+test.\+save\+\_\+hybrid}
+
+\Hypertarget{namespacetest_af127d6f6808cfb62c70b0f9548ba29e9}\index{test@{test}!save\_json@{save\_json}}
+\index{save\_json@{save\_json}!test@{test}}
+\doxysubsubsection{\texorpdfstring{save\_json}{save\_json}}
+{\footnotesize\ttfamily \label{namespacetest_af127d6f6808cfb62c70b0f9548ba29e9} 
+test.\+save\+\_\+json}
+
+\Hypertarget{namespacetest_ac218a3516763b412159e38a34363c84c}\index{test@{test}!save\_txt@{save\_txt}}
+\index{save\_txt@{save\_txt}!test@{test}}
+\doxysubsubsection{\texorpdfstring{save\_txt}{save\_txt}}
+{\footnotesize\ttfamily \label{namespacetest_ac218a3516763b412159e38a34363c84c} 
+test.\+save\+\_\+txt}
+
+\Hypertarget{namespacetest_a290418c0f05d95983896f552d82362f6}\index{test@{test}!start@{start}}
+\index{start@{start}!test@{test}}
+\doxysubsubsection{\texorpdfstring{start}{start}}
+{\footnotesize\ttfamily \label{namespacetest_a290418c0f05d95983896f552d82362f6} 
+test.\+start = time.\+time()}
+
+\Hypertarget{namespacetest_a25d1c08ead5d6fa93dd0f4422aff1228}\index{test@{test}!str@{str}}
+\index{str@{str}!test@{test}}
+\doxysubsubsection{\texorpdfstring{str}{str}}
+{\footnotesize\ttfamily \label{namespacetest_a25d1c08ead5d6fa93dd0f4422aff1228} 
+test.\+str}
+
+\Hypertarget{namespacetest_ae9ebdaf735944736b55d720cfe9c3e02}\index{test@{test}!t@{t}}
+\index{t@{t}!test@{test}}
+\doxysubsubsection{\texorpdfstring{t}{t}}
+{\footnotesize\ttfamily \label{namespacetest_ae9ebdaf735944736b55d720cfe9c3e02} 
+test.\+t}
+
+\Hypertarget{namespacetest_a9b16356eaf703e500858a84536d936d3}\index{test@{test}!trace@{trace}}
+\index{trace@{trace}!test@{test}}
+\doxysubsubsection{\texorpdfstring{trace}{trace}}
+{\footnotesize\ttfamily \label{namespacetest_a9b16356eaf703e500858a84536d936d3} 
+test.\+trace}
+
+\Hypertarget{namespacetest_aa5babada9ae94655f1c280efba7fc6f9}\index{test@{test}!type@{type}}
+\index{type@{type}!test@{test}}
+\doxysubsubsection{\texorpdfstring{type}{type}}
+{\footnotesize\ttfamily \label{namespacetest_aa5babada9ae94655f1c280efba7fc6f9} 
+test.\+type}
+
+\Hypertarget{namespacetest_a1010e982497b5f591c635b0afaf369ba}\index{test@{test}!v5\_metric@{v5\_metric}}
+\index{v5\_metric@{v5\_metric}!test@{test}}
+\doxysubsubsection{\texorpdfstring{v5\_metric}{v5\_metric}}
+{\footnotesize\ttfamily \label{namespacetest_a1010e982497b5f591c635b0afaf369ba} 
+test.\+v5\+\_\+metric}
+
+\Hypertarget{namespacetest_accf9c2b29590b2e2d68bb2614364444e}\index{test@{test}!x@{x}}
+\index{x@{x}!test@{test}}
+\doxysubsubsection{\texorpdfstring{x}{x}}
+{\footnotesize\ttfamily \label{namespacetest_accf9c2b29590b2e2d68bb2614364444e} 
+test.\+x = list(range(256, 1536 + 128, 128))}
+
+\Hypertarget{namespacetest_a8e35cd41a1bbd5493b663b19c9df1d1d}\index{test@{test}!y@{y}}
+\index{y@{y}!test@{test}}
+\doxysubsubsection{\texorpdfstring{y}{y}}
+{\footnotesize\ttfamily \label{namespacetest_a8e35cd41a1bbd5493b663b19c9df1d1d} 
+test.\+y = \mbox{[}$\,$\mbox{]}}
+

@@ -1,0 +1,72 @@
+\doxysection{torchvision\+\_\+down.\+models.\+optical\+\_\+flow.\+raft.\+Conv\+GRU Class Reference}
+\hypertarget{classtorchvision__down_1_1models_1_1optical__flow_1_1raft_1_1_conv_g_r_u}{}\label{classtorchvision__down_1_1models_1_1optical__flow_1_1raft_1_1_conv_g_r_u}\index{torchvision\_down.models.optical\_flow.raft.ConvGRU@{torchvision\_down.models.optical\_flow.raft.ConvGRU}}
+Inheritance diagram for torchvision\+\_\+down.\+models.\+optical\+\_\+flow.\+raft.\+Conv\+GRU\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classtorchvision__down_1_1models_1_1optical__flow_1_1raft_1_1_conv_g_r_u}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1models_1_1optical__flow_1_1raft_1_1_conv_g_r_u_a4afd9114754d57eaaf6b43685d944dd7}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, \texorpdfstring{$\ast$}{*}, input\+\_\+size, hidden\+\_\+size, kernel\+\_\+size, padding)
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1models_1_1optical__flow_1_1raft_1_1_conv_g_r_u_a650a2cd450287d6118f969afb5e78317}{forward}} (self, h, x)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1models_1_1optical__flow_1_1raft_1_1_conv_g_r_u_aa56b3a8c6abba795a6d697ebdcc18c19}{convz}} = nn.\+Conv2d(hidden\+\_\+size + input\+\_\+size, hidden\+\_\+size, kernel\+\_\+size=kernel\+\_\+size, padding=padding)
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1models_1_1optical__flow_1_1raft_1_1_conv_g_r_u_a66a8386c156216a94255dd5b5cc5d7c5}{convr}} = nn.\+Conv2d(hidden\+\_\+size + input\+\_\+size, hidden\+\_\+size, kernel\+\_\+size=kernel\+\_\+size, padding=padding)
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1models_1_1optical__flow_1_1raft_1_1_conv_g_r_u_a8859e10430dbdc8a65d8fcd970383450}{convq}} = nn.\+Conv2d(hidden\+\_\+size + input\+\_\+size, hidden\+\_\+size, kernel\+\_\+size=kernel\+\_\+size, padding=padding)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}Convolutional Gru unit.\end{DoxyVerb}
+ 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classtorchvision__down_1_1models_1_1optical__flow_1_1raft_1_1_conv_g_r_u_a4afd9114754d57eaaf6b43685d944dd7}\index{torchvision\_down.models.optical\_flow.raft.ConvGRU@{torchvision\_down.models.optical\_flow.raft.ConvGRU}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!torchvision\_down.models.optical\_flow.raft.ConvGRU@{torchvision\_down.models.optical\_flow.raft.ConvGRU}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1models_1_1optical__flow_1_1raft_1_1_conv_g_r_u_a4afd9114754d57eaaf6b43685d944dd7} 
+torchvision\+\_\+down.\+models.\+optical\+\_\+flow.\+raft.\+Conv\+GRU.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{\texorpdfstring{$\ast$}{*}}]{}{, }\item[{}]{input\+\_\+size}{, }\item[{}]{hidden\+\_\+size}{, }\item[{}]{kernel\+\_\+size}{, }\item[{}]{padding}{}\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classtorchvision__down_1_1models_1_1optical__flow_1_1raft_1_1_conv_g_r_u_a650a2cd450287d6118f969afb5e78317}\index{torchvision\_down.models.optical\_flow.raft.ConvGRU@{torchvision\_down.models.optical\_flow.raft.ConvGRU}!forward@{forward}}
+\index{forward@{forward}!torchvision\_down.models.optical\_flow.raft.ConvGRU@{torchvision\_down.models.optical\_flow.raft.ConvGRU}}
+\doxysubsubsection{\texorpdfstring{forward()}{forward()}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1models_1_1optical__flow_1_1raft_1_1_conv_g_r_u_a650a2cd450287d6118f969afb5e78317} 
+torchvision\+\_\+down.\+models.\+optical\+\_\+flow.\+raft.\+Conv\+GRU.\+forward (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{h}{, }\item[{}]{x}{}\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classtorchvision__down_1_1models_1_1optical__flow_1_1raft_1_1_conv_g_r_u_a8859e10430dbdc8a65d8fcd970383450}\index{torchvision\_down.models.optical\_flow.raft.ConvGRU@{torchvision\_down.models.optical\_flow.raft.ConvGRU}!convq@{convq}}
+\index{convq@{convq}!torchvision\_down.models.optical\_flow.raft.ConvGRU@{torchvision\_down.models.optical\_flow.raft.ConvGRU}}
+\doxysubsubsection{\texorpdfstring{convq}{convq}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1models_1_1optical__flow_1_1raft_1_1_conv_g_r_u_a8859e10430dbdc8a65d8fcd970383450} 
+torchvision\+\_\+down.\+models.\+optical\+\_\+flow.\+raft.\+Conv\+GRU.\+convq = nn.\+Conv2d(hidden\+\_\+size + input\+\_\+size, hidden\+\_\+size, kernel\+\_\+size=kernel\+\_\+size, padding=padding)}
+
+\Hypertarget{classtorchvision__down_1_1models_1_1optical__flow_1_1raft_1_1_conv_g_r_u_a66a8386c156216a94255dd5b5cc5d7c5}\index{torchvision\_down.models.optical\_flow.raft.ConvGRU@{torchvision\_down.models.optical\_flow.raft.ConvGRU}!convr@{convr}}
+\index{convr@{convr}!torchvision\_down.models.optical\_flow.raft.ConvGRU@{torchvision\_down.models.optical\_flow.raft.ConvGRU}}
+\doxysubsubsection{\texorpdfstring{convr}{convr}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1models_1_1optical__flow_1_1raft_1_1_conv_g_r_u_a66a8386c156216a94255dd5b5cc5d7c5} 
+torchvision\+\_\+down.\+models.\+optical\+\_\+flow.\+raft.\+Conv\+GRU.\+convr = nn.\+Conv2d(hidden\+\_\+size + input\+\_\+size, hidden\+\_\+size, kernel\+\_\+size=kernel\+\_\+size, padding=padding)}
+
+\Hypertarget{classtorchvision__down_1_1models_1_1optical__flow_1_1raft_1_1_conv_g_r_u_aa56b3a8c6abba795a6d697ebdcc18c19}\index{torchvision\_down.models.optical\_flow.raft.ConvGRU@{torchvision\_down.models.optical\_flow.raft.ConvGRU}!convz@{convz}}
+\index{convz@{convz}!torchvision\_down.models.optical\_flow.raft.ConvGRU@{torchvision\_down.models.optical\_flow.raft.ConvGRU}}
+\doxysubsubsection{\texorpdfstring{convz}{convz}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1models_1_1optical__flow_1_1raft_1_1_conv_g_r_u_aa56b3a8c6abba795a6d697ebdcc18c19} 
+torchvision\+\_\+down.\+models.\+optical\+\_\+flow.\+raft.\+Conv\+GRU.\+convz = nn.\+Conv2d(hidden\+\_\+size + input\+\_\+size, hidden\+\_\+size, kernel\+\_\+size=kernel\+\_\+size, padding=padding)}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Cervi\+AI/torchvision\+\_\+down/models/optical\+\_\+flow/\mbox{\hyperlink{raft_8py}{raft.\+py}}\end{DoxyCompactItemize}

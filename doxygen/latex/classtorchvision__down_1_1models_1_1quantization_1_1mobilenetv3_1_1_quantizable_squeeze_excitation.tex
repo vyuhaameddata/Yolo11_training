@@ -1,0 +1,109 @@
+\doxysection{torchvision\+\_\+down.\+models.\+quantization.\+mobilenetv3.\+Quantizable\+Squeeze\+Excitation Class Reference}
+\hypertarget{classtorchvision__down_1_1models_1_1quantization_1_1mobilenetv3_1_1_quantizable_squeeze_excitation}{}\label{classtorchvision__down_1_1models_1_1quantization_1_1mobilenetv3_1_1_quantizable_squeeze_excitation}\index{torchvision\_down.models.quantization.mobilenetv3.QuantizableSqueezeExcitation@{torchvision\_down.models.quantization.mobilenetv3.QuantizableSqueezeExcitation}}
+Inheritance diagram for torchvision\+\_\+down.\+models.\+quantization.\+mobilenetv3.\+Quantizable\+Squeeze\+Excitation\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{classtorchvision__down_1_1models_1_1quantization_1_1mobilenetv3_1_1_quantizable_squeeze_excitation}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+None \mbox{\hyperlink{classtorchvision__down_1_1models_1_1quantization_1_1mobilenetv3_1_1_quantizable_squeeze_excitation_a2e8318516db80ee3effe7603d9fcb382}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, \texorpdfstring{$\ast$}{*}Any args, \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}Any kwargs)
+\item 
+Tensor \mbox{\hyperlink{classtorchvision__down_1_1models_1_1quantization_1_1mobilenetv3_1_1_quantizable_squeeze_excitation_a2375c82e3afd7d8ede2783644edf69e7}{forward}} (self, Tensor input)
+\item 
+None \mbox{\hyperlink{classtorchvision__down_1_1models_1_1quantization_1_1mobilenetv3_1_1_quantizable_squeeze_excitation_a28d7a299b07022905d7220f45b0e2599}{fuse\+\_\+model}} (self, Optional\mbox{[}bool\mbox{]} is\+\_\+qat=None)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{classtorchvision__down_1_1ops_1_1misc_1_1_squeeze_excitation}{torchvision\+\_\+down.\+ops.\+misc.\+Squeeze\+Excitation}}}
+\begin{DoxyCompactItemize}
+\item 
+None \mbox{\hyperlink{classtorchvision__down_1_1ops_1_1misc_1_1_squeeze_excitation_aa5fd8ae5eb819c7b25f4ab5efcef2e75}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, int input\+\_\+channels, int squeeze\+\_\+channels, Callable\mbox{[}..., torch.\+nn.\+Module\mbox{]} \mbox{\hyperlink{classtorchvision__down_1_1ops_1_1misc_1_1_squeeze_excitation_a860c68013e113ffc57d81170b9436d73}{activation}}=torch.\+nn.\+Re\+LU, Callable\mbox{[}..., torch.\+nn.\+Module\mbox{]} \mbox{\hyperlink{classtorchvision__down_1_1ops_1_1misc_1_1_squeeze_excitation_a640aa5ae565cc151d1649849ed6387d5}{scale\+\_\+activation}}=torch.\+nn.\+Sigmoid)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1models_1_1quantization_1_1mobilenetv3_1_1_quantizable_squeeze_excitation_a388be384697f48d4fe25f11db6fb56a2}{skip\+\_\+mul}} = nn.\+quantized.\+Float\+Functional()
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes inherited from \mbox{\hyperlink{classtorchvision__down_1_1ops_1_1misc_1_1_squeeze_excitation}{torchvision\+\_\+down.\+ops.\+misc.\+Squeeze\+Excitation}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1ops_1_1misc_1_1_squeeze_excitation_a7976db610f881790c64bf048146aa38d}{avgpool}} = torch.\+nn.\+Adaptive\+Avg\+Pool2d(1)
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1ops_1_1misc_1_1_squeeze_excitation_a88adf71ba15c81dadf41a1d8e43f2bc6}{fc1}} = torch.\+nn.\+Conv2d(input\+\_\+channels, squeeze\+\_\+channels, 1)
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1ops_1_1misc_1_1_squeeze_excitation_a95cebe9910e2d0c4b921ac0b3c448895}{fc2}} = torch.\+nn.\+Conv2d(squeeze\+\_\+channels, input\+\_\+channels, 1)
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1ops_1_1misc_1_1_squeeze_excitation_a860c68013e113ffc57d81170b9436d73}{activation}} = activation()
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1ops_1_1misc_1_1_squeeze_excitation_a640aa5ae565cc151d1649849ed6387d5}{scale\+\_\+activation}} = scale\+\_\+activation()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1models_1_1quantization_1_1mobilenetv3_1_1_quantizable_squeeze_excitation_affa025e3272756fc586f79d5dc1ac6d6}{\+\_\+load\+\_\+from\+\_\+state\+\_\+dict}} (self, state\+\_\+dict, prefix, local\+\_\+metadata, strict, missing\+\_\+keys, unexpected\+\_\+keys, error\+\_\+msgs)
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions inherited from \mbox{\hyperlink{classtorchvision__down_1_1ops_1_1misc_1_1_squeeze_excitation}{torchvision\+\_\+down.\+ops.\+misc.\+Squeeze\+Excitation}}}
+\begin{DoxyCompactItemize}
+\item 
+Tensor \mbox{\hyperlink{classtorchvision__down_1_1ops_1_1misc_1_1_squeeze_excitation_a5d4385caf30b9e6269e0a1741323a056}{\+\_\+scale}} (self, Tensor input)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{classtorchvision__down_1_1models_1_1quantization_1_1mobilenetv3_1_1_quantizable_squeeze_excitation_a25222b61122164cce5dfd521286e10f4}{\+\_\+version}} = 2
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classtorchvision__down_1_1models_1_1quantization_1_1mobilenetv3_1_1_quantizable_squeeze_excitation_a2e8318516db80ee3effe7603d9fcb382}\index{torchvision\_down.models.quantization.mobilenetv3.QuantizableSqueezeExcitation@{torchvision\_down.models.quantization.mobilenetv3.QuantizableSqueezeExcitation}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!torchvision\_down.models.quantization.mobilenetv3.QuantizableSqueezeExcitation@{torchvision\_down.models.quantization.mobilenetv3.QuantizableSqueezeExcitation}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1models_1_1quantization_1_1mobilenetv3_1_1_quantizable_squeeze_excitation_a2e8318516db80ee3effe7603d9fcb382} 
+ None torchvision\+\_\+down.\+models.\+quantization.\+mobilenetv3.\+Quantizable\+Squeeze\+Excitation.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{\texorpdfstring{$\ast$}{*}Any}]{args}{, }\item[{\texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}Any}]{kwargs}{}\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classtorchvision__down_1_1models_1_1quantization_1_1mobilenetv3_1_1_quantizable_squeeze_excitation_affa025e3272756fc586f79d5dc1ac6d6}\index{torchvision\_down.models.quantization.mobilenetv3.QuantizableSqueezeExcitation@{torchvision\_down.models.quantization.mobilenetv3.QuantizableSqueezeExcitation}!\_load\_from\_state\_dict@{\_load\_from\_state\_dict}}
+\index{\_load\_from\_state\_dict@{\_load\_from\_state\_dict}!torchvision\_down.models.quantization.mobilenetv3.QuantizableSqueezeExcitation@{torchvision\_down.models.quantization.mobilenetv3.QuantizableSqueezeExcitation}}
+\doxysubsubsection{\texorpdfstring{\_load\_from\_state\_dict()}{\_load\_from\_state\_dict()}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1models_1_1quantization_1_1mobilenetv3_1_1_quantizable_squeeze_excitation_affa025e3272756fc586f79d5dc1ac6d6} 
+torchvision\+\_\+down.\+models.\+quantization.\+mobilenetv3.\+Quantizable\+Squeeze\+Excitation.\+\_\+load\+\_\+from\+\_\+state\+\_\+dict (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{state\+\_\+dict}{, }\item[{}]{prefix}{, }\item[{}]{local\+\_\+metadata}{, }\item[{}]{strict}{, }\item[{}]{missing\+\_\+keys}{, }\item[{}]{unexpected\+\_\+keys}{, }\item[{}]{error\+\_\+msgs}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classtorchvision__down_1_1models_1_1quantization_1_1mobilenetv3_1_1_quantizable_squeeze_excitation_a2375c82e3afd7d8ede2783644edf69e7}\index{torchvision\_down.models.quantization.mobilenetv3.QuantizableSqueezeExcitation@{torchvision\_down.models.quantization.mobilenetv3.QuantizableSqueezeExcitation}!forward@{forward}}
+\index{forward@{forward}!torchvision\_down.models.quantization.mobilenetv3.QuantizableSqueezeExcitation@{torchvision\_down.models.quantization.mobilenetv3.QuantizableSqueezeExcitation}}
+\doxysubsubsection{\texorpdfstring{forward()}{forward()}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1models_1_1quantization_1_1mobilenetv3_1_1_quantizable_squeeze_excitation_a2375c82e3afd7d8ede2783644edf69e7} 
+ Tensor torchvision\+\_\+down.\+models.\+quantization.\+mobilenetv3.\+Quantizable\+Squeeze\+Excitation.\+forward (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{Tensor}]{input}{}\end{DoxyParamCaption})}
+
+
+
+Reimplemented from \mbox{\hyperlink{classtorchvision__down_1_1ops_1_1misc_1_1_squeeze_excitation_ae90f38cc689423be2530accd21073d19}{torchvision\+\_\+down.\+ops.\+misc.\+Squeeze\+Excitation}}.
+
+\Hypertarget{classtorchvision__down_1_1models_1_1quantization_1_1mobilenetv3_1_1_quantizable_squeeze_excitation_a28d7a299b07022905d7220f45b0e2599}\index{torchvision\_down.models.quantization.mobilenetv3.QuantizableSqueezeExcitation@{torchvision\_down.models.quantization.mobilenetv3.QuantizableSqueezeExcitation}!fuse\_model@{fuse\_model}}
+\index{fuse\_model@{fuse\_model}!torchvision\_down.models.quantization.mobilenetv3.QuantizableSqueezeExcitation@{torchvision\_down.models.quantization.mobilenetv3.QuantizableSqueezeExcitation}}
+\doxysubsubsection{\texorpdfstring{fuse\_model()}{fuse\_model()}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1models_1_1quantization_1_1mobilenetv3_1_1_quantizable_squeeze_excitation_a28d7a299b07022905d7220f45b0e2599} 
+ None torchvision\+\_\+down.\+models.\+quantization.\+mobilenetv3.\+Quantizable\+Squeeze\+Excitation.\+fuse\+\_\+model (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{Optional\mbox{[}bool\mbox{]} }]{is\+\_\+qat}{ = {\ttfamily None}}\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classtorchvision__down_1_1models_1_1quantization_1_1mobilenetv3_1_1_quantizable_squeeze_excitation_a25222b61122164cce5dfd521286e10f4}\index{torchvision\_down.models.quantization.mobilenetv3.QuantizableSqueezeExcitation@{torchvision\_down.models.quantization.mobilenetv3.QuantizableSqueezeExcitation}!\_version@{\_version}}
+\index{\_version@{\_version}!torchvision\_down.models.quantization.mobilenetv3.QuantizableSqueezeExcitation@{torchvision\_down.models.quantization.mobilenetv3.QuantizableSqueezeExcitation}}
+\doxysubsubsection{\texorpdfstring{\_version}{\_version}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1models_1_1quantization_1_1mobilenetv3_1_1_quantizable_squeeze_excitation_a25222b61122164cce5dfd521286e10f4} 
+int torchvision\+\_\+down.\+models.\+quantization.\+mobilenetv3.\+Quantizable\+Squeeze\+Excitation.\+\_\+version = 2\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}
+
+\Hypertarget{classtorchvision__down_1_1models_1_1quantization_1_1mobilenetv3_1_1_quantizable_squeeze_excitation_a388be384697f48d4fe25f11db6fb56a2}\index{torchvision\_down.models.quantization.mobilenetv3.QuantizableSqueezeExcitation@{torchvision\_down.models.quantization.mobilenetv3.QuantizableSqueezeExcitation}!skip\_mul@{skip\_mul}}
+\index{skip\_mul@{skip\_mul}!torchvision\_down.models.quantization.mobilenetv3.QuantizableSqueezeExcitation@{torchvision\_down.models.quantization.mobilenetv3.QuantizableSqueezeExcitation}}
+\doxysubsubsection{\texorpdfstring{skip\_mul}{skip\_mul}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1models_1_1quantization_1_1mobilenetv3_1_1_quantizable_squeeze_excitation_a388be384697f48d4fe25f11db6fb56a2} 
+torchvision\+\_\+down.\+models.\+quantization.\+mobilenetv3.\+Quantizable\+Squeeze\+Excitation.\+skip\+\_\+mul = nn.\+quantized.\+Float\+Functional()}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Cervi\+AI/torchvision\+\_\+down/models/quantization/\mbox{\hyperlink{quantization_2mobilenetv3_8py}{mobilenetv3.\+py}}\end{DoxyCompactItemize}

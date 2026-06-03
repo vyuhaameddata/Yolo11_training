@@ -1,0 +1,278 @@
+\doxysection{torchvision\+\_\+down.\+models.\+googlenet.\+Goog\+Le\+Net Class Reference}
+\hypertarget{classtorchvision__down_1_1models_1_1googlenet_1_1_goog_le_net}{}\label{classtorchvision__down_1_1models_1_1googlenet_1_1_goog_le_net}\index{torchvision\_down.models.googlenet.GoogLeNet@{torchvision\_down.models.googlenet.GoogLeNet}}
+Inheritance diagram for torchvision\+\_\+down.\+models.\+googlenet.\+Goog\+Le\+Net\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{classtorchvision__down_1_1models_1_1googlenet_1_1_goog_le_net}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+None \mbox{\hyperlink{classtorchvision__down_1_1models_1_1googlenet_1_1_goog_le_net_a1f985e263daa59bf4ce208b48cf64ef5}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, int num\+\_\+classes=1000, bool \mbox{\hyperlink{classtorchvision__down_1_1models_1_1googlenet_1_1_goog_le_net_afa73e36992e48805c862ba2fef167ba3}{aux\+\_\+logits}}=True, bool \mbox{\hyperlink{classtorchvision__down_1_1models_1_1googlenet_1_1_goog_le_net_a6b58ee9871bdb37044dbad21da8046a0}{transform\+\_\+input}}=False, Optional\mbox{[}bool\mbox{]} init\+\_\+weights=None, Optional\mbox{[}List\mbox{[}Callable\mbox{[}..., nn.\+Module\mbox{]}\mbox{]}\mbox{]} blocks=None, float \mbox{\hyperlink{classtorchvision__down_1_1models_1_1googlenet_1_1_goog_le_net_ae43be7ed6436f80e955c18a27f8b83ef}{dropout}}=0.\+2, float dropout\+\_\+aux=0.\+7)
+\item 
+\mbox{\hyperlink{namespacetorchvision__down_1_1models_1_1googlenet_ae4dd7d61dea375f22628fb6bc2e5f77d}{Goog\+Le\+Net\+Outputs}} \mbox{\hyperlink{classtorchvision__down_1_1models_1_1googlenet_1_1_goog_le_net_a1385379c2c372f69f87a1b13f788fddc}{eager\+\_\+outputs}} (self, Tensor x, Tensor \mbox{\hyperlink{classtorchvision__down_1_1models_1_1googlenet_1_1_goog_le_net_ac1a6361b84ff2df5474071a6139a3425}{aux2}}, Optional\mbox{[}Tensor\mbox{]} \mbox{\hyperlink{classtorchvision__down_1_1models_1_1googlenet_1_1_goog_le_net_abe7b9cf29caba8165f4228d7ae9c2091}{aux1}})
+\item 
+\mbox{\hyperlink{namespacetorchvision__down_1_1models_1_1googlenet_ae4dd7d61dea375f22628fb6bc2e5f77d}{Goog\+Le\+Net\+Outputs}} \mbox{\hyperlink{classtorchvision__down_1_1models_1_1googlenet_1_1_goog_le_net_a8d2fd504ff703f1044c8dab1f4c78379}{forward}} (self, Tensor x)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1models_1_1googlenet_1_1_goog_le_net_afa73e36992e48805c862ba2fef167ba3}{aux\+\_\+logits}} = aux\+\_\+logits
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1models_1_1googlenet_1_1_goog_le_net_a6b58ee9871bdb37044dbad21da8046a0}{transform\+\_\+input}} = transform\+\_\+input
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1models_1_1googlenet_1_1_goog_le_net_aec1571139943f7f035a8dfdde22611ef}{conv1}} = conv\+\_\+block(3, 64, kernel\+\_\+size=7, stride=2, padding=3)
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1models_1_1googlenet_1_1_goog_le_net_a5761a4b7241c7d1ac8964e487fb3159a}{maxpool1}} = nn.\+Max\+Pool2d(3, stride=2, ceil\+\_\+mode=True)
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1models_1_1googlenet_1_1_goog_le_net_a228d0235590ae7301e1993f4babb55ea}{conv2}} = conv\+\_\+block(64, 64, kernel\+\_\+size=1)
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1models_1_1googlenet_1_1_goog_le_net_a5c9e5e9b9ebe04286e3dfc297dfa34ed}{conv3}} = conv\+\_\+block(64, 192, kernel\+\_\+size=3, padding=1)
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1models_1_1googlenet_1_1_goog_le_net_a6653c9bcad92588a36ae4cbbc5de1246}{maxpool2}} = nn.\+Max\+Pool2d(3, stride=2, ceil\+\_\+mode=True)
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1models_1_1googlenet_1_1_goog_le_net_af43fd1eda4b611a00a146a21b656263a}{inception3a}} = inception\+\_\+block(192, 64, 96, 128, 16, 32, 32)
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1models_1_1googlenet_1_1_goog_le_net_a1eababfce1be15d280d8c032ca96b9a9}{inception3b}} = inception\+\_\+block(256, 128, 128, 192, 32, 96, 64)
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1models_1_1googlenet_1_1_goog_le_net_ae408d549fc6a84fb4201508c3469a817}{maxpool3}} = nn.\+Max\+Pool2d(3, stride=2, ceil\+\_\+mode=True)
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1models_1_1googlenet_1_1_goog_le_net_acd9e133d450796abe3d6fbd7d5931d45}{inception4a}} = inception\+\_\+block(480, 192, 96, 208, 16, 48, 64)
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1models_1_1googlenet_1_1_goog_le_net_a90eed0a0719f1a85501b393a93d839f6}{inception4b}} = inception\+\_\+block(512, 160, 112, 224, 24, 64, 64)
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1models_1_1googlenet_1_1_goog_le_net_a5229f42b2f5427e70e0a10e89e6ed4fb}{inception4c}} = inception\+\_\+block(512, 128, 128, 256, 24, 64, 64)
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1models_1_1googlenet_1_1_goog_le_net_a3b30464934751a54364f25d309a0cb68}{inception4d}} = inception\+\_\+block(512, 112, 144, 288, 32, 64, 64)
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1models_1_1googlenet_1_1_goog_le_net_af9ca79c418ba469857402e38cba56ca0}{inception4e}} = inception\+\_\+block(528, 256, 160, 320, 32, 128, 128)
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1models_1_1googlenet_1_1_goog_le_net_a31ab1116ac9571dde027240cc7143bec}{maxpool4}} = nn.\+Max\+Pool2d(2, stride=2, ceil\+\_\+mode=True)
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1models_1_1googlenet_1_1_goog_le_net_a40912d559fbacb6a97aa034070115c10}{inception5a}} = inception\+\_\+block(832, 256, 160, 320, 32, 128, 128)
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1models_1_1googlenet_1_1_goog_le_net_a99014c3759933ec5b82cbdfc51e31586}{inception5b}} = inception\+\_\+block(832, 384, 192, 384, 48, 128, 128)
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1models_1_1googlenet_1_1_goog_le_net_abe7b9cf29caba8165f4228d7ae9c2091}{aux1}} = inception\+\_\+aux\+\_\+block(512, num\+\_\+classes, \mbox{\hyperlink{classtorchvision__down_1_1models_1_1googlenet_1_1_goog_le_net_ae43be7ed6436f80e955c18a27f8b83ef}{dropout}}=dropout\+\_\+aux)
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1models_1_1googlenet_1_1_goog_le_net_ac1a6361b84ff2df5474071a6139a3425}{aux2}} = inception\+\_\+aux\+\_\+block(528, num\+\_\+classes, \mbox{\hyperlink{classtorchvision__down_1_1models_1_1googlenet_1_1_goog_le_net_ae43be7ed6436f80e955c18a27f8b83ef}{dropout}}=dropout\+\_\+aux)
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1models_1_1googlenet_1_1_goog_le_net_a8c3f4cfe18653f3eb15201b514765dc8}{avgpool}} = nn.\+Adaptive\+Avg\+Pool2d((1, 1))
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1models_1_1googlenet_1_1_goog_le_net_ae43be7ed6436f80e955c18a27f8b83ef}{dropout}} = nn.\+Dropout(p=dropout)
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1models_1_1googlenet_1_1_goog_le_net_a6142b034b1768ede3bba5ac01435ab74}{fc}} = nn.\+Linear(1024, num\+\_\+classes)
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1models_1_1googlenet_1_1_goog_le_net_ac1f3b56140167e4fc850a0145a96b3a7}{training}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+Tensor \mbox{\hyperlink{classtorchvision__down_1_1models_1_1googlenet_1_1_goog_le_net_a0c25f38f88e0b5b27b82b5b2dc40bfc5}{\+\_\+transform\+\_\+input}} (self, Tensor x)
+\item 
+Tuple\mbox{[}Tensor, Optional\mbox{[}Tensor\mbox{]}, Optional\mbox{[}Tensor\mbox{]}\mbox{]} \mbox{\hyperlink{classtorchvision__down_1_1models_1_1googlenet_1_1_goog_le_net_aa0bb89fcb08b7cd9a9d4ad72685f5c82}{\+\_\+forward}} (self, Tensor x)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+list \mbox{\hyperlink{classtorchvision__down_1_1models_1_1googlenet_1_1_goog_le_net_a20de63e6852bdf2932e3f6f222997b92}{\+\_\+\+\_\+constants\+\_\+\+\_\+}} = \mbox{[}"{}aux\+\_\+logits"{}, "{}transform\+\_\+input"{}\mbox{]}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classtorchvision__down_1_1models_1_1googlenet_1_1_goog_le_net_a1f985e263daa59bf4ce208b48cf64ef5}\index{torchvision\_down.models.googlenet.GoogLeNet@{torchvision\_down.models.googlenet.GoogLeNet}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!torchvision\_down.models.googlenet.GoogLeNet@{torchvision\_down.models.googlenet.GoogLeNet}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1models_1_1googlenet_1_1_goog_le_net_a1f985e263daa59bf4ce208b48cf64ef5} 
+ None torchvision\+\_\+down.\+models.\+googlenet.\+Goog\+Le\+Net.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{int }]{num\+\_\+classes}{ = {\ttfamily 1000}, }\item[{bool }]{aux\+\_\+logits}{ = {\ttfamily True}, }\item[{bool }]{transform\+\_\+input}{ = {\ttfamily False}, }\item[{Optional\mbox{[}bool\mbox{]} }]{init\+\_\+weights}{ = {\ttfamily None}, }\item[{Optional\mbox{[}List\mbox{[}Callable\mbox{[}..., nn.\+Module\mbox{]}\mbox{]}\mbox{]} }]{blocks}{ = {\ttfamily None}, }\item[{float }]{dropout}{ = {\ttfamily 0.2}, }\item[{float }]{dropout\+\_\+aux}{ = {\ttfamily 0.7}}\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classtorchvision__down_1_1models_1_1googlenet_1_1_goog_le_net_aa0bb89fcb08b7cd9a9d4ad72685f5c82}\index{torchvision\_down.models.googlenet.GoogLeNet@{torchvision\_down.models.googlenet.GoogLeNet}!\_forward@{\_forward}}
+\index{\_forward@{\_forward}!torchvision\_down.models.googlenet.GoogLeNet@{torchvision\_down.models.googlenet.GoogLeNet}}
+\doxysubsubsection{\texorpdfstring{\_forward()}{\_forward()}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1models_1_1googlenet_1_1_goog_le_net_aa0bb89fcb08b7cd9a9d4ad72685f5c82} 
+ Tuple\mbox{[}Tensor, Optional\mbox{[}Tensor\mbox{]}, Optional\mbox{[}Tensor\mbox{]}\mbox{]} torchvision\+\_\+down.\+models.\+googlenet.\+Goog\+Le\+Net.\+\_\+forward (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{Tensor}]{x}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classtorchvision__down_1_1models_1_1googlenet_1_1_goog_le_net_a0c25f38f88e0b5b27b82b5b2dc40bfc5}\index{torchvision\_down.models.googlenet.GoogLeNet@{torchvision\_down.models.googlenet.GoogLeNet}!\_transform\_input@{\_transform\_input}}
+\index{\_transform\_input@{\_transform\_input}!torchvision\_down.models.googlenet.GoogLeNet@{torchvision\_down.models.googlenet.GoogLeNet}}
+\doxysubsubsection{\texorpdfstring{\_transform\_input()}{\_transform\_input()}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1models_1_1googlenet_1_1_goog_le_net_a0c25f38f88e0b5b27b82b5b2dc40bfc5} 
+ Tensor torchvision\+\_\+down.\+models.\+googlenet.\+Goog\+Le\+Net.\+\_\+transform\+\_\+input (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{Tensor}]{x}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classtorchvision__down_1_1models_1_1googlenet_1_1_goog_le_net_a1385379c2c372f69f87a1b13f788fddc}\index{torchvision\_down.models.googlenet.GoogLeNet@{torchvision\_down.models.googlenet.GoogLeNet}!eager\_outputs@{eager\_outputs}}
+\index{eager\_outputs@{eager\_outputs}!torchvision\_down.models.googlenet.GoogLeNet@{torchvision\_down.models.googlenet.GoogLeNet}}
+\doxysubsubsection{\texorpdfstring{eager\_outputs()}{eager\_outputs()}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1models_1_1googlenet_1_1_goog_le_net_a1385379c2c372f69f87a1b13f788fddc} 
+ \mbox{\hyperlink{namespacetorchvision__down_1_1models_1_1googlenet_ae4dd7d61dea375f22628fb6bc2e5f77d}{Goog\+Le\+Net\+Outputs}} torchvision\+\_\+down.\+models.\+googlenet.\+Goog\+Le\+Net.\+eager\+\_\+outputs (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{Tensor}]{x}{, }\item[{Tensor}]{aux2}{, }\item[{Optional\mbox{[}Tensor\mbox{]}}]{aux1}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classtorchvision__down_1_1models_1_1googlenet_1_1_goog_le_net_a8d2fd504ff703f1044c8dab1f4c78379}\index{torchvision\_down.models.googlenet.GoogLeNet@{torchvision\_down.models.googlenet.GoogLeNet}!forward@{forward}}
+\index{forward@{forward}!torchvision\_down.models.googlenet.GoogLeNet@{torchvision\_down.models.googlenet.GoogLeNet}}
+\doxysubsubsection{\texorpdfstring{forward()}{forward()}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1models_1_1googlenet_1_1_goog_le_net_a8d2fd504ff703f1044c8dab1f4c78379} 
+ \mbox{\hyperlink{namespacetorchvision__down_1_1models_1_1googlenet_ae4dd7d61dea375f22628fb6bc2e5f77d}{Goog\+Le\+Net\+Outputs}} torchvision\+\_\+down.\+models.\+googlenet.\+Goog\+Le\+Net.\+forward (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{Tensor}]{x}{}\end{DoxyParamCaption})}
+
+
+
+Reimplemented in \mbox{\hyperlink{classtorchvision__down_1_1models_1_1quantization_1_1googlenet_1_1_quantizable_goog_le_net_a77ce9891b686448e43316d2f05438ea4}{torchvision\+\_\+down.\+models.\+quantization.\+googlenet.\+Quantizable\+Goog\+Le\+Net}}.
+
+
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classtorchvision__down_1_1models_1_1googlenet_1_1_goog_le_net_a20de63e6852bdf2932e3f6f222997b92}\index{torchvision\_down.models.googlenet.GoogLeNet@{torchvision\_down.models.googlenet.GoogLeNet}!\_\_constants\_\_@{\_\_constants\_\_}}
+\index{\_\_constants\_\_@{\_\_constants\_\_}!torchvision\_down.models.googlenet.GoogLeNet@{torchvision\_down.models.googlenet.GoogLeNet}}
+\doxysubsubsection{\texorpdfstring{\_\_constants\_\_}{\_\_constants\_\_}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1models_1_1googlenet_1_1_goog_le_net_a20de63e6852bdf2932e3f6f222997b92} 
+list torchvision\+\_\+down.\+models.\+googlenet.\+Goog\+Le\+Net.\+\_\+\+\_\+constants\+\_\+\+\_\+ = \mbox{[}"{}aux\+\_\+logits"{}, "{}transform\+\_\+input"{}\mbox{]}\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+\Hypertarget{classtorchvision__down_1_1models_1_1googlenet_1_1_goog_le_net_abe7b9cf29caba8165f4228d7ae9c2091}\index{torchvision\_down.models.googlenet.GoogLeNet@{torchvision\_down.models.googlenet.GoogLeNet}!aux1@{aux1}}
+\index{aux1@{aux1}!torchvision\_down.models.googlenet.GoogLeNet@{torchvision\_down.models.googlenet.GoogLeNet}}
+\doxysubsubsection{\texorpdfstring{aux1}{aux1}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1models_1_1googlenet_1_1_goog_le_net_abe7b9cf29caba8165f4228d7ae9c2091} 
+torchvision\+\_\+down.\+models.\+googlenet.\+Goog\+Le\+Net.\+aux1 = inception\+\_\+aux\+\_\+block(512, num\+\_\+classes, \mbox{\hyperlink{classtorchvision__down_1_1models_1_1googlenet_1_1_goog_le_net_ae43be7ed6436f80e955c18a27f8b83ef}{dropout}}=dropout\+\_\+aux)}
+
+\Hypertarget{classtorchvision__down_1_1models_1_1googlenet_1_1_goog_le_net_ac1a6361b84ff2df5474071a6139a3425}\index{torchvision\_down.models.googlenet.GoogLeNet@{torchvision\_down.models.googlenet.GoogLeNet}!aux2@{aux2}}
+\index{aux2@{aux2}!torchvision\_down.models.googlenet.GoogLeNet@{torchvision\_down.models.googlenet.GoogLeNet}}
+\doxysubsubsection{\texorpdfstring{aux2}{aux2}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1models_1_1googlenet_1_1_goog_le_net_ac1a6361b84ff2df5474071a6139a3425} 
+torchvision\+\_\+down.\+models.\+googlenet.\+Goog\+Le\+Net.\+aux2 = inception\+\_\+aux\+\_\+block(528, num\+\_\+classes, \mbox{\hyperlink{classtorchvision__down_1_1models_1_1googlenet_1_1_goog_le_net_ae43be7ed6436f80e955c18a27f8b83ef}{dropout}}=dropout\+\_\+aux)}
+
+\Hypertarget{classtorchvision__down_1_1models_1_1googlenet_1_1_goog_le_net_afa73e36992e48805c862ba2fef167ba3}\index{torchvision\_down.models.googlenet.GoogLeNet@{torchvision\_down.models.googlenet.GoogLeNet}!aux\_logits@{aux\_logits}}
+\index{aux\_logits@{aux\_logits}!torchvision\_down.models.googlenet.GoogLeNet@{torchvision\_down.models.googlenet.GoogLeNet}}
+\doxysubsubsection{\texorpdfstring{aux\_logits}{aux\_logits}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1models_1_1googlenet_1_1_goog_le_net_afa73e36992e48805c862ba2fef167ba3} 
+torchvision\+\_\+down.\+models.\+googlenet.\+Goog\+Le\+Net.\+aux\+\_\+logits = aux\+\_\+logits}
+
+\Hypertarget{classtorchvision__down_1_1models_1_1googlenet_1_1_goog_le_net_a8c3f4cfe18653f3eb15201b514765dc8}\index{torchvision\_down.models.googlenet.GoogLeNet@{torchvision\_down.models.googlenet.GoogLeNet}!avgpool@{avgpool}}
+\index{avgpool@{avgpool}!torchvision\_down.models.googlenet.GoogLeNet@{torchvision\_down.models.googlenet.GoogLeNet}}
+\doxysubsubsection{\texorpdfstring{avgpool}{avgpool}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1models_1_1googlenet_1_1_goog_le_net_a8c3f4cfe18653f3eb15201b514765dc8} 
+torchvision\+\_\+down.\+models.\+googlenet.\+Goog\+Le\+Net.\+avgpool = nn.\+Adaptive\+Avg\+Pool2d((1, 1))}
+
+\Hypertarget{classtorchvision__down_1_1models_1_1googlenet_1_1_goog_le_net_aec1571139943f7f035a8dfdde22611ef}\index{torchvision\_down.models.googlenet.GoogLeNet@{torchvision\_down.models.googlenet.GoogLeNet}!conv1@{conv1}}
+\index{conv1@{conv1}!torchvision\_down.models.googlenet.GoogLeNet@{torchvision\_down.models.googlenet.GoogLeNet}}
+\doxysubsubsection{\texorpdfstring{conv1}{conv1}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1models_1_1googlenet_1_1_goog_le_net_aec1571139943f7f035a8dfdde22611ef} 
+torchvision\+\_\+down.\+models.\+googlenet.\+Goog\+Le\+Net.\+conv1 = conv\+\_\+block(3, 64, kernel\+\_\+size=7, stride=2, padding=3)}
+
+\Hypertarget{classtorchvision__down_1_1models_1_1googlenet_1_1_goog_le_net_a228d0235590ae7301e1993f4babb55ea}\index{torchvision\_down.models.googlenet.GoogLeNet@{torchvision\_down.models.googlenet.GoogLeNet}!conv2@{conv2}}
+\index{conv2@{conv2}!torchvision\_down.models.googlenet.GoogLeNet@{torchvision\_down.models.googlenet.GoogLeNet}}
+\doxysubsubsection{\texorpdfstring{conv2}{conv2}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1models_1_1googlenet_1_1_goog_le_net_a228d0235590ae7301e1993f4babb55ea} 
+torchvision\+\_\+down.\+models.\+googlenet.\+Goog\+Le\+Net.\+conv2 = conv\+\_\+block(64, 64, kernel\+\_\+size=1)}
+
+\Hypertarget{classtorchvision__down_1_1models_1_1googlenet_1_1_goog_le_net_a5c9e5e9b9ebe04286e3dfc297dfa34ed}\index{torchvision\_down.models.googlenet.GoogLeNet@{torchvision\_down.models.googlenet.GoogLeNet}!conv3@{conv3}}
+\index{conv3@{conv3}!torchvision\_down.models.googlenet.GoogLeNet@{torchvision\_down.models.googlenet.GoogLeNet}}
+\doxysubsubsection{\texorpdfstring{conv3}{conv3}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1models_1_1googlenet_1_1_goog_le_net_a5c9e5e9b9ebe04286e3dfc297dfa34ed} 
+torchvision\+\_\+down.\+models.\+googlenet.\+Goog\+Le\+Net.\+conv3 = conv\+\_\+block(64, 192, kernel\+\_\+size=3, padding=1)}
+
+\Hypertarget{classtorchvision__down_1_1models_1_1googlenet_1_1_goog_le_net_ae43be7ed6436f80e955c18a27f8b83ef}\index{torchvision\_down.models.googlenet.GoogLeNet@{torchvision\_down.models.googlenet.GoogLeNet}!dropout@{dropout}}
+\index{dropout@{dropout}!torchvision\_down.models.googlenet.GoogLeNet@{torchvision\_down.models.googlenet.GoogLeNet}}
+\doxysubsubsection{\texorpdfstring{dropout}{dropout}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1models_1_1googlenet_1_1_goog_le_net_ae43be7ed6436f80e955c18a27f8b83ef} 
+torchvision\+\_\+down.\+models.\+googlenet.\+Goog\+Le\+Net.\+dropout = nn.\+Dropout(p=dropout)}
+
+\Hypertarget{classtorchvision__down_1_1models_1_1googlenet_1_1_goog_le_net_a6142b034b1768ede3bba5ac01435ab74}\index{torchvision\_down.models.googlenet.GoogLeNet@{torchvision\_down.models.googlenet.GoogLeNet}!fc@{fc}}
+\index{fc@{fc}!torchvision\_down.models.googlenet.GoogLeNet@{torchvision\_down.models.googlenet.GoogLeNet}}
+\doxysubsubsection{\texorpdfstring{fc}{fc}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1models_1_1googlenet_1_1_goog_le_net_a6142b034b1768ede3bba5ac01435ab74} 
+torchvision\+\_\+down.\+models.\+googlenet.\+Goog\+Le\+Net.\+fc = nn.\+Linear(1024, num\+\_\+classes)}
+
+\Hypertarget{classtorchvision__down_1_1models_1_1googlenet_1_1_goog_le_net_af43fd1eda4b611a00a146a21b656263a}\index{torchvision\_down.models.googlenet.GoogLeNet@{torchvision\_down.models.googlenet.GoogLeNet}!inception3a@{inception3a}}
+\index{inception3a@{inception3a}!torchvision\_down.models.googlenet.GoogLeNet@{torchvision\_down.models.googlenet.GoogLeNet}}
+\doxysubsubsection{\texorpdfstring{inception3a}{inception3a}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1models_1_1googlenet_1_1_goog_le_net_af43fd1eda4b611a00a146a21b656263a} 
+torchvision\+\_\+down.\+models.\+googlenet.\+Goog\+Le\+Net.\+inception3a = inception\+\_\+block(192, 64, 96, 128, 16, 32, 32)}
+
+\Hypertarget{classtorchvision__down_1_1models_1_1googlenet_1_1_goog_le_net_a1eababfce1be15d280d8c032ca96b9a9}\index{torchvision\_down.models.googlenet.GoogLeNet@{torchvision\_down.models.googlenet.GoogLeNet}!inception3b@{inception3b}}
+\index{inception3b@{inception3b}!torchvision\_down.models.googlenet.GoogLeNet@{torchvision\_down.models.googlenet.GoogLeNet}}
+\doxysubsubsection{\texorpdfstring{inception3b}{inception3b}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1models_1_1googlenet_1_1_goog_le_net_a1eababfce1be15d280d8c032ca96b9a9} 
+torchvision\+\_\+down.\+models.\+googlenet.\+Goog\+Le\+Net.\+inception3b = inception\+\_\+block(256, 128, 128, 192, 32, 96, 64)}
+
+\Hypertarget{classtorchvision__down_1_1models_1_1googlenet_1_1_goog_le_net_acd9e133d450796abe3d6fbd7d5931d45}\index{torchvision\_down.models.googlenet.GoogLeNet@{torchvision\_down.models.googlenet.GoogLeNet}!inception4a@{inception4a}}
+\index{inception4a@{inception4a}!torchvision\_down.models.googlenet.GoogLeNet@{torchvision\_down.models.googlenet.GoogLeNet}}
+\doxysubsubsection{\texorpdfstring{inception4a}{inception4a}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1models_1_1googlenet_1_1_goog_le_net_acd9e133d450796abe3d6fbd7d5931d45} 
+torchvision\+\_\+down.\+models.\+googlenet.\+Goog\+Le\+Net.\+inception4a = inception\+\_\+block(480, 192, 96, 208, 16, 48, 64)}
+
+\Hypertarget{classtorchvision__down_1_1models_1_1googlenet_1_1_goog_le_net_a90eed0a0719f1a85501b393a93d839f6}\index{torchvision\_down.models.googlenet.GoogLeNet@{torchvision\_down.models.googlenet.GoogLeNet}!inception4b@{inception4b}}
+\index{inception4b@{inception4b}!torchvision\_down.models.googlenet.GoogLeNet@{torchvision\_down.models.googlenet.GoogLeNet}}
+\doxysubsubsection{\texorpdfstring{inception4b}{inception4b}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1models_1_1googlenet_1_1_goog_le_net_a90eed0a0719f1a85501b393a93d839f6} 
+torchvision\+\_\+down.\+models.\+googlenet.\+Goog\+Le\+Net.\+inception4b = inception\+\_\+block(512, 160, 112, 224, 24, 64, 64)}
+
+\Hypertarget{classtorchvision__down_1_1models_1_1googlenet_1_1_goog_le_net_a5229f42b2f5427e70e0a10e89e6ed4fb}\index{torchvision\_down.models.googlenet.GoogLeNet@{torchvision\_down.models.googlenet.GoogLeNet}!inception4c@{inception4c}}
+\index{inception4c@{inception4c}!torchvision\_down.models.googlenet.GoogLeNet@{torchvision\_down.models.googlenet.GoogLeNet}}
+\doxysubsubsection{\texorpdfstring{inception4c}{inception4c}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1models_1_1googlenet_1_1_goog_le_net_a5229f42b2f5427e70e0a10e89e6ed4fb} 
+torchvision\+\_\+down.\+models.\+googlenet.\+Goog\+Le\+Net.\+inception4c = inception\+\_\+block(512, 128, 128, 256, 24, 64, 64)}
+
+\Hypertarget{classtorchvision__down_1_1models_1_1googlenet_1_1_goog_le_net_a3b30464934751a54364f25d309a0cb68}\index{torchvision\_down.models.googlenet.GoogLeNet@{torchvision\_down.models.googlenet.GoogLeNet}!inception4d@{inception4d}}
+\index{inception4d@{inception4d}!torchvision\_down.models.googlenet.GoogLeNet@{torchvision\_down.models.googlenet.GoogLeNet}}
+\doxysubsubsection{\texorpdfstring{inception4d}{inception4d}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1models_1_1googlenet_1_1_goog_le_net_a3b30464934751a54364f25d309a0cb68} 
+torchvision\+\_\+down.\+models.\+googlenet.\+Goog\+Le\+Net.\+inception4d = inception\+\_\+block(512, 112, 144, 288, 32, 64, 64)}
+
+\Hypertarget{classtorchvision__down_1_1models_1_1googlenet_1_1_goog_le_net_af9ca79c418ba469857402e38cba56ca0}\index{torchvision\_down.models.googlenet.GoogLeNet@{torchvision\_down.models.googlenet.GoogLeNet}!inception4e@{inception4e}}
+\index{inception4e@{inception4e}!torchvision\_down.models.googlenet.GoogLeNet@{torchvision\_down.models.googlenet.GoogLeNet}}
+\doxysubsubsection{\texorpdfstring{inception4e}{inception4e}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1models_1_1googlenet_1_1_goog_le_net_af9ca79c418ba469857402e38cba56ca0} 
+torchvision\+\_\+down.\+models.\+googlenet.\+Goog\+Le\+Net.\+inception4e = inception\+\_\+block(528, 256, 160, 320, 32, 128, 128)}
+
+\Hypertarget{classtorchvision__down_1_1models_1_1googlenet_1_1_goog_le_net_a40912d559fbacb6a97aa034070115c10}\index{torchvision\_down.models.googlenet.GoogLeNet@{torchvision\_down.models.googlenet.GoogLeNet}!inception5a@{inception5a}}
+\index{inception5a@{inception5a}!torchvision\_down.models.googlenet.GoogLeNet@{torchvision\_down.models.googlenet.GoogLeNet}}
+\doxysubsubsection{\texorpdfstring{inception5a}{inception5a}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1models_1_1googlenet_1_1_goog_le_net_a40912d559fbacb6a97aa034070115c10} 
+torchvision\+\_\+down.\+models.\+googlenet.\+Goog\+Le\+Net.\+inception5a = inception\+\_\+block(832, 256, 160, 320, 32, 128, 128)}
+
+\Hypertarget{classtorchvision__down_1_1models_1_1googlenet_1_1_goog_le_net_a99014c3759933ec5b82cbdfc51e31586}\index{torchvision\_down.models.googlenet.GoogLeNet@{torchvision\_down.models.googlenet.GoogLeNet}!inception5b@{inception5b}}
+\index{inception5b@{inception5b}!torchvision\_down.models.googlenet.GoogLeNet@{torchvision\_down.models.googlenet.GoogLeNet}}
+\doxysubsubsection{\texorpdfstring{inception5b}{inception5b}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1models_1_1googlenet_1_1_goog_le_net_a99014c3759933ec5b82cbdfc51e31586} 
+torchvision\+\_\+down.\+models.\+googlenet.\+Goog\+Le\+Net.\+inception5b = inception\+\_\+block(832, 384, 192, 384, 48, 128, 128)}
+
+\Hypertarget{classtorchvision__down_1_1models_1_1googlenet_1_1_goog_le_net_a5761a4b7241c7d1ac8964e487fb3159a}\index{torchvision\_down.models.googlenet.GoogLeNet@{torchvision\_down.models.googlenet.GoogLeNet}!maxpool1@{maxpool1}}
+\index{maxpool1@{maxpool1}!torchvision\_down.models.googlenet.GoogLeNet@{torchvision\_down.models.googlenet.GoogLeNet}}
+\doxysubsubsection{\texorpdfstring{maxpool1}{maxpool1}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1models_1_1googlenet_1_1_goog_le_net_a5761a4b7241c7d1ac8964e487fb3159a} 
+torchvision\+\_\+down.\+models.\+googlenet.\+Goog\+Le\+Net.\+maxpool1 = nn.\+Max\+Pool2d(3, stride=2, ceil\+\_\+mode=True)}
+
+\Hypertarget{classtorchvision__down_1_1models_1_1googlenet_1_1_goog_le_net_a6653c9bcad92588a36ae4cbbc5de1246}\index{torchvision\_down.models.googlenet.GoogLeNet@{torchvision\_down.models.googlenet.GoogLeNet}!maxpool2@{maxpool2}}
+\index{maxpool2@{maxpool2}!torchvision\_down.models.googlenet.GoogLeNet@{torchvision\_down.models.googlenet.GoogLeNet}}
+\doxysubsubsection{\texorpdfstring{maxpool2}{maxpool2}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1models_1_1googlenet_1_1_goog_le_net_a6653c9bcad92588a36ae4cbbc5de1246} 
+torchvision\+\_\+down.\+models.\+googlenet.\+Goog\+Le\+Net.\+maxpool2 = nn.\+Max\+Pool2d(3, stride=2, ceil\+\_\+mode=True)}
+
+\Hypertarget{classtorchvision__down_1_1models_1_1googlenet_1_1_goog_le_net_ae408d549fc6a84fb4201508c3469a817}\index{torchvision\_down.models.googlenet.GoogLeNet@{torchvision\_down.models.googlenet.GoogLeNet}!maxpool3@{maxpool3}}
+\index{maxpool3@{maxpool3}!torchvision\_down.models.googlenet.GoogLeNet@{torchvision\_down.models.googlenet.GoogLeNet}}
+\doxysubsubsection{\texorpdfstring{maxpool3}{maxpool3}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1models_1_1googlenet_1_1_goog_le_net_ae408d549fc6a84fb4201508c3469a817} 
+torchvision\+\_\+down.\+models.\+googlenet.\+Goog\+Le\+Net.\+maxpool3 = nn.\+Max\+Pool2d(3, stride=2, ceil\+\_\+mode=True)}
+
+\Hypertarget{classtorchvision__down_1_1models_1_1googlenet_1_1_goog_le_net_a31ab1116ac9571dde027240cc7143bec}\index{torchvision\_down.models.googlenet.GoogLeNet@{torchvision\_down.models.googlenet.GoogLeNet}!maxpool4@{maxpool4}}
+\index{maxpool4@{maxpool4}!torchvision\_down.models.googlenet.GoogLeNet@{torchvision\_down.models.googlenet.GoogLeNet}}
+\doxysubsubsection{\texorpdfstring{maxpool4}{maxpool4}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1models_1_1googlenet_1_1_goog_le_net_a31ab1116ac9571dde027240cc7143bec} 
+torchvision\+\_\+down.\+models.\+googlenet.\+Goog\+Le\+Net.\+maxpool4 = nn.\+Max\+Pool2d(2, stride=2, ceil\+\_\+mode=True)}
+
+\Hypertarget{classtorchvision__down_1_1models_1_1googlenet_1_1_goog_le_net_ac1f3b56140167e4fc850a0145a96b3a7}\index{torchvision\_down.models.googlenet.GoogLeNet@{torchvision\_down.models.googlenet.GoogLeNet}!training@{training}}
+\index{training@{training}!torchvision\_down.models.googlenet.GoogLeNet@{torchvision\_down.models.googlenet.GoogLeNet}}
+\doxysubsubsection{\texorpdfstring{training}{training}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1models_1_1googlenet_1_1_goog_le_net_ac1f3b56140167e4fc850a0145a96b3a7} 
+torchvision\+\_\+down.\+models.\+googlenet.\+Goog\+Le\+Net.\+training}
+
+\Hypertarget{classtorchvision__down_1_1models_1_1googlenet_1_1_goog_le_net_a6b58ee9871bdb37044dbad21da8046a0}\index{torchvision\_down.models.googlenet.GoogLeNet@{torchvision\_down.models.googlenet.GoogLeNet}!transform\_input@{transform\_input}}
+\index{transform\_input@{transform\_input}!torchvision\_down.models.googlenet.GoogLeNet@{torchvision\_down.models.googlenet.GoogLeNet}}
+\doxysubsubsection{\texorpdfstring{transform\_input}{transform\_input}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1models_1_1googlenet_1_1_goog_le_net_a6b58ee9871bdb37044dbad21da8046a0} 
+torchvision\+\_\+down.\+models.\+googlenet.\+Goog\+Le\+Net.\+transform\+\_\+input = transform\+\_\+input}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Cervi\+AI/torchvision\+\_\+down/models/\mbox{\hyperlink{googlenet_8py}{googlenet.\+py}}\end{DoxyCompactItemize}

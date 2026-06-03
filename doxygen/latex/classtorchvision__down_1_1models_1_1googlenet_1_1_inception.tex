@@ -1,0 +1,116 @@
+\doxysection{torchvision\+\_\+down.\+models.\+googlenet.\+Inception Class Reference}
+\hypertarget{classtorchvision__down_1_1models_1_1googlenet_1_1_inception}{}\label{classtorchvision__down_1_1models_1_1googlenet_1_1_inception}\index{torchvision\_down.models.googlenet.Inception@{torchvision\_down.models.googlenet.Inception}}
+Inheritance diagram for torchvision\+\_\+down.\+models.\+googlenet.\+Inception\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{classtorchvision__down_1_1models_1_1googlenet_1_1_inception}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+None \mbox{\hyperlink{classtorchvision__down_1_1models_1_1googlenet_1_1_inception_ab55b36afa18eacb4c2754381182be297}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, int in\+\_\+channels, int ch1x1, int ch3x3red, int ch3x3, int ch5x5red, int ch5x5, int pool\+\_\+proj, Optional\mbox{[}Callable\mbox{[}..., nn.\+Module\mbox{]}\mbox{]} conv\+\_\+block=None)
+\item 
+Tensor \mbox{\hyperlink{classtorchvision__down_1_1models_1_1googlenet_1_1_inception_a857bb6379161c2b5568b35941fada309}{forward}} (self, Tensor x)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1models_1_1googlenet_1_1_inception_a3c31462c8f540c1e4587873b35149557}{branch1}} = conv\+\_\+block(in\+\_\+channels, ch1x1, kernel\+\_\+size=1)
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1models_1_1googlenet_1_1_inception_aaf72d1c74e97ecc7472475006ea62ca0}{branch2}}
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1models_1_1googlenet_1_1_inception_a41884e60ee715f8fb9a212ec53d5f105}{branch3}}
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1models_1_1googlenet_1_1_inception_a333d5e81c336e1a43911a008791a2163}{branch4}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+List\mbox{[}Tensor\mbox{]} \mbox{\hyperlink{classtorchvision__down_1_1models_1_1googlenet_1_1_inception_a6ca711d4fc4070b00d618fc4b774af78}{\+\_\+forward}} (self, Tensor x)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classtorchvision__down_1_1models_1_1googlenet_1_1_inception_ab55b36afa18eacb4c2754381182be297}\index{torchvision\_down.models.googlenet.Inception@{torchvision\_down.models.googlenet.Inception}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!torchvision\_down.models.googlenet.Inception@{torchvision\_down.models.googlenet.Inception}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1models_1_1googlenet_1_1_inception_ab55b36afa18eacb4c2754381182be297} 
+ None torchvision\+\_\+down.\+models.\+googlenet.\+Inception.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{int}]{in\+\_\+channels}{, }\item[{int}]{ch1x1}{, }\item[{int}]{ch3x3red}{, }\item[{int}]{ch3x3}{, }\item[{int}]{ch5x5red}{, }\item[{int}]{ch5x5}{, }\item[{int}]{pool\+\_\+proj}{, }\item[{Optional\mbox{[}Callable\mbox{[}..., nn.\+Module\mbox{]}\mbox{]} }]{conv\+\_\+block}{ = {\ttfamily None}}\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classtorchvision__down_1_1models_1_1googlenet_1_1_inception_a6ca711d4fc4070b00d618fc4b774af78}\index{torchvision\_down.models.googlenet.Inception@{torchvision\_down.models.googlenet.Inception}!\_forward@{\_forward}}
+\index{\_forward@{\_forward}!torchvision\_down.models.googlenet.Inception@{torchvision\_down.models.googlenet.Inception}}
+\doxysubsubsection{\texorpdfstring{\_forward()}{\_forward()}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1models_1_1googlenet_1_1_inception_a6ca711d4fc4070b00d618fc4b774af78} 
+ List\mbox{[}Tensor\mbox{]} torchvision\+\_\+down.\+models.\+googlenet.\+Inception.\+\_\+forward (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{Tensor}]{x}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classtorchvision__down_1_1models_1_1googlenet_1_1_inception_a857bb6379161c2b5568b35941fada309}\index{torchvision\_down.models.googlenet.Inception@{torchvision\_down.models.googlenet.Inception}!forward@{forward}}
+\index{forward@{forward}!torchvision\_down.models.googlenet.Inception@{torchvision\_down.models.googlenet.Inception}}
+\doxysubsubsection{\texorpdfstring{forward()}{forward()}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1models_1_1googlenet_1_1_inception_a857bb6379161c2b5568b35941fada309} 
+ Tensor torchvision\+\_\+down.\+models.\+googlenet.\+Inception.\+forward (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{Tensor}]{x}{}\end{DoxyParamCaption})}
+
+
+
+Reimplemented in \mbox{\hyperlink{classtorchvision__down_1_1models_1_1quantization_1_1googlenet_1_1_quantizable_inception_a1f45d8682ce4d4552c09e1276627ca4c}{torchvision\+\_\+down.\+models.\+quantization.\+googlenet.\+Quantizable\+Inception}}.
+
+
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classtorchvision__down_1_1models_1_1googlenet_1_1_inception_a3c31462c8f540c1e4587873b35149557}\index{torchvision\_down.models.googlenet.Inception@{torchvision\_down.models.googlenet.Inception}!branch1@{branch1}}
+\index{branch1@{branch1}!torchvision\_down.models.googlenet.Inception@{torchvision\_down.models.googlenet.Inception}}
+\doxysubsubsection{\texorpdfstring{branch1}{branch1}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1models_1_1googlenet_1_1_inception_a3c31462c8f540c1e4587873b35149557} 
+torchvision\+\_\+down.\+models.\+googlenet.\+Inception.\+branch1 = conv\+\_\+block(in\+\_\+channels, ch1x1, kernel\+\_\+size=1)}
+
+\Hypertarget{classtorchvision__down_1_1models_1_1googlenet_1_1_inception_aaf72d1c74e97ecc7472475006ea62ca0}\index{torchvision\_down.models.googlenet.Inception@{torchvision\_down.models.googlenet.Inception}!branch2@{branch2}}
+\index{branch2@{branch2}!torchvision\_down.models.googlenet.Inception@{torchvision\_down.models.googlenet.Inception}}
+\doxysubsubsection{\texorpdfstring{branch2}{branch2}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1models_1_1googlenet_1_1_inception_aaf72d1c74e97ecc7472475006ea62ca0} 
+torchvision\+\_\+down.\+models.\+googlenet.\+Inception.\+branch2}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \ nn.Sequential(}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ conv\_block(in\_channels,\ ch3x3red,\ kernel\_size=1),\ conv\_block(ch3x3red,\ ch3x3,\ kernel\_size=3,\ padding=1)}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ )}
+
+\end{DoxyCode}
+\Hypertarget{classtorchvision__down_1_1models_1_1googlenet_1_1_inception_a41884e60ee715f8fb9a212ec53d5f105}\index{torchvision\_down.models.googlenet.Inception@{torchvision\_down.models.googlenet.Inception}!branch3@{branch3}}
+\index{branch3@{branch3}!torchvision\_down.models.googlenet.Inception@{torchvision\_down.models.googlenet.Inception}}
+\doxysubsubsection{\texorpdfstring{branch3}{branch3}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1models_1_1googlenet_1_1_inception_a41884e60ee715f8fb9a212ec53d5f105} 
+torchvision\+\_\+down.\+models.\+googlenet.\+Inception.\+branch3}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \ nn.Sequential(}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ conv\_block(in\_channels,\ ch5x5red,\ kernel\_size=1),}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{\#\ Here,\ kernel\_size=3\ instead\ of\ kernel\_size=5\ is\ a\ known\ bug.}}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{\#\ Please\ see\ https://github.com/pytorch/vision/issues/906\ for\ details.}}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ conv\_block(ch5x5red,\ ch5x5,\ kernel\_size=3,\ padding=1),}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ )}
+
+\end{DoxyCode}
+\Hypertarget{classtorchvision__down_1_1models_1_1googlenet_1_1_inception_a333d5e81c336e1a43911a008791a2163}\index{torchvision\_down.models.googlenet.Inception@{torchvision\_down.models.googlenet.Inception}!branch4@{branch4}}
+\index{branch4@{branch4}!torchvision\_down.models.googlenet.Inception@{torchvision\_down.models.googlenet.Inception}}
+\doxysubsubsection{\texorpdfstring{branch4}{branch4}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1models_1_1googlenet_1_1_inception_a333d5e81c336e1a43911a008791a2163} 
+torchvision\+\_\+down.\+models.\+googlenet.\+Inception.\+branch4}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \ nn.Sequential(}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ nn.MaxPool2d(kernel\_size=3,\ stride=1,\ padding=1,\ ceil\_mode=\textcolor{keyword}{True}),}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ conv\_block(in\_channels,\ pool\_proj,\ kernel\_size=1),}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ )}
+
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Cervi\+AI/torchvision\+\_\+down/models/\mbox{\hyperlink{googlenet_8py}{googlenet.\+py}}\end{DoxyCompactItemize}

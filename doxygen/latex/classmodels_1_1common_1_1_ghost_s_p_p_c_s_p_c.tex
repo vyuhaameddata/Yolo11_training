@@ -1,0 +1,54 @@
+\doxysection{models.\+common.\+Ghost\+SPPCSPC Class Reference}
+\hypertarget{classmodels_1_1common_1_1_ghost_s_p_p_c_s_p_c}{}\label{classmodels_1_1common_1_1_ghost_s_p_p_c_s_p_c}\index{models.common.GhostSPPCSPC@{models.common.GhostSPPCSPC}}
+Inheritance diagram for models.\+common.\+Ghost\+SPPCSPC\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{classmodels_1_1common_1_1_ghost_s_p_p_c_s_p_c}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classmodels_1_1common_1_1_ghost_s_p_p_c_s_p_c_a348e40336164b7abc86ecd1af35d827c}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, c1, c2, n=1, shortcut=False, g=1, e=0.\+5, k=(5, 9, 13))
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{classmodels_1_1common_1_1_s_p_p_c_s_p_c}{models.\+common.\+SPPCSPC}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classmodels_1_1common_1_1_s_p_p_c_s_p_c_adc76b01cb1b9e9733c1f02bb5f46b0d9}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, c1, c2, n=1, shortcut=False, g=1, e=0.\+5, k=(5, 9, 13))
+\item 
+\mbox{\hyperlink{classmodels_1_1common_1_1_s_p_p_c_s_p_c_afc6facb92c6e1b24a61a94c3c1fd81fe}{forward}} (self, x)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Additional Inherited Members}
+\doxysubsection*{Public Attributes inherited from \mbox{\hyperlink{classmodels_1_1common_1_1_s_p_p_c_s_p_c}{models.\+common.\+SPPCSPC}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classmodels_1_1common_1_1_s_p_p_c_s_p_c_a8c9d45d2a2085aaaad88dd3bc9fd98ba}{cv1}} = \mbox{\hyperlink{classmodels_1_1common_1_1_conv}{Conv}}(c1, c\+\_\+, 1, 1)
+\item 
+\mbox{\hyperlink{classmodels_1_1common_1_1_s_p_p_c_s_p_c_ae0de48a43fde60cda696adce19695221}{cv2}} = \mbox{\hyperlink{classmodels_1_1common_1_1_conv}{Conv}}(c1, c\+\_\+, 1, 1)
+\item 
+\mbox{\hyperlink{classmodels_1_1common_1_1_s_p_p_c_s_p_c_aad5ef71d8980d3525bb2ecc923822142}{cv3}} = \mbox{\hyperlink{classmodels_1_1common_1_1_conv}{Conv}}(c\+\_\+, c\+\_\+, 3, 1)
+\item 
+\mbox{\hyperlink{classmodels_1_1common_1_1_s_p_p_c_s_p_c_a03254ef15dfcdd87c1ffe22976ea80b9}{cv4}} = \mbox{\hyperlink{classmodels_1_1common_1_1_conv}{Conv}}(c\+\_\+, c\+\_\+, 1, 1)
+\item 
+\mbox{\hyperlink{classmodels_1_1common_1_1_s_p_p_c_s_p_c_a4f59bd25be26ca3e094e58dd7723d1aa}{m}} = nn.\+Module\+List(\mbox{[}nn.\+Max\+Pool2d(kernel\+\_\+size=x, stride=1, padding=x // 2) for x in k\mbox{]})
+\item 
+\mbox{\hyperlink{classmodels_1_1common_1_1_s_p_p_c_s_p_c_a891311efcb7ad63468e3cd042a30b6bd}{cv5}} = \mbox{\hyperlink{classmodels_1_1common_1_1_conv}{Conv}}(4 \texorpdfstring{$\ast$}{*} c\+\_\+, c\+\_\+, 1, 1)
+\item 
+\mbox{\hyperlink{classmodels_1_1common_1_1_s_p_p_c_s_p_c_ae4bbb00f34a72e36fc8c51a59ed5ac7b}{cv6}} = \mbox{\hyperlink{classmodels_1_1common_1_1_conv}{Conv}}(c\+\_\+, c\+\_\+, 3, 1)
+\item 
+\mbox{\hyperlink{classmodels_1_1common_1_1_s_p_p_c_s_p_c_a3722cddce3fba0fba1a0123d886f69ca}{cv7}} = \mbox{\hyperlink{classmodels_1_1common_1_1_conv}{Conv}}(2 \texorpdfstring{$\ast$}{*} c\+\_\+, c2, 1, 1)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classmodels_1_1common_1_1_ghost_s_p_p_c_s_p_c_a348e40336164b7abc86ecd1af35d827c}\index{models.common.GhostSPPCSPC@{models.common.GhostSPPCSPC}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!models.common.GhostSPPCSPC@{models.common.GhostSPPCSPC}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily \label{classmodels_1_1common_1_1_ghost_s_p_p_c_s_p_c_a348e40336164b7abc86ecd1af35d827c} 
+models.\+common.\+Ghost\+SPPCSPC.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{c1}{, }\item[{}]{c2}{, }\item[{}]{n}{ = {\ttfamily 1}, }\item[{}]{shortcut}{ = {\ttfamily False}, }\item[{}]{g}{ = {\ttfamily 1}, }\item[{}]{e}{ = {\ttfamily 0.5}, }\item[{}]{k}{ = {\ttfamily (5,~9,~13)}}\end{DoxyParamCaption})}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Cervi\+AI/models/\mbox{\hyperlink{common_8py}{common.\+py}}\end{DoxyCompactItemize}

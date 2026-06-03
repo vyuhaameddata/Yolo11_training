@@ -1,0 +1,76 @@
+\doxysection{torchvision\+\_\+down.\+models.\+segmentation.\+lraspp.\+LRASPP Class Reference}
+\hypertarget{classtorchvision__down_1_1models_1_1segmentation_1_1lraspp_1_1_l_r_a_s_p_p}{}\label{classtorchvision__down_1_1models_1_1segmentation_1_1lraspp_1_1_l_r_a_s_p_p}\index{torchvision\_down.models.segmentation.lraspp.LRASPP@{torchvision\_down.models.segmentation.lraspp.LRASPP}}
+Inheritance diagram for torchvision\+\_\+down.\+models.\+segmentation.\+lraspp.\+LRASPP\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classtorchvision__down_1_1models_1_1segmentation_1_1lraspp_1_1_l_r_a_s_p_p}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+None \mbox{\hyperlink{classtorchvision__down_1_1models_1_1segmentation_1_1lraspp_1_1_l_r_a_s_p_p_afa4e59f3115d58764bb637b87d6f87cd}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, nn.\+Module \mbox{\hyperlink{classtorchvision__down_1_1models_1_1segmentation_1_1lraspp_1_1_l_r_a_s_p_p_aa87d52385a9fce27ddd880cc0325e424}{backbone}}, int low\+\_\+channels, int high\+\_\+channels, int num\+\_\+classes, int inter\+\_\+channels=128)
+\item 
+Dict\mbox{[}str, Tensor\mbox{]} \mbox{\hyperlink{classtorchvision__down_1_1models_1_1segmentation_1_1lraspp_1_1_l_r_a_s_p_p_ab5fa7757950e6883c9392829905a5a88}{forward}} (self, Tensor input)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1models_1_1segmentation_1_1lraspp_1_1_l_r_a_s_p_p_aa87d52385a9fce27ddd880cc0325e424}{backbone}} = backbone
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1models_1_1segmentation_1_1lraspp_1_1_l_r_a_s_p_p_ad9cbbbf122087c358da15528e33a72d7}{classifier}} = \mbox{\hyperlink{classtorchvision__down_1_1models_1_1segmentation_1_1lraspp_1_1_l_r_a_s_p_p_head}{LRASPPHead}}(low\+\_\+channels, high\+\_\+channels, num\+\_\+classes, inter\+\_\+channels)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}Implements a Lite R-ASPP Network for semantic segmentation from
+`"Searching for MobileNetV3"
+<https://arxiv.org/abs/1905.02244>`_.
+
+Args:
+    backbone (nn.Module): the network used to compute the features for the model.
+        The backbone should return an OrderedDict[Tensor], with the key being
+        "high" for the high level feature map and "low" for the low level feature map.
+    low_channels (int): the number of channels of the low level features.
+    high_channels (int): the number of channels of the high level features.
+    num_classes (int): number of output classes of the model (including the background).
+    inter_channels (int, optional): the number of channels for intermediate computations.
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classtorchvision__down_1_1models_1_1segmentation_1_1lraspp_1_1_l_r_a_s_p_p_afa4e59f3115d58764bb637b87d6f87cd}\index{torchvision\_down.models.segmentation.lraspp.LRASPP@{torchvision\_down.models.segmentation.lraspp.LRASPP}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!torchvision\_down.models.segmentation.lraspp.LRASPP@{torchvision\_down.models.segmentation.lraspp.LRASPP}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1models_1_1segmentation_1_1lraspp_1_1_l_r_a_s_p_p_afa4e59f3115d58764bb637b87d6f87cd} 
+ None torchvision\+\_\+down.\+models.\+segmentation.\+lraspp.\+LRASPP.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{nn.\+Module}]{backbone}{, }\item[{int}]{low\+\_\+channels}{, }\item[{int}]{high\+\_\+channels}{, }\item[{int}]{num\+\_\+classes}{, }\item[{int }]{inter\+\_\+channels}{ = {\ttfamily 128}}\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classtorchvision__down_1_1models_1_1segmentation_1_1lraspp_1_1_l_r_a_s_p_p_ab5fa7757950e6883c9392829905a5a88}\index{torchvision\_down.models.segmentation.lraspp.LRASPP@{torchvision\_down.models.segmentation.lraspp.LRASPP}!forward@{forward}}
+\index{forward@{forward}!torchvision\_down.models.segmentation.lraspp.LRASPP@{torchvision\_down.models.segmentation.lraspp.LRASPP}}
+\doxysubsubsection{\texorpdfstring{forward()}{forward()}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1models_1_1segmentation_1_1lraspp_1_1_l_r_a_s_p_p_ab5fa7757950e6883c9392829905a5a88} 
+ Dict\mbox{[}str, Tensor\mbox{]} torchvision\+\_\+down.\+models.\+segmentation.\+lraspp.\+LRASPP.\+forward (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{Tensor}]{input}{}\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classtorchvision__down_1_1models_1_1segmentation_1_1lraspp_1_1_l_r_a_s_p_p_aa87d52385a9fce27ddd880cc0325e424}\index{torchvision\_down.models.segmentation.lraspp.LRASPP@{torchvision\_down.models.segmentation.lraspp.LRASPP}!backbone@{backbone}}
+\index{backbone@{backbone}!torchvision\_down.models.segmentation.lraspp.LRASPP@{torchvision\_down.models.segmentation.lraspp.LRASPP}}
+\doxysubsubsection{\texorpdfstring{backbone}{backbone}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1models_1_1segmentation_1_1lraspp_1_1_l_r_a_s_p_p_aa87d52385a9fce27ddd880cc0325e424} 
+torchvision\+\_\+down.\+models.\+segmentation.\+lraspp.\+LRASPP.\+backbone = backbone}
+
+\Hypertarget{classtorchvision__down_1_1models_1_1segmentation_1_1lraspp_1_1_l_r_a_s_p_p_ad9cbbbf122087c358da15528e33a72d7}\index{torchvision\_down.models.segmentation.lraspp.LRASPP@{torchvision\_down.models.segmentation.lraspp.LRASPP}!classifier@{classifier}}
+\index{classifier@{classifier}!torchvision\_down.models.segmentation.lraspp.LRASPP@{torchvision\_down.models.segmentation.lraspp.LRASPP}}
+\doxysubsubsection{\texorpdfstring{classifier}{classifier}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1models_1_1segmentation_1_1lraspp_1_1_l_r_a_s_p_p_ad9cbbbf122087c358da15528e33a72d7} 
+torchvision\+\_\+down.\+models.\+segmentation.\+lraspp.\+LRASPP.\+classifier = \mbox{\hyperlink{classtorchvision__down_1_1models_1_1segmentation_1_1lraspp_1_1_l_r_a_s_p_p_head}{LRASPPHead}}(low\+\_\+channels, high\+\_\+channels, num\+\_\+classes, inter\+\_\+channels)}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Cervi\+AI/torchvision\+\_\+down/models/segmentation/\mbox{\hyperlink{lraspp_8py}{lraspp.\+py}}\end{DoxyCompactItemize}

@@ -1,0 +1,48 @@
+\doxysection{models.\+common.\+Ghost\+Stem Class Reference}
+\hypertarget{classmodels_1_1common_1_1_ghost_stem}{}\label{classmodels_1_1common_1_1_ghost_stem}\index{models.common.GhostStem@{models.common.GhostStem}}
+Inheritance diagram for models.\+common.\+Ghost\+Stem\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{classmodels_1_1common_1_1_ghost_stem}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classmodels_1_1common_1_1_ghost_stem_a02bfdf03a6e7483f2fd09c8baff3ed73}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, c1, c2, k=1, s=1, p=None, g=1, act=True)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{classmodels_1_1common_1_1_stem}{models.\+common.\+Stem}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classmodels_1_1common_1_1_stem_a8b9c2267cb33b07f2c3be21266c73613}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, c1, c2, k=1, s=1, p=None, g=1, act=True)
+\item 
+\mbox{\hyperlink{classmodels_1_1common_1_1_stem_ad9f760b60c36c8264d8a29083efbb380}{forward}} (self, x)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Additional Inherited Members}
+\doxysubsection*{Public Attributes inherited from \mbox{\hyperlink{classmodels_1_1common_1_1_stem}{models.\+common.\+Stem}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classmodels_1_1common_1_1_stem_a785b0fa29653cba5a31db27c8faa6c7a}{cv1}} = \mbox{\hyperlink{classmodels_1_1common_1_1_conv}{Conv}}(c1, c\+\_\+, 3, 2)
+\item 
+\mbox{\hyperlink{classmodels_1_1common_1_1_stem_aee37c9af0f5c74734f8a864c581f5a1f}{cv2}} = \mbox{\hyperlink{classmodels_1_1common_1_1_conv}{Conv}}(c\+\_\+, c\+\_\+, 1, 1)
+\item 
+\mbox{\hyperlink{classmodels_1_1common_1_1_stem_ab1fa93c6f6ee129893658fe098c365d6}{cv3}} = \mbox{\hyperlink{classmodels_1_1common_1_1_conv}{Conv}}(c\+\_\+, c\+\_\+, 3, 2)
+\item 
+\mbox{\hyperlink{classmodels_1_1common_1_1_stem_aea815f7147ffc9cb43588705ae5f29ec}{pool}} = torch.\+nn.\+Max\+Pool2d(2, stride=2)
+\item 
+\mbox{\hyperlink{classmodels_1_1common_1_1_stem_a276297126ba7e96aca99127baa6f6d05}{cv4}} = \mbox{\hyperlink{classmodels_1_1common_1_1_conv}{Conv}}(2 \texorpdfstring{$\ast$}{*} c\+\_\+, c2, 1, 1)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classmodels_1_1common_1_1_ghost_stem_a02bfdf03a6e7483f2fd09c8baff3ed73}\index{models.common.GhostStem@{models.common.GhostStem}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!models.common.GhostStem@{models.common.GhostStem}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily \label{classmodels_1_1common_1_1_ghost_stem_a02bfdf03a6e7483f2fd09c8baff3ed73} 
+models.\+common.\+Ghost\+Stem.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{c1}{, }\item[{}]{c2}{, }\item[{}]{k}{ = {\ttfamily 1}, }\item[{}]{s}{ = {\ttfamily 1}, }\item[{}]{p}{ = {\ttfamily None}, }\item[{}]{g}{ = {\ttfamily 1}, }\item[{}]{act}{ = {\ttfamily True}}\end{DoxyParamCaption})}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Cervi\+AI/models/\mbox{\hyperlink{common_8py}{common.\+py}}\end{DoxyCompactItemize}

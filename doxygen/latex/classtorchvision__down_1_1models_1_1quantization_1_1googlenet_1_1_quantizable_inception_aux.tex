@@ -1,0 +1,72 @@
+\doxysection{torchvision\+\_\+down.\+models.\+quantization.\+googlenet.\+Quantizable\+Inception\+Aux Class Reference}
+\hypertarget{classtorchvision__down_1_1models_1_1quantization_1_1googlenet_1_1_quantizable_inception_aux}{}\label{classtorchvision__down_1_1models_1_1quantization_1_1googlenet_1_1_quantizable_inception_aux}\index{torchvision\_down.models.quantization.googlenet.QuantizableInceptionAux@{torchvision\_down.models.quantization.googlenet.QuantizableInceptionAux}}
+Inheritance diagram for torchvision\+\_\+down.\+models.\+quantization.\+googlenet.\+Quantizable\+Inception\+Aux\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{classtorchvision__down_1_1models_1_1quantization_1_1googlenet_1_1_quantizable_inception_aux}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+None \mbox{\hyperlink{classtorchvision__down_1_1models_1_1quantization_1_1googlenet_1_1_quantizable_inception_aux_a8f5089839313034b40aa2fd0a504c54c}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, \texorpdfstring{$\ast$}{*}Any args, \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}Any kwargs)
+\item 
+Tensor \mbox{\hyperlink{classtorchvision__down_1_1models_1_1quantization_1_1googlenet_1_1_quantizable_inception_aux_a2ca7cfc199746bc6360e5243e2d386f2}{forward}} (self, Tensor x)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{classtorchvision__down_1_1models_1_1googlenet_1_1_inception_aux}{torchvision\+\_\+down.\+models.\+googlenet.\+Inception\+Aux}}}
+\begin{DoxyCompactItemize}
+\item 
+None \mbox{\hyperlink{classtorchvision__down_1_1models_1_1googlenet_1_1_inception_aux_a94d8de1003a8f835ff40510b5d0f7bbc}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, int in\+\_\+channels, int num\+\_\+classes, Optional\mbox{[}Callable\mbox{[}..., nn.\+Module\mbox{]}\mbox{]} conv\+\_\+block=None, float \mbox{\hyperlink{classtorchvision__down_1_1models_1_1googlenet_1_1_inception_aux_a857ab7542e8f2b1f0a24be1d90d971c3}{dropout}}=0.\+7)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1models_1_1quantization_1_1googlenet_1_1_quantizable_inception_aux_aa3c399af8ae8454d9cddccf087f816b4}{relu}} = nn.\+Re\+LU()
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes inherited from \mbox{\hyperlink{classtorchvision__down_1_1models_1_1googlenet_1_1_inception_aux}{torchvision\+\_\+down.\+models.\+googlenet.\+Inception\+Aux}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1models_1_1googlenet_1_1_inception_aux_afa7cb56c5fb897a83eaffabd3d881dd9}{conv}} = conv\+\_\+block(in\+\_\+channels, 128, kernel\+\_\+size=1)
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1models_1_1googlenet_1_1_inception_aux_abd3dd1926be923d08123896d20b51484}{fc1}} = nn.\+Linear(2048, 1024)
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1models_1_1googlenet_1_1_inception_aux_afe90089f27c6a98deaf40d8c2fbd8c04}{fc2}} = nn.\+Linear(1024, num\+\_\+classes)
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1models_1_1googlenet_1_1_inception_aux_a857ab7542e8f2b1f0a24be1d90d971c3}{dropout}} = nn.\+Dropout(p=dropout)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classtorchvision__down_1_1models_1_1quantization_1_1googlenet_1_1_quantizable_inception_aux_a8f5089839313034b40aa2fd0a504c54c}\index{torchvision\_down.models.quantization.googlenet.QuantizableInceptionAux@{torchvision\_down.models.quantization.googlenet.QuantizableInceptionAux}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!torchvision\_down.models.quantization.googlenet.QuantizableInceptionAux@{torchvision\_down.models.quantization.googlenet.QuantizableInceptionAux}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1models_1_1quantization_1_1googlenet_1_1_quantizable_inception_aux_a8f5089839313034b40aa2fd0a504c54c} 
+ None torchvision\+\_\+down.\+models.\+quantization.\+googlenet.\+Quantizable\+Inception\+Aux.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{\texorpdfstring{$\ast$}{*}Any}]{args}{, }\item[{\texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}Any}]{kwargs}{}\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classtorchvision__down_1_1models_1_1quantization_1_1googlenet_1_1_quantizable_inception_aux_a2ca7cfc199746bc6360e5243e2d386f2}\index{torchvision\_down.models.quantization.googlenet.QuantizableInceptionAux@{torchvision\_down.models.quantization.googlenet.QuantizableInceptionAux}!forward@{forward}}
+\index{forward@{forward}!torchvision\_down.models.quantization.googlenet.QuantizableInceptionAux@{torchvision\_down.models.quantization.googlenet.QuantizableInceptionAux}}
+\doxysubsubsection{\texorpdfstring{forward()}{forward()}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1models_1_1quantization_1_1googlenet_1_1_quantizable_inception_aux_a2ca7cfc199746bc6360e5243e2d386f2} 
+ Tensor torchvision\+\_\+down.\+models.\+quantization.\+googlenet.\+Quantizable\+Inception\+Aux.\+forward (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{Tensor}]{x}{}\end{DoxyParamCaption})}
+
+
+
+Reimplemented from \mbox{\hyperlink{classtorchvision__down_1_1models_1_1googlenet_1_1_inception_aux_a98214bbc851d47cd1350a030f00767ca}{torchvision\+\_\+down.\+models.\+googlenet.\+Inception\+Aux}}.
+
+
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classtorchvision__down_1_1models_1_1quantization_1_1googlenet_1_1_quantizable_inception_aux_aa3c399af8ae8454d9cddccf087f816b4}\index{torchvision\_down.models.quantization.googlenet.QuantizableInceptionAux@{torchvision\_down.models.quantization.googlenet.QuantizableInceptionAux}!relu@{relu}}
+\index{relu@{relu}!torchvision\_down.models.quantization.googlenet.QuantizableInceptionAux@{torchvision\_down.models.quantization.googlenet.QuantizableInceptionAux}}
+\doxysubsubsection{\texorpdfstring{relu}{relu}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1models_1_1quantization_1_1googlenet_1_1_quantizable_inception_aux_aa3c399af8ae8454d9cddccf087f816b4} 
+torchvision\+\_\+down.\+models.\+quantization.\+googlenet.\+Quantizable\+Inception\+Aux.\+relu = nn.\+Re\+LU()}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Cervi\+AI/torchvision\+\_\+down/models/quantization/\mbox{\hyperlink{quantization_2googlenet_8py}{googlenet.\+py}}\end{DoxyCompactItemize}

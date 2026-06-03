@@ -1,0 +1,94 @@
+\doxysection{torchvision\+\_\+down.\+ops.\+poolers.\+Level\+Mapper Class Reference}
+\hypertarget{classtorchvision__down_1_1ops_1_1poolers_1_1_level_mapper}{}\label{classtorchvision__down_1_1ops_1_1poolers_1_1_level_mapper}\index{torchvision\_down.ops.poolers.LevelMapper@{torchvision\_down.ops.poolers.LevelMapper}}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1ops_1_1poolers_1_1_level_mapper_a648d6a270907e1f2a21fc8f1a313d301}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, int \mbox{\hyperlink{classtorchvision__down_1_1ops_1_1poolers_1_1_level_mapper_a902e9d2d67649d31438a8de49be06673}{k\+\_\+min}}, int \mbox{\hyperlink{classtorchvision__down_1_1ops_1_1poolers_1_1_level_mapper_af981731fa6c156ca3f718f509d643fc0}{k\+\_\+max}}, int canonical\+\_\+scale=224, int canonical\+\_\+level=4, float \mbox{\hyperlink{classtorchvision__down_1_1ops_1_1poolers_1_1_level_mapper_acdfe79a27cb5a349136bdec973d1f747}{eps}}=1e-\/6)
+\item 
+Tensor \mbox{\hyperlink{classtorchvision__down_1_1ops_1_1poolers_1_1_level_mapper_ac71ef9c38916eebcfa0e488a0caf7137}{\+\_\+\+\_\+call\+\_\+\+\_\+}} (self, List\mbox{[}Tensor\mbox{]} boxlists)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1ops_1_1poolers_1_1_level_mapper_a902e9d2d67649d31438a8de49be06673}{k\+\_\+min}} = k\+\_\+min
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1ops_1_1poolers_1_1_level_mapper_af981731fa6c156ca3f718f509d643fc0}{k\+\_\+max}} = k\+\_\+max
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1ops_1_1poolers_1_1_level_mapper_a330a3db3f1bc2542f5142524ce5651df}{s0}} = canonical\+\_\+scale
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1ops_1_1poolers_1_1_level_mapper_ad4b1c4dce4b5264435d156bf1cc904dd}{lvl0}} = canonical\+\_\+level
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1ops_1_1poolers_1_1_level_mapper_acdfe79a27cb5a349136bdec973d1f747}{eps}} = eps
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}Determine which FPN level each RoI in a set of RoIs should map to based
+on the heuristic in the FPN paper.
+
+Args:
+    k_min (int)
+    k_max (int)
+    canonical_scale (int)
+    canonical_level (int)
+    eps (float)
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classtorchvision__down_1_1ops_1_1poolers_1_1_level_mapper_a648d6a270907e1f2a21fc8f1a313d301}\index{torchvision\_down.ops.poolers.LevelMapper@{torchvision\_down.ops.poolers.LevelMapper}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!torchvision\_down.ops.poolers.LevelMapper@{torchvision\_down.ops.poolers.LevelMapper}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1ops_1_1poolers_1_1_level_mapper_a648d6a270907e1f2a21fc8f1a313d301} 
+torchvision\+\_\+down.\+ops.\+poolers.\+Level\+Mapper.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{int}]{k\+\_\+min}{, }\item[{int}]{k\+\_\+max}{, }\item[{int }]{canonical\+\_\+scale}{ = {\ttfamily 224}, }\item[{int }]{canonical\+\_\+level}{ = {\ttfamily 4}, }\item[{float }]{eps}{ = {\ttfamily 1e-\/6}}\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classtorchvision__down_1_1ops_1_1poolers_1_1_level_mapper_ac71ef9c38916eebcfa0e488a0caf7137}\index{torchvision\_down.ops.poolers.LevelMapper@{torchvision\_down.ops.poolers.LevelMapper}!\_\_call\_\_@{\_\_call\_\_}}
+\index{\_\_call\_\_@{\_\_call\_\_}!torchvision\_down.ops.poolers.LevelMapper@{torchvision\_down.ops.poolers.LevelMapper}}
+\doxysubsubsection{\texorpdfstring{\_\_call\_\_()}{\_\_call\_\_()}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1ops_1_1poolers_1_1_level_mapper_ac71ef9c38916eebcfa0e488a0caf7137} 
+ Tensor torchvision\+\_\+down.\+ops.\+poolers.\+Level\+Mapper.\+\_\+\+\_\+call\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{List\mbox{[}Tensor\mbox{]}}]{boxlists}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Args:
+    boxlists (list[BoxList])
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classtorchvision__down_1_1ops_1_1poolers_1_1_level_mapper_acdfe79a27cb5a349136bdec973d1f747}\index{torchvision\_down.ops.poolers.LevelMapper@{torchvision\_down.ops.poolers.LevelMapper}!eps@{eps}}
+\index{eps@{eps}!torchvision\_down.ops.poolers.LevelMapper@{torchvision\_down.ops.poolers.LevelMapper}}
+\doxysubsubsection{\texorpdfstring{eps}{eps}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1ops_1_1poolers_1_1_level_mapper_acdfe79a27cb5a349136bdec973d1f747} 
+torchvision\+\_\+down.\+ops.\+poolers.\+Level\+Mapper.\+eps = eps}
+
+\Hypertarget{classtorchvision__down_1_1ops_1_1poolers_1_1_level_mapper_af981731fa6c156ca3f718f509d643fc0}\index{torchvision\_down.ops.poolers.LevelMapper@{torchvision\_down.ops.poolers.LevelMapper}!k\_max@{k\_max}}
+\index{k\_max@{k\_max}!torchvision\_down.ops.poolers.LevelMapper@{torchvision\_down.ops.poolers.LevelMapper}}
+\doxysubsubsection{\texorpdfstring{k\_max}{k\_max}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1ops_1_1poolers_1_1_level_mapper_af981731fa6c156ca3f718f509d643fc0} 
+torchvision\+\_\+down.\+ops.\+poolers.\+Level\+Mapper.\+k\+\_\+max = k\+\_\+max}
+
+\Hypertarget{classtorchvision__down_1_1ops_1_1poolers_1_1_level_mapper_a902e9d2d67649d31438a8de49be06673}\index{torchvision\_down.ops.poolers.LevelMapper@{torchvision\_down.ops.poolers.LevelMapper}!k\_min@{k\_min}}
+\index{k\_min@{k\_min}!torchvision\_down.ops.poolers.LevelMapper@{torchvision\_down.ops.poolers.LevelMapper}}
+\doxysubsubsection{\texorpdfstring{k\_min}{k\_min}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1ops_1_1poolers_1_1_level_mapper_a902e9d2d67649d31438a8de49be06673} 
+torchvision\+\_\+down.\+ops.\+poolers.\+Level\+Mapper.\+k\+\_\+min = k\+\_\+min}
+
+\Hypertarget{classtorchvision__down_1_1ops_1_1poolers_1_1_level_mapper_ad4b1c4dce4b5264435d156bf1cc904dd}\index{torchvision\_down.ops.poolers.LevelMapper@{torchvision\_down.ops.poolers.LevelMapper}!lvl0@{lvl0}}
+\index{lvl0@{lvl0}!torchvision\_down.ops.poolers.LevelMapper@{torchvision\_down.ops.poolers.LevelMapper}}
+\doxysubsubsection{\texorpdfstring{lvl0}{lvl0}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1ops_1_1poolers_1_1_level_mapper_ad4b1c4dce4b5264435d156bf1cc904dd} 
+torchvision\+\_\+down.\+ops.\+poolers.\+Level\+Mapper.\+lvl0 = canonical\+\_\+level}
+
+\Hypertarget{classtorchvision__down_1_1ops_1_1poolers_1_1_level_mapper_a330a3db3f1bc2542f5142524ce5651df}\index{torchvision\_down.ops.poolers.LevelMapper@{torchvision\_down.ops.poolers.LevelMapper}!s0@{s0}}
+\index{s0@{s0}!torchvision\_down.ops.poolers.LevelMapper@{torchvision\_down.ops.poolers.LevelMapper}}
+\doxysubsubsection{\texorpdfstring{s0}{s0}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1ops_1_1poolers_1_1_level_mapper_a330a3db3f1bc2542f5142524ce5651df} 
+torchvision\+\_\+down.\+ops.\+poolers.\+Level\+Mapper.\+s0 = canonical\+\_\+scale}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Cervi\+AI/torchvision\+\_\+down/ops/\mbox{\hyperlink{poolers_8py}{poolers.\+py}}\end{DoxyCompactItemize}

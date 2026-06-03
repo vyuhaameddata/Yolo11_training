@@ -1,0 +1,76 @@
+\doxysection{models.\+common.\+Mlp\+\_\+v2 Class Reference}
+\hypertarget{classmodels_1_1common_1_1_mlp__v2}{}\label{classmodels_1_1common_1_1_mlp__v2}\index{models.common.Mlp\_v2@{models.common.Mlp\_v2}}
+Inheritance diagram for models.\+common.\+Mlp\+\_\+v2\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classmodels_1_1common_1_1_mlp__v2}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classmodels_1_1common_1_1_mlp__v2_a58e3992b7d0f6b2aee539ee93ef7b1a7}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, in\+\_\+features, hidden\+\_\+features=None, out\+\_\+features=None, act\+\_\+layer=nn.\+Si\+LU, \mbox{\hyperlink{classmodels_1_1common_1_1_mlp__v2_a42bf9ff95ef42f561d8ed7ea1b32a361}{drop}}=0.)
+\item 
+\mbox{\hyperlink{classmodels_1_1common_1_1_mlp__v2_adddac37eb19c58fc27a6961f08bf386c}{forward}} (self, x)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classmodels_1_1common_1_1_mlp__v2_a7eacbca2429ec73f3e630c41660203b0}{fc1}} = nn.\+Linear(in\+\_\+features, hidden\+\_\+features)
+\item 
+\mbox{\hyperlink{classmodels_1_1common_1_1_mlp__v2_a29af9848dad149f6a8cd41ad1adeead6}{act}} = act\+\_\+layer()
+\item 
+\mbox{\hyperlink{classmodels_1_1common_1_1_mlp__v2_a08a38f85de536a979086475dc98110e3}{fc2}} = nn.\+Linear(hidden\+\_\+features, out\+\_\+features)
+\item 
+\mbox{\hyperlink{classmodels_1_1common_1_1_mlp__v2_a42bf9ff95ef42f561d8ed7ea1b32a361}{drop}} = nn.\+Dropout(drop)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classmodels_1_1common_1_1_mlp__v2_a58e3992b7d0f6b2aee539ee93ef7b1a7}\index{models.common.Mlp\_v2@{models.common.Mlp\_v2}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!models.common.Mlp\_v2@{models.common.Mlp\_v2}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily \label{classmodels_1_1common_1_1_mlp__v2_a58e3992b7d0f6b2aee539ee93ef7b1a7} 
+models.\+common.\+Mlp\+\_\+v2.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{in\+\_\+features}{, }\item[{}]{hidden\+\_\+features}{ = {\ttfamily None}, }\item[{}]{out\+\_\+features}{ = {\ttfamily None}, }\item[{}]{act\+\_\+layer}{ = {\ttfamily nn.SiLU}, }\item[{}]{drop}{ = {\ttfamily 0.}}\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classmodels_1_1common_1_1_mlp__v2_adddac37eb19c58fc27a6961f08bf386c}\index{models.common.Mlp\_v2@{models.common.Mlp\_v2}!forward@{forward}}
+\index{forward@{forward}!models.common.Mlp\_v2@{models.common.Mlp\_v2}}
+\doxysubsubsection{\texorpdfstring{forward()}{forward()}}
+{\footnotesize\ttfamily \label{classmodels_1_1common_1_1_mlp__v2_adddac37eb19c58fc27a6961f08bf386c} 
+models.\+common.\+Mlp\+\_\+v2.\+forward (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{x}{}\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classmodels_1_1common_1_1_mlp__v2_a29af9848dad149f6a8cd41ad1adeead6}\index{models.common.Mlp\_v2@{models.common.Mlp\_v2}!act@{act}}
+\index{act@{act}!models.common.Mlp\_v2@{models.common.Mlp\_v2}}
+\doxysubsubsection{\texorpdfstring{act}{act}}
+{\footnotesize\ttfamily \label{classmodels_1_1common_1_1_mlp__v2_a29af9848dad149f6a8cd41ad1adeead6} 
+models.\+common.\+Mlp\+\_\+v2.\+act = act\+\_\+layer()}
+
+\Hypertarget{classmodels_1_1common_1_1_mlp__v2_a42bf9ff95ef42f561d8ed7ea1b32a361}\index{models.common.Mlp\_v2@{models.common.Mlp\_v2}!drop@{drop}}
+\index{drop@{drop}!models.common.Mlp\_v2@{models.common.Mlp\_v2}}
+\doxysubsubsection{\texorpdfstring{drop}{drop}}
+{\footnotesize\ttfamily \label{classmodels_1_1common_1_1_mlp__v2_a42bf9ff95ef42f561d8ed7ea1b32a361} 
+models.\+common.\+Mlp\+\_\+v2.\+drop = nn.\+Dropout(drop)}
+
+\Hypertarget{classmodels_1_1common_1_1_mlp__v2_a7eacbca2429ec73f3e630c41660203b0}\index{models.common.Mlp\_v2@{models.common.Mlp\_v2}!fc1@{fc1}}
+\index{fc1@{fc1}!models.common.Mlp\_v2@{models.common.Mlp\_v2}}
+\doxysubsubsection{\texorpdfstring{fc1}{fc1}}
+{\footnotesize\ttfamily \label{classmodels_1_1common_1_1_mlp__v2_a7eacbca2429ec73f3e630c41660203b0} 
+models.\+common.\+Mlp\+\_\+v2.\+fc1 = nn.\+Linear(in\+\_\+features, hidden\+\_\+features)}
+
+\Hypertarget{classmodels_1_1common_1_1_mlp__v2_a08a38f85de536a979086475dc98110e3}\index{models.common.Mlp\_v2@{models.common.Mlp\_v2}!fc2@{fc2}}
+\index{fc2@{fc2}!models.common.Mlp\_v2@{models.common.Mlp\_v2}}
+\doxysubsubsection{\texorpdfstring{fc2}{fc2}}
+{\footnotesize\ttfamily \label{classmodels_1_1common_1_1_mlp__v2_a08a38f85de536a979086475dc98110e3} 
+models.\+common.\+Mlp\+\_\+v2.\+fc2 = nn.\+Linear(hidden\+\_\+features, out\+\_\+features)}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Cervi\+AI/models/\mbox{\hyperlink{common_8py}{common.\+py}}\end{DoxyCompactItemize}

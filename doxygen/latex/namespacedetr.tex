@@ -1,0 +1,171 @@
+\doxysection{detr Namespace Reference}
+\hypertarget{namespacedetr}{}\label{namespacedetr}\index{detr@{detr}}
+\doxysubsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classdetr_1_1_detr_coco_dataset}{Detr\+Coco\+Dataset}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{namespacedetr_a9993838f6dc036392651f1e1af40bfda}{collate\+\_\+fn}} (batch)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{namespacedetr_a32a683cc0164199ff75256f93948f4d0}{model}} = Deformable\+Detr\+For\+Object\+Detection.\+from\+\_\+pretrained("{}Sense\+Time/deformable-\/detr"{})
+\item 
+\mbox{\hyperlink{namespacedetr_ae00a83e407c4498a80b9487025abf81e}{device}} = torch.\+device("{}cuda"{} if torch.\+cuda.\+is\+\_\+available() else "{}cpu"{})
+\item 
+str \mbox{\hyperlink{namespacedetr_abd690a47286cf9eac6e88d057b42ace0}{data\+\_\+root}} = r"{}\+D\+:\textbackslash{}\+Shreyan\textbackslash{}\+Development\textbackslash{}\+Train\textbackslash{}\+Data\textbackslash{}cat\+\_\+detr"{}
+\item 
+\mbox{\hyperlink{namespacedetr_a8efa422735d88b77d5b52cbc1157de33}{train\+\_\+images}} = os.\+path.\+join(\mbox{\hyperlink{namespacedetr_abd690a47286cf9eac6e88d057b42ace0}{data\+\_\+root}}, r"{}train\textbackslash{}images"{})
+\item 
+\mbox{\hyperlink{namespacedetr_ac88f37588d870f66b1596952e1d9cf9a}{train\+\_\+annotations}} = os.\+path.\+join(\mbox{\hyperlink{namespacedetr_abd690a47286cf9eac6e88d057b42ace0}{data\+\_\+root}}, r"{}train\textbackslash{}annotations\textbackslash{}instances\+\_\+train.\+json"{})
+\item 
+\mbox{\hyperlink{namespacedetr_a75b717188c26b30621cb054ae1b6d5fd}{transform}}
+\item 
+\mbox{\hyperlink{namespacedetr_aeb2f159d2789fe6f948fa5361a926654}{train\+\_\+dataset}} = \mbox{\hyperlink{classdetr_1_1_detr_coco_dataset}{Detr\+Coco\+Dataset}}(root=\mbox{\hyperlink{namespacedetr_a8efa422735d88b77d5b52cbc1157de33}{train\+\_\+images}}, ann\+File=\mbox{\hyperlink{namespacedetr_ac88f37588d870f66b1596952e1d9cf9a}{train\+\_\+annotations}})
+\item 
+\mbox{\hyperlink{namespacedetr_ac06e9ab1c8655003661931dbe05f48f0}{train\+\_\+loader}} = Data\+Loader(\mbox{\hyperlink{namespacedetr_aeb2f159d2789fe6f948fa5361a926654}{train\+\_\+dataset}}, batch\+\_\+size=4, shuffle=True, \mbox{\hyperlink{namespacedetr_a9993838f6dc036392651f1e1af40bfda}{collate\+\_\+fn}}=\mbox{\hyperlink{namespacedetr_a9993838f6dc036392651f1e1af40bfda}{collate\+\_\+fn}})
+\item 
+\mbox{\hyperlink{namespacedetr_ab633667e0e739b8772220cd3ac9c8c72}{optimizer}} = torch.\+optim.\+AdamW(model.\+parameters(), lr=1e-\/5)
+\item 
+int \mbox{\hyperlink{namespacedetr_ab64c65b9301cc5e97d98bbf4284c8cf3}{num\+\_\+epochs}} = 1
+\item 
+int \mbox{\hyperlink{namespacedetr_a156450d7a80a25355914110e4e44d925}{total\+\_\+loss}} = 0
+\item 
+\mbox{\hyperlink{namespacedetr_a9aa441356ac09aeaf8618473b2e2ae72}{images}} = images.\+to(\mbox{\hyperlink{namespacedetr_ae00a83e407c4498a80b9487025abf81e}{device}})
+\item 
+list \mbox{\hyperlink{namespacedetr_a0088eb1854a23c84305c69bfe30dfd16}{targets}} = \mbox{[}\{k\+: v.\+to(\mbox{\hyperlink{namespacedetr_ae00a83e407c4498a80b9487025abf81e}{device}}) for k, v in t.\+items()\} for t in targets\mbox{]}
+\item 
+\mbox{\hyperlink{namespacedetr_a9d4398323e5cab73e720ba8bb91966b1}{outputs}} = \mbox{\hyperlink{namespacedetr_a32a683cc0164199ff75256f93948f4d0}{model}}(\mbox{\hyperlink{namespacedetr_a9aa441356ac09aeaf8618473b2e2ae72}{images}}, labels=\mbox{\hyperlink{namespacedetr_a0088eb1854a23c84305c69bfe30dfd16}{targets}})
+\item 
+\mbox{\hyperlink{namespacedetr_a273381b402dc1c44b77b23557c3d6a2f}{loss}} = outputs.\+loss
+\item 
+str \mbox{\hyperlink{namespacedetr_a7df6a0236dc033dce6f42589bef0bbe8}{test\+\_\+image\+\_\+path}} = r"{}\+D\+:\textbackslash{}\+Shreyan\textbackslash{}\+Development\textbackslash{}\+Train\textbackslash{}\+Data\textbackslash{}cat\+\_\+cocoformat\textbackslash{}test\textbackslash{}images\textbackslash{}test.\+jpg"{}
+\item 
+\mbox{\hyperlink{namespacedetr_a51a5d9923c8c9c4e2aa55c1c831ebecd}{image}} = Image.\+open(\mbox{\hyperlink{namespacedetr_a7df6a0236dc033dce6f42589bef0bbe8}{test\+\_\+image\+\_\+path}}).convert("{}RGB"{})
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{namespacedetr_a9993838f6dc036392651f1e1af40bfda}\index{detr@{detr}!collate\_fn@{collate\_fn}}
+\index{collate\_fn@{collate\_fn}!detr@{detr}}
+\doxysubsubsection{\texorpdfstring{collate\_fn()}{collate\_fn()}}
+{\footnotesize\ttfamily \label{namespacedetr_a9993838f6dc036392651f1e1af40bfda} 
+detr.\+collate\+\_\+fn (\begin{DoxyParamCaption}\item[{}]{batch}{}\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Variable Documentation}
+\Hypertarget{namespacedetr_abd690a47286cf9eac6e88d057b42ace0}\index{detr@{detr}!data\_root@{data\_root}}
+\index{data\_root@{data\_root}!detr@{detr}}
+\doxysubsubsection{\texorpdfstring{data\_root}{data\_root}}
+{\footnotesize\ttfamily \label{namespacedetr_abd690a47286cf9eac6e88d057b42ace0} 
+str detr.\+data\+\_\+root = r"{}\+D\+:\textbackslash{}\+Shreyan\textbackslash{}\+Development\textbackslash{}\+Train\textbackslash{}\+Data\textbackslash{}cat\+\_\+detr"{}}
+
+\Hypertarget{namespacedetr_ae00a83e407c4498a80b9487025abf81e}\index{detr@{detr}!device@{device}}
+\index{device@{device}!detr@{detr}}
+\doxysubsubsection{\texorpdfstring{device}{device}}
+{\footnotesize\ttfamily \label{namespacedetr_ae00a83e407c4498a80b9487025abf81e} 
+detr.\+device = torch.\+device("{}cuda"{} if torch.\+cuda.\+is\+\_\+available() else "{}cpu"{})}
+
+\Hypertarget{namespacedetr_a51a5d9923c8c9c4e2aa55c1c831ebecd}\index{detr@{detr}!image@{image}}
+\index{image@{image}!detr@{detr}}
+\doxysubsubsection{\texorpdfstring{image}{image}}
+{\footnotesize\ttfamily \label{namespacedetr_a51a5d9923c8c9c4e2aa55c1c831ebecd} 
+detr.\+image = Image.\+open(\mbox{\hyperlink{namespacedetr_a7df6a0236dc033dce6f42589bef0bbe8}{test\+\_\+image\+\_\+path}}).convert("{}RGB"{})}
+
+\Hypertarget{namespacedetr_a9aa441356ac09aeaf8618473b2e2ae72}\index{detr@{detr}!images@{images}}
+\index{images@{images}!detr@{detr}}
+\doxysubsubsection{\texorpdfstring{images}{images}}
+{\footnotesize\ttfamily \label{namespacedetr_a9aa441356ac09aeaf8618473b2e2ae72} 
+detr.\+images = images.\+to(\mbox{\hyperlink{namespacedetr_ae00a83e407c4498a80b9487025abf81e}{device}})}
+
+\Hypertarget{namespacedetr_a273381b402dc1c44b77b23557c3d6a2f}\index{detr@{detr}!loss@{loss}}
+\index{loss@{loss}!detr@{detr}}
+\doxysubsubsection{\texorpdfstring{loss}{loss}}
+{\footnotesize\ttfamily \label{namespacedetr_a273381b402dc1c44b77b23557c3d6a2f} 
+detr.\+loss = outputs.\+loss}
+
+\Hypertarget{namespacedetr_a32a683cc0164199ff75256f93948f4d0}\index{detr@{detr}!model@{model}}
+\index{model@{model}!detr@{detr}}
+\doxysubsubsection{\texorpdfstring{model}{model}}
+{\footnotesize\ttfamily \label{namespacedetr_a32a683cc0164199ff75256f93948f4d0} 
+detr.\+model = Deformable\+Detr\+For\+Object\+Detection.\+from\+\_\+pretrained("{}Sense\+Time/deformable-\/detr"{})}
+
+\Hypertarget{namespacedetr_ab64c65b9301cc5e97d98bbf4284c8cf3}\index{detr@{detr}!num\_epochs@{num\_epochs}}
+\index{num\_epochs@{num\_epochs}!detr@{detr}}
+\doxysubsubsection{\texorpdfstring{num\_epochs}{num\_epochs}}
+{\footnotesize\ttfamily \label{namespacedetr_ab64c65b9301cc5e97d98bbf4284c8cf3} 
+int detr.\+num\+\_\+epochs = 1}
+
+\Hypertarget{namespacedetr_ab633667e0e739b8772220cd3ac9c8c72}\index{detr@{detr}!optimizer@{optimizer}}
+\index{optimizer@{optimizer}!detr@{detr}}
+\doxysubsubsection{\texorpdfstring{optimizer}{optimizer}}
+{\footnotesize\ttfamily \label{namespacedetr_ab633667e0e739b8772220cd3ac9c8c72} 
+detr.\+optimizer = torch.\+optim.\+AdamW(model.\+parameters(), lr=1e-\/5)}
+
+\Hypertarget{namespacedetr_a9d4398323e5cab73e720ba8bb91966b1}\index{detr@{detr}!outputs@{outputs}}
+\index{outputs@{outputs}!detr@{detr}}
+\doxysubsubsection{\texorpdfstring{outputs}{outputs}}
+{\footnotesize\ttfamily \label{namespacedetr_a9d4398323e5cab73e720ba8bb91966b1} 
+detr.\+outputs = \mbox{\hyperlink{namespacedetr_a32a683cc0164199ff75256f93948f4d0}{model}}(\mbox{\hyperlink{namespacedetr_a9aa441356ac09aeaf8618473b2e2ae72}{images}}, labels=\mbox{\hyperlink{namespacedetr_a0088eb1854a23c84305c69bfe30dfd16}{targets}})}
+
+\Hypertarget{namespacedetr_a0088eb1854a23c84305c69bfe30dfd16}\index{detr@{detr}!targets@{targets}}
+\index{targets@{targets}!detr@{detr}}
+\doxysubsubsection{\texorpdfstring{targets}{targets}}
+{\footnotesize\ttfamily \label{namespacedetr_a0088eb1854a23c84305c69bfe30dfd16} 
+list detr.\+targets = \mbox{[}\{k\+: v.\+to(\mbox{\hyperlink{namespacedetr_ae00a83e407c4498a80b9487025abf81e}{device}}) for k, v in t.\+items()\} for t in targets\mbox{]}}
+
+\Hypertarget{namespacedetr_a7df6a0236dc033dce6f42589bef0bbe8}\index{detr@{detr}!test\_image\_path@{test\_image\_path}}
+\index{test\_image\_path@{test\_image\_path}!detr@{detr}}
+\doxysubsubsection{\texorpdfstring{test\_image\_path}{test\_image\_path}}
+{\footnotesize\ttfamily \label{namespacedetr_a7df6a0236dc033dce6f42589bef0bbe8} 
+str detr.\+test\+\_\+image\+\_\+path = r"{}\+D\+:\textbackslash{}\+Shreyan\textbackslash{}\+Development\textbackslash{}\+Train\textbackslash{}\+Data\textbackslash{}cat\+\_\+cocoformat\textbackslash{}test\textbackslash{}images\textbackslash{}test.\+jpg"{}}
+
+\Hypertarget{namespacedetr_a156450d7a80a25355914110e4e44d925}\index{detr@{detr}!total\_loss@{total\_loss}}
+\index{total\_loss@{total\_loss}!detr@{detr}}
+\doxysubsubsection{\texorpdfstring{total\_loss}{total\_loss}}
+{\footnotesize\ttfamily \label{namespacedetr_a156450d7a80a25355914110e4e44d925} 
+int detr.\+total\+\_\+loss = 0}
+
+\Hypertarget{namespacedetr_ac88f37588d870f66b1596952e1d9cf9a}\index{detr@{detr}!train\_annotations@{train\_annotations}}
+\index{train\_annotations@{train\_annotations}!detr@{detr}}
+\doxysubsubsection{\texorpdfstring{train\_annotations}{train\_annotations}}
+{\footnotesize\ttfamily \label{namespacedetr_ac88f37588d870f66b1596952e1d9cf9a} 
+detr.\+train\+\_\+annotations = os.\+path.\+join(\mbox{\hyperlink{namespacedetr_abd690a47286cf9eac6e88d057b42ace0}{data\+\_\+root}}, r"{}train\textbackslash{}annotations\textbackslash{}instances\+\_\+train.\+json"{})}
+
+\Hypertarget{namespacedetr_aeb2f159d2789fe6f948fa5361a926654}\index{detr@{detr}!train\_dataset@{train\_dataset}}
+\index{train\_dataset@{train\_dataset}!detr@{detr}}
+\doxysubsubsection{\texorpdfstring{train\_dataset}{train\_dataset}}
+{\footnotesize\ttfamily \label{namespacedetr_aeb2f159d2789fe6f948fa5361a926654} 
+detr.\+train\+\_\+dataset = \mbox{\hyperlink{classdetr_1_1_detr_coco_dataset}{Detr\+Coco\+Dataset}}(root=\mbox{\hyperlink{namespacedetr_a8efa422735d88b77d5b52cbc1157de33}{train\+\_\+images}}, ann\+File=\mbox{\hyperlink{namespacedetr_ac88f37588d870f66b1596952e1d9cf9a}{train\+\_\+annotations}})}
+
+\Hypertarget{namespacedetr_a8efa422735d88b77d5b52cbc1157de33}\index{detr@{detr}!train\_images@{train\_images}}
+\index{train\_images@{train\_images}!detr@{detr}}
+\doxysubsubsection{\texorpdfstring{train\_images}{train\_images}}
+{\footnotesize\ttfamily \label{namespacedetr_a8efa422735d88b77d5b52cbc1157de33} 
+detr.\+train\+\_\+images = os.\+path.\+join(\mbox{\hyperlink{namespacedetr_abd690a47286cf9eac6e88d057b42ace0}{data\+\_\+root}}, r"{}train\textbackslash{}images"{})}
+
+\Hypertarget{namespacedetr_ac06e9ab1c8655003661931dbe05f48f0}\index{detr@{detr}!train\_loader@{train\_loader}}
+\index{train\_loader@{train\_loader}!detr@{detr}}
+\doxysubsubsection{\texorpdfstring{train\_loader}{train\_loader}}
+{\footnotesize\ttfamily \label{namespacedetr_ac06e9ab1c8655003661931dbe05f48f0} 
+detr.\+train\+\_\+loader = Data\+Loader(\mbox{\hyperlink{namespacedetr_aeb2f159d2789fe6f948fa5361a926654}{train\+\_\+dataset}}, batch\+\_\+size=4, shuffle=True, \mbox{\hyperlink{namespacedetr_a9993838f6dc036392651f1e1af40bfda}{collate\+\_\+fn}}=\mbox{\hyperlink{namespacedetr_a9993838f6dc036392651f1e1af40bfda}{collate\+\_\+fn}})}
+
+\Hypertarget{namespacedetr_a75b717188c26b30621cb054ae1b6d5fd}\index{detr@{detr}!transform@{transform}}
+\index{transform@{transform}!detr@{detr}}
+\doxysubsubsection{\texorpdfstring{transform}{transform}}
+{\footnotesize\ttfamily \label{namespacedetr_a75b717188c26b30621cb054ae1b6d5fd} 
+detr.\+transform}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ =\ \ T.Compose([}
+\DoxyCodeLine{00002\ \ \ \ \ T.Resize((800,\ 800)),\ \ }
+\DoxyCodeLine{00003\ \ \ \ \ T.ToTensor()}
+\DoxyCodeLine{00004\ ])}
+
+\end{DoxyCode}

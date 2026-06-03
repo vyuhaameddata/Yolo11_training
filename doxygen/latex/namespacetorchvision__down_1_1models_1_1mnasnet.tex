@@ -1,0 +1,157 @@
+\doxysection{torchvision\+\_\+down.\+models.\+mnasnet Namespace Reference}
+\hypertarget{namespacetorchvision__down_1_1models_1_1mnasnet}{}\label{namespacetorchvision__down_1_1models_1_1mnasnet}\index{torchvision\_down.models.mnasnet@{torchvision\_down.models.mnasnet}}
+\doxysubsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classtorchvision__down_1_1models_1_1mnasnet_1_1___inverted_residual}{\+\_\+\+Inverted\+Residual}}
+\item 
+class \mbox{\hyperlink{classtorchvision__down_1_1models_1_1mnasnet_1_1_m_n_a_s_net}{MNASNet}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+nn.\+Sequential \mbox{\hyperlink{namespacetorchvision__down_1_1models_1_1mnasnet_ae2f3e3af96835f032fe7881f11b1c979}{\+\_\+stack}} (int in\+\_\+ch, int out\+\_\+ch, int kernel\+\_\+size, int stride, int exp\+\_\+factor, int repeats, float bn\+\_\+momentum)
+\item 
+int \mbox{\hyperlink{namespacetorchvision__down_1_1models_1_1mnasnet_ae15a16e69da2133fbe11b2c3681131e7}{\+\_\+round\+\_\+to\+\_\+multiple\+\_\+of}} (float val, int divisor, float round\+\_\+up\+\_\+bias=0.\+9)
+\item 
+List\mbox{[}int\mbox{]} \mbox{\hyperlink{namespacetorchvision__down_1_1models_1_1mnasnet_accb5ae7a1a5d5e0ddb6f8135298ffd41}{\+\_\+get\+\_\+depths}} (float alpha)
+\item 
+None \mbox{\hyperlink{namespacetorchvision__down_1_1models_1_1mnasnet_a05dc8efbe1523c88dff49405ec773e44}{\+\_\+load\+\_\+pretrained}} (str model\+\_\+name, nn.\+Module model, bool progress)
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1models_1_1mnasnet_1_1_m_n_a_s_net}{MNASNet}} \mbox{\hyperlink{namespacetorchvision__down_1_1models_1_1mnasnet_a68ac2b682840b5df344fd8a0ff7a69c9}{mnasnet0\+\_\+5}} (bool pretrained=False, bool progress=True, \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}Any kwargs)
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1models_1_1mnasnet_1_1_m_n_a_s_net}{MNASNet}} \mbox{\hyperlink{namespacetorchvision__down_1_1models_1_1mnasnet_a45e0e5b23f84b83416f12339b8bb90a4}{mnasnet0\+\_\+75}} (bool pretrained=False, bool progress=True, \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}Any kwargs)
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1models_1_1mnasnet_1_1_m_n_a_s_net}{MNASNet}} \mbox{\hyperlink{namespacetorchvision__down_1_1models_1_1mnasnet_a7b9cf7060cd273c22e56c7f3b8af29e6}{mnasnet1\+\_\+0}} (bool pretrained=False, bool progress=True, \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}Any kwargs)
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1models_1_1mnasnet_1_1_m_n_a_s_net}{MNASNet}} \mbox{\hyperlink{namespacetorchvision__down_1_1models_1_1mnasnet_ad048eb352413597c643b94e9f4475aea}{mnasnet1\+\_\+3}} (bool pretrained=False, bool progress=True, \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}Any kwargs)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+list \mbox{\hyperlink{namespacetorchvision__down_1_1models_1_1mnasnet_a3aab2260c1b1b95c76561ba2501111a9}{\+\_\+\+\_\+all\+\_\+\+\_\+}} = \mbox{[}"{}MNASNet"{}, "{}mnasnet0\+\_\+5"{}, "{}mnasnet0\+\_\+75"{}, "{}mnasnet1\+\_\+0"{}, "{}mnasnet1\+\_\+3"{}\mbox{]}
+\item 
+dict \mbox{\hyperlink{namespacetorchvision__down_1_1models_1_1mnasnet_a339a298020826243f8e9e24573b38f6b}{\+\_\+\+MODEL\+\_\+\+URLS}}
+\item 
+int \mbox{\hyperlink{namespacetorchvision__down_1_1models_1_1mnasnet_a2e379988baeb17121362720b3caf0665}{\+\_\+\+BN\+\_\+\+MOMENTUM}} = 1 -\/ 0.\+9997
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{namespacetorchvision__down_1_1models_1_1mnasnet_accb5ae7a1a5d5e0ddb6f8135298ffd41}\index{torchvision\_down.models.mnasnet@{torchvision\_down.models.mnasnet}!\_get\_depths@{\_get\_depths}}
+\index{\_get\_depths@{\_get\_depths}!torchvision\_down.models.mnasnet@{torchvision\_down.models.mnasnet}}
+\doxysubsubsection{\texorpdfstring{\_get\_depths()}{\_get\_depths()}}
+{\footnotesize\ttfamily \label{namespacetorchvision__down_1_1models_1_1mnasnet_accb5ae7a1a5d5e0ddb6f8135298ffd41} 
+ List\mbox{[}int\mbox{]} torchvision\+\_\+down.\+models.\+mnasnet.\+\_\+get\+\_\+depths (\begin{DoxyParamCaption}\item[{float}]{alpha}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\begin{DoxyVerb}Scales tensor depths as in reference MobileNet code, prefers rouding up
+rather than down.\end{DoxyVerb}
+ \Hypertarget{namespacetorchvision__down_1_1models_1_1mnasnet_a05dc8efbe1523c88dff49405ec773e44}\index{torchvision\_down.models.mnasnet@{torchvision\_down.models.mnasnet}!\_load\_pretrained@{\_load\_pretrained}}
+\index{\_load\_pretrained@{\_load\_pretrained}!torchvision\_down.models.mnasnet@{torchvision\_down.models.mnasnet}}
+\doxysubsubsection{\texorpdfstring{\_load\_pretrained()}{\_load\_pretrained()}}
+{\footnotesize\ttfamily \label{namespacetorchvision__down_1_1models_1_1mnasnet_a05dc8efbe1523c88dff49405ec773e44} 
+ None torchvision\+\_\+down.\+models.\+mnasnet.\+\_\+load\+\_\+pretrained (\begin{DoxyParamCaption}\item[{str}]{model\+\_\+name}{, }\item[{nn.\+Module}]{model}{, }\item[{bool}]{progress}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{namespacetorchvision__down_1_1models_1_1mnasnet_ae15a16e69da2133fbe11b2c3681131e7}\index{torchvision\_down.models.mnasnet@{torchvision\_down.models.mnasnet}!\_round\_to\_multiple\_of@{\_round\_to\_multiple\_of}}
+\index{\_round\_to\_multiple\_of@{\_round\_to\_multiple\_of}!torchvision\_down.models.mnasnet@{torchvision\_down.models.mnasnet}}
+\doxysubsubsection{\texorpdfstring{\_round\_to\_multiple\_of()}{\_round\_to\_multiple\_of()}}
+{\footnotesize\ttfamily \label{namespacetorchvision__down_1_1models_1_1mnasnet_ae15a16e69da2133fbe11b2c3681131e7} 
+ int torchvision\+\_\+down.\+models.\+mnasnet.\+\_\+round\+\_\+to\+\_\+multiple\+\_\+of (\begin{DoxyParamCaption}\item[{float}]{val}{, }\item[{int}]{divisor}{, }\item[{float }]{round\+\_\+up\+\_\+bias}{ = {\ttfamily 0.9}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\begin{DoxyVerb}Asymmetric rounding to make `val` divisible by `divisor`. With default
+bias, will round up, unless the number is no more than 10% greater than the
+smaller divisible value, i.e. (83, 8) -> 80, but (84, 8) -> 88.\end{DoxyVerb}
+ \Hypertarget{namespacetorchvision__down_1_1models_1_1mnasnet_ae2f3e3af96835f032fe7881f11b1c979}\index{torchvision\_down.models.mnasnet@{torchvision\_down.models.mnasnet}!\_stack@{\_stack}}
+\index{\_stack@{\_stack}!torchvision\_down.models.mnasnet@{torchvision\_down.models.mnasnet}}
+\doxysubsubsection{\texorpdfstring{\_stack()}{\_stack()}}
+{\footnotesize\ttfamily \label{namespacetorchvision__down_1_1models_1_1mnasnet_ae2f3e3af96835f032fe7881f11b1c979} 
+ nn.\+Sequential torchvision\+\_\+down.\+models.\+mnasnet.\+\_\+stack (\begin{DoxyParamCaption}\item[{int}]{in\+\_\+ch}{, }\item[{int}]{out\+\_\+ch}{, }\item[{int}]{kernel\+\_\+size}{, }\item[{int}]{stride}{, }\item[{int}]{exp\+\_\+factor}{, }\item[{int}]{repeats}{, }\item[{float }]{bn\+\_\+momentum}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\begin{DoxyVerb}Creates a stack of inverted residuals.\end{DoxyVerb}
+ \Hypertarget{namespacetorchvision__down_1_1models_1_1mnasnet_a68ac2b682840b5df344fd8a0ff7a69c9}\index{torchvision\_down.models.mnasnet@{torchvision\_down.models.mnasnet}!mnasnet0\_5@{mnasnet0\_5}}
+\index{mnasnet0\_5@{mnasnet0\_5}!torchvision\_down.models.mnasnet@{torchvision\_down.models.mnasnet}}
+\doxysubsubsection{\texorpdfstring{mnasnet0\_5()}{mnasnet0\_5()}}
+{\footnotesize\ttfamily \label{namespacetorchvision__down_1_1models_1_1mnasnet_a68ac2b682840b5df344fd8a0ff7a69c9} 
+ \mbox{\hyperlink{classtorchvision__down_1_1models_1_1mnasnet_1_1_m_n_a_s_net}{MNASNet}} torchvision\+\_\+down.\+models.\+mnasnet.\+mnasnet0\+\_\+5 (\begin{DoxyParamCaption}\item[{bool }]{pretrained}{ = {\ttfamily False}, }\item[{bool }]{progress}{ = {\ttfamily True}, }\item[{\texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}Any}]{kwargs}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}MNASNet with depth multiplier of 0.5 from
+`"MnasNet: Platform-Aware Neural Architecture Search for Mobile"
+<https://arxiv.org/pdf/1807.11626.pdf>`_.
+
+Args:
+pretrained (bool): If True, returns a model pre-trained on ImageNet
+progress (bool): If True, displays a progress bar of the download to stderr
+\end{DoxyVerb}
+ \Hypertarget{namespacetorchvision__down_1_1models_1_1mnasnet_a45e0e5b23f84b83416f12339b8bb90a4}\index{torchvision\_down.models.mnasnet@{torchvision\_down.models.mnasnet}!mnasnet0\_75@{mnasnet0\_75}}
+\index{mnasnet0\_75@{mnasnet0\_75}!torchvision\_down.models.mnasnet@{torchvision\_down.models.mnasnet}}
+\doxysubsubsection{\texorpdfstring{mnasnet0\_75()}{mnasnet0\_75()}}
+{\footnotesize\ttfamily \label{namespacetorchvision__down_1_1models_1_1mnasnet_a45e0e5b23f84b83416f12339b8bb90a4} 
+ \mbox{\hyperlink{classtorchvision__down_1_1models_1_1mnasnet_1_1_m_n_a_s_net}{MNASNet}} torchvision\+\_\+down.\+models.\+mnasnet.\+mnasnet0\+\_\+75 (\begin{DoxyParamCaption}\item[{bool }]{pretrained}{ = {\ttfamily False}, }\item[{bool }]{progress}{ = {\ttfamily True}, }\item[{\texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}Any}]{kwargs}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}MNASNet with depth multiplier of 0.75 from
+`"MnasNet: Platform-Aware Neural Architecture Search for Mobile"
+<https://arxiv.org/pdf/1807.11626.pdf>`_.
+
+Args:
+pretrained (bool): If True, returns a model pre-trained on ImageNet
+progress (bool): If True, displays a progress bar of the download to stderr
+\end{DoxyVerb}
+ \Hypertarget{namespacetorchvision__down_1_1models_1_1mnasnet_a7b9cf7060cd273c22e56c7f3b8af29e6}\index{torchvision\_down.models.mnasnet@{torchvision\_down.models.mnasnet}!mnasnet1\_0@{mnasnet1\_0}}
+\index{mnasnet1\_0@{mnasnet1\_0}!torchvision\_down.models.mnasnet@{torchvision\_down.models.mnasnet}}
+\doxysubsubsection{\texorpdfstring{mnasnet1\_0()}{mnasnet1\_0()}}
+{\footnotesize\ttfamily \label{namespacetorchvision__down_1_1models_1_1mnasnet_a7b9cf7060cd273c22e56c7f3b8af29e6} 
+ \mbox{\hyperlink{classtorchvision__down_1_1models_1_1mnasnet_1_1_m_n_a_s_net}{MNASNet}} torchvision\+\_\+down.\+models.\+mnasnet.\+mnasnet1\+\_\+0 (\begin{DoxyParamCaption}\item[{bool }]{pretrained}{ = {\ttfamily False}, }\item[{bool }]{progress}{ = {\ttfamily True}, }\item[{\texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}Any}]{kwargs}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}MNASNet with depth multiplier of 1.0 from
+`"MnasNet: Platform-Aware Neural Architecture Search for Mobile"
+<https://arxiv.org/pdf/1807.11626.pdf>`_.
+
+Args:
+pretrained (bool): If True, returns a model pre-trained on ImageNet
+progress (bool): If True, displays a progress bar of the download to stderr
+\end{DoxyVerb}
+ \Hypertarget{namespacetorchvision__down_1_1models_1_1mnasnet_ad048eb352413597c643b94e9f4475aea}\index{torchvision\_down.models.mnasnet@{torchvision\_down.models.mnasnet}!mnasnet1\_3@{mnasnet1\_3}}
+\index{mnasnet1\_3@{mnasnet1\_3}!torchvision\_down.models.mnasnet@{torchvision\_down.models.mnasnet}}
+\doxysubsubsection{\texorpdfstring{mnasnet1\_3()}{mnasnet1\_3()}}
+{\footnotesize\ttfamily \label{namespacetorchvision__down_1_1models_1_1mnasnet_ad048eb352413597c643b94e9f4475aea} 
+ \mbox{\hyperlink{classtorchvision__down_1_1models_1_1mnasnet_1_1_m_n_a_s_net}{MNASNet}} torchvision\+\_\+down.\+models.\+mnasnet.\+mnasnet1\+\_\+3 (\begin{DoxyParamCaption}\item[{bool }]{pretrained}{ = {\ttfamily False}, }\item[{bool }]{progress}{ = {\ttfamily True}, }\item[{\texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}Any}]{kwargs}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}MNASNet with depth multiplier of 1.3 from
+`"MnasNet: Platform-Aware Neural Architecture Search for Mobile"
+<https://arxiv.org/pdf/1807.11626.pdf>`_.
+
+Args:
+pretrained (bool): If True, returns a model pre-trained on ImageNet
+progress (bool): If True, displays a progress bar of the download to stderr
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Variable Documentation}
+\Hypertarget{namespacetorchvision__down_1_1models_1_1mnasnet_a3aab2260c1b1b95c76561ba2501111a9}\index{torchvision\_down.models.mnasnet@{torchvision\_down.models.mnasnet}!\_\_all\_\_@{\_\_all\_\_}}
+\index{\_\_all\_\_@{\_\_all\_\_}!torchvision\_down.models.mnasnet@{torchvision\_down.models.mnasnet}}
+\doxysubsubsection{\texorpdfstring{\_\_all\_\_}{\_\_all\_\_}}
+{\footnotesize\ttfamily \label{namespacetorchvision__down_1_1models_1_1mnasnet_a3aab2260c1b1b95c76561ba2501111a9} 
+list torchvision\+\_\+down.\+models.\+mnasnet.\+\_\+\+\_\+all\+\_\+\+\_\+ = \mbox{[}"{}MNASNet"{}, "{}mnasnet0\+\_\+5"{}, "{}mnasnet0\+\_\+75"{}, "{}mnasnet1\+\_\+0"{}, "{}mnasnet1\+\_\+3"{}\mbox{]}\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{namespacetorchvision__down_1_1models_1_1mnasnet_a2e379988baeb17121362720b3caf0665}\index{torchvision\_down.models.mnasnet@{torchvision\_down.models.mnasnet}!\_BN\_MOMENTUM@{\_BN\_MOMENTUM}}
+\index{\_BN\_MOMENTUM@{\_BN\_MOMENTUM}!torchvision\_down.models.mnasnet@{torchvision\_down.models.mnasnet}}
+\doxysubsubsection{\texorpdfstring{\_BN\_MOMENTUM}{\_BN\_MOMENTUM}}
+{\footnotesize\ttfamily \label{namespacetorchvision__down_1_1models_1_1mnasnet_a2e379988baeb17121362720b3caf0665} 
+int torchvision\+\_\+down.\+models.\+mnasnet.\+\_\+\+BN\+\_\+\+MOMENTUM = 1 -\/ 0.\+9997\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{namespacetorchvision__down_1_1models_1_1mnasnet_a339a298020826243f8e9e24573b38f6b}\index{torchvision\_down.models.mnasnet@{torchvision\_down.models.mnasnet}!\_MODEL\_URLS@{\_MODEL\_URLS}}
+\index{\_MODEL\_URLS@{\_MODEL\_URLS}!torchvision\_down.models.mnasnet@{torchvision\_down.models.mnasnet}}
+\doxysubsubsection{\texorpdfstring{\_MODEL\_URLS}{\_MODEL\_URLS}}
+{\footnotesize\ttfamily \label{namespacetorchvision__down_1_1models_1_1mnasnet_a339a298020826243f8e9e24573b38f6b} 
+dict torchvision\+\_\+down.\+models.\+mnasnet.\+\_\+\+MODEL\+\_\+\+URLS\hspace{0.3cm}{\ttfamily [protected]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ =\ \ \{}
+\DoxyCodeLine{00002\ \ \ \ \ \textcolor{stringliteral}{"{}mnasnet0\_5"{}}:\ \textcolor{stringliteral}{"{}https://download.pytorch.org/models/mnasnet0.5\_top1\_67.823-\/3ffadce67e.pth"{}},}
+\DoxyCodeLine{00003\ \ \ \ \ \textcolor{stringliteral}{"{}mnasnet0\_75"{}}:\ \textcolor{keywordtype}{None},}
+\DoxyCodeLine{00004\ \ \ \ \ \textcolor{stringliteral}{"{}mnasnet1\_0"{}}:\ \textcolor{stringliteral}{"{}https://download.pytorch.org/models/mnasnet1.0\_top1\_73.512-\/f206786ef8.pth"{}},}
+\DoxyCodeLine{00005\ \ \ \ \ \textcolor{stringliteral}{"{}mnasnet1\_3"{}}:\ \textcolor{keywordtype}{None},}
+\DoxyCodeLine{00006\ \}}
+
+\end{DoxyCode}

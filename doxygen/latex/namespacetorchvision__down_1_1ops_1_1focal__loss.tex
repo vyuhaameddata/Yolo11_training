@@ -1,0 +1,37 @@
+\doxysection{torchvision\+\_\+down.\+ops.\+focal\+\_\+loss Namespace Reference}
+\hypertarget{namespacetorchvision__down_1_1ops_1_1focal__loss}{}\label{namespacetorchvision__down_1_1ops_1_1focal__loss}\index{torchvision\_down.ops.focal\_loss@{torchvision\_down.ops.focal\_loss}}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{namespacetorchvision__down_1_1ops_1_1focal__loss_aec99fa1fda0a41bd61cb6157e1d3c47c}{sigmoid\+\_\+focal\+\_\+loss}} (torch.\+Tensor inputs, torch.\+Tensor targets, float alpha=0.\+25, float gamma=2, str reduction="{}none"{})
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{namespacetorchvision__down_1_1ops_1_1focal__loss_aec99fa1fda0a41bd61cb6157e1d3c47c}\index{torchvision\_down.ops.focal\_loss@{torchvision\_down.ops.focal\_loss}!sigmoid\_focal\_loss@{sigmoid\_focal\_loss}}
+\index{sigmoid\_focal\_loss@{sigmoid\_focal\_loss}!torchvision\_down.ops.focal\_loss@{torchvision\_down.ops.focal\_loss}}
+\doxysubsubsection{\texorpdfstring{sigmoid\_focal\_loss()}{sigmoid\_focal\_loss()}}
+{\footnotesize\ttfamily \label{namespacetorchvision__down_1_1ops_1_1focal__loss_aec99fa1fda0a41bd61cb6157e1d3c47c} 
+torchvision\+\_\+down.\+ops.\+focal\+\_\+loss.\+sigmoid\+\_\+focal\+\_\+loss (\begin{DoxyParamCaption}\item[{torch.\+Tensor}]{inputs}{, }\item[{torch.\+Tensor}]{targets}{, }\item[{float }]{alpha}{ = {\ttfamily 0.25}, }\item[{float }]{gamma}{ = {\ttfamily 2}, }\item[{str }]{reduction}{ = {\ttfamily "{}none"{}}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Original implementation from https://github.com/facebookresearch/fvcore/blob/master/fvcore/nn/focal_loss.py .
+Loss used in RetinaNet for dense detection: https://arxiv.org/abs/1708.02002.
+
+Args:
+    inputs: A float tensor of arbitrary shape.
+            The predictions for each example.
+    targets: A float tensor with the same shape as inputs. Stores the binary
+            classification label for each element in inputs
+            (0 for the negative class and 1 for the positive class).
+    alpha: (optional) Weighting factor in range (0,1) to balance
+            positive vs negative examples or -1 for ignore. Default = 0.25
+    gamma: Exponent of the modulating factor (1 - p_t) to
+           balance easy vs hard examples.
+    reduction: 'none' | 'mean' | 'sum'
+             'none': No reduction will be applied to the output.
+             'mean': The output will be averaged.
+             'sum': The output will be summed.
+Returns:
+    Loss tensor with the reduction option applied.
+\end{DoxyVerb}
+ 

@@ -1,0 +1,116 @@
+\doxysection{utils.\+add\+\_\+nms.\+Register\+NMS Class Reference}
+\hypertarget{classutils_1_1add__nms_1_1_register_n_m_s}{}\label{classutils_1_1add__nms_1_1_register_n_m_s}\index{utils.add\_nms.RegisterNMS@{utils.add\_nms.RegisterNMS}}
+Inheritance diagram for utils.\+add\+\_\+nms.\+Register\+NMS\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classutils_1_1add__nms_1_1_register_n_m_s}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classutils_1_1add__nms_1_1_register_n_m_s_a20cda9eb4198a6d013ef980f3a5b2cc8}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, str onnx\+\_\+model\+\_\+path, str \mbox{\hyperlink{classutils_1_1add__nms_1_1_register_n_m_s_a861178354960b456b63594159e8108ba}{precision}}="{}fp32"{})
+\item 
+\mbox{\hyperlink{classutils_1_1add__nms_1_1_register_n_m_s_a95e6993127963d989e41eae9c2cdba27}{infer}} (self)
+\item 
+\mbox{\hyperlink{classutils_1_1add__nms_1_1_register_n_m_s_afd23baa75d3861e39ec8b79580e7a0dc}{save}} (self, output\+\_\+path)
+\item 
+\mbox{\hyperlink{classutils_1_1add__nms_1_1_register_n_m_s_afcf53e26b8409f390b01a8fbd18dd765}{register\+\_\+nms}} (self, \texorpdfstring{$\ast$}{*}, float score\+\_\+thresh=0.\+25, float nms\+\_\+thresh=0.\+45, int detections\+\_\+per\+\_\+img=100)
+\item 
+\mbox{\hyperlink{classutils_1_1add__nms_1_1_register_n_m_s_afd23baa75d3861e39ec8b79580e7a0dc}{save}} (self, output\+\_\+path)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classutils_1_1add__nms_1_1_register_n_m_s_ae55647831fbcd9895d700e8a42fd4c2c}{graph}} = gs.\+import\+\_\+onnx(onnx.\+load(onnx\+\_\+model\+\_\+path))
+\item 
+str \mbox{\hyperlink{classutils_1_1add__nms_1_1_register_n_m_s_a861178354960b456b63594159e8108ba}{precision}} = precision
+\item 
+int \mbox{\hyperlink{classutils_1_1add__nms_1_1_register_n_m_s_a7283d58dae6f6c854f2c27849c2e1f2d}{batch\+\_\+size}} = 1
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classutils_1_1add__nms_1_1_register_n_m_s_a20cda9eb4198a6d013ef980f3a5b2cc8}\index{utils.add\_nms.RegisterNMS@{utils.add\_nms.RegisterNMS}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!utils.add\_nms.RegisterNMS@{utils.add\_nms.RegisterNMS}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily \label{classutils_1_1add__nms_1_1_register_n_m_s_a20cda9eb4198a6d013ef980f3a5b2cc8} 
+utils.\+add\+\_\+nms.\+Register\+NMS.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{str}]{onnx\+\_\+model\+\_\+path}{, }\item[{str }]{precision}{ = {\ttfamily "{}fp32"{}}}\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classutils_1_1add__nms_1_1_register_n_m_s_a95e6993127963d989e41eae9c2cdba27}\index{utils.add\_nms.RegisterNMS@{utils.add\_nms.RegisterNMS}!infer@{infer}}
+\index{infer@{infer}!utils.add\_nms.RegisterNMS@{utils.add\_nms.RegisterNMS}}
+\doxysubsubsection{\texorpdfstring{infer()}{infer()}}
+{\footnotesize\ttfamily \label{classutils_1_1add__nms_1_1_register_n_m_s_a95e6993127963d989e41eae9c2cdba27} 
+utils.\+add\+\_\+nms.\+Register\+NMS.\+infer (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Sanitize the graph by cleaning any unconnected nodes, do a topological resort,
+and fold constant inputs values. When possible, run shape inference on the
+ONNX graph to determine tensor shapes.
+\end{DoxyVerb}
+ \Hypertarget{classutils_1_1add__nms_1_1_register_n_m_s_afcf53e26b8409f390b01a8fbd18dd765}\index{utils.add\_nms.RegisterNMS@{utils.add\_nms.RegisterNMS}!register\_nms@{register\_nms}}
+\index{register\_nms@{register\_nms}!utils.add\_nms.RegisterNMS@{utils.add\_nms.RegisterNMS}}
+\doxysubsubsection{\texorpdfstring{register\_nms()}{register\_nms()}}
+{\footnotesize\ttfamily \label{classutils_1_1add__nms_1_1_register_n_m_s_afcf53e26b8409f390b01a8fbd18dd765} 
+utils.\+add\+\_\+nms.\+Register\+NMS.\+register\+\_\+nms (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{\texorpdfstring{$\ast$}{*}}]{}{, }\item[{float }]{score\+\_\+thresh}{ = {\ttfamily 0.25}, }\item[{float }]{nms\+\_\+thresh}{ = {\ttfamily 0.45}, }\item[{int }]{detections\+\_\+per\+\_\+img}{ = {\ttfamily 100}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Register the ``EfficientNMS_TRT`` plugin node.
+NMS expects these shapes for its input tensors:
+    - box_net: [batch_size, number_boxes, 4]
+    - class_net: [batch_size, number_boxes, number_labels]
+Args:
+    score_thresh (float): The scalar threshold for score (low scoring boxes are removed).
+    nms_thresh (float): The scalar threshold for IOU (new boxes that have high IOU
+        overlap with previously selected boxes are removed).
+    detections_per_img (int): Number of best detections to keep after NMS.
+\end{DoxyVerb}
+ \Hypertarget{classutils_1_1add__nms_1_1_register_n_m_s_afd23baa75d3861e39ec8b79580e7a0dc}\index{utils.add\_nms.RegisterNMS@{utils.add\_nms.RegisterNMS}!save@{save}}
+\index{save@{save}!utils.add\_nms.RegisterNMS@{utils.add\_nms.RegisterNMS}}
+\doxysubsubsection{\texorpdfstring{save()}{save()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{classutils_1_1add__nms_1_1_register_n_m_s_afd23baa75d3861e39ec8b79580e7a0dc} 
+utils.\+add\+\_\+nms.\+Register\+NMS.\+save (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{output\+\_\+path}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Save the ONNX model to the given location.
+Args:
+    output_path: Path pointing to the location where to write
+        out the updated ONNX model.
+\end{DoxyVerb}
+ \Hypertarget{classutils_1_1add__nms_1_1_register_n_m_s_afd23baa75d3861e39ec8b79580e7a0dc}\index{utils.add\_nms.RegisterNMS@{utils.add\_nms.RegisterNMS}!save@{save}}
+\index{save@{save}!utils.add\_nms.RegisterNMS@{utils.add\_nms.RegisterNMS}}
+\doxysubsubsection{\texorpdfstring{save()}{save()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{classutils_1_1add__nms_1_1_register_n_m_s_afd23baa75d3861e39ec8b79580e7a0dc} 
+utils.\+add\+\_\+nms.\+Register\+NMS.\+save (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{output\+\_\+path}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Save the ONNX model to the given location.
+Args:
+    output_path: Path pointing to the location where to write
+        out the updated ONNX model.
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classutils_1_1add__nms_1_1_register_n_m_s_a7283d58dae6f6c854f2c27849c2e1f2d}\index{utils.add\_nms.RegisterNMS@{utils.add\_nms.RegisterNMS}!batch\_size@{batch\_size}}
+\index{batch\_size@{batch\_size}!utils.add\_nms.RegisterNMS@{utils.add\_nms.RegisterNMS}}
+\doxysubsubsection{\texorpdfstring{batch\_size}{batch\_size}}
+{\footnotesize\ttfamily \label{classutils_1_1add__nms_1_1_register_n_m_s_a7283d58dae6f6c854f2c27849c2e1f2d} 
+int utils.\+add\+\_\+nms.\+Register\+NMS.\+batch\+\_\+size = 1}
+
+\Hypertarget{classutils_1_1add__nms_1_1_register_n_m_s_ae55647831fbcd9895d700e8a42fd4c2c}\index{utils.add\_nms.RegisterNMS@{utils.add\_nms.RegisterNMS}!graph@{graph}}
+\index{graph@{graph}!utils.add\_nms.RegisterNMS@{utils.add\_nms.RegisterNMS}}
+\doxysubsubsection{\texorpdfstring{graph}{graph}}
+{\footnotesize\ttfamily \label{classutils_1_1add__nms_1_1_register_n_m_s_ae55647831fbcd9895d700e8a42fd4c2c} 
+utils.\+add\+\_\+nms.\+Register\+NMS.\+graph = gs.\+import\+\_\+onnx(onnx.\+load(onnx\+\_\+model\+\_\+path))}
+
+\Hypertarget{classutils_1_1add__nms_1_1_register_n_m_s_a861178354960b456b63594159e8108ba}\index{utils.add\_nms.RegisterNMS@{utils.add\_nms.RegisterNMS}!precision@{precision}}
+\index{precision@{precision}!utils.add\_nms.RegisterNMS@{utils.add\_nms.RegisterNMS}}
+\doxysubsubsection{\texorpdfstring{precision}{precision}}
+{\footnotesize\ttfamily \label{classutils_1_1add__nms_1_1_register_n_m_s_a861178354960b456b63594159e8108ba} 
+str utils.\+add\+\_\+nms.\+Register\+NMS.\+precision = precision}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Cervi\+AI/utils/\mbox{\hyperlink{add__nms_8py}{add\+\_\+nms.\+py}}\end{DoxyCompactItemize}

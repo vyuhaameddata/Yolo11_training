@@ -1,0 +1,27 @@
+\doxysection{torchvision\+\_\+down.\+models.\+\_\+utils Namespace Reference}
+\hypertarget{namespacetorchvision__down_1_1models_1_1__utils}{}\label{namespacetorchvision__down_1_1models_1_1__utils}\index{torchvision\_down.models.\_utils@{torchvision\_down.models.\_utils}}
+\doxysubsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classtorchvision__down_1_1models_1_1__utils_1_1_intermediate_layer_getter}{Intermediate\+Layer\+Getter}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{namespacetorchvision__down_1_1models_1_1__utils_ae0ff27e1aa140da1f889a408cf9ea919}{\+\_\+make\+\_\+divisible}} (float v, int divisor, Optional\mbox{[}int\mbox{]} min\+\_\+value=None)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{namespacetorchvision__down_1_1models_1_1__utils_ae0ff27e1aa140da1f889a408cf9ea919}\index{torchvision\_down.models.\_utils@{torchvision\_down.models.\_utils}!\_make\_divisible@{\_make\_divisible}}
+\index{\_make\_divisible@{\_make\_divisible}!torchvision\_down.models.\_utils@{torchvision\_down.models.\_utils}}
+\doxysubsubsection{\texorpdfstring{\_make\_divisible()}{\_make\_divisible()}}
+{\footnotesize\ttfamily \label{namespacetorchvision__down_1_1models_1_1__utils_ae0ff27e1aa140da1f889a408cf9ea919} 
+ int torchvision\+\_\+down.\+models.\+\_\+utils.\+\_\+make\+\_\+divisible (\begin{DoxyParamCaption}\item[{float}]{v}{, }\item[{int}]{divisor}{, }\item[{Optional\mbox{[}int\mbox{]} }]{min\+\_\+value}{ = {\ttfamily None}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\begin{DoxyVerb}This function is taken from the original tf repo.
+It ensures that all layers have a channel number that is divisible by 8
+It can be seen here:
+https://github.com/tensorflow/models/blob/master/research/slim/nets/mobilenet/mobilenet.py
+\end{DoxyVerb}
+ 

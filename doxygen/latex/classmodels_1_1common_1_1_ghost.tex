@@ -1,0 +1,67 @@
+\doxysection{models.\+common.\+Ghost Class Reference}
+\hypertarget{classmodels_1_1common_1_1_ghost}{}\label{classmodels_1_1common_1_1_ghost}\index{models.common.Ghost@{models.common.Ghost}}
+Inheritance diagram for models.\+common.\+Ghost\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classmodels_1_1common_1_1_ghost}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classmodels_1_1common_1_1_ghost_ac9d191e62db687912188276cdc386ebc}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, c1, c2, k=3, s=1)
+\item 
+\mbox{\hyperlink{classmodels_1_1common_1_1_ghost_a8ab214e75fd4e05fdc2f96150d205958}{forward}} (self, x)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classmodels_1_1common_1_1_ghost_a72048a6c5d1a5c3efbc370fd134d7185}{conv}}
+\item 
+int \mbox{\hyperlink{classmodels_1_1common_1_1_ghost_aeb41af89b9064834e3f405f448fe7949}{shortcut}} = 2 else nn.\+Identity()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classmodels_1_1common_1_1_ghost_ac9d191e62db687912188276cdc386ebc}\index{models.common.Ghost@{models.common.Ghost}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!models.common.Ghost@{models.common.Ghost}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily \label{classmodels_1_1common_1_1_ghost_ac9d191e62db687912188276cdc386ebc} 
+models.\+common.\+Ghost.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{c1}{, }\item[{}]{c2}{, }\item[{}]{k}{ = {\ttfamily 3}, }\item[{}]{s}{ = {\ttfamily 1}}\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classmodels_1_1common_1_1_ghost_a8ab214e75fd4e05fdc2f96150d205958}\index{models.common.Ghost@{models.common.Ghost}!forward@{forward}}
+\index{forward@{forward}!models.common.Ghost@{models.common.Ghost}}
+\doxysubsubsection{\texorpdfstring{forward()}{forward()}}
+{\footnotesize\ttfamily \label{classmodels_1_1common_1_1_ghost_a8ab214e75fd4e05fdc2f96150d205958} 
+models.\+common.\+Ghost.\+forward (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{x}{}\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classmodels_1_1common_1_1_ghost_a72048a6c5d1a5c3efbc370fd134d7185}\index{models.common.Ghost@{models.common.Ghost}!conv@{conv}}
+\index{conv@{conv}!models.common.Ghost@{models.common.Ghost}}
+\doxysubsubsection{\texorpdfstring{conv}{conv}}
+{\footnotesize\ttfamily \label{classmodels_1_1common_1_1_ghost_a72048a6c5d1a5c3efbc370fd134d7185} 
+models.\+common.\+Ghost.\+conv}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \ nn.Sequential(GhostConv(c1,\ c\_,\ 1,\ 1),\ \ \textcolor{comment}{\#\ pw}}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ DWConv(c\_,\ c\_,\ k,\ s,\ act=\textcolor{keyword}{False})\ \textcolor{keywordflow}{if}\ s\ ==\ 2\ \textcolor{keywordflow}{else}\ nn.Identity(),\ \ \textcolor{comment}{\#\ dw}}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ GhostConv(c\_,\ c2,\ 1,\ 1,\ act=\textcolor{keyword}{False}))}
+
+\end{DoxyCode}
+\Hypertarget{classmodels_1_1common_1_1_ghost_aeb41af89b9064834e3f405f448fe7949}\index{models.common.Ghost@{models.common.Ghost}!shortcut@{shortcut}}
+\index{shortcut@{shortcut}!models.common.Ghost@{models.common.Ghost}}
+\doxysubsubsection{\texorpdfstring{shortcut}{shortcut}}
+{\footnotesize\ttfamily \label{classmodels_1_1common_1_1_ghost_aeb41af89b9064834e3f405f448fe7949} 
+int models.\+common.\+Ghost.\+shortcut = 2 else nn.\+Identity()}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Cervi\+AI/models/\mbox{\hyperlink{common_8py}{common.\+py}}\end{DoxyCompactItemize}

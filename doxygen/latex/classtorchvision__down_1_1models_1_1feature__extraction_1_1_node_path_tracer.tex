@@ -1,0 +1,122 @@
+\doxysection{torchvision\+\_\+down.\+models.\+feature\+\_\+extraction.\+Node\+Path\+Tracer Class Reference}
+\hypertarget{classtorchvision__down_1_1models_1_1feature__extraction_1_1_node_path_tracer}{}\label{classtorchvision__down_1_1models_1_1feature__extraction_1_1_node_path_tracer}\index{torchvision\_down.models.feature\_extraction.NodePathTracer@{torchvision\_down.models.feature\_extraction.NodePathTracer}}
+Inheritance diagram for torchvision\+\_\+down.\+models.\+feature\+\_\+extraction.\+Node\+Path\+Tracer\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{classtorchvision__down_1_1models_1_1feature__extraction_1_1_node_path_tracer}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1models_1_1feature__extraction_1_1_node_path_tracer_a9bf4761cf541c23b3e097369575077ba}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, \texorpdfstring{$\ast$}{*}args, \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}kwargs)
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1models_1_1feature__extraction_1_1_node_path_tracer_a47cfcb2b6ddd7ee8243f6b36dc192b32}{call\+\_\+module}} (self, torch.\+nn.\+Module m, Callable forward, args, kwargs)
+\item 
+fx.\+proxy.\+Proxy \mbox{\hyperlink{classtorchvision__down_1_1models_1_1feature__extraction_1_1_node_path_tracer_a143a3154716a049f4851e27c146a3351}{create\+\_\+proxy}} (self, str kind, fx.\+node.\+Target target, args, kwargs, name=None, type\+\_\+expr=None, \texorpdfstring{$\ast$}{*}\+\_\+)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{classtorchvision__down_1_1models_1_1feature__extraction_1_1_leaf_module_aware_tracer}{torchvision\+\_\+down.\+models.\+feature\+\_\+extraction.\+Leaf\+Module\+Aware\+Tracer}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1models_1_1feature__extraction_1_1_leaf_module_aware_tracer_a47e3ba700c717ae3bf86f855a326e8de}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, \texorpdfstring{$\ast$}{*}args, \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}kwargs)
+\item 
+bool \mbox{\hyperlink{classtorchvision__down_1_1models_1_1feature__extraction_1_1_leaf_module_aware_tracer_ac4aed6a98a748a8937f52a27cd5e273f}{is\+\_\+leaf\+\_\+module}} (self, nn.\+Module m, str module\+\_\+qualname)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+str \mbox{\hyperlink{classtorchvision__down_1_1models_1_1feature__extraction_1_1_node_path_tracer_a7cda6cff8a6b97476a726bda170b7ad4}{current\+\_\+module\+\_\+qualname}} = "{}"{}
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1models_1_1feature__extraction_1_1_node_path_tracer_a667c5f3acd324ba3173c906b6fe5d383}{node\+\_\+to\+\_\+qualname}} = Ordered\+Dict()
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes inherited from \mbox{\hyperlink{classtorchvision__down_1_1models_1_1feature__extraction_1_1_leaf_module_aware_tracer}{torchvision\+\_\+down.\+models.\+feature\+\_\+extraction.\+Leaf\+Module\+Aware\+Tracer}}}
+\begin{DoxyCompactItemize}
+\item 
+dict \mbox{\hyperlink{classtorchvision__down_1_1models_1_1feature__extraction_1_1_leaf_module_aware_tracer_a8026c24b1c475f69649c2e20aaa577e3}{leaf\+\_\+modules}} = \{\}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+str \mbox{\hyperlink{classtorchvision__down_1_1models_1_1feature__extraction_1_1_node_path_tracer_a89cc062e767ef943570d1688b9512ed4}{\+\_\+get\+\_\+node\+\_\+qualname}} (self, str module\+\_\+qualname, fx.\+node.\+Node node)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}NodePathTracer is an FX tracer that, for each operation, also records the
+name of the Node from which the operation originated. A node name here is
+a `.` separated path walking the hierarchy from top level module down to
+leaf operation or leaf module. The name of the top level module is not
+included as part of the node name. For example, if we trace a module whose
+forward method applies a ReLU module, the name for that node will simply
+be 'relu'.
+
+Some notes on the specifics:
+    - Nodes are recorded to `self.node_to_qualname` which is a dictionary
+      mapping a given Node object to its node name.
+    - Nodes are recorded in the order which they are executed during
+      tracing.
+    - When a duplicate node name is encountered, a suffix of the form
+      _{int} is added. The counter starts from 1.
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classtorchvision__down_1_1models_1_1feature__extraction_1_1_node_path_tracer_a9bf4761cf541c23b3e097369575077ba}\index{torchvision\_down.models.feature\_extraction.NodePathTracer@{torchvision\_down.models.feature\_extraction.NodePathTracer}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!torchvision\_down.models.feature\_extraction.NodePathTracer@{torchvision\_down.models.feature\_extraction.NodePathTracer}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1models_1_1feature__extraction_1_1_node_path_tracer_a9bf4761cf541c23b3e097369575077ba} 
+torchvision\+\_\+down.\+models.\+feature\+\_\+extraction.\+Node\+Path\+Tracer.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{\texorpdfstring{$\ast$}{*}}]{args}{, }\item[{\texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}}]{kwargs}{}\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classtorchvision__down_1_1models_1_1feature__extraction_1_1_node_path_tracer_a89cc062e767ef943570d1688b9512ed4}\index{torchvision\_down.models.feature\_extraction.NodePathTracer@{torchvision\_down.models.feature\_extraction.NodePathTracer}!\_get\_node\_qualname@{\_get\_node\_qualname}}
+\index{\_get\_node\_qualname@{\_get\_node\_qualname}!torchvision\_down.models.feature\_extraction.NodePathTracer@{torchvision\_down.models.feature\_extraction.NodePathTracer}}
+\doxysubsubsection{\texorpdfstring{\_get\_node\_qualname()}{\_get\_node\_qualname()}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1models_1_1feature__extraction_1_1_node_path_tracer_a89cc062e767ef943570d1688b9512ed4} 
+ str torchvision\+\_\+down.\+models.\+feature\+\_\+extraction.\+Node\+Path\+Tracer.\+\_\+get\+\_\+node\+\_\+qualname (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{str}]{module\+\_\+qualname}{, }\item[{fx.\+node.\+Node}]{node}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classtorchvision__down_1_1models_1_1feature__extraction_1_1_node_path_tracer_a47cfcb2b6ddd7ee8243f6b36dc192b32}\index{torchvision\_down.models.feature\_extraction.NodePathTracer@{torchvision\_down.models.feature\_extraction.NodePathTracer}!call\_module@{call\_module}}
+\index{call\_module@{call\_module}!torchvision\_down.models.feature\_extraction.NodePathTracer@{torchvision\_down.models.feature\_extraction.NodePathTracer}}
+\doxysubsubsection{\texorpdfstring{call\_module()}{call\_module()}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1models_1_1feature__extraction_1_1_node_path_tracer_a47cfcb2b6ddd7ee8243f6b36dc192b32} 
+torchvision\+\_\+down.\+models.\+feature\+\_\+extraction.\+Node\+Path\+Tracer.\+call\+\_\+module (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{torch.\+nn.\+Module}]{m}{, }\item[{Callable}]{forward}{, }\item[{}]{args}{, }\item[{}]{kwargs}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Override of `fx.Tracer.call_module`
+This override:
+1) Stores away the qualified name of the caller for restoration later
+2) Adds the qualified name of the caller to
+   `current_module_qualname` for retrieval by `create_proxy`
+3) Once a leaf module is reached, calls `create_proxy`
+4) Restores the caller's qualified name into current_module_qualname
+\end{DoxyVerb}
+ \Hypertarget{classtorchvision__down_1_1models_1_1feature__extraction_1_1_node_path_tracer_a143a3154716a049f4851e27c146a3351}\index{torchvision\_down.models.feature\_extraction.NodePathTracer@{torchvision\_down.models.feature\_extraction.NodePathTracer}!create\_proxy@{create\_proxy}}
+\index{create\_proxy@{create\_proxy}!torchvision\_down.models.feature\_extraction.NodePathTracer@{torchvision\_down.models.feature\_extraction.NodePathTracer}}
+\doxysubsubsection{\texorpdfstring{create\_proxy()}{create\_proxy()}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1models_1_1feature__extraction_1_1_node_path_tracer_a143a3154716a049f4851e27c146a3351} 
+ fx.\+proxy.\+Proxy torchvision\+\_\+down.\+models.\+feature\+\_\+extraction.\+Node\+Path\+Tracer.\+create\+\_\+proxy (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{str}]{kind}{, }\item[{fx.\+node.\+Target}]{target}{, }\item[{}]{args}{, }\item[{}]{kwargs}{, }\item[{}]{name}{ = {\ttfamily None}, }\item[{}]{type\+\_\+expr}{ = {\ttfamily None}, }\item[{\texorpdfstring{$\ast$}{*}}]{\+\_\+}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Override of `Tracer.create_proxy`. This override intercepts the recording
+of every operation and stores away the current traced module's qualified
+name in `node_to_qualname`
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classtorchvision__down_1_1models_1_1feature__extraction_1_1_node_path_tracer_a7cda6cff8a6b97476a726bda170b7ad4}\index{torchvision\_down.models.feature\_extraction.NodePathTracer@{torchvision\_down.models.feature\_extraction.NodePathTracer}!current\_module\_qualname@{current\_module\_qualname}}
+\index{current\_module\_qualname@{current\_module\_qualname}!torchvision\_down.models.feature\_extraction.NodePathTracer@{torchvision\_down.models.feature\_extraction.NodePathTracer}}
+\doxysubsubsection{\texorpdfstring{current\_module\_qualname}{current\_module\_qualname}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1models_1_1feature__extraction_1_1_node_path_tracer_a7cda6cff8a6b97476a726bda170b7ad4} 
+str torchvision\+\_\+down.\+models.\+feature\+\_\+extraction.\+Node\+Path\+Tracer.\+current\+\_\+module\+\_\+qualname = "{}"{}}
+
+\Hypertarget{classtorchvision__down_1_1models_1_1feature__extraction_1_1_node_path_tracer_a667c5f3acd324ba3173c906b6fe5d383}\index{torchvision\_down.models.feature\_extraction.NodePathTracer@{torchvision\_down.models.feature\_extraction.NodePathTracer}!node\_to\_qualname@{node\_to\_qualname}}
+\index{node\_to\_qualname@{node\_to\_qualname}!torchvision\_down.models.feature\_extraction.NodePathTracer@{torchvision\_down.models.feature\_extraction.NodePathTracer}}
+\doxysubsubsection{\texorpdfstring{node\_to\_qualname}{node\_to\_qualname}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1models_1_1feature__extraction_1_1_node_path_tracer_a667c5f3acd324ba3173c906b6fe5d383} 
+torchvision\+\_\+down.\+models.\+feature\+\_\+extraction.\+Node\+Path\+Tracer.\+node\+\_\+to\+\_\+qualname = Ordered\+Dict()}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Cervi\+AI/torchvision\+\_\+down/models/\mbox{\hyperlink{feature__extraction_8py}{feature\+\_\+extraction.\+py}}\end{DoxyCompactItemize}

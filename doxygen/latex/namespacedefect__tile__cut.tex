@@ -1,0 +1,104 @@
+\doxysection{defect\+\_\+tile\+\_\+cut Namespace Reference}
+\hypertarget{namespacedefect__tile__cut}{}\label{namespacedefect__tile__cut}\index{defect\_tile\_cut@{defect\_tile\_cut}}
+
+
+
+\begin{DoxyItemize}
+\item Copy 
+\end{DoxyItemize} 
+
+
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{namespacedefect__tile__cut_a51e80e8a8c4300ce409ed91c869cb66d}{get\+\_\+referance}} (wsi\+\_\+path, nm\+\_\+p=221)
+\item 
+\mbox{\hyperlink{namespacedefect__tile__cut_ad365e79bf13789ce1d4b58ae73983a4f}{get\+\_\+lnb}} (xml\+\_\+path, wsi\+\_\+path, nm\+\_\+p=221)
+\item 
+\mbox{\hyperlink{namespacedefect__tile__cut_aa9ee240e7c3b66c25b63098c8bc5ee70}{tile\+\_\+intersection}} (boxA, boxB, limit=5)
+\item 
+\mbox{\hyperlink{namespacedefect__tile__cut_a49559a7c6b0c342368a0a1360f2fd865}{update\+\_\+\+Same\+Tile\+\_\+annotations\+\_\+new}} (tile, anote, lnb)
+\item 
+\mbox{\hyperlink{namespacedefect__tile__cut_a4e677c09d76dd8723dbd75dfa64ca52b}{xy2yolo}} (x1, y1, x2, y2, tile\+\_\+size)
+\item 
+\mbox{\hyperlink{namespacedefect__tile__cut_ab7c3ad1aebe24a5b9247e2abf3ee05a2}{Get\+\_\+\+Defect\+\_\+tiles\+\_\+new}} (fname, lnb, dump\+\_\+folder, slide, defect, tile\+\_\+size=1024)
+\item 
+\mbox{\hyperlink{namespacedefect__tile__cut_ae020fa8f78c956b5fec84e94da74f1a4}{dump\+\_\+annotation\+\_\+tiles}} (folder, tile\+\_\+size, nm\+\_\+p)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+dict \mbox{\hyperlink{namespacedefect__tile__cut_ac366b279b157236bd50cbe8a9e6df19d}{class\+\_\+dict}} = \{"{}LSIL"{}\+: 0 ,"{}HSIL"{}\+: 1 ,"{}ASC-\/H"{}\+: 2 , "{}ASCUS"{}\+: 3 , "{}AGUS"{}\+: 4, "{}SQUAMOUS CELL CARCINOMA"{}\+: 5\}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+
+\begin{DoxyItemize}
+\item Copy 
+\end{DoxyItemize}
+
+\begin{DoxyVerb}Created on Tue Dec 20 13:04:18 2022 by Krishna
+
+@author: lucid
+
+Docmumented on 20 feb 2024 by shreyan
+dump_annotation_tiles : function to call for generating tiles from annotations 
+get_lnb : takes ndpa file and to create list for each annotation in the file :  [(id, length breadth, center coords, title)
+
+edited by shreyan on 21 feb 2025: to adjust to naming convention for new training data
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Function Documentation}
+\Hypertarget{namespacedefect__tile__cut_ae020fa8f78c956b5fec84e94da74f1a4}\index{defect\_tile\_cut@{defect\_tile\_cut}!dump\_annotation\_tiles@{dump\_annotation\_tiles}}
+\index{dump\_annotation\_tiles@{dump\_annotation\_tiles}!defect\_tile\_cut@{defect\_tile\_cut}}
+\doxysubsubsection{\texorpdfstring{dump\_annotation\_tiles()}{dump\_annotation\_tiles()}}
+{\footnotesize\ttfamily \label{namespacedefect__tile__cut_ae020fa8f78c956b5fec84e94da74f1a4} 
+defect\+\_\+tile\+\_\+cut.\+dump\+\_\+annotation\+\_\+tiles (\begin{DoxyParamCaption}\item[{}]{folder}{, }\item[{}]{tile\+\_\+size}{, }\item[{}]{nm\+\_\+p}{}\end{DoxyParamCaption})}
+
+\Hypertarget{namespacedefect__tile__cut_ab7c3ad1aebe24a5b9247e2abf3ee05a2}\index{defect\_tile\_cut@{defect\_tile\_cut}!Get\_Defect\_tiles\_new@{Get\_Defect\_tiles\_new}}
+\index{Get\_Defect\_tiles\_new@{Get\_Defect\_tiles\_new}!defect\_tile\_cut@{defect\_tile\_cut}}
+\doxysubsubsection{\texorpdfstring{Get\_Defect\_tiles\_new()}{Get\_Defect\_tiles\_new()}}
+{\footnotesize\ttfamily \label{namespacedefect__tile__cut_ab7c3ad1aebe24a5b9247e2abf3ee05a2} 
+defect\+\_\+tile\+\_\+cut.\+Get\+\_\+\+Defect\+\_\+tiles\+\_\+new (\begin{DoxyParamCaption}\item[{}]{fname}{, }\item[{}]{lnb}{, }\item[{}]{dump\+\_\+folder}{, }\item[{}]{slide}{, }\item[{}]{defect}{, }\item[{}]{tile\+\_\+size}{ = {\ttfamily 1024}}\end{DoxyParamCaption})}
+
+\Hypertarget{namespacedefect__tile__cut_ad365e79bf13789ce1d4b58ae73983a4f}\index{defect\_tile\_cut@{defect\_tile\_cut}!get\_lnb@{get\_lnb}}
+\index{get\_lnb@{get\_lnb}!defect\_tile\_cut@{defect\_tile\_cut}}
+\doxysubsubsection{\texorpdfstring{get\_lnb()}{get\_lnb()}}
+{\footnotesize\ttfamily \label{namespacedefect__tile__cut_ad365e79bf13789ce1d4b58ae73983a4f} 
+defect\+\_\+tile\+\_\+cut.\+get\+\_\+lnb (\begin{DoxyParamCaption}\item[{}]{xml\+\_\+path}{, }\item[{}]{wsi\+\_\+path}{, }\item[{}]{nm\+\_\+p}{ = {\ttfamily 221}}\end{DoxyParamCaption})}
+
+\Hypertarget{namespacedefect__tile__cut_a51e80e8a8c4300ce409ed91c869cb66d}\index{defect\_tile\_cut@{defect\_tile\_cut}!get\_referance@{get\_referance}}
+\index{get\_referance@{get\_referance}!defect\_tile\_cut@{defect\_tile\_cut}}
+\doxysubsubsection{\texorpdfstring{get\_referance()}{get\_referance()}}
+{\footnotesize\ttfamily \label{namespacedefect__tile__cut_a51e80e8a8c4300ce409ed91c869cb66d} 
+defect\+\_\+tile\+\_\+cut.\+get\+\_\+referance (\begin{DoxyParamCaption}\item[{}]{wsi\+\_\+path}{, }\item[{}]{nm\+\_\+p}{ = {\ttfamily 221}}\end{DoxyParamCaption})}
+
+\Hypertarget{namespacedefect__tile__cut_aa9ee240e7c3b66c25b63098c8bc5ee70}\index{defect\_tile\_cut@{defect\_tile\_cut}!tile\_intersection@{tile\_intersection}}
+\index{tile\_intersection@{tile\_intersection}!defect\_tile\_cut@{defect\_tile\_cut}}
+\doxysubsubsection{\texorpdfstring{tile\_intersection()}{tile\_intersection()}}
+{\footnotesize\ttfamily \label{namespacedefect__tile__cut_aa9ee240e7c3b66c25b63098c8bc5ee70} 
+defect\+\_\+tile\+\_\+cut.\+tile\+\_\+intersection (\begin{DoxyParamCaption}\item[{}]{boxA}{, }\item[{}]{boxB}{, }\item[{}]{limit}{ = {\ttfamily 5}}\end{DoxyParamCaption})}
+
+\Hypertarget{namespacedefect__tile__cut_a49559a7c6b0c342368a0a1360f2fd865}\index{defect\_tile\_cut@{defect\_tile\_cut}!update\_SameTile\_annotations\_new@{update\_SameTile\_annotations\_new}}
+\index{update\_SameTile\_annotations\_new@{update\_SameTile\_annotations\_new}!defect\_tile\_cut@{defect\_tile\_cut}}
+\doxysubsubsection{\texorpdfstring{update\_SameTile\_annotations\_new()}{update\_SameTile\_annotations\_new()}}
+{\footnotesize\ttfamily \label{namespacedefect__tile__cut_a49559a7c6b0c342368a0a1360f2fd865} 
+defect\+\_\+tile\+\_\+cut.\+update\+\_\+\+Same\+Tile\+\_\+annotations\+\_\+new (\begin{DoxyParamCaption}\item[{}]{tile}{, }\item[{}]{anote}{, }\item[{}]{lnb}{}\end{DoxyParamCaption})}
+
+\Hypertarget{namespacedefect__tile__cut_a4e677c09d76dd8723dbd75dfa64ca52b}\index{defect\_tile\_cut@{defect\_tile\_cut}!xy2yolo@{xy2yolo}}
+\index{xy2yolo@{xy2yolo}!defect\_tile\_cut@{defect\_tile\_cut}}
+\doxysubsubsection{\texorpdfstring{xy2yolo()}{xy2yolo()}}
+{\footnotesize\ttfamily \label{namespacedefect__tile__cut_a4e677c09d76dd8723dbd75dfa64ca52b} 
+defect\+\_\+tile\+\_\+cut.\+xy2yolo (\begin{DoxyParamCaption}\item[{}]{x1}{, }\item[{}]{y1}{, }\item[{}]{x2}{, }\item[{}]{y2}{, }\item[{}]{tile\+\_\+size}{}\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Variable Documentation}
+\Hypertarget{namespacedefect__tile__cut_ac366b279b157236bd50cbe8a9e6df19d}\index{defect\_tile\_cut@{defect\_tile\_cut}!class\_dict@{class\_dict}}
+\index{class\_dict@{class\_dict}!defect\_tile\_cut@{defect\_tile\_cut}}
+\doxysubsubsection{\texorpdfstring{class\_dict}{class\_dict}}
+{\footnotesize\ttfamily \label{namespacedefect__tile__cut_ac366b279b157236bd50cbe8a9e6df19d} 
+dict defect\+\_\+tile\+\_\+cut.\+class\+\_\+dict = \{"{}LSIL"{}\+: 0 ,"{}HSIL"{}\+: 1 ,"{}ASC-\/H"{}\+: 2 , "{}ASCUS"{}\+: 3 , "{}AGUS"{}\+: 4, "{}SQUAMOUS CELL CARCINOMA"{}\+: 5\}}
+

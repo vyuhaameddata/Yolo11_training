@@ -1,0 +1,20 @@
+var searchData=
+[
+  ['backbonewithfpn_0',['BackboneWithFPN',['../classtorchvision__down_1_1models_1_1detection_1_1backbone__utils_1_1_backbone_with_f_p_n.html',1,'torchvision_down::models::detection::backbone_utils']]],
+  ['balancedpositivenegativesampler_1',['BalancedPositiveNegativeSampler',['../classtorchvision__down_1_1models_1_1detection_1_1__utils_1_1_balanced_positive_negative_sampler.html',1,'torchvision_down::models::detection::_utils']]],
+  ['basicblock_2',['BasicBlock',['../classtorchvision__down_1_1models_1_1resnet_1_1_basic_block.html',1,'torchvision_down.models.resnet.BasicBlock'],['../classtorchvision__down_1_1models_1_1video_1_1resnet_1_1_basic_block.html',1,'torchvision_down.models.video.resnet.BasicBlock']]],
+  ['basicconv2d_3',['BasicConv2d',['../classtorchvision__down_1_1models_1_1googlenet_1_1_basic_conv2d.html',1,'torchvision_down.models.googlenet.BasicConv2d'],['../classtorchvision__down_1_1models_1_1inception_1_1_basic_conv2d.html',1,'torchvision_down.models.inception.BasicConv2d']]],
+  ['basicstem_4',['BasicStem',['../classtorchvision__down_1_1models_1_1video_1_1resnet_1_1_basic_stem.html',1,'torchvision_down::models::video::resnet']]],
+  ['batchnormxd_5',['BatchNormXd',['../classutils_1_1torch__utils_1_1_batch_norm_xd.html',1,'utils::torch_utils']]],
+  ['bceblurwithlogitsloss_6',['BCEBlurWithLogitsLoss',['../classloss__backup_1_1_b_c_e_blur_with_logits_loss.html',1,'loss_backup.BCEBlurWithLogitsLoss'],['../classutils_1_1loss_1_1_b_c_e_blur_with_logits_loss.html',1,'utils.loss.BCEBlurWithLogitsLoss']]],
+  ['blockparams_7',['BlockParams',['../classtorchvision__down_1_1models_1_1regnet_1_1_block_params.html',1,'torchvision_down::models::regnet']]],
+  ['bottleneck_8',['Bottleneck',['../classmodels_1_1common_1_1_bottleneck.html',1,'models.common.Bottleneck'],['../classtorchvision__down_1_1models_1_1resnet_1_1_bottleneck.html',1,'torchvision_down.models.resnet.Bottleneck'],['../classtorchvision__down_1_1models_1_1video_1_1resnet_1_1_bottleneck.html',1,'torchvision_down.models.video.resnet.Bottleneck']]],
+  ['bottleneckblock_9',['BottleneckBlock',['../classtorchvision__down_1_1models_1_1optical__flow_1_1raft_1_1_bottleneck_block.html',1,'torchvision_down::models::optical_flow::raft']]],
+  ['bottleneckcspa_10',['BottleneckCSPA',['../classmodels_1_1common_1_1_bottleneck_c_s_p_a.html',1,'models::common']]],
+  ['bottleneckcspb_11',['BottleneckCSPB',['../classmodels_1_1common_1_1_bottleneck_c_s_p_b.html',1,'models::common']]],
+  ['bottleneckcspc_12',['BottleneckCSPC',['../classmodels_1_1common_1_1_bottleneck_c_s_p_c.html',1,'models::common']]],
+  ['bottlenecktransform_13',['BottleneckTransform',['../classtorchvision__down_1_1models_1_1regnet_1_1_bottleneck_transform.html',1,'torchvision_down::models::regnet']]],
+  ['boundingbox_14',['BoundingBox',['../classboundingbox_1_1_bounding_box.html',1,'boundingbox']]],
+  ['boxcoder_15',['BoxCoder',['../classtorchvision__down_1_1models_1_1detection_1_1__utils_1_1_box_coder.html',1,'torchvision_down::models::detection::_utils']]],
+  ['boxlinearcoder_16',['BoxLinearCoder',['../classtorchvision__down_1_1models_1_1detection_1_1__utils_1_1_box_linear_coder.html',1,'torchvision_down::models::detection::_utils']]]
+];

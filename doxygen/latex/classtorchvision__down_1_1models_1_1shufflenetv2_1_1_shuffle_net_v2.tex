@@ -1,0 +1,144 @@
+\doxysection{torchvision\+\_\+down.\+models.\+shufflenetv2.\+Shuffle\+Net\+V2 Class Reference}
+\hypertarget{classtorchvision__down_1_1models_1_1shufflenetv2_1_1_shuffle_net_v2}{}\label{classtorchvision__down_1_1models_1_1shufflenetv2_1_1_shuffle_net_v2}\index{torchvision\_down.models.shufflenetv2.ShuffleNetV2@{torchvision\_down.models.shufflenetv2.ShuffleNetV2}}
+Inheritance diagram for torchvision\+\_\+down.\+models.\+shufflenetv2.\+Shuffle\+Net\+V2\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{classtorchvision__down_1_1models_1_1shufflenetv2_1_1_shuffle_net_v2}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+None \mbox{\hyperlink{classtorchvision__down_1_1models_1_1shufflenetv2_1_1_shuffle_net_v2_a61a8ceacc239f9ac25696fb41ec8b95c}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, List\mbox{[}int\mbox{]} stages\+\_\+repeats, List\mbox{[}int\mbox{]} stages\+\_\+out\+\_\+channels, int num\+\_\+classes=1000, Callable\mbox{[}..., nn.\+Module\mbox{]} inverted\+\_\+residual=\mbox{\hyperlink{classtorchvision__down_1_1models_1_1shufflenetv2_1_1_inverted_residual}{Inverted\+Residual}})
+\item 
+Tensor \mbox{\hyperlink{classtorchvision__down_1_1models_1_1shufflenetv2_1_1_shuffle_net_v2_a9fa9bb2180d2230f4129f122fe78ce64}{forward}} (self, Tensor x)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1models_1_1shufflenetv2_1_1_shuffle_net_v2_a83044209155bd557bed2cdcecd32414d}{conv1}}
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1models_1_1shufflenetv2_1_1_shuffle_net_v2_a1a6127353c113f33972cbca710d3d238}{maxpool}} = nn.\+Max\+Pool2d(kernel\+\_\+size=3, stride=2, padding=1)
+\item 
+nn.\+Sequential \mbox{\hyperlink{classtorchvision__down_1_1models_1_1shufflenetv2_1_1_shuffle_net_v2_ac6859ee0cc3ccde621df8027667f4584}{stage2}}
+\item 
+nn.\+Sequential \mbox{\hyperlink{classtorchvision__down_1_1models_1_1shufflenetv2_1_1_shuffle_net_v2_a9f45e9f9227d3cd6a25af3be74d77799}{stage3}}
+\item 
+nn.\+Sequential \mbox{\hyperlink{classtorchvision__down_1_1models_1_1shufflenetv2_1_1_shuffle_net_v2_a687654f207b5a52df91ef05a6177a21d}{stage4}}
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1models_1_1shufflenetv2_1_1_shuffle_net_v2_a0c2b9743ffb588ef875315df3e78b808}{conv5}}
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1models_1_1shufflenetv2_1_1_shuffle_net_v2_ab46f8855deff0dc64bd45b9393cdfd11}{fc}} = nn.\+Linear(output\+\_\+channels, num\+\_\+classes)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+Tensor \mbox{\hyperlink{classtorchvision__down_1_1models_1_1shufflenetv2_1_1_shuffle_net_v2_a63c41f7117b7d5fcd627164d179ea287}{\+\_\+forward\+\_\+impl}} (self, Tensor x)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1models_1_1shufflenetv2_1_1_shuffle_net_v2_a53cb758c44f2ee10000324f7d16945dd}{\+\_\+stage\+\_\+out\+\_\+channels}} = stages\+\_\+out\+\_\+channels
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classtorchvision__down_1_1models_1_1shufflenetv2_1_1_shuffle_net_v2_a61a8ceacc239f9ac25696fb41ec8b95c}\index{torchvision\_down.models.shufflenetv2.ShuffleNetV2@{torchvision\_down.models.shufflenetv2.ShuffleNetV2}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!torchvision\_down.models.shufflenetv2.ShuffleNetV2@{torchvision\_down.models.shufflenetv2.ShuffleNetV2}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1models_1_1shufflenetv2_1_1_shuffle_net_v2_a61a8ceacc239f9ac25696fb41ec8b95c} 
+ None torchvision\+\_\+down.\+models.\+shufflenetv2.\+Shuffle\+Net\+V2.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{List\mbox{[}int\mbox{]}}]{stages\+\_\+repeats}{, }\item[{List\mbox{[}int\mbox{]}}]{stages\+\_\+out\+\_\+channels}{, }\item[{int }]{num\+\_\+classes}{ = {\ttfamily 1000}, }\item[{Callable\mbox{[}..., nn.\+Module\mbox{]} }]{inverted\+\_\+residual}{ = {\ttfamily \mbox{\hyperlink{classtorchvision__down_1_1models_1_1shufflenetv2_1_1_inverted_residual}{Inverted\+Residual}}}}\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classtorchvision__down_1_1models_1_1shufflenetv2_1_1_shuffle_net_v2_a63c41f7117b7d5fcd627164d179ea287}\index{torchvision\_down.models.shufflenetv2.ShuffleNetV2@{torchvision\_down.models.shufflenetv2.ShuffleNetV2}!\_forward\_impl@{\_forward\_impl}}
+\index{\_forward\_impl@{\_forward\_impl}!torchvision\_down.models.shufflenetv2.ShuffleNetV2@{torchvision\_down.models.shufflenetv2.ShuffleNetV2}}
+\doxysubsubsection{\texorpdfstring{\_forward\_impl()}{\_forward\_impl()}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1models_1_1shufflenetv2_1_1_shuffle_net_v2_a63c41f7117b7d5fcd627164d179ea287} 
+ Tensor torchvision\+\_\+down.\+models.\+shufflenetv2.\+Shuffle\+Net\+V2.\+\_\+forward\+\_\+impl (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{Tensor}]{x}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classtorchvision__down_1_1models_1_1shufflenetv2_1_1_shuffle_net_v2_a9fa9bb2180d2230f4129f122fe78ce64}\index{torchvision\_down.models.shufflenetv2.ShuffleNetV2@{torchvision\_down.models.shufflenetv2.ShuffleNetV2}!forward@{forward}}
+\index{forward@{forward}!torchvision\_down.models.shufflenetv2.ShuffleNetV2@{torchvision\_down.models.shufflenetv2.ShuffleNetV2}}
+\doxysubsubsection{\texorpdfstring{forward()}{forward()}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1models_1_1shufflenetv2_1_1_shuffle_net_v2_a9fa9bb2180d2230f4129f122fe78ce64} 
+ Tensor torchvision\+\_\+down.\+models.\+shufflenetv2.\+Shuffle\+Net\+V2.\+forward (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{Tensor}]{x}{}\end{DoxyParamCaption})}
+
+
+
+Reimplemented in \mbox{\hyperlink{classtorchvision__down_1_1models_1_1quantization_1_1shufflenetv2_1_1_quantizable_shuffle_net_v2_a5bc7fb2e78dfa67673d14870f63b417f}{torchvision\+\_\+down.\+models.\+quantization.\+shufflenetv2.\+Quantizable\+Shuffle\+Net\+V2}}.
+
+
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classtorchvision__down_1_1models_1_1shufflenetv2_1_1_shuffle_net_v2_a53cb758c44f2ee10000324f7d16945dd}\index{torchvision\_down.models.shufflenetv2.ShuffleNetV2@{torchvision\_down.models.shufflenetv2.ShuffleNetV2}!\_stage\_out\_channels@{\_stage\_out\_channels}}
+\index{\_stage\_out\_channels@{\_stage\_out\_channels}!torchvision\_down.models.shufflenetv2.ShuffleNetV2@{torchvision\_down.models.shufflenetv2.ShuffleNetV2}}
+\doxysubsubsection{\texorpdfstring{\_stage\_out\_channels}{\_stage\_out\_channels}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1models_1_1shufflenetv2_1_1_shuffle_net_v2_a53cb758c44f2ee10000324f7d16945dd} 
+torchvision\+\_\+down.\+models.\+shufflenetv2.\+Shuffle\+Net\+V2.\+\_\+stage\+\_\+out\+\_\+channels = stages\+\_\+out\+\_\+channels\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classtorchvision__down_1_1models_1_1shufflenetv2_1_1_shuffle_net_v2_a83044209155bd557bed2cdcecd32414d}\index{torchvision\_down.models.shufflenetv2.ShuffleNetV2@{torchvision\_down.models.shufflenetv2.ShuffleNetV2}!conv1@{conv1}}
+\index{conv1@{conv1}!torchvision\_down.models.shufflenetv2.ShuffleNetV2@{torchvision\_down.models.shufflenetv2.ShuffleNetV2}}
+\doxysubsubsection{\texorpdfstring{conv1}{conv1}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1models_1_1shufflenetv2_1_1_shuffle_net_v2_a83044209155bd557bed2cdcecd32414d} 
+torchvision\+\_\+down.\+models.\+shufflenetv2.\+Shuffle\+Net\+V2.\+conv1}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \ nn.Sequential(}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ nn.Conv2d(input\_channels,\ output\_channels,\ 3,\ 2,\ 1,\ bias=\textcolor{keyword}{False}),}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ nn.BatchNorm2d(output\_channels),}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ nn.ReLU(inplace=\textcolor{keyword}{True}),}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ )}
+
+\end{DoxyCode}
+\Hypertarget{classtorchvision__down_1_1models_1_1shufflenetv2_1_1_shuffle_net_v2_a0c2b9743ffb588ef875315df3e78b808}\index{torchvision\_down.models.shufflenetv2.ShuffleNetV2@{torchvision\_down.models.shufflenetv2.ShuffleNetV2}!conv5@{conv5}}
+\index{conv5@{conv5}!torchvision\_down.models.shufflenetv2.ShuffleNetV2@{torchvision\_down.models.shufflenetv2.ShuffleNetV2}}
+\doxysubsubsection{\texorpdfstring{conv5}{conv5}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1models_1_1shufflenetv2_1_1_shuffle_net_v2_a0c2b9743ffb588ef875315df3e78b808} 
+torchvision\+\_\+down.\+models.\+shufflenetv2.\+Shuffle\+Net\+V2.\+conv5}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \ nn.Sequential(}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ nn.Conv2d(input\_channels,\ output\_channels,\ 1,\ 1,\ 0,\ bias=\textcolor{keyword}{False}),}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ nn.BatchNorm2d(output\_channels),}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ nn.ReLU(inplace=\textcolor{keyword}{True}),}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ )}
+
+\end{DoxyCode}
+\Hypertarget{classtorchvision__down_1_1models_1_1shufflenetv2_1_1_shuffle_net_v2_ab46f8855deff0dc64bd45b9393cdfd11}\index{torchvision\_down.models.shufflenetv2.ShuffleNetV2@{torchvision\_down.models.shufflenetv2.ShuffleNetV2}!fc@{fc}}
+\index{fc@{fc}!torchvision\_down.models.shufflenetv2.ShuffleNetV2@{torchvision\_down.models.shufflenetv2.ShuffleNetV2}}
+\doxysubsubsection{\texorpdfstring{fc}{fc}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1models_1_1shufflenetv2_1_1_shuffle_net_v2_ab46f8855deff0dc64bd45b9393cdfd11} 
+torchvision\+\_\+down.\+models.\+shufflenetv2.\+Shuffle\+Net\+V2.\+fc = nn.\+Linear(output\+\_\+channels, num\+\_\+classes)}
+
+\Hypertarget{classtorchvision__down_1_1models_1_1shufflenetv2_1_1_shuffle_net_v2_a1a6127353c113f33972cbca710d3d238}\index{torchvision\_down.models.shufflenetv2.ShuffleNetV2@{torchvision\_down.models.shufflenetv2.ShuffleNetV2}!maxpool@{maxpool}}
+\index{maxpool@{maxpool}!torchvision\_down.models.shufflenetv2.ShuffleNetV2@{torchvision\_down.models.shufflenetv2.ShuffleNetV2}}
+\doxysubsubsection{\texorpdfstring{maxpool}{maxpool}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1models_1_1shufflenetv2_1_1_shuffle_net_v2_a1a6127353c113f33972cbca710d3d238} 
+torchvision\+\_\+down.\+models.\+shufflenetv2.\+Shuffle\+Net\+V2.\+maxpool = nn.\+Max\+Pool2d(kernel\+\_\+size=3, stride=2, padding=1)}
+
+\Hypertarget{classtorchvision__down_1_1models_1_1shufflenetv2_1_1_shuffle_net_v2_ac6859ee0cc3ccde621df8027667f4584}\index{torchvision\_down.models.shufflenetv2.ShuffleNetV2@{torchvision\_down.models.shufflenetv2.ShuffleNetV2}!stage2@{stage2}}
+\index{stage2@{stage2}!torchvision\_down.models.shufflenetv2.ShuffleNetV2@{torchvision\_down.models.shufflenetv2.ShuffleNetV2}}
+\doxysubsubsection{\texorpdfstring{stage2}{stage2}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1models_1_1shufflenetv2_1_1_shuffle_net_v2_ac6859ee0cc3ccde621df8027667f4584} 
+nn.\+Sequential torchvision\+\_\+down.\+models.\+shufflenetv2.\+Shuffle\+Net\+V2.\+stage2}
+
+\Hypertarget{classtorchvision__down_1_1models_1_1shufflenetv2_1_1_shuffle_net_v2_a9f45e9f9227d3cd6a25af3be74d77799}\index{torchvision\_down.models.shufflenetv2.ShuffleNetV2@{torchvision\_down.models.shufflenetv2.ShuffleNetV2}!stage3@{stage3}}
+\index{stage3@{stage3}!torchvision\_down.models.shufflenetv2.ShuffleNetV2@{torchvision\_down.models.shufflenetv2.ShuffleNetV2}}
+\doxysubsubsection{\texorpdfstring{stage3}{stage3}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1models_1_1shufflenetv2_1_1_shuffle_net_v2_a9f45e9f9227d3cd6a25af3be74d77799} 
+nn.\+Sequential torchvision\+\_\+down.\+models.\+shufflenetv2.\+Shuffle\+Net\+V2.\+stage3}
+
+\Hypertarget{classtorchvision__down_1_1models_1_1shufflenetv2_1_1_shuffle_net_v2_a687654f207b5a52df91ef05a6177a21d}\index{torchvision\_down.models.shufflenetv2.ShuffleNetV2@{torchvision\_down.models.shufflenetv2.ShuffleNetV2}!stage4@{stage4}}
+\index{stage4@{stage4}!torchvision\_down.models.shufflenetv2.ShuffleNetV2@{torchvision\_down.models.shufflenetv2.ShuffleNetV2}}
+\doxysubsubsection{\texorpdfstring{stage4}{stage4}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1models_1_1shufflenetv2_1_1_shuffle_net_v2_a687654f207b5a52df91ef05a6177a21d} 
+nn.\+Sequential torchvision\+\_\+down.\+models.\+shufflenetv2.\+Shuffle\+Net\+V2.\+stage4}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Cervi\+AI/torchvision\+\_\+down/models/\mbox{\hyperlink{shufflenetv2_8py}{shufflenetv2.\+py}}\end{DoxyCompactItemize}

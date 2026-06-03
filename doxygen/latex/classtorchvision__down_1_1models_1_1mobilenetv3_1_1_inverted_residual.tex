@@ -1,0 +1,83 @@
+\doxysection{torchvision\+\_\+down.\+models.\+mobilenetv3.\+Inverted\+Residual Class Reference}
+\hypertarget{classtorchvision__down_1_1models_1_1mobilenetv3_1_1_inverted_residual}{}\label{classtorchvision__down_1_1models_1_1mobilenetv3_1_1_inverted_residual}\index{torchvision\_down.models.mobilenetv3.InvertedResidual@{torchvision\_down.models.mobilenetv3.InvertedResidual}}
+Inheritance diagram for torchvision\+\_\+down.\+models.\+mobilenetv3.\+Inverted\+Residual\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{classtorchvision__down_1_1models_1_1mobilenetv3_1_1_inverted_residual}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1models_1_1mobilenetv3_1_1_inverted_residual_ae3f08684b6db0ac4d261fa2d29bbd9d4}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, \mbox{\hyperlink{classtorchvision__down_1_1models_1_1mobilenetv3_1_1_inverted_residual_config}{Inverted\+Residual\+Config}} cnf, Callable\mbox{[}..., nn.\+Module\mbox{]} norm\+\_\+layer, Callable\mbox{[}..., nn.\+Module\mbox{]} se\+\_\+layer=partial(SElayer, scale\+\_\+activation=nn.\+Hardsigmoid))
+\item 
+Tensor \mbox{\hyperlink{classtorchvision__down_1_1models_1_1mobilenetv3_1_1_inverted_residual_a5c232950a78313b1e820d9ae4a7d5d9b}{forward}} (self, Tensor input)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{classtorchvision__down_1_1models_1_1mobilenetv3_1_1_inverted_residual_ae03f3894a4e26cf8d243eed5ff1d8c0c}{use\+\_\+res\+\_\+connect}} = cnf.\+out\+\_\+channels
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1models_1_1mobilenetv3_1_1_inverted_residual_aefb88861452ff0510006af6988859b79}{block}} = nn.\+Sequential(\texorpdfstring{$\ast$}{*}layers)
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1models_1_1mobilenetv3_1_1_inverted_residual_ae2470f33446c405ad476b6b07c36b7bb}{out\+\_\+channels}} = cnf.\+out\+\_\+channels
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{classtorchvision__down_1_1models_1_1mobilenetv3_1_1_inverted_residual_a76bc7c565c3515ada0f7fabc0de1b61b}{\+\_\+is\+\_\+cn}} = cnf.\+stride $>$ 1
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classtorchvision__down_1_1models_1_1mobilenetv3_1_1_inverted_residual_ae3f08684b6db0ac4d261fa2d29bbd9d4}\index{torchvision\_down.models.mobilenetv3.InvertedResidual@{torchvision\_down.models.mobilenetv3.InvertedResidual}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!torchvision\_down.models.mobilenetv3.InvertedResidual@{torchvision\_down.models.mobilenetv3.InvertedResidual}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1models_1_1mobilenetv3_1_1_inverted_residual_ae3f08684b6db0ac4d261fa2d29bbd9d4} 
+torchvision\+\_\+down.\+models.\+mobilenetv3.\+Inverted\+Residual.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{\mbox{\hyperlink{classtorchvision__down_1_1models_1_1mobilenetv3_1_1_inverted_residual_config}{Inverted\+Residual\+Config}}}]{cnf}{, }\item[{Callable\mbox{[}..., nn.\+Module\mbox{]}}]{norm\+\_\+layer}{, }\item[{Callable\mbox{[}..., nn.\+Module\mbox{]} }]{se\+\_\+layer}{ = {\ttfamily partial(SElayer,~scale\+\_\+activation=nn.Hardsigmoid)}}\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classtorchvision__down_1_1models_1_1mobilenetv3_1_1_inverted_residual_a5c232950a78313b1e820d9ae4a7d5d9b}\index{torchvision\_down.models.mobilenetv3.InvertedResidual@{torchvision\_down.models.mobilenetv3.InvertedResidual}!forward@{forward}}
+\index{forward@{forward}!torchvision\_down.models.mobilenetv3.InvertedResidual@{torchvision\_down.models.mobilenetv3.InvertedResidual}}
+\doxysubsubsection{\texorpdfstring{forward()}{forward()}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1models_1_1mobilenetv3_1_1_inverted_residual_a5c232950a78313b1e820d9ae4a7d5d9b} 
+ Tensor torchvision\+\_\+down.\+models.\+mobilenetv3.\+Inverted\+Residual.\+forward (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{Tensor}]{input}{}\end{DoxyParamCaption})}
+
+
+
+Reimplemented in \mbox{\hyperlink{classtorchvision__down_1_1models_1_1quantization_1_1mobilenetv3_1_1_quantizable_inverted_residual_a2d7595eac84039bb877aaa74e104e931}{torchvision\+\_\+down.\+models.\+quantization.\+mobilenetv3.\+Quantizable\+Inverted\+Residual}}.
+
+
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classtorchvision__down_1_1models_1_1mobilenetv3_1_1_inverted_residual_a76bc7c565c3515ada0f7fabc0de1b61b}\index{torchvision\_down.models.mobilenetv3.InvertedResidual@{torchvision\_down.models.mobilenetv3.InvertedResidual}!\_is\_cn@{\_is\_cn}}
+\index{\_is\_cn@{\_is\_cn}!torchvision\_down.models.mobilenetv3.InvertedResidual@{torchvision\_down.models.mobilenetv3.InvertedResidual}}
+\doxysubsubsection{\texorpdfstring{\_is\_cn}{\_is\_cn}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1models_1_1mobilenetv3_1_1_inverted_residual_a76bc7c565c3515ada0f7fabc0de1b61b} 
+int torchvision\+\_\+down.\+models.\+mobilenetv3.\+Inverted\+Residual.\+\_\+is\+\_\+cn = cnf.\+stride $>$ 1\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classtorchvision__down_1_1models_1_1mobilenetv3_1_1_inverted_residual_aefb88861452ff0510006af6988859b79}\index{torchvision\_down.models.mobilenetv3.InvertedResidual@{torchvision\_down.models.mobilenetv3.InvertedResidual}!block@{block}}
+\index{block@{block}!torchvision\_down.models.mobilenetv3.InvertedResidual@{torchvision\_down.models.mobilenetv3.InvertedResidual}}
+\doxysubsubsection{\texorpdfstring{block}{block}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1models_1_1mobilenetv3_1_1_inverted_residual_aefb88861452ff0510006af6988859b79} 
+torchvision\+\_\+down.\+models.\+mobilenetv3.\+Inverted\+Residual.\+block = nn.\+Sequential(\texorpdfstring{$\ast$}{*}layers)}
+
+\Hypertarget{classtorchvision__down_1_1models_1_1mobilenetv3_1_1_inverted_residual_ae2470f33446c405ad476b6b07c36b7bb}\index{torchvision\_down.models.mobilenetv3.InvertedResidual@{torchvision\_down.models.mobilenetv3.InvertedResidual}!out\_channels@{out\_channels}}
+\index{out\_channels@{out\_channels}!torchvision\_down.models.mobilenetv3.InvertedResidual@{torchvision\_down.models.mobilenetv3.InvertedResidual}}
+\doxysubsubsection{\texorpdfstring{out\_channels}{out\_channels}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1models_1_1mobilenetv3_1_1_inverted_residual_ae2470f33446c405ad476b6b07c36b7bb} 
+torchvision\+\_\+down.\+models.\+mobilenetv3.\+Inverted\+Residual.\+out\+\_\+channels = cnf.\+out\+\_\+channels}
+
+\Hypertarget{classtorchvision__down_1_1models_1_1mobilenetv3_1_1_inverted_residual_ae03f3894a4e26cf8d243eed5ff1d8c0c}\index{torchvision\_down.models.mobilenetv3.InvertedResidual@{torchvision\_down.models.mobilenetv3.InvertedResidual}!use\_res\_connect@{use\_res\_connect}}
+\index{use\_res\_connect@{use\_res\_connect}!torchvision\_down.models.mobilenetv3.InvertedResidual@{torchvision\_down.models.mobilenetv3.InvertedResidual}}
+\doxysubsubsection{\texorpdfstring{use\_res\_connect}{use\_res\_connect}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1models_1_1mobilenetv3_1_1_inverted_residual_ae03f3894a4e26cf8d243eed5ff1d8c0c} 
+int torchvision\+\_\+down.\+models.\+mobilenetv3.\+Inverted\+Residual.\+use\+\_\+res\+\_\+connect = cnf.\+out\+\_\+channels}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Cervi\+AI/torchvision\+\_\+down/models/\mbox{\hyperlink{mobilenetv3_8py}{mobilenetv3.\+py}}\end{DoxyCompactItemize}

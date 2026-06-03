@@ -1,0 +1,93 @@
+\doxysection{torchvision\+\_\+down.\+models.\+googlenet Namespace Reference}
+\hypertarget{namespacetorchvision__down_1_1models_1_1googlenet}{}\label{namespacetorchvision__down_1_1models_1_1googlenet}\index{torchvision\_down.models.googlenet@{torchvision\_down.models.googlenet}}
+\doxysubsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classtorchvision__down_1_1models_1_1googlenet_1_1_basic_conv2d}{Basic\+Conv2d}}
+\item 
+class \mbox{\hyperlink{classtorchvision__down_1_1models_1_1googlenet_1_1_goog_le_net}{Goog\+Le\+Net}}
+\item 
+class \mbox{\hyperlink{classtorchvision__down_1_1models_1_1googlenet_1_1_inception}{Inception}}
+\item 
+class \mbox{\hyperlink{classtorchvision__down_1_1models_1_1googlenet_1_1_inception_aux}{Inception\+Aux}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1models_1_1googlenet_1_1_goog_le_net}{Goog\+Le\+Net}} \mbox{\hyperlink{namespacetorchvision__down_1_1models_1_1googlenet_a9b7f3aec2599dc5430082a023fbcc7c7}{googlenet}} (bool pretrained=False, bool progress=True, \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}Any kwargs)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+list \mbox{\hyperlink{namespacetorchvision__down_1_1models_1_1googlenet_a77d0c36099bb54fae4b2f5e7b99d40af}{\+\_\+\+\_\+all\+\_\+\+\_\+}} = \mbox{[}"{}Goog\+Le\+Net"{}, "{}googlenet"{}, "{}Goog\+Le\+Net\+Outputs"{}, "{}\+\_\+\+Goog\+Le\+Net\+Outputs"{}\mbox{]}
+\item 
+dict \mbox{\hyperlink{namespacetorchvision__down_1_1models_1_1googlenet_a84333a9ab722d61d21acb68fab9b7b23}{model\+\_\+urls}}
+\item 
+\mbox{\hyperlink{namespacetorchvision__down_1_1models_1_1googlenet_ae4dd7d61dea375f22628fb6bc2e5f77d}{Goog\+Le\+Net\+Outputs}} = namedtuple("{}Goog\+Le\+Net\+Outputs"{}, \mbox{[}"{}logits"{}, "{}aux\+\_\+logits2"{}, "{}aux\+\_\+logits1"{}\mbox{]})
+\item 
+\mbox{\hyperlink{namespacetorchvision__down_1_1models_1_1googlenet_ab20d2601cc596b6ae7e6666dde94eed4}{\+\_\+\+\_\+annotations\+\_\+\+\_\+}}
+\item 
+\mbox{\hyperlink{namespacetorchvision__down_1_1models_1_1googlenet_ae66417d01c7cf7e4b31bed8d766dbe18}{\+\_\+\+Goog\+Le\+Net\+Outputs}} = \mbox{\hyperlink{namespacetorchvision__down_1_1models_1_1googlenet_ae4dd7d61dea375f22628fb6bc2e5f77d}{Goog\+Le\+Net\+Outputs}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{namespacetorchvision__down_1_1models_1_1googlenet_a9b7f3aec2599dc5430082a023fbcc7c7}\index{torchvision\_down.models.googlenet@{torchvision\_down.models.googlenet}!googlenet@{googlenet}}
+\index{googlenet@{googlenet}!torchvision\_down.models.googlenet@{torchvision\_down.models.googlenet}}
+\doxysubsubsection{\texorpdfstring{googlenet()}{googlenet()}}
+{\footnotesize\ttfamily \label{namespacetorchvision__down_1_1models_1_1googlenet_a9b7f3aec2599dc5430082a023fbcc7c7} 
+ \mbox{\hyperlink{classtorchvision__down_1_1models_1_1googlenet_1_1_goog_le_net}{Goog\+Le\+Net}} torchvision\+\_\+down.\+models.\+googlenet.\+googlenet (\begin{DoxyParamCaption}\item[{bool }]{pretrained}{ = {\ttfamily False}, }\item[{bool }]{progress}{ = {\ttfamily True}, }\item[{\texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}Any}]{kwargs}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}GoogLeNet (Inception v1) model architecture from
+`"Going Deeper with Convolutions" <http://arxiv.org/abs/1409.4842>`_.
+The required minimum input size of the model is 15x15.
+
+Args:
+pretrained (bool): If True, returns a model pre-trained on ImageNet
+progress (bool): If True, displays a progress bar of the download to stderr
+aux_logits (bool): If True, adds two auxiliary branches that can improve training.
+    Default: *False* when pretrained is True otherwise *True*
+transform_input (bool): If True, preprocesses the input according to the method with which it
+    was trained on ImageNet. Default: True if ``pretrained=True``, else False.
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Variable Documentation}
+\Hypertarget{namespacetorchvision__down_1_1models_1_1googlenet_a77d0c36099bb54fae4b2f5e7b99d40af}\index{torchvision\_down.models.googlenet@{torchvision\_down.models.googlenet}!\_\_all\_\_@{\_\_all\_\_}}
+\index{\_\_all\_\_@{\_\_all\_\_}!torchvision\_down.models.googlenet@{torchvision\_down.models.googlenet}}
+\doxysubsubsection{\texorpdfstring{\_\_all\_\_}{\_\_all\_\_}}
+{\footnotesize\ttfamily \label{namespacetorchvision__down_1_1models_1_1googlenet_a77d0c36099bb54fae4b2f5e7b99d40af} 
+list torchvision\+\_\+down.\+models.\+googlenet.\+\_\+\+\_\+all\+\_\+\+\_\+ = \mbox{[}"{}Goog\+Le\+Net"{}, "{}googlenet"{}, "{}Goog\+Le\+Net\+Outputs"{}, "{}\+\_\+\+Goog\+Le\+Net\+Outputs"{}\mbox{]}\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{namespacetorchvision__down_1_1models_1_1googlenet_ab20d2601cc596b6ae7e6666dde94eed4}\index{torchvision\_down.models.googlenet@{torchvision\_down.models.googlenet}!\_\_annotations\_\_@{\_\_annotations\_\_}}
+\index{\_\_annotations\_\_@{\_\_annotations\_\_}!torchvision\_down.models.googlenet@{torchvision\_down.models.googlenet}}
+\doxysubsubsection{\texorpdfstring{\_\_annotations\_\_}{\_\_annotations\_\_}}
+{\footnotesize\ttfamily \label{namespacetorchvision__down_1_1models_1_1googlenet_ab20d2601cc596b6ae7e6666dde94eed4} 
+torchvision\+\_\+down.\+models.\+googlenet.\+\_\+\+\_\+annotations\+\_\+\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{namespacetorchvision__down_1_1models_1_1googlenet_ae66417d01c7cf7e4b31bed8d766dbe18}\index{torchvision\_down.models.googlenet@{torchvision\_down.models.googlenet}!\_GoogLeNetOutputs@{\_GoogLeNetOutputs}}
+\index{\_GoogLeNetOutputs@{\_GoogLeNetOutputs}!torchvision\_down.models.googlenet@{torchvision\_down.models.googlenet}}
+\doxysubsubsection{\texorpdfstring{\_GoogLeNetOutputs}{\_GoogLeNetOutputs}}
+{\footnotesize\ttfamily \label{namespacetorchvision__down_1_1models_1_1googlenet_ae66417d01c7cf7e4b31bed8d766dbe18} 
+torchvision\+\_\+down.\+models.\+googlenet.\+\_\+\+Goog\+Le\+Net\+Outputs = \mbox{\hyperlink{namespacetorchvision__down_1_1models_1_1googlenet_ae4dd7d61dea375f22628fb6bc2e5f77d}{Goog\+Le\+Net\+Outputs}}\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{namespacetorchvision__down_1_1models_1_1googlenet_ae4dd7d61dea375f22628fb6bc2e5f77d}\index{torchvision\_down.models.googlenet@{torchvision\_down.models.googlenet}!GoogLeNetOutputs@{GoogLeNetOutputs}}
+\index{GoogLeNetOutputs@{GoogLeNetOutputs}!torchvision\_down.models.googlenet@{torchvision\_down.models.googlenet}}
+\doxysubsubsection{\texorpdfstring{GoogLeNetOutputs}{GoogLeNetOutputs}}
+{\footnotesize\ttfamily \label{namespacetorchvision__down_1_1models_1_1googlenet_ae4dd7d61dea375f22628fb6bc2e5f77d} 
+torchvision\+\_\+down.\+models.\+googlenet.\+Goog\+Le\+Net\+Outputs = namedtuple("{}Goog\+Le\+Net\+Outputs"{}, \mbox{[}"{}logits"{}, "{}aux\+\_\+logits2"{}, "{}aux\+\_\+logits1"{}\mbox{]})}
+
+\Hypertarget{namespacetorchvision__down_1_1models_1_1googlenet_a84333a9ab722d61d21acb68fab9b7b23}\index{torchvision\_down.models.googlenet@{torchvision\_down.models.googlenet}!model\_urls@{model\_urls}}
+\index{model\_urls@{model\_urls}!torchvision\_down.models.googlenet@{torchvision\_down.models.googlenet}}
+\doxysubsubsection{\texorpdfstring{model\_urls}{model\_urls}}
+{\footnotesize\ttfamily \label{namespacetorchvision__down_1_1models_1_1googlenet_a84333a9ab722d61d21acb68fab9b7b23} 
+dict torchvision\+\_\+down.\+models.\+googlenet.\+model\+\_\+urls}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ =\ \ \{}
+\DoxyCodeLine{00002\ \ \ \ \ \textcolor{comment}{\#\ GoogLeNet\ ported\ from\ TensorFlow}}
+\DoxyCodeLine{00003\ \ \ \ \ \textcolor{stringliteral}{"{}googlenet"{}}:\ \textcolor{stringliteral}{"{}https://download.pytorch.org/models/googlenet-\/1378be20.pth"{}},}
+\DoxyCodeLine{00004\ \}}
+
+\end{DoxyCode}

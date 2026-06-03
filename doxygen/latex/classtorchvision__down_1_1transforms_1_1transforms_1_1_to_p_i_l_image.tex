@@ -1,0 +1,79 @@
+\doxysection{torchvision\+\_\+down.\+transforms.\+transforms.\+To\+PILImage Class Reference}
+\hypertarget{classtorchvision__down_1_1transforms_1_1transforms_1_1_to_p_i_l_image}{}\label{classtorchvision__down_1_1transforms_1_1transforms_1_1_to_p_i_l_image}\index{torchvision\_down.transforms.transforms.ToPILImage@{torchvision\_down.transforms.transforms.ToPILImage}}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1transforms_1_1transforms_1_1_to_p_i_l_image_a41672adc06809812a8eff71edc314381}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, \mbox{\hyperlink{classtorchvision__down_1_1transforms_1_1transforms_1_1_to_p_i_l_image_af0a8ed022e8168796c5830e8fb4ab42b}{mode}}=None)
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1transforms_1_1transforms_1_1_to_p_i_l_image_a06cb2f4aa13894f567e2ee21f5ed0908}{\+\_\+\+\_\+call\+\_\+\+\_\+}} (self, pic)
+\item 
+str \mbox{\hyperlink{classtorchvision__down_1_1transforms_1_1transforms_1_1_to_p_i_l_image_a5318772796bf165123c862d000ca937e}{\+\_\+\+\_\+repr\+\_\+\+\_\+}} (self)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1transforms_1_1transforms_1_1_to_p_i_l_image_af0a8ed022e8168796c5830e8fb4ab42b}{mode}} = mode
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}Convert a tensor or an ndarray to PIL Image. This transform does not support torchscript.
+
+Converts a torch.*Tensor of shape C x H x W or a numpy ndarray of shape
+H x W x C to a PIL Image while preserving the value range.
+
+Args:
+    mode (`PIL.Image mode`_): color space and pixel depth of input data (optional).
+        If ``mode`` is ``None`` (default) there are some assumptions made about the input data:
+        - If the input has 4 channels, the ``mode`` is assumed to be ``RGBA``.
+        - If the input has 3 channels, the ``mode`` is assumed to be ``RGB``.
+        - If the input has 2 channels, the ``mode`` is assumed to be ``LA``.
+        - If the input has 1 channel, the ``mode`` is determined by the data type (i.e ``int``, ``float``,
+        ``short``).
+
+.. _PIL.Image mode: https://pillow.readthedocs.io/en/latest/handbook/concepts.html#concept-modes
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classtorchvision__down_1_1transforms_1_1transforms_1_1_to_p_i_l_image_a41672adc06809812a8eff71edc314381}\index{torchvision\_down.transforms.transforms.ToPILImage@{torchvision\_down.transforms.transforms.ToPILImage}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!torchvision\_down.transforms.transforms.ToPILImage@{torchvision\_down.transforms.transforms.ToPILImage}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1transforms_1_1transforms_1_1_to_p_i_l_image_a41672adc06809812a8eff71edc314381} 
+torchvision\+\_\+down.\+transforms.\+transforms.\+To\+PILImage.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{mode}{ = {\ttfamily None}}\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classtorchvision__down_1_1transforms_1_1transforms_1_1_to_p_i_l_image_a06cb2f4aa13894f567e2ee21f5ed0908}\index{torchvision\_down.transforms.transforms.ToPILImage@{torchvision\_down.transforms.transforms.ToPILImage}!\_\_call\_\_@{\_\_call\_\_}}
+\index{\_\_call\_\_@{\_\_call\_\_}!torchvision\_down.transforms.transforms.ToPILImage@{torchvision\_down.transforms.transforms.ToPILImage}}
+\doxysubsubsection{\texorpdfstring{\_\_call\_\_()}{\_\_call\_\_()}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1transforms_1_1transforms_1_1_to_p_i_l_image_a06cb2f4aa13894f567e2ee21f5ed0908} 
+torchvision\+\_\+down.\+transforms.\+transforms.\+To\+PILImage.\+\_\+\+\_\+call\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{pic}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Args:
+    pic (Tensor or numpy.ndarray): Image to be converted to PIL Image.
+
+Returns:
+    PIL Image: Image converted to PIL Image.
+\end{DoxyVerb}
+ \Hypertarget{classtorchvision__down_1_1transforms_1_1transforms_1_1_to_p_i_l_image_a5318772796bf165123c862d000ca937e}\index{torchvision\_down.transforms.transforms.ToPILImage@{torchvision\_down.transforms.transforms.ToPILImage}!\_\_repr\_\_@{\_\_repr\_\_}}
+\index{\_\_repr\_\_@{\_\_repr\_\_}!torchvision\_down.transforms.transforms.ToPILImage@{torchvision\_down.transforms.transforms.ToPILImage}}
+\doxysubsubsection{\texorpdfstring{\_\_repr\_\_()}{\_\_repr\_\_()}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1transforms_1_1transforms_1_1_to_p_i_l_image_a5318772796bf165123c862d000ca937e} 
+ str torchvision\+\_\+down.\+transforms.\+transforms.\+To\+PILImage.\+\_\+\+\_\+repr\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classtorchvision__down_1_1transforms_1_1transforms_1_1_to_p_i_l_image_af0a8ed022e8168796c5830e8fb4ab42b}\index{torchvision\_down.transforms.transforms.ToPILImage@{torchvision\_down.transforms.transforms.ToPILImage}!mode@{mode}}
+\index{mode@{mode}!torchvision\_down.transforms.transforms.ToPILImage@{torchvision\_down.transforms.transforms.ToPILImage}}
+\doxysubsubsection{\texorpdfstring{mode}{mode}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1transforms_1_1transforms_1_1_to_p_i_l_image_af0a8ed022e8168796c5830e8fb4ab42b} 
+torchvision\+\_\+down.\+transforms.\+transforms.\+To\+PILImage.\+mode = mode}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Cervi\+AI/torchvision\+\_\+down/transforms/\mbox{\hyperlink{transforms_8py}{transforms.\+py}}\end{DoxyCompactItemize}

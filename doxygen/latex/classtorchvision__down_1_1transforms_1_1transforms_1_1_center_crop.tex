@@ -1,0 +1,79 @@
+\doxysection{torchvision\+\_\+down.\+transforms.\+transforms.\+Center\+Crop Class Reference}
+\hypertarget{classtorchvision__down_1_1transforms_1_1transforms_1_1_center_crop}{}\label{classtorchvision__down_1_1transforms_1_1transforms_1_1_center_crop}\index{torchvision\_down.transforms.transforms.CenterCrop@{torchvision\_down.transforms.transforms.CenterCrop}}
+Inheritance diagram for torchvision\+\_\+down.\+transforms.\+transforms.\+Center\+Crop\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classtorchvision__down_1_1transforms_1_1transforms_1_1_center_crop}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1transforms_1_1transforms_1_1_center_crop_a45a56c507b0733e4d189e72444719977}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, \mbox{\hyperlink{classtorchvision__down_1_1transforms_1_1transforms_1_1_center_crop_a69632b13172a23d5b3bce32081151f87}{size}})
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1transforms_1_1transforms_1_1_center_crop_a0e3d2dd2c4b48dce7807f1a3c8771dd9}{forward}} (self, img)
+\item 
+str \mbox{\hyperlink{classtorchvision__down_1_1transforms_1_1transforms_1_1_center_crop_a6dcd7a17c70ff0485046632a285eebfa}{\+\_\+\+\_\+repr\+\_\+\+\_\+}} (self)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1transforms_1_1transforms_1_1_center_crop_a69632b13172a23d5b3bce32081151f87}{size}} = \mbox{\hyperlink{namespacetorchvision__down_1_1transforms_1_1transforms_a846a850c6e655e35dfd8dbfbc09e212c}{\+\_\+setup\+\_\+size}}(size, error\+\_\+msg="{}Please provide only two dimensions (h, w) for size."{})
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}Crops the given image at the center.
+If the image is torch Tensor, it is expected
+to have [..., H, W] shape, where ... means an arbitrary number of leading dimensions.
+If image size is smaller than output size along any edge, image is padded with 0 and then center cropped.
+
+Args:
+    size (sequence or int): Desired output size of the crop. If size is an
+        int instead of sequence like (h, w), a square crop (size, size) is
+        made. If provided a sequence of length 1, it will be interpreted as (size[0], size[0]).
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classtorchvision__down_1_1transforms_1_1transforms_1_1_center_crop_a45a56c507b0733e4d189e72444719977}\index{torchvision\_down.transforms.transforms.CenterCrop@{torchvision\_down.transforms.transforms.CenterCrop}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!torchvision\_down.transforms.transforms.CenterCrop@{torchvision\_down.transforms.transforms.CenterCrop}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1transforms_1_1transforms_1_1_center_crop_a45a56c507b0733e4d189e72444719977} 
+torchvision\+\_\+down.\+transforms.\+transforms.\+Center\+Crop.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{size}{}\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classtorchvision__down_1_1transforms_1_1transforms_1_1_center_crop_a6dcd7a17c70ff0485046632a285eebfa}\index{torchvision\_down.transforms.transforms.CenterCrop@{torchvision\_down.transforms.transforms.CenterCrop}!\_\_repr\_\_@{\_\_repr\_\_}}
+\index{\_\_repr\_\_@{\_\_repr\_\_}!torchvision\_down.transforms.transforms.CenterCrop@{torchvision\_down.transforms.transforms.CenterCrop}}
+\doxysubsubsection{\texorpdfstring{\_\_repr\_\_()}{\_\_repr\_\_()}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1transforms_1_1transforms_1_1_center_crop_a6dcd7a17c70ff0485046632a285eebfa} 
+ str torchvision\+\_\+down.\+transforms.\+transforms.\+Center\+Crop.\+\_\+\+\_\+repr\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classtorchvision__down_1_1transforms_1_1transforms_1_1_center_crop_a0e3d2dd2c4b48dce7807f1a3c8771dd9}\index{torchvision\_down.transforms.transforms.CenterCrop@{torchvision\_down.transforms.transforms.CenterCrop}!forward@{forward}}
+\index{forward@{forward}!torchvision\_down.transforms.transforms.CenterCrop@{torchvision\_down.transforms.transforms.CenterCrop}}
+\doxysubsubsection{\texorpdfstring{forward()}{forward()}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1transforms_1_1transforms_1_1_center_crop_a0e3d2dd2c4b48dce7807f1a3c8771dd9} 
+torchvision\+\_\+down.\+transforms.\+transforms.\+Center\+Crop.\+forward (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{img}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Args:
+    img (PIL Image or Tensor): Image to be cropped.
+
+Returns:
+    PIL Image or Tensor: Cropped image.
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classtorchvision__down_1_1transforms_1_1transforms_1_1_center_crop_a69632b13172a23d5b3bce32081151f87}\index{torchvision\_down.transforms.transforms.CenterCrop@{torchvision\_down.transforms.transforms.CenterCrop}!size@{size}}
+\index{size@{size}!torchvision\_down.transforms.transforms.CenterCrop@{torchvision\_down.transforms.transforms.CenterCrop}}
+\doxysubsubsection{\texorpdfstring{size}{size}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1transforms_1_1transforms_1_1_center_crop_a69632b13172a23d5b3bce32081151f87} 
+torchvision\+\_\+down.\+transforms.\+transforms.\+Center\+Crop.\+size = \mbox{\hyperlink{namespacetorchvision__down_1_1transforms_1_1transforms_a846a850c6e655e35dfd8dbfbc09e212c}{\+\_\+setup\+\_\+size}}(size, error\+\_\+msg="{}Please provide only two dimensions (h, w) for size."{})}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Cervi\+AI/torchvision\+\_\+down/transforms/\mbox{\hyperlink{transforms_8py}{transforms.\+py}}\end{DoxyCompactItemize}

@@ -1,0 +1,75 @@
+\doxysection{utils.\+wandb\+\_\+logging.\+wandb\+\_\+utils Namespace Reference}
+\hypertarget{namespaceutils_1_1wandb__logging_1_1wandb__utils}{}\label{namespaceutils_1_1wandb__logging_1_1wandb__utils}\index{utils.wandb\_logging.wandb\_utils@{utils.wandb\_logging.wandb\_utils}}
+\doxysubsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classutils_1_1wandb__logging_1_1wandb__utils_1_1_wandb_logger}{Wandb\+Logger}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{namespaceutils_1_1wandb__logging_1_1wandb__utils_ad31d00ed18fa4c062d559556a136f25e}{remove\+\_\+prefix}} (from\+\_\+string, prefix=\mbox{\hyperlink{namespaceutils_1_1wandb__logging_1_1wandb__utils_a90815be70b7e7514227d75988ed9d01c}{WANDB\+\_\+\+ARTIFACT\+\_\+\+PREFIX}})
+\item 
+\mbox{\hyperlink{namespaceutils_1_1wandb__logging_1_1wandb__utils_ae5990ec8decd82f776fcf4b4704312b9}{check\+\_\+wandb\+\_\+config\+\_\+file}} (data\+\_\+config\+\_\+file)
+\item 
+\mbox{\hyperlink{namespaceutils_1_1wandb__logging_1_1wandb__utils_ad1602494100219f13db4e5b84c2b5ef0}{get\+\_\+run\+\_\+info}} (run\+\_\+path)
+\item 
+\mbox{\hyperlink{namespaceutils_1_1wandb__logging_1_1wandb__utils_aeada912e88d25e31999f6ca56d194995}{check\+\_\+wandb\+\_\+resume}} (opt)
+\item 
+\mbox{\hyperlink{namespaceutils_1_1wandb__logging_1_1wandb__utils_ae377eb9715df624eae43fef4128d2958}{process\+\_\+wandb\+\_\+config\+\_\+ddp\+\_\+mode}} (opt)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{namespaceutils_1_1wandb__logging_1_1wandb__utils_a4f19591737b568d33a0321745b7eaf26}{wandb}} = None
+\item 
+str \mbox{\hyperlink{namespaceutils_1_1wandb__logging_1_1wandb__utils_a90815be70b7e7514227d75988ed9d01c}{WANDB\+\_\+\+ARTIFACT\+\_\+\+PREFIX}} = \textquotesingle{}\mbox{\hyperlink{namespaceutils_1_1wandb__logging_1_1wandb__utils_a4f19591737b568d33a0321745b7eaf26}{wandb}}-\/artifact\+://\textquotesingle{}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{namespaceutils_1_1wandb__logging_1_1wandb__utils_ae5990ec8decd82f776fcf4b4704312b9}\index{utils.wandb\_logging.wandb\_utils@{utils.wandb\_logging.wandb\_utils}!check\_wandb\_config\_file@{check\_wandb\_config\_file}}
+\index{check\_wandb\_config\_file@{check\_wandb\_config\_file}!utils.wandb\_logging.wandb\_utils@{utils.wandb\_logging.wandb\_utils}}
+\doxysubsubsection{\texorpdfstring{check\_wandb\_config\_file()}{check\_wandb\_config\_file()}}
+{\footnotesize\ttfamily \label{namespaceutils_1_1wandb__logging_1_1wandb__utils_ae5990ec8decd82f776fcf4b4704312b9} 
+utils.\+wandb\+\_\+logging.\+wandb\+\_\+utils.\+check\+\_\+wandb\+\_\+config\+\_\+file (\begin{DoxyParamCaption}\item[{}]{data\+\_\+config\+\_\+file}{}\end{DoxyParamCaption})}
+
+\Hypertarget{namespaceutils_1_1wandb__logging_1_1wandb__utils_aeada912e88d25e31999f6ca56d194995}\index{utils.wandb\_logging.wandb\_utils@{utils.wandb\_logging.wandb\_utils}!check\_wandb\_resume@{check\_wandb\_resume}}
+\index{check\_wandb\_resume@{check\_wandb\_resume}!utils.wandb\_logging.wandb\_utils@{utils.wandb\_logging.wandb\_utils}}
+\doxysubsubsection{\texorpdfstring{check\_wandb\_resume()}{check\_wandb\_resume()}}
+{\footnotesize\ttfamily \label{namespaceutils_1_1wandb__logging_1_1wandb__utils_aeada912e88d25e31999f6ca56d194995} 
+utils.\+wandb\+\_\+logging.\+wandb\+\_\+utils.\+check\+\_\+wandb\+\_\+resume (\begin{DoxyParamCaption}\item[{}]{opt}{}\end{DoxyParamCaption})}
+
+\Hypertarget{namespaceutils_1_1wandb__logging_1_1wandb__utils_ad1602494100219f13db4e5b84c2b5ef0}\index{utils.wandb\_logging.wandb\_utils@{utils.wandb\_logging.wandb\_utils}!get\_run\_info@{get\_run\_info}}
+\index{get\_run\_info@{get\_run\_info}!utils.wandb\_logging.wandb\_utils@{utils.wandb\_logging.wandb\_utils}}
+\doxysubsubsection{\texorpdfstring{get\_run\_info()}{get\_run\_info()}}
+{\footnotesize\ttfamily \label{namespaceutils_1_1wandb__logging_1_1wandb__utils_ad1602494100219f13db4e5b84c2b5ef0} 
+utils.\+wandb\+\_\+logging.\+wandb\+\_\+utils.\+get\+\_\+run\+\_\+info (\begin{DoxyParamCaption}\item[{}]{run\+\_\+path}{}\end{DoxyParamCaption})}
+
+\Hypertarget{namespaceutils_1_1wandb__logging_1_1wandb__utils_ae377eb9715df624eae43fef4128d2958}\index{utils.wandb\_logging.wandb\_utils@{utils.wandb\_logging.wandb\_utils}!process\_wandb\_config\_ddp\_mode@{process\_wandb\_config\_ddp\_mode}}
+\index{process\_wandb\_config\_ddp\_mode@{process\_wandb\_config\_ddp\_mode}!utils.wandb\_logging.wandb\_utils@{utils.wandb\_logging.wandb\_utils}}
+\doxysubsubsection{\texorpdfstring{process\_wandb\_config\_ddp\_mode()}{process\_wandb\_config\_ddp\_mode()}}
+{\footnotesize\ttfamily \label{namespaceutils_1_1wandb__logging_1_1wandb__utils_ae377eb9715df624eae43fef4128d2958} 
+utils.\+wandb\+\_\+logging.\+wandb\+\_\+utils.\+process\+\_\+wandb\+\_\+config\+\_\+ddp\+\_\+mode (\begin{DoxyParamCaption}\item[{}]{opt}{}\end{DoxyParamCaption})}
+
+\Hypertarget{namespaceutils_1_1wandb__logging_1_1wandb__utils_ad31d00ed18fa4c062d559556a136f25e}\index{utils.wandb\_logging.wandb\_utils@{utils.wandb\_logging.wandb\_utils}!remove\_prefix@{remove\_prefix}}
+\index{remove\_prefix@{remove\_prefix}!utils.wandb\_logging.wandb\_utils@{utils.wandb\_logging.wandb\_utils}}
+\doxysubsubsection{\texorpdfstring{remove\_prefix()}{remove\_prefix()}}
+{\footnotesize\ttfamily \label{namespaceutils_1_1wandb__logging_1_1wandb__utils_ad31d00ed18fa4c062d559556a136f25e} 
+utils.\+wandb\+\_\+logging.\+wandb\+\_\+utils.\+remove\+\_\+prefix (\begin{DoxyParamCaption}\item[{}]{from\+\_\+string}{, }\item[{}]{prefix}{ = {\ttfamily \mbox{\hyperlink{namespaceutils_1_1wandb__logging_1_1wandb__utils_a90815be70b7e7514227d75988ed9d01c}{WANDB\+\_\+\+ARTIFACT\+\_\+\+PREFIX}}}}\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Variable Documentation}
+\Hypertarget{namespaceutils_1_1wandb__logging_1_1wandb__utils_a4f19591737b568d33a0321745b7eaf26}\index{utils.wandb\_logging.wandb\_utils@{utils.wandb\_logging.wandb\_utils}!wandb@{wandb}}
+\index{wandb@{wandb}!utils.wandb\_logging.wandb\_utils@{utils.wandb\_logging.wandb\_utils}}
+\doxysubsubsection{\texorpdfstring{wandb}{wandb}}
+{\footnotesize\ttfamily \label{namespaceutils_1_1wandb__logging_1_1wandb__utils_a4f19591737b568d33a0321745b7eaf26} 
+utils.\+wandb\+\_\+logging.\+wandb\+\_\+utils.\+wandb = None}
+
+\Hypertarget{namespaceutils_1_1wandb__logging_1_1wandb__utils_a90815be70b7e7514227d75988ed9d01c}\index{utils.wandb\_logging.wandb\_utils@{utils.wandb\_logging.wandb\_utils}!WANDB\_ARTIFACT\_PREFIX@{WANDB\_ARTIFACT\_PREFIX}}
+\index{WANDB\_ARTIFACT\_PREFIX@{WANDB\_ARTIFACT\_PREFIX}!utils.wandb\_logging.wandb\_utils@{utils.wandb\_logging.wandb\_utils}}
+\doxysubsubsection{\texorpdfstring{WANDB\_ARTIFACT\_PREFIX}{WANDB\_ARTIFACT\_PREFIX}}
+{\footnotesize\ttfamily \label{namespaceutils_1_1wandb__logging_1_1wandb__utils_a90815be70b7e7514227d75988ed9d01c} 
+str utils.\+wandb\+\_\+logging.\+wandb\+\_\+utils.\+WANDB\+\_\+\+ARTIFACT\+\_\+\+PREFIX = \textquotesingle{}\mbox{\hyperlink{namespaceutils_1_1wandb__logging_1_1wandb__utils_a4f19591737b568d33a0321745b7eaf26}{wandb}}-\/artifact\+://\textquotesingle{}}
+

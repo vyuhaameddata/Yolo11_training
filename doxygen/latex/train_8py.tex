@@ -1,0 +1,109 @@
+\doxysection{Cervi\+AI/train.py File Reference}
+\hypertarget{train_8py}{}\label{train_8py}\index{CerviAI/train.py@{CerviAI/train.py}}
+\doxysubsubsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+namespace \mbox{\hyperlink{namespacetrain}{train}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{namespacetrain_af7354715b5599b2e91537399c4e153e6}{train.\+train}} (\mbox{\hyperlink{namespacetrain_a6ee430081a43e49a29dbe909c87947ca}{hyp}}, \mbox{\hyperlink{namespacetrain_a8ce47f3ce85e34ed945573b80e08aaf6}{opt}}, \mbox{\hyperlink{namespacetrain_a49381d986b6dea82b5dc740dcbbe2c52}{device}}, \mbox{\hyperlink{namespacetrain_a349a5a682a9413a90fceeedbf70daf10}{tb\+\_\+writer}}=\mbox{\hyperlink{namespacetrain_a364707ec368b24efe2650a077ea712c4}{None}})
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{namespacetrain_a7eedb4e44e7c92f54d696fe03c7ee374}{train.\+logger}} = logging.\+get\+Logger(\+\_\+\+\_\+name\+\_\+\+\_\+)
+\item 
+\mbox{\hyperlink{namespacetrain_a242e49c387b90838a9072c79886a10ec}{train.\+parser}} = argparse.\+Argument\+Parser()
+\item 
+\mbox{\hyperlink{namespacetrain_ad99775ad96e0996a8be4782b30a28c2e}{train.\+type}}
+\item 
+\mbox{\hyperlink{namespacetrain_aaa59b213583fa39039d4c2a897f9009c}{train.\+str}}
+\item 
+\mbox{\hyperlink{namespacetrain_abfb9b8d0ebf72bafd04e084791275553}{train.\+default}}
+\item 
+\mbox{\hyperlink{namespacetrain_ac16504ad52822423344025f791e0c4fd}{train.\+help}}
+\item 
+\mbox{\hyperlink{namespacetrain_af5de906790efe7cea370f1a69e020d52}{train.\+int}}
+\item 
+\mbox{\hyperlink{namespacetrain_aa14681106dd0acfe6521d6ad074c434b}{train.\+nargs}}
+\item 
+\mbox{\hyperlink{namespacetrain_ae65fafa56b338044344f2637be98e99a}{train.\+action}}
+\item 
+\mbox{\hyperlink{namespacetrain_a6f58ad9c4bae557b82e5f1955094f92e}{train.\+const}}
+\item 
+\mbox{\hyperlink{namespacetrain_ab05c503109ea425e4f6a12524cd504db}{train.\+True}}
+\item 
+\mbox{\hyperlink{namespacetrain_afb4496a6f3eaeff656814fec3998a6f1}{train.\+False}}
+\item 
+\mbox{\hyperlink{namespacetrain_a364707ec368b24efe2650a077ea712c4}{train.\+None}}
+\item 
+\mbox{\hyperlink{namespacetrain_af6ce307b1ddd4745a96b7834bc0232dc}{train.\+float}}
+\item 
+\mbox{\hyperlink{namespacetrain_a8ce47f3ce85e34ed945573b80e08aaf6}{train.\+opt}} = parser.\+parse\+\_\+args()
+\item 
+\mbox{\hyperlink{namespacetrain_a0e4fd6bc41364b1387a415b6ba5f742f}{train.\+world\+\_\+size}}
+\item 
+\mbox{\hyperlink{namespacetrain_ad425684dd123695ea8cdb3a9ea635b4a}{train.\+global\+\_\+rank}}
+\item 
+\mbox{\hyperlink{namespacetrain_adbbe3b5d34b721a46d7fc754b14e329f}{train.\+wandb\+\_\+run}} = check\+\_\+wandb\+\_\+resume(\mbox{\hyperlink{namespacetrain_a8ce47f3ce85e34ed945573b80e08aaf6}{opt}})
+\item 
+\mbox{\hyperlink{namespacetrain_a710b77516f1184285d6004738826f47e}{train.\+ckpt}} = opt.\+resume if isinstance(opt.\+resume, \mbox{\hyperlink{namespacetrain_aaa59b213583fa39039d4c2a897f9009c}{str}}) else get\+\_\+latest\+\_\+run()
+\item 
+\mbox{\hyperlink{namespacetrain_aa8623b44bb896e781572e2a5f34c49ca}{train.\+apriori}} = opt.\+global\+\_\+rank, opt.\+local\+\_\+rank
+\item 
+\mbox{\hyperlink{namespacetrain_a815fb585b73e1cb930a5540b39c9723f}{train.\+local\+\_\+rank}}
+\item 
+\mbox{\hyperlink{namespacetrain_a6ee430081a43e49a29dbe909c87947ca}{train.\+hyp}} = yaml.\+load(f, Loader=yaml.\+Safe\+Loader)
+\item 
+\mbox{\hyperlink{namespacetrain_adbf7eb2e2983e826251b61b76b11c6db}{train.\+name}}
+\item 
+\mbox{\hyperlink{namespacetrain_a3f5f2b97f1cc0f1f29a66cf50ca8d5aa}{train.\+save\+\_\+dir}}
+\item 
+\mbox{\hyperlink{namespacetrain_ac3ec1cd3c670ad646fec107fc9b06837}{train.\+exist\+\_\+ok}}
+\item 
+\mbox{\hyperlink{namespacetrain_a9da958ee4c6d6d91fd31e7c98cbf0224}{train.\+total\+\_\+batch\+\_\+size}}
+\item 
+\mbox{\hyperlink{namespacetrain_a49381d986b6dea82b5dc740dcbbe2c52}{train.\+device}} = select\+\_\+device(opt.\+device, \mbox{\hyperlink{namespacetrain_a29250cc648b07d6ddb0656189db310e4}{batch\+\_\+size}}=opt.\+batch\+\_\+size)
+\item 
+\mbox{\hyperlink{namespacetrain_af23a6b9c44cd54cd4fa8a610e5a082ec}{train.\+backend}}
+\item 
+\mbox{\hyperlink{namespacetrain_ac7649eb6ff0f82af4c5179bd3ae13ef8}{train.\+init\+\_\+method}}
+\item 
+\mbox{\hyperlink{namespacetrain_a29250cc648b07d6ddb0656189db310e4}{train.\+batch\+\_\+size}}
+\item 
+\mbox{\hyperlink{namespacetrain_a349a5a682a9413a90fceeedbf70daf10}{train.\+tb\+\_\+writer}} = \mbox{\hyperlink{namespacetrain_a364707ec368b24efe2650a077ea712c4}{None}}
+\item 
+\mbox{\hyperlink{namespacetrain_a0644c91253f097bb7b8ef800e91d9e6f}{train.\+prefix}} = colorstr(\textquotesingle{}tensorboard\+: \textquotesingle{})
+\item 
+dict \mbox{\hyperlink{namespacetrain_a57f11d52934b191b584b47ae3fe044c8}{train.\+meta}}
+\item 
+\mbox{\hyperlink{namespacetrain_a9ea90064cd93be6956d2b7de5019fefd}{train.\+errors}}
+\item 
+\mbox{\hyperlink{namespacetrain_a2d25c7bf2ef9bfb20395ad1296f9f080}{train.\+nosave}}
+\item 
+\mbox{\hyperlink{namespacetrain_aaa59b213583fa39039d4c2a897f9009c}{str}} \mbox{\hyperlink{namespacetrain_abda9d2084c8995fde6e65f68350ff42d}{train.\+yaml\+\_\+file}} = Path(opt.\+save\+\_\+dir) / \textquotesingle{}hyp\+\_\+evolved.\+yaml\textquotesingle{}
+\item 
+\mbox{\hyperlink{namespacetrain_aaa59b213583fa39039d4c2a897f9009c}{str}} \mbox{\hyperlink{namespacetrain_addf88f97e82eb0f9c28c8922cc5b5975}{train.\+parent}} = \textquotesingle{}single\textquotesingle{}
+\item 
+\mbox{\hyperlink{namespacetrain_a2a12e8fe8bafa40b6179d19aae940347}{train.\+x}} = np.\+loadtxt(\textquotesingle{}evolve.\+txt\textquotesingle{}, ndmin=2)
+\item 
+\mbox{\hyperlink{namespacetrain_a169443c98cd45b180b0833aec3197096}{train.\+n}} = min(5, len(\mbox{\hyperlink{namespacetrain_a2a12e8fe8bafa40b6179d19aae940347}{x}}))
+\item 
+\mbox{\hyperlink{namespacetrain_a8e2e3eb2684c33060a3e398c1042e600}{train.\+w}} = fitness(\mbox{\hyperlink{namespacetrain_a2a12e8fe8bafa40b6179d19aae940347}{x}}) -\/ fitness(\mbox{\hyperlink{namespacetrain_a2a12e8fe8bafa40b6179d19aae940347}{x}}).min()
+\item 
+\mbox{\hyperlink{namespacetrain_a6f0c9a647fa7e08f58fa6f6734850da1}{train.\+mp}}
+\item 
+\mbox{\hyperlink{namespacetrain_a35962bf88cbca87d819f942fb45b2150}{train.\+s}}
+\item 
+\mbox{\hyperlink{namespacetrain_a161fe07ed0675489bb46527a4d0ec94c}{train.\+npr}} = np.\+random
+\item 
+\mbox{\hyperlink{namespacetrain_a1e297da4f961917154c45f7272749bcd}{train.\+g}} = np.\+array(\mbox{[}\mbox{\hyperlink{namespacetrain_a2a12e8fe8bafa40b6179d19aae940347}{x}}\mbox{[}0\mbox{]} for \mbox{\hyperlink{namespacetrain_a2a12e8fe8bafa40b6179d19aae940347}{x}} in meta.\+values()\mbox{]})
+\item 
+\mbox{\hyperlink{namespacetrain_a3600ab37e7089ab2c10089de03b9c7d2}{train.\+ng}} = len(\mbox{\hyperlink{namespacetrain_a57f11d52934b191b584b47ae3fe044c8}{meta}})
+\item 
+\mbox{\hyperlink{namespacetrain_a9e8e203431645b73eff8d1046d2203a5}{train.\+v}} = np.\+ones(\mbox{\hyperlink{namespacetrain_a3600ab37e7089ab2c10089de03b9c7d2}{ng}})
+\item 
+\mbox{\hyperlink{namespacetrain_a7b7ff8fca2a83224c8cdbe1fcb1d4f02}{train.\+results}} = \mbox{\hyperlink{namespacetrain_af7354715b5599b2e91537399c4e153e6}{train}}(hyp.\+copy(), \mbox{\hyperlink{namespacetrain_a8ce47f3ce85e34ed945573b80e08aaf6}{opt}}, \mbox{\hyperlink{namespacetrain_a49381d986b6dea82b5dc740dcbbe2c52}{device}})
+\end{DoxyCompactItemize}

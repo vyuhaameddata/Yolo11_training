@@ -1,0 +1,72 @@
+\doxysection{models.\+experimental.\+End2\+End Class Reference}
+\hypertarget{classmodels_1_1experimental_1_1_end2_end}{}\label{classmodels_1_1experimental_1_1_end2_end}\index{models.experimental.End2End@{models.experimental.End2End}}
+Inheritance diagram for models.\+experimental.\+End2\+End\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classmodels_1_1experimental_1_1_end2_end}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classmodels_1_1experimental_1_1_end2_end_a28a55c76505f0ea0990778628ab6dd00}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, \mbox{\hyperlink{classmodels_1_1experimental_1_1_end2_end_a4a1d44028ee63b585bce09df2bcb1c93}{model}}, max\+\_\+obj=100, iou\+\_\+thres=0.\+45, score\+\_\+thres=0.\+25, max\+\_\+wh=None, device=None, n\+\_\+classes=80)
+\item 
+\mbox{\hyperlink{classmodels_1_1experimental_1_1_end2_end_ad499c58319243382f28ce0d1eae8467e}{forward}} (self, x)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classmodels_1_1experimental_1_1_end2_end_a4a1d44028ee63b585bce09df2bcb1c93}{model}} = model.\+to(device)
+\item 
+\mbox{\hyperlink{classmodels_1_1experimental_1_1_end2_end_a59397554857c16e28351be0c6c322803}{patch\+\_\+model}} = \mbox{\hyperlink{classmodels_1_1experimental_1_1_o_n_n_x___t_r_t}{ONNX\+\_\+\+TRT}} if max\+\_\+wh is None else \mbox{\hyperlink{classmodels_1_1experimental_1_1_o_n_n_x___o_r_t}{ONNX\+\_\+\+ORT}}
+\item 
+\mbox{\hyperlink{classmodels_1_1experimental_1_1_end2_end_a63ee8694cf4edfdf95ec2abeaa95dda7}{end2end}} = self.\+patch\+\_\+model(max\+\_\+obj, iou\+\_\+thres, score\+\_\+thres, max\+\_\+wh, device, n\+\_\+classes)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}export onnx or tensorrt model with NMS operation.\end{DoxyVerb}
+ 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classmodels_1_1experimental_1_1_end2_end_a28a55c76505f0ea0990778628ab6dd00}\index{models.experimental.End2End@{models.experimental.End2End}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!models.experimental.End2End@{models.experimental.End2End}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily \label{classmodels_1_1experimental_1_1_end2_end_a28a55c76505f0ea0990778628ab6dd00} 
+models.\+experimental.\+End2\+End.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{model}{, }\item[{}]{max\+\_\+obj}{ = {\ttfamily 100}, }\item[{}]{iou\+\_\+thres}{ = {\ttfamily 0.45}, }\item[{}]{score\+\_\+thres}{ = {\ttfamily 0.25}, }\item[{}]{max\+\_\+wh}{ = {\ttfamily None}, }\item[{}]{device}{ = {\ttfamily None}, }\item[{}]{n\+\_\+classes}{ = {\ttfamily 80}}\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classmodels_1_1experimental_1_1_end2_end_ad499c58319243382f28ce0d1eae8467e}\index{models.experimental.End2End@{models.experimental.End2End}!forward@{forward}}
+\index{forward@{forward}!models.experimental.End2End@{models.experimental.End2End}}
+\doxysubsubsection{\texorpdfstring{forward()}{forward()}}
+{\footnotesize\ttfamily \label{classmodels_1_1experimental_1_1_end2_end_ad499c58319243382f28ce0d1eae8467e} 
+models.\+experimental.\+End2\+End.\+forward (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{x}{}\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classmodels_1_1experimental_1_1_end2_end_a63ee8694cf4edfdf95ec2abeaa95dda7}\index{models.experimental.End2End@{models.experimental.End2End}!end2end@{end2end}}
+\index{end2end@{end2end}!models.experimental.End2End@{models.experimental.End2End}}
+\doxysubsubsection{\texorpdfstring{end2end}{end2end}}
+{\footnotesize\ttfamily \label{classmodels_1_1experimental_1_1_end2_end_a63ee8694cf4edfdf95ec2abeaa95dda7} 
+models.\+experimental.\+End2\+End.\+end2end = self.\+patch\+\_\+model(max\+\_\+obj, iou\+\_\+thres, score\+\_\+thres, max\+\_\+wh, device, n\+\_\+classes)}
+
+\Hypertarget{classmodels_1_1experimental_1_1_end2_end_a4a1d44028ee63b585bce09df2bcb1c93}\index{models.experimental.End2End@{models.experimental.End2End}!model@{model}}
+\index{model@{model}!models.experimental.End2End@{models.experimental.End2End}}
+\doxysubsubsection{\texorpdfstring{model}{model}}
+{\footnotesize\ttfamily \label{classmodels_1_1experimental_1_1_end2_end_a4a1d44028ee63b585bce09df2bcb1c93} 
+models.\+experimental.\+End2\+End.\+model = model.\+to(device)}
+
+\Hypertarget{classmodels_1_1experimental_1_1_end2_end_a59397554857c16e28351be0c6c322803}\index{models.experimental.End2End@{models.experimental.End2End}!patch\_model@{patch\_model}}
+\index{patch\_model@{patch\_model}!models.experimental.End2End@{models.experimental.End2End}}
+\doxysubsubsection{\texorpdfstring{patch\_model}{patch\_model}}
+{\footnotesize\ttfamily \label{classmodels_1_1experimental_1_1_end2_end_a59397554857c16e28351be0c6c322803} 
+models.\+experimental.\+End2\+End.\+patch\+\_\+model = \mbox{\hyperlink{classmodels_1_1experimental_1_1_o_n_n_x___t_r_t}{ONNX\+\_\+\+TRT}} if max\+\_\+wh is None else \mbox{\hyperlink{classmodels_1_1experimental_1_1_o_n_n_x___o_r_t}{ONNX\+\_\+\+ORT}}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Cervi\+AI/models/\mbox{\hyperlink{experimental_8py}{experimental.\+py}}\end{DoxyCompactItemize}

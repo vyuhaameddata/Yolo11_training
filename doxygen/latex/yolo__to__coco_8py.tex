@@ -1,0 +1,76 @@
+\doxysection{Cervi\+AI/\+Shreyan scripts/abandoned/yolo\+\_\+to\+\_\+coco.py File Reference}
+\hypertarget{yolo__to__coco_8py}{}\label{yolo__to__coco_8py}\index{CerviAI/Shreyan scripts/abandoned/yolo\_to\_coco.py@{CerviAI/Shreyan scripts/abandoned/yolo\_to\_coco.py}}
+\doxysubsubsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+namespace \mbox{\hyperlink{namespaceyolo__to__coco}{yolo\+\_\+to\+\_\+coco}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+str \mbox{\hyperlink{namespaceyolo__to__coco_a862b4ac32dccc30d825a140436088ede}{yolo\+\_\+to\+\_\+coco.\+data\+\_\+dir}} = r"{}\+D\+:\textbackslash{}\+Shreyan\textbackslash{}\+Development\textbackslash{}\+Train\textbackslash{}\+Data\textbackslash{}cat"{}
+\item 
+str \mbox{\hyperlink{namespaceyolo__to__coco_a9fb32c254d88e06f229eab73487a8372}{yolo\+\_\+to\+\_\+coco.\+output\+\_\+dir}} = r"{}\+D\+:\textbackslash{}\+Shreyan\textbackslash{}\+Development\textbackslash{}\+Train\textbackslash{}\+Data\textbackslash{}cat\+\_\+cocoformat"{}
+\item 
+str \mbox{\hyperlink{namespaceyolo__to__coco_aa9f4e4a867cf5b13bf913358026c3f03}{yolo\+\_\+to\+\_\+coco.\+class\+\_\+file}} = r"{}\+D\+:\textbackslash{}\+Shreyan\textbackslash{}\+Development\textbackslash{}\+Cervi\+AI\+\_\+detr\textbackslash{}classes.\+txt"{}
+\item 
+list \mbox{\hyperlink{namespaceyolo__to__coco_a686e927f68aac8f62b1a4df2a789713e}{yolo\+\_\+to\+\_\+coco.\+class\+\_\+list}} = \mbox{[}line.\+strip() for line in f.\+readlines()\mbox{]}
+\item 
+dict \mbox{\hyperlink{namespaceyolo__to__coco_a5be124cc05c7774536b74093371d5b82}{yolo\+\_\+to\+\_\+coco.\+class\+\_\+dict}} = \{i\+: name for i, name in enumerate(\mbox{\hyperlink{namespaceyolo__to__coco_a686e927f68aac8f62b1a4df2a789713e}{class\+\_\+list}})\}
+\item 
+\mbox{\hyperlink{namespaceyolo__to__coco_af4a4fdfb8713f034a46f14d3bf911cd2}{yolo\+\_\+to\+\_\+coco.\+images\+\_\+dir}} = os.\+path.\+join(\mbox{\hyperlink{namespaceyolo__to__coco_a862b4ac32dccc30d825a140436088ede}{data\+\_\+dir}}, split, "{}images"{})
+\item 
+\mbox{\hyperlink{namespaceyolo__to__coco_aeed999ad9fc857721e74a0b2aa209e90}{yolo\+\_\+to\+\_\+coco.\+labels\+\_\+dir}} = os.\+path.\+join(\mbox{\hyperlink{namespaceyolo__to__coco_a862b4ac32dccc30d825a140436088ede}{data\+\_\+dir}}, split, "{}labels"{})
+\item 
+\mbox{\hyperlink{namespaceyolo__to__coco_a1f2a5faf8881a5cf9ae5f8b6570ad7c9}{yolo\+\_\+to\+\_\+coco.\+output\+\_\+images\+\_\+dir}} = os.\+path.\+join(\mbox{\hyperlink{namespaceyolo__to__coco_a9fb32c254d88e06f229eab73487a8372}{output\+\_\+dir}}, split, "{}images"{})
+\item 
+\mbox{\hyperlink{namespaceyolo__to__coco_a5352edff8c9abb578162cea8cb84affb}{yolo\+\_\+to\+\_\+coco.\+output\+\_\+annotations\+\_\+dir}} = os.\+path.\+join(\mbox{\hyperlink{namespaceyolo__to__coco_a9fb32c254d88e06f229eab73487a8372}{output\+\_\+dir}}, split, "{}annotations"{})
+\item 
+\mbox{\hyperlink{namespaceyolo__to__coco_a8a2dfd3897c962389e6bf6a6de174533}{yolo\+\_\+to\+\_\+coco.\+exist\+\_\+ok}}
+\item 
+dict \mbox{\hyperlink{namespaceyolo__to__coco_a833e1413695cf45b00eaf7103a6ee977}{yolo\+\_\+to\+\_\+coco.\+coco\+\_\+format}}
+\item 
+int \mbox{\hyperlink{namespaceyolo__to__coco_a4c7af0edf3efb16d67e316692c4e9524}{yolo\+\_\+to\+\_\+coco.\+image\+\_\+id}} = 0
+\item 
+int \mbox{\hyperlink{namespaceyolo__to__coco_ad64b98e0d8163e7c5d453a9cffafd850}{yolo\+\_\+to\+\_\+coco.\+annotation\+\_\+id}} = 0
+\item 
+\mbox{\hyperlink{namespaceyolo__to__coco_a6c47943d29a7375e9d501dc00453919c}{yolo\+\_\+to\+\_\+coco.\+desc}}
+\item 
+\mbox{\hyperlink{namespaceyolo__to__coco_a15d1cf0c7c0f462bf408e5ba984a7be7}{yolo\+\_\+to\+\_\+coco.\+image\+\_\+path}} = os.\+path.\+join(\mbox{\hyperlink{namespaceyolo__to__coco_af4a4fdfb8713f034a46f14d3bf911cd2}{images\+\_\+dir}}, filename)
+\item 
+\mbox{\hyperlink{namespaceyolo__to__coco_a13a4b63a23048f2618123263a428c0e6}{yolo\+\_\+to\+\_\+coco.\+label\+\_\+path}} = os.\+path.\+join(\mbox{\hyperlink{namespaceyolo__to__coco_aeed999ad9fc857721e74a0b2aa209e90}{labels\+\_\+dir}}, filename.\+replace("{}.tif"{}, "{}.txt"{}))
+\item 
+\mbox{\hyperlink{namespaceyolo__to__coco_a462aec2fb1bc316c7418f3014265c77b}{yolo\+\_\+to\+\_\+coco.\+new\+\_\+filename}} = filename.\+replace("{}.tif"{}, "{}.jpg"{})
+\item 
+\mbox{\hyperlink{namespaceyolo__to__coco_aa57e2567638c4c40f9555e40b300f5b2}{yolo\+\_\+to\+\_\+coco.\+new\+\_\+image\+\_\+path}} = os.\+path.\+join(\mbox{\hyperlink{namespaceyolo__to__coco_a1f2a5faf8881a5cf9ae5f8b6570ad7c9}{output\+\_\+images\+\_\+dir}}, \mbox{\hyperlink{namespaceyolo__to__coco_a462aec2fb1bc316c7418f3014265c77b}{new\+\_\+filename}})
+\item 
+\mbox{\hyperlink{namespaceyolo__to__coco_adadb95aec452f7f209490ad71acee762}{yolo\+\_\+to\+\_\+coco.\+image}} = cv2.\+imread(\mbox{\hyperlink{namespaceyolo__to__coco_a15d1cf0c7c0f462bf408e5ba984a7be7}{image\+\_\+path}}, cv2.\+IMREAD\+\_\+\+UNCHANGED)
+\item 
+\mbox{\hyperlink{namespaceyolo__to__coco_a3b7746b0835955201d780ef203917a79}{yolo\+\_\+to\+\_\+coco.\+height}}
+\item 
+\mbox{\hyperlink{namespaceyolo__to__coco_af546773dab39c050a6547b8ff7dba1b4}{yolo\+\_\+to\+\_\+coco.\+width}}
+\item 
+\mbox{\hyperlink{namespaceyolo__to__coco_a3ff1751dd611c691abb4fb355b02b2a6}{yolo\+\_\+to\+\_\+coco.\+lines}} = f.\+readlines()
+\item 
+\mbox{\hyperlink{namespaceyolo__to__coco_a766bd33cf2f14a04de5c06c016b92994}{yolo\+\_\+to\+\_\+coco.\+parts}} = line.\+strip().split()
+\item 
+\mbox{\hyperlink{namespaceyolo__to__coco_a29efb5f4f05484f788db693f865ba763}{yolo\+\_\+to\+\_\+coco.\+class\+\_\+id}} = int(\mbox{\hyperlink{namespaceyolo__to__coco_a766bd33cf2f14a04de5c06c016b92994}{parts}}\mbox{[}0\mbox{]})
+\item 
+\mbox{\hyperlink{namespaceyolo__to__coco_a2128e0e1393710dd58a1ecb573533cd6}{yolo\+\_\+to\+\_\+coco.\+x\+\_\+center}}
+\item 
+\mbox{\hyperlink{namespaceyolo__to__coco_adcfba8f140df03220e1fe9ba8f7f07d2}{yolo\+\_\+to\+\_\+coco.\+y\+\_\+center}}
+\item 
+\mbox{\hyperlink{namespaceyolo__to__coco_ad71121aa0f18616239b1e93e88a7dac6}{yolo\+\_\+to\+\_\+coco.\+bbox\+\_\+width}}
+\item 
+\mbox{\hyperlink{namespaceyolo__to__coco_af1540e4cdeb8c94658ac4adea4bf9a9a}{yolo\+\_\+to\+\_\+coco.\+bbox\+\_\+height}}
+\item 
+tuple \mbox{\hyperlink{namespaceyolo__to__coco_a9fbf2d54dfdb1c41b79c96836f693d70}{yolo\+\_\+to\+\_\+coco.\+x\+\_\+min}} = (\mbox{\hyperlink{namespaceyolo__to__coco_a2128e0e1393710dd58a1ecb573533cd6}{x\+\_\+center}} -\/ \mbox{\hyperlink{namespaceyolo__to__coco_ad71121aa0f18616239b1e93e88a7dac6}{bbox\+\_\+width}} / 2) \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{namespaceyolo__to__coco_af546773dab39c050a6547b8ff7dba1b4}{width}}
+\item 
+tuple \mbox{\hyperlink{namespaceyolo__to__coco_a4b78a54fcc75711c2734a7de9e16023b}{yolo\+\_\+to\+\_\+coco.\+y\+\_\+min}} = (\mbox{\hyperlink{namespaceyolo__to__coco_adcfba8f140df03220e1fe9ba8f7f07d2}{y\+\_\+center}} -\/ \mbox{\hyperlink{namespaceyolo__to__coco_af1540e4cdeb8c94658ac4adea4bf9a9a}{bbox\+\_\+height}} / 2) \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{namespaceyolo__to__coco_a3b7746b0835955201d780ef203917a79}{height}}
+\item 
+\mbox{\hyperlink{namespaceyolo__to__coco_a00daa1181cf9199f50b016fd67754d84}{yolo\+\_\+to\+\_\+coco.\+coco\+\_\+json\+\_\+path}} = os.\+path.\+join(\mbox{\hyperlink{namespaceyolo__to__coco_a5352edff8c9abb578162cea8cb84affb}{output\+\_\+annotations\+\_\+dir}}, f"{}instances\+\_\+\{split\}.json"{})
+\item 
+\mbox{\hyperlink{namespaceyolo__to__coco_a81e0c173161d8b5c502910c0f00f01e4}{yolo\+\_\+to\+\_\+coco.\+f}}
+\item 
+\mbox{\hyperlink{namespaceyolo__to__coco_aa18af0a7da58d32b4904b560169314d9}{yolo\+\_\+to\+\_\+coco.\+indent}}
+\end{DoxyCompactItemize}

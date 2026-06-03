@@ -1,0 +1,100 @@
+\doxysection{torchvision\+\_\+down.\+models.\+quantization.\+mobilenetv2.\+Quantizable\+Inverted\+Residual Class Reference}
+\hypertarget{classtorchvision__down_1_1models_1_1quantization_1_1mobilenetv2_1_1_quantizable_inverted_residual}{}\label{classtorchvision__down_1_1models_1_1quantization_1_1mobilenetv2_1_1_quantizable_inverted_residual}\index{torchvision\_down.models.quantization.mobilenetv2.QuantizableInvertedResidual@{torchvision\_down.models.quantization.mobilenetv2.QuantizableInvertedResidual}}
+Inheritance diagram for torchvision\+\_\+down.\+models.\+quantization.\+mobilenetv2.\+Quantizable\+Inverted\+Residual\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{classtorchvision__down_1_1models_1_1quantization_1_1mobilenetv2_1_1_quantizable_inverted_residual}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+None \mbox{\hyperlink{classtorchvision__down_1_1models_1_1quantization_1_1mobilenetv2_1_1_quantizable_inverted_residual_a90f9ab6b761d3171cf6fc3210db1b17b}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, \texorpdfstring{$\ast$}{*}Any args, \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}Any kwargs)
+\item 
+Tensor \mbox{\hyperlink{classtorchvision__down_1_1models_1_1quantization_1_1mobilenetv2_1_1_quantizable_inverted_residual_ab1bb85ecf63b2abc0e692e10be20ab51}{forward}} (self, Tensor x)
+\item 
+None \mbox{\hyperlink{classtorchvision__down_1_1models_1_1quantization_1_1mobilenetv2_1_1_quantizable_inverted_residual_a59598f64ff271e2c75c09f7449f9e292}{fuse\+\_\+model}} (self, Optional\mbox{[}bool\mbox{]} is\+\_\+qat=None)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{classtorchvision__down_1_1models_1_1shufflenetv2_1_1_inverted_residual}{torchvision\+\_\+down.\+models.\+shufflenetv2.\+Inverted\+Residual}}}
+\begin{DoxyCompactItemize}
+\item 
+None \mbox{\hyperlink{classtorchvision__down_1_1models_1_1shufflenetv2_1_1_inverted_residual_a8785af1491886844dcb12a13ffad8d0d}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, int inp, int oup, int \mbox{\hyperlink{classtorchvision__down_1_1models_1_1shufflenetv2_1_1_inverted_residual_a59805aa98b842171945f9f3cf719d674}{stride}})
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1models_1_1quantization_1_1mobilenetv2_1_1_quantizable_inverted_residual_ae6cf0949e587cffc064beed29d86558c}{skip\+\_\+add}} = nn.\+quantized.\+Float\+Functional()
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1models_1_1quantization_1_1mobilenetv2_1_1_quantizable_inverted_residual_a5765de2131a4e1654ab28cd17f0b4436}{use\+\_\+res\+\_\+connect}}
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1models_1_1quantization_1_1mobilenetv2_1_1_quantizable_inverted_residual_ac159839731cb178bf210ce104191730e}{conv}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes inherited from \mbox{\hyperlink{classtorchvision__down_1_1models_1_1shufflenetv2_1_1_inverted_residual}{torchvision\+\_\+down.\+models.\+shufflenetv2.\+Inverted\+Residual}}}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{classtorchvision__down_1_1models_1_1shufflenetv2_1_1_inverted_residual_a59805aa98b842171945f9f3cf719d674}{stride}} = stride
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1models_1_1shufflenetv2_1_1_inverted_residual_a54693af7adbfd49990fe3b72678f52cf}{branch1}}
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1models_1_1shufflenetv2_1_1_inverted_residual_a521971a3d7259b49413fba4139812dc7}{branch2}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Additional Inherited Members}
+\doxysubsection*{Static Public Member Functions inherited from \mbox{\hyperlink{classtorchvision__down_1_1models_1_1shufflenetv2_1_1_inverted_residual}{torchvision\+\_\+down.\+models.\+shufflenetv2.\+Inverted\+Residual}}}
+\begin{DoxyCompactItemize}
+\item 
+nn.\+Conv2d \mbox{\hyperlink{classtorchvision__down_1_1models_1_1shufflenetv2_1_1_inverted_residual_af4c3fb4a9d5aad5a914cb608d7ceb321}{depthwise\+\_\+conv}} (int i, int o, int kernel\+\_\+size, int \mbox{\hyperlink{classtorchvision__down_1_1models_1_1shufflenetv2_1_1_inverted_residual_a59805aa98b842171945f9f3cf719d674}{stride}}=1, int padding=0, bool bias=False)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classtorchvision__down_1_1models_1_1quantization_1_1mobilenetv2_1_1_quantizable_inverted_residual_a90f9ab6b761d3171cf6fc3210db1b17b}\index{torchvision\_down.models.quantization.mobilenetv2.QuantizableInvertedResidual@{torchvision\_down.models.quantization.mobilenetv2.QuantizableInvertedResidual}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!torchvision\_down.models.quantization.mobilenetv2.QuantizableInvertedResidual@{torchvision\_down.models.quantization.mobilenetv2.QuantizableInvertedResidual}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1models_1_1quantization_1_1mobilenetv2_1_1_quantizable_inverted_residual_a90f9ab6b761d3171cf6fc3210db1b17b} 
+ None torchvision\+\_\+down.\+models.\+quantization.\+mobilenetv2.\+Quantizable\+Inverted\+Residual.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{\texorpdfstring{$\ast$}{*}Any}]{args}{, }\item[{\texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}Any}]{kwargs}{}\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classtorchvision__down_1_1models_1_1quantization_1_1mobilenetv2_1_1_quantizable_inverted_residual_ab1bb85ecf63b2abc0e692e10be20ab51}\index{torchvision\_down.models.quantization.mobilenetv2.QuantizableInvertedResidual@{torchvision\_down.models.quantization.mobilenetv2.QuantizableInvertedResidual}!forward@{forward}}
+\index{forward@{forward}!torchvision\_down.models.quantization.mobilenetv2.QuantizableInvertedResidual@{torchvision\_down.models.quantization.mobilenetv2.QuantizableInvertedResidual}}
+\doxysubsubsection{\texorpdfstring{forward()}{forward()}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1models_1_1quantization_1_1mobilenetv2_1_1_quantizable_inverted_residual_ab1bb85ecf63b2abc0e692e10be20ab51} 
+ Tensor torchvision\+\_\+down.\+models.\+quantization.\+mobilenetv2.\+Quantizable\+Inverted\+Residual.\+forward (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{Tensor}]{x}{}\end{DoxyParamCaption})}
+
+
+
+Reimplemented from \mbox{\hyperlink{classtorchvision__down_1_1models_1_1shufflenetv2_1_1_inverted_residual_a5af77caf60cf8980a461bdd18104f560}{torchvision\+\_\+down.\+models.\+shufflenetv2.\+Inverted\+Residual}}.
+
+\Hypertarget{classtorchvision__down_1_1models_1_1quantization_1_1mobilenetv2_1_1_quantizable_inverted_residual_a59598f64ff271e2c75c09f7449f9e292}\index{torchvision\_down.models.quantization.mobilenetv2.QuantizableInvertedResidual@{torchvision\_down.models.quantization.mobilenetv2.QuantizableInvertedResidual}!fuse\_model@{fuse\_model}}
+\index{fuse\_model@{fuse\_model}!torchvision\_down.models.quantization.mobilenetv2.QuantizableInvertedResidual@{torchvision\_down.models.quantization.mobilenetv2.QuantizableInvertedResidual}}
+\doxysubsubsection{\texorpdfstring{fuse\_model()}{fuse\_model()}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1models_1_1quantization_1_1mobilenetv2_1_1_quantizable_inverted_residual_a59598f64ff271e2c75c09f7449f9e292} 
+ None torchvision\+\_\+down.\+models.\+quantization.\+mobilenetv2.\+Quantizable\+Inverted\+Residual.\+fuse\+\_\+model (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{Optional\mbox{[}bool\mbox{]} }]{is\+\_\+qat}{ = {\ttfamily None}}\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classtorchvision__down_1_1models_1_1quantization_1_1mobilenetv2_1_1_quantizable_inverted_residual_ac159839731cb178bf210ce104191730e}\index{torchvision\_down.models.quantization.mobilenetv2.QuantizableInvertedResidual@{torchvision\_down.models.quantization.mobilenetv2.QuantizableInvertedResidual}!conv@{conv}}
+\index{conv@{conv}!torchvision\_down.models.quantization.mobilenetv2.QuantizableInvertedResidual@{torchvision\_down.models.quantization.mobilenetv2.QuantizableInvertedResidual}}
+\doxysubsubsection{\texorpdfstring{conv}{conv}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1models_1_1quantization_1_1mobilenetv2_1_1_quantizable_inverted_residual_ac159839731cb178bf210ce104191730e} 
+torchvision\+\_\+down.\+models.\+quantization.\+mobilenetv2.\+Quantizable\+Inverted\+Residual.\+conv}
+
+\Hypertarget{classtorchvision__down_1_1models_1_1quantization_1_1mobilenetv2_1_1_quantizable_inverted_residual_ae6cf0949e587cffc064beed29d86558c}\index{torchvision\_down.models.quantization.mobilenetv2.QuantizableInvertedResidual@{torchvision\_down.models.quantization.mobilenetv2.QuantizableInvertedResidual}!skip\_add@{skip\_add}}
+\index{skip\_add@{skip\_add}!torchvision\_down.models.quantization.mobilenetv2.QuantizableInvertedResidual@{torchvision\_down.models.quantization.mobilenetv2.QuantizableInvertedResidual}}
+\doxysubsubsection{\texorpdfstring{skip\_add}{skip\_add}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1models_1_1quantization_1_1mobilenetv2_1_1_quantizable_inverted_residual_ae6cf0949e587cffc064beed29d86558c} 
+torchvision\+\_\+down.\+models.\+quantization.\+mobilenetv2.\+Quantizable\+Inverted\+Residual.\+skip\+\_\+add = nn.\+quantized.\+Float\+Functional()}
+
+\Hypertarget{classtorchvision__down_1_1models_1_1quantization_1_1mobilenetv2_1_1_quantizable_inverted_residual_a5765de2131a4e1654ab28cd17f0b4436}\index{torchvision\_down.models.quantization.mobilenetv2.QuantizableInvertedResidual@{torchvision\_down.models.quantization.mobilenetv2.QuantizableInvertedResidual}!use\_res\_connect@{use\_res\_connect}}
+\index{use\_res\_connect@{use\_res\_connect}!torchvision\_down.models.quantization.mobilenetv2.QuantizableInvertedResidual@{torchvision\_down.models.quantization.mobilenetv2.QuantizableInvertedResidual}}
+\doxysubsubsection{\texorpdfstring{use\_res\_connect}{use\_res\_connect}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1models_1_1quantization_1_1mobilenetv2_1_1_quantizable_inverted_residual_a5765de2131a4e1654ab28cd17f0b4436} 
+torchvision\+\_\+down.\+models.\+quantization.\+mobilenetv2.\+Quantizable\+Inverted\+Residual.\+use\+\_\+res\+\_\+connect}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Cervi\+AI/torchvision\+\_\+down/models/quantization/\mbox{\hyperlink{quantization_2mobilenetv2_8py}{mobilenetv2.\+py}}\end{DoxyCompactItemize}

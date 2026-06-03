@@ -1,0 +1,96 @@
+\doxysection{torchvision\+\_\+down.\+models.\+detection.\+backbone\+\_\+utils.\+Backbone\+With\+FPN Class Reference}
+\hypertarget{classtorchvision__down_1_1models_1_1detection_1_1backbone__utils_1_1_backbone_with_f_p_n}{}\label{classtorchvision__down_1_1models_1_1detection_1_1backbone__utils_1_1_backbone_with_f_p_n}\index{torchvision\_down.models.detection.backbone\_utils.BackboneWithFPN@{torchvision\_down.models.detection.backbone\_utils.BackboneWithFPN}}
+Inheritance diagram for torchvision\+\_\+down.\+models.\+detection.\+backbone\+\_\+utils.\+Backbone\+With\+FPN\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classtorchvision__down_1_1models_1_1detection_1_1backbone__utils_1_1_backbone_with_f_p_n}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+None \mbox{\hyperlink{classtorchvision__down_1_1models_1_1detection_1_1backbone__utils_1_1_backbone_with_f_p_n_ad7d5ab076f64be5a7a61e79a2847be49}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, nn.\+Module backbone, Dict\mbox{[}str, str\mbox{]} return\+\_\+layers, List\mbox{[}int\mbox{]} in\+\_\+channels\+\_\+list, int \mbox{\hyperlink{classtorchvision__down_1_1models_1_1detection_1_1backbone__utils_1_1_backbone_with_f_p_n_a264bf430cafad10e058270e8c35a84a5}{out\+\_\+channels}}, Optional\mbox{[}Extra\+FPNBlock\mbox{]} extra\+\_\+blocks=None)
+\item 
+Dict\mbox{[}str, Tensor\mbox{]} \mbox{\hyperlink{classtorchvision__down_1_1models_1_1detection_1_1backbone__utils_1_1_backbone_with_f_p_n_aae72e3a3f1596a8a42ed74c42cb0d74e}{forward}} (self, Tensor x)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1models_1_1detection_1_1backbone__utils_1_1_backbone_with_f_p_n_ac1f726e8b8f0615f73080fdb27d813b3}{body}} = \mbox{\hyperlink{classtorchvision__down_1_1models_1_1__utils_1_1_intermediate_layer_getter}{Intermediate\+Layer\+Getter}}(backbone, return\+\_\+layers=return\+\_\+layers)
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1models_1_1detection_1_1backbone__utils_1_1_backbone_with_f_p_n_ae436d708e7c3dbee64e73c4e1a0ed5ed}{fpn}}
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1models_1_1detection_1_1backbone__utils_1_1_backbone_with_f_p_n_a264bf430cafad10e058270e8c35a84a5}{out\+\_\+channels}} = out\+\_\+channels
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}Adds a FPN on top of a model.
+Internally, it uses torchvision.models._utils.IntermediateLayerGetter to
+extract a submodel that returns the feature maps specified in return_layers.
+The same limitations of IntermediateLayerGetter apply here.
+Args:
+    backbone (nn.Module)
+    return_layers (Dict[name, new_name]): a dict containing the names
+        of the modules for which the activations will be returned as
+        the key of the dict, and the value of the dict is the name
+        of the returned activation (which the user can specify).
+    in_channels_list (List[int]): number of channels for each feature map
+        that is returned, in the order they are present in the OrderedDict
+    out_channels (int): number of channels in the FPN.
+Attributes:
+    out_channels (int): the number of channels in the FPN
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classtorchvision__down_1_1models_1_1detection_1_1backbone__utils_1_1_backbone_with_f_p_n_ad7d5ab076f64be5a7a61e79a2847be49}\index{torchvision\_down.models.detection.backbone\_utils.BackboneWithFPN@{torchvision\_down.models.detection.backbone\_utils.BackboneWithFPN}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!torchvision\_down.models.detection.backbone\_utils.BackboneWithFPN@{torchvision\_down.models.detection.backbone\_utils.BackboneWithFPN}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1models_1_1detection_1_1backbone__utils_1_1_backbone_with_f_p_n_ad7d5ab076f64be5a7a61e79a2847be49} 
+ None torchvision\+\_\+down.\+models.\+detection.\+backbone\+\_\+utils.\+Backbone\+With\+FPN.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{nn.\+Module}]{backbone}{, }\item[{Dict\mbox{[}str, str\mbox{]}}]{return\+\_\+layers}{, }\item[{List\mbox{[}int\mbox{]}}]{in\+\_\+channels\+\_\+list}{, }\item[{int}]{out\+\_\+channels}{, }\item[{Optional\mbox{[}Extra\+FPNBlock\mbox{]} }]{extra\+\_\+blocks}{ = {\ttfamily None}}\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classtorchvision__down_1_1models_1_1detection_1_1backbone__utils_1_1_backbone_with_f_p_n_aae72e3a3f1596a8a42ed74c42cb0d74e}\index{torchvision\_down.models.detection.backbone\_utils.BackboneWithFPN@{torchvision\_down.models.detection.backbone\_utils.BackboneWithFPN}!forward@{forward}}
+\index{forward@{forward}!torchvision\_down.models.detection.backbone\_utils.BackboneWithFPN@{torchvision\_down.models.detection.backbone\_utils.BackboneWithFPN}}
+\doxysubsubsection{\texorpdfstring{forward()}{forward()}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1models_1_1detection_1_1backbone__utils_1_1_backbone_with_f_p_n_aae72e3a3f1596a8a42ed74c42cb0d74e} 
+ Dict\mbox{[}str, Tensor\mbox{]} torchvision\+\_\+down.\+models.\+detection.\+backbone\+\_\+utils.\+Backbone\+With\+FPN.\+forward (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{Tensor}]{x}{}\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classtorchvision__down_1_1models_1_1detection_1_1backbone__utils_1_1_backbone_with_f_p_n_ac1f726e8b8f0615f73080fdb27d813b3}\index{torchvision\_down.models.detection.backbone\_utils.BackboneWithFPN@{torchvision\_down.models.detection.backbone\_utils.BackboneWithFPN}!body@{body}}
+\index{body@{body}!torchvision\_down.models.detection.backbone\_utils.BackboneWithFPN@{torchvision\_down.models.detection.backbone\_utils.BackboneWithFPN}}
+\doxysubsubsection{\texorpdfstring{body}{body}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1models_1_1detection_1_1backbone__utils_1_1_backbone_with_f_p_n_ac1f726e8b8f0615f73080fdb27d813b3} 
+torchvision\+\_\+down.\+models.\+detection.\+backbone\+\_\+utils.\+Backbone\+With\+FPN.\+body = \mbox{\hyperlink{classtorchvision__down_1_1models_1_1__utils_1_1_intermediate_layer_getter}{Intermediate\+Layer\+Getter}}(backbone, return\+\_\+layers=return\+\_\+layers)}
+
+\Hypertarget{classtorchvision__down_1_1models_1_1detection_1_1backbone__utils_1_1_backbone_with_f_p_n_ae436d708e7c3dbee64e73c4e1a0ed5ed}\index{torchvision\_down.models.detection.backbone\_utils.BackboneWithFPN@{torchvision\_down.models.detection.backbone\_utils.BackboneWithFPN}!fpn@{fpn}}
+\index{fpn@{fpn}!torchvision\_down.models.detection.backbone\_utils.BackboneWithFPN@{torchvision\_down.models.detection.backbone\_utils.BackboneWithFPN}}
+\doxysubsubsection{\texorpdfstring{fpn}{fpn}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1models_1_1detection_1_1backbone__utils_1_1_backbone_with_f_p_n_ae436d708e7c3dbee64e73c4e1a0ed5ed} 
+torchvision\+\_\+down.\+models.\+detection.\+backbone\+\_\+utils.\+Backbone\+With\+FPN.\+fpn}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \ FeaturePyramidNetwork(}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ in\_channels\_list=in\_channels\_list,}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ out\_channels=out\_channels,}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ extra\_blocks=extra\_blocks,}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ )}
+
+\end{DoxyCode}
+\Hypertarget{classtorchvision__down_1_1models_1_1detection_1_1backbone__utils_1_1_backbone_with_f_p_n_a264bf430cafad10e058270e8c35a84a5}\index{torchvision\_down.models.detection.backbone\_utils.BackboneWithFPN@{torchvision\_down.models.detection.backbone\_utils.BackboneWithFPN}!out\_channels@{out\_channels}}
+\index{out\_channels@{out\_channels}!torchvision\_down.models.detection.backbone\_utils.BackboneWithFPN@{torchvision\_down.models.detection.backbone\_utils.BackboneWithFPN}}
+\doxysubsubsection{\texorpdfstring{out\_channels}{out\_channels}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1models_1_1detection_1_1backbone__utils_1_1_backbone_with_f_p_n_a264bf430cafad10e058270e8c35a84a5} 
+torchvision\+\_\+down.\+models.\+detection.\+backbone\+\_\+utils.\+Backbone\+With\+FPN.\+out\+\_\+channels = out\+\_\+channels}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Cervi\+AI/torchvision\+\_\+down/models/detection/\mbox{\hyperlink{backbone__utils_8py}{backbone\+\_\+utils.\+py}}\end{DoxyCompactItemize}

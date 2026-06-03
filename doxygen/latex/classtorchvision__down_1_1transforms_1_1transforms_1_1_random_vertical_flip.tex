@@ -1,0 +1,77 @@
+\doxysection{torchvision\+\_\+down.\+transforms.\+transforms.\+Random\+Vertical\+Flip Class Reference}
+\hypertarget{classtorchvision__down_1_1transforms_1_1transforms_1_1_random_vertical_flip}{}\label{classtorchvision__down_1_1transforms_1_1transforms_1_1_random_vertical_flip}\index{torchvision\_down.transforms.transforms.RandomVerticalFlip@{torchvision\_down.transforms.transforms.RandomVerticalFlip}}
+Inheritance diagram for torchvision\+\_\+down.\+transforms.\+transforms.\+Random\+Vertical\+Flip\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classtorchvision__down_1_1transforms_1_1transforms_1_1_random_vertical_flip}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1transforms_1_1transforms_1_1_random_vertical_flip_a2709fe665b2343e41c286b255820ee05}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, \mbox{\hyperlink{classtorchvision__down_1_1transforms_1_1transforms_1_1_random_vertical_flip_a7203e0b625efc887ea3d1ec67ea5da80}{p}}=0.\+5)
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1transforms_1_1transforms_1_1_random_vertical_flip_ab84c7641aa054ae7dd972ec0c4c0130c}{forward}} (self, img)
+\item 
+str \mbox{\hyperlink{classtorchvision__down_1_1transforms_1_1transforms_1_1_random_vertical_flip_a3c41da187b6457a76ec770c8b68a3016}{\+\_\+\+\_\+repr\+\_\+\+\_\+}} (self)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1transforms_1_1transforms_1_1_random_vertical_flip_a7203e0b625efc887ea3d1ec67ea5da80}{p}} = p
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}Vertically flip the given image randomly with a given probability.
+If the image is torch Tensor, it is expected
+to have [..., H, W] shape, where ... means an arbitrary number of leading
+dimensions
+
+Args:
+    p (float): probability of the image being flipped. Default value is 0.5
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classtorchvision__down_1_1transforms_1_1transforms_1_1_random_vertical_flip_a2709fe665b2343e41c286b255820ee05}\index{torchvision\_down.transforms.transforms.RandomVerticalFlip@{torchvision\_down.transforms.transforms.RandomVerticalFlip}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!torchvision\_down.transforms.transforms.RandomVerticalFlip@{torchvision\_down.transforms.transforms.RandomVerticalFlip}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1transforms_1_1transforms_1_1_random_vertical_flip_a2709fe665b2343e41c286b255820ee05} 
+torchvision\+\_\+down.\+transforms.\+transforms.\+Random\+Vertical\+Flip.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{p}{ = {\ttfamily 0.5}}\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classtorchvision__down_1_1transforms_1_1transforms_1_1_random_vertical_flip_a3c41da187b6457a76ec770c8b68a3016}\index{torchvision\_down.transforms.transforms.RandomVerticalFlip@{torchvision\_down.transforms.transforms.RandomVerticalFlip}!\_\_repr\_\_@{\_\_repr\_\_}}
+\index{\_\_repr\_\_@{\_\_repr\_\_}!torchvision\_down.transforms.transforms.RandomVerticalFlip@{torchvision\_down.transforms.transforms.RandomVerticalFlip}}
+\doxysubsubsection{\texorpdfstring{\_\_repr\_\_()}{\_\_repr\_\_()}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1transforms_1_1transforms_1_1_random_vertical_flip_a3c41da187b6457a76ec770c8b68a3016} 
+ str torchvision\+\_\+down.\+transforms.\+transforms.\+Random\+Vertical\+Flip.\+\_\+\+\_\+repr\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classtorchvision__down_1_1transforms_1_1transforms_1_1_random_vertical_flip_ab84c7641aa054ae7dd972ec0c4c0130c}\index{torchvision\_down.transforms.transforms.RandomVerticalFlip@{torchvision\_down.transforms.transforms.RandomVerticalFlip}!forward@{forward}}
+\index{forward@{forward}!torchvision\_down.transforms.transforms.RandomVerticalFlip@{torchvision\_down.transforms.transforms.RandomVerticalFlip}}
+\doxysubsubsection{\texorpdfstring{forward()}{forward()}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1transforms_1_1transforms_1_1_random_vertical_flip_ab84c7641aa054ae7dd972ec0c4c0130c} 
+torchvision\+\_\+down.\+transforms.\+transforms.\+Random\+Vertical\+Flip.\+forward (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{img}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Args:
+    img (PIL Image or Tensor): Image to be flipped.
+
+Returns:
+    PIL Image or Tensor: Randomly flipped image.
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classtorchvision__down_1_1transforms_1_1transforms_1_1_random_vertical_flip_a7203e0b625efc887ea3d1ec67ea5da80}\index{torchvision\_down.transforms.transforms.RandomVerticalFlip@{torchvision\_down.transforms.transforms.RandomVerticalFlip}!p@{p}}
+\index{p@{p}!torchvision\_down.transforms.transforms.RandomVerticalFlip@{torchvision\_down.transforms.transforms.RandomVerticalFlip}}
+\doxysubsubsection{\texorpdfstring{p}{p}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1transforms_1_1transforms_1_1_random_vertical_flip_a7203e0b625efc887ea3d1ec67ea5da80} 
+torchvision\+\_\+down.\+transforms.\+transforms.\+Random\+Vertical\+Flip.\+p = p}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Cervi\+AI/torchvision\+\_\+down/transforms/\mbox{\hyperlink{transforms_8py}{transforms.\+py}}\end{DoxyCompactItemize}

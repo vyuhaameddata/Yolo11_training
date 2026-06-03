@@ -1,0 +1,78 @@
+\doxysection{Cervi\+AI/\+Shreyan scripts/\+WSD versions/whole\+\_\+slide\+\_\+detect\+\_\+play.py File Reference}
+\hypertarget{whole__slide__detect__play_8py}{}\label{whole__slide__detect__play_8py}\index{CerviAI/Shreyan scripts/WSD versions/whole\_slide\_detect\_play.py@{CerviAI/Shreyan scripts/WSD versions/whole\_slide\_detect\_play.py}}
+\doxysubsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classwhole__slide__detect__play_1_1_global_vars}{whole\+\_\+slide\+\_\+detect\+\_\+play.\+Global\+Vars}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+namespace \mbox{\hyperlink{namespacewhole__slide__detect__play}{whole\+\_\+slide\+\_\+detect\+\_\+play}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{namespacewhole__slide__detect__play_a8cff8d2d19cf85725f9d56edc6fbdbb7}{whole\+\_\+slide\+\_\+detect\+\_\+play.\+view\+\_\+bounding\+\_\+boxes\+\_\+on\+\_\+wsi}} (wsi\+\_\+path, bounding\+\_\+boxes, \mbox{\hyperlink{namespacewhole__slide__detect__play_a173c8985bf6ea5c69024f74fdabd8d4c}{tile\+\_\+size}}=1024)
+\item 
+\mbox{\hyperlink{namespacewhole__slide__detect__play_ac3820c8e5dae05dad529c8a1389c914d}{whole\+\_\+slide\+\_\+detect\+\_\+play.\+update\+\_\+annote\+\_\+id}} (annotations)
+\item 
+\mbox{\hyperlink{namespacewhole__slide__detect__play_a3091ca221c6c7faa6b19d481d94cf0c9}{whole\+\_\+slide\+\_\+detect\+\_\+play.\+get\+\_\+box\+\_\+list}} (xml\+\_\+path, nm\+\_\+p=221)
+\item 
+\mbox{\hyperlink{namespacewhole__slide__detect__play_aebdbdf6f70a7811e21f5ab994ee8efc8}{whole\+\_\+slide\+\_\+detect\+\_\+play.\+bb\+\_\+intersection\+\_\+over\+\_\+union}} (boxA, boxB)
+\item 
+\mbox{\hyperlink{namespacewhole__slide__detect__play_a18bc0777037de6af426f73393b12b520}{whole\+\_\+slide\+\_\+detect\+\_\+play.\+write\+\_\+annotation}} (annotations, \+\_\+id, x1, y1, x2, y2, cls, conf, X\+\_\+\+Reference, Y\+\_\+\+Reference, nm\+\_\+p=221)
+\item 
+\mbox{\hyperlink{namespacewhole__slide__detect__play_a997e8a3e2b7eee45cdb3e392a72c4559}{whole\+\_\+slide\+\_\+detect\+\_\+play.\+run\+\_\+predict\+\_\+wsi\+\_\+multithread}} (path, model, \mbox{\hyperlink{namespacewhole__slide__detect__play_aa9cff6fe755904a5f4fc1f743f05c892}{overlap}}, \mbox{\hyperlink{namespacewhole__slide__detect__play_a173c8985bf6ea5c69024f74fdabd8d4c}{tile\+\_\+size}}=1024, batch\+\_\+size=12)
+\item 
+\mbox{\hyperlink{namespacewhole__slide__detect__play_a9340ac99c6c337c750f17d91f34a7b4d}{whole\+\_\+slide\+\_\+detect\+\_\+play.\+replace\+\_\+bigger\+\_\+box}} (boxA, boxB)
+\item 
+\mbox{\hyperlink{namespacewhole__slide__detect__play_a336e0d6750c8ea249b7366d687337216}{whole\+\_\+slide\+\_\+detect\+\_\+play.\+prune\+\_\+list}} (box\+\_\+list)
+\item 
+\mbox{\hyperlink{namespacewhole__slide__detect__play_a34babf4f6582fd346d8adf96c8a23c67}{whole\+\_\+slide\+\_\+detect\+\_\+play.\+get\+\_\+referance}} (wsi\+\_\+path)
+\item 
+\mbox{\hyperlink{namespacewhole__slide__detect__play_a8c397df9de089320aa140c057074d6b8}{whole\+\_\+slide\+\_\+detect\+\_\+play.\+process}} (wsi\+\_\+path, pred, \mbox{\hyperlink{namespacewhole__slide__detect__play_a173c8985bf6ea5c69024f74fdabd8d4c}{tile\+\_\+size}})
+\item 
+\mbox{\hyperlink{namespacewhole__slide__detect__play_ae1c73b77ad0fd8df6574c6a0f7be00b0}{whole\+\_\+slide\+\_\+detect\+\_\+play.\+divide\+\_\+chunks}} (Anotelist, batch\+\_\+size)
+\item 
+\mbox{\hyperlink{namespacewhole__slide__detect__play_ab56694be1558d4f2d8d65c325c085d43}{whole\+\_\+slide\+\_\+detect\+\_\+play.\+fetch\+\_\+batch}} (image, batch\+\_\+size=32)
+\item 
+\mbox{\hyperlink{namespacewhole__slide__detect__play_a2908362e03719abfcfa202c6135b2017}{whole\+\_\+slide\+\_\+detect\+\_\+play.\+read\+\_\+tiles\+\_\+parallel}} (slide\+\_\+path, pred\+\_\+list, \mbox{\hyperlink{namespacewhole__slide__detect__play_a173c8985bf6ea5c69024f74fdabd8d4c}{tile\+\_\+size}})
+\item 
+\mbox{\hyperlink{namespacewhole__slide__detect__play_a63684a4c90848bbdb2698baf1b78f33c}{whole\+\_\+slide\+\_\+detect\+\_\+play.\+rerun\+\_\+predict\+\_\+pool}} (wsi\+\_\+path, model, pred\+\_\+list, \mbox{\hyperlink{namespacewhole__slide__detect__play_a173c8985bf6ea5c69024f74fdabd8d4c}{tile\+\_\+size}}=1024, batch\+\_\+size=12)
+\item 
+\mbox{\hyperlink{namespacewhole__slide__detect__play_a8f0a2062ccae520a4703aac9ca357522}{whole\+\_\+slide\+\_\+detect\+\_\+play.\+get\+\_\+cat\+\_\+model}} ()
+\item 
+\mbox{\hyperlink{namespacewhole__slide__detect__play_a181e8683e4e63f8ce9fc6f2c09c6f727}{whole\+\_\+slide\+\_\+detect\+\_\+play.\+write\+\_\+ndpa}} (\mbox{\hyperlink{namespacewhole__slide__detect__play_a173c8985bf6ea5c69024f74fdabd8d4c}{tile\+\_\+size}}=1024, \mbox{\hyperlink{namespacewhole__slide__detect__play_aa9cff6fe755904a5f4fc1f743f05c892}{overlap}}=128)
+\item 
+\mbox{\hyperlink{namespacewhole__slide__detect__play_a143a92de52a52b9f97f678509e9402f9}{whole\+\_\+slide\+\_\+detect\+\_\+play.\+write\+\_\+xml}} (annotations, start\+\_\+id, anote\+\_\+list, X\+\_\+\+Reference, Y\+\_\+\+Reference, nm\+\_\+p)
+\item 
+\mbox{\hyperlink{namespacewhole__slide__detect__play_a9c1047c2a383fda87d876319e1c15f2d}{whole\+\_\+slide\+\_\+detect\+\_\+play.\+dump\+\_\+results}} (gt\+\_\+xml\+\_\+path, predicts\+\_\+xml\+\_\+path)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{namespacewhole__slide__detect__play_a7c265b4b814562ec8a51fb580c2bc410}{whole\+\_\+slide\+\_\+detect\+\_\+play.\+current\+\_\+dir}} = os.\+path.\+dirname(sys.\+executable)
+\item 
+str \mbox{\hyperlink{namespacewhole__slide__detect__play_ad47ea77a82587f90994fae08ce704506}{whole\+\_\+slide\+\_\+detect\+\_\+play.\+url}} = "{}https\+://github.\+com/openslide/openslide-\/winbuild/releases/download/v20230414/openslide-\/win64-\/20230414.zip"{}
+\item 
+str \mbox{\hyperlink{namespacewhole__slide__detect__play_ac3c9d997b2a174fc40c21a7a301bd57d}{whole\+\_\+slide\+\_\+detect\+\_\+play.\+filename}} = "{}openslide-\/win64-\/20230414.zip"{}
+\item 
+\mbox{\hyperlink{namespacewhole__slide__detect__play_ab6dae278571975b4bd047b3317860511}{whole\+\_\+slide\+\_\+detect\+\_\+play.\+response}} = requests.\+get(\mbox{\hyperlink{namespacewhole__slide__detect__play_ad47ea77a82587f90994fae08ce704506}{url}}, stream=True)
+\item 
+\mbox{\hyperlink{namespacewhole__slide__detect__play_a602fb5d2b502b2e2cb7a9a6f736781bf}{whole\+\_\+slide\+\_\+detect\+\_\+play.\+chunk\+\_\+size}}
+\item 
+\mbox{\hyperlink{namespacewhole__slide__detect__play_a77c5dc10b92e01035e6f62564da10ae7}{whole\+\_\+slide\+\_\+detect\+\_\+play.\+OPENSLIDE\+\_\+\+PATH}} = os.\+path.\+join(\mbox{\hyperlink{namespacewhole__slide__detect__play_a7c265b4b814562ec8a51fb580c2bc410}{current\+\_\+dir}}, \textquotesingle{}openslide-\/win64-\/20230414\textquotesingle{}, \textquotesingle{}bin\textquotesingle{})
+\item 
+str \mbox{\hyperlink{namespacewhole__slide__detect__play_a3b39fead5ed5aec52fc25ad919624c9f}{whole\+\_\+slide\+\_\+detect\+\_\+play.\+folder\+\_\+path}} = "{}D\+:\textbackslash{}\+Shreyan\textbackslash{}\+Test"{}
+\item 
+\mbox{\hyperlink{namespacewhole__slide__detect__play_ac974cad42d3b1eaf6754e7f2cddba592}{whole\+\_\+slide\+\_\+detect\+\_\+play.\+global\+Vars}} = \mbox{\hyperlink{classwhole__slide__detect__play_1_1_global_vars}{Global\+Vars}}(\mbox{\hyperlink{namespacewhole__slide__detect__play_a3b39fead5ed5aec52fc25ad919624c9f}{folder\+\_\+path}})
+\item 
+\mbox{\hyperlink{namespacewhole__slide__detect__play_ae32f2a1bd6b7df339603569144fc186a}{whole\+\_\+slide\+\_\+detect\+\_\+play.\+start}} = time.\+time()
+\item 
+\mbox{\hyperlink{namespacewhole__slide__detect__play_a173c8985bf6ea5c69024f74fdabd8d4c}{whole\+\_\+slide\+\_\+detect\+\_\+play.\+tile\+\_\+size}}
+\item 
+\mbox{\hyperlink{namespacewhole__slide__detect__play_aa9cff6fe755904a5f4fc1f743f05c892}{whole\+\_\+slide\+\_\+detect\+\_\+play.\+overlap}}
+\item 
+\mbox{\hyperlink{namespacewhole__slide__detect__play_aff0a86316fd6335b91aa3f32659c1b9b}{whole\+\_\+slide\+\_\+detect\+\_\+play.\+end}} = time.\+time()
+\end{DoxyCompactItemize}

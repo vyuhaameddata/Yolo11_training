@@ -1,0 +1,156 @@
+\doxysection{torchvision\+\_\+down.\+models.\+detection.\+\_\+utils.\+Matcher Class Reference}
+\hypertarget{classtorchvision__down_1_1models_1_1detection_1_1__utils_1_1_matcher}{}\label{classtorchvision__down_1_1models_1_1detection_1_1__utils_1_1_matcher}\index{torchvision\_down.models.detection.\_utils.Matcher@{torchvision\_down.models.detection.\_utils.Matcher}}
+Inheritance diagram for torchvision\+\_\+down.\+models.\+detection.\+\_\+utils.\+Matcher\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classtorchvision__down_1_1models_1_1detection_1_1__utils_1_1_matcher}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+None \mbox{\hyperlink{classtorchvision__down_1_1models_1_1detection_1_1__utils_1_1_matcher_a323c3e27f7db66e21457ca7e60eff787}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, float \mbox{\hyperlink{classtorchvision__down_1_1models_1_1detection_1_1__utils_1_1_matcher_ad4a350c71519457ccd5f2254efdae224}{high\+\_\+threshold}}, float \mbox{\hyperlink{classtorchvision__down_1_1models_1_1detection_1_1__utils_1_1_matcher_a27cd622c3d5d31cac9d0bdb32afc77be}{low\+\_\+threshold}}, bool \mbox{\hyperlink{classtorchvision__down_1_1models_1_1detection_1_1__utils_1_1_matcher_afbd70a11fbf0bed01df036462a054ab5}{allow\+\_\+low\+\_\+quality\+\_\+matches}}=False)
+\item 
+Tensor \mbox{\hyperlink{classtorchvision__down_1_1models_1_1detection_1_1__utils_1_1_matcher_ad3c1363b0722010c00a8a3cb36a16678}{\+\_\+\+\_\+call\+\_\+\+\_\+}} (self, Tensor match\+\_\+quality\+\_\+matrix)
+\item 
+None \mbox{\hyperlink{classtorchvision__down_1_1models_1_1detection_1_1__utils_1_1_matcher_a55e123e6d16c38099c92486d575af7a7}{set\+\_\+low\+\_\+quality\+\_\+matches\+\_\+}} (self, Tensor matches, Tensor all\+\_\+matches, Tensor match\+\_\+quality\+\_\+matrix)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1models_1_1detection_1_1__utils_1_1_matcher_ad4a350c71519457ccd5f2254efdae224}{high\+\_\+threshold}} = high\+\_\+threshold
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1models_1_1detection_1_1__utils_1_1_matcher_a27cd622c3d5d31cac9d0bdb32afc77be}{low\+\_\+threshold}} = low\+\_\+threshold
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1models_1_1detection_1_1__utils_1_1_matcher_afbd70a11fbf0bed01df036462a054ab5}{allow\+\_\+low\+\_\+quality\+\_\+matches}} = allow\+\_\+low\+\_\+quality\+\_\+matches
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{classtorchvision__down_1_1models_1_1detection_1_1__utils_1_1_matcher_a5521f32a307629cbdc6ca31b10281e9a}{BELOW\+\_\+\+LOW\+\_\+\+THRESHOLD}} = -\/1
+\item 
+int \mbox{\hyperlink{classtorchvision__down_1_1models_1_1detection_1_1__utils_1_1_matcher_a431a871e0601c2b2e8a12ef685f759a7}{BETWEEN\+\_\+\+THRESHOLDS}} = -\/2
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+dict \mbox{\hyperlink{classtorchvision__down_1_1models_1_1detection_1_1__utils_1_1_matcher_a4337f717a8fd68bf4e49f7ada24cf8bf}{\+\_\+\+\_\+annotations\+\_\+\+\_\+}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}This class assigns to each predicted "element" (e.g., a box) a ground-truth
+element. Each predicted element will have exactly zero or one matches; each
+ground-truth element may be assigned to zero or more predicted elements.
+
+Matching is based on the MxN match_quality_matrix, that characterizes how well
+each (ground-truth, predicted)-pair match. For example, if the elements are
+boxes, the matrix may contain box IoU overlap values.
+
+The matcher returns a tensor of size N containing the index of the ground-truth
+element m that matches to prediction n. If there is no match, a negative value
+is returned.
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classtorchvision__down_1_1models_1_1detection_1_1__utils_1_1_matcher_a323c3e27f7db66e21457ca7e60eff787}\index{torchvision\_down.models.detection.\_utils.Matcher@{torchvision\_down.models.detection.\_utils.Matcher}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!torchvision\_down.models.detection.\_utils.Matcher@{torchvision\_down.models.detection.\_utils.Matcher}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1models_1_1detection_1_1__utils_1_1_matcher_a323c3e27f7db66e21457ca7e60eff787} 
+ None torchvision\+\_\+down.\+models.\+detection.\+\_\+utils.\+Matcher.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{float}]{high\+\_\+threshold}{, }\item[{float}]{low\+\_\+threshold}{, }\item[{bool }]{allow\+\_\+low\+\_\+quality\+\_\+matches}{ = {\ttfamily False}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Args:
+    high_threshold (float): quality values greater than or equal to
+        this value are candidate matches.
+    low_threshold (float): a lower quality threshold used to stratify
+        matches into three levels:
+        1) matches >= high_threshold
+        2) BETWEEN_THRESHOLDS matches in [low_threshold, high_threshold)
+        3) BELOW_LOW_THRESHOLD matches in [0, low_threshold)
+    allow_low_quality_matches (bool): if True, produce additional matches
+        for predictions that have only low-quality match candidates. See
+        set_low_quality_matches_ for more details.
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classtorchvision__down_1_1models_1_1detection_1_1__utils_1_1_matcher_ad3c1363b0722010c00a8a3cb36a16678}\index{torchvision\_down.models.detection.\_utils.Matcher@{torchvision\_down.models.detection.\_utils.Matcher}!\_\_call\_\_@{\_\_call\_\_}}
+\index{\_\_call\_\_@{\_\_call\_\_}!torchvision\_down.models.detection.\_utils.Matcher@{torchvision\_down.models.detection.\_utils.Matcher}}
+\doxysubsubsection{\texorpdfstring{\_\_call\_\_()}{\_\_call\_\_()}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1models_1_1detection_1_1__utils_1_1_matcher_ad3c1363b0722010c00a8a3cb36a16678} 
+ Tensor torchvision\+\_\+down.\+models.\+detection.\+\_\+utils.\+Matcher.\+\_\+\+\_\+call\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{Tensor}]{match\+\_\+quality\+\_\+matrix}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Args:
+    match_quality_matrix (Tensor[float]): an MxN tensor, containing the
+    pairwise quality between M ground-truth elements and N predicted elements.
+
+Returns:
+    matches (Tensor[int64]): an N tensor where N[i] is a matched gt in
+    [0, M - 1] or a negative value indicating that prediction i could not
+    be matched.
+\end{DoxyVerb}
+ \Hypertarget{classtorchvision__down_1_1models_1_1detection_1_1__utils_1_1_matcher_a55e123e6d16c38099c92486d575af7a7}\index{torchvision\_down.models.detection.\_utils.Matcher@{torchvision\_down.models.detection.\_utils.Matcher}!set\_low\_quality\_matches\_@{set\_low\_quality\_matches\_}}
+\index{set\_low\_quality\_matches\_@{set\_low\_quality\_matches\_}!torchvision\_down.models.detection.\_utils.Matcher@{torchvision\_down.models.detection.\_utils.Matcher}}
+\doxysubsubsection{\texorpdfstring{set\_low\_quality\_matches\_()}{set\_low\_quality\_matches\_()}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1models_1_1detection_1_1__utils_1_1_matcher_a55e123e6d16c38099c92486d575af7a7} 
+ None torchvision\+\_\+down.\+models.\+detection.\+\_\+utils.\+Matcher.\+set\+\_\+low\+\_\+quality\+\_\+matches\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{Tensor}]{matches}{, }\item[{Tensor}]{all\+\_\+matches}{, }\item[{Tensor}]{match\+\_\+quality\+\_\+matrix}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Produce additional matches for predictions that have only low-quality matches.
+Specifically, for each ground-truth find the set of predictions that have
+maximum overlap with it (including ties); for each prediction in that set, if
+it is unmatched, then match it to the ground-truth with which it has the highest
+quality value.
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classtorchvision__down_1_1models_1_1detection_1_1__utils_1_1_matcher_a4337f717a8fd68bf4e49f7ada24cf8bf}\index{torchvision\_down.models.detection.\_utils.Matcher@{torchvision\_down.models.detection.\_utils.Matcher}!\_\_annotations\_\_@{\_\_annotations\_\_}}
+\index{\_\_annotations\_\_@{\_\_annotations\_\_}!torchvision\_down.models.detection.\_utils.Matcher@{torchvision\_down.models.detection.\_utils.Matcher}}
+\doxysubsubsection{\texorpdfstring{\_\_annotations\_\_}{\_\_annotations\_\_}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1models_1_1detection_1_1__utils_1_1_matcher_a4337f717a8fd68bf4e49f7ada24cf8bf} 
+dict torchvision\+\_\+down.\+models.\+detection.\+\_\+utils.\+Matcher.\+\_\+\+\_\+annotations\+\_\+\+\_\+\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}BELOW\_LOW\_THRESHOLD"{}}:\ int,}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}BETWEEN\_THRESHOLDS"{}}:\ int,}
+\DoxyCodeLine{\ \ \ \ \}}
+
+\end{DoxyCode}
+\Hypertarget{classtorchvision__down_1_1models_1_1detection_1_1__utils_1_1_matcher_afbd70a11fbf0bed01df036462a054ab5}\index{torchvision\_down.models.detection.\_utils.Matcher@{torchvision\_down.models.detection.\_utils.Matcher}!allow\_low\_quality\_matches@{allow\_low\_quality\_matches}}
+\index{allow\_low\_quality\_matches@{allow\_low\_quality\_matches}!torchvision\_down.models.detection.\_utils.Matcher@{torchvision\_down.models.detection.\_utils.Matcher}}
+\doxysubsubsection{\texorpdfstring{allow\_low\_quality\_matches}{allow\_low\_quality\_matches}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1models_1_1detection_1_1__utils_1_1_matcher_afbd70a11fbf0bed01df036462a054ab5} 
+torchvision\+\_\+down.\+models.\+detection.\+\_\+utils.\+Matcher.\+allow\+\_\+low\+\_\+quality\+\_\+matches = allow\+\_\+low\+\_\+quality\+\_\+matches}
+
+\Hypertarget{classtorchvision__down_1_1models_1_1detection_1_1__utils_1_1_matcher_a5521f32a307629cbdc6ca31b10281e9a}\index{torchvision\_down.models.detection.\_utils.Matcher@{torchvision\_down.models.detection.\_utils.Matcher}!BELOW\_LOW\_THRESHOLD@{BELOW\_LOW\_THRESHOLD}}
+\index{BELOW\_LOW\_THRESHOLD@{BELOW\_LOW\_THRESHOLD}!torchvision\_down.models.detection.\_utils.Matcher@{torchvision\_down.models.detection.\_utils.Matcher}}
+\doxysubsubsection{\texorpdfstring{BELOW\_LOW\_THRESHOLD}{BELOW\_LOW\_THRESHOLD}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1models_1_1detection_1_1__utils_1_1_matcher_a5521f32a307629cbdc6ca31b10281e9a} 
+int torchvision\+\_\+down.\+models.\+detection.\+\_\+utils.\+Matcher.\+BELOW\+\_\+\+LOW\+\_\+\+THRESHOLD = -\/1\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classtorchvision__down_1_1models_1_1detection_1_1__utils_1_1_matcher_a431a871e0601c2b2e8a12ef685f759a7}\index{torchvision\_down.models.detection.\_utils.Matcher@{torchvision\_down.models.detection.\_utils.Matcher}!BETWEEN\_THRESHOLDS@{BETWEEN\_THRESHOLDS}}
+\index{BETWEEN\_THRESHOLDS@{BETWEEN\_THRESHOLDS}!torchvision\_down.models.detection.\_utils.Matcher@{torchvision\_down.models.detection.\_utils.Matcher}}
+\doxysubsubsection{\texorpdfstring{BETWEEN\_THRESHOLDS}{BETWEEN\_THRESHOLDS}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1models_1_1detection_1_1__utils_1_1_matcher_a431a871e0601c2b2e8a12ef685f759a7} 
+int torchvision\+\_\+down.\+models.\+detection.\+\_\+utils.\+Matcher.\+BETWEEN\+\_\+\+THRESHOLDS = -\/2\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classtorchvision__down_1_1models_1_1detection_1_1__utils_1_1_matcher_ad4a350c71519457ccd5f2254efdae224}\index{torchvision\_down.models.detection.\_utils.Matcher@{torchvision\_down.models.detection.\_utils.Matcher}!high\_threshold@{high\_threshold}}
+\index{high\_threshold@{high\_threshold}!torchvision\_down.models.detection.\_utils.Matcher@{torchvision\_down.models.detection.\_utils.Matcher}}
+\doxysubsubsection{\texorpdfstring{high\_threshold}{high\_threshold}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1models_1_1detection_1_1__utils_1_1_matcher_ad4a350c71519457ccd5f2254efdae224} 
+torchvision\+\_\+down.\+models.\+detection.\+\_\+utils.\+Matcher.\+high\+\_\+threshold = high\+\_\+threshold}
+
+\Hypertarget{classtorchvision__down_1_1models_1_1detection_1_1__utils_1_1_matcher_a27cd622c3d5d31cac9d0bdb32afc77be}\index{torchvision\_down.models.detection.\_utils.Matcher@{torchvision\_down.models.detection.\_utils.Matcher}!low\_threshold@{low\_threshold}}
+\index{low\_threshold@{low\_threshold}!torchvision\_down.models.detection.\_utils.Matcher@{torchvision\_down.models.detection.\_utils.Matcher}}
+\doxysubsubsection{\texorpdfstring{low\_threshold}{low\_threshold}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1models_1_1detection_1_1__utils_1_1_matcher_a27cd622c3d5d31cac9d0bdb32afc77be} 
+torchvision\+\_\+down.\+models.\+detection.\+\_\+utils.\+Matcher.\+low\+\_\+threshold = low\+\_\+threshold}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Cervi\+AI/torchvision\+\_\+down/models/detection/\mbox{\hyperlink{models_2detection_2__utils_8py}{\+\_\+utils.\+py}}\end{DoxyCompactItemize}

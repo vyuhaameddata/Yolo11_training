@@ -1,0 +1,77 @@
+\doxysection{torchvision\+\_\+down.\+transforms.\+transforms.\+Random\+Horizontal\+Flip Class Reference}
+\hypertarget{classtorchvision__down_1_1transforms_1_1transforms_1_1_random_horizontal_flip}{}\label{classtorchvision__down_1_1transforms_1_1transforms_1_1_random_horizontal_flip}\index{torchvision\_down.transforms.transforms.RandomHorizontalFlip@{torchvision\_down.transforms.transforms.RandomHorizontalFlip}}
+Inheritance diagram for torchvision\+\_\+down.\+transforms.\+transforms.\+Random\+Horizontal\+Flip\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classtorchvision__down_1_1transforms_1_1transforms_1_1_random_horizontal_flip}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1transforms_1_1transforms_1_1_random_horizontal_flip_a08bcda469710a3610dfe12d98b954441}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, \mbox{\hyperlink{classtorchvision__down_1_1transforms_1_1transforms_1_1_random_horizontal_flip_a0ce84117b70f8c9bf191b4e65ede5513}{p}}=0.\+5)
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1transforms_1_1transforms_1_1_random_horizontal_flip_ab4a1bcfa159117c2dea3296e95270f1b}{forward}} (self, img)
+\item 
+str \mbox{\hyperlink{classtorchvision__down_1_1transforms_1_1transforms_1_1_random_horizontal_flip_af4bb9d32cb5137b34f4892fa1cb02fc3}{\+\_\+\+\_\+repr\+\_\+\+\_\+}} (self)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1transforms_1_1transforms_1_1_random_horizontal_flip_a0ce84117b70f8c9bf191b4e65ede5513}{p}} = p
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}Horizontally flip the given image randomly with a given probability.
+If the image is torch Tensor, it is expected
+to have [..., H, W] shape, where ... means an arbitrary number of leading
+dimensions
+
+Args:
+    p (float): probability of the image being flipped. Default value is 0.5
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classtorchvision__down_1_1transforms_1_1transforms_1_1_random_horizontal_flip_a08bcda469710a3610dfe12d98b954441}\index{torchvision\_down.transforms.transforms.RandomHorizontalFlip@{torchvision\_down.transforms.transforms.RandomHorizontalFlip}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!torchvision\_down.transforms.transforms.RandomHorizontalFlip@{torchvision\_down.transforms.transforms.RandomHorizontalFlip}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1transforms_1_1transforms_1_1_random_horizontal_flip_a08bcda469710a3610dfe12d98b954441} 
+torchvision\+\_\+down.\+transforms.\+transforms.\+Random\+Horizontal\+Flip.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{p}{ = {\ttfamily 0.5}}\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classtorchvision__down_1_1transforms_1_1transforms_1_1_random_horizontal_flip_af4bb9d32cb5137b34f4892fa1cb02fc3}\index{torchvision\_down.transforms.transforms.RandomHorizontalFlip@{torchvision\_down.transforms.transforms.RandomHorizontalFlip}!\_\_repr\_\_@{\_\_repr\_\_}}
+\index{\_\_repr\_\_@{\_\_repr\_\_}!torchvision\_down.transforms.transforms.RandomHorizontalFlip@{torchvision\_down.transforms.transforms.RandomHorizontalFlip}}
+\doxysubsubsection{\texorpdfstring{\_\_repr\_\_()}{\_\_repr\_\_()}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1transforms_1_1transforms_1_1_random_horizontal_flip_af4bb9d32cb5137b34f4892fa1cb02fc3} 
+ str torchvision\+\_\+down.\+transforms.\+transforms.\+Random\+Horizontal\+Flip.\+\_\+\+\_\+repr\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classtorchvision__down_1_1transforms_1_1transforms_1_1_random_horizontal_flip_ab4a1bcfa159117c2dea3296e95270f1b}\index{torchvision\_down.transforms.transforms.RandomHorizontalFlip@{torchvision\_down.transforms.transforms.RandomHorizontalFlip}!forward@{forward}}
+\index{forward@{forward}!torchvision\_down.transforms.transforms.RandomHorizontalFlip@{torchvision\_down.transforms.transforms.RandomHorizontalFlip}}
+\doxysubsubsection{\texorpdfstring{forward()}{forward()}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1transforms_1_1transforms_1_1_random_horizontal_flip_ab4a1bcfa159117c2dea3296e95270f1b} 
+torchvision\+\_\+down.\+transforms.\+transforms.\+Random\+Horizontal\+Flip.\+forward (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{img}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Args:
+    img (PIL Image or Tensor): Image to be flipped.
+
+Returns:
+    PIL Image or Tensor: Randomly flipped image.
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classtorchvision__down_1_1transforms_1_1transforms_1_1_random_horizontal_flip_a0ce84117b70f8c9bf191b4e65ede5513}\index{torchvision\_down.transforms.transforms.RandomHorizontalFlip@{torchvision\_down.transforms.transforms.RandomHorizontalFlip}!p@{p}}
+\index{p@{p}!torchvision\_down.transforms.transforms.RandomHorizontalFlip@{torchvision\_down.transforms.transforms.RandomHorizontalFlip}}
+\doxysubsubsection{\texorpdfstring{p}{p}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1transforms_1_1transforms_1_1_random_horizontal_flip_a0ce84117b70f8c9bf191b4e65ede5513} 
+torchvision\+\_\+down.\+transforms.\+transforms.\+Random\+Horizontal\+Flip.\+p = p}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Cervi\+AI/torchvision\+\_\+down/transforms/\mbox{\hyperlink{transforms_8py}{transforms.\+py}}\end{DoxyCompactItemize}

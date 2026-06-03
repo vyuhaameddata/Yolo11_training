@@ -1,0 +1,135 @@
+\doxysection{torchvision\+\_\+down.\+models.\+inception.\+InceptionC Class Reference}
+\hypertarget{classtorchvision__down_1_1models_1_1inception_1_1_inception_c}{}\label{classtorchvision__down_1_1models_1_1inception_1_1_inception_c}\index{torchvision\_down.models.inception.InceptionC@{torchvision\_down.models.inception.InceptionC}}
+Inheritance diagram for torchvision\+\_\+down.\+models.\+inception.\+InceptionC\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classtorchvision__down_1_1models_1_1inception_1_1_inception_c}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+None \mbox{\hyperlink{classtorchvision__down_1_1models_1_1inception_1_1_inception_c_a0a524f114c039595f155ca0776ea7688}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, int in\+\_\+channels, int channels\+\_\+7x7, Optional\mbox{[}Callable\mbox{[}..., nn.\+Module\mbox{]}\mbox{]} conv\+\_\+block=None)
+\item 
+Tensor \mbox{\hyperlink{classtorchvision__down_1_1models_1_1inception_1_1_inception_c_a00330e3eac7e2b227e98005784b2042c}{forward}} (self, Tensor x)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1models_1_1inception_1_1_inception_c_a40c14de982ea364d9e73f62bba7398bc}{branch1x1}} = conv\+\_\+block(in\+\_\+channels, 192, kernel\+\_\+size=1)
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1models_1_1inception_1_1_inception_c_a2d507ec433485cea23c4d3954d4561e8}{branch7x7\+\_\+1}} = conv\+\_\+block(in\+\_\+channels, c7, kernel\+\_\+size=1)
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1models_1_1inception_1_1_inception_c_a7fa01ca81a92b3d40b87ca5973a92c83}{branch7x7\+\_\+2}} = conv\+\_\+block(c7, c7, kernel\+\_\+size=(1, 7), padding=(0, 3))
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1models_1_1inception_1_1_inception_c_af6bfffa0b58f055b74783dc1d9a77735}{branch7x7\+\_\+3}} = conv\+\_\+block(c7, 192, kernel\+\_\+size=(7, 1), padding=(3, 0))
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1models_1_1inception_1_1_inception_c_ac9b583c8974d43578baf68224847ad77}{branch7x7dbl\+\_\+1}} = conv\+\_\+block(in\+\_\+channels, c7, kernel\+\_\+size=1)
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1models_1_1inception_1_1_inception_c_aabc624862683e68e59732f447ac8d02f}{branch7x7dbl\+\_\+2}} = conv\+\_\+block(c7, c7, kernel\+\_\+size=(7, 1), padding=(3, 0))
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1models_1_1inception_1_1_inception_c_abb3a4106168187dff07029dfcdf4f6fe}{branch7x7dbl\+\_\+3}} = conv\+\_\+block(c7, c7, kernel\+\_\+size=(1, 7), padding=(0, 3))
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1models_1_1inception_1_1_inception_c_a61340d7542f1ec7f39b4ffd42f60f7ca}{branch7x7dbl\+\_\+4}} = conv\+\_\+block(c7, c7, kernel\+\_\+size=(7, 1), padding=(3, 0))
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1models_1_1inception_1_1_inception_c_a0f6efdad6ce6e1327f6ce7ae5d98d3a3}{branch7x7dbl\+\_\+5}} = conv\+\_\+block(c7, 192, kernel\+\_\+size=(1, 7), padding=(0, 3))
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1models_1_1inception_1_1_inception_c_a1ac125596301e6fab85e1cd353c21f88}{branch\+\_\+pool}} = conv\+\_\+block(in\+\_\+channels, 192, kernel\+\_\+size=1)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+List\mbox{[}Tensor\mbox{]} \mbox{\hyperlink{classtorchvision__down_1_1models_1_1inception_1_1_inception_c_aac011fb591c06b90b059d47d291ae848}{\+\_\+forward}} (self, Tensor x)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classtorchvision__down_1_1models_1_1inception_1_1_inception_c_a0a524f114c039595f155ca0776ea7688}\index{torchvision\_down.models.inception.InceptionC@{torchvision\_down.models.inception.InceptionC}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!torchvision\_down.models.inception.InceptionC@{torchvision\_down.models.inception.InceptionC}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1models_1_1inception_1_1_inception_c_a0a524f114c039595f155ca0776ea7688} 
+ None torchvision\+\_\+down.\+models.\+inception.\+Inception\+C.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{int}]{in\+\_\+channels}{, }\item[{int}]{channels\+\_\+7x7}{, }\item[{Optional\mbox{[}Callable\mbox{[}..., nn.\+Module\mbox{]}\mbox{]} }]{conv\+\_\+block}{ = {\ttfamily None}}\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classtorchvision__down_1_1models_1_1inception_1_1_inception_c_aac011fb591c06b90b059d47d291ae848}\index{torchvision\_down.models.inception.InceptionC@{torchvision\_down.models.inception.InceptionC}!\_forward@{\_forward}}
+\index{\_forward@{\_forward}!torchvision\_down.models.inception.InceptionC@{torchvision\_down.models.inception.InceptionC}}
+\doxysubsubsection{\texorpdfstring{\_forward()}{\_forward()}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1models_1_1inception_1_1_inception_c_aac011fb591c06b90b059d47d291ae848} 
+ List\mbox{[}Tensor\mbox{]} torchvision\+\_\+down.\+models.\+inception.\+Inception\+C.\+\_\+forward (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{Tensor}]{x}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classtorchvision__down_1_1models_1_1inception_1_1_inception_c_a00330e3eac7e2b227e98005784b2042c}\index{torchvision\_down.models.inception.InceptionC@{torchvision\_down.models.inception.InceptionC}!forward@{forward}}
+\index{forward@{forward}!torchvision\_down.models.inception.InceptionC@{torchvision\_down.models.inception.InceptionC}}
+\doxysubsubsection{\texorpdfstring{forward()}{forward()}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1models_1_1inception_1_1_inception_c_a00330e3eac7e2b227e98005784b2042c} 
+ Tensor torchvision\+\_\+down.\+models.\+inception.\+Inception\+C.\+forward (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{Tensor}]{x}{}\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classtorchvision__down_1_1models_1_1inception_1_1_inception_c_a40c14de982ea364d9e73f62bba7398bc}\index{torchvision\_down.models.inception.InceptionC@{torchvision\_down.models.inception.InceptionC}!branch1x1@{branch1x1}}
+\index{branch1x1@{branch1x1}!torchvision\_down.models.inception.InceptionC@{torchvision\_down.models.inception.InceptionC}}
+\doxysubsubsection{\texorpdfstring{branch1x1}{branch1x1}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1models_1_1inception_1_1_inception_c_a40c14de982ea364d9e73f62bba7398bc} 
+torchvision\+\_\+down.\+models.\+inception.\+Inception\+C.\+branch1x1 = conv\+\_\+block(in\+\_\+channels, 192, kernel\+\_\+size=1)}
+
+\Hypertarget{classtorchvision__down_1_1models_1_1inception_1_1_inception_c_a2d507ec433485cea23c4d3954d4561e8}\index{torchvision\_down.models.inception.InceptionC@{torchvision\_down.models.inception.InceptionC}!branch7x7\_1@{branch7x7\_1}}
+\index{branch7x7\_1@{branch7x7\_1}!torchvision\_down.models.inception.InceptionC@{torchvision\_down.models.inception.InceptionC}}
+\doxysubsubsection{\texorpdfstring{branch7x7\_1}{branch7x7\_1}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1models_1_1inception_1_1_inception_c_a2d507ec433485cea23c4d3954d4561e8} 
+torchvision\+\_\+down.\+models.\+inception.\+Inception\+C.\+branch7x7\+\_\+1 = conv\+\_\+block(in\+\_\+channels, c7, kernel\+\_\+size=1)}
+
+\Hypertarget{classtorchvision__down_1_1models_1_1inception_1_1_inception_c_a7fa01ca81a92b3d40b87ca5973a92c83}\index{torchvision\_down.models.inception.InceptionC@{torchvision\_down.models.inception.InceptionC}!branch7x7\_2@{branch7x7\_2}}
+\index{branch7x7\_2@{branch7x7\_2}!torchvision\_down.models.inception.InceptionC@{torchvision\_down.models.inception.InceptionC}}
+\doxysubsubsection{\texorpdfstring{branch7x7\_2}{branch7x7\_2}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1models_1_1inception_1_1_inception_c_a7fa01ca81a92b3d40b87ca5973a92c83} 
+torchvision\+\_\+down.\+models.\+inception.\+Inception\+C.\+branch7x7\+\_\+2 = conv\+\_\+block(c7, c7, kernel\+\_\+size=(1, 7), padding=(0, 3))}
+
+\Hypertarget{classtorchvision__down_1_1models_1_1inception_1_1_inception_c_af6bfffa0b58f055b74783dc1d9a77735}\index{torchvision\_down.models.inception.InceptionC@{torchvision\_down.models.inception.InceptionC}!branch7x7\_3@{branch7x7\_3}}
+\index{branch7x7\_3@{branch7x7\_3}!torchvision\_down.models.inception.InceptionC@{torchvision\_down.models.inception.InceptionC}}
+\doxysubsubsection{\texorpdfstring{branch7x7\_3}{branch7x7\_3}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1models_1_1inception_1_1_inception_c_af6bfffa0b58f055b74783dc1d9a77735} 
+torchvision\+\_\+down.\+models.\+inception.\+Inception\+C.\+branch7x7\+\_\+3 = conv\+\_\+block(c7, 192, kernel\+\_\+size=(7, 1), padding=(3, 0))}
+
+\Hypertarget{classtorchvision__down_1_1models_1_1inception_1_1_inception_c_ac9b583c8974d43578baf68224847ad77}\index{torchvision\_down.models.inception.InceptionC@{torchvision\_down.models.inception.InceptionC}!branch7x7dbl\_1@{branch7x7dbl\_1}}
+\index{branch7x7dbl\_1@{branch7x7dbl\_1}!torchvision\_down.models.inception.InceptionC@{torchvision\_down.models.inception.InceptionC}}
+\doxysubsubsection{\texorpdfstring{branch7x7dbl\_1}{branch7x7dbl\_1}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1models_1_1inception_1_1_inception_c_ac9b583c8974d43578baf68224847ad77} 
+torchvision\+\_\+down.\+models.\+inception.\+Inception\+C.\+branch7x7dbl\+\_\+1 = conv\+\_\+block(in\+\_\+channels, c7, kernel\+\_\+size=1)}
+
+\Hypertarget{classtorchvision__down_1_1models_1_1inception_1_1_inception_c_aabc624862683e68e59732f447ac8d02f}\index{torchvision\_down.models.inception.InceptionC@{torchvision\_down.models.inception.InceptionC}!branch7x7dbl\_2@{branch7x7dbl\_2}}
+\index{branch7x7dbl\_2@{branch7x7dbl\_2}!torchvision\_down.models.inception.InceptionC@{torchvision\_down.models.inception.InceptionC}}
+\doxysubsubsection{\texorpdfstring{branch7x7dbl\_2}{branch7x7dbl\_2}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1models_1_1inception_1_1_inception_c_aabc624862683e68e59732f447ac8d02f} 
+torchvision\+\_\+down.\+models.\+inception.\+Inception\+C.\+branch7x7dbl\+\_\+2 = conv\+\_\+block(c7, c7, kernel\+\_\+size=(7, 1), padding=(3, 0))}
+
+\Hypertarget{classtorchvision__down_1_1models_1_1inception_1_1_inception_c_abb3a4106168187dff07029dfcdf4f6fe}\index{torchvision\_down.models.inception.InceptionC@{torchvision\_down.models.inception.InceptionC}!branch7x7dbl\_3@{branch7x7dbl\_3}}
+\index{branch7x7dbl\_3@{branch7x7dbl\_3}!torchvision\_down.models.inception.InceptionC@{torchvision\_down.models.inception.InceptionC}}
+\doxysubsubsection{\texorpdfstring{branch7x7dbl\_3}{branch7x7dbl\_3}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1models_1_1inception_1_1_inception_c_abb3a4106168187dff07029dfcdf4f6fe} 
+torchvision\+\_\+down.\+models.\+inception.\+Inception\+C.\+branch7x7dbl\+\_\+3 = conv\+\_\+block(c7, c7, kernel\+\_\+size=(1, 7), padding=(0, 3))}
+
+\Hypertarget{classtorchvision__down_1_1models_1_1inception_1_1_inception_c_a61340d7542f1ec7f39b4ffd42f60f7ca}\index{torchvision\_down.models.inception.InceptionC@{torchvision\_down.models.inception.InceptionC}!branch7x7dbl\_4@{branch7x7dbl\_4}}
+\index{branch7x7dbl\_4@{branch7x7dbl\_4}!torchvision\_down.models.inception.InceptionC@{torchvision\_down.models.inception.InceptionC}}
+\doxysubsubsection{\texorpdfstring{branch7x7dbl\_4}{branch7x7dbl\_4}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1models_1_1inception_1_1_inception_c_a61340d7542f1ec7f39b4ffd42f60f7ca} 
+torchvision\+\_\+down.\+models.\+inception.\+Inception\+C.\+branch7x7dbl\+\_\+4 = conv\+\_\+block(c7, c7, kernel\+\_\+size=(7, 1), padding=(3, 0))}
+
+\Hypertarget{classtorchvision__down_1_1models_1_1inception_1_1_inception_c_a0f6efdad6ce6e1327f6ce7ae5d98d3a3}\index{torchvision\_down.models.inception.InceptionC@{torchvision\_down.models.inception.InceptionC}!branch7x7dbl\_5@{branch7x7dbl\_5}}
+\index{branch7x7dbl\_5@{branch7x7dbl\_5}!torchvision\_down.models.inception.InceptionC@{torchvision\_down.models.inception.InceptionC}}
+\doxysubsubsection{\texorpdfstring{branch7x7dbl\_5}{branch7x7dbl\_5}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1models_1_1inception_1_1_inception_c_a0f6efdad6ce6e1327f6ce7ae5d98d3a3} 
+torchvision\+\_\+down.\+models.\+inception.\+Inception\+C.\+branch7x7dbl\+\_\+5 = conv\+\_\+block(c7, 192, kernel\+\_\+size=(1, 7), padding=(0, 3))}
+
+\Hypertarget{classtorchvision__down_1_1models_1_1inception_1_1_inception_c_a1ac125596301e6fab85e1cd353c21f88}\index{torchvision\_down.models.inception.InceptionC@{torchvision\_down.models.inception.InceptionC}!branch\_pool@{branch\_pool}}
+\index{branch\_pool@{branch\_pool}!torchvision\_down.models.inception.InceptionC@{torchvision\_down.models.inception.InceptionC}}
+\doxysubsubsection{\texorpdfstring{branch\_pool}{branch\_pool}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1models_1_1inception_1_1_inception_c_a1ac125596301e6fab85e1cd353c21f88} 
+torchvision\+\_\+down.\+models.\+inception.\+Inception\+C.\+branch\+\_\+pool = conv\+\_\+block(in\+\_\+channels, 192, kernel\+\_\+size=1)}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Cervi\+AI/torchvision\+\_\+down/models/\mbox{\hyperlink{inception_8py}{inception.\+py}}\end{DoxyCompactItemize}

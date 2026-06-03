@@ -1,0 +1,190 @@
+\doxysection{torchvision\+\_\+down.\+ops.\+poolers.\+Multi\+Scale\+Ro\+IAlign Class Reference}
+\hypertarget{classtorchvision__down_1_1ops_1_1poolers_1_1_multi_scale_ro_i_align}{}\label{classtorchvision__down_1_1ops_1_1poolers_1_1_multi_scale_ro_i_align}\index{torchvision\_down.ops.poolers.MultiScaleRoIAlign@{torchvision\_down.ops.poolers.MultiScaleRoIAlign}}
+Inheritance diagram for torchvision\+\_\+down.\+ops.\+poolers.\+Multi\+Scale\+Ro\+IAlign\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classtorchvision__down_1_1ops_1_1poolers_1_1_multi_scale_ro_i_align}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1ops_1_1poolers_1_1_multi_scale_ro_i_align_af892671c5fa0cd6be0f487a1b3ca134e}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, List\mbox{[}str\mbox{]} \mbox{\hyperlink{classtorchvision__down_1_1ops_1_1poolers_1_1_multi_scale_ro_i_align_a9c990875ce00623022d42e234808bc0f}{featmap\+\_\+names}}, Union\mbox{[}int, Tuple\mbox{[}int\mbox{]}, List\mbox{[}int\mbox{]}\mbox{]} \mbox{\hyperlink{classtorchvision__down_1_1ops_1_1poolers_1_1_multi_scale_ro_i_align_a1e20f74fddb6a4182d17aa40e8d527e6}{output\+\_\+size}}, int \mbox{\hyperlink{classtorchvision__down_1_1ops_1_1poolers_1_1_multi_scale_ro_i_align_a9a1ab74c02a93cf5522b6141b50b4cb4}{sampling\+\_\+ratio}}, \texorpdfstring{$\ast$}{*}, int \mbox{\hyperlink{classtorchvision__down_1_1ops_1_1poolers_1_1_multi_scale_ro_i_align_a083475fafc4059fffe4855991a2b61ce}{canonical\+\_\+scale}}=224, int \mbox{\hyperlink{classtorchvision__down_1_1ops_1_1poolers_1_1_multi_scale_ro_i_align_a64ff5d579b39533796eedbdf5557df24}{canonical\+\_\+level}}=4)
+\item 
+Tensor \mbox{\hyperlink{classtorchvision__down_1_1ops_1_1poolers_1_1_multi_scale_ro_i_align_ae685c61ac2e89b1b6fe8846dfc823f22}{convert\+\_\+to\+\_\+roi\+\_\+format}} (self, List\mbox{[}Tensor\mbox{]} boxes)
+\item 
+float \mbox{\hyperlink{classtorchvision__down_1_1ops_1_1poolers_1_1_multi_scale_ro_i_align_a46c59b1f9700409c8bacae4520269221}{infer\+\_\+scale}} (self, Tensor feature, List\mbox{[}int\mbox{]} original\+\_\+size)
+\item 
+None \mbox{\hyperlink{classtorchvision__down_1_1ops_1_1poolers_1_1_multi_scale_ro_i_align_a25d3921a6780bd27df961d5aeb14ad12}{setup\+\_\+setup\+\_\+scales}} (self, List\mbox{[}Tensor\mbox{]} features, List\mbox{[}Tuple\mbox{[}int, int\mbox{]}\mbox{]} image\+\_\+shapes)
+\item 
+Tensor \mbox{\hyperlink{classtorchvision__down_1_1ops_1_1poolers_1_1_multi_scale_ro_i_align_a700de77a45f110162295aa683f672df6}{forward}} (self, Dict\mbox{[}str, Tensor\mbox{]} x, List\mbox{[}Tensor\mbox{]} boxes, List\mbox{[}Tuple\mbox{[}int, int\mbox{]}\mbox{]} image\+\_\+shapes)
+\item 
+str \mbox{\hyperlink{classtorchvision__down_1_1ops_1_1poolers_1_1_multi_scale_ro_i_align_a3586663829be118ad5b82d948daf843e}{\+\_\+\+\_\+repr\+\_\+\+\_\+}} (self)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1ops_1_1poolers_1_1_multi_scale_ro_i_align_a9c990875ce00623022d42e234808bc0f}{featmap\+\_\+names}} = featmap\+\_\+names
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1ops_1_1poolers_1_1_multi_scale_ro_i_align_a9a1ab74c02a93cf5522b6141b50b4cb4}{sampling\+\_\+ratio}} = sampling\+\_\+ratio
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1ops_1_1poolers_1_1_multi_scale_ro_i_align_a1e20f74fddb6a4182d17aa40e8d527e6}{output\+\_\+size}} = tuple(output\+\_\+size)
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1ops_1_1poolers_1_1_multi_scale_ro_i_align_a370a85f6bc4143ee542ad7919f7dda5d}{scales}} = None
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1ops_1_1poolers_1_1_multi_scale_ro_i_align_afe3e47bcf01f6fb5d6f5fc2ca3bb4a13}{map\+\_\+levels}} = None
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1ops_1_1poolers_1_1_multi_scale_ro_i_align_a083475fafc4059fffe4855991a2b61ce}{canonical\+\_\+scale}} = canonical\+\_\+scale
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1ops_1_1poolers_1_1_multi_scale_ro_i_align_a64ff5d579b39533796eedbdf5557df24}{canonical\+\_\+level}} = canonical\+\_\+level
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+dict \mbox{\hyperlink{classtorchvision__down_1_1ops_1_1poolers_1_1_multi_scale_ro_i_align_afe7de68bf40fb6b04313524625d9ffc1}{\+\_\+\+\_\+annotations\+\_\+\+\_\+}} = \{"{}scales"{}\+: Optional\mbox{[}List\mbox{[}float\mbox{]}\mbox{]}, "{}map\+\_\+levels"{}\+: Optional\mbox{[}\mbox{\hyperlink{classtorchvision__down_1_1ops_1_1poolers_1_1_level_mapper}{Level\+Mapper}}\mbox{]}\}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}Multi-scale RoIAlign pooling, which is useful for detection with or without FPN.
+
+It infers the scale of the pooling via the heuristics specified in eq. 1
+of the `Feature Pyramid Network paper <https://arxiv.org/abs/1612.03144>`_.
+They keyword-only parameters ``canonical_scale`` and ``canonical_level``
+correspond respectively to ``224`` and ``k0=4`` in eq. 1, and
+have the following meaning: ``canonical_level`` is the target level of the pyramid from
+which to pool a region of interest with ``w x h = canonical_scale x canonical_scale``.
+
+Args:
+    featmap_names (List[str]): the names of the feature maps that will be used
+        for the pooling.
+    output_size (List[Tuple[int, int]] or List[int]): output size for the pooled region
+    sampling_ratio (int): sampling ratio for ROIAlign
+    canonical_scale (int, optional): canonical_scale for LevelMapper
+    canonical_level (int, optional): canonical_level for LevelMapper
+
+Examples::
+
+    >>> m = torchvision.ops.MultiScaleRoIAlign(['feat1', 'feat3'], 3, 2)
+    >>> i = OrderedDict()
+    >>> i['feat1'] = torch.rand(1, 5, 64, 64)
+    >>> i['feat2'] = torch.rand(1, 5, 32, 32)  # this feature won't be used in the pooling
+    >>> i['feat3'] = torch.rand(1, 5, 16, 16)
+    >>> # create some random bounding boxes
+    >>> boxes = torch.rand(6, 4) * 256; boxes[:, 2:] += boxes[:, :2]
+    >>> # original image size, before computing the feature maps
+    >>> image_sizes = [(512, 512)]
+    >>> output = m(i, [boxes], image_sizes)
+    >>> print(output.shape)
+    >>> torch.Size([6, 5, 3, 3])
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classtorchvision__down_1_1ops_1_1poolers_1_1_multi_scale_ro_i_align_af892671c5fa0cd6be0f487a1b3ca134e}\index{torchvision\_down.ops.poolers.MultiScaleRoIAlign@{torchvision\_down.ops.poolers.MultiScaleRoIAlign}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!torchvision\_down.ops.poolers.MultiScaleRoIAlign@{torchvision\_down.ops.poolers.MultiScaleRoIAlign}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1ops_1_1poolers_1_1_multi_scale_ro_i_align_af892671c5fa0cd6be0f487a1b3ca134e} 
+torchvision\+\_\+down.\+ops.\+poolers.\+Multi\+Scale\+Ro\+IAlign.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{List\mbox{[}str\mbox{]}}]{featmap\+\_\+names}{, }\item[{Union\mbox{[}int, Tuple\mbox{[}int\mbox{]}, List\mbox{[}int\mbox{]}\mbox{]}}]{output\+\_\+size}{, }\item[{int}]{sampling\+\_\+ratio}{, }\item[{\texorpdfstring{$\ast$}{*}}]{}{, }\item[{int }]{canonical\+\_\+scale}{ = {\ttfamily 224}, }\item[{int }]{canonical\+\_\+level}{ = {\ttfamily 4}}\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classtorchvision__down_1_1ops_1_1poolers_1_1_multi_scale_ro_i_align_a3586663829be118ad5b82d948daf843e}\index{torchvision\_down.ops.poolers.MultiScaleRoIAlign@{torchvision\_down.ops.poolers.MultiScaleRoIAlign}!\_\_repr\_\_@{\_\_repr\_\_}}
+\index{\_\_repr\_\_@{\_\_repr\_\_}!torchvision\_down.ops.poolers.MultiScaleRoIAlign@{torchvision\_down.ops.poolers.MultiScaleRoIAlign}}
+\doxysubsubsection{\texorpdfstring{\_\_repr\_\_()}{\_\_repr\_\_()}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1ops_1_1poolers_1_1_multi_scale_ro_i_align_a3586663829be118ad5b82d948daf843e} 
+ str torchvision\+\_\+down.\+ops.\+poolers.\+Multi\+Scale\+Ro\+IAlign.\+\_\+\+\_\+repr\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classtorchvision__down_1_1ops_1_1poolers_1_1_multi_scale_ro_i_align_ae685c61ac2e89b1b6fe8846dfc823f22}\index{torchvision\_down.ops.poolers.MultiScaleRoIAlign@{torchvision\_down.ops.poolers.MultiScaleRoIAlign}!convert\_to\_roi\_format@{convert\_to\_roi\_format}}
+\index{convert\_to\_roi\_format@{convert\_to\_roi\_format}!torchvision\_down.ops.poolers.MultiScaleRoIAlign@{torchvision\_down.ops.poolers.MultiScaleRoIAlign}}
+\doxysubsubsection{\texorpdfstring{convert\_to\_roi\_format()}{convert\_to\_roi\_format()}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1ops_1_1poolers_1_1_multi_scale_ro_i_align_ae685c61ac2e89b1b6fe8846dfc823f22} 
+ Tensor torchvision\+\_\+down.\+ops.\+poolers.\+Multi\+Scale\+Ro\+IAlign.\+convert\+\_\+to\+\_\+roi\+\_\+format (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{List\mbox{[}Tensor\mbox{]}}]{boxes}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classtorchvision__down_1_1ops_1_1poolers_1_1_multi_scale_ro_i_align_a700de77a45f110162295aa683f672df6}\index{torchvision\_down.ops.poolers.MultiScaleRoIAlign@{torchvision\_down.ops.poolers.MultiScaleRoIAlign}!forward@{forward}}
+\index{forward@{forward}!torchvision\_down.ops.poolers.MultiScaleRoIAlign@{torchvision\_down.ops.poolers.MultiScaleRoIAlign}}
+\doxysubsubsection{\texorpdfstring{forward()}{forward()}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1ops_1_1poolers_1_1_multi_scale_ro_i_align_a700de77a45f110162295aa683f672df6} 
+ Tensor torchvision\+\_\+down.\+ops.\+poolers.\+Multi\+Scale\+Ro\+IAlign.\+forward (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{Dict\mbox{[}str, Tensor\mbox{]}}]{x}{, }\item[{List\mbox{[}Tensor\mbox{]}}]{boxes}{, }\item[{List\mbox{[}Tuple\mbox{[}int, int\mbox{]}\mbox{]}}]{image\+\_\+shapes}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Args:
+    x (OrderedDict[Tensor]): feature maps for each level. They are assumed to have
+        all the same number of channels, but they can have different sizes.
+    boxes (List[Tensor[N, 4]]): boxes to be used to perform the pooling operation, in
+        (x1, y1, x2, y2) format and in the image reference size, not the feature map
+        reference. The coordinate must satisfy ``0 <= x1 < x2`` and ``0 <= y1 < y2``.
+    image_shapes (List[Tuple[height, width]]): the sizes of each image before they
+        have been fed to a CNN to obtain feature maps. This allows us to infer the
+        scale factor for each one of the levels to be pooled.
+Returns:
+    result (Tensor)
+\end{DoxyVerb}
+ \Hypertarget{classtorchvision__down_1_1ops_1_1poolers_1_1_multi_scale_ro_i_align_a46c59b1f9700409c8bacae4520269221}\index{torchvision\_down.ops.poolers.MultiScaleRoIAlign@{torchvision\_down.ops.poolers.MultiScaleRoIAlign}!infer\_scale@{infer\_scale}}
+\index{infer\_scale@{infer\_scale}!torchvision\_down.ops.poolers.MultiScaleRoIAlign@{torchvision\_down.ops.poolers.MultiScaleRoIAlign}}
+\doxysubsubsection{\texorpdfstring{infer\_scale()}{infer\_scale()}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1ops_1_1poolers_1_1_multi_scale_ro_i_align_a46c59b1f9700409c8bacae4520269221} 
+ float torchvision\+\_\+down.\+ops.\+poolers.\+Multi\+Scale\+Ro\+IAlign.\+infer\+\_\+scale (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{Tensor}]{feature}{, }\item[{List\mbox{[}int\mbox{]}}]{original\+\_\+size}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classtorchvision__down_1_1ops_1_1poolers_1_1_multi_scale_ro_i_align_a25d3921a6780bd27df961d5aeb14ad12}\index{torchvision\_down.ops.poolers.MultiScaleRoIAlign@{torchvision\_down.ops.poolers.MultiScaleRoIAlign}!setup\_setup\_scales@{setup\_setup\_scales}}
+\index{setup\_setup\_scales@{setup\_setup\_scales}!torchvision\_down.ops.poolers.MultiScaleRoIAlign@{torchvision\_down.ops.poolers.MultiScaleRoIAlign}}
+\doxysubsubsection{\texorpdfstring{setup\_setup\_scales()}{setup\_setup\_scales()}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1ops_1_1poolers_1_1_multi_scale_ro_i_align_a25d3921a6780bd27df961d5aeb14ad12} 
+ None torchvision\+\_\+down.\+ops.\+poolers.\+Multi\+Scale\+Ro\+IAlign.\+setup\+\_\+setup\+\_\+scales (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{List\mbox{[}Tensor\mbox{]}}]{features}{, }\item[{List\mbox{[}Tuple\mbox{[}int, int\mbox{]}\mbox{]}}]{image\+\_\+shapes}{}\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classtorchvision__down_1_1ops_1_1poolers_1_1_multi_scale_ro_i_align_afe7de68bf40fb6b04313524625d9ffc1}\index{torchvision\_down.ops.poolers.MultiScaleRoIAlign@{torchvision\_down.ops.poolers.MultiScaleRoIAlign}!\_\_annotations\_\_@{\_\_annotations\_\_}}
+\index{\_\_annotations\_\_@{\_\_annotations\_\_}!torchvision\_down.ops.poolers.MultiScaleRoIAlign@{torchvision\_down.ops.poolers.MultiScaleRoIAlign}}
+\doxysubsubsection{\texorpdfstring{\_\_annotations\_\_}{\_\_annotations\_\_}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1ops_1_1poolers_1_1_multi_scale_ro_i_align_afe7de68bf40fb6b04313524625d9ffc1} 
+dict torchvision\+\_\+down.\+ops.\+poolers.\+Multi\+Scale\+Ro\+IAlign.\+\_\+\+\_\+annotations\+\_\+\+\_\+ = \{"{}scales"{}\+: Optional\mbox{[}List\mbox{[}float\mbox{]}\mbox{]}, "{}map\+\_\+levels"{}\+: Optional\mbox{[}\mbox{\hyperlink{classtorchvision__down_1_1ops_1_1poolers_1_1_level_mapper}{Level\+Mapper}}\mbox{]}\}\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+\Hypertarget{classtorchvision__down_1_1ops_1_1poolers_1_1_multi_scale_ro_i_align_a64ff5d579b39533796eedbdf5557df24}\index{torchvision\_down.ops.poolers.MultiScaleRoIAlign@{torchvision\_down.ops.poolers.MultiScaleRoIAlign}!canonical\_level@{canonical\_level}}
+\index{canonical\_level@{canonical\_level}!torchvision\_down.ops.poolers.MultiScaleRoIAlign@{torchvision\_down.ops.poolers.MultiScaleRoIAlign}}
+\doxysubsubsection{\texorpdfstring{canonical\_level}{canonical\_level}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1ops_1_1poolers_1_1_multi_scale_ro_i_align_a64ff5d579b39533796eedbdf5557df24} 
+torchvision\+\_\+down.\+ops.\+poolers.\+Multi\+Scale\+Ro\+IAlign.\+canonical\+\_\+level = canonical\+\_\+level}
+
+\Hypertarget{classtorchvision__down_1_1ops_1_1poolers_1_1_multi_scale_ro_i_align_a083475fafc4059fffe4855991a2b61ce}\index{torchvision\_down.ops.poolers.MultiScaleRoIAlign@{torchvision\_down.ops.poolers.MultiScaleRoIAlign}!canonical\_scale@{canonical\_scale}}
+\index{canonical\_scale@{canonical\_scale}!torchvision\_down.ops.poolers.MultiScaleRoIAlign@{torchvision\_down.ops.poolers.MultiScaleRoIAlign}}
+\doxysubsubsection{\texorpdfstring{canonical\_scale}{canonical\_scale}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1ops_1_1poolers_1_1_multi_scale_ro_i_align_a083475fafc4059fffe4855991a2b61ce} 
+torchvision\+\_\+down.\+ops.\+poolers.\+Multi\+Scale\+Ro\+IAlign.\+canonical\+\_\+scale = canonical\+\_\+scale}
+
+\Hypertarget{classtorchvision__down_1_1ops_1_1poolers_1_1_multi_scale_ro_i_align_a9c990875ce00623022d42e234808bc0f}\index{torchvision\_down.ops.poolers.MultiScaleRoIAlign@{torchvision\_down.ops.poolers.MultiScaleRoIAlign}!featmap\_names@{featmap\_names}}
+\index{featmap\_names@{featmap\_names}!torchvision\_down.ops.poolers.MultiScaleRoIAlign@{torchvision\_down.ops.poolers.MultiScaleRoIAlign}}
+\doxysubsubsection{\texorpdfstring{featmap\_names}{featmap\_names}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1ops_1_1poolers_1_1_multi_scale_ro_i_align_a9c990875ce00623022d42e234808bc0f} 
+torchvision\+\_\+down.\+ops.\+poolers.\+Multi\+Scale\+Ro\+IAlign.\+featmap\+\_\+names = featmap\+\_\+names}
+
+\Hypertarget{classtorchvision__down_1_1ops_1_1poolers_1_1_multi_scale_ro_i_align_afe3e47bcf01f6fb5d6f5fc2ca3bb4a13}\index{torchvision\_down.ops.poolers.MultiScaleRoIAlign@{torchvision\_down.ops.poolers.MultiScaleRoIAlign}!map\_levels@{map\_levels}}
+\index{map\_levels@{map\_levels}!torchvision\_down.ops.poolers.MultiScaleRoIAlign@{torchvision\_down.ops.poolers.MultiScaleRoIAlign}}
+\doxysubsubsection{\texorpdfstring{map\_levels}{map\_levels}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1ops_1_1poolers_1_1_multi_scale_ro_i_align_afe3e47bcf01f6fb5d6f5fc2ca3bb4a13} 
+torchvision\+\_\+down.\+ops.\+poolers.\+Multi\+Scale\+Ro\+IAlign.\+map\+\_\+levels = None}
+
+\Hypertarget{classtorchvision__down_1_1ops_1_1poolers_1_1_multi_scale_ro_i_align_a1e20f74fddb6a4182d17aa40e8d527e6}\index{torchvision\_down.ops.poolers.MultiScaleRoIAlign@{torchvision\_down.ops.poolers.MultiScaleRoIAlign}!output\_size@{output\_size}}
+\index{output\_size@{output\_size}!torchvision\_down.ops.poolers.MultiScaleRoIAlign@{torchvision\_down.ops.poolers.MultiScaleRoIAlign}}
+\doxysubsubsection{\texorpdfstring{output\_size}{output\_size}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1ops_1_1poolers_1_1_multi_scale_ro_i_align_a1e20f74fddb6a4182d17aa40e8d527e6} 
+torchvision\+\_\+down.\+ops.\+poolers.\+Multi\+Scale\+Ro\+IAlign.\+output\+\_\+size = tuple(output\+\_\+size)}
+
+\Hypertarget{classtorchvision__down_1_1ops_1_1poolers_1_1_multi_scale_ro_i_align_a9a1ab74c02a93cf5522b6141b50b4cb4}\index{torchvision\_down.ops.poolers.MultiScaleRoIAlign@{torchvision\_down.ops.poolers.MultiScaleRoIAlign}!sampling\_ratio@{sampling\_ratio}}
+\index{sampling\_ratio@{sampling\_ratio}!torchvision\_down.ops.poolers.MultiScaleRoIAlign@{torchvision\_down.ops.poolers.MultiScaleRoIAlign}}
+\doxysubsubsection{\texorpdfstring{sampling\_ratio}{sampling\_ratio}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1ops_1_1poolers_1_1_multi_scale_ro_i_align_a9a1ab74c02a93cf5522b6141b50b4cb4} 
+torchvision\+\_\+down.\+ops.\+poolers.\+Multi\+Scale\+Ro\+IAlign.\+sampling\+\_\+ratio = sampling\+\_\+ratio}
+
+\Hypertarget{classtorchvision__down_1_1ops_1_1poolers_1_1_multi_scale_ro_i_align_a370a85f6bc4143ee542ad7919f7dda5d}\index{torchvision\_down.ops.poolers.MultiScaleRoIAlign@{torchvision\_down.ops.poolers.MultiScaleRoIAlign}!scales@{scales}}
+\index{scales@{scales}!torchvision\_down.ops.poolers.MultiScaleRoIAlign@{torchvision\_down.ops.poolers.MultiScaleRoIAlign}}
+\doxysubsubsection{\texorpdfstring{scales}{scales}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1ops_1_1poolers_1_1_multi_scale_ro_i_align_a370a85f6bc4143ee542ad7919f7dda5d} 
+torchvision\+\_\+down.\+ops.\+poolers.\+Multi\+Scale\+Ro\+IAlign.\+scales = None}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Cervi\+AI/torchvision\+\_\+down/ops/\mbox{\hyperlink{poolers_8py}{poolers.\+py}}\end{DoxyCompactItemize}

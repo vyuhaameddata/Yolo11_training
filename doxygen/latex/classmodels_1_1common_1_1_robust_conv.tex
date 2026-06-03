@@ -1,0 +1,68 @@
+\doxysection{models.\+common.\+Robust\+Conv Class Reference}
+\hypertarget{classmodels_1_1common_1_1_robust_conv}{}\label{classmodels_1_1common_1_1_robust_conv}\index{models.common.RobustConv@{models.common.RobustConv}}
+Inheritance diagram for models.\+common.\+Robust\+Conv\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classmodels_1_1common_1_1_robust_conv}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classmodels_1_1common_1_1_robust_conv_a5604013f97155beb92f2cd6d81bcaeff}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, c1, c2, k=7, s=1, p=None, g=1, act=True, layer\+\_\+scale\+\_\+init\+\_\+value=1e-\/6)
+\item 
+\mbox{\hyperlink{classmodels_1_1common_1_1_robust_conv_ad8230a77c7ebb4ff34dc3842f8d7d285}{forward}} (self, x)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classmodels_1_1common_1_1_robust_conv_a10e00c64a48172cdd253a2e5817ebe4d}{conv\+\_\+dw}} = \mbox{\hyperlink{classmodels_1_1common_1_1_conv}{Conv}}(c1, c1, k=k, s=s, p=p, g=c1, act=act)
+\item 
+\mbox{\hyperlink{classmodels_1_1common_1_1_robust_conv_a2a4b620e57170f3387b0917d6a456c3d}{conv1x1}} = nn.\+Conv2d(c1, c2, 1, 1, 0, groups=1, bias=True)
+\item 
+int \mbox{\hyperlink{classmodels_1_1common_1_1_robust_conv_a09e00c9c21177a24aa9ab3b1b77f068c}{gamma}} = nn.\+Parameter(layer\+\_\+scale\+\_\+init\+\_\+value \texorpdfstring{$\ast$}{*} torch.\+ones(c2)) if layer\+\_\+scale\+\_\+init\+\_\+value $>$ 0 else None
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classmodels_1_1common_1_1_robust_conv_a5604013f97155beb92f2cd6d81bcaeff}\index{models.common.RobustConv@{models.common.RobustConv}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!models.common.RobustConv@{models.common.RobustConv}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily \label{classmodels_1_1common_1_1_robust_conv_a5604013f97155beb92f2cd6d81bcaeff} 
+models.\+common.\+Robust\+Conv.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{c1}{, }\item[{}]{c2}{, }\item[{}]{k}{ = {\ttfamily 7}, }\item[{}]{s}{ = {\ttfamily 1}, }\item[{}]{p}{ = {\ttfamily None}, }\item[{}]{g}{ = {\ttfamily 1}, }\item[{}]{act}{ = {\ttfamily True}, }\item[{}]{layer\+\_\+scale\+\_\+init\+\_\+value}{ = {\ttfamily 1e-\/6}}\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classmodels_1_1common_1_1_robust_conv_ad8230a77c7ebb4ff34dc3842f8d7d285}\index{models.common.RobustConv@{models.common.RobustConv}!forward@{forward}}
+\index{forward@{forward}!models.common.RobustConv@{models.common.RobustConv}}
+\doxysubsubsection{\texorpdfstring{forward()}{forward()}}
+{\footnotesize\ttfamily \label{classmodels_1_1common_1_1_robust_conv_ad8230a77c7ebb4ff34dc3842f8d7d285} 
+models.\+common.\+Robust\+Conv.\+forward (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{x}{}\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classmodels_1_1common_1_1_robust_conv_a2a4b620e57170f3387b0917d6a456c3d}\index{models.common.RobustConv@{models.common.RobustConv}!conv1x1@{conv1x1}}
+\index{conv1x1@{conv1x1}!models.common.RobustConv@{models.common.RobustConv}}
+\doxysubsubsection{\texorpdfstring{conv1x1}{conv1x1}}
+{\footnotesize\ttfamily \label{classmodels_1_1common_1_1_robust_conv_a2a4b620e57170f3387b0917d6a456c3d} 
+models.\+common.\+Robust\+Conv.\+conv1x1 = nn.\+Conv2d(c1, c2, 1, 1, 0, groups=1, bias=True)}
+
+\Hypertarget{classmodels_1_1common_1_1_robust_conv_a10e00c64a48172cdd253a2e5817ebe4d}\index{models.common.RobustConv@{models.common.RobustConv}!conv\_dw@{conv\_dw}}
+\index{conv\_dw@{conv\_dw}!models.common.RobustConv@{models.common.RobustConv}}
+\doxysubsubsection{\texorpdfstring{conv\_dw}{conv\_dw}}
+{\footnotesize\ttfamily \label{classmodels_1_1common_1_1_robust_conv_a10e00c64a48172cdd253a2e5817ebe4d} 
+models.\+common.\+Robust\+Conv.\+conv\+\_\+dw = \mbox{\hyperlink{classmodels_1_1common_1_1_conv}{Conv}}(c1, c1, k=k, s=s, p=p, g=c1, act=act)}
+
+\Hypertarget{classmodels_1_1common_1_1_robust_conv_a09e00c9c21177a24aa9ab3b1b77f068c}\index{models.common.RobustConv@{models.common.RobustConv}!gamma@{gamma}}
+\index{gamma@{gamma}!models.common.RobustConv@{models.common.RobustConv}}
+\doxysubsubsection{\texorpdfstring{gamma}{gamma}}
+{\footnotesize\ttfamily \label{classmodels_1_1common_1_1_robust_conv_a09e00c9c21177a24aa9ab3b1b77f068c} 
+int models.\+common.\+Robust\+Conv.\+gamma = nn.\+Parameter(layer\+\_\+scale\+\_\+init\+\_\+value \texorpdfstring{$\ast$}{*} torch.\+ones(c2)) if layer\+\_\+scale\+\_\+init\+\_\+value $>$ 0 else None}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Cervi\+AI/models/\mbox{\hyperlink{common_8py}{common.\+py}}\end{DoxyCompactItemize}

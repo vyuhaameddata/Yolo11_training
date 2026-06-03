@@ -1,0 +1,100 @@
+\doxysection{torchvision\+\_\+down.\+transforms.\+transforms.\+Normalize Class Reference}
+\hypertarget{classtorchvision__down_1_1transforms_1_1transforms_1_1_normalize}{}\label{classtorchvision__down_1_1transforms_1_1transforms_1_1_normalize}\index{torchvision\_down.transforms.transforms.Normalize@{torchvision\_down.transforms.transforms.Normalize}}
+Inheritance diagram for torchvision\+\_\+down.\+transforms.\+transforms.\+Normalize\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classtorchvision__down_1_1transforms_1_1transforms_1_1_normalize}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1transforms_1_1transforms_1_1_normalize_a23acd95673059f57a401e334bb4d51f0}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, \mbox{\hyperlink{classtorchvision__down_1_1transforms_1_1transforms_1_1_normalize_adca1a8a22449ec6901b9c67bd4a083cb}{mean}}, \mbox{\hyperlink{classtorchvision__down_1_1transforms_1_1transforms_1_1_normalize_a8b58accaf3ade019cee5562d80e152be}{std}}, \mbox{\hyperlink{classtorchvision__down_1_1transforms_1_1transforms_1_1_normalize_a5fb41cb604b7092def35d5e93183c0cf}{inplace}}=False)
+\item 
+Tensor \mbox{\hyperlink{classtorchvision__down_1_1transforms_1_1transforms_1_1_normalize_ad25676756181ab0749bfd2593f9bdd3b}{forward}} (self, Tensor tensor)
+\item 
+str \mbox{\hyperlink{classtorchvision__down_1_1transforms_1_1transforms_1_1_normalize_a9c1e5834a400f0eba1a7bbe68c1ab8e1}{\+\_\+\+\_\+repr\+\_\+\+\_\+}} (self)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1transforms_1_1transforms_1_1_normalize_adca1a8a22449ec6901b9c67bd4a083cb}{mean}} = mean
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1transforms_1_1transforms_1_1_normalize_a8b58accaf3ade019cee5562d80e152be}{std}} = std
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1transforms_1_1transforms_1_1_normalize_a5fb41cb604b7092def35d5e93183c0cf}{inplace}} = inplace
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}Normalize a tensor image with mean and standard deviation.
+This transform does not support PIL Image.
+Given mean: ``(mean[1],...,mean[n])`` and std: ``(std[1],..,std[n])`` for ``n``
+channels, this transform will normalize each channel of the input
+``torch.*Tensor`` i.e.,
+``output[channel] = (input[channel] - mean[channel]) / std[channel]``
+
+.. note::
+    This transform acts out of place, i.e., it does not mutate the input tensor.
+
+Args:
+    mean (sequence): Sequence of means for each channel.
+    std (sequence): Sequence of standard deviations for each channel.
+    inplace(bool,optional): Bool to make this operation in-place.
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classtorchvision__down_1_1transforms_1_1transforms_1_1_normalize_a23acd95673059f57a401e334bb4d51f0}\index{torchvision\_down.transforms.transforms.Normalize@{torchvision\_down.transforms.transforms.Normalize}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!torchvision\_down.transforms.transforms.Normalize@{torchvision\_down.transforms.transforms.Normalize}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1transforms_1_1transforms_1_1_normalize_a23acd95673059f57a401e334bb4d51f0} 
+torchvision\+\_\+down.\+transforms.\+transforms.\+Normalize.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{mean}{, }\item[{}]{std}{, }\item[{}]{inplace}{ = {\ttfamily False}}\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classtorchvision__down_1_1transforms_1_1transforms_1_1_normalize_a9c1e5834a400f0eba1a7bbe68c1ab8e1}\index{torchvision\_down.transforms.transforms.Normalize@{torchvision\_down.transforms.transforms.Normalize}!\_\_repr\_\_@{\_\_repr\_\_}}
+\index{\_\_repr\_\_@{\_\_repr\_\_}!torchvision\_down.transforms.transforms.Normalize@{torchvision\_down.transforms.transforms.Normalize}}
+\doxysubsubsection{\texorpdfstring{\_\_repr\_\_()}{\_\_repr\_\_()}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1transforms_1_1transforms_1_1_normalize_a9c1e5834a400f0eba1a7bbe68c1ab8e1} 
+ str torchvision\+\_\+down.\+transforms.\+transforms.\+Normalize.\+\_\+\+\_\+repr\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classtorchvision__down_1_1transforms_1_1transforms_1_1_normalize_ad25676756181ab0749bfd2593f9bdd3b}\index{torchvision\_down.transforms.transforms.Normalize@{torchvision\_down.transforms.transforms.Normalize}!forward@{forward}}
+\index{forward@{forward}!torchvision\_down.transforms.transforms.Normalize@{torchvision\_down.transforms.transforms.Normalize}}
+\doxysubsubsection{\texorpdfstring{forward()}{forward()}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1transforms_1_1transforms_1_1_normalize_ad25676756181ab0749bfd2593f9bdd3b} 
+ Tensor torchvision\+\_\+down.\+transforms.\+transforms.\+Normalize.\+forward (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{Tensor}]{tensor}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Args:
+    tensor (Tensor): Tensor image to be normalized.
+
+Returns:
+    Tensor: Normalized Tensor image.
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classtorchvision__down_1_1transforms_1_1transforms_1_1_normalize_a5fb41cb604b7092def35d5e93183c0cf}\index{torchvision\_down.transforms.transforms.Normalize@{torchvision\_down.transforms.transforms.Normalize}!inplace@{inplace}}
+\index{inplace@{inplace}!torchvision\_down.transforms.transforms.Normalize@{torchvision\_down.transforms.transforms.Normalize}}
+\doxysubsubsection{\texorpdfstring{inplace}{inplace}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1transforms_1_1transforms_1_1_normalize_a5fb41cb604b7092def35d5e93183c0cf} 
+torchvision\+\_\+down.\+transforms.\+transforms.\+Normalize.\+inplace = inplace}
+
+\Hypertarget{classtorchvision__down_1_1transforms_1_1transforms_1_1_normalize_adca1a8a22449ec6901b9c67bd4a083cb}\index{torchvision\_down.transforms.transforms.Normalize@{torchvision\_down.transforms.transforms.Normalize}!mean@{mean}}
+\index{mean@{mean}!torchvision\_down.transforms.transforms.Normalize@{torchvision\_down.transforms.transforms.Normalize}}
+\doxysubsubsection{\texorpdfstring{mean}{mean}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1transforms_1_1transforms_1_1_normalize_adca1a8a22449ec6901b9c67bd4a083cb} 
+torchvision\+\_\+down.\+transforms.\+transforms.\+Normalize.\+mean = mean}
+
+\Hypertarget{classtorchvision__down_1_1transforms_1_1transforms_1_1_normalize_a8b58accaf3ade019cee5562d80e152be}\index{torchvision\_down.transforms.transforms.Normalize@{torchvision\_down.transforms.transforms.Normalize}!std@{std}}
+\index{std@{std}!torchvision\_down.transforms.transforms.Normalize@{torchvision\_down.transforms.transforms.Normalize}}
+\doxysubsubsection{\texorpdfstring{std}{std}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1transforms_1_1transforms_1_1_normalize_a8b58accaf3ade019cee5562d80e152be} 
+torchvision\+\_\+down.\+transforms.\+transforms.\+Normalize.\+std = std}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Cervi\+AI/torchvision\+\_\+down/transforms/\mbox{\hyperlink{transforms_8py}{transforms.\+py}}\end{DoxyCompactItemize}

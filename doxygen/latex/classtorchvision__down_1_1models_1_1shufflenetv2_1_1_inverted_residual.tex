@@ -1,0 +1,115 @@
+\doxysection{torchvision\+\_\+down.\+models.\+shufflenetv2.\+Inverted\+Residual Class Reference}
+\hypertarget{classtorchvision__down_1_1models_1_1shufflenetv2_1_1_inverted_residual}{}\label{classtorchvision__down_1_1models_1_1shufflenetv2_1_1_inverted_residual}\index{torchvision\_down.models.shufflenetv2.InvertedResidual@{torchvision\_down.models.shufflenetv2.InvertedResidual}}
+Inheritance diagram for torchvision\+\_\+down.\+models.\+shufflenetv2.\+Inverted\+Residual\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=1.787234cm]{classtorchvision__down_1_1models_1_1shufflenetv2_1_1_inverted_residual}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+None \mbox{\hyperlink{classtorchvision__down_1_1models_1_1shufflenetv2_1_1_inverted_residual_a8785af1491886844dcb12a13ffad8d0d}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, int inp, int oup, int \mbox{\hyperlink{classtorchvision__down_1_1models_1_1shufflenetv2_1_1_inverted_residual_a59805aa98b842171945f9f3cf719d674}{stride}})
+\item 
+Tensor \mbox{\hyperlink{classtorchvision__down_1_1models_1_1shufflenetv2_1_1_inverted_residual_a5af77caf60cf8980a461bdd18104f560}{forward}} (self, Tensor x)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+nn.\+Conv2d \mbox{\hyperlink{classtorchvision__down_1_1models_1_1shufflenetv2_1_1_inverted_residual_af4c3fb4a9d5aad5a914cb608d7ceb321}{depthwise\+\_\+conv}} (int i, int o, int kernel\+\_\+size, int \mbox{\hyperlink{classtorchvision__down_1_1models_1_1shufflenetv2_1_1_inverted_residual_a59805aa98b842171945f9f3cf719d674}{stride}}=1, int padding=0, bool bias=False)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{classtorchvision__down_1_1models_1_1shufflenetv2_1_1_inverted_residual_a59805aa98b842171945f9f3cf719d674}{stride}} = stride
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1models_1_1shufflenetv2_1_1_inverted_residual_a54693af7adbfd49990fe3b72678f52cf}{branch1}}
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1models_1_1shufflenetv2_1_1_inverted_residual_a521971a3d7259b49413fba4139812dc7}{branch2}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classtorchvision__down_1_1models_1_1shufflenetv2_1_1_inverted_residual_a8785af1491886844dcb12a13ffad8d0d}\index{torchvision\_down.models.shufflenetv2.InvertedResidual@{torchvision\_down.models.shufflenetv2.InvertedResidual}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!torchvision\_down.models.shufflenetv2.InvertedResidual@{torchvision\_down.models.shufflenetv2.InvertedResidual}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1models_1_1shufflenetv2_1_1_inverted_residual_a8785af1491886844dcb12a13ffad8d0d} 
+ None torchvision\+\_\+down.\+models.\+shufflenetv2.\+Inverted\+Residual.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{int}]{inp}{, }\item[{int}]{oup}{, }\item[{int}]{stride}{}\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classtorchvision__down_1_1models_1_1shufflenetv2_1_1_inverted_residual_af4c3fb4a9d5aad5a914cb608d7ceb321}\index{torchvision\_down.models.shufflenetv2.InvertedResidual@{torchvision\_down.models.shufflenetv2.InvertedResidual}!depthwise\_conv@{depthwise\_conv}}
+\index{depthwise\_conv@{depthwise\_conv}!torchvision\_down.models.shufflenetv2.InvertedResidual@{torchvision\_down.models.shufflenetv2.InvertedResidual}}
+\doxysubsubsection{\texorpdfstring{depthwise\_conv()}{depthwise\_conv()}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1models_1_1shufflenetv2_1_1_inverted_residual_af4c3fb4a9d5aad5a914cb608d7ceb321} 
+ nn.\+Conv2d torchvision\+\_\+down.\+models.\+shufflenetv2.\+Inverted\+Residual.\+depthwise\+\_\+conv (\begin{DoxyParamCaption}\item[{int}]{i}{, }\item[{int}]{o}{, }\item[{int}]{kernel\+\_\+size}{, }\item[{int }]{stride}{ = {\ttfamily 1}, }\item[{int }]{padding}{ = {\ttfamily 0}, }\item[{bool }]{bias}{ = {\ttfamily False}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classtorchvision__down_1_1models_1_1shufflenetv2_1_1_inverted_residual_a5af77caf60cf8980a461bdd18104f560}\index{torchvision\_down.models.shufflenetv2.InvertedResidual@{torchvision\_down.models.shufflenetv2.InvertedResidual}!forward@{forward}}
+\index{forward@{forward}!torchvision\_down.models.shufflenetv2.InvertedResidual@{torchvision\_down.models.shufflenetv2.InvertedResidual}}
+\doxysubsubsection{\texorpdfstring{forward()}{forward()}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1models_1_1shufflenetv2_1_1_inverted_residual_a5af77caf60cf8980a461bdd18104f560} 
+ Tensor torchvision\+\_\+down.\+models.\+shufflenetv2.\+Inverted\+Residual.\+forward (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{Tensor}]{x}{}\end{DoxyParamCaption})}
+
+
+
+Reimplemented in \mbox{\hyperlink{classtorchvision__down_1_1models_1_1quantization_1_1mobilenetv2_1_1_quantizable_inverted_residual_ab1bb85ecf63b2abc0e692e10be20ab51}{torchvision\+\_\+down.\+models.\+quantization.\+mobilenetv2.\+Quantizable\+Inverted\+Residual}}, and \mbox{\hyperlink{classtorchvision__down_1_1models_1_1quantization_1_1shufflenetv2_1_1_quantizable_inverted_residual_a47253573475adcb851210182cd5657aa}{torchvision\+\_\+down.\+models.\+quantization.\+shufflenetv2.\+Quantizable\+Inverted\+Residual}}.
+
+
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classtorchvision__down_1_1models_1_1shufflenetv2_1_1_inverted_residual_a54693af7adbfd49990fe3b72678f52cf}\index{torchvision\_down.models.shufflenetv2.InvertedResidual@{torchvision\_down.models.shufflenetv2.InvertedResidual}!branch1@{branch1}}
+\index{branch1@{branch1}!torchvision\_down.models.shufflenetv2.InvertedResidual@{torchvision\_down.models.shufflenetv2.InvertedResidual}}
+\doxysubsubsection{\texorpdfstring{branch1}{branch1}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1models_1_1shufflenetv2_1_1_inverted_residual_a54693af7adbfd49990fe3b72678f52cf} 
+torchvision\+\_\+down.\+models.\+shufflenetv2.\+Inverted\+Residual.\+branch1}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \ nn.Sequential(}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ self.depthwise\_conv(inp,\ inp,\ kernel\_size=3,\ stride=self.stride,\ padding=1),}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ nn.BatchNorm2d(inp),}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ nn.Conv2d(inp,\ branch\_features,\ kernel\_size=1,\ stride=1,\ padding=0,\ bias=\textcolor{keyword}{False}),}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ nn.BatchNorm2d(branch\_features),}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ nn.ReLU(inplace=\textcolor{keyword}{True}),}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ )}
+
+\end{DoxyCode}
+\Hypertarget{classtorchvision__down_1_1models_1_1shufflenetv2_1_1_inverted_residual_a521971a3d7259b49413fba4139812dc7}\index{torchvision\_down.models.shufflenetv2.InvertedResidual@{torchvision\_down.models.shufflenetv2.InvertedResidual}!branch2@{branch2}}
+\index{branch2@{branch2}!torchvision\_down.models.shufflenetv2.InvertedResidual@{torchvision\_down.models.shufflenetv2.InvertedResidual}}
+\doxysubsubsection{\texorpdfstring{branch2}{branch2}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1models_1_1shufflenetv2_1_1_inverted_residual_a521971a3d7259b49413fba4139812dc7} 
+torchvision\+\_\+down.\+models.\+shufflenetv2.\+Inverted\+Residual.\+branch2}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \ nn.Sequential(}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ nn.Conv2d(}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ inp\ \textcolor{keywordflow}{if}\ (self.stride\ >\ 1)\ \textcolor{keywordflow}{else}\ branch\_features,}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ branch\_features,}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ kernel\_size=1,}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ stride=1,}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ padding=0,}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ bias=\textcolor{keyword}{False},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ ),}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ nn.BatchNorm2d(branch\_features),}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ nn.ReLU(inplace=\textcolor{keyword}{True}),}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ self.depthwise\_conv(branch\_features,\ branch\_features,\ kernel\_size=3,\ stride=self.stride,\ padding=1),}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ nn.BatchNorm2d(branch\_features),}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ nn.Conv2d(branch\_features,\ branch\_features,\ kernel\_size=1,\ stride=1,\ padding=0,\ bias=\textcolor{keyword}{False}),}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ nn.BatchNorm2d(branch\_features),}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ nn.ReLU(inplace=\textcolor{keyword}{True}),}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ )}
+
+\end{DoxyCode}
+\Hypertarget{classtorchvision__down_1_1models_1_1shufflenetv2_1_1_inverted_residual_a59805aa98b842171945f9f3cf719d674}\index{torchvision\_down.models.shufflenetv2.InvertedResidual@{torchvision\_down.models.shufflenetv2.InvertedResidual}!stride@{stride}}
+\index{stride@{stride}!torchvision\_down.models.shufflenetv2.InvertedResidual@{torchvision\_down.models.shufflenetv2.InvertedResidual}}
+\doxysubsubsection{\texorpdfstring{stride}{stride}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1models_1_1shufflenetv2_1_1_inverted_residual_a59805aa98b842171945f9f3cf719d674} 
+int torchvision\+\_\+down.\+models.\+shufflenetv2.\+Inverted\+Residual.\+stride = stride}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Cervi\+AI/torchvision\+\_\+down/models/\mbox{\hyperlink{shufflenetv2_8py}{shufflenetv2.\+py}}\end{DoxyCompactItemize}

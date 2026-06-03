@@ -1,0 +1,102 @@
+\doxysection{torchvision\+\_\+down.\+models.\+detection.\+fcos Namespace Reference}
+\hypertarget{namespacetorchvision__down_1_1models_1_1detection_1_1fcos}{}\label{namespacetorchvision__down_1_1models_1_1detection_1_1fcos}\index{torchvision\_down.models.detection.fcos@{torchvision\_down.models.detection.fcos}}
+\doxysubsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classtorchvision__down_1_1models_1_1detection_1_1fcos_1_1_f_c_o_s}{FCOS}}
+\item 
+class \mbox{\hyperlink{classtorchvision__down_1_1models_1_1detection_1_1fcos_1_1_f_c_o_s_classification_head}{FCOSClassification\+Head}}
+\item 
+class \mbox{\hyperlink{classtorchvision__down_1_1models_1_1detection_1_1fcos_1_1_f_c_o_s_head}{FCOSHead}}
+\item 
+class \mbox{\hyperlink{classtorchvision__down_1_1models_1_1detection_1_1fcos_1_1_f_c_o_s_regression_head}{FCOSRegression\+Head}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{namespacetorchvision__down_1_1models_1_1detection_1_1fcos_a37c213a458ab9b7ea52125c9275e3acc}{fcos\+\_\+resnet50\+\_\+fpn}} (bool pretrained=False, bool progress=True, int num\+\_\+classes=91, bool pretrained\+\_\+backbone=True, Optional\mbox{[}int\mbox{]} trainable\+\_\+backbone\+\_\+layers=None, \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}kwargs)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+list \mbox{\hyperlink{namespacetorchvision__down_1_1models_1_1detection_1_1fcos_a461d4122ab3f0d7f4d0879d3e7c3e79a}{\+\_\+\+\_\+all\+\_\+\+\_\+}} = \mbox{[}"{}FCOS"{}, "{}fcos\+\_\+resnet50\+\_\+fpn"{}\mbox{]}
+\item 
+dict \mbox{\hyperlink{namespacetorchvision__down_1_1models_1_1detection_1_1fcos_ae39232f8f419292f501331406b495945}{model\+\_\+urls}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{namespacetorchvision__down_1_1models_1_1detection_1_1fcos_a37c213a458ab9b7ea52125c9275e3acc}\index{torchvision\_down.models.detection.fcos@{torchvision\_down.models.detection.fcos}!fcos\_resnet50\_fpn@{fcos\_resnet50\_fpn}}
+\index{fcos\_resnet50\_fpn@{fcos\_resnet50\_fpn}!torchvision\_down.models.detection.fcos@{torchvision\_down.models.detection.fcos}}
+\doxysubsubsection{\texorpdfstring{fcos\_resnet50\_fpn()}{fcos\_resnet50\_fpn()}}
+{\footnotesize\ttfamily \label{namespacetorchvision__down_1_1models_1_1detection_1_1fcos_a37c213a458ab9b7ea52125c9275e3acc} 
+torchvision\+\_\+down.\+models.\+detection.\+fcos.\+fcos\+\_\+resnet50\+\_\+fpn (\begin{DoxyParamCaption}\item[{bool }]{pretrained}{ = {\ttfamily False}, }\item[{bool }]{progress}{ = {\ttfamily True}, }\item[{int }]{num\+\_\+classes}{ = {\ttfamily 91}, }\item[{bool }]{pretrained\+\_\+backbone}{ = {\ttfamily True}, }\item[{Optional\mbox{[}int\mbox{]} }]{trainable\+\_\+backbone\+\_\+layers}{ = {\ttfamily None}, }\item[{\texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}}]{kwargs}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Constructs a FCOS model with a ResNet-50-FPN backbone.
+
+Reference: `"FCOS: Fully Convolutional One-Stage Object Detection" <https://arxiv.org/abs/1904.01355>`_.
+
+The input to the model is expected to be a list of tensors, each of shape ``[C, H, W]``, one for each
+image, and should be in ``0-1`` range. Different images can have different sizes.
+
+The behavior of the model changes depending if it is in training or evaluation mode.
+
+During training, the model expects both the input tensors, as well as a targets (list of dictionary),
+containing:
+
+    - boxes (``FloatTensor[N, 4]``): the ground-truth boxes in ``[x1, y1, x2, y2]`` format, with
+      ``0 <= x1 < x2 <= W`` and ``0 <= y1 < y2 <= H``.
+    - labels (``Int64Tensor[N]``): the class label for each ground-truth box
+
+The model returns a ``Dict[Tensor]`` during training, containing the classification and regression
+losses.
+
+During inference, the model requires only the input tensors, and returns the post-processed
+predictions as a ``List[Dict[Tensor]]``, one for each input image. The fields of the ``Dict`` are as
+follows, where ``N`` is the number of detections:
+
+    - boxes (``FloatTensor[N, 4]``): the predicted boxes in ``[x1, y1, x2, y2]`` format, with
+      ``0 <= x1 < x2 <= W`` and ``0 <= y1 < y2 <= H``.
+    - labels (``Int64Tensor[N]``): the predicted labels for each detection
+    - scores (``Tensor[N]``): the scores of each detection
+
+For more details on the output, you may refer to :ref:`instance_seg_output`.
+
+Example:
+
+    >>> model = torchvision.models.detection.fcos_resnet50_fpn(pretrained=True)
+    >>> model.eval()
+    >>> x = [torch.rand(3, 300, 400), torch.rand(3, 500, 400)]
+    >>> predictions = model(x)
+
+Args:
+    pretrained (bool): If True, returns a model pre-trained on COCO train2017
+    progress (bool): If True, displays a progress bar of the download to stderr
+    num_classes (int): number of output classes of the model (including the background)
+    pretrained_backbone (bool): If True, returns a model with backbone pre-trained on Imagenet
+    trainable_backbone_layers (int, optional): number of trainable (not frozen) resnet layers starting
+        from final block. Valid values are between 0 and 5, with 5 meaning all backbone layers are
+        trainable. If ``None`` is passed (the default) this value is set to 3. Default: None
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Variable Documentation}
+\Hypertarget{namespacetorchvision__down_1_1models_1_1detection_1_1fcos_a461d4122ab3f0d7f4d0879d3e7c3e79a}\index{torchvision\_down.models.detection.fcos@{torchvision\_down.models.detection.fcos}!\_\_all\_\_@{\_\_all\_\_}}
+\index{\_\_all\_\_@{\_\_all\_\_}!torchvision\_down.models.detection.fcos@{torchvision\_down.models.detection.fcos}}
+\doxysubsubsection{\texorpdfstring{\_\_all\_\_}{\_\_all\_\_}}
+{\footnotesize\ttfamily \label{namespacetorchvision__down_1_1models_1_1detection_1_1fcos_a461d4122ab3f0d7f4d0879d3e7c3e79a} 
+list torchvision\+\_\+down.\+models.\+detection.\+fcos.\+\_\+\+\_\+all\+\_\+\+\_\+ = \mbox{[}"{}FCOS"{}, "{}fcos\+\_\+resnet50\+\_\+fpn"{}\mbox{]}\hspace{0.3cm}{\ttfamily [private]}}
+
+\Hypertarget{namespacetorchvision__down_1_1models_1_1detection_1_1fcos_ae39232f8f419292f501331406b495945}\index{torchvision\_down.models.detection.fcos@{torchvision\_down.models.detection.fcos}!model\_urls@{model\_urls}}
+\index{model\_urls@{model\_urls}!torchvision\_down.models.detection.fcos@{torchvision\_down.models.detection.fcos}}
+\doxysubsubsection{\texorpdfstring{model\_urls}{model\_urls}}
+{\footnotesize\ttfamily \label{namespacetorchvision__down_1_1models_1_1detection_1_1fcos_ae39232f8f419292f501331406b495945} 
+dict torchvision\+\_\+down.\+models.\+detection.\+fcos.\+model\+\_\+urls}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ =\ \ \{}
+\DoxyCodeLine{00002\ \ \ \ \ \textcolor{stringliteral}{"{}fcos\_resnet50\_fpn\_coco"{}}:\ \textcolor{stringliteral}{"{}https://download.pytorch.org/models/fcos\_resnet50\_fpn\_coco-\/99b0c9b7.pth"{}},}
+\DoxyCodeLine{00003\ \}}
+
+\end{DoxyCode}

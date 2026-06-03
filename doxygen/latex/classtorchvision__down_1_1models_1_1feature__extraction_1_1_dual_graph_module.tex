@@ -1,0 +1,105 @@
+\doxysection{torchvision\+\_\+down.\+models.\+feature\+\_\+extraction.\+Dual\+Graph\+Module Class Reference}
+\hypertarget{classtorchvision__down_1_1models_1_1feature__extraction_1_1_dual_graph_module}{}\label{classtorchvision__down_1_1models_1_1feature__extraction_1_1_dual_graph_module}\index{torchvision\_down.models.feature\_extraction.DualGraphModule@{torchvision\_down.models.feature\_extraction.DualGraphModule}}
+Inheritance diagram for torchvision\+\_\+down.\+models.\+feature\+\_\+extraction.\+Dual\+Graph\+Module\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classtorchvision__down_1_1models_1_1feature__extraction_1_1_dual_graph_module}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1models_1_1feature__extraction_1_1_dual_graph_module_a1732c604d51e5a48044eff2dfd4a0cd9}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, torch.\+nn.\+Module root, fx.\+Graph \mbox{\hyperlink{classtorchvision__down_1_1models_1_1feature__extraction_1_1_dual_graph_module_a526246c4f3a76bb46e02554fa922a1ad}{train\+\_\+graph}}, fx.\+Graph \mbox{\hyperlink{classtorchvision__down_1_1models_1_1feature__extraction_1_1_dual_graph_module_a12554b5da12cb5f6b6799f1de2481f86}{eval\+\_\+graph}}, str class\+\_\+name="{}Graph\+Module"{})
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1models_1_1feature__extraction_1_1_dual_graph_module_afa2ac5aa7d3fdda07afce98db2d689da}{train}} (self, mode=True)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1models_1_1feature__extraction_1_1_dual_graph_module_a526246c4f3a76bb46e02554fa922a1ad}{train\+\_\+graph}} = train\+\_\+graph
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1models_1_1feature__extraction_1_1_dual_graph_module_a12554b5da12cb5f6b6799f1de2481f86}{eval\+\_\+graph}} = eval\+\_\+graph
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1models_1_1feature__extraction_1_1_dual_graph_module_a77ffcd2d27b21b5b119538a8b93a917d}{graph}} = \mbox{\hyperlink{classtorchvision__down_1_1models_1_1feature__extraction_1_1_dual_graph_module_a526246c4f3a76bb46e02554fa922a1ad}{train\+\_\+graph}}
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1models_1_1feature__extraction_1_1_dual_graph_module_aad363b40964801e4939e3cdc623e4caf}{training}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1models_1_1feature__extraction_1_1_dual_graph_module_ae5f09f69793dea1446bd2b8d9adddda4}{\+\_\+tracer\+\_\+cls}} = None
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}A derivative of `fx.GraphModule`. Differs in the following ways:
+- Requires a train and eval version of the underlying graph
+- Copies submodules according to the nodes of both train and eval graphs.
+- Calling train(mode) switches between train graph and eval graph.
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classtorchvision__down_1_1models_1_1feature__extraction_1_1_dual_graph_module_a1732c604d51e5a48044eff2dfd4a0cd9}\index{torchvision\_down.models.feature\_extraction.DualGraphModule@{torchvision\_down.models.feature\_extraction.DualGraphModule}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!torchvision\_down.models.feature\_extraction.DualGraphModule@{torchvision\_down.models.feature\_extraction.DualGraphModule}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1models_1_1feature__extraction_1_1_dual_graph_module_a1732c604d51e5a48044eff2dfd4a0cd9} 
+torchvision\+\_\+down.\+models.\+feature\+\_\+extraction.\+Dual\+Graph\+Module.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{torch.\+nn.\+Module}]{root}{, }\item[{fx.\+Graph}]{train\+\_\+graph}{, }\item[{fx.\+Graph}]{eval\+\_\+graph}{, }\item[{str }]{class\+\_\+name}{ = {\ttfamily "{}GraphModule"{}}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Args:
+    root (nn.Module): module from which the copied module hierarchy is
+        built
+    train_graph (fx.Graph): the graph that should be used in train mode
+    eval_graph (fx.Graph): the graph that should be used in eval mode
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classtorchvision__down_1_1models_1_1feature__extraction_1_1_dual_graph_module_afa2ac5aa7d3fdda07afce98db2d689da}\index{torchvision\_down.models.feature\_extraction.DualGraphModule@{torchvision\_down.models.feature\_extraction.DualGraphModule}!train@{train}}
+\index{train@{train}!torchvision\_down.models.feature\_extraction.DualGraphModule@{torchvision\_down.models.feature\_extraction.DualGraphModule}}
+\doxysubsubsection{\texorpdfstring{train()}{train()}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1models_1_1feature__extraction_1_1_dual_graph_module_afa2ac5aa7d3fdda07afce98db2d689da} 
+torchvision\+\_\+down.\+models.\+feature\+\_\+extraction.\+Dual\+Graph\+Module.\+train (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{mode}{ = {\ttfamily True}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Swap out the graph depending on the selected training mode.
+NOTE this should be safe when calling model.eval() because that just
+calls this with mode == False.
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classtorchvision__down_1_1models_1_1feature__extraction_1_1_dual_graph_module_ae5f09f69793dea1446bd2b8d9adddda4}\index{torchvision\_down.models.feature\_extraction.DualGraphModule@{torchvision\_down.models.feature\_extraction.DualGraphModule}!\_tracer\_cls@{\_tracer\_cls}}
+\index{\_tracer\_cls@{\_tracer\_cls}!torchvision\_down.models.feature\_extraction.DualGraphModule@{torchvision\_down.models.feature\_extraction.DualGraphModule}}
+\doxysubsubsection{\texorpdfstring{\_tracer\_cls}{\_tracer\_cls}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1models_1_1feature__extraction_1_1_dual_graph_module_ae5f09f69793dea1446bd2b8d9adddda4} 
+torchvision\+\_\+down.\+models.\+feature\+\_\+extraction.\+Dual\+Graph\+Module.\+\_\+tracer\+\_\+cls = None\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classtorchvision__down_1_1models_1_1feature__extraction_1_1_dual_graph_module_a12554b5da12cb5f6b6799f1de2481f86}\index{torchvision\_down.models.feature\_extraction.DualGraphModule@{torchvision\_down.models.feature\_extraction.DualGraphModule}!eval\_graph@{eval\_graph}}
+\index{eval\_graph@{eval\_graph}!torchvision\_down.models.feature\_extraction.DualGraphModule@{torchvision\_down.models.feature\_extraction.DualGraphModule}}
+\doxysubsubsection{\texorpdfstring{eval\_graph}{eval\_graph}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1models_1_1feature__extraction_1_1_dual_graph_module_a12554b5da12cb5f6b6799f1de2481f86} 
+torchvision\+\_\+down.\+models.\+feature\+\_\+extraction.\+Dual\+Graph\+Module.\+eval\+\_\+graph = eval\+\_\+graph}
+
+\Hypertarget{classtorchvision__down_1_1models_1_1feature__extraction_1_1_dual_graph_module_a77ffcd2d27b21b5b119538a8b93a917d}\index{torchvision\_down.models.feature\_extraction.DualGraphModule@{torchvision\_down.models.feature\_extraction.DualGraphModule}!graph@{graph}}
+\index{graph@{graph}!torchvision\_down.models.feature\_extraction.DualGraphModule@{torchvision\_down.models.feature\_extraction.DualGraphModule}}
+\doxysubsubsection{\texorpdfstring{graph}{graph}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1models_1_1feature__extraction_1_1_dual_graph_module_a77ffcd2d27b21b5b119538a8b93a917d} 
+torchvision\+\_\+down.\+models.\+feature\+\_\+extraction.\+Dual\+Graph\+Module.\+graph = \mbox{\hyperlink{classtorchvision__down_1_1models_1_1feature__extraction_1_1_dual_graph_module_a526246c4f3a76bb46e02554fa922a1ad}{train\+\_\+graph}}}
+
+\Hypertarget{classtorchvision__down_1_1models_1_1feature__extraction_1_1_dual_graph_module_a526246c4f3a76bb46e02554fa922a1ad}\index{torchvision\_down.models.feature\_extraction.DualGraphModule@{torchvision\_down.models.feature\_extraction.DualGraphModule}!train\_graph@{train\_graph}}
+\index{train\_graph@{train\_graph}!torchvision\_down.models.feature\_extraction.DualGraphModule@{torchvision\_down.models.feature\_extraction.DualGraphModule}}
+\doxysubsubsection{\texorpdfstring{train\_graph}{train\_graph}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1models_1_1feature__extraction_1_1_dual_graph_module_a526246c4f3a76bb46e02554fa922a1ad} 
+torchvision\+\_\+down.\+models.\+feature\+\_\+extraction.\+Dual\+Graph\+Module.\+train\+\_\+graph = train\+\_\+graph}
+
+\Hypertarget{classtorchvision__down_1_1models_1_1feature__extraction_1_1_dual_graph_module_aad363b40964801e4939e3cdc623e4caf}\index{torchvision\_down.models.feature\_extraction.DualGraphModule@{torchvision\_down.models.feature\_extraction.DualGraphModule}!training@{training}}
+\index{training@{training}!torchvision\_down.models.feature\_extraction.DualGraphModule@{torchvision\_down.models.feature\_extraction.DualGraphModule}}
+\doxysubsubsection{\texorpdfstring{training}{training}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1models_1_1feature__extraction_1_1_dual_graph_module_aad363b40964801e4939e3cdc623e4caf} 
+torchvision\+\_\+down.\+models.\+feature\+\_\+extraction.\+Dual\+Graph\+Module.\+training}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Cervi\+AI/torchvision\+\_\+down/models/\mbox{\hyperlink{feature__extraction_8py}{feature\+\_\+extraction.\+py}}\end{DoxyCompactItemize}

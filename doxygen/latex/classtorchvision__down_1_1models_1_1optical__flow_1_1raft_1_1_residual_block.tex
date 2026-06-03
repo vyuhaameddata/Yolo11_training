@@ -1,0 +1,94 @@
+\doxysection{torchvision\+\_\+down.\+models.\+optical\+\_\+flow.\+raft.\+Residual\+Block Class Reference}
+\hypertarget{classtorchvision__down_1_1models_1_1optical__flow_1_1raft_1_1_residual_block}{}\label{classtorchvision__down_1_1models_1_1optical__flow_1_1raft_1_1_residual_block}\index{torchvision\_down.models.optical\_flow.raft.ResidualBlock@{torchvision\_down.models.optical\_flow.raft.ResidualBlock}}
+Inheritance diagram for torchvision\+\_\+down.\+models.\+optical\+\_\+flow.\+raft.\+Residual\+Block\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classtorchvision__down_1_1models_1_1optical__flow_1_1raft_1_1_residual_block}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1models_1_1optical__flow_1_1raft_1_1_residual_block_ab6bdb98d58625eb3eb99b5f5e30921f2}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, in\+\_\+channels, out\+\_\+channels, \texorpdfstring{$\ast$}{*}, norm\+\_\+layer, stride=1)
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1models_1_1optical__flow_1_1raft_1_1_residual_block_abb55a8720dfab7cc99e623816b890040}{forward}} (self, x)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1models_1_1optical__flow_1_1raft_1_1_residual_block_a16a6b80421f6ad784dac91944253c7f3}{convnormrelu1}}
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1models_1_1optical__flow_1_1raft_1_1_residual_block_af8bf8b1e75d54a342f0f68c2d1e969c6}{convnormrelu2}}
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1models_1_1optical__flow_1_1raft_1_1_residual_block_aa2f5c9050105c02fced75766b541dfde}{downsample}} = nn.\+Identity()
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1models_1_1optical__flow_1_1raft_1_1_residual_block_ad213f15c07f54577ffd80a785ac61ef5}{relu}} = nn.\+Re\+LU(inplace=True)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}Slightly modified Residual block with extra relu and biases.\end{DoxyVerb}
+ 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classtorchvision__down_1_1models_1_1optical__flow_1_1raft_1_1_residual_block_ab6bdb98d58625eb3eb99b5f5e30921f2}\index{torchvision\_down.models.optical\_flow.raft.ResidualBlock@{torchvision\_down.models.optical\_flow.raft.ResidualBlock}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!torchvision\_down.models.optical\_flow.raft.ResidualBlock@{torchvision\_down.models.optical\_flow.raft.ResidualBlock}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1models_1_1optical__flow_1_1raft_1_1_residual_block_ab6bdb98d58625eb3eb99b5f5e30921f2} 
+torchvision\+\_\+down.\+models.\+optical\+\_\+flow.\+raft.\+Residual\+Block.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{in\+\_\+channels}{, }\item[{}]{out\+\_\+channels}{, }\item[{\texorpdfstring{$\ast$}{*}}]{}{, }\item[{}]{norm\+\_\+layer}{, }\item[{}]{stride}{ = {\ttfamily 1}}\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classtorchvision__down_1_1models_1_1optical__flow_1_1raft_1_1_residual_block_abb55a8720dfab7cc99e623816b890040}\index{torchvision\_down.models.optical\_flow.raft.ResidualBlock@{torchvision\_down.models.optical\_flow.raft.ResidualBlock}!forward@{forward}}
+\index{forward@{forward}!torchvision\_down.models.optical\_flow.raft.ResidualBlock@{torchvision\_down.models.optical\_flow.raft.ResidualBlock}}
+\doxysubsubsection{\texorpdfstring{forward()}{forward()}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1models_1_1optical__flow_1_1raft_1_1_residual_block_abb55a8720dfab7cc99e623816b890040} 
+torchvision\+\_\+down.\+models.\+optical\+\_\+flow.\+raft.\+Residual\+Block.\+forward (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{x}{}\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classtorchvision__down_1_1models_1_1optical__flow_1_1raft_1_1_residual_block_a16a6b80421f6ad784dac91944253c7f3}\index{torchvision\_down.models.optical\_flow.raft.ResidualBlock@{torchvision\_down.models.optical\_flow.raft.ResidualBlock}!convnormrelu1@{convnormrelu1}}
+\index{convnormrelu1@{convnormrelu1}!torchvision\_down.models.optical\_flow.raft.ResidualBlock@{torchvision\_down.models.optical\_flow.raft.ResidualBlock}}
+\doxysubsubsection{\texorpdfstring{convnormrelu1}{convnormrelu1}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1models_1_1optical__flow_1_1raft_1_1_residual_block_a16a6b80421f6ad784dac91944253c7f3} 
+torchvision\+\_\+down.\+models.\+optical\+\_\+flow.\+raft.\+Residual\+Block.\+convnormrelu1}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \ ConvNormActivation(}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ in\_channels,\ out\_channels,\ norm\_layer=norm\_layer,\ kernel\_size=3,\ stride=stride,\ bias=\textcolor{keyword}{True}}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ )}
+
+\end{DoxyCode}
+\Hypertarget{classtorchvision__down_1_1models_1_1optical__flow_1_1raft_1_1_residual_block_af8bf8b1e75d54a342f0f68c2d1e969c6}\index{torchvision\_down.models.optical\_flow.raft.ResidualBlock@{torchvision\_down.models.optical\_flow.raft.ResidualBlock}!convnormrelu2@{convnormrelu2}}
+\index{convnormrelu2@{convnormrelu2}!torchvision\_down.models.optical\_flow.raft.ResidualBlock@{torchvision\_down.models.optical\_flow.raft.ResidualBlock}}
+\doxysubsubsection{\texorpdfstring{convnormrelu2}{convnormrelu2}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1models_1_1optical__flow_1_1raft_1_1_residual_block_af8bf8b1e75d54a342f0f68c2d1e969c6} 
+torchvision\+\_\+down.\+models.\+optical\+\_\+flow.\+raft.\+Residual\+Block.\+convnormrelu2}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \ ConvNormActivation(}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ out\_channels,\ out\_channels,\ norm\_layer=norm\_layer,\ kernel\_size=3,\ bias=\textcolor{keyword}{True}}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ )}
+
+\end{DoxyCode}
+\Hypertarget{classtorchvision__down_1_1models_1_1optical__flow_1_1raft_1_1_residual_block_aa2f5c9050105c02fced75766b541dfde}\index{torchvision\_down.models.optical\_flow.raft.ResidualBlock@{torchvision\_down.models.optical\_flow.raft.ResidualBlock}!downsample@{downsample}}
+\index{downsample@{downsample}!torchvision\_down.models.optical\_flow.raft.ResidualBlock@{torchvision\_down.models.optical\_flow.raft.ResidualBlock}}
+\doxysubsubsection{\texorpdfstring{downsample}{downsample}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1models_1_1optical__flow_1_1raft_1_1_residual_block_aa2f5c9050105c02fced75766b541dfde} 
+torchvision\+\_\+down.\+models.\+optical\+\_\+flow.\+raft.\+Residual\+Block.\+downsample = nn.\+Identity()}
+
+\Hypertarget{classtorchvision__down_1_1models_1_1optical__flow_1_1raft_1_1_residual_block_ad213f15c07f54577ffd80a785ac61ef5}\index{torchvision\_down.models.optical\_flow.raft.ResidualBlock@{torchvision\_down.models.optical\_flow.raft.ResidualBlock}!relu@{relu}}
+\index{relu@{relu}!torchvision\_down.models.optical\_flow.raft.ResidualBlock@{torchvision\_down.models.optical\_flow.raft.ResidualBlock}}
+\doxysubsubsection{\texorpdfstring{relu}{relu}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1models_1_1optical__flow_1_1raft_1_1_residual_block_ad213f15c07f54577ffd80a785ac61ef5} 
+torchvision\+\_\+down.\+models.\+optical\+\_\+flow.\+raft.\+Residual\+Block.\+relu = nn.\+Re\+LU(inplace=True)}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Cervi\+AI/torchvision\+\_\+down/models/optical\+\_\+flow/\mbox{\hyperlink{raft_8py}{raft.\+py}}\end{DoxyCompactItemize}

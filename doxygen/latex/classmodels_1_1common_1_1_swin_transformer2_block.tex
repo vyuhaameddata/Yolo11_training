@@ -1,0 +1,66 @@
+\doxysection{models.\+common.\+Swin\+Transformer2\+Block Class Reference}
+\hypertarget{classmodels_1_1common_1_1_swin_transformer2_block}{}\label{classmodels_1_1common_1_1_swin_transformer2_block}\index{models.common.SwinTransformer2Block@{models.common.SwinTransformer2Block}}
+Inheritance diagram for models.\+common.\+Swin\+Transformer2\+Block\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classmodels_1_1common_1_1_swin_transformer2_block}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classmodels_1_1common_1_1_swin_transformer2_block_a5f91c2840706a8358bcc852ba4da7a71}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, c1, c2, num\+\_\+heads, num\+\_\+layers, window\+\_\+size=7)
+\item 
+\mbox{\hyperlink{classmodels_1_1common_1_1_swin_transformer2_block_a06aef6d39b6f3f316c78e5d92209eea2}{forward}} (self, x)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classmodels_1_1common_1_1_swin_transformer2_block_abb479ba3cb5ba9836746a137409b4dd2}{conv}} = None
+\item 
+\mbox{\hyperlink{classmodels_1_1common_1_1_swin_transformer2_block_a95f66c63da406017395d8b5a8c5c7d5f}{blocks}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classmodels_1_1common_1_1_swin_transformer2_block_a5f91c2840706a8358bcc852ba4da7a71}\index{models.common.SwinTransformer2Block@{models.common.SwinTransformer2Block}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!models.common.SwinTransformer2Block@{models.common.SwinTransformer2Block}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily \label{classmodels_1_1common_1_1_swin_transformer2_block_a5f91c2840706a8358bcc852ba4da7a71} 
+models.\+common.\+Swin\+Transformer2\+Block.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{c1}{, }\item[{}]{c2}{, }\item[{}]{num\+\_\+heads}{, }\item[{}]{num\+\_\+layers}{, }\item[{}]{window\+\_\+size}{ = {\ttfamily 7}}\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classmodels_1_1common_1_1_swin_transformer2_block_a06aef6d39b6f3f316c78e5d92209eea2}\index{models.common.SwinTransformer2Block@{models.common.SwinTransformer2Block}!forward@{forward}}
+\index{forward@{forward}!models.common.SwinTransformer2Block@{models.common.SwinTransformer2Block}}
+\doxysubsubsection{\texorpdfstring{forward()}{forward()}}
+{\footnotesize\ttfamily \label{classmodels_1_1common_1_1_swin_transformer2_block_a06aef6d39b6f3f316c78e5d92209eea2} 
+models.\+common.\+Swin\+Transformer2\+Block.\+forward (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{x}{}\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classmodels_1_1common_1_1_swin_transformer2_block_a95f66c63da406017395d8b5a8c5c7d5f}\index{models.common.SwinTransformer2Block@{models.common.SwinTransformer2Block}!blocks@{blocks}}
+\index{blocks@{blocks}!models.common.SwinTransformer2Block@{models.common.SwinTransformer2Block}}
+\doxysubsubsection{\texorpdfstring{blocks}{blocks}}
+{\footnotesize\ttfamily \label{classmodels_1_1common_1_1_swin_transformer2_block_a95f66c63da406017395d8b5a8c5c7d5f} 
+models.\+common.\+Swin\+Transformer2\+Block.\+blocks}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \ nn.Sequential(*[SwinTransformerLayer\_v2(dim=c2,\ num\_heads=num\_heads,\ window\_size=window\_size,}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ shift\_size=0\ \textcolor{keywordflow}{if}\ (i\ \%\ 2\ ==\ 0)\ \textcolor{keywordflow}{else}\ window\_size\ //\ 2)\ \textcolor{keywordflow}{for}\ i\ \textcolor{keywordflow}{in}\ range(num\_layers)])}
+
+\end{DoxyCode}
+\Hypertarget{classmodels_1_1common_1_1_swin_transformer2_block_abb479ba3cb5ba9836746a137409b4dd2}\index{models.common.SwinTransformer2Block@{models.common.SwinTransformer2Block}!conv@{conv}}
+\index{conv@{conv}!models.common.SwinTransformer2Block@{models.common.SwinTransformer2Block}}
+\doxysubsubsection{\texorpdfstring{conv}{conv}}
+{\footnotesize\ttfamily \label{classmodels_1_1common_1_1_swin_transformer2_block_abb479ba3cb5ba9836746a137409b4dd2} 
+models.\+common.\+Swin\+Transformer2\+Block.\+conv = None}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Cervi\+AI/models/\mbox{\hyperlink{common_8py}{common.\+py}}\end{DoxyCompactItemize}

@@ -1,0 +1,79 @@
+\doxysection{torchvision\+\_\+down.\+models.\+detection.\+fcos.\+FCOSRegression\+Head Class Reference}
+\hypertarget{classtorchvision__down_1_1models_1_1detection_1_1fcos_1_1_f_c_o_s_regression_head}{}\label{classtorchvision__down_1_1models_1_1detection_1_1fcos_1_1_f_c_o_s_regression_head}\index{torchvision\_down.models.detection.fcos.FCOSRegressionHead@{torchvision\_down.models.detection.fcos.FCOSRegressionHead}}
+Inheritance diagram for torchvision\+\_\+down.\+models.\+detection.\+fcos.\+FCOSRegression\+Head\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classtorchvision__down_1_1models_1_1detection_1_1fcos_1_1_f_c_o_s_regression_head}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1models_1_1detection_1_1fcos_1_1_f_c_o_s_regression_head_aa7c8c31aa4c53d42a5ba6fed7bc8c53a}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, int in\+\_\+channels, int num\+\_\+anchors, int num\+\_\+convs=4, Optional\mbox{[}Callable\mbox{[}..., nn.\+Module\mbox{]}\mbox{]} norm\+\_\+layer=None)
+\item 
+Tuple\mbox{[}Tensor, Tensor\mbox{]} \mbox{\hyperlink{classtorchvision__down_1_1models_1_1detection_1_1fcos_1_1_f_c_o_s_regression_head_ac4cac7f9655a63b7f3840fd9737d1576}{forward}} (self, List\mbox{[}Tensor\mbox{]} x)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1models_1_1detection_1_1fcos_1_1_f_c_o_s_regression_head_aed614d31de36bc4bcf6eec7304721f56}{conv}} = nn.\+Sequential(\texorpdfstring{$\ast$}{*}conv)
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1models_1_1detection_1_1fcos_1_1_f_c_o_s_regression_head_a985894f354c408aee9b8b8d0d3aebf9c}{bbox\+\_\+reg}} = nn.\+Conv2d(in\+\_\+channels, num\+\_\+anchors \texorpdfstring{$\ast$}{*} 4, kernel\+\_\+size=3, stride=1, padding=1)
+\item 
+\mbox{\hyperlink{classtorchvision__down_1_1models_1_1detection_1_1fcos_1_1_f_c_o_s_regression_head_a47c55735d0b99b2d9193f4bec0ee0fe2}{bbox\+\_\+ctrness}} = nn.\+Conv2d(in\+\_\+channels, num\+\_\+anchors \texorpdfstring{$\ast$}{*} 1, kernel\+\_\+size=3, stride=1, padding=1)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}A regression head for use in FCOS.
+
+Args:
+    in_channels (int): number of channels of the input feature
+    num_anchors (int): number of anchors to be predicted
+    num_convs (Optional[int]): number of conv layer. Default: 4.
+    norm_layer: Module specifying the normalization layer to use.
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classtorchvision__down_1_1models_1_1detection_1_1fcos_1_1_f_c_o_s_regression_head_aa7c8c31aa4c53d42a5ba6fed7bc8c53a}\index{torchvision\_down.models.detection.fcos.FCOSRegressionHead@{torchvision\_down.models.detection.fcos.FCOSRegressionHead}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!torchvision\_down.models.detection.fcos.FCOSRegressionHead@{torchvision\_down.models.detection.fcos.FCOSRegressionHead}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1models_1_1detection_1_1fcos_1_1_f_c_o_s_regression_head_aa7c8c31aa4c53d42a5ba6fed7bc8c53a} 
+torchvision\+\_\+down.\+models.\+detection.\+fcos.\+FCOSRegression\+Head.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{int}]{in\+\_\+channels}{, }\item[{int}]{num\+\_\+anchors}{, }\item[{int }]{num\+\_\+convs}{ = {\ttfamily 4}, }\item[{Optional\mbox{[}Callable\mbox{[}..., nn.\+Module\mbox{]}\mbox{]} }]{norm\+\_\+layer}{ = {\ttfamily None}}\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classtorchvision__down_1_1models_1_1detection_1_1fcos_1_1_f_c_o_s_regression_head_ac4cac7f9655a63b7f3840fd9737d1576}\index{torchvision\_down.models.detection.fcos.FCOSRegressionHead@{torchvision\_down.models.detection.fcos.FCOSRegressionHead}!forward@{forward}}
+\index{forward@{forward}!torchvision\_down.models.detection.fcos.FCOSRegressionHead@{torchvision\_down.models.detection.fcos.FCOSRegressionHead}}
+\doxysubsubsection{\texorpdfstring{forward()}{forward()}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1models_1_1detection_1_1fcos_1_1_f_c_o_s_regression_head_ac4cac7f9655a63b7f3840fd9737d1576} 
+ Tuple\mbox{[}Tensor, Tensor\mbox{]} torchvision\+\_\+down.\+models.\+detection.\+fcos.\+FCOSRegression\+Head.\+forward (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{List\mbox{[}Tensor\mbox{]}}]{x}{}\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classtorchvision__down_1_1models_1_1detection_1_1fcos_1_1_f_c_o_s_regression_head_a47c55735d0b99b2d9193f4bec0ee0fe2}\index{torchvision\_down.models.detection.fcos.FCOSRegressionHead@{torchvision\_down.models.detection.fcos.FCOSRegressionHead}!bbox\_ctrness@{bbox\_ctrness}}
+\index{bbox\_ctrness@{bbox\_ctrness}!torchvision\_down.models.detection.fcos.FCOSRegressionHead@{torchvision\_down.models.detection.fcos.FCOSRegressionHead}}
+\doxysubsubsection{\texorpdfstring{bbox\_ctrness}{bbox\_ctrness}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1models_1_1detection_1_1fcos_1_1_f_c_o_s_regression_head_a47c55735d0b99b2d9193f4bec0ee0fe2} 
+torchvision\+\_\+down.\+models.\+detection.\+fcos.\+FCOSRegression\+Head.\+bbox\+\_\+ctrness = nn.\+Conv2d(in\+\_\+channels, num\+\_\+anchors \texorpdfstring{$\ast$}{*} 1, kernel\+\_\+size=3, stride=1, padding=1)}
+
+\Hypertarget{classtorchvision__down_1_1models_1_1detection_1_1fcos_1_1_f_c_o_s_regression_head_a985894f354c408aee9b8b8d0d3aebf9c}\index{torchvision\_down.models.detection.fcos.FCOSRegressionHead@{torchvision\_down.models.detection.fcos.FCOSRegressionHead}!bbox\_reg@{bbox\_reg}}
+\index{bbox\_reg@{bbox\_reg}!torchvision\_down.models.detection.fcos.FCOSRegressionHead@{torchvision\_down.models.detection.fcos.FCOSRegressionHead}}
+\doxysubsubsection{\texorpdfstring{bbox\_reg}{bbox\_reg}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1models_1_1detection_1_1fcos_1_1_f_c_o_s_regression_head_a985894f354c408aee9b8b8d0d3aebf9c} 
+torchvision\+\_\+down.\+models.\+detection.\+fcos.\+FCOSRegression\+Head.\+bbox\+\_\+reg = nn.\+Conv2d(in\+\_\+channels, num\+\_\+anchors \texorpdfstring{$\ast$}{*} 4, kernel\+\_\+size=3, stride=1, padding=1)}
+
+\Hypertarget{classtorchvision__down_1_1models_1_1detection_1_1fcos_1_1_f_c_o_s_regression_head_aed614d31de36bc4bcf6eec7304721f56}\index{torchvision\_down.models.detection.fcos.FCOSRegressionHead@{torchvision\_down.models.detection.fcos.FCOSRegressionHead}!conv@{conv}}
+\index{conv@{conv}!torchvision\_down.models.detection.fcos.FCOSRegressionHead@{torchvision\_down.models.detection.fcos.FCOSRegressionHead}}
+\doxysubsubsection{\texorpdfstring{conv}{conv}}
+{\footnotesize\ttfamily \label{classtorchvision__down_1_1models_1_1detection_1_1fcos_1_1_f_c_o_s_regression_head_aed614d31de36bc4bcf6eec7304721f56} 
+torchvision\+\_\+down.\+models.\+detection.\+fcos.\+FCOSRegression\+Head.\+conv = nn.\+Sequential(\texorpdfstring{$\ast$}{*}conv)}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Cervi\+AI/torchvision\+\_\+down/models/detection/\mbox{\hyperlink{fcos_8py}{fcos.\+py}}\end{DoxyCompactItemize}
